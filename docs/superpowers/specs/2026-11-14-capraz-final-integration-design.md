@@ -267,7 +267,10 @@ The 8.1 BiasGuard run in `core.bin` reviewed 150 of 150 events with no failures 
 quotes. It produced **0 supported findings and 439 uncertain ones, every one `needs_context`**. The
 detector, given headlines and ledes, never commits to a behavioural bias. Two consequences:
 
-- Under the rule below, no finding is **AI onaylı** today; all 439 are **İnsan kontrolü bekliyor**.
+- Neither reviewer ever returned `supported`. The advocate said `uncertain` on all 439; the skeptic said
+  `uncertain` on 220 and `not_supported` on 219. No finding has every condition satisfied.
+- Under the owner's rule below, 257 of the 439 (58.5%) are **AI onaylı** and 182 are
+  **İnsan kontrolü bekliyor**.
 - The first improvement target is not completion (that was the synthetic run's problem) but the fact
   that behavioural-bias cards ask for evidence a headline cannot contain. Media-technique cards
   describe what the text itself does, so they are the likelier source of confident findings.
@@ -286,18 +289,27 @@ that later work, so until then new badges say AI next to older YZ marks.
 
 ### What "AI onaylı" means
 
-It is a rule, not a probability. A finding is **AI onaylı** when all of these hold:
+It is a rule, not a probability, chosen by the owner on 14 November 2026. A finding is **AI onaylı** when
+the card has not been demoted by human feedback and at least one of these holds:
 
-- advocate and skeptic both returned `supported`;
-- both marked every necessary condition `satisfied`;
-- every quoted span was found exactly in the source;
-- neither reviewer listed missing context, and no evidence for that card was rejected;
-- the card has not been demoted by human feedback (below).
+- **not dismissed:** neither the advocate nor the skeptic returned `not_supported`; or
+- **partly confirmed by the skeptic:** the skeptic marked at least one necessary condition `satisfied`,
+  whatever its overall verdict.
 
-Everything else that is shown is **İnsan kontrolü bekliyor**. The site explains the badge in one line:
-"İki ayrı AI incelemesi aynı sonuca vardı; henüz insan kontrolünden geçmedi." Two reviews by the same
-model can share the same mistake, so this is agreement, not accuracy. It becomes evidence only as human
-corrections accumulate.
+Everything else that is shown is **İnsan kontrolü bekliyor**. Exact-quote checking still applies to
+every finding before it is shown at all.
+
+On the 8.1 run this gives 257 **AI onaylı** findings: 220 that neither reviewer dismissed, plus 37 that
+the skeptic rejected overall while confirming one condition. Known weaknesses, accepted with the rule:
+
+- No **AI onaylı** finding today was called `supported` by either reviewer; both said the pattern is
+  possible and needs more context. The badge means "left standing", not "confirmed".
+- 37 carry the badge although the skeptic's verdict was `not_supported`.
+- About a third are context effects the catalogue marks as not necessarily an error.
+- Two reviews by the same model can share the same mistake.
+
+The badge's one-line explanation on the site: "AI bu örüntüyü olası buldu: sorgulayan inceleme reddetmedi ya da koşullardan en az birini doğruladı. Kesin değil; henüz insan kontrolünden geçmedi." The audit sample and the card thresholds below are
+what turn the badge into evidence over time.
 
 ### Recommended thresholds
 

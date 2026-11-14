@@ -18,8 +18,7 @@
 - The reviewer is named **AI** (artificial intelligence, and the initials of Abdi İpekçi) in every new
   string; never YZ. Existing YZ text elsewhere on the site is left for the later personification work.
 - Turkish display text, fixed: `AI onaylı`, `İnsan kontrolü bekliyor`, `İnsan doğruladı`,
-  `İnsan düzeltti`. Tooltip for `AI onaylı`: `İki ayrı AI incelemesi aynı sonuca vardı; henüz insan
-  kontrolünden geçmedi.`
+  `İnsan düzeltti`. Tooltip for `AI onaylı`: `AI bu örüntüyü olası buldu: sorgulayan inceleme reddetmedi ya da koşullardan en az birini doğruladı. Kesin değil; henüz insan kontrolünden geçmedi.`
 - `ai_confident` is a rule, never a number. No percentage or score is shown with it.
 - A failed or missing review stays `analysis_incomplete` / `not_attempted` and is shown as
   `incelenemedi`; it never becomes a finding or a clean result.
@@ -36,8 +35,8 @@
 
 ## Review Focus
 
-1. Today's data: 439 findings, all `needs_context` → every one is `needs_human`; the page must not
-   show an empty "AI onaylı" section or a zero as if it were a result. (Tasks 1, 5)
+1. Today's data: 439 findings, none `supported` → 257 `ai_confident`, 182 `needs_human`; an event with
+   none of one kind must not show a zero as if it were a result. (Tasks 1, 5)
 2. A review stored against an older pack or a changed event text → ignored, finding shown by tier. (Task 3)
 3. An exported reviews file with an unknown key shape, an unknown status or a duplicate key → the
    import rejects the whole file and names the entry; nothing is appended. (Task 3)
@@ -58,37 +57,45 @@
 **Interfaces:**
 - Produces:
   ```python
-  def tier(finding: dict, rejected_for_card: int, card_status: str | None) -> tuple[str, list[str]]
+  def tier(advocate: dict, skeptic: dict, card_status: str | None) -> tuple[str, list[str]]
   ```
-  `finding` is the engine's full finding (before slimming); `card_status` is `None`, `"eligible"`,
+  `advocate` and `skeptic` are the engine's normalised assessments for the card; `card_status` is `None`, `"eligible"`,
   `"demoted"` or `"hidden"`.
-- `ai_confident` only if all hold; otherwise `needs_human` with one reason per failed check, in this
-  order and wording:
-  | check | reason |
+- Rule (owner's choice, see the spec): `ai_confident` when `card_status != "demoted"` and
+  (`not_dismissed` or `skeptic_partly_confirmed`), where
+  `not_dismissed` = neither role's verdict is `not_supported`, and
+  `skeptic_partly_confirmed` = the skeptic marked at least one necessary condition `satisfied`.
+  Otherwise `needs_human`, with reasons in this order and wording:
+  | failed check | reason |
   |---|---|
-  | `finding["status"]` is `pattern_supported` or `contextual_effect_consensus` | `incelemeler hemfikir değil` |
-  | every necessary condition `satisfied` for both roles | `koşul doğrulanamadı` |
-  | `finding["missing_context"]` empty | `eksik bağlam var` |
-  | `rejected_for_card == 0` | `alıntı reddedildi` |
-  | `card_status != "demoted"` | `insan incelemeleri bu kavramda yetersiz buldu` |
+  | neither `not_dismissed` nor `skeptic_partly_confirmed` | `sorgulayan inceleme reddetti ve hiçbir koşulu doğrulamadı` |
+  | `card_status == "demoted"` | `insan incelemeleri bu kavramda yetersiz buldu` |
+- `tier` takes the two normalised assessments, so its signature is
+  `tier(advocate: dict, skeptic: dict, card_status: str | None) -> tuple[str, list[str]]`
+  (each assessment has `verdict` and `necessary_conditions[*].status`). Each stamped finding also gets
+  `tier_basis`: `"not_dismissed"`, `"skeptic_partly_confirmed"` or `"both"`.
 - `card_status == "hidden"` → the finding is dropped by `apply` and counted in `summary["hiddenByGate"]`.
 - `apply(run, card_status_path=None)` reads the optional status file written by Task 4.
 
 - [ ] **Step 1: Write the failing tests** (reuse the stub reviewer pattern from `biasguard/test_news.py`)
 
 ```python
-def test_unanimous_complete_finding_is_ai_confident(self):
-    self.assertEqual(tier(finding(status="pattern_supported"), 0, None), ("ai_confident", []))
-def test_needs_context_is_needs_human_with_reason(self):
-    self.assertEqual(tier(finding(status="needs_context"), 0, None)[1][0], "incelemeler hemfikir değil")
-def test_missing_context_blocks_confidence(self): ...
-def test_unsatisfied_condition_blocks_confidence(self): ...
-def test_rejected_quote_blocks_confidence(self): ...
-def test_demoted_card_is_needs_human(self): ...
+def test_both_uncertain_is_ai_confident_as_not_dismissed(self):
+    self.assertEqual(tier(a("uncertain"), a("uncertain"), None), ("ai_confident", []))
+def test_both_supported_is_ai_confident(self): ...
+def test_skeptic_rejects_but_confirms_one_condition_is_ai_confident(self):
+    self.assertEqual(tier(a("uncertain"), a("not_supported", satisfied=1), None)[0], "ai_confident")
+def test_skeptic_rejects_and_confirms_nothing_is_needs_human(self):
+    self.assertEqual(tier(a("uncertain"), a("not_supported", satisfied=0), None),
+                     ("needs_human", ["sorgulayan inceleme reddetti ve hiçbir koşulu doğrulamadı"]))
+def test_advocate_condition_alone_does_not_confirm(self):
+    self.assertEqual(tier(a("uncertain", satisfied=2), a("not_supported", satisfied=0), None)[0], "needs_human")
+def test_demoted_card_is_needs_human_even_when_not_dismissed(self): ...
 def test_reasons_accumulate_in_fixed_order(self): ...
+def test_tier_basis_is_recorded(self): ...
 def test_apply_stamps_every_finding_and_counts_tiers(self):
     out = apply(run); f = out["events"][0]["uncertain"][0]
-    self.assertEqual(f["tier"], "needs_human")
+    self.assertIn(f["tier"], ("ai_confident", "needs_human"))
     self.assertEqual(out["summary"]["aiConfident"] + out["summary"]["needsHuman"], total_findings(out))
 def test_apply_drops_findings_of_hidden_cards_and_counts_them(self): ...
 def test_apply_without_status_file_behaves_as_before_plus_tier(self): ...
@@ -100,7 +107,8 @@ def test_apply_without_status_file_behaves_as_before_plus_tier(self): ...
 - [ ] **Step 5: Check against real data**
 
 Run: `python -m biasguard.news apply --run runs/bg --out /tmp/bg-tier.json`
-Expected: `summary.needsHuman == 439`, `summary.aiConfident == 0`, statuses unchanged from `core.bin`.
+Expected: `summary.aiConfident == 257` (220 not dismissed + 37 skeptic partly confirmed),
+`summary.needsHuman == 182`, statuses unchanged from `core.bin`.
 Record the actual numbers in the commit message.
 
 - [ ] **Step 6: Commit** — `git commit -m "feat: tier every BiasGuard finding as ai_confident or needs_human"`.
@@ -292,7 +300,7 @@ def test_every_status_has_a_reason(self): ...
   behaviour).
 - The event's AI section opens with one line built from counts that are non-zero only, for example
   `3 bulgu insan kontrolü bekliyor.` No "0 AI onaylı" text.
-- Method page paragraph states: what each badge means, that AI onaylı is agreement between two AI
+- Method page paragraph states: what each badge means, that AI onaylı means the finding was left standing by the AI's two
   reviews and not a measured accuracy, and that findings may be missed.
 - Old data without `tier` renders every unreviewed finding as `İnsan kontrolü bekliyor`.
 
@@ -305,7 +313,7 @@ def test_every_status_has_a_reason(self): ...
 
 Run: `cd pipeline && python3 -c "from pathlib import Path; from capraz_pipeline import site; site.assemble(Path('../public/data'), Path('../public'))"`
 Run: `node --test site/tests/logic.test.cjs` and `node site/tests/smoke.cjs public /tmp/smoke-out`
-Expected: pass; with today's pack every finding shows `İnsan kontrolü bekliyor`.
+Expected: pass; with today's pack (no `tier` field yet) every finding shows `İnsan kontrolü bekliyor`.
 
 - [ ] **Step 5: Run every suite, commit and push**
 
@@ -319,7 +327,8 @@ git push -u origin claude/zen-ptolemy-7bvru2
 ## What this plan does not do
 
 - Rebuild `core.bin` with tiers. That needs a pipeline build from the collector export; until then the
-  site falls back to `İnsan kontrolü bekliyor` for all 439 findings, which is also what the rule gives.
+  site falls back to `İnsan kontrolü bekliyor` for all 439 findings; the 257 `AI onaylı` badges appear
+  once `biasguard.json` is re-applied from `runs/bg` and the page data is rebuilt.
 - Measure recall, or precision free of reviewer anchoring. See
   `parked/2026-11-14-blind-reference-study.md`.
 - Apply demotion or hiding. That starts when the owner sets `"agreed": true` in `gates.json`.
