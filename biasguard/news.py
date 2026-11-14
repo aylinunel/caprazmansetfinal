@@ -139,8 +139,8 @@ def prompts(stage: str, role: str | None = None) -> str:
         "Write mechanism, alternative_explanation and missing_context in Turkish.")
 
 
-def write_tasks(run: Path, stage: str, batch: int) -> list[Path]:
-    bg = BiasGuard()
+def write_tasks(run: Path, stage: str, batch: int, bg: BiasGuard | None = None) -> list[Path]:
+    bg = bg or BiasGuard()  # a caller may supply another catalogue (the validation lab does)
     items = _inputs(run)
     tdir = run / "tasks" / stage
     tdir.mkdir(parents=True, exist_ok=True)

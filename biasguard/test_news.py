@@ -128,5 +128,26 @@ class ExplainTests(unittest.TestCase):
             self.assertNotIn("explain", ev["uncertain"][0])
 
 
+class TaskCatalogTests(unittest.TestCase):
+    def _run(self, d):
+        run = Path(d)
+        (run / "inputs.jsonl").write_text(json.dumps(
+            {"event": "e0", "title": "t", "outlets": 2, "text": TEXT, "context": CONTEXT}) + "\n")
+        return run
+
+    def test_write_tasks_default_uses_the_stock_catalogue(self):
+        with tempfile.TemporaryDirectory() as d:
+            from biasguard.news import write_tasks
+            task = json.loads(write_tasks(self._run(d), "select", 10)[0].read_text())
+            self.assertEqual(len(task["cards"]), len(BiasGuard().cards))
+
+    def test_write_tasks_accepts_another_catalogue(self):
+        with tempfile.TemporaryDirectory() as d:
+            from biasguard.news import write_tasks
+            small = BiasGuard(cards=BiasGuard().cards[:20])
+            task = json.loads(write_tasks(self._run(d), "select", 10, bg=small)[0].read_text())
+            self.assertEqual(len(task["cards"]), 20)
+
+
 if __name__ == "__main__":
     unittest.main()
