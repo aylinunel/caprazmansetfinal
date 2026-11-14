@@ -489,8 +489,41 @@ function anPage(q) {
   return !q.t && (q.n || q.w || q.v) ? "olay" : "nasil";
 }
 
+/* Review status of an AI finding. The reviewer is named AI (artificial intelligence, and the initials of
+   Abdi İpekçi). "AI onaylı" is a rule, not a score: see biasguard/routing.py. A human review counts only on
+   the data pack and event text it was made on. */
+var REVIEW_LABEL = { dogrulandi: "İnsan doğruladı", duzeltildi: "İnsan düzeltti", ai_onayli: "AI onaylı",
+  insan_bekliyor: "İnsan kontrolü bekliyor", reddedildi: "Reddedildi" };
+var REVIEW_TIP = { ai_onayli: "AI bu örüntüyü olası buldu: sorgulayan inceleme reddetmedi ya da koşullardan en az birini doğruladı. Kesin değil; henüz insan kontrolünden geçmedi.",
+  insan_bekliyor: "AI bu bulguda kararsız kaldı; bir insanın bakması bekleniyor.",
+  dogrulandi: "Bir insan bu bulguyu inceledi ve doğruladı.", duzeltildi: "Bir insan bu bulguyu inceledi ve düzeltti.",
+  reddedildi: "Bir insan bu bulguyu reddetti; kamu sayfalarında görünmez." };
+var REVIEW_STATUS = { verified: "dogrulandi", corrected: "duzeltildi", rejected: "reddedildi" };
+function reviewValid(review, packVersion, textHash) {
+  if (!review || !REVIEW_STATUS[review.status]) return false;
+  // Reviews saved before packs were recorded carry neither field and still apply.
+  return (review.pack == null || review.pack === packVersion) && (review.text == null || review.text === textHash);
+}
+function reviewState(finding, review, packVersion, textHash) {
+  var state = reviewValid(review, packVersion, textHash) ? REVIEW_STATUS[review.status]
+    : finding && finding.tier === "ai_confident" ? "ai_onayli" : "insan_bekliyor";
+  return { state: state, label: REVIEW_LABEL[state], tip: REVIEW_TIP[state] };
+}
+function reviewOrder(state) { return ["dogrulandi", "duzeltildi", "ai_onayli", "insan_bekliyor", "reddedildi"].indexOf(state); }
+function reviewCountsLine(counts) {
+  return [["dogrulandi", "insan doğruladı"], ["duzeltildi", "insan düzeltti"], ["ai_onayli", "AI onaylı"], ["insan_bekliyor", "insan kontrolü bekliyor"]]
+    .filter(function (x) { return counts[x[0]]; })
+    .map(function (x) { return counts[x[0]] + " bulgu " + x[1]; }).join(" · ");
+}
+function reviewsExport(reviews, packVersion) {
+  return { pack: packVersion, exported_at: new Date().toISOString(), reviews: Object.keys(reviews).sort().map(function (key) {
+    var r = reviews[key];
+    return { key: key, status: r.status, note: r.note || "", at: r.at || "", pack: r.pack == null ? packVersion : r.pack, text: r.text == null ? null : r.text };
+  }) };
+}
+
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
+  module.exports = { reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
     axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS };
 }

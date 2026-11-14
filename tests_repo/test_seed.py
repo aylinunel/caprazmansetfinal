@@ -22,10 +22,13 @@ class SeedTest(unittest.TestCase):
         missing = [rel for rel in manifest if not (ROOT / rel).is_file()]
         self.assertEqual(missing, [])
 
-    def test_data_packs_are_byte_identical_to_the_seed(self):
+    def test_headline_and_lede_packs_are_byte_identical_to_the_seed(self):
+        # core.bin is repacked when BiasGuard results change (python -m biasguard.news pack); the monthly
+        # headline and lede packs only change with a full pipeline build.
         manifest = json.loads((ROOT / "docs/provenance/seed-manifest.json").read_text(encoding="utf-8"))
-        packs = {rel: h for rel, h in manifest.items() if rel.startswith("public/data/")}
-        self.assertEqual(len(packs), 7)
+        packs = {rel: h for rel, h in manifest.items()
+                 if rel.startswith("public/data/") and not rel.endswith("core.bin")}
+        self.assertEqual(len(packs), 6)
         for rel, expected in packs.items():
             self.assertEqual(hashlib.sha256((ROOT / rel).read_bytes()).hexdigest(), expected, rel)
 

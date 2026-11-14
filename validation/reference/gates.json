@@ -1,0 +1,10 @@
+{
+ "agreed": true,
+ "agreed_on": "2026-11-14",
+ "min_run_completion": 0.95,
+ "min_reviews_to_judge": 15,
+ "min_precision_lower_bound": 0.70,
+ "hide_min_reviews": 10,
+ "hide_below_precision": 0.50,
+ "audit_rate": 0.05
+}

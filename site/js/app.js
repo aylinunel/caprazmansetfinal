@@ -6579,6 +6579,10 @@ function pgBG7() {
     [S.uncertain, "bağlam gerekli / ayrışma"], [S.quotesVerified, "doğrulanmış alıntı"]
   ].map(function (x) { return '<div class="mh-stat" style="background:var(--surface)"><div class="v" style="color:var(--ink)">' + x[0] +
     '</div><div class="l" style="color:var(--muted)">' + esc(x[1]) + "</div></div>"; }).join("") + "</div>";
+  if (S.aiConfident != null) h += '<p class="xsmall" style="margin-top:10px">İnceleme durumu: ' + S.aiConfident + " bulgu AI onaylı, " + S.needsHuman +
+    " bulgu insan kontrolü bekliyor" + (S.auditSample ? "; AI onaylı bulgulardan " + S.auditSample + " tanesi rastgele denetim örneğinde" : "") + ".</p>";
+  if (REV7OWNER) h += '<p style="margin-top:10px"><button class="chip" data-revexport="1">İncelemeleri indir</button> ' +
+    '<span class="xsmall">Onay, düzeltme ve retleri bir dosya olarak indirir; bu dosya öğrenme döngüsünün verisidir.</span></p>';
   if (S.breakerTripped) h += '<div class="note warn" style="margin-top:12px">Art arda 5 inceleme grubu başarısız olduğu için çalışma durduruldu; kalan olaylar “çalıştırılmadı” olarak işaretlendi.</div>';
   h += '<section class="sec"><h2>Kavramlar</h2><p class="sub">Tamamlanan incelemelerde bir kavramın kaç olayda desteklendiği ya da bağlam istediği. ' +
     "Kavram adları ve tanımları kaynak katalogdaki gibidir (The Decision Lab’den uyarlama).</p>";
@@ -6604,16 +6608,17 @@ function pgBG7() {
 }
 function bg7Ctl(key) {
   var r = rev7(key);
-  var st = r ? (r.status === "rejected" ? "Reddedildi — kamu sayfalarında görünmüyor" : "Düzeltildi: " + esc(r.note)) : "Yayında (YZ etiketiyle)";
+  var st = r ? (r.status === "rejected" ? "Reddedildi — kamu sayfalarında görünmüyor" : r.status === "verified" ? "İnsan doğruladı" : "Düzeltildi: " + esc(r.note)) : "Yayında (insan kontrolünden geçmedi)";
   return '<div class="rev-ctl"><span class="cm3-sub">' + st + "</span>" + (REV7OWNER ?
     '<input id="rn-' + esc(key) + '" placeholder="Düzeltme notu" aria-label="Düzeltme notu" value="' + esc(r && r.note || "") + '">' +
+    (key.indexOf("narr__") === 0 ? "" : '<button class="chip" data-rev="' + esc(key) + '" data-act="approve">Onayla</button>') +
     '<button class="chip" data-rev="' + esc(key) + '" data-act="correct">Düzelt</button>' +
     '<button class="chip" data-rev="' + esc(key) + '" data-act="reject">Reddet</button>' +
     (r ? '<button class="chip" data-rev="' + esc(key) + '" data-act="undo">Geri al</button>' : "") : "") + "</div>";
 }
 function bg7AdminFindings(x) {
   return (x.supported || []).concat(x.uncertain || []).map(function (f) {
-    return '<div class="yz" style="margin-top:6px">' + bg7finding(f, x.event) + bg7Ctl(x.event + "__" + f.id) + "</div>"; }).join("");
+    return '<div class="yz" style="margin-top:6px">' + rev7Badge(x, f) + bg7finding(f, x.event) + bg7Ctl(x.event + "__" + f.id) + "</div>"; }).join("");
 }
 function bg7NarrAdmin() {
   var ks = Object.keys(D.N).filter(function (k) { return D.N[k].status === "agent_coded"; });
@@ -6672,8 +6677,22 @@ function bg7AiTag() { return yzBadge(); }
    them; decisions live in the artifact's shared store ("reviews"), readable by all, writable by the owner. */
 var REV7 = {}, REV7OWNER = false, REV7DB = null, REV7MSG = "";
 function rev7(key) { return REV7[key] || null; }
+/* A finding's human review, only if it was made on this data pack and this event text. */
+function rev7For(x, f) { var r = rev7(x.event + "__" + f.id); return reviewValid(r, D.meta.built, x.text) ? r : null; }
+function rev7State(x, f) { return reviewState(f, rev7(x.event + "__" + f.id), D.meta.built, x.text); }
+function rev7Badge(x, f) {
+  var s = rev7State(x, f);
+  return '<span class="rv-badge rv-' + s.state + '" title="' + esc(s.tip) + '">' + esc(s.label) + "</span>";
+}
+function rev7Sorted(x) {
+  return bg7Live(x).slice().sort(function (a, b) { return reviewOrder(rev7State(x, a).state) - reviewOrder(rev7State(x, b).state); });
+}
+function rev7CountsLine(x) {
+  var c = {}; bg7Live(x).forEach(function (f) { var st = rev7State(x, f).state; c[st] = (c[st] || 0) + 1; });
+  return reviewCountsLine(c);
+}
 function bg7Live(x) {
-  return (x.supported || []).concat(x.uncertain || []).filter(function (f) { var r = rev7(x.event + "__" + f.id); return !(r && r.status === "rejected"); });
+  return (x.supported || []).concat(x.uncertain || []).filter(function (f) { var r = rev7For(x, f); return !(r && r.status === "rejected"); });
 }
 function narrOk(k) { var r = rev7("narr__" + k); return !(r && r.status === "rejected"); }
 function rev7Note(key) {
@@ -6693,16 +6712,29 @@ async function rev7Init() {
 function rev7Save(key, status, note) {
   if (!REV7DB || !REV7OWNER) return;
   var ref = REV7DB.collection("reviews").doc(key);
-  (status ? ref.set({ status: status, note: note || "", at: new Date().toISOString() }) : ref.delete())
+  var doc = { status: status, note: note || "", at: new Date().toISOString(), pack: D.meta.built };
+  var x = key.indexOf("narr__") === 0 ? null : bg7ev(key.split("__")[0]);
+  if (x && x.text) doc.text = x.text;   // the review binds to this event text
+  (status ? ref.set(doc) : ref.delete())
     .catch(function (e) { REV7MSG = "Kaydedilemedi: " + ((e && e.message) || "bilinmeyen hata"); route(); });
 }
+document.addEventListener("click", function (ev) {
+  var x = ev.target.closest && ev.target.closest("[data-revexport]"); if (!x || !REV7OWNER) return;
+  ev.preventDefault();
+  var out = reviewsExport(REV7, D.meta.built);
+  out.reviews.forEach(function (r) { if (r.text == null && r.key.indexOf("narr__") !== 0) { var e = bg7ev(r.key.split("__")[0]); r.text = e && e.text || null; } });
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(out, null, 1)], { type: "application/json" }));
+  a.download = "reviews-" + String(D.meta.built || "").slice(0, 10) + ".json";
+  document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(a.href);
+});
 document.addEventListener("click", function (ev) {
   var b = ev.target.closest && ev.target.closest("[data-rev]"); if (!b) return;
   ev.preventDefault();
   var key = b.getAttribute("data-rev"), act = b.getAttribute("data-act");
   var inp = document.getElementById("rn-" + key);
   if (act === "correct" && !(inp && inp.value.trim())) { if (inp) inp.focus(); return; }
-  rev7Save(key, act === "undo" ? null : act === "reject" ? "rejected" : "corrected", inp ? inp.value.trim() : "");
+  rev7Save(key, act === "undo" ? null : act === "reject" ? "rejected" : act === "approve" ? "verified" : "corrected", inp ? inp.value.trim() : "");
 });
 function bg7CardLine(e) {
   var x = bg7ev(e.i); if (!x || x.status !== "review_complete") return "";

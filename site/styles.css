@@ -2766,3 +2766,11 @@ html.menu-lock,html.menu-lock body{overflow:hidden}
 @media (max-width:600px){.bx-b{min-height:44px;min-width:44px;padding:12px 4px}}
 .an-toc a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;text-decoration:none}
 .bx-t[hidden]{display:none}
+
+/* Review status badges: AI onaylı / İnsan kontrolü bekliyor / İnsan doğruladı / İnsan düzeltti */
+.rv-badge{display:inline-block;font-family:var(--ff-m);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+  padding:2px 7px;border:1px solid var(--line2);border-radius:999px;color:var(--ink2);vertical-align:middle;white-space:nowrap}
+.rv-badge.rv-ai_onayli{border-style:dashed}
+.rv-badge.rv-insan_bekliyor{color:var(--muted);border-style:dotted}
+.rv-badge.rv-dogrulandi,.rv-badge.rv-duzeltildi{color:var(--paper);background:var(--ink);border-color:var(--ink)}
+.rv-line{font-family:var(--ff-m);font-size:12px;color:var(--muted);margin:0 0 10px}

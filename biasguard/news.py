@@ -270,7 +270,8 @@ def apply(run: Path, card_status_path: Path | None = None, pack_version: str = "
         # outlet -> card id -> events where that outlet's headline was quoted as evidence (AI output, not a verdict)
         "outlets": _outlet_counts(done),
     }
-    return {"summary": summary, "events": results, "reviewQueue": review_queue(done, reviewed_counts or {})}
+    return {"pack": pack_version, "summary": summary, "events": results,
+            "reviewQueue": review_queue(done, reviewed_counts or {})}
 
 
 BANNED = ("bağlam gerekli", "desteklendi", "uncertain")

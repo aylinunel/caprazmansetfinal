@@ -12,6 +12,21 @@ It does not judge who is right. It shows who wrote what, and how.
 
 ---
 
+## What is new in 8.2
+
+Every AI finding now carries a review status. **AI onaylı** means the AI reviewer (named AI: artificial
+intelligence, and the initials of Abdi İpekçi) left the finding standing: the skeptical review did not
+dismiss it, or confirmed at least one of the concept's conditions. It is a rule, not a measured accuracy.
+**İnsan kontrolü bekliyor** means the AI was undecided and a person should look. After review a finding
+shows **İnsan doğruladı** or **İnsan düzeltti**; a rejected finding disappears. On the 150 reviewed events:
+257 findings are AI onaylı and 182 wait for a person; none has been reviewed by a person yet.
+
+The site owner can now approve a finding as well as correct or reject it, and download all reviews as a
+file. `python -m validation.feedback import` turns that file into labels, and `status` computes per-card
+statistics that can demote or hide a concept (`validation/reference/gates.json`). A separate offline lab,
+`validation/biaslab/`, tests BiasGuard on simulated cases ([`validation/README.md`](validation/README.md)).
+The data, events and analyses are those of 8.1.
+
 ## What is new in 8.1
 
 The collector ([`aylinunel/turkish-news-scraper`](https://github.com/aylinunel/turkish-news-scraper), 72-publisher registry) now supplies 51 outlets through 13 November. Every analysis was recomputed and the site has a page, **8.1’de yeni** (`#/yenilikler`), comparing each result with 8.0. `python -m capraz_pipeline.whatsnew --old <8.0 core.bin> --new <8.1 core.bin>` regenerates it. Anlatı haritası covers 1–13 November (AI-coded, marked YZ); BiasGuard still reviews only the 8.0 events. A Parti is a minor party and never ranks as an outlet's nearest party. Anlatı haritası is its own topic (`#/anlati`: Nasıl okunur, Sezon haritası, Olay haritası); bias names from the AI review carry a short inline explanation.

@@ -349,3 +349,52 @@ test("anPage: which Anlatı page a query shows", () => {
   assert.equal(L.anPage({ t: "bogus" }), "nasil");
   assert.equal(L.anPage({ t: "nasil", n: "x" }), "nasil");
 });
+
+/* Review status badges (docs/superpowers/plans/2026-11-14-review-status-and-feedback.md) */
+const RV_F = { id: "framing-effect", tier: "ai_confident" }, RV_N = { id: "salience-bias", tier: "needs_human" };
+const rv = (status, extra) => Object.assign({ status, note: "", pack: "p1", text: "h1" }, extra || {});
+test("verified review on the current pack shows İnsan doğruladı", () => {
+  assert.equal(L.reviewState(RV_F, rv("verified"), "p1", "h1").label, "İnsan doğruladı");
+});
+test("corrected review shows İnsan düzeltti", () => {
+  assert.equal(L.reviewState(RV_N, rv("corrected", { note: "x" }), "p1", "h1").label, "İnsan düzeltti");
+});
+test("rejected review marks the finding rejected", () => {
+  assert.equal(L.reviewState(RV_F, rv("rejected"), "p1", "h1").state, "reddedildi");
+});
+test("review from another pack is ignored and the tier is shown", () => {
+  assert.equal(L.reviewState(RV_F, rv("rejected", { pack: "p0" }), "p1", "h1").state, "ai_onayli");
+  assert.equal(L.reviewValid(rv("rejected", { pack: "p0" }), "p1", "h1"), false);
+});
+test("review on changed event text is ignored", () => {
+  assert.equal(L.reviewState(RV_N, rv("verified", { text: "h0" }), "p1", "h1").state, "insan_bekliyor");
+});
+test("unreviewed ai_confident shows AI onaylı with the fixed tooltip", () => {
+  const s = L.reviewState(RV_F, null, "p1", "h1");
+  assert.equal(s.label, "AI onaylı");
+  assert.equal(s.tip, "AI bu örüntüyü olası buldu: sorgulayan inceleme reddetmedi ya da koşullardan en az birini doğruladı. Kesin değil; henüz insan kontrolünden geçmedi.");
+});
+test("unreviewed needs_human shows İnsan kontrolü bekliyor", () => {
+  assert.equal(L.reviewState(RV_N, null, "p1", "h1").label, "İnsan kontrolü bekliyor");
+});
+test("finding without a tier (older data) waits for a person", () => {
+  assert.equal(L.reviewState({ id: "x" }, null, "p1", "h1").state, "insan_bekliyor");
+});
+test("review saved before packs were recorded still applies", () => {
+  assert.equal(L.reviewState(RV_F, { status: "corrected", note: "n" }, "p1", "h1").state, "duzeltildi");
+});
+test("reviewsExport carries pack and text for every review", () => {
+  const out = L.reviewsExport({ "e1__framing-effect": rv("verified", { at: "t" }), "narr__k": { status: "rejected", note: "", at: "t" } }, "p1");
+  assert.equal(out.pack, "p1");
+  assert.deepEqual(out.reviews.map((r) => r.key), ["e1__framing-effect", "narr__k"]);
+  assert.deepEqual(Object.keys(out.reviews[0]).sort(), ["at", "key", "note", "pack", "status", "text"]);
+});
+test("reviewOrder sorts human-checked first, waiting last", () => {
+  const states = ["insan_bekliyor", "ai_onayli", "duzeltildi", "dogrulandi"];
+  assert.deepEqual(states.slice().sort((a, b) => L.reviewOrder(a) - L.reviewOrder(b)), ["dogrulandi", "duzeltildi", "ai_onayli", "insan_bekliyor"]);
+});
+test("reviewCounts line lists only non-zero groups", () => {
+  assert.equal(L.reviewCountsLine({ ai_onayli: 2, insan_bekliyor: 1 }), "2 bulgu AI onaylı · 1 bulgu insan kontrolü bekliyor");
+  assert.equal(L.reviewCountsLine({ insan_bekliyor: 3 }), "3 bulgu insan kontrolü bekliyor");
+  assert.equal(L.reviewCountsLine({}), "");
+});

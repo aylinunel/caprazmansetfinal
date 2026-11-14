@@ -75,12 +75,12 @@ function olayHeadlines(e) {
 }
 
 function olayFinding(f, x) {
-  var t = yzText(f, rev7(x.event + "__" + f.id));
+  var t = yzText(f, rev7For(x, f));
   if (!t) return "";
   var qs = (f.evidence || []).slice(0, 3).map(function (q) {
     return "<li>“" + esc(q.q) + "”" + ((q.o || []).length ? " — " + q.o.map(function (o) { return esc(srcName(o)); }).join(", ") : "") + "</li>";
   }).join("");
-  return '<div class="v7-yzf"><h4>' + biasChip(f) + "</h4>" +
+  return '<div class="v7-yzf"><h4>' + biasChip(f) + " " + rev7Badge(x, f) + "</h4>" +
     (t.noticed ? "<p><b>" + (t.editor ? "Editör notu" : "Ne fark etti") + ".</b> " + esc(t.noticed) + "</p>" : "") +
     (qs ? "<ul>" + qs + "</ul>" : "") +
     (t.why ? "<p><b>Neden kesin değil.</b> " + esc(t.why) + "</p>" : "") + "</div>";
@@ -89,8 +89,9 @@ function olayFinding(f, x) {
 function olayReview(e) {
   var x = bg7ev(e.i);
   if (!x || x.status !== "review_complete") return "";
-  var h = bg7Live(x).map(function (f) { return olayFinding(f, x); }).join("");
-  return h ? yzBlock(h, "Bilişsel inceleme") : "";
+  var h = rev7Sorted(x).map(function (f) { return olayFinding(f, x); }).join("");
+  var line = rev7CountsLine(x);
+  return h ? yzBlock((line ? '<p class="rv-line">' + esc(line) + ".</p>" : "") + h, "Bilişsel inceleme") : "";
 }
 
 function olayTiming(e) {

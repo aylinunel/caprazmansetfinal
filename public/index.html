@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Çapraz Manşet 8.1</title>
+<title>Çapraz Manşet 8.2</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%20width%3D%22160%22%20height%3D%22160%22%20role%3D%22img%22%20aria-label%3D%22Small-size%20mark%3A%20%C3%87%20with%20a%20wider%20cut%2C%20for%2016%20to%2024%20pixel%20use%22%3E%3Crect%20width%3D%22160%22%20height%3D%22160%22%20rx%3D%2218%22%20fill%3D%22%231B1813%22%3E%3C/rect%3E%3Cpath%20d%3D%22M65%2064.9%2041.2%2069.1Q41.2%2067.9%2041.2%2066.6Q41.2%2056.7%2043.7%2047.9Q46.2%2039.1%2051.5%2032.4Q56.7%2025.8%2065%2022Q73.3%2018.2%2084.9%2018.2Q95%2018.2%20102.2%2021.1Q109.5%2023.9%20113.9%2028.9Q118.3%2033.9%20120%2040.3Q121.7%2046.8%20120.9%2053.8L100%2056.3Q100.3%2050.3%2098.5%2045.9Q96.8%2041.6%2093.2%2039.2Q89.6%2036.8%2084.2%2036.8Q79.6%2036.8%2076%2038.6Q72.4%2040.5%2070%2044.1Q67.5%2047.7%2066.3%2053.1Q65.1%2058.2%2065%2064.9Z%22%20fill%3D%22%23F5F0E3%22%3E%3C/path%3E%3Cpath%20d%3D%22M70%20114.5Q64.6%20113.6%2060.2%20111.6Q51.8%20107.8%2046.5%20101.1Q41.2%2094.4%2038.7%2085.8Q37.8%2082.4%2037.2%2078.9L60.6%2074.8Q61.1%2079%2062.3%2082.6Q64.6%2089.4%2069.2%2093.1Q73.8%2096.8%2080.8%2096.8Q87.2%2096.8%2090.9%2093.8Q94.7%2090.9%2096.2%2085.7Q97.7%2080.5%2097.2%2074.1L118.6%2075.9Q119.3%2083.6%20117.5%2090.7Q115.8%2097.8%20111.2%20103.4Q106.7%20109%2099.1%20112.2Q92.7%20114.9%2083.9%20115.3L83.5%20118.1Q88.5%20118.1%2092.1%20119Q95.8%20120%2097.8%20122.2Q99.8%20124.4%2099.8%20128.1Q99.8%20133.9%2095.8%20137Q91.9%20140.2%2085.6%20141.2Q79.4%20142.3%2072.8%20141.4Q66.2%20140.5%2060.9%20137.9L64.1%20126Q66.1%20127.3%2069.7%20128.3Q73.2%20129.3%2076.9%20129.7Q80.7%20130.1%2083.2%20129.3Q85.8%20128.6%2085.8%20126.3Q85.8%20125.6%2085.3%20124.8Q84.7%20123.9%2083%20123.3Q81.4%20122.7%2078%20122.4Q74.6%20122.1%2068.9%20122.4Z%22%20fill%3D%22%23F5F0E3%22%3E%3C/path%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2778,6 +2778,14 @@ html.menu-lock,html.menu-lock body{overflow:hidden}
 @media (max-width:600px){.bx-b{min-height:44px;min-width:44px;padding:12px 4px}}
 .an-toc a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;text-decoration:none}
 .bx-t[hidden]{display:none}
+
+/* Review status badges: AI onaylı / İnsan kontrolü bekliyor / İnsan doğruladı / İnsan düzeltti */
+.rv-badge{display:inline-block;font-family:var(--ff-m);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+  padding:2px 7px;border:1px solid var(--line2);border-radius:999px;color:var(--ink2);vertical-align:middle;white-space:nowrap}
+.rv-badge.rv-ai_onayli{border-style:dashed}
+.rv-badge.rv-insan_bekliyor{color:var(--muted);border-style:dotted}
+.rv-badge.rv-dogrulandi,.rv-badge.rv-duzeltildi{color:var(--paper);background:var(--ink);border-color:var(--ink)}
+.rv-line{font-family:var(--ff-m);font-size:12px;color:var(--muted);margin:0 0 10px}
 
 </style>
 </head>
@@ -11099,6 +11107,10 @@ function pgBG7() {
     [S.uncertain, "bağlam gerekli / ayrışma"], [S.quotesVerified, "doğrulanmış alıntı"]
   ].map(function (x) { return '<div class="mh-stat" style="background:var(--surface)"><div class="v" style="color:var(--ink)">' + x[0] +
     '</div><div class="l" style="color:var(--muted)">' + esc(x[1]) + "</div></div>"; }).join("") + "</div>";
+  if (S.aiConfident != null) h += '<p class="xsmall" style="margin-top:10px">İnceleme durumu: ' + S.aiConfident + " bulgu AI onaylı, " + S.needsHuman +
+    " bulgu insan kontrolü bekliyor" + (S.auditSample ? "; AI onaylı bulgulardan " + S.auditSample + " tanesi rastgele denetim örneğinde" : "") + ".</p>";
+  if (REV7OWNER) h += '<p style="margin-top:10px"><button class="chip" data-revexport="1">İncelemeleri indir</button> ' +
+    '<span class="xsmall">Onay, düzeltme ve retleri bir dosya olarak indirir; bu dosya öğrenme döngüsünün verisidir.</span></p>';
   if (S.breakerTripped) h += '<div class="note warn" style="margin-top:12px">Art arda 5 inceleme grubu başarısız olduğu için çalışma durduruldu; kalan olaylar “çalıştırılmadı” olarak işaretlendi.</div>';
   h += '<section class="sec"><h2>Kavramlar</h2><p class="sub">Tamamlanan incelemelerde bir kavramın kaç olayda desteklendiği ya da bağlam istediği. ' +
     "Kavram adları ve tanımları kaynak katalogdaki gibidir (The Decision Lab’den uyarlama).</p>";
@@ -11124,16 +11136,17 @@ function pgBG7() {
 }
 function bg7Ctl(key) {
   var r = rev7(key);
-  var st = r ? (r.status === "rejected" ? "Reddedildi — kamu sayfalarında görünmüyor" : "Düzeltildi: " + esc(r.note)) : "Yayında (YZ etiketiyle)";
+  var st = r ? (r.status === "rejected" ? "Reddedildi — kamu sayfalarında görünmüyor" : r.status === "verified" ? "İnsan doğruladı" : "Düzeltildi: " + esc(r.note)) : "Yayında (insan kontrolünden geçmedi)";
   return '<div class="rev-ctl"><span class="cm3-sub">' + st + "</span>" + (REV7OWNER ?
     '<input id="rn-' + esc(key) + '" placeholder="Düzeltme notu" aria-label="Düzeltme notu" value="' + esc(r && r.note || "") + '">' +
+    (key.indexOf("narr__") === 0 ? "" : '<button class="chip" data-rev="' + esc(key) + '" data-act="approve">Onayla</button>') +
     '<button class="chip" data-rev="' + esc(key) + '" data-act="correct">Düzelt</button>' +
     '<button class="chip" data-rev="' + esc(key) + '" data-act="reject">Reddet</button>' +
     (r ? '<button class="chip" data-rev="' + esc(key) + '" data-act="undo">Geri al</button>' : "") : "") + "</div>";
 }
 function bg7AdminFindings(x) {
   return (x.supported || []).concat(x.uncertain || []).map(function (f) {
-    return '<div class="yz" style="margin-top:6px">' + bg7finding(f, x.event) + bg7Ctl(x.event + "__" + f.id) + "</div>"; }).join("");
+    return '<div class="yz" style="margin-top:6px">' + rev7Badge(x, f) + bg7finding(f, x.event) + bg7Ctl(x.event + "__" + f.id) + "</div>"; }).join("");
 }
 function bg7NarrAdmin() {
   var ks = Object.keys(D.N).filter(function (k) { return D.N[k].status === "agent_coded"; });
@@ -11192,8 +11205,22 @@ function bg7AiTag() { return yzBadge(); }
    them; decisions live in the artifact's shared store ("reviews"), readable by all, writable by the owner. */
 var REV7 = {}, REV7OWNER = false, REV7DB = null, REV7MSG = "";
 function rev7(key) { return REV7[key] || null; }
+/* A finding's human review, only if it was made on this data pack and this event text. */
+function rev7For(x, f) { var r = rev7(x.event + "__" + f.id); return reviewValid(r, D.meta.built, x.text) ? r : null; }
+function rev7State(x, f) { return reviewState(f, rev7(x.event + "__" + f.id), D.meta.built, x.text); }
+function rev7Badge(x, f) {
+  var s = rev7State(x, f);
+  return '<span class="rv-badge rv-' + s.state + '" title="' + esc(s.tip) + '">' + esc(s.label) + "</span>";
+}
+function rev7Sorted(x) {
+  return bg7Live(x).slice().sort(function (a, b) { return reviewOrder(rev7State(x, a).state) - reviewOrder(rev7State(x, b).state); });
+}
+function rev7CountsLine(x) {
+  var c = {}; bg7Live(x).forEach(function (f) { var st = rev7State(x, f).state; c[st] = (c[st] || 0) + 1; });
+  return reviewCountsLine(c);
+}
 function bg7Live(x) {
-  return (x.supported || []).concat(x.uncertain || []).filter(function (f) { var r = rev7(x.event + "__" + f.id); return !(r && r.status === "rejected"); });
+  return (x.supported || []).concat(x.uncertain || []).filter(function (f) { var r = rev7For(x, f); return !(r && r.status === "rejected"); });
 }
 function narrOk(k) { var r = rev7("narr__" + k); return !(r && r.status === "rejected"); }
 function rev7Note(key) {
@@ -11213,16 +11240,29 @@ async function rev7Init() {
 function rev7Save(key, status, note) {
   if (!REV7DB || !REV7OWNER) return;
   var ref = REV7DB.collection("reviews").doc(key);
-  (status ? ref.set({ status: status, note: note || "", at: new Date().toISOString() }) : ref.delete())
+  var doc = { status: status, note: note || "", at: new Date().toISOString(), pack: D.meta.built };
+  var x = key.indexOf("narr__") === 0 ? null : bg7ev(key.split("__")[0]);
+  if (x && x.text) doc.text = x.text;   // the review binds to this event text
+  (status ? ref.set(doc) : ref.delete())
     .catch(function (e) { REV7MSG = "Kaydedilemedi: " + ((e && e.message) || "bilinmeyen hata"); route(); });
 }
+document.addEventListener("click", function (ev) {
+  var x = ev.target.closest && ev.target.closest("[data-revexport]"); if (!x || !REV7OWNER) return;
+  ev.preventDefault();
+  var out = reviewsExport(REV7, D.meta.built);
+  out.reviews.forEach(function (r) { if (r.text == null && r.key.indexOf("narr__") !== 0) { var e = bg7ev(r.key.split("__")[0]); r.text = e && e.text || null; } });
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(out, null, 1)], { type: "application/json" }));
+  a.download = "reviews-" + String(D.meta.built || "").slice(0, 10) + ".json";
+  document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(a.href);
+});
 document.addEventListener("click", function (ev) {
   var b = ev.target.closest && ev.target.closest("[data-rev]"); if (!b) return;
   ev.preventDefault();
   var key = b.getAttribute("data-rev"), act = b.getAttribute("data-act");
   var inp = document.getElementById("rn-" + key);
   if (act === "correct" && !(inp && inp.value.trim())) { if (inp) inp.focus(); return; }
-  rev7Save(key, act === "undo" ? null : act === "reject" ? "rejected" : "corrected", inp ? inp.value.trim() : "");
+  rev7Save(key, act === "undo" ? null : act === "reject" ? "rejected" : act === "approve" ? "verified" : "corrected", inp ? inp.value.trim() : "");
 });
 function bg7CardLine(e) {
   var x = bg7ev(e.i); if (!x || x.status !== "review_complete") return "";
@@ -11824,8 +11864,41 @@ function anPage(q) {
   return !q.t && (q.n || q.w || q.v) ? "olay" : "nasil";
 }
 
+/* Review status of an AI finding. The reviewer is named AI (artificial intelligence, and the initials of
+   Abdi İpekçi). "AI onaylı" is a rule, not a score: see biasguard/routing.py. A human review counts only on
+   the data pack and event text it was made on. */
+var REVIEW_LABEL = { dogrulandi: "İnsan doğruladı", duzeltildi: "İnsan düzeltti", ai_onayli: "AI onaylı",
+  insan_bekliyor: "İnsan kontrolü bekliyor", reddedildi: "Reddedildi" };
+var REVIEW_TIP = { ai_onayli: "AI bu örüntüyü olası buldu: sorgulayan inceleme reddetmedi ya da koşullardan en az birini doğruladı. Kesin değil; henüz insan kontrolünden geçmedi.",
+  insan_bekliyor: "AI bu bulguda kararsız kaldı; bir insanın bakması bekleniyor.",
+  dogrulandi: "Bir insan bu bulguyu inceledi ve doğruladı.", duzeltildi: "Bir insan bu bulguyu inceledi ve düzeltti.",
+  reddedildi: "Bir insan bu bulguyu reddetti; kamu sayfalarında görünmez." };
+var REVIEW_STATUS = { verified: "dogrulandi", corrected: "duzeltildi", rejected: "reddedildi" };
+function reviewValid(review, packVersion, textHash) {
+  if (!review || !REVIEW_STATUS[review.status]) return false;
+  // Reviews saved before packs were recorded carry neither field and still apply.
+  return (review.pack == null || review.pack === packVersion) && (review.text == null || review.text === textHash);
+}
+function reviewState(finding, review, packVersion, textHash) {
+  var state = reviewValid(review, packVersion, textHash) ? REVIEW_STATUS[review.status]
+    : finding && finding.tier === "ai_confident" ? "ai_onayli" : "insan_bekliyor";
+  return { state: state, label: REVIEW_LABEL[state], tip: REVIEW_TIP[state] };
+}
+function reviewOrder(state) { return ["dogrulandi", "duzeltildi", "ai_onayli", "insan_bekliyor", "reddedildi"].indexOf(state); }
+function reviewCountsLine(counts) {
+  return [["dogrulandi", "insan doğruladı"], ["duzeltildi", "insan düzeltti"], ["ai_onayli", "AI onaylı"], ["insan_bekliyor", "insan kontrolü bekliyor"]]
+    .filter(function (x) { return counts[x[0]]; })
+    .map(function (x) { return counts[x[0]] + " bulgu " + x[1]; }).join(" · ");
+}
+function reviewsExport(reviews, packVersion) {
+  return { pack: packVersion, exported_at: new Date().toISOString(), reviews: Object.keys(reviews).sort().map(function (key) {
+    var r = reviews[key];
+    return { key: key, status: r.status, note: r.note || "", at: r.at || "", pack: r.pack == null ? packVersion : r.pack, text: r.text == null ? null : r.text };
+  }) };
+}
+
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
+  module.exports = { reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
     axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS };
 }
@@ -13722,12 +13795,12 @@ function olayHeadlines(e) {
 }
 
 function olayFinding(f, x) {
-  var t = yzText(f, rev7(x.event + "__" + f.id));
+  var t = yzText(f, rev7For(x, f));
   if (!t) return "";
   var qs = (f.evidence || []).slice(0, 3).map(function (q) {
     return "<li>“" + esc(q.q) + "”" + ((q.o || []).length ? " — " + q.o.map(function (o) { return esc(srcName(o)); }).join(", ") : "") + "</li>";
   }).join("");
-  return '<div class="v7-yzf"><h4>' + biasChip(f) + "</h4>" +
+  return '<div class="v7-yzf"><h4>' + biasChip(f) + " " + rev7Badge(x, f) + "</h4>" +
     (t.noticed ? "<p><b>" + (t.editor ? "Editör notu" : "Ne fark etti") + ".</b> " + esc(t.noticed) + "</p>" : "") +
     (qs ? "<ul>" + qs + "</ul>" : "") +
     (t.why ? "<p><b>Neden kesin değil.</b> " + esc(t.why) + "</p>" : "") + "</div>";
@@ -13736,8 +13809,9 @@ function olayFinding(f, x) {
 function olayReview(e) {
   var x = bg7ev(e.i);
   if (!x || x.status !== "review_complete") return "";
-  var h = bg7Live(x).map(function (f) { return olayFinding(f, x); }).join("");
-  return h ? yzBlock(h, "Bilişsel inceleme") : "";
+  var h = rev7Sorted(x).map(function (f) { return olayFinding(f, x); }).join("");
+  var line = rev7CountsLine(x);
+  return h ? yzBlock((line ? '<p class="rv-line">' + esc(line) + ".</p>" : "") + h, "Bilişsel inceleme") : "";
 }
 
 function olayTiming(e) {
@@ -15111,6 +15185,7 @@ function yzMethodHtml() {
     "<li><b>Birleştirme:</b> iki inceleyici de kavramı dışlıyorsa kavram gösterilmez; en az biri koşulları metinde görüyorsa ya da kararsızsa kavram o olayda dikkat çeken olarak işaretlenir.</li></ol>" +
     "<h3>Herkese açık metin</h3><p>Her kavram için sitede görünen metin iki cümledir: <b>Ne fark etti</b> ve <b>Neden kesin değil</b>. Bu iki cümle, savunan ve sorgulayan inceleyicinin uzun metinlerinden bir yapay zekâ geçişiyle bir kez üretilir ve veri paketinde saklanır. Uzun inceleyici metinleri yalnızca Yönetim’de görünür." +
     (S ? " Bu yapıda " + trN(S.completed) + " olay incelendi; " + trN(S.supported + S.uncertain) + " kavram–olay eşleşmesi dikkat çekti, " + trN(S.quotesVerified) + " alıntı doğrulandı, " + trN(S.rejectedQuotes) + " alıntı reddedildi." : "") + "</p>" +
+    "<h3>İnceleme durumu</h3><p>Her bulgunun yanında dört etiketten biri bulunur. <b>AI onaylı:</b> AI bu örüntüyü olası buldu; sorgulayan inceleme onu reddetmedi ya da koşullarından en az birini doğruladı. Bu bir ölçülmüş doğruluk ya da olasılık değildir, bulgu henüz insan kontrolünden geçmemiştir. <b>İnsan kontrolü bekliyor:</b> AI kararsız kaldı ve bir insanın bakması bekleniyor. <b>İnsan doğruladı</b> ve <b>İnsan düzeltti:</b> bir insan bulguyu inceledi. Reddedilen bulgu sayfalardan kalkar. AI onaylı bulguların küçük bir bölümü rastgele seçilip yine de insan denetimine gönderilir. Bulgular eksik olabilir: bir olayda bulgu görünmemesi, o olayda örüntü olmadığı anlamına gelmez.</p>" +
     "<h3>Editör incelemesi</h3><p>Site sahibi, Yönetim › Bilişsel inceleme ekranında her yapay zekâ sonucunu reddedebilir ya da kısa bir düzeltme notu yazabilir. Sonuç, reddedilene ya da düzeltilene kadar “YZ” etiketiyle yayında kalır; reddedilen sonuç sayfalardan ve sayımlardan çıkar, düzeltilen sonucun yanında düzeltme notu görünür. Yapay zekâ çıktısının hiçbiri baştan insan tarafından onaylanmaz.</p>" +
     "<h3>Sınırlılıklar</h3><p>Aynı temel modelin iki inceleyicisi istatistiksel olarak bağımsız değildir. Alıntı denetimi alıntının yerini kanıtlar, kavramın anlamca doğru olduğunu kanıtlamaz. Katalog karar süreçleri için yazılmıştır; haber başlıklarına uygulanması bu sürümün bir varsayımıdır. " +
     (M ? "Aracın kendi sınamasında " + M.cases + " senaryonun " + M.primaryCompleted + "’ü tamamlanmış, tamamlananlarda beklenen " + M.recall.of + " etiketin " + M.recall.captured + "’ü yakalanmıştır; etiketler insan doğrulamasından geçmemiştir." : "") + "</p>";

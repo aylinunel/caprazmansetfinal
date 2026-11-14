@@ -9,7 +9,7 @@ const clicks = [];
 for (let ci = argv.indexOf("--click"); ci >= 0; ci = argv.indexOf("--click")) { const v = argv.splice(ci, 2)[1], k = v.indexOf(":"); clicks.push([v.slice(0, k), v.slice(k + 1)]); }
 const [siteDir, outDir, ...argRoutes] = argv;
 if (!siteDir || !outDir) { console.log("usage: node smoke.cjs <siteDir> <outDir> [routes...]"); process.exit(0); }
-const ROUTES = argRoutes.length ? argRoutes : ["#/", "#/olaylar", "#/olay?e=s4374", "#/oruntu?q=secim", "#/oruntu?q=dil",
+const ROUTES = argRoutes.length ? argRoutes : ["#/", "#/olaylar", "#/olay?e=s4374", "#/olay?e=s5031", "#/oruntu?q=secim", "#/oruntu?q=dil",
   "#/oruntu?q=anlati", "#/oruntu?q=hiz", "#/kurumlar", "#/kurum?s=takvim", "#/kurum?s=aa", "#/kurumlar?t=karsilastir&a=takvim&b=birgun", "#/karsilastir", "#/yontem", "#/ilan", "#/benim", "#/yonetim?t=bilissel"];
 const TYPES = { ".html": "text/html; charset=utf-8", ".js": "text/javascript", ".bin": "application/octet-stream", ".json": "application/json" };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -73,6 +73,21 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       if (n0 === n1) fails.push(`${tag}: topic chip did not change event count (${n0})`);
     }
     if (route.startsWith("#/olay?e=")) {
+      // Review status: every AI finding carries exactly one badge, and no line reports a zero as a result.
+      const hasYz = await page.evaluate(() => { const d = document.querySelector('details.v7-deep[data-deep="yz"]'); if (d) d.open = true; return !!d; });
+      if (hasYz) await sleep(400);   // the block builds on first open
+      const rv = await page.evaluate(() => {
+        const labels = ["AI onaylı", "İnsan kontrolü bekliyor", "İnsan doğruladı", "İnsan düzeltti"];
+        const fs = [...document.querySelectorAll(".v7-yzf")];
+        const bad = fs.filter((f) => { const b = [...f.querySelectorAll(".rv-badge")]; return b.length !== 1 || !labels.includes(b[0].textContent.trim()) || !b[0].title; }).length;
+        const line = (document.querySelector(".rv-line") || {}).textContent || "";
+        return { n: fs.length, bad, zero: /(^|\D)0 bulgu/.test(line), line };
+      });
+      if (hasYz && !rv.n) fails.push(`${tag}: AI review block opened but no finding rendered`);
+      if (route === "#/olay?e=s5031" && rv.n < 3) fails.push(`${tag}: expected the three reviewed findings of s5031, saw ${rv.n}`);
+      if (rv.bad) fails.push(`${tag}: ${rv.bad} of ${rv.n} AI finding(s) without exactly one review badge`);
+      if (rv.zero) fails.push(`${tag}: review line reports a zero count`);
+      if (w === 1280 && theme === "light") console.log(`review status on ${route}: ${rv.n} findings; ${rv.line}`);
       const ok = await page.evaluate(() => {
         const q = (s) => document.querySelector(s);
         const seq = [q(".xstory .xh1") || q(".phead"), q(".v7-kisaca"), q(".xspwrap"), q("#alist"), q(".v7-time")]
@@ -140,6 +155,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       });
       if (bad) fails.push(`${tag}: kurum ${bad}`);
     }
+    if (route === "#/yontem" && !(await page.evaluate(() => document.body.textContent.includes("Bu bir ölçülmüş doğruluk ya da olasılık değildir")))) fails.push(`${tag}: method page lacks the AI onaylı explanation`);
     if (route.startsWith("#/yontem")) {
       const bad = await page.evaluate((r) => {
         const ids = ["veri", "olay", "dil", "anlati", "yz", "yzicerik", "turkiye", "kavramlar", "sinir", "kaynak"];
