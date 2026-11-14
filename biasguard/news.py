@@ -17,13 +17,16 @@ from __future__ import annotations
 
 import argparse
 import gzip
+import hashlib
 import json
 import re
 from pathlib import Path
 from typing import Any
 
+from .catalog import card_hash
 from .engine import BiasGuard
-from .providers import ProviderCallError, _selector_system_prompt, _system_prompt, _selector_schema
+from .providers import PROMPTS_VERSION, ProviderCallError, _selector_system_prompt, _system_prompt, _selector_schema
+from .routing import in_audit_sample, review_queue, tier
 from .schemas import build_reviewer_schema
 
 MAX_CANDIDATES = 6  # one reviewer batch per role; the 2026-10-28 run lost a case to finish_reason=length
@@ -186,9 +189,16 @@ def _outlet_counts(done: list[dict]) -> dict[str, dict[str, int]]:
     return out
 
 
-def apply(run: Path) -> dict[str, Any]:
+def apply(run: Path, card_status_path: Path | None = None, pack_version: str = "",
+          reviewed_counts: dict[str, int] | None = None) -> dict[str, Any]:
     bg = BiasGuard()
     results = []
+    # Card statuses come from human feedback (validation/feedback); only entries marked applied count.
+    statuses = {}
+    if card_status_path and Path(card_status_path).exists():
+        statuses = {cid: c["status"] for cid, c in json.loads(Path(card_status_path).read_text())["cards"].items()
+                    if c.get("applied")}
+    hidden_by_gate = 0
     tripped = (run / "BREAKER_TRIPPED").exists()  # written by the dispatcher when it stopped early
     for it in _inputs(run):
         ev = it["event"]
@@ -206,12 +216,28 @@ def apply(run: Path) -> dict[str, Any]:
                                                                       for x in f["evidence"]],
                           "mechanisms": f["mechanisms"], "alternatives": f["alternative_explanations"],
                           "missing": f["missing_context"]}
+        by_role = {o["role"]: {a["card_id"]: a for a in o["assessments"]} for o in r.get("reviewer_outcomes", [])}
+
+        def stamped(findings: list[dict]) -> list[dict]:
+            nonlocal hidden_by_gate
+            out = []
+            for f in findings:
+                if statuses.get(f["id"]) == "hidden":
+                    hidden_by_gate += 1
+                    continue
+                level, reasons, basis = tier(by_role["advocate"][f["id"]], by_role["skeptic"][f["id"]],
+                                             statuses.get(f["id"]))
+                out.append({**slim(f), "tier": level, "tier_reasons": reasons, "tier_basis": basis,
+                            "audit": level == "ai_confident" and in_audit_sample(ev, f["id"], pack_version)})
+            return out
+
         results.append({
             "event": ev, "title": it["title"], "outlets": it["outlets"], "status": r["status"],
+            "text": hashlib.sha256(it["text"].encode("utf-8")).hexdigest(),
             "error": r.get("error"), "selected": r.get("candidate_ids"),
-            "supported": [slim(f) for f in r["supported_findings"]],
-            "uncertain": [slim(f) for f in r["uncertain_findings"]],
-            "effects": [slim(f) for f in r["contextual_effects"]],
+            "supported": stamped(r["supported_findings"]),
+            "uncertain": stamped(r["uncertain_findings"]),
+            "effects": stamped(r["contextual_effects"]),
             "downgraded": sum(1 for o in r.get("reviewer_outcomes", []) for a in o["assessments"]
                               if a["original_verdict"] == "supported" and a["verdict"] != "supported"),
             "rejectedQuotes": len(r.get("rejected_evidence", [])),
@@ -219,6 +245,7 @@ def apply(run: Path) -> dict[str, Any]:
         })
     done = [x for x in results if x["status"] == "review_complete"]
     count = lambda k: sum(len(x[k]) for x in done)
+    shown = [f for x in done for k in ("supported", "uncertain", "effects") for f in x[k]]
     by_card: dict[str, dict] = {}
     for x in done:
         for k in ("supported", "uncertain"):
@@ -234,10 +261,16 @@ def apply(run: Path) -> dict[str, Any]:
         "rejectedQuotes": sum(x.get("rejectedQuotes", 0) for x in done),
         "cards": sorted(by_card.values(), key=lambda c: (-c["supported"], -c["uncertain"], c["id"])),
         "catalog": len(bg.cards), "maxCandidates": MAX_CANDIDATES,
+        # Review status (biasguard/routing.py): a rule, not a probability.
+        "aiConfident": sum(f["tier"] == "ai_confident" for f in shown),
+        "needsHuman": sum(f["tier"] == "needs_human" for f in shown),
+        "auditSample": sum(f["audit"] for f in shown), "hiddenByGate": hidden_by_gate,
+        "detector": {"card_hash": card_hash(bg.cards), "prompts_version": PROMPTS_VERSION,
+                     "max_candidates": MAX_CANDIDATES},
         # outlet -> card id -> events where that outlet's headline was quoted as evidence (AI output, not a verdict)
         "outlets": _outlet_counts(done),
     }
-    return {"summary": summary, "events": results}
+    return {"summary": summary, "events": results, "reviewQueue": review_queue(done, reviewed_counts or {})}
 
 
 BANNED = ("bağlam gerekli", "desteklendi", "uncertain")
@@ -340,6 +373,8 @@ def main() -> None:
     p.add_argument("--stage", choices=["select", "review"])
     p.add_argument("--batch", type=int, default=10)
     p.add_argument("--out", type=Path)
+    p.add_argument("--card-status", type=Path, help="validation/reference/card_status.json")
+    p.add_argument("--pack", default="", help="data-pack version; fixes the audit sample")
     a = p.parse_args()
     a.run.mkdir(parents=True, exist_ok=True)
     if a.cmd == "inputs":
@@ -372,7 +407,7 @@ def main() -> None:
         core_path.write_bytes(gzip.compress(json.dumps(core, ensure_ascii=False, separators=(",", ":")).encode()))
         print(core_path)
     else:
-        res = apply(a.run)
+        res = apply(a.run, a.card_status, a.pack)
         (a.out or a.run / "biasguard.json").write_text(json.dumps(res, ensure_ascii=False))
         print(json.dumps({k: v for k, v in res["summary"].items() if k != "cards"}))
 

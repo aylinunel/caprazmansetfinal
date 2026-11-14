@@ -38,6 +38,8 @@ jobs:
           python-version: "3.12"
       - name: BiasGuard offline tests (no provider calls)
         run: python -m unittest biasguard.test_news -v
+      - name: Review-status routing on the recorded run
+        run: python -m unittest biasguard.test_routing -v
 
   site-logic:
     runs-on: ubuntu-latest
