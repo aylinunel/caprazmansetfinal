@@ -1,4 +1,10 @@
-# Human Reference and Publication Gates Implementation Plan
+# Blind Reference Study Implementation Plan — NOT SCHEDULED
+
+> **Not part of the current plans.** On 14 November 2026 the owner decided that labels go public with a
+> status badge and are corrected by reviewers afterwards, and that partial recall is acceptable. The
+> two-reviewer blind study below is therefore optional. It remains the only way to measure recall and
+> an unanchored precision, so it is kept for later. Its Task 1 (label records) and the Wilson bound in
+> Task 6 were carried into `../2026-11-14-review-status-and-feedback.md`.
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 

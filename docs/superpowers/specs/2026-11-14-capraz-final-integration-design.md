@@ -1,13 +1,14 @@
 # Çapraz Manşet Final: integration design
 
 **Date:** 14 November 2026
-**Status:** draft for owner approval. Nothing described here is built yet.
+**Status:** revision 2, after the owner's decisions of 14 November (see "Owner decisions" below). Where an
+earlier section conflicts with that section, the decisions win.
 
 ## Inputs
 
 | Input | What it is | State when read |
 |---|---|---|
-| `aylinunel/caprazmansetnov26` @ `cc872425aa7d8ad1bf1c984cfe21ae91563142fc` | The existing project (8.1): Python batch pipeline, static site, BiasGuard | Read in full; not modified |
+| `aylinunel/caprazmansetnov26`, branch `claude/sleepy-goodall-sd1d9r` @ `49b60bc4fd0407f8f979c08cd7e5ab0641ad040d` (ahead of `main` by site changes only) | The existing project (8.1): Python batch pipeline, static site, BiasGuard | Read in full; not modified |
 | "Claude Code developments…" report | Ten proposed Claude Code controls (A01–A10) and seven required corrections | Written against `caprazmanset-oct26` (React/tRPC/MySQL/pnpm), a different codebase. **Skipped for now at the owner's request; an updated version for the November repo will replace it** |
 | "Integrating the Mesa Cognitive-Bias Simulation Framework…" guide | How to use the Mesa package as an offline validation lab | Read in full |
 | `mesa_bias_expanded_complete.zip` | 138 Mesa mechanisms, 590 checksummed files, 40 MB (35 MB is sweep output) | Unpacked and inspected; its tests were not re-run |
@@ -43,7 +44,6 @@ detector reachable before that date, with the evidence to say how accurate.
 - Changing the pipeline's analysis stages, the site design or the scalable-architecture migration in
   `.10x/decisions/architect/scalable-architecture.md`. Those are separate projects.
 - Calling a model provider. Every plan runs offline; live reviewer runs stay a deliberate owner action.
-- Adding the 26 media-technique concepts to the production catalogue.
 - The report's A05 (TypeScript LSP), A08 (GitHub MCP), A09 (Context7) and A10 (PR Review Toolkit).
   The repo has four small `.ts` files and no TypeScript build; the other three duplicate tools already in use.
 
@@ -57,6 +57,7 @@ These would make the work a failure even if it runs:
 - A Mesa metric averaged into a BiasGuard verdict or shown as a confidence percentage.
 - Any public label that infers intent, mental state or political affiliation.
 - An AI label published as human-verified when it was not.
+- "YZ emin" presented as a measured accuracy or a probability.
 
 ## What the existing project already does
 
@@ -245,11 +246,130 @@ Each is a default the owner can overturn before execution.
 Internal function bodies, test helper layout, Turkish wording of additional template variants beyond the
 ones pinned in the plans, and report formatting.
 
+## Owner decisions (14 November 2026)
+
+1. **Every event starts AI-only.** No human has reviewed anything yet. The public feed shows each
+   finding with a status: **YZ emin** (the AI is confident) or **İnsan kontrolü bekliyor** (needs the
+   verify-and-correct pass). After review it becomes **İnsan doğruladı** or **İnsan düzeltti**; a
+   rejected finding is removed.
+2. **The 26 media concepts are shown as "Medyanın oyunları"**, a group separate from behavioural biases
+   ("Davranışsal yanlılıklar"). They attach to the headlines and ledes that show them.
+3. **Recall can be partial.** No recall floor gates publication. Recall is not measured by the
+   verify pass and the site never claims completeness.
+4. **Gate thresholds:** the owner asked for a recommendation; see "Recommended thresholds".
+5. **Pilot concepts stay:** selective statistics and illusory truth.
+6. **Everything is committed to `aylinunel/caprazmansetfinal`.** `caprazmansetnov26` is read, never written.
+7. **The detector improves as data arrives**, following the `mle-workflow` skill.
+
+### What the published data shows today
+
+The 8.1 BiasGuard run in `core.bin` reviewed 150 of 150 events with no failures and 2,236 verified
+quotes. It produced **0 supported findings and 439 uncertain ones, every one `needs_context`**. The
+detector, given headlines and ledes, never commits to a behavioural bias. Two consequences:
+
+- Under the rule below, no finding is **YZ emin** today; all 439 are **İnsan kontrolü bekliyor**.
+- The first improvement target is not completion (that was the synthetic run's problem) but the fact
+  that behavioural-bias cards ask for evidence a headline cannot contain. Media-technique cards
+  describe what the text itself does, so they are the likelier source of confident findings.
+
+The site already has an owner-only editor review (`rev7` in `site/js/app.js`): findings can be rejected
+or corrected with a note, stored in the artifact's `reviews` collection. Plan 3 extends this rather
+than adding a second mechanism.
+
+### What "YZ emin" means
+
+It is a rule, not a probability. A finding is **YZ emin** when all of these hold:
+
+- advocate and skeptic both returned `supported`;
+- both marked every necessary condition `satisfied`;
+- every quoted span was found exactly in the source;
+- neither reviewer listed missing context, and no evidence for that card was rejected;
+- the card has not been demoted by human feedback (below).
+
+Everything else that is shown is **İnsan kontrolü bekliyor**. The site explains the badge in one line:
+"İki ayrı YZ incelemesi aynı sonuca vardı; henüz insan kontrolünden geçmedi." Two reviews by the same
+model can share the same mistake, so this is agreement, not accuracy. It becomes evidence only as human
+corrections accumulate.
+
+### Recommended thresholds
+
+| Setting | Recommended | Why |
+|---|---|---|
+| Run completion to publish a build | ≥ 95% of events reviewed | Unreviewed events are shown as "incelenemedi", not as clean. The 8.1 run reached 100%; the synthetic run reached 44% |
+| Reviews before a card is judged | 30 human-reviewed findings | Below 30 the interval is too wide to act on |
+| Keep a card eligible for **YZ emin** | one-sided 95% lower bound of precision ≥ 0.85 | With 30 reviews this means at most 1 rejection. A wrong public bias label on a named outlet is the costly mistake, so precision is favoured |
+| Hide a card | precision below 0.50 after ≥ 20 reviews | More often wrong than right |
+| Audit sample | 10% of **YZ emin** findings, at random, go to reviewers anyway | Otherwise the confident tier is never checked and its precision is unknown |
+| Recall floor | none | Owner decision 3 |
+
+Before a card has 30 reviews, the rule above decides alone, and that card's findings are first in the
+review queue. Precision measured from the verify pass is optimistic, because a reviewer who sees the
+AI's answer tends to agree with it; the numbers are labelled "verify-pass precision" wherever shown.
+
+### Medyanın oyunları
+
+- A second catalogue file, `biasguard/data/media_cards.json`, with `entry_type: "media_practice"` and
+  `review_policy: "media_pattern_review"`. The 116 behavioural cards are untouched.
+- 17 of the 26 are assessable from headlines and ledes and get cards. The other 9 need full articles,
+  images or page layout (`source_selection`, `one_sided_sourcing`,
+  `commission_and_omission_of_information`, `contextual_omission`, `size_allocation`, `story_placement`,
+  `picture_selection`, `picture_explanation`, `event_selection`) and are listed on the method page as
+  "bu veriyle ölçülemiyor".
+- A media finding describes what the text does. It never says why, and never names intent.
+- Ten of these concepts are already scored by the deterministic headline scorer
+  (`shared/analysis/rules.cjs`). The two are shown side by side under the same group, each labelled with
+  its method; they are not merged into one score.
+- Every media card goes through the lab as a candidate before it enters the production file.
+
+### How the detector learns (mle-workflow)
+
+No model is trained here. "Learning" means four things that change as reviewed data grows:
+
+1. **Routing statistics.** Per-card verify-pass precision moves cards in and out of **YZ emin**.
+2. **Regression memory.** Every human correction becomes a permanent replay case; a detector change
+   that breaks a previously corrected case is visible before release.
+3. **Detector versions.** Card wording, prompts and retrieval settings change one at a time, each
+   chosen from a measured error cluster and promoted only if it does not regress the replay set.
+4. **New insight.** Reviewers can note a pattern no card covers; recurring notes, and clusters of
+   rejected findings, become proposals for new or split cards, tested in the lab first.
+
+Iteration compact for the first iteration:
+
+```text
+Goal: publish bias and media-technique findings whose status is honest and whose precision rises with review
+Who cares: readers (trust), outlets named in findings (fair treatment), the owner (credibility)
+Decision owner: Aylin Unel
+Action changed by the model: which findings appear on an event page, and under which status badge
+Success metric: verify-pass precision per card, with one-sided 95% lower bound
+Guardrail metrics: run completion; share of findings awaiting review; reviewer workload per build;
+  audit-sample precision of the YZ emin tier; lab forbidden-rate on controls
+Mistake budget: YZ emin tier — at most 1 rejection in 30 audited findings per card
+Unacceptable mistakes: a finding that states intent, mental state or affiliation; a failed review shown
+  as "no bias"; an unreviewed finding shown as human-verified; a quote that is not in the source
+Acceptable mistakes: missed findings (partial recall); findings parked as "İnsan kontrolü bekliyor"
+Assumptions: reviewers are available for the verify pass; headlines and ledes only
+Constraints: no provider calls from CI; reviewer agents run as in biasguard/AGENT_REVIEW.md
+Labels and data snapshot: verify-pass labels keyed by event, card, data-pack version and text hash
+Baseline: 8.1 BiasGuard, 116 cards, prompts as seeded
+Candidate signals: reviewer disagreement, unsatisfied conditions, missing context, per-card history,
+  outlet and topic slices
+Threshold or config plan: the table above, stored in validation/reference/gates.json
+Eval slices: card, card group (behavioural / media), outlet bloc (sol / orta / sağ), month, event size
+Known risks: verify-pass anchoring; same-model reviewer correlation; small counts per card;
+  feedback loop if only non-confident findings are reviewed (hence the audit sample)
+Next experiment: find out why no behavioural finding reaches `supported` (which necessary conditions
+  stay `unknown`), and test media-technique cards as candidates in the lab
+Rollback or fallback: keep the previous biasguard.json and card hash; a build can be reassembled from them
+```
+
 ## Plans
 
 | Plan | File | Depends on |
 |---|---|---|
 | 1. Foundation | `docs/superpowers/plans/2026-11-14-foundation.md` | nothing |
 | 2. Mesa validation lab | `docs/superpowers/plans/2026-11-14-mesa-validation-lab.md` | Plan 1 |
-| 3. Human reference and gates | `docs/superpowers/plans/2026-11-14-human-reference-and-gates.md` | Plan 2 |
+| 3. Review status and feedback | `docs/superpowers/plans/2026-11-14-review-status-and-feedback.md` | Plan 1 |
+| 4. Medyanın oyunları | `docs/superpowers/plans/2026-11-14-medyanin-oyunlari.md` | Plans 2 and 3 |
+| 5. Learning loop | `docs/superpowers/plans/2026-11-14-learning-loop.md` | Plan 3 |
+| Not scheduled: blind reference study | `docs/superpowers/plans/parked/2026-11-14-blind-reference-study.md` | owner decision |
 | On hold: Claude Code controls | `docs/superpowers/plans/parked/2026-11-14-claude-code-controls.md` | the owner's updated report |

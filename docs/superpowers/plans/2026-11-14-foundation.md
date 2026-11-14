@@ -12,8 +12,8 @@
 
 ## Global Constraints
 
-- Source snapshot: `aylinunel/caprazmansetnov26` @ `cc872425aa7d8ad1bf1c984cfe21ae91563142fc`. If the owner
-  supplies a newer commit before execution, use it and update the value in the test and `seed.json`.
+- Source snapshot: `aylinunel/caprazmansetnov26`, branch `claude/sleepy-goodall-sd1d9r` @
+  `49b60bc4fd0407f8f979c08cd7e5ab0641ad040d` (owner's choice; not `main`). The source repo is read-only.
 - No source file from the snapshot is modified in this plan.
 - Tests are offline: no network, no credentials.
 - The workflow keeps `permissions: contents: read`, a `timeout-minutes` on every job, and uses no secrets.
@@ -63,7 +63,8 @@ class SeedTest(unittest.TestCase):
     def test_provenance_names_the_source_commit(self):
         seed = json.loads((ROOT / "docs/provenance/seed.json").read_text(encoding="utf-8"))
         self.assertEqual(seed["source_repo"], "aylinunel/caprazmansetnov26")
-        self.assertEqual(seed["source_commit"], "cc872425aa7d8ad1bf1c984cfe21ae91563142fc")
+        self.assertEqual(seed["source_commit"], "49b60bc4fd0407f8f979c08cd7e5ab0641ad040d")
+        self.assertEqual(seed["source_branch"], "claude/sleepy-goodall-sd1d9r")
         self.assertIn("inherited_failures", seed)
 
     def test_every_source_file_is_present_and_unchanged(self):
@@ -87,7 +88,7 @@ Expected: FAIL, `seed.json` not found.
 
 In a separate directory, check out the source at the pinned commit. Generate `seed-manifest.json` from
 it. Copy every tracked file with `git -C <src> archive <commit> | tar -x -C <repo root>`. Do not copy
-`.git`. Write `seed.json` with `source_repo`, `source_commit`, `seeded_on` (the execution date),
+`.git`. Write `seed.json` with `source_repo`, `source_branch`, `source_commit`, `seeded_on` (the execution date),
 `inherited_failures: []` and `"note": "Snapshot copy; history remains in the source repository."`.
 
 - [ ] **Step 4: Run every inherited suite**
@@ -96,13 +97,13 @@ Run: `python -m pip install -r pipeline/requirements.txt`
 Run: `python -m unittest tests_repo.test_seed -v` — expected PASS.
 Run: `cd pipeline && python -m unittest discover -s tests -v` — expected PASS.
 Run: `python -m unittest biasguard.test_news -v` — expected PASS.
-Run: `node --test site/tests/logic.test.cjs` — expected PASS (32 tests).
+Run: `node --test site/tests/logic.test.cjs` — expected PASS.
 If any inherited test fails, add its name to `inherited_failures` and report it; do not change it here.
 
 - [ ] **Step 5: Commit**
 
 ```bash
-git add -A && git commit -m "chore: seed from caprazmansetnov26@cc87242"
+git add -A && git commit -m "chore: seed from caprazmansetnov26@49b60bc"
 ```
 
 ---

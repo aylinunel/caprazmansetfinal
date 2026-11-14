@@ -17,7 +17,7 @@
 
 ## Global Constraints
 
-- Source snapshot: `aylinunel/caprazmansetnov26` @ `cc872425aa7d8ad1bf1c984cfe21ae91563142fc`.
+- Source snapshot: `aylinunel/caprazmansetnov26` @ `49b60bc4fd0407f8f979c08cd7e5ab0641ad040d`.
 - New Python code uses the standard library only. No new runtime dependencies in this plan.
 - Tests are `unittest`, runnable offline, with no network and no real credentials. Fake secrets only.
 - Guard outcomes are exactly `deny`, `ask`, `normal`. `normal` adds no decision; it is not approval.
@@ -69,7 +69,7 @@ class SeedTest(unittest.TestCase):
     def test_provenance_names_the_source_commit(self):
         seed = json.loads((ROOT / "docs/provenance/seed.json").read_text(encoding="utf-8"))
         self.assertEqual(seed["source_repo"], "aylinunel/caprazmansetnov26")
-        self.assertEqual(seed["source_commit"], "cc872425aa7d8ad1bf1c984cfe21ae91563142fc")
+        self.assertEqual(seed["source_commit"], "49b60bc4fd0407f8f979c08cd7e5ab0641ad040d")
         self.assertEqual(seed["seeded_on"], "2026-11-14")
 
     def test_seeded_packages_are_present(self):
@@ -86,7 +86,7 @@ Expected: FAIL, `seed.json` not found.
 - [ ] **Step 3: Copy the snapshot**
 
 Check out the source at the pinned commit in a separate directory and copy every tracked file
-(`git -C <src> archive cc872425 | tar -x -C <repo root>`). Do not copy `.git`. Keep
+(`git -C <src> archive 49b60bc5 | tar -x -C <repo root>`). Do not copy `.git`. Keep
 `docs/superpowers/` files already in this repo. Write `docs/provenance/seed.json` with the three keys
 above plus `"note": "Snapshot copy; history remains in the source repository."`.
 
@@ -102,7 +102,7 @@ Record any inherited failure by name in the commit message; do not fix it in thi
 - [ ] **Step 5: Commit**
 
 ```bash
-git add -A && git commit -m "chore: seed from caprazmansetnov26@cc87242"
+git add -A && git commit -m "chore: seed from caprazmansetnov26@49b60bc"
 ```
 
 ---
