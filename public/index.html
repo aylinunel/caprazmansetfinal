@@ -11251,10 +11251,16 @@ document.addEventListener("click", function (ev) {
   ev.preventDefault();
   var out = reviewsExport(REV7, D.meta.built);
   out.reviews.forEach(function (r) { if (r.text == null && r.key.indexOf("narr__") !== 0) { var e = bg7ev(r.key.split("__")[0]); r.text = e && e.text || null; } });
-  var a = document.createElement("a");
-  a.href = URL.createObjectURL(new Blob([JSON.stringify(out, null, 1)], { type: "application/json" }));
-  a.download = "reviews-" + String(D.meta.built || "").slice(0, 10) + ".json";
-  document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(a.href);
+  var blob = new Blob([JSON.stringify(out, null, 1)], { type: "application/json" });
+  var name = "reviews-" + String(D.meta.built || "").slice(0, 10) + ".json";
+  var plain = function () {   // a normally hosted copy of the site: an ordinary download link
+    var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(a.href);
+  };
+  // Inside a claude.ai artifact a page cannot start a download itself; it asks the viewer through "downloads".
+  if (!window.claude || !window.claude.use) return plain();
+  window.claude.use("downloads").then(function (dl) { return dl ? dl.save({ filename: name, data: blob }) : plain(); })
+    .catch(function (e) { if (e && e.code !== "declined") { REV7MSG = "İncelemeler indirilemedi: " + ((e && e.message) || "bilinmeyen hata"); route(); } });
 });
 document.addEventListener("click", function (ev) {
   var b = ev.target.closest && ev.target.closest("[data-rev]"); if (!b) return;
