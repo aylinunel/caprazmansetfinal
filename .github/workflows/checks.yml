@@ -1,4 +1,4 @@
-name: Pipeline checks
+name: Checks
 
 on:
   pull_request:
@@ -27,3 +27,36 @@ jobs:
       - name: Offline pipeline tests (no network, no database)
         working-directory: pipeline
         run: python -m unittest discover -s tests -v
+
+  biasguard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: BiasGuard offline tests (no provider calls)
+        run: python -m unittest biasguard.test_news -v
+
+  site-logic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Site logic tests
+        run: node --test site/tests/logic.test.cjs
+
+  repo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Provenance and CI coverage tests
+        run: python -m unittest discover -s tests_repo -t . -v

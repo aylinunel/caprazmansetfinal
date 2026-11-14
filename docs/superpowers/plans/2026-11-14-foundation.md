@@ -67,13 +67,17 @@ class SeedTest(unittest.TestCase):
         self.assertEqual(seed["source_branch"], "claude/sleepy-goodall-sd1d9r")
         self.assertIn("inherited_failures", seed)
 
-    def test_every_source_file_is_present_and_unchanged(self):
+    def test_every_source_file_is_still_present(self):
         manifest = json.loads((ROOT / "docs/provenance/seed-manifest.json").read_text(encoding="utf-8"))
         self.assertGreater(len(manifest), 1300)
-        for rel, expected in manifest.items():
-            path = ROOT / rel
-            self.assertTrue(path.is_file(), f"missing: {rel}")
-            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), expected, rel)
+        self.assertEqual([rel for rel in manifest if not (ROOT / rel).is_file()], [])
+
+    def test_data_packs_are_byte_identical_to_the_seed(self):
+        manifest = json.loads((ROOT / "docs/provenance/seed-manifest.json").read_text(encoding="utf-8"))
+        packs = {rel: h for rel, h in manifest.items() if rel.startswith("public/data/")}
+        self.assertEqual(len(packs), 7)
+        for rel, expected in packs.items():
+            self.assertEqual(hashlib.sha256((ROOT / rel).read_bytes()).hexdigest(), expected, rel)
 
     def test_this_repos_design_documents_survive(self):
         self.assertTrue((ROOT / "docs/superpowers/specs/2026-11-14-capraz-final-integration-design.md").is_file())
@@ -89,7 +93,8 @@ Expected: FAIL, `seed.json` not found.
 In a separate directory, check out the source at the pinned commit. Generate `seed-manifest.json` from
 it. Copy every tracked file with `git -C <src> archive <commit> | tar -x -C <repo root>`. Do not copy
 `.git`. Write `seed.json` with `source_repo`, `source_branch`, `source_commit`, `seeded_on` (the execution date),
-`inherited_failures: []` and `"note": "Snapshot copy; history remains in the source repository."`.
+`inherited_failures: []`, `verified_files` (the count of files whose checksum matched the source right
+after copying; later plans edit seeded files, so the lasting test checks presence and the data packs) and `"note": "Snapshot copy; history remains in the source repository."`.
 
 - [ ] **Step 4: Run every inherited suite**
 
