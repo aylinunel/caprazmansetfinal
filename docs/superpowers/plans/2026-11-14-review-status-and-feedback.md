@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Show every AI finding on the public feed with an honest status (YZ emin, İnsan kontrolü bekliyor, İnsan doğruladı, İnsan düzeltti), and turn editor reviews into data the detector can learn from.
+**Goal:** Show every AI finding on the public feed with an honest status (AI onaylı, İnsan kontrolü bekliyor, İnsan doğruladı, İnsan düzeltti), and turn editor reviews into data the detector can learn from.
 
 **Architecture:** A routing rule in `biasguard/news.py` stamps each finding with a tier when results are applied. The existing owner-only editor review (`rev7`, artifact `reviews` collection) gains an "approve" action and an export. A small package `validation/feedback/` imports those reviews into an append-only label file, computes per-card verify-pass precision, and writes a card-status file that the next build feeds back into routing.
 
@@ -15,8 +15,10 @@
 - Prerequisite: the Foundation plan. This plan does not need the Mesa lab.
 - Tiers are exactly `ai_confident` and `needs_human`. Review outcomes are exactly `verified`,
   `corrected`, `rejected`.
-- Turkish display text, fixed: `YZ emin`, `İnsan kontrolü bekliyor`, `İnsan doğruladı`,
-  `İnsan düzeltti`. Tooltip for `YZ emin`: `İki ayrı YZ incelemesi aynı sonuca vardı; henüz insan
+- The reviewer is named **AI** (artificial intelligence, and the initials of Abdi İpekçi) in every new
+  string; never YZ. Existing YZ text elsewhere on the site is left for the later personification work.
+- Turkish display text, fixed: `AI onaylı`, `İnsan kontrolü bekliyor`, `İnsan doğruladı`,
+  `İnsan düzeltti`. Tooltip for `AI onaylı`: `İki ayrı AI incelemesi aynı sonuca vardı; henüz insan
   kontrolünden geçmedi.`
 - `ai_confident` is a rule, never a number. No percentage or score is shown with it.
 - A failed or missing review stays `analysis_incomplete` / `not_attempted` and is shown as
@@ -35,7 +37,7 @@
 ## Review Focus
 
 1. Today's data: 439 findings, all `needs_context` → every one is `needs_human`; the page must not
-   show an empty "YZ emin" section or a zero as if it were a result. (Tasks 1, 5)
+   show an empty "AI onaylı" section or a zero as if it were a result. (Tasks 1, 5)
 2. A review stored against an older pack or a changed event text → ignored, finding shown by tier. (Task 3)
 3. An exported reviews file with an unknown key shape, an unknown status or a duplicate key → the
    import rejects the whole file and names the entry; nothing is appended. (Task 3)
@@ -115,7 +117,7 @@ Record the actual numbers in the commit message.
 **Interfaces:**
 - Produces:
   ```python
-  def in_audit_sample(event: str, card_id: str, pack_version: str, rate: float = 0.10) -> bool
+  def in_audit_sample(event: str, card_id: str, pack_version: str, rate: float = 0.05) -> bool
   def review_queue(events: list[dict], reviewed_counts: dict[str, int]) -> list[dict]
       # [{"event", "card_id", "why": "needs_human"|"audit", "priority": int}], highest priority first
   ```
@@ -129,7 +131,7 @@ Record the actual numbers in the commit message.
 ```python
 def test_audit_sample_is_stable_for_a_pack(self): ...
 def test_audit_sample_changes_with_pack_version(self): ...
-def test_audit_rate_is_close_to_ten_percent_over_many_keys(self):   # 10,000 keys → 800..1200
+def test_audit_rate_is_close_to_five_percent_over_many_keys(self):   # 10,000 keys → 400..600
 def test_queue_puts_least_reviewed_cards_first(self): ...
 def test_queue_contains_every_needs_human_finding_once(self): ...
 def test_ai_confident_outside_sample_is_not_queued(self): ...
@@ -159,7 +161,7 @@ def test_ai_confident_outside_sample_is_not_queued(self): ...
   seen, and are re-saved with the fields by the owner's next visit.
 - `logic.js`:
   ```js
-  // returns {state: "dogrulandi"|"duzeltildi"|"reddedildi"|"yz_emin"|"insan_bekliyor", label, tip}
+  // returns {state: "dogrulandi"|"duzeltildi"|"reddedildi"|"ai_onayli"|"insan_bekliyor", label, tip}
   function reviewState(finding, review, packVersion, textHash)
   function reviewsExport(REV7, packVersion)   // → JSON-serialisable {pack, exported_at, reviews: [{key, status, note, at, pack, text}]}
   ```
@@ -191,7 +193,7 @@ test('verified review on the current pack shows İnsan doğruladı', ...);
 test('corrected review shows İnsan düzeltti', ...);
 test('review from another pack is ignored and tier is shown', ...);
 test('review on changed event text is ignored', ...);
-test('unreviewed ai_confident shows YZ emin with the fixed tooltip', ...);
+test('unreviewed ai_confident shows AI onaylı with the fixed tooltip', ...);
 test('unreviewed needs_human shows İnsan kontrolü bekliyor', ...);
 test('reviewsExport carries pack and text for every review', ...);
 ```
@@ -237,11 +239,11 @@ def test_label_file_has_no_reviewer_identity(self): ...
   ```json
   {"agreed": false,
    "min_run_completion": 0.95,
-   "min_reviews_to_judge": 30,
-   "min_precision_lower_bound": 0.85,
-   "hide_min_reviews": 20,
+   "min_reviews_to_judge": 15,
+   "min_precision_lower_bound": 0.70,
+   "hide_min_reviews": 10,
    "hide_below_precision": 0.50,
-   "audit_rate": 0.10}
+   "audit_rate": 0.05}
   ```
 - Rules: fewer than `hide_min_reviews` reviews → `unjudged`. Precision below `hide_below_precision`
   with at least `hide_min_reviews` → `hidden`. At least `min_reviews_to_judge` and lower bound below
@@ -256,12 +258,12 @@ def test_label_file_has_no_reviewer_identity(self): ...
 ```python
 def test_wilson_known_values(self):
     self.assertIsNone(wilson_lower(0, 0))
-    self.assertAlmostEqual(wilson_lower(30, 30), 0.9173, places=3)
-    self.assertLess(wilson_lower(28, 30), 0.85); self.assertGreater(wilson_lower(29, 30), 0.85)
+    self.assertAlmostEqual(wilson_lower(15, 15), 0.8472, places=3)
+    self.assertLess(wilson_lower(13, 15), 0.70); self.assertGreater(wilson_lower(14, 15), 0.70)
 def test_card_with_no_reviews_is_unjudged_with_none_precision(self): ...
 def test_corrected_counts_as_kept(self): ...
-def test_29_of_30_is_eligible_and_28_of_30_is_demoted(self): ...
-def test_9_of_20_is_hidden(self): ...
+def test_14_of_15_is_eligible_and_13_of_15_is_demoted(self): ...
+def test_4_of_10_is_hidden(self): ...
 def test_nothing_is_applied_while_not_agreed(self):
     self.assertFalse(any(c["applied"] for c in card_status(stats, GATES).values()))
 def test_audit_precision_uses_only_audit_sampled_ai_confident_findings(self): ...
@@ -286,17 +288,17 @@ def test_every_status_has_a_reason(self): ...
 **Interfaces:**
 - Consumes: `reviewState` (Task 3), `tier` on findings (Task 1).
 - Each finding's summary line shows its badge after the name. Findings are ordered: İnsan doğruladı,
-  İnsan düzeltti, YZ emin, İnsan kontrolü bekliyor. Rejected findings are not rendered (existing
+  İnsan düzeltti, AI onaylı, İnsan kontrolü bekliyor. Rejected findings are not rendered (existing
   behaviour).
 - The event's AI section opens with one line built from counts that are non-zero only, for example
-  `3 bulgu insan kontrolü bekliyor.` No "0 YZ emin" text.
-- Method page paragraph states: what each badge means, that YZ emin is agreement between two AI
+  `3 bulgu insan kontrolü bekliyor.` No "0 AI onaylı" text.
+- Method page paragraph states: what each badge means, that AI onaylı is agreement between two AI
   reviews and not a measured accuracy, and that findings may be missed.
 - Old data without `tier` renders every unreviewed finding as `İnsan kontrolü bekliyor`.
 
 - [ ] **Step 1: Extend the smoke test** to assert, on an event page with findings: every finding row
-  has exactly one badge from the four labels; no text matches `/\b0 (YZ emin|bulgu)/`; the method page
-  contains the `YZ emin` explanation sentence.
+  has exactly one badge from the four labels; no text matches `/\b0 (AI onaylı|bulgu)/`; the method page
+  contains the `AI onaylı` explanation sentence.
 - [ ] **Step 2: Run and confirm failure** — `node site/tests/smoke.cjs public /tmp/smoke-out`.
 - [ ] **Step 3: Implement.**
 - [ ] **Step 4: Regenerate and run**

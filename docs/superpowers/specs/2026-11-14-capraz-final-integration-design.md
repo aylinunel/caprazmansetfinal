@@ -57,7 +57,7 @@ These would make the work a failure even if it runs:
 - A Mesa metric averaged into a BiasGuard verdict or shown as a confidence percentage.
 - Any public label that infers intent, mental state or political affiliation.
 - An AI label published as human-verified when it was not.
-- "YZ emin" presented as a measured accuracy or a probability.
+- "AI onaylı" presented as a measured accuracy or a probability.
 
 ## What the existing project already does
 
@@ -249,7 +249,7 @@ ones pinned in the plans, and report formatting.
 ## Owner decisions (14 November 2026)
 
 1. **Every event starts AI-only.** No human has reviewed anything yet. The public feed shows each
-   finding with a status: **YZ emin** (the AI is confident) or **İnsan kontrolü bekliyor** (needs the
+   finding with a status: **AI onaylı** (approved by the AI reviewer) or **İnsan kontrolü bekliyor** (needs the
    verify-and-correct pass). After review it becomes **İnsan doğruladı** or **İnsan düzeltti**; a
    rejected finding is removed.
 2. **The 26 media concepts are shown as "Medyanın oyunları"**, a group separate from behavioural biases
@@ -267,7 +267,7 @@ The 8.1 BiasGuard run in `core.bin` reviewed 150 of 150 events with no failures 
 quotes. It produced **0 supported findings and 439 uncertain ones, every one `needs_context`**. The
 detector, given headlines and ledes, never commits to a behavioural bias. Two consequences:
 
-- Under the rule below, no finding is **YZ emin** today; all 439 are **İnsan kontrolü bekliyor**.
+- Under the rule below, no finding is **AI onaylı** today; all 439 are **İnsan kontrolü bekliyor**.
 - The first improvement target is not completion (that was the synthetic run's problem) but the fact
   that behavioural-bias cards ask for evidence a headline cannot contain. Media-technique cards
   describe what the text itself does, so they are the likelier source of confident findings.
@@ -276,9 +276,17 @@ The site already has an owner-only editor review (`rev7` in `site/js/app.js`): f
 or corrected with a note, stored in the artifact's `reviews` collection. Plan 3 extends this rather
 than adding a second mechanism.
 
-### What "YZ emin" means
+### Naming: AI, not YZ
 
-It is a rule, not a probability. A finding is **YZ emin** when all of these hold:
+The reviewer is called **AI** in all new wording: the abbreviation for artificial intelligence and the
+initials of Abdi İpekçi. The AI is written about as a person ("AI onayladı", "AI'ın incelemesi"), not as
+a tool. The personification itself (name, portrait, voice, the commemoration text) is a later piece of
+work and is not planned here. The existing site still says YZ in many places; renaming those is part of
+that later work, so until then new badges say AI next to older YZ marks.
+
+### What "AI onaylı" means
+
+It is a rule, not a probability. A finding is **AI onaylı** when all of these hold:
 
 - advocate and skeptic both returned `supported`;
 - both marked every necessary condition `satisfied`;
@@ -287,7 +295,7 @@ It is a rule, not a probability. A finding is **YZ emin** when all of these hold
 - the card has not been demoted by human feedback (below).
 
 Everything else that is shown is **İnsan kontrolü bekliyor**. The site explains the badge in one line:
-"İki ayrı YZ incelemesi aynı sonuca vardı; henüz insan kontrolünden geçmedi." Two reviews by the same
+"İki ayrı AI incelemesi aynı sonuca vardı; henüz insan kontrolünden geçmedi." Two reviews by the same
 model can share the same mistake, so this is agreement, not accuracy. It becomes evidence only as human
 corrections accumulate.
 
@@ -296,13 +304,13 @@ corrections accumulate.
 | Setting | Recommended | Why |
 |---|---|---|
 | Run completion to publish a build | ≥ 95% of events reviewed | Unreviewed events are shown as "incelenemedi", not as clean. The 8.1 run reached 100%; the synthetic run reached 44% |
-| Reviews before a card is judged | 30 human-reviewed findings | Below 30 the interval is too wide to act on |
-| Keep a card eligible for **YZ emin** | one-sided 95% lower bound of precision ≥ 0.85 | With 30 reviews this means at most 1 rejection. A wrong public bias label on a named outlet is the costly mistake, so precision is favoured |
-| Hide a card | precision below 0.50 after ≥ 20 reviews | More often wrong than right |
-| Audit sample | 10% of **YZ emin** findings, at random, go to reviewers anyway | Otherwise the confident tier is never checked and its precision is unknown |
+| Reviews before a card is judged | 15 human-reviewed findings | The leanest count at which one rejection can still be told apart from two |
+| Keep a card eligible for **AI onaylı** | one-sided 95% lower bound of precision ≥ 0.70 | With 15 reviews this means at most 1 rejection (14 of 15 gives 0.75; 13 of 15 gives 0.67). The price of the leaner rule: a card can stay eligible while its true precision is nearer 70% than 90%. A wrong public bias label on a named outlet is the costly mistake, so precision is favoured |
+| Hide a card | precision below 0.50 after ≥ 10 reviews | More often wrong than right |
+| Audit sample | 5% of **AI onaylı** findings, at random, go to reviewers anyway | Otherwise the confident tier is never checked and its precision is unknown |
 | Recall floor | none | Owner decision 3 |
 
-Before a card has 30 reviews, the rule above decides alone, and that card's findings are first in the
+Before a card has 15 reviews, the rule above decides alone, and that card's findings are first in the
 review queue. Precision measured from the verify pass is optimistic, because a reviewer who sees the
 AI's answer tends to agree with it; the numbers are labelled "verify-pass precision" wherever shown.
 
@@ -325,7 +333,7 @@ AI's answer tends to agree with it; the numbers are labelled "verify-pass precis
 
 No model is trained here. "Learning" means four things that change as reviewed data grows:
 
-1. **Routing statistics.** Per-card verify-pass precision moves cards in and out of **YZ emin**.
+1. **Routing statistics.** Per-card verify-pass precision moves cards in and out of **AI onaylı**.
 2. **Regression memory.** Every human correction becomes a permanent replay case; a detector change
    that breaks a previously corrected case is visible before release.
 3. **Detector versions.** Card wording, prompts and retrieval settings change one at a time, each
@@ -342,8 +350,8 @@ Decision owner: Aylin Unel
 Action changed by the model: which findings appear on an event page, and under which status badge
 Success metric: verify-pass precision per card, with one-sided 95% lower bound
 Guardrail metrics: run completion; share of findings awaiting review; reviewer workload per build;
-  audit-sample precision of the YZ emin tier; lab forbidden-rate on controls
-Mistake budget: YZ emin tier — at most 1 rejection in 30 audited findings per card
+  audit-sample precision of the AI onaylı tier; lab forbidden-rate on controls
+Mistake budget: AI onaylı tier — at most 1 rejection in 15 reviewed findings per card
 Unacceptable mistakes: a finding that states intent, mental state or affiliation; a failed review shown
   as "no bias"; an unreviewed finding shown as human-verified; a quote that is not in the source
 Acceptable mistakes: missed findings (partial recall); findings parked as "İnsan kontrolü bekliyor"

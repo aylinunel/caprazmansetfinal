@@ -227,7 +227,7 @@ def test_build_adds_bgm_only_when_file_exists(self): ...
   omitted; a missing or incomplete media review gives `state: "incelenemedi"`.
 - Event page: two headed groups. Under `Medyanın oyunları`, AI findings (with Plan 3 badges) and the
   deterministic scorer's matched rules for that event's headlines are shown as two labelled lists,
-  `YZ incelemesi` and `Kural tabanlı ölçüm`. No combined count.
+  `AI incelemesi` and `Kural tabanlı ölçüm`. No combined count.
 - Each media finding shows the outlets whose headline holds the quote (the existing `o` field).
 - Method page: the 26 concepts in three lists — live, `Henüz yayında değil`, `Bu veriyle ölçülemiyor` —
   from `mediaCoverage`, plus the sentence "Bu bulgular metnin ne yaptığını tanımlar; niyet hakkında
