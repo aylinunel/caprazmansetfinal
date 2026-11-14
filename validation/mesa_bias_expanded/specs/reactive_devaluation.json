@@ -1,0 +1,22 @@
+{
+  "id": "reactive_devaluation",
+  "name": "Reactive devaluation",
+  "definition": "A proposal loses value because it comes from an adversary or disliked source.",
+  "boundary": "Require source-driven devaluation; substantive differences or credible strategic risks can justify rejection.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "reactive_devaluation",
+      "canonical_id": "reactive_devaluation",
+      "name": "Reactive devaluation",
+      "definition": "A proposal loses value because it comes from an adversary or disliked source.",
+      "annotation_boundary": "Require source-driven devaluation; substantive differences or credible strategic risks can justify rejection.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Commission and omission of information — illustrative implementation
+
+This plugin models a narrow **authored presentation choice** over an explicitly supplied pool of structured evidence items. Each item has a unique `id`, a stance (`+1` supports the named target perspective; `-1` weakens it), and a positive `evidence_weight`. Given a fixed `capacity`, the neutral reference policy selects the highest-weight items. At strength `s`, the simulated editor ranks each item by
+
+`score = evidence_weight * (1 + s * bias_gain * target_perspective * stance)`
+
+and presents the top `capacity` items. Ties retain input order. The primary metric is the signed target-oriented evidence weight in the presented package, `sum(evidence_weight * target_perspective * stance)`, in **signed evidence-weight units per round**. Items selected by the mechanism but not by the reference are reported as relative commissions; reference items no longer selected are relative omissions. “Commission” here means inclusion relative to the neutral package, not fabrication or an assertion that content is false.
+
+At strength zero, the ranking exactly reduces to the stated reference policy: relevance/evidence weight descending, then original input order. The necessary condition for a difference is that a target perspective, finite capacity, and competing target-aligned and counter-aligned candidates permit a different top-capacity set. The positive scenario has two support items and one counter item competing for two slots; at strength `.8`, both support items displace the higher-weight counter item. The boundary scenario contains only target-aligned items, so the perspective multiplier is common across candidates and the selected set and primary metric equal the reference.
+
+`bias_gain` is constrained to `[0, 1]` to keep ranking multipliers nonnegative and is a hypothetical, user-settable modeling assumption, not an empirical coefficient. State tracks round count, cumulative target-oriented evidence, and the last package. Tests establish software behavior and synthetic numeric oracles only; they do **not** empirically validate the concept or estimate real-world prevalence or impact.
+
+Limitations: this is a synthetic process illustration, not an NLP detector, diagnosis, or population claim. It assumes the candidate facts and weights are supplied correctly; it does not verify evidence quality, model fabrication, wording, audience interpretation, broader context, or real editorial constraints. Selection differences alone do not establish intent or harm. Benign explanations—including relevance judgments, context, and space constraints—may account for selective presentation in actual reporting.

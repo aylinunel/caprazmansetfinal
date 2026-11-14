@@ -1,0 +1,22 @@
+{
+  "id": "nostalgia_effect",
+  "name": "Nostalgia Effect",
+  "definition": "Nostalgic feelings increase willingness to spend or weaken attachment to money.",
+  "boundary": "Nostalgia alone is insufficient for this source's spending-related effect.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "nostalgia_effect",
+      "canonical_id": "nostalgia_effect",
+      "name": "Nostalgia Effect",
+      "definition": "Nostalgic feelings increase willingness to spend or weaken attachment to money.",
+      "annotation_boundary": "Nostalgia alone is insufficient for this source's spending-related effect.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

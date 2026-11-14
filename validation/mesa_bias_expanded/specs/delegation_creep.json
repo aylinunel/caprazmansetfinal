@@ -1,0 +1,22 @@
+{
+  "id": "delegation_creep",
+  "name": "Delegation Creep",
+  "definition": "AI delegation expands gradually into new or consequential tasks without a corresponding review of suitability.",
+  "boundary": "A temporal expansion is essential; one instance of automated advice is not creep.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "delegation_creep",
+      "canonical_id": "delegation_creep",
+      "name": "Delegation Creep",
+      "definition": "AI delegation expands gradually into new or consequential tasks without a corresponding review of suitability.",
+      "annotation_boundary": "A temporal expansion is essential; one instance of automated advice is not creep.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

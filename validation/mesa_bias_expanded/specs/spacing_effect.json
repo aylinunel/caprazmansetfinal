@@ -1,0 +1,22 @@
+{
+  "id": "spacing_effect",
+  "name": "Spacing Effect",
+  "definition": "Distributed study improves retention relative to massed study under comparable conditions.",
+  "boundary": "Compare spaced with massed practice; lag effect compares different gaps within spaced practice.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "spacing_effect",
+      "canonical_id": "spacing_effect",
+      "name": "Spacing Effect",
+      "definition": "Distributed study improves retention relative to massed study under comparable conditions.",
+      "annotation_boundary": "Compare spaced with massed practice; lag effect compares different gaps within spaced practice.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

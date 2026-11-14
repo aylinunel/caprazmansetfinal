@@ -1,0 +1,22 @@
+{
+  "id": "fundamental_attribution_error",
+  "name": "Fundamental Attribution Error",
+  "definition": "Behavior is attributed too strongly to character while relevant situational constraints are discounted.",
+  "boundary": "A character judgment needs evidence of neglected context to support this label confidently.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "fundamental_attribution_error",
+      "canonical_id": "fundamental_attribution_error",
+      "name": "Fundamental Attribution Error",
+      "definition": "Behavior is attributed too strongly to character while relevant situational constraints are discounted.",
+      "annotation_boundary": "A character judgment needs evidence of neglected context to support this label confidently.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

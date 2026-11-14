@@ -1,0 +1,35 @@
+{
+  "id": "illusory_truth_effect",
+  "name": "Illusory Truth Effect",
+  "definition": "Repeated exposure makes a claim seem truer without new supporting evidence.",
+  "boundary": "Repeated independent evidence differs from repetition of the same unsupported claim.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "illusory-truth",
+      "canonical_id": "illusory_truth_effect",
+      "name": "Illusory Truth Effect (Yanılsamalı doğruluk etkisi)",
+      "definition": "A repeated statement seeming credible through familiarity, without being tested.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "illusory_truth_effect",
+      "canonical_id": "illusory_truth_effect",
+      "name": "Illusory Truth Effect",
+      "definition": "Repeated exposure makes a claim seem truer without new supporting evidence.",
+      "annotation_boundary": "Repeated independent evidence differs from repetition of the same unsupported claim.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

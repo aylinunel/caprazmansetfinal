@@ -1,0 +1,22 @@
+{
+  "id": "contextual_omission",
+  "name": "Contextual omission (Bağlam eksiltme)",
+  "definition": "Leaving out accessible, relevant context changes the comparison.",
+  "boundary": "Not the same as `omission_bias`; without full text and relevant counter-evidence it stays a candidate.",
+  "layer": "mercek_media_technique",
+  "source_variants": [
+    {
+      "layer": "mercek_media_technique",
+      "source_id": "contextual_omission",
+      "canonical_id": "contextual_omission",
+      "name": "Contextual omission (Bağlam eksiltme)",
+      "definition": "Leaving out accessible, relevant context changes the comparison.",
+      "annotation_boundary": "Not the same as `omission_bias`; without full text and relevant counter-evidence it stays a candidate.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "spin",
+  "name": "Spin",
+  "definition": "The forms above combining into the story's overall tone and conclusion.",
+  "boundary": "",
+  "layer": "media_form",
+  "source_variants": [
+    {
+      "layer": "media_form",
+      "source_id": "Spin",
+      "canonical_id": "spin",
+      "name": "Spin",
+      "definition": "The forms above combining into the story's overall tone and conclusion.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

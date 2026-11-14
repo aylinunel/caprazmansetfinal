@@ -1,0 +1,22 @@
+{
+  "id": "present_bias",
+  "name": "Present Bias",
+  "definition": "Immediate outcomes receive disproportionate weight relative to otherwise comparable delayed outcomes.",
+  "boundary": "Liquidity and changing circumstances can justify immediacy; overlap with decreasing-impatience models.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "present_bias",
+      "canonical_id": "present_bias",
+      "name": "Present Bias",
+      "definition": "Immediate outcomes receive disproportionate weight relative to otherwise comparable delayed outcomes.",
+      "annotation_boundary": "Liquidity and changing circumstances can justify immediacy; overlap with decreasing-impatience models.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Illusion of Transparency: illustrative implementation
+
+This plugin models one narrow task: forecasting the probability that an audience recognizes an explicitly supplied private feeling or intention. With normalized inputs `private_intensity`, `cue_visibility`, and `audience_attention`, the strength-zero reference forecast is `cue_visibility × audience_attention`. At strength `s`, the illustrative projection is `s × private_intensity × audience_attention × (1 − cue_visibility)`, and the reported forecast is the reference plus that projection. This bounded probability is the primary metric, unitless on `[0, 1]`; returned state records the forecast history and step count.
+
+The mechanism is active only when private intensity, audience attention, and some cue opacity jointly permit a positive projection. The positive scenario supplies a salient private state, weak external cues, and an attentive audience. The boundary scenario removes private intensity, so its metric equals the cue-only reference at every strength. This implements internal-state visibility, not a belief that one is receiving unusually high attention.
+
+The linear coefficient and all inputs are synthetic user-settable assumptions, not effect sizes. The model does not simulate an actual audience, infer hidden states, process communication content, or establish that people generally make this error. It is explicitly hypothetical and empirically unvalidated; passing tests validate software behavior only, not psychology.

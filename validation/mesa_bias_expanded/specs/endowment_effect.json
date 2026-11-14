@@ -1,0 +1,22 @@
+{
+  "id": "endowment_effect",
+  "name": "Endowment Effect",
+  "definition": "Ownership raises valuation beyond the value assigned before owning the same item.",
+  "boundary": "Ownership must explain the valuation gap; market differences and transaction costs may explain it instead.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "endowment_effect",
+      "canonical_id": "endowment_effect",
+      "name": "Endowment Effect",
+      "definition": "Ownership raises valuation beyond the value assigned before owning the same item.",
+      "annotation_boundary": "Ownership must explain the valuation gap; market differences and transaction costs may explain it instead.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "affect_heuristic",
+  "name": "Affect Heuristic",
+  "definition": "An emotional reaction substitutes for evaluation of an option's benefits or risks.",
+  "boundary": "Emotion relevant to a subjective preference is not necessarily a distorted factual judgment.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "affect_heuristic",
+      "canonical_id": "affect_heuristic",
+      "name": "Affect Heuristic",
+      "definition": "An emotional reaction substitutes for evaluation of an option's benefits or risks.",
+      "annotation_boundary": "Emotion relevant to a subjective preference is not necessarily a distorted factual judgment.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

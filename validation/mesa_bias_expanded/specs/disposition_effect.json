@@ -1,0 +1,22 @@
+{
+  "id": "disposition_effect",
+  "name": "Disposition Effect",
+  "definition": "Losing investments are retained and winning ones sold because of their gain-loss status rather than forward prospects.",
+  "boundary": "Purchase price alone should not substitute for forward evaluation; taxes and strategy can justify trades.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "disposition_effect",
+      "canonical_id": "disposition_effect",
+      "name": "Disposition Effect",
+      "definition": "Losing investments are retained and winning ones sold because of their gain-loss status rather than forward prospects.",
+      "annotation_boundary": "Purchase price alone should not substitute for forward evaluation; taxes and strategy can justify trades.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

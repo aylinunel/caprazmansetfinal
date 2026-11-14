@@ -1,0 +1,35 @@
+{
+  "id": "attentional_bias",
+  "name": "Attentional Bias",
+  "definition": "Attention selectively favors certain information while other relevant information is overlooked.",
+  "boundary": "Distinguish selective attention from a later judgment that weights negative evidence more heavily.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "attentional-bias",
+      "canonical_id": "attentional_bias",
+      "name": "Attentional Bias (Dikkat yanlılığı)",
+      "definition": "Systematically giving some stimuli more attention than others.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "attentional_bias",
+      "canonical_id": "attentional_bias",
+      "name": "Attentional Bias",
+      "definition": "Attention selectively favors certain information while other relevant information is overlooked.",
+      "annotation_boundary": "Distinguish selective attention from a later judgment that weights negative evidence more heavily.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

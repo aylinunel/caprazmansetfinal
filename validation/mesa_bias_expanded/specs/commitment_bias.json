@@ -1,0 +1,22 @@
+{
+  "id": "commitment_bias",
+  "name": "Commitment Bias",
+  "definition": "A prior commitment is maintained or escalated despite evidence that it should be reconsidered.",
+  "boundary": "Public consistency can distinguish commitment bias from a specific appeal to unrecoverable expenditure.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "commitment_bias",
+      "canonical_id": "commitment_bias",
+      "name": "Commitment Bias",
+      "definition": "A prior commitment is maintained or escalated despite evidence that it should be reconsidered.",
+      "annotation_boundary": "Public consistency can distinguish commitment bias from a specific appeal to unrecoverable expenditure.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

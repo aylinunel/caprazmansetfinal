@@ -1,0 +1,22 @@
+{
+  "id": "gamblers_fallacy",
+  "name": "Gambler's Fallacy",
+  "definition": "Independent random outcomes are expected to reverse because of previous outcomes.",
+  "boundary": "Require independence or stable probabilities; sampling without replacement can change the odds.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "gamblers_fallacy",
+      "canonical_id": "gamblers_fallacy",
+      "name": "Gambler's Fallacy",
+      "definition": "Independent random outcomes are expected to reverse because of previous outcomes.",
+      "annotation_boundary": "Require independence or stable probabilities; sampling without replacement can change the odds.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

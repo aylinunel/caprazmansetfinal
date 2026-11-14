@@ -1,0 +1,22 @@
+{
+  "id": "suggestibility",
+  "name": "Suggestibility",
+  "definition": "External suggestions influence beliefs, recollection, or behavior without adequate independent appraisal.",
+  "boundary": "Suggestion-based influence differs from evidence-based correction; memory effects can overlap source confusion.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "suggestibility",
+      "canonical_id": "suggestibility",
+      "name": "Suggestibility",
+      "definition": "External suggestions influence beliefs, recollection, or behavior without adequate independent appraisal.",
+      "annotation_boundary": "Suggestion-based influence differs from evidence-based correction; memory effects can overlap source confusion.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

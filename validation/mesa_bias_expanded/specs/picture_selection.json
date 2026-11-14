@@ -1,0 +1,22 @@
+{
+  "id": "picture_selection",
+  "name": "Picture selection",
+  "definition": "Which photo is chosen: the same person smiling or angry.",
+  "boundary": "",
+  "layer": "media_form",
+  "source_variants": [
+    {
+      "layer": "media_form",
+      "source_id": "Picture selection",
+      "canonical_id": "picture_selection",
+      "name": "Picture selection",
+      "definition": "Which photo is chosen: the same person smiling or angry.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

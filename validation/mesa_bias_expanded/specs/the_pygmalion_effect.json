@@ -1,0 +1,22 @@
+{
+  "id": "the_pygmalion_effect",
+  "name": "The Pygmalion effect",
+  "definition": "Another person's high expectations change their treatment of someone and thereby improve that person's performance.",
+  "boundary": "Require an expectation-to-treatment-to-performance pathway; a prediction alone is not a self-fulfilling effect.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "the_pygmalion_effect",
+      "canonical_id": "the_pygmalion_effect",
+      "name": "The Pygmalion effect",
+      "definition": "Another person's high expectations change their treatment of someone and thereby improve that person's performance.",
+      "annotation_boundary": "Require an expectation-to-treatment-to-performance pathway; a prediction alone is not a self-fulfilling effect.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

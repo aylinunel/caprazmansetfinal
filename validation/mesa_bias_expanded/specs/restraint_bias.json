@@ -1,0 +1,22 @@
+{
+  "id": "restraint_bias",
+  "name": "Restraint Bias",
+  "definition": "The ability to resist temptation is overestimated.",
+  "boundary": "Require self-control overconfidence rather than a single indulgence or general optimism.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "restraint_bias",
+      "canonical_id": "restraint_bias",
+      "name": "Restraint Bias",
+      "definition": "The ability to resist temptation is overestimated.",
+      "annotation_boundary": "Require self-control overconfidence rather than a single indulgence or general optimism.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

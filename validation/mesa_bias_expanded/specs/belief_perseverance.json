@@ -1,0 +1,22 @@
+{
+  "id": "belief_perseverance",
+  "name": "Belief Perseverance (The Backfire Effect)",
+  "definition": "A belief persists after its supporting evidence is discredited; strengthening after correction is a distinct backfire pattern.",
+  "boundary": "Preserved source umbrella: record perseverance and backfire as separate subtypes; persistence does not imply strengthening.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "belief_perseverance",
+      "canonical_id": "belief_perseverance",
+      "name": "Belief Perseverance (The Backfire Effect)",
+      "definition": "A belief persists after its supporting evidence is discredited; strengthening after correction is a distinct backfire pattern.",
+      "annotation_boundary": "Preserved source umbrella: record perseverance and backfire as separate subtypes; persistence does not imply strengthening.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

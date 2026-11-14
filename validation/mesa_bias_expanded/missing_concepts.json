@@ -1,0 +1,3233 @@
+[
+  {
+    "id": "event_selection",
+    "name": "Event selection",
+    "definition": "Only a few of the day's events become news; selection is necessary, and it is also the first step of bias.",
+    "boundary": "",
+    "layer": "media_form",
+    "source_variants": [
+      {
+        "layer": "media_form",
+        "source_id": "Event selection",
+        "canonical_id": "event_selection",
+        "name": "Event selection",
+        "definition": "Only a few of the day's events become news; selection is necessary, and it is also the first step of bias.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "source_selection",
+    "name": "Source selection",
+    "definition": "Relying only on sources that support one view.",
+    "boundary": "",
+    "layer": "media_form",
+    "source_variants": [
+      {
+        "layer": "media_form",
+        "source_id": "Source selection",
+        "canonical_id": "source_selection",
+        "name": "Source selection",
+        "definition": "Relying only on sources that support one view.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "commission_and_omission_of_information",
+    "name": "Commission and omission of information",
+    "definition": "Adding or leaving out information that supports or weakens a perspective.",
+    "boundary": "",
+    "layer": "media_form",
+    "source_variants": [
+      {
+        "layer": "media_form",
+        "source_id": "Commission and omission of information",
+        "canonical_id": "commission_and_omission_of_information",
+        "name": "Commission and omission of information",
+        "definition": "Adding or leaving out information that supports or weakens a perspective.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "labeling",
+    "name": "Labeling",
+    "definition": "The same actor called by different epithets and titles in different outlets; the label presets the actor's legitimacy.",
+    "boundary": "",
+    "layer": "media_form",
+    "source_variants": [
+      {
+        "layer": "media_form",
+        "source_id": "Labeling",
+        "canonical_id": "labeling",
+        "name": "Labeling",
+        "definition": "The same actor called by different epithets and titles in different outlets; the label presets the actor's legitimacy.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "word_choice",
+    "name": "Word choice",
+    "definition": "Words with different connotations for the same fact.",
+    "boundary": "",
+    "layer": "media_form",
+    "source_variants": [
+      {
+        "layer": "media_form",
+        "source_id": "Word choice",
+        "canonical_id": "word_choice",
+        "name": "Word choice",
+        "definition": "Words with different connotations for the same fact.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "story_placement",
+    "name": "Story placement",
+    "definition": "Front page or inside page, top or bottom of the feed: position signals importance independent of content.",
+    "boundary": "",
+    "layer": "media_form",
+    "source_variants": [
+      {
+        "layer": "media_form",
+        "source_id": "Story placement",
+        "canonical_id": "story_placement",
+        "name": "Story placement",
+        "definition": "Front page or inside page, top or bottom of the feed: position signals importance independent of content.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "size_allocation",
+    "name": "Size allocation",
+    "definition": "Space, time or headline size given to a story.",
+    "boundary": "",
+    "layer": "media_form",
+    "source_variants": [
+      {
+        "layer": "media_form",
+        "source_id": "Size allocation",
+        "canonical_id": "size_allocation",
+        "name": "Size allocation",
+        "definition": "Space, time or headline size given to a story.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "picture_selection",
+    "name": "Picture selection",
+    "definition": "Which photo is chosen: the same person smiling or angry.",
+    "boundary": "",
+    "layer": "media_form",
+    "source_variants": [
+      {
+        "layer": "media_form",
+        "source_id": "Picture selection",
+        "canonical_id": "picture_selection",
+        "name": "Picture selection",
+        "definition": "Which photo is chosen: the same person smiling or angry.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "picture_explanation",
+    "name": "Picture explanation",
+    "definition": "The meaning a caption gives the image.",
+    "boundary": "",
+    "layer": "media_form",
+    "source_variants": [
+      {
+        "layer": "media_form",
+        "source_id": "Picture explanation",
+        "canonical_id": "picture_explanation",
+        "name": "Picture explanation",
+        "definition": "The meaning a caption gives the image.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "spin",
+    "name": "Spin",
+    "definition": "The forms above combining into the story's overall tone and conclusion.",
+    "boundary": "",
+    "layer": "media_form",
+    "source_variants": [
+      {
+        "layer": "media_form",
+        "source_id": "Spin",
+        "canonical_id": "spin",
+        "name": "Spin",
+        "definition": "The forms above combining into the story's overall tone and conclusion.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "episodic_framing",
+    "name": "Episodic Framing (Olay odaklı çerçeveleme)",
+    "definition": "Presenting an issue through a single event or person without the structural conditions that produce it.",
+    "boundary": "",
+    "layer": "capraz_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "episodic-framing",
+        "canonical_id": "episodic_framing",
+        "name": "Episodic Framing (Olay odaklı çerçeveleme)",
+        "definition": "Presenting an issue through a single event or person without the structural conditions that produce it.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "thematic_framing",
+    "name": "Thematic Framing (Bağlamsal çerçeveleme)",
+    "definition": "Placing an event inside a trend, process or institutional context; not a flaw in itself, but the chosen context matters.",
+    "boundary": "",
+    "layer": "capraz_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "thematic-framing",
+        "canonical_id": "thematic_framing",
+        "name": "Thematic Framing (Bağlamsal çerçeveleme)",
+        "definition": "Placing an event inside a trend, process or institutional context; not a flaw in itself, but the chosen context matters.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "consequence_framing",
+    "name": "Consequence Framing (Sonuç çerçevelemesi)",
+    "definition": "Headlining a consequence or expected effect instead of the event.",
+    "boundary": "",
+    "layer": "capraz_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "consequence-framing",
+        "canonical_id": "consequence_framing",
+        "name": "Consequence Framing (Sonuç çerçevelemesi)",
+        "definition": "Headlining a consequence or expected effect instead of the event.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "responsibility_framing",
+    "name": "Attribution of Responsibility Framing (Sorumluluk atfı çerçevelemesi)",
+    "definition": "Settling who is responsible through the headline's grammar before the process is complete.",
+    "boundary": "",
+    "layer": "capraz_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "responsibility-framing",
+        "canonical_id": "responsibility_framing",
+        "name": "Attribution of Responsibility Framing (Sorumluluk atfı çerçevelemesi)",
+        "definition": "Settling who is responsible through the headline's grammar before the process is complete.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "metaphorical_framing",
+    "name": "Metaphorical Framing (Mecazi çerçeveleme)",
+    "definition": "A metaphor that reorganises the event; it shapes how the event is understood.",
+    "boundary": "",
+    "layer": "capraz_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "metaphorical-framing",
+        "canonical_id": "metaphorical_framing",
+        "name": "Metaphorical Framing (Mecazi çerçeveleme)",
+        "definition": "A metaphor that reorganises the event; it shapes how the event is understood.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "ad_hominem",
+    "name": "Ad Hominem (Kişiye saldırı)",
+    "definition": "Attacking a person's character, identity or past instead of assessing the claim.",
+    "boundary": "",
+    "layer": "capraz_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "ad-hominem",
+        "canonical_id": "ad_hominem",
+        "name": "Ad Hominem (Kişiye saldırı)",
+        "definition": "Attacking a person's character, identity or past instead of assessing the claim.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "in_group_bias",
+    "name": "In-group Bias",
+    "definition": "Shared group membership leads to preferential evaluation or treatment.",
+    "boundary": "Group membership must drive unequal treatment; relevant qualifications are an alternative explanation.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "in-group-bias",
+        "canonical_id": "in_group_bias",
+        "name": "In-group Bias (İç grup yanlılığı)",
+        "definition": "Favouring one's own group's view and credibility while holding the out-group to a harsher standard.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "in_group_bias",
+        "canonical_id": "in_group_bias",
+        "name": "In-group Bias",
+        "definition": "Shared group membership leads to preferential evaluation or treatment.",
+        "annotation_boundary": "Group membership must drive unequal treatment; relevant qualifications are an alternative explanation.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "authority_bias",
+    "name": "Authority Bias",
+    "definition": "Status or authority is treated as sufficient grounds for accepting a claim.",
+    "boundary": "Appropriate reliance on relevant expertise is not enough to establish bias.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "authority-bias",
+        "canonical_id": "authority_bias",
+        "name": "Authority Bias (Otorite yanlılığı)",
+        "definition": "Weighting a claim because it comes from an authority rather than examining its evidence.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "authority_bias",
+        "canonical_id": "authority_bias",
+        "name": "Authority Bias",
+        "definition": "Status or authority is treated as sufficient grounds for accepting a claim.",
+        "annotation_boundary": "Appropriate reliance on relevant expertise is not enough to establish bias.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "fear_appeal",
+    "name": "Fear Appeal (Korkuya başvurma)",
+    "definition": "Mobilising readers with threat and disaster language without proportionate evidence or probability.",
+    "boundary": "",
+    "layer": "capraz_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "fear-appeal",
+        "canonical_id": "fear_appeal",
+        "name": "Fear Appeal (Korkuya başvurma)",
+        "definition": "Mobilising readers with threat and disaster language without proportionate evidence or probability.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "cherry_picking",
+    "name": "Cherry Picking (Seçmeci kanıt kullanımı)",
+    "definition": "Presenting the indicators and dates that support a conclusion while leaving out limiting data.",
+    "boundary": "",
+    "layer": "capraz_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "cherry-picking",
+        "canonical_id": "cherry_picking",
+        "name": "Cherry Picking (Seçmeci kanıt kullanımı)",
+        "definition": "Presenting the indicators and dates that support a conclusion while leaving out limiting data.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "strawman",
+    "name": "Strawman Fallacy (Korkuluk safsatası)",
+    "definition": "Rebuilding the other side's position in a weaker or more extreme form before criticising it.",
+    "boundary": "",
+    "layer": "capraz_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "strawman",
+        "canonical_id": "strawman",
+        "name": "Strawman Fallacy (Korkuluk safsatası)",
+        "definition": "Rebuilding the other side's position in a weaker or more extreme form before criticising it.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "false_dilemma",
+    "name": "False Dilemma (Yanlış ikilem)",
+    "definition": "Reducing a complex issue to two mutually exclusive options when others exist.",
+    "boundary": "",
+    "layer": "capraz_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "false-dilemma",
+        "canonical_id": "false_dilemma",
+        "name": "False Dilemma (Yanlış ikilem)",
+        "definition": "Reducing a complex issue to two mutually exclusive options when others exist.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "availability_heuristic",
+    "name": "Availability Heuristic",
+    "definition": "Ease of recalling examples substitutes for evidence about frequency or probability.",
+    "boundary": "Recency can make examples accessible, but the diagnostic mechanism is recall-based likelihood judgment.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "availability-heuristic",
+        "canonical_id": "availability_heuristic",
+        "name": "Availability Heuristic (Erişilebilirlik kestirimi)",
+        "definition": "Treating vivid, recent or often-repeated examples as more common than the evidence supports.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "availability_heuristic",
+        "canonical_id": "availability_heuristic",
+        "name": "Availability Heuristic",
+        "definition": "Ease of recalling examples substitutes for evidence about frequency or probability.",
+        "annotation_boundary": "Recency can make examples accessible, but the diagnostic mechanism is recall-based likelihood judgment.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "negativity_bias",
+    "name": "Negativity Bias",
+    "definition": "Negative information receives disproportionate weight relative to comparable positive information.",
+    "boundary": "Severity and relevance can justify unequal weights; count alone is not enough.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "negativity-bias",
+        "canonical_id": "negativity_bias",
+        "name": "Negativity Bias (Olumsuzluk yanlılığı)",
+        "definition": "Negative information taking disproportionate space in attention and memory.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "negativity_bias",
+        "canonical_id": "negativity_bias",
+        "name": "Negativity Bias",
+        "definition": "Negative information receives disproportionate weight relative to comparable positive information.",
+        "annotation_boundary": "Severity and relevance can justify unequal weights; count alone is not enough.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "salience_bias",
+    "name": "Salience Bias",
+    "definition": "Conspicuous information dominates attention or judgment beyond its relevance.",
+    "boundary": "Salience concerns prominence; attentional bias is broader and can arise from internal concerns.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "salience-bias",
+        "canonical_id": "salience_bias",
+        "name": "Salience Bias (Belirginlik yanlılığı)",
+        "definition": "Focusing on conspicuous information and ignoring less visible but important data.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "salience_bias",
+        "canonical_id": "salience_bias",
+        "name": "Salience Bias",
+        "definition": "Conspicuous information dominates attention or judgment beyond its relevance.",
+        "annotation_boundary": "Salience concerns prominence; attentional bias is broader and can arise from internal concerns.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "illusory_truth_effect",
+    "name": "Illusory Truth Effect",
+    "definition": "Repeated exposure makes a claim seem truer without new supporting evidence.",
+    "boundary": "Repeated independent evidence differs from repetition of the same unsupported claim.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "illusory-truth",
+        "canonical_id": "illusory_truth_effect",
+        "name": "Illusory Truth Effect (Yanılsamalı doğruluk etkisi)",
+        "definition": "A repeated statement seeming credible through familiarity, without being tested.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "illusory_truth_effect",
+        "canonical_id": "illusory_truth_effect",
+        "name": "Illusory Truth Effect",
+        "definition": "Repeated exposure makes a claim seem truer without new supporting evidence.",
+        "annotation_boundary": "Repeated independent evidence differs from repetition of the same unsupported claim.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "halo_effect",
+    "name": "Halo Effect",
+    "definition": "A favorable impression on one dimension spills into an unsupported judgment on another.",
+    "boundary": "Require cross-attribute spillover; competence inferred from relevant performance is different.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "halo-effect",
+        "canonical_id": "halo_effect",
+        "name": "Halo Effect (Hâle etkisi)",
+        "definition": "A positive impression in one area colouring judgement in unrelated areas.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "halo_effect",
+        "canonical_id": "halo_effect",
+        "name": "Halo Effect",
+        "definition": "A favorable impression on one dimension spills into an unsupported judgment on another.",
+        "annotation_boundary": "Require cross-attribute spillover; competence inferred from relevant performance is different.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "base_rate_fallacy",
+    "name": "Base Rate Fallacy",
+    "definition": "Relevant population prevalence is neglected in favor of case-specific information.",
+    "boundary": "Require an available relevant base rate being neglected; overlap with representativeness is possible.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "base-rate",
+        "canonical_id": "base_rate_fallacy",
+        "name": "Base Rate Fallacy (Taban oran yanılgısı)",
+        "definition": "Putting concrete, striking information ahead of the relevant general statistics.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "base_rate_fallacy",
+        "canonical_id": "base_rate_fallacy",
+        "name": "Base Rate Fallacy",
+        "definition": "Relevant population prevalence is neglected in favor of case-specific information.",
+        "annotation_boundary": "Require an available relevant base rate being neglected; overlap with representativeness is possible.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "identifiable_victim_effect",
+    "name": "Identifiable Victim Effect",
+    "definition": "An identified individual elicits more help than comparable anonymous beneficiaries.",
+    "boundary": "Identification must drive the difference; differing effectiveness can justify allocation.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "identifiable-victim",
+        "canonical_id": "identifiable_victim_effect",
+        "name": "Identifiable Victim Effect (Belirlenebilir mağdur etkisi)",
+        "definition": "Reacting far more strongly to one named victim than to a statistical group.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "identifiable_victim_effect",
+        "canonical_id": "identifiable_victim_effect",
+        "name": "Identifiable Victim Effect",
+        "definition": "An identified individual elicits more help than comparable anonymous beneficiaries.",
+        "annotation_boundary": "Identification must drive the difference; differing effectiveness can justify allocation.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "attentional_bias",
+    "name": "Attentional Bias",
+    "definition": "Attention selectively favors certain information while other relevant information is overlooked.",
+    "boundary": "Distinguish selective attention from a later judgment that weights negative evidence more heavily.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "attentional-bias",
+        "canonical_id": "attentional_bias",
+        "name": "Attentional Bias (Dikkat yanlılığı)",
+        "definition": "Systematically giving some stimuli more attention than others.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "attentional_bias",
+        "canonical_id": "attentional_bias",
+        "name": "Attentional Bias",
+        "definition": "Attention selectively favors certain information while other relevant information is overlooked.",
+        "annotation_boundary": "Distinguish selective attention from a later judgment that weights negative evidence more heavily.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "naive_realism",
+    "name": "Naive Realism",
+    "definition": "One's own perspective is treated as unmediated reality and disagreement as others' defect.",
+    "boundary": "Believing a well-supported fact does not itself demonstrate naive realism.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "naive-realism",
+        "canonical_id": "naive_realism",
+        "name": "Naive Realism (Naif gerçekçilik)",
+        "definition": "Seeing one's own view as neutral reality and dissenters as misinformed or biased.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "naive_realism",
+        "canonical_id": "naive_realism",
+        "name": "Naive Realism",
+        "definition": "One's own perspective is treated as unmediated reality and disagreement as others' defect.",
+        "annotation_boundary": "Believing a well-supported fact does not itself demonstrate naive realism.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "just_world_hypothesis",
+    "name": "Just-world Hypothesis",
+    "definition": "People's outcomes are assumed to reflect what they morally deserve.",
+    "boundary": "Do not infer this label from a supported claim about consequences of a specific action.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "just-world",
+        "canonical_id": "just_world_hypothesis",
+        "name": "Just-World Hypothesis (Adil dünya inancı)",
+        "definition": "Interpreting events on the assumption that people get what they deserve.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "just_world_hypothesis",
+        "canonical_id": "just_world_hypothesis",
+        "name": "Just-world Hypothesis",
+        "definition": "People's outcomes are assumed to reflect what they morally deserve.",
+        "annotation_boundary": "Do not infer this label from a supported claim about consequences of a specific action.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "the_sunk_cost_fallacy",
+    "name": "The Sunk Cost Fallacy",
+    "definition": "Unrecoverable past expenditure is used to justify a choice despite unfavorable future costs and benefits.",
+    "boundary": "Past costs are sunk only if unrecoverable; distinguish salvage value and future contractual consequences.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "sunk-cost",
+        "canonical_id": "the_sunk_cost_fallacy",
+        "name": "Sunk Cost Fallacy (Batık maliyet yanılgısı)",
+        "definition": "Keeping an indefensible position because of past investment.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "the_sunk_cost_fallacy",
+        "canonical_id": "the_sunk_cost_fallacy",
+        "name": "The Sunk Cost Fallacy",
+        "definition": "Unrecoverable past expenditure is used to justify a choice despite unfavorable future costs and benefits.",
+        "annotation_boundary": "Past costs are sunk only if unrecoverable; distinguish salvage value and future contractual consequences.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "loaded_language",
+    "name": "Loaded language (Duygu yüklü dil)",
+    "definition": "Evaluative words present the event positively or negatively.",
+    "boundary": "Reporting a negative event is not loaded language by itself.",
+    "layer": "mercek_media_technique",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "loaded-language",
+        "canonical_id": "loaded_language",
+        "name": "Loaded Language (Yüklü dil)",
+        "definition": "Word choice that evaluates rather than reports and presets the reader's reaction (\"zam yapıldı\" vs \"vatandaşın cebine darbe\").",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_media_technique",
+        "source_id": "loaded_language",
+        "canonical_id": "loaded_language",
+        "name": "Loaded language (Duygu yüklü dil)",
+        "definition": "Evaluative words present the event positively or negatively.",
+        "annotation_boundary": "Reporting a negative event is not loaded language by itself.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "causal_overclaim",
+    "name": "Causal overclaim (Kanıtsız nedensellik)",
+    "definition": "Co-variation or time order alone is presented as cause.",
+    "boundary": "Needs an explicit causal statement; chronology alone is not enough.",
+    "layer": "mercek_media_technique",
+    "source_variants": [
+      {
+        "layer": "capraz_concept",
+        "source_id": "causal-overclaim",
+        "canonical_id": "causal_overclaim",
+        "name": "Causal Overclaim (Nedensellik aşırı iddiası)",
+        "definition": "Presenting a relationship as a definite cause-and-effect link and closing off other explanations.",
+        "annotation_boundary": "",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      },
+      {
+        "layer": "mercek_media_technique",
+        "source_id": "causal_overclaim",
+        "canonical_id": "causal_overclaim",
+        "name": "Causal overclaim (Kanıtsız nedensellik)",
+        "definition": "Co-variation or time order alone is presented as cause.",
+        "annotation_boundary": "Needs an explicit causal statement; chronology alone is not enough.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "selective_statistics",
+    "name": "Selective statistics (Seçici istatistik)",
+    "definition": "The choice of comparison base or denominator distorts what a number means.",
+    "boundary": "Needs comparative evidence that the missing denominator exists and is relevant.",
+    "layer": "mercek_media_technique",
+    "source_variants": [
+      {
+        "layer": "mercek_media_technique",
+        "source_id": "selective_statistics",
+        "canonical_id": "selective_statistics",
+        "name": "Selective statistics (Seçici istatistik)",
+        "definition": "The choice of comparison base or denominator distorts what a number means.",
+        "annotation_boundary": "Needs comparative evidence that the missing denominator exists and is relevant.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "one_sided_sourcing",
+    "name": "One-sided sourcing (Tek taraflı kaynak seçimi)",
+    "definition": "Only one side's claim serves as the story's evidence while a relevant counter-view exists.",
+    "boundary": "A short RSS excerpt does not prove the full story lacks the counter-view.",
+    "layer": "mercek_media_technique",
+    "source_variants": [
+      {
+        "layer": "mercek_media_technique",
+        "source_id": "one_sided_sourcing",
+        "canonical_id": "one_sided_sourcing",
+        "name": "One-sided sourcing (Tek taraflı kaynak seçimi)",
+        "definition": "Only one side's claim serves as the story's evidence while a relevant counter-view exists.",
+        "annotation_boundary": "A short RSS excerpt does not prove the full story lacks the counter-view.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "emphasis_framing",
+    "name": "Emphasis framing (Vurgu çerçevelemesi)",
+    "definition": "Different dimensions of the same fact are foregrounded in headline and presentation.",
+    "boundary": "Different emphasis alone is not misinformation or intent.",
+    "layer": "mercek_media_technique",
+    "source_variants": [
+      {
+        "layer": "mercek_media_technique",
+        "source_id": "emphasis_framing",
+        "canonical_id": "emphasis_framing",
+        "name": "Emphasis framing (Vurgu çerçevelemesi)",
+        "definition": "Different dimensions of the same fact are foregrounded in headline and presentation.",
+        "annotation_boundary": "Different emphasis alone is not misinformation or intent.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "contextual_omission",
+    "name": "Contextual omission (Bağlam eksiltme)",
+    "definition": "Leaving out accessible, relevant context changes the comparison.",
+    "boundary": "Not the same as `omission_bias`; without full text and relevant counter-evidence it stays a candidate.",
+    "layer": "mercek_media_technique",
+    "source_variants": [
+      {
+        "layer": "mercek_media_technique",
+        "source_id": "contextual_omission",
+        "canonical_id": "contextual_omission",
+        "name": "Contextual omission (Bağlam eksiltme)",
+        "definition": "Leaving out accessible, relevant context changes the comparison.",
+        "annotation_boundary": "Not the same as `omission_bias`; without full text and relevant counter-evidence it stays a candidate.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "ai_literacy_gap",
+    "name": "AI Literacy Gap",
+    "definition": "Comfort using AI exceeds understanding of its capabilities and limitations.",
+    "boundary": "Require evidence of a competence gap; frequent use alone is insufficient.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "ai_literacy_gap",
+        "canonical_id": "ai_literacy_gap",
+        "name": "AI Literacy Gap",
+        "definition": "Comfort using AI exceeds understanding of its capabilities and limitations.",
+        "annotation_boundary": "Require evidence of a competence gap; frequent use alone is insufficient.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "accountability_diffusion_in_ai",
+    "name": "Accountability diffusion in AI",
+    "definition": "Responsibility becomes dispersed across AI stakeholders until nobody accepts ownership.",
+    "boundary": "Distributed work alone is not diffusion; look for responsibility being disclaimed or left unowned.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "accountability_diffusion_in_ai",
+        "canonical_id": "accountability_diffusion_in_ai",
+        "name": "Accountability diffusion in AI",
+        "definition": "Responsibility becomes dispersed across AI stakeholders until nobody accepts ownership.",
+        "annotation_boundary": "Distributed work alone is not diffusion; look for responsibility being disclaimed or left unowned.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "action_bias",
+    "name": "Action Bias",
+    "definition": "Action is preferred simply to act, without a supporting advantage over waiting.",
+    "boundary": "An evidence-based intervention is not action bias.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "action_bias",
+        "canonical_id": "action_bias",
+        "name": "Action Bias",
+        "definition": "Action is preferred simply to act, without a supporting advantage over waiting.",
+        "annotation_boundary": "An evidence-based intervention is not action bias.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "affect_heuristic",
+    "name": "Affect Heuristic",
+    "definition": "An emotional reaction substitutes for evaluation of an option's benefits or risks.",
+    "boundary": "Emotion relevant to a subjective preference is not necessarily a distorted factual judgment.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "affect_heuristic",
+        "canonical_id": "affect_heuristic",
+        "name": "Affect Heuristic",
+        "definition": "An emotional reaction substitutes for evaluation of an option's benefits or risks.",
+        "annotation_boundary": "Emotion relevant to a subjective preference is not necessarily a distorted factual judgment.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "ambiguity_effect",
+    "name": "Ambiguity Effect",
+    "definition": "Unspecified probabilities make an option less attractive than one with known probabilities.",
+    "boundary": "Ambiguity aversion can reflect a legitimate preference; do not equate it automatically with error.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "ambiguity_effect",
+        "canonical_id": "ambiguity_effect",
+        "name": "Ambiguity Effect",
+        "definition": "Unspecified probabilities make an option less attractive than one with known probabilities.",
+        "annotation_boundary": "Ambiguity aversion can reflect a legitimate preference; do not equate it automatically with error.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "automation_bias",
+    "name": "Automation Bias",
+    "definition": "Automated recommendations receive excessive trust despite reasons to check or reject them.",
+    "boundary": "Using automation alone is insufficient; identify unjustified deference.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "automation_bias",
+        "canonical_id": "automation_bias",
+        "name": "Automation Bias",
+        "definition": "Automated recommendations receive excessive trust despite reasons to check or reject them.",
+        "annotation_boundary": "Using automation alone is insufficient; identify unjustified deference.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "barnum_effect",
+    "name": "Barnum Effect",
+    "definition": "A vague description applicable to many people is accepted as uniquely personal.",
+    "boundary": "Agreement with a general statement alone is insufficient; require perceived personal specificity.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "barnum_effect",
+        "canonical_id": "barnum_effect",
+        "name": "Barnum Effect",
+        "definition": "A vague description applicable to many people is accepted as uniquely personal.",
+        "annotation_boundary": "Agreement with a general statement alone is insufficient; require perceived personal specificity.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "belief_perseverance",
+    "name": "Belief Perseverance (The Backfire Effect)",
+    "definition": "A belief persists after its supporting evidence is discredited; strengthening after correction is a distinct backfire pattern.",
+    "boundary": "Preserved source umbrella: record perseverance and backfire as separate subtypes; persistence does not imply strengthening.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "belief_perseverance",
+        "canonical_id": "belief_perseverance",
+        "name": "Belief Perseverance (The Backfire Effect)",
+        "definition": "A belief persists after its supporting evidence is discredited; strengthening after correction is a distinct backfire pattern.",
+        "annotation_boundary": "Preserved source umbrella: record perseverance and backfire as separate subtypes; persistence does not imply strengthening.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "benjamin_franklin_effect",
+    "name": "Benjamin Franklin effect",
+    "definition": "Doing someone a favor leads the helper to like that person more.",
+    "boundary": "The direction is giving a favor then increased liking, not receiving kindness then liking its giver.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "benjamin_franklin_effect",
+        "canonical_id": "benjamin_franklin_effect",
+        "name": "Benjamin Franklin effect",
+        "definition": "Doing someone a favor leads the helper to like that person more.",
+        "annotation_boundary": "The direction is giving a favor then increased liking, not receiving kindness then liking its giver.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "bikeshedding",
+    "name": "Bikeshedding",
+    "definition": "Disproportionate discussion goes to easy trivial details while consequential issues receive little scrutiny.",
+    "boundary": "Judge time against importance; a small-looking detail can have major consequences.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "bikeshedding",
+        "canonical_id": "bikeshedding",
+        "name": "Bikeshedding",
+        "definition": "Disproportionate discussion goes to easy trivial details while consequential issues receive little scrutiny.",
+        "annotation_boundary": "Judge time against importance; a small-looking detail can have major consequences.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "bottom_dollar_effect",
+    "name": "Bottom-Dollar Effect",
+    "definition": "Spending the last available funds reduces satisfaction with the purchased item.",
+    "boundary": "Distinguish diminished purchase satisfaction from rational concern about an insufficient budget.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "bottom_dollar_effect",
+        "canonical_id": "bottom_dollar_effect",
+        "name": "Bottom-Dollar Effect",
+        "definition": "Spending the last available funds reduces satisfaction with the purchased item.",
+        "annotation_boundary": "Distinguish diminished purchase satisfaction from rational concern about an insufficient budget.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "bounded_rationality",
+    "name": "Bounded Rationality",
+    "definition": "Limited time, information, or processing capacity leads to a satisfactory rather than globally optimal choice.",
+    "boundary": "A decision framework, not inherently an error; label satisficing only when constraints and stopping rule are visible.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "bounded_rationality",
+        "canonical_id": "bounded_rationality",
+        "name": "Bounded Rationality",
+        "definition": "Limited time, information, or processing capacity leads to a satisfactory rather than globally optimal choice.",
+        "annotation_boundary": "A decision framework, not inherently an error; label satisficing only when constraints and stopping rule are visible.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "bundling_bias",
+    "name": "Bundling Bias",
+    "definition": "Bundled pricing weakens attention to the cost of individual components and can reduce their use.",
+    "boundary": "Underuse must relate to bundling; a bundle purchase alone proves nothing.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "bundling_bias",
+        "canonical_id": "bundling_bias",
+        "name": "Bundling Bias",
+        "definition": "Bundled pricing weakens attention to the cost of individual components and can reduce their use.",
+        "annotation_boundary": "Underuse must relate to bundling; a bundle purchase alone proves nothing.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "bye_now_effect",
+    "name": "Bye-Now Effect",
+    "definition": "Exposure to the word bye is proposed to activate buy through their shared sound and influence spending.",
+    "boundary": "A narrow proposed priming effect; an isolated word or purchase cannot establish the mechanism.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "bye_now_effect",
+        "canonical_id": "bye_now_effect",
+        "name": "Bye-Now Effect",
+        "definition": "Exposure to the word bye is proposed to activate buy through their shared sound and influence spending.",
+        "annotation_boundary": "A narrow proposed priming effect; an isolated word or purchase cannot establish the mechanism.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "cashless_effect",
+    "name": "Cashless Effect",
+    "definition": "Cash-free payment increases willingness to spend relative to physical cash.",
+    "boundary": "Require a change in spending or willingness, not just card usage.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "cashless_effect",
+        "canonical_id": "cashless_effect",
+        "name": "Cashless Effect",
+        "definition": "Cash-free payment increases willingness to spend relative to physical cash.",
+        "annotation_boundary": "Require a change in spending or willingness, not just card usage.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "category_size_bias",
+    "name": "Category Size Bias",
+    "definition": "A particular outcome is judged more likely because it belongs to a larger category, although individual outcome probabilities are equal.",
+    "boundary": "Distinguish an individual outcome from its category; larger categories can genuinely have greater aggregate probability.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "category_size_bias",
+        "canonical_id": "category_size_bias",
+        "name": "Category Size Bias",
+        "definition": "A particular outcome is judged more likely because it belongs to a larger category, although individual outcome probabilities are equal.",
+        "annotation_boundary": "Distinguish an individual outcome from its category; larger categories can genuinely have greater aggregate probability.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "choice_overload_bias",
+    "name": "Choice Overload",
+    "definition": "A larger choice set impairs choosing or satisfaction through comparison difficulty.",
+    "boundary": "Many options alone are insufficient; identify overload and its consequence.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "choice_overload_bias",
+        "canonical_id": "choice_overload_bias",
+        "name": "Choice Overload",
+        "definition": "A larger choice set impairs choosing or satisfaction through comparison difficulty.",
+        "annotation_boundary": "Many options alone are insufficient; identify overload and its consequence.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "cognitive_dissonance",
+    "name": "Cognitive Dissonance",
+    "definition": "Inconsistent beliefs, values, or behavior produce discomfort and efforts to resolve the inconsistency.",
+    "boundary": "Dissonance is a psychological state; resolution through honest revision is not itself biased reasoning.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "cognitive_dissonance",
+        "canonical_id": "cognitive_dissonance",
+        "name": "Cognitive Dissonance",
+        "definition": "Inconsistent beliefs, values, or behavior produce discomfort and efforts to resolve the inconsistency.",
+        "annotation_boundary": "Dissonance is a psychological state; resolution through honest revision is not itself biased reasoning.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "commitment_bias",
+    "name": "Commitment Bias",
+    "definition": "A prior commitment is maintained or escalated despite evidence that it should be reconsidered.",
+    "boundary": "Public consistency can distinguish commitment bias from a specific appeal to unrecoverable expenditure.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "commitment_bias",
+        "canonical_id": "commitment_bias",
+        "name": "Commitment Bias",
+        "definition": "A prior commitment is maintained or escalated despite evidence that it should be reconsidered.",
+        "annotation_boundary": "Public consistency can distinguish commitment bias from a specific appeal to unrecoverable expenditure.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "decision_fatigue",
+    "name": "Decision Fatigue",
+    "definition": "Repeated decision-making is followed by mental exhaustion and poorer or more avoidant choices.",
+    "boundary": "Require the decision-load link; time of day alone cannot establish fatigue or its cause.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "decision_fatigue",
+        "canonical_id": "decision_fatigue",
+        "name": "Decision Fatigue",
+        "definition": "Repeated decision-making is followed by mental exhaustion and poorer or more avoidant choices.",
+        "annotation_boundary": "Require the decision-load link; time of day alone cannot establish fatigue or its cause.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "declinism",
+    "name": "Declinism",
+    "definition": "The past is idealized while the present or future is judged to be deteriorating without adequate support.",
+    "boundary": "A supported decline in one measure is not generalized declinism.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "declinism",
+        "canonical_id": "declinism",
+        "name": "Declinism",
+        "definition": "The past is idealized while the present or future is judged to be deteriorating without adequate support.",
+        "annotation_boundary": "A supported decline in one measure is not generalized declinism.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "decoy_effect",
+    "name": "Decoy Effect",
+    "definition": "An asymmetrically dominated third option shifts preference toward the option that dominates it.",
+    "boundary": "Show the third option's dominance relation and a preference shift.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "decoy_effect",
+        "canonical_id": "decoy_effect",
+        "name": "Decoy Effect",
+        "definition": "An asymmetrically dominated third option shifts preference toward the option that dominates it.",
+        "annotation_boundary": "Show the third option's dominance relation and a preference shift.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "delegation_creep",
+    "name": "Delegation Creep",
+    "definition": "AI delegation expands gradually into new or consequential tasks without a corresponding review of suitability.",
+    "boundary": "A temporal expansion is essential; one instance of automated advice is not creep.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "delegation_creep",
+        "canonical_id": "delegation_creep",
+        "name": "Delegation Creep",
+        "definition": "AI delegation expands gradually into new or consequential tasks without a corresponding review of suitability.",
+        "annotation_boundary": "A temporal expansion is essential; one instance of automated advice is not creep.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "disposition_effect",
+    "name": "Disposition Effect",
+    "definition": "Losing investments are retained and winning ones sold because of their gain-loss status rather than forward prospects.",
+    "boundary": "Purchase price alone should not substitute for forward evaluation; taxes and strategy can justify trades.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "disposition_effect",
+        "canonical_id": "disposition_effect",
+        "name": "Disposition Effect",
+        "definition": "Losing investments are retained and winning ones sold because of their gain-loss status rather than forward prospects.",
+        "annotation_boundary": "Purchase price alone should not substitute for forward evaluation; taxes and strategy can justify trades.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "distinction_bias",
+    "name": "Distinction Bias",
+    "definition": "Side-by-side comparison exaggerates differences that matter little during separate use.",
+    "boundary": "Joint versus separate evaluation matters; a real use-relevant difference is not sufficient evidence of bias.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "distinction_bias",
+        "canonical_id": "distinction_bias",
+        "name": "Distinction Bias",
+        "definition": "Side-by-side comparison exaggerates differences that matter little during separate use.",
+        "annotation_boundary": "Joint versus separate evaluation matters; a real use-relevant difference is not sufficient evidence of bias.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "dunning_kruger_effect",
+    "name": "Dunning–Kruger Effect",
+    "definition": "Low demonstrated competence accompanies overestimation of competence and difficulty recognizing errors.",
+    "boundary": "Do not diagnose from confidence or disagreement alone; a single anecdote cannot establish a population-level effect.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "dunning_kruger_effect",
+        "canonical_id": "dunning_kruger_effect",
+        "name": "Dunning–Kruger Effect",
+        "definition": "Low demonstrated competence accompanies overestimation of competence and difficulty recognizing errors.",
+        "annotation_boundary": "Do not diagnose from confidence or disagreement alone; a single anecdote cannot establish a population-level effect.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "einstellung_effect",
+    "name": "Einstellung Effect",
+    "definition": "A familiar solution blocks discovery of a better alternative.",
+    "boundary": "Focus on fixation on a learned solution, rather than a general preference for a familiar tool.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "einstellung_effect",
+        "canonical_id": "einstellung_effect",
+        "name": "Einstellung Effect",
+        "definition": "A familiar solution blocks discovery of a better alternative.",
+        "annotation_boundary": "Focus on fixation on a learned solution, rather than a general preference for a familiar tool.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "empathy_gap",
+    "name": "Empathy Gap",
+    "definition": "A person underestimates how a different emotional or bodily state changes preferences and behavior.",
+    "boundary": "Require a mismatch across states or failure to understand another person's state.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "empathy_gap",
+        "canonical_id": "empathy_gap",
+        "name": "Empathy Gap",
+        "definition": "A person underestimates how a different emotional or bodily state changes preferences and behavior.",
+        "annotation_boundary": "Require a mismatch across states or failure to understand another person's state.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "endowment_effect",
+    "name": "Endowment Effect",
+    "definition": "Ownership raises valuation beyond the value assigned before owning the same item.",
+    "boundary": "Ownership must explain the valuation gap; market differences and transaction costs may explain it instead.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "endowment_effect",
+        "canonical_id": "endowment_effect",
+        "name": "Endowment Effect",
+        "definition": "Ownership raises valuation beyond the value assigned before owning the same item.",
+        "annotation_boundary": "Ownership must explain the valuation gap; market differences and transaction costs may explain it instead.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "extrinsic_incentive_bias",
+    "name": "Extrinsic Incentive Bias",
+    "definition": "Others' motivation is attributed more to external rewards than one's own motivation is.",
+    "boundary": "Require an unsupported self-other asymmetry, not any mention of money.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "extrinsic_incentive_bias",
+        "canonical_id": "extrinsic_incentive_bias",
+        "name": "Extrinsic Incentive Bias",
+        "definition": "Others' motivation is attributed more to external rewards than one's own motivation is.",
+        "annotation_boundary": "Require an unsupported self-other asymmetry, not any mention of money.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "false_consensus_effect",
+    "name": "False Consensus Effect",
+    "definition": "Agreement with one's own position is overestimated.",
+    "boundary": "Different from pluralistic ignorance, which involves a mistaken belief that one's private view is not shared.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "false_consensus_effect",
+        "canonical_id": "false_consensus_effect",
+        "name": "False Consensus Effect",
+        "definition": "Agreement with one's own position is overestimated.",
+        "annotation_boundary": "Different from pluralistic ignorance, which involves a mistaken belief that one's private view is not shared.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "framing_effect",
+    "name": "Framing Effect",
+    "definition": "Equivalent information yields different choices when expressed differently.",
+    "boundary": "Check mathematical and substantive equivalence; genuinely different information is not framing alone.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "framing_effect",
+        "canonical_id": "framing_effect",
+        "name": "Framing Effect",
+        "definition": "Equivalent information yields different choices when expressed differently.",
+        "annotation_boundary": "Check mathematical and substantive equivalence; genuinely different information is not framing alone.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "functional_fixedness",
+    "name": "Functional Fixedness",
+    "definition": "An object's customary purpose blocks recognition of another useful purpose.",
+    "boundary": "Object-use restriction differs from fixation on an established problem-solving procedure.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "functional_fixedness",
+        "canonical_id": "functional_fixedness",
+        "name": "Functional Fixedness",
+        "definition": "An object's customary purpose blocks recognition of another useful purpose.",
+        "annotation_boundary": "Object-use restriction differs from fixation on an established problem-solving procedure.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "fundamental_attribution_error",
+    "name": "Fundamental Attribution Error",
+    "definition": "Behavior is attributed too strongly to character while relevant situational constraints are discounted.",
+    "boundary": "A character judgment needs evidence of neglected context to support this label confidently.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "fundamental_attribution_error",
+        "canonical_id": "fundamental_attribution_error",
+        "name": "Fundamental Attribution Error",
+        "definition": "Behavior is attributed too strongly to character while relevant situational constraints are discounted.",
+        "annotation_boundary": "A character judgment needs evidence of neglected context to support this label confidently.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "gamblers_fallacy",
+    "name": "Gambler's Fallacy",
+    "definition": "Independent random outcomes are expected to reverse because of previous outcomes.",
+    "boundary": "Require independence or stable probabilities; sampling without replacement can change the odds.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "gamblers_fallacy",
+        "canonical_id": "gamblers_fallacy",
+        "name": "Gambler's Fallacy",
+        "definition": "Independent random outcomes are expected to reverse because of previous outcomes.",
+        "annotation_boundary": "Require independence or stable probabilities; sampling without replacement can change the odds.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "google_effect",
+    "name": "Google Effect",
+    "definition": "Expected access to external information reduces memory for the information itself.",
+    "boundary": "External lookup alone is insufficient; this is a memory/offloading effect, not automatically faulty reasoning.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "google_effect",
+        "canonical_id": "google_effect",
+        "name": "Google Effect",
+        "definition": "Expected access to external information reduces memory for the information itself.",
+        "annotation_boundary": "External lookup alone is insufficient; this is a memory/offloading effect, not automatically faulty reasoning.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "hard_easy_effect",
+    "name": "Hard-easy effect",
+    "definition": "Confidence tends to be too high for difficult tasks and too low for easy tasks.",
+    "boundary": "This is a calibration pattern across difficulty levels, not simply being overconfident once.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "hard_easy_effect",
+        "canonical_id": "hard_easy_effect",
+        "name": "Hard-easy effect",
+        "definition": "Confidence tends to be too high for difficult tasks and too low for easy tasks.",
+        "annotation_boundary": "This is a calibration pattern across difficulty levels, not simply being overconfident once.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "heuristics",
+    "name": "Heuristics",
+    "definition": "A simplified rule reduces the information or computation used to decide.",
+    "boundary": "Umbrella concept; prefer a named subtype when supported, and do not assume a shortcut is inaccurate.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "heuristics",
+        "canonical_id": "heuristics",
+        "name": "Heuristics",
+        "definition": "A simplified rule reduces the information or computation used to decide.",
+        "annotation_boundary": "Umbrella concept; prefer a named subtype when supported, and do not assume a shortcut is inaccurate.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "hindsight_bias",
+    "name": "Hindsight Bias",
+    "definition": "Knowing the outcome makes it seem more predictable beforehand than it was.",
+    "boundary": "Different from judging the quality of the original decision by its outcome.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "hindsight_bias",
+        "canonical_id": "hindsight_bias",
+        "name": "Hindsight Bias",
+        "definition": "Knowing the outcome makes it seem more predictable beforehand than it was.",
+        "annotation_boundary": "Different from judging the quality of the original decision by its outcome.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "hot_hand_fallacy",
+    "name": "Hot Hand Fallacy",
+    "definition": "A success streak is treated as evidence of increased next-trial success without support.",
+    "boundary": "Real persistence can exist in skill-based activities; do not label every streak inference a fallacy.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "hot_hand_fallacy",
+        "canonical_id": "hot_hand_fallacy",
+        "name": "Hot Hand Fallacy",
+        "definition": "A success streak is treated as evidence of increased next-trial success without support.",
+        "annotation_boundary": "Real persistence can exist in skill-based activities; do not label every streak inference a fallacy.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "hyperbolic_discounting",
+    "name": "Hyperbolic Discounting",
+    "definition": "Impatience decreases with delay, producing preferences consistent with non-exponential discounting.",
+    "boundary": "This reversal supports decreasing impatience but does not prove an exact hyperbolic function; it overlaps present bias.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "hyperbolic_discounting",
+        "canonical_id": "hyperbolic_discounting",
+        "name": "Hyperbolic Discounting",
+        "definition": "Impatience decreases with delay, producing preferences consistent with non-exponential discounting.",
+        "annotation_boundary": "This reversal supports decreasing impatience but does not prove an exact hyperbolic function; it overlaps present bias.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "ikea_effect",
+    "name": "IKEA Effect",
+    "definition": "Personal assembly or creation inflates an object's perceived value.",
+    "boundary": "Separate construction effort from ownership alone and from objective customization benefits.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "ikea_effect",
+        "canonical_id": "ikea_effect",
+        "name": "IKEA Effect",
+        "definition": "Personal assembly or creation inflates an object's perceived value.",
+        "annotation_boundary": "Separate construction effort from ownership alone and from objective customization benefits.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "illusion_of_control",
+    "name": "Illusion of Control",
+    "definition": "Personal actions are believed to control outcomes they cannot influence.",
+    "boundary": "Actual causal influence is not illusory control.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "illusion_of_control",
+        "canonical_id": "illusion_of_control",
+        "name": "Illusion of Control",
+        "definition": "Personal actions are believed to control outcomes they cannot influence.",
+        "annotation_boundary": "Actual causal influence is not illusory control.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "illusion_of_transparency",
+    "name": "Illusion of Transparency",
+    "definition": "Internal feelings or intentions are assumed to be more visible to others than they are.",
+    "boundary": "Internal-state visibility differs from believing one receives unusually much attention.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "illusion_of_transparency",
+        "canonical_id": "illusion_of_transparency",
+        "name": "Illusion of Transparency",
+        "definition": "Internal feelings or intentions are assumed to be more visible to others than they are.",
+        "annotation_boundary": "Internal-state visibility differs from believing one receives unusually much attention.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "illusion_of_validity",
+    "name": "Illusion of Validity",
+    "definition": "A coherent impression creates unwarranted confidence in the validity of a prediction.",
+    "boundary": "Focus on confidence in an unreliable inference, not confidence alone.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "illusion_of_validity",
+        "canonical_id": "illusion_of_validity",
+        "name": "Illusion of Validity",
+        "definition": "A coherent impression creates unwarranted confidence in the validity of a prediction.",
+        "annotation_boundary": "Focus on confidence in an unreliable inference, not confidence alone.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "illusory_correlation",
+    "name": "Illusory Correlation",
+    "definition": "A relationship is perceived despite insufficient evidence or contrary association data.",
+    "boundary": "Distinguish an unsupported association from the separate mistake of treating a real correlation as causation.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "illusory_correlation",
+        "canonical_id": "illusory_correlation",
+        "name": "Illusory Correlation",
+        "definition": "A relationship is perceived despite insufficient evidence or contrary association data.",
+        "annotation_boundary": "Distinguish an unsupported association from the separate mistake of treating a real correlation as causation.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "impact_bias",
+    "name": "Impact Bias",
+    "definition": "The intensity or duration of future emotional reactions is overestimated.",
+    "boundary": "An emotional forecast needs a basis for judging overestimation; intense feelings alone are not bias.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "impact_bias",
+        "canonical_id": "impact_bias",
+        "name": "Impact Bias",
+        "definition": "The intensity or duration of future emotional reactions is overestimated.",
+        "annotation_boundary": "An emotional forecast needs a basis for judging overestimation; intense feelings alone are not bias.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "incentivization",
+    "name": "Incentivization",
+    "definition": "Rewards or penalties alter motivation or behavior.",
+    "boundary": "A motivational mechanism, not inherently a cognitive bias or evidence of manipulation.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "incentivization",
+        "canonical_id": "incentivization",
+        "name": "Incentivization",
+        "definition": "Rewards or penalties alter motivation or behavior.",
+        "annotation_boundary": "A motivational mechanism, not inherently a cognitive bias or evidence of manipulation.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "lag_effect",
+    "name": "Lag Effect",
+    "definition": "Within spaced practice, longer suitable intervals can improve later retention relative to shorter intervals.",
+    "boundary": "Intervals have limits and depend on the retention horizon; longer is not universally better.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "lag_effect",
+        "canonical_id": "lag_effect",
+        "name": "Lag Effect",
+        "definition": "Within spaced practice, longer suitable intervals can improve later retention relative to shorter intervals.",
+        "annotation_boundary": "Intervals have limits and depend on the retention horizon; longer is not universally better.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "law_of_the_instrument",
+    "name": "Law of the Instrument",
+    "definition": "A familiar tool or skill is applied too broadly even when poorly suited.",
+    "boundary": "Tool overgeneralization differs from an object's fixed customary use.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "law_of_the_instrument",
+        "canonical_id": "law_of_the_instrument",
+        "name": "Law of the Instrument",
+        "definition": "A familiar tool or skill is applied too broadly even when poorly suited.",
+        "annotation_boundary": "Tool overgeneralization differs from an object's fixed customary use.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "less_is_better_effect",
+    "name": "Less-is-Better Effect",
+    "definition": "Separate evaluation favors a smaller or objectively lesser option, while joint evaluation reverses the preference.",
+    "boundary": "Show the evaluation context and control genuine costs of the extra items.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "less_is_better_effect",
+        "canonical_id": "less_is_better_effect",
+        "name": "Less-is-Better Effect",
+        "definition": "Separate evaluation favors a smaller or objectively lesser option, while joint evaluation reverses the preference.",
+        "annotation_boundary": "Show the evaluation context and control genuine costs of the extra items.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "leveling_and_sharpening",
+    "name": "Leveling and Sharpening",
+    "definition": "Retelling flattens some details and accentuates others, distorting the remembered account.",
+    "boundary": "Ordinary summarization is not necessarily memory distortion; intentional editing needs separate attribution.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "leveling_and_sharpening",
+        "canonical_id": "leveling_and_sharpening",
+        "name": "Leveling and Sharpening",
+        "definition": "Retelling flattens some details and accentuates others, distorting the remembered account.",
+        "annotation_boundary": "Ordinary summarization is not necessarily memory distortion; intentional editing needs separate attribution.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "levels_of_processing_effect",
+    "name": "Levels of Processing",
+    "definition": "Meaning-focused processing supports better memory than shallow surface processing.",
+    "boundary": "A memory framework, not an irrational judgment; compare processing depth with exposure controlled.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "levels_of_processing_effect",
+        "canonical_id": "levels_of_processing_effect",
+        "name": "Levels of Processing",
+        "definition": "Meaning-focused processing supports better memory than shallow surface processing.",
+        "annotation_boundary": "A memory framework, not an irrational judgment; compare processing depth with exposure controlled.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "look_elsewhere_effect",
+    "name": "Look-elsewhere Effect",
+    "definition": "Searching many tests or locations increases the chance of apparently impressive findings, which can be overstated if multiplicity is ignored.",
+    "boundary": "The statistical effect need not involve dishonesty; distinguish exploratory discovery from confirmatory evidence.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "look_elsewhere_effect",
+        "canonical_id": "look_elsewhere_effect",
+        "name": "Look-elsewhere Effect",
+        "definition": "Searching many tests or locations increases the chance of apparently impressive findings, which can be overstated if multiplicity is ignored.",
+        "annotation_boundary": "The statistical effect need not involve dishonesty; distinguish exploratory discovery from confirmatory evidence.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "loss_aversion",
+    "name": "Loss Aversion",
+    "definition": "A loss relative to a reference point carries more psychological weight than an equal gain.",
+    "boundary": "Risk aversion or inability to absorb a loss alone does not establish loss aversion.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "loss_aversion",
+        "canonical_id": "loss_aversion",
+        "name": "Loss Aversion",
+        "definition": "A loss relative to a reference point carries more psychological weight than an equal gain.",
+        "annotation_boundary": "Risk aversion or inability to absorb a loss alone does not establish loss aversion.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "mental_accounting",
+    "name": "Mental Accounting",
+    "definition": "Money is treated differently according to mental categories rather than its interchangeable purchasing power.",
+    "boundary": "Budgeting can be useful; identify a category-driven inconsistency before calling it erroneous.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "mental_accounting",
+        "canonical_id": "mental_accounting",
+        "name": "Mental Accounting",
+        "definition": "Money is treated differently according to mental categories rather than its interchangeable purchasing power.",
+        "annotation_boundary": "Budgeting can be useful; identify a category-driven inconsistency before calling it erroneous.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "mere_exposure_effect",
+    "name": "Mere Exposure Effect",
+    "definition": "Repeated exposure increases liking without new substantive information.",
+    "boundary": "Liking through familiarity differs from believing a repeated claim is true.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "mere_exposure_effect",
+        "canonical_id": "mere_exposure_effect",
+        "name": "Mere Exposure Effect",
+        "definition": "Repeated exposure increases liking without new substantive information.",
+        "annotation_boundary": "Liking through familiarity differs from believing a repeated claim is true.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "messenger_effect",
+    "name": "Messenger Effect",
+    "definition": "The identity or presentation of a messenger changes reception of an otherwise identical message.",
+    "boundary": "Messenger cues can be informative; authority bias is a more specific subtype when status drives deference.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "messenger_effect",
+        "canonical_id": "messenger_effect",
+        "name": "Messenger Effect",
+        "definition": "The identity or presentation of a messenger changes reception of an otherwise identical message.",
+        "annotation_boundary": "Messenger cues can be informative; authority bias is a more specific subtype when status drives deference.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "motivating_uncertainty_effect",
+    "name": "Motivating Uncertainty Effect",
+    "definition": "Uncertainty about a reward's size can increase effort through excitement about pursuing it.",
+    "boundary": "Control reward value and focus on pursuit; uncertainty is not universally motivating.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "motivating_uncertainty_effect",
+        "canonical_id": "motivating_uncertainty_effect",
+        "name": "Motivating Uncertainty Effect",
+        "definition": "Uncertainty about a reward's size can increase effort through excitement about pursuing it.",
+        "annotation_boundary": "Control reward value and focus on pursuit; uncertainty is not universally motivating.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "naive_allocation",
+    "name": "Naive Allocation",
+    "definition": "Resources are spread evenly across listed options without considering their underlying differences.",
+    "boundary": "Equal allocation is not automatically naive; require the superficial allocation rule.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "naive_allocation",
+        "canonical_id": "naive_allocation",
+        "name": "Naive Allocation",
+        "definition": "Resources are spread evenly across listed options without considering their underlying differences.",
+        "annotation_boundary": "Equal allocation is not automatically naive; require the superficial allocation rule.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "noble_edge_effect",
+    "name": "Noble Edge Effect",
+    "definition": "Perceived corporate social responsibility increases favorable evaluation or purchase appeal.",
+    "boundary": "A favorable ethical preference is not automatically irrational; an unsupported leap to better sound quality would also suggest halo effect.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "noble_edge_effect",
+        "canonical_id": "noble_edge_effect",
+        "name": "Noble Edge Effect",
+        "definition": "Perceived corporate social responsibility increases favorable evaluation or purchase appeal.",
+        "annotation_boundary": "A favorable ethical preference is not automatically irrational; an unsupported leap to better sound quality would also suggest halo effect.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "normalcy_bias",
+    "name": "Normalcy Bias",
+    "definition": "Continuation of ordinary conditions is assumed despite credible signs of disruption.",
+    "boundary": "Require neglect of credible warning evidence, not simply remaining calm.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "normalcy_bias",
+        "canonical_id": "normalcy_bias",
+        "name": "Normalcy Bias",
+        "definition": "Continuation of ordinary conditions is assumed despite credible signs of disruption.",
+        "annotation_boundary": "Require neglect of credible warning evidence, not simply remaining calm.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "nostalgia_effect",
+    "name": "Nostalgia Effect",
+    "definition": "Nostalgic feelings increase willingness to spend or weaken attachment to money.",
+    "boundary": "Nostalgia alone is insufficient for this source's spending-related effect.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "nostalgia_effect",
+        "canonical_id": "nostalgia_effect",
+        "name": "Nostalgia Effect",
+        "definition": "Nostalgic feelings increase willingness to spend or weaken attachment to money.",
+        "annotation_boundary": "Nostalgia alone is insufficient for this source's spending-related effect.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "observer_expectancy_effect",
+    "name": "Observer Expectancy Effect",
+    "definition": "An observer's expectations influence the people being observed, potentially contaminating results.",
+    "boundary": "Require an expectation-mediated influence; merely knowing one is watched is not enough. Expectation-biased scoring is a related measurement mechanism.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "observer_expectancy_effect",
+        "canonical_id": "observer_expectancy_effect",
+        "name": "Observer Expectancy Effect",
+        "definition": "An observer's expectations influence the people being observed, potentially contaminating results.",
+        "annotation_boundary": "Require an expectation-mediated influence; merely knowing one is watched is not enough. Expectation-biased scoring is a related measurement mechanism.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "omission_bias",
+    "name": "Omission Bias",
+    "definition": "Harm caused by acting is judged more harshly than comparable harm caused by not acting.",
+    "boundary": "Control knowledge, duty, intention, and consequences before attributing an action-inaction asymmetry.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "omission_bias",
+        "canonical_id": "omission_bias",
+        "name": "Omission Bias",
+        "definition": "Harm caused by acting is judged more harshly than comparable harm caused by not acting.",
+        "annotation_boundary": "Control knowledge, duty, intention, and consequences before attributing an action-inaction asymmetry.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "optimism_bias",
+    "name": "Optimism Bias",
+    "definition": "Positive outcomes are expected too strongly or negative outcomes discounted without adequate grounds.",
+    "boundary": "Hope and supported favorable forecasts are not enough to establish bias.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "optimism_bias",
+        "canonical_id": "optimism_bias",
+        "name": "Optimism Bias",
+        "definition": "Positive outcomes are expected too strongly or negative outcomes discounted without adequate grounds.",
+        "annotation_boundary": "Hope and supported favorable forecasts are not enough to establish bias.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "ostrich_effect",
+    "name": "Ostrich Effect",
+    "definition": "Threatening information is avoided to escape discomfort.",
+    "boundary": "Information avoidance differs from believing no threat exists; a practical delay may be justified.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "ostrich_effect",
+        "canonical_id": "ostrich_effect",
+        "name": "Ostrich Effect",
+        "definition": "Threatening information is avoided to escape discomfort.",
+        "annotation_boundary": "Information avoidance differs from believing no threat exists; a practical delay may be justified.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "outcome_bias",
+    "name": "Outcome bias",
+    "definition": "A decision is evaluated by its result instead of the reasoning and evidence available when it was made.",
+    "boundary": "Outcome bias concerns decision quality; hindsight bias concerns prior predictability.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "outcome_bias",
+        "canonical_id": "outcome_bias",
+        "name": "Outcome bias",
+        "definition": "A decision is evaluated by its result instead of the reasoning and evidence available when it was made.",
+        "annotation_boundary": "Outcome bias concerns decision quality; hindsight bias concerns prior predictability.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "overjustification_effect",
+    "name": "Overjustification Effect",
+    "definition": "External rewards reduce previously intrinsic interest in an activity.",
+    "boundary": "Require prior intrinsic interest and a reward-related decline, not any decrease in activity.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "overjustification_effect",
+        "canonical_id": "overjustification_effect",
+        "name": "Overjustification Effect",
+        "definition": "External rewards reduce previously intrinsic interest in an activity.",
+        "annotation_boundary": "Require prior intrinsic interest and a reward-related decline, not any decrease in activity.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "parasocial_trust_in_ai",
+    "name": "Parasocial Trust in AI",
+    "definition": "A humanlike AI relationship creates trust, disclosure, or deference unsupported by its actual capabilities.",
+    "boundary": "Warm interaction alone is insufficient; identify relational trust driving reliance or disclosure.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "parasocial_trust_in_ai",
+        "canonical_id": "parasocial_trust_in_ai",
+        "name": "Parasocial Trust in AI",
+        "definition": "A humanlike AI relationship creates trust, disclosure, or deference unsupported by its actual capabilities.",
+        "annotation_boundary": "Warm interaction alone is insufficient; identify relational trust driving reliance or disclosure.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "peak_end_rule",
+    "name": "Peak-end Rule",
+    "definition": "Retrospective evaluation disproportionately reflects the most intense moment and the ending.",
+    "boundary": "A mentioned ending alone is insufficient; identify disproportionate retrospective weighting.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "peak_end_rule",
+        "canonical_id": "peak_end_rule",
+        "name": "Peak-end Rule",
+        "definition": "Retrospective evaluation disproportionately reflects the most intense moment and the ending.",
+        "annotation_boundary": "A mentioned ending alone is insufficient; identify disproportionate retrospective weighting.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "pessimism_bias",
+    "name": "Pessimism bias",
+    "definition": "Negative outcomes are expected too strongly and favorable outcomes discounted without adequate support.",
+    "boundary": "Distinguish unsupported pessimism from a justified adverse forecast.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "pessimism_bias",
+        "canonical_id": "pessimism_bias",
+        "name": "Pessimism bias",
+        "definition": "Negative outcomes are expected too strongly and favorable outcomes discounted without adequate support.",
+        "annotation_boundary": "Distinguish unsupported pessimism from a justified adverse forecast.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "planning_fallacy",
+    "name": "Planning Fallacy",
+    "definition": "Completion time or resources are underestimated despite relevant experience and constraints.",
+    "boundary": "A short estimate is not enough; require neglected evidence or demonstrated underestimation.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "planning_fallacy",
+        "canonical_id": "planning_fallacy",
+        "name": "Planning Fallacy",
+        "definition": "Completion time or resources are underestimated despite relevant experience and constraints.",
+        "annotation_boundary": "A short estimate is not enough; require neglected evidence or demonstrated underestimation.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "pluralistic_ignorance",
+    "name": "Pluralistic Ignorance",
+    "definition": "People mistakenly believe their privately held view differs from the group's view and conform to that misperception.",
+    "boundary": "Ground truth about private group views distinguishes shared misperception from actual disagreement.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "pluralistic_ignorance",
+        "canonical_id": "pluralistic_ignorance",
+        "name": "Pluralistic Ignorance",
+        "definition": "People mistakenly believe their privately held view differs from the group's view and conform to that misperception.",
+        "annotation_boundary": "Ground truth about private group views distinguishes shared misperception from actual disagreement.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "present_bias",
+    "name": "Present Bias",
+    "definition": "Immediate outcomes receive disproportionate weight relative to otherwise comparable delayed outcomes.",
+    "boundary": "Liquidity and changing circumstances can justify immediacy; overlap with decreasing-impatience models.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "present_bias",
+        "canonical_id": "present_bias",
+        "name": "Present Bias",
+        "definition": "Immediate outcomes receive disproportionate weight relative to otherwise comparable delayed outcomes.",
+        "annotation_boundary": "Liquidity and changing circumstances can justify immediacy; overlap with decreasing-impatience models.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "primacy_effect",
+    "name": "Primacy Effect",
+    "definition": "Early items in a sequence are remembered better or disproportionately shape impressions.",
+    "boundary": "Control distinctiveness and exposure; this is a component of serial position effects.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "primacy_effect",
+        "canonical_id": "primacy_effect",
+        "name": "Primacy Effect",
+        "definition": "Early items in a sequence are remembered better or disproportionately shape impressions.",
+        "annotation_boundary": "Control distinctiveness and exposure; this is a component of serial position effects.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "priming",
+    "name": "Priming",
+    "definition": "Earlier exposure changes later processing or responses without a deliberate inferential link.",
+    "boundary": "Priming has multiple forms; word co-occurrence in a document cannot establish a priming effect.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "priming",
+        "canonical_id": "priming",
+        "name": "Priming",
+        "definition": "Earlier exposure changes later processing or responses without a deliberate inferential link.",
+        "annotation_boundary": "Priming has multiple forms; word co-occurrence in a document cannot establish a priming effect.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "projection_bias",
+    "name": "Projection Bias",
+    "definition": "Current tastes or states are projected too strongly onto future preferences.",
+    "boundary": "Related to empathy gap, but specifically concerns overprojecting present preferences onto the future.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "projection_bias",
+        "canonical_id": "projection_bias",
+        "name": "Projection Bias",
+        "definition": "Current tastes or states are projected too strongly onto future preferences.",
+        "annotation_boundary": "Related to empathy gap, but specifically concerns overprojecting present preferences onto the future.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "reactive_devaluation",
+    "name": "Reactive devaluation",
+    "definition": "A proposal loses value because it comes from an adversary or disliked source.",
+    "boundary": "Require source-driven devaluation; substantive differences or credible strategic risks can justify rejection.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "reactive_devaluation",
+        "canonical_id": "reactive_devaluation",
+        "name": "Reactive devaluation",
+        "definition": "A proposal loses value because it comes from an adversary or disliked source.",
+        "annotation_boundary": "Require source-driven devaluation; substantive differences or credible strategic risks can justify rejection.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "recency_effect",
+    "name": "Recency Effect",
+    "definition": "Recent items in a sequence receive a memory advantage or excessive judgmental weight.",
+    "boundary": "A recent anecdote used to infer prevalence may instead involve availability; specify the mechanism.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "recency_effect",
+        "canonical_id": "recency_effect",
+        "name": "Recency Effect",
+        "definition": "Recent items in a sequence receive a memory advantage or excessive judgmental weight.",
+        "annotation_boundary": "A recent anecdote used to infer prevalence may instead involve availability; specify the mechanism.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "regret_aversion",
+    "name": "Regret Aversion",
+    "definition": "Anticipated regret disproportionately discourages a choice.",
+    "boundary": "Regret can be a real preference; establish disproportion or inconsistency before calling the choice irrational.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "regret_aversion",
+        "canonical_id": "regret_aversion",
+        "name": "Regret Aversion",
+        "definition": "Anticipated regret disproportionately discourages a choice.",
+        "annotation_boundary": "Regret can be a real preference; establish disproportion or inconsistency before calling the choice irrational.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "representativeness_heuristic",
+    "name": "Representativeness Heuristic",
+    "definition": "Similarity to a prototype substitutes for probabilistic or categorical evidence.",
+    "boundary": "Prototype reasoning can overlap base-rate neglect, but neither label automatically entails the other.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "representativeness_heuristic",
+        "canonical_id": "representativeness_heuristic",
+        "name": "Representativeness Heuristic",
+        "definition": "Similarity to a prototype substitutes for probabilistic or categorical evidence.",
+        "annotation_boundary": "Prototype reasoning can overlap base-rate neglect, but neither label automatically entails the other.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "response_bias",
+    "name": "Response Bias",
+    "definition": "Survey or elicited responses are systematically distorted by response tendencies or the questioning situation.",
+    "boundary": "An unusual answer or deliberate privacy choice alone does not establish a general response tendency; distinguish sampling bias.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "response_bias",
+        "canonical_id": "response_bias",
+        "name": "Response Bias",
+        "definition": "Survey or elicited responses are systematically distorted by response tendencies or the questioning situation.",
+        "annotation_boundary": "An unusual answer or deliberate privacy choice alone does not establish a general response tendency; distinguish sampling bias.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "restraint_bias",
+    "name": "Restraint Bias",
+    "definition": "The ability to resist temptation is overestimated.",
+    "boundary": "Require self-control overconfidence rather than a single indulgence or general optimism.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "restraint_bias",
+        "canonical_id": "restraint_bias",
+        "name": "Restraint Bias",
+        "definition": "The ability to resist temptation is overestimated.",
+        "annotation_boundary": "Require self-control overconfidence rather than a single indulgence or general optimism.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "rosy_retrospection",
+    "name": "Rosy Retrospection",
+    "definition": "Past experiences are recalled more positively than they were experienced.",
+    "boundary": "Positive remembrance alone is insufficient; distinguish nostalgic spending and broad societal declinism.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "rosy_retrospection",
+        "canonical_id": "rosy_retrospection",
+        "name": "Rosy Retrospection",
+        "definition": "Past experiences are recalled more positively than they were experienced.",
+        "annotation_boundary": "Positive remembrance alone is insufficient; distinguish nostalgic spending and broad societal declinism.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "self_serving_bias",
+    "name": "Self-serving Bias",
+    "definition": "Success is credited internally while failure is attributed externally in a self-favoring way.",
+    "boundary": "Supported causal attributions are not biased merely because they reflect well on the speaker.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "self_serving_bias",
+        "canonical_id": "self_serving_bias",
+        "name": "Self-serving Bias",
+        "definition": "Success is credited internally while failure is attributed externally in a self-favoring way.",
+        "annotation_boundary": "Supported causal attributions are not biased merely because they reflect well on the speaker.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "serial_position_effect",
+    "name": "Serial Position Effect",
+    "definition": "Recall varies with list position, often favoring the beginning and end over the middle.",
+    "boundary": "Primacy and recency are components; avoid counting the umbrella as an additional independent finding by default.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "serial_position_effect",
+        "canonical_id": "serial_position_effect",
+        "name": "Serial Position Effect",
+        "definition": "Recall varies with list position, often favoring the beginning and end over the middle.",
+        "annotation_boundary": "Primacy and recency are components; avoid counting the umbrella as an additional independent finding by default.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "sexual_overperception_bias",
+    "name": "Sexual Overperception Bias",
+    "definition": "Another person's sexual interest is inferred beyond what the evidence supports.",
+    "boundary": "Do not infer from gender or friendliness alone; ambiguous interaction often warrants insufficient evidence.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "sexual_overperception_bias",
+        "canonical_id": "sexual_overperception_bias",
+        "name": "Sexual Overperception Bias",
+        "definition": "Another person's sexual interest is inferred beyond what the evidence supports.",
+        "annotation_boundary": "Do not infer from gender or friendliness alone; ambiguous interaction often warrants insufficient evidence.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "source_confusion",
+    "name": "Source Confusion",
+    "definition": "The origin of remembered information is forgotten or attributed to the wrong source.",
+    "boundary": "Distinguish forgotten origin from confident misattribution; neither necessarily makes the remembered content false.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "source_confusion",
+        "canonical_id": "source_confusion",
+        "name": "Source Confusion",
+        "definition": "The origin of remembered information is forgotten or attributed to the wrong source.",
+        "annotation_boundary": "Distinguish forgotten origin from confident misattribution; neither necessarily makes the remembered content false.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "spacing_effect",
+    "name": "Spacing Effect",
+    "definition": "Distributed study improves retention relative to massed study under comparable conditions.",
+    "boundary": "Compare spaced with massed practice; lag effect compares different gaps within spaced practice.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "spacing_effect",
+        "canonical_id": "spacing_effect",
+        "name": "Spacing Effect",
+        "definition": "Distributed study improves retention relative to massed study under comparable conditions.",
+        "annotation_boundary": "Compare spaced with massed practice; lag effect compares different gaps within spaced practice.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "spotlight_effect",
+    "name": "Spotlight Effect",
+    "definition": "Others' attention to one's appearance or behavior is overestimated.",
+    "boundary": "Visibility of inner states is illusion of transparency; external attention is the key here.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "spotlight_effect",
+        "canonical_id": "spotlight_effect",
+        "name": "Spotlight Effect",
+        "definition": "Others' attention to one's appearance or behavior is overestimated.",
+        "annotation_boundary": "Visibility of inner states is illusion of transparency; external attention is the key here.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "status_quo_bias",
+    "name": "Status Quo Bias",
+    "definition": "The existing or default option is favored simply because it is already in place.",
+    "boundary": "Switching costs, uncertainty, or genuinely better fit can justify continuity.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "status_quo_bias",
+        "canonical_id": "status_quo_bias",
+        "name": "Status Quo Bias",
+        "definition": "The existing or default option is favored simply because it is already in place.",
+        "annotation_boundary": "Switching costs, uncertainty, or genuinely better fit can justify continuity.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "suggestibility",
+    "name": "Suggestibility",
+    "definition": "External suggestions influence beliefs, recollection, or behavior without adequate independent appraisal.",
+    "boundary": "Suggestion-based influence differs from evidence-based correction; memory effects can overlap source confusion.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "suggestibility",
+        "canonical_id": "suggestibility",
+        "name": "Suggestibility",
+        "definition": "External suggestions influence beliefs, recollection, or behavior without adequate independent appraisal.",
+        "annotation_boundary": "Suggestion-based influence differs from evidence-based correction; memory effects can overlap source confusion.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "survivorship_bias",
+    "name": "Survivorship Bias",
+    "definition": "Visible survivors are analyzed while relevant missing failures are excluded.",
+    "boundary": "Specify the selection process and omitted population; a sample of successes is not always inappropriate for a narrow descriptive question.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "survivorship_bias",
+        "canonical_id": "survivorship_bias",
+        "name": "Survivorship Bias",
+        "definition": "Visible survivors are analyzed while relevant missing failures are excluded.",
+        "annotation_boundary": "Specify the selection process and omitted population; a sample of successes is not always inappropriate for a narrow descriptive question.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "take_the_best_heuristic",
+    "name": "Take-the-best Heuristic",
+    "definition": "Options are selected using the first sufficiently discriminating cue in a prioritized cue order.",
+    "boundary": "A decision strategy that can be efficient; one decisive relevant criterion is not necessarily an error.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "take_the_best_heuristic",
+        "canonical_id": "take_the_best_heuristic",
+        "name": "Take-the-best Heuristic",
+        "definition": "Options are selected using the first sufficiently discriminating cue in a prioritized cue order.",
+        "annotation_boundary": "A decision strategy that can be efficient; one decisive relevant criterion is not necessarily an error.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "telescoping_effect",
+    "name": "Telescoping Effect",
+    "definition": "Events are remembered as more recent or more distant than their actual dates.",
+    "boundary": "Forward telescoping brings old events closer; backward telescoping pushes recent events farther away.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "telescoping_effect",
+        "canonical_id": "telescoping_effect",
+        "name": "Telescoping Effect",
+        "definition": "Events are remembered as more recent or more distant than their actual dates.",
+        "annotation_boundary": "Forward telescoping brings old events closer; backward telescoping pushes recent events farther away.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "the_illusion_of_explanatory_depth",
+    "name": "The Illusion of Explanatory Depth",
+    "definition": "People overestimate how well they understand a mechanism until asked to explain it.",
+    "boundary": "Require an explanation-depth gap; general task overconfidence is broader.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "the_illusion_of_explanatory_depth",
+        "canonical_id": "the_illusion_of_explanatory_depth",
+        "name": "The Illusion of Explanatory Depth",
+        "definition": "People overestimate how well they understand a mechanism until asked to explain it.",
+        "annotation_boundary": "Require an explanation-depth gap; general task overconfidence is broader.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "the_pygmalion_effect",
+    "name": "The Pygmalion effect",
+    "definition": "Another person's high expectations change their treatment of someone and thereby improve that person's performance.",
+    "boundary": "Require an expectation-to-treatment-to-performance pathway; a prediction alone is not a self-fulfilling effect.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "the_pygmalion_effect",
+        "canonical_id": "the_pygmalion_effect",
+        "name": "The Pygmalion effect",
+        "definition": "Another person's high expectations change their treatment of someone and thereby improve that person's performance.",
+        "annotation_boundary": "Require an expectation-to-treatment-to-performance pathway; a prediction alone is not a self-fulfilling effect.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  },
+  {
+    "id": "zero_risk_bias",
+    "name": "Zero Risk Bias",
+    "definition": "Eliminating one risk entirely is preferred over a larger overall risk reduction merely because it reaches zero.",
+    "boundary": "Control harm severity, costs, and risk dependence; a zero endpoint is not automatically irrational.",
+    "layer": "mercek_cognitive_concept",
+    "source_variants": [
+      {
+        "layer": "mercek_cognitive_concept",
+        "source_id": "zero_risk_bias",
+        "canonical_id": "zero_risk_bias",
+        "name": "Zero Risk Bias",
+        "definition": "Eliminating one risk entirely is preferred over a larger overall risk reduction merely because it reaches zero.",
+        "annotation_boundary": "Control harm severity, costs, and risk dependence; a zero endpoint is not automatically irrational.",
+        "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+        "implemented_mechanism": "",
+        "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+        "human_validated": false,
+        "detection_accuracy_measured": false
+      }
+    ]
+  }
+]

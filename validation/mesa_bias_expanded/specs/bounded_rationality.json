@@ -1,0 +1,22 @@
+{
+  "id": "bounded_rationality",
+  "name": "Bounded Rationality",
+  "definition": "Limited time, information, or processing capacity leads to a satisfactory rather than globally optimal choice.",
+  "boundary": "A decision framework, not inherently an error; label satisficing only when constraints and stopping rule are visible.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "bounded_rationality",
+      "canonical_id": "bounded_rationality",
+      "name": "Bounded Rationality",
+      "definition": "Limited time, information, or processing capacity leads to a satisfactory rather than globally optimal choice.",
+      "annotation_boundary": "A decision framework, not inherently an error; label satisficing only when constraints and stopping rule are visible.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

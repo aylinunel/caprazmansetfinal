@@ -1,0 +1,22 @@
+{
+  "id": "cashless_effect",
+  "name": "Cashless Effect",
+  "definition": "Cash-free payment increases willingness to spend relative to physical cash.",
+  "boundary": "Require a change in spending or willingness, not just card usage.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "cashless_effect",
+      "canonical_id": "cashless_effect",
+      "name": "Cashless Effect",
+      "definition": "Cash-free payment increases willingness to spend relative to physical cash.",
+      "annotation_boundary": "Require a change in spending or willingness, not just card usage.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

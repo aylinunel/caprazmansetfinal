@@ -1,0 +1,22 @@
+{
+  "id": "consequence_framing",
+  "name": "Consequence Framing (Sonuç çerçevelemesi)",
+  "definition": "Headlining a consequence or expected effect instead of the event.",
+  "boundary": "",
+  "layer": "capraz_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "consequence-framing",
+      "canonical_id": "consequence_framing",
+      "name": "Consequence Framing (Sonuç çerçevelemesi)",
+      "definition": "Headlining a consequence or expected effect instead of the event.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

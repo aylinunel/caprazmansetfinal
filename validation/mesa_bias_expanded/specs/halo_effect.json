@@ -1,0 +1,35 @@
+{
+  "id": "halo_effect",
+  "name": "Halo Effect",
+  "definition": "A favorable impression on one dimension spills into an unsupported judgment on another.",
+  "boundary": "Require cross-attribute spillover; competence inferred from relevant performance is different.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "halo-effect",
+      "canonical_id": "halo_effect",
+      "name": "Halo Effect (Hâle etkisi)",
+      "definition": "A positive impression in one area colouring judgement in unrelated areas.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "halo_effect",
+      "canonical_id": "halo_effect",
+      "name": "Halo Effect",
+      "definition": "A favorable impression on one dimension spills into an unsupported judgment on another.",
+      "annotation_boundary": "Require cross-attribute spillover; competence inferred from relevant performance is different.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "illusion_of_transparency",
+  "name": "Illusion of Transparency",
+  "definition": "Internal feelings or intentions are assumed to be more visible to others than they are.",
+  "boundary": "Internal-state visibility differs from believing one receives unusually much attention.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "illusion_of_transparency",
+      "canonical_id": "illusion_of_transparency",
+      "name": "Illusion of Transparency",
+      "definition": "Internal feelings or intentions are assumed to be more visible to others than they are.",
+      "annotation_boundary": "Internal-state visibility differs from believing one receives unusually much attention.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

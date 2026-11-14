@@ -1,0 +1,22 @@
+{
+  "id": "story_placement",
+  "name": "Story placement",
+  "definition": "Front page or inside page, top or bottom of the feed: position signals importance independent of content.",
+  "boundary": "",
+  "layer": "media_form",
+  "source_variants": [
+    {
+      "layer": "media_form",
+      "source_id": "Story placement",
+      "canonical_id": "story_placement",
+      "name": "Story placement",
+      "definition": "Front page or inside page, top or bottom of the feed: position signals importance independent of content.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "pessimism_bias",
+  "name": "Pessimism bias",
+  "definition": "Negative outcomes are expected too strongly and favorable outcomes discounted without adequate support.",
+  "boundary": "Distinguish unsupported pessimism from a justified adverse forecast.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "pessimism_bias",
+      "canonical_id": "pessimism_bias",
+      "name": "Pessimism bias",
+      "definition": "Negative outcomes are expected too strongly and favorable outcomes discounted without adequate support.",
+      "annotation_boundary": "Distinguish unsupported pessimism from a justified adverse forecast.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

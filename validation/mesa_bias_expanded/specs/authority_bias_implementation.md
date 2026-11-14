@@ -1,0 +1,9 @@
+# Authority Bias: illustrative implementation
+
+**Process and task.** For each structured claim review, the binary primary metric is `claim_accepted` (1/0). The explicit strength-zero reference accepts iff `direct_evidence >= acceptance_threshold`, or supplied testimony reaches that threshold while `expertise_relevance` is true. At positive strength, the additional status route accepts iff expertise is explicitly irrelevant and `strength * authority_status >= authority_sufficiency_threshold`. The primary metric is therefore a task decision, not a generic bias score. The state records review count and claim IDs reviewed/accepted; calls are deterministic and do not mutate the input.
+
+**Necessary condition and boundary.** The status-only route requires the authority cue and explicitly irrelevant expertise; absent required evidence is an error. Supplied relevant expertise does not itself indicate bias: the boundary scenario's relevant testimony passes the same reference rule at strength 0 and .8, with no status-route effect.
+
+**Scenarios.** In the positive scenario direct evidence is .25 against a .70 threshold, relevance is false, and authority status is .95; at strength .8 the status product .76 exceeds the .65 sufficiency cutoff, changing rejection to acceptance. The boundary scenario has relevant testimony .80 against the .70 threshold, so both policies accept identically.
+
+**Assumptions and limitations.** Inputs represent hypothetical, already-structured facts; coefficients and cutoffs are illustrative user-settable assumptions, not measured effect sizes. This compact decision model does not detect authority cues, assess real-world expertise, model uncertainty or infer motives. Deference to relevant expertise may be entirely appropriate. This implementation and its tests are not empirically validated and make no claim about people, populations, or detection accuracy.

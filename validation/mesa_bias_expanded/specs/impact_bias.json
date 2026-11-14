@@ -1,0 +1,22 @@
+{
+  "id": "impact_bias",
+  "name": "Impact Bias",
+  "definition": "The intensity or duration of future emotional reactions is overestimated.",
+  "boundary": "An emotional forecast needs a basis for judging overestimation; intense feelings alone are not bias.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "impact_bias",
+      "canonical_id": "impact_bias",
+      "name": "Impact Bias",
+      "definition": "The intensity or duration of future emotional reactions is overestimated.",
+      "annotation_boundary": "An emotional forecast needs a basis for judging overestimation; intense feelings alone are not bias.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

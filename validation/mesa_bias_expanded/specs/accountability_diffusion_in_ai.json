@@ -1,0 +1,22 @@
+{
+  "id": "accountability_diffusion_in_ai",
+  "name": "Accountability diffusion in AI",
+  "definition": "Responsibility becomes dispersed across AI stakeholders until nobody accepts ownership.",
+  "boundary": "Distributed work alone is not diffusion; look for responsibility being disclaimed or left unowned.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "accountability_diffusion_in_ai",
+      "canonical_id": "accountability_diffusion_in_ai",
+      "name": "Accountability diffusion in AI",
+      "definition": "Responsibility becomes dispersed across AI stakeholders until nobody accepts ownership.",
+      "annotation_boundary": "Distributed work alone is not diffusion; look for responsibility being disclaimed or left unowned.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

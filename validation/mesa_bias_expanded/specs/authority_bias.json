@@ -1,0 +1,35 @@
+{
+  "id": "authority_bias",
+  "name": "Authority Bias",
+  "definition": "Status or authority is treated as sufficient grounds for accepting a claim.",
+  "boundary": "Appropriate reliance on relevant expertise is not enough to establish bias.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "authority-bias",
+      "canonical_id": "authority_bias",
+      "name": "Authority Bias (Otorite yanlılığı)",
+      "definition": "Weighting a claim because it comes from an authority rather than examining its evidence.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "authority_bias",
+      "canonical_id": "authority_bias",
+      "name": "Authority Bias",
+      "definition": "Status or authority is treated as sufficient grounds for accepting a claim.",
+      "annotation_boundary": "Appropriate reliance on relevant expertise is not enough to establish bias.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "framing_effect",
+  "name": "Framing Effect",
+  "definition": "Equivalent information yields different choices when expressed differently.",
+  "boundary": "Check mathematical and substantive equivalence; genuinely different information is not framing alone.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "framing_effect",
+      "canonical_id": "framing_effect",
+      "name": "Framing Effect",
+      "definition": "Equivalent information yields different choices when expressed differently.",
+      "annotation_boundary": "Check mathematical and substantive equivalence; genuinely different information is not framing alone.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "omission_bias",
+  "name": "Omission Bias",
+  "definition": "Harm caused by acting is judged more harshly than comparable harm caused by not acting.",
+  "boundary": "Control knowledge, duty, intention, and consequences before attributing an action-inaction asymmetry.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "omission_bias",
+      "canonical_id": "omission_bias",
+      "name": "Omission Bias",
+      "definition": "Harm caused by acting is judged more harshly than comparable harm caused by not acting.",
+      "annotation_boundary": "Control knowledge, duty, intention, and consequences before attributing an action-inaction asymmetry.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

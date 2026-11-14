@@ -1,0 +1,22 @@
+{
+  "id": "survivorship_bias",
+  "name": "Survivorship Bias",
+  "definition": "Visible survivors are analyzed while relevant missing failures are excluded.",
+  "boundary": "Specify the selection process and omitted population; a sample of successes is not always inappropriate for a narrow descriptive question.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "survivorship_bias",
+      "canonical_id": "survivorship_bias",
+      "name": "Survivorship Bias",
+      "definition": "Visible survivors are analyzed while relevant missing failures are excluded.",
+      "annotation_boundary": "Specify the selection process and omitted population; a sample of successes is not always inappropriate for a narrow descriptive question.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "selective_statistics",
+  "name": "Selective statistics (Seçici istatistik)",
+  "definition": "The choice of comparison base or denominator distorts what a number means.",
+  "boundary": "Needs comparative evidence that the missing denominator exists and is relevant.",
+  "layer": "mercek_media_technique",
+  "source_variants": [
+    {
+      "layer": "mercek_media_technique",
+      "source_id": "selective_statistics",
+      "canonical_id": "selective_statistics",
+      "name": "Selective statistics (Seçici istatistik)",
+      "definition": "The choice of comparison base or denominator distorts what a number means.",
+      "annotation_boundary": "Needs comparative evidence that the missing denominator exists and is relevant.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

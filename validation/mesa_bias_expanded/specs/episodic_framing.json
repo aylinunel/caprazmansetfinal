@@ -1,0 +1,22 @@
+{
+  "id": "episodic_framing",
+  "name": "Episodic Framing (Olay odaklı çerçeveleme)",
+  "definition": "Presenting an issue through a single event or person without the structural conditions that produce it.",
+  "boundary": "",
+  "layer": "capraz_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "episodic-framing",
+      "canonical_id": "episodic_framing",
+      "name": "Episodic Framing (Olay odaklı çerçeveleme)",
+      "definition": "Presenting an issue through a single event or person without the structural conditions that produce it.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

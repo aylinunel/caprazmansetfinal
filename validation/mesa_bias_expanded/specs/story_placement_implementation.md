@@ -1,0 +1,7 @@
+# Story placement implementation note
+
+This illustrative **media-practice** model allocates one round of simulated reader attention among supplied stories. For story *i*, it computes `logit_i = 4 × content_importance_i + 4 × strength × placement_prominence_i`, then applies a stable softmax. The primary metric is the focal story's attention share, a fraction in `[0, 1]`; state retains the cumulative focal share, number of evaluated rounds, and latest full allocation.
+
+The explicit strength-zero reference is the same content-only softmax (`4 × content_importance`), not a claim of perfect rationality. The necessary condition for a placement effect is relative (non-uniform) authored prominence across stories. The positive scenario gives low-content story B the top prominence and checks its attention share rises at strength `.8`; the boundary scenario assigns equal prominence to all stories and must match the reference. Placement can be appropriate, useful, or editorially justified: the modeled shift is not inherently an error.
+
+Inputs are explicit structured facts (`id`, `content_importance`, `placement_prominence`, and `focal_story_id`); all scores must be finite in `[0, 1]`, with at least two uniquely identified stories and a valid focal ID. Sensitivities are illustrative assumptions, not estimated effect sizes. This is not an NLP detector, does not infer editorial intent, readership heterogeneity, exposure, or real-world causal effects, and has not been empirically validated. Software tests establish only implementation behavior.

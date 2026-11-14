@@ -1,0 +1,11 @@
+# Fundamental Attribution Error — illustrative implementation
+
+**Process.** For a supplied character judgment, the reference policy allocates causal attribution proportionally between explicit dispositional evidence \(D\) and relevant documented situational constraint \(S\): \(M_0=S/(D+S)\). The illustrative mechanism attenuates the relevant situation input to \(S'=S(1-\text{strength})\), then returns \(M=S'/(D+S')\). If no character judgment is made, the metric is zero because there is no attribution decision. Irrelevant situational facts are excluded from both reference and mechanism allocations.
+
+**Task and units.** The task is a single structured causal-attribution allocation, not natural-language classification. The primary metric is the modeled situational causal-attribution share, from 0 to 1. State carries the count of judgments, cumulative share sum, and latest share. At strength zero the mechanism exactly follows the proportional reference rule.
+
+**Necessary conditions.** Inputs must include observed context evidence, an explicit character judgment, and a positive situational constraint explicitly marked relevant for the mechanism to alter the allocation. Missing required fields or unobserved context evidence raise `ValueError`; they are not converted to a zero. Strength must be finite and in [0,1].
+
+**Scenarios.** Positive: with \(D=2\), relevant \(S=8\), and a character judgment, reference share is 0.8; at strength 0.8, attenuated \(S'=1.6\), and share is 4/9. Boundary: the same documented situational fact is explicitly marked irrelevant, so its usable situational force is zero and the strength-0 and strength-0.8 metrics are both zero.
+
+**Assumptions and limitations.** Evidence magnitudes are hypothetical quantities on a common additive scale; proportional allocation and linear attenuation are user-set illustrative rules, not measured effect sizes. The model does not infer relevance, hidden states, motives, or judgments from prose, and does not establish that any actual person exhibits a bias. It omits uncertainty, alternative causal structures, interactions, and cultural or individual differences. The implementation is synthetic and not empirically validated.

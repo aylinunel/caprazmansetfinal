@@ -1,0 +1,22 @@
+{
+  "id": "emphasis_framing",
+  "name": "Emphasis framing (Vurgu çerçevelemesi)",
+  "definition": "Different dimensions of the same fact are foregrounded in headline and presentation.",
+  "boundary": "Different emphasis alone is not misinformation or intent.",
+  "layer": "mercek_media_technique",
+  "source_variants": [
+    {
+      "layer": "mercek_media_technique",
+      "source_id": "emphasis_framing",
+      "canonical_id": "emphasis_framing",
+      "name": "Emphasis framing (Vurgu çerçevelemesi)",
+      "definition": "Different dimensions of the same fact are foregrounded in headline and presentation.",
+      "annotation_boundary": "Different emphasis alone is not misinformation or intent.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

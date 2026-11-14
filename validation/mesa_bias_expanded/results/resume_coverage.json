@@ -1,0 +1,2055 @@
+{
+  "expected_new_mechanisms": 138,
+  "passing_contracts": 80,
+  "failed_or_missing_contracts": 58,
+  "synthetic_only": true,
+  "empirically_validated": false,
+  "results": [
+    {
+      "id": "event_selection",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "source_selection",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.5,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "commission_and_omission_of_information",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 2.0999999999999996,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "labeling",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.6400000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "word_choice",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.8000000000000002,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "story_placement",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.5413634842135833,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": -9.71445146547012e-17,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "size_allocation",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 32.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "picture_selection",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "picture_explanation",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "spin",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.2074074074074074,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "episodic_framing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -12.972972972972975,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "thematic_framing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 43.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "consequence_framing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "responsibility_framing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "metaphorical_framing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.6999999999999998,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "ad_hominem",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.4400000000000002,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "in_group_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -8.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "authority_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "fear_appeal",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.21599999999999997,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "cherry_picking",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "strawman",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.48000000000000004,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "false_dilemma",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.24000000000000007,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "availability_heuristic",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.41538461538461524,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "negativity_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.12,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "salience_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.19058823529411761,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "illusory_truth_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.11854791382113694,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "halo_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 3.200000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "base_rate_fallacy",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.3606183185028879,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "identifiable_victim_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "attentional_bias",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "error": "attentional_bias: missing required task input stimuli (at least two items with unique id, relevance, and capture)",
+      "empirically_validated": false
+    },
+    {
+      "id": "naive_realism",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.19200000000000006,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "just_world_hypothesis",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "the_sunk_cost_fallacy",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -2.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "loaded_language",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.6000000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "causal_overclaim",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "error": "causal_overclaim: missing required task input paired_observations (for covariation)",
+      "empirically_validated": false
+    },
+    {
+      "id": "selective_statistics",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "error": "Task contexts cannot override reserved runner state or random inputs",
+      "empirically_validated": false
+    },
+    {
+      "id": "one_sided_sourcing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "emphasis_framing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.48000000000000015,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "contextual_omission",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "difference",
+          "delta": 6.400000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "ai_literacy_gap",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "accountability_diffusion_in_ai",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.6666666666666666,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "action_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "difference",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "affect_heuristic",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.5,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "ambiguity_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "automation_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.5,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "barnum_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.46656000000000003,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "belief_perseverance",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.23518707917873072,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        },
+        {
+          "name": "explicit_backfire_subtype",
+          "expected": "increase",
+          "delta": 0.4197323054145883,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "benjamin_franklin_effect",
+      "kind": "learning_effect",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 5.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "bikeshedding",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.06895356985487266,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "bottom_dollar_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.6400000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "bounded_rationality",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 4.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "bundling_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "bye_now_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 20.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "cashless_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 10.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "category_size_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.3200000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "choice_overload_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.25,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "cognitive_dissonance",
+      "kind": "psychological_state",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "difference",
+          "delta": 0.39311999999999997,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "commitment_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "decision_fatigue",
+      "kind": "psychological_state",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 4.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "declinism",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "decoy_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.18625422490066992,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "delegation_creep",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.7999999999999998,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "disposition_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "distinction_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 43.20000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "dunning_kruger_effect",
+      "kind": "cognitive_bias",
+      "status": "FAIL",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.0,
+          "passed": false
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "einstellung_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 6.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "empathy_gap",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "endowment_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "extrinsic_incentive_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.1454545454545455,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "false_consensus_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.3121951219512195,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "framing_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "functional_fixedness",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.1499999999999999,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "fundamental_attribution_error",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.3555555555555557,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "gamblers_fallacy",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "difference",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "google_effect",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "error": "google_effect: missing required task input items (study) or item_ids (retrieve)",
+      "empirically_validated": false
+    },
+    {
+      "id": "hard_easy_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.10000000000000009,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "heuristics",
+      "kind": "heuristic",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -4.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "hindsight_bias",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "error": "hindsight_bias: missing required task input stage ('forecast' or 'outcome')",
+      "empirically_validated": false
+    },
+    {
+      "id": "hot_hand_fallacy",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.03200000000000003,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "hyperbolic_discounting",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.hyperbolic_discounting'",
+      "empirically_validated": false
+    },
+    {
+      "id": "ikea_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 4.799999999999997,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "illusion_of_control",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "error": "effect per effort times maximum effort must not exceed 1",
+      "empirically_validated": false
+    },
+    {
+      "id": "illusion_of_transparency",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.4608000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "illusion_of_validity",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.003076923076923088,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "illusory_correlation",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "error": "illusory_correlation: missing required task input paired_observations (chronological binary event pairs)",
+      "empirically_validated": false
+    },
+    {
+      "id": "impact_bias",
+      "kind": "cognitive_bias",
+      "status": "FAIL",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 27.200000000000003,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 3.9999999999999982,
+          "passed": false
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "incentivization",
+      "kind": "motivational_mechanism",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "lag_effect",
+      "status": "ERROR",
+      "error_type": "SyntaxError",
+      "error": "unterminated f-string literal (detected at line 142) (lag_effect.py, line 142)",
+      "empirically_validated": false
+    },
+    {
+      "id": "law_of_the_instrument",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "less_is_better_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.less_is_better_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "leveling_and_sharpening",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.059280000000000055,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "levels_of_processing_effect",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "error": "levels_of_processing_effect: missing required task input exposure_units",
+      "empirically_validated": false
+    },
+    {
+      "id": "look_elsewhere_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.look_elsewhere_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "loss_aversion",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "mental_accounting",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.mental_accounting'",
+      "empirically_validated": false
+    },
+    {
+      "id": "mere_exposure_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.mere_exposure_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "messenger_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.messenger_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "motivating_uncertainty_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.motivating_uncertainty_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "naive_allocation",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.naive_allocation'",
+      "empirically_validated": false
+    },
+    {
+      "id": "noble_edge_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.noble_edge_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "normalcy_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.normalcy_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "nostalgia_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.nostalgia_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "observer_expectancy_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.observer_expectancy_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "omission_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.omission_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "optimism_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.optimism_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "ostrich_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.ostrich_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "outcome_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.outcome_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "overjustification_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.overjustification_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "parasocial_trust_in_ai",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.parasocial_trust_in_ai'",
+      "empirically_validated": false
+    },
+    {
+      "id": "peak_end_rule",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.peak_end_rule'",
+      "empirically_validated": false
+    },
+    {
+      "id": "pessimism_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.pessimism_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "planning_fallacy",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.planning_fallacy'",
+      "empirically_validated": false
+    },
+    {
+      "id": "pluralistic_ignorance",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.pluralistic_ignorance'",
+      "empirically_validated": false
+    },
+    {
+      "id": "present_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.present_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "primacy_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.primacy_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "priming",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.priming'",
+      "empirically_validated": false
+    },
+    {
+      "id": "projection_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.projection_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "reactive_devaluation",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.reactive_devaluation'",
+      "empirically_validated": false
+    },
+    {
+      "id": "recency_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.recency_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "regret_aversion",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.regret_aversion'",
+      "empirically_validated": false
+    },
+    {
+      "id": "representativeness_heuristic",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.representativeness_heuristic'",
+      "empirically_validated": false
+    },
+    {
+      "id": "response_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.response_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "restraint_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.restraint_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "rosy_retrospection",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.rosy_retrospection'",
+      "empirically_validated": false
+    },
+    {
+      "id": "self_serving_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.self_serving_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "serial_position_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.serial_position_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "sexual_overperception_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.sexual_overperception_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "source_confusion",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.source_confusion'",
+      "empirically_validated": false
+    },
+    {
+      "id": "spacing_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.spacing_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "spotlight_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.spotlight_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "status_quo_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.status_quo_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "suggestibility",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.suggestibility'",
+      "empirically_validated": false
+    },
+    {
+      "id": "survivorship_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.survivorship_bias'",
+      "empirically_validated": false
+    },
+    {
+      "id": "take_the_best_heuristic",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.take_the_best_heuristic'",
+      "empirically_validated": false
+    },
+    {
+      "id": "telescoping_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.telescoping_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "the_illusion_of_explanatory_depth",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.the_illusion_of_explanatory_depth'",
+      "empirically_validated": false
+    },
+    {
+      "id": "the_pygmalion_effect",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.the_pygmalion_effect'",
+      "empirically_validated": false
+    },
+    {
+      "id": "zero_risk_bias",
+      "status": "ERROR",
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'mechanisms.zero_risk_bias'",
+      "empirically_validated": false
+    }
+  ],
+  "legacy_direct_rules_retained": [
+    "anchoring_bias",
+    "confirmation_bias"
+  ],
+  "legacy_partial_proxies_not_upgraded": [
+    "bandwagon_effect",
+    "social_norms"
+  ]
+}

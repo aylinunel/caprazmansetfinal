@@ -1,0 +1,9 @@
+# Emphasis framing implementation
+
+This plugin models a reader's attention allocation for one supplied structured fact (`fact_id`) with at least two dimensions. Its metric is the share of modeled attention on the dimension selected by `headline_focus`, in the range 0–1. It does not infer emphasis from prose or images.
+
+**Process and reference.** Normalize nonnegative `body_prominence` weights to obtain reference shares `p_i`. At strength zero, the reader follows that reference exactly. A necessary condition for an effect is a headline focus whose body share `p_f` is below the largest body share. If that condition holds, transfer `strength × (max_i p_i − p_f)` attention mass from non-focus dimensions to the focus, reducing those other shares proportionally. Otherwise retain the reference unchanged. The metric is the resulting focus share; `active` reports whether the modeled allocation changed. State records the latest allocation and cumulative focus-attention/exposure totals.
+
+**Scenarios.** Positive: body prominence is 0.2 for growth and 0.8 for cost, while the headline foregrounds growth; at strength 0.8 the model transfers 0.48, yielding growth attention 0.68. Boundary: the headline foregrounds growth when body prominence is already 0.7 (cost 0.3), so there is no mismatch and the metric remains 0.7, equal to strength zero.
+
+**Assumptions and limitations.** The structured dimensions and prominence values are supplied as facts about an authored presentation, and dimensions are treated as comparable attention weights. The coefficient is illustrative, not fitted or empirically estimated. A difference in emphasis can be benign, useful, or editorially appropriate; this model does not label it misinformation, error, or intent. Audience response is simplified to attention alone; comprehension, evidence quality, language, images, and downstream judgments are outside scope. Hypothetical and not empirically validated; this is not a detector.

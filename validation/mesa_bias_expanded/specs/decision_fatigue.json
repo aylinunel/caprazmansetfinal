@@ -1,0 +1,22 @@
+{
+  "id": "decision_fatigue",
+  "name": "Decision Fatigue",
+  "definition": "Repeated decision-making is followed by mental exhaustion and poorer or more avoidant choices.",
+  "boundary": "Require the decision-load link; time of day alone cannot establish fatigue or its cause.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "decision_fatigue",
+      "canonical_id": "decision_fatigue",
+      "name": "Decision Fatigue",
+      "definition": "Repeated decision-making is followed by mental exhaustion and poorer or more avoidant choices.",
+      "annotation_boundary": "Require the decision-load link; time of day alone cannot establish fatigue or its cause.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

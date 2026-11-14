@@ -1,0 +1,22 @@
+{
+  "id": "empathy_gap",
+  "name": "Empathy Gap",
+  "definition": "A person underestimates how a different emotional or bodily state changes preferences and behavior.",
+  "boundary": "Require a mismatch across states or failure to understand another person's state.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "empathy_gap",
+      "canonical_id": "empathy_gap",
+      "name": "Empathy Gap",
+      "definition": "A person underestimates how a different emotional or bodily state changes preferences and behavior.",
+      "annotation_boundary": "Require a mismatch across states or failure to understand another person's state.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

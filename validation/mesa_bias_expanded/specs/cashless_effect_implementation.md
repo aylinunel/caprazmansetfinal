@@ -1,0 +1,9 @@
+# Cashless Effect implementation note
+
+This synthetic process model treats each context as one offered, discretionary purchase. The input `willingness_margin` is a hypothetical currency-equivalent surplus before payment friction. The primary metric is the amount spent on that offer: `purchase_amount` if selected and affordable, otherwise zero (currency units per offer).
+
+The reference policy at strength zero always applies physical-cash friction: `reference_margin = willingness_margin - salience_sensitivity × purchase_amount × cash_salience`. For cashless payment only, when the explicitly supplied `cash_salience` exceeds `cashless_salience`, the candidate process interpolates salience as `effective_salience = cash_salience - strength × (cash_salience - cashless_salience)`. It then selects the offered purchase when `willingness_margin - salience_sensitivity × purchase_amount × effective_salience ≥ 0` and `purchase_amount ≤ budget`. Physical-cash offers and cashless offers without a lower salience input retain the reference rule.
+
+The positive scenario supplies a cashless mode and a salience gap large enough to change the offer decision from decline at strength zero to a $10 purchase at strength 0.8. The boundary scenario removes that necessary gap (equal salience), so its primary spending metric equals the strength-zero metric. Other boundary conditions include physical-cash mode and an unaffordable offer.
+
+Inputs, including willingness and salience, are explicit hypothetical scenario facts; the module does not detect them from text or infer motives. The linear relationship and coefficients are illustrative user-settable assumptions, not calibrated effect sizes or evidence of population behavior. Actual spending may be shaped by many omitted factors, and budgeting or payment controls can counter lower payment salience. Software tests verify implementation behavior only; the mechanism is explicitly not empirically validated.

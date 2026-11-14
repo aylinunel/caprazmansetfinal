@@ -1,0 +1,7 @@
+# Consequence framing implementation
+
+This illustrative **media-practice** model represents an editor choosing which supplied fact leads a headline. Its per-step task metric is `consequence_led_headline`, a binary numeric choice indicator: `1.0` means consequence-led and `0.0` means event-led. The strength-zero reference rule always leads with the event. At strength `s`, the consequence leads only if its explicitly supplied support status is true and `s × consequence_salience > event_salience`; ties stay event-led. The returned state records the last focus, step count, and cumulative consequence-led choices.
+
+The positive scenario supplies a supported consequence with salience `0.70` against event salience `0.40`, so at strength `0.8` the modeled headline is consequence-led, unlike the reference. The boundary scenario keeps the structured consequence information but marks its support status false; this removes a necessary condition, so both modeled and reference choices remain event-led. Missing support evidence is rejected rather than treated as a negative or a zero metric.
+
+The salience scales, support assessment, and competition equation are hypothetical user-settable assumptions, not published effect sizes. The module is synthetic and **not empirically validated**; it neither detects framing in text nor assesses whether real-world consequences are true, relevant, or misleading. Consequence-led presentation may be useful and appropriate, and the model does not classify it as an error.

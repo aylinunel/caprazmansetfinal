@@ -1,0 +1,22 @@
+{
+  "id": "word_choice",
+  "name": "Word choice",
+  "definition": "Words with different connotations for the same fact.",
+  "boundary": "",
+  "layer": "media_form",
+  "source_variants": [
+    {
+      "layer": "media_form",
+      "source_id": "Word choice",
+      "canonical_id": "word_choice",
+      "name": "Word choice",
+      "definition": "Words with different connotations for the same fact.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

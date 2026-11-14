@@ -1,0 +1,22 @@
+{
+  "id": "source_confusion",
+  "name": "Source Confusion",
+  "definition": "The origin of remembered information is forgotten or attributed to the wrong source.",
+  "boundary": "Distinguish forgotten origin from confident misattribution; neither necessarily makes the remembered content false.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "source_confusion",
+      "canonical_id": "source_confusion",
+      "name": "Source Confusion",
+      "definition": "The origin of remembered information is forgotten or attributed to the wrong source.",
+      "annotation_boundary": "Distinguish forgotten origin from confident misattribution; neither necessarily makes the remembered content false.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

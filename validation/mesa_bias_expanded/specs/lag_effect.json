@@ -1,0 +1,22 @@
+{
+  "id": "lag_effect",
+  "name": "Lag Effect",
+  "definition": "Within spaced practice, longer suitable intervals can improve later retention relative to shorter intervals.",
+  "boundary": "Intervals have limits and depend on the retention horizon; longer is not universally better.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "lag_effect",
+      "canonical_id": "lag_effect",
+      "name": "Lag Effect",
+      "definition": "Within spaced practice, longer suitable intervals can improve later retention relative to shorter intervals.",
+      "annotation_boundary": "Intervals have limits and depend on the retention horizon; longer is not universally better.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

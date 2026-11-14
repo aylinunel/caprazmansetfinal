@@ -1,0 +1,9 @@
+# Picture selection implementation
+
+This illustrative `media_practice` model selects one supplied photo from a structured choice set. The primary metric is `selected_photo_is_angry`: **1** when the selected record is labeled angry, otherwise **0**. The strength-zero reference selects the photo with greatest supplied production quality in `[0, 1]`, resolving ties by lexicographically smallest ID.
+
+For each candidate, the assumed selection score is `quality + strength × 0.5 × frame_match`. `frame_match` is 1 only when the record's expression matches the explicit `editorial_frame` **and** at least one person in the current options has both a smiling and an angry photo; otherwise it is 0. The coefficient 0.5 is an illustrative quality-unit assumption, not an estimated effect. `active` reports whether this rule selects a different record than the reference policy.
+
+The necessary condition is an explicit same-person contrasting-expression alternative in the supplied records. The positive example has tied-quality smiling/angry photos of one person and an angry editorial frame; at strength 0.8 the angry photo wins. The boundary example distributes the two expressions across different people; the frame term is disabled and the primary metric and selection match the reference at strength 0.8.
+
+The model assumes the supplied identities, expressions, quality scores, and editorial frame are accurate structured facts. It does not detect expressions in images, infer hidden intent, or predict audience effects. Picture choices can be benign and the model does not label them harmful. Neither the mechanism nor its illustrative coefficient is empirically validated; the test scenarios are software checks, not empirical evidence.

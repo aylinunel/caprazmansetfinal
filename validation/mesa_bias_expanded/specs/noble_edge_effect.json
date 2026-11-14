@@ -1,0 +1,22 @@
+{
+  "id": "noble_edge_effect",
+  "name": "Noble Edge Effect",
+  "definition": "Perceived corporate social responsibility increases favorable evaluation or purchase appeal.",
+  "boundary": "A favorable ethical preference is not automatically irrational; an unsupported leap to better sound quality would also suggest halo effect.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "noble_edge_effect",
+      "canonical_id": "noble_edge_effect",
+      "name": "Noble Edge Effect",
+      "definition": "Perceived corporate social responsibility increases favorable evaluation or purchase appeal.",
+      "annotation_boundary": "A favorable ethical preference is not automatically irrational; an unsupported leap to better sound quality would also suggest halo effect.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

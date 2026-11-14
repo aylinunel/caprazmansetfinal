@@ -1,0 +1,22 @@
+{
+  "id": "dunning_kruger_effect",
+  "name": "Dunning–Kruger Effect",
+  "definition": "Low demonstrated competence accompanies overestimation of competence and difficulty recognizing errors.",
+  "boundary": "Do not diagnose from confidence or disagreement alone; a single anecdote cannot establish a population-level effect.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "dunning_kruger_effect",
+      "canonical_id": "dunning_kruger_effect",
+      "name": "Dunning–Kruger Effect",
+      "definition": "Low demonstrated competence accompanies overestimation of competence and difficulty recognizing errors.",
+      "annotation_boundary": "Do not diagnose from confidence or disagreement alone; a single anecdote cannot establish a population-level effect.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "outcome_bias",
+  "name": "Outcome bias",
+  "definition": "A decision is evaluated by its result instead of the reasoning and evidence available when it was made.",
+  "boundary": "Outcome bias concerns decision quality; hindsight bias concerns prior predictability.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "outcome_bias",
+      "canonical_id": "outcome_bias",
+      "name": "Outcome bias",
+      "definition": "A decision is evaluated by its result instead of the reasoning and evidence available when it was made.",
+      "annotation_boundary": "Outcome bias concerns decision quality; hindsight bias concerns prior predictability.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

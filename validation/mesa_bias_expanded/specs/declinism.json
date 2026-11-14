@@ -1,0 +1,22 @@
+{
+  "id": "declinism",
+  "name": "Declinism",
+  "definition": "The past is idealized while the present or future is judged to be deteriorating without adequate support.",
+  "boundary": "A supported decline in one measure is not generalized declinism.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "declinism",
+      "canonical_id": "declinism",
+      "name": "Declinism",
+      "definition": "The past is idealized while the present or future is judged to be deteriorating without adequate support.",
+      "annotation_boundary": "A supported decline in one measure is not generalized declinism.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

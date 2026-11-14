@@ -1,0 +1,22 @@
+{
+  "id": "benjamin_franklin_effect",
+  "name": "Benjamin Franklin effect",
+  "definition": "Doing someone a favor leads the helper to like that person more.",
+  "boundary": "The direction is giving a favor then increased liking, not receiving kindness then liking its giver.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "benjamin_franklin_effect",
+      "canonical_id": "benjamin_franklin_effect",
+      "name": "Benjamin Franklin effect",
+      "definition": "Doing someone a favor leads the helper to like that person more.",
+      "annotation_boundary": "The direction is giving a favor then increased liking, not receiving kindness then liking its giver.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

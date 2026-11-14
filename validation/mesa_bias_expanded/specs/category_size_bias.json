@@ -1,0 +1,22 @@
+{
+  "id": "category_size_bias",
+  "name": "Category Size Bias",
+  "definition": "A particular outcome is judged more likely because it belongs to a larger category, although individual outcome probabilities are equal.",
+  "boundary": "Distinguish an individual outcome from its category; larger categories can genuinely have greater aggregate probability.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "category_size_bias",
+      "canonical_id": "category_size_bias",
+      "name": "Category Size Bias",
+      "definition": "A particular outcome is judged more likely because it belongs to a larger category, although individual outcome probabilities are equal.",
+      "annotation_boundary": "Distinguish an individual outcome from its category; larger categories can genuinely have greater aggregate probability.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

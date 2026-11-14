@@ -1,0 +1,22 @@
+{
+  "id": "labeling",
+  "name": "Labeling",
+  "definition": "The same actor called by different epithets and titles in different outlets; the label presets the actor's legitimacy.",
+  "boundary": "",
+  "layer": "media_form",
+  "source_variants": [
+    {
+      "layer": "media_form",
+      "source_id": "Labeling",
+      "canonical_id": "labeling",
+      "name": "Labeling",
+      "definition": "The same actor called by different epithets and titles in different outlets; the label presets the actor's legitimacy.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

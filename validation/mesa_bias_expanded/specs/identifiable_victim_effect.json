@@ -1,0 +1,35 @@
+{
+  "id": "identifiable_victim_effect",
+  "name": "Identifiable Victim Effect",
+  "definition": "An identified individual elicits more help than comparable anonymous beneficiaries.",
+  "boundary": "Identification must drive the difference; differing effectiveness can justify allocation.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "identifiable-victim",
+      "canonical_id": "identifiable_victim_effect",
+      "name": "Identifiable Victim Effect (Belirlenebilir mağdur etkisi)",
+      "definition": "Reacting far more strongly to one named victim than to a statistical group.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "identifiable_victim_effect",
+      "canonical_id": "identifiable_victim_effect",
+      "name": "Identifiable Victim Effect",
+      "definition": "An identified individual elicits more help than comparable anonymous beneficiaries.",
+      "annotation_boundary": "Identification must drive the difference; differing effectiveness can justify allocation.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

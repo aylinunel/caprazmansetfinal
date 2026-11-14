@@ -1,0 +1,9 @@
+# Choice Overload implementation note
+
+This illustrative task models sequential option comparison, not a real-person detector. For the supplied ordered choices, the first option is the initial incumbent. Each later option requires its explicit `comparison_difficulty` cost to compare. Let `W` be the sum of those costs and `B` the supplied positive comparison budget. At strength `s`, the scan allowance is `(1-s)W + sB`; comparison stops before the first option whose cost would exceed the remaining allowance, and the highest-utility examined option is chosen (ties retain the earlier option). Thus strength zero exactly implements the explicit reference policy of examining every option and choosing maximum supplied utility.
+
+The primary metric is **utility regret**, `max(0, best full-set utility - selected utility)`, in utility points on the 0–1 scale. The mechanism is active when its selected option differs from the exhaustive reference choice. This process can only produce regret when the option set/order, explicitly supplied comparison effort, and finite budget jointly result in a consequential early stop; a large option count alone is not sufficient.
+
+The positive scenario places the highest-utility option after effort costly comparisons under a tight budget, producing nonzero regret at strength 0.8. The boundary scenario removes comparison difficulty (all incremental costs are zero), so all options are examined and the primary metric equals the strength-zero reference. A sufficiently large budget is another no-effect case.
+
+Costs, utility, ordering, and the strength interpolation are transparent synthetic assumptions, not published effect sizes or validated psychological parameters. The module cannot infer comparison difficulty, dissatisfaction, or overload from free text; regret in this constructed task is not evidence about actual people. The concept is explicitly hypothetical and not empirically validated.

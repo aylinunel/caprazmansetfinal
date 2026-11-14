@@ -1,0 +1,22 @@
+{
+  "id": "hot_hand_fallacy",
+  "name": "Hot Hand Fallacy",
+  "definition": "A success streak is treated as evidence of increased next-trial success without support.",
+  "boundary": "Real persistence can exist in skill-based activities; do not label every streak inference a fallacy.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "hot_hand_fallacy",
+      "canonical_id": "hot_hand_fallacy",
+      "name": "Hot Hand Fallacy",
+      "definition": "A success streak is treated as evidence of increased next-trial success without support.",
+      "annotation_boundary": "Real persistence can exist in skill-based activities; do not label every streak inference a fallacy.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

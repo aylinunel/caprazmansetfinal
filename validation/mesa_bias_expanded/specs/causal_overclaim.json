@@ -1,0 +1,35 @@
+{
+  "id": "causal_overclaim",
+  "name": "Causal overclaim (Kanıtsız nedensellik)",
+  "definition": "Co-variation or time order alone is presented as cause.",
+  "boundary": "Needs an explicit causal statement; chronology alone is not enough.",
+  "layer": "mercek_media_technique",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "causal-overclaim",
+      "canonical_id": "causal_overclaim",
+      "name": "Causal Overclaim (Nedensellik aşırı iddiası)",
+      "definition": "Presenting a relationship as a definite cause-and-effect link and closing off other explanations.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_media_technique",
+      "source_id": "causal_overclaim",
+      "canonical_id": "causal_overclaim",
+      "name": "Causal overclaim (Kanıtsız nedensellik)",
+      "definition": "Co-variation or time order alone is presented as cause.",
+      "annotation_boundary": "Needs an explicit causal statement; chronology alone is not enough.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

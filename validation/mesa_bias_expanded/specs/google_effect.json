@@ -1,0 +1,22 @@
+{
+  "id": "google_effect",
+  "name": "Google Effect",
+  "definition": "Expected access to external information reduces memory for the information itself.",
+  "boundary": "External lookup alone is insufficient; this is a memory/offloading effect, not automatically faulty reasoning.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "google_effect",
+      "canonical_id": "google_effect",
+      "name": "Google Effect",
+      "definition": "Expected access to external information reduces memory for the information itself.",
+      "annotation_boundary": "External lookup alone is insufficient; this is a memory/offloading effect, not automatically faulty reasoning.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

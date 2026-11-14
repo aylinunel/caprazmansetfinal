@@ -1,0 +1,22 @@
+{
+  "id": "parasocial_trust_in_ai",
+  "name": "Parasocial Trust in AI",
+  "definition": "A humanlike AI relationship creates trust, disclosure, or deference unsupported by its actual capabilities.",
+  "boundary": "Warm interaction alone is insufficient; identify relational trust driving reliance or disclosure.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "parasocial_trust_in_ai",
+      "canonical_id": "parasocial_trust_in_ai",
+      "name": "Parasocial Trust in AI",
+      "definition": "A humanlike AI relationship creates trust, disclosure, or deference unsupported by its actual capabilities.",
+      "annotation_boundary": "Warm interaction alone is insufficient; identify relational trust driving reliance or disclosure.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Halo Effect: illustrative implementation
+
+**Process and task.** The task is to assign a target-attribute judgment on a supplied 0–10 rating scale. The strength-zero reference rule reports `target_reference_rating` unchanged. Under the modeled halo process, the target judgment is `reference + strength × (1 − target_evidence_support) × max(0, donor_rating − reference)`, but only when the donor and target attributes are explicitly distinct and unrelated. The metric is therefore a target judgment in rating points, not a generic bias score; state retains the step count and latest judgment/reference/spillover values.
+
+**Necessary conditions and boundary.** A cross-attribute effect requires distinct attributes, an explicit unrelatedness flag, a donor rating above the target reference, and less than complete target-evidence support. Relevant performance evidence does not spill into a related competence judgment under this model. Missing or malformed evidence is rejected rather than converted into a zero rating.
+
+**Scenarios.** The positive scenario supplies presentation polish 9, analytical accuracy reference 4, unrelatedness, and support 0.2; at strength 0.8 the illustrative equation returns 7.2 rather than 4. The boundary scenario marks task performance and task competence as related, so it remains 4 at strengths 0 and 0.8. These are structured hypothetical examples, not empirical observations.
+
+**Assumptions and limitations.** Ratings, support, and the linear blending rule are user-settable illustrative assumptions, not fitted or published effect sizes. The module consumes explicit structured facts and does not parse language, infer attribute relationships, judge support quality, or model real-world uncertainty or individual differences. Relevant competence inferences are not categorized as halo here. The implementation and its tests are not empirically validated and make no claim about people, prevalence, or detection accuracy.

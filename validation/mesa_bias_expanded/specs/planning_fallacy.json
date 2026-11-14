@@ -1,0 +1,22 @@
+{
+  "id": "planning_fallacy",
+  "name": "Planning Fallacy",
+  "definition": "Completion time or resources are underestimated despite relevant experience and constraints.",
+  "boundary": "A short estimate is not enough; require neglected evidence or demonstrated underestimation.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "planning_fallacy",
+      "canonical_id": "planning_fallacy",
+      "name": "Planning Fallacy",
+      "definition": "Completion time or resources are underestimated despite relevant experience and constraints.",
+      "annotation_boundary": "A short estimate is not enough; require neglected evidence or demonstrated underestimation.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

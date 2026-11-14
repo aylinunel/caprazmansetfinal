@@ -1,0 +1,35 @@
+{
+  "id": "in_group_bias",
+  "name": "In-group Bias",
+  "definition": "Shared group membership leads to preferential evaluation or treatment.",
+  "boundary": "Group membership must drive unequal treatment; relevant qualifications are an alternative explanation.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "in-group-bias",
+      "canonical_id": "in_group_bias",
+      "name": "In-group Bias (İç grup yanlılığı)",
+      "definition": "Favouring one's own group's view and credibility while holding the out-group to a harsher standard.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "in_group_bias",
+      "canonical_id": "in_group_bias",
+      "name": "In-group Bias",
+      "definition": "Shared group membership leads to preferential evaluation or treatment.",
+      "annotation_boundary": "Group membership must drive unequal treatment; relevant qualifications are an alternative explanation.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

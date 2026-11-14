@@ -1,0 +1,22 @@
+{
+  "id": "projection_bias",
+  "name": "Projection Bias",
+  "definition": "Current tastes or states are projected too strongly onto future preferences.",
+  "boundary": "Related to empathy gap, but specifically concerns overprojecting present preferences onto the future.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "projection_bias",
+      "canonical_id": "projection_bias",
+      "name": "Projection Bias",
+      "definition": "Current tastes or states are projected too strongly onto future preferences.",
+      "annotation_boundary": "Related to empathy gap, but specifically concerns overprojecting present preferences onto the future.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "event_selection",
+  "name": "Event selection",
+  "definition": "Only a few of the day's events become news; selection is necessary, and it is also the first step of bias.",
+  "boundary": "",
+  "layer": "media_form",
+  "source_variants": [
+    {
+      "layer": "media_form",
+      "source_id": "Event selection",
+      "canonical_id": "event_selection",
+      "name": "Event selection",
+      "definition": "Only a few of the day's events become news; selection is necessary, and it is also the first step of bias.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

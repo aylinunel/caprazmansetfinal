@@ -1,0 +1,22 @@
+{
+  "id": "bye_now_effect",
+  "name": "Bye-Now Effect",
+  "definition": "Exposure to the word bye is proposed to activate buy through their shared sound and influence spending.",
+  "boundary": "A narrow proposed priming effect; an isolated word or purchase cannot establish the mechanism.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "bye_now_effect",
+      "canonical_id": "bye_now_effect",
+      "name": "Bye-Now Effect",
+      "definition": "Exposure to the word bye is proposed to activate buy through their shared sound and influence spending.",
+      "annotation_boundary": "A narrow proposed priming effect; an isolated word or purchase cannot establish the mechanism.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

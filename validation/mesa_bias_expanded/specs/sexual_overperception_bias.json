@@ -1,0 +1,22 @@
+{
+  "id": "sexual_overperception_bias",
+  "name": "Sexual Overperception Bias",
+  "definition": "Another person's sexual interest is inferred beyond what the evidence supports.",
+  "boundary": "Do not infer from gender or friendliness alone; ambiguous interaction often warrants insufficient evidence.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "sexual_overperception_bias",
+      "canonical_id": "sexual_overperception_bias",
+      "name": "Sexual Overperception Bias",
+      "definition": "Another person's sexual interest is inferred beyond what the evidence supports.",
+      "annotation_boundary": "Do not infer from gender or friendliness alone; ambiguous interaction often warrants insufficient evidence.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

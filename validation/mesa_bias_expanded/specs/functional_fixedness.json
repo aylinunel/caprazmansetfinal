@@ -1,0 +1,22 @@
+{
+  "id": "functional_fixedness",
+  "name": "Functional Fixedness",
+  "definition": "An object's customary purpose blocks recognition of another useful purpose.",
+  "boundary": "Object-use restriction differs from fixation on an established problem-solving procedure.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "functional_fixedness",
+      "canonical_id": "functional_fixedness",
+      "name": "Functional Fixedness",
+      "definition": "An object's customary purpose blocks recognition of another useful purpose.",
+      "annotation_boundary": "Object-use restriction differs from fixation on an established problem-solving procedure.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

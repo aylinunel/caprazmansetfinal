@@ -1,0 +1,35 @@
+{
+  "id": "loaded_language",
+  "name": "Loaded language (Duygu yüklü dil)",
+  "definition": "Evaluative words present the event positively or negatively.",
+  "boundary": "Reporting a negative event is not loaded language by itself.",
+  "layer": "mercek_media_technique",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "loaded-language",
+      "canonical_id": "loaded_language",
+      "name": "Loaded Language (Yüklü dil)",
+      "definition": "Word choice that evaluates rather than reports and presets the reader's reaction (\"zam yapıldı\" vs \"vatandaşın cebine darbe\").",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_media_technique",
+      "source_id": "loaded_language",
+      "canonical_id": "loaded_language",
+      "name": "Loaded language (Duygu yüklü dil)",
+      "definition": "Evaluative words present the event positively or negatively.",
+      "annotation_boundary": "Reporting a negative event is not loaded language by itself.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

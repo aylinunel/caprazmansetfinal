@@ -1,0 +1,22 @@
+{
+  "id": "overjustification_effect",
+  "name": "Overjustification Effect",
+  "definition": "External rewards reduce previously intrinsic interest in an activity.",
+  "boundary": "Require prior intrinsic interest and a reward-related decline, not any decrease in activity.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "overjustification_effect",
+      "canonical_id": "overjustification_effect",
+      "name": "Overjustification Effect",
+      "definition": "External rewards reduce previously intrinsic interest in an activity.",
+      "annotation_boundary": "Require prior intrinsic interest and a reward-related decline, not any decrease in activity.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "barnum_effect",
+  "name": "Barnum Effect",
+  "definition": "A vague description applicable to many people is accepted as uniquely personal.",
+  "boundary": "Agreement with a general statement alone is insufficient; require perceived personal specificity.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "barnum_effect",
+      "canonical_id": "barnum_effect",
+      "name": "Barnum Effect",
+      "definition": "A vague description applicable to many people is accepted as uniquely personal.",
+      "annotation_boundary": "Agreement with a general statement alone is insufficient; require perceived personal specificity.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

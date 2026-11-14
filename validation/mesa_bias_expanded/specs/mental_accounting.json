@@ -1,0 +1,22 @@
+{
+  "id": "mental_accounting",
+  "name": "Mental Accounting",
+  "definition": "Money is treated differently according to mental categories rather than its interchangeable purchasing power.",
+  "boundary": "Budgeting can be useful; identify a category-driven inconsistency before calling it erroneous.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "mental_accounting",
+      "canonical_id": "mental_accounting",
+      "name": "Mental Accounting",
+      "definition": "Money is treated differently according to mental categories rather than its interchangeable purchasing power.",
+      "annotation_boundary": "Budgeting can be useful; identify a category-driven inconsistency before calling it erroneous.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

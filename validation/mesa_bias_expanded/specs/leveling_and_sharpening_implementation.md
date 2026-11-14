@@ -1,0 +1,13 @@
+# Leveling and sharpening: implementation note
+
+This is a hypothetical, structured retelling process—not a detector, diagnosis, population claim, or empirical finding. A task supplies a stable list of details, each with source intensity `x_i` and salience `s_i` in `[0,1]`, and a per-retelling uniform retention factor `r` in `[0,1]`. The only unconditional scenario inputs are `details` and `retention`; missing or invalid task evidence is rejected during evaluation.
+
+For each detail, let `m_i` be its remembered intensity before this retelling (the source intensity on the first step), `s̄` the mean supplied salience, and `q = 0.5` the illustrative differential coefficient. The transition is
+
+`m_i' = 0.5 + (m_i - 0.5) * r * [1 + q * strength * (s_i - s̄)]`.
+
+Intensity is bounded to `[0,1]`. The strength-zero reference is uniform retention: `m_i' = 0.5 + (m_i - 0.5) * r`. Thus, with distinct saliences, below-mean details receive a smaller multiplier and move more toward neutral than the reference, while above-mean details receive a larger multiplier and retain or accentuate more distance from neutral. The process carries each new detail vector, retelling count, and chronological snapshots in its complete task-specific state. Its primary metric is the unweighted mean absolute difference between the current remembered intensities and their supplied source intensities (0–1 intensity units); it is not a judgment or belief score.
+
+The positive scenario repeats a two-detail account with unequal salience across two retellings, so the differential salience condition is present. The boundary scenario also uses multiple retellings but gives all details equal salience, removing the necessary relative-salience difference; the multiplier then equals the reference for every detail, so the primary metric is equal at strength 0 and 0.8. These are synthetic illustrative checks, not evidence about real-world retelling.
+
+Assumptions and limitations: the neutral point, coefficient, and uniform retention policy are modeling choices, not fitted effects. The scalar intensity representation omits semantic content, retrieval cues, context, and individual differences; salience and intensity are explicit supplied observations, not inferred mental states. Ordinary summarization is not necessarily memory distortion, and intentional editing requires separate attribution; neither is inferred or classified here. Strength is an uncalibrated intervention setting, not probability, prevalence, or confidence. Passing software checks establishes only that the stated process is executable, not that it is psychologically valid.

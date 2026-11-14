@@ -1,0 +1,22 @@
+{
+  "id": "zero_risk_bias",
+  "name": "Zero Risk Bias",
+  "definition": "Eliminating one risk entirely is preferred over a larger overall risk reduction merely because it reaches zero.",
+  "boundary": "Control harm severity, costs, and risk dependence; a zero endpoint is not automatically irrational.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "zero_risk_bias",
+      "canonical_id": "zero_risk_bias",
+      "name": "Zero Risk Bias",
+      "definition": "Eliminating one risk entirely is preferred over a larger overall risk reduction merely because it reaches zero.",
+      "annotation_boundary": "Control harm severity, costs, and risk dependence; a zero endpoint is not automatically irrational.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "expected_new_modules": 138,
+  "passing_executable_contracts": 138,
+  "pytest_passed": 1531,
+  "pytest_failed_or_error": 0,
+  "pytest_skipped": 0,
+  "sweep_completed_concepts": 138,
+  "sweep_completed_scenarios": 277,
+  "sweep_execution_failures": 0,
+  "module_kinds": {
+    "media_practice": 23,
+    "cognitive_bias": 98,
+    "learning_effect": 7,
+    "psychological_state": 3,
+    "heuristic": 2,
+    "motivational_mechanism": 5
+  },
+  "empirically_validated": false,
+  "synthetic_only": true,
+  "sweep_expectation_checks_passed": 277,
+  "sweep_expectation_checks_failed": 0,
+  "paired_agent_rows": 9972,
+  "agent_step_trace_rows": 28584,
+  "first_sweep_execution_failures": [
+    {
+      "concept": "pluralistic_ignorance",
+      "error_type": "ValueError",
+      "error": "agent_index must identify a member of the supplied group"
+    }
+  ],
+  "legacy_direct_rules_retained": [
+    "anchoring_bias",
+    "confirmation_bias"
+  ],
+  "legacy_partial_proxies_not_upgraded": [
+    "bandwagon_effect",
+    "social_norms"
+  ],
+  "software_scope_complete": true
+}

@@ -1,0 +1,22 @@
+{
+  "id": "bottom_dollar_effect",
+  "name": "Bottom-Dollar Effect",
+  "definition": "Spending the last available funds reduces satisfaction with the purchased item.",
+  "boundary": "Distinguish diminished purchase satisfaction from rational concern about an insufficient budget.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "bottom_dollar_effect",
+      "canonical_id": "bottom_dollar_effect",
+      "name": "Bottom-Dollar Effect",
+      "definition": "Spending the last available funds reduces satisfaction with the purchased item.",
+      "annotation_boundary": "Distinguish diminished purchase satisfaction from rational concern about an insufficient budget.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

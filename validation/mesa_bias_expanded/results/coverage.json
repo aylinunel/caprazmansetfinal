@@ -1,0 +1,2783 @@
+{
+  "expected_new_mechanisms": 138,
+  "passing_contracts": 138,
+  "failed_or_missing_contracts": 0,
+  "synthetic_only": true,
+  "empirically_validated": false,
+  "results": [
+    {
+      "id": "event_selection",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "source_selection",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.5,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "commission_and_omission_of_information",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 2.0999999999999996,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "labeling",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.6400000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "word_choice",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.8000000000000002,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "story_placement",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.5413634842135833,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": -9.71445146547012e-17,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "size_allocation",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 32.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "picture_selection",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "picture_explanation",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "spin",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.2074074074074074,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "episodic_framing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -12.972972972972975,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "thematic_framing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 43.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "consequence_framing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "responsibility_framing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "metaphorical_framing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.6999999999999998,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "ad_hominem",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.4400000000000002,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "in_group_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -8.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "authority_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "fear_appeal",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.21599999999999997,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "cherry_picking",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "strawman",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.48000000000000004,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "false_dilemma",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.24000000000000007,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "availability_heuristic",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.41538461538461524,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "negativity_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.12,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "salience_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.19058823529411761,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "illusory_truth_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.11854791382113694,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "halo_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 3.200000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "base_rate_fallacy",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.3606183185028879,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "identifiable_victim_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "attentional_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.6,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "naive_realism",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.19200000000000006,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "just_world_hypothesis",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "the_sunk_cost_fallacy",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -2.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "loaded_language",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.6000000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "causal_overclaim",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.36000000000000004,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "selective_statistics",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 26.666666666666668,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "one_sided_sourcing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "emphasis_framing",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.48000000000000015,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "contextual_omission",
+      "kind": "media_practice",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "difference",
+          "delta": 6.400000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "ai_literacy_gap",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "accountability_diffusion_in_ai",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.6666666666666666,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "action_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "difference",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "affect_heuristic",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.5,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "ambiguity_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "automation_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.5,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "barnum_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.46656000000000003,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "belief_perseverance",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.23518707917873072,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        },
+        {
+          "name": "explicit_backfire_subtype",
+          "expected": "increase",
+          "delta": 0.4197323054145883,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "benjamin_franklin_effect",
+      "kind": "learning_effect",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 5.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "bikeshedding",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.06895356985487266,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "bottom_dollar_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.6400000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "bounded_rationality",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 4.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "bundling_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "bye_now_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 20.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "cashless_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 10.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "category_size_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.3200000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "choice_overload_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.25,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "cognitive_dissonance",
+      "kind": "psychological_state",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "difference",
+          "delta": 0.39311999999999997,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "commitment_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "decision_fatigue",
+      "kind": "psychological_state",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 4.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "declinism",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "decoy_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.18625422490066992,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "delegation_creep",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.7999999999999998,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "disposition_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "distinction_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 43.20000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "dunning_kruger_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "einstellung_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 6.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "empathy_gap",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "endowment_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "extrinsic_incentive_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.1454545454545455,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "false_consensus_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.3121951219512195,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "framing_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "functional_fixedness",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.1499999999999999,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "fundamental_attribution_error",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.3555555555555557,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "gamblers_fallacy",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "difference",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "google_effect",
+      "kind": "learning_effect",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.22664110679875205,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "hard_easy_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.10000000000000009,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "heuristics",
+      "kind": "heuristic",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -4.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "hindsight_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.6400000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "hot_hand_fallacy",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.03200000000000003,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "hyperbolic_discounting",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "ikea_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 4.799999999999997,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "illusion_of_control",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 2.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "illusion_of_transparency",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.4608000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "illusion_of_validity",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.003076923076923088,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "illusory_correlation",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.11034482758620684,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "impact_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 27.200000000000003,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "incentivization",
+      "kind": "motivational_mechanism",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "lag_effect",
+      "kind": "learning_effect",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.1077450549438318,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "law_of_the_instrument",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "less_is_better_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.5,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "leveling_and_sharpening",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.059280000000000055,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "levels_of_processing_effect",
+      "kind": "learning_effect",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.29064710337002075,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "look_elsewhere_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.5556250461619177,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "loss_aversion",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "mental_accounting",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -5.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "mere_exposure_effect",
+      "kind": "learning_effect",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.15170893411885383,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "messenger_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.18065116949100846,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "motivating_uncertainty_effect",
+      "kind": "motivational_mechanism",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "naive_allocation",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -256.0000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "noble_edge_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 14.400000000000006,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "normalcy_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 22.108433734939766,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "nostalgia_effect",
+      "kind": "motivational_mechanism",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 10.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "observer_expectancy_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.29184000000000054,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "omission_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.16000000000000003,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "optimism_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.21212121212121204,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "ostrich_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -7.5,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "outcome_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.32,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "overjustification_effect",
+      "kind": "motivational_mechanism",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -4.48,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "parasocial_trust_in_ai",
+      "kind": "psychological_state",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "peak_end_rule",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.4400000000000004,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "pessimism_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.12787616990138717,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "planning_fallacy",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 8.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "pluralistic_ignorance",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.6666666666666666,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "present_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "primacy_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.04516129032258065,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "priming",
+      "kind": "learning_effect",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "projection_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "reactive_devaluation",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "recency_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "regret_aversion",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "representativeness_heuristic",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "response_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.3499999999999999,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "restraint_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "rosy_retrospection",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 2.7717625253545606,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "self_serving_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.22400000000000006,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "serial_position_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.08572830810474175,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "sexual_overperception_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.21600000000000005,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "source_confusion",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 1.0,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "spacing_effect",
+      "kind": "learning_effect",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.19655770339533474,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "spotlight_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.21176470588235294,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "status_quo_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "decrease",
+          "delta": -0.34999999999999987,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "suggestibility",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 4.800000000000001,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "survivorship_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.3692307692307694,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "take_the_best_heuristic",
+      "kind": "heuristic",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 3.3333333333333335,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "telescoping_effect",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 14.400000000000006,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "the_illusion_of_explanatory_depth",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.5,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "the_pygmalion_effect",
+      "kind": "motivational_mechanism",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 3.200000000000003,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    },
+    {
+      "id": "zero_risk_bias",
+      "kind": "cognitive_bias",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "positive",
+          "expected": "increase",
+          "delta": 0.14,
+          "passed": true
+        },
+        {
+          "name": "boundary",
+          "expected": "equal",
+          "delta": 0.0,
+          "passed": true
+        }
+      ],
+      "empirically_validated": false
+    }
+  ],
+  "legacy_direct_rules_retained": [
+    "anchoring_bias",
+    "confirmation_bias"
+  ],
+  "legacy_partial_proxies_not_upgraded": [
+    "bandwagon_effect",
+    "social_norms"
+  ]
+}

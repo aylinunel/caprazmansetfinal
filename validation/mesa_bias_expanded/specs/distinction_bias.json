@@ -1,0 +1,22 @@
+{
+  "id": "distinction_bias",
+  "name": "Distinction Bias",
+  "definition": "Side-by-side comparison exaggerates differences that matter little during separate use.",
+  "boundary": "Joint versus separate evaluation matters; a real use-relevant difference is not sufficient evidence of bias.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "distinction_bias",
+      "canonical_id": "distinction_bias",
+      "name": "Distinction Bias",
+      "definition": "Side-by-side comparison exaggerates differences that matter little during separate use.",
+      "annotation_boundary": "Joint versus separate evaluation matters; a real use-relevant difference is not sufficient evidence of bias.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

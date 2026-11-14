@@ -1,0 +1,35 @@
+{
+  "id": "just_world_hypothesis",
+  "name": "Just-world Hypothesis",
+  "definition": "People's outcomes are assumed to reflect what they morally deserve.",
+  "boundary": "Do not infer this label from a supported claim about consequences of a specific action.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "just-world",
+      "canonical_id": "just_world_hypothesis",
+      "name": "Just-World Hypothesis (Adil dünya inancı)",
+      "definition": "Interpreting events on the assumption that people get what they deserve.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "just_world_hypothesis",
+      "canonical_id": "just_world_hypothesis",
+      "name": "Just-world Hypothesis",
+      "definition": "People's outcomes are assumed to reflect what they morally deserve.",
+      "annotation_boundary": "Do not infer this label from a supported claim about consequences of a specific action.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

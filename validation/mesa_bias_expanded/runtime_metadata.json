@@ -1,0 +1,17 @@
+{
+  "mesa": "3.5.2",
+  "numpy": "2.5.4",
+  "pytest": "9.2.0",
+  "legacy_model_sha256": "2bd1ed7120ed501b055fca43159c7f7f154023a45bca55415bf3c6b599215ed7",
+  "expected_new_plugins": 138,
+  "legacy_direct_concepts": [
+    "anchoring_bias",
+    "confirmation_bias"
+  ],
+  "legacy_partial_proxies": [
+    "bandwagon_effect",
+    "social_norms"
+  ],
+  "synthetic_only": true,
+  "empirically_validated": false
+}

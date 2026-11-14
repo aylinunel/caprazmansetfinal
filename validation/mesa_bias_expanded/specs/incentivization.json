@@ -1,0 +1,22 @@
+{
+  "id": "incentivization",
+  "name": "Incentivization",
+  "definition": "Rewards or penalties alter motivation or behavior.",
+  "boundary": "A motivational mechanism, not inherently a cognitive bias or evidence of manipulation.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "incentivization",
+      "canonical_id": "incentivization",
+      "name": "Incentivization",
+      "definition": "Rewards or penalties alter motivation or behavior.",
+      "annotation_boundary": "A motivational mechanism, not inherently a cognitive bias or evidence of manipulation.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

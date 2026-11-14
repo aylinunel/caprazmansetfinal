@@ -1,0 +1,9 @@
+# Heuristics implementation note
+
+This synthetic mechanism models a **first-cue shortcut** for choosing among alternatives. Each option supplies an ordered list of normalized attribute values; the first attribute is stipulated as the currently accessible cue. When strength is positive, the model sets cue depth to `max(1, ceil((1-strength) * attribute_count))`. If this depth is smaller than the full attribute list and one option uniquely leads on the first cue, it stops after inspecting that cue and chooses its leader.
+
+The primary task metric is **attribute evaluations**, the count of option-attribute values inspected in this decision. It is a computation-count proxy, not a bias or accuracy measure. The strength-zero reference evaluates every attribute and chooses the first option with the highest arithmetic mean utility. A cue shortcut may save work, but can also choose an option with lower mean utility; no result is presumed harmful.
+
+The shortcut requires both a narrower-than-full cue budget and a unique first-cue leader. If the first cue has tied leaders, the model falls back to the same full-mean reference. The positive scenario gives the unique cue leader lower full mean utility and demonstrates reduced inspections at strength 0.8. The boundary scenario ties the first cue while allowing the full means to differ; the primary metric and choice therefore match strength zero.
+
+The model is explicitly hypothetical and not empirically validated. Attribute ordering, normalization, and arithmetic-mean utility are scenario assumptions; strength is an illustrative intervention setting, not prevalence, confidence, or a fitted effect. Real decision strategies can use multiple cues, be learned or context-dependent, and be beneficial under time or information constraints. This module is not an NLP detector and does not infer how a person actually decided.

@@ -1,0 +1,22 @@
+{
+  "id": "telescoping_effect",
+  "name": "Telescoping Effect",
+  "definition": "Events are remembered as more recent or more distant than their actual dates.",
+  "boundary": "Forward telescoping brings old events closer; backward telescoping pushes recent events farther away.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "telescoping_effect",
+      "canonical_id": "telescoping_effect",
+      "name": "Telescoping Effect",
+      "definition": "Events are remembered as more recent or more distant than their actual dates.",
+      "annotation_boundary": "Forward telescoping brings old events closer; backward telescoping pushes recent events farther away.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

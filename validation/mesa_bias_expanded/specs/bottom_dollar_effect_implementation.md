@@ -1,0 +1,9 @@
+# Bottom-Dollar Effect — illustrative implementation
+
+This module models a single purchase step, not a person-level diagnosis or detector. Its task is to return a normalized purchase-satisfaction score (0–1). The strength-zero reference policy returns the supplied `item_satisfaction` unchanged.
+
+Let `after = funds_before - purchase_cost`. If and only if `after == 0` and the explicit `budget_secure_after` input is true, the model returns `item_satisfaction × (1 − strength)`. Otherwise it returns the reference satisfaction unchanged. This isolates a hypothetical reduction in satisfaction with the purchased item after spending the last available funds from rational concern where essential obligations are not covered. Strength is a generic illustrative setting, not an estimated effect size. The state records the latest satisfaction, remaining funds, and whether this step changed the reference score while preserving prior state fields.
+
+The positive scenario spends all $100 available while obligations are marked secure; at strength 0.8, satisfaction falls from 0.8 to 0.16. The boundary scenario spends $99 of $100, so the necessary depletion condition is absent and its score equals the strength-zero reference. A fully depleted but insecure budget also leaves item satisfaction unchanged.
+
+Assumptions and limits: inputs are hypothetical structured observations, including budget security; the model does not infer hidden obligations, motives, or budget state. Exact depletion is required. A one-step proportional satisfaction rule is intentionally simple, is not empirically validated, and does not represent population prevalence, fitted psychology, temporal adaptation, or a language detector.

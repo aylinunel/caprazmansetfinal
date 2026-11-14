@@ -1,0 +1,22 @@
+{
+  "id": "one_sided_sourcing",
+  "name": "One-sided sourcing (Tek taraflı kaynak seçimi)",
+  "definition": "Only one side's claim serves as the story's evidence while a relevant counter-view exists.",
+  "boundary": "A short RSS excerpt does not prove the full story lacks the counter-view.",
+  "layer": "mercek_media_technique",
+  "source_variants": [
+    {
+      "layer": "mercek_media_technique",
+      "source_id": "one_sided_sourcing",
+      "canonical_id": "one_sided_sourcing",
+      "name": "One-sided sourcing (Tek taraflı kaynak seçimi)",
+      "definition": "Only one side's claim serves as the story's evidence while a relevant counter-view exists.",
+      "annotation_boundary": "A short RSS excerpt does not prove the full story lacks the counter-view.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

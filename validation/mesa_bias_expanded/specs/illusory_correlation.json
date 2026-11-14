@@ -1,0 +1,22 @@
+{
+  "id": "illusory_correlation",
+  "name": "Illusory Correlation",
+  "definition": "A relationship is perceived despite insufficient evidence or contrary association data.",
+  "boundary": "Distinguish an unsupported association from the separate mistake of treating a real correlation as causation.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "illusory_correlation",
+      "canonical_id": "illusory_correlation",
+      "name": "Illusory Correlation",
+      "definition": "A relationship is perceived despite insufficient evidence or contrary association data.",
+      "annotation_boundary": "Distinguish an unsupported association from the separate mistake of treating a real correlation as causation.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

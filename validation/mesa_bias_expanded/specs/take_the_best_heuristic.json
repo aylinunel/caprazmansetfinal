@@ -1,0 +1,22 @@
+{
+  "id": "take_the_best_heuristic",
+  "name": "Take-the-best Heuristic",
+  "definition": "Options are selected using the first sufficiently discriminating cue in a prioritized cue order.",
+  "boundary": "A decision strategy that can be efficient; one decisive relevant criterion is not necessarily an error.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "take_the_best_heuristic",
+      "canonical_id": "take_the_best_heuristic",
+      "name": "Take-the-best Heuristic",
+      "definition": "Options are selected using the first sufficiently discriminating cue in a prioritized cue order.",
+      "annotation_boundary": "A decision strategy that can be efficient; one decisive relevant criterion is not necessarily an error.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

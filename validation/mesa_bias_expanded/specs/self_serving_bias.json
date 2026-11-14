@@ -1,0 +1,22 @@
+{
+  "id": "self_serving_bias",
+  "name": "Self-serving Bias",
+  "definition": "Success is credited internally while failure is attributed externally in a self-favoring way.",
+  "boundary": "Supported causal attributions are not biased merely because they reflect well on the speaker.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "self_serving_bias",
+      "canonical_id": "self_serving_bias",
+      "name": "Self-serving Bias",
+      "definition": "Success is credited internally while failure is attributed externally in a self-favoring way.",
+      "annotation_boundary": "Supported causal attributions are not biased merely because they reflect well on the speaker.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "spotlight_effect",
+  "name": "Spotlight Effect",
+  "definition": "Others' attention to one's appearance or behavior is overestimated.",
+  "boundary": "Visibility of inner states is illusion of transparency; external attention is the key here.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "spotlight_effect",
+      "canonical_id": "spotlight_effect",
+      "name": "Spotlight Effect",
+      "definition": "Others' attention to one's appearance or behavior is overestimated.",
+      "annotation_boundary": "Visibility of inner states is illusion of transparency; external attention is the key here.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

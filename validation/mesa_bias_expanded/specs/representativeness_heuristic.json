@@ -1,0 +1,22 @@
+{
+  "id": "representativeness_heuristic",
+  "name": "Representativeness Heuristic",
+  "definition": "Similarity to a prototype substitutes for probabilistic or categorical evidence.",
+  "boundary": "Prototype reasoning can overlap base-rate neglect, but neither label automatically entails the other.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "representativeness_heuristic",
+      "canonical_id": "representativeness_heuristic",
+      "name": "Representativeness Heuristic",
+      "definition": "Similarity to a prototype substitutes for probabilistic or categorical evidence.",
+      "annotation_boundary": "Prototype reasoning can overlap base-rate neglect, but neither label automatically entails the other.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

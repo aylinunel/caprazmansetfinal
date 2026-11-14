@@ -1,0 +1,22 @@
+{
+  "id": "choice_overload_bias",
+  "name": "Choice Overload",
+  "definition": "A larger choice set impairs choosing or satisfaction through comparison difficulty.",
+  "boundary": "Many options alone are insufficient; identify overload and its consequence.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "choice_overload_bias",
+      "canonical_id": "choice_overload_bias",
+      "name": "Choice Overload",
+      "definition": "A larger choice set impairs choosing or satisfaction through comparison difficulty.",
+      "annotation_boundary": "Many options alone are insufficient; identify overload and its consequence.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

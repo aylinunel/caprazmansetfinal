@@ -1,0 +1,22 @@
+{
+  "id": "levels_of_processing_effect",
+  "name": "Levels of Processing",
+  "definition": "Meaning-focused processing supports better memory than shallow surface processing.",
+  "boundary": "A memory framework, not an irrational judgment; compare processing depth with exposure controlled.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "levels_of_processing_effect",
+      "canonical_id": "levels_of_processing_effect",
+      "name": "Levels of Processing",
+      "definition": "Meaning-focused processing supports better memory than shallow surface processing.",
+      "annotation_boundary": "A memory framework, not an irrational judgment; compare processing depth with exposure controlled.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "fear_appeal",
+  "name": "Fear Appeal (Korkuya başvurma)",
+  "definition": "Mobilising readers with threat and disaster language without proportionate evidence or probability.",
+  "boundary": "",
+  "layer": "capraz_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "fear-appeal",
+      "canonical_id": "fear_appeal",
+      "name": "Fear Appeal (Korkuya başvurma)",
+      "definition": "Mobilising readers with threat and disaster language without proportionate evidence or probability.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

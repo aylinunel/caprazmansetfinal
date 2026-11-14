@@ -1,0 +1,35 @@
+{
+  "id": "naive_realism",
+  "name": "Naive Realism",
+  "definition": "One's own perspective is treated as unmediated reality and disagreement as others' defect.",
+  "boundary": "Believing a well-supported fact does not itself demonstrate naive realism.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "naive-realism",
+      "canonical_id": "naive_realism",
+      "name": "Naive Realism (Naif gerçekçilik)",
+      "definition": "Seeing one's own view as neutral reality and dissenters as misinformed or biased.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "naive_realism",
+      "canonical_id": "naive_realism",
+      "name": "Naive Realism",
+      "definition": "One's own perspective is treated as unmediated reality and disagreement as others' defect.",
+      "annotation_boundary": "Believing a well-supported fact does not itself demonstrate naive realism.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

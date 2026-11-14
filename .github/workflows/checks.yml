@@ -60,3 +60,28 @@ jobs:
           python-version: "3.12"
       - name: Provenance and CI coverage tests
         run: python -m unittest discover -s tests_repo -t . -v
+
+  lab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r pipeline/requirements.txt -r validation/requirements.txt
+      - name: Validation lab and feedback tests (offline)
+        run: python -m unittest discover -s validation/tests -t . -v
+
+  mesa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r validation/requirements.txt
+      - name: Vendored Mesa simulator suite
+        working-directory: validation/mesa_bias_expanded
+        run: python -m pytest -q

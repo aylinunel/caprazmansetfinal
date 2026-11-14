@@ -1,0 +1,22 @@
+{
+  "id": "mere_exposure_effect",
+  "name": "Mere Exposure Effect",
+  "definition": "Repeated exposure increases liking without new substantive information.",
+  "boundary": "Liking through familiarity differs from believing a repeated claim is true.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "mere_exposure_effect",
+      "canonical_id": "mere_exposure_effect",
+      "name": "Mere Exposure Effect",
+      "definition": "Repeated exposure increases liking without new substantive information.",
+      "annotation_boundary": "Liking through familiarity differs from believing a repeated claim is true.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

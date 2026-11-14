@@ -1,0 +1,35 @@
+{
+  "id": "base_rate_fallacy",
+  "name": "Base Rate Fallacy",
+  "definition": "Relevant population prevalence is neglected in favor of case-specific information.",
+  "boundary": "Require an available relevant base rate being neglected; overlap with representativeness is possible.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "base-rate",
+      "canonical_id": "base_rate_fallacy",
+      "name": "Base Rate Fallacy (Taban oran yanılgısı)",
+      "definition": "Putting concrete, striking information ahead of the relevant general statistics.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "base_rate_fallacy",
+      "canonical_id": "base_rate_fallacy",
+      "name": "Base Rate Fallacy",
+      "definition": "Relevant population prevalence is neglected in favor of case-specific information.",
+      "annotation_boundary": "Require an available relevant base rate being neglected; overlap with representativeness is possible.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

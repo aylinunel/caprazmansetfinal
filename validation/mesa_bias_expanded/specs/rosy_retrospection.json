@@ -1,0 +1,22 @@
+{
+  "id": "rosy_retrospection",
+  "name": "Rosy Retrospection",
+  "definition": "Past experiences are recalled more positively than they were experienced.",
+  "boundary": "Positive remembrance alone is insufficient; distinguish nostalgic spending and broad societal declinism.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "rosy_retrospection",
+      "canonical_id": "rosy_retrospection",
+      "name": "Rosy Retrospection",
+      "definition": "Past experiences are recalled more positively than they were experienced.",
+      "annotation_boundary": "Positive remembrance alone is insufficient; distinguish nostalgic spending and broad societal declinism.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "cognitive_dissonance",
+  "name": "Cognitive Dissonance",
+  "definition": "Inconsistent beliefs, values, or behavior produce discomfort and efforts to resolve the inconsistency.",
+  "boundary": "Dissonance is a psychological state; resolution through honest revision is not itself biased reasoning.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "cognitive_dissonance",
+      "canonical_id": "cognitive_dissonance",
+      "name": "Cognitive Dissonance",
+      "definition": "Inconsistent beliefs, values, or behavior produce discomfort and efforts to resolve the inconsistency.",
+      "annotation_boundary": "Dissonance is a psychological state; resolution through honest revision is not itself biased reasoning.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

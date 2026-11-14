@@ -1,0 +1,22 @@
+{
+  "id": "automation_bias",
+  "name": "Automation Bias",
+  "definition": "Automated recommendations receive excessive trust despite reasons to check or reject them.",
+  "boundary": "Using automation alone is insufficient; identify unjustified deference.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "automation_bias",
+      "canonical_id": "automation_bias",
+      "name": "Automation Bias",
+      "definition": "Automated recommendations receive excessive trust despite reasons to check or reject them.",
+      "annotation_boundary": "Using automation alone is insufficient; identify unjustified deference.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

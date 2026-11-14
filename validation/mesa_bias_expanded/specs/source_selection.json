@@ -1,0 +1,22 @@
+{
+  "id": "source_selection",
+  "name": "Source selection",
+  "definition": "Relying only on sources that support one view.",
+  "boundary": "",
+  "layer": "media_form",
+  "source_variants": [
+    {
+      "layer": "media_form",
+      "source_id": "Source selection",
+      "canonical_id": "source_selection",
+      "name": "Source selection",
+      "definition": "Relying only on sources that support one view.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

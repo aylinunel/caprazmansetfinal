@@ -1,0 +1,35 @@
+{
+  "id": "availability_heuristic",
+  "name": "Availability Heuristic",
+  "definition": "Ease of recalling examples substitutes for evidence about frequency or probability.",
+  "boundary": "Recency can make examples accessible, but the diagnostic mechanism is recall-based likelihood judgment.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "availability-heuristic",
+      "canonical_id": "availability_heuristic",
+      "name": "Availability Heuristic (Erişilebilirlik kestirimi)",
+      "definition": "Treating vivid, recent or often-repeated examples as more common than the evidence supports.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "availability_heuristic",
+      "canonical_id": "availability_heuristic",
+      "name": "Availability Heuristic",
+      "definition": "Ease of recalling examples substitutes for evidence about frequency or probability.",
+      "annotation_boundary": "Recency can make examples accessible, but the diagnostic mechanism is recall-based likelihood judgment.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

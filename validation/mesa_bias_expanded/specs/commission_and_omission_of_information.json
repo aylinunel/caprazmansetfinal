@@ -1,0 +1,22 @@
+{
+  "id": "commission_and_omission_of_information",
+  "name": "Commission and omission of information",
+  "definition": "Adding or leaving out information that supports or weakens a perspective.",
+  "boundary": "",
+  "layer": "media_form",
+  "source_variants": [
+    {
+      "layer": "media_form",
+      "source_id": "Commission and omission of information",
+      "canonical_id": "commission_and_omission_of_information",
+      "name": "Commission and omission of information",
+      "definition": "Adding or leaving out information that supports or weakens a perspective.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

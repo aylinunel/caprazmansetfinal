@@ -10,7 +10,9 @@ class CiTest(unittest.TestCase):
         for command in ("python -m unittest discover -s tests -v",
                         "python -m unittest biasguard.test_news -v",
                         "node --test site/tests/logic.test.cjs",
-                        "python -m unittest discover -s tests_repo -t . -v"):
+                        "python -m unittest discover -s tests_repo -t . -v",
+                        "python -m unittest discover -s validation/tests -t . -v",
+                        "python -m pytest -q"):
             self.assertIn(command, text, command)
 
     def test_workflow_is_read_only_and_secret_free(self):

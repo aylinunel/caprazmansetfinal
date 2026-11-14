@@ -1,0 +1,22 @@
+{
+  "id": "serial_position_effect",
+  "name": "Serial Position Effect",
+  "definition": "Recall varies with list position, often favoring the beginning and end over the middle.",
+  "boundary": "Primacy and recency are components; avoid counting the umbrella as an additional independent finding by default.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "serial_position_effect",
+      "canonical_id": "serial_position_effect",
+      "name": "Serial Position Effect",
+      "definition": "Recall varies with list position, often favoring the beginning and end over the middle.",
+      "annotation_boundary": "Primacy and recency are components; avoid counting the umbrella as an additional independent finding by default.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "messenger_effect",
+  "name": "Messenger Effect",
+  "definition": "The identity or presentation of a messenger changes reception of an otherwise identical message.",
+  "boundary": "Messenger cues can be informative; authority bias is a more specific subtype when status drives deference.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "messenger_effect",
+      "canonical_id": "messenger_effect",
+      "name": "Messenger Effect",
+      "definition": "The identity or presentation of a messenger changes reception of an otherwise identical message.",
+      "annotation_boundary": "Messenger cues can be informative; authority bias is a more specific subtype when status drives deference.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

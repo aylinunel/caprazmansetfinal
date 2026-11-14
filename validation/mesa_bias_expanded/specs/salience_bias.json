@@ -1,0 +1,35 @@
+{
+  "id": "salience_bias",
+  "name": "Salience Bias",
+  "definition": "Conspicuous information dominates attention or judgment beyond its relevance.",
+  "boundary": "Salience concerns prominence; attentional bias is broader and can arise from internal concerns.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "capraz_concept",
+      "source_id": "salience-bias",
+      "canonical_id": "salience_bias",
+      "name": "Salience Bias (Belirginlik yanlılığı)",
+      "definition": "Focusing on conspicuous information and ignoring less visible but important data.",
+      "annotation_boundary": "",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    },
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "salience_bias",
+      "canonical_id": "salience_bias",
+      "name": "Salience Bias",
+      "definition": "Conspicuous information dominates attention or judgment beyond its relevance.",
+      "annotation_boundary": "Salience concerns prominence; attentional bias is broader and can arise from internal concerns.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

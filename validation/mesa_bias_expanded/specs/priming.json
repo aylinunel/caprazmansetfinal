@@ -1,0 +1,22 @@
+{
+  "id": "priming",
+  "name": "Priming",
+  "definition": "Earlier exposure changes later processing or responses without a deliberate inferential link.",
+  "boundary": "Priming has multiple forms; word co-occurrence in a document cannot establish a priming effect.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "priming",
+      "canonical_id": "priming",
+      "name": "Priming",
+      "definition": "Earlier exposure changes later processing or responses without a deliberate inferential link.",
+      "annotation_boundary": "Priming has multiple forms; word co-occurrence in a document cannot establish a priming effect.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}

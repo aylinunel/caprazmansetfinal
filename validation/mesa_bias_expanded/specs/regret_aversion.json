@@ -1,0 +1,22 @@
+{
+  "id": "regret_aversion",
+  "name": "Regret Aversion",
+  "definition": "Anticipated regret disproportionately discourages a choice.",
+  "boundary": "Regret can be a real preference; establish disproportion or inconsistency before calling the choice irrational.",
+  "layer": "mercek_cognitive_concept",
+  "source_variants": [
+    {
+      "layer": "mercek_cognitive_concept",
+      "source_id": "regret_aversion",
+      "canonical_id": "regret_aversion",
+      "name": "Regret Aversion",
+      "definition": "Anticipated regret disproportionately discourages a choice.",
+      "annotation_boundary": "Regret can be a real preference; establish disproportion or inconsistency before calling the choice irrational.",
+      "coverage_status": "NOT_TESTABLE_IN_ORIGINAL_MODEL",
+      "implemented_mechanism": "",
+      "coverage_reason": "No named mechanism, required state or observation model is implemented in the original Mesa sample.",
+      "human_validated": false,
+      "detection_accuracy_measured": false
+    }
+  ]
+}
