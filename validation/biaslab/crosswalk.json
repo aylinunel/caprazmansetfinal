@@ -1,0 +1,1248 @@
+[
+ {
+  "simulation_id": "accountability_diffusion_in_ai",
+  "detector_id": "accountability-diffusion-in-ai",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "action_bias",
+  "detector_id": "action-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "ad_hominem",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "affect_heuristic",
+  "detector_id": "affect-heuristic",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "ai_literacy_gap",
+  "detector_id": "ai-literacy-gap",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "ambiguity_effect",
+  "detector_id": "ambiguity-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "attentional_bias",
+  "detector_id": "attentional-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "authority_bias",
+  "detector_id": "authority-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "automation_bias",
+  "detector_id": "automation-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "availability_heuristic",
+  "detector_id": "availability-heuristic",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "barnum_effect",
+  "detector_id": "barnum-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "base_rate_fallacy",
+  "detector_id": "base-rate-fallacy",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "belief_perseverance",
+  "detector_id": "belief-perseverance",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "benjamin_franklin_effect",
+  "detector_id": "benjamin-franklin-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "bikeshedding",
+  "detector_id": "bikeshedding",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "bottom_dollar_effect",
+  "detector_id": "bottom-dollar-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "bounded_rationality",
+  "detector_id": "bounded-rationality",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "bundling_bias",
+  "detector_id": "bundling-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "bye_now_effect",
+  "detector_id": "bye-now-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "cashless_effect",
+  "detector_id": "cashless-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "category_size_bias",
+  "detector_id": "category-size-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "causal_overclaim",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "cherry_picking",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "choice_overload_bias",
+  "detector_id": "choice-overload-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "cognitive_dissonance",
+  "detector_id": "cognitive-dissonance",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "internal_state",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "commission_and_omission_of_information",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "full_article",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "commitment_bias",
+  "detector_id": "commitment-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "consequence_framing",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "contextual_omission",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "full_article",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "decision_fatigue",
+  "detector_id": "decision-fatigue",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "internal_state",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "declinism",
+  "detector_id": "declinism",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "decoy_effect",
+  "detector_id": "decoy-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "delegation_creep",
+  "detector_id": "delegation-creep",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "decision_history",
+  "policy": "requires_behavioral_evidence",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "disposition_effect",
+  "detector_id": "disposition-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "distinction_bias",
+  "detector_id": "distinction-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "dunning_kruger_effect",
+  "detector_id": "dunning-kruger-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "einstellung_effect",
+  "detector_id": "einstellung-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "empathy_gap",
+  "detector_id": "empathy-gap",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "emphasis_framing",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "endowment_effect",
+  "detector_id": "endowment-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "episodic_framing",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "event_selection",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "full_article",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "extrinsic_incentive_bias",
+  "detector_id": "extrinsic-incentive-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "false_consensus_effect",
+  "detector_id": "false-consensus-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "false_dilemma",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "fear_appeal",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "framing_effect",
+  "detector_id": "framing-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "functional_fixedness",
+  "detector_id": "functional-fixedness",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "decision_history",
+  "policy": "requires_behavioral_evidence",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "fundamental_attribution_error",
+  "detector_id": "fundamental-attribution-error",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "gamblers_fallacy",
+  "detector_id": "gamblers-fallacy",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "google_effect",
+  "detector_id": "google-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "halo_effect",
+  "detector_id": "halo-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "hard_easy_effect",
+  "detector_id": "hard-easy-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "heuristics",
+  "detector_id": "heuristics",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "hindsight_bias",
+  "detector_id": "hindsight-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "hot_hand_fallacy",
+  "detector_id": "hot-hand-fallacy",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "hyperbolic_discounting",
+  "detector_id": "hyperbolic-discounting",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "identifiable_victim_effect",
+  "detector_id": "identifiable-victim-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "ikea_effect",
+  "detector_id": "ikea-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "illusion_of_control",
+  "detector_id": "illusion-of-control",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "illusion_of_transparency",
+  "detector_id": "illusion-of-transparency",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "illusion_of_validity",
+  "detector_id": "illusion-of-validity",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "illusory_correlation",
+  "detector_id": "illusory-correlation",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "illusory_truth_effect",
+  "detector_id": "illusory-truth-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "pilot",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "impact_bias",
+  "detector_id": "impact-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "in_group_bias",
+  "detector_id": "in-group-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "incentivization",
+  "detector_id": "incentivization",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "just_world_hypothesis",
+  "detector_id": "just-world-hypothesis",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "labeling",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "lag_effect",
+  "detector_id": "lag-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "law_of_the_instrument",
+  "detector_id": "law-of-the-instrument",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "less_is_better_effect",
+  "detector_id": "less-is-better-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "leveling_and_sharpening",
+  "detector_id": "leveling-and-sharpening",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "levels_of_processing_effect",
+  "detector_id": "levels-of-processing-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "loaded_language",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "look_elsewhere_effect",
+  "detector_id": "look-elsewhere-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "loss_aversion",
+  "detector_id": "loss-aversion",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "mental_accounting",
+  "detector_id": "mental-accounting",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "mere_exposure_effect",
+  "detector_id": "mere-exposure-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "messenger_effect",
+  "detector_id": "messenger-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "metaphorical_framing",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "motivating_uncertainty_effect",
+  "detector_id": "motivating-uncertainty-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "naive_allocation",
+  "detector_id": "naive-allocation",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "naive_realism",
+  "detector_id": "naive-realism",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "negativity_bias",
+  "detector_id": "negativity-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "noble_edge_effect",
+  "detector_id": "noble-edge-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "normalcy_bias",
+  "detector_id": "normalcy-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "nostalgia_effect",
+  "detector_id": "nostalgia-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "observer_expectancy_effect",
+  "detector_id": "observer-expectancy-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "omission_bias",
+  "detector_id": "omission-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "one_sided_sourcing",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "full_article",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "optimism_bias",
+  "detector_id": "optimism-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "ostrich_effect",
+  "detector_id": "ostrich-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "outcome_bias",
+  "detector_id": "outcome-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "overjustification_effect",
+  "detector_id": "overjustification-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "parasocial_trust_in_ai",
+  "detector_id": "parasocial-trust-in-ai",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "internal_state",
+  "policy": "requires_behavioral_evidence",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "peak_end_rule",
+  "detector_id": "peak-end-rule",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "pessimism_bias",
+  "detector_id": "pessimism-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "picture_explanation",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "full_article",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "picture_selection",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "full_article",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "planning_fallacy",
+  "detector_id": "planning-fallacy",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "pluralistic_ignorance",
+  "detector_id": "pluralistic-ignorance",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "present_bias",
+  "detector_id": "present-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "primacy_effect",
+  "detector_id": "primacy-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "priming",
+  "detector_id": "priming",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "projection_bias",
+  "detector_id": "projection-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "reactive_devaluation",
+  "detector_id": "reactive-devaluation",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "recency_effect",
+  "detector_id": "recency-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "regret_aversion",
+  "detector_id": "regret-aversion",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "representativeness_heuristic",
+  "detector_id": "representativeness-heuristic",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "response_bias",
+  "detector_id": "response-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "decision_history",
+  "policy": "requires_behavioral_evidence",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "responsibility_framing",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "restraint_bias",
+  "detector_id": "restraint-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "rosy_retrospection",
+  "detector_id": "rosy-retrospection",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "salience_bias",
+  "detector_id": "salience-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "selective_statistics",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": [
+   "the presented numerator and denominator",
+   "documented relevant comparison population",
+   "evidence that the populations are comparable"
+  ]
+ },
+ {
+  "simulation_id": "self_serving_bias",
+  "detector_id": "self-serving-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "serial_position_effect",
+  "detector_id": "serial-position-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "sexual_overperception_bias",
+  "detector_id": "sexual-overperception-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "size_allocation",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "full_article",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "source_confusion",
+  "detector_id": "source-confusion",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "source_selection",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "full_article",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "spacing_effect",
+  "detector_id": "spacing-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "spin",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "spotlight_effect",
+  "detector_id": "spotlight-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "status_quo_bias",
+  "detector_id": "status-quo-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "story_placement",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "full_article",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "strawman",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "suggestibility",
+  "detector_id": "suggestibility",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "survivorship_bias",
+  "detector_id": "survivorship-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "take_the_best_heuristic",
+  "detector_id": "take-the-best-heuristic",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "effect_context_only",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "telescoping_effect",
+  "detector_id": "telescoping-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "the_illusion_of_explanatory_depth",
+  "detector_id": "the-illusion-of-explanatory-depth",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "the_pygmalion_effect",
+  "detector_id": "the-pygmalion-effect",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "the_sunk_cost_fallacy",
+  "detector_id": "the-sunk-cost-fallacy",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "thematic_framing",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "word_choice",
+  "detector_id": null,
+  "relationship": "unsupported_in_current_taxonomy",
+  "evidence_tier": "headline_lede",
+  "policy": "media_pattern_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ },
+ {
+  "simulation_id": "zero_risk_bias",
+  "detector_id": "zero-risk-bias",
+  "relationship": "candidate_same_id",
+  "evidence_tier": "headline_lede",
+  "policy": "bias_error_review",
+  "review_status": "needs_domain_review",
+  "required_evidence": []
+ }
+]
