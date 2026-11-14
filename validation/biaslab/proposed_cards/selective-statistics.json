@@ -1,0 +1,36 @@
+{
+ "id": "selective-statistics",
+ "name": "Selective statistics (Seçici istatistik)",
+ "definition": "A media presentation pattern in which a rate or share is reported against a narrower denominator than the population the surrounding claim is about, while documented material shows a broader comparable population. The pattern concerns what the text presents; it says nothing about why, and a subgroup figure is not in itself an error.",
+ "necessary_conditions": [
+  "The text presents a rate or share and its numerator and denominator can be identified from the text or context.",
+  "The supplied context documents a different comparison population and shows it is comparable to the one used.",
+  "The text's claim extends beyond the population its denominator covers; a claim explicitly confined to the subgroup does not qualify."
+ ],
+ "detection_cues": [
+  "A percentage in the headline whose denominator in the lede is smaller than a population named in the supplied context.",
+  "Wording that generalises from the counted group to all similar cases.",
+  "The same count yields a markedly different rate against the documented comparison population."
+ ],
+ "non_examples": [
+  "The outlet quotes or attributes the figure to a named speaker and reports that it was disputed or corrected.",
+  "An opinion column or interview in which the speaker, not the outlet, chooses the figure.",
+  "The text states that its figure applies only to the examined subgroup and makes no wider claim.",
+  "No comparison population is documented in the supplied material; the pattern cannot be assessed."
+ ],
+ "mitigations": [
+  "State the denominator next to the rate.",
+  "Report the rate for the documented comparison population alongside the subgroup rate."
+ ],
+ "questions": [
+  "Which population does the percentage describe?",
+  "Does the claim in the headline reach beyond that population?",
+  "What does the same count give against the documented comparison population?"
+ ],
+ "limitations": "Describes what the text does; it says nothing about purpose. Requires comparison material in the supplied context; with headline and lede alone it is usually not assessable. Not validated against human-reviewed news.",
+ "source_url": "https://github.com/aylinunel/caprazmansetfinal/blob/main/validation/mesa_bias_expanded/specs/selective_statistics.json",
+ "source_accessed": "2026-11-14",
+ "provenance": "LAB-ONLY PROPOSAL, not reviewed, not in production. Operationalised from the vendored Mesa spec selective_statistics and the integration guide's crosswalk example.",
+ "entry_type": "other",
+ "review_policy": "bias_error_review"
+}
