@@ -42,6 +42,8 @@ jobs:
         run: python -m unittest biasguard.test_routing -v
       - name: Media-technique catalogue
         run: python -m unittest biasguard.test_catalog_media -v
+      - name: BiasGuard explanation composer
+        run: python -m unittest biasguard.test_explain_rules -v
 
   site-logic:
     runs-on: ubuntu-latest

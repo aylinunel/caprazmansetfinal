@@ -51,7 +51,9 @@ def compare(old: dict, new: dict, media: dict | None) -> dict:
                              f"{sm['completed']} olayda çalıştırıldı: {len(fm)} bulgu, {hit(fm)} olayda en az bir teknik.",
                     "cols": COLS, "rows": [["Medya tekniği bulgusu", "—", len(fm)], ["Bulgulu olay", "—", hit(fm)]] +
                                           [[f"En sık: {n}", "—", k] for n, k in _top(media)],
-                    "note": "Önceki sürümde bu grup bütün olaylarda “incelenemedi” yazıyordu."})
+                    "note": "Önceki sürümde bu grup bütün olaylarda “incelenemedi” yazıyordu." +
+                            (f" {sm['incomplete'] + sm['notAttempted']} olayın medya incelemesi bu deneme sürümünde tamamlanmadı; o olaylarda grup “incelenemedi” yazar."
+                             if sm["incomplete"] + sm["notAttempted"] else "")})
     out.append({"id": "davranis", "tag": "değişti", "title": "Davranışsal yanlılıklar yeniden ölçüldü",
                 "claim": f"Bulgu sayısı önce {len(fo)}, şimdi {len(fn)}; en az bir bulgusu olan olay önce {hit(fo)}, şimdi {hit(fn)}.",
                 "cols": COLS, "rows": [["Bulgu", len(fo), len(fn)], ["Bulgulu olay", hit(fo), hit(fn)],

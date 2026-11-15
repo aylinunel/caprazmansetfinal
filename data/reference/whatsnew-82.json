@@ -1,6 +1,6 @@
 {
  "lede": "8.2’nin AI incelemesi güncellenen algoritmayla baştan çalıştırıldı: medya teknikleri artık canlı, bütün bulgular ayrımsız yayında, her bulgu ne anlama geldiğiyle birlikte veriliyor. Aşağıda önceki 8.2 incelemesi (8.0 olayları) ile yenisi (8.1 verisi) yan yana.",
- "band": "Yeniden çalışan AI incelemesi: 803 bulgu, medya teknikleri canlı, önceki sürümle karşılaştırma.",
+ "band": "Yeniden çalışan AI incelemesi: 967 bulgu, medya teknikleri canlı, önceki sürümle karşılaştırma.",
  "findings": [
   {
    "id": "olaylar",
@@ -20,7 +20,7 @@
     [
      "Tamamlanan inceleme",
      150,
-     136
+     150
     ],
     [
      "İki listede ortak olay",
@@ -34,7 +34,7 @@
    "id": "medya",
    "tag": "yeni",
    "title": "Medyanın oyunları artık canlı",
-   "claim": "17 medya tekniği kartı (sözcük seçimi, etiketleme, vurgu çerçevelemesi …) ayrı bir AI incelemesiyle 105 olayda çalıştırıldı: 458 bulgu, 105 olayda en az bir teknik.",
+   "claim": "17 medya tekniği kartı (sözcük seçimi, etiketleme, vurgu çerçevelemesi …) ayrı bir AI incelemesiyle 135 olayda çalıştırıldı: 580 bulgu, 135 olayda en az bir teknik.",
    "cols": [
     "Önceki 8.2",
     "Yeni 8.2"
@@ -43,46 +43,46 @@
     [
      "Medya tekniği bulgusu",
      "—",
-     458
+     580
     ],
     [
      "Bulgulu olay",
      "—",
-     105
+     135
     ],
     [
      "En sık: Emphasis framing (Vurgu çerçevelemesi)",
      "—",
-     105
+     135
     ],
     [
      "En sık: Word choice (Sözcük seçimi)",
      "—",
-     96
+     121
     ],
     [
      "En sık: Loaded language (Duygu yüklü dil)",
      "—",
-     75
+     93
     ],
     [
      "En sık: Thematic framing (Bağlamsal çerçeveleme)",
      "—",
-     49
+     59
     ],
     [
      "En sık: Labeling (Etiketleme)",
      "—",
-     41
+     54
     ]
    ],
-   "note": "Önceki sürümde bu grup bütün olaylarda “incelenemedi” yazıyordu."
+   "note": "Önceki sürümde bu grup bütün olaylarda “incelenemedi” yazıyordu. 15 olayın medya incelemesi bu deneme sürümünde tamamlanmadı; o olaylarda grup “incelenemedi” yazar."
   },
   {
    "id": "davranis",
    "tag": "değişti",
    "title": "Davranışsal yanlılıklar yeniden ölçüldü",
-   "claim": "Bulgu sayısı önce 439, şimdi 345; en az bir bulgusu olan olay önce 137, şimdi 131.",
+   "claim": "Bulgu sayısı önce 439, şimdi 387; en az bir bulgusu olan olay önce 137, şimdi 145.",
    "cols": [
     "Önceki 8.2",
     "Yeni 8.2"
@@ -91,27 +91,27 @@
     [
      "Bulgu",
      439,
-     345
+     387
     ],
     [
      "Bulgulu olay",
      137,
-     131
+     145
     ],
     [
      "Doğrulanmış alıntı",
      2236,
-     1579
+     1763
     ],
     [
      "En sık: Framing Effect",
      119,
-     119
+     133
     ],
     [
      "En sık: Salience Bias",
      112,
-     78
+     92
     ],
     [
      "En sık: Leveling and Sharpening",
@@ -126,7 +126,7 @@
     [
      "En sık: In-group Bias",
      21,
-     15
+     17
     ]
    ]
   },
@@ -134,7 +134,7 @@
    "id": "tekrar",
    "tag": "sürüyor",
    "title": "Aynı olaylarda aynı kavramlar ne kadar tekrar çıktı?",
-   "claim": "Ortak 49 olayda önceki incelemenin bulduğu 151 kavramın 83 tanesi (%55) yeniden incelemede de bulundu.",
+   "claim": "Ortak 49 olayda önceki incelemenin bulduğu 151 kavramın 93 tanesi (%62) yeniden incelemede de bulundu.",
    "note": "Ayrışma, kısmen yeni kurumların eklenen başlıklarından, kısmen AI incelemesinin kendi oynaklığından gelir; bu oran bir doğruluk ölçüsü değildir."
   },
   {
@@ -155,7 +155,7 @@
     [
      "Kamuda gösterilen bulgu",
      439,
-     803
+     967
     ]
    ]
   },
