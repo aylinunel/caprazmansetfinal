@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "authority-bias",
+  "framing-effect",
+  "in-group-bias",
+  "confirmation-bias"
+ ],
+ "selection_uncertainty": [
+  "Metinler kısaltılmış.",
+  "Soruşturma sürüyor; iddialar resmi kaynaklı."
+ ],
+ "selection_note": "Haberler büyük ölçüde resmi açıklamaya dayanıyor; şüpheli/zanlı ifadeleri değişiyor."
+}

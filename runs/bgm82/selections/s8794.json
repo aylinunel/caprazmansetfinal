@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "emphasis-framing",
+  "word-choice",
+  "metaphorical-framing"
+ ],
+ "selection_uncertainty": [
+  "7 gözaltı / 8 gözaltı kararı farkı olgusal olabilir.",
+  "Soruşturma konusu metinde yok."
+ ],
+ "selection_note": "Mahiroğlu için 'Halk TV'nin sahibi', 'İngiltere'de bulunan' nitelemeleri ve sayı vurgusu farkları."
+}

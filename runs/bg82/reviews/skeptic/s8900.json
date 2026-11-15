@@ -1,0 +1,221 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 11:14] Fenerbahçe, Dirk Kuyt ile yollarını ayırdı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe, Dirk Kuyt ile Yolların Ayrıldığını Açıkladı: Kulüpten Duygusal Veda Mesajı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Dirk Kuyt'ın Fenerbahçe'den ayrılışı farklı kurumlarca farklı sözcük ve vurgularla başlıklandırılmış; ancak metin bu sunum farkını hiçbir tercihe, yargıya veya karara bağlamıyor ve başlıkların karar-ilgili olgularda eşdeğer olduğunu açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, eldeki bilginin güncellenmesi, haber ajansı metninin kısaltılması ve kurumların editoryal üslubundan kaynaklanabilir; bir okuyucu ya da karar verici üzerinde çerçeve etkisi gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okuyucu yargısını değiştirdiğini gösteren karşılaştırmalı ölçüm",
+    "Başlıkların aynı olgulara dayandığını açıkça gösteren bilgi",
+    "Herhangi bir tercih veya yargının bu sunuma dayandırıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kulüpten Duygusal Veda Mesajı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Dirk Kuyt'ın Fenerbahçe'den ayrılışı haberinde dikkat çekici bir ifade bulunuyor; fakat metin bu ayrıntıyı bir yargıya, tahmine veya seçime açıkça bağlamıyor ve daha az çarpıcı bilgilerle karşılaştırmalı bir ağırlıklandırma göstermiyor.",
+   "alternative_explanation": "Çarpıcı ifade haber başlığı yazımının olağan bir öğesi olabilir; olayın kendisi gerçekten dikkat çekici olabilir ve bu, bir akıl yürütme hatası anlamına gelmez.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir karar veya tahmini etkilediğine dair açık ifade",
+    "Çarpıcı ve sıradan bilgilerin farklı ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olayı vermeyen etkin kurumlar:",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam bazı etkin kurumların Dirk Kuyt'ın Fenerbahçe'den ayrılışı haberini vermediğini gösteriyor; ancak tek başına bir haberin verilmemesi, mevcut bilgiye eşitsiz dikkat gösterildiğini ve bunun belirli bir sonuca yol açtığını kanıtlamaz.",
+   "alternative_explanation": "Haberin verilmemesi yayın önceliği, kaynak erişimi, zamanlama veya veri toplama kapsamından kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların hangi bilgilere ne kadar yer verdiğini gösteren dikkat kayıtları",
+    "Eşitsiz dikkatin belirli bir sonuca bağlandığını gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kulüpten Duygusal Veda Mesajı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Dirk Kuyt'ın Fenerbahçe'den ayrılışı haberinde duygusal ya da değer yüklü bir ifade var; ancak metin bu duyguyu bir risk veya fayda tahminine ya da karara açıkça bağlamıyor. Duygusal sözcük tek başına yetersiz.",
+   "alternative_explanation": "Duygusal ifade olayın niteliğini aktaran veya alıntılanan açıklamayı yansıtan olağan bir haber dili olabilir.",
+   "missing_context": [
+    "Duygunun bir risk/fayda yargısının yerine geçtiğini gösteren açık ifade",
+    "Olgular sabitken yargının duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarı Lacivert hikayemiz yıllar önce başladı ve aramızdaki bağ hiç kopmadı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Dirk Kuyt'ın Fenerbahçe'den ayrılışı haberinde olumlu bir nitelendirme yer alıyor; ancak metin bir alandaki olumlu izlenimin başka bir alandaki ayrı bir yargıya taşındığını açıkça göstermiyor.",
+   "alternative_explanation": "Olumlu nitelendirme alıntılanan resmi açıklamanın veya olayın doğrudan özelliğinin aktarımı olabilir; iki ayrı alan arasında bir aktarım yok.",
+   "missing_context": [
+    "Birinci alandaki izlenimin ikinci yargıyı belirlediğini gösteren ifade",
+    "Alanların karar için ilgisiz olduğuna dair kanıt"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Dirk Kuyt'ın Fenerbahçe'den ayrılışı haberinde bir etkinliğe içsel motivasyonla katılım, beklenen bir dış ödül ya da ödül sonrası katılımda düşüş gibi öğeler hiç yer almıyor.",
+   "alternative_explanation": "Haber metni motivasyon ve ödül ilişkisiyle ilgili değil; kart bu olaya uygulanamıyor.",
+   "missing_context": [
+    "Ödül öncesi gönüllü katılım düzeyi",
+    "Beklenen ve etkinliğe bağlı bir ödül",
+    "Ödül sonrası katılımı ölçen karşılaştırmalı veri"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "salience-bias",
+  "negativity-bias",
+  "availability-heuristic",
+  "attentional-bias"
+ ],
+ "selection_uncertainty": [
+  "Başlıklar farklı bölgeleri öne çıkarıyor; tam uyarı metni yok.",
+  "'Alarm' ifadesinin uyarı düzeyiyle uyumu doğrulanamıyor."
+ ],
+ "selection_note": "Aynı MGM uyarısı bölge seçimi ve 'alarm' tonuyla farklı sunuluyor."
+}

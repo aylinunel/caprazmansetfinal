@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "fear-appeal",
+  "metaphorical-framing",
+  "loaded-language",
+  "emphasis-framing",
+  "word-choice"
+ ],
+ "selection_uncertainty": [
+  "Meteorolojik uyarı ayrıntısı özetlerde sınırlı.",
+  "Yalnızca başlık ve kısa özetler var; tam metin yok."
+ ],
+ "selection_note": "'Megakenti lodos vurdu', 'asıl fırtına yarın geliyor' gibi ifadeler korku çağrısı ve metafor açısından aday."
+}

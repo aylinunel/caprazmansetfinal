@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "word-choice",
+  "emphasis-framing",
+  "fear-appeal"
+ ],
+ "selection_uncertainty": [
+  "Metinler kısaltılmış.",
+  "Can kaybı sayısı zamanla değişiyor."
+ ],
+ "selection_note": "'Korkunç olay', 'facia' gibi ifadeler ve farklı ölü sayıları öne çıkıyor."
+}

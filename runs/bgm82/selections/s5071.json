@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "loaded-language",
+  "emphasis-framing",
+  "word-choice"
+ ],
+ "selection_uncertainty": [
+  "Yalnız başlık/özet var; tam metin ve kaynak alıntı ayrımı sınırlı.",
+  "'Kritik' nitelemesi kuruma mı kaynağa mı ait belirsiz."
+ ],
+ "selection_note": "'Başkan Erdoğan' etiketi ve 'kritik ziyaret' nitelemesi."
+}

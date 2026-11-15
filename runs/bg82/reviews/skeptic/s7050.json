@@ -1,0 +1,163 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Esenyurt metrobüs kazası haberleri: Olumsuz içerik haberin konusunun kendisi; metin, olumsuz bilgiye karşılaştırılabilir olumlu bilgiden orantısız ağırlık verildiğini ve bunun bir değerlendirmeyi etkilediğini belgelemiyor.",
+   "alternative_explanation": "Olumsuz olayların haberleştirilmesi olayın doğasından kaynaklanabilir; olumsuz sözcük kullanımı kart ölçütünü karşılamaz.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve ona verilen ağırlık",
+    "Ağırlıklandırmanın bir karara etkisini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Esenyurt metrobüs kazası haberleri: Bazı başlıklar çarpıcı ayrıntıları öne çıkarıyor; ancak metin bu ayrıntıyı açıkça bir yargıya veya tercihe bağlamıyor ve ilgili karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Öne çıkarılan ayrıntı haber değeri taşıyan gerçek bir unsur olabilir; dikkat çekicilik kendi başına haksız bir etki kanıtı değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı haksız biçimde yönlendirdiğine dair doğrudan anlatım",
+    "Okur tepkisi veya editoryal karar kayıtları"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Esenyurt metrobüs kazası haberleri: Metinde hatırlama kolaylığı, canlılık veya yakın zamanlılığın bir olasılık ya da yaygınlık tahmini için gerekçe olarak kullanıldığı açık bir ifade bulunmuyor.",
+   "alternative_explanation": "Haberler tek bir olayı aktarıyor ve genelleme ya da sıklık tahmini yapmıyor; bu nedenle erişilebilirlik temelli bir çıkarım gözlenmiyor.",
+   "missing_context": [
+    "Açık bir sıklık, olasılık veya risk tahmini",
+    "Bu tahminin daha güçlü sıklık verisiyle çeliştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Esenyurt metrobüs kazası haberleri: Kurumlar aynı olayı farklı vurgu ve sözcüklerle veriyor; fakat metinde seçeneklerin eşdeğer olduğunu açıkça kurup bir yargıyı ya da tercihi bu sunuma bağlayan bir akıl yürütme yok.",
+   "alternative_explanation": "Başlık farkları yayın formatı, karakter sınırı, güncelleme saati ve kurum üslubuyla açıklanabilir; sunum farkı tek başına bir karar hatası göstermez.",
+   "missing_context": [
+    "Aynı bilginin farklı sunumunun bir okur veya karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri",
+    "Metinde açıkça eşdeğerlik kuran ve tercihi sunuma dayandıran bir ifade"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Esenyurt metrobüs kazası haberleri: Metinde bir alandaki olumlu izlenimin başka, ilgisiz bir alandaki olumlu yargıya açıkça aktarıldığını gösteren bir bağlantı bulunmuyor.",
+   "alternative_explanation": "Olumlu nitelendirmeler doğrudan haberin konusu olan başarı veya olayla ilgili olabilir; alanlar arası taşma gösterilmiyor.",
+   "missing_context": [
+    "İki ayrı alandaki yargılar arasında açık bağlantı",
+    "Alanların karar açısından ilgisiz olduğuna dair kanıt"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Esenyurt metrobüs kazası haberleri: Metinde ödül öncesi içsel motivasyon, beklenen bir dış ödül ve ödül sonrası katılımda ölçülmüş bir düşüş bulunmuyor.",
+   "alternative_explanation": "Haber konusu bir motivasyon veya ödül süreciyle ilgili değil; kart bu olaya uygulanamıyor.",
+   "missing_context": [
+    "Ödül öncesi taban çizgisi",
+    "Ödülün kaldırılmasından sonra ölçülen katılım değişimi"
+   ]
+  }
+ ]
+}

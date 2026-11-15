@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "word-choice",
+  "emphasis-framing",
+  "labeling",
+  "metaphorical-framing"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Kayyum gerekçesi yok."
+ ],
+ "selection_note": "'Gözaltı dalgası', 'flaş gelişme' gibi metaforik ve yüklü ifadeler."
+}

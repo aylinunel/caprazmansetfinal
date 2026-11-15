@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "emphasis-framing",
+  "word-choice"
+ ],
+ "selection_uncertainty": [
+  "Parti kimliğinin verilmesi bilgi amaçlı olabilir.",
+  "Tutuklu sayısı 5/6 farklı."
+ ],
+ "selection_note": "Bazı kurumlar başkanın parti kimliğini, bazıları suçlama türünü ('rüşvet') öne çıkarıyor."
+}

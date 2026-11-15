@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "word-choice",
+  "emphasis-framing",
+  "thematic-framing"
+ ],
+ "selection_uncertainty": [
+  "Metinler kısaltılmış.",
+  "Örgüt adı resmi açıklamadan aktarılıyor."
+ ],
+ "selection_note": "'Zanlı/şüpheli' kullanımı ve farklı il operasyonlarının birlikte sunumu."
+}

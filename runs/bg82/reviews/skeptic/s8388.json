@@ -1,0 +1,186 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mesleği ev hanımı, aylık geliri 500 bin lira",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tutuklanan Fatma Betül Sayan Kaya, suçlamaları reddetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurguyla veriyor (Mesleği ev hanımı, aylık geliri 500 bin lira); ancak metinde bu sunum farkına açıkça bağlanan bir tercih, yargı ya da karar yer almıyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati ve ajans metninin kısaltılmasıyla açıklanabilir; bir okurun ya da karar vericinin çerçeveden etkilendiğine dair veri yok.",
+   "missing_context": [
+    "Çerçevelerin karar açısından eşdeğer olduğunu açıkça kuran bir ifade",
+    "Sunum farkına bağlı bir tercih ya da yargıyı gösteren okur/karar verici verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Aylık geliri oldukça dikkat çeken Kaya ifadesinde",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan çarpıcı bir ayrıntı var (Aylık geliri oldukça dikkat çeken Kaya ifadesinde); fakat metin bu ayrıntıyı bir sıklık, risk ya da seçim yargısına açıkça bağlamıyor.",
+   "alternative_explanation": "Ayrıntının öne çıkarılması haber değeri ve dikkat çekici başlık geleneğiyle açıklanabilir; çarpıtılmış bir yargı gösterilmiyor.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir tahmin ya da karar gerekçesi yapıldığını gösteren ifade",
+    "Belirgin ve az belirgin bilgiye verilen ağırlığı karşılaştıran veri"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "FATMA BETÜL SAYAN KAYA YALNIZ MI?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duygu ya da değer yüklü bir ifade var (FATMA BETÜL SAYAN KAYA YALNIZ MI?); ancak bir duygunun belirli bir risk ya da fayda tahminine bağlandığı açık bir ifade yok.",
+   "alternative_explanation": "Duygu yüklü dil haber üslubunun ya da aktarılan beyanın parçası olabilir; duygu ile bir tahmin arasında bağ kurulmamış.",
+   "missing_context": [
+    "Duygunun risk/fayda tahminini belirlediğini söyleyen açık ifade",
+    "Olgular sabitken yargının duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İşte tutuklanma gerekçesi! Kaya'nın hakimlik ifadesi ortaya çıktı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz sözcük ya da olgular var (İşte tutuklanma gerekçesi! Kaya'nın hakimlik ifadesi ortaya çıktı); ancak olumlu ve olumsuz kanıtın orantısız tartıldığı ya da bunun bir değerlendirmeyi haksız biçimde etkilediği belgelenmiyor.",
+   "alternative_explanation": "Olumsuz yönün öne çıkması olayın doğasından ya da haber değerinden kaynaklanabilir; karşılaştırılabilir olumlu kanıtın dışlandığı gösterilmiyor.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıtın varlığı ve ona verilen ağırlık",
+    "Olumsuz ağırlığın bir karar ya da değerlendirmeyi değiştirdiğini gösteren veri"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Borsadan anlarım ancak siyasi kimliğim sebebiyle hep uzak durmayı tercih ettim.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir kişinin beyan ve davranışını aktarıyor (Borsadan anlarım ancak siyasi kimliğim sebebiyle hep uzak durmayı tercih ettim.); ancak bunu kalıcı bir karakter özelliğine bağlayan ve durumsal etkenleri göz ardı eden bir yargı yok.",
+   "alternative_explanation": "Haberler kişinin kendi ifadesini aktarıyor; yargı süreci sürdüğü için kurumlar nitelendirme yapmaktan kaçınıyor olabilir.",
+   "missing_context": [
+    "Davranışı kişiliğe bağlayan açık bir değerlendirme",
+    "Göz ardı edilen durumsal etkeni gösteren ifade"
+   ]
+  }
+ ]
+}

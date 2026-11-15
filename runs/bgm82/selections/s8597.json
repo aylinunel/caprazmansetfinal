@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "word-choice",
+  "loaded-language",
+  "responsibility-framing",
+  "emphasis-framing",
+  "thematic-framing"
+ ],
+ "selection_uncertainty": [
+  "Can kaybı rakamları farklı zamanlarda güncellenmiş.",
+  "Bakan açıklamaları alıntı; kurum tekniği sayılmaz."
+ ],
+ "selection_note": "Patlama/facia/'işçi katliamı' sözcük farkları ve gözaltı vurgusu aday."
+}

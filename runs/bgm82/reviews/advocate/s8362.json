@@ -1,0 +1,243 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[karar · 15:35] Adana'da korkutan deprem — Adana'nın Kozan ilçesinde saat 15.28'de 4,6 büyüklüğünde deprem meydana geldi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "AFAD verilerine göre saat 15.28'de gerçekleşen deprem, yerin 15,35 kilometre derinliğinde kaydedildi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta kuruluşun kendi sesinde 'korkutan' sözcüğü kullanılıyor ve ledde 4,6 büyüklük ile derinlik veriliyor; ancak bu sözcüğün verilen ölçekle orantısız olup olmadığı, hasar bilgisi verilmediği için metinden kesin olarak belirlenemiyor.",
+   "alternative_explanation": "'Korkutan' sözcüğü sarsıntının hissedilmesini anlatan, felaket dili düzeyine çıkmayan yaygın bir ifade olarak görülebilir.",
+   "missing_context": [
+    "Hasar ya da yaralanma bilgisi",
+    "Sarsıntının hissedildiği alan ve şiddeti"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[karar · 15:35] Adana'da korkutan deprem — Adana'nın Kozan ilçesinde saat 15.28'de 4,6 büyüklüğünde deprem meydana geldi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 16:07] Adana Kozan'da 4,6 büyüklüğünde deprem — Adana'nın Kozan ilçesinde saat 15.28'de 4,6 büyüklüğünde deprem meydana geldi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kuruluşun başlığı kendi sesinde 'korkutan' değerlendirici sözcüğünü içeriyor; aynı olgular ve aynı led başka bir kuruluşta bu sözcük olmadan veriliyor.",
+   "alternative_explanation": "Sözcük, depremin çevre illerde hissedilmesini aktarmak için seçilmiş olabilir.",
+   "missing_context": [
+    "Depremin etkilerine dair resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 15:40] Adana'da korkutan deprem: AFAD açıkladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[t24 · 15:39] AFAD duyurdu: Adana'da 4,6 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı deprem ve aynı kaynak (AFAD) iki başlıkta yer alıyor; birinde deprem 'korkutan' diye, diğerinde '4,6 büyüklüğünde' diye niteleniyor. Biri duygusal, diğeri ölçüsel bir çağrışım taşıyor.",
+   "alternative_explanation": "Fark yalnızca başlık uzunluğu ya da sayıyı lede bırakma tercihi olabilir.",
+   "missing_context": [
+    "Kuruluşların benzer depremlerde kullandığı nitelemeler"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[t24 · 15:39] AFAD duyurdu: Adana'da 4,6 büyüklüğünde deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 16:56] Adana'da 4.6 büyüklüğünde deprem! Çevre illerde de hissedildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 15:38] Adana'nın Kozan ilçesinde 4,6 büyüklüğünde deprem! AFAD sarsıntının derinliğini açıkladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 15:38] Son dakika: Adana'da korkutan deprem!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı depremi veren başlıklar sırasıyla kaynağı, etkinin yayıldığı alanı, derinliği ve duygusal etkiyi öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar farklı saatlerde eldeki bilgiye göre biçimlenmiş olabilir.",
+   "missing_context": [
+    "Başlıkların yayımlandığı saatte mevcut olan AFAD verileri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 15:39] Son Dakika... Adana'da 4,6 büyüklüğünde deprem!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Adana'da sabah saatlerinde de 3.5 büyüklüğünde bir deprem olmuştu.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Adana'daki 4,6 büyüklüğündeki deprem tanımlanabilir bir olay; bir metin bölgedeki depremleri art arda anarak bir dizi bağlamı kuruyor, ancak bu ifade 4,6'lık deprem değil sonraki bir deprem haberinde yer alıyor.",
+   "alternative_explanation": "Önceki depremin anılması bağlam kurma değil, aynı gün içindeki olayların aktarımı olabilir.",
+   "missing_context": [
+    "4,6'lık depremi veren haberlerin devamında bölgesel deprem geçmişine yer verilip verilmediği"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde kuruluşların kendi sesinde yalnızca iki seçeneği tek seçenek olarak sunan bir 'ya… ya…' kurgusu bulunmuyor.",
+   "alternative_explanation": "Deprem haberleri seçenek ya da politika tartışması içermiyor.",
+   "missing_context": [
+    "İki seçenekli bir sunum içeren ifade"
+   ]
+  }
+ ]
+}

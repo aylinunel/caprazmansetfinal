@@ -1,0 +1,221 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 14:38] İhraç edilen 5 teğmen hakkında 4 yıla kadar hapis istemi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İhraç teğmenlerin mesnetsiz iddialarına iftira davası",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İhraç edilen 5 teğmen hakkında iftira davası farklı kurumlarca farklı sözcük ve vurgularla başlıklandırılmış; ancak metin bu sunum farkını hiçbir tercihe, yargıya veya karara bağlamıyor ve başlıkların karar-ilgili olgularda eşdeğer olduğunu açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, eldeki bilginin güncellenmesi, haber ajansı metninin kısaltılması ve kurumların editoryal üslubundan kaynaklanabilir; bir okuyucu ya da karar verici üzerinde çerçeve etkisi gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okuyucu yargısını değiştirdiğini gösteren karşılaştırmalı ölçüm",
+    "Başlıkların aynı olgulara dayandığını açıkça gösteren bilgi",
+    "Herhangi bir tercih veya yargının bu sunuma dayandırıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "1 yıldan 4 yıla kadar hapisle cezalandırılması istenirken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İhraç edilen 5 teğmen hakkında iftira davası haberinde sonraki bir yargıya referans noktası olarak bağlanan önceki bir değer ya da öneri açıkça kurulmuyor.",
+   "alternative_explanation": "Farklı rakamlar farklı saatlerde güncellenen resmi bilgiyi veya hukuki istemin alt-üst sınırını yansıtabilir; bir çapa etkisi göstermez.",
+   "missing_context": [
+    "Sonraki yargının önceki değere açıkça dayandırıldığını gösteren ifade",
+    "Çapaya rağmen revizyon gerektiren kanıtın göz ardı edildiğine dair bilgi"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "“Mustafa Kemal'in askerleriyiz” sloganı atan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İhraç edilen 5 teğmen hakkında iftira davası haberinde bir gruba ya da kuruma ait aidiyet ifadesi geçiyor; ancak metin güvenilirlik, suçlama veya fayda farkını bu aidiyete bağlamıyor ve tutarsız standart uygulandığını göstermiyor.",
+   "alternative_explanation": "Aidiyet ifadesi kimlik belirleme amaçlı olgusal bir bilgi veya alıntılanan açıklamanın aktarımı olabilir.",
+   "missing_context": [
+    "Grup üyeliğine göre farklı muamele gördüğü gösterilen karşılaştırılabilir vakalar",
+    "Kararın grup kimliğine dayandırıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Genelkurmay Başkanı Orgeneral Selçuk Bayraktaroğlu ile Yüksek Disiplin Kurulu üyeleri",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İhraç edilen 5 teğmen hakkında iftira davası haberinde bir otorite veya resmi makam anılıyor; ancak metin bu statüye bir iddianın değerlendirilmesinde belirleyici ağırlık verildiğini ya da karşıt kanıtın statü nedeniyle göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Resmi makamın anılması haberin kaynağını belirtme gereğidir; otoriteye dayalı bir akıl yürütme hatası değil.",
+   "missing_context": [
+    "Otoritenin yalnızca statüsü nedeniyle takip edildiğini gösteren ifade",
+    "Göz ardı edilen karşıt kanıt"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kılıç çatarak disiplinsiz davranış sergileyen",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İhraç edilen 5 teğmen hakkında iftira davası haberinde olumlu bir nitelendirme yer alıyor; ancak metin bir alandaki olumlu izlenimin başka bir alandaki ayrı bir yargıya taşındığını açıkça göstermiyor.",
+   "alternative_explanation": "Olumlu nitelendirme alıntılanan resmi açıklamanın veya olayın doğrudan özelliğinin aktarımı olabilir; iki ayrı alan arasında bir aktarım yok.",
+   "missing_context": [
+    "Birinci alandaki izlenimin ikinci yargıyı belirlediğini gösteren ifade",
+    "Alanların karar için ilgisiz olduğuna dair kanıt"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İhraç edilen 5 teğmen hakkında iftira davası haberinde bir etkinliğe içsel motivasyonla katılım, beklenen bir dış ödül ya da ödül sonrası katılımda düşüş gibi öğeler hiç yer almıyor.",
+   "alternative_explanation": "Haber metni motivasyon ve ödül ilişkisiyle ilgili değil; kart bu olaya uygulanamıyor.",
+   "missing_context": [
+    "Ödül öncesi gönüllü katılım düzeyi",
+    "Beklenen ve etkinliğe bağlı bir ödül",
+    "Ödül sonrası katılımı ölçen karşılaştırmalı veri"
+   ]
+  }
+ ]
+}

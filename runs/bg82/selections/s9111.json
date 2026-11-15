@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "illusory-correlation",
+  "framing-effect",
+  "availability-heuristic",
+  "negativity-bias",
+  "salience-bias",
+  "fundamental-attribution-error"
+ ],
+ "selection_uncertainty": [
+  "İddialar doğrulanmamış.",
+  "Hisse düşüşünün nedeni metinde kanıtlanmıyor."
+ ],
+ "selection_note": "Hisse kaybı ile istifa ve iddialar arasında nedensellik kurulması, 'bal tuzağı' örnekleri ilgili olabilir."
+}

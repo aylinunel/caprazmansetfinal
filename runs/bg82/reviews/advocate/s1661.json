@@ -1,0 +1,214 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Protestolar kontrolden çıktı! Fransa'da sokağa çıkma yasağı ilan edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 14:53] Fransa'da bazı kentlerde sokağa çıkma yasağı ilan edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olgu farklı kurumlarca farklı sözcük ve vurguyla sunuluyor (\"kontrolden çıktı\" vurgusu); ancak metin bu sunum farkının bir tercihi ya da yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Farklı ifadeler kurumların üslup, uzunluk ve okur kitlesi tercihlerinden kaynaklanabilir; okur üzerinde etki gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okur yargısını ya da bir kararı değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Avrupa alev alev yanıyor!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "uygulanan bölgesel sokağa çıkma yasaklarının gecenin sakin geçmesine katkıda bulunduğunu açıkladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Avrupa, eylemcilere karşı kontrolü kaybediyor.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı kurumlar olayı kıta çapında bir yangın ve kontrol kaybı olarak sunarken BBC aynı yasakların gecenin sakin geçmesine katkı sağladığını aktarıyor; olumsuz yön orantısız öne çıkıyor, ancak bunun bir değerlendirmeyi haksız biçimde etkilediği gösterilmiyor.",
+   "alternative_explanation": "Şiddet ve yağma olayları gerçek olduğu için olumsuz vurgu habere orantılı bir tepki olabilir.",
+   "missing_context": [
+    "Olayların gerçek ölçeği ve yasakların etkisine dair bağımsız veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fransa'da ülke çapında lüks markaların mağazaları talan edilirken",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Halk ise yağmacılara sıcak sularla müdahale ediyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta çarpıcı bir ayrıntı öne çıkarılıyor (yağma ve sıcak su sahneleri); ancak metin bu ayrıntının bir yargıya ya da seçime gerekçe yapıldığını açıkça göstermiyor.",
+   "alternative_explanation": "Çarpıcı ayrıntı haber değeri ve tıklanma kaygısıyla seçilmiş olabilir; bu tek başına bir yargı hatası değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının okur ya da karar verici yargısını etkilediğini gösteren karşılaştırmalı kanıt"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gösteriler Arnavutluk, Belçika, İspanya, İtalya, Yunanistan ve Portekiz'e de sıçradı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Avrupa alev alev yanıyor!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mynet birkaç ülkedeki örnekleri sayıp bunlardan \"Avrupa alev alev yanıyor\" genellemesine gidiyor; ancak metin bu örneklerin kolay hatırlanırlığını bir tahmin gerekçesi olarak açıkça kullanmıyor.",
+   "alternative_explanation": "Protestoların birden fazla ülkeye yayılması gerçek bir olgu olabilir; genelleme abartılı üsluptan kaynaklanabilir.",
+   "missing_context": [
+    "Diğer ülkelerdeki protestoların gerçek ölçeği",
+    "Genellemenin hangi verilere dayandığı"
+   ]
+  },
+  {
+   "card_id": "bandwagon-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Bir yargının popülerliğe dayandırıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "declinism",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Bugünü geçmişle kıyaslayıp geçmişi üstün tutan açık bir ifade"
+   ]
+  }
+ ]
+}

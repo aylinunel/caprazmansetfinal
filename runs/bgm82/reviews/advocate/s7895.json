@@ -1,0 +1,304 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 13:01] Başkan Erdoğan Azerbaycan'da!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Tayyip Erdoğan, Azerbaycan'a gitti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKP Genel Başkanı ve Cumhurbaşkanı Recep Tayyip Erdoğan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 09:18] Cumhurbaşkanı Erdoğan, bugün Azerbaycan'a gidecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı aktör kendi seslerinde bir kuruluşta 'Başkan', diğerlerinde 'AKP'li Cumhurbaşkanı' ve 'AKP Genel Başkanı ve Cumhurbaşkanı', ajans haberinde ise yalnızca 'Cumhurbaşkanı' olarak adlandırılıyor; parti bağlantısını öne çıkaran ya da makamı kısaltan etiketler tanımlamanın ötesinde bir konumlandırma taşıyor.",
+   "alternative_explanation": "'Başkan' kullanımı bir yayın üslubu, 'AKP'li' eki ise bilgilendirici bir parti bilgisi olarak da okunabilir.",
+   "missing_context": [
+    "Kuruluşların aynı aktör için kullandığı unvanların zaman içindeki tutarlılığı",
+    "Etiketlerin yayın kuralı mı yoksa haber bazında mı seçildiği"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 11:37] Erdoğan gerilim sonrası Azerbaycan'da: Aliyev havalimanında karşıladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 18:57] Kardeşlik sofrası: Cumhurbaşkanı Erdoğan, Azerbaycan'da onuruna verilen yemeğe katıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yeniasya · 08:49] Aliyev gelmedi ama Erdoğan Azerbaycan'a gidiyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ziyareti veren başlıklardan biri önceki gerilimi, biri ziyaretin dostane yönünü, biri Aliyev'in daha önceki katılmamasıyla kurulan karşıtlığı öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar ziyaretin farklı aşamalarında (gidiş, karşılama, yemek) yayımlandığı için farklı boyutları öne çıkarıyor olabilir.",
+   "missing_context": [
+    "Her kuruluşun ziyaret boyunca yayımladığı tüm haberler",
+    "Başlıkların yayımlandığı aşamadaki mevcut bilgiler"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yenisafak · 18:57] Kardeşlik sofrası: Cumhurbaşkanı Erdoğan, Azerbaycan'da onuruna verilen yemeğe katıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 17:56] Cumhurbaşkanı Erdoğan, Azerbaycan'da onuruna verilen yemeğe katıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 21:34] Erdoğan, Azerbaycan kararını verdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 21:35] Cumhurbaşkanı Erdoğan, Azerbaycan'a gidecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı yemek bir kuruluşta 'Kardeşlik sofrası', diğerinde 'onuruna verilen yemek' olarak adlandırılıyor; aynı ziyaret bir başlıkta 'Azerbaycan kararını verdi', diğerinde 'Azerbaycan'a gidecek' diye veriliyor. Sözcükler yalnızca uzunlukta değil çağrışımda da farklılaşıyor.",
+   "alternative_explanation": "'Kardeşlik' ifadesi iki ülke ilişkilerinde yerleşik bir kalıp olarak bilgi aktarımı amacıyla da kullanılmış olabilir.",
+   "missing_context": [
+    "Kuruluşların benzer resmi yemekleri hangi sözcüklerle verdiği",
+    "Sözcüklerin resmi açıklamalardan alınıp alınmadığı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakü ile okullarda başörtüsü yasağı üzerinden başlayan gerilim sonrası Cumhurbaşkanı Recep Tayyip Erdoğan, 'Zafer Günü' dolayısıyla Azerbaycan'ı ziyaret etti.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "iki ülke arasındaki 'başörtüsü' geriliminin ardından ilk kez Azerbaycan Cumhurbaşkanı İlham Aliyev’i ziyaret edecek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Ziyaret haberi, bazı kuruluşların ledinde iki ülke arasındaki başörtüsü gerilimi süreci içine yerleştiriliyor; diğer kuruluşlar ziyareti Zafer Günü programı olarak tek başına veriyor.",
+   "alternative_explanation": "Önceki gerilim, ziyareti anlamak için gerekli bir arka plan bilgisi olarak verilmiş olabilir.",
+   "missing_context": [
+    "Gerilimin kronolojisi ve tarafların açıklamaları",
+    "Diğer kuruluşların gerilimi önceki haberlerinde verip vermediği"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yenisafak · 18:57] Kardeşlik sofrası:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 17:56] Cumhurbaşkanı Erdoğan, Azerbaycan'da onuruna verilen yemeğe katıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kuruluş kendi sesinde yemeği 'Kardeşlik sofrası' olarak niteleyen değerlendirici bir ifade kullanıyor; aynı olgu ve aynı led başka bir kuruluşta bu nitelemesiz veriliyor.",
+   "alternative_explanation": "İfade, Türkiye-Azerbaycan ilişkileri için yaygın kullanılan bir kalıp olarak görülebilir.",
+   "missing_context": [
+    "Yemeğe ilişkin resmi açıklamada bu ifadenin geçip geçmediği"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 11:37] Erdoğan gerilim sonrası Azerbaycan'da: Aliyev havalimanında karşıladı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Azerbaycan Cumhurbaşkanı Aliyev, Türkiye'de düzenlenen TDT zirvesine katılmamıştı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haber7 · 12:40] Cumhurbaşkanı Erdoğan Azerbaycan'da: Aliyev havalimanında karşıladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kuruluşun başlığı 'gerilim sonrası' vurgusunu, ledi de Aliyev'in zirveye katılmadığı bilgisini seçiyor; iki tercih de ziyareti ilişkilerdeki sorun ekseninde konumlandırıyor. Başka bir kuruluş aynı karşılamayı bu bileşim olmadan veriyor.",
+   "alternative_explanation": "Gerilim ve zirveye katılmama, ziyaretin haber değerini açıklayan olgusal arka plan olarak seçilmiş olabilir.",
+   "missing_context": [
+    "Kuruluşun ziyaretle ilgili diğer haberleri",
+    "Gerilimin ziyaretin gündeminde yer alıp almadığına dair resmi bilgi"
+   ]
+  }
+ ]
+}

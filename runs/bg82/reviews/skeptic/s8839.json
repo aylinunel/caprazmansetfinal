@@ -1,0 +1,156 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "hindsight-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Saldırının önceden planlandığı değerlendirmesine yer verilen",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fenerbahçe otobüsüne saldırı iddianamesinin kabulü haberinde iddianamenin planlama değerlendirmesi aktarılıyor; ancak önceden yapılmış bir tahminle çelişen geriye dönük bir öngörülebilirlik iddiası kurulmuyor.",
+   "alternative_explanation": "Planlama değerlendirmesi iddianamedeki delillere dayanan hukuki bir nitelendirmedir; sonucun bilinmesinden çıkarılmış bir öngörülebilirlik iddiası değildir.",
+   "missing_context": [
+    "Döneme ait (eşzamanlı) bir tahmin veya değerlendirme",
+    "Sonucun yalnızca gerçekleştiği için öngörülebilir sayıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Takipsizlik kararının kaldırılmasıyla ivme kazanan soruşturma",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fenerbahçe otobüsüne saldırı iddianamesinin kabulü haberinde açıkça belirtilmiş bir ön inanç ile kanıtın asimetrik ele alındığını gösteren bir akıl yürütme yok; metin olayı ve tarafların açıklamalarını aktarıyor.",
+   "alternative_explanation": "Kurumların farklı ayrıntıları seçmesi kaynak erişimi ve editoryal tercihten kaynaklanabilir; ön inancı destekleyen kanıtın seçici ele alındığı gösterilmiyor.",
+   "missing_context": [
+    "Açıkça belirtilmiş bir ön inanç veya hipotez",
+    "Karşıt kanıtın gerekçesiz reddedildiğini gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberturk · 19:54] Fenerbahçe takım otobüsüne saldırı iddianamesi kabul edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "72 telefon görüşmesi ve planlı eylem ifşa oldu!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fenerbahçe otobüsüne saldırı iddianamesinin kabulü farklı kurumlarca farklı sözcük ve vurgularla başlıklandırılmış; ancak metin bu sunum farkını hiçbir tercihe, yargıya veya karara bağlamıyor ve başlıkların karar-ilgili olgularda eşdeğer olduğunu açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, eldeki bilginin güncellenmesi, haber ajansı metninin kısaltılması ve kurumların editoryal üslubundan kaynaklanabilir; bir okuyucu ya da karar verici üzerinde çerçeve etkisi gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okuyucu yargısını değiştirdiğini gösteren karşılaştırmalı ölçüm",
+    "Başlıkların aynı olgulara dayandığını açıkça gösteren bilgi",
+    "Herhangi bir tercih veya yargının bu sunuma dayandırıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "72 telefon görüşmesi ve planlı eylem ifşa oldu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fenerbahçe otobüsüne saldırı iddianamesinin kabulü haberinde dikkat çekici bir ifade bulunuyor; fakat metin bu ayrıntıyı bir yargıya, tahmine veya seçime açıkça bağlamıyor ve daha az çarpıcı bilgilerle karşılaştırmalı bir ağırlıklandırma göstermiyor.",
+   "alternative_explanation": "Çarpıcı ifade haber başlığı yazımının olağan bir öğesi olabilir; olayın kendisi gerçekten dikkat çekici olabilir ve bu, bir akıl yürütme hatası anlamına gelmez.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir karar veya tahmini etkilediğine dair açık ifade",
+    "Çarpıcı ve sıradan bilgilerin farklı ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  }
+ ]
+}

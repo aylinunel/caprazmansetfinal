@@ -1,0 +1,167 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "KPSS Lisans branş sıralamaları adayların erişimine açıldı, yerleştirmeye etkisi yok",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "2026 KPSS branş sıralamaları erişime açıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "sondakika sıralamanın yerleştirmeye etkisi olmadığını, karar erişime açılmasını öne çıkarıyor.",
+   "alternative_explanation": "Başlıkların çoğu sorgulama rehberi niteliğinde hizmet haberidir ve bir kısmı açıklama öncesi yayımlanmıştır; farklar boyut seçiminden çok yayın zamanı ve format farkı olabilir.",
+   "missing_context": [
+    "Başlıkların hangilerinin açıklamadan önce yayımlandığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "KPSS Lisans'ın branş bazında sıralamaları yayımlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "2026 KPSS Lisans branş sıralamaları açıklandı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Yayımlandı', 'açıklandı' ve 'erişime açıldı' sözcükleri kullanılıyor; ancak bunlar çağrışım değil yalnızca üslup farkı taşıyor.",
+   "alternative_explanation": "Eşanlamlı idari fiiller arasında değerlendirici bir ayrım yok.",
+   "missing_context": [
+    "Çağrışımı farklı sözcük kullanımı"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde açık bir nedensellik ifadesi yok.",
+   "alternative_explanation": "Haberler bir duyuruyu aktarıyor.",
+   "missing_context": [
+    "Açık bir nedensellik iddiası"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber bir kişi veya vaka üzerinden yapısal bir sorunu anlatmıyor.",
+   "alternative_explanation": "İdari duyuru haberi.",
+   "missing_context": [
+    "Yapısal bir soruna işaret eden bağlam"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sorumluluğu belirsiz bir olay veya kusur atfı yok.",
+   "alternative_explanation": "İdari duyuru haberi.",
+   "missing_context": [
+    "Süren bir soruşturma veya kusur iddiası"
+   ]
+  }
+ ]
+}

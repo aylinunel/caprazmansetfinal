@@ -1,0 +1,241 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "fon vurgununun ardından boşta kalan SPK Başkanlığı koltuğuna Muhsin Atcı atandı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 00:11] SPK Başkanlığına Vergi Denetim Kurulu Başkanı Muhsin Atcı atandı — Resmi Gazete'de yayımlanan atama kararlarına göre, Sermaye Piyasası Kurulu (SPK) Başkanlığına, Vergi Denetim Kurulu Başkanı Muhsin Atcı atandı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kuruluşun ledi kendi sesinde 'fon vurgunu' ve 'boşta kalan koltuk' gibi değerlendirici ifadeler kullanıyor; aynı atama başka bir kuruluşta bu ifadeler olmadan aynı olgularla veriliyor.",
+   "alternative_explanation": "'Vurgun' ifadesi, kamuoyunda bu adla bilinen bir soruşturmanın kısaltması olarak kullanılmış olabilir.",
+   "missing_context": [
+    "Fon soruşturmasının durumu ve resmi adı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "fon vurgununun ardından boşta kalan SPK Başkanlığı koltuğuna Muhsin Atcı atandı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Geçtiğimiz günlerde görevinden ayrılan Mahmut Sütcü'nün yerine SPK Başkanlığı görevine Muhsin Atcı getirildi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstifa eden SPK Başkanı Mahmut Sütcü'nün ardından bu göreve Vergi Denetim Kurulu Başkanı Muhsin Atcı atandı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Atama haberi bazı ledlerde önceki başkanın ayrılışı ve fon soruşturması sürecine bağlanıyor; diğer kuruluşlar atamayı tek başına veriyor.",
+   "alternative_explanation": "Önceki başkanın ayrılışı, atamanın neden yapıldığını açıklayan olgusal bir bağlamdır.",
+   "missing_context": [
+    "Sütcü'nün ayrılış gerekçesi",
+    "Fon soruşturmasının SPK ile bağlantısı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 09:31] Cumhurbaşkanı Erdoğan SPK Başkanlığına Muhsin Atcı'yı atadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 21:06] SPK Başkanlığına Vergi Denetim Kurulu Başkanı Muhsin Atcı atandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[milligazete · 00:44] Yeni SPK Başkanı Muhsin Atcı kim, nereli? Eğitimi, eşi, çocukları, kariyeri ve önceki görevleri",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı atamayı veren başlıklardan biri atamayı yapanı, biri atananın önceki görevini, biri atananın özel yaşamını öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar farklı okur sorularına (kim atadı, kim atandı) yanıt verecek biçimde kurulmuş olabilir.",
+   "missing_context": [
+    "Kuruluşların atamayla ilgili yayımladığı diğer haberler"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 00:07] SPK Başkanılığı'na Muhsin Atcı getirildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 00:06] SPK Başkanlığına Muhsin Atcı atandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 00:07] SPK'da üst düzey atama! Yeni başkan Muhsin Atcı oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı atama 'getirildi', 'atandı' ve 'oldu' fiilleriyle veriliyor; ancak bu fiillerin çağrışımda mı yoksa yalnızca üslupta mı ayrıştığı metinden açıkça belirlenemiyor.",
+   "alternative_explanation": "Fiiller Türkçede atama haberlerinde birbirinin yerine kullanılan eş anlamlı biçimler olabilir.",
+   "missing_context": [
+    "Kuruluşların diğer atama haberlerinde hangi fiili kullandığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde konuyu iki karşıt seçeneğe indiren bir kurgu bulunmuyor.",
+   "alternative_explanation": "Atama haberi seçenekler arasında bir tercih tartışması içermiyor.",
+   "missing_context": [
+    "İki seçenekli bir sunum"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Geçtiğimiz günlerde görevinden ayrılan Mahmut Sütcü'nün yerine",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Atama tek bir kişi üzerinden veriliyor; ancak metin ve bağlam bunun yinelenen ya da yapısal bir sorunun parçası olduğunu açıkça göstermiyor ve bazı ledler önceki başkanın ayrılışına zaten değiniyor.",
+   "alternative_explanation": "Bir kurum başkanının atanması doğası gereği tek bir kişiye ilişkin bir haberdir.",
+   "missing_context": [
+    "SPK başkanlığında yaşanan önceki değişikliklere dair veriler"
+   ]
+  }
+ ]
+}

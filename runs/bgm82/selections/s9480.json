@@ -1,0 +1,11 @@
+{
+ "candidate_ids": [
+  "word-choice",
+  "emphasis-framing"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Haberler neredeyse aynı."
+ ],
+ "selection_note": "Yalnızca 'fırtına alarmı' gibi küçük kelime seçimi farkı."
+}

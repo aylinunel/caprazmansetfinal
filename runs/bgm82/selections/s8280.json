@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "emphasis-framing",
+  "word-choice",
+  "causal-overclaim",
+  "spin"
+ ],
+ "selection_uncertainty": [
+  "Oyuncunun 'alakası yok' sözü alıntı; kurum tekniği değil.",
+  "Niyet bilinmiyor."
+ ],
+ "selection_note": "'Olay gönderme', 'pişman ettirecek' gibi kurum ifadeleri ve göndermenin kesin sunulması aday."
+}

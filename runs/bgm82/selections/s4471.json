@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "responsibility-framing",
+  "word-choice",
+  "loaded-language",
+  "emphasis-framing",
+  "thematic-framing"
+ ],
+ "selection_uncertainty": [
+  "Sorumluluk süreci tamamlanmamış.",
+  "'İş cinayeti' terimi bazı kurumlarda yerleşik kullanım olabilir."
+ ],
+ "selection_note": "Olay 'iş cinayeti' ile 'yol çöktü' arasında farklı kelime ve sorumluluk çerçevesiyle sunuluyor."
+}

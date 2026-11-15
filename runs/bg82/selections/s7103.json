@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "optimism-bias",
+  "salience-bias",
+  "outcome-bias",
+  "attentional-bias"
+ ],
+ "selection_uncertainty": [
+  "Maç önizlemesi ağırlıklı; çerçeve farkları sınırlı.",
+  "Yalnızca başlık ve kısa özetler var; tam metin yok."
+ ],
+ "selection_note": "Eksik oyuncu vurgusu ve 'hedef 3'te 3' beklentisi çerçeveleme/iyimserlik açısından aday."
+}

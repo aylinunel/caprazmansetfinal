@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "affect-heuristic",
+  "framing-effect",
+  "in-group-bias",
+  "optimism-bias",
+  "negativity-bias"
+ ],
+ "selection_uncertainty": [
+  "Hükümet kurulup kurulmayacağı belirsiz.",
+  "Bazı ifadeler kurumun kendi sesi mi tam belli değil."
+ ],
+ "selection_note": "'Katil', 'soykırımcı' nitelemeleri ve 'dönem bitiyor' öngörüsü duygusal ve çerçeveleme yanlılığına aday."
+}

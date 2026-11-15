@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "salience-bias",
+  "leveling-and-sharpening",
+  "outcome-bias",
+  "authority-bias"
+ ],
+ "selection_uncertainty": [
+  "Başlık ve kısa özetler; tam metin ve okur tepkisi yok.",
+  "İstifanın nedeni (azil mi banka krizi mi) kurumlar arasında farklı vurgulanıyor."
+ ],
+ "selection_note": "Aynı istifa farklı neden çerçeveleriyle veriliyor; çerçeveleme ve öne çıkarma adayları."
+}

@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "word-choice",
+  "labeling",
+  "emphasis-framing",
+  "fear-appeal"
+ ],
+ "selection_uncertainty": [
+  "Metinler kısaltılmış.",
+  "Çocuk sayısı 30 ve 35 olarak farklı."
+ ],
+ "selection_note": "'Dev operasyon', 'yeni nesil suç örgütü', 'suça sürüklenen çocuk' gibi farklı ifadeler."
+}

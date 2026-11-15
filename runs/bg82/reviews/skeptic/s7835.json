@@ -1,0 +1,155 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kırmızı bültenle aranan uyuşturucu baronu Mersin'de yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özbekistan'ın kırmızı bültenle aradığı uyuşturucu zanlısı Mersin'de yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurguyla veriyor (Kırmızı bültenle aranan uyuşturucu baronu Mersin'de yakalandı); ancak metinde bu sunum farkına açıkça bağlanan bir tercih, yargı ya da karar yer almıyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati ve ajans metninin kısaltılmasıyla açıklanabilir; bir okurun ya da karar vericinin çerçeveden etkilendiğine dair veri yok.",
+   "missing_context": [
+    "Çerçevelerin karar açısından eşdeğer olduğunu açıkça kuran bir ifade",
+    "Sunum farkına bağlı bir tercih ya da yargıyı gösteren okur/karar verici verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Seraların arasında gizleniyordu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan çarpıcı bir ayrıntı var (Seraların arasında gizleniyordu); fakat metin bu ayrıntıyı bir sıklık, risk ya da seçim yargısına açıkça bağlamıyor.",
+   "alternative_explanation": "Ayrıntının öne çıkarılması haber değeri ve dikkat çekici başlık geleneğiyle açıklanabilir; çarpıtılmış bir yargı gösterilmiyor.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir tahmin ya da karar gerekçesi yapıldığını gösteren ifade",
+    "Belirgin ve az belirgin bilgiye verilen ağırlığı karşılaştıran veri"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tarım alanlarında çalışarak gizlenmeye çalıştı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duygu ya da değer yüklü bir ifade var (Tarım alanlarında çalışarak gizlenmeye çalıştı!); ancak bir duygunun belirli bir risk ya da fayda tahminine bağlandığı açık bir ifade yok.",
+   "alternative_explanation": "Duygu yüklü dil haber üslubunun ya da aktarılan beyanın parçası olabilir; duygu ile bir tahmin arasında bağ kurulmamış.",
+   "missing_context": [
+    "Duygunun risk/fayda tahminini belirlediğini söyleyen açık ifade",
+    "Olgular sabitken yargının duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İçişleri Bakanlığı’nın sanal medya hesabından konuya ilişkin açıklama yapıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir yetkili ya da kurumu kaynak olarak anıyor (İçişleri Bakanlığı’nın sanal medya hesabından konuya ilişkin açıklama yapıldı); ancak bu statünün içerik yerine belirleyici ağırlık aldığı ya da karşı kanıtın bu yüzden göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi kurum ya da yetkilinin açıklamasını aktarmak olağan haber pratiğidir ve kaynağın konuyla ilgisi açıktır; haksız bir etki görünmüyor.",
+   "missing_context": [
+    "Kaynağın yetkinliğinin konuyla uyuşmadığını gösteren kanıt",
+    "Statünün tek gerekçe olduğunu ya da karşı kanıtın yok sayıldığını gösteren ifade"
+   ]
+  }
+ ]
+}

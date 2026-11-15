@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "consequence-framing",
+  "emphasis-framing",
+  "word-choice",
+  "loaded-language"
+ ],
+ "selection_uncertainty": [
+  "Haber büyük ölçüde hizmet bilgisi.",
+  "Yalnızca başlık ve kısa özetler var; tam metin yok."
+ ],
+ "selection_note": "Başlıkların maraton yerine yol kapanışlarını öne alması sonuç çerçevelemesi açısından aday."
+}

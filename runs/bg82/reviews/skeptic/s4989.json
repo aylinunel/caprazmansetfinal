@@ -1,0 +1,181 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AFAD büyüklüğünü duyurdu: Muğla açıklarında korkutan deprem",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz sözcük ya da olgular var (AFAD büyüklüğünü duyurdu: Muğla açıklarında korkutan deprem); ancak olumlu ve olumsuz kanıtın orantısız tartıldığı ya da bunun bir değerlendirmeyi haksız biçimde etkilediği belgelenmiyor.",
+   "alternative_explanation": "Olumsuz yönün öne çıkması olayın doğasından ya da haber değerinden kaynaklanabilir; karşılaştırılabilir olumlu kanıtın dışlandığı gösterilmiyor.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıtın varlığı ve ona verilen ağırlık",
+    "Olumsuz ağırlığın bir karar ya da değerlendirmeyi değiştirdiğini gösteren veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Son dakika: Akdeniz'de deprem!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan çarpıcı bir ayrıntı var (Son dakika: Akdeniz'de deprem!); fakat metin bu ayrıntıyı bir sıklık, risk ya da seçim yargısına açıkça bağlamıyor.",
+   "alternative_explanation": "Ayrıntının öne çıkarılması haber değeri ve dikkat çekici başlık geleneğiyle açıklanabilir; çarpıtılmış bir yargı gösterilmiyor.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir tahmin ya da karar gerekçesi yapıldığını gösteren ifade",
+    "Belirgin ve az belirgin bilgiye verilen ağırlığı karşılaştıran veri"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Osmaniye'de 4,2 büyüklüğünde deprem meydana geldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde çok sayıda benzer haber yan yana duruyor (Osmaniye'de 4,2 büyüklüğünde deprem meydana geldi); ancak kolay hatırlanan örneklerin bir tahmin ya da genelleme gerekçesi yapıldığı söylenmiyor.",
+   "alternative_explanation": "Benzer olayların aynı kümede görünmesi eşzamanlı operasyonlardan ve haber kümelemesinden kaynaklanıyor olabilir; bir sıklık yargısı kurulmuyor.",
+   "missing_context": [
+    "Örneklerin hatırlanabilirliğinin bir tahmine gerekçe yapıldığını gösteren ifade",
+    "Gerçek sıklık ya da karşılaştırma verisi"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla açıklarında korkutan deprem",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duygu ya da değer yüklü bir ifade var (Muğla açıklarında korkutan deprem); ancak bir duygunun belirli bir risk ya da fayda tahminine bağlandığı açık bir ifade yok.",
+   "alternative_explanation": "Duygu yüklü dil haber üslubunun ya da aktarılan beyanın parçası olabilir; duygu ile bir tahmin arasında bağ kurulmamış.",
+   "missing_context": [
+    "Duygunun risk/fayda tahminini belirlediğini söyleyen açık ifade",
+    "Olgular sabitken yargının duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla Datça açıklarında 5,1 büyüklüğünde deprem!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Datça ilçesinin 253,19 kilometre açığında 5,1 büyüklüğünde deprem meydana geldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurguyla veriyor (Muğla Datça açıklarında 5,1 büyüklüğünde deprem!); ancak metinde bu sunum farkına açıkça bağlanan bir tercih, yargı ya da karar yer almıyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati ve ajans metninin kısaltılmasıyla açıklanabilir; bir okurun ya da karar vericinin çerçeveden etkilendiğine dair veri yok.",
+   "missing_context": [
+    "Çerçevelerin karar açısından eşdeğer olduğunu açıkça kuran bir ifade",
+    "Sunum farkına bağlı bir tercih ya da yargıyı gösteren okur/karar verici verisi"
+   ]
+  }
+ ]
+}

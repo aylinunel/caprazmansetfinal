@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "loaded-language",
+  "emphasis-framing",
+  "word-choice",
+  "spin",
+  "responsibility-framing"
+ ],
+ "selection_uncertainty": [
+  "Firari nitelemesinin olgusal durumu metinden doğrulanamıyor."
+ ],
+ "selection_note": "'Halk TV'nin firari patronu' ile 'iş insanı' etiket farkı ve tutuklama sayısı vurgusu aday."
+}

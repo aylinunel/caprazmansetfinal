@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "emphasis-framing",
+  "responsibility-framing",
+  "loaded-language",
+  "word-choice",
+  "fear-appeal"
+ ],
+ "selection_uncertainty": [
+  "Yalnız başlık/özet var; tam metin ve kaynak alıntı ayrımı sınırlı.",
+  "Sayılar resmi açıklamalara göre değişiyor; sorumluluk henüz belirsiz."
+ ],
+ "selection_note": "Can kaybı vurgusu ve sorumluluk dili adayları."
+}

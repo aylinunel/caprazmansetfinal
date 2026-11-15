@@ -1,0 +1,249 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık kimdir, neden öldü? Ethem Büyükışık'ın oğlu Dorukhan Büyükışık cinayeti davası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık'ın şüpheli ölümüne ilişkin davada 12 sanığa tahliye",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık'ın şantiyede ölü bulunması: 13 kişi tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölüm milligazete'de 'cinayeti', t24'te 'şüpheli ölümü', birgun'da 'ölü bulunması' olarak adlandırılıyor; 'cinayet' yargılama sürerken bir öldürme olgusu çağrıştırıyor.",
+   "alternative_explanation": "milligazete'nin ifadesi davanın kamuoyundaki adını veya iddianameyi yansıtıyor olabilir; arama motoru odaklı başlık kalıbı da etkili olabilir.",
+   "missing_context": [
+    "İddianamedeki suç nitelendirmesi",
+    "Mahkemenin henüz bir hüküm kurmadığına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tümgeneral oğlu Dorukhan Büyükışık davasında 22 saatlik duruşma!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık davasında 12 sanığa tahliye",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "haberler ölenin babasının rütbesini ve duruşmanın süresini, haberturk ise tahliye sayısını öne çıkarıyor.",
+   "alternative_explanation": "Duruşma süresi ve ailenin kimliği haber değeri taşıyan olgusal unsurlardır; farklı vurgu tek başına yönlendirme göstermez.",
+   "missing_context": [
+    "Kurumların önceki duruşma haberlerindeki vurgu tercihleri"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "26 tutuklu sanıktan 13'ü tahliye edildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Tutuklu 25 sanıktan 12'si tahliye edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Pay ve payda veriliyor; ancak farklılık daha dar bir karşılaştırma nüfusu seçilmesinden değil, rakamların kurumlar arasında tutarsız aktarılmasından kaynaklanıyor görünüyor.",
+   "alternative_explanation": "12/25 ile 13/26 farkı bir sanığın sayımına ilişkin bilgi farkı olabilir; iddia alt grubun ötesine genişletilmiyor.",
+   "missing_context": [
+    "Mahkemenin ara kararındaki kesin sanık ve tahliye sayıları"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tümgeneral oğlu Dorukhan Büyükışık davasında 22 saatlik duruşma!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "27 yaşındaki Dorukhan Büyükışık'ın hayatını kaybetmesine",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumda 'Tümgeneral oğlu', diğerlerinde yaşıyla tanımlanıyor.",
+   "alternative_explanation": "'Tümgeneral oğlu' bir meşruiyet yargısından çok ailenin kamusal kimliğini belirten tanımlayıcı bir bilgidir.",
+   "missing_context": [
+    "Etiketin meşruiyet değerlendirmesi taşıdığını gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık’ın ölümü: Maraton duruşmada 13 kişi tahliye edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık davasında 22 saat süren duruşma: 12 tahliye kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "10haber 'maraton duruşma' diyor; ancak bu ifade 22 saatlik süreyi betimliyor ve olayı olumlu ya da olumsuz değerlendirmiyor.",
+   "alternative_explanation": "'Maraton' mecazı uzun süreyi aktaran yerleşik bir kalıptır; bildirilen olgunun ötesine geçmiyor.",
+   "missing_context": [
+    "Değerlendirici sözcük içeren başka bir başlık"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam bu ölümün tekrarlayan ya da yapısal bir sorunun parçası olduğunu göstermiyor; haberler tek bir davayı aktarıyor.",
+   "alternative_explanation": "Belirli bir davanın duruşma haberi doğası gereği tek vakaya odaklanır.",
+   "missing_context": [
+    "Benzer şüpheli ölüm dosyalarına ilişkin bağlam"
+   ]
+  }
+ ]
+}

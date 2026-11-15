@@ -1,0 +1,150 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul merkezli 39 ilde yasa dışı bahis operasyonu: 121 şüpheli tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde çok sayıda benzer haber yan yana duruyor (İstanbul merkezli 39 ilde yasa dışı bahis operasyonu: 121 şüpheli tutuklandı); ancak kolay hatırlanan örneklerin bir tahmin ya da genelleme gerekçesi yapıldığı söylenmiyor.",
+   "alternative_explanation": "Benzer olayların aynı kümede görünmesi eşzamanlı operasyonlardan ve haber kümelemesinden kaynaklanıyor olabilir; bir sıklık yargısı kurulmuyor.",
+   "missing_context": [
+    "Örneklerin hatırlanabilirliğinin bir tahmine gerekçe yapıldığını gösteren ifade",
+    "Gerçek sıklık ya da karşılaştırma verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "34 ildeki dev yasa dışı bahis operasyonunda 90 tutuklama",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan çarpıcı bir ayrıntı var (34 ildeki dev yasa dışı bahis operasyonunda 90 tutuklama); fakat metin bu ayrıntıyı bir sıklık, risk ya da seçim yargısına açıkça bağlamıyor.",
+   "alternative_explanation": "Ayrıntının öne çıkarılması haber değeri ve dikkat çekici başlık geleneğiyle açıklanabilir; çarpıtılmış bir yargı gösterilmiyor.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir tahmin ya da karar gerekçesi yapıldığını gösteren ifade",
+    "Belirgin ve az belirgin bilgiye verilen ağırlığı karşılaştıran veri"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "14 ilde eş zamanlı yasa dışı bahis operasyonunda 37 şüpheli adliyeye sevk edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Aydın merkezli 14 ilde bahis operasyonu: 34 tutuklama",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurguyla veriyor (14 ilde eş zamanlı yasa dışı bahis operasyonunda 37 şüpheli adliyeye sevk edildi); ancak metinde bu sunum farkına açıkça bağlanan bir tercih, yargı ya da karar yer almıyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati ve ajans metninin kısaltılmasıyla açıklanabilir; bir okurun ya da karar vericinin çerçeveden etkilendiğine dair veri yok.",
+   "missing_context": [
+    "Çerçevelerin karar açısından eşdeğer olduğunu açıkça kuran bir ifade",
+    "Sunum farkına bağlı bir tercih ya da yargıyı gösteren okur/karar verici verisi"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "gözaltına alınan 37 şüpheliden 34'ü tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde önceki bir sayı ve sonraki bir sayı birlikte geçiyor (gözaltına alınan 37 şüpheliden 34'ü tutuklandı); ancak sonraki yargının öncekine çapalandığını gösteren açık bir bağ yok.",
+   "alternative_explanation": "Gözaltı ve tutuklama sayıları sürecin farklı aşamalarını gösteren bağımsız resmi verilerdir; birinin diğerine dayandırıldığı görülmüyor.",
+   "missing_context": [
+    "Sonraki tahminin önceki değere açıkça dayandırıldığını gösteren ifade",
+    "Revizyonu gerektiren ama göz ardı edilen kanıt"
+   ]
+  }
+ ]
+}

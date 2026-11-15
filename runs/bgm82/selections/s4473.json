@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "responsibility-framing",
+  "metaphorical-framing",
+  "word-choice",
+  "emphasis-framing"
+ ],
+ "selection_uncertainty": [
+  "Metinler kısaltılmış.",
+  "Soruşturma sürüyor."
+ ],
+ "selection_note": "Akit ve Star isim yerine 'CHP'li' etiketini öne alıyor; Takvim 'düğmeye basıldı' diyor."
+}

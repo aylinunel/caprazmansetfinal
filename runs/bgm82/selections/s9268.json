@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "word-choice",
+  "metaphorical-framing",
+  "emphasis-framing",
+  "consequence-framing"
+ ],
+ "selection_uncertainty": [
+  "Teknik haber; farklar zayıf olabilir."
+ ],
+ "selection_note": "sozcu 'kredi hamlesi', 'yeni dönem' ifadeleri ile diğer nötr başlıklar karşılaştırılabilir."
+}

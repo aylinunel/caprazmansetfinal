@@ -1,0 +1,222 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "en az bir kişinin öldüğü",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "En az 8 kişi hayatını kaybetti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "New York'ta bina çökmesi ve farklı saatlerde verilen ölü sayıları haberinde daha önce verilen bir değer ile sonraki bir değer birlikte görünüyor; ancak metin sonraki değerin öncekine dayandırıldığını kurmuyor, aksine değerler yeni bilgiyle güncellenmiş görünüyor.",
+   "alternative_explanation": "Farklı rakamlar farklı saatlerde güncellenen resmi bilgiyi veya hukuki istemin alt-üst sınırını yansıtabilir; bir çapa etkisi göstermez.",
+   "missing_context": [
+    "Sonraki yargının önceki değere açıkça dayandırıldığını gösteren ifade",
+    "Çapaya rağmen revizyon gerektiren kanıtın göz ardı edildiğine dair bilgi"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "New York'ta korkunç olay!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "New York'ta bina çökmesi ve farklı saatlerde verilen ölü sayıları haberinde akılda kalan örneklerin, yakınlığın veya çarpıcılığın bir tahmin ya da genelleme için gerekçe olarak kullanıldığı açıkça görülmüyor.",
+   "alternative_explanation": "Metin olayın kendisini aktarıyor; sıklık veya risk hakkında bir genelleme yapılmadığından erişilebilirlik sezgiseline dayalı bir çıkarım yok.",
+   "missing_context": [
+    "Kolay hatırlanan örneklerin bir tahmine gerekçe yapıldığını gösteren ifade",
+    "Sıklık veya karşılaştırma verisiyle çelişen bir çıkarım"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "bir binanın kısmen çökmesi faciaya yol açtı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "New York'ta bina çökmesi ve farklı saatlerde verilen ölü sayıları haberinde olumsuz bir ifade var; ancak metin olumsuz kanıta karşılaştırılabilir olumlu kanıta göre orantısız ağırlık verildiğini belgelemiyor. Olumsuz sözcük tek başına yetersiz.",
+   "alternative_explanation": "Olumsuz dil, olayın gerçekten olumsuz niteliğini (can kaybı, suç soruşturması) orantılı biçimde aktarıyor olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu ve olumsuz kanıtın birlikte verildiği bir değerlendirme",
+    "Orantısız ağırlığın bir karara etkisini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "New York'ta korkunç olay!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "New York'ta bina çökmesi ve farklı saatlerde verilen ölü sayıları haberinde duygusal ya da değer yüklü bir ifade var; ancak metin bu duyguyu bir risk veya fayda tahminine ya da karara açıkça bağlamıyor. Duygusal sözcük tek başına yetersiz.",
+   "alternative_explanation": "Duygusal ifade olayın niteliğini aktaran veya alıntılanan açıklamayı yansıtan olağan bir haber dili olabilir.",
+   "missing_context": [
+    "Duygunun bir risk/fayda yargısının yerine geçtiğini gösteren açık ifade",
+    "Olgular sabitken yargının duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "New York'ta korkunç olay!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "New York'ta bina çökmesi ve farklı saatlerde verilen ölü sayıları haberinde dikkat çekici bir ifade bulunuyor; fakat metin bu ayrıntıyı bir yargıya, tahmine veya seçime açıkça bağlamıyor ve daha az çarpıcı bilgilerle karşılaştırmalı bir ağırlıklandırma göstermiyor.",
+   "alternative_explanation": "Çarpıcı ifade haber başlığı yazımının olağan bir öğesi olabilir; olayın kendisi gerçekten dikkat çekici olabilir ve bu, bir akıl yürütme hatası anlamına gelmez.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir karar veya tahmini etkilediğine dair açık ifade",
+    "Çarpıcı ve sıradan bilgilerin farklı ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "illusory-truth-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[trthaber · 05:25] New York'ta bina çöktü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[akit · 06:37] New York'ta korkunç olay! Bina çöktü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "New York'ta bina çökmesi ve farklı saatlerde verilen ölü sayıları haberi birçok kurumca tekrarlanıyor; ancak tekrarlanan önermenin yanlış veya desteksiz olduğu bağımsız olarak kurulmuyor ve tekrarın kabulü artırdığına dair kanıt yok.",
+   "alternative_explanation": "Aynı bilginin birçok kurumda yer alması, ortak resmi kaynağın veya ajans metninin kullanılmasından kaynaklanabilir.",
+   "missing_context": [
+    "Önermenin yanlış olduğunu gösteren bağımsız kaynak",
+    "Okuyucunun tekrarlanan maruziyet geçmişi ve kabul düzeyi"
+   ]
+  }
+ ]
+}

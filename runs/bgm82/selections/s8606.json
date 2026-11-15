@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "emphasis-framing",
+  "word-choice",
+  "episodic-framing"
+ ],
+ "selection_uncertainty": [
+  "Metinler kısaltılmış.",
+  "İftira suçlaması iddianameden aktarılıyor."
+ ],
+ "selection_note": "Teğmenler 'kılıçlı yemin' ya da 'ihraç edilen' sıfatıyla farklı tanıtılıyor."
+}

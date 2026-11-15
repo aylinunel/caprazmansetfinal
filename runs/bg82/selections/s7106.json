@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "negativity-bias",
+  "salience-bias",
+  "in-group-bias",
+  "availability-heuristic",
+  "leveling-and-sharpening"
+ ],
+ "selection_uncertainty": [
+  "Soruşturma sürüyor; suç sabit değil.",
+  "Metinler kırpılmış, tam haber yok."
+ ],
+ "selection_note": "'Hesap vakti', 'vurgun' gibi sunumlar okurda çerçeveleme ve olumsuzluk ağırlığı yaratabilir; kesin bulgu değil."
+}

@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "anchoring-bias",
+  "framing-effect",
+  "salience-bias",
+  "attentional-bias"
+ ],
+ "selection_uncertainty": [
+  "Oranın hesaplama yöntemi özetlerde kısmi.",
+  "Yalnızca başlık ve kısa özetler var; tam metin yok."
+ ],
+ "selection_note": "Beklenti rakamları ve örnek kira hesapları çapalama ve çerçeveleme açısından aday."
+}

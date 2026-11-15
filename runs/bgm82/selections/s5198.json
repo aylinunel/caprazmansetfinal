@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "consequence-framing",
+  "emphasis-framing",
+  "loaded-language",
+  "word-choice"
+ ],
+ "selection_uncertainty": [
+  "Rakamın kaynağı TÜİK; tam metin yok.",
+  "Yalnızca başlık ve kısa özetler var; tam metin yok."
+ ],
+ "selection_note": "Başlıkların kira zammının etkisine ve 'milyonlarca kişi' gibi vurgulara odaklanması aday."
+}

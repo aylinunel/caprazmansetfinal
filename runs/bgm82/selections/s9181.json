@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "metaphorical-framing",
+  "loaded-language",
+  "causal-overclaim",
+  "word-choice",
+  "emphasis-framing",
+  "responsibility-framing"
+ ],
+ "selection_uncertainty": [
+  "'Affımı istedim' Kavcıoğlu'nun sözü, kurum tekniği sayılmaz.",
+  "İstifa nedeni net değil."
+ ],
+ "selection_note": "sol 'fon savaşı kelle aldı' mecazı; istifa/ayrıldı/affını istedi farkları sözcük seçimine aday."
+}

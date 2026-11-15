@@ -1,0 +1,223 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Esenyurt'ta iki metrobüs çarpıştı: Feci kazada 6 yaralı var!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kazada 6 kişinin hafif şekilde yaralandığı öğrenildi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "sabah kazayı 'feci kaza' olarak niteliyor; tgrt ve evrensel aynı altı yaralıyı 'hafif şekilde yaralandı' diye veriyor.",
+   "alternative_explanation": "'Feci' haber dilinde kalıplaşmış bir sözcük olabilir; sabah'ın yayın anında yaralanmaların hafif olduğu bilgisine sahip olmayabileceği de mümkündür.",
+   "missing_context": [
+    "Yaralıların durumuna ilişkin resmi açıklama"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Feci kazada 6 yaralı var!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt'ta metrobüs kazası: 6 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay 'feci kaza' ve 'metrobüs kazası' sözcükleriyle adlandırılıyor; 'feci' ağırlık çağrışımı ekliyor.",
+   "alternative_explanation": "Sözcük farkı yerleşik üslup farkı olabilir.",
+   "missing_context": [
+    "Kurumun benzer kazalarda kullandığı ifadeler"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam veya diğer haberler metrobüs kazalarının tekrarlayan ya da yapısal bir sorun olduğunu göstermiyor.",
+   "alternative_explanation": "Tek bir kazanın anlık haberleştirilmesi olayın niteliğine uygun.",
+   "missing_context": [
+    "Metrobüs hattındaki kaza istatistikleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İki metrobüs çarpıştı! 6 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul Esenyurt'ta metrobüs kazası: Yolcu alan araca arkadan çarptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "haberturk yaralı sayısını, dirilis kazanın oluş biçimini (arkadan çarpma) öne çıkarıyor.",
+   "alternative_explanation": "İki başlık da aynı kazanın olgusal unsurlarını veriyor; fark başlık uzunluğu ve bilgi akışından kaynaklanabilir.",
+   "missing_context": [
+    "Başlıkların güncellenme zamanları"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İki metrobüs çarpıştı! 6 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay tanımlanabilir; ancak hiçbir kurum onu metrobüs güvenliği eğilimi veya kurumsal süreç içine yerleştirmiyor.",
+   "alternative_explanation": "Anlık kaza haberinde bağlam eksikliği olayın yeni olmasından kaynaklanabilir.",
+   "missing_context": [
+    "Metrobüs güvenliğine ilişkin önceki olaylar"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Esenyurt'ta iki metrobüsün çarpışması sonucu 6 kişi yaralandı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "henüz bilinmeyen bir nedenle çarpıştı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "trthaber 'sonucu' diyerek yaralanmaları çarpışmaya bağlıyor; bu doğrudan fiziksel bir ilişki ve kazanın nedeni hakkında bir iddia değil. haberler nedenin bilinmediğini açıkça yazıyor.",
+   "alternative_explanation": "Çarpışmanın yaralanmaya yol açması yalnızca zaman sırasına dayanan bir çıkarım değildir.",
+   "missing_context": [
+    "Kazanın nedenine ilişkin resmi inceleme"
+   ]
+  }
+ ]
+}

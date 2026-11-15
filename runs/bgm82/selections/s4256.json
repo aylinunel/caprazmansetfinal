@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "emphasis-framing",
+  "word-choice"
+ ],
+ "selection_uncertainty": [
+  "Grup adının verilmesi bilgi amaçlı olabilir.",
+  "Kocasakal'ın 'Baro geri döndü' sözü alıntıdır, kurum tekniği değildir."
+ ],
+ "selection_note": "Kurumlar kazananı grup kimliğiyle ya da yalnızca adıyla anıyor."
+}

@@ -1,0 +1,120 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gerilim sona erdi: Aliyev COP31 için Antalya'ya geliyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 18:45] İlham Aliyev COP31'e katılmak üzere Antalya'ya geldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aliyev'in COP31 için Antalya'ya gelişi farklı kurumlarca farklı sözcük ve vurgularla başlıklandırılmış; ancak metin bu sunum farkını hiçbir tercihe, yargıya veya karara bağlamıyor ve başlıkların karar-ilgili olgularda eşdeğer olduğunu açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, eldeki bilginin güncellenmesi, haber ajansı metninin kısaltılması ve kurumların editoryal üslubundan kaynaklanabilir; bir okuyucu ya da karar verici üzerinde çerçeve etkisi gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okuyucu yargısını değiştirdiğini gösteren karşılaştırmalı ölçüm",
+    "Başlıkların aynı olgulara dayandığını açıkça gösteren bilgi",
+    "Herhangi bir tercih veya yargının bu sunuma dayandırıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gerilim sona erdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aliyev'in COP31 için Antalya'ya gelişi haberinde dikkat çekici bir ifade bulunuyor; fakat metin bu ayrıntıyı bir yargıya, tahmine veya seçime açıkça bağlamıyor ve daha az çarpıcı bilgilerle karşılaştırmalı bir ağırlıklandırma göstermiyor.",
+   "alternative_explanation": "Çarpıcı ifade haber başlığı yazımının olağan bir öğesi olabilir; olayın kendisi gerçekten dikkat çekici olabilir ve bu, bir akıl yürütme hatası anlamına gelmez.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir karar veya tahmini etkilediğine dair açık ifade",
+    "Çarpıcı ve sıradan bilgilerin farklı ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Geçtiğimiz günlerde Cumhurbaşkanı Erdoğan'ı ülkesinde ağırlayan Azerbaycan Cumhurbaşkanı İlham Aliyev",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aliyev'in COP31 için Antalya'ya gelişi haberinde olumlu bir nitelendirme yer alıyor; ancak metin bir alandaki olumlu izlenimin başka bir alandaki ayrı bir yargıya taşındığını açıkça göstermiyor.",
+   "alternative_explanation": "Olumlu nitelendirme alıntılanan resmi açıklamanın veya olayın doğrudan özelliğinin aktarımı olabilir; iki ayrı alan arasında bir aktarım yok.",
+   "missing_context": [
+    "Birinci alandaki izlenimin ikinci yargıyı belirlediğini gösteren ifade",
+    "Alanların karar için ilgisiz olduğuna dair kanıt"
+   ]
+  }
+ ]
+}

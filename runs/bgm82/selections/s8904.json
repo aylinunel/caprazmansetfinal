@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "emphasis-framing",
+  "labeling",
+  "loaded-language",
+  "responsibility-framing",
+  "word-choice",
+  "spin"
+ ],
+ "selection_uncertainty": [
+  "Yalnız başlık/özet var; tam metin ve kaynak alıntı ayrımı sınırlı.",
+  "'Trol' ve 'çete' ifadeleri kısmen kaynağa ait olabilir; kurum dili ayrılmalı."
+ ],
+ "selection_note": "Gözaltı ile serbest bırakmanın vurgusu ve etiketleme farkları."
+}

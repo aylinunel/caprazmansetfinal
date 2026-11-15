@@ -1,0 +1,148 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 15:38] Son dakika: Adana'da korkutan deprem!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "herhangi bir olumsuzluğa rastlanmadı belirtilerek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklarda olumsuz bir duygu sözcüğü var; ancak olumsuz bilgiye karşılaştırılabilir olumlu bilgiden orantısız ağırlık verildiğini ve bunun bir değerlendirmeyi haksız biçimde etkilediğini belgeleyen bir karşılaştırma yok.",
+   "alternative_explanation": "Deprem doğası gereği tehdit içeren bir olaydır; duygu sözcüğü hissedilen sarsıntıyı aktarıyor olabilir.",
+   "missing_context": [
+    "Adana depreminde hasar ya da yaralanma olup olmadığına dair resmi açıklama",
+    "Aynı kuruluşların benzer büyüklükteki depremleri nasıl verdiği"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adana'da sabah saatlerinde de 3.5 büyüklüğünde bir deprem olmuştu.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir metin yakın zamandaki başka bir depremi hatırlatıyor; ancak bu yakınlığın bir olasılık ya da risk tahminine gerekçe yapıldığı açıkça görülmüyor.",
+   "alternative_explanation": "Önceki depremin anılması, okura olayların sırasını bildiren olgusal bir bilgi olabilir.",
+   "missing_context": [
+    "Yakın tarihli depremlerden bir risk çıkarımı yapan açık bir ifade",
+    "Bölgenin deprem sıklığına ilişkin istatistik"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[karar · 15:35] Adana'da korkutan deprem — Adana'nın Kozan ilçesinde saat 15.28'de 4,6 büyüklüğünde deprem meydana geldi.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 16:07] Adana Kozan'da 4,6 büyüklüğünde deprem — Adana'nın Kozan ilçesinde saat 15.28'de 4,6 büyüklüğünde deprem meydana geldi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı led iki kuruluşta kullanılırken birinin başlığı büyüklük yerine 'korkutan' duygusal niteliğini öne çıkarıyor; bunun bir yargıyı ya da ağırlıklandırmayı etkilediği ise metinden açıkça çıkmıyor.",
+   "alternative_explanation": "Duygusal nitelik, sarsıntının geniş bir alanda hissedilmesini aktarmak için seçilmiş olabilir.",
+   "missing_context": [
+    "Belirgin ayrıntıya dayanan açık bir sonuç",
+    "Okur ya da karar verici üzerindeki etkiye dair karşılaştırmalı bilgi"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[karar · 15:35] Adana'da korkutan deprem — Adana'nın Kozan ilçesinde saat 15.28'de 4,6 büyüklüğünde deprem meydana geldi.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 16:07] Adana Kozan'da 4,6 büyüklüğünde deprem — Adana'nın Kozan ilçesinde saat 15.28'de 4,6 büyüklüğünde deprem meydana geldi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı ledle verilen olay bir başlıkta 'korkutan deprem', diğerinde '4,6 büyüklüğünde deprem' olarak sunuluyor; olgular aynı, sunum farklı. Ancak bu sunum farkına dayanan bir tercih ya da yargı metinde kurulmuyor.",
+   "alternative_explanation": "Başlık farkı, yayınların üslup tercihlerinden kaynaklanabilir ve okurun kararını etkilediği gösterilmemiştir.",
+   "missing_context": [
+    "Sunum farkına bağlanan açık bir tercih ya da değerlendirme"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "candidate_ids": [
+  "emphasis-framing",
+  "loaded-language",
+  "responsibility-framing",
+  "word-choice",
+  "episodic-framing",
+  "causal-overclaim"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Bakan açıklamaları alıntı; kurumun tekniği değil.",
+  "Sayılar güncellenmiş."
+ ],
+ "selection_note": "Maden kazasında duygusal dil, sorumluluk ve neden (metan gazı) vurgusu farklılaşıyor."
+}

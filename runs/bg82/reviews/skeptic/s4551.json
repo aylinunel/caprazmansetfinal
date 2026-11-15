@@ -1,0 +1,182 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni nesil suç örgülerine operasyon: 85 şüpheli gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Daltonlar suç örgütüne 30 ilde operasyon haberinde akılda kalan örneklerin, yakınlığın veya çarpıcılığın bir tahmin ya da genelleme için gerekçe olarak kullanıldığı açıkça görülmüyor.",
+   "alternative_explanation": "Metin olayın kendisini aktarıyor; sıklık veya risk hakkında bir genelleme yapılmadığından erişilebilirlik sezgiseline dayalı bir çıkarım yok.",
+   "missing_context": [
+    "Kolay hatırlanan örneklerin bir tahmine gerekçe yapıldığını gösteren ifade",
+    "Sıklık veya karşılaştırma verisiyle çelişen bir çıkarım"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sosyal medyadan tetikçi ağı kuran suç örgütüne operasyon: 85 gözaltı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Daltonlar suç örgütüne 30 ilde operasyon haberinde olumsuz bir ifade var; ancak metin olumsuz kanıta karşılaştırılabilir olumlu kanıta göre orantısız ağırlık verildiğini belgelemiyor. Olumsuz sözcük tek başına yetersiz.",
+   "alternative_explanation": "Olumsuz dil, olayın gerçekten olumsuz niteliğini (can kaybı, suç soruşturması) orantılı biçimde aktarıyor olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu ve olumsuz kanıtın birlikte verildiği bir değerlendirme",
+    "Orantısız ağırlığın bir karara etkisini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 07:25] Daltonlar suç örgütüne 30 ilde operasyon: 85 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Son dakika... 'Daltonlar' suç örgütüne 30 ilde dev operasyon",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Daltonlar suç örgütüne 30 ilde operasyon farklı kurumlarca farklı sözcük ve vurgularla başlıklandırılmış; ancak metin bu sunum farkını hiçbir tercihe, yargıya veya karara bağlamıyor ve başlıkların karar-ilgili olgularda eşdeğer olduğunu açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, eldeki bilginin güncellenmesi, haber ajansı metninin kısaltılması ve kurumların editoryal üslubundan kaynaklanabilir; bir okuyucu ya da karar verici üzerinde çerçeve etkisi gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okuyucu yargısını değiştirdiğini gösteren karşılaştırmalı ölçüm",
+    "Başlıkların aynı olgulara dayandığını açıkça gösteren bilgi",
+    "Herhangi bir tercih veya yargının bu sunuma dayandırıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "30 ilde Daltonlar'a 'tetikçi' operasyonu: 30'u çocuk 85 gözaltı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Daltonlar suç örgütüne 30 ilde operasyon haberinde dikkat çekici bir ifade bulunuyor; fakat metin bu ayrıntıyı bir yargıya, tahmine veya seçime açıkça bağlamıyor ve daha az çarpıcı bilgilerle karşılaştırmalı bir ağırlıklandırma göstermiyor.",
+   "alternative_explanation": "Çarpıcı ifade haber başlığı yazımının olağan bir öğesi olabilir; olayın kendisi gerçekten dikkat çekici olabilir ve bu, bir akıl yürütme hatası anlamına gelmez.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir karar veya tahmini etkilediğine dair açık ifade",
+    "Çarpıcı ve sıradan bilgilerin farklı ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "30 ilde Daltonlar'a 'tetikçi' operasyonu: 30'u çocuk 85 gözaltı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Daltonlar suç örgütüne 30 ilde operasyon haberinde duygusal ya da değer yüklü bir ifade var; ancak metin bu duyguyu bir risk veya fayda tahminine ya da karara açıkça bağlamıyor. Duygusal sözcük tek başına yetersiz.",
+   "alternative_explanation": "Duygusal ifade olayın niteliğini aktaran veya alıntılanan açıklamayı yansıtan olağan bir haber dili olabilir.",
+   "missing_context": [
+    "Duygunun bir risk/fayda yargısının yerine geçtiğini gösteren açık ifade",
+    "Olgular sabitken yargının duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  }
+ ]
+}

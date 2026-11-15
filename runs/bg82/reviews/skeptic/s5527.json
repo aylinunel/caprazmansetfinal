@@ -1,0 +1,199 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "automation-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahis çetesini AVCI yakaladı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "yapay zekâ destekli AVCI projesinin kullanıldığı operasyonlarda 151 şüphelinin yakalandığını açıkladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin otomatik bir sistemin çıktısını haberin parçası yapıyor (Yasa dışı bahis çetesini AVCI yakaladı!); ancak çıktının bağımsız yargıyı ya da karşı kanıtı devre dışı bıraktığı gösterilmiyor.",
+   "alternative_explanation": "Sistem çıktısı yalnızca bilgi olarak aktarılıyor olabilir; bağımsız inceleme ya da başka kanıtın varlığı dışlanmıyor.",
+   "missing_context": [
+    "Çıktının karar ya da sonuç üzerindeki belirleyici rolünü gösteren ifade",
+    "Bağımsız doğrulama yapılıp yapılmadığı"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İçişleri Bakanlığı, 34 ilde yasadışı bahis, kara para aklama ve suç işlemek amacıyla örgüt kurma suçlarına yönelik düzenlenen operasyonlarda 100 kişinin gözaltına alındığını duyurdu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir yetkili ya da kurumu kaynak olarak anıyor (İçişleri Bakanlığı, 34 ilde yasadışı bahis, kara para aklama ve suç işlemek amacıyla örgüt kurma suçlarına yönelik düzenlenen operasyonlarda 100 kişinin gözaltına alındığını duyurdu); ancak bu statünün içerik yerine belirleyici ağırlık aldığı ya da karşı kanıtın bu yüzden göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi kurum ya da yetkilinin açıklamasını aktarmak olağan haber pratiğidir ve kaynağın konuyla ilgisi açıktır; haksız bir etki görünmüyor.",
+   "missing_context": [
+    "Kaynağın yetkinliğinin konuyla uyuşmadığını gösteren kanıt",
+    "Statünün tek gerekçe olduğunu ya da karşı kanıtın yok sayıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahse geçit yok! Batman'da 3.9 milyar TL'lik vurgun deşifre edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Batman merkezli 10 ilde yasadışı bahis operasyonu: 32 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurguyla veriyor (Yasa dışı bahse geçit yok! Batman'da 3.9 milyar TL'lik vurgun deşifre edildi); ancak metinde bu sunum farkına açıkça bağlanan bir tercih, yargı ya da karar yer almıyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati ve ajans metninin kısaltılmasıyla açıklanabilir; bir okurun ya da karar vericinin çerçeveden etkilendiğine dair veri yok.",
+   "missing_context": [
+    "Çerçevelerin karar açısından eşdeğer olduğunu açıkça kuran bir ifade",
+    "Sunum farkına bağlı bir tercih ya da yargıyı gösteren okur/karar verici verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Nevşehir merkezli 34 ilde yasa dışı bahis operasyonu! 20 milyarlık ağda 100 gözaltı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan çarpıcı bir ayrıntı var (Nevşehir merkezli 34 ilde yasa dışı bahis operasyonu! 20 milyarlık ağda 100 gözaltı); fakat metin bu ayrıntıyı bir sıklık, risk ya da seçim yargısına açıkça bağlamıyor.",
+   "alternative_explanation": "Ayrıntının öne çıkarılması haber değeri ve dikkat çekici başlık geleneğiyle açıklanabilir; çarpıtılmış bir yargı gösterilmiyor.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir tahmin ya da karar gerekçesi yapıldığını gösteren ifade",
+    "Belirgin ve az belirgin bilgiye verilen ağırlığı karşılaştıran veri"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yapay zeka destekli AVCI ile yasa dışı bahis ağına darbe: 151 gözaltı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir alandaki olumlu izlenim ya da unvan var (Yapay zeka destekli AVCI ile yasa dışı bahis ağına darbe: 151 gözaltı); ancak bunun ayrı bir alandaki olumlu yargıya açıkça bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Unvan ve olumlu ifadeler kimlik tanımı ya da protokol dilidir; başka bir alana aktarılan bir yargı yok.",
+   "missing_context": [
+    "İki ayrı alandaki yargının birbirine bağlandığını gösteren ifade",
+    "Alanların karar açısından ilgisiz olduğunu gösteren kanıt"
+   ]
+  }
+ ]
+}

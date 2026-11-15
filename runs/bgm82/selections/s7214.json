@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "causal-overclaim",
+  "emphasis-framing",
+  "word-choice",
+  "loaded-language",
+  "episodic-framing"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Kriz iddiası 'ifade ediliyor' ile kaynaksız aktarılmış.",
+  "Ronaldo'nun sözleri alıntı, kurumun tekniği değil."
+ ],
+ "selection_note": "Ayrılığı teknik direktörle krize bağlayan nedensellik ve 'bir devrin sonu' vurgusu adaylar."
+}

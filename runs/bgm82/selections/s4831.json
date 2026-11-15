@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "word-choice",
+  "emphasis-framing",
+  "fear-appeal"
+ ],
+ "selection_uncertainty": [
+  "Araç sayısı kaynaklar arasında farklı (4/5).",
+  "Yalnızca başlık ve kısa özetler var; tam metin yok."
+ ],
+ "selection_note": "'Feci kaza', 'İstanbul'u kilitleyen' gibi kurumun kendi ifadeleri yüklü dil açısından aday."
+}

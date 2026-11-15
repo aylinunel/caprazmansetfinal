@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "emphasis-framing",
+  "labeling",
+  "word-choice",
+  "spin"
+ ],
+ "selection_uncertainty": [
+  "Yalnız başlık/özet var; tam metin ve kaynak alıntı ayrımı sınırlı.",
+  "'Barış için çabalarımız' alıntı; kurum dili değil."
+ ],
+ "selection_note": "'Başkan' unvanı ve gündem maddesi seçimi farkları."
+}

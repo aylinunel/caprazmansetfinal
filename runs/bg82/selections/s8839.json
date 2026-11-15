@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "hindsight-bias",
+  "confirmation-bias",
+  "framing-effect",
+  "salience-bias"
+ ],
+ "selection_uncertainty": [
+  "Metinler kısaltılmış.",
+  "Sanık sayısı 5 ve 7 olarak farklı veriliyor."
+ ],
+ "selection_note": "İddianame kabulü 'planlı eylem ifşa oldu' gibi kesinlik çağrıştıran ifadelerle de sunuluyor."
+}

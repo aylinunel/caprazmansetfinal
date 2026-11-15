@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "emphasis-framing",
+  "word-choice",
+  "thematic-framing"
+ ],
+ "selection_uncertainty": [
+  "Bakırköy operasyonuyla bağlantının dayanağı belirsiz."
+ ],
+ "selection_note": "Bazı kurumlar başkanı adıyla, bazıları yalnızca 'çok sayıda şüpheli' ile veriyor; bazıları diğer operasyonlarla ilişkilendiriyor."
+}

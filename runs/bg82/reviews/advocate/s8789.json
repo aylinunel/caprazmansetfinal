@@ -1,0 +1,180 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "halo-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayraktar, Terim'i 'Türk futbolunun yaşayan efsanesi' …",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "\"Nazik ziyaretleri için kıymetli hocamıza teşekkür …",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Terim futbol alanındaki başarısıyla olumlu niteleniyor ve ziyareti 'nazik' diye anılıyor; ancak futboldaki olumlu izlenimin farklı ve ilgisiz bir alandaki yargıya taşındığını gösteren açık bir bağlantı metinde yok.",
+   "alternative_explanation": "Övgü ifadeleri, ev sahibinin konuğuna yönelik olağan nezaket dili olabilir.",
+   "missing_context": [
+    "Terim'in futboldaki itibarından türetilen siyasi ya da başka alana ait bir yargı",
+    "Görüşmenin içeriğine ilişkin bilgi"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ziyareti sosyal medya hesabından duyuran MHP Genel Başkan Yardımcısı Özgür Bayraktar",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ziyaret bilgisinin kaynağı bir parti yöneticisi olarak gösteriliyor; ancak statünün bir iddianın değerlendirilmesinin yerine geçtiği ya da karşı kanıtın göz ardı edildiği bir akıl yürütme yok.",
+   "alternative_explanation": "Parti genel merkezindeki bir ziyaret için parti yöneticisinin duyurusu ilgili ve olağan bir kaynaktır.",
+   "missing_context": [
+    "Statü nedeniyle sorgulanmadan kabul edilen tartışmalı bir iddia"
+   ]
+  },
+  {
+   "card_id": "messenger-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde bir iddia ya da önerinin kaynağına göre kabul veya reddedildiğini gösteren bir değerlendirme bulunmuyor.",
+   "alternative_explanation": "Haberler bir ziyaretin gerçekleştiğini aktarıyor; bir iddianın değerlendirilmesi söz konusu değil.",
+   "missing_context": [
+    "Kaynağın kimliğine göre farklı değerlendirilen bir iddia"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 05:28] MHP Genel Başkanı Bahçeli, Fatih Terim'i kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 14:15] Fatih Terim'den Devlet Bahçeli'ye sürpriz ziyaret",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı görüşme bir başlıkta Bahçeli'nin Terim'i 'kabul etmesi', diğerinde Terim'in 'sürpriz ziyareti' olarak sunuluyor; özne ve vurgu değişiyor. Ancak bu sunum farkına dayanan bir tercih ya da yargı metinde açıkça kurulmuyor.",
+   "alternative_explanation": "Kuruluşlar olayı ev sahibinin ya da konuğun bakış açısından aktarmayı yayın alışkanlığına göre seçmiş olabilir.",
+   "missing_context": [
+    "Sunum farkına bağlanan açık bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 14:15] Fatih Terim'den Devlet Bahçeli'ye sürpriz ziyaret",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklarda ziyaretin beklenmedikliği öne çıkarılıyor; ancak bu belirgin ayrıntının bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "alternative_explanation": "'Sürpriz' nitelemesi önceden duyurulmamış bir ziyareti tarif ediyor olabilir.",
+   "missing_context": [
+    "Ziyaretin önceden duyurulup duyurulmadığına dair bilgi"
+   ]
+  }
+ ]
+}
