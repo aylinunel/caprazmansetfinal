@@ -303,7 +303,8 @@ _QUOTE = re.compile(r"[“\"]([^”\"]+)[”\"]")
 def validate_explain(x: dict, event_text: str | None = None) -> list[str]:
     """Problems with a public explanation ({"noticed","why"}); empty list = publishable."""
     probs: list[str] = []
-    for k in ("noticed", "why"):
+    # "means" (what the finding means for a reader) is required from 8.2 on; older files lack it
+    for k in ("noticed", "why") + (("means",) if isinstance(x, dict) and "means" in x else ()):
         v = x.get(k) if isinstance(x, dict) else None
         if not isinstance(v, str):
             probs.append(f"{k}: missing")
@@ -341,21 +342,24 @@ def explain_tasks(run: Path, batch: int) -> list[Path]:
             p = explain_dir(run) / f"{key}.json"
             if p.exists():
                 try:
-                    if not validate_explain(json.loads(p.read_text()), texts.get(ev["event"], "")):
+                    old = json.loads(p.read_text())
+                    if "means" in old and not validate_explain(old, texts.get(ev["event"], "")):
                         continue
                 except Exception:
                     pass
             role = lambda ms, r: " ".join(m["text"] for m in ms if m.get("role") == r) or " ".join(m["text"] for m in ms)
             todo.append({
-                "key": key, "output_file": f"runs/bg/explain/{key}.json", "event_title": ev.get("title"),
+                "key": key, "output_file": str(explain_dir(run) / f"{key}.json"), "event_title": ev.get("title"),
                 "concept": f["name"], "definition": f["definition"],
                 "quotes": [{"quote": e["q"], "outlets": e.get("o", []), "source": e["src"]} for e in f["evidence"]],
                 "advocate_mechanism": role(f["mechanisms"], "advocate"),
                 "skeptic_alternative": role(f["alternatives"], "skeptic"),
                 "missing_context": f["missing"],
                 "headlines": texts.get(ev["event"], "")})
-    instr = ("Write plain Turkish for a general reader. For each item write {\"noticed\": ..., \"why\": ...} to its "
-             "output_file. noticed = what the headlines show, naming the outlets. why = why that is not proof. "
+    instr = ("Write plain Turkish for a general reader. For each item write {\"noticed\": ..., \"means\": ..., \"why\": ...} "
+             "to its output_file. noticed = what the headlines show, naming the outlets. means = what this tells a reader "
+             "about how the event reached them (what a reader of those outlets saw, or did not see, and why it matters). "
+             "why = why that is not proof. "
              "Each field is 1-2 sentences, 40-320 characters. Use only quotes given in the item (inside “…”), "
              "exactly as given. Never use the words 'bağlam gerekli', 'desteklendi', 'uncertain'.")
     paths = []
@@ -382,7 +386,8 @@ def merge_explain(bg: dict, run: Path) -> dict[str, int]:
                     continue
             except Exception:
                 continue
-            f["explain"] = {"noticed": x["noticed"].strip(), "why": x["why"].strip()}
+            f["explain"] = {"noticed": x["noticed"].strip(), "why": x["why"].strip(),
+                            **({"means": x["means"].strip()} if x.get("means") else {})}
             explained += 1
     return {"explained": explained, "live": live}
 
@@ -400,6 +405,7 @@ def main() -> None:
     p.add_argument("--pack", default="", help="data-pack version; fixes the audit sample")
     p.add_argument("--catalog", choices=["behavioural", "media"], default="behavioural",
                    help="media = the Medyanın oyunları cards (use a separate run folder, e.g. runs/bg-media)")
+    p.add_argument("--media-run", type=Path, help="pack: the media run folder whose explanations to merge into BGM")
     a = p.parse_args()
     a.run.mkdir(parents=True, exist_ok=True)
     if a.cmd == "inputs":
@@ -429,6 +435,8 @@ def main() -> None:
         core["BG"] = json.loads((a.build / "biasguard.json").read_text())
         if (a.build / "biasguard-media.json").exists():   # the Medyanın oyunları pass, when it has been run
             core["BGM"] = json.loads((a.build / "biasguard-media.json").read_text())
+            if a.media_run:
+                print(json.dumps(merge_explain(core["BGM"], a.media_run)))
         print(json.dumps(merge_explain(core["BG"], a.run)))
         import sys; sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "pipeline"))
         from capraz_pipeline.narratives import merge

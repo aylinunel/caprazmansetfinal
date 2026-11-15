@@ -180,7 +180,7 @@ function firstSentence(t) { t = String(t || "").trim(); var i = t.indexOf(". ");
 function yzText(f, review) {
   if (review && review.status === "rejected") return null;
   if (review && review.status === "corrected") return { noticed: review.note || "", why: "", editor: true };
-  if (f.explain) return { noticed: f.explain.noticed, why: f.explain.why, editor: false };
+  if (f.explain) return { noticed: f.explain.noticed, means: f.explain.means || "", why: f.explain.why, editor: false };
   var pick = function (list, role) { return (list || []).filter(function (x) { return x.role === role; })[0]; };
   var adv = pick(f.mechanisms, "advocate"), sk = pick(f.alternatives, "skeptic");
   return { noticed: firstSentence(adv && adv.text), why: firstSentence((sk || adv || {}).text), editor: false };

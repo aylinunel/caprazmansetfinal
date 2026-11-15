@@ -30,7 +30,8 @@ test("yzText", () => {
   const f = { mechanisms: [{ role: "advocate", text: "Birinci. İkinci." }], alternatives: [{ role: "skeptic", text: "Şüphe bir. Şüphe iki." }] };
   assert.equal(L.yzText(f, { status: "rejected" }), null);
   assert.deepEqual(L.yzText(f, { status: "corrected", note: "not" }), { noticed: "not", why: "", editor: true });
-  assert.deepEqual(L.yzText({ ...f, explain: { noticed: "n", why: "w" } }, null), { noticed: "n", why: "w", editor: false });
+  assert.deepEqual(L.yzText({ ...f, explain: { noticed: "n", why: "w" } }, null), { noticed: "n", means: "", why: "w", editor: false });
+  assert.equal(L.yzText({ ...f, explain: { noticed: "n", means: "m", why: "w" } }, null).means, "m");
   assert.deepEqual(L.yzText(f, null), { noticed: "Birinci.", why: "Şüphe bir.", editor: false });
 });
 test("ilanSearch", () => {

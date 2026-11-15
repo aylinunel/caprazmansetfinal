@@ -131,6 +131,9 @@ def merge(core: dict) -> None:
     wn = OUT.parent / "whatsnew-81.json"  # 8.1: 8.0 vs 8.1 findings (python -m capraz_pipeline.whatsnew)
     if wn.exists():
         core["W81"] = json.loads(wn.read_text())
+    w82 = OUT.parent / "whatsnew-82.json"  # 8.2: old AI review vs the rerun (python -m capraz_pipeline.whatsnew82)
+    if w82.exists():
+        core["W82"] = json.loads(w82.read_text())
     if OUT.exists():
         x = json.loads(OUT.read_text())
         core["N"] = {**core.get("N", {}), **x["N"]}

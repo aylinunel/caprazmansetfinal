@@ -93,6 +93,10 @@ class ExplainTests(unittest.TestCase):
     def test_validate_explain_accepts_good(self):
         self.assertEqual(validate_explain(GOOD, TEXT), [])
 
+    def test_validate_explain_checks_means_when_present(self):
+        self.assertEqual(validate_explain({**GOOD, "means": GOOD["why"]}, TEXT), [])
+        self.assertTrue(validate_explain({**GOOD, "means": "kısa"}, TEXT))
+
     def test_validate_explain_rejects_status_words(self):
         for w in ("bağlam gerekli", "desteklendi", "uncertain"):
             bad = {**GOOD, "why": f"Bu durumda {w} çünkü başlıklar farklı ve okuyucu için eksik bilgi kalıyor."}

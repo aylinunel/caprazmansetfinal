@@ -80,9 +80,11 @@ function olayFinding(f, x) {
   var qs = (f.evidence || []).slice(0, 3).map(function (q) {
     return "<li>“" + esc(q.q) + "”" + ((q.o || []).length ? " — " + q.o.map(function (o) { return esc(srcName(o)); }).join(", ") : "") + "</li>";
   }).join("");
-  return '<div class="v7-yzf"><h4>' + biasChip(f) + " " + rev7Badge(x, f) + "</h4>" +
+  /* 8.2: every finding is shown the same way; no AI/human status on public pages. */
+  return '<div class="v7-yzf"><h4>' + biasChip(f) + "</h4>" +
     (t.noticed ? "<p><b>" + (t.editor ? "Editör notu" : "Ne fark etti") + ".</b> " + esc(t.noticed) + "</p>" : "") +
     (qs ? "<ul>" + qs + "</ul>" : "") +
+    (t.means ? "<p><b>Ne anlama geliyor.</b> " + esc(t.means) + "</p>" : "") +
     (t.why ? "<p><b>Neden kesin değil.</b> " + esc(t.why) + "</p>" : "") + "</div>";
 }
 
@@ -101,8 +103,8 @@ function olayReview(e) {
     var media = g.group === "Medyanın oyunları", src = media ? m : x, h = "";
     if (g.state === "incelenemedi") h += '<p class="rv-line">AI incelemesi: incelenemedi. Bu olay için medya teknikleri henüz AI tarafından incelenmedi; bu, teknik bulunmadığı anlamına gelmez.</p>';
     else {
-      var line = rev7CountsLine(src);
-      h += '<h4 class="v7-grp-h">AI incelemesi</h4>' + (line ? '<p class="rv-line">' + esc(line) + ".</p>" : "") +
+      var n = g.findings.length;
+      h += '<h4 class="v7-grp-h">AI incelemesi</h4>' + (n ? '<p class="rv-line">' + n + " bulgu.</p>" : "") +
         g.findings.map(function (f) { return olayFinding(f, src); }).join("");
     }
     if (media && rules.length) h += '<h4 class="v7-grp-h">Kural tabanlı ölçüm</h4><p class="rv-line">Başlıklarda kural tabanlı puanlayıcının işaretlediği teknikler (AI bulgularıyla toplanmaz): ' +
