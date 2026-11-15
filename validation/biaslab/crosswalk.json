@@ -19,11 +19,11 @@
  },
  {
   "simulation_id": "ad_hominem",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "ad-hominem",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
@@ -190,20 +190,20 @@
  },
  {
   "simulation_id": "causal_overclaim",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "causal-overclaim",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
   "simulation_id": "cherry_picking",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "cherry-picking",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
@@ -244,11 +244,11 @@
  },
  {
   "simulation_id": "consequence_framing",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "consequence-framing",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
@@ -343,11 +343,11 @@
  },
  {
   "simulation_id": "emphasis_framing",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "emphasis-framing",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
@@ -361,11 +361,11 @@
  },
  {
   "simulation_id": "episodic_framing",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "episodic-framing",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
@@ -397,20 +397,20 @@
  },
  {
   "simulation_id": "false_dilemma",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "false-dilemma",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
   "simulation_id": "fear_appeal",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "fear-appeal",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
@@ -613,11 +613,11 @@
  },
  {
   "simulation_id": "labeling",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "labeling",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
@@ -667,11 +667,11 @@
  },
  {
   "simulation_id": "loaded_language",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "loaded-language",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
@@ -721,11 +721,11 @@
  },
  {
   "simulation_id": "metaphorical_framing",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "metaphorical-framing",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
@@ -1000,11 +1000,11 @@
  },
  {
   "simulation_id": "responsibility_framing",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "responsibility-framing",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
@@ -1036,11 +1036,11 @@
  },
  {
   "simulation_id": "selective_statistics",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "selective-statistics",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": [
    "the presented numerator and denominator",
    "documented relevant comparison population",
@@ -1112,11 +1112,11 @@
  },
  {
   "simulation_id": "spin",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "spin",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
-  "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "policy": "effect_context_only",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
@@ -1148,11 +1148,11 @@
  },
  {
   "simulation_id": "strawman",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "strawman",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
@@ -1220,20 +1220,20 @@
  },
  {
   "simulation_id": "thematic_framing",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "thematic-framing",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
-  "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "policy": "effect_context_only",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {
   "simulation_id": "word_choice",
-  "detector_id": null,
-  "relationship": "unsupported_in_current_taxonomy",
+  "detector_id": "word-choice",
+  "relationship": "equivalent_within_task",
   "evidence_tier": "headline_lede",
   "policy": "media_pattern_review",
-  "review_status": "needs_domain_review",
+  "review_status": "pilot",
   "required_evidence": []
  },
  {

@@ -20,10 +20,15 @@ from .adapter import Assessment, Span, normalize, verify_spans
 from .cases import PERTURBATIONS, DetectorInput, case_id, expected, family_id, split_of
 from .ledger import Ledger
 from .metrics import Row, paired_bootstrap, summarize
-from .renderer import assert_no_leak, kinds, render, variants
+from .renderer import _RENDERERS, assert_no_leak, kinds, render, variants
 from .sim import realize, scenario
 
-PILOT = ("selective_statistics", "illusory_truth_effect")
+PILOT = ("selective_statistics", "illusory_truth_effect")   # the first two concepts the lab was built on
+
+
+def lab_concepts() -> tuple[str, ...]:
+    """Every concept that has both a renderer and a card under the candidate configuration."""
+    return tuple(c for c in sorted(_RENDERERS) if configs.target(c, "candidate"))
 SCOPE = "synthetic, implementation-authored cases; not detector accuracy"
 _PRIMARY = ("end_to_end_recall", "strict_precision")
 
@@ -49,7 +54,7 @@ def build(run: Path, seed: int = 42, salt: str | None = None) -> dict:
     (run / "private").mkdir(parents=True)
     salt = salt or secrets.token_hex(16)
     inputs, private, seen = [], [], set()
-    for concept in PILOT:
+    for concept in lab_concepts():
         sources = _sources(concept, seed)
         detector_id = configs.target(concept, "candidate")
         for variant in range(variants(concept)):
@@ -82,7 +87,7 @@ def build(run: Path, seed: int = 42, salt: str | None = None) -> dict:
     (run / "private" / "cases.jsonl").write_text(dump(private), encoding="utf-8")
     (run / "private" / "salt.txt").write_text(salt + "\n", encoding="utf-8")
     manifest = {"created_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "seed": seed,
-                "cases": len(inputs), "concepts": list(PILOT), "scope": SCOPE,
+                "cases": len(inputs), "concepts": list(lab_concepts()), "scope": SCOPE,
                 "configs": {c: configs.manifest(c) for c in configs.CONFIGS}}
     (run / "private" / "manifest.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
     return manifest

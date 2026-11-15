@@ -1,0 +1,31 @@
+{
+ "id": "ad-hominem",
+ "name": "Ad hominem (Kişiye saldırı)",
+ "definition": "The text answers a claim or action by characterising the person who made it — their character, identity or past — in place of the claim itself.",
+ "necessary_conditions": [
+  "The text refers to a claim, decision or action by an identifiable person or group.",
+  "The outlet's own wording characterises that person's character, identity or past.",
+  "The characterisation stands in for an assessment of the claim: the claim's content is not addressed in the headline or lede."
+ ],
+ "detection_cues": [
+  "A personal epithet attached to the actor in the outlet's own voice.",
+  "The actor's past or identity foregrounded where the news is their statement."
+ ],
+ "non_examples": [
+  "The outlet quotes or attributes the wording to a named speaker and reports it, disputes it or rejects it; the wording is the speaker's, not the outlet's.",
+  "An opinion column, interview or signed commentary, where evaluative or argumentative language is the expected form.",
+  "Reporting a relevant fact about the person that bears directly on the claim, such as a documented conflict of interest."
+ ],
+ "mitigations": [
+  "Report the claim and the response to it before characterising the speaker."
+ ],
+ "questions": [
+  "Is the claim itself assessed anywhere in the headline or lede?"
+ ],
+ "limitations": "Metnin ne yaptığını tanımlar; niyet hakkında bir şey söylemez. Describes what the text does and says nothing about purpose. Assessed from headlines and ledes only; not validated against human-reviewed news.",
+ "source_url": "https://github.com/aylinunel/caprazmansetfinal/blob/main/validation/mesa_bias_expanded/specs/ad_hominem.json",
+ "source_accessed": "2026-11-15",
+ "provenance": "LAB-ONLY PROPOSAL, not reviewed, not in production. Operationalised from the vendored Mesa spec ad_hominem (definition and annotation boundary) and data/reference/editorial.json.",
+ "entry_type": "media_practice",
+ "review_policy": "media_pattern_review"
+}

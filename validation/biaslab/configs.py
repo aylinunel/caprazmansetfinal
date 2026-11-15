@@ -7,6 +7,7 @@ candidate = baseline plus every lab-only proposed card. Proposed cards never ent
 from __future__ import annotations
 
 import json
+from functools import lru_cache
 from pathlib import Path
 
 from biasguard.catalog import card_hash, load_cards, validate_cards
@@ -22,6 +23,7 @@ def _proposed() -> list[dict]:
     return [json.loads(p.read_text(encoding="utf-8")) for p in sorted(PROPOSED_DIR.glob("*.json"))]
 
 
+@lru_cache(maxsize=None)
 def catalog(config: str) -> list[dict]:
     if config not in CONFIGS:
         raise ValueError(f"unknown lab config: {config}")
@@ -30,11 +32,14 @@ def catalog(config: str) -> list[dict]:
 
 
 def target(simulation_id: str, config: str) -> str | None:
+    """The card a concept maps to, if the crosswalk allows it and this configuration's catalogue holds it."""
     resolved = crosswalk.resolve(simulation_id)
-    if resolved or config == "baseline":
-        return resolved
-    proposed = simulation_id.replace("_", "-")
-    return proposed if proposed in {c["id"] for c in _proposed()} else None
+    return resolved if resolved in _card_ids(config) else None
+
+
+@lru_cache(maxsize=None)
+def _card_ids(config: str) -> frozenset[str]:
+    return frozenset(c["id"] for c in catalog(config))
 
 
 def manifest(config: str) -> dict:

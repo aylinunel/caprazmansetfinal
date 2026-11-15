@@ -15,12 +15,13 @@ class ConfigsTest(unittest.TestCase):
         self.assertEqual(manifest("baseline")["proposed_card_ids"], [])
 
     def test_candidate_adds_exactly_the_proposed_cards(self):
-        self.assertEqual(manifest("candidate")["card_count"], 117)
-        self.assertEqual(manifest("candidate")["proposed_card_ids"], ["selective-statistics"])
+        self.assertEqual(manifest("candidate")["card_count"], 133)   # 116 behavioural + 17 media candidates
+        self.assertEqual(len(manifest("candidate")["proposed_card_ids"]), 17)
+        self.assertIn("selective-statistics", manifest("candidate")["proposed_card_ids"])
         self.assertNotEqual(manifest("candidate")["card_hash"], manifest("baseline")["card_hash"])
 
     def test_candidate_catalog_is_accepted_by_the_engine(self):
-        self.assertEqual(len(BiasGuard(cards=catalog("candidate")).cards), 117)
+        self.assertEqual(len(BiasGuard(cards=catalog("candidate")).cards), 133)
 
     def test_production_catalog_file_does_not_contain_the_proposal(self):
         self.assertNotIn('"selective-statistics"', (REPO / "biasguard/data/cards.json").read_text(encoding="utf-8"))

@@ -1,0 +1,30 @@
+{
+ "id": "metaphorical-framing",
+ "name": "Metaphorical framing (Mecazi çerçeveleme)",
+ "definition": "The text describes the event through a metaphor that brings its own logic — war, disease, flood, game — and so shapes how the event is understood.",
+ "necessary_conditions": [
+  "The outlet's own wording uses a metaphor for the event or the actors (savaş, kuşatma, tsunami, virüs, satranç).",
+  "The metaphor is not a fixed idiom: it assigns roles or implies a course of action (an enemy, a cure, a defence)."
+ ],
+ "detection_cues": [
+  "War or disaster vocabulary for an economic or political event.",
+  "Disease vocabulary for people or ideas."
+ ],
+ "non_examples": [
+  "The outlet quotes or attributes the wording to a named speaker and reports it, disputes it or rejects it; the wording is the speaker's, not the outlet's.",
+  "An opinion column, interview or signed commentary, where evaluative or argumentative language is the expected form.",
+  "Dead metaphors and fixed idioms that no longer carry an image, such as 'faiz indirimi' or 'zam yağmuru' used as a set phrase in every outlet."
+ ],
+ "mitigations": [
+  "Describe the event literally in the headline."
+ ],
+ "questions": [
+  "What role does the metaphor assign to whom?"
+ ],
+ "limitations": "Metnin ne yaptığını tanımlar; niyet hakkında bir şey söylemez. Describes what the text does and says nothing about purpose. Assessed from headlines and ledes only; not validated against human-reviewed news.",
+ "source_url": "https://github.com/aylinunel/caprazmansetfinal/blob/main/validation/mesa_bias_expanded/specs/metaphorical_framing.json",
+ "source_accessed": "2026-11-15",
+ "provenance": "LAB-ONLY PROPOSAL, not reviewed, not in production. Operationalised from the vendored Mesa spec metaphorical_framing (definition and annotation boundary) and data/reference/editorial.json.",
+ "entry_type": "media_practice",
+ "review_policy": "media_pattern_review"
+}

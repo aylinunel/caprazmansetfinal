@@ -1,0 +1,31 @@
+{
+ "id": "word-choice",
+ "name": "Word choice (Sözcük seçimi)",
+ "definition": "Outlets use words with different connotations for the same fact.",
+ "necessary_conditions": [
+  "Two or more outlets in the text report the same fact.",
+  "They use different words for the same action or thing in their own voice (zam / fiyat güncellemesi, operasyon / baskın, göçmen / kaçak).",
+  "The words differ in connotation, not only in register or length."
+ ],
+ "detection_cues": [
+  "Different verbs for one action across the outlet lines.",
+  "Euphemism in one outlet, plain or harsh term in another."
+ ],
+ "non_examples": [
+  "The outlet quotes or attributes the wording to a named speaker and reports it, disputes it or rejects it; the wording is the speaker's, not the outlet's.",
+  "An opinion column, interview or signed commentary, where evaluative or argumentative language is the expected form.",
+  "Synonyms with no difference in connotation, or a technical term against its everyday equivalent."
+ ],
+ "mitigations": [
+  "Show the wordings side by side."
+ ],
+ "questions": [
+  "Do the differing words describe the same fact?"
+ ],
+ "limitations": "Metnin ne yaptığını tanımlar; niyet hakkında bir şey söylemez. Describes what the text does and says nothing about purpose. Assessed from headlines and ledes only; not validated against human-reviewed news.",
+ "source_url": "https://github.com/aylinunel/caprazmansetfinal/blob/main/validation/mesa_bias_expanded/specs/word_choice.json",
+ "source_accessed": "2026-11-15",
+ "provenance": "LAB-ONLY PROPOSAL, not reviewed, not in production. Operationalised from the vendored Mesa spec word_choice (definition and annotation boundary) and data/reference/editorial.json.",
+ "entry_type": "media_practice",
+ "review_policy": "media_pattern_review"
+}

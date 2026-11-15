@@ -12,6 +12,11 @@ MESA = Path(__file__).resolve().parents[1] / "mesa_bias_expanded"
 FULL_ARTICLE = {"source_selection", "one_sided_sourcing", "commission_and_omission_of_information",
                 "contextual_omission", "size_allocation", "story_placement", "picture_selection",
                 "picture_explanation", "event_selection"}
+# Media techniques assessable from headlines and ledes. Their cards are lab candidates
+# (validation/biaslab/proposed_cards/); the crosswalk names the card each would map to.
+MEDIA_HEADLINE = ("ad_hominem causal_overclaim cherry_picking consequence_framing emphasis_framing episodic_framing "
+                  "false_dilemma fear_appeal labeling loaded_language metaphorical_framing responsibility_framing "
+                  "selective_statistics spin strawman thematic_framing word_choice").split()
 HAND = {
     "illusory_truth_effect": {"review_status": "pilot"},
     "selective_statistics": {"required_evidence": [
@@ -40,6 +45,10 @@ def build() -> list[dict]:
             rec = {"simulation_id": sid, "detector_id": None, "relationship": "unsupported_in_current_taxonomy",
                    "evidence_tier": "full_article" if sid in FULL_ARTICLE else "headline_lede",
                    "policy": "media_pattern_review", "review_status": "needs_domain_review", "required_evidence": []}
+        if sid in MEDIA_HEADLINE:
+            rec.update({"detector_id": sid.replace("_", "-"), "relationship": "equivalent_within_task",
+                        "review_status": "pilot",
+                        "policy": "effect_context_only" if sid in ("spin", "thematic_framing") else "media_pattern_review"})
         rec.update(HAND.get(sid, {}))
         out.append(rec)
     return sorted(out, key=lambda r: r["simulation_id"])

@@ -1,0 +1,31 @@
+{
+ "id": "responsibility-framing",
+ "name": "Attribution of responsibility framing (Sorumluluk atfı çerçevelemesi)",
+ "definition": "The headline's grammar settles who is responsible before the process that would establish it is complete.",
+ "necessary_conditions": [
+  "The text concerns an event whose responsibility is undetermined in the supplied material (an investigation, trial or inquiry is ongoing or not yet begun).",
+  "The outlet's own headline grammar assigns agency or blame to a named actor (active voice with the actor as subject, or 'X'in ihmali').",
+  "No attribution marker (iddia, öne sürüldü, savcılığa göre) accompanies the assignment."
+ ],
+ "detection_cues": [
+  "Active-voice blame where other outlets use passive or attributed forms.",
+  "Possessive constructions of fault: 'X'in hatası'."
+ ],
+ "non_examples": [
+  "The outlet quotes or attributes the wording to a named speaker and reports it, disputes it or rejects it; the wording is the speaker's, not the outlet's.",
+  "An opinion column, interview or signed commentary, where evaluative or argumentative language is the expected form.",
+  "Responsibility established by a final court ruling or an official finding that the text names."
+ ],
+ "mitigations": [
+  "Attribute the assignment of blame to its source."
+ ],
+ "questions": [
+  "Has any process named in the text established responsibility?"
+ ],
+ "limitations": "Metnin ne yaptığını tanımlar; niyet hakkında bir şey söylemez. Describes what the text does and says nothing about purpose. Assessed from headlines and ledes only; not validated against human-reviewed news.",
+ "source_url": "https://github.com/aylinunel/caprazmansetfinal/blob/main/validation/mesa_bias_expanded/specs/responsibility_framing.json",
+ "source_accessed": "2026-11-15",
+ "provenance": "LAB-ONLY PROPOSAL, not reviewed, not in production. Operationalised from the vendored Mesa spec responsibility_framing (definition and annotation boundary) and data/reference/editorial.json.",
+ "entry_type": "media_practice",
+ "review_policy": "media_pattern_review"
+}

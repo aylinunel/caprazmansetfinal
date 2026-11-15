@@ -1,0 +1,30 @@
+{
+ "id": "false-dilemma",
+ "name": "False dilemma (Yanlış ikilem)",
+ "definition": "The text reduces an issue to two mutually exclusive options although the supplied material shows others.",
+ "necessary_conditions": [
+  "The outlet's own wording presents exactly two options as the only ones (either/or, ya… ya…, tek yol).",
+  "The supplied text or context shows at least one further option that was proposed or available."
+ ],
+ "detection_cues": [
+  "'Ya… ya da…' headlines.",
+  "'Tek çare', 'başka yolu yok' in the outlet's voice."
+ ],
+ "non_examples": [
+  "The outlet quotes or attributes the wording to a named speaker and reports it, disputes it or rejects it; the wording is the speaker's, not the outlet's.",
+  "An opinion column, interview or signed commentary, where evaluative or argumentative language is the expected form.",
+  "A genuinely binary matter, such as a yes/no vote or a court's guilty/not-guilty ruling."
+ ],
+ "mitigations": [
+  "Name the other options that the supplied material reports."
+ ],
+ "questions": [
+  "Which options does the supplied material mention that the headline omits?"
+ ],
+ "limitations": "Metnin ne yaptığını tanımlar; niyet hakkında bir şey söylemez. Describes what the text does and says nothing about purpose. Assessed from headlines and ledes only; not validated against human-reviewed news.",
+ "source_url": "https://github.com/aylinunel/caprazmansetfinal/blob/main/validation/mesa_bias_expanded/specs/false_dilemma.json",
+ "source_accessed": "2026-11-15",
+ "provenance": "LAB-ONLY PROPOSAL, not reviewed, not in production. Operationalised from the vendored Mesa spec false_dilemma (definition and annotation boundary) and data/reference/editorial.json.",
+ "entry_type": "media_practice",
+ "review_policy": "media_pattern_review"
+}

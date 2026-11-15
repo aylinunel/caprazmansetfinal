@@ -1,0 +1,31 @@
+{
+ "id": "consequence-framing",
+ "name": "Consequence framing (Sonuç çerçevelemesi)",
+ "definition": "The headline leads with an expected or possible effect of an event in place of the event itself.",
+ "necessary_conditions": [
+  "An identifiable event (a decision, statement, incident) is the news.",
+  "The headline's main clause states a consequence or expected effect, and the event appears only in the lede or not at all.",
+  "The consequence is a projection, not something reported as having already happened."
+ ],
+ "detection_cues": [
+  "Future-tense or conditional headline over a past-tense lede.",
+  "'What it will mean for…' ahead of what was decided."
+ ],
+ "non_examples": [
+  "The outlet quotes or attributes the wording to a named speaker and reports it, disputes it or rejects it; the wording is the speaker's, not the outlet's.",
+  "An opinion column, interview or signed commentary, where evaluative or argumentative language is the expected form.",
+  "A headline reporting a consequence that has in fact occurred and is the news itself."
+ ],
+ "mitigations": [
+  "Lead with the event; attribute the projection."
+ ],
+ "questions": [
+  "Is the headlined effect something that happened or something expected?"
+ ],
+ "limitations": "Metnin ne yaptığını tanımlar; niyet hakkında bir şey söylemez. Describes what the text does and says nothing about purpose. Assessed from headlines and ledes only; not validated against human-reviewed news.",
+ "source_url": "https://github.com/aylinunel/caprazmansetfinal/blob/main/validation/mesa_bias_expanded/specs/consequence_framing.json",
+ "source_accessed": "2026-11-15",
+ "provenance": "LAB-ONLY PROPOSAL, not reviewed, not in production. Operationalised from the vendored Mesa spec consequence_framing (definition and annotation boundary) and data/reference/editorial.json.",
+ "entry_type": "media_practice",
+ "review_policy": "media_pattern_review"
+}

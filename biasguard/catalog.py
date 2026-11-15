@@ -14,8 +14,9 @@ CARD_REQUIRED_FIELDS = {
     "non_examples", "mitigations", "questions", "limitations", "source_url",
     "source_accessed", "provenance",
 }
-ENTRY_TYPES = {"bias", "heuristic", "memory_learning_effect", "ai_interaction_concept", "other"}
-REVIEW_POLICIES = {"bias_error_review", "effect_context_only", "requires_behavioral_evidence"}
+# media_practice: what a text does (a "Medyanın oyunları" card), as opposed to a reasoning pattern.
+ENTRY_TYPES = {"bias", "heuristic", "memory_learning_effect", "ai_interaction_concept", "other", "media_practice"}
+REVIEW_POLICIES = {"bias_error_review", "effect_context_only", "requires_behavioral_evidence", "media_pattern_review"}
 
 
 class CatalogError(ValueError):
@@ -72,6 +73,12 @@ def validate_cards(cards: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
 
 def load_cards() -> list[dict[str, Any]]:
     return validate_cards(_resource_json("cards.json"))
+
+
+def load_media_cards() -> list[dict[str, Any]]:
+    """Media-technique cards, kept apart from the behavioural catalogue. Empty until cards pass the lab."""
+    cards = _resource_json("media_cards.json")
+    return validate_cards(cards) if cards else []
 
 
 def load_source_index() -> list[dict[str, Any]]:

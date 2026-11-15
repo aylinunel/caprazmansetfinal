@@ -27,10 +27,10 @@
   "Does the claim in the headline reach beyond that population?",
   "What does the same count give against the documented comparison population?"
  ],
- "limitations": "Describes what the text does; it says nothing about purpose. Requires comparison material in the supplied context; with headline and lede alone it is usually not assessable. Not validated against human-reviewed news.",
+ "limitations": "Metnin ne yaptığını tanımlar; niyet hakkında bir şey söylemez. Describes what the text does and says nothing about purpose. Assessed from headlines and ledes only; not validated against human-reviewed news. Requires comparison material in the supplied context.",
  "source_url": "https://github.com/aylinunel/caprazmansetfinal/blob/main/validation/mesa_bias_expanded/specs/selective_statistics.json",
  "source_accessed": "2026-11-14",
  "provenance": "LAB-ONLY PROPOSAL, not reviewed, not in production. Operationalised from the vendored Mesa spec selective_statistics and the integration guide's crosswalk example.",
- "entry_type": "other",
- "review_policy": "bias_error_review"
+ "entry_type": "media_practice",
+ "review_policy": "media_pattern_review"
 }

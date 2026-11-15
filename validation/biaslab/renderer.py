@@ -11,6 +11,7 @@ import json
 import re
 
 from .cases import PERTURBATIONS, DetectorInput
+from .media_templates import T as _MEDIA
 from .sim import Realized
 
 
@@ -103,12 +104,33 @@ def _illusory_truth_effect(realized: Realized, kind: str, variant: int) -> Detec
     return DetectorInput("\n".join(lines), f"Olay: {v['event']}")
 
 
+def _media(realized: Realized, kind: str, variant: int) -> DetectorInput:
+    """Authored case for a media-technique concept; the Mesa mechanism only decides which kind applies."""
+    v = _MEDIA[realized.concept][variant]
+    context = f"Olay: {v['event']}" + (f"\n{v['ctx']}" if v.get("ctx") else "")
+    if kind == "positive":
+        a, b = v["pos"], v.get("b_pos")
+    elif kind == "quoted_control":
+        headline, _, _ = v["pos"].partition(" — ")
+        _, _, lede = v["plain"].partition(" — ")
+        a, b = f'{v["speaker"]}: "{headline}" — Kurum bu sözleri aktardı. {lede}', v.get("b_plain")
+    else:
+        a, b = v["plain"], v.get("b_plain")
+    lines = [f"[Kurum A · 09:00] {a}"] + ([f"[Kurum B · 09:20] {b}"] if b else [])
+    return DetectorInput("\n".join(lines), context)
+
+
+_MEDIA_KINDS = ("positive", "boundary_control", "quoted_control")
+
 _RENDERERS = {
     "selective_statistics": (_selective_statistics, len(_SS),
                              ("positive", "inactive_control", "boundary_control", "missing_context", "quoted_control")),
     "illusory_truth_effect": (_illusory_truth_effect, len(_IT),
                               ("positive", "boundary_control", "quoted_control")),
 }
+
+
+_RENDERERS.update({concept: (_media, len(vs), _MEDIA_KINDS) for concept, vs in _MEDIA.items()})
 
 
 def variants(concept: str) -> int:

@@ -1,5 +1,6 @@
 import json
 import re
+import shutil
 import tempfile
 import unittest
 from pathlib import Path
@@ -17,10 +18,19 @@ def jsonl(path):
 
 
 class RunTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.master = tempfile.TemporaryDirectory()
+        build(Path(cls.master.name) / "lab", seed=42, salt="fixed-salt")
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.master.cleanup()
+
     def setUp(self):
         self.dir = tempfile.TemporaryDirectory()
         self.run = Path(self.dir.name) / "lab"
-        build(self.run, seed=42, salt="fixed-salt")
+        shutil.copytree(Path(self.master.name) / "lab", self.run)   # each test gets its own copy of one build
         self.inputs = jsonl(self.run / "inputs.jsonl")
         self.private = {r["case_id"]: r for r in jsonl(self.run / "private" / "cases.jsonl")}
 
