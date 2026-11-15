@@ -1,0 +1,238 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mahkeme kararıyla CHP genel başkanlığına getirilen Kemal Kılıçdaroğlu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "CHP Genel Başkanı Kemal Kılıçdaroğlu, kız kardeşini kaybeden MHP Genel Başkanı Devlet Bahçeli'ye taziye ziyaretinde bulundu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Evrensel Kılıçdaroğlu'nu kendi sesinde 'mahkeme kararıyla CHP genel başkanlığına getirilen' diye tanımlıyor; Star aynı kişiyi yalnızca 'CHP Genel Başkanı' diye anıyor. Evrensel'in etiketi görevin kaynağını vurgulayarak meşruiyete dair bir değerlendirme yüklüyor.",
+   "alternative_explanation": "İfade olgusal bir bilgi (göreve geliş biçimi) olarak da okunabilir; etiketin değerlendirme mi bilgi mi olduğu tartışmalı.",
+   "missing_context": [
+    "Göreve gelişe ilişkin mahkeme kararının içeriği"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[birgun · 13:38] Özgür Özel'den Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 13:23] Kemal Kılıçdaroğlu'ndan Devlet Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AK Parti, CHP ve Yeni Parti'den Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Üç ziyaretin yapıldığı aynı olguyu BirGün yalnızca Özel'in, Yeni Şafak yalnızca Kılıçdaroğlu'nun ziyaretiyle, Hürriyet üçünü birden vererek başlığa taşıyor; başlıklar 'kim ziyaret etti' boyutunda ayrışıyor.",
+   "alternative_explanation": "Ziyaretler farklı saatlerde yapılmış ve kurumlar ilk öğrendikleri ziyareti haberleştirmiş olabilir.",
+   "missing_context": [
+    "Ziyaretlerin saatleri",
+    "Kurumların sonradan başlık güncelleyip güncellemediği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ablası Serpil Bahçeli’yi kaybeden",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "kız kardeşi Serpil Bahçeli’yi kaybeden",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Ablası' ile 'kız kardeşi', 'MHP lideri' ile 'MHP Genel Başkanı' gibi farklar anlam ya da üslup düzeyinde; çağrışım farkı taşımıyor.",
+   "alternative_explanation": "Akrabalık ifadesi farkı bilgi düzeyinde; değerlendirme içermiyor.",
+   "missing_context": [
+    "Aynı olgu için çağrışım bakımından ayrışan bir sözcük"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kılıçdaroğlu'ndan Bahçeli'ye taziye ziyareti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurum kendi sözleriyle konuyu birbirini dışlayan iki seçeneğe indirgemiyor.",
+   "alternative_explanation": "Başlıklar bilgi aktarımı ya da soru biçiminde; ikili bir seçim dayatılmıyor.",
+   "missing_context": [
+    "Kurumun kendi sesinde 'ya… ya…' türü bir ikilem kuran ifade"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Devlet Bahçeli'ye taziye ziyareti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tekrarlanan ya da yapısal bir sorunu tek bir vaka üzerinden anlatmıyor; haber tekil, zamanı belli bir olay.",
+   "alternative_explanation": "Olayın kendisi tekil bir gelişme olduğundan tek vaka anlatımı yapısal bir örüntünün gizlenmesi anlamına gelmiyor.",
+   "missing_context": [
+    "Olayın tekrarlanan ya da yapısal bir sorunun parçası olduğunu gösteren bağlam"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mahkeme kararıyla CHP genel başkanlığına getirilen Kemal Kılıçdaroğlu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Evrensel'de tek bir belirgin tercih (etiket) var; aynı yönü gösteren ikinci bir sunum tercihi (seçilmiş rakam, yüklü sözcük) başlık ve spotta görülmüyor.",
+   "alternative_explanation": "Spotun geri kalanı ziyaretin süresi gibi olgusal bilgiler veriyor.",
+   "missing_context": [
+    "Evrensel haberinin tam metni"
+   ]
+  }
+ ]
+}

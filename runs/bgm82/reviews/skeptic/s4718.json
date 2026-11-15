@@ -1,0 +1,234 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Maratonu nedeniyle bazı yollar trafiğe kapatılacak",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da yarın bu yollar kapatılacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Haberin kendisi yolların kapatılması kararı; başlıklar bu kararı veriyor. 'Kapatılacak' bir öngörü değil, açıklanmış resmi bir trafik düzenlemesi.",
+   "alternative_explanation": "Kapanış kararı sürücüler için olayın ta kendisi.",
+   "missing_context": [
+    "Olayın maraton mu kapanış kararı mı olarak tanımlandığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Maratonu nedeniyle kapatılacak yollar ve alternatif rotalar belli oldu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 00:28] İstanbul Maratonu nedeniyle bazı yollar trafiğe kapatılacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıkların neredeyse tamamı aynı boyutu (yol kapanışları ve alternatif güzergâhlar) öne çıkarıyor; katılımcı sayısı gibi farklı boyutlar yalnız spotlarda kalıyor.",
+   "alternative_explanation": "Hizmet haberinde ortak odak doğal.",
+   "missing_context": [
+    "Maratonun spor boyutunu başlığa taşıyan bir haber"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yarın Boğaziçi Köprüsü, Avrasya Tüneli ve Galata Köprüsü başta olmak üzere",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü saat 03.00'ten, Avrasya Tüneli ve Galata Köprüsü ise 06.00'dan itibaren",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı köprü Yeni Yaşam'da kendi sesinde 'Boğaziçi Köprüsü', Star'da resmi adıyla '15 Temmuz Şehitler Köprüsü' diye anılıyor; iki ad farklı siyasi çağrışımlar taşıyor.",
+   "alternative_explanation": "'Boğaziçi Köprüsü' köprünün eski ve gündelik dilde hâlâ yaygın adı; fark alışkanlıktan kaynaklanabilir.",
+   "missing_context": [
+    "Yeni Yaşam'ın köprüyü diğer haberlerinde nasıl adlandırdığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul'da maraton alarmı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 00:28] İstanbul Maratonu nedeniyle bazı yollar trafiğe kapatılacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Star yol kapanışlarını kendi sesinde 'maraton alarmı' diye sunuyor; TRT Haber aynı olguyu bu ifade olmadan veriyor.",
+   "alternative_explanation": "'Alarm' sürücüleri uyarma amaçlı bir başlık kalıbı olarak da okunabilir.",
+   "missing_context": [
+    "Kapanışların trafiğe gerçek etkisi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İşte alternatif güzergahlar",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar ikilem kurmuyor; tersine alternatif güzergâhlar sunuyor.",
+   "alternative_explanation": "Hizmet haberi seçenekleri çoğaltıyor.",
+   "missing_context": [
+    "Kurumun kendi sesinde ikili bir seçim kuran ifade"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye İş Bankası 48. İstanbul Maratonu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "'48.' sıra sayısı organizasyonun adının parçası; başlık ya da spot olayı bir eğilim, seri karşılaştırması ya da politika süreci içine yerleştirmiyor.",
+   "alternative_explanation": "Sıra sayısı tanımlayıcı bir bilgi.",
+   "missing_context": [
+    "Önceki maratonlarla karşılaştırma ya da kent ulaşım politikasına atıf"
+   ]
+  }
+ ]
+}

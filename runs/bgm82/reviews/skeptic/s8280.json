@@ -1,0 +1,248 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci'den Sergen Yalçın'ı pişman ettirecek performans",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci'den Sergen Yalçın'a olay gönderme",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İrfan Can'ın Çorum'daki Gol Sevinci Sergen Yalçın'a Gönderme Olarak Yorumlandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Son Dakika ve Haberler 'pişman ettirecek performans', Yeni Şafak 'olay gönderme' gibi kendi seslerinde değerlendirici ifadeler kullanıyor; Onedio aynı olguyu 'gönderme olarak yorumlandı' diyerek bu nitelemeler olmadan veriyor.",
+   "alternative_explanation": "'Olay' spor medyasında gündem olan durumlar için kalıplaşmış bir sıfat olabilir.",
+   "missing_context": [
+    "Gol sevincinin videosu ve oyuncunun tam açıklaması"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci'den şampiyonluk sözleri!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci'den Milli Takım açıklaması: Davet gelmeyince üzüldüm",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci'den Sergen Yalçın açıklaması! \"Hiçbir alakası yok\"",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Oyuncunun maç sonu açıklamasını Cumhuriyet şampiyonluk sözleriyle, Habertürk kadroya çağrılmamanın üzüntüsüyle, Star göndermeyi reddetmesiyle başlığa taşıyor; aynı açıklamanın farklı boyutları öne çıkıyor.",
+   "alternative_explanation": "Oyuncu birden fazla konuda konuşmuş olabilir; her kurum açıklamanın farklı bir bölümünü aktarıyor.",
+   "missing_context": [
+    "Açıklamanın tam metni ve konuların sırası"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci Sergen Yalçın'la dalga mı geçti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İrfan Can'ın Çorum'daki Gol Sevinci Sergen Yalçın'a Gönderme Olarak Yorumlandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı hareket Karar'da 'dalga mı geçti', Onedio'da 'gönderme olarak yorumlandı' diye anılıyor; 'dalga geçmek' alay çağrışımı taşıyor, 'gönderme' daha nötr.",
+   "alternative_explanation": "Karar'ın ifadesi soru biçiminde; kesin bir yargı değil, kamuoyundaki yorumu aktarma olabilir.",
+   "missing_context": [
+    "Hareketin kendisine dair görüntü"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci'den Sergen Yalçın'ı pişman ettirecek performans",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Pişman ettirecek' bir öngörü ya da nitelendirme; gerçekleşmiş bir nedensellik iddiası değil. 'Davet gelmeyince üzüldüm' ise oyuncunun kendi sözü, kurumun tekniği sayılmaz.",
+   "alternative_explanation": "İfade değerlendirici bir üslup; nedensel bir aşırı iddia olarak okunması zorlama olur.",
+   "missing_context": [
+    "Bir sonucun bir nedene bağlandığı kurumun kendi sesindeki açık ifade"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci’den Sergen Yalçın’a olay gönderme! A Milli Takım kadrosuna alınmamıştı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "A Milli Takım teknik direktörü Sergen Yalçın'a gönderme yapmadığını açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sözcü 'olay gönderme' nitelemesi ile kadroya alınmama bilgisini yan yana koyuyor; Haber7 aynı olayı oyuncunun göndermeyi reddettiği açıklamayla veriyor. Ancak kadro bilgisi olayın anlaşılması için gerekli bağlam olabilir, iki tercihin aynı değerlendirme yönünü gösterdiği kesin değil.",
+   "alternative_explanation": "Kadroya alınmama bilgisi göndermenin neden tartışıldığını açıklayan zorunlu bağlam; yönlendirme değil.",
+   "missing_context": [
+    "Sözcü haberinin spotunda oyuncunun yalanlamasına yer verilip verilmediği"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gol sevinci gündem oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olayda sorumluluğu belirlenecek bir soruşturma ya da yargı süreci yok; başlıklar kimseye kusur yüklemiyor.",
+   "alternative_explanation": "Haber bir duyuru ya da sonuç bildirimi; sorumluluk tartışması içermiyor.",
+   "missing_context": [
+    "Sorumluluğun belirsiz olduğu bir soruşturma ya da inceleme süreci"
+   ]
+  }
+ ]
+}

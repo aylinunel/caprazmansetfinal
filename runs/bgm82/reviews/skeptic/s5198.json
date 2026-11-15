@@ -1,0 +1,249 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[karar · 10:05] Kasım ayı kira zam oranı belli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TÜİK'in ekim ayı enflasyon verilerini duyurmasıyla birlikte, kasım ayında uygulanabilecek kira artış oranının üst sınırı da netleşti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar kira artış tavanının belirlendiğini, yani olayın kendisini veriyor; bu gerçekleşmiş bir sonuç, öngörü değil. Açıklama öncesi 'ne kadar zam gelecek?' soruları ise henüz gerçekleşmemiş olayı soruyor.",
+   "alternative_explanation": "Kira tavanı yasal olarak enflasyon verisine bağlı olduğundan haberin kendisi tavanın açıklanması sayılabilir.",
+   "missing_context": [
+    "Olayın TÜİK açıklaması mı kira tavanı mı olarak tanımlandığına dair editoryal çerçeve"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Milyonlarca kişi açıklanmasını bekliyordu! Kasım ayı kira artış oranları belli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ekim Ayı Enflasyonu Açıklandı, Kasım Ayı Kira Zam Oranı Belli Oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ev sahibi ve kiracılar dikkat! 2026 Kasım ayı kira artış oranı belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı oranın belirlenmesi olgusunu Akit bekleyen kitleyi, Onedio enflasyon açıklamasını, A Haber ev sahibi ve kiracıları öne çıkararak veriyor; ancak farklar kazanan–kaybeden ya da maliyet–fayda gibi ayrışan boyutlardan çok hitap ve kaynak vurgusunda.",
+   "alternative_explanation": "Başlıkların çoğu hizmet haberciliği kalıbında; boyut farkı yerine okur yönlendirme formülleri kullanılıyor olabilir.",
+   "missing_context": [
+    "Kiracı ve ev sahibi açısından farklı sonuçları öne çıkaran başlıklar olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Milyonlarca kişi açıklanmasını bekliyordu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "KASIM AYI KİRA ARTIŞ ORANI SON DURUM!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Başlıklarda vurgu ve ünlem var, ancak 'skandal', 'müjde' gibi olayı olumlu ya da olumsuz değerlendiren sözcükler kurumların kendi sesinde yer almıyor.",
+   "alternative_explanation": "Ünlem ve 'son durum' gibi kalıplar değerlendirme değil dikkat çekme formülü.",
+   "missing_context": [
+    "Oranı değerlendiren (ör. 'kiracıya darbe', 'müjde') bir ifade"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 10:01] Son dakika... Kasım ayı kira zam oranı belli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[mynet · 10:01] Kasım kira artış oranı belli oldu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kasım ayı kira zammı ne kadar, yüzde kaç olacak?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar 'kira zam oranı', bazıları 'kira artış oranı' diyor; 'zam' gündelik ve daha yüklü, 'artış oranı' resmi terim. Ancak Yeni Şafak gibi kurumlar iki ifadeyi aynı başlıkta birlikte kullanıyor; bu, farkın çağrışımdan çok üslup olabileceğini gösteriyor.",
+   "alternative_explanation": "İki sözcük arama motoru için birlikte kullanılan eşanlamlılar olabilir; tutarlı bir çağrışım ayrımı metinden kurulamıyor.",
+   "missing_context": [
+    "Kurumların bu iki terimi süreklilikle hangi bağlamda kullandığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kasım ayı kira zam oranı ne zaman açıklanacak?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurum kendi sözleriyle konuyu birbirini dışlayan iki seçeneğe indirgemiyor.",
+   "alternative_explanation": "Başlıklar bilgi aktarımı ya da soru biçiminde; ikili bir seçim dayatılmıyor.",
+   "missing_context": [
+    "Kurumun kendi sesinde 'ya… ya…' türü bir ikilem kuran ifade"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ekim ayı enflasyon verilerinin açıklanmasıyla kasım ayında konut ve iş yerlerine uygulanabilecek kira artış tavanı yüzde 31,23 olarak belirlendi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kira artışında esas alınacak oran, TÜİK tarafından açıklanacak enflasyon verileri doğrultusunda netleşecek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Enflasyon verisi ile kira tavanı arasındaki bağ metinde zaman sırasına değil, oranın TÜFE'ye göre hesaplandığı kuralına dayandırılıyor; bu yalnızca birliktelik değil.",
+   "alternative_explanation": "Kira tavanı yasal düzenlemeyle TÜFE ortalamasına bağlı olduğundan nedensellik ifadesi yerinde.",
+   "missing_context": [
+    "Yasal düzenlemenin tam metni"
+   ]
+  }
+ ]
+}

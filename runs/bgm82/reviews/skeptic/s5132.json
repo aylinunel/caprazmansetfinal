@@ -1,0 +1,165 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 12:35] Galatasaray-Stuttgart maçına İngiliz hakem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 12:49] Galatasaray-Stuttgart maçını Chris Kavanagh yönetecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar aynı olguyu (hakem ataması) hakemin uyruğu ya da adıyla veriyor; bu, farklı boyutların değil aynı bilginin farklı ayrıntılarının öne çıkarılması.",
+   "alternative_explanation": "Uyruk ve ad kimlik bilgileri; karşıt boyutlar söz konusu değil.",
+   "missing_context": [
+    "Atamanın kulüp açısından anlamına dair bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray - Stuttgart maçında İngiliz hakem düdük çalacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray-Stuttgart maçını İngiliz hakem Kavanagh yönetecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Düdük çalacak' ile 'yönetecek' aynı eylem için spor dilinde kalıplaşmış eşdeğer ifadeler.",
+   "alternative_explanation": "Fark üslup düzeyinde.",
+   "missing_context": [
+    "Çağrışım bakımından ayrışan bir sözcük çifti"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray-Stuttgart maçına İngiliz hakem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray Stuttgart maçının hakemi Chris Kavanagh oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hakem 'İngiliz hakem' ya da adıyla anılıyor; etiketler tanımlama işlevinde, değerlendirme taşımıyor.",
+   "alternative_explanation": "Uyruk bildirimi standart bir tanıtım.",
+   "missing_context": [
+    "Hakemi değerlendiren bir nitelendirme"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "UEFA Şampiyonlar Ligi'nin 4. haftasında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tekrarlanan ya da yapısal bir sorunu tek bir vaka üzerinden anlatmıyor; haber tekil, zamanı belli bir olay.",
+   "alternative_explanation": "Olayın kendisi tekil bir gelişme olduğundan tek vaka anlatımı yapısal bir örüntünün gizlenmesi anlamına gelmiyor.",
+   "missing_context": [
+    "Olayın tekrarlanan ya da yapısal bir sorunun parçası olduğunu gösteren bağlam"
+   ]
+  }
+ ]
+}
