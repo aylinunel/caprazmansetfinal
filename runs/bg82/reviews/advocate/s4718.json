@@ -1,0 +1,160 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 00:10] İstanbul'da maraton alarmı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 00:28] İstanbul Maratonu nedeniyle bazı yollar trafiğe kapatılacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı yol kapatma kararı bir kurumda 'alarm', diğerinde yalın bilgi olarak veriliyor; olgu aynı, sunum farklı, ancak bir tercih bu farka bağlanmıyor.",
+   "alternative_explanation": "Farklı başlıklar, aynı olgunun farklı ayrıntılarını farklı saatlerde ve farklı okur ihtiyaçlarına göre vermekten kaynaklanabilir; bir tercih veya yargının çerçeveye bağlandığı gösterilmiyor.",
+   "missing_context": [
+    "Sunum farkının bir tercih veya yargıyı değiştirdiğini gösteren açık ifade",
+    "Okur tepkisine veya karar davranışına dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[birgun · 13:08] Gece 3’te başlıyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 12:50] İstanbul'da yarın bazı yollar trafiğe kapatılacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kapatmanın başlangıç saatini öne çıkarırken diğeri genel bilgi veriyor; karşılaştırmalı fark var ama bir yargıya bağlanmıyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı, olayın haber değeri taşıyan gerçek bir unsuru olabilir; bunun bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Canlı ayrıntının bir yargı veya seçime açıkça bağlandığını gösteren ifade",
+    "Daha az belirgin bilginin göz ardı edildiğine dair doğrudan anlatım"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda olumsuz sözcükler bulunsa da metin, olumsuz kanıta olumlu ve karşılaştırılabilir kanıttan orantısız ağırlık verildiğini belgelemiyor.",
+   "alternative_explanation": "Olumsuz ifade, olayın kendisinin olumsuz niteliğini (kaza, sakatlık, tehdit) yansıtıyor olabilir; bu orantılı bir haber dilidir.",
+   "missing_context": [
+    "Aynı kurumun benzer olumlu ve olumsuz olayları nasıl ağırlıklandırdığına dair karşılaştırmalı kayıt",
+    "Olumsuz vurgunun bir değerlendirmeyi veya kararı nasıl etkilediğine dair açık ifade"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye İş Bankası 48. İstanbul Maratonu, 1 Kasım Pazar günü 45 bini aşkın katılımcıyla koşulacak.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 12:55] İstanbul'da yarın bu yollar kapatılacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "context",
+     "quote": "Olayı vermeyen etkin kurumlar: akit, aydinlik, cnnturk, diken, milligazete, ntv, takvim",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum maratonun kendisine ve katılımcı sayısına yer verirken diğeri yalnızca yol kapanmalarını veriyor, bazı etkin kurumlar olayı vermiyor; dikkat farkı var, sonuçla bağı gösterilmiyor.",
+   "alternative_explanation": "Kurumlar arasındaki dikkat farkı, yayın saati, okur ilgisi veya editoryal kapasite gibi meşru nedenlerden kaynaklanabilir.",
+   "missing_context": [
+    "Dikkat farkını belirli bir sonuca veya eyleme bağlayan kanıt",
+    "Kurumların editoryal karar kayıtları"
+   ]
+  }
+ ]
+}

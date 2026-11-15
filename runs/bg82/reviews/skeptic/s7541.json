@@ -1,0 +1,189 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında karaya oturan gemide can pazarı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında gemi karaya oturdu. 13 personel tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olguyu bildiren kurumlar farklı sözcük/vurgu kullanıyor (eşdeğerlik karşılaştırmalı başlıklarda gözleniyor); ancak bu sunum farkına bağlanan bir tercih veya yargı metinde yok.",
+   "alternative_explanation": "Başlık farkları üslup, yayın saati, hedef kitle ya da farklı kaynak açıklamalarından kaynaklanabilir; bir karar vericinin çerçeveye dayanarak yargı değiştirdiği gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okur veya karar verici yargısını değiştirdiğine dair karşılaştırmalı veri",
+    "Haber gövdelerinin tam metni"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında korkutan kaza",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı öne çıkarıyor; ancak metin bu ayrıntıyı bir yargı veya seçime açıkça bağlamıyor ve haksız etkiyi göstermiyor.",
+   "alternative_explanation": "Çarpıcı ayrıntıların öne çıkarılması haber değeri ve okur ilgisiyle açıklanabilir; tek bir metin ağırlıklandırma hatasını kanıtlamaz.",
+   "missing_context": [
+    "Kurumların daha az çarpıcı bilgileri nasıl ağırlıklandırdığına dair karşılaştırmalı kayıt",
+    "Editoryal karar süreçleri"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz bir olay haberleştiriliyor; ancak metinde olumsuz kanıta karşılaştırılabilir olumlu kanıttan orantısız ağırlık verildiğini gösteren bir belge yok.",
+   "alternative_explanation": "Olumsuz olayların haberleştirilmesi olayın doğasından kaynaklanır ve riskle orantılı bir tepki olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve nasıl ele alındığı",
+    "Tekrarlayan davranışa dair kayıt"
+   ]
+  },
+  {
+   "card_id": "illusion-of-transparency",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir kişinin iç durumunun bir kitlece algılanabildiğine inandığına dair açık bir atıf yok.",
+   "alternative_explanation": "Haberler olayları aktarıyor; kişilerin iç durumlarına ilişkin inanç atfı yapılmıyor.",
+   "missing_context": [
+    "İlgili kişinin açıklamaları",
+    "Gözlemci-tahmin uyumsuzluğuna dair veri"
+   ]
+  },
+  {
+   "card_id": "incentivization",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde belirli bir eyleme bağlı bir ödül veya ceza açıkça tanımlanmıyor.",
+   "alternative_explanation": "Olay haberi bir teşvik yapısı içermiyor.",
+   "missing_context": [
+    "Teşvik veya yaptırıma ilişkin bilgi",
+    "Karşılaştırmalı veya boylamsal davranış verisi"
+   ]
+  },
+  {
+   "card_id": "mental-accounting",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir tahsis, harcama veya risk kararı ve eşdeğer kaynakların farklı zihinsel kategorilerde değerlendirildiği gösterilmiyor.",
+   "alternative_explanation": "Olay haberi bir kaynak tahsisi kararı içermiyor.",
+   "missing_context": [
+    "Kaynak tahsisi kararına ilişkin bilgi"
+   ]
+  }
+ ]
+}

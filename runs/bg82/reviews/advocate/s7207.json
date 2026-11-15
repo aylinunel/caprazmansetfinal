@@ -1,0 +1,137 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 13:14] Süper Lig'de haftanın hakemleri açıklandı! Zorlu maça sürpriz atama",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 12:12] Süper Lig'de 11. haftanın hakemleri belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı hakem atamaları bir kurumda 'sürpriz atama' vurgusuyla, diğerinde yalın duyuru olarak veriliyor; olgu aynı, sunum farklı, ancak bir tercih bu farka bağlanmıyor.",
+   "alternative_explanation": "Farklı başlıklar, aynı olgunun farklı ayrıntılarını farklı saatlerde ve farklı okur ihtiyaçlarına göre vermekten kaynaklanabilir; bir tercih veya yargının çerçeveye bağlandığı gösterilmiyor.",
+   "missing_context": [
+    "Sunum farkının bir tercih veya yargıyı değiştirdiğini gösteren açık ifade",
+    "Okur tepkisine veya karar davranışına dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Zirveyi yakından ilgilendiren Galatasaray - Amed SF maçında Halil Umut Meler görev yapacak.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 12:15] Süper Lig'de 11. haftanın hakemleri belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum tek bir maçın hakemini öne çıkarırken diğeri genel duyuru yapıyor; belirgin ayrıntı karşılaştırmalı olarak gözleniyor ama bir yargıya bağlanmıyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı, olayın haber değeri taşıyan gerçek bir unsuru olabilir; bunun bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Canlı ayrıntının bir yargı veya seçime açıkça bağlandığını gösteren ifade",
+    "Daha az belirgin bilginin göz ardı edildiğine dair doğrudan anlatım"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 09:12] Süper Lig'de 11'inci hafta heyecanı başlıyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 12:13] Süper Lig'de 11. haftanın hakemleri açıklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "context",
+     "quote": "Olayı vermeyen etkin kurumlar: aydinlik, cnnturk, diken, hurriyet, karar, milligazete, mynet",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların bir kısmı fikstüre, bir kısmı hakem atamalarına odaklanıyor; bazı etkin kurumlar olayı vermiyor. Dikkat farkı gözleniyor, sonuçla bağı gösterilmiyor.",
+   "alternative_explanation": "Kurumlar arasındaki dikkat farkı, yayın saati, okur ilgisi veya editoryal kapasite gibi meşru nedenlerden kaynaklanabilir.",
+   "missing_context": [
+    "Dikkat farkını belirli bir sonuca veya eyleme bağlayan kanıt",
+    "Kurumların editoryal karar kayıtları"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,260 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[birgun · 16:46] Fon vurgunu soruşturması",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 17:23] Fon soruşturmasında Enver Çevik gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "BirGün, sol, Evrensel ve Cumhuriyet kendi seslerinde 'fon vurgunu' ifadesini kullanıyor; TRT Haber aynı olguyu 'fon soruşturması' diye veriyor.",
+   "alternative_explanation": "'Vurgun' ifadesi soruşturmanın kamuoyunda yerleşmiş adı hâline gelmiş olabilir.",
+   "missing_context": [
+    "Değerlendirici ifadenin haberin gövdesinde bir kaynağa atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Özgür Özel'in işaret ettiği Enver Çevik",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[bbcturkce · 18:27] Lydia Holding yöneticisi Enver Çevik gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[milligazete · 17:55] Lydia Holding'in sahibi Enver Çevik",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi BBC Türkçe'de 'Lydia Holding yöneticisi', Milli Gazete'de 'Lydia Holding'in sahibi', Sözcü'de 'Özgür Özel'in işaret ettiği' diye anılıyor; Sözcü'nün etiketi kimlik bilgisinin ötesinde siyasi bir çağrışım taşıyor.",
+   "alternative_explanation": "Sözcü'nün etiketi, Çevik'in daha önce kamuoyunda bir siyasetçi tarafından anılmasına yapılan olgusal bir gönderme olabilir.",
+   "missing_context": [
+    "Özgür Özel'in önceki açıklamasının içeriği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 16:46] 'Fon' vurgununda Lydia Holding Yönetim Kurulu Başkanı Enver Çevik'e gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 17:17] Sermaye piyasası soruşturmasında Enver Çevik gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Cumhuriyet olayı 'fon vurgunu', Yeni Şafak 'sermaye piyasası soruşturması' diye adlandırıyor; ilki suçun gerçekleştiği çağrışımını taşıyor, ikincisi süreç odaklı.",
+   "alternative_explanation": "Farklı adlandırmalar kurumların daha önceki haberlerinde kullandıkları yerleşik başlıklardan kaynaklanabilir.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 16:48] SON DAKİKA... Özgür Özel'in işaret ettiği Enver Çevik tekrar gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 17:43] Enver Çevik fon soruşturmasında bir kez daha gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı gözaltıda Sözcü kişinin siyasi bağlantısını, Türkiye Gazetesi gözaltının tekrarını öne çıkarıyor.",
+   "alternative_explanation": "Her iki ayrıntı da olgusal arka plan bilgisi olabilir.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Cumhuriyet Başsavcılığınca, sermaye piyasalarında gerçekleştirilen işlemlere ilişkin fon soruşturması devam ediyor.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sol · 14:56] Fon vurgunu: Lydia Holding Yönetim Kurulu Başkanı Enver Çevik gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor ve sol başlığı 'vurgun' sözcüğünü atıf işareti olmadan Çevik'in adıyla yan yana getiriyor; ancak dilbilgisi edilgen ve Çevik'i açıkça fail yapan etken bir yapı yok.",
+   "alternative_explanation": "'Fon vurgunu' bir soruşturmanın adı olarak kullanılıyor olabilir; Çevik'e doğrudan suç atfetmiyor.",
+   "missing_context": [
+    "Başlıkta adı geçen aktöre doğrudan fail rolü veren bir ifade"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 14:56] Fon vurgunu: Lydia Holding Yönetim Kurulu Başkanı Enver Çevik gözaltına alındı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon vurgununa dair soruşturmada önce mal varlığına tedbir getirilip sonra kaldırılan, 30 Ekim’de ise yeniden tedbir kararı getirilen",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "sol gözaltıyı aktarırken spotta tedbir kararlarının geçmişini sıralayarak olayı süren bir soruşturma süreci içine yerleştiriyor.",
+   "alternative_explanation": "Önceki tedbir kararlarını anmak olağan arka plan bilgisidir.",
+   "missing_context": [
+    "Soruşturmanın kronolojisi"
+   ]
+  }
+ ]
+}

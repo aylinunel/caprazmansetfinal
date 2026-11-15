@@ -1,0 +1,170 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "A Milli Futbol Takımımızın konuğu Belçika",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ensonhaber · 17:16] A Milli Futbol Takımı, Belçika maçı için İzmir'de",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum kendi sesinde 'Takımımız' iyelik ekiyle grup aidiyeti kuruyor, diğerleri nötr ad kullanıyor; ancak metinde bu aidiyete bağlı bir karar veya yargı farkı yok.",
+   "alternative_explanation": "Milli takım için iyelik eki, kamu yayıncılarında yerleşik bir üslup olabilir ve bir değerlendirme farkı doğurmuyor olabilir.",
+   "missing_context": [
+    "Grup aidiyetine bağlı bir güvenilirlik, suçlama veya seçim farkı",
+    "Karşılaştırılabilir durumlarda farklı standart uygulandığına dair kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberturk · 18:29] A Milli Futbol Takımı, Belçika maçının hazırlıklarına devam etti: Sergen Yalçın'dan farklı antrenman yöntemi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 20:11] A Milliler, Belçika maçının hazırlıklarına devam etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı antrenman olgusu bir kurumda teknik direktörün yöntemi öne çıkarılarak, diğerinde yalın biçimde veriliyor; vurgu farkı var ama bir yargıya bağlanmıyor.",
+   "alternative_explanation": "Farklı başlıklar, aynı olgunun farklı ayrıntılarını farklı saatlerde ve farklı okur ihtiyaçlarına göre vermekten kaynaklanabilir; bir tercih veya yargının çerçeveye bağlandığı gösterilmiyor.",
+   "missing_context": [
+    "Sunum farkının bir tercih veya yargıyı değiştirdiğini gösteren açık ifade",
+    "Okur tepkisine veya karar davranışına dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[kisadalga · 08:27] A Milli Futbol Takımı, UEFA Uluslar A Ligi’nde Belçika’ya 2-1 yenildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 17:45] A Milli Futbol Takımı, İzmir'de",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Olay kümesinde bir kurum maç sonucunu, diğerleri yolculuk ve hazırlığı veriyor; belirgin ayrıntının bir yargıyı yönlendirdiği gösterilmiyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı, olayın haber değeri taşıyan gerçek bir unsuru olabilir; bunun bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Canlı ayrıntının bir yargı veya seçime açıkça bağlandığını gösteren ifade",
+    "Daha az belirgin bilginin göz ardı edildiğine dair doğrudan anlatım"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 13:27] A Milli Futbol Takımı, Belçika maçı hazırlıklarını tamamladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "context",
+     "quote": "Olayı vermeyen etkin kurumlar: akit, aydinlik, cnnturk, diken, hurriyet, karar, milligazete, takvim, turkiyegz, yenisafak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Birçok kurum hazırlık haberini verirken on etkin kurum olayı vermiyor; karşılaştırmalı dikkat farkı gözleniyor, ancak bir sonuca bağlanmıyor.",
+   "alternative_explanation": "Kurumlar arasındaki dikkat farkı, yayın saati, okur ilgisi veya editoryal kapasite gibi meşru nedenlerden kaynaklanabilir.",
+   "missing_context": [
+    "Dikkat farkını belirli bir sonuca veya eyleme bağlayan kanıt",
+    "Kurumların editoryal karar kayıtları"
+   ]
+  }
+ ]
+}

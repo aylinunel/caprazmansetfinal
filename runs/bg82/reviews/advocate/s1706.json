@@ -1,0 +1,186 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[diken · 23:15] Emir Sarıgül tutuklandı — 21.10.2026 - Sarıgül ailesine ilişkin soruşturmada gözaltına alınan YENİ Parti Milletvekili Mustafa Sarıgül’ün oğlu Emir Sarıgül tutuklandı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 21:15] Kara para soruşturması: Emir Sarıgül tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı tutuklama bir kurumda babanın siyasi kimliğiyle, diğerinde suç türüyle sunuluyor; olgu aynı, vurgu farklı, ancak bir yargının bu farka bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Farklı başlıklar, aynı olgunun farklı ayrıntılarını farklı saatlerde ve farklı okur ihtiyaçlarına göre vermekten kaynaklanabilir; bir tercih veya yargının çerçeveye bağlandığı gösterilmiyor.",
+   "missing_context": [
+    "Sunum farkının bir tercih veya yargıyı değiştirdiğini gösteren açık ifade",
+    "Okur tepkisine veya karar davranışına dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin, bir alandaki olumlu izlenimin başka bir alandaki olumlu yargıya bağlandığını göstermiyor; kişi tanımlamaları kimlik bilgisi düzeyinde kalıyor.",
+   "alternative_explanation": "Akrabalık ve siyasi kimlik bilgisi okurun kişiyi tanımlaması için verilmiş olabilir.",
+   "missing_context": [
+    "Bir alandaki izlenimin başka bir alandaki yargıyı etkilediğini gösteren açık bağlantı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Siyaset, medya ve iş dünyasını sarsan milyar avroluk kara para aklama soruşturmasında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 10:42] Emir Sarıgül tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum soruşturmanın büyüklüğünü vurgulayan nitelemeler kullanırken diğeri yalın tutuklama haberi veriyor; canlı ayrıntı karşılaştırmalı olarak gözleniyor ama bir yargıya bağlanmıyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı, olayın haber değeri taşıyan gerçek bir unsuru olabilir; bunun bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Canlı ayrıntının bir yargı veya seçime açıkça bağlandığını gösteren ifade",
+    "Daha az belirgin bilginin göz ardı edildiğine dair doğrudan anlatım"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin, belirtilen bir duyguyu belirli bir karar veya risk/fayda tahminine açıkça bağlamıyor; duygusal sözcük kullanımı tek başına yeterli değil.",
+   "alternative_explanation": "Duygusal ifadeler olayın dramatik yönünü aktarmak için kullanılmış olabilir; bir tahmini çarpıttığına dair kanıt yok.",
+   "missing_context": [
+    "Duygunun bir risk veya fayda tahminine dönüştüğünü gösteren açık gerekçe",
+    "Aynı olgular sabitken duyguya göre değişen tahminleri gösteren karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 11:57] Emir Sarıgül tutuklandı, işte 16 kişilik tutuklu listesi!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "context",
+     "quote": "Olayı vermeyen etkin kurumlar: akit, aydinlik, cnnturk, ntv, turkiyegz, yenisafak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum tutuklu listesine geniş yer verirken bazı etkin kurumlar olayı hiç vermiyor; karşılaştırmalı dikkat farkı var, sonuçla bağı gösterilmiyor.",
+   "alternative_explanation": "Kurumlar arasındaki dikkat farkı, yayın saati, okur ilgisi veya editoryal kapasite gibi meşru nedenlerden kaynaklanabilir.",
+   "missing_context": [
+    "Dikkat farkını belirli bir sonuca veya eyleme bağlayan kanıt",
+    "Kurumların editoryal karar kayıtları"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,233 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gol sevinci Sergen Yalçın’a gönderme olarak yorumlanmıştı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 20:09] İrfan Can Kahveci Sergen Yalçın'la dalga mı geçti: Görüntüler viral oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 19:52] İrfan Can Kahveci. \"Gol sevincimin Sergen hoca ile ilgisi yok\"",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde önceden oluşmuş bir yorum (gol sevincinin gönderme olduğu) açıkça belirtiliyor; futbolcunun yalanlamasından sonra da bir kurum 'dalga mı geçti' sorusunu başlığa taşıyor. Ancak karşıt kanıtın gerekçesiz reddedildiği gösterilmiyor.",
+   "alternative_explanation": "Soru biçimindeki başlık, yalanlamayı da içeren bir haberin girişi olabilir; spot metni kesik olduğundan karşıt kanıtın ele alınıp alınmadığı bilinmiyor.",
+   "missing_context": [
+    "Karar'ın haber metninin tamamı",
+    "Kurumun yalanlamayı nasıl değerlendirdiğine dair ifade"
+   ]
+  },
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci’den Sergen Yalçın’a olay gönderme! A Milli Takım kadrosuna alınmamıştı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "attığı golden sonra A Milli Takım teknik direktörü Sergen Yalçın'a gönderme yapmadığını açıkladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık gol sevinciyle kadroya alınmama arasında ilişki kuruyor; başka bir kurum futbolcunun bu ilişkiyi reddettiğini aktarıyor. İlişkinin yanılsama olduğu ise kesin olarak kurulamıyor.",
+   "alternative_explanation": "Gol sevinci gerçekten bir gönderme olabilir; futbolcunun yalanlaması da tek başına ilişkinin yokluğunu kanıtlamaz.",
+   "missing_context": [
+    "Gol sevincinin anlamına dair bağımsız kanıt",
+    "Benzer sevinçlerin başka bağlamlarda nasıl yorumlandığına dair karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberturk · 19:01] İrfan Can Kahveci'den Milli Takım açıklaması: Davet gelmeyince üzüldüm",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 19:20] İrfan Can Kahveci'den Sergen Yalçın açıklaması! \"Hiçbir alakası yok\"",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı maç sonrası açıklamadan bir kurum üzüntüyü, diğeri yalanlamayı başlığa seçiyor; olgu aynı, vurgu farklı, ancak bir tercih bu farka bağlanmıyor.",
+   "alternative_explanation": "Farklı başlıklar, aynı olgunun farklı ayrıntılarını farklı saatlerde ve farklı okur ihtiyaçlarına göre vermekten kaynaklanabilir; bir tercih veya yargının çerçeveye bağlandığı gösterilmiyor.",
+   "missing_context": [
+    "Sunum farkının bir tercih veya yargıyı değiştirdiğini gösteren açık ifade",
+    "Okur tepkisine veya karar davranışına dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin, gözlenen davranışı kalıcı bir karakter özelliğine bağlayan açık bir yargı içermiyor.",
+   "alternative_explanation": "Haberler davranışı ve durumu betimliyor; kişilik çıkarımı yapılmıyor.",
+   "missing_context": [
+    "Davranışın kalıcı bir özelliğe atfedildiğini gösteren açık ifade",
+    "Durumsal etkenlerin göz ardı edildiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 14:25] İrfan Can Kahveci'den Sergen Yalçın'ı pişman ettirecek performans",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 18:58] İrfan Can Kahveci'den şampiyonluk sözleri!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum performansı teknik direktörle çatışma ekseninde öne çıkarırken diğeri futbolcunun şampiyonluk sözlerini veriyor; karşılaştırmalı fark var ama bir yargıya bağlanmıyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı, olayın haber değeri taşıyan gerçek bir unsuru olabilir; bunun bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Canlı ayrıntının bir yargı veya seçime açıkça bağlandığını gösteren ifade",
+    "Daha az belirgin bilginin göz ardı edildiğine dair doğrudan anlatım"
+   ]
+  },
+  {
+   "card_id": "illusion-of-transparency",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin, bir kişiye kendi iç durumunun belirli bir kitle tarafından algılanabileceği inancını açıkça atfetmiyor.",
+   "alternative_explanation": "Futbolcunun açıklaması, gol sevincinin yanlış yorumlandığını düzeltme amacı taşıyor olabilir; bu bir şeffaflık yanılsaması kanıtı değildir.",
+   "missing_context": [
+    "Kişinin, iç durumunun başkalarınca anlaşılacağını varsaydığını gösteren açık ifade"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 19:57] Fenerbahçe tribün liderine silahlı eylem hazırlığı iddiasıyla 5 şüpheli yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 23:09] Daltonlar’dan Fenerbahçe tribün lideri Cem Gölbaşı’na suikast planı! 5 şüpheli yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı gözaltı olgusu bir kurumda 'iddiasıyla' kaydıyla, diğerinde kesin 'suikast planı' olarak veriliyor; olgu aynı, sunum farklı, ancak bir yargının bu farka bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Farklı başlıklar, aynı olgunun farklı ayrıntılarını farklı saatlerde ve farklı okur ihtiyaçlarına göre vermekten kaynaklanabilir; bir tercih veya yargının çerçeveye bağlandığı gösterilmiyor.",
+   "missing_context": [
+    "Sunum farkının bir tercih veya yargıyı değiştirdiğini gösteren açık ifade",
+    "Okur tepkisine veya karar davranışına dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hücre evine operasyon: Uzun namlulu silah, 200 fişek...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 23:56] Fenerbahçe tribün liderine saldırı hazırlığı soruşturmasında Daltonlar mensubu 5 kişi yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum ele geçirilen silah ve fişek ayrıntısını öne çıkarırken diğeri soruşturma çerçevesini veriyor; canlı ayrıntı karşılaştırmalı olarak gözleniyor ama bir yargıya bağlanmıyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı, olayın haber değeri taşıyan gerçek bir unsuru olabilir; bunun bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Canlı ayrıntının bir yargı veya seçime açıkça bağlandığını gösteren ifade",
+    "Daha az belirgin bilginin göz ardı edildiğine dair doğrudan anlatım"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda olumsuz sözcükler bulunsa da metin, olumsuz kanıta olumlu ve karşılaştırılabilir kanıttan orantısız ağırlık verildiğini belgelemiyor.",
+   "alternative_explanation": "Olumsuz ifade, olayın kendisinin olumsuz niteliğini (kaza, sakatlık, tehdit) yansıtıyor olabilir; bu orantılı bir haber dilidir.",
+   "missing_context": [
+    "Aynı kurumun benzer olumlu ve olumsuz olayları nasıl ağırlıklandırdığına dair karşılaştırmalı kayıt",
+    "Olumsuz vurgunun bir değerlendirmeyi veya kararı nasıl etkilediğine dair açık ifade"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin, belirtilen bir duyguyu belirli bir karar veya risk/fayda tahminine açıkça bağlamıyor; duygusal sözcük kullanımı tek başına yeterli değil.",
+   "alternative_explanation": "Duygusal ifadeler olayın dramatik yönünü aktarmak için kullanılmış olabilir; bir tahmini çarpıttığına dair kanıt yok.",
+   "missing_context": [
+    "Duygunun bir risk veya fayda tahminine dönüştüğünü gösteren açık gerekçe",
+    "Aynı olgular sabitken duyguya göre değişen tahminleri gösteren karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir tahminin veya genellemenin akla gelme kolaylığına, canlılığa ya da yakın tarihli örneklere dayandırıldığını gösteren açık bir gerekçe yok.",
+   "alternative_explanation": "Başlıklar güncel olayı aktarıyor; hatırlanabilirliğe dayalı bir sıklık veya risk tahmini yapılmıyor.",
+   "missing_context": [
+    "Bir sıklık veya risk tahmininin yakın tarihli örneklere dayandırıldığını gösteren ifade",
+    "Aynı konuda karşılaştırmalı sıklık verisi"
+   ]
+  }
+ ]
+}

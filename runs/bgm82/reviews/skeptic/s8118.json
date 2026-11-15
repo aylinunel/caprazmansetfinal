@@ -1,0 +1,236 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 09:22] Çatalca'da eğitim uçağı pistten çıktı! Pilot yara almadan kurtuldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[mynet · 11:33] İstanbul'da eğitim uçağı pistten çıktı! Çok sayıda ekip sevk edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olayda Sondakika pilotun durumunu, Mynet müdahale eden ekipleri öne çıkarıyor.",
+   "alternative_explanation": "Her iki ayrıntı da olgusal; seçim eldeki bilgiye bağlı olabilir.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 02:05] Hezarfen Havaalanı'nda eğitim uçağı iniş sırasında kaza kırıma uğradı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 12:17] Hezarfen Havalimanı'nda eğitim uçağı pistten çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "AA 'kaza kırıma uğradı', BirGün 'pistten çıktı' diyor; 'kaza kırım' havacılıkta teknik bir terim olduğundan fark çağrışımdan çok teknik dil düzeyinde olabilir.",
+   "alternative_explanation": "Resmî havacılık terminolojisinin kullanılması bir üslup tercihidir.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 12:23] Hezarfen Havalimanı’nda eğitim uçağı pistten çıktı... Pilottan hayati manevra",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 11:41] Hezarfen Havalimanı'nda eğitim uçağı pistten çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim kendi sesiyle 'hayati manevra' ve 'soğukkanlı müdahale' nitelemelerini kullanıyor; Habertürk aynı olguyu bu nitelemeler olmadan veriyor.",
+   "alternative_explanation": "Nitelemeler olay yerindeki tanık ya da yetkili aktarımına dayanıyor olabilir.",
+   "missing_context": [
+    "Değerlendirici ifadenin haberin gövdesinde bir kaynağa atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pilottan hayati manevra",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "piste tutunamayan eğitim uçağının toprak alana girmesi sonucu küçük çaplı kaza meydana geldi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 11:41] Hezarfen Havalimanı'nda eğitim uçağı pistten çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Takvim başlıkta pilota yönelik olumlu bir niteleme ('hayati manevra') ile spotta kazayı 'küçük çaplı' diye küçülten bir ifadeyi birleştiriyor; ikisi de olayı olumlu sonuçla öne çıkarıyor. Habertürk aynı olguları bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Kazada gerçekten yaralanma olmadığından iki ifade de olguyla uyumlu olabilir.",
+   "missing_context": [
+    "Pilotun müdahalesine ilişkin bağımsız bir kaynak"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "pilotun soğukkanlı müdahalesiyle uçak emniyetle durdurulurken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Takvim uçağın durdurulmasını pilotun müdahalesine bağlıyor; metinde bu bağ için bir dayanak verilmiyor, ancak kanıtın yalnızca zaman sırası olduğu da gösterilemiyor.",
+   "alternative_explanation": "Pilotun uçağı durdurması doğrudan bir eylem-sonuç ilişkisi olabilir; diğer kurumlar da 'pilot uçağı güvenli şekilde durdururken' diyor.",
+   "missing_context": [
+    "Kaza inceleme raporu"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kazanın nedeninin belirlenmesi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberler tekil bir kazayı aktarıyor; hiçbir kurum başlık ya da spotta olayı benzer kazalar, istatistikler ya da kurumsal bir süreç içine yerleştirmiyor.",
+   "alternative_explanation": "Kazanın küçük çaplı olması geniş bağlam vermeyi gereksiz kılmış olabilir.",
+   "missing_context": [
+    "Benzer eğitim uçağı kazalarına dair veriler"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,232 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya’nın gözlüğünün fiyatı ortaya çıktı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya'nın tutukluluğa sevk yazısı ortaya çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı öne çıkarıyor; ancak metin bu ayrıntıyı bir yargı veya seçime açıkça bağlamıyor ve haksız etkiyi göstermiyor.",
+   "alternative_explanation": "Çarpıcı ayrıntıların öne çıkarılması haber değeri ve okur ilgisiyle açıklanabilir; tek bir metin ağırlıklandırma hatasını kanıtlamaz.",
+   "missing_context": [
+    "Kurumların daha az çarpıcı bilgileri nasıl ağırlıklandırdığına dair karşılaştırmalı kayıt",
+    "Editoryal karar süreçleri"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya gözlük markası ve fiyatı 2026!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar arasında haber verme farkı var; ancak tek tek haberlerde ihmal, eşit olmayan dikkatin belirli bir sonuca haksız biçimde yol açtığını göstermez.",
+   "alternative_explanation": "Kurumların olayı vermemesi gündem önceliği, kaynak erişimi veya yayın politikasıyla açıklanabilir.",
+   "missing_context": [
+    "Kurumların dikkat/girdi kayıtları",
+    "Dikkat farkını bir sonuca bağlayan yazışma"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adalet Bakanı Sayın Akın Gürlek'in yaptığı paylaşım ise dikkat çekti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir alandaki olumlu izlenimi başka bir alandaki olumlu yargıya açıkça bağlayan bir ifade yok.",
+   "alternative_explanation": "Unvan veya geçmiş görevlerin anılması tanımlayıcı bilgi olabilir; ikinci bir yargıyı belirlediği gösterilmiyor.",
+   "missing_context": [
+    "Olumlu izlenimle ikinci yargı arasındaki bağı gösteren ifade",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya’nın adliyeye gelirken taktığı gözlük olay oldu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya hakkında suç duyurusunu SPK yapmış",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olguyu bildiren kurumlar farklı sözcük/vurgu kullanıyor (eşdeğerlik karşılaştırmalı başlıklarda gözleniyor); ancak bu sunum farkına bağlanan bir tercih veya yargı metinde yok.",
+   "alternative_explanation": "Başlık farkları üslup, yayın saati, hedef kitle ya da farklı kaynak açıklamalarından kaynaklanabilir; bir karar vericinin çerçeveye dayanarak yargı değiştirdiği gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okur veya karar verici yargısını değiştirdiğine dair karşılaştırmalı veri",
+    "Haber gövdelerinin tam metni"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fiyatı ağızları açık bıraktı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde belirtilen bir duygunun belirli bir karar veya risk/fayda tahminine açıkça bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Duygusal veya merak uyandıran dil, bir kararın duyguyla çarpıtıldığını kanıtlamaz.",
+   "missing_context": [
+    "Duygu ile karar arasındaki bağı gösteren yazışma veya karşılaştırmalı davranış"
+   ]
+  },
+  {
+   "card_id": "bikeshedding",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adliyeye gelen Fatma Betül Sayan Kaya'nın gözlükleri dikkat çekti! İşte güncel fiyatı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde açık hedef veya önceliklere dayalı olarak göreli önemi belirlenmiş iki konu ve dikkatin orantısız dağıtıldığını gösteren karşılaştırmalı davranış kaydı yok.",
+   "alternative_explanation": "Farklı haber türleri (son dakika, merak haberi) farklı okur ihtiyaçlarına yanıt veriyor olabilir.",
+   "missing_context": [
+    "Kurumların editoryal öncelik belgeleri",
+    "Konulara ayrılan alan/süre kayıtları"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 07:37] 12 Kasım 2026 hava durumu | Meteoroloji'den İstanbul dahil 11 ile sarı kodlu alarm: Kuvvetli fırtına kapıda",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "fırtına ve kısa süreli kuvvetli fırtına (60-90 kilometre/saat)",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "TGRT ve Takvim 'alarm' sözcüğünü kullanıyor; metinde riskin ölçeği (sarı kod, saatte 60-90 km rüzgâr) ve kaynağı (Meteoroloji) veriliyor. Sözcüğün bu ölçeğe göre orantısız olduğu açıkça gösterilemiyor.",
+   "alternative_explanation": "Sarı kod resmî bir uyarıdır ve 90 km/s rüzgâr ulaşımı aksatabilir; 'alarm' bu düzeye göre aşırı olmayabilir.",
+   "missing_context": [
+    "Sarı kodun uyarı ölçeğindeki yeri",
+    "Gerçekleşen hava olaylarının şiddeti"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kuvvetli fırtına kapıda",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 19:12] Meteoroloji'den aralarında İstanbul'un da olduğu 11 il için sarı kodlu uyarı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "TGRT 'kapıda', Onedio 'illeri vuracak' gibi canlı ifadeler kullanıyor; bunlar kartın değerlendirici sözcük örneklerinden çok mecaz ve aciliyet ifadesi, bu yüzden ilk koşul belirsiz.",
+   "alternative_explanation": "Hava durumu haberlerinde yaklaşma ifadeleri yerleşik kalıplardır.",
+   "missing_context": [
+    "İfadenin değerlendirici mi betimleyici mi olduğuna dair ölçüt"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 07:37] 12 Kasım 2026 hava durumu | Meteoroloji'den İstanbul dahil 11 ile sarı kodlu alarm",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ensonhaber · 18:45] Meteoroloji'den İstanbul dahil 11 ile sarı kodlu uyarı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı resmî uyarıyı TGRT 'alarm', Ensonhaber 'uyarı' diye adlandırıyor; 'alarm' daha yüksek bir tehlike çağrışımı taşıyor.",
+   "alternative_explanation": "Kurumun adı 'sarı kodlu uyarı' olduğundan 'alarm' gündelik bir eşanlamlı olarak kullanılmış olabilir.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[t24 · 18:59] Meteoroloji'den İstanbul dahil 11 kente sarı kodlu yağış uyarısı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 07:42] Meteoroloji'den İstanbul dahil 11 il için sarı kodlu uyarı! Fırtınanın hızı 90 kilometreye çıkabilir",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı uyarıda T24 yağışı, A Haber fırtınanın hızını öne çıkarıyor.",
+   "alternative_explanation": "Fark, tahminlerin güncellenmesinden ve yayın saatinden (akşam ile ertesi sabah) kaynaklanabilir.",
+   "missing_context": [
+    "Uyarının resmî metninde hangi tehlikelerin yer aldığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca iki seçeneği tek seçenek olarak sunan bir ya…ya da kalıbı yok.",
+   "alternative_explanation": "Haberler bir gelişmeyi aktarıyor; seçenekler arasında bir tercih dayatmıyor.",
+   "missing_context": [
+    "İki seçenekli bir kalıp kullanan başlık ya da spot"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "beklenen kuvvetli yağış nedeniyle yarın aralarında İstanbul'un da olduğu 11 il için sarı kodlu uyarıda bulundu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Habertürk uyarıyı beklenen yağışa bağlıyor; bu bağ resmî kurumun kendi gerekçesi olduğundan kanıt yalnızca eşzamanlılık değil.",
+   "alternative_explanation": "Uyarının gerekçesini aktarmak olgusal bir bilgidir.",
+   "missing_context": [
+    "Meteoroloji'nin resmî duyuru metni"
+   ]
+  }
+ ]
+}

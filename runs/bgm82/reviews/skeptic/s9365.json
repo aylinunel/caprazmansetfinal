@@ -1,0 +1,233 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "sabah saatlerinde dev bir operasyon için düğmeye basıldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 08:38] Sarıgül soruşturmasında yeni operasyon: 17 gözaltı kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "A Haber kendi sesiyle 'dev bir operasyon' ve 'sıcak gelişme' ifadelerini kullanıyor; NTV aynı olguyu bu nitelemeler olmadan veriyor.",
+   "alternative_explanation": "'Dev' ifadesi gözaltı sayısının büyüklüğüne yönelik bir betimleme olarak okunabilir.",
+   "missing_context": [
+    "Değerlendirici ifadenin haberin gövdesinde bir kaynağa atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[hurriyet · 08:27] Mustafa Sarıgül soruşturması: 17 kişi hakkında gözaltı kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 08:29] Sarıgül soruşturmasında yeni dalga operasyon: 15 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hürriyet gözaltı kararı sayısını, BirGün fiilen gözaltına alınan sayıyı öne çıkarıyor; ancak bu fark aynı boyutun (sayı) iki ölçüsü olduğundan kartın aradığı boyut farkı belirgin değil.",
+   "alternative_explanation": "İki sayı da aynı savcılık açıklamasından gelen olgusal bilgilerdir.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski CHP'li milletvekili Mustafa Sarıgül'le ilgili",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erzincan Milletvekili Mustafa Sarıgül ailesine yönelik",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akit Mustafa Sarıgül'ü 'Eski CHP'li milletvekili', Kısa Dalga 'Erzincan Milletvekili' diye anıyor; fark parti ve görev bilgisinde, değerlendirici bir yük taşıyıp taşımadığı açık değil.",
+   "alternative_explanation": "Parti aidiyeti kimlik bilgisi olabilir; görev farkı bilgi hatasından kaynaklanabilir.",
+   "missing_context": [
+    "Sarıgül'ün güncel görevine ilişkin doğrulama"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eş zamanlı baskınlarda 17 şüpheli",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 08:38] Sarıgül soruşturmasında yeni operasyon",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "A Haber aynı eylemi 'baskın', NTV 'operasyon' diye adlandırıyor; 'baskın' daha sert bir çağrışım taşıyor.",
+   "alternative_explanation": "'Baskın' adli operasyonlar için gündelik dilde yaygın bir sözcük olabilir.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir oran ya da pay sunulmuyor; yalnızca mutlak gözaltı sayıları veriliyor.",
+   "alternative_explanation": "Sayısal farklar güncellemelerden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Pay ve paydası belirlenebilen bir oran"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 08:50] Sarıgül soruşturmasında yeni operasyon",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Aralarında Ömer Sarıgül'ün de bulunduğu 27 kişi daha önce tutuklanmıştı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Evrensel yeni operasyonu aktarırken spotta aynı soruşturmada daha önce tutuklanan 27 kişiyi anarak olayı bir süreç içine yerleştiriyor.",
+   "alternative_explanation": "Önceki tutuklamaları anmak olağan arka plan bilgisidir.",
+   "missing_context": [
+    "Soruşturmanın tüm aşamalarına ilişkin kronoloji"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 13:18] Son dakika… Kılıçdaroğlu'ndan MHP lideri Devlet Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 13:38] Özgür Özel'den Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı günkü taziye ziyaretleri bir kurumda Kılıçdaroğlu, diğerinde Özel üzerinden başlığa taşınıyor; olgu kümesi aynı, vurgu farklı, ancak bir yargı bu farka bağlanmıyor.",
+   "alternative_explanation": "Farklı başlıklar, aynı olgunun farklı ayrıntılarını farklı saatlerde ve farklı okur ihtiyaçlarına göre vermekten kaynaklanabilir; bir tercih veya yargının çerçeveye bağlandığı gösterilmiyor.",
+   "missing_context": [
+    "Sunum farkının bir tercih veya yargıyı değiştirdiğini gösteren açık ifade",
+    "Okur tepkisine veya karar davranışına dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 13:27] Kılıçdaroğlu'ndan Bahçeli'ye taziye ziyareti: Kardeş acısını paylaştı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 13:27] Kılıçdaroğlu'ndan, Bahçeli'ye TBMM'de taziye ziyareti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum ziyaretin duygusal yönünü öne çıkarırken diğeri yer bilgisini veriyor; karşılaştırmalı fark var ama bir yargıya bağlanmıyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı, olayın haber değeri taşıyan gerçek bir unsuru olabilir; bunun bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Canlı ayrıntının bir yargı veya seçime açıkça bağlandığını gösteren ifade",
+    "Daha az belirgin bilginin göz ardı edildiğine dair doğrudan anlatım"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 13:42] Özgür Özel’den Devlet Bahçeli’ye taziye ziyareti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 13:23] Kemal Kılıçdaroğlu'ndan Devlet Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "context",
+     "quote": "sozcu: sol (42)",
+     "kind": "statement"
+    },
+    {
+     "source": "context",
+     "quote": "yenisafak: sağ (82)",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam kurumlara siyasi yerleşim veriyor ve bazı kurumlar başlıkta farklı ziyaretçiyi seçiyor; ancak metin bu seçim farkını grup aidiyetine açıkça bağlamıyor.",
+   "alternative_explanation": "Başlık seçimi ziyaretlerin saatine veya kurumun habere eriştiği sıraya bağlı olabilir; birçok kurum birden fazla ziyareti birlikte veriyor.",
+   "missing_context": [
+    "Başlık seçiminin siyasi yakınlıkla ilişkili olduğunu gösteren açık kanıt",
+    "Karşılaştırılabilir olaylarda aynı kurumların seçim örüntüsü"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aksam · 14:00] AK Parti'den MHP Genel Başkanı Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 13:43] AK Parti, Yeni Parti ve CHP'den Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "context",
+     "quote": "Olayı vermeyen etkin kurumlar: aydinlik, cnnturk, diken, milligazete, mynet, trthaber",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı ziyaret kümesinden farklı ziyaretçileri başlığa taşıyor, bazı etkin kurumlar olayı vermiyor; karşılaştırmalı dikkat farkı var, sonuçla bağı gösterilmiyor.",
+   "alternative_explanation": "Kurumlar arasındaki dikkat farkı, yayın saati, okur ilgisi veya editoryal kapasite gibi meşru nedenlerden kaynaklanabilir.",
+   "missing_context": [
+    "Dikkat farkını belirli bir sonuca veya eyleme bağlayan kanıt",
+    "Kurumların editoryal karar kayıtları"
+   ]
+  }
+ ]
+}

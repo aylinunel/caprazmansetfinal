@@ -1,0 +1,218 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yenisafak · 08:44] Sarıgül ailesine yönelik soruşturmada flaş gelişme",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 09:01] Sarıgül soruşturması: Şişli MYO'ya kayyum atandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Yeni Şafak kendi sesiyle 'flaş gelişme', Akit 'büyük gözaltı dalgası' ifadelerini kullanıyor; BirGün aynı olguyu bu nitelemeler olmadan veriyor.",
+   "alternative_explanation": "'Flaş' son dakika haberciliğinde yerleşik bir kalıptır.",
+   "missing_context": [
+    "Değerlendirici ifadenin haberin gövdesinde bir kaynağa atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 08:23] Sarıgül soruşturmasında Şişli MYO'ya kayyım atandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 09:01] Sarıgül soruşturması: Şişli MYO'ya kayyum atandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar 'kayyım' ve 'kayyum' biçimlerini kullanıyor; fark yalnızca yazım düzeyinde ve çağrışım farkı taşımıyor.",
+   "alternative_explanation": "İki yazım biçimi de aynı hukuki kavramı karşılar.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 07:00] Sarıgül soruşturmasında yeni gelişme: O okula kayyum atandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[mynet · 08:53] Sarıgül soruşturmasında 11 kişi daha gözaltında!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sabah kayyum atamasını, Mynet gözaltıları başa alıyor; ancak bunlar aynı olgunun farklı boyutlarından çok aynı haberin iki ayrı olgusu olduğu için ikinci koşul belirsiz.",
+   "alternative_explanation": "Başlık sırası editoryal kısaltma olabilir; çoğu kurum iki olguyu birlikte veriyor.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgüllere yönelik soruşturmada büyük gözaltı dalgası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 09:22] Sarıgül soruşturması",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akit ve Haber7 aileyi 'Sarıgüller' çoğuluyla, diğerleri 'Sarıgül ailesi' ya da 'Sarıgül soruşturması' diye anıyor; çoğul biçimin değerlendirici bir yük taşıdığı açık değil.",
+   "alternative_explanation": "Çoğul soyadı kullanımı Türkçede aileyi anmanın yaygın bir yoludur.",
+   "missing_context": [
+    "Bu kurumların başka ailelere aynı kalıbı uygulayıp uygulamadığı"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[hurriyet · 07:00] Sarıgül soruşturması okula sıçradı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hürriyet soruşturmanın yayılmasını 'sıçradı' mecazıyla anlatıyor; bunun bir rol ya da eylem yolu atayan özgün bir mecaz mı yoksa yerleşik bir deyim mi olduğu belirsiz.",
+   "alternative_explanation": "'Sıçramak' haber dilinde yayılma için yerleşik bir kalıp.",
+   "missing_context": [
+    "İfadenin bir rol ya da eylem önerisi taşıdığına dair kanıt"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca iki seçeneği tek seçenek olarak sunan bir ya…ya da kalıbı yok.",
+   "alternative_explanation": "Haberler bir gelişmeyi aktarıyor; seçenekler arasında bir tercih dayatmıyor.",
+   "missing_context": [
+    "İki seçenekli bir kalıp kullanan başlık ya da spot"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,203 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 15:59] Feridun Sinirlioğlu'nun BM Genel Sekreterliği adaylığı! Azerbaycan: Memnuniyete karşılıyoruz",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 10:47] Erdoğan, eski Dışişleri Bakanı Sinirlioğlu'nu BM Genel Sekreterliğine aday gösterdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı adaylık haberinde Star bir dış tepkiyi, Evrensel adaylığı yapan kişiyi öne çıkarıyor.",
+   "alternative_explanation": "Farklı saatlerde yayımlanan haberler olayın farklı gelişmelerini aktarıyor olabilir.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[bbcturkce · 16:44] BM: Türkiye neden Feridun Sinirlioğlu kartını şimdi oynadı?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 01:45] Türkiye, Feridun Sinirlioğlu'nu BM Genel Sekreterliği için aday gösterdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "BBC Türkçe adaylığı 'kartını oynadı' diye, AA 'aday gösterdi' diye anlatıyor; ilki stratejik bir hamle çağrışımı taşıyor.",
+   "alternative_explanation": "'Kart oynamak' diplomatik analizlerde yaygın bir deyim; başlık bir analiz yazısına ait.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Tek bir kurumun başlık ve spotunda aynı değerlendirici yönü gösteren iki ayrı sunum seçimi tespit edilmiyor.",
+   "alternative_explanation": "Haberler büyük ölçüde resmî açıklamayı aktarıyor.",
+   "missing_context": [
+    "Aynı yönde iki sunum seçimi içeren bir başlık-spot"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: Türkiye, Feridun Sinirlioğlu'nu BM Genel Sekreterliği için aday gösterdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay resmî bir adaylık başvurusudur; sorumluluğu belirsiz bir soruşturma söz konusu değil.",
+   "alternative_explanation": "Adaylığı yapan tarafın belirtilmesi olgusaldır.",
+   "missing_context": [
+    "Sorumluluğu belirsiz bir süreç"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye neden Feridun Sinirlioğlu kartını şimdi oynadı?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "BBC Türkçe başlığı bir 'neden' sorusu soruyor; açık bir nedensel iddia kurmuyor.",
+   "alternative_explanation": "Soru biçimli başlık analiz içeriğini duyuruyor.",
+   "missing_context": [
+    "Açık bir nedensel önerme"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam ya da diğer kurumların haberleri bu olayın tekrarlayan ya da yapısal bir sorunun parçası olduğunu göstermiyor; bu nedenle ilk koşul karşılanmıyor.",
+   "alternative_explanation": "Adaylık tekil bir diplomatik gelişmedir; BBC Türkçe ise süreci Guterres'in görev süresinin bitişiyle bağlamlandırıyor.",
+   "missing_context": [
+    "Benzer önceki olaylara ya da yapısal verilere ilişkin bağlam"
+   ]
+  }
+ ]
+}
