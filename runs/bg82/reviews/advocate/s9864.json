@@ -1,0 +1,207 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 11:19] İş insanı Cafer Mahiroğlu'na yönelik soruşturmada gözaltına alınan 5 şüpheli tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 20:55] Halk TV'nin firari patronu Cafer Mahiroğlu soruşturmasında yeni gelişme",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı soruşturma bir başlıkta 'iş insanı'na yönelik bir soruşturma, diğerinde 'firari patron' soruşturması olarak sunuluyor; ancak bu farka dayanan bir tercih ya da yargı metinde kurulmuyor.",
+   "alternative_explanation": "Kuruluşlar kişiyi farklı olgusal özellikleriyle (meslek, firarilik) tanıtmış olabilir.",
+   "missing_context": [
+    "Sunum farkına dayanan açık bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "eski CHP Silivri İlçe Başkanı Doruk",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Şüphelilerden birinin parti geçmişi anılıyor; ancak grup üyeliğine bağlanan bir güvenilirlik ya da muamele farkı metinde açıkça kurulmuyor.",
+   "alternative_explanation": "Parti geçmişi şüpheliyi tanıtan olgusal bir ayrıntıdır.",
+   "missing_context": [
+    "Benzer soruşturmalarda farklı gruplardan şüphelilerin nasıl verildiğine dair karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde bir alandaki olumlu izlenimin başka bir alandaki yargıya taştığını gösteren bir ifade yok.",
+   "alternative_explanation": "Haberler bir soruşturmadaki tutuklamaları aktarıyor.",
+   "missing_context": [
+    "İki alana ait olumlu yargılar"
+   ]
+  },
+  {
+   "card_id": "messenger-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 20:55] Halk TV'nin firari patronu Cafer Mahiroğlu soruşturmasında yeni gelişme",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir medya kuruluşunun sahibi olumsuz bir etiketle anılıyor; ancak bir iddianın ya da önerinin kaynağının kimliğine göre kabul veya reddedildiğini gösteren bir değerlendirme yok.",
+   "alternative_explanation": "Etiket kişinin hukuki durumunu (firari) betimliyor olabilir.",
+   "missing_context": [
+    "Kaynağın kimliğine göre farklı değerlendirilen bir iddia"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 23:51] Halk TV sahibi Cafer Mahiroğlu soruşturmasında belediye ihaleleri ve milyonluk rüşvet pazarlığı! 5 tutuklama",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[tgrt · 23:10] Cafer Mahiroğlu soruşturmasında 5 kişi daha tutuklandı — Halk TV sahibi iş insanı Cafer Mahiroğlu soruşturmasında gözaltına alınan 8 kişiden 5'i tutuklandı, 3 kişi adli kontrolle serbest bırakıldı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık 'milyonluk rüşvet pazarlığı' gibi çarpıcı bir ayrıntıyı öne çıkarıyor, başka bir kuruluş aynı tutuklamaları sayısal olarak veriyor; çarpıcı ayrıntının bir yargıyı haksız biçimde etkilediği ise açıkça gösterilmiyor.",
+   "alternative_explanation": "Rüşvet tutarları savcılık dosyasından aktarılan ilgili bir bilgi olabilir.",
+   "missing_context": [
+    "Savcılık dosyasının içeriği",
+    "Belirgin ayrıntıya dayanan açık bir sonuç"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler bir olayın haber başlıklarından oluşuyor; bir etkinliğe bağlanan dış ödül, ödülün kaldırılması ya da sonrasında gönüllü katılımın azalması gibi bir gözlem yer almıyor.",
+   "alternative_explanation": "Haber metinleri motivasyon değişimini ölçecek bir akış içermez; kartın konusu bu olayla ilişkili değildir.",
+   "missing_context": [
+    "Kişinin ödül öncesi gönüllü katılım düzeyi",
+    "Beklenen ve etkinliğe bağlı bir ödül",
+    "Ödül kaldırıldıktan sonraki davranış ölçümü"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,234 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 02:05] Hezarfen Havaalanı'nda eğitim uçağı iniş sırasında kaza kırıma uğradı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çatalca'da eğitim uçağı pistten çıktı! Pilot yara almadan kurtuldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olay 'kaza kırıma uğradı' (kayıp çerçevesi) ve 'yara almadan kurtuldu' (kazanç çerçevesi) biçimlerinde sunuluyor; bir yargının bu farka bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Farklı kelime seçimleri aynı olgunun meşru biçimde farklı yönlerini öne çıkarıyor olabilir; metinde bir tercih ya da yargının çerçeveye bağlandığı görülmüyor.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren kanıt",
+    "Açıklamaların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul'da eğitim uçağı pistten çıktı! Çok sayıda ekip sevk edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz ifadeler var ancak olumsuz kanıta orantısız ağırlık verildiğine dair karşılaştırmalı bir kayıt yok.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pilottan hayati manevra",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Hayati manevra' gibi çarpıcı bir ayrıntı öne çıkarılıyor; ancak bunun bir sonuca gerekçe yapıldığı metinde yok.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "outcome-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Büyükçekmece’de yaşanan olayda pilotun soğukkanlı müdahalesiyle uçak emniyetle durdurulurken, kazada herhangi bir yaralanma yaşanmadı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Pilottan hayati manevra",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "henüz belirlenemeyen bir nedenle pistten çıkarak toprak alana girdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bir metin pilotun müdahalesini olumlu değerlendirip bunu yaralanmanın olmamasıyla birlikte veriyor; başka bir metin ise kazanın nedeninin henüz belirlenmediğini belirtiyor. Sonucun tek başına değerlendirme gerekçesi olduğu ise açıkça söylenmiyor.",
+   "alternative_explanation": "Pilotun uçağı güvenle durdurduğu, birden çok kaynakta bildirilen gözlenmiş bir olgu olabilir.",
+   "missing_context": [
+    "Pilotun iniş sırasındaki kararlarına ilişkin teknik inceleme",
+    "Değerlendirmenin sonuç dışındaki dayanakları"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kazadan yara almadan kurtulan pilotaj öğrencisi Arda Boğaç Bakkal, tedbir amaçlı hastaneye kaldırıldı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "iniş sırasında pistten çıkarak kaza kırıma uğradı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "küçük çaplı kaza meydana geldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı 'kaza kırım' ile 'küçük çaplı kaza' arasında farklı ölçeklerde aktarıyor, bazıları pilotun öğrenci olduğunu ve adını ekliyor.",
+   "alternative_explanation": "Ayrıntı farkları yayın saatindeki bilgi düzeyi, ajans kaynağı ve başlık uzunluğu sınırıyla açıklanabilir; bu bir hata kanıtı değildir.",
+   "missing_context": [
+    "Olayın birincil kaynağı (resmî açıklama veya ajans metni)",
+    "Farklılığın bir sonuca veya karara etki ettiğini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber başlıkları bir olayı aktarıyor; metinde bu kartın gerektirdiği karar, yargı veya akıl yürütme adımı açıkça yer almıyor.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 13:36] Cristiano Ronaldo Portekiz Milli Takımı'nı bıraktı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cristiano Ronaldo, Portekiz Milli Takımı'na veda etti!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bir devrin sonu! Cristiano Ronaldo milli takımı bıraktığını açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı ayrılık olgusu 'bıraktı', 'veda etti' ve 'Bir devrin sonu!' gibi farklı sunumlarla veriliyor; ancak bu sunum farkına bağlanan bir tercih veya yargı metinde yok.",
+   "alternative_explanation": "Farklı kelime seçimleri aynı olgunun meşru biçimde farklı yönlerini öne çıkarıyor olabilir; metinde bir tercih ya da yargının çerçeveye bağlandığı görülmüyor.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren kanıt",
+    "Açıklamaların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "nostalgia-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Madeira'da sadece küçük bir çocukken futbol topunun peşinden koşarak başlayan hayali",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ronaldo'nun Madeira'daki çocukluğuna dair geçmişi çağrıştıran bir alıntı var; fakat metinde parayla ilgili bir seçim (harcama, ödeme isteği) bulunmuyor.",
+   "alternative_explanation": "Geçmişe atıf, bir veda açıklamasının olağan içeriğidir.",
+   "missing_context": [
+    "Nostaljik çağrışımın bir satın alma veya ödeme kararına bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bir devrin sonu! Cristiano Ronaldo milli takımı bıraktığını açıkladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Bir devrin sonu!' gibi çarpıcı ifadeler var; ancak bunların bir yargıya ya da seçime gerekçe yapıldığı metinde görülmüyor.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Futbol tarihinin en önemli oyuncularından biri olan Cristiano Ronaldo",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ronaldo'nun futbol başarısına dair övgüler var; bu izlenimin başka bir alandaki ayrı bir olumlu yargıya taşındığı metinde yok.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "rosy-retrospection",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde geçmiş dönemin şimdikinden daha iyi olduğuna dair karşılaştırmalı bir geriye dönük iddia yer almıyor.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ronaldo'nun son dönemde Portekiz Teknik Direktörü Jorge Jesus'la yaşadığı kriz, ayrılıkta önemli rol oynadığı ifade ediliyor.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cristiano Ronaldo veda etti: O olay sonu getirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "sanal medya hesabından yayınladığı videoyla milli takım kariyerini sonlandırma kararı aldığını duyurdu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı kurumlar ayrılığı teknik direktörle yaşanan krize bağlayan ayrıntıyı öne çıkarırken (keskinleştirme), diğerleri yalnızca açıklamanın kendisini aktarıyor; ayrıntının sonuca etkisi metinde gösterilmiyor.",
+   "alternative_explanation": "Ayrıntı farkları yayın saatindeki bilgi düzeyi, ajans kaynağı ve başlık uzunluğu sınırıyla açıklanabilir; bu bir hata kanıtı değildir.",
+   "missing_context": [
+    "Olayın birincil kaynağı (resmî açıklama veya ajans metni)",
+    "Farklılığın bir sonuca veya karara etki ettiğini gösteren kanıt"
+   ]
+  }
+ ]
+}

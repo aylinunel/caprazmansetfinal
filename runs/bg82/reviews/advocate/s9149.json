@@ -1,0 +1,218 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteoroloji'den 11 ile sarı kodlu alarm!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hava sıcaklığının da iç ve batı kesimlerinde 3 ila 5 derece artacağı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar uyarının olumsuz yönünü 'alarm' olarak öne çıkarırken başka bir metin sıcaklık artışını da aktarıyor; olumsuz bilgiye orantısız ağırlık verildiği açıkça belgelenmiyor.",
+   "alternative_explanation": "Fırtına uyarısı kamu güvenliği açısından öncelikli bilgidir.",
+   "missing_context": [
+    "Olumlu ve olumsuz tahmin bilgisinin ağırlıklandırılmasına dair açık kayıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul dahil 11 il için sarı kodlu uyarı verildi: Hızı saatte 90 kilometreyi bulacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "rüzgarın saatte 40 ila 60 kilometreye ulaşması bekleniyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık en yüksek rüzgâr değerini öne çıkarırken başka bir metin daha düşük aralığı veriyor; ancak bu öne çıkarmanın bir yargıya gerekçe yapıldığı yok.",
+   "alternative_explanation": "Ani rüzgâr hızının üst sınırı güvenlik açısından ilgili bilgidir.",
+   "missing_context": [
+    "Rüzgâr hızı değerlerinin resmî tahmin metni"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Marmara için sağanak alarmı: İstanbul dahil 11 ile sarı kodlu uyarı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 06:06] İstanbul'un da aralarında bulunduğu 11 il için sarı kodlu uyarı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı sarı kodlu uyarı 'alarm' ve 'uyarı' olarak farklı çerçevelerle veriliyor; bu farka bağlanan bir tercih metinde yok.",
+   "alternative_explanation": "Farklı kelime seçimleri aynı olgunun meşru biçimde farklı yönlerini öne çıkarıyor olabilir; metinde bir tercih ya da yargının çerçeveye bağlandığı görülmüyor.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren kanıt",
+    "Açıklamaların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hatırlanabilirlik veya canlılığın bir tahmine gerekçe yapıldığı açık bir ifade yok.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yarın (12 Kasım) beklenen fırtına nedeniyle İstanbul dahil 11 ili sarı kodla uyardı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "beklenen kuvvetli yağış nedeniyle İstanbul'un da aralarında bulunduğu 11 il için sarı kodlu uyarı yayımladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "MGM, Kıyı Ege ile Antalya, Bartın, Sinop ve Samsun çevrelerinde sağanak ve gök gürültülü sağanak yağış görüleceğini bildirdi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı uyarı bazı metinlerde fırtına, bazılarında yağış uyarısı olarak aktarılıyor; bir metin ise İstanbul yerine başka bölgeleri öne çıkarıyor.",
+   "alternative_explanation": "Ayrıntı farkları yayın saatindeki bilgi düzeyi, ajans kaynağı ve başlık uzunluğu sınırıyla açıklanabilir; bu bir hata kanıtı değildir.",
+   "missing_context": [
+    "Olayın birincil kaynağı (resmî açıklama veya ajans metni)",
+    "Farklılığın bir sonuca veya karara etki ettiğini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber başlıkları bir olayı aktarıyor; metinde bu kartın gerektirdiği karar, yargı veya akıl yürütme adımı açıkça yer almıyor.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  }
+ ]
+}
