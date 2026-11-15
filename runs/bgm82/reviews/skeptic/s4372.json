@@ -1,0 +1,230 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında sıcak gelişme! Tera ve Pusula'nın faaliyetleri durduruldu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "SPK'dan flaş karar: Tera ve Pusula'nın faaliyetleri geçici olarak durduruldu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "SPK, Tera Portföy ve Pusula Portföy'ün sermaye piyasası faaliyetlerini geçici olarak durdurdu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar 'flaş' ve 'sıcak gelişme' ifadelerini kullanırken diğerleri aynı kararı bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "'Flaş' ve 'sıcak gelişme' haberin aciliyetini bildiren yerleşik haber kalıplarıdır; skandal ya da müjde gibi bir değerlendirme taşıdıkları açık değil.",
+   "missing_context": [
+    "Bu kalıpların kurumun genel başlık pratiğinde ne sıklıkla kullanıldığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SPK, Tera Portföy ve Pusula Portföy'ün sermaye piyasası faaliyetlerini askıya aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SPK, Tera ve Pusula Portföy'ün faaliyetlerini geçici olarak durdurdu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum 'askıya aldı', diğerleri 'geçici olarak durdurdu' diyor.",
+   "alternative_explanation": "'Askıya almak' ile 'geçici olarak durdurmak' aynı hukuki işlemi anlatır; fark çağrışım değil üslup farkıdır.",
+   "missing_context": []
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Faaliyetler durdu, bütün fonlar tasfiye kapsamına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında Tera ve Pusula Portföy şirketlerinin faaliyetleri durduruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SPK'dan Tera ve Pusula kararı! Geçici olarak durduruldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı SPK kararında bazı başlıklar fonların tasfiyesini, bazıları soruşturma bağlantısını, bazıları kararın kendisini öne alıyor.",
+   "alternative_explanation": "Farklılıklar aynı kararın ek ayrıntılarından ibaret; kazanan/kaybeden ya da maliyet/fayda gibi karşıt boyutların öne çıkarıldığı açık değil.",
+   "missing_context": [
+    "Yatırımcılar açısından kararın sonuçlarına ilişkin kurumların ayrıntılı haber metinleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında Tera ve Pusula Portföy şirketlerinin faaliyetleri durduruldu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "SPK, fon soruşturmasının merkezindeki Tera Portföy Yönetimi AŞ ile Pusula Portföy Yönetimi AŞ'nin",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "SPK kararı, süren fon soruşturmasının bir aşaması olarak sunuluyor.",
+   "alternative_explanation": "Soruşturma bağlantısı olgusal bir arka plandır ve okurun kararı anlamasına yardım ediyor olabilir.",
+   "missing_context": [
+    "Soruşturmanın kapsamı ve önceki aşamalarına dair bağlam"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SPK düğmeye bastı: Tera ve Pusula portföy faaliyetleri durduruldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık 'düğmeye bastı' ifadesini kullanıyor.",
+   "alternative_explanation": "'Düğmeye basmak' Türkçede bir işe başlamayı anlatan kalıplaşmış bir deyimdir; düşman, tedavi ya da savunma gibi bir rol ataması yapmıyor.",
+   "missing_context": []
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hiçbir kurum iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Haber bir gelişmeyi bildiriyor; iki seçenek arasında zorunlu tercih sunulmuyor.",
+   "missing_context": [
+    "Kurumun kendi sesiyle 'ya … ya …' kalıbında sunduğu seçenekler"
+   ]
+  }
+ ]
+}

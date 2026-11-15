@@ -1,0 +1,177 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emine Erdoğan, COP31 Liderler Zirvesi'ne katılan liderler ve eşlerini tek tek karşıladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emine Erdoğan'dan COP31 paylaşımı: Küresel iş birliği vurgusu yaptı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı katılım bir kurumda karşılama, diğerinde mesaj vurgusuyla sunuluyor; yargıya bağlantı görünmüyor.",
+   "alternative_explanation": "Kurumlar olayın farklı ilgili yönlerini öne çıkarıyor olabilir; çerçeve farkı tek başına bir yargıyı kanıtlamaz.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir alandaki olumlu izlenimin ayrı bir alandaki yargıya taşındığı kurulmuyor.",
+   "alternative_explanation": "Başlık ve spotlar yalnızca olayı aktarıyor; bir karar vericinin akıl yürütmesi metinde yer almıyor.",
+   "missing_context": [
+    "Bir karar vericinin açık gerekçesi veya karşılaştırmalı davranış kaydı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dünyanın gözü Antalya'da! COP31'de liderler zirvesi başladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Belirgin bir ifade öne çıkıyor; bunun bir yargıya gerekçe yapıldığı görünmüyor.",
+   "alternative_explanation": "Ayrıntı olayın ilgili bir bilgisi ya da başlık üslubu olabilir.",
+   "missing_context": [
+    "Belirgin ayrıntının bir yargıya gerekçe yapıldığını gösteren açık ifade"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "COP31 Liderler Zirvesi’nde akredite basına sınırlı erişim",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emine Erdoğan, COP31 Liderler Zirvesi'ne katılan liderler ve eşleriyle yakından ilgilendi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "context",
+     "quote": "Olayı vermeyen etkin kurumlar: aydinlik, cumhuriyet, diken, karar, milligazete, takvim, yenisafak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar zirvenin farklı yönlerine farklı ilgi gösteriyor; bunun belirli bir sonuca bağlandığı kanıtlanmıyor.",
+   "alternative_explanation": "Gündem seçimi editoryal kapasiteye bağlı olabilir.",
+   "missing_context": [
+    "Kurum içi seçim kayıtları",
+    "Dikkat farkının bir sonuca etkisi"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir otorite statüsünün bir iddiaya belirleyici ağırlık verdiği akıl yürütme yok.",
+   "alternative_explanation": "Başlık ve spotlar yalnızca olayı aktarıyor; bir karar vericinin akıl yürütmesi metinde yer almıyor.",
+   "missing_context": [
+    "Bir karar vericinin açık gerekçesi veya karşılaştırmalı davranış kaydı"
+   ]
+  }
+ ]
+}

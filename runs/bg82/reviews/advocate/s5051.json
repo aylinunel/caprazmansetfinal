@@ -1,0 +1,168 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dünya Gazetesi'nin patronu Umut Güner fon soruşturmasından gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dünya Gazetesi’nin ortağı Umut Güner gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumda \"patron\", diğerinde \"ortak\" olarak sunuluyor; yargıya bağlantı görünmüyor.",
+   "alternative_explanation": "Kurumlar olayın farklı ilgili yönlerini öne çıkarıyor olabilir; çerçeve farkı tek başına bir yargıyı kanıtlamaz.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gazetenin bağlı olduğu Dünya Holding'in ortakları arasında, SPK'nin 15 fonunu tasfiye kararı aldığı Bulls Yatırım Holding de bulunuyor.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin holding ile tasfiye edilen fonlar arasında açık bir ortaklık ilişkisi kuruyor; bunun haksız bir çıkarım olduğu gösterilmiyor.",
+   "alternative_explanation": "Ortaklık belgelenmiş bir olgu olabilir.",
+   "missing_context": [
+    "Ortaklığın soruşturmayla ilgisine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturması derinleşiyor! Umut Güner gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Vurgu soruşturmanın genişlemesine yöneliyor; bir yargıya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Ayrıntı olayın ilgili bir bilgisi ya da başlık üslubu olabilir.",
+   "missing_context": [
+    "Belirgin ayrıntının bir yargıya gerekçe yapıldığını gösteren açık ifade"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki bir uyarıcının sonraki tepkiye bağlandığı gözlem yok.",
+   "alternative_explanation": "Başlık ve spotlar yalnızca olayı aktarıyor; bir karar vericinin akıl yürütmesi metinde yer almıyor.",
+   "missing_context": [
+    "Bir karar vericinin açık gerekçesi veya karşılaştırmalı davranış kaydı"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Grup üyeliğine bağlı bir değerlendirme farkı gösterilmiyor.",
+   "alternative_explanation": "Başlık ve spotlar yalnızca olayı aktarıyor; bir karar vericinin akıl yürütmesi metinde yer almıyor.",
+   "missing_context": [
+    "Bir karar vericinin açık gerekçesi veya karşılaştırmalı davranış kaydı"
+   ]
+  }
+ ]
+}

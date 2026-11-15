@@ -1,0 +1,202 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray-Stuttgart maçı için olay tahmin! Yapay zeka sonucu açıkladı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray devler sahnesinde!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık 'olay' sözcüğünü değerlendirme olarak kullanıyor; başka biri 'devler sahnesi' ifadesini kullanıyor.",
+   "alternative_explanation": "Spor haberlerinde abartılı dil yerleşik bir türdür; ayrıca 'olay tahmin' haberi diğer kurumların bildirdiği olgudan farklı bir içerik taşıdığı için aynı olgunun nötr bir karşılığı metinde yok.",
+   "missing_context": []
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Temsilcimiz, Devler Ligi sınavında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık maçı 'sınav', Şampiyonlar Ligi'ni 'Devler Ligi' olarak anıyor.",
+   "alternative_explanation": "Her iki ifade de Türk spor basınında kalıplaşmış deyimlerdir; düşman ya da tedavi gibi bir rol ataması yapmıyor.",
+   "missing_context": []
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray, Stuttgart maçı hazırlıklarını sürdürdü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Stuttgart mesaisi sürüyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar antrenmanları 'hazırlık' ya da 'mesai' olarak adlandırıyor.",
+   "alternative_explanation": "İki sözcük arasındaki fark yalnızca üsluptadır.",
+   "missing_context": []
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray Stuttgart maçı saat kaçta ve hangi kanalda?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray-Stuttgart maçında muhtemel ilk 11'ler",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar maçla ilgili farklı hizmet bilgilerini (saat, kanal, kadro) veriyor.",
+   "alternative_explanation": "Bunlar aynı olgunun karşıt boyutları değil, farklı hizmet haberleridir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar maç bilgilerini veriyor; nedensellik ifadesi yok.",
+   "alternative_explanation": "Başlıklar olguyu doğrudan bildiriyor; nedensellik iddiası kurulmadığı için aşırı nedensel çıkarım değerlendirilemez.",
+   "missing_context": [
+    "Kurumun kendi sesiyle kurduğu açık bir nedensellik ifadesi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber tek bir maçın ön bilgisini veriyor; yapısal bir sorun söz konusu değil.",
+   "alternative_explanation": "Tek olayın haberleştirilmesi bu tür gündelik haber için olağandır; konunun yapısal ya da tekrarlayan bir sorun olduğu sağlanan malzemede kurulmuyor.",
+   "missing_context": [
+    "Konunun tekrarlayan ya da yapısal olduğunu gösteren bağlam (önceki vakalar, istatistikler)"
+   ]
+  }
+ ]
+}

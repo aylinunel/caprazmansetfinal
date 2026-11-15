@@ -1,0 +1,174 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "identifiable-victim-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kaynak tahsisi kararı ve karar verici metinde yok.",
+   "alternative_explanation": "Başlık ve spotlar yalnızca olayı aktarıyor; bir karar vericinin akıl yürütmesi metinde yer almıyor.",
+   "missing_context": [
+    "Bir karar vericinin açık gerekçesi veya karşılaştırmalı davranış kaydı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in ailesine \"Davadan çekilin\" yumruğu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in amcasının uğradığı saldırı hakkında neler biliniyor?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı saldırı bir kurumda imgesel ifadeyle, diğerinde bilgi sorusu biçiminde sunuluyor; yargıya bağlantı görünmüyor.",
+   "alternative_explanation": "Kurumlar olayın farklı ilgili yönlerini öne çıkarıyor olabilir; çerçeve farkı tek başına bir yargıyı kanıtlamaz.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Acılı babadan çarpıcı iddia",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duygusal ifade var ama bir risk veya karar tahminine bağlanmıyor.",
+   "alternative_explanation": "Başlık ve spotlar yalnızca olayı aktarıyor; bir karar vericinin akıl yürütmesi metinde yer almıyor.",
+   "missing_context": [
+    "Bir karar vericinin açık gerekçesi veya karşılaştırmalı davranış kaydı"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ailenin avukatı duyurdu...",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Avukat kaynak olarak gösteriliyor; statüsüne belirleyici ağırlık verildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi ya da uzman kaynağa dayanmak olağan haber pratiğidir.",
+   "missing_context": [
+    "Karşı kanıtın varlığı ve nasıl ele alındığı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Saldırganlardan tehdit mesajı: Onu da senin gibi yapacağız",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı tehdit cümlesi başlıkta öne çıkıyor; bir yargıyı etkilediği gösterilmiyor.",
+   "alternative_explanation": "Ayrıntı olayın ilgili bir bilgisi ya da başlık üslubu olabilir.",
+   "missing_context": [
+    "Belirgin ayrıntının bir yargıya gerekçe yapıldığını gösteren açık ifade"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,236 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de bomba gelişme: Emre Belözoğlu ile anlaşma sağlandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Emre Belözoğlu Fenerbahçe'ye imzayı attı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum gelişmeyi 'bomba' diye nitelerken başka bir kurum aynı anlaşmayı bu sözcük olmadan veriyor.",
+   "alternative_explanation": "'Bomba gelişme' spor basınında yerleşik bir abartı kalıbıdır ve atamanın sürpriz niteliğini yansıtıyor olabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Emre Belözoğlu dönemi! Yuvaya dönüyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık dönüşü 'yuvaya dönüyor' diye anlatıyor.",
+   "alternative_explanation": "'Yuvaya dönmek' eski kulübüne dönen oyuncu ve teknik adamlar için kalıplaşmış bir deyimdir; rol ataması ya da eylem önerisi yapmıyor.",
+   "missing_context": []
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe’de ibre Emre Belözoğlu'na döndü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emre Belözoğlu Fenerbahçe'ye imzayı attı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Emre Belözoğlu sürprizi: Görüşmeler başladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar aynı süreci 'ibre döndü', 'görüşmeler başladı' ve 'imzayı attı' gibi farklı kesinlik düzeylerindeki ifadelerle veriyor.",
+   "alternative_explanation": "Farklar büyük ölçüde yayın saatlerinin sürecin farklı aşamalarına denk gelmesinden kaynaklanıyor; aynı olgu için çağrışım farkı olduğu kesin değil.",
+   "missing_context": [
+    "Resmi açıklamanın hangi saatte yapıldığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de flaş gelişme: Emre Belözoğlu ile anlaşma sağlandı! Conceiçao olmadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kasımpaşa'da Emre Belözoğlu dönemi resmen sona erdi!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Emre Belözoğlu dönemi başladı! Aziz Yıldırım görüştü, anlaşma sağlandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı transfer bir başlıkta sonuçsuz kalan alternatif aday, başka birinde ayrılınan kulüp, bir diğerinde kulüp başkanının rolü üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Her boyut olgusaldır; kurumların farklı okur kitlelerine göre giriş noktası seçmesi olağandır.",
+   "missing_context": []
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Kocaman ya da Conceiçao derken 2. Emre Belözoğlu dönemi başlıyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Tek 'ya da' kalıbı iki adayı anıyor ama aynı başlık üçüncü seçeneğin gerçekleştiğini bildiriyor.",
+   "alternative_explanation": "Başlık iki seçeneği tek seçenek olarak sunmuyor; tersine beklentinin dışına çıkıldığını anlatıyor.",
+   "missing_context": []
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İsmail Kartal ile yollarını ayıran Fenerbahçe'de teknik direktör arayışları sürüyor.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de ikinci Emre Belözoğlu dönemi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Atama, önceki teknik direktörün ayrılığı ve süren arayış süreci ile Belözoğlu'nun önceki dönemi bağlamına yerleştiriliyor.",
+   "alternative_explanation": "Süreç bilgisi olgusal bir arka plandır; bu bir etki bağlamıdır.",
+   "missing_context": []
+  }
+ ]
+}

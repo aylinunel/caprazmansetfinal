@@ -1,0 +1,238 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kırmızı bültenle aranan uyuşturucu baronu Mersin'de yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özbekistan'ın kırmızı bültenle aradığı uyuşturucu zanlısı Mersin'de yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kırmızı bültenle aranan Özbekistan uyruklu şüpheli Mersin'de yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi kurumların çoğunda 'uyuşturucu baronu', bazılarında 'zanlı' ya da 'şüpheli' olarak anılıyor; 'baron' büyük çaplı suç örgütü lideri değerlendirmesi taşıyor.",
+   "alternative_explanation": "'Baron' nitelemesi İçişleri Bakanlığı paylaşımından alınmış olabilir; ancak metinde tırnak ya da atıf olmadan kurumların kendi sesinde kullanılıyor.",
+   "missing_context": [
+    "Resmi açıklamada kişinin nasıl nitelendiği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kırmızı bültenle aranan uyuşturucu baronu yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "uyuşturucu taciri Odil Fakhrıdınovich Khudayberdıev saklandığı evde yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özbekistan'ın kırmızı bültenle aradığı uyuşturucu zanlısı Mersin'de yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi için 'baron', 'tacir' ve 'zanlı' sözcükleri kullanılıyor; 'baron' ve 'tacir' suçu kesinleşmiş gibi sunarken 'zanlı' hukuki durumu yansıtıyor.",
+   "alternative_explanation": "Kırmızı bülten kişi hakkındaki suçlamayı belgeliyor; kurumlar bu suçlamayı kısaltarak aktarmış olabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kırmızı bültenle aranan baron Mersin'de yakalandı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Özbekistan'ın kırmızı bültenle aradığı uyuşturucu zanlısı Mersin'de yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Baron' sözcüğü bir kurumda tek başına ünlemle kullanılıyor; başka bir kurum aynı olayı bu sözcük olmadan veriyor.",
+   "alternative_explanation": "'Uyuşturucu baronu' Türk haber dilinde yerleşik bir kategori adıdır; skandal ya da şok gibi bir değerlendirme sözcüğü sayılması kesin değil.",
+   "missing_context": [
+    "Sözcüğün resmi kaynaktan alınıp alınmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mersin'de kırmızı bültenle aranan uyuşturucu baronu yakalandı! Seraların arasında gizleniyordu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mersin'de uluslararası operasyon: Kırmızı bültenli uyuşturucu baronu yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kişinin saklanma biçimini, başka biri operasyonun uluslararası niteliğini öne çıkarıyor.",
+   "alternative_explanation": "Fark, aynı haberin farklı ayrıntılarının seçilmesinden ibaret; karşıt boyutlar (kazanan/kaybeden, maliyet/fayda) öne çıkarılmıyor olabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mersin'de uyuşturucuyla mücadele kapsamında düzenlenen operasyonda",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir giriş operasyonu 'uyuşturucuyla mücadele kapsamında' anıyor.",
+   "alternative_explanation": "Bu ifade bir eğilim, seri ya da politika süreci sunmaktan çok standart bir operasyon kalıbıdır.",
+   "missing_context": [
+    "Benzer yakalamaların sayısı ya da zaman içindeki eğilim"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar yakalamayı bildiriyor; kurumun kendi sesinde açık bir nedensellik ifadesi yok.",
+   "alternative_explanation": "Başlıklar olguyu doğrudan bildiriyor; nedensellik iddiası kurulmadığı için aşırı nedensel çıkarım değerlendirilemez.",
+   "missing_context": [
+    "Kurumun kendi sesiyle kurduğu açık bir nedensellik ifadesi"
+   ]
+  }
+ ]
+}

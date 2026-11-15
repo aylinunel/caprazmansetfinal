@@ -1,0 +1,216 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay'da bankacılık krizi hükümeti devirdi: Devlet Başkanı istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay Devlet Başkanı Pena, partisinin 'azil' kararına destek vermesinin ardından istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı istifa bir kurumda bankacılık krizi, diğerinde parti destekli azil üzerinden sunuluyor; bu farkın bir yargıya bağlandığı metinde görünmüyor.",
+   "alternative_explanation": "Kurumlar olayın farklı ilgili yönlerini öne çıkarıyor olabilir; çerçeve farkı tek başına bir yargıyı kanıtlamaz.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "355 milyon dolarlık emeklilik fonu krizi Pena’yı koltuğundan etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı 355 milyon dolarlık rakam başlıkta öne çıkıyor; bir yargıyı haksız biçimde belirlediği gösterilmiyor.",
+   "alternative_explanation": "Ayrıntı olayın ilgili bir bilgisi ya da başlık üslubu olabilir.",
+   "missing_context": [
+    "Belirgin ayrıntının bir yargıya gerekçe yapıldığını gösteren açık ifade"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ueno Bank skandalı Paraguay'ı sarstı: Devlet Başkanı Santiago Pena baskılar üzerine istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay Devlet Başkanı Santiago Pena, partisinin destek verdiği azil sürecinin ardından görevinden istifa ettiğini bildirdi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ortak kaynak cümlesine dayanan bir başlık \"skandal\" ve \"baskılar\" ayrıntılarını keskinleştiriyor; farkın bir sonucu etkilediği gösterilmiyor.",
+   "alternative_explanation": "Başlık özetleme gereği ayrıntılar farklı vurgulanmış olabilir.",
+   "missing_context": [
+    "Orijinal ajans metniyle karşılaştırma",
+    "Farkın bir sonuca etkisi"
+   ]
+  },
+  {
+   "card_id": "outcome-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay'da fon skandalı devlet başkanını devirdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sonuç ile skandal ilişkilendiriliyor; ancak önceden verilmiş bir kararın kalitesinin sonuca göre yargılandığı metinde yok.",
+   "alternative_explanation": "Başlık ve spotlar yalnızca olayı aktarıyor; bir karar vericinin akıl yürütmesi metinde yer almıyor.",
+   "missing_context": [
+    "Bir karar vericinin açık gerekçesi veya karşılaştırmalı davranış kaydı"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay Senatosu tarafından \"görevi kötüye kullanmak\" suçundan azledilen",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Senato kararı otorite kaynağı olarak aktarılıyor; bu statüye belirleyici ağırlık verildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi ya da uzman kaynağa dayanmak olağan haber pratiğidir.",
+   "missing_context": [
+    "Karşı kanıtın varlığı ve nasıl ele alındığı"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir alandaki olumlu izlenimin başka bir alandaki yargıya taşındığını gösteren ifade yok.",
+   "alternative_explanation": "Başlık ve spotlar yalnızca olayı aktarıyor; bir karar vericinin akıl yürütmesi metinde yer almıyor.",
+   "missing_context": [
+    "Bir karar vericinin açık gerekçesi veya karşılaştırmalı davranış kaydı"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,230 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AFAD büyüklüğünü duyurdu: Muğla açıklarında korkutan deprem",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Datça ilçesinin 253,19 kilometre açığında 5,1 büyüklüğünde deprem meydana geldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık 'korkutan' sözcüğünü kullanıyor; diğer kurumlar büyüklük, uzaklık ve derinliği veriyor.",
+   "alternative_explanation": "Deprem kıyıda hissedilmiş ve korkuya yol açmış olabilir; metinde hissedilip hissedilmediği ya da hasar bilgisi olmadığından orantısızlık kurulamıyor.",
+   "missing_context": [
+    "Depremin karada hissedilip hissedilmediği",
+    "Hasar ya da yaralanma bilgisi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla açıklarında korkutan deprem",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "AFAD büyüklüğünü açıkladı: Muğla açıklarında 5.1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum depremi 'korkutan' diye nitelerken başka bir kurum aynı başlık kalıbında bu sözcük yerine büyüklüğü veriyor.",
+   "alternative_explanation": "Sözcük, okurların deprem sırasında yaşadığı deneyimi aktarmak için seçilmiş olabilir.",
+   "missing_context": [
+    "Depremin hissedilme düzeyine dair bilgi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Akdeniz'de 5,1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AFAD duyurdu: Datça açıklarında 5,1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıkların hemen hepsi büyüklük ve konumu öne çıkarıyor.",
+   "alternative_explanation": "Kurumlar aynı AFAD verisini aynı boyutla aktarıyor; farklı bir boyut öne alınmıyor.",
+   "missing_context": []
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla Datça açıklarında 5.1 büyüklüğünde sarsıntı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Muğla açıklarında 5,1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum 'sarsıntı', diğerleri 'deprem' diyor.",
+   "alternative_explanation": "İki sözcük aynı olayı anlatır ve çağrışım farkı taşımaz.",
+   "missing_context": []
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberler tek bir depremi bildiriyor; metin ve bağlam konunun yapısal ya da tekrarlayan bir sorun olarak ele alınması gerektiğini göstermiyor.",
+   "alternative_explanation": "Tek olayın haberleştirilmesi bu tür gündelik haber için olağandır; konunun yapısal ya da tekrarlayan bir sorun olduğu sağlanan malzemede kurulmuyor.",
+   "missing_context": [
+    "Konunun tekrarlayan ya da yapısal olduğunu gösteren bağlam (önceki vakalar, istatistikler)"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Akdeniz'de 5,1 büyüklüğünde deprem",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay doğal bir afet; sorumluluğu tartışmalı bir soruşturma ya da kusur iddiası yok.",
+   "alternative_explanation": "Başlıklar bir aktöre fail ya da kusur atamıyor.",
+   "missing_context": []
+  }
+ ]
+}

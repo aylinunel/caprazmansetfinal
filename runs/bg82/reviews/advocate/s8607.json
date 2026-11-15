@@ -1,0 +1,190 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Suçlamalar vahim! Mustafa Sarıgül'ün dosyası Ankara'ya gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül soruşturmasında yetkisizlik kararı: Dosya Ankara'ya gönderildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı dosya gönderimi bir kurumda suçlamaların ağırlığı, diğerinde usul kararı üzerinden sunuluyor; yargıya bağlantı görünmüyor.",
+   "alternative_explanation": "Kurumlar olayın farklı ilgili yönlerini öne çıkarıyor olabilir; çerçeve farkı tek başına bir yargıyı kanıtlamaz.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül hakkındaki 'cinsel istismar' dosyası Ankara'ya gönderildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Suçlamalardan en çarpıcısı başlıkta öne çıkıyor; yargıya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Ayrıntı olayın ilgili bir bilgisi ya da başlık üslubu olabilir.",
+   "missing_context": [
+    "Belirgin ayrıntının bir yargıya gerekçe yapıldığını gösteren açık ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz kanıta orantısız ağırlık verildiğini gösteren karşılaştırma yok.",
+   "alternative_explanation": "Başlık ve spotlar yalnızca olayı aktarıyor; bir karar vericinin akıl yürütmesi metinde yer almıyor.",
+   "missing_context": [
+    "Bir karar vericinin açık gerekçesi veya karşılaştırmalı davranış kaydı"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki bir uyarıcının sonraki tepkiye bağlandığı gözlem yok.",
+   "alternative_explanation": "Başlık ve spotlar yalnızca olayı aktarıyor; bir karar vericinin akıl yürütmesi metinde yer almıyor.",
+   "missing_context": [
+    "Bir karar vericinin açık gerekçesi veya karşılaştırmalı davranış kaydı"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Cumhuriyet Başsavcılığı'ndan yapılan açıklamaya göre",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başsavcılık açıklaması kaynak gösteriliyor; statüye belirleyici ağırlık verildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi ya da uzman kaynağa dayanmak olağan haber pratiğidir.",
+   "missing_context": [
+    "Karşı kanıtın varlığı ve nasıl ele alındığı"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ödül öncesi içsel motivasyon ve ödül sonrası düşüş gösterilmiyor.",
+   "alternative_explanation": "Başlık ve spotlar yalnızca olayı aktarıyor; bir karar vericinin akıl yürütmesi metinde yer almıyor.",
+   "missing_context": [
+    "Bir karar vericinin açık gerekçesi veya karşılaştırmalı davranış kaydı"
+   ]
+  }
+ ]
+}

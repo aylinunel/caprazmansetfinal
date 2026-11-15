@@ -1,0 +1,233 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Recep Tayyip Erdoğan, Apple Yönetim Kurulu Üyesi Tim Cook'u Saray'da kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan, Tim Cook'u kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Tim Cook'u kabul etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı aktör 'AKP'li Cumhurbaşkanı', 'Başkan' ve 'Cumhurbaşkanı' olarak anılıyor.",
+   "alternative_explanation": "Parti üyeliği ve 'Başkan' unvanı olgusal kimlik bilgileridir; kimlik tanımının ötesinde bir değerlendirme taşıdıkları metinden kesin olarak kurulamıyor.",
+   "missing_context": [
+    "Kurumların genel unvan kullanım pratiği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tim Cook'u Saray'da kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tim Cook'u Cumhurbaşkanlığı Külliyesi'nde kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tim Cook'u Beştepe’de Cumhurbaşkanlığı Külliyesi'nde kabul etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı yer bir kurumda 'Saray', diğerlerinde 'Külliye' ya da 'Beştepe' olarak adlandırılıyor; 'Saray' görkem ve mesafe çağrışımı taşırken 'Külliye' resmi addır.",
+   "alternative_explanation": "'Saray' sözcüğü bazı kurumların yerleşik adlandırma pratiği olabilir; ancak çağrışım farkı açık.",
+   "missing_context": []
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Apple Yönetim Kurulu Başkanı Tim Cook Bağdat Caddesi'nde",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Apple Yönetim Kurulu Başkanı Tim Cook'u kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Basına kapalı gerçekleştirilen görüşmeden fotoğraf paylaşıldı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar Cook'un ziyaretinin başka duraklarını, çoğu Erdoğan'ın kabulünü öne alıyor; bir kurum görüşmenin basına kapalı olduğunu ekliyor.",
+   "alternative_explanation": "Mağaza ziyareti ve kabul farklı olgulardır; aynı olgunun farklı boyutlarının öne çıkarıldığı kesin değil.",
+   "missing_context": []
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Apple Yönetim Kurulu Başkanı Tim Cook'u kabul etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar kabulü tek bir olay olarak bildiriyor; yatırım süreci ya da eğilim bağlamı verilmiyor.",
+   "alternative_explanation": "Görüşmenin içeriği açıklanmadığı için kurumların bağlam kurmaması olağandır.",
+   "missing_context": [
+    "Görüşmenin gündemi"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar kabulü bildiriyor; kurumun kendi sesinde açık bir nedensellik ifadesi yok.",
+   "alternative_explanation": "Başlıklar olguyu doğrudan bildiriyor; nedensellik iddiası kurulmadığı için aşırı nedensel çıkarım değerlendirilemez.",
+   "missing_context": [
+    "Kurumun kendi sesiyle kurduğu açık bir nedensellik ifadesi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber tek bir ziyareti bildiriyor; konunun yapısal ya da tekrarlayan bir sorun olduğu sağlanan malzemede gösterilmiyor.",
+   "alternative_explanation": "Tek olayın haberleştirilmesi bu tür gündelik haber için olağandır; konunun yapısal ya da tekrarlayan bir sorun olduğu sağlanan malzemede kurulmuyor.",
+   "missing_context": [
+    "Konunun tekrarlayan ya da yapısal olduğunu gösteren bağlam (önceki vakalar, istatistikler)"
+   ]
+  }
+ ]
+}

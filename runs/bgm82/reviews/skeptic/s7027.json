@@ -1,0 +1,195 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Burs ve öğrenim kredisi sonuçları açıklandı — Gençlik ve Spor Bakanı Osman Aşkın Bak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "2026-2027 KYK burs sonuçları açıklandı! Burs ve kredi kazanan öğrenciler için taahhütname süreci başladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıkların hepsi sonuçların açıklandığını, bazıları ek olarak sonraki işlemi bildiriyor.",
+   "alternative_explanation": "Ek ayrıntılar hizmet bilgisidir; karşıt boyutlar öne çıkarılmıyor.",
+   "missing_context": []
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "KYK kredi ve burs sonuçları açıklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "GSB burs ve öğrenim kredisi sonuçları açıklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar 'KYK' ve 'GSB' kısaltmalarıyla aynı kurumsal süreci adlandırıyor.",
+   "alternative_explanation": "Fark yalnızca kurum kısaltmasında; aynı eylem için çağrışımı farklı sözcük kullanılmıyor.",
+   "missing_context": []
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Son dakika... KYK burs ve öğrenim kredisi başvuru sonuçları açıklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda değerlendirme sözcüğü yok; 'son dakika' yalnızca zamanlama etiketidir.",
+   "alternative_explanation": "Rutin bir idari duyuru nötr dille aktarılıyor.",
+   "missing_context": []
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar sonuç duyurusunu bildiriyor; nedensellik ifadesi yok.",
+   "alternative_explanation": "Başlıklar olguyu doğrudan bildiriyor; nedensellik iddiası kurulmadığı için aşırı nedensel çıkarım değerlendirilemez.",
+   "missing_context": [
+    "Kurumun kendi sesiyle kurduğu açık bir nedensellik ifadesi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber yıllık rutin bir duyuruyu bildiriyor; tek bir kişi ya da vaka hikâyesi sunulmuyor.",
+   "alternative_explanation": "Tek olayın haberleştirilmesi bu tür gündelik haber için olağandır; konunun yapısal ya da tekrarlayan bir sorun olduğu sağlanan malzemede kurulmuyor.",
+   "missing_context": [
+    "Konunun tekrarlayan ya da yapısal olduğunu gösteren bağlam (önceki vakalar, istatistikler)"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "KYK burs ve öğrenim kredisi başvuru sonuçları açıklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı başlık ve girişte aynı değerlendirme yönüne işaret eden iki sunum tercihi görülmüyor.",
+   "alternative_explanation": "Kurumlar resmi duyuruyu nötr biçimde aktarıyor.",
+   "missing_context": []
+  }
+ ]
+}

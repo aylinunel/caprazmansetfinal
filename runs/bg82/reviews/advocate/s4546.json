@@ -1,0 +1,186 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni Parti'ye katılım açıklamasına saatler kala Bakırköy Belediyesi'ne operasyon: 68 kişi hakkında gözaltı kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'ne yolsuzluk operasyonu: 58 kişi gözaltında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı operasyon bir kurumda siyasi zamanlama, diğerinde yolsuzluk vurgusuyla sunuluyor; bir yargıya bağlantı görünmüyor.",
+   "alternative_explanation": "Kurumlar olayın farklı ilgili yönlerini öne çıkarıyor olabilir; çerçeve farkı tek başına bir yargıyı kanıtlamaz.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "68 kişi hakkında, gözaltı ve arama talimatı verildiği öğrenildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Gözaltı sayısı 62'ye yükseldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İlk açıklanan 68 rakamı sonraki sayılar için referans olabilir; sonraki bir yargının ona bağlandığı açık değil.",
+   "alternative_explanation": "Sayı farkları operasyonun farklı anlarını yansıtıyor olabilir.",
+   "missing_context": [
+    "Sonraki tahminin ilk rakama dayandırıldığına dair açık ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Son dakika! Bakırköy Belediyesi'ne dev operasyon!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "\"Dev operasyon\" ifadesi olayı belirgin kılıyor; bunun bir yargıyı etkilediği gösterilmiyor.",
+   "alternative_explanation": "Ayrıntı olayın ilgili bir bilgisi ya da başlık üslubu olabilir.",
+   "missing_context": [
+    "Belirgin ayrıntının bir yargıya gerekçe yapıldığını gösteren açık ifade"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni Parti'ye katılacaklarını açıklamaları beklenirken, sabah saatlerinde Bakırköy Belediyesi'ne operasyon başlatıldı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki siyasi gelişme ile operasyon art arda sunuluyor; buna bağlı bir tepkinin gözlendiğine dair veri yok.",
+   "alternative_explanation": "Zaman sırası yalnızca bağlam bilgisi olabilir.",
+   "missing_context": [
+    "Okur tepkisine dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni Parti'ye katılım açıklamasına saatler kala Bakırköy Belediyesi'ne operasyon",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki olay yan yana konuyor; aralarında açık bir ilişki iddia edilmiyor, yakınlık tek başına yetmez.",
+   "alternative_explanation": "Zamanlama haber değeri taşıyan bir olgu olarak aktarılmış olabilir.",
+   "missing_context": [
+    "İki olay arasında açık ilişki iddiası",
+    "Karşılaştırmalı kanıt"
+   ]
+  }
+ ]
+}

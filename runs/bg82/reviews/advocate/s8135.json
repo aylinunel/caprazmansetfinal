@@ -1,0 +1,192 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 16:56] Mısır'da Gize-Feyyum seferindeki tren kazasında en az 7 kişi öldü, 112 kişi yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Vagonlara arkadan gelen başka bir trenin çarpmasıyla meydana gelen kazada 4 kişi öldü, 88 kişi yaralandı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 17:46] Mısır'da tren kazası: 4 ölü, 88 yaralı — Mısır'ın Giza vilayetindeki Ayat kentinde meydana gelen tren kazasında 64 kişi yaralandı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Daha yüksek güncel rakamlar yayımlandıktan sonra bazı metinler ilk rakamları (4 ölü, 88 yaralı; 64 yaralı) vermeyi sürdürüyor; ancak sonraki rakamın ilk değere dayandırıldığını ya da bilinçli olarak ona yakın tutulduğunu gösteren açık bir bağlantı yok.",
+   "alternative_explanation": "Kuruluşlar farklı resmi açıklamalara ya da ajans bültenlerine dayanmış veya haberlerini güncellememiş olabilir.",
+   "missing_context": [
+    "Her kuruluşun kullandığı kaynak ve kaynağın saati",
+    "Haberlerin sonradan güncellenip güncellenmediği"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz bilgiye karşılaştırılabilir olumlu bilgiden orantısız ağırlık verildiğini belgeleyen bir karşılaştırma bulunmuyor.",
+   "alternative_explanation": "Ölümlü bir kazanın olumsuz dille verilmesi olayın niteliğiyle orantılıdır.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgi"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kazanın nedeni henüz bilinmiyor ancak kazanın yaşandığı bölge geçmişteki ölümcül tren kazalarıyla biliniyor.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir metin bölgedeki geçmiş ölümcül kazaları anıyor; ancak bu hatırlatmanın bir neden ya da olasılık çıkarımına gerekçe yapıldığı açıkça görülmüyor, metin kazanın nedeninin bilinmediğini de belirtiyor.",
+   "alternative_explanation": "Geçmiş kazaların anılması olgusal bir bağlam bilgisi olabilir.",
+   "missing_context": [
+    "Geçmiş kazalara dayanan bir risk ya da neden çıkarımı",
+    "Bölgedeki kaza sıklığına dair veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milliyet · 16:49] Mısır'da korkunç tren kazası: 64 kişi yaralandı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar duygusal nitelemeler kullanıyor; ancak bunların bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "alternative_explanation": "Nitelemeler kazanın ağırlığını betimliyor olabilir.",
+   "missing_context": [
+    "Belirgin ayrıntıya dayanan açık bir sonuç"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde olumlu bir izlenimin başka bir alandaki yargıya taştığını gösteren bir ifade yok.",
+   "alternative_explanation": "Haberler bir kazayı aktarıyor.",
+   "missing_context": [
+    "İki alana ait olumlu yargılar"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler bir olayın haber başlıklarından oluşuyor; bir etkinliğe bağlanan dış ödül, ödülün kaldırılması ya da sonrasında gönüllü katılımın azalması gibi bir gözlem yer almıyor.",
+   "alternative_explanation": "Haber metinleri motivasyon değişimini ölçecek bir akış içermez; kartın konusu bu olayla ilişkili değildir.",
+   "missing_context": [
+    "Kişinin ödül öncesi gönüllü katılım düzeyi",
+    "Beklenen ve etkinliğe bağlı bir ödül",
+    "Ödül kaldırıldıktan sonraki davranış ölçümü"
+   ]
+  }
+ ]
+}
