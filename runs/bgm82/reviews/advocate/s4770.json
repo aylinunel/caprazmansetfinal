@@ -1,0 +1,257 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi’nde büyük şok: 40 kişi tutuklandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'nde ihale vurgunu: 39 şüpheli tutuklandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 10:59] Bakırköy Belediyesine yönelik soruşturmada 39 şüpheli tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar kendi seslerinde 'büyük şok' ve 'ihale vurgunu' ifadelerini kullanıyor; başka bir kurum aynı olguyu bunlar olmadan veriyor.",
+   "alternative_explanation": "Değerlendirici kelimeler başlıkta dikkat çekmek için kullanılan yaygın kalıplar olabilir; olgular diğer metinlerle aynıdır.",
+   "missing_context": [
+    "Suçlamaların yargı sürecindeki durumu"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "39 kişi tutuklandı, başkanın babasına ev hapsi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi soruşturması: Beş başkan yardımcısı dahil 39 tutuklama",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi soruşturmasında 39 kişiye tutuklama kararı, Ovalıoğlu'nu üzdü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklama kararını bir kurum başkanın yakınları, biri tutuklananların unvanı, biri ise başkanın tepkisi üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklı boyutların öne çıkması kurumların erişilen bilgi, yayın saati ve okur ilgisi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Kurumların aynı saatte erişebildiği bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'ne rüşvet soruşturması",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediye'sine yolsuzluk soruşturması",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'nde ihale vurgunu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma 'rüşvet', 'yolsuzluk' ve 'ihale vurgunu' olarak adlandırılıyor; 'vurgun' suçun gerçekleştiği yönünde daha güçlü bir çağrışım taşıyor.",
+   "alternative_explanation": "Kelime farkları üslup, ajans metninden aktarım veya başlık uzunluğu farkı olabilir.",
+   "missing_context": [
+    "Soruşturmadaki resmî suç isimleri"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Belediye Başkanı Ayşegül Ovalıoğlu’nun babası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "başkanın babasına ev hapsi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı aktörler farklı unvanlarla anılıyor; ancak bu etiketler tanımlamanın ötesinde bir değerlendirme taşımıyor.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "sevk edilen 57 kişiden 39 kişi hakkında tutuklama kararı verildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "gözaltına alınan 63 kişiden, 20'si belediye görevlisi olmak üzere toplam 39 kişi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Tutuklama sayısı bir metinde 57 kişilik, diğerinde 63 kişilik bir paydaya karşı veriliyor; iki paydanın karşılaştırılabilirliği ve bir iddianın paydanın ötesine taşındığı net değil.",
+   "alternative_explanation": "Paydalar sürecin farklı aşamalarını (gözaltı / hâkime sevk) yansıtıyor olabilir.",
+   "missing_context": [
+    "Sürecin her aşamasındaki resmî sayılar"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde iki seçenekli bir sunum yok.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  }
+ ]
+}

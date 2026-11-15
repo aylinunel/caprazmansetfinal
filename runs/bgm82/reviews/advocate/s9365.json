@@ -1,0 +1,264 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "sabah saatlerinde dev bir operasyon için düğmeye basıldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında sıcak gelişme: 17 şüpheli hakkında gözaltı kararı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 08:38] Sarıgül soruşturmasında yeni operasyon: 17 gözaltı kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kendi sesinde 'dev bir operasyon' ve 'sıcak gelişme' ifadelerini kullanıyor; başka bir kurum aynı olguyu bunlar olmadan veriyor.",
+   "alternative_explanation": "Değerlendirici kelimeler başlıkta dikkat çekmek için kullanılan yaygın kalıplar olabilir; olgular diğer metinlerle aynıdır.",
+   "missing_context": [
+    "Operasyonun ölçeğine ilişkin resmî bilgi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski CHP'li milletvekili Mustafa Sarıgül'le ilgili yürütülen soruşturmada",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Gözaltı listesinde eski bir belediye başkanı, eski belediye başkan yardımcısının",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Şüphelilerden 15’i gözaltına alınırken, firari durumdaki iki şüphelinin yakalanması için çalışmalar sürüyor.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı operasyonu bir kurum siyasi kimlik, biri gözaltına alınanların unvanları, biri ise firari şüpheliler üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklı boyutların öne çıkması kurumların erişilen bilgi, yayın saati ve okur ilgisi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Kurumların aynı saatte erişebildiği bilgi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski CHP'li milletvekili Mustafa Sarıgül'le",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erzincan Milletvekili Mustafa Sarıgül ailesine",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgüller soruşturmasında yeni operasyon!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumda parti vurgusuyla 'eski CHP'li milletvekili', başka bir kurumda 'Erzincan Milletvekili' olarak, aile ise bir başlıkta 'Sarıgüller' diye anılıyor; bu etiketlerin meşruiyet değerlendirmesi taşıyıp taşımadığı net değil.",
+   "alternative_explanation": "Unvan farkları kurumların bilgi güncelliğinden kaynaklanabilir.",
+   "missing_context": [
+    "Sarıgül'ün güncel unvanı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eş zamanlı baskınlarda 17 şüpheli",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında yeni operasyon: 17 gözaltı kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında yeni dalga operasyon: 15 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı eylem 'baskın', 'operasyon' ve 'dalga operasyon' olarak adlandırılıyor; 'baskın' daha sert bir çağrışım taşıyor.",
+   "alternative_explanation": "Kelime farkları üslup, ajans metninden aktarım veya başlık uzunluğu farkı olabilir.",
+   "missing_context": [
+    "Kelimelerin farklı çağrışımlarını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde bir oran veya pay sunulmuyor.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında yeni operasyon: 15 kişi gözaltına alındı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Aralarında Ömer Sarıgül'ün de bulunduğu 27 kişi daha önce tutuklanmıştı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum yeni operasyonu daha önceki tutuklamalara değinerek soruşturma dizisinin içine yerleştiriyor.",
+   "alternative_explanation": "Önceki tutuklamalar okura arka plan sağlamak için olağan bilgidir.",
+   "missing_context": [
+    "Soruşturmanın zaman çizelgesi"
+   ]
+  }
+ ]
+}

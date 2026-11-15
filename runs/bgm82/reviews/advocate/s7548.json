@@ -1,0 +1,255 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgül ailesine yönelik soruşturmada flaş gelişme",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgüllere yönelik soruşturmada büyük gözaltı dalgası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 09:01] Sarıgül soruşturması: Şişli MYO'ya kayyum atandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar kendi seslerinde 'flaş gelişme' ve 'büyük gözaltı dalgası' ifadelerini kullanıyor; başka bir kurum aynı olguyu bunlar olmadan veriyor.",
+   "alternative_explanation": "Değerlendirici kelimeler başlıkta dikkat çekmek için kullanılan yaygın kalıplar olabilir; olgular diğer metinlerle aynıdır.",
+   "missing_context": [
+    "Gözaltıların ölçeğine ilişkin resmî bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturması okula sıçradı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında Şişli MYO'ya kayyım atandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında 11 kişi daha gözaltında! Şişli Meslek Yüksek Okulu'na kayyum atandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olay 'sıçradı' ve 'atandı' gibi kelimelerle veriliyor; 'kayyum/kayyım' farkı yazım farkıdır. Yan anlam farkının ne ölçüde olduğu net değil.",
+   "alternative_explanation": "Kelime farkları üslup, ajans metninden aktarım veya başlık uzunluğu farkı olabilir.",
+   "missing_context": [
+    "Kelimelerin farklı çağrışımlarını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturması kapsamında Mustafa Sarıgül’ün kurucusu olduğu Şişli Meslek Yüksek Okulu’na kayyım atandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "‘kara para aklama’ ve ‘cinsel saldırı’ iddiasıyla",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında 11 yeni gözaltı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı gelişmeyi bir kurum okulun kurucusu, biri soruşturmanın iddia kapsamı, biri ise gözaltı sayısı üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklı boyutların öne çıkması kurumların erişilen bilgi, yayın saati ve okur ilgisi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Kurumların aynı saatte erişebildiği bilgi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgüllere yönelik soruşturmada",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgüller soruşturmasında yeni gelişme!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül ailesine yönelik soruşturmada",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı aile bazı başlıklarda 'Sarıgüller', bazılarında 'Sarıgül ailesi' olarak anılıyor; çoğul soyadı kullanımının değerlendirme taşıyıp taşımadığı net değil.",
+   "alternative_explanation": "Çoğul soyadı, başlık kısalığı için kullanılan yaygın bir kalıp olabilir.",
+   "missing_context": [
+    "Etiketin okurda değerlendirme yarattığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturması okula sıçradı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında yeni dalga: 11 gözaltı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık soruşturmayı yayılan bir şey gibi 'okula sıçradı' diye anlatıyor, bir diğeri 'dalga' kullanıyor; bunların rol atayan bir metafor mu yoksa kalıplaşmış deyim mi olduğu net değil.",
+   "alternative_explanation": "'Sıçramak' ve 'dalga' Türkçe haber dilinde kalıplaşmış ifadelerdir.",
+   "missing_context": [
+    "İfadenin haber metninin devamında nasıl kullanıldığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde iki seçenekli bir sunum yok.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  }
+ ]
+}

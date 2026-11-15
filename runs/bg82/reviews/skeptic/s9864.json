@@ -1,0 +1,203 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Halk TV'nin firari patronu Cafer Mahiroğlu soruşturmasında yeni gelişme",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İş insanı Cafer Mahiroğlu'na yönelik soruşturmada gözaltına alınan 5 şüpheli tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi farklı nitelemelerle anılıyor; bir tercih bu farka bağlanmıyor. Kart, eşdeğer seçeneklerin açıkça eşdeğer olduğunun metinde kurulmasını ve bir tercihin yalnızca sunuluş farkına bağlanmasını şart koşuyor; başlıklar arasında ifade farkı görülse de hiçbir metin bir karar ya da tercihi bu farka dayandırmıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatleri, farklı ajans kaynakları ve olayın farklı aşamalarının haberleştirilmesiyle açıklanabilir; kurumların editoryal tercihi bir akıl yürütme hatası değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin bu çerçevelere maruz kalıp farklı yargıya vardığını gösteren veri",
+    "Başlıkların bilgi açısından eşdeğer olduğunu açıkça belirten bir ifade"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "daha önce tutuklanan eski CHP Silivri İlçe Başkanı Doruk",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Parti bağlantısı bildiriliyor; ancak bir suçlama farkının bu aidiyete bağlandığı ve karşılaştırılabilir vakalarda tutarsız ölçüt uygulandığı gösterilmiyor. Kart, grup üyeliğinin açıkça kurulmasını ve güvenilirlik/suçlama/fayda farkının bu üyeliğe bağlanmasını istiyor; metinde grup aidiyetiyle gerekçelendirilmiş bir yargı farkı bulunmuyor.",
+   "alternative_explanation": "Siyasi ya da kimlik etiketleri kişileri tanıtmak için kullanılmış olabilir; kurumların yerleşim farkı tek başına grup kayırmacılığını kanıtlamaz.",
+   "missing_context": [
+    "Karşılaştırılabilir olaylarda farklı grup üyelerine uygulanan tutarsız ölçüt",
+    "Grup kimliği nedeniyle indirgenen bir kanıt"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumlu izlenim ve alanlar arası aktarım yok. Kart, bir alandaki olumlu izlenimin ayrı bir alandaki olumlu yargıya açıkça bağlanmasını istiyor; metinde böyle iki ayrı alan ve aralarında kurulmuş bir bağ yok.",
+   "alternative_explanation": "Olumlu nitelemeler kurumun alışılmış üslubu ya da kaynağın kendi açıklamasının aktarımı olabilir; bir alandan diğerine yargı aktarımı yapılmıyor.",
+   "missing_context": [
+    "İlk alandaki izlenimle ikinci alandaki yargı arasında açık gerekçe bağı",
+    "Alanların karar için ilgisiz olduğuna dair kanıt"
+   ]
+  },
+  {
+   "card_id": "messenger-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Halk TV sahibi Mahiroğlu soruşturmasında yeni gelişme!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kişinin medya kuruluşu sahibi olduğu belirtiliyor; bir iddianın bu kimlik yüzünden farklı değerlendirildiği gösterilmiyor. Kart, aynı iddianın yalnızca kaynağın kimliği nedeniyle farklı değerlendirildiğini gösteren açık kanıt istiyor; metinlerde bir iddianın kabul ya da reddi mesajı verenin kimliğine bağlanmıyor.",
+   "alternative_explanation": "Bilginin hangi kaynaktan geldiğinin ya da kişinin kimliğinin belirtilmesi tanıtım ve kaynak gösterme pratiğidir.",
+   "missing_context": [
+    "Aynı iddianın farklı kaynaklardan geldiğinde farklı karşılandığını gösteren karşılaştırma",
+    "Kaynak kimliğinin içeriği gölgelediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "belediye ihaleleri ve milyonluk rüşvet pazarlığı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı rakamlar başlığa alınıyor; bir yargının gerekçesine dönüştüğü gösterilmiyor. Göze çarpan ayrıntılar başlıklarda öne çıkarılıyor; fakat bu ayrıntının bir yargı ya da tercihe açıkça bağlandığı veya ilgili karşı kanıtın göz ardı edildiği metinde gösterilmiyor. Tek metindeki vurgu bu kart için yeterli değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması haber değeri ve habercilik konvansiyonlarıyla açıklanabilir; bu bir yargı hatası değil, sunum tercihidir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin farklı ağırlıklandırıldığını gösteren karşılaştırmalı karar verisi",
+    "Vurgunun bir sıklık ya da risk tahminine dönüştürüldüğünü gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde ödül-motivasyon ilişkisi yok. Bu etki kartı, ödül öncesi içsel ilgi, ödüle bağlı beklenti ve ödül sonrası ölçülebilir düşüş verisi istiyor; haber metinlerinde bu üç koşuldan hiçbiri gözlenemiyor.",
+   "alternative_explanation": "Konu bir ödül-motivasyon ilişkisi değil, bir haber olayıdır; kartın kavramsal alanı metne uymuyor.",
+   "missing_context": [
+    "Ödül öncesi gönüllü katılım düzeyi",
+    "Ödülün beklenip kaldırıldığına dair bilgi",
+    "Sonraki katılımdaki ölçülebilir değişim"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,251 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD'de Pete Hegseth görevden alınmaktan kurtuldu! Temsilciler Meclisi'nden azil tasarısına ret",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ABD Savunma Bakanı Hegseth hakkındaki azil girişimini Cumhuriyetçiler engelledi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhuriyetçi Kongre üyesinin hazırladığı 8 maddelik önerge, 211'e karşı 204 oyla ilgili komisyona havale edildi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı oylamayı bir kurum Bakan'ın kişisel sonucu, biri engelleyen grup, biri ise prosedür ve oy sayısı üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklı boyutların öne çıkması kurumların erişilen bilgi, yayın saati ve okur ilgisi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Kurumların aynı saatte erişebildiği bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Temsilciler Meclisi'nden azil tasarısına ret",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "önergeyi Adalet Komisyonu’na sevk etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hegseth'e azil girişimi engellendi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı meclis işlemi kurumların kendi seslerinde 'ret', 'komisyona sevk' ve 'engellendi' olarak adlandırılıyor; 'ret' esastan reddetme, 'sevk' ise erteleme çağrışımı taşıyor.",
+   "alternative_explanation": "Kelime farkları üslup, ajans metninden aktarım veya başlık uzunluğu farkı olabilir.",
+   "missing_context": [
+    "Oylanan önergenin resmî adı ve hukuki sonucu"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD'de Pete Hegseth görevden alınmaktan kurtuldu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 08:49] ABD Temsilciler Meclisi, Savunma Bakanı Hegseth'e yönelik azil girişimini engelledi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kendi sesinde 'kurtuldu!' ifadesini kullanıyor; başka bir kurum aynı olguyu bu değerlendirme olmadan veriyor.",
+   "alternative_explanation": "Değerlendirici kelimeler başlıkta dikkat çekmek için kullanılan yaygın kalıplar olabilir; olgular diğer metinlerle aynıdır.",
+   "missing_context": [
+    "'Kurtuldu' ifadesinin yan anlamına ilişkin karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "8 ayrı suçlamayla azil istemiyle Temsilciler Meclisi'ne sundu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay sonuçlanmış bir meclis oylamasıdır; sorumluluğu belirlenmemiş bir olay ya da başlık dilbilgisiyle atanan bir suçlama yok. Suçlamalar 'suçlamayla' ifadesiyle önergeye atfediliyor.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD'de Pete Hegseth görevden alınmaktan kurtuldu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Temsilciler Meclisi'nden azil tasarısına ret",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 09:00] ABD Temsilciler Meclisi, Savunma Bakanı Hegseth'e yönelik azil girişimini engelledi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı başlıkta 'kurtuldu!' değerlendirmesi ile işlemin 'ret' olarak adlandırılması bir arada; ikisi de olayı kesin ve Bakan lehine sonuçlanmış bir süreç olarak sunuyor. Diğer kurumlar aynı olguyu bu bileşim olmadan veriyor.",
+   "alternative_explanation": "Başlık, oylamanın pratik sonucunu kısa yoldan aktarıyor olabilir.",
+   "missing_context": [
+    "Komisyona sevkin sürecin tamamen sona erdiği anlamına gelip gelmediği"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde konuyu yalnızca iki seçeneğe indiren bir ifade yok.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  }
+ ]
+}

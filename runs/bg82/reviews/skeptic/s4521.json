@@ -1,0 +1,211 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Antalya'da hortum felaketi: 4 işçi ölü, 1 işçi yaralandı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Can kaybı vurgusu olayın kendisiyle orantılı görünüyor. Olumsuz sözcükler ve can kaybı vurgusu görülüyor; ancak kart karşılaştırılabilir olumlu kanıta göre orantısız ağırlığın açıkça belgelenmesini istiyor ve olumsuz ifade tek başına yeterli sayılmıyor.",
+   "alternative_explanation": "Olumsuz olaylarda olumsuz vurgu olayın kendisiyle orantılı olabilir; can kaybı ve hasar haberin temel bilgisidir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin metinde bulunup küçümsendiğini gösteren kanıt",
+    "Olumsuz ağırlıklandırmanın bir değerlendirmeyi haksız biçimde etkilediğini gösteren veri"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Antalya'da hortum faciası! 2 konteyner savruldu, 5 işçi öldü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ölü sayısı 4 oldu, bir işçi hayata döndü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Erken bir haberde 5 ölü deniyor, sonrakiler 4'te birleşiyor; kurumlar ilk rakama bağlı kalmıyor, güncelliyor. İlk açıklanan bilgiler sonraki haberlere referans olabilir; ancak metin sonraki bir tahminin bu ilk değere açıkça bağlandığını ve yeni kanıta rağmen ona yakın tutulduğunu göstermiyor.",
+   "alternative_explanation": "Sayılar arasındaki farklar resmî açıklamaların güncellenmesi ve farklı yayın saatleriyle açıklanabilir; eski rakamı kullanan kurum güncel bilgiye henüz ulaşmamış olabilir.",
+   "missing_context": [
+    "Her kurumun rakamı aldığı kaynak ve saat",
+    "Güncel rakam bilindiği hâlde eski değerde ısrar edildiğini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Antalya'da sarı kodlu uyarı verilmişti! Şantiyeyi aniden hortum vurdu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "A Haber uyarıyı hatırlatıyor ama bir kişinin karakterine nedensel atıf yapmıyor. Kart, gözlenen davranışın kalıcı bir karaktere bağlanmasını ve mevcut durumsal etkenin gerekçesiz göz ardı edilmesini istiyor; metinlerde kişiye istikrarlı bir eğilim atfeden açık bir nedensel yargı bulunmuyor.",
+   "alternative_explanation": "Haberler olayı ve hukuki/olgusal süreci aktarıyor; kişilik ya da karakter üzerinden açıklama yapılmıyor.",
+   "missing_context": [
+    "Davranışı kişilik özelliğine bağlayan açık ifade",
+    "Bilinen durumsal etkenin gerekçesiz reddedildiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye’de bildiğimiz kadarıyla ilk kez bir hortum yüzünden can kaybı yaşandı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "10haber olayın emsalsizliğini belirtiyor; bu bir canlılık temelli genelleme değil, tersine sıklığın düşüklüğüne işaret. Kart, hatırlanabilirlik ya da canlılığın bir tahmin veya genellemenin gerekçesi olarak açıkça kullanılmasını istiyor; metinlerde bir olayın kolay hatırlanmasına dayanarak risk ya da sıklık tahmini yapılmıyor.",
+   "alternative_explanation": "Önceki olaylara atıf bağlam bilgisi olarak verilmiş olabilir; bu bir sıklık tahmini yerine geçmiyor.",
+   "missing_context": [
+    "Bir risk ya da sıklık tahmininin canlı örneğe dayandırıldığını gösteren ifade",
+    "Metinde bu tahmine karşıt daha güçlü sıklık verisi"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Antalya'da akılalmaz kaza",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Antalya'da hortum felaketi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay 'kaza' ya da 'felaket' diye adlandırılıyor; eşdeğerlik ve tercih bağı kurulmuyor. Kart, eşdeğer seçeneklerin açıkça eşdeğer olduğunun metinde kurulmasını ve bir tercihin yalnızca sunuluş farkına bağlanmasını şart koşuyor; başlıklar arasında ifade farkı görülse de hiçbir metin bir karar ya da tercihi bu farka dayandırmıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatleri, farklı ajans kaynakları ve olayın farklı aşamalarının haberleştirilmesiyle açıklanabilir; kurumların editoryal tercihi bir akıl yürütme hatası değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin bu çerçevelere maruz kalıp farklı yargıya vardığını gösteren veri",
+    "Başlıkların bilgi açısından eşdeğer olduğunu açıkça belirten bir ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İşçilerin kaldığı 2 konteyner havaya savruldu!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Görsel ayrıntı öne çıkıyor; bir yargıya bağlanmıyor. Göze çarpan ayrıntılar başlıklarda öne çıkarılıyor; fakat bu ayrıntının bir yargı ya da tercihe açıkça bağlandığı veya ilgili karşı kanıtın göz ardı edildiği metinde gösterilmiyor. Tek metindeki vurgu bu kart için yeterli değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması haber değeri ve habercilik konvansiyonlarıyla açıklanabilir; bu bir yargı hatası değil, sunum tercihidir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin farklı ağırlıklandırıldığını gösteren karşılaştırmalı karar verisi",
+    "Vurgunun bir sıklık ya da risk tahminine dönüştürüldüğünü gösteren ifade"
+   ]
+  }
+ ]
+}

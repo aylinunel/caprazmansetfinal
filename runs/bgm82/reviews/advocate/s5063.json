@@ -1,0 +1,245 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da deprem: İkinci Başkan Metin Öztürk şok iddialarla istifa etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray'da şok istifa!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 13:12] Galatasaray'da Metin Öztürk istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar kendi seslerinde 'deprem' ve 'şok' ifadelerini kullanıyor; başka bir kurum aynı olguyu bunlar olmadan veriyor.",
+   "alternative_explanation": "Değerlendirici kelimeler başlıkta dikkat çekmek için kullanılan yaygın kalıplar olabilir; olgular diğer metinlerle aynıdır.",
+   "missing_context": [
+    "İstifanın kulüp içindeki etkisine dair bilgi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Toplantıdaki olaylar bardağı taşırdı! Metin Öztürk Galatasaray'daki görevlerinden istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Metin Öztürk kimdir? Galatasaray'ın ikinci başkanı neden istifa etti?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Metin Öztürk'ün ardından bir istifa daha! Galatasaray'da Abdullah Kavukcu görevi bıraktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifayı bir kurum toplantıdaki olaylar, biri kişinin biyografisi, biri ise ardından gelen ikinci istifa üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklı boyutların öne çıkması kurumların erişilen bilgi, yayın saati ve okur ilgisi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Kurumların aynı saatte erişebildiği bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da deprem:",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray yönetiminde kriz: Metin Öztürk'ten istifa kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray'da sular durulmuyor!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı durum 'deprem', 'kriz' ve 'sular durulmuyor' ifadeleriyle veriliyor; bunlar farklı yoğunlukta çalkantı çağrışımları taşıyor.",
+   "alternative_explanation": "Kelime farkları üslup, ajans metninden aktarım veya başlık uzunluğu farkı olabilir.",
+   "missing_context": [
+    "Kelimelerin farklı çağrışımlarını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da deprem:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Toplantıdaki olaylar bardağı taşırdı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık istifayı 'deprem' metaforuyla anlatıyor; bir diğeri 'bardağı taşırdı' deyimini kullanıyor. Bunların rol atayan metaforlar mı yoksa kalıplaşmış ifadeler mi olduğu net değil.",
+   "alternative_explanation": "'Deprem' spor basınında kalıplaşmış bir ifadedir; 'bardağı taşırdı' bir deyimdir.",
+   "missing_context": [
+    "Metaforun haberin devamında nasıl işlendiği"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Metin Öztürk istifa etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray'da istifa krizi. Metin Öztürk'ün ardından Abdullah Kavukcu da istifa etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum istifayı ardından gelen ikinci istifayla birlikte bir 'istifa krizi' dizisinin içine yerleştiriyor.",
+   "alternative_explanation": "İkinci istifa olayın doğrudan devamı olarak ilgili bir bağlamdır.",
+   "missing_context": [
+    "Kulüp yönetimindeki önceki ayrılıklar"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde iki seçenekli bir sunum yok.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  }
+ ]
+}
