@@ -1,0 +1,328 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 22:34] Soykırımcı Netanyahu için yolun sonu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 22:39] Katil Netanyahu dönemi bitiyor!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 19:40] Netanyahu’ya soğuk duş!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 22:33] İsrail'de hükümet kurma yetkisi Eisenkot'a verildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      3
+     ]
+    }
+   ],
+   "mechanism": "A Haber 'Soykırımcı', Takvim 'Katil' sıfatlarını ve 'yolun sonu', 'dönemi bitiyor' gibi değerlendirmeleri kendi sesiyle kullanıyor; Yeni Şafak aynı gelişmeyi bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Sıfatlar kurumların İsrail hükümetinin Gazze'deki eylemlerine ilişkin yerleşik editoryal tutumunu yansıtıyor olabilir.",
+   "missing_context": [
+    "Kurumların Netanyahu'yu diğer haberlerde nasıl andığı."
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Soykırımcı Netanyahu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "katil Netanyahu'nun en güçlü rakibi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başbakan Netanyahu'nun rakibi Eisenkot'a",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başbakan Binyamin Netanyahu'nun siyasi rakibi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi TGRT ve ANKA'da 'Başbakan', A Haber'de 'Soykırımcı' ve 'katil' olarak anılıyor; bu etiketler kimlik belirtmenin ötesinde bir meşruiyet yargısı taşıyor.",
+   "alternative_explanation": "Etiketler kurumların İsrail'in askeri eylemlerine dair kamuya açık tutumunu yansıtıyor olabilir.",
+   "missing_context": [
+    "Kurumların bu etiketleri ne zamandan beri kullandığı."
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Netanyahu’ya soğuk duş!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Soykırımcı Netanyahu için yolun sonu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Netanyahu'ya ağır darbe!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar gelişmeyi 'soğuk duş', 'yolun sonu', 'ağır darbe' gibi imgelerle anlatıyor; 'yolun sonu' bir son öngörüsü taşısa da bu ifadeler büyük ölçüde yerleşik deyimler.",
+   "alternative_explanation": "Bunlar siyasi haberlerde sık kullanılan kalıplaşmış deyimler; yeni bir rol düzeni kurmuyor olabilir.",
+   "missing_context": [
+    "Deyimlerin bu kurumlarda ne sıklıkla kullanıldığı."
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 22:39] Katil Netanyahu dönemi bitiyor! İsrail'de hükümeti kurma görevi Gadi Eisenkot'a verildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 22:35] SON DAKİKA I Tel Aviv basını duyurdu: Hükümet kurma görevi Eisenkot'a verildi! İsrail'de Netanyahu dönemi sona eriyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Eisenkot ve Netanyahu çoğunluğu sağlayamamıştı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Arap partilerinin desteklediği Eisenkot'u zorlu bir uzlaşma arayışı bekliyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Takvim başlığa 'Netanyahu dönemi bitiyor' öngörüsüyle başlıyor; oysa hükümet henüz kurulmadı ve Mynet ile DW Türkçe çoğunluğun belirsizliğini aktarıyor. Ancak olayın kendisi de başlıkta yer aldığından ana ögenin yalnızca sonuç olduğu kesin değil.",
+   "alternative_explanation": "Görevlendirme, Netanyahu'nun başbakanlığının sona ereceği yönünde kurumların makul bir değerlendirmesi olabilir.",
+   "missing_context": [
+    "Hükümetin kurulma ihtimaline dair kaynaklar."
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 22:34] Soykırımcı Netanyahu için yolun sonu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İsrail siyasetinde dengeleri değiştirecek kritik bir gelişme yaşandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "katil Netanyahu'nun en güçlü rakibi Gadi Eisenkot'a verdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 11:23] İsrail Cumhurbaşkanı Herzog'un, hükümet kurma yetkisini muhalefet lideri Eisenkot'a vereceği bildirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      3
+     ]
+    }
+   ],
+   "mechanism": "A Haber başlık ve lede'de değerlendirici etiketi ('Soykırımcı', 'katil'), sonuç öngörüsünü ('yolun sonu') ve önem vurgusunu ('dengeleri değiştirecek') birlikte kullanıyor; hepsi aynı yönü gösteriyor. AA aynı olguyu bu bileşim olmadan veriyor.",
+   "alternative_explanation": "A Haber'in yerleşik editoryal dili ve başlık kalıpları seçimlerin ortak yönünü açıklayabilir.",
+   "missing_context": [
+    "A Haber haberinin devamı."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aksam · 00:12] Netanyahu'ya kötü haber!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eisenkot'a hükümeti kurması için 28 gün süre verilecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haber7 · 23:18] Herzog, hükümet kurma yetkisini Eisenkot'a verdi! Netanyahu'dan darbe girişimi gibi çağrı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Arap partilerinin desteklediği Eisenkot'u zorlu bir uzlaşma arayışı bekliyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı görevlendirme için Akşam Netanyahu'nun kaybını, Yeni Şafak süreç takvimini, Haber7 Netanyahu'nun tepkisini, DW Türkçe Arap partilerinin desteği ve zorlu uzlaşmayı öne çıkarıyor.",
+   "alternative_explanation": "Vurgular farklı okur ilgilerine yanıt veren olağan editoryal seçimler olabilir.",
+   "missing_context": [
+    "Başlıkların aynı bilgi düzeyinde yazılıp yazılmadığı."
+   ]
+  }
+ ]
+}

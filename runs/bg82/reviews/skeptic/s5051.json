@@ -1,0 +1,164 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dünya Gazetesi'nin patronu Umut Güner fon soruşturmasından gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında yeni gelişme: Umut Güner gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı vurgularla başlıklandırıyor; ancak metin, bu sunum farkına bağlanmış bir tercih, yargı ya da öneri göstermiyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinden, ajans metinlerinden, olayın gelişen aşamalarından ve yer sınırından kaynaklanabilir; açıklamaların karar açısından eşdeğer olduğu metinde kurulmuyor.",
+   "missing_context": [
+    "Başlıkların karar açısından eşdeğer olduğuna dair açık tespit",
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gazetenin bağlı olduğu Dünya Holding'in ortakları arasında, SPK'nin 15 fonunu tasfiye kararı aldığı Bulls Yatırım Holding de bulunuyor.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum gazetenin bağlı olduğu holding ile tasfiye kararı verilen fon şirketi arasında bir ortaklık ilişkisi kuruyor; ancak bu olgusal bir ortaklık bilgisi ve seçilmiş tesadüflerden gerekçesiz bir çıkarım yapıldığı gösterilmiyor.",
+   "alternative_explanation": "Ortaklık yapısı sermaye payı rakamlarıyla başka kurumlarca da aktarılıyor; ilişki belgeye dayalı olgusal bilgi olabilir.",
+   "missing_context": [
+    "İlişkiyi açıkça öne süren ifade",
+    "İlişkiyi çürüten karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı ya da rakamı öne çıkarıyor; metin bu ayrıntıyı bir yargıya ya da seçime açıkça bağlamıyor ve karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı olayın haber değeri taşıyan olgusal bir parçası olabilir; çarpıcılık tek başına hatalı ağırlıklandırma kanıtı değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı belirlediğini gösteren açık ifade",
+    "Belirgin ve belirgin olmayan bilginin nasıl ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin, önceki bir uyarana maruz kalan birinin sonraki bir yanıtını tanımlamıyor; olayların sıralanması tek başına hazırlama etkisi göstermez.",
+   "alternative_explanation": "Olayların art arda aktarılması kronolojik haberciliğin gereğidir; bir maruziyet-yanıt ilişkisi iddia edilmiyor.",
+   "missing_context": [
+    "Somut bir önceki maruziyet ve sonraki yanıt",
+    "Karşılaştırmalı ya da tekrarlanan gözlem"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde grup aidiyetleri anılıyor; ancak güvenilirlik, suçlama ya da yararda grup üyeliğine bağlanan ve tutarsız standartla gerekçelendirilen bir fark açıkça gösterilmiyor.",
+   "alternative_explanation": "Parti ya da kurum aidiyetinin anılması olgusal kimlik bilgisi olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir vakalara farklı standart uygulandığını gösteren kanıt",
+    "Grup üyeliğinin bir yargıya bağlandığı açık ifade"
+   ]
+  }
+ ]
+}

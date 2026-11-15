@@ -1,0 +1,246 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'ın imzasıyla 11 üniversiteye rektör atamaları yapıldı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Recep Tayyip Erdoğan’ın imzasıyla",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Recep Tayyip Erdoğan, 11 üniversiteye rektör ataması yaptı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı aktör \"Başkan\", \"AKP'li Cumhurbaşkanı\" ve \"Cumhurbaşkanı\" diye anılıyor.",
+   "alternative_explanation": "\"Başkan\" ve \"AKP'li\" olgusal unvan ve bağlar; değerlendirme taşıyıp taşımadıkları tartışmalı.",
+   "missing_context": [
+    "Kurumların unvan politikası"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Resmi Gazete'de yayımlandı: Erdoğan 11 üniversiteye yeni rektör atadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "11 üniversiteye rektör atandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Etken ve edilgen çatı farkı var; ancak bu çağrışım değil dilbilgisi ve üslup farkı.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "11 üniversiteye rektör atandı: 7'sinde isim değişti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan’dan 11 üniversiteye rektör ataması: Kararlar Resmi Gazete’de",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı atama bir kurumda kaç rektörün değiştiği, diğerinde atamayı kimin yaptığı açısından öne çıkarılıyor.",
+   "alternative_explanation": "Bilgi farkı küçük ve bilgilendirici.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "11 üniversiteye rektör ataması",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Açık bir nedensellik iddiası yok.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yükseköğretim Kanunu ve ilgili Cumhurbaşkanlığı Kararnamesi’ne dayanarak",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "11 üniversiteye rektör ataması",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumsal süreç bağlamda görünüyor; ancak haberler tek bir kişi ya da vakayı değil 11 üniversiteyi kapsayan toplu bir kararı aktarıyor.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "11 üniversiteye rektör ataması",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sorumluluğu belirsiz bir olay ya da soruşturma yok; atama yetkisi açık.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  }
+ ]
+}

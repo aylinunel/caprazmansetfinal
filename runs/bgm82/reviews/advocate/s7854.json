@@ -1,0 +1,263 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 18:28] Polonya'da yargı krizi sonrası silahlı saldırı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 18:43] Yargı krizinin ardından Polonya'da silahlı saldırı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim ve A Haber başlıkta saldırıyı 'yargı krizi'nin ardına yerleştiriyor; iki olay arasındaki bağ için yalnızca zaman sırası var, ancak ifade açık bir nedensellik sözcüğü yerine 'sonrası/ardından' kullanıyor.",
+   "alternative_explanation": "Zaman bildirimi ülkedeki güncel bağlamı hatırlatma amacı taşıyor olabilir; nedensellik iddiası olarak okunmayabilir.",
+   "missing_context": [
+    "Saldırganın gerekçesine ilişkin resmi bilgi."
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 18:28] Polonya'da yargı krizi sonrası silahlı saldırı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yargı krizinin ardından Polonya'da silahlı saldırı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim ve A Haber saldırıyı Polonya'daki 'yargı krizi' bağlamına yerleştiriyor; diğer kurumlar olayı bu bağlam olmadan veriyor.",
+   "alternative_explanation": "Kurumlar ülkenin güncel siyasi durumunu okura hatırlatmak istemiş olabilir.",
+   "missing_context": [
+    "Yargı krizinin ne olduğu ve saldırıyla ilişkisi."
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 18:43] Yargı krizinin ardından Polonya'da silahlı saldırı! Krakow'da ölü ve yaralılar var, güvenlik güçleri alarmda",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 07:14] Polonya'nın Krakov kentinde düzenlenen silahlı saldırıda 6 kişi öldü, 15 kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "A Haber başlığında 'güvenlik güçleri alarmda' ifadesi kullanılıyor ve hiçbir sayı ya da kaynak verilmiyor; AA aynı olayın ölçeğini 6 ölü, 15 yaralı olarak aktarıyor.",
+   "alternative_explanation": "'Alarm' güvenlik güçlerinin olağan teyakkuzunu anlatan betimleyici bir ifade olabilir; başlık ilk bilgi aşamasında yazılmış olabilir.",
+   "missing_context": [
+    "A Haber haberinin tam metni.",
+    "Güvenlik güçlerinin resmi durumu."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 18:50] Polonya'da silahlı saldırı: 6 ölü, 3'ü polis 15 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 18:28] Polonya'da yargı krizi sonrası silahlı saldırı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hastanede ölen saldırganın aşırı sağcı ideolojiden",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 19:11] Polonya'da silahlı saldırı şoku!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı saldırı için TGRT yaralı polisleri, Takvim siyasi bağlamı, BBC Türkçe saldırganın ideolojisini, Hürriyet ise şoku öne çıkarıyor.",
+   "alternative_explanation": "Bazı vurgular, örneğin saldırganın ideolojisi, olayın sonraki saatlerinde ortaya çıkan bilgiye dayanıyor olabilir.",
+   "missing_context": [
+    "Bilgilerin hangi saatte doğrulandığı."
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 19:28] Polonya'da kanlı saldırı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 00:08] Polonya'da silahlı saldırı dehşeti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 19:12] Polonya'da silahlı saldırı: 6 kişi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay Akit'te 'kanlı saldırı', Akşam'da 'silahlı saldırı dehşeti', Habertürk'te 'silahlı saldırı' olarak adlandırılıyor; ilk ikisi duygusal ve korkutucu bir çağrışım ekliyor.",
+   "alternative_explanation": "Ölümlü saldırılarda 'kanlı' gibi sıfatlar yaygın gazetecilik kalıbı olabilir.",
+   "missing_context": [
+    "Kurumların benzer olaylarda kullandığı ifadeler."
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde oran ya da pay sunulmuyor; ölü ve yaralı sayıları mutlak rakamlar ve karşılaştırılacak bir payda belgelenmiyor.",
+   "alternative_explanation": "Sayılar arasındaki farklar olayın gelişen anlarına ait.",
+   "missing_context": [
+    "Herhangi bir oran ve paydanın kaynağı."
+   ]
+  }
+ ]
+}

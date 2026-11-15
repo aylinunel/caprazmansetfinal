@@ -1,0 +1,164 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan ABD Başkanı Trump ile görüştü: Barış için çabalarımız sürecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Masada İran ve Ukrayna vardı! Cumhurbaşkanı Erdoğan ile Trump telefonda görüştü!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı vurgularla başlıklandırıyor; ancak metin, bu sunum farkına bağlanmış bir tercih, yargı ya da öneri göstermiyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinden, ajans metinlerinden, olayın gelişen aşamalarından ve yer sınırından kaynaklanabilir; açıklamaların karar açısından eşdeğer olduğu metinde kurulmuyor.",
+   "missing_context": [
+    "Başlıkların karar açısından eşdeğer olduğuna dair açık tespit",
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanlığı İletişim Başkanlığından yapılan açıklamaya göre",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin resmi kurumları ya da makam sahiplerini kaynak olarak anıyor; ancak bu statüye belirleyici ağırlık verilerek ilgili karşı kanıtın ya da itirazın gerekçesiz biçimde göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi kurumlara atıf, haberciliğin olağan kaynak gösterme pratiğidir ve atıf işaretleri statünün kanıt yerine konmadığını düşündürür.",
+   "missing_context": [
+    "Statünün tek gerekçe olarak kullanıldığını gösteren ifade",
+    "Göz ardı edilen ilgili karşı kanıt"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir alandaki olumlu izlenimin ayrı bir alandaki olumlu yargıya aktarıldığını gösteren açık bir bağlantı yok.",
+   "alternative_explanation": "Olumlu ya da saygılı ifadeler protokol dili veya olgusal betimleme olabilir; ikinci bir alana yargı aktarımı yapılmıyor.",
+   "missing_context": [
+    "İki ayrı alandaki yargıyı bağlayan açık ifade",
+    "İpucunun değişmesiyle yargının değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı ya da rakamı öne çıkarıyor; metin bu ayrıntıyı bir yargıya ya da seçime açıkça bağlamıyor ve karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı olayın haber değeri taşıyan olgusal bir parçası olabilir; çarpıcılık tek başına hatalı ağırlıklandırma kanıtı değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı belirlediğini gösteren açık ifade",
+    "Belirgin ve belirgin olmayan bilginin nasıl ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin, önceki bir uyarana maruz kalan birinin sonraki bir yanıtını tanımlamıyor; olayların sıralanması tek başına hazırlama etkisi göstermez.",
+   "alternative_explanation": "Olayların art arda aktarılması kronolojik haberciliğin gereğidir; bir maruziyet-yanıt ilişkisi iddia edilmiyor.",
+   "missing_context": [
+    "Somut bir önceki maruziyet ve sonraki yanıt",
+    "Karşılaştırmalı ya da tekrarlanan gözlem"
+   ]
+  }
+ ]
+}

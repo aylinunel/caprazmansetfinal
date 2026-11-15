@@ -1,0 +1,251 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kaşif Kozinoğlu'nun ölüm nedeni belli oldu! Zehirlenme şüphesi aydınlatıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kozinoğlu'nun ölümüne ilişkin Adli Tıp raporu: Savcılık itiraz edecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı rapor bir kurumda şüpheyi kapatan bir sonuç, diğerinde savcılığın itirazı açısından öne çıkarılıyor.",
+   "alternative_explanation": "Raporun sonucu ve itiraz, gelişmenin iki gerçek boyutu.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kaşif Kozinoğlu'nun Kesin Ölüm Nedeni Belli Oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kaşif Kozinoğlu'nun ölüm nedeni açıklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı gelişme bir kurumda \"kesin ... belli oldu\", diğerinde \"açıklandı\" diye veriliyor; ilki kesinlik çağrışımı taşıyor, ikincisi bir açıklamanın aktarımı.",
+   "alternative_explanation": "Fark, başlık kalıplarından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski MİT görevlisi Kaşif Kozinoğlu'nun",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eski MİT yöneticisi Kaşif Kozinoğlu'nun",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kişi farklı unvanlarla anılıyor; ancak etiketler değerlendirme taşımayan kurumsal tanımlar.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yeniden başlatılan soruşturmada",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kaşif Kozinoğlu'nun ölüm nedeni belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; ancak başlıklar adı geçen bir aktöre fail ya da kusur rolü yüklemiyor.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2011 yılında Silivri Ceza İnfaz Kurumunda hayatını kaybeden Kaşif Kozinoğlu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "15 yıl sonra hazırlanan Adli Tıp raporu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar raporu 2011'deki ölüm ve yeniden açılan soruşturma süreci içine yerleştiriyor.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adli Tıp: Kaşif Kozinoğlu kalp hastalığı nedeniyle öldü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Nedensel ifade adı verilen bir resmi rapora (Adli Tıp) atfediliyor; kart bunu kapsam dışı sayıyor.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  }
+ ]
+}

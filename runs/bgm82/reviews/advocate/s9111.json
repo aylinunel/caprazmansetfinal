@@ -1,0 +1,282 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Teknoloji devinde ahlaksızlık depremi!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Batı'daki yozlaşmış iş dünyasının son örneği",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[10haber · 17:25] Çapkınlıkları dünyanın en güçlü CEO’sunu bitirdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 17:11] Nvidia CEO'su Jensen Huang istifa etti — Nvidia, Jensen Huang'ın başkan ve CEO olarak istifa ettiğini duyurdu.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      3
+     ]
+    }
+   ],
+   "mechanism": "Akit 'ahlaksızlık depremi' ve 'yozlaşmış iş dünyası', 10Haber 'Çapkınlıkları ... bitirdi' gibi kurumun kendi sesindeki değerlendirici ifadeler kullanıyor; DHA aynı istifayı bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "İfadeler kurumların ahlaki konulardaki yerleşik editoryal tutumunu yansıtıyor olabilir.",
+   "missing_context": [
+    "İddiaların ne ölçüde doğrulandığı."
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[10haber · 17:25] Çapkınlıkları dünyanın en güçlü CEO’sunu bitirdi; Jensen Huang, Nvidia’dan istifa etti — Silikon Vadisi’nin çip devi Nvidia’nın kurucu ortağı ve CEO’su Jensen Huang, şirket yönetim kurulundan yapılan açıklamaya göre perşembe günü görevinden istifa etti.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "10Haber başlığı istifayı doğrudan 'çapkınlıklar'ın sonucu olarak sunuyor; lede ise yalnızca yönetim kurulunun istifayı duyurduğunu aktarıyor ve bu nedensel bağ için bir kaynak göstermiyor.",
+   "alternative_explanation": "Başka kurumlar istifanın bir yönetim kurulu incelemesi sırasında geldiğini aktarıyor; ilişkiler bu incelemenin konusuysa bağ zamansal olmaktan öte olabilir.",
+   "missing_context": [
+    "Yönetim kurulu açıklamasında istifa gerekçesinin yer alıp almadığı."
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cnnturk · 11:50] Jensen Huang olmadan Nvidia ne olur? — Nvidia’nın patronu Jensen Huang’ın casus olduğu söylenen bir kadınla yasak ilişki yaşaması gündemin ana konusu oldu.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bu olayın etkileri Silikon Vadisi’ndeki şirketlerin çok ötesine uzanabilir.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "CNN Türk başlığı olası bir sonuçla ('Jensen Huang olmadan Nvidia ne olur?') açılıyor; haber olan ilişki iddiası yalnızca lede'de yer alıyor ve etkiler 'uzanabilir' diye bir öngörü olarak sunuluyor.",
+   "alternative_explanation": "Başlık analiz niteliğinde bir yazıya ait olabilir; bu durumda olası sonuçların tartışılması türün beklenen biçimidir.",
+   "missing_context": [
+    "Haberin bir analiz ya da yorum yazısı olup olmadığı."
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Teknoloji devinde ahlaksızlık depremi!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[dirilis · 17:56] Nvidia'da istifa depremi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Akit ve Diriliş istifayı 'deprem' imgesiyle anlatıyor; Akit'in 'ahlaksızlık depremi' ifadesi ahlaki bir yıkım mantığı taşısa da 'deprem' haber dilinde kalıplaşmış bir abartı deyimi.",
+   "alternative_explanation": "'… depremi' başlıklarda yaygın kullanılan sabit bir deyim; rol ya da eylem önermiyor olabilir.",
+   "missing_context": [
+    "Deyimin bu kurumların başlıklarında ne sıklıkla kullanıldığı."
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "'Çin ajanı'yla ilişkisi ortaya çıkan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "casus olduğundan şüphelenilen bir Çinliyle",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çin adına casusluk yaptığı öne sürülen bir iş kadını",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çin istihbaratıyla bağlantılı olduğu iddia edilen Alice Huang ile",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi Türkiye Gazetesi'nde 'Çin adına casusluk yaptığı öne sürülen bir iş kadını', Milliyet'te 'iddia edilen Alice Huang', T24'te 'Çin ajanı', Diken'de 'bir Çinli' olarak anılıyor; 'Çin ajanı' etiketi iddiayı kimliğe dönüştürüyor.",
+   "alternative_explanation": "T24 'Çin ajanı' ifadesini tırnak içinde vererek iddianın başkasına ait olduğunu işaret ediyor olabilir.",
+   "missing_context": [
+    "Alice Huang hakkında resmi bir suçlama bulunup bulunmadığı."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberler · 16:57] Adı yasak aşk iddialarına karışan Nvidia CEO’su Jensen Huang istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haber7 · 16:58] Son Dakika: Nvidia CEO’su Jensen Huang istifa etti! Hisseler çakıldı...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 17:05] Casusluk iddiasıyla gündemdeydi: Nvidia CEO'su Jensen Huang istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[anka · 17:44] Nvidia CEO'su Jensen Huang istifa etti, yerine geçici olarak Colette Kress atandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifa için Haberler.com ilişki iddiasını, Haber7 hisse düşüşünü, BirGün casusluk iddiasını, ANKA yönetim değişikliğini başlığa taşıyor.",
+   "alternative_explanation": "Kurumların okur kitlesi (ekonomi, magazin, siyaset) farklı boyutların öne çıkmasını açıklayabilir.",
+   "missing_context": [
+    "Tüm başlıkların aynı bilgi düzeyinde yazılıp yazılmadığı."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,251 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 00:11] 11 üniversiteye yeni rektör atandı! Başkan Erdoğan'ın imzasıyla",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Recep Tayyip Erdoğan’ın imzasıyla 11 üniversiteye yeni rektör atandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 00:20] 11 üniversiteye rektör ataması — Cumhurbaşkanı Recep Tayyip Erdoğan",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi Takvim'de 'Başkan Erdoğan', Cumhuriyet'te 'AKP'li Cumhurbaşkanı', TRT Haber'de 'Cumhurbaşkanı' olarak anılıyor; 'AKP'li' makamı partiye bağlarken 'Başkan' yakınlık ve liderlik vurgusu taşıyor.",
+   "alternative_explanation": "'Başkan' ve 'AKP'li' nitelemeleri kurumların yerleşik üslup tercihleri; olgusal olarak ikisi de doğru.",
+   "missing_context": [
+    "Kurumların Erdoğan'ı diğer haberlerde nasıl andığı."
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aksam · 00:52] Başkan Erdoğan imzaladı... 11 üniversiteye yeni rektör",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 00:31] 11 üniversiteye rektör atandı — Resmi Gazete'de yayımlanan kararla 11 üniversiteye rektör ataması yapıldı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 00:36] Resmi Gazete'de yayımlandı: Erdoğan 11 üniversiteye yeni rektör atadı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı atama Akşam'da 'Başkan Erdoğan imzaladı', NTV'de edilgen 'rektör ataması yapıldı', BirGün'de 'Erdoğan ... atadı' olarak veriliyor; edilgen yapı işlemi kurumsallaştırırken etken yapı ve 'Başkan' unvanı kişisel bir eylem çağrışımı taşıyor.",
+   "alternative_explanation": "Edilgen ve etken yapılar arasındaki fark başlık kısalığı ve üslupla açıklanabilir.",
+   "missing_context": [
+    "Atamanın yasal dayanağı ve süreci."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[karar · 00:06] Erdoğan’dan 11 üniversiteye rektör ataması",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[memurlar · 01:10] 11 üniversiteye rektör atandı: 7'sinde isim değişti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 00:20] 11 üniversiteye rektör atandı! İşte yeni rektörlerin isimleri",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 00:34] 11 üniversiteye Rektör ataması Resmi Gazete'de",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı atamalar için Karar atamayı yapan kişiyi, Memurlar.net kaç rektörün değiştiğini, Sözcü isimleri, DHA ise yayım yerini öne çıkarıyor.",
+   "alternative_explanation": "Vurgu farkları farklı okur ihtiyaçlarına göre yapılan olağan seçimler olabilir.",
+   "missing_context": [
+    "Atamaların ayrıntıları."
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde kurumların kendi sesiyle kurduğu açık bir nedensellik ifadesi bulunmuyor.",
+   "alternative_explanation": "Haberler atamayı olgu olarak aktarıyor.",
+   "missing_context": [
+    "Tam metinlerde nedensel iddia bulunup bulunmadığı."
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kararla Erciyes'ten Şırnak'a, Sakarya'dan Muğla'ya kadar birçok",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberler tek bir kişiyi değil 11 üniversitedeki atamaları birlikte veriyor; tek vaka üzerinden anlatım görülmüyor.",
+   "alternative_explanation": "Atama kararı toplu bir karar olduğu için tek vaka anlatımı söz konusu değil.",
+   "missing_context": [
+    "Rektör atama sürecinin geçmişteki uygulamalarına dair bağlam."
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin sorumluluğu belirsiz bir olayı (soruşturma, dava) konu almıyor; bir atama kararını aktarıyor.",
+   "alternative_explanation": "Atama yetkisi yasal olarak belirli olduğundan sorumluluk atfı sorunu doğmuyor.",
+   "missing_context": [
+    "Atama yetkisinin yasal dayanağı."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,204 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe takım otobüsüne silahlı saldırı: 5 şüpheli hakkında 11 yıl sonra iddianame hazırlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe takım otobüsüne saldırı davasında çember daraldı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı vurgularla başlıklandırıyor; ancak metin, bu sunum farkına bağlanmış bir tercih, yargı ya da öneri göstermiyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinden, ajans metinlerinden, olayın gelişen aşamalarından ve yer sınırından kaynaklanabilir; açıklamaların karar açısından eşdeğer olduğu metinde kurulmuyor.",
+   "missing_context": [
+    "Başlıkların karar açısından eşdeğer olduğuna dair açık tespit",
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "hindsight-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İddianamede, saldırının rastgele gerçekleştirilemeyeceği, eylemin önceden planlanarak yapıldığı belirtildi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bilinen bir sonucu aktarıyor; ancak olayın önceden öngörülebilir olduğu iddiası ya da çağdaş tahminle çelişen bir geriye dönük anlatım içermiyor.",
+   "alternative_explanation": "İddianamede saldırının planlı olduğu yönündeki tespit, öngörülebilirlik değil fail niyeti hakkında bir hukuki iddiadır.",
+   "missing_context": [
+    "Çağdaş tahmin ya da bağımsız karşılaştırma",
+    "Sonuca dayalı öngörülebilirlik çıkarımı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne kurşunlu saldırıda iddianame hazırlandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı ya da rakamı öne çıkarıyor; metin bu ayrıntıyı bir yargıya ya da seçime açıkça bağlamıyor ve karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı olayın haber değeri taşıyan olgusal bir parçası olabilir; çarpıcılık tek başına hatalı ağırlıklandırma kanıtı değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı belirlediğini gösteren açık ifade",
+    "Belirgin ve belirgin olmayan bilginin nasıl ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İddianame: Fenerbahçe'nin otobüsüne saldırı planlı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum savcılık iddiasını başlığa taşıyor; ancak 'İddianame:' atıf işareti iddianın kaynağını açıkça belirtiyor ve statünün karşı kanıtı bastırmak için kullanıldığı gösterilmiyor.",
+   "alternative_explanation": "Resmi kurumlara atıf, haberciliğin olağan kaynak gösterme pratiğidir ve atıf işaretleri statünün kanıt yerine konmadığını düşündürür.",
+   "missing_context": [
+    "Statünün tek gerekçe olarak kullanıldığını gösteren ifade",
+    "Göz ardı edilen ilgili karşı kanıt"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde farklı sayılar ya da önceki bilgiler yer alıyor; ancak sonraki bir tahminin bu referans noktasına açıkça bağlandığı ve gerekçesiz biçimde ona yakın tutulduğu gösterilmiyor.",
+   "alternative_explanation": "Farklı rakamlar haberin farklı saatlerde güncellenmesinden ve farklı resmi kaynaklardan gelebilir.",
+   "missing_context": [
+    "Sonraki yargının önceki değere dayandığını gösteren açık ifade",
+    "Rakamların zaman sırası ve kaynakları"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir alandaki olumlu izlenimin ayrı bir alandaki olumlu yargıya aktarıldığını gösteren açık bir bağlantı yok.",
+   "alternative_explanation": "Olumlu ya da saygılı ifadeler protokol dili veya olgusal betimleme olabilir; ikinci bir alana yargı aktarımı yapılmıyor.",
+   "missing_context": [
+    "İki ayrı alandaki yargıyı bağlayan açık ifade",
+    "İpucunun değişmesiyle yargının değiştiğini gösteren karşılaştırma"
+   ]
+  }
+ ]
+}

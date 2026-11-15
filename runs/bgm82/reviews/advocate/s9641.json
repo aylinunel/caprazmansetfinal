@@ -1,0 +1,285 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 12:38] Son dakika: Yeni nesil organize suç örgütü elebaşı Sercan Sayal yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[tele1 · 15:08] Suç örgütü lideri Sercan Sayal Türkiye'ye getirildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 12:12] 116 suçtan aranıyordu! Kırmızı bültenli Sercan Sayal",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi Sabah'ta 'Yeni nesil organize suç örgütü elebaşı', Tele1'de 'Suç örgütü lideri', Sondakika'da 'Kırmızı bültenli' olarak anılıyor; 'elebaşı' 'lider'e göre aşağılayıcı bir değerlendirme taşıyor ve henüz yargılanmamış bir kişiyi örgüt yöneticisi olarak tanımlıyor.",
+   "alternative_explanation": "'Elebaşı' İçişleri Bakanlığı açıklamasındaki ifadeden geliyor olabilir; bu durumda kurumlar resmi dili aktarıyor.",
+   "missing_context": [
+    "İçişleri Bakanlığı açıklamasının tam ifadesi."
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İzmir'de terör estiriyordu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yunanistan'dan Türkiye'ye paket...",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 15:22] Suç örgütü lideri Sercan Sayal Türkiye'ye getirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Mynet 'terör estiriyordu', Takvim 'paket' gibi kurumun kendi sesindeki değerlendirici ifadeler kullanıyor; Evrensel aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "İfadeler resmi açıklamadaki suç listesinin gündelik dille özetlenmesi olabilir.",
+   "missing_context": [
+    "Suçlamaların yargısal durumu."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 12:39] 90 kurşunlama, 164 tehdit, 1 cinayet...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 20:11] Gürlek: Kırmızı bültenle aranan Sercan Sayal'ın Yunanistan'dan Türkiye'ye teslimi sağlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[t24 · 15:24] Kırmızı bültenle aranan ve 116 suçtan aranma kaydı olan olan Sercan Sayal Türkiye'de; adliyeye sevk edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı iade için TGRT suç dökümünü, BirGün bakanın açıklamasını, T24 adli süreci öne çıkarıyor.",
+   "alternative_explanation": "T24'ün başlığı sonraki bir aşamaya (adliyeye sevk) ait; vurgu farkının bir kısmı gelişen olaydan kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Başlıkların hangi aşamada yazıldığı."
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yunanistan'dan Türkiye'ye paket...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Yunanistan'dan Türkiye'ye iade edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 12:38] Son dakika: Yeni nesil organize suç örgütü elebaşı Sercan Sayal yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı iade Takvim'de 'paket', Cumhuriyet'te 'iade edildi', Sabah'ta 'yakalandı' olarak anlatılıyor; 'paket' küçümseyici ve gündelik, 'iade' hukuki ve nötr bir çağrışım taşıyor.",
+   "alternative_explanation": "'Yakalandı' ifadesi Yunanistan'daki gözaltıyı anlatıyor olabilir; farklı sözcükler sürecin farklı adımlarını anlatıyor olabilir.",
+   "missing_context": [
+    "İade sürecinin adımları."
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "hakkında 116 ayrı suçtan aranma kaydı bulunan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[mynet · 12:41] Son dakika | İzmir'de terör estiriyordu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sayal hakkında yalnızca aranma kayıtları varken Mynet başlığı etken çatıyla ve Sayal'ı özne yaparak 'İzmir'de terör estiriyordu' diyor; başlıkta 'iddia' ya da 'savcılığa göre' gibi bir atıf işareti yok.",
+   "alternative_explanation": "Başlık, resmi açıklamada sıralanan eylemlerin özeti olabilir; lede'de kaynak belirtilmiş olabilir.",
+   "missing_context": [
+    "Mynet haberinin tam metni.",
+    "Sayal hakkında verilmiş kesinleşmiş bir mahkûmiyet bulunup bulunmadığı."
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "\"Yeni nesil suç örgütü\" elebaşı Sayal tutuklandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yapılan çalışmalarda Sayal'ın İzmir'de cinayet, yaralama, 90 kurşunlama ve 164 tehdit eylemini",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "TRT Haber 'yeni nesil suç örgütü' kategorisini, Hürriyet ise kişiye atfedilen eylemlerin dökümünü veriyor; ancak bu ifade resmi açıklamadan aktarılan ortak bir etiket ve bir eğilim ya da seri olarak çerçeve kurulup kurulmadığı belirsiz.",
+   "alternative_explanation": "'Yeni nesil suç örgütü' İçişleri Bakanlığı'nın tüm kurumlarda aynı biçimde aktarılan ifadesi.",
+   "missing_context": [
+    "'Yeni nesil suç örgütü' kavramının resmi tanımı."
+   ]
+  }
+ ]
+}

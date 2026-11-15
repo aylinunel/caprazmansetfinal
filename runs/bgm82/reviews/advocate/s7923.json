@@ -1,0 +1,232 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[10haber · 15:42] Fon soygunu: BDDK daire başkanı Bilal Soysal tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 14:40] Fon vurgunu soruşturması: BDDK Daire Başkanı Bilal Soysal tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 14:41] Sermaye piyasası soruşturmasında BDDK 3. Daire Başkanı tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma 10Haber'de 'Fon soygunu', Evrensel'de 'Fon vurgunu soruşturması', DHA'da 'Sermaye piyasası soruşturması' olarak adlandırılıyor; 'soygun' ve 'vurgun' suçun işlendiğini ima ederken DHA'nın ifadesi işlemsel ve nötr.",
+   "alternative_explanation": "'Fon vurgunu' kurumlarda soruşturmanın yerleşik adı haline gelmiş olabilir.",
+   "missing_context": [
+    "Soruşturmanın resmi adı."
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soygunu:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "soruşturmada çember daralıyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haber7 · 14:27] Fon soruşturmasında BDDK 3. Daire Başkanı Bilal Soysal tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "10Haber 'Fon soygunu', Akit 'çember daralıyor' gibi kurumun kendi sesindeki değerlendirici ifadeler kullanıyor; Haber7 aynı tutuklamayı bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "İfadeler soruşturmanın genişlediğini anlatmak için kullanılan yaygın gazetecilik kalıpları olabilir.",
+   "missing_context": [
+    "Soruşturmada iddia edilen zararın ne olduğu."
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Böylece soruşturma kapsamında tutuklananların sayısı 118'e yükseldi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "SPK'nin 131 yatırım fonunun tasfiyesine ilişkin kararıyla gündeme gelen soruşturmada",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "DW Türkçe tutuklamayı toplam tutuklu sayısının 118'e yükselmesi içinde, soL ise SPK'nin 131 fonu tasfiye kararıyla başlayan sürecin bağlamında veriyor.",
+   "alternative_explanation": "Toplam sayı ve arka plan bilgisi soruşturmanın ölçeğini aktaran olgusal bilgi.",
+   "missing_context": [
+    "Toplam sayının kaynağı."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[dwturkce · 11:04] Fon soruşturması: BDDK daire başkanı tutuklandı, tutuklu sayısı 118'e yükseldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[milligazete · 18:05] Fon soruşturmasında tutuklanan Bilal Soysal kim? BDDK Daire Başkanı'nın eğitimi, yaşı ve memleketi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 14:46] BDDK Daire Başkanı tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklama için DW Türkçe toplam sayıyı, Milli Gazete kişinin biyografisini öne çıkarıyor; Sabah ise ismi vermeden yalnızca unvanı kullanıyor (sayı ve kişi boyutu).",
+   "alternative_explanation": "Milli Gazete'nin haberi arama trafiğine yönelik biyografi formatında olabilir; farklı tür farklı vurgu getirir.",
+   "missing_context": [
+    "Haberlerin türü (son dakika, biyografi, analiz)."
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde kurumun kendi sesiyle iki seçenekli bir 'ya … ya …' ya da 'tek yol' kurgusu bulunmuyor; başlıklar tek bir olayı aktarıyor.",
+   "alternative_explanation": "Olay ikili bir tercih içermiyor; ikili seçenek sunulmaması haberin konusundan kaynaklanıyor.",
+   "missing_context": [
+    "Kurumların tam metinlerinde ikili seçenek kurgusu olup olmadığı."
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi sesinde bir olayı ötekinin nedeni olarak sunan açık bir nedensellik ifadesi bulunmuyor.",
+   "alternative_explanation": "Haberler tutuklamayı olgu olarak aktarıyor.",
+   "missing_context": [
+    "Tam metinlerde nedensel iddia bulunup bulunmadığı."
+   ]
+  }
+ ]
+}

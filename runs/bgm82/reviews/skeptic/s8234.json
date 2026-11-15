@@ -1,0 +1,221 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray efsanesi Cevad Prekazi, hayatını kaybetti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray'ın eski futbolcusu Cevad Prekazi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumda \"efsane\", diğerinde \"eski futbolcu\" diye anılıyor; \"efsane\" tanımlamanın ötesinde olumlu bir değerlendirme taşıyor.",
+   "alternative_explanation": "Anma haberlerinde övgü dili gelenekseldir; değerlendirme yaygın bir kamu algısını yansıtıyor.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "“Kalbim sol tarafta, ben de sol taraftayım” diyen Cevad Prekazi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarı kırmızılı formayla iki lig şampiyonluğu yaşayan Prekazi, 1989 yılında Monaco'ya attığı unutulmaz frikik golüyle hafızalara kazınmıştı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölüm bir kurumda kişinin siyasi görüşü, diğerinde sportif başarısı açısından öne çıkarılıyor.",
+   "alternative_explanation": "Kurumların okur kitlesine göre farklı biyografik yönler seçilmesi.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray efsanesi Cevad Prekazi 69 yaşında vefat etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Efsane futbolcu Cevad Prekazi yaşamını yitirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "\"Vefat etti\", \"yaşamını yitirdi\" ve \"hayatını kaybetti\" arasındaki fark çağrışımdan çok üslupla ilgili.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hiçbir kurum kendi sesiyle yalnızca iki seçenek sunan bir \"ya … ya\" kalıbı kullanmıyor.",
+   "alternative_explanation": "Olay haberi bir seçenekler tartışması içermiyor.",
+   "missing_context": [
+    "İki seçenekli bir ifade"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cevad Prekazi hayatını kaybetti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay haber; hiçbir kurum bir eğilim ya da süreç bağlamı vermiyor.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray’ı Monaco’ya sol ayağıyla attığı frikikle Avrupa’da yarı finale taşıyan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Nedensel ifade var; ancak bir golün turu getirmesi doğrudan bir mekanizma, yalnızca zaman sırasına dayanmıyor.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  }
+ ]
+}

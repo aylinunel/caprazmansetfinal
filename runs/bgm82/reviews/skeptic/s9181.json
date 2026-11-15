@@ -1,0 +1,245 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'deki fon savaşı kelle aldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Sol, olayı \"fon savaşı\" olarak kurguluyor; bu, parti içinde savaşan taraflar rolü atayan, kalıplaşmış olmayan bir metafor.",
+   "alternative_explanation": "\"Kelle almak\" kalıplaşmış bir deyim; ancak \"fon savaşı\" ifadesi rol atıyor.",
+   "missing_context": [
+    "Parti içi çatışma iddiasının kaynağı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "BDDK'da fon skandalıyla anıldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon vurgununda hedefteydi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "BDDK Başkanı Şahap Kavcıoğlu istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Kısa Dalga \"skandal\", Karar \"vurgun\" sözcüklerini kendi sesiyle kullanıyor; başka kurumlar aynı istifayı nötr veriyor.",
+   "alternative_explanation": "Bu sözcükler soruşturmanın kamuoyundaki yerleşik adı olabilir.",
+   "missing_context": [
+    "Soruşturmanın resmi adı"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'deki fon savaşı kelle aldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kavcıoğlu daha bu sabah yaptığı açıklamada, \"BDDK’nın fonla uzaktan yakından ilgisi yok\" demişti.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlık istifayı açık bir nedensellikle bir \"fon savaşı\"na bağlıyor; lede bu bağı yalnızca zaman sırasıyla (sabahki açıklama, ardından istifa) destekliyor.",
+   "alternative_explanation": "Kavcıoğlu kendisi istifayı \"iddialar\"a bağlıyor; başlığın kaynağı belirtilmemiş bir kulis bilgisi olabilir.",
+   "missing_context": [
+    "\"Fon savaşı\" iddiasının kaynağı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "BDDK Başkanı Şahap Kavcıoğlu istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "BDDK Başkanı Kavcıoğlu, görevinden affını istedi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Edinilen bilgilere göre Kavcıoğlu’ndan görevini bırakması talep edildi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı ayrılış \"istifa etti\", \"görevinden affını istedi\" ve \"görevinden ayrıldı\" diye anlatılıyor.",
+   "alternative_explanation": "\"Affını istemek\" Kavcıoğlu'nun kendi ifadesinden alınmış resmi bir kalıp; fark çağrışımdan çok üsluba ait olabilir.",
+   "missing_context": [
+    "Ayrılışın gönüllü mü talep üzerine mi olduğu"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'deki fon savaşı kelle aldı: Şahap Kavcıoğlu istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bankacılık sektöründe tepe değişimi: BDDK Başkanı Şahap Kavcıoğlu görevinden ayrıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifa bir kurumda parti içi çatışma, diğerinde sektörde kurumsal bir değişim olarak öne çıkarılıyor.",
+   "alternative_explanation": "Kurumların farklı bilgi kaynakları farklı vurguya yol açmış olabilir.",
+   "missing_context": [
+    "İstifanın resmi gerekçesi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kavcıoğlu, fon soruşturmasında kendisi hakkında soru sorulup sorulmadığını bilmediğini belirtti.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon vurgununda hedefteydi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturmadaki sorumluluk belirsiz; ancak başlıklar Kavcıoğlu'nu etken çatıyla fail olarak kurmuyor, \"hedefteydi\" gibi edilgen bir durum bildiriyor.",
+   "alternative_explanation": "İddiaların gündemde olması olgusal olarak aktarılıyor.",
+   "missing_context": [
+    "Kişiye doğrudan kusur yükleyen bir başlık"
+   ]
+  }
+ ]
+}

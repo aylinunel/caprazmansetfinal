@@ -1,0 +1,250 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Teknoloji devinde ahlaksızlık depremi! Adı yasak aşk skandallarına karışan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Nvidia CEO'su Jensen Huang istifa etti — Nvidia, Jensen Huang'ın başkan ve CEO olarak istifa ettiğini duyurdu.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit kendi sesiyle \"ahlaksızlık\", \"skandal\" gibi değerlendirme sözcükleri kullanıyor; DHA aynı istifayı bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Kurumun ahlaki yorum çizgisi; olgu aynı.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çapkınlıkları dünyanın en güçlü CEO’sunu bitirdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "şirket yönetim kurulundan yapılan açıklamaya göre perşembe günü görevinden istifa etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "10haber başlığı istifayı açıkça kişinin \"çapkınlıklarına\" bağlıyor; lede yalnızca yönetim kurulu açıklamasını ve istifanın zamanını veriyor, nedensel bağ için kaynak göstermiyor.",
+   "alternative_explanation": "Bağ, kamuoyundaki iddialarla örtüşen makul bir yorum olabilir; diğer kurumlar soruşturmayı ve güvenlik tartışmasını etken olarak anıyor.",
+   "missing_context": [
+    "İstifanın resmi gerekçesi"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Jensen Huang olmadan Nvidia ne olur?",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bu olayın etkileri Silikon Vadisi’ndeki şirketlerin çok ötesine uzanabilir.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "CNN Türk başlığı olayın kendisi yerine olası bir sonucu (Huang'sız Nvidia) soru biçiminde öne alıyor; olay yalnızca lede'de geçiyor ve sonuç bir öngörü.",
+   "alternative_explanation": "Haber, istifa öncesindeki bir tartışmaya ilişkin analiz niteliğinde olabilir.",
+   "missing_context": [
+    "Haberin türü (analiz/haber)"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çin istihbaratının 'bal tuzağı' dosyaları",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Nvidia'da istifa depremi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "\"Deprem\" kalıplaşmış bir haber klişesi; \"bal tuzağı\" ise roller (tuzak kuran/kurban) atayan bir metafor, ancak tırnak içinde verilmiş yerleşik bir istihbarat terimi.",
+   "alternative_explanation": "\"Bal tuzağı\" bir terim olarak kullanılıyor olabilir.",
+   "missing_context": [
+    "Terimin kaynağı"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "'Çin ajanı'yla ilişkisi ortaya çıkan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Çin adına casusluk yaptığı öne sürülen bir iş kadını",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumda \"Çin ajanı\", diğerinde \"casusluk yaptığı öne sürülen bir iş kadını\" diye anılıyor.",
+   "alternative_explanation": "T24 etiketi tırnak içinde veriyor; bu bir aktarım işareti olabilir ve kurumun kendi sesi olduğu kesin değil.",
+   "missing_context": [
+    "Tırnağın hangi kaynağa işaret ettiği"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Son Dakika: Nvidia CEO’su Jensen Huang istifa etti! Hisseler çakıldı...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Casusluk iddiasıyla gündemdeydi: Nvidia CEO'su Jensen Huang istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Nvidia CEO'su Jensen Huang istifa etti, yerine geçici olarak Colette Kress atandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifa piyasa kaybı, güvenlik iddiası ve halefiyet boyutlarıyla farklı kurumlarca öne çıkarılıyor.",
+   "alternative_explanation": "Farklı okur kitlelerine göre seçilmiş boyutlar.",
+   "missing_context": [
+    "—"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,264 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 19:09] Malatya'da askeri helikopter düştü: 4 askerimiz şehit oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sol · 16:56] Malatya'da askeri helikopter düştü: Dört asker yaşamını yitirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 19:19] Malatya'da askeri helikopter düştü: 4 asker yaşamını yitirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yeniyasam · 21:00] Meletî’de askeri helikopter düştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölümler TGRT'de 'askerimiz şehit oldu', soL ve BirGün'de 'asker yaşamını yitirdi' olarak veriliyor; 'şehit' dini-ulusal bir anlam ve sahiplenme, 'yaşamını yitirdi' nötr bir anlatım taşıyor. Yeni Yaşam ayrıca kentin adını 'Meletî' olarak kullanıyor.",
+   "alternative_explanation": "'Şehit' Türkiye'de görev sırasında ölen askerler için resmi açıklamalarda da kullanılan standart terim olabilir; tercih yerleşik yayın politikasından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "MSB açıklamasının tam ifadesi.",
+    "Kurumların benzer olaylarda kullandığı terimler."
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Malatya'da kahreden haber!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 07:24] Malatya'da kaza kırıma uğrayan S-70 tipi helikopterdeki 4 asker şehit oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit başlığında kurumun kendi sesiyle 'kahreden haber' nitelemesi yer alıyor; AA aynı olguyu bu duygusal değerlendirme olmadan veriyor.",
+   "alternative_explanation": "Ölüm haberlerinde yas ifadesi yaygın bir gazetecilik geleneği olabilir; sözcük olguları değiştirmiyor, yalnızca duygu bildiriyor.",
+   "missing_context": [
+    "Akit'in benzer kaza haberlerinde aynı ifadeyi kullanıp kullanmadığı."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[t24 · 19:41] Malatya'da helikopter düştü: Bölgede yangın çıktı; 4 asker şehit oldu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 19:21] Malatya’da helikopter düştü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 19:15] Malatya'da S-70 tipi askeri helikopter düştü: Dört asker şehit",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[milliyet · 21:40] Malatya'da askeri helikopter düştü! Uzman isim CNN Türk'te açıkladı: İşte 4 askerin şehit olduğu kazaya neden olan ihtimaller..",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı kaza için T24 yangını, Yeni Şafak helikopter tipini, Milliyet uzman yorumuyla olası nedenleri öne çıkarıyor; Sabah ise başlıkta can kaybına hiç yer vermiyor.",
+   "alternative_explanation": "Sabah'ın başlığı ilk bilgi aşamasında yazılmış olabilir; Milliyet'in vurgusu olayın daha sonraki bir anına ait.",
+   "missing_context": [
+    "Başlıkların güncellenip güncellenmediği.",
+    "Kayıp bilgisinin hangi saatte kesinleştiği."
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 19:10] Malatya'da helikopter düştü! Çok sayıda şehidimiz var...",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "MSB'den açıklama geldi: 4 şehidimiz var",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Milli Gazete kayıp sayısını belirsiz bırakan 'Çok sayıda şehidimiz var' ifadesini kullanıyor, oysa diğer kurumlar MSB'ye dayanarak sayıyı 4 olarak veriyor; ancak bu ifade tehdit veya felaket sözcüğü içermiyor.",
+   "alternative_explanation": "Belirsiz ifade, kesin sayı açıklanmadan önce yazılmış bir ilk bildirim olabilir; bir tehdit dili kurmuyor.",
+   "missing_context": [
+    "Milli Gazete başlığının yazıldığı saatte MSB'nin sayıyı açıklayıp açıklamadığı."
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde kurumun kendi sesiyle iki seçenekli bir 'ya … ya …' ya da 'tek yol' kurgusu bulunmuyor; başlıklar tek bir olayı aktarıyor.",
+   "alternative_explanation": "Olay ikili bir tercih içermiyor; ikili seçenek sunulmaması haberin konusundan kaynaklanıyor.",
+   "missing_context": [
+    "Kurumların tam metinlerinde ikili seçenek kurgusu olup olmadığı."
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Malatya Cumhuriyet Başsavcılığınca başlatılan soruşturma kapsamında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "\"Kazaya hangi faktörler yol açmış olabilir\" sorusu ise yanıt arıyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Star lede'inde kazayı başsavcılığın başlattığı soruşturma sürecine, NTV ise kazanın nedenlerine ilişkin inceleme sürecine yerleştiriyor; olay kurumsal bir süreç bağlamında sunuluyor.",
+   "alternative_explanation": "Soruşturma bilgisi resmi açıklamadan aktarılan rutin bir ayrıntı olabilir; birden çok kurumda benzer biçimde yer alıyor.",
+   "missing_context": [
+    "Soruşturma bilgisinin ortak bir ajans metninden gelip gelmediği."
+   ]
+  }
+ ]
+}

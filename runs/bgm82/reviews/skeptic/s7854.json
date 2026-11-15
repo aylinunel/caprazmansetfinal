@@ -1,0 +1,246 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da yargı krizi sonrası silahlı saldırı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yargı krizinin ardından Polonya'da silahlı saldırı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "İki kurum saldırıyı yargı kriziyle yalnızca zaman sırasıyla (\"sonrası\", \"ardından\") yan yana koyuyor; açık bir neden bağlacı kullanılmıyor.",
+   "alternative_explanation": "Zaman bilgisi bağlam olarak verilmiş olabilir; ima edilen bağ açık bir iddia değil.",
+   "missing_context": [
+    "Saldırganın motivasyonuna ilişkin resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da yargı krizi sonrası silahlı saldırı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Hastanede ölen saldırganın aşırı sağcı ideolojiden",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar olayı ülkedeki yargı krizi ya da saldırganın ideolojisi gibi daha geniş bir bağlama yerleştiriyor.",
+   "alternative_explanation": "Bağlam bilgisi.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı dehşeti: Çok sayıda ölü ve yaralı var",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı: 6 ölü,15 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akşam kendi sesiyle \"dehşet\" sözcüğünü kullanıyor; ölçek diğer kurumlarda veriliyor.",
+   "alternative_explanation": "Altı kişinin öldüğü bir saldırı için \"dehşet\" orantılı sayılabilir; gerçekleşmiş bir olay, öngörülen bir risk değil.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı: 6 ölü, 3'ü polis 15 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Yargı krizinin ardından Polonya'da silahlı saldırı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı saldırı bir kurumda kurbanlar (polis yaralılar), diğerinde siyasi bağlam (yargı krizi) açısından öne çıkarılıyor.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da kanlı saldırı: Çok sayıda ölü ve yaralılar var",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı: 6 kişi öldü, 15 kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı saldırı bir kurumda \"kanlı\", diğerinde \"silahlı\" saldırı diye adlandırılıyor; ilki duygusal bir çağrışım taşıyor.",
+   "alternative_explanation": "Fark büyük ölçüde üslupla ilgili olabilir.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yaralanan 15 kişiden 12'sinin durumunun ağır olduğu bildirildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir pay (15'te 12) veriliyor; ancak bağlamda farklı ve karşılaştırılabilir bir nüfus belgelenmiyor, iddia da paydanın ötesine taşmıyor.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,244 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 22:34] Son dakika...Merkez Bankası'ndan kredi hamlesi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[onedio · 07:08] Merkez Bankası Kredi Freninde Gevşemeye Gitti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[akit · 22:26] Merkez Bankası'ndan kredi büyüme sınırı kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı düzenleme Sözcü'de 'kredi hamlesi', Onedio'da 'Kredi Freninde Gevşeme', Akit'te 'kredi büyüme sınırı kararı' olarak adlandırılıyor; 'hamle' cesur bir adım, 'gevşeme' sıkılaştırmadan geri dönüş çağrışımı taşırken 'karar' nötr.",
+   "alternative_explanation": "Ekonomi haberlerinde 'hamle' ve 'fren' yaygın kullanılan kalıplar; çağrışım farkı küçük olabilir.",
+   "missing_context": [
+    "TCMB açıklamasının ifadeleri."
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kredi Freninde Gevşemeye Gitti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası'ndan kredi hamlesi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Onedio düzenlemeyi 'kredi freni' ve 'gevşeme' imgesiyle, Sözcü ve A Haber 'hamle' sözcüğüyle anlatıyor; ancak bunlar ekonomi dilinde kalıplaşmış ifadeler ve açık bir rol ya da eylem önermiyor.",
+   "alternative_explanation": "'Kredi freni' para politikası haberlerinde yerleşik bir deyim.",
+   "missing_context": [
+    "Deyimlerin bu kurumlarda ne sıklıkla kullanıldığı."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haber7 · 23:12] Merkez Bankası ihtiyaç ve taşıt kredilerinde büyüme sınırını yükseltti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "zorunlu karşılıklara Türk lirası cinsinden faiz-telafi ödemesi yapılmasına karar verildiğini",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[onedio · 07:08] Merkez Bankası Kredi Freninde Gevşemeye Gitti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı karar için Haber7 bireysel krediler boyutunu, Mynet ve Star zorunlu karşılık telafi ödemesini, Onedio para politikasının yönünü öne çıkarıyor.",
+   "alternative_explanation": "Kararın birden çok bileşeni var; kurumlar okurlarının ilgisine göre farklı bileşeni seçmiş olabilir.",
+   "missing_context": [
+    "TCMB açıklamasının tam metni."
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cnnturk · 03:35] SON DAKİKA | İhtiyaç, taşıt ve ticari kredilerinde yeni dönem! TCMB sınırlarını yükseltti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "CNN Türk başlığa beklenen sonuçla ('yeni dönem') başlıyor; ancak olayın kendisi ('TCMB sınırlarını yükseltti') de başlıkta yer aldığından olay yalnızca lede'de değil.",
+   "alternative_explanation": "'Yeni dönem' düzenlemenin yürürlüğe girmesini anlatan kalıp bir ifade olabilir.",
+   "missing_context": [
+    "Düzenlemenin yürürlük tarihi."
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kredi Freninde Gevşemeye Gitti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "ihtiyaç ve taşıt kredilerinin sekiz haftalık büyüme sınırını yüzde 3'ten yüzde 3,5'e yükseltirken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Onedio kararı daha önceki sıkılaştırma sürecinin gevşetilmesi olarak, Karar ise önceki ve yeni sınırları karşılaştırarak bir politika süreci içine yerleştiriyor.",
+   "alternative_explanation": "Önceki ve yeni oranlar resmi açıklamadan gelen olgusal bilgi; birçok kurumda benzer ifadeyle yer alıyor.",
+   "missing_context": [
+    "Önceki sıkılaştırma kararlarının tarihleri."
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde kurumun kendi sesiyle iki seçenekli bir 'ya … ya …' ya da 'tek yol' kurgusu bulunmuyor; başlıklar tek bir olayı aktarıyor.",
+   "alternative_explanation": "Olay ikili bir tercih içermiyor; ikili seçenek sunulmaması haberin konusundan kaynaklanıyor.",
+   "missing_context": [
+    "Kurumların tam metinlerinde ikili seçenek kurgusu olup olmadığı."
+   ]
+  }
+ ]
+}

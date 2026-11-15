@@ -1,0 +1,257 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "116 suçtan aranan suç örgütü elebaşı Sercan Sayal Türkiye'ye getirildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Suç örgütü lideri Sercan Sayal Türkiye'ye getirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumda \"elebaşı\", diğerinde \"lider\" diye anılıyor; \"elebaşı\" olumsuz bir değerlendirme taşıyor.",
+   "alternative_explanation": "\"Elebaşı\" İçişleri Bakanlığı açıklamasındaki ifade olabilir; kurumlar bunu tırnaksız aktarmış.",
+   "missing_context": [
+    "Bakanlık açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İzmir'de terör estiriyordu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Suç örgütü lideri Sercan Sayal Türkiye'ye getirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Mynet kendi sesiyle \"terör estiriyordu\" değerlendirmesini kullanıyor; Evrensel aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "İfade bakanlığın açıkladığı suç kayıtlarının bir özeti olabilir.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "90 kurşunlama, 164 tehdit, 1 cinayet... Kırmızı bültenle aranan suç örgütü elebaşı Sercan Sayal Türkiye'ye getirildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kırmızı bültenle aranan Sercan Sayal Yunanistan'dan Türkiye'ye getirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı iade bir kurumda suç kayıtları, diğerinde usul açısından öne çıkarılıyor.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yunanistan'dan Türkiye'ye paket...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kırmızı bültenle aranan Sercan Sayal Yunanistan'dan Türkiye'ye getirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı iade bir kurumda argo \"paket\", diğerinde \"getirildi\" diye anlatılıyor; ilki küçümseyici bir çağrışım taşıyor.",
+   "alternative_explanation": "Argo kullanım kurumun başlık üslubunun parçası olabilir.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "116 ayrı suçtan aranma kaydı bulunan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Son dakika | İzmir'de terör estiriyordu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Suçlamalar henüz yargılanmamışken Mynet başlığı etken çatıyla kişiye eylem yüklüyor ve iddia veya kaynak işareti kullanmıyor.",
+   "alternative_explanation": "Bakanlık açıklamasına dayanan bir özet; ancak başlıkta atıf yok.",
+   "missing_context": [
+    "Mahkeme kararları"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İzmir'de cinayet, yaralama, 90 kurşunlama ve 164 tehdit eylemini",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "yeni nesil organize suç örgütü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar iadeyi önceki eylemler ve \"yeni nesil\" örgütler eğilimi içinde veriyor.",
+   "alternative_explanation": "Bu bağlam bakanlık açıklamasından gelebilir.",
+   "missing_context": [
+    "—"
+   ]
+  }
+ ]
+}
