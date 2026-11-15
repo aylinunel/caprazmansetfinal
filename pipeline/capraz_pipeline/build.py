@@ -86,6 +86,17 @@ def pack_month(arts: list[dict], sources: list[str], cats: list[str], keys: list
     return {"hosts": hosts, **col}
 
 
+def review_keys(out: Path) -> dict:
+    """Optional AI-review keys, each added only when its file exists, so a plain build still works.
+
+    BG: behavioural review; BGM: media-technique review ("Medyanın oyunları"), same shape as BG;
+    BGS: the archived 2026-10-28 simulation metrics.
+    """
+    files = (("BG", out / "biasguard.json"), ("BGM", out / "biasguard-media.json"),
+             ("BGS", REPO / "docs" / "biasguard-simulation" / "summary.json"))
+    return {key: json.loads(path.read_text()) for key, path in files if path.exists()}
+
+
 def build(root: Path, ref: Path, out: Path, since: str | None = None, until: str | None = None,
           validate: bool = True) -> dict:
     t0 = time.time()
@@ -210,9 +221,7 @@ def build(root: Path, ref: Path, out: Path, since: str | None = None, until: str
             **{k: v for k, v in editorial.items() if not k.startswith("_")}}
     # 7.0: BiasGuard event reviews (python -m biasguard.news apply --out <out>/biasguard.json), plus the
     # archived 2026-10-28 simulation metrics; both are optional so a plain build still works.
-    for key, path in (("BG", out / "biasguard.json"), ("BGS", REPO / "docs" / "biasguard-simulation" / "summary.json")):
-        if path.exists():
-            core[key] = json.loads(path.read_text())
+    core.update(review_keys(out))
     narratives.merge(core)  # 7.0: agent-coded Anlatı haritası weeks after the hand-coded period
     report["sizes"] = sizes
     report["seconds"] = round(time.time() - t0, 1)

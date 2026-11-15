@@ -7,6 +7,9 @@ Offline tooling for testing BiasGuard. Nothing here is imported by `pipeline/`, 
 | `mesa_bias_expanded/` | The vendored Mesa simulator: 138 authored toy mechanisms. Read-only; checksums are tested. |
 | `biaslab/` | The lab: turns simulations into answer-free cases, runs BiasGuard on them, records every attempt. |
 | `reference_adapter/` | The integration guide's mock demo, kept for comparison only. |
+| `feedback/` | Imports the site's review export into labels; per-card statistics and the gate. |
+| `learning/` | The learning loop: snapshots, error analysis, replay set, promotion gate, insights. See `docs/validation/ITERATIONS.md`. |
+| `reference/` | Labels, gates, card status, snapshots, replay cases, version decisions. |
 | `tests/` | `python -m unittest discover -s validation/tests -t . -v` |
 
 ## What the lab is, and is not
@@ -63,7 +66,9 @@ plumbing without any reviewer output; it reports every eligible case as unassess
 - `ineligible` means no reviewed card exists for the concept. `unassessed` means the card exists but was
   not reviewed. `error` means the review failed. None of the three is a negative.
 - "not estimable" means the denominator was zero. It is never a pass.
-- The pilot has 5 case families, so no interval is reported: the comparison needs at least 10.
+- The lab covers 18 concepts: illusory truth and 17 media techniques. Cases for the 16 newer media concepts are
+  authored sentences; the simulator decides which kind a case is, not its wording.
+- An interval is reported only when at least 10 case families exist.
 - Two labelled cases with identical visible text are stored once (for selective statistics, the
   boundary control and the inactive control render the same input).
 
@@ -73,3 +78,13 @@ plumbing without any reviewer output; it reports every eligible case as unassess
 are marked `needs_domain_review`: a shared id is a proposal, not a match. Only entries marked `pilot` or
 `approved` are used. To approve one, edit its `review_status` by hand after reading both definitions;
 do not re-run `build_crosswalk.py`, which resets every status.
+
+## Promoting a media card
+
+```bash
+python -m validation.biaslab promote --run runs/lab/<name> --approved labeling word-choice
+```
+
+A card is added to `biasguard/data/media_cards.json` only if it is named in `--approved` and the candidate
+detector completed every lab case for it, gave no forbidden answer on a control, and supported at least
+one positive case. Refusals are printed with their reasons.

@@ -25,7 +25,12 @@ The site owner can now approve a finding as well as correct or reject it, and do
 file. `python -m validation.feedback import` turns that file into labels, and `status` computes per-card
 statistics that can demote or hide a concept (`validation/reference/gates.json`). A separate offline lab,
 `validation/biaslab/`, tests BiasGuard on simulated cases ([`validation/README.md`](validation/README.md)).
-The data, events and analyses are those of 8.1.
+Event pages now show AI findings in two groups: **Medyanın oyunları** (media techniques: what the text does)
+and **Davranışsal yanlılıklar**. Seventeen media-technique cards are written as lab candidates
+([for review](docs/validation/media-cards-for-review.md)); none is live yet, so the media group reads
+"incelenemedi" until cards are approved and pass the lab. A learning loop
+([`docs/validation/ITERATIONS.md`](docs/validation/ITERATIONS.md)) turns reviews into a replay set, error
+reports and a promotion gate for detector changes. The data, events and analyses are those of 8.1.
 
 ## What is new in 8.1
 

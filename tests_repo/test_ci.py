@@ -10,6 +10,7 @@ class CiTest(unittest.TestCase):
         for command in ("python -m unittest discover -s tests -v",
                         "python -m unittest biasguard.test_news -v",
                         "python -m unittest biasguard.test_routing -v",
+                        "python -m unittest biasguard.test_catalog_media -v",
                         "node --test site/tests/logic.test.cjs",
                         "python -m unittest discover -s tests_repo -t . -v",
                         "python -m unittest discover -s validation/tests -t . -v",

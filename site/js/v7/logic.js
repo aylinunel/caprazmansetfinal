@@ -524,8 +524,47 @@ function reviewsExport(reviews, packVersion) {
   }) };
 }
 
+/* Medyanın oyunları: media techniques, shown apart from behavioural biases. A finding here describes what
+   the text does; it says nothing about why. h = assessable from headline and lede; f = needs full articles,
+   images or page layout, so it is not measured with this data. */
+var MEDIA_GROUP = "Medyanın oyunları", BEHAVIOURAL_GROUP = "Davranışsal yanlılıklar";
+var MEDIA_CONCEPTS = [
+  ["ad-hominem", "Kişiye saldırı", "h"], ["causal-overclaim", "Kanıtsız nedensellik", "h"], ["cherry-picking", "Seçmeci kanıt kullanımı", "h"],
+  ["consequence-framing", "Sonuç çerçevelemesi", "h"], ["emphasis-framing", "Vurgu çerçevelemesi", "h"], ["episodic-framing", "Olay odaklı çerçeveleme", "h"],
+  ["false-dilemma", "Yanlış ikilem", "h"], ["fear-appeal", "Korkuya başvurma", "h"], ["labeling", "Etiketleme", "h"],
+  ["loaded-language", "Duygu yüklü dil", "h"], ["metaphorical-framing", "Mecazi çerçeveleme", "h"], ["responsibility-framing", "Sorumluluk atfı çerçevelemesi", "h"],
+  ["selective-statistics", "Seçici istatistik", "h"], ["spin", "Genel eğilim", "h"], ["strawman", "Korkuluk safsatası", "h"],
+  ["thematic-framing", "Bağlamsal çerçeveleme", "h"], ["word-choice", "Sözcük seçimi", "h"],
+  ["source-selection", "Kaynak seçimi", "f"], ["one-sided-sourcing", "Tek taraflı kaynak kullanımı", "f"],
+  ["commission-and-omission-of-information", "Bilgi ekleme ve çıkarma", "f"], ["contextual-omission", "Bağlamın çıkarılması", "f"],
+  ["size-allocation", "Ayrılan yer", "f"], ["story-placement", "Haberin konumlandırılması", "f"], ["picture-selection", "Görsel seçimi", "f"],
+  ["picture-explanation", "Görsel açıklaması", "f"], ["event-selection", "Olay seçimi", "f"]
+].map(function (x) { return { id: x[0], tr: x[1], tier: x[2] }; });
+/* bg / bgm: null (not reviewed) or {status, findings}. Media first; a completed review with nothing found is left out. */
+function findingGroups(bg, bgm) {
+  if (!bg || bg.status !== "review_complete") return [];
+  var out = [], mediaDone = bgm && bgm.status === "review_complete";
+  if (!mediaDone) out.push({ group: MEDIA_GROUP, state: "incelenemedi", findings: [] });
+  else if (bgm.findings.length) out.push({ group: MEDIA_GROUP, state: "ok", findings: bgm.findings });
+  if (bg.findings.length) out.push({ group: BEHAVIOURAL_GROUP, state: "ok", findings: bg.findings });
+  return out;
+}
+function mediaCoverage(scorerKeys, mediaCardIds) {
+  var headline = MEDIA_CONCEPTS.filter(function (c) { return c.tier === "h"; });
+  var live = function (c) { return mediaCardIds.indexOf(c.id) >= 0; };
+  return { scorer: headline.filter(function (c) { return scorerKeys.indexOf(c.id) >= 0; }),
+    ai: headline.filter(live), notLive: headline.filter(function (c) { return !live(c); }).map(function (c) { return c.tr; }),
+    notMeasurable: MEDIA_CONCEPTS.filter(function (c) { return c.tier === "f"; }).map(function (c) { return c.tr; }) };
+}
+/* Rule-based scorer hits on media techniques, counted over an event's headlines. Never added to AI findings. */
+function mediaRuleCounts(articles) {
+  return MEDIA_CONCEPTS.map(function (c) {
+    return { id: c.id, tr: c.tr, n: articles.filter(function (a) { return (a.k || []).indexOf(c.id) >= 0; }).length };
+  }).filter(function (c) { return c.n; });
+}
+
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
+  module.exports = { MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
     axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS };
 }

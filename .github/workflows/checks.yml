@@ -40,6 +40,8 @@ jobs:
         run: python -m unittest biasguard.test_news -v
       - name: Review-status routing on the recorded run
         run: python -m unittest biasguard.test_routing -v
+      - name: Media-technique catalogue
+        run: python -m unittest biasguard.test_catalog_media -v
 
   site-logic:
     runs-on: ubuntu-latest

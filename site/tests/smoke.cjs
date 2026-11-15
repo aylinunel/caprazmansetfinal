@@ -84,6 +84,10 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
         return { n: fs.length, bad, zero: /(^|\D)0 bulgu/.test(line), line };
       });
       if (hasYz && !rv.n) fails.push(`${tag}: AI review block opened but no finding rendered`);
+      // Medyanın oyunları comes first; without a media review it says "incelenemedi" rather than showing an empty group.
+      const grp = await page.evaluate(() => [...document.querySelectorAll(".v7-grp")].map((g) => [g.dataset.grp, g.textContent.includes("incelenemedi"), g.querySelectorAll(".v7-yzf").length]));
+      if (hasYz && (!grp.length || grp[0][0] !== "medya")) fails.push(`${tag}: Medyanın oyunları group is not first`);
+      if (hasYz && grp[0] && !grp[0][1] && !grp[0][2]) fails.push(`${tag}: empty Medyanın oyunları group without an incelenemedi note`);
       if (route === "#/olay?e=s5031" && rv.n < 3) fails.push(`${tag}: expected the three reviewed findings of s5031, saw ${rv.n}`);
       if (rv.bad) fails.push(`${tag}: ${rv.bad} of ${rv.n} AI finding(s) without exactly one review badge`);
       if (rv.zero) fails.push(`${tag}: review line reports a zero count`);
@@ -155,6 +159,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       });
       if (bad) fails.push(`${tag}: kurum ${bad}`);
     }
+    if (route === "#/yontem" && !(await page.evaluate(() => document.body.textContent.includes("Bu veriyle ölçülemiyor") && document.body.textContent.includes("niyet hakkında bir şey söylemez")))) fails.push(`${tag}: method page lacks the Medyanın oyunları lists`);
     if (route === "#/yontem" && !(await page.evaluate(() => document.body.textContent.includes("Bu bir ölçülmüş doğruluk ya da olasılık değildir")))) fails.push(`${tag}: method page lacks the AI onaylı explanation`);
     if (route.startsWith("#/yontem")) {
       const bad = await page.evaluate((r) => {

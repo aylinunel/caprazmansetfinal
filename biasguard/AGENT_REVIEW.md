@@ -30,3 +30,22 @@ the run folder; events with no output are reported as `not_attempted` and the su
 Re-running with an API key: write a reviewer with the same `select`/`review` interface as
 `FileReviewer` that calls the provider, logging the provider's error envelope on failure (the
 2026-10-28 run lost 34 tasks to an unlogged "no completion choice").
+
+## The media-technique pass ("Medyanın oyunları")
+
+Media techniques are reviewed in a second, separate pass over the same events, with the cards in
+`biasguard/data/media_cards.json` and its own run folder:
+
+```
+python -m biasguard.news inputs --build <build> --run runs/bg-media --top 150
+python -m biasguard.news tasks  --run runs/bg-media --stage select --catalog media
+python -m biasguard.news tasks  --run runs/bg-media --stage review --catalog media
+python -m biasguard.news apply  --run runs/bg-media --catalog media --pack <pack> --out <build>/biasguard-media.json
+```
+
+The same six rules apply. Two more: a media finding describes what the text does and never states why;
+and wording that an outlet quotes or attributes to a speaker is not that outlet's technique.
+
+The media catalogue is empty until a card is approved by the owner and passes its lab cases
+(`python -m validation.biaslab promote`, see `validation/README.md`). With an empty catalogue, `tasks`
+prints a notice and writes nothing; the site then shows "incelenemedi" for the media group.

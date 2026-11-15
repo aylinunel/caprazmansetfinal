@@ -168,5 +168,41 @@ class RollbackTests(unittest.TestCase):
             self.assertEqual(json.loads((Path(d) / "biasguard.prev.json").read_text()), {"v": 1})
 
 
+class MediaPassTests(unittest.TestCase):
+    """The media-technique pass ("Medyanın oyunları") runs apart from the behavioural one."""
+
+    def _run(self, d, card):
+        run = Path(d)
+        (run / "inputs.jsonl").write_text(json.dumps(
+            {"event": "e0", "title": "t", "outlets": 2, "text": TEXT, "context": CONTEXT}) + "\n")
+        for role in ("advocate", "skeptic"):
+            (run / "reviews" / role).mkdir(parents=True)
+            (run / "reviews" / role / "e0.json").write_text(json.dumps(_review(card, role, "behavioral")))
+        return run
+
+    def test_media_apply_uses_only_the_given_media_cards_and_tiers_findings(self):
+        card = {**BiasGuard().cards[0], "id": "labeling", "name": "Labeling", "entry_type": "media_practice",
+                "review_policy": "media_pattern_review"}
+        with tempfile.TemporaryDirectory() as d:
+            out = apply(self._run(d, card), catalog="media", cards=[card])
+        f = out["events"][0]["supported"][0]
+        self.assertEqual((f["id"], f["entry_type"], f["tier"]), ("labeling", "media_practice", "ai_confident"))
+        self.assertEqual((out["catalog"], out["summary"]["catalog"]), ("media", 1))
+
+    def test_default_catalog_is_behavioural(self):
+        with tempfile.TemporaryDirectory() as d:
+            run = Path(d)
+            (run / "inputs.jsonl").write_text("")
+            out = apply(run)
+        self.assertEqual((out["catalog"], out["summary"]["catalog"]), ("behavioural", 116))
+
+    def test_empty_media_catalogue_refuses_to_apply(self):
+        with tempfile.TemporaryDirectory() as d:
+            run = Path(d)
+            (run / "inputs.jsonl").write_text("")
+            with self.assertRaisesRegex(ValueError, "media catalogue is empty"):
+                apply(run, catalog="media", cards=[])
+
+
 if __name__ == "__main__":
     unittest.main()

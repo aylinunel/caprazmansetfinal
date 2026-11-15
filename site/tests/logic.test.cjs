@@ -403,3 +403,38 @@ test("reviewsExport carries the new-pattern flag only when set", () => {
   assert.equal(out.reviews[0].new_pattern, true);
   assert.equal("new_pattern" in out.reviews[1], false);
 });
+
+/* Medyanın oyunları (docs/superpowers/plans/2026-11-14-medyanin-oyunlari.md) */
+const done = (findings) => ({ status: "review_complete", findings });
+test("media group comes first and behavioural second", () => {
+  const g = L.findingGroups(done([{ id: "framing-effect" }]), done([{ id: "labeling" }]));
+  assert.deepEqual(g.map((x) => x.group), ["Medyanın oyunları", "Davranışsal yanlılıklar"]);
+  assert.deepEqual(g.map((x) => x.state), ["ok", "ok"]);
+});
+test("event without a media review shows incelenemedi, not an empty group", () => {
+  const g = L.findingGroups(done([{ id: "framing-effect" }]), null);
+  assert.deepEqual([g[0].group, g[0].state, g[0].findings.length], ["Medyanın oyunları", "incelenemedi", 0]);
+});
+test("incomplete media review shows incelenemedi", () => {
+  assert.equal(L.findingGroups(done([]), { status: "analysis_incomplete", findings: [] })[0].state, "incelenemedi");
+});
+test("group with a completed review and no findings is omitted", () => {
+  assert.deepEqual(L.findingGroups(done([]), done([{ id: "labeling" }])).map((x) => x.group), ["Medyanın oyunları"]);
+  assert.deepEqual(L.findingGroups(done([]), done([])), []);
+});
+test("event with no behavioural review has no groups at all", () => {
+  assert.deepEqual(L.findingGroups(null, null), []);
+});
+test("mediaCoverage sorts 26 concepts into live, not live and not measurable", () => {
+  const c = L.mediaCoverage(["fear-appeal", "anchoring-bias"], ["labeling"]);
+  assert.equal(L.MEDIA_CONCEPTS.length, 26);
+  assert.equal(c.notMeasurable.length, 9);
+  assert.equal(c.ai.length + c.notLive.length, 17);
+  assert.deepEqual(c.ai.map((x) => x.id), ["labeling"]);
+  assert.deepEqual(c.scorer.map((x) => x.id), ["fear-appeal"]);
+  assert.ok(c.notMeasurable.includes("Kaynak seçimi"));
+});
+test("mediaRuleCounts counts only media-technique rule keys across an event's headlines", () => {
+  const arts = [{ k: ["fear-appeal", "anchoring-bias"] }, { k: ["fear-appeal"] }, { k: [] }];
+  assert.deepEqual(L.mediaRuleCounts(arts), [{ id: "fear-appeal", tr: "Korkuya başvurma", n: 2 }]);
+});

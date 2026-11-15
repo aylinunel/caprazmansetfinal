@@ -2787,6 +2787,9 @@ html.menu-lock,html.menu-lock body{overflow:hidden}
 .rv-badge.rv-dogrulandi,.rv-badge.rv-duzeltildi{color:var(--paper);background:var(--ink);border-color:var(--ink)}
 .rv-line{font-family:var(--ff-m);font-size:12px;color:var(--muted);margin:0 0 10px}
 .rev-np{display:inline-flex;align-items:center;gap:6px;min-height:40px;font-size:12px;color:var(--ink2)}
+/* Medyanın oyunları / Davranışsal yanlılıklar groups on the event page */
+.v7-grp+.v7-grp{margin-top:18px}
+.v7-grp-h{font-family:var(--ff-m);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);margin:12px 0 6px}
 
 </style>
 </head>
@@ -11062,6 +11065,10 @@ var BG7ST = { pattern_supported: "desteklendi", needs_context: "bağlam gerekli"
   not_attempted: "çalıştırılmadı" };
 function bg7() { return D.BG && D.BG.summary ? D.BG : null; }
 function bg7ev(id) { var B = bg7(); if (!B) return null; for (var i = 0; i < B.events.length; i++) if (B.events[i].event === id) return B.events[i]; return null; }
+/* Medyanın oyunları: the media-technique pass (key BGM), same shape as BG; absent until cards pass the lab. */
+function bgm7() { return D.BGM && D.BGM.summary ? D.BGM : null; }
+function bgm7ev(id) { var B = bgm7(); if (!B) return null; for (var i = 0; i < B.events.length; i++) if (B.events[i].event === id) return B.events[i]; return null; }
+function bgm7Cards() { var B = bgm7(); return B && B.summary.cardIds || []; }
 function bg7tag(st) {
   return '<span class="cm3-state ' + (st === "review_complete" || st === "pattern_supported" ? "stPass" : st === "analysis_incomplete" ? "stFail" :
     st === "not_attempted" ? "stNotRun" : "stUnknown") + '">' + esc(BG7ST[st] || st) + "</span>";
@@ -11909,8 +11916,47 @@ function reviewsExport(reviews, packVersion) {
   }) };
 }
 
+/* Medyanın oyunları: media techniques, shown apart from behavioural biases. A finding here describes what
+   the text does; it says nothing about why. h = assessable from headline and lede; f = needs full articles,
+   images or page layout, so it is not measured with this data. */
+var MEDIA_GROUP = "Medyanın oyunları", BEHAVIOURAL_GROUP = "Davranışsal yanlılıklar";
+var MEDIA_CONCEPTS = [
+  ["ad-hominem", "Kişiye saldırı", "h"], ["causal-overclaim", "Kanıtsız nedensellik", "h"], ["cherry-picking", "Seçmeci kanıt kullanımı", "h"],
+  ["consequence-framing", "Sonuç çerçevelemesi", "h"], ["emphasis-framing", "Vurgu çerçevelemesi", "h"], ["episodic-framing", "Olay odaklı çerçeveleme", "h"],
+  ["false-dilemma", "Yanlış ikilem", "h"], ["fear-appeal", "Korkuya başvurma", "h"], ["labeling", "Etiketleme", "h"],
+  ["loaded-language", "Duygu yüklü dil", "h"], ["metaphorical-framing", "Mecazi çerçeveleme", "h"], ["responsibility-framing", "Sorumluluk atfı çerçevelemesi", "h"],
+  ["selective-statistics", "Seçici istatistik", "h"], ["spin", "Genel eğilim", "h"], ["strawman", "Korkuluk safsatası", "h"],
+  ["thematic-framing", "Bağlamsal çerçeveleme", "h"], ["word-choice", "Sözcük seçimi", "h"],
+  ["source-selection", "Kaynak seçimi", "f"], ["one-sided-sourcing", "Tek taraflı kaynak kullanımı", "f"],
+  ["commission-and-omission-of-information", "Bilgi ekleme ve çıkarma", "f"], ["contextual-omission", "Bağlamın çıkarılması", "f"],
+  ["size-allocation", "Ayrılan yer", "f"], ["story-placement", "Haberin konumlandırılması", "f"], ["picture-selection", "Görsel seçimi", "f"],
+  ["picture-explanation", "Görsel açıklaması", "f"], ["event-selection", "Olay seçimi", "f"]
+].map(function (x) { return { id: x[0], tr: x[1], tier: x[2] }; });
+/* bg / bgm: null (not reviewed) or {status, findings}. Media first; a completed review with nothing found is left out. */
+function findingGroups(bg, bgm) {
+  if (!bg || bg.status !== "review_complete") return [];
+  var out = [], mediaDone = bgm && bgm.status === "review_complete";
+  if (!mediaDone) out.push({ group: MEDIA_GROUP, state: "incelenemedi", findings: [] });
+  else if (bgm.findings.length) out.push({ group: MEDIA_GROUP, state: "ok", findings: bgm.findings });
+  if (bg.findings.length) out.push({ group: BEHAVIOURAL_GROUP, state: "ok", findings: bg.findings });
+  return out;
+}
+function mediaCoverage(scorerKeys, mediaCardIds) {
+  var headline = MEDIA_CONCEPTS.filter(function (c) { return c.tier === "h"; });
+  var live = function (c) { return mediaCardIds.indexOf(c.id) >= 0; };
+  return { scorer: headline.filter(function (c) { return scorerKeys.indexOf(c.id) >= 0; }),
+    ai: headline.filter(live), notLive: headline.filter(function (c) { return !live(c); }).map(function (c) { return c.tr; }),
+    notMeasurable: MEDIA_CONCEPTS.filter(function (c) { return c.tier === "f"; }).map(function (c) { return c.tr; }) };
+}
+/* Rule-based scorer hits on media techniques, counted over an event's headlines. Never added to AI findings. */
+function mediaRuleCounts(articles) {
+  return MEDIA_CONCEPTS.map(function (c) {
+    return { id: c.id, tr: c.tr, n: articles.filter(function (a) { return (a.k || []).indexOf(c.id) >= 0; }).length };
+  }).filter(function (c) { return c.n; });
+}
+
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
+  module.exports = { MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
     axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS };
 }
@@ -13818,12 +13864,30 @@ function olayFinding(f, x) {
     (t.why ? "<p><b>Neden kesin değil.</b> " + esc(t.why) + "</p>" : "") + "</div>";
 }
 
+/* AI review of an event in two groups: Medyanın oyunları (what the text does) first, then behavioural
+   biases. Rule-based scorer hits are listed beside the AI findings and never added to them. */
+function olayGroups(e) {
+  var x = bg7ev(e.i), m = bgm7ev(e.i);
+  var pack = function (ev) { return ev ? { status: ev.status, findings: ev.status === "review_complete" ? rev7Sorted(ev) : [] } : null; };
+  return findingGroups(pack(x), pack(m));
+}
 function olayReview(e) {
-  var x = bg7ev(e.i);
-  if (!x || x.status !== "review_complete") return "";
-  var h = rev7Sorted(x).map(function (f) { return olayFinding(f, x); }).join("");
-  var line = rev7CountsLine(x);
-  return h ? yzBlock((line ? '<p class="rv-line">' + esc(line) + ".</p>" : "") + h, "Bilişsel inceleme") : "";
+  var x = bg7ev(e.i), m = bgm7ev(e.i), groups = olayGroups(e);
+  if (!groups.length) return "";
+  var rules = mediaRuleCounts(e.a.map(function (i) { return ART[i]; }).filter(Boolean));
+  return groups.map(function (g) {
+    var media = g.group === "Medyanın oyunları", src = media ? m : x, h = "";
+    if (g.state === "incelenemedi") h += '<p class="rv-line">AI incelemesi: incelenemedi. Bu olay için medya teknikleri henüz AI tarafından incelenmedi; bu, teknik bulunmadığı anlamına gelmez.</p>';
+    else {
+      var line = rev7CountsLine(src);
+      h += '<h4 class="v7-grp-h">AI incelemesi</h4>' + (line ? '<p class="rv-line">' + esc(line) + ".</p>" : "") +
+        g.findings.map(function (f) { return olayFinding(f, src); }).join("");
+    }
+    if (media && rules.length) h += '<h4 class="v7-grp-h">Kural tabanlı ölçüm</h4><p class="rv-line">Başlıklarda kural tabanlı puanlayıcının işaretlediği teknikler (AI bulgularıyla toplanmaz): ' +
+      rules.map(function (r) { return esc(r.tr) + " " + r.n + " başlıkta"; }).join(" · ") + ".</p>";
+    if (media) h += '<p class="xsmall">Bu bulgular metnin ne yaptığını tanımlar; niyet hakkında bir şey söylemez.</p>';
+    return '<div class="v7-grp" data-grp="' + (media ? "medya" : "davranis") + '">' + yzBlock(h, g.group) + "</div>";
+  }).join("");
 }
 
 function olayTiming(e) {
@@ -13857,7 +13921,7 @@ function pgOlay7(q) {
   logStory(e.i);
   var nk = NBYEV[e.i], x = bg7ev(e.i), deep = "";
   if (nk && narrOk(nk) && D.N[nk]) deep += olayDeep("narr", "Anlatı ayrıntısı", '<div id="v7-map" data-key="' + esc(nk) + '"></div>');
-  if (x && x.status === "review_complete" && bg7Live(x).length) deep += olayDeep("yz", "Yapay zekâ ne fark etti? (YZ)", "");
+  if (olayGroups(e).length) deep += olayDeep("yz", "AI ne fark etti?", "");
   if (v3on("echoChain") && (CM3.clusters(D).byEvent[e.i] || []).length) deep += olayDeep("echo", "Benzer başlıklar", "");
   return '<div class="wrap page xstory">' + olayHead(e) + olayKisaca(e) + splitBlock(e) + olayHeadlines(e) + olayTiming(e) + deep + olayOutlets(e) + "</div>";
 }
@@ -15197,6 +15261,15 @@ function yzMethodHtml() {
     "<li><b>Birleştirme:</b> iki inceleyici de kavramı dışlıyorsa kavram gösterilmez; en az biri koşulları metinde görüyorsa ya da kararsızsa kavram o olayda dikkat çeken olarak işaretlenir.</li></ol>" +
     "<h3>Herkese açık metin</h3><p>Her kavram için sitede görünen metin iki cümledir: <b>Ne fark etti</b> ve <b>Neden kesin değil</b>. Bu iki cümle, savunan ve sorgulayan inceleyicinin uzun metinlerinden bir yapay zekâ geçişiyle bir kez üretilir ve veri paketinde saklanır. Uzun inceleyici metinleri yalnızca Yönetim’de görünür." +
     (S ? " Bu yapıda " + trN(S.completed) + " olay incelendi; " + trN(S.supported + S.uncertain) + " kavram–olay eşleşmesi dikkat çekti, " + trN(S.quotesVerified) + " alıntı doğrulandı, " + trN(S.rejectedQuotes) + " alıntı reddedildi." : "") + "</p>" +
+    (function () {
+      var c = mediaCoverage(D.meta.packs.keys || [], bgm7Cards()), names = function (xs) { return xs.map(function (x) { return esc(x.tr || x); }).join(", "); };
+      return "<h3>Medyanın oyunları</h3><p>Medya teknikleri, davranışsal yanlılıklardan ayrı bir grupta gösterilir. Bu bulgular metnin ne yaptığını tanımlar; niyet hakkında bir şey söylemez. " +
+        "Alıntılanan ya da aktarılan bir söz, onu aktaran kurumun tekniği sayılmaz.</p><ul>" +
+        "<li><b>AI incelemesinde yayında:</b> " + (c.ai.length ? names(c.ai) : "henüz yok") + ".</li>" +
+        "<li><b>Kural tabanlı puanlayıcıyla ölçülen:</b> " + (c.scorer.length ? names(c.scorer) : "yok") + ".</li>" +
+        "<li><b>Henüz yayında değil</b> (kartı yazıldı; sahibin onayını ve sınamayı bekliyor): " + names(c.notLive) + ".</li>" +
+        "<li><b>Bu veriyle ölçülemiyor</b> (tam metin, görsel ya da sayfa düzeni gerekir): " + names(c.notMeasurable) + ".</li></ul>";
+    })() +
     "<h3>İnceleme durumu</h3><p>Her bulgunun yanında dört etiketten biri bulunur. <b>AI onaylı:</b> AI bu örüntüyü olası buldu; sorgulayan inceleme onu reddetmedi ya da koşullarından en az birini doğruladı. Bu bir ölçülmüş doğruluk ya da olasılık değildir, bulgu henüz insan kontrolünden geçmemiştir. <b>İnsan kontrolü bekliyor:</b> AI kararsız kaldı ve bir insanın bakması bekleniyor. <b>İnsan doğruladı</b> ve <b>İnsan düzeltti:</b> bir insan bulguyu inceledi. Reddedilen bulgu sayfalardan kalkar. AI onaylı bulguların küçük bir bölümü rastgele seçilip yine de insan denetimine gönderilir. Bulgular eksik olabilir: bir olayda bulgu görünmemesi, o olayda örüntü olmadığı anlamına gelmez.</p>" +
     "<h3>Editör incelemesi</h3><p>Site sahibi, Yönetim › Bilişsel inceleme ekranında her yapay zekâ sonucunu reddedebilir ya da kısa bir düzeltme notu yazabilir. Sonuç, reddedilene ya da düzeltilene kadar “YZ” etiketiyle yayında kalır; reddedilen sonuç sayfalardan ve sayımlardan çıkar, düzeltilen sonucun yanında düzeltme notu görünür. Yapay zekâ çıktısının hiçbiri baştan insan tarafından onaylanmaz.</p>" +
     "<h3>Sınırlılıklar</h3><p>Aynı temel modelin iki inceleyicisi istatistiksel olarak bağımsız değildir. Alıntı denetimi alıntının yerini kanıtlar, kavramın anlamca doğru olduğunu kanıtlamaz. Katalog karar süreçleri için yazılmıştır; haber başlıklarına uygulanması bu sürümün bir varsayımıdır. " +

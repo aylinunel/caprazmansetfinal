@@ -6533,6 +6533,10 @@ var BG7ST = { pattern_supported: "desteklendi", needs_context: "bağlam gerekli"
   not_attempted: "çalıştırılmadı" };
 function bg7() { return D.BG && D.BG.summary ? D.BG : null; }
 function bg7ev(id) { var B = bg7(); if (!B) return null; for (var i = 0; i < B.events.length; i++) if (B.events[i].event === id) return B.events[i]; return null; }
+/* Medyanın oyunları: the media-technique pass (key BGM), same shape as BG; absent until cards pass the lab. */
+function bgm7() { return D.BGM && D.BGM.summary ? D.BGM : null; }
+function bgm7ev(id) { var B = bgm7(); if (!B) return null; for (var i = 0; i < B.events.length; i++) if (B.events[i].event === id) return B.events[i]; return null; }
+function bgm7Cards() { var B = bgm7(); return B && B.summary.cardIds || []; }
 function bg7tag(st) {
   return '<span class="cm3-state ' + (st === "review_complete" || st === "pattern_supported" ? "stPass" : st === "analysis_incomplete" ? "stFail" :
     st === "not_attempted" ? "stNotRun" : "stUnknown") + '">' + esc(BG7ST[st] || st) + "</span>";

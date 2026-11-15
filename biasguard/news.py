@@ -23,7 +23,7 @@ import re
 from pathlib import Path
 from typing import Any
 
-from .catalog import card_hash
+from .catalog import card_hash, load_cards, load_media_cards
 from .engine import BiasGuard
 from .providers import PROMPTS_VERSION, ProviderCallError, _selector_system_prompt, _system_prompt, _selector_schema
 from .routing import in_audit_sample, review_queue, tier
@@ -189,9 +189,20 @@ def _outlet_counts(done: list[dict]) -> dict[str, dict[str, int]]:
     return out
 
 
+def catalog_cards(catalog: str) -> list[dict[str, Any]]:
+    """behavioural: the 116 reasoning-pattern cards. media: the "Medyanın oyunları" cards."""
+    cards = load_media_cards() if catalog == "media" else load_cards()
+    if not cards:
+        raise ValueError(f"{catalog} catalogue is empty")
+    return cards
+
+
 def apply(run: Path, card_status_path: Path | None = None, pack_version: str = "",
-          reviewed_counts: dict[str, int] | None = None) -> dict[str, Any]:
-    bg = BiasGuard()
+          reviewed_counts: dict[str, int] | None = None, catalog: str = "behavioural",
+          cards: list[dict[str, Any]] | None = None) -> dict[str, Any]:
+    if cards is not None and not cards:
+        raise ValueError(f"{catalog} catalogue is empty")
+    bg = BiasGuard(cards=cards if cards is not None else catalog_cards(catalog))
     results = []
     # Card statuses come from human feedback (validation/feedback); only entries marked applied count.
     statuses = {}
@@ -206,11 +217,12 @@ def apply(run: Path, card_status_path: Path | None = None, pack_version: str = "
         if not present:
             results.append({"event": ev, "title": it["title"], "outlets": it["outlets"], "status": "not_attempted"})
             continue
-        r = BiasGuard(reviewer=FileReviewer(run, ev)).analyze(it["text"], it["context"], stakes="medium", mode="ai",
-                                                             max_candidates=MAX_CANDIDATES)
+        r = BiasGuard(cards=bg.cards, reviewer=FileReviewer(run, ev)).analyze(
+            it["text"], it["context"], stakes="medium", mode="ai", max_candidates=MAX_CANDIDATES)
         lines = [(l[1:l.index(" ·")], l) for l in it["text"].splitlines() if l.startswith("[") and " ·" in l]
         who = lambda q: sorted({o for o, l in lines if q in l})  # outlets whose headline line holds the quote
         slim = lambda f: {"id": f["id"], "name": f["name"], "status": f["status"], "definition": f["definition"],
+                          "entry_type": f["entry_type"],
                           "source_url": f["source_url"], "evidence": [{"q": x["quote"], "src": x["source"], "kind": x.get("kind"),
                                                                        "o": who(x["quote"]) if x["source"] == "text" else []}
                                                                       for x in f["evidence"]],
@@ -261,6 +273,8 @@ def apply(run: Path, card_status_path: Path | None = None, pack_version: str = "
         "rejectedQuotes": sum(x.get("rejectedQuotes", 0) for x in done),
         "cards": sorted(by_card.values(), key=lambda c: (-c["supported"], -c["uncertain"], c["id"])),
         "catalog": len(bg.cards), "maxCandidates": MAX_CANDIDATES,
+        # the media catalogue is short and changes as cards are promoted, so the site reads its ids from here
+        **({"cardIds": sorted(c["id"] for c in bg.cards)} if catalog == "media" else {}),
         # Review status (biasguard/routing.py): a rule, not a probability.
         "aiConfident": sum(f["tier"] == "ai_confident" for f in shown),
         "needsHuman": sum(f["tier"] == "needs_human" for f in shown),
@@ -270,7 +284,7 @@ def apply(run: Path, card_status_path: Path | None = None, pack_version: str = "
         # outlet -> card id -> events where that outlet's headline was quoted as evidence (AI output, not a verdict)
         "outlets": _outlet_counts(done),
     }
-    return {"pack": pack_version, "summary": summary, "events": results,
+    return {"pack": pack_version, "catalog": catalog, "summary": summary, "events": results,
             "reviewQueue": review_queue(done, reviewed_counts or {})}
 
 
@@ -384,6 +398,8 @@ def main() -> None:
     p.add_argument("--out", type=Path)
     p.add_argument("--card-status", type=Path, help="validation/reference/card_status.json")
     p.add_argument("--pack", default="", help="data-pack version; fixes the audit sample")
+    p.add_argument("--catalog", choices=["behavioural", "media"], default="behavioural",
+                   help="media = the Medyanın oyunları cards (use a separate run folder, e.g. runs/bg-media)")
     a = p.parse_args()
     a.run.mkdir(parents=True, exist_ok=True)
     if a.cmd == "inputs":
@@ -391,7 +407,10 @@ def main() -> None:
         (a.run / "inputs.jsonl").write_text("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in items))
         print(json.dumps({"events": len(items), "maxChars": max(len(x["text"]) + len(x["context"]) for x in items)}))
     elif a.cmd == "tasks":
-        for path in write_tasks(a.run, a.stage, a.batch):
+        if a.catalog == "media" and not load_media_cards():
+            print("media catalogue is empty: no card has been approved and passed the lab yet")
+            return
+        for path in write_tasks(a.run, a.stage, a.batch, bg=BiasGuard(cards=catalog_cards(a.catalog))):
             print(path)
     elif a.cmd == "explain-tasks":
         for path in explain_tasks(a.run, a.batch):
@@ -408,6 +427,8 @@ def main() -> None:
         core_path = a.build / "core.bin"
         core = _load(core_path)
         core["BG"] = json.loads((a.build / "biasguard.json").read_text())
+        if (a.build / "biasguard-media.json").exists():   # the Medyanın oyunları pass, when it has been run
+            core["BGM"] = json.loads((a.build / "biasguard-media.json").read_text())
         print(json.dumps(merge_explain(core["BG"], a.run)))
         import sys; sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "pipeline"))
         from capraz_pipeline.narratives import merge
@@ -416,7 +437,7 @@ def main() -> None:
         core_path.write_bytes(gzip.compress(json.dumps(core, ensure_ascii=False, separators=(",", ":")).encode()))
         print(core_path)
     else:
-        res = apply(a.run, a.card_status, a.pack)
+        res = apply(a.run, a.card_status, a.pack, catalog=a.catalog)
         write_results(a.out or a.run / "biasguard.json", res)
         print(json.dumps({k: v for k, v in res["summary"].items() if k not in ("cards", "outlets")}))
 

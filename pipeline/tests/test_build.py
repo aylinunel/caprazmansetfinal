@@ -81,3 +81,16 @@ class BuildTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class OptionalReviewKeysTest(unittest.TestCase):
+    def test_review_keys_are_added_only_when_their_files_exist(self):
+        from capraz_pipeline.build import review_keys
+        with tempfile.TemporaryDirectory() as d:
+            out = Path(d)
+            self.assertNotIn("BG", review_keys(out))
+            self.assertNotIn("BGM", review_keys(out))
+            (out / "biasguard-media.json").write_text(json.dumps({"summary": {}, "events": []}))
+            keys = review_keys(out)
+            self.assertEqual(keys["BGM"], {"summary": {}, "events": []})
+            self.assertNotIn("BG", keys)

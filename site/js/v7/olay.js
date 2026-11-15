@@ -86,12 +86,30 @@ function olayFinding(f, x) {
     (t.why ? "<p><b>Neden kesin değil.</b> " + esc(t.why) + "</p>" : "") + "</div>";
 }
 
+/* AI review of an event in two groups: Medyanın oyunları (what the text does) first, then behavioural
+   biases. Rule-based scorer hits are listed beside the AI findings and never added to them. */
+function olayGroups(e) {
+  var x = bg7ev(e.i), m = bgm7ev(e.i);
+  var pack = function (ev) { return ev ? { status: ev.status, findings: ev.status === "review_complete" ? rev7Sorted(ev) : [] } : null; };
+  return findingGroups(pack(x), pack(m));
+}
 function olayReview(e) {
-  var x = bg7ev(e.i);
-  if (!x || x.status !== "review_complete") return "";
-  var h = rev7Sorted(x).map(function (f) { return olayFinding(f, x); }).join("");
-  var line = rev7CountsLine(x);
-  return h ? yzBlock((line ? '<p class="rv-line">' + esc(line) + ".</p>" : "") + h, "Bilişsel inceleme") : "";
+  var x = bg7ev(e.i), m = bgm7ev(e.i), groups = olayGroups(e);
+  if (!groups.length) return "";
+  var rules = mediaRuleCounts(e.a.map(function (i) { return ART[i]; }).filter(Boolean));
+  return groups.map(function (g) {
+    var media = g.group === "Medyanın oyunları", src = media ? m : x, h = "";
+    if (g.state === "incelenemedi") h += '<p class="rv-line">AI incelemesi: incelenemedi. Bu olay için medya teknikleri henüz AI tarafından incelenmedi; bu, teknik bulunmadığı anlamına gelmez.</p>';
+    else {
+      var line = rev7CountsLine(src);
+      h += '<h4 class="v7-grp-h">AI incelemesi</h4>' + (line ? '<p class="rv-line">' + esc(line) + ".</p>" : "") +
+        g.findings.map(function (f) { return olayFinding(f, src); }).join("");
+    }
+    if (media && rules.length) h += '<h4 class="v7-grp-h">Kural tabanlı ölçüm</h4><p class="rv-line">Başlıklarda kural tabanlı puanlayıcının işaretlediği teknikler (AI bulgularıyla toplanmaz): ' +
+      rules.map(function (r) { return esc(r.tr) + " " + r.n + " başlıkta"; }).join(" · ") + ".</p>";
+    if (media) h += '<p class="xsmall">Bu bulgular metnin ne yaptığını tanımlar; niyet hakkında bir şey söylemez.</p>';
+    return '<div class="v7-grp" data-grp="' + (media ? "medya" : "davranis") + '">' + yzBlock(h, g.group) + "</div>";
+  }).join("");
 }
 
 function olayTiming(e) {
@@ -125,7 +143,7 @@ function pgOlay7(q) {
   logStory(e.i);
   var nk = NBYEV[e.i], x = bg7ev(e.i), deep = "";
   if (nk && narrOk(nk) && D.N[nk]) deep += olayDeep("narr", "Anlatı ayrıntısı", '<div id="v7-map" data-key="' + esc(nk) + '"></div>');
-  if (x && x.status === "review_complete" && bg7Live(x).length) deep += olayDeep("yz", "Yapay zekâ ne fark etti? (YZ)", "");
+  if (olayGroups(e).length) deep += olayDeep("yz", "AI ne fark etti?", "");
   if (v3on("echoChain") && (CM3.clusters(D).byEvent[e.i] || []).length) deep += olayDeep("echo", "Benzer başlıklar", "");
   return '<div class="wrap page xstory">' + olayHead(e) + olayKisaca(e) + splitBlock(e) + olayHeadlines(e) + olayTiming(e) + deep + olayOutlets(e) + "</div>";
 }
