@@ -1,0 +1,207 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cafer Mahiroğlu soruşturması: 8 gözaltı kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cafer Mahiroğlu soruşturmasında 2. dalga operasyon! 7 şüpheli gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "\"8 gözaltı kararı\" ve \"7 gözaltı\" aynı operasyonun iki doğru yüzü; seçim bilgi tercihidir.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ikinci dalga operasyon",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki dalgaya gönderme var; ama sonraki bir tahminin buna haksız biçimde bağlandığı yok.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "Önceki değere dayanan bir tahmin"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Milyonlarca liralık rüşvet iddiası!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı bir iddia başlığa taşınmış; yargıya haksız etkisi gösterilmiyor ve \"iddia\" olarak işaretlenmiş.",
+   "alternative_explanation": "Soruşturma konusunun özetlenmesi.",
+   "missing_context": [
+    "İddianın kaynağı ve tutarı"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hakkında gözaltı kararı bulunan 1 şüphelinin yakalanması için çalışmaların sürdüğü öğrenildi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz kanıtın orantısız ağırlıklandırıldığına dair belge yok.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıt"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kayyım atanan Halk TV'nin sahibi Cafer Mahiroğlu'na",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumsal bağ anılıyor; kimin hangi gruba ait olduğu ve gruba bağlı bir yargı farkı açıkça kurulmuyor.",
+   "alternative_explanation": "Bağlam bilgisi olarak verilmiş olabilir.",
+   "missing_context": [
+    "Grup üyeliğine bağlı farklı standart"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İş insanı Cafer Mahiroğlu'na yönelik",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Tek alandaki olumlu izlenimin başka bir yargıya taşındığı görülmüyor.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "İki alan arasındaki açık bağ"
+   ]
+  }
+ ]
+}

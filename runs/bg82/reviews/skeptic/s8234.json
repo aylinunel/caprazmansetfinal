@@ -1,0 +1,231 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "rosy-retrospection",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "1989 yılında Monaco'ya attığı unutulmaz frikik golüyle hafızalara kazınmıştı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Geçmiş olumlu anılıyor; ancak geçmişin bugünden daha iyi olduğu karşılaştırması yapılmıyor.",
+   "alternative_explanation": "Ölüm haberlerinde kariyerin öne çıkan anlarının anılması olağan.",
+   "missing_context": [
+    "Geçmiş ile bugün arasında karşılaştırmalı iddia"
+   ]
+  },
+  {
+   "card_id": "nostalgia-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "1989 yılında Monaco'ya attığı unutulmaz frikik golüyle hafızalara kazınmıştı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Geçmişi çağrıştıran bir anı var; fakat herhangi bir parasal tercih anılmıyor.",
+   "alternative_explanation": "Anma haberi, harcama kararıyla ilgili değil.",
+   "missing_context": [
+    "Para ile ilgili bir tercih"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "sosyalizmi savunurken Galatasaray tesislerinde çalışanlara nasıl davranıldığını anlatırdı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Futbol başarısının başka bir alandaki yargıya taşındığı açıkça kurulmuyor.",
+   "alternative_explanation": "Biyografik ayrıntı.",
+   "missing_context": [
+    "İki alan arasında açık bağ"
+   ]
+  },
+  {
+   "card_id": "peak-end-rule",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "1989 yılında Monaco'ya attığı unutulmaz frikik golüyle hafızalara kazınmıştı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sarı-kırmızılı formayla 229 maça çıkan Prekazi, 44 gol ve 65 asist kaydetti.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum kariyeri tek bir zirve anla özetlerken başka bir kurum bütün kariyer istatistiğini veriyor; kariyerin geri kalanının göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Zirve an, en bilinen olay olduğu için anılıyor olabilir.",
+   "missing_context": [
+    "Değerlendirmenin yalnızca zirveye dayandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Futbolun efsanesi Yugoslav Cevad Prekazi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray'ın eski futbolcusu Cevad Prekazi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "\"Efsane\" ve \"eski futbolcu\" anma haberlerinde yaygın üslup seçenekleri.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "69 yaşında hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "70 yaşında hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar yaşı 69 ve 70 olarak farklı aktarıyor; anlatımlar arasında küçük bir fark var.",
+   "alternative_explanation": "Doğum tarihine ve yaş hesabına göre iki rakam da makul; fark önemsiz ve hiçbir sonucu etkilemiyor.",
+   "missing_context": [
+    "Kesin doğum tarihi"
+   ]
+  }
+ ]
+}

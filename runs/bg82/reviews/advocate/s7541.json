@@ -1,0 +1,201 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında karaya oturan gemide can pazarı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 09:23] Beykoz açıklarında gemi karaya oturdu. 13 personel tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olgu farklı kurumlarca farklı sözcük ve vurguyla sunuluyor (\"can pazarı\" ile \"tahliye\"); ancak metin bu sunum farkının bir tercihi ya da yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Farklı ifadeler kurumların üslup, uzunluk ve okur kitlesi tercihlerinden kaynaklanabilir; okur üzerinde etki gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okur yargısını ya da bir kararı değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında korkutan kaza:",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında kurtarma operasyonu: Gemi karaya oturdu!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta çarpıcı bir ayrıntı öne çıkarılıyor (korku ve kurtarma vurgusu); ancak metin bu ayrıntının bir yargıya ya da seçime gerekçe yapıldığını açıkça göstermiyor.",
+   "alternative_explanation": "Çarpıcı ayrıntı haber değeri ve tıklanma kaygısıyla seçilmiş olabilir; bu tek başına bir yargı hatası değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının okur ya da karar verici yargısını etkilediğini gösteren karşılaştırmalı kanıt"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "karaya oturan gemide can pazarı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakan Uraloğlu, personelin sağlık durumunun iyi olduğunu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Vatan başlıkta \"can pazarı\" ile olumsuz yönü öne çıkarırken Türkiye Gazetesi personelin sağlık durumunun iyi olduğunu aktarıyor; olumsuz yön orantısız vurgulanıyor olabilir, ancak bunun bir değerlendirmeyi etkilediği gösterilmiyor.",
+   "alternative_explanation": "Ağır hava koşullarında mahsur kalma gerçek bir tehlike olduğundan vurgu orantılı olabilir.",
+   "missing_context": [
+    "Tahliye sırasındaki gerçek risk düzeyi"
+   ]
+  },
+  {
+   "card_id": "illusion-of-transparency",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Bir kişinin iç durumunun başkalarınca anlaşılacağına inandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "incentivization",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Belirli bir eyleme bağlı ödül ya da cezayı anlatan ifade"
+   ]
+  },
+  {
+   "card_id": "mental-accounting",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Bir kaynak tahsisi kararı ve zihinsel hesap ayrımı"
+   ]
+  }
+ ]
+}

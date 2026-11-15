@@ -1,0 +1,226 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: Eski SPK Başkanvekili Enver Usca ve 3 kişi tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sermaye piyasası soruşturmasında 6 şüpheli adliyede",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma BirGün'de \"fon vurgunu\", Karar'da \"sermaye piyasası soruşturması\" olarak adlandırılıyor; \"vurgun\" suç çağrışımı taşıyor, diğeri nötr.",
+   "alternative_explanation": "\"Fon vurgunu\" kamuoyunda yerleşmiş dosya adı olabilir.",
+   "missing_context": [
+    "Savcılığın dosyayı resmi olarak nasıl adlandırdığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: Eski SPK Başkanvekili Enver Usca ve 3 kişi tutuklandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 11:00] Eski SPK Başkan Vekili Enver Usca tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "BirGün \"vurgun\" değerlendirici sözcüğünü kullanırken Sabah aynı tutuklamayı bu sözcük olmadan veriyor.",
+   "alternative_explanation": "Sözcük soruşturmanın kamuoyundaki adını yansıtıyor olabilir.",
+   "missing_context": [
+    "Soruşturmadaki suç nitelendirmesi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Son dakika: Fon soruşturmasında eski SPK başkanı tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eski SPK Başkan Vekili Enver Usca tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi Sözcü'de \"eski SPK başkanı\", Sabah'ta \"eski SPK Başkan Vekili\" olarak anılıyor; unvan büyütülüyor, ancak bu farkın değerlendirme mi yoksa hata mı olduğu belirsiz.",
+   "alternative_explanation": "Sözcü başlığındaki fark kısaltma ya da yazım hatası olabilir.",
+   "missing_context": [
+    "Unvan farkının bilinçli bir değerlendirme olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Toplam tutuklu sayısı ise 118'e yükseldi.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında eski SPK Başkanvekili Enver Usca tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklamaları Yeni Şafak toplam tutuklu sayısıyla, Mynet ise tek bir kişi (Usca) üzerinden öne çıkarıyor (sayı ve kişi).",
+   "alternative_explanation": "Toplam sayı ajans bilgisinden gelmiş olabilir; vurgu farkı yer kısıtından kaynaklanabilir.",
+   "missing_context": [
+    "Toplam tutuklu sayısının resmi kaynağı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski SPK Başkanvekili Enver Usca da dahil 4 şüpheli daha tutuklandı. Toplam tutuklu sayısı ise 118'e yükseldi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Yeni Şafak tutuklamaları soruşturmanın zaman içindeki toplam tutuklu sayısı içine yerleştiriyor.",
+   "alternative_explanation": "Toplam sayı rutin bağlam bilgisi olarak verilmiş olabilir.",
+   "missing_context": [
+    "Tutuklu sayısının zaman içindeki seyri"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kurumun kendi sesiyle yalnızca iki seçenek sunduğu bir ifade"
+   ]
+  }
+ ]
+}

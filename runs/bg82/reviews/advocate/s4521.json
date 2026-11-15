@@ -1,0 +1,217 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 01:16] Antalya'da hortum faciası!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar olumsuz bir olayı olumsuz sözcüklerle veriyor; ancak olumsuz bilgiye karşılaştırılabilir olumlu bilgiden orantısız ağırlık verildiğini belgeleyen bir karşılaştırma bulunmuyor.",
+   "alternative_explanation": "Ölümlü bir afette olumsuz dil olayın niteliğiyle orantılı olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgi",
+    "Olumsuz bilginin bir kararı haksız biçimde etkilediğini gösteren veri"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 01:16] Antalya'da hortum faciası! 2 konteyner savruldu, 5 işçi öldü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 01:15] Antalya'da hortum ve fırtına 4 can aldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Erken saatlerde farklı can kaybı rakamları yayımlanmış; ancak sonraki bir tahminin bu ilk rakama dayandırıldığını ya da ona yakın tutulduğunu gösteren bir bağlantı yok.",
+   "alternative_explanation": "Rakam farkı olayın hemen ardından gelen ilk bilgilerin belirsizliğinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Kuruluşların ilk rakamı sonradan güncelleyip güncellemediği"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 04:03] Antalya'da hortum faciası: 4 kişi hayatını kaybetti! 4 şüpheli gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Gözaltı bilgisi aktarılıyor; ancak bir kişinin davranışını kalıcı bir kişilik özelliğine bağlayan nedensel ya da değerlendirici bir ifade yok.",
+   "alternative_explanation": "Gözaltı, soruşturma sürecine ilişkin olgusal bir bilgidir.",
+   "missing_context": [
+    "Şüphelilerin davranışına ilişkin bir değerlendirme",
+    "Durumsal etkenlere dair bilgi"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye’de bildiğimiz kadarıyla ilk kez bir hortum yüzünden can kaybı yaşandı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir metin olayın emsalsiz olduğunu belirtiyor; kolay hatırlanan örneklerin bir olasılık ya da risk tahminine gerekçe yapıldığı bir ifade bulunmuyor.",
+   "alternative_explanation": "'İlk kez' ifadesi geçmiş kayıtlara dayanan olgusal bir bilgi olabilir.",
+   "missing_context": [
+    "Hatırlanabilirliğe dayalı bir risk çıkarımı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aksam · 01:43] Antalya'da akılalmaz kaza: Hortumda parçalanan konteynerde bulunan 4 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 01:42] Antalya'da hortum nedeniyle parçalanan konteynerlerde 4 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olgular bir başlıkta 'akılalmaz kaza', diğerinde 'hortum nedeniyle' can kaybı olarak sunuluyor; sunum farkı açık, ancak buna dayanan bir tercih ya da yargı metinde kurulmuyor.",
+   "alternative_explanation": "Kuruluşlar olayı farklı yayın üsluplarıyla vermiş olabilir.",
+   "missing_context": [
+    "Sunum farkına dayanan bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 01:33] Antalya'da sarı kodlu uyarı verilmişti! Şantiyeyi aniden hortum vurdu: 4 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 01:42] Antalya'da hortum nedeniyle parçalanan konteynerlerde 4 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık önceden verilen sarı kodlu uyarıyı en öne taşıyor, diğerleri doğrudan can kaybını veriyor; bu belirgin ayrıntının bir yargıyı haksız biçimde etkilediği ise açıkça gösterilmiyor.",
+   "alternative_explanation": "Uyarı bilgisi olayın önlenebilirliği açısından ilgili bir olgu olabilir.",
+   "missing_context": [
+    "Uyarının içeriği ve kapsamı",
+    "Belirgin ayrıntıya dayanan açık bir sonuç"
+   ]
+  }
+ ]
+}

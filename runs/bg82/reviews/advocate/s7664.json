@@ -1,0 +1,202 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 20:17] Hakan Bahçetepe’ye 6 yıl 3 ay hapis cezası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 19:44] Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe'ye ev hapsiyle tahliye",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı mahkeme kararı bir başlıkta hapis cezası, diğerinde tahliye olarak sunuluyor; olgular aynı, referans noktası farklı. Ancak bu farka dayanan bir tercih ya da yargı metinde açıkça kurulmuyor.",
+   "alternative_explanation": "Karar hem ceza hem tahliye içerdiği için kuruluşlar haber değeri taşıyan farklı unsuru seçmiş olabilir.",
+   "missing_context": [
+    "Sunum farkının yol açtığı açık bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 20:17] Hakan Bahçetepe’ye 6 yıl 3 ay hapis cezası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "haksız mal edinme ve suçtan kaynaklanan malvarlığı değerlerini aklama suçlarından ayrı ayrı beraat etti.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık cezayı öne çıkarırken başka bir metin iki suçtan beraati de aktarıyor; belirgin unsurun bir yargıyı haksız biçimde etkilediği ise açıkça gösterilmiyor.",
+   "alternative_explanation": "Hapis cezası kararın en somut unsuru olduğu için öne çıkarılmış olabilir.",
+   "missing_context": [
+    "Belirgin bilgiye dayanan açık bir sonuç",
+    "Sabah haberinin devamında beraat bilgisinin yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "primacy-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar zaman damgalı bir sırada yayımlanmış olsa da hiçbir metin erken bilgilerin daha iyi hatırlandığını bildirmiyor ya da göstermiyor; sıralama tek başına yeterli değil.",
+   "alternative_explanation": "Kuruluşların farklı saatlerde farklı ayrıntılar vermesi, olayın gelişimine ve haber akışına bağlı olabilir.",
+   "missing_context": [
+    "Okurun ya da editörün hangi bilgiyi hatırladığına dair bir bildirim",
+    "Erken ve geç bilgilerin hatırlanmasını karşılaştıran bir gözlem"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'li siyasetçiye rüşvet suçundan 6 yıl 3 ay hapis cezası verdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Parti aidiyeti anılıyor; ancak grup üyeliğine bağlanan bir güvenilirlik, suçlama ya da muamele farkı metinde açıkça kurulmuyor.",
+   "alternative_explanation": "Parti bilgisi siyasetçiyi tanıtan olgusal bir ayrıntıdır.",
+   "missing_context": [
+    "Benzer davalarda farklı partilerden sanıklara ilişkin karşılaştırmalı haberler"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde bir alandaki olumlu izlenimin başka bir alandaki yargıya taştığını gösteren bir ifade yok.",
+   "alternative_explanation": "Haberler bir mahkeme kararını aktarıyor.",
+   "missing_context": [
+    "İki alana ait olumlu yargılar"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler bir olayın haber başlıklarından oluşuyor; bir etkinliğe bağlanan dış ödül, ödülün kaldırılması ya da sonrasında gönüllü katılımın azalması gibi bir gözlem yer almıyor.",
+   "alternative_explanation": "Haber metinleri motivasyon değişimini ölçecek bir akış içermez; kartın konusu bu olayla ilişkili değildir.",
+   "missing_context": [
+    "Kişinin ödül öncesi gönüllü katılım düzeyi",
+    "Beklenen ve etkinliğe bağlı bir ödül",
+    "Ödül kaldırıldıktan sonraki davranış ölçümü"
+   ]
+  }
+ ]
+}

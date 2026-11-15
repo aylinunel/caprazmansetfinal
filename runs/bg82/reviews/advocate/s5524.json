@@ -1,0 +1,196 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Konya'da yolcu otobüsü kazasında can pazarı: 3'ü ağır 45 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "yaklaşık 40'ının durumunun hafif olduğu öğrenilen 45 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hürriyet başlıkta \"can pazarı\" ile olumsuz yönü öne çıkarırken kendi girişinde yaralıların yaklaşık 40'ının hafif olduğunu belirtiyor; olumsuz bilgiye orantısız ağırlık verildiği düşünülebilir, ancak bunun bir değerlendirmeyi haksız biçimde etkilediği gösterilmiyor.",
+   "alternative_explanation": "45 yaralılı bir kaza için dramatik dil haber değeriyle orantılı görülebilir.",
+   "missing_context": [
+    "Başlık dilinin okur risk algısına etkisini gösteren veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gece yarısı şarampole yuvarlandı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Konya'da yolcu otobüsü devrildi: Çok sayıda yaralı var!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta çarpıcı bir ayrıntı öne çıkarılıyor (gece yarısı ve çok sayıda yaralı); ancak metin bu ayrıntının bir yargıya ya da seçime gerekçe yapıldığını açıkça göstermiyor.",
+   "alternative_explanation": "Çarpıcı ayrıntı haber değeri ve tıklanma kaygısıyla seçilmiş olabilir; bu tek başına bir yargı hatası değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının okur ya da karar verici yargısını etkilediğini gösteren karşılaştırmalı kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Konya'da yolcu otobüsünün devrilmesi sonucu 3'ü ağır 45 kişi yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 08:31] Konya'da yolcu otobüsü devrildi, 45 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olgu farklı kurumlarca farklı sözcük ve vurguyla sunuluyor (ağır yaralı vurgusu); ancak metin bu sunum farkının bir tercihi ya da yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Farklı ifadeler kurumların üslup, uzunluk ve okur kitlesi tercihlerinden kaynaklanabilir; okur üzerinde etki gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okur yargısını ya da bir kararı değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kolay hatırlanan örneklerin bir tahmine gerekçe yapıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "illusion-of-transparency",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Bir kişinin iç durumunun başkalarınca anlaşılacağına inandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "incentivization",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Belirli bir eyleme bağlı ödül ya da cezayı anlatan ifade"
+   ]
+  }
+ ]
+}

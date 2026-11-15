@@ -1,0 +1,218 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası Kredi Freninde Gevşemeye Gitti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TCMB kredi büyüme sınırlarını yükseltti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "\"Gevşeme\" ve \"yükseltme\" aynı politika adımının teknik ve yorumlayıcı anlatımı.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yüzde 3'ten yüzde 3,5'e yükseltti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki değer veriliyor; yeni sınır bir politika kararı olup bu değere haksız sabitlenme gösterilmiyor.",
+   "alternative_explanation": "Kademeli politika ayarlaması olağan bir uygulama.",
+   "missing_context": [
+    "Kararın gerekçelendirme süreci"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "makrofinansal istikrarı ve parasal aktarım mekanizmasını desteklemek amacıyla",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumun gerekçesi aktarılıyor; bu gerekçenin yalnızca statü nedeniyle kabul edildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi açıklamanın aktarılması haber pratiği.",
+   "missing_context": [
+    "Gerekçenin değerlendirilmesi"
+   ]
+  },
+  {
+   "card_id": "optimism-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "makrofinansal istikrarı desteklemek amacıyla",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir amaç belirtiliyor; olasılık tahmini veya karşı kanıtın göz ardı edildiği yok.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "Beklenen etkiye dair tahmin ve taban oranlar"
+   ]
+  },
+  {
+   "card_id": "cashless-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İhtiyaç, taşıt ve ticari kredilerde sınırlar yükseltildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kredi büyüme sınırları bir ödeme biçimi ya da satın alma bağlamı değil; nakitle karşılaştırma yok.",
+   "alternative_explanation": "Makroihtiyati düzenleme haberi kart alanının dışında.",
+   "missing_context": [
+    "Ödeme biçimine bağlı harcama verisi"
+   ]
+  },
+  {
+   "card_id": "bounded-rationality",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "makrofinansal istikrarı ve parasal aktarım mekanizmasını desteklemek amacıyla",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir karar ve amacı belirtiliyor; ancak tatmin edici bir eşikte durmanın bilgi veya zaman kısıtına bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Kademeli ayarlama bilinçli bir politika tercihi olabilir.",
+   "missing_context": [
+    "Karar sürecinde değerlendirilen seçenekler"
+   ]
+  }
+ ]
+}

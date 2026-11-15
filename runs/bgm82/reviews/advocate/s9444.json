@@ -1,0 +1,185 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rize'de feci kaza!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Rize'de can pazarı:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 21:53] Rize'de kamyonetin dereye devrilmesi sonucu 3 kişi öldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Star, A Haber ve Sabah \"feci kaza\", \"can pazarı\" değerlendirmelerini kullanırken Habertürk aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Bu ifadeler kaza haberlerinde yerleşik kalıplardır.",
+   "missing_context": [
+    "Kazanın oluş biçimine dair resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dereye uçan kamyonette 3 can kaybı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rize'de kamyonet dereye devrildi: 3 ölü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay A Haber'de \"dereye uçan\", TRT Haber'de \"dereye devrildi\" olarak anlatılıyor; \"uçmak\" hız ve dramatik çağrışım taşıyor.",
+   "alternative_explanation": "\"Uçmak\" günlük dilde kaza betimlemesi için yaygın kullanılabilir.",
+   "missing_context": [
+    "Aracın hızına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rize Çayeli'nde kamyonet çay bahçesinden dereye yuvarlandı, 3 kişi öldü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rize'de kamyonet dereye yuvarlandı; 3 ölü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kazada bir başlık çay bahçesi ayrıntısını, diğeri yalnızca ölü sayısını veriyor; ancak bu fark zıt değerlendirme boyutları oluşturmuyor.",
+   "alternative_explanation": "Fark yalnızca ayrıntı düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Başlıkların farklı bir değerlendirme boyutu kurduğunu gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Olayın tekrarlayan ya da yapısal olduğunu gösteren bağlam"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Payı ve paydası belirlenebilen bir oran ya da pay"
+   ]
+  }
+ ]
+}

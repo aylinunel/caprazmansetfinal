@@ -1,0 +1,241 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında gemi karaya oturdu: 13 personel kurtarıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında gemi karaya oturdu; 13 personel tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay Evrensel'de \"kurtarıldı\", DHA başlığında \"tahliye edildi\" olarak veriliyor; \"kurtarılmak\" hayati tehlike çağrışımı taşırken \"tahliye\" nötr bir işlem bildiriyor.",
+   "alternative_explanation": "Kıyı Emniyeti açıklamalarında iki sözcük de geçiyor olabilir.",
+   "missing_context": [
+    "Resmi açıklamada kullanılan sözcük"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında kurtarma operasyonu: Gemi karaya oturdu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakan Uraloğlu açıkladı: 13 personel tahliye edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beykoz'da çelik yüklü gemi karaya oturdu! 13 personel varagele sistemiyle tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olayı Sabah kurtarma operasyonu, Vatan bakanın açıklaması, Haberler ise yük ve tahliye yöntemi üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklar kurumların erişebildiği kaynak ve görüntülerden kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların kullandığı birincil kaynak"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kurumun kendi sesiyle yalnızca iki seçenek sunduğu bir ifade"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "karaya oturan gemide can pazarı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında korkutan kaza:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 09:23] Beykoz açıklarında gemi karaya oturdu. 13 personel tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Vatan \"can pazarı\", Takvim \"korkutan kaza\" değerlendirmelerini kullanırken NTV aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Ağır hava koşulları bu ifadeleri kurumların gözünde betimleyici kılmış olabilir.",
+   "missing_context": [
+    "Tahliye sırasındaki hava ve deniz koşullarına dair veri"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Olayın tekrarlayan ya da yapısal olduğunu gösteren bağlam"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Olumsuz hava koşullarına rağmen Kıyı Emniyeti ekiplerince düzenlenen operasyonla gemideki 13 personel kurtarıldı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bakan Uraloğlu, personelin sağlık durumunun iyi olduğunu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Gemide bulunan 13 personel, ekiplerin çalışmalarıyla kurtarıldı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Türkiye Gazetesi girişinde \"olumsuz hava koşullarına rağmen\" vurgusu ile bakanın güvence veren açıklamasını birleştiriyor; ikisi de kurumların başarısı yönünde. DHA aynı olguları bu bileşim olmadan veriyor.",
+   "alternative_explanation": "Hava koşulları ve bakan açıklaması olgusal bilgi olarak aktarılmış olabilir.",
+   "missing_context": [
+    "Bakan açıklamasının tam metni"
+   ]
+  }
+ ]
+}

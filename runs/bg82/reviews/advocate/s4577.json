@@ -1,0 +1,173 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkezefendi Belediyesi'nde imar vurgunu: 27 kişi gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 10:30] Denizli'de Merkezefendi Belediyesi'ne sabah operasyonu! 27 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olgu farklı kurumlarca farklı sözcük ve vurguyla sunuluyor (\"imar vurgunu\" ile \"operasyon\"); ancak metin bu sunum farkının bir tercihi ya da yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Farklı ifadeler kurumların üslup, uzunluk ve okur kitlesi tercihlerinden kaynaklanabilir; okur üzerinde etki gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okur yargısını ya da bir kararı değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Şeniz Doğan ve eşi dahil çok sayıda gözaltı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Belediye başkanı ve eşi de gözaltına alınanlar arasında!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta çarpıcı bir ayrıntı öne çıkarılıyor (başkan ve eşinin gözaltısı); ancak metin bu ayrıntının bir yargıya ya da seçime gerekçe yapıldığını açıkça göstermiyor.",
+   "alternative_explanation": "Çarpıcı ayrıntı haber değeri ve tıklanma kaygısıyla seçilmiş olabilir; bu tek başına bir yargı hatası değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının okur ya da karar verici yargısını etkilediğini gösteren karşılaştırmalı kanıt"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Bir davranışın kalıcı bir kişilik özelliğine bağlandığı açık bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "YENİ Partili Merkezefendi Belediye Başkanı Şeniz Doğan gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 09:42] Merkezefendi Belediyesi'ne operasyon: Çok sayıda şüpheli gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Diken başkanın parti üyeliğini açıkça belirtiyor, Sabah başkanın adını bile vermiyor; ancak metin grup üyeliğine bağlı farklı bir değerlendirme ya da suçlama göstermiyor.",
+   "alternative_explanation": "Parti bilgisinin verilip verilmemesi kurumların haber formatından kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların diğer partilerden belediyelere yönelik operasyonları nasıl verdiği"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kolay hatırlanan örneklerin bir tahmine gerekçe yapıldığını gösteren ifade"
+   ]
+  }
+ ]
+}
