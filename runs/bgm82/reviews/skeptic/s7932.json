@@ -1,0 +1,227 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında 2 üst düzey isim daha tutuklandı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında 2 şüpheli tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı iki kişi mynet'te 'üst düzey isim', bloomberght'de 'şüpheli' olarak anılıyor; biri statüyü, diğeri hukuki durumu çağrıştırıyor.",
+   "alternative_explanation": "'Üst düzey isim' kişilerin olgusal unvanlarını özetliyor olabilir; fark çağrışımdan çok bilgi seçimi olabilir.",
+   "missing_context": [
+    "Kurumların benzer soruşturmalarda kullandığı ifadeler"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında 120 tutuklama 262 adli kontrol",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberlerde yalnızca mutlak tutuklama ve adli kontrol sayıları var; payı ve paydası belirlenebilen bir oran sunulmuyor.",
+   "alternative_explanation": "Mutlak sayıların aktarılması seçici istatistik değildir.",
+   "missing_context": [
+    "Oran veya pay içeren bir ifade"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında 3 tutuklama 4 ev hapsi talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında yeni gelişme: Üç kişi tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "tgrt savcılık talebini, haber7 hakimlik kararını öne çıkarıyor.",
+   "alternative_explanation": "İki başlık farklı aşamaları (talep ve karar) aktarıyor olabilir; aynı olgunun farklı boyutları değil, farklı saatlerdeki gelişmeler.",
+   "missing_context": [
+    "Talep ve kararın zaman sırası"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında 120 tutuklama 262 adli kontrol",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında 3 tutuklama daha",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Soruşturmanın geniş bir süreç olduğu görülüyor; ancak başlıklar 'daha' ifadesiyle bu sürece açıkça değiniyor, tek vaka bütün hikâye gibi sunulmuyor.",
+   "alternative_explanation": "Artımlı tutuklama haberleri süren bir soruşturmanın olağan aktarım biçimidir.",
+   "missing_context": [
+    "Soruşturmanın toplam kapsamı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında 2 kritik tutuklama!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında 2 şüpheli tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "sozcu tutuklamaları kendi sesiyle 'kritik' diye niteliyor; bloomberght aynı olguyu nitelemeden veriyor.",
+   "alternative_explanation": "'Kritik' tutuklananların üst düzey konumunu (BDDK Başkan Yardımcısı, banka genel müdürü) yansıtıyor olabilir.",
+   "missing_context": [
+    "Tutuklananların soruşturmadaki rolü"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurum konuyu iki seçeneğe indirgemiyor.",
+   "alternative_explanation": "Haberler tutuklama kararlarını aktarıyor.",
+   "missing_context": [
+    "İkili seçenek kuran bir ifade"
+   ]
+  }
+ ]
+}

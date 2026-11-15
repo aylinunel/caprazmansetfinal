@@ -1,0 +1,272 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İBB el mi değiştirecek? DEM Parti'den 'meclis üyeleri' kararı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "DEM Parti'den 'Kent Uzlaşısı' kararı! İBB'de dengeler değişti; olası seçimde belediye el değiştirebilir",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "cumhuriyet ve mynet başlıkları olası İBB el değişimini öne çıkarıyor; ancak karar olayı da her iki başlıkta yer alıyor, yani olay yalnızca lede'e bırakılmamış.",
+   "alternative_explanation": "Olası sonucun anılması yerel meclis dengelerine ilişkin okur ilgisini yansıtabilir; olay başlıkta açıkça bulunuyor.",
+   "missing_context": [
+    "Olayın başlıkta hiç yer almadığı bir sonuç başlığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kent Uzlaşısı bitti: CHP’den seçilen üyeler DEM’e geçiyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP'deki meclis üyeleri partiye geri dönüyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İBB'de Kent Uzlaşısı ile seçilenler partiye dönüyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olgu için karar kendi sesinden 'DEM'e geçiyor', takvim 'geri dönüyor', ahaber 'partiye dönüyor' diyor; 'geçmek' bir partiden diğerine geçişi, 'dönmek' asıl partiye dönüşü çağrıştırıyor.",
+   "alternative_explanation": "Her iki ifade de üyelerin CHP listesinden seçilip DEM kökenli olması olgusunun farklı ama doğru betimlemeleri olabilir.",
+   "missing_context": [
+    "Üyelerin seçim öncesi parti üyelik durumu"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kent uzlaşısı dağıldı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "DEM parti, kent uzlaşısını bitirdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[agos · 10:34] Kent Uzlaşısı meclis üyelerinden DEM Parti’ye katılma kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "turkiyegz 'dağıldı', aksam 'bitirdi' ifadelerini kullanıyor; agos aynı olguyu bu sözcükler olmadan veriyor. Ancak bu sözcükler skandal/müjde türü değerlendirici sözcükler olmaktan çok olayın yorumlu bir özeti.",
+   "alternative_explanation": "'Dağıldı/bitti' ifadeleri ittifakın sona erdiğine dair bir olgu yorumu olabilir; hurriyet'te DEM'in 'zeminindeyiz' açıklaması bu yorumun tartışmalı olduğunu gösteriyor.",
+   "missing_context": [
+    "Sözcüklerin değerlendirici mi yoksa betimleyici mi kullanıldığını ayırt edecek tam metin"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'den seçilen meclis üyeleri partiye geçiyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "‘Kent Uzlaşısı’yla seçilen meclis üyeleri DEM Parti çatısında görev yapacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar meclis üyelerini 'CHP'den seçilen' veya 'Kent Uzlaşısı'yla seçilen' diye anıyor; her iki etiket de seçildikleri listeyi tanımlıyor, kimlik belirlemenin ötesinde bir değerlendirme taşımıyor.",
+   "alternative_explanation": "Etiketler aynı olgunun (CHP listesinden Kent Uzlaşısı kapsamında seçilme) farklı yüzlerini adlandırıyor.",
+   "missing_context": [
+    "Değerlendirici yükü olan bir sıfat veya unvan"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İBB el mi değiştirecek?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kent Uzlaşısı bitti: CHP’den seçilen üyeler DEM’e geçiyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 07:26] Kent Uzlaşısı meclis üyelerinin DEM Parti'ye katılma talebi uygun görüldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı karar için cumhuriyet İBB'deki olası güç değişimini, karar ittifakın sona ermesini, sondakika ise prosedürel onayı başlığa taşıyor; kimin kazanıp kaybettiği boyutu ile süreç boyutu ayrışıyor.",
+   "alternative_explanation": "Farklı vurgular kurumların okur kitlesinin ilgilendiği farklı yerel sonuçları yansıtabilir.",
+   "missing_context": [
+    "Kararın İBB meclisindeki sayısal dengeye etkisine dair resmi veri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "DEM Parti, 31 Mart 2024 yerel seçimlerinde “Kent Uzlaşısı” kapsamında seçilen belediye meclis üyelerinin",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "karar lede'i kararı 31 Mart 2024 yerel seçimlerindeki Kent Uzlaşısı stratejisiyle ilişkilendirerek daha geniş bir siyasi süreç içine yerleştiriyor.",
+   "alternative_explanation": "Seçim tarihinin anılması kısa bir arka plan bilgisidir ve geniş bir eğilim analizi değildir.",
+   "missing_context": [
+    "Kent Uzlaşısı'nın seçimden bu yana seyrine dair ayrıntı"
+   ]
+  }
+ ]
+}

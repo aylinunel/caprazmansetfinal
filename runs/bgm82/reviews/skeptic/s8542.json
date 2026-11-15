@@ -1,0 +1,264 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: Gözaltındaki eski Takasbank Genel Müdürü Yunus Arıncı, Türk Telekom'dan da istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon skandalında gözaltına alınan eski Takasbank Genel Müdürü Yunus Arıncı, Türk Telekom'dan da istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturması: Gözaltındaki eski Takasbank Genel Müdürü Yunus Arıncı, Türk Telekom'dan da istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "birgun 'fon vurgunu', sozcu 'fon skandalı' diyor; t24 aynı olguyu 'fon soruşturması' olarak veriyor. 'Vurgun' ve 'skandal' soruşturma sürerken olumsuz bir değerlendirme ekliyor.",
+   "alternative_explanation": "'Fon vurgunu' kamuoyunda yerleşmiş bir dosya adı olabilir; soruşturma kapsamındaki işlemlerin ölçeği bu nitelemeyi açıklayabilir.",
+   "missing_context": [
+    "İddianame veya resmi suçlamalar",
+    "Dosya adının kaynaklarca nasıl kullanıldığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: Eski Takasbank Genel Müdürü'nün de aralarında olduğu 3 kişiye tutuklama talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturması: Eski Takasbank Genel Müdürü dahil 3 kişiye tutuklama talebi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma evrensel'de 'fon vurgunu soruşturması', sol'da 'fon soruşturması' olarak adlandırılıyor; 'vurgun' yağma çağrışımı taşıyor.",
+   "alternative_explanation": "Fark kurumların dosyaya verdiği yerleşik adlardan kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların önceki haberlerde kullandığı adlandırma"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Takasbank Genel Müdürü Yunus Arıncı istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eski Takasbank genel müdürü Türk Telekom'dan istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Gözaltındaki eski Takasbank Genel Müdürü Yunus Arıncı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi 'Takasbank Genel Müdürü', 'eski Takasbank genel müdürü' ve 'gözaltındaki' nitelemeleriyle anılıyor.",
+   "alternative_explanation": "'Gözaltındaki' olgusal hukuki durumu belirtiyor; unvan farkı istifa öncesi/sonrası zamanlamayla açıklanabilir. Meşruiyet yargısı taşıdığı kesin değil.",
+   "missing_context": [
+    "İstifanın kesin tarihi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski Takasbank genel müdürü Türk Telekom'dan istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: Gözaltındaki eski Takasbank Genel Müdürü Yunus Arıncı, Türk Telekom'dan da istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "bloomberght istifayı kurumsal bir yönetim değişikliği olarak, birgun soruşturma ve gözaltı bağlamıyla öne çıkarıyor.",
+   "alternative_explanation": "bloomberght'nin şirket bildirimine dayanan ekonomi haberciliği formatı soruşturmayı başlıkta anmamayı açıklayabilir.",
+   "missing_context": [
+    "Türk Telekom'un KAP bildiriminin içeriği"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tutuklu sayısı 123'e yükseldi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir toplam sayı veriliyor; ancak oran veya pay ve buna ilişkin daha dar bir payda yok.",
+   "alternative_explanation": "Mutlak sayının aktarılması seçici istatistik değildir.",
+   "missing_context": [
+    "Oran içeren bir ifade"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tutuklu sayısı 123'e yükseldi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında 3 tutuklama daha: Eski Takasbank Genel Müdürü de listede",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Soruşturmanın geniş bir süreç olduğu görülüyor; ancak başlık ve ledler 'daha' ve toplam tutuklu sayısıyla bu sürece değiniyor.",
+   "alternative_explanation": "Tek bir kişinin öne çıkması kamusal görevinden kaynaklanıyor; daha geniş örüntü metinde anılıyor.",
+   "missing_context": [
+    "Soruşturmanın toplam kapsamı"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,242 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 06:37] New York'ta korkunç olay! Bina çöktü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 05:25] New York'ta bina çöktü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "akit başlığında kendi sesinden 'korkunç olay' değerlendirmesini kullanıyor; trthaber aynı çökme olgusunu bu sözcük olmadan veriyor.",
+   "alternative_explanation": "Can kaybı olan bir çökme için 'korkunç' sözcüğü olayın ağırlığını aktaran yaygın bir ifade olabilir.",
+   "missing_context": [
+    "akit'in lede'indeki bilgilerin diğer kurumlarla aynı olup olmadığı (akit 1 ölü bildiriyor)"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "en az 2 kişi yaşamını yitirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "2 kişi hayatını kaybetti, 17 kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar ölüm için 'yaşamını yitirdi', 'hayatını kaybetti', 'öldü' gibi ifadeler kullanıyor; bunlar çağrışımca değil yalnızca üslupça farklı.",
+   "alternative_explanation": "Bu ifadeler Türkçe haber dilinde birbirinin yerine kullanılan eşdeğerlerdir.",
+   "missing_context": [
+    "Aynı olgu için çağrışımı farklı sözcük seçimi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "New York'ta bina çöktü: Enkazda arama çalışmaları sürüyor! En az bir kişi hayatını kaybetti...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 08:03] New York'ta bina çöktü: 2 ölü, 17 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "New York'ta bina çöktü: Çok sayıda ölü var",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar aynı çökmeyi veriyor; sabah arama çalışmasını, dha ölü-yaralı sayısını, star 'çok sayıda ölü' ifadesini öne alıyor. Ancak farklar büyük ölçüde farklı saatlerde güncellenen sayılardan oluşuyor.",
+   "alternative_explanation": "Başlık farkı haberin verildiği saatteki bilgi düzeyini yansıtıyor olabilir; ölü sayısı 1'den 8'e yükseliyor.",
+   "missing_context": [
+    "Başlıkların aynı bilgi düzeyinde yazılıp yazılmadığı (yayın saatleri ve resmi açıklama zamanları)"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "bir binanın kısmen çökmesi faciaya yol açtı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "ilk belirlemelere göre 1 kişi hayatını kaybederken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "akit 'faciaya yol açtı' ifadesini kullanıyor ve aynı lede'de ölü sayısını veriyor; can kaybı olan bir bina çökmesi için bu sözcük ölçekle orantısız değil.",
+   "alternative_explanation": "Ölümlü bir bina çökmesini 'facia' olarak nitelemek olayın ölçeğiyle uyumlu.",
+   "missing_context": [
+    "Riskin ölçeğiyle orantısız bir tehdit dili"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 01:37] New York'ta çöken binanın enkazı altında kalan 8 kişi hayatını kaybetti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar çökmeyi tek bir olay olarak veriyor; hiçbir başlık veya lede olayı bina güvenliği eğilimi, önceki vakalar veya kurumsal bir süreç içine yerleştirmiyor.",
+   "alternative_explanation": "Yurtdışı son dakika haberlerinde arka plan bilgisinin bulunmaması olağan.",
+   "missing_context": [
+    "Benzer çökmeler veya inşaat denetimiyle ilgili bağlam"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "New York'ta bina çöktü: Ölü ve yaralılar var",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneği tek seçenek olarak sunan bir ifade yok; kurumlar olayı ve kayıpları aktarıyor.",
+   "alternative_explanation": "Haber bir seçim veya karar içermiyor.",
+   "missing_context": [
+    "İki seçenekli bir çerçeve"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,189 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ünlü oyuncu Gürkan Uygun'un en acı günü! Babası vefat etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Oyuncu Gürkan Uygun'un babası toprağa verildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı cenaze tgrt'de 'en acı günü', dha'da 'babası toprağa verildi' ifadesiyle veriliyor.",
+   "alternative_explanation": "'Acı gün' Türkçe magazin ve taziye haberlerinde kalıplaşmış bir ifadedir; fark çağrışımdan çok üslup farkı olabilir.",
+   "missing_context": [
+    "Kurumların benzer vefat haberlerinde kullandığı kalıplar"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kurtlar Vadisi'nin Memati'si Gürkan Uygun babasını kaybetti!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bahattin Uygun kimdir, neden öldü, kaç yaşındaydı?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Oyuncular Gürkan ve Volkan Uygun'un babası Kocaeli'de toprağa verildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "takvim oğlun dizi rolünü, milligazete ölen kişinin kendisini, haberturk iki oyuncu kardeşi öne çıkarıyor.",
+   "alternative_explanation": "Haberin kamusal değeri oğlun ünlü olmasından geldiği için rol vurgusu olağan bir tanımlamadır.",
+   "missing_context": [
+    "Ailenin veya ajansın paylaştığı bilgi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "86 yaşındaki Bahattin Uygun gözyaşlarıyla uğurlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Oyuncu Gürkan Uygun'un babası toprağa verildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "takvim 'gözyaşlarıyla uğurlandı' diyor; dha aynı cenazeyi duygusal ifade olmadan veriyor.",
+   "alternative_explanation": "Bir cenazede yas olgunun kendisine içkindir; duygusal ifade bildirilen olgunun ötesine geçmeyebilir.",
+   "missing_context": [
+    "Cenazeye ilişkin görsel veya tanık anlatımı"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Konu tekrarlayan veya yapısal bir sorun değil; bir vefat haberi.",
+   "alternative_explanation": "Tek kişinin vefatının haberleştirilmesi olayın doğasına uygun.",
+   "missing_context": [
+    "Yapısal bir soruna işaret eden bağlam"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Oyuncu Gürkan Uygun'un babası toprağa verildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay tanımlanabilir; ancak hiçbir kurum onu bir eğilim veya kurumsal süreç içine yerleştirmiyor.",
+   "alternative_explanation": "Vefat haberleri genellikle bağlamsal çerçeve gerektirmez.",
+   "missing_context": [
+    "Geniş bağlam içeren bir haber"
+   ]
+  }
+ ]
+}

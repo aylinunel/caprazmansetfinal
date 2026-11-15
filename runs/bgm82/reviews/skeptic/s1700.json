@@ -1,0 +1,228 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası 9 ay sonra ilk kez faiz indirdi: Politika faizinde 100 baz puanlık indirim",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası faiz kararını açıkladı — Türkiye Cumhuriyet Merkez Bankası, politika faizini yüzde 36 olarak belirledi.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Son dakika... Merkez Bankası yılın yedinci faiz kararını açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "evrensel indirimin tarihsel ilkliğini, ntv yalnızca yeni seviyeyi, sozcu kararın yılın kaçıncısı olduğunu öne çıkarıyor.",
+   "alternative_explanation": "ntv ve sozcu başlıkları karar anında son dakika formatında yayımlanmış olabilir; ayrıntı sonradan eklenmiş olabilir.",
+   "missing_context": [
+    "Başlıkların güncellenme geçmişi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası faizi düşürdü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası faizi indirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı karar 'düşürdü', 'indirdi' ve 'belirledi' fiilleriyle veriliyor.",
+   "alternative_explanation": "'Düşürdü' ile 'indirdi' eşanlamlıdır; fark çağrışımdan çok üsluptur.",
+   "missing_context": [
+    "Sözcüklerin farklı çağrışım taşıdığına dair kanıt"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası'nın 9 ay sonra ilk kez faiz indirmesi ne anlama geliyor?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay faiz kararı; başlıklar ana cümlede öngörülen bir etkiyi değil kararın kendisini veriyor. bbcturkce'nin başlığı bir soru ve kararı açıkça anıyor.",
+   "alternative_explanation": "Anlam sorusu bir sonuç öngörüsü değil, açıklayıcı habercilik çerçevesidir.",
+   "missing_context": [
+    "Ana cümlede öngörülen etkinin yer aldığı başlık"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Böylece Merkez Bankası, eylül ayındaki sabitleme kararının ardından ocak ayından bu yana ilk kez faiz indirimine gitmiş oldu.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yıllık enflasyonun 5 yıl sonra ilk kez yüzde 30’un altına gerilemesi indirim beklentilerini güçlendirirken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "karar kararı önceki faiz kararları serisine, turkiyegz enflasyon eğilimine yerleştiriyor.",
+   "alternative_explanation": "Bu bağlamlar kararın olgusal arka planıdır; seçilen bağlam okumayı şekillendirse de kusur değildir.",
+   "missing_context": [
+    "Kararın gerekçe metni"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "20 ekonomistin katıldığı ankette 19 uzman 100 baz puan indirim bekliyor.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Pay (19/20) ve payda açık; iddia anket katılımcılarıyla sınırlı tutuluyor ve bağlamda daha geniş karşılaştırma nüfusu belgelenmiyor.",
+   "alternative_explanation": "Anket sonucu kendi örneklemiyle sınırlı biçimde aktarılıyor.",
+   "missing_context": [
+    "Diğer anketlerin sonuçları"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurum konuyu iki seçeneğe indirgemiyor.",
+   "alternative_explanation": "Haberler bir para politikası kararını aktarıyor.",
+   "missing_context": [
+    "İkili seçenek kuran bir ifade"
+   ]
+  }
+ ]
+}

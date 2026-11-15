@@ -1,0 +1,260 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayraktar AKINCI ve TB2'den karayoluna tarihi iniş kalkış testi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Milli SİHA'lardan kritik başarı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 05:09] AKINCI ve Bayraktar TB2 kara yoluna iniş-kalkış yaptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "haber7 kendi sesinden 'tarihi', ahaber 'kritik başarı' nitelemelerini kullanıyor; aa aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Testin ilk kez yapılması 'tarihi' nitelemesini olgusal olarak destekleyebilir.",
+   "missing_context": [
+    "Testin ilk olup olmadığına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKINCI ve Bayraktar TB2 otoyola iniş ve kalkış yaptı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKINCI ve Bayraktar TB2 kara yoluna inip kalktı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar 'otoyol', 'kara yolu', 'asfalt' gibi sözcükler kullanıyor; farklar yalnızca üslup düzeyinde.",
+   "alternative_explanation": "Sözcükler aynı yolu eşdeğer biçimde adlandırıyor.",
+   "missing_context": [
+    "Çağrışımı farklı sözcük seçimi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Milli SİHA'lardan kritik başarı! AKINCI ve Bayraktar TB2 kara yoluna iniş ve kalkış yaptı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Baykar tarafından milli ve özgün imkanlarla geliştirilen",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 05:09] AKINCI ve Bayraktar TB2 kara yoluna iniş-kalkış yaptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "ahaber başlıkta 'kritik başarı' nitelemesini, lede'de 'milli ve özgün imkanlarla' vurgusunu birlikte kullanıyor; ikisi aynı olumlu yöne işaret ediyor, aa aynı olguyu bu bileşim olmadan veriyor.",
+   "alternative_explanation": "'Milli ve özgün' ifadesi şirketin ya da bakanlığın açıklamasından aktarılmış olabilir.",
+   "missing_context": [
+    "ahaber lede'inin kaynak açıklamadan aynen alınıp alınmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Akıncı ve Bayraktar TB2 kara yoluna inip kalktı: Sıra Kızılelma’da!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Pist olmadan görev yapacaklar!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakan Uraloğlu, AKINCI ve Bayraktar TB2'nin kara yoluna iniş-kalkış yapmasına ilişkin paylaşım",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar aynı testi veriyor; sabah sonraki adımı, turkiyegz kazanılan kabiliyeti, hurriyet bakanın tepkisini öne çıkarıyor. Ancak bu vurguların hepsi aynı olumlu yönde ve maliyet/fayda gibi karşıt boyutlar değil.",
+   "alternative_explanation": "Farklı vurgular haberin farklı kaynaklardan (şirket, bakan) alınmasından kaynaklanabilir.",
+   "missing_context": [
+    "Testin maliyeti veya sınırlılığı gibi farklı bir boyutu öne çıkaran başlık"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Her koşulda göreve hazır!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneği tek seçenek olarak sunan bir ifade yok.",
+   "alternative_explanation": "Haber bir test aktarımı.",
+   "missing_context": [
+    "İki seçenekli çerçeve"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "saha çalışmalarının ilk uygulaması gerçekleştirildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sıra Kızılelma’da!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "posta lede'i testi başlatılan saha çalışmalarının 'ilk uygulaması' olarak, sabah başlığı ise sonraki adım olarak Kızılelma'yı anarak bir dizi içine yerleştiriyor.",
+   "alternative_explanation": "'İlk uygulama' ifadesi şirket açıklamasından aktarılmış olabilir.",
+   "missing_context": [
+    "Programın sonraki aşamalarına dair resmi bilgi"
+   ]
+  }
+ ]
+}

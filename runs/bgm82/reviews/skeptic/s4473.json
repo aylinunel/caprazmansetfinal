@@ -1,0 +1,255 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 19:23] CHP'li Belediye Başkanı görevinden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 19:16] Milas Belediye Başkanı Fevzi Topuz görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "akit Topuz'u adı ve ilçesi olmadan yalnızca 'CHP'li Belediye Başkanı' diye anıyor, sozcu adı ve görev yeriyle veriyor; parti üyeliği kimlik bilgisi olduğundan etiketin değerlendirme taşıyıp taşımadığı belirsiz.",
+   "alternative_explanation": "Parti bilgisi olgusal bir kimlik bilgisidir; başlık uzunluğu nedeniyle ad çıkarılmış olabilir.",
+   "missing_context": [
+    "Aktöre yönelik açıkça değerlendirici bir etiket"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla Cumhuriyet Başsavcılığı'nca yürütülen soruşturma kapsamında tutuklanan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "CHP'li belediyede rüşvet operasyonu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "anka lede'i soruşturmanın sürdüğünü gösteriyor; star başlığı 'rüşvet operasyonu' ifadesini partiyle ilişkilendiriyor ama adı verilen bir aktörü etken çatıyla özne yapmıyor.",
+   "alternative_explanation": "'Rüşvet operasyonu' bir operasyonun yapıldığı olgusunu adlandırıyor olabilir; suçun işlendiğini ileri sürmüyor.",
+   "missing_context": [
+    "Başlıkta adı verilen bir aktöre suç atanıp atanmadığını gösteren dilbilgisel yapı"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tutuklama sonrası düğmeye basıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "takvim 'düğmeye basıldı' ifadesini kullanıyor; bu bir işlemin başlatılmasını anlatan kalıplaşmış bir deyim ve rol atamıyor.",
+   "alternative_explanation": "'Düğmeye basmak' yerleşik bir Türkçe deyimdir.",
+   "missing_context": [
+    "Rol atayan, kalıplaşmamış bir metafor"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'li belediyede rüşvet operasyonu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Milas Belediyesi soruşturmasında yeni gelişme!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı süreç için star 'rüşvet operasyonu', sabah 'Milas Belediyesi soruşturması' diyor; 'operasyon' ile 'soruşturma' arasındaki farkın çağrışımsal mı yoksa yalnızca ayrıntı düzeyinde mi olduğu belirsiz.",
+   "alternative_explanation": "İki ifade de sürecin olgusal adlandırmaları olabilir.",
+   "missing_context": [
+    "Sürecin resmi adlandırması"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 19:23] CHP'li Belediye Başkanı görevinden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tutuklama sonrası düğmeye basıldı: Rüşvet soruşturmasında Milas Belediye Başkanı Fevzi Topuz görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İçişleri Bakanlığı duyurdu: Milas Belediye Başkanı Fevzi Topuz görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı görevden uzaklaştırma için akit başkanın partisini, takvim tutuklama ve rüşvet soruşturmasını, tgrt işlemi yapan bakanlığı başlığa taşıyor; siyasi kimlik, suçlama ve idari süreç boyutları ayrışıyor.",
+   "alternative_explanation": "Farklı vurgular kurumların hangi ayrıntıyı haber değeri yüksek gördüğüne bağlı olabilir.",
+   "missing_context": [
+    "Kurumların önceki tutuklama haberlerindeki vurgular"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberturk · 19:42] Milas Belediye Başkanı Fevzi Topuz görevden uzaklaştırıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar görevden uzaklaştırmayı tek vaka olarak veriyor; ancak sağlanan bağlam tekrarlayan veya yapısal bir örüntü gösteren önceki vakalar veya rakamlar içermiyor.",
+   "alternative_explanation": "Tek bir idari kararın haberi doğası gereği tekil olaya odaklanır.",
+   "missing_context": [
+    "Benzer görevden uzaklaştırmalara dair bağlam veya rakamlar"
+   ]
+  }
+ ]
+}

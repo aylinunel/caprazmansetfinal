@@ -1,0 +1,248 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "444 bin 893 yatırımcıya yaklaşık 161 milyar TL! 333 bin 493 yatırımcı net yatırım tutarının tamamını aldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "takvim 333 bin 493 / 444 bin 893 oranını veriyor ve pay ile payda metinden belirlenebiliyor; ancak bağlam karşılaştırılabilir başka bir nüfus sunmuyor ve iddia bu paydanın ötesine taşmıyor.",
+   "alternative_explanation": "Rakamlar resmi açıklamadan aktarılmış ve kendi kapsamıyla sınırlı.",
+   "missing_context": [
+    "Toplam yatırımcı ve fon büyüklüğüne dair karşılaştırma nüfusu"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "333 bini aşkın yatırımcı tamamını aldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "haksız kazanç elde ettiği belirlenen yatırımcıların ara ödeme kapsamı dışında bırakıldığı bildirildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "sabah tam ödeme alan yatırımcı sayısını öne çıkarıyor; ancak bu bir genel sonuca destek olarak açıkça sunulmuyor ve sağlanan bağlam bu sonucu sınırlayan başka rakamlar içermiyor.",
+   "alternative_explanation": "Rakam resmi açıklamanın öne çıkan verisi olabilir.",
+   "missing_context": [
+    "Ödeme almayan veya kısmi ödeme alan yatırımcı sayıları",
+    "Toplam yatırım tutarı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: 161 milyar lira ödeme yapıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SON DAKİKA! Fon tasfiyesinde 161 milyar TL ödeme: 333 bini aşkın yatırımcı tamamını aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "haksız kazanç elde ettiği belirlenen yatırımcıların ara ödeme kapsamı dışında bırakıldığı bildirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ödeme açıklaması için diken olayın 'vurgun' boyutunu, sabah tam ödeme alanları, evrensel ise ödeme dışında bırakılanları öne çıkarıyor; kazananlar ile dışarıda kalanlar boyutu ayrışıyor.",
+   "alternative_explanation": "Vurgular aynı resmi açıklamanın farklı cümlelerinin seçilmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Resmi açıklamanın tam metni"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon tasfiyesinde 444 bin 893 yatırımcıya yaklaşık 161 milyar TL! 333 bin 493 yatırımcı net yatırım tutarının tamamını aldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[bianet · 17:22] Fon tasfiyesinde 161 milyar TL ödeme yapıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "takvim başlığı ünlemle toplam tutarı ve tam ödeme alan yatırımcı sayısını birlikte veriyor; bianet aynı olguyu bu bileşim olmadan veriyor. Ancak ünlem ve seçilmiş rakamın iki ayrı sunum tercihi sayılıp sayılmayacağı belirsiz.",
+   "alternative_explanation": "Rakamlar resmi açıklamanın öne çıkan verileri; ünlem başlık yazımının olağan bir öğesi.",
+   "missing_context": [
+    "Başlıkta değerlendirici bir etiket bulunup bulunmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: 161 milyar lira ödeme yapıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[bianet · 17:22] Fon tasfiyesinde 161 milyar TL ödeme yapıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı süreç için diken kendi sesinden 'fon vurgunu', bianet 'fon tasfiyesi' diyor; 'vurgun' yolsuzluk çağrışımı taşırken 'tasfiye' idari süreci adlandırıyor.",
+   "alternative_explanation": "diken soruşturmanın genel adlandırmasını kullanmış olabilir.",
+   "missing_context": [
+    "Fon soruşturmasının yargısal durumu"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon kurulu toplantısı sona erdi: Tasfiyelerde 161 milyar liralık ödeme yapıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde açık bir nedensellik ifadesi yok; kurumlar resmi açıklamadaki rakamları aktarıyor.",
+   "alternative_explanation": "Haber bir olgu aktarımı.",
+   "missing_context": [
+    "Açık bir nedensellik ifadesi"
+   ]
+  }
+ ]
+}

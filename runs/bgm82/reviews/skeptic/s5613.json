@@ -1,0 +1,266 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Son dakika... YENİ Partili Merkezefendi Belediye Başkanı Şeniz Doğan görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 11:45] Merkezefendi Belediye Başkanı Şeniz Doğan görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Parti Yeni vurgun eski: Merkezefendi Belediye Başkanı Şeniz Doğan uzaklaştırıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "sozcu Doğan'ı 'YENİ Partili' diye anıyor, birgun yalnızca unvanla veriyor; takvim başlığı 'vurgun eski' ifadesini ekliyor. Parti üyeliği kimlik belirleme bilgisi; takvim ifadesi ise kişiye bir unvan değil eyleme dair bir nitelendirme.",
+   "alternative_explanation": "Parti bilgisi okurun siyasi bağlamı anlaması için olgusal bir bilgidir.",
+   "missing_context": [
+    "Aktöre yönelik açıkça değerlendirici bir sıfat veya unvan"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Parti Yeni vurgun eski",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "\"rüşvet almak, ihaleye fesat karıştırmak ve irtikap\" iddiasıyla tutuklanan",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "takvim başlığında kendi sesinden 'vurgun' sözcüğünü kullanıyor; evrensel aynı olguyu suçlamaları iddia olarak aktararak bu sözcük olmadan veriyor.",
+   "alternative_explanation": "'Vurgun' sözcüğü soruşturma konusunun gündelik dilde aktarımı olarak kullanılmış olabilir.",
+   "missing_context": [
+    "Soruşturmanın vardığı aşama ve suçlamaların kesinleşip kesinleşmediği"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "\"rüşvet almak, ihaleye fesat karıştırmak ve irtikap\" iddiasıyla tutuklanan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Parti Yeni vurgun eski: Merkezefendi Belediye Başkanı Şeniz Doğan uzaklaştırıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "evrensel lede'i suçlamaların iddia aşamasında olduğunu gösteriyor; takvim başlığı Doğan'ın adını 'vurgun' nitelemesiyle yan yana getiriyor ve başlıkta iddia işaretleyicisi bulunmuyor.",
+   "alternative_explanation": "takvim başlığının devamında 'tutuklanmıştı' ifadesi tutuklama olgusunu aktarıyor; 'vurgun eski' partiye yönelik genel bir yorum olarak da okunabilir.",
+   "missing_context": [
+    "Soruşturmanın sonucu veya iddianame"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Parti Yeni vurgun eski",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Merkezefendi'de rüşvet soruşturması: Belediye Başkanı Doğan görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma konusu için takvim 'vurgun', aksam 'rüşvet soruşturması' ifadesini kullanıyor; 'vurgun' kesinleşmiş bir yolsuzluk çağrışımı taşıyor, 'soruşturma' süreci adlandırıyor.",
+   "alternative_explanation": "takvim'in ifadesi gündelik bir özet olabilir.",
+   "missing_context": [
+    "Soruşturmanın aşaması"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Son dakika... YENİ Partili Merkezefendi Belediye Başkanı Şeniz Doğan görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rüşvetten tutuklanmıştı! Denizli Merkezefendi Belediye Başkanı Şeniz Doğan görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İçişleri Bakanlığı duyurdu: Merkezefendi Belediye Başkanı Şeniz Doğan görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı görevden uzaklaştırma için sozcu Doğan'ın partisini, ahaber suçlamayı, tgrt ise işlemi yapan bakanlığı başlığa taşıyor; siyasi kimlik, suçlama ve idari süreç boyutları ayrışıyor.",
+   "alternative_explanation": "Farklı vurgular haberin hangi kaynaktan derlendiğine ve önceki habere bağlanmasına bağlı olabilir.",
+   "missing_context": [
+    "Kurumların önceki tutuklama haberlerindeki vurgular"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberturk · 11:49] Merkezefendi Belediye Başkanı Şeniz Doğan görevden uzaklaştırıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar görevden uzaklaştırmayı tek bir vaka olarak veriyor; ancak sağlanan bağlam konunun tekrarlayan veya yapısal olduğunu gösteren önceki vakalar veya rakamlar içermiyor.",
+   "alternative_explanation": "Tek bir idari kararın haberi doğası gereği tekil olaya odaklanır.",
+   "missing_context": [
+    "Benzer görevden uzaklaştırmalara dair bağlam veya rakamlar"
+   ]
+  }
+ ]
+}

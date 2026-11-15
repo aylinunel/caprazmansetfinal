@@ -1,0 +1,242 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni Partili Çukurova Belediye Başkanı Emrah Kozay ‘yolsuzluk’ soruşturmasında tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediye Başkanı Emrah Kozay tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesi soruşturması: Mevcut başkan Emrah Kozay dahil 34 şüpheli için karar verildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi sol'da 'Yeni Partili Belediye Başkanı', star'da 'mevcut başkan', diğerlerinde yalnızca 'Belediye Başkanı' olarak anılıyor.",
+   "alternative_explanation": "Parti bilgisi ve 'mevcut' sıfatı olgusal tanımlayıcılardır; meşruiyet değerlendirmesi taşıdıkları sağlanan metinden kesinleşmiyor.",
+   "missing_context": [
+    "Başkanın parti üyeliğine ilişkin resmi bilgi",
+    "Etiketin değerlendirici okunduğuna dair kanıt"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni Partili Çukurova Belediye Başkanı Emrah Kozay ‘yolsuzluk’ soruşturmasında tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesi'ne operasyon! Belediye Başkanı Emrah Kozay dahil 34 şüpheli tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "sol başkanın parti üyeliğini, ahaber tutuklanan kişi sayısını öne çıkarıyor.",
+   "alternative_explanation": "Parti bilgisi siyasi önemi olan olgusal bir unsurdur; vurgu farkı okur kitlesinin ilgisiyle açıklanabilir.",
+   "missing_context": [
+    "Kurumların diğer belediye haberlerinde parti bilgisini verip vermediği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesinde 34 tutuklama! Emrah Kozay görevden uzaklaştırıldı — Adana'da Çukurova Belediyesine yönelik usulsüzlük soruşturmasında 34 kişi tutuklandı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediye Başkanı Emrah Kozay'a tutuklama — Çukurova Belediyesi'ne yönelik \"ihale ve doğrudan teminlerde yolsuzluk\" iddiasıyla",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma takvim'de 'usulsüzlük', anka'da 'yolsuzluk iddiası' olarak adlandırılıyor; 'yolsuzluk' daha ağır bir suç çağrışımı taşıyor, anka ise bunu 'iddia' ile sınırlıyor.",
+   "alternative_explanation": "Her iki terim de soruşturmanın resmi tanımından alınmış olabilir; fark kaynak metin farkından kaynaklanabilir.",
+   "missing_context": [
+    "Başsavcılığın soruşturmaya ilişkin resmi suç tanımları"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesi'ne yönelik \"ihale ve doğrudan teminlerde yolsuzluk\" iddiasıyla yürütülen soruşturma kapsamında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; ancak başlıklar edilgen 'tutuklandı' veya 'görevden uzaklaştırıldı' yapısını kullanıyor ve adlandırılmış bir aktöre kusur atfeden etken bir dilbilgisi kurmuyor; ledlerde 'iddiasıyla' gibi atıf işaretleri var.",
+   "alternative_explanation": "Tutuklama ve görevden uzaklaştırma resmi işlemlerin olgusal aktarımıdır, suçluluk hükmü değildir.",
+   "missing_context": [
+    "İddianame ve yargılama süreci"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam veya bu kümedeki haberler olayın tekrarlayan bir örüntünün parçası olduğunu göstermiyor.",
+   "alternative_explanation": "Somut bir soruşturma haberi tek vakaya odaklanır.",
+   "missing_context": [
+    "Benzer belediye soruşturmalarına ilişkin bağlam"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "sıcak gelişmeler yaşandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediye Başkanı Emrah Kozay tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "ahaber 'sıcak gelişmeler' diyor; bu ifade olayı olumlu ya da olumsuz değerlendirmiyor, yalnızca yeni gelişme bildiriyor.",
+   "alternative_explanation": "'Sıcak gelişme' haber dilinde yerleşik bir kalıptır.",
+   "missing_context": [
+    "Değerlendirici sözcük içeren başka bir başlık"
+   ]
+  }
+ ]
+}
