@@ -1,0 +1,223 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tarihi zafer! Şampiyon Kimi Antonelli",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kimi Antonelli 2026 Formula 1 dünya şampiyonu oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı şampiyonluk bir başlıkta 'Tarihi zafer!', başka bir başlıkta 'dünya şampiyonu oldu' ile veriliyor; ancak fark çağrışımdan çok coşku ve üslup düzeyinde olabilir.",
+   "alternative_explanation": "Rekor niteliğindeki bir spor başarısında 'zafer' sözcüğü yaygın spor dilidir.",
+   "missing_context": [
+    "Kurumların spor haberlerindeki genel üslubu"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "20 yaşında Formula 1'in en genç şampiyonu oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kimi Antonelli 2026 Formula 1 dünya şampiyonu oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kimi Antonelli: 'Garajda doğan' ve pistte büyüyen dünya şampiyonu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı şampiyonluğu bir başlık yaş ve rekorla, bir başlık yalnızca unvanla, bir başlık ise pilotun yaşam öyküsüyle öne çıkarıyor.",
+   "alternative_explanation": "Biyografik haber, şampiyonluk haberinden sonra yayımlanan farklı türde bir içerik olabilir.",
+   "missing_context": [
+    "Haberlerin türü (son dakika ya da profil yazısı)"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tarihi zafer! Şampiyon Kimi Antonelli",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kimi Antonelli 2026 Formula 1 dünya şampiyonu oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kurumun kendi sesiyle 'Tarihi zafer!' ifadesini kullanıyor; başka bir kurum aynı olguyu bu sözcükler olmadan veriyor. Ancak olay gerçekten bir rekor olduğu için 'tarihi' nitelemesi olgusal temele sahip.",
+   "alternative_explanation": "Rekor kırılan bir şampiyonluğu 'tarihi' olarak nitelemek olguyla örtüşen bir anlatım olabilir.",
+   "missing_context": [
+    "Rekorun niteliği ve önceki rekor sahibi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "sezonun bitimine dört yarış kala şampiyonluğunu ilan ederek Sebastian Vettel'in rekorunu geride bıraktı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Formula 1'de tarihi başarı: Kimi Antonelli en genç dünya şampiyonu oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Kurumun girişi şampiyonluğu önceki rekor sahibiyle karşılaştırarak Formula 1 tarihindeki rekorlar dizisi içine yerleştiriyor.",
+   "alternative_explanation": "Rekor bilgisi ajans metninden alınmış ortak bir arka plan olabilir.",
+   "missing_context": [
+    "Ajans metninin içeriği"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde epizodik çerçeveleme kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde sorumluluk çerçevelemesi kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  }
+ ]
+}

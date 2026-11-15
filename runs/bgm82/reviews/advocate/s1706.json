@@ -1,0 +1,247 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 19:32] Mustafa Sarıgül’ün oğlu Emir Sarıgül tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 21:15] Kara para soruşturması: Emir Sarıgül tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgüller soruşturmasında yeni gelişme",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumda babasının adıyla, diğerinde yalnızca kendi adıyla anılıyor; bir kurum soruşturmayı aile adıyla ('Sarıgüller soruşturması') adlandırıyor. Ancak nitelemelerin tanımlamanın ötesinde bir değerlendirme taşıyıp taşımadığı açık değil.",
+   "alternative_explanation": "Akrabalık bilgisi kişinin kamuoyunca tanınması için verilmiş olabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Siyaset, medya ve iş dünyasını sarsan milyar avroluk kara para aklama soruşturmasında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dev operasyonda tutuklu sayısı 16'ya yükseldi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 10:42] Emir Sarıgül tutuklandı — İstanbul Cumhuriyet Başsavcılığının, \"suçtan kaynaklanan mal varlığı değerlerini aklama\" iddiasıyla başlattığı soruşturma kapsamında gözaltına alınan Emir Sarıgül tutuklandı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar kendi sesinde 'sarsan' ve 'dev' gibi değerlendirme yüklü nitelemeler kullanıyor; başka bir kurum aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Nitelemeler soruşturmanın kapsamını aktarmayı amaçlıyor olabilir.",
+   "missing_context": [
+    "Soruşturmadaki iddia edilen tutara dair resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 11:57] Emir Sarıgül tutuklandı, işte 16 kişilik tutuklu listesi!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sol · 19:32] Mustafa Sarıgül’ün oğlu Emir Sarıgül tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 21:15] Kara para soruşturması: Emir Sarıgül tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklama bir başlıkta tutuklu sayısı, diğerinde siyasetçi babayla akrabalık, bir başkasında suç türü öne çıkarılarak veriliyor.",
+   "alternative_explanation": "Kurumlar okurun tanıdığı bağlamı öne çıkarmış olabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "polise teslim olan Emir Sarıgül",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "gözaltına alınan Emir Sarıgül tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı süreç bir kurumda 'polise teslim olan', diğerlerinde 'gözaltına alınan' olarak anlatılıyor; ilki gönüllülük, ikincisi zorlama çağrıştırıyor.",
+   "alternative_explanation": "Her iki ifade de sürecin farklı aşamalarını doğru biçimde anlatıyor olabilir.",
+   "missing_context": [
+    "Kişinin teslim olup olmadığına dair resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "aklandığı iddiasıyla yürütülen soruşturma kapsamında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[yeniasya · 09:18] Emir Sarıgül tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor, ancak başlıklar tutuklama olgusunu aktarıyor ve kişiye suçu doğrudan yüklemiyor; spotlarda 'iddia' kaydı bulunuyor.",
+   "alternative_explanation": "Tutuklama bir mahkeme kararıdır ve olgusal olarak aktarılıyor.",
+   "missing_context": []
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca iki seçeneği tek seçenek olarak sunan bir 'ya… ya…' kalıbı bulunmuyor.",
+   "alternative_explanation": "Başlıklar olay bilgisini aktarıyor; seçenek sunan bir yapı yok.",
+   "missing_context": [
+    "Kurumun iki seçenekli bir kalıp kullandığı başlık veya spot"
+   ]
+  }
+ ]
+}

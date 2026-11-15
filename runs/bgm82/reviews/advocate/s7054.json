@@ -1,0 +1,252 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ela Rümeysa Cebeci'nin \"Cilveleşiyorduk\" savunması dikkat çekti!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 15:39] Sadettin Saran ve Ela Rümeysa Cebeci beraat etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hapis cezası talep edilmişti! Sadettin Saran ve Ela Rümeysa Cebeci hakkında karar verildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı duruşma A Haber'de savunmadaki bir söz, BirGün'de beraat kararı, Star'da savcının hapis talebi üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar duruşmanın farklı anlarını haberleştirmiş olabilir.",
+   "missing_context": [
+    "Gerekçeli karar"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ela Rümeysa Cebeci hâkim karşısında kıvırdı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mahkeme, Saran ve Cebeci’nin ayrı ayrı beraatine karar verdi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Akit başlığında Cebeci'yi özne yaparak savunmasını 'kıvırdı' diye niteliyor ve bir atıf işareti kullanmıyor; ancak mahkeme beraat kararı verdiğinden sorumluluğun belirsiz olup olmadığı (karar kesinleşmiş mi) metinde açık değil.",
+   "alternative_explanation": "Haber karar açıklanmadan önce savunma aşamasında yazılmış olabilir.",
+   "missing_context": [
+    "Kararın kesinleşip kesinleşmediği, istinaf süreci"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ela Rümeysa Cebeci hâkim karşısında kıvırdı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İkinci duruşmada savunma yapan Cebeci",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eski Fenerbahçe Başkanı Sadettin Saran ile birlikte yargılanan spiker Ela Rümeysa Cebeci, davanın ikinci duruşmasında ilk kez hakim karşısına çıktı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı savunma Akit'in kendi sesinde 'kıvırdı', Takvim'de 'savunma yapan', Onedio'da 'hakim karşısına çıktı' olarak anlatılıyor; 'kıvırdı' kaçamaklık ve samimiyetsizlik çağrışımı taşıyor.",
+   "alternative_explanation": "Akit duruşmadaki çelişkili ifadeleri bu sözcükle özetlemiş olabilir.",
+   "missing_context": [
+    "Duruşma tutanağı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sosyetenin zehir skandalında ikinci perde!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "yargılandıkları dev davanın ikinci duruşmasında skandal açıklamalar peş peşe geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sadettin Saran ve Ela Rümeysa Cebeci için beraat kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Akit kendi sesinde 'zehir skandalı', 'sosyete' ve 'skandal açıklamalar' ifadelerini kullanırken Evrensel aynı davayı bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Kamuoyunun yoğun ilgisi değerlendirici dilin seçilmesinde rol oynamış olabilir.",
+   "missing_context": [
+    "Yok"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ünlü isimlere yönelik soruşturma: Sadettin Saran ve Ela Rümeysa Cebeci için beraat kararı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Evrensel kararı başlığında ünlü isimlere yönelik daha geniş bir soruşturma dizisinin parçası olarak yerleştiriyor.",
+   "alternative_explanation": "İfade yalnızca dosyanın adını tanıtmak için kullanılmış olabilir.",
+   "missing_context": [
+    "Aynı soruşturmadaki diğer dosyalar"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sadettin Saran ve Ela Rümeysa Cebeci beraat etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olayı betimliyor; seçenek kurgusu yok.",
+   "missing_context": [
+    "İki seçenekli bir ifade içeren haber metni"
+   ]
+  }
+ ]
+}

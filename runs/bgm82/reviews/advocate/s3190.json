@@ -1,0 +1,269 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi'ne yolsuzluk operasyonu: Başkan yardımcısı dahil 17 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi'ne operasyon: 17 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi'ne 'ihale' operasyonu!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı operasyon bir başlıkta 'yolsuzluk operasyonu', bir başlıkta yalın 'operasyon', bir başka başlıkta tırnak içinde 'ihale' operasyonu olarak adlandırılıyor; 'yolsuzluk' sözcüğü iddiayı adlandırmanın ötesinde suç çağrışımı taşıyor.",
+   "alternative_explanation": "'Yolsuzluk operasyonu' soruşturmanın konusunu özetleyen yerleşik bir kalıp olabilir.",
+   "missing_context": [
+    "Savcılık açıklamasında kullanılan nitelendirme"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi'ne yolsuzluk operasyonu: Başkan yardımcısı dahil 17 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kayyım yönetimindeki Esenyurt Belediyesi'ne yolsuzluk iddiasıyla düzenlenen operasyonda 17 kişi gözaltına alındı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi'ne operasyon: 17 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı operasyonu bir başlık başkan yardımcısının gözaltısıyla, bir kurumun girişi belediyenin kayyım yönetiminde olmasıyla, bir başka başlık yalnızca sayıyla öne çıkarıyor.",
+   "alternative_explanation": "Kayyım bilgisi belediyenin yönetim durumunu açıklayan olgusal bir bağlam olabilir.",
+   "missing_context": [
+    "Gözaltına alınanların görev dönemleri"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kayyım yönetimindeki Esenyurt Belediyesine yönelik rüşvet ve ihaleye fesat iddialarına ilişkin soruşturmada 17 kişi gözaltına alındı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul Cumhuriyet Başsavcılığı, kayyum idaresindeki Esenyurt Belediyesi'ne yönelik",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi'ne yolsuzluk operasyonu: Başkan yardımcısı dahil 17 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı kurumlar belediyeyi 'kayyım yönetimindeki' nitelemesiyle anarken diğerleri bu nitelemeyi kullanmıyor; ancak nitelemenin meşruiyet yargısı mı yoksa olgusal statü bilgisi mi taşıdığı metinden belirlenemiyor.",
+   "alternative_explanation": "Kayyım atanmış olması belediyenin resmî yönetim durumudur.",
+   "missing_context": [
+    "Nitelemenin kullanıldığı bağlamın tamamı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kayyum idaresindeki Esenyurt Belediyesi'ne yönelik yürüttüğü yolsuzluk soruşturmasında düğmeye bastı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi’ne operasyon: 19 kişi hakkında gözaltı kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurumun girişinde savcılığın 'düğmeye bastı' deyimiyle anlatıldığı görülüyor; başka bir kurum aynı olguyu yalın veriyor. Ancak deyimin değerlendirici bir yük taşıyıp taşımadığı belirsiz.",
+   "alternative_explanation": "Deyim haber dilinde bir işlemin başlatılmasını anlatan yaygın bir kalıptır.",
+   "missing_context": [
+    "Kurumun benzer haberlerdeki dil kullanımı"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde seçici istatistik kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor. Gözaltı kararı ve gözaltı sayıları veriliyor; dar bir paydayla genelleme yapılmıyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İzmir Bayraklı Belediyesi'ne operasyon: Eski Belediye Başkanı dahil çok sayıda gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çeşme Belediyesi'nde usulsüzlük operasyonu: Başkan Yardımcısı ve İmar Müdürü gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi'ne operasyon: 17 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Metindeki diğer satırlar aynı dönemde başka belediyelere de operasyonlar yapıldığını gösterirken bazı başlıklar Esenyurt olayını tek vaka olarak veriyor; ancak haberler son dakika niteliğinde.",
+   "alternative_explanation": "İlk anlarda verilen son dakika haberlerinde geniş örüntüye yer verilmemesi olağandır.",
+   "missing_context": [
+    "Haberlerin tam metninde diğer operasyonlara değinilip değinilmediği"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,202 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Trabzonspor, Freiburg'a 8 eksikle hazır",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 14:04] Trabzonspor Freiburg maçına hazır",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı gelişmeyi farklı vurgu ve sözcüklerle veriyor; ancak metin, eşdeğer seçeneklerin sunuluş farkının bir tercih ya da yargıyı değiştirdiğini açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları kurumların farklı ayrıntıları, farklı yayın saatlerini veya arama motoru odaklı biçimleri tercih etmesiyle açıklanabilir; okurun ya da yazarın yargısının sunuluşa göre değiştiğine dair kayıt yok.",
+   "missing_context": [
+    "Okur ya da editör yargısının sunuluşa göre değiştiğini gösteren bir ölçüm veya beyan",
+    "Başlıkların eşdeğer olgular üzerine kurulduğunun açık teyidi"
+   ]
+  },
+  {
+   "card_id": "optimism-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Trabzonspor'da hedef 3'te 3",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Trabzonspor, Freiburg'a yenildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "NTV başlığındaki 'hedef 3'te 3' bir amaç bildirimi; metin bu hedefe karşı bir taban oranı sunup göz ardı edildiğini göstermiyor. Sonradan gelen yenilgi haberi hedefin yanlış hesaplandığını kanıtlamaz.",
+   "alternative_explanation": "Hedef ifadeleri spor haberciliğinde kulübün ya da teknik ekibin beyanını aktarmanın olağan biçimidir; bir olasılık tahmini değil, bir amaç bildirimidir.",
+   "missing_context": [
+    "Beklentiyi kimin dile getirdiği ve hangi verilere dayandığı",
+    "Karşılaştırılabilir geçmiş sonuçlar veya kalibrasyon verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "7 oyuncu antrenmana çıkmadı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar dikkat çekici bir ayrıntıyı öne çıkarıyor; ancak metin bu ayrıntının bir yargıyı haksız biçimde belirlediğini açıkça bağlamıyor.",
+   "alternative_explanation": "Öne çıkarılan ayrıntı haber değeri taşıyan, doğrulanmış ve okur için ilgili bir bilgi olabilir; belirginlik tek başına hata kanıtı değildir.",
+   "missing_context": [
+    "Öne çıkan ayrıntının bir karar ya da değerlendirmeyi nasıl etkilediğine dair açık ifade",
+    "Belirgin ve daha az belirgin bilgilerin ağırlıklandırılmasını karşılaştıran bir kayıt"
+   ]
+  },
+  {
+   "card_id": "outcome-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CANLI Trabzonspor-Freiburg maç sonu değerlendirmesi Libero'da",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde sonucu bilinmeden verilmiş bir kararın sonuca bakılarak değerlendirildiğine dair açık bir ifade yok.",
+   "alternative_explanation": "Maç sonrası haberler sonucu bildiriyor; karar kalitesine ilişkin bir yargı içermiyor.",
+   "missing_context": [
+    "Karar anında mevcut bilgiler",
+    "Kararın sonuç nedeniyle yeniden değerlendirildiğini gösteren bir yorum"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Trabzonspor Freiburg maçı ne zaman, saat kaçta, hangi kanalda",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Trabzonspor – Freiburg : 0-1",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar arasında konunun farklı yönlerine farklı ölçüde yer verildiği görülebiliyor; fakat bu eşitsiz dikkatin belirli bir sonuca ya da hataya yol açtığını gösteren kanıt yok.",
+   "alternative_explanation": "Kurumların farklı saatlerde, farklı haber aşamalarını (ön bilgi, gelişme, sonuç) vermesi eşitsiz dikkati değil, haber akışının zamanlamasını yansıtabilir.",
+   "missing_context": [
+    "Kurumların hangi bilgilere eriştiğine dair kayıt",
+    "Eşitsiz dikkatin belirli bir sonuca bağlandığını gösteren açık ifade"
+   ]
+  }
+ ]
+}

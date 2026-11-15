@@ -1,0 +1,270 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 13:01] Başkan Erdoğan Azerbaycan'da!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Tayyip Erdoğan, Azerbaycan Cumhurbaşkanı İlham Aliyev ile görüşmek üzere",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 09:18] Cumhurbaşkanı Erdoğan",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı aktör A Haber'de 'Başkan', Yeni Yaşam'da 'AKP'li Cumhurbaşkanı', AA'da 'Cumhurbaşkanı' diye anılıyor. Ancak 'AKP'li' bir parti aidiyetini, 'Başkan' ise bir unvan kısaltmasını bildiriyor; bunların tanımlamanın ötesinde değerlendirme taşıdığı açık değil. Kart, aynı aktör için kurumların kendi seslerinde farklı sıfat/unvan kullanmasını ve en az birinin tanımlamanın ötesinde değerlendirme taşımasını arıyor.",
+   "alternative_explanation": "Unvan farkları kurumların yerleşik yazım kuralları, kişinin o anki resmî statüsü ya da başlık uzunluğu sınırlarıyla da açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı aktör için diğer haberlerde kullandığı unvanlar",
+    "Aktörün olay anındaki resmî statüsü"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Erdoğan gerilim sonrası Azerbaycan'da: Aliyev havalimanında karşıladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan Azerbaycan'da: Aliyev havalimanında karşıladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kardeşlik sofrası: Cumhurbaşkanı Erdoğan",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Evrensel ve haber7 aynı karşılamayı aktarıyor; Evrensel başlığa iki ülke arasındaki gerilimi koyarken haber7 yalnızca karşılamayı veriyor, Yeni Şafak ise yemeği 'kardeşlik' boyutuyla öne çıkarıyor. Kart, aynı olguyu aktaran kurumların başlıklarda o olgunun farklı boyutlarını öne çıkarmasını arıyor; karşılaştırma başlıklar arasında yapılıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinde elde bulunan bilgiden, ajans metninin farklı paragraflarının seçilmesinden ya da olayın farklı aşamalarının haberleştirilmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Her kurumun haberinin tam metni",
+    "Başlıkların yayımlandığı andaki mevcut bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Erdoğan Azerbaycan yolcusu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, yarın Azerbaycan'a gidecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Yolcusu' ile 'gidecek' aynı eylemi farklı sözcükle anlatıyor; fark üslup düzeyinde, belirgin bir çağrışım farkı yok. Kart, aynı eylem ya da şey için kurumların kendi seslerinde çağrışımı farklı sözcükler kullanmasını arıyor; yalnızca üslup ya da uzunluk farkı yeterli değil.",
+   "alternative_explanation": "Sözcük farkları ajans metninin uyarlanması, başlık kısalığı ya da hukuki terminolojinin farklı aktarımıyla açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı sözcükleri diğer haberlerde nasıl kullandığı",
+    "Sözcüklerin resmî açıklamadaki karşılığı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakü ile okullarda başörtüsü yasağı üzerinden başlayan gerilim sonrası Cumhurbaşkanı Recep Tayyip Erdoğan, 'Zafer Günü' dolayısıyla Azerbaycan'ı ziyaret etti. Azerbaycan Cumhurbaşkanı Aliyev, Türkiye'de düzenlenen TDT zirvesine katılmamıştı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Evrensel spotu ziyareti önceki gerilim ve TDT zirvesine katılmama olayıyla bir diziye yerleştiriyor. Bu bağlam kartı, kurumun kendi başlık ya da spotunda olayı daha geniş bir eğilim, dizi ya da kurumsal sürece yerleştirip yerleştirmediğine bakıyor.",
+   "alternative_explanation": "Bağlam bilgisi okura arka plan sunmak için eklenmiş olabilir; tek başına bir yanlılık göstergesi değildir.",
+   "missing_context": [
+    "Haberlerin tam metnindeki arka plan bilgisi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kardeşlik sofrası:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 17:56] Cumhurbaşkanı Erdoğan, Azerbaycan'da onuruna verilen yemeğe katıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Yeni Şafak yemeği kendi sesinde 'kardeşlik sofrası' diye niteliyor; Hürriyet aynı olguyu aynı spotla bu niteleme olmadan veriyor. Kart, kurumun kendi sesinde değerlendirme yüklü sözcük kullanmasını ve aynı olgunun bu sözcükler olmadan da aktarılabildiğini arıyor; alıntılanan ya da bir kişiye atfedilen ifade kurumun tekniği sayılmaz.",
+   "alternative_explanation": "Duygusal sözcükler olayın büyüklüğünü aktarmak için yaygın kullanılan kalıplar olabilir.",
+   "missing_context": [
+    "Sözcüğün bir kaynaktan aktarılıp aktarılmadığı",
+    "Kurumun benzer olaylarda kullandığı dil"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Erdoğan gerilim sonrası Azerbaycan'da",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Azerbaycan Cumhurbaşkanı Aliyev, Türkiye'de düzenlenen TDT zirvesine katılmamıştı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan Azerbaycan'da: Aliyev havalimanında karşıladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Evrensel başlıkta gerilimi, spotta Aliyev'in zirveye katılmadığını veriyor; haber7 aynı karşılamayı bu bileşim olmadan aktarıyor. Ancak ikinci öğe olgusal bir arka plan bilgisi; iki öğenin bir değerlendirme yönü oluşturduğu tartışmalı. Bu bağlam kartı, aynı kurumun başlık ve spotunda aynı değerlendirme yönüne işaret eden en az iki sunum tercihini ve başka bir kurumun aynı olguları bu bileşim olmadan verdiğini arıyor.",
+   "alternative_explanation": "Başlık ve spottaki tercihler ajans metninin yapısından ya da haberin kısaltılmasından kaynaklanabilir.",
+   "missing_context": [
+    "Haberin tam metni",
+    "Spotun kesilmemiş hâli"
+   ]
+  }
+ ]
+}

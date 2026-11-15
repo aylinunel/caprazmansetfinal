@@ -1,0 +1,151 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Rafael Leao şoku!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray'dan Leao'nun sağlık durumu hakkında açıklama",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı gelişmeyi farklı vurgu ve sözcüklerle veriyor; ancak metin, eşdeğer seçeneklerin sunuluş farkının bir tercih ya da yargıyı değiştirdiğini açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları kurumların farklı ayrıntıları, farklı yayın saatlerini veya arama motoru odaklı biçimleri tercih etmesiyle açıklanabilir; okurun ya da yazarın yargısının sunuluşa göre değiştiğine dair kayıt yok.",
+   "missing_context": [
+    "Okur ya da editör yargısının sunuluşa göre değiştiğini gösteren bir ölçüm veya beyan",
+    "Başlıkların eşdeğer olgular üzerine kurulduğunun açık teyidi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "4 hafta sahalardan uzak kalabilir",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar dikkat çekici bir ayrıntıyı öne çıkarıyor; ancak metin bu ayrıntının bir yargıyı haksız biçimde belirlediğini açıkça bağlamıyor.",
+   "alternative_explanation": "Öne çıkarılan ayrıntı haber değeri taşıyan, doğrulanmış ve okur için ilgili bir bilgi olabilir; belirginlik tek başına hata kanıtı değildir.",
+   "missing_context": [
+    "Öne çıkan ayrıntının bir karar ya da değerlendirmeyi nasıl etkilediğine dair açık ifade",
+    "Belirgin ve daha az belirgin bilgilerin ağırlıklandırılmasını karşılaştıran bir kayıt"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Rafael Leao'nun dönüşü uzun sürecek",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Rafael Leao fırtınası! Amedspor maçında rekor kırdı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar olumsuz yönü öne çıkarsa da metin, karşılaştırılabilir olumlu bilgiye göre olumsuz bilgiye orantısız ağırlık verildiğini ve bunun bir değerlendirmeyi haksız biçimde etkilediğini belgelemiyor.",
+   "alternative_explanation": "Olumsuz gelişmeyi öne çıkarmak, haberin kendisi olumsuz bir olay olduğunda orantılı bir tepki olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin mevcut olduğu ve daha az ağırlık aldığına dair kayıt",
+    "Bu ağırlıklandırmanın etkilediği somut bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Rafael Leao şoku: Sakatlığı açıklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duygusal sözcükler bulunsa da metin bir duyguyu belirli bir risk ya da fayda tahminine açıkça bağlamıyor.",
+   "alternative_explanation": "Duygu yüklü sözcükler başlık üslubunun parçası olabilir; bir karar ölçütünün yerine geçtiğine dair kanıt yok.",
+   "missing_context": [
+    "Duygunun bir risk veya fayda tahminini değiştirdiğini gösteren açık ifade",
+    "Olgular sabitken tahminin duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  }
+ ]
+}

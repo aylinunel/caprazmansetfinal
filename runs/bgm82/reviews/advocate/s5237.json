@@ -1,0 +1,272 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: Fenerbahçe tribün lideri Cem Gölbaşı'na saldırı hazırlığı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "yürütülen soruşturma kapsamında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 23:07] Daltonlar’dan Fenerbahçe tribün lideri Cem Gölbaşı'na suikast hazırlığı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 23:49] Gölbaşı'na saldırı düzenleyeceklerdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 19:57] Fenerbahçe tribün liderine silahlı eylem hazırlığı iddiasıyla 5 şüpheli yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2,
+      3,
+      4
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; bazı başlıklar suikast hazırlığını doğrudan adı geçen örgüte yüklüyor ya da saldırıyı kesin bir olgu olarak ('düzenleyeceklerdi') aktarıyor ve 'iddia' gibi bir kayıt içermiyor. Başka bir kurum aynı olguyu 'iddiasıyla' kaydıyla veriyor.",
+   "alternative_explanation": "Başlıklar emniyet açıklamasını özetliyor olabilir; spotlarda atıf bulunabilir.",
+   "missing_context": [
+    "Emniyet veya savcılık açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberturk · 07:33] 'Daltonlar'dan Fenerbahçe tribün liderine suikast girişimi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 23:20] Fenerbahçe tribün liderine saldırı hazırlığı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 23:04] Fenerbahçe tribün lideri Cem Gölbaşı'na silahlı saldırı planı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olgu bir kurumda 'suikast girişimi', diğerinde 'saldırı hazırlığı', bir başkasında 'saldırı planı' olarak adlandırılıyor; 'girişim' eylemin başlatıldığını, 'hazırlık' ise henüz gerçekleşmediğini çağrıştırıyor.",
+   "alternative_explanation": "Kurumlar farklı kaynak ifadelerini kullanmış olabilir.",
+   "missing_context": [
+    "Emniyet açıklamasındaki ifade"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Daltonlar çetesi üyesi 5 şüpheli yakalandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 23:56] Fenerbahçe tribün liderine saldırı hazırlığı soruşturmasında Daltonlar mensubu 5 kişi yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık 'çete' sözcüğünü kullanıyor, başka bir kurum aynı olguyu daha nötr bir dille veriyor; ancak 'çete' listedeki tipik değerlendirme sözcüklerinden değil ve suç örgütü için olgusal bir tanım olabilir.",
+   "alternative_explanation": "'Çete' resmi açıklamalarda da kullanılan bir terim olabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 23:02] Fenerbahçe tribün lideri Cem Gölbaşı'na saldırı hazırlığı: Daltonlar üyesi 5 kişi yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 22:55] Cem Gölbaşı'na saldırı hazırlığı iddiası: 4 şüpheli yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Daltonlar çetesi üyesi 5 şüpheli",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Gözaltına alınanlar bir kurumda kesin olarak 'Daltonlar üyesi', diğerinde 'şüpheli' olarak anılıyor; 'üye' nitelemesi örgüt aidiyetini kesinleşmiş gibi sunuyor.",
+   "alternative_explanation": "Üyelik bilgisi emniyet açıklamasından aktarılmış olabilir.",
+   "missing_context": [
+    "Emniyet açıklamasındaki niteleme"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 23:07] Daltonlar’dan Fenerbahçe tribün lideri Cem Gölbaşı'na suikast hazırlığı! Hücre evine operasyon: Uzun namlulu silah, 200 fişek...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[akit · 23:25] “Daltonlar” operasyonunda 5 gözaltı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı operasyon bir başlıkta ele geçirilen silah ve fişek ayrıntısıyla, diğerinde gözaltı sayısıyla öne çıkarılıyor.",
+   "alternative_explanation": "Ayrıntı farkı kaynağa erişimden doğabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde 'felaket', 'dehşet', 'alarm' gibi tehdit sözcükleri bulunmuyor; 'suikast' olgunun adıdır.",
+   "alternative_explanation": "Başlıklar olgusal suç terimlerini kullanıyor.",
+   "missing_context": [
+    "Tehdit sözcüğü içeren bir başlık"
+   ]
+  }
+ ]
+}

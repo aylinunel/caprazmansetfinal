@@ -1,0 +1,171 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "KPSS Lisans branş sıralamaları adayların erişimine açıldı, yerleştirmeye etkisi yok",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "KPSS Lisans branş bazı sıralamalar açıklandı! ÖSYM branş bazı sıralama sorgulama ekranı ve merkezi atama tarihleri",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "KPSS branş sıralaması 2026! KPSS branş sıralaması ile tercih yapılır mı?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı duyuruyu bir başlık sıralamanın yerleştirmeye etkisi olmadığıyla, bir başlık sorgulama ekranı ve atama tarihleriyle, bir başka başlık tercih sorusuyla öne çıkarıyor.",
+   "alternative_explanation": "Hizmet haberlerinde farklı okur sorularına yanıt verilmesi olağandır.",
+   "missing_context": [
+    "ÖSYM duyurusunun tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "KPSS Lisans'ın branş bazında sıralamaları yayımlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "2026 KPSS branş sıralamaları erişime açıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde sözcük seçimi kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor. 'Yayımlandı', 'açıklandı' ve 'erişime açıldı' çağrışım farkı taşımayan eş anlamlılardır.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde nedensellik abartısı kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde epizodik çerçeveleme kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde sorumluluk çerçevelemesi kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  }
+ ]
+}

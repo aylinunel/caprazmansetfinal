@@ -1,0 +1,220 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başsavcılık Adli Tıp’ın ‘zehirlenmedi’ raporuna itiraz etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Savcılıktan Kozinoğlu'nun ölümüne ilişkin rapora itiraz",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akit başlıkta raporun içeriğini ('zehirlenmedi') öne çıkarıyor, NTV yalnızca itirazı veriyor; ancak iki başlık da aynı boyutu (itiraz) merkeze alıyor, farklı boyut öne çıkarma sınırlı. Kart, aynı olguyu aktaran kurumların başlıklarda o olgunun farklı boyutlarını öne çıkarmasını arıyor; karşılaştırma başlıklar arasında yapılıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinde elde bulunan bilgiden, ajans metninin farklı paragraflarının seçilmesinden ya da olayın farklı aşamalarının haberleştirilmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Her kurumun haberinin tam metni",
+    "Başlıkların yayımlandığı andaki mevcut bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kaşif Kozinoğlu'nun şüpheli ölümüyle ilgili hazırlanan Adli Tıp raporuna",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kaşif Kozinoğlu'nun ölümüne ilişkin Adli Tıp raporuna itiraz",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "TRT Haber 'şüpheli ölüm', diğerleri 'ölüm' diyor; ancak 'şüpheli ölüm' soruşturmanın resmî adlandırması olabilir, çağrışım farkının kurum tercihi olduğu belirsiz. Kart, aynı eylem ya da şey için kurumların kendi seslerinde çağrışımı farklı sözcükler kullanmasını arıyor; yalnızca üslup ya da uzunluk farkı yeterli değil.",
+   "alternative_explanation": "Sözcük farkları ajans metninin uyarlanması, başlık kısalığı ya da hukuki terminolojinin farklı aktarımıyla açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı sözcükleri diğer haberlerde nasıl kullandığı",
+    "Sözcüklerin resmî açıklamadaki karşılığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kaşif Kozinoğlu dosyasında dikkat çeken hamle!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 23:52] Başsavcılıktan Kozinoğlu'nun ölümüne ilişkin Adli Tıp raporuna itiraz",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Türkiye Gazetesi 'dikkat çeken hamle' diyor, Sabah aynı olguyu yalın veriyor; ancak 'dikkat çeken hamle' kartın örneklerindeki güçte bir değerlendirme sözcüğü değil. Kart, kurumun kendi sesinde değerlendirme yüklü sözcük kullanmasını ve aynı olgunun bu sözcükler olmadan da aktarılabildiğini arıyor; alıntılanan ya da bir kişiye atfedilen ifade kurumun tekniği sayılmaz.",
+   "alternative_explanation": "Duygusal sözcükler olayın büyüklüğünü aktarmak için yaygın kullanılan kalıplar olabilir.",
+   "missing_context": [
+    "Sözcüğün bir kaynaktan aktarılıp aktarılmadığı",
+    "Kurumun benzer olaylarda kullandığı dil"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yürütülen soruşturmada",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Silivri Cumhuriyet Başsavcılığı Kozinoğlu raporuna itiraz etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; başlıklarda fail olarak yalnızca itiraz eden savcılık yer alıyor, ölümle ilgili bir aktöre kusur atanmıyor. Kart, sorumluluğu belirsiz bir olayda kurumun kendi başlık dilbilgisinin adı geçen bir aktöre fail ya da kusur atamasını ve buna atıf işaretinin eşlik etmemesini arıyor.",
+   "alternative_explanation": "Edilgen ya da doğa olayını özne yapan başlıklar olayın olgusal aktarımı olabilir; sorumluluk ataması içermeyebilir.",
+   "missing_context": [
+    "Soruşturmanın aşaması",
+    "Başlığın tam metni ve atıf işaretleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Silivri Cezaevi'nde 12 Kasım 2011'de hayatını kaybeden eski MİT görevlisi Kaşif Kozinoğlu'nun 14 yıl sonra yeniden açılan dosyasına",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "TGRT itirazı 2011'deki ölümden yeniden açılan dosyaya uzanan bir hukuki sürece yerleştiriyor. Bu bağlam kartı, kurumun kendi başlık ya da spotunda olayı daha geniş bir eğilim, dizi ya da kurumsal sürece yerleştirip yerleştirmediğine bakıyor.",
+   "alternative_explanation": "Bağlam bilgisi okura arka plan sunmak için eklenmiş olabilir; tek başına bir yanlılık göstergesi değildir.",
+   "missing_context": [
+    "Haberlerin tam metnindeki arka plan bilgisi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde kurumların kendi sesinde ikili seçenek kurgusu bulunmuyor. Kart, kurumun kendi sesinde yalnızca iki seçeneği tek seçenekler gibi sunan 'ya… ya…' türü bir ifade arıyor; metinde böyle bir yapı yok.",
+   "alternative_explanation": "Haberler olgusal gelişmeyi aktarıyor; seçenek kurgusu yapılmıyor.",
+   "missing_context": [
+    "Haberlerin tam metninde ikili seçenek kurgusu olup olmadığı"
+   ]
+  }
+ ]
+}

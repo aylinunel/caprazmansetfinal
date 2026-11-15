@@ -1,0 +1,268 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkent trafiğinde dijital dönüşüm! 247 kilometrelik akıllı yol ağı kuruluyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye'nin ulaşım altyapısında devrim yaratacak Kooperatif Akıllı Ulaşım Sistemleri",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ankara'ya 247 kilometrelik akıllı ulaşım koridoru kuruluyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "toplam 247 kilometrelik akıllı ulaşım sistemi koridoru oluşturulmasına yönelik proje çalışmalarına devam ettiklerini bildirdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ankara ve İstanbul'a yeni nesil ulaşım: Yeni akıllı ulaşım koridoru nerede yapılıyor?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      4
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      4
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      3
+     ]
+    }
+   ],
+   "mechanism": "Bir kurumun başlığı 'yeni nesil ulaşım' ifadesini, girişi de projeyi kendi sesiyle 'devrim yaratacak' olarak nitelemeyi birleştiriyor; iki seçim aynı olumlu yönü gösteriyor. Başka bir kurum aynı açıklamayı 'proje çalışmalarına devam ettiklerini' biçiminde yalın veriyor.",
+   "alternative_explanation": "Nitelemeler bakanlık açıklamasının dilinden aktarılmış olabilir; bu durumda kurumun kendi sunum seçimi sayılmaz.",
+   "missing_context": [
+    "Bakanlık yazılı açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ankara'ya 247 kilometrelik akıllı ulaşım koridoru kuruluyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Uraloğlu, Ankara'da 247 kilometrelik AUS koridoru çalışmalarının sürdüğünü söyledi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'dan sonra sıra Ankara'da! 5G destekli akıllı ulaşım koridoru geliyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı açıklamayı bir başlık kurulumun sürdüğü sonucuyla, bir başlık proje çalışmalarının sürdüğü süreciyle, bir başka başlık İstanbul ile sıralama ilişkisiyle öne çıkarıyor.",
+   "alternative_explanation": "Fiil farkları açıklamanın farklı bölümlerinin başlığa taşınmasından kaynaklanabilir.",
+   "missing_context": [
+    "Projenin güncel aşaması ve takvimi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ankara'ya 247 kilometrelik akıllı ulaşım koridoru kuruluyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ankara’da 247 kilometrelik akıllı ulaşım koridoru planlanıyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı proje bir başlıkta 'kuruluyor', başka bir başlıkta 'planlanıyor' fiiliyle veriliyor; ilki fiilî inşa, ikincisi planlama aşaması çağrıştırıyor.",
+   "alternative_explanation": "'Kuruluyor' fiili gelecekteki kurulumu genel olarak anlatmak için de kullanılabilir.",
+   "missing_context": [
+    "Projenin ihale ya da inşaat aşamasında olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkent trafiğinde dijital dönüşüm! 247 kilometrelik akıllı yol ağı kuruluyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ankara'ya 247 kilometrelik yeni koridor: İstanbul'daki dev projenin ardından sıra Başkent'te",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ankara'da 247 kilometrelik akıllı ulaşım koridoru oluşturulacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar kurumların kendi sesiyle 'dijital dönüşüm!' ve 'dev proje' gibi olumlu değerlendirici ifadeler kullanıyor; başka bir kurum aynı olguyu 'oluşturulacak' biçiminde yalın veriyor.",
+   "alternative_explanation": "'Dev proje' ifadesi İstanbul'daki test koridorunun ölçeğini betimlemeye yönelik olabilir.",
+   "missing_context": [
+    "İstanbul test koridorunun büyüklüğü"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkente 247 kilometrelik akıllı rota... Otonom sürüş için yeni adım",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başkent trafiğinde dijital dönüşüm! 247 kilometrelik akıllı yol ağı kuruluyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar 'otonom sürüş için yeni adım' ve 'dijital dönüşüm' gibi beklenen etkilere yer veriyor; ancak olayın kendisi (247 kilometrelik koridor) da başlıkta bulunduğu için ana cümlenin yalnızca sonuçtan oluştuğu söylenemez.",
+   "alternative_explanation": "Beklenen etki, projenin amacını tanıtan bağlamsal bir ek olabilir.",
+   "missing_context": [
+    "Başlığın ana cümlesinin hangi öğe olduğuna dair dilbilgisel değerlendirme"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde yanlış ikilem kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pendik'te korkunç kaza! CHP'li ilçe başkanı Abidin Ekren ağır yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP Pendik İlçe Başkanı Abidin Ekren trafik kazasında ağır yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kazayı kurumun kendi sesiyle 'korkunç kaza!' olarak niteliyor; başka bir kurum aynı olguyu 'trafik kazasında ağır yaralandı' biçiminde değerlendirici sözcük olmadan veriyor.",
+   "alternative_explanation": "Ağır yaralanmalı ve araçta sıkışmalı bir kaza için yoğun sıfatlar olayın ciddiyetini aktarmaya yönelik olabilir.",
+   "missing_context": [
+    "Yaralının sağlık durumuna ilişkin resmî bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP Pendik İlçe Başkanı Abidin Ekren feci kazada ağır yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Trafik kazası geçiren CHP Pendik İlçe Başkanı Ekren yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay bir başlıkta 'feci kaza' ve 'ağır yaralandı', başka bir başlıkta 'trafik kazası' ve yalnızca 'yaralandı' sözcükleriyle anlatılıyor; sözcükler yoğunluk ve ciddiyet bakımından farklı çağrışım taşıyor.",
+   "alternative_explanation": "Kısa başlıklar ayrıntıyı atlamış olabilir; fark erken ve geç bilgi düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Başlıkların yayım saatindeki bilgi durumu"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pendik'te 2 araca çarpan otomobil devrildi: CHP İlçe Başkanı Abidin Ekren ağır yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP Pendik İlçe Başkanı Abidin Ekren trafik kazasında ağır yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Pendik'te feci kaza: CHP İlçe Başkanı ağır yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kazayı bir başlık kazanın oluş biçimiyle (araçlara çarpıp devrilme), bir başlık kişinin adı ve unvanıyla, bir başka başlık ise kişinin adını vermeden yalnızca unvanıyla öne çıkarıyor.",
+   "alternative_explanation": "Ajans metninin başlığını izleyen ve izlemeyen kurumlar arasındaki fark olabilir.",
+   "missing_context": [
+    "Kaynak ajans metinleri"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde epizodik çerçeveleme kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor. Olay tekil bir trafik kazası; metin yapısal bir sorunun varlığını göstermiyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pendik'te 2 araca çarpan otomobil devrildi: CHP İlçe Başkanı Abidin Ekren ağır yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde tematik çerçeveleme kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor. Hiçbir kurum olayı bir eğilim ya da kurumsal bağlam içine yerleştirmiyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde yanlış ikilem kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  }
+ ]
+}

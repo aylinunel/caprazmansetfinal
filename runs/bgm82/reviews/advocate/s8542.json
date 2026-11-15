@@ -1,0 +1,240 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: Gözaltındaki eski Takasbank Genel Müdürü Yunus Arıncı, Türk Telekom'dan da istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon skandalında gözaltına alınan eski Takasbank Genel Müdürü Yunus Arıncı, Türk Telekom'dan da istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturması: Gözaltındaki eski Takasbank Genel Müdürü Yunus Arıncı, Türk Telekom'dan da istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar soruşturmayı kurumların kendi sesiyle 'vurgun' ve 'skandal' olarak niteliyor; başka bir kurum aynı olguyu 'Fon soruşturması' ifadesiyle yalın veriyor.",
+   "alternative_explanation": "'Fon vurgunu' ifadesi soruşturmanın kamuoyunda yerleşmiş adı olarak kullanılıyor olabilir.",
+   "missing_context": [
+    "Savcılık açıklamasında kullanılan nitelendirme"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: Eski Takasbank Genel Müdürü'nün de aralarında olduğu 3 kişiye tutuklama talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturması: Eski Takasbank Genel Müdürü dahil 3 kişiye tutuklama talebi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklama talebi bir başlıkta 'Fon vurgunu soruşturması', diğerinde 'Fon soruşturması' olarak adlandırılıyor; 'vurgun' sözcüğü haksız kazanç çağrışımı taşıyor.",
+   "alternative_explanation": "Kurumlar soruşturma için farklı kısa adlar benimsemiş olabilir.",
+   "missing_context": [
+    "Soruşturmanın resmî adı"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: Gözaltındaki eski Takasbank Genel Müdürü Yunus Arıncı, Türk Telekom'dan da istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eski Takasbank genel müdürü Türk Telekom'dan istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir başlıkta 'Gözaltındaki eski Takasbank Genel Müdürü', diğerinde yalnızca 'Eski Takasbank genel müdürü' olarak anılıyor; ancak gözaltı bilgisi olgusal bir statü.",
+   "alternative_explanation": "Gözaltı durumu haberin bağlamını açıklayan olgusal bilgidir.",
+   "missing_context": [
+    "Etiketin değerlendirici yüküne dair bağlam"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski Takasbank genel müdürü Türk Telekom'dan istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: Gözaltındaki eski Takasbank Genel Müdürü Yunus Arıncı, Türk Telekom'dan da istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifayı bir başlık kurumsal bir yönetim değişikliği olarak, diğeri gözaltı durumu ve soruşturma adıyla birlikte öne çıkarıyor.",
+   "alternative_explanation": "Ekonomi odaklı ve genel gündem odaklı kurumların okur kitlesi farklı olabilir.",
+   "missing_context": [
+    "Şirketin kamuyu aydınlatma açıklaması"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tutuklu sayısı 123'e yükseldi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde seçici istatistik kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor. Toplam sayı veriliyor; oran ya da payda yok.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde epizodik çerçeveleme kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  }
+ ]
+}

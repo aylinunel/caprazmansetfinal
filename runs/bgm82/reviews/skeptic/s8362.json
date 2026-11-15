@@ -1,0 +1,219 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "fear-appeal",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adana'da korkutan deprem",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Adana'nın Kozan ilçesinde saat 15.28'de 4,6 büyüklüğünde deprem meydana geldi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karar 'korkutan' nitelemesini kullanıyor ve büyüklüğü veriyor. 'Korkutan' felaket/kâbus düzeyinde bir sözcük değil ve hissedilen 4,6'lık bir sarsıntıyla orantısız olduğu metinden çıkarılamıyor. Kart, kurumun kendi sesinde tehdit/felaket sözcükleri, riskin ölçeğinin verilmesi ve sözcüklerin bu ölçekle orantısız olmasını arıyor.",
+   "alternative_explanation": "Hissedilen bir depremi 'korkutan' diye nitelemek, halkın tepkisini aktaran yaygın bir kalıp olabilir.",
+   "missing_context": [
+    "Depremin hasar ve can kaybı bilgisi",
+    "Bölgedeki halkın tepkisine dair bilgi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Son dakika: Adana'da korkutan deprem!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 03:40] Adana'da 4,6 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sözcü 'korkutan' diyor, AA aynı olguyu bu sözcük olmadan veriyor; ancak 'korkutan' kartın örneklerindeki (skandal, şok) türden bir değerlendirme mi yoksa halkın tepkisini betimleyen bir sıfat mı, belirsiz. Kart, kurumun kendi sesinde değerlendirme yüklü sözcük kullanmasını ve aynı olgunun bu sözcükler olmadan da aktarılabildiğini arıyor; alıntılanan ya da bir kişiye atfedilen ifade kurumun tekniği sayılmaz.",
+   "alternative_explanation": "Duygusal sözcükler olayın büyüklüğünü aktarmak için yaygın kullanılan kalıplar olabilir.",
+   "missing_context": [
+    "Sözcüğün bir kaynaktan aktarılıp aktarılmadığı",
+    "Kurumun benzer olaylarda kullandığı dil"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adana'da korkutan deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Adana'da 4,6 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık depremi duygusal bir sıfatla, diğeri büyüklükle tanımlıyor; ancak bu aynı şey için farklı sözcük değil, farklı bir niteleyicinin eklenmesi. Kart, aynı eylem ya da şey için kurumların kendi seslerinde çağrışımı farklı sözcükler kullanmasını arıyor; yalnızca üslup ya da uzunluk farkı yeterli değil.",
+   "alternative_explanation": "Sözcük farkları ajans metninin uyarlanması, başlık kısalığı ya da hukuki terminolojinin farklı aktarımıyla açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı sözcükleri diğer haberlerde nasıl kullandığı",
+    "Sözcüklerin resmî açıklamadaki karşılığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AFAD duyurdu: Adana'da 4,6 büyüklüğünde deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Adana'da 4.6 büyüklüğünde deprem! Çevre illerde de hissedildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Adana'da korkutan deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar kaynağı, hissedilme alanını ya da korkuyu öne çıkarıyor; ancak bunlar kartın örneklediği türden karşıt boyutlar (maliyet/fayda, kazanan/kaybeden) değil, aynı bilginin ek ayrıntıları. Kart, aynı olguyu aktaran kurumların başlıklarda o olgunun farklı boyutlarını öne çıkarmasını arıyor; karşılaştırma başlıklar arasında yapılıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinde elde bulunan bilgiden, ajans metninin farklı paragraflarının seçilmesinden ya da olayın farklı aşamalarının haberleştirilmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Her kurumun haberinin tam metni",
+    "Başlıkların yayımlandığı andaki mevcut bilgi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adana'da sabah saatlerinde de 3.5 büyüklüğünde bir deprem olmuştu.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "4,6'lık depremi aktaran kurumlar onu bir diziye yerleştirmiyor; Milliyet'in önceki sarsıntıya değinmesi ise farklı (3,7'lik) bir depreme ait haberde. Bu bağlam kartı, kurumun kendi başlık ya da spotunda olayı daha geniş bir eğilim, dizi ya da kurumsal sürece yerleştirip yerleştirmediğine bakıyor.",
+   "alternative_explanation": "Bağlam bilgisi okura arka plan sunmak için eklenmiş olabilir; tek başına bir yanlılık göstergesi değildir.",
+   "missing_context": [
+    "Haberlerin tam metnindeki arka plan bilgisi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde kurumların kendi sesinde ikili seçenek kurgusu bulunmuyor. Kart, kurumun kendi sesinde yalnızca iki seçeneği tek seçenekler gibi sunan 'ya… ya…' türü bir ifade arıyor; metinde böyle bir yapı yok.",
+   "alternative_explanation": "Haberler olgusal gelişmeyi aktarıyor; seçenek kurgusu yapılmıyor.",
+   "missing_context": [
+    "Haberlerin tam metninde ikili seçenek kurgusu olup olmadığı"
+   ]
+  }
+ ]
+}

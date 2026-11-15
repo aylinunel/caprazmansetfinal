@@ -1,0 +1,230 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "9 ay sonra bir ilk: Merkez Bankası faizi indirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Son dakika... Merkez Bankası yılın yedinci faiz kararını açıkladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye Cumhuriyet Merkez Bankası, politika faizini yüzde 36 olarak belirledi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kararı bir başlık dokuz ay sonraki ilk indirim olmasıyla, bir başlık yılın kaçıncı kararı olduğuyla, bir kurumun girişi ise yalnızca ulaşılan faiz düzeyiyle öne çıkarıyor.",
+   "alternative_explanation": "Fark kurumların kararı açıklandığı andaki farklı bilgi aktarım hızından kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların karar metninden hangi bölümleri aldığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye Cumhuriyet Merkez Bankası, politika faizini yüzde 36 olarak belirledi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası faizi düşürdü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı karar bir kurumda 'belirledi', başka bir kurumda 'düşürdü' fiiliyle veriliyor; ancak farkın çağrışım mı yoksa ayrıntı düzeyi mi olduğu belirsiz.",
+   "alternative_explanation": "'Belirledi' kurumların karar duyurularında kullandığı nötr bir kalıptır.",
+   "missing_context": [
+    "Karar metnindeki ifade"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası'nın 9 ay sonra ilk kez faiz indirmesi ne anlama geliyor?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde sonuç çerçevelemesi kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor. Başlık sonucu bir projeksiyon olarak öne sürmüyor, soru biçiminde soruyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Böylece Merkez Bankası, eylül ayındaki sabitleme kararının ardından ocak ayından bu yana ilk kez faiz indirimine gitmiş oldu.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yıllık enflasyonun 5 yıl sonra ilk kez yüzde 30’un altına gerilemesi indirim beklentilerini güçlendirirken",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "9 ay sonra bir ilk: Merkez Bankası faizi indirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumların girişleri kararı önceki faiz kararları dizisi ve enflasyon eğilimi içine yerleştiriyor.",
+   "alternative_explanation": "Bu bağlam bilgisi karar metninden ya da ajans haberinden ortak alınmış olabilir.",
+   "missing_context": [
+    "Ajans metni ile karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "20 ekonomistin katıldığı ankette 19 uzman 100 baz puan indirim bekliyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde seçici istatistik kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor. Pay ve payda belirli, ancak karşılaştırılabilir başka bir nüfus belgelenmiyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde yanlış ikilem kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  }
+ ]
+}

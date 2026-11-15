@@ -1,0 +1,200 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Diyarbakır’da feci kaza! Kamyon ile hafif ticari araç çarpıştı: 2 ölü, 13 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dirilis · 00:21] Diyarbakır’da kamyon ile hafif ticari araç çarpıştı: 2 ölü, 12 yaralı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sözcü kendi sesinde 'feci kaza!' değerlendirmesini kullanırken Diriliş aynı olguyu bu sözcük olmadan veriyor.",
+   "alternative_explanation": "'Feci' sözcüğü ölümlü kazalarda yaygın bir haber kalıbı olabilir.",
+   "missing_context": [
+    "Yok"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Araca 12 kişi binmişler... 2 kardeş vefat etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kazada 2 kişi hayatını kaybetti, 13 kişi yaralandı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı ölümler 'vefat etti' ve 'hayatını kaybetti' olarak anılıyor; fark çağrışımdan çok üslup farkı olabilir.",
+   "alternative_explanation": "'Vefat' saygı bildiren bir üslup tercihidir.",
+   "missing_context": [
+    "Yok"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kütahya'da kamyonet ile hafif ticari araç çarpıştı: 1 ölü, 3 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mardin Kızıltepe'de otomobil ile hafif ticari araç çarpıştı, 4'ü çocuk 6 kişi yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Diyarbakır'da tüp kamyonu ile hafif ticari araç çarpıştı! Araca 12 kişi binmişler... 2 kardeş vefat etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Diğer kurumların aynı günlerdeki kaza haberleri sorunun tekrarlayan bir nitelik taşıdığını gösteriyor; Diyarbakır haberleri daha geniş örüntüye değinmiyor, ancak tek vakanın bütün hikâye olarak sunulduğu kesin değil.",
+   "alternative_explanation": "Trafik kazası haberleri doğası gereği tekil olay odaklıdır.",
+   "missing_context": [
+    "Bölgedeki kaza istatistikleri",
+    "Araçtaki yolcu fazlalığına ilişkin denetim verisi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tüp yüklü kamyonla ticari araç çarpıştı: 2 ölü, 12 yaralı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olayı betimliyor; seçenek kurgusu yok.",
+   "missing_context": [
+    "İki seçenekli bir ifade içeren haber metni"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Diyarbakır’da feci kaza! Kamyon ile hafif ticari araç çarpıştı: 2 ölü, 13 yaralı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir oran ya da pay sunulmuyor; yalnızca sayılar veriliyor.",
+   "alternative_explanation": "Sayı farkları farklı kaynak ya da güncelleme zamanından kaynaklanabilir.",
+   "missing_context": [
+    "Yok"
+   ]
+  }
+ ]
+}

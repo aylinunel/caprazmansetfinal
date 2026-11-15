@@ -1,0 +1,262 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD şokta! Beyaz Saray yakınında silahlı saldırı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Saldırganın, apartman yönetimiyle yaşadığı anlaşmazlığın ardından dehşet saçtığı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınında silahlı saldırı: Beş kişi vuruldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Akit 'ABD şokta!', Türkiye Gazetesi 'dehşet saçtığı' gibi değerlendirici sözcükler kullanırken sol aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Duygu yüklü sözcükler olayın ağırlığını aktarma amacı taşıyabilir.",
+   "missing_context": [
+    "Polis açıklamasının metni"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Washington'da güvenlik alarmı! Beyaz Saray'a yakın bölgede silahlı saldırı: 4 kişi vuruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beyaz Saray’a birkaç kilometre uzaklıktaki Logan Circle semtinde düzenlenen silahlı saldırıda bir kişinin öldüğü, 4 kişinin yaralandığı açıklandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "apartman yönetimiyle yaşadığı anlaşmazlığın ardından",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Milli Gazete kendi sesinde 'güvenlik alarmı' ifadesini kullanıyor; metin ise olayın Beyaz Saray'dan kilometrelerce uzakta, kişisel bir anlaşmazlıktan doğduğunu ve ölçeğini veriyor; tehdit sözcüğü bu ölçek ve kaynakla orantısız kalıyor.",
+   "alternative_explanation": "Başkentte güvenlik güçlerinin geniş önlem alması 'alarm' ifadesini kısmen karşılıyor olabilir.",
+   "missing_context": [
+    "Güvenlik birimlerinin olay sırasında aldığı önlemlerin kapsamı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınlarında silahlı çatışma: En az 5 kişi vuruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beyaz Saray çevresinde hareketli dakikalar! Silahlı çatışmada 5 kişi vuruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 17:20] Beyaz Saray yakınlarında silahlı saldırı: 5 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay bazı kurumların kendi sesinde 'silahlı çatışma', diğerlerinde 'silahlı saldırı' olarak adlandırılıyor; 'çatışma' iki taraflı bir karşılaşma çağrıştırırken 'saldırı' tek taraflı bir eylemi anlatıyor.",
+   "alternative_explanation": "'Çatışma' sözcüğü ilk saatlerdeki belirsizlik nedeniyle seçilmiş olabilir.",
+   "missing_context": [
+    "Polisin olayı nasıl nitelendirdiği"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınında silahlı saldırı: 5 kişi vuruldu, saldırgan kendini öldürdü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınlarında silah sesleri: Ölü ve yaralılar var, saldırgan intihar etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınlarında silahlı saldırı! A Haber olay yerinden canlı yayında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı saldırı bir başlıkta kurban sayısı ve saldırganın ölümü, birinde ölü-yaralı ayrımı, bir diğerinde kurumun kendi canlı yayını üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Farklı vurgular haberin gelişen aşamalarını yansıtabilir.",
+   "missing_context": [
+    "Yayın saatlerine göre resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD, Beyaz Saray yakınında yeni bir silahlı saldırının şokunu yaşıyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Akit ledesinde olayı 'yeni bir silahlı saldırı' diyerek önceki saldırılardan oluşan bir dizinin parçası olarak yerleştiriyor.",
+   "alternative_explanation": "İfade yalnızca olayın yakın zamanda gerçekleştiğini anlatıyor olabilir.",
+   "missing_context": [
+    "Önceki saldırılara dair somut bilgi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınlarında silah sesleri: Ölü ve yaralılar var",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olayı betimliyor; seçenek kurgusu yok.",
+   "missing_context": [
+    "İki seçenekli bir ifade içeren haber metni"
+   ]
+  }
+ ]
+}

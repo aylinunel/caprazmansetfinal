@@ -1,0 +1,237 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "MHP Genel Başkanı Bahçeli, Fatih Terim'i kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fatih Terim'den Devlet Bahçeli'ye sürpriz ziyaret",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı buluşma bir başlıkta Bahçeli'yi özne yapan 'kabul', diğerinde Terim'i özne yapan 'ziyaret' olarak veriliyor. Bu standart bir protokol dili farkı olabilir ve farklı bir olgu boyutunu öne çıkardığı açık değil. Kart, aynı olguyu aktaran kurumların başlıklarda o olgunun farklı boyutlarını öne çıkarmasını arıyor; karşılaştırma başlıklar arasında yapılıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinde elde bulunan bilgiden, ajans metninin farklı paragraflarının seçilmesinden ya da olayın farklı aşamalarının haberleştirilmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Her kurumun haberinin tam metni",
+    "Başlıkların yayımlandığı andaki mevcut bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatih Terim'den Devlet Bahçeli'ye sürpriz ziyaret",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fatih Terim, Devlet Bahçeli’ye gitti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "MHP Lideri Bahçeli, Fatih Terim'i kabul etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Kabul etti', 'ziyaret', 'gitti' aynı buluşmayı anlatıyor; farkın çağrışım mı yoksa yalnızca üslup mu olduğu belirsiz. Kart, aynı eylem ya da şey için kurumların kendi seslerinde çağrışımı farklı sözcükler kullanmasını arıyor; yalnızca üslup ya da uzunluk farkı yeterli değil.",
+   "alternative_explanation": "Sözcük farkları ajans metninin uyarlanması, başlık kısalığı ya da hukuki terminolojinin farklı aktarımıyla açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı sözcükleri diğer haberlerde nasıl kullandığı",
+    "Sözcüklerin resmî açıklamadaki karşılığı"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türk futbolunun önemli isimlerinden Fatih Terim",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ünlü teknik direktör Fatih Terim",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "A Milli Futbol Takımı'nın eski teknik direktörü Fatih Terim",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Haber7 'Türk futbolunun önemli isimlerinden', En Son Haber 'ünlü teknik direktör' diyerek kendi seslerinde olumlu değerlendirme ekliyor; AA ise yalnızca görevini belirtiyor. 'Yaşayan efsane' ifadesi MHP yöneticisine ait olduğundan değerlendirmeye alınmadı. Kart, aynı aktör için kurumların kendi seslerinde farklı sıfat/unvan kullanmasını ve en az birinin tanımlamanın ötesinde değerlendirme taşımasını arıyor.",
+   "alternative_explanation": "Unvan farkları kurumların yerleşik yazım kuralları, kişinin o anki resmî statüsü ya da başlık uzunluğu sınırlarıyla da açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı aktör için diğer haberlerde kullandığı unvanlar",
+    "Aktörün olay anındaki resmî statüsü"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatih Terim'den Devlet Bahçeli'ye sürpriz ziyaret",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[t24 · 17:27] Fatih Terim, Devlet Bahçeli'yi ziyaret etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Sürpriz' sözcüğü T24'te yok; ancak bu kartın örneklerindeki türden değerlendirme yüklü bir sözcük mü, yoksa ziyaretin önceden duyurulmadığını bildiren betimleme mi, belirsiz. Kart, kurumun kendi sesinde değerlendirme yüklü sözcük kullanmasını ve aynı olgunun bu sözcükler olmadan da aktarılabildiğini arıyor; alıntılanan ya da bir kişiye atfedilen ifade kurumun tekniği sayılmaz.",
+   "alternative_explanation": "Duygusal sözcükler olayın büyüklüğünü aktarmak için yaygın kullanılan kalıplar olabilir.",
+   "missing_context": [
+    "Sözcüğün bir kaynaktan aktarılıp aktarılmadığı",
+    "Kurumun benzer olaylarda kullandığı dil"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatih Terim, MHP Genel Başkanı Devlet Bahçeli'yi ziyaret etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Terim ziyaretini aktaran kurumlar olayı bir eğilim ya da sürece yerleştirmiyor; İzleme Komisyonu bağlamı farklı bir olaya (Kurtulmuş ziyareti) ait. Bu bağlam kartı, kurumun kendi başlık ya da spotunda olayı daha geniş bir eğilim, dizi ya da kurumsal sürece yerleştirip yerleştirmediğine bakıyor.",
+   "alternative_explanation": "Bağlam bilgisi okura arka plan sunmak için eklenmiş olabilir; tek başına bir yanlılık göstergesi değildir.",
+   "missing_context": [
+    "Haberlerin tam metnindeki arka plan bilgisi"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde ziyaretle ilgili açık bir nedensellik ifadesi yok. Kart, açık bir nedensellik ifadesi ve bu bağın yalnızca birliktelik ya da zaman sırasına dayanmasını arıyor.",
+   "alternative_explanation": "Aktarılan nedensellik ifadeleri doğrudan gözlemlenen fiziksel ya da hukuki olgulara dayanıyor olabilir.",
+   "missing_context": [
+    "Nedensellik iddiasının kaynağı ve dayanağı"
+   ]
+  }
+ ]
+}

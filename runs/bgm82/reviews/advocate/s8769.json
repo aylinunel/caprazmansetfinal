@@ -1,0 +1,233 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Faizsiz ev ve araba almak için tasarruf finansmanlarına yatırım yapan binlerce kişinin beklediği haber geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emlak Katılım; Katılımevim, Birevim ve İktisat Katılım'ın devri için gerekli izinleri aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dev Satın Alma Resmen Tamamlandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı devir Takvim'de tasarruf sahiplerinin beklentisi, AA'da izin süreci, Onedio'da işlemin büyüklüğü üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar farklı okuyucu kitlelerine hitap ediyor olabilir.",
+   "missing_context": [
+    "KAP açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 13:00] SON DAKİKA! Emlak Katılım Katılımevim ve Birevim'i satın aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 13:24] Emlak Katılım'a Katılımevim ve Birevim için devir onayı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı gelişme 'satın aldı' ve 'devir onayı' olarak adlandırılıyor; fark çağrışımdan çok işlemin aşamasına dair olgusal bir fark olabilir.",
+   "alternative_explanation": "Farklı sözcükler işlemin hukuki aşamasının farklı yorumlanmasından kaynaklanabilir.",
+   "missing_context": [
+    "Devir işleminin kapanış durumu"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Katılımevim ve Birevim için yeni dönem! Devir için onay çıktı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Yeni dönem' sonucu başlıkta yer alıyor, ancak onay olayı da başlıkta veriliyor.",
+   "alternative_explanation": "Sonuç ifadesi bağlam olarak eklenmiş olabilir.",
+   "missing_context": [
+    "Yok"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Birevim ve Katılımevim eylülde Pusula Finans Holding’deydi. 14 Eylül’de",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Devlete bağlı kamu sermayeli katılım bankası Emlak Katılım",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "10haber devri şirketlerin eylüldeki sahiplik süreciyle, Diken ise alıcının kamu sermayeli yapısıyla birlikte veriyor; olay daha geniş bir süreç içine yerleştiriliyor.",
+   "alternative_explanation": "Bağlam bilgisi okuyucuya arka plan sağlamak için eklenmiş olabilir.",
+   "missing_context": [
+    "Eylüldeki süreçle ilgili ayrıntılar"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emlak Katılım, Katılımevim, Birevim ve İktisat Katılım'ın satın alma sürecini tamamladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde açık bir nedensellik iddiası yok.",
+   "alternative_explanation": "Haberler bir şirket açıklamasını betimliyor.",
+   "missing_context": [
+    "Yok"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emlak Katılım; Katılımevim ve Birevim'i satın aldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberler tek bir kişiyi ya da vakayı bütün hikâye olarak sunmuyor; bir şirket işlemi aktarılıyor.",
+   "alternative_explanation": "Şirket devri doğası gereği tekil bir işlemdir.",
+   "missing_context": [
+    "Yok"
+   ]
+  }
+ ]
+}

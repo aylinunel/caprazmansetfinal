@@ -1,0 +1,237 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP Genel Başkanı Kemal Kılıçdaroğlu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Mahkeme kararıyla CHP genel başkanlığına getirilen Kemal Kılıçdaroğlu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı aktör bir kurumda 'CHP Genel Başkanı', başka bir kurumda kendi sesinde 'Mahkeme kararıyla CHP genel başkanlığına getirilen' olarak anılıyor; ikinci niteleme tanımlamanın ötesinde göreve geliş biçimini öne çıkarıyor.",
+   "alternative_explanation": "Niteleme, göreve gelişin olgusal bir açıklaması olarak eklenmiş olabilir.",
+   "missing_context": [
+    "Kurumun bu nitelemeyi diğer haberlerde de kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yenisafak · 13:23] Kemal Kılıçdaroğlu'ndan Devlet Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 13:38] Özgür Özel'den Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 14:00] AK Parti'den MHP Genel Başkanı Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı günkü taziye ziyaretlerinden başlıklar farklı ziyaretçileri (Kılıçdaroğlu, Özel, AK Parti) öne çıkarıyor; 'kim' boyutu kurumdan kuruma değişiyor.",
+   "alternative_explanation": "Ziyaretler farklı saatlerde gerçekleşti; kurumlar ilk ulaştıkları ziyareti vermiş olabilir.",
+   "missing_context": [
+    "Ziyaretlerin saatleri",
+    "Kurumların sonradan güncellediği başlıklar"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kız kardeşini kaybeden MHP Genel Başkanı Devlet Bahçeli'ye",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "ablası Serpil Bahçeli’yi kaybeden",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Kız kardeşi' ve 'ablası' aynı kişiyi farklı sözcüklerle anlatıyor; fark kesinlik düzeyinde, çağrışımda değil.",
+   "alternative_explanation": "Akrabalık terimi farklı kaynaklardan alınmış olabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca iki seçeneği tek seçenek olarak sunan bir 'ya… ya…' kalıbı bulunmuyor.",
+   "alternative_explanation": "Başlıklar olay bilgisini aktarıyor; seçenek sunan bir yapı yok.",
+   "missing_context": [
+    "Kurumun iki seçenekli bir kalıp kullandığı başlık veya spot"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tek bir olayı aktarıyor, ancak bağlam veya diğer haberler konunun yinelenen ya da yapısal bir sorun olduğunu göstermiyor; tek vakanın bütün hikâye olarak sunulduğu söylenemez.",
+   "alternative_explanation": "Tekil bir spor veya gündem olayının olay odaklı aktarılması haberin doğasından kaynaklanıyor.",
+   "missing_context": [
+    "Konunun yinelenen veya yapısal olduğunu gösteren önceki vakalar ya da veriler"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mahkeme kararıyla CHP genel başkanlığına getirilen Kemal Kılıçdaroğlu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bahçeli'nin TBMM’deki makam odasında yapılan görüşme yaklaşık 15 dakika sürdü.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 13:23] Kılıçdaroğlu'ndan Bahçeli'ye taziye ziyareti — CHP Genel Başkanı Kemal Kılıçdaroğlu, kız kardeşini kaybeden MHP Genel Başkanı Devlet Bahçeli'ye taziye ziyaretinde bulundu.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kurumun spotunda bir niteleme ve görüşme süresi gibi seçilmiş bir ayrıntı bulunuyor; başka bir kurum aynı olguyu bunlar olmadan veriyor. Ancak iki seçimin aynı değerlendirme yönünü gösterdiği açık değil.",
+   "alternative_explanation": "Süre bilgisi olgusal bir ayrıntı olabilir.",
+   "missing_context": [
+    "Haberin tam metni"
+   ]
+  }
+ ]
+}

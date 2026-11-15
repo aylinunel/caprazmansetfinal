@@ -1,0 +1,246 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "consequence-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: İstanbul Maratonu nedeniyle bazı yollar trafiğe kapatılacak",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 12:55] İstanbul'da yarın bu yollar kapatılacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 12:50] İstanbul'da yarın bazı yollar trafiğe kapatılacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar maratonu hiç anmadan yalnızca yol kapanmalarını veriyor; ancak yol kapatma kararı haberin kendisi olduğundan bunun bir sonuç projeksiyonu sayılıp sayılmayacağı belirsiz.",
+   "alternative_explanation": "Okur için pratik bilgi olan yol kapanması doğal olarak başlığa taşınmış olabilir.",
+   "missing_context": [
+    "Haberin asıl olayının maraton mu yoksa kapatma kararı mı sayıldığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 00:10] İstanbul'da maraton alarmı: 1 Kasım'da bazı yollar trafiğe kapalı olacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 13:08] Gece 3’te başlıyor: İstanbul’da yarın bazı yollar trafiğe kapatılacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 05:45] İstanbul Maratonu nedeniyle çok sayıda yol trafiğe kapatıldı! İşte alternatif güzergahlar",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "1 Kasım Pazar günü 45 bini aşkın katılımcıyla koşulacak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı yol kapatma olgusu bir başlıkta aksama ('alarm'), bir diğerinde başlangıç saati, bir başkasında alternatif güzergâhlar öne çıkarılarak veriliyor; bir spot ise katılımcı sayısını veriyor.",
+   "alternative_explanation": "Farklı vurgular okurlara farklı pratik bilgiler sunmayı amaçlıyor olabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yarın Boğaziçi Köprüsü, Avrasya Tüneli ve Galata Köprüsü başta olmak üzere",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü saat 03.00'ten",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı köprü bir kurumda kendi sesinde 'Boğaziçi Köprüsü', diğerlerinde '15 Temmuz Şehitler Köprüsü' olarak adlandırılıyor; iki ad farklı siyasi ve tarihsel çağrışımlar taşıyor.",
+   "alternative_explanation": "Eski ad halk arasında yaygın kullanılmaya devam ediyor olabilir.",
+   "missing_context": [
+    "Kurumun bu adlandırmayı süreklilikle kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul'da maraton alarmı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "dev bir trafik düzenlemesine gidildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 00:28] İstanbul Maratonu nedeniyle bazı yollar trafiğe kapatılacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum 'alarm' ve 'dev' sözcüklerini kullanıyor; başka bir kurum aynı olguyu bunlar olmadan veriyor. Ancak bu sözcüklerin değerlendirme yüklü sayılması sınırda.",
+   "alternative_explanation": "'Dev' düzenlemenin kapsamını betimliyor olabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca iki seçeneği tek seçenek olarak sunan bir 'ya… ya…' kalıbı bulunmuyor.",
+   "alternative_explanation": "Başlıklar olay bilgisini aktarıyor; seçenek sunan bir yapı yok.",
+   "missing_context": [
+    "Kurumun iki seçenekli bir kalıp kullandığı başlık veya spot"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye İş Bankası 48. İstanbul Maratonu",
+     "kind": "statement"
+    },
+    {
+     "source": "context",
+     "quote": "Olay: İstanbul Maratonu nedeniyle bazı yollar trafiğe kapatılacak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay belirli; bir spot etkinliği sıra numarasıyla ('48.') anıyor, ancak bu, olayı bir eğilim veya politika sürecine yerleştirmekten çok etkinliğin adı.",
+   "alternative_explanation": "Sıra numarası etkinliğin resmi adının parçası.",
+   "missing_context": [
+    "Önceki yıllardaki kapatmalarla karşılaştırma"
+   ]
+  }
+ ]
+}

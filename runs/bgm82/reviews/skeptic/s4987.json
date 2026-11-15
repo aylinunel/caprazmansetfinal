@@ -1,0 +1,250 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Borsa İstanbul Genel Müdürü Ergun rüşvet ve örgüt üyeliği iddiasıyla gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; başlıklar edilgen 'gözaltına alındı' yapısını kullanıyor ve suçlamalara 'iddiasıyla' atıf işareti eşlik ediyor. Kart, sorumluluğu belirsiz bir olayda kurumun kendi başlık dilbilgisinin adı geçen bir aktöre fail ya da kusur atamasını ve buna atıf işaretinin eşlik etmemesini arıyor.",
+   "alternative_explanation": "Edilgen ya da doğa olayını özne yapan başlıklar olayın olgusal aktarımı olabilir; sorumluluk ataması içermeyebilir.",
+   "missing_context": [
+    "Soruşturmanın aşaması",
+    "Başlığın tam metni ve atıf işaretleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturması Borsa İstanbul'a uzandı: Genel Müdür Korkmaz Enes Ergun gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karar soruşturmanın kapsamının genişlemesini, diğerleri yalın gözaltıyı veriyor; başlıkların büyük çoğunluğu neredeyse aynı ve farklı boyut öne çıkarma sınırlı. Kart, aynı olguyu aktaran kurumların başlıklarda o olgunun farklı boyutlarını öne çıkarmasını arıyor; karşılaştırma başlıklar arasında yapılıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinde elde bulunan bilgiden, ajans metninin farklı paragraflarının seçilmesinden ya da olayın farklı aşamalarının haberleştirilmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Her kurumun haberinin tam metni",
+    "Başlıkların yayımlandığı andaki mevcut bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Gözaltında' ile 'gözaltına alındı' arasındaki fark dilbilgisel; çağrışım farkı yok. Kart, aynı eylem ya da şey için kurumların kendi seslerinde çağrışımı farklı sözcükler kullanmasını arıyor; yalnızca üslup ya da uzunluk farkı yeterli değil.",
+   "alternative_explanation": "Sözcük farkları ajans metninin uyarlanması, başlık kısalığı ya da hukuki terminolojinin farklı aktarımıyla açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı sözcükleri diğer haberlerde nasıl kullandığı",
+    "Sözcüklerin resmî açıklamadaki karşılığı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'de sermaye piyasalarını sarsan fon soruşturmasında kritik bir gelişme yaşandı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında yeni gelişme",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Karar, Cumhuriyet ve diğerleri gözaltıyı süregelen fon soruşturmasının bir halkası olarak sunuyor. Bu bağlam kartı, kurumun kendi başlık ya da spotunda olayı daha geniş bir eğilim, dizi ya da kurumsal sürece yerleştirip yerleştirmediğine bakıyor.",
+   "alternative_explanation": "Bağlam bilgisi okura arka plan sunmak için eklenmiş olabilir; tek başına bir yanlılık göstergesi değildir.",
+   "missing_context": [
+    "Haberlerin tam metnindeki arka plan bilgisi"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturması Borsa İstanbul'a uzandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "sermaye piyasalarını sarsan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Uzandı' ve 'sarsan' kalıplaşmış ifadeler; bir rol ya da eylem yönü atamıyor. Kart, kurumun kendi sesinde olay ya da aktörler için kalıplaşmış deyim olmayan, rol atayan ya da bir eylem yönü ima eden bir mecaz arıyor.",
+   "alternative_explanation": "Siyasi haber dilinde 'deprem', 'sarsmak', 'uzanmak' gibi ifadeler kalıplaşmış deyimlerdir ve rol atamadan kullanılabilir.",
+   "missing_context": [
+    "Mecazın kurumun genel haber dilinde ne sıklıkla kalıp olarak kullanıldığı"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında yeni gelişme",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 20:41] Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Diğer kurumlar olayın bir soruşturma dizisinin parçası olduğunu gösteriyor, Sabah yalnızca kişiyi veriyor; ancak Sabah'ın spotu metinde olmadığından geniş örüntüye değinilmediği doğrulanamıyor. Kart, bağlamın konunun tekrarlayan ya da yapısal olduğunu göstermesini, metnin tek vakayı bütün hikâye gibi sunmasını ve ne başlıkta ne spotta geniş örüntüye değinilmemesini arıyor.",
+   "alternative_explanation": "Kişi odaklı haberler bir atama ya da gözaltı gibi bireysel olayların doğal habercilik biçimi olabilir; spotu verilmeyen başlıklarda geniş örüntüye değinilip değinilmediği bilinemez.",
+   "missing_context": [
+    "Spotu metinde yer almayan haberlerin tam metni",
+    "Konunun yapısal boyutuna dair bağlam"
+   ]
+  }
+ ]
+}
