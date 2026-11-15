@@ -1,0 +1,246 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay'da bankacılık krizi hükümeti devirdi: Devlet Başkanı istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay Devlet Başkanı Pena, partisi destekli azil sürecinin ardından istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "355 milyon dolarlık emeklilik fonu krizi Pena’yı koltuğundan etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifa olgusunda bir başlık bankacılık krizini, diğeri azil sürecini, bir başkası fon tutarını öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgu, kurumların başlık uzunluğu ya da habere eriştikleri bilgi düzeyindeki farkla açıklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metni",
+    "Kurumların erişebildiği kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "355 milyon dolarlık emeklilik fonu krizi Pena’yı koltuğundan etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "iddiaların ardından partisinin de destek verdiği azil süreci sırasında görevinden istifa etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlık fon krizini istifanın doğrudan nedeni olarak kuruyor; aynı kurumun spotu ise yalnızca zaman sırası (\"ardından\", \"sırasında\") veriyor.",
+   "alternative_explanation": "İstifa açıklamasında krizin neden olarak belirtilmiş olması mümkündür.",
+   "missing_context": [
+    "Pena’nın istifa gerekçesinin tam metni"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ueno Bank skandalı Paraguay'ı sarstı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay'da fon skandalı devlet başkanını devirdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "\"Sarstı\" ve \"devirdi\" gibi imgeler kullanılıyor; bunların rol ya da eylem yolu atfeden canlı metafor mu yoksa kalıp deyim mi olduğu belirsiz.",
+   "alternative_explanation": "Bu ifadeler Türkçe haber dilinde yerleşik kalıplardır.",
+   "missing_context": [
+    "Kurumların bu ifadeleri benzer haberlerde kullanma sıklığı"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay'da Ueno Bank'a yönelik soruşturmayla bağlantılı olarak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; ancak başlıklar sorumluluğu adlandırılmış bir aktöre doğrudan atfetmiyor, özne çoğunlukla \"skandal\" ya da \"kriz\".",
+   "alternative_explanation": "Senato kararı gibi resmi işlemler başlığa yansıtılmış olabilir.",
+   "missing_context": [
+    "Soruşturmanın aşaması"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ueno Bank skandalı Paraguay'ı sarstı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay'da bankacılık krizi hükümeti devirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay'da özel banka battı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı banka olayı kurumların kendi sesinde \"skandal\", \"kriz\" ve \"battı\" sözcükleriyle anılıyor; \"skandal\" usulsüzlük, \"kriz\" ise koşul çağrışımı taşıyor.",
+   "alternative_explanation": "Sözcük seçimi kurumların kaynak ajans metnine bağlı olabilir.",
+   "missing_context": [
+    "Kaynak ajans metinleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ülkenin yakın demokratik tarihinde azil süreci sonucunda görevini kaybeden ikinci devlet başkanı oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir kurumun spotu olayı 2012’deki önceki azille birlikte bir dizi içine yerleştiriyor.",
+   "alternative_explanation": "Bilgi ajans metninden alınmış olabilir.",
+   "missing_context": [
+    "Bu arka planın diğer kurumlarda aynı sözcüklerle geçip geçmediği"
+   ]
+  }
+ ]
+}

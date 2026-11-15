@@ -1,0 +1,262 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "39 ilde 'Avcı' kıskacı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "yasa dışı bahis ağına darbe",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "'Avcı kıskacı' mecazı kurumun kendi başlığında polisi avcı, şüphelileri av rolüne yerleştiriyor; 'darbe' ifadesi de bir mücadele imgesi kuruyor.",
+   "alternative_explanation": "'Avcı' projenin resmi adıdır; 'kıskaç' ifadesi bu ada dayalı bir söz oyunu olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahse geçit yok!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "3.9 milyar TL'lik vurgun deşifre edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Batman merkezli 10 ilde yasadışı bahis operasyonu: 32 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "'Geçit yok!' ve 'vurgun deşifre edildi' ifadeleri kurumun kendi başlığında değerlendirme ve zafer tonu taşıyor; aynı Batman operasyonu başka kurumda nötr sayılarla veriliyor.",
+   "alternative_explanation": "'Vurgun' para hareketi büyüklüğünü anlatan yaygın bir haber sözcüğü olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahis çetesini AVCI yakaladı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul merkezli 39 ilde yasa dışı bahis operasyonu: 151 şüpheli yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişiler bir kurumun kendi sesinde 'çete', diğerinde '151 şüpheli' olarak adlandırılıyor; 'çete' suçu kesinleşmiş bir örgüt çağrışımı taşıyor.",
+   "alternative_explanation": "'Çete' resmi açıklamadaki 'suç örgütü' ifadesinin gündelik karşılığı olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yapay zeka destekli AVCI projesiyle 39 ilde yasa dışı bahis operasyonu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "39 ilde yasa dışı bahis operasyonu: 151 şüpheli yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı 39 illik operasyon bir başlıkta yapay zeka yöntemiyle, diğerinde yalnızca gözaltı sayısıyla öne çıkarılıyor.",
+   "alternative_explanation": "Bakanlık açıklamasında yöntemin vurgulanmış olması farklı başlıkları açıklayabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahis çetesini AVCI yakaladı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İçişleri Bakanlığı, yapay zekâ destekli AVCI projesinin kullanıldığı operasyonlarda 151 şüphelinin yakalandığını açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı gözaltılar bir kurumda kendi sesiyle 'çete', başka kurumda 'şüpheli' olarak anılıyor; 'çete' etiketi kimlik tanımının ötesinde suç değerlendirmesi taşıyor.",
+   "alternative_explanation": "'Çete' nitelemesi soruşturmanın 'suç örgütü' kapsamında yürütülmesine dayanan bir kısaltma olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahis çetesini AVCI yakaladı! İstanbul merkezli 39 ilde operasyon: Çok sayıda gözaltı var",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul merkezli 39 ildeki yasa dışı bahis operasyonlarında 151 şüpheli yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı başlıkta 'çete' etiketi ve yakalamanın yapay zeka sistemine atfedilmesi birlikte kullanılıyor; ikisi de operasyonu başarı olarak sunan aynı yönde işliyor. Başka bir kurum aynı olguyu bu birleşim olmadan veriyor.",
+   "alternative_explanation": "İki unsur resmi açıklamanın ana noktalarını özetleyen bir başlık olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

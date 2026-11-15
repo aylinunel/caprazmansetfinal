@@ -1,0 +1,178 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mesleği ev hanımı, aylık geliri 500 bin lira",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tutuklanan Fatma Betül Sayan Kaya, suçlamaları reddetti: Eşimle birikimimizi değerlendirmek istedik",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "'Ev hanımıyım' dedi, siyasileri işaret etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı ifade tutanağı bir kurumda gelir-meslek karşıtlığıyla, bir başkasında suçlamaların reddiyle, bir diğerinde siyasileri işaret etmesiyle çerçeveleniyor. Yargıya bağlanan açık bir tercih ise metinde yok.",
+   "alternative_explanation": "Uzun bir ifade metninden farklı kurumların farklı cümleleri seçmesi olağan editoryal seçimdir.",
+   "missing_context": [
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri",
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Haberlerin tam metinleri ve aynı olgu setine dayandıklarının teyidi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Aylık geliri dikkat çekti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Aylık geliri oldukça dikkat çeken Kaya ifadesinde",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurum gelir rakamını açıkça 'dikkat çeken' ayrıntı olarak öne çıkarıyor; ancak bu ayrıntının suç ya da masumiyet yargısına gerekçe yapıldığı metinde yazılı değil.",
+   "alternative_explanation": "500 bin TL gelir beyanı kamu yararı açısından haber değeri taşıyan bir bilgi olabilir.",
+   "missing_context": [
+    "Gelir ayrıntısının bir yargıya açıkça bağlandığını gösteren ifade",
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde duygu sezgiselinin için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Başlıklarda duygu ile bir risk/fayda tahmini arasında açık bir bağ kurulmuyor.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde olumsuzluk yanlılığının için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Bazı kurumların gelir rakamını öne çıkarması olumsuz kanıta orantısız ağırlık verildiğini kendi başına kanıtlamaz; karşılaştırmalı olumlu kanıt sunulmuyor.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "FATMA BETÜL SAYAN KAYA YALNIZ MI?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde temel yükleme hatasının için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Başlıklar Kaya'nın davranışını kalıcı bir karakter özelliğine bağlayan açık bir yargı içermiyor.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  }
+ ]
+}

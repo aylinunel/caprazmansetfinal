@@ -1,0 +1,145 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde erişilebilirlik sezgiselinin için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Metinde kolay hatırlanan örneklere dayanarak bir genelleme ya da tahmin yapıldığına dair açık ifade yok.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "34 ildeki dev yasa dışı bahis operasyonunda 90 tutuklama",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "MASAK incelemesinde şüphelilere ait hesaplarda 3 milyar 484 milyon liralık para hareketi tespit edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Büyük para hareketi rakamları ve 'dev' nitelemesi operasyonu çarpıcı kılıyor; bunun bir sıklık ya da risk yargısına dönüştürüldüğü ise gösterilmiyor.",
+   "alternative_explanation": "Para hareketi rakamı resmi kaynaktan aktarılan somut bir bilgidir; öne çıkarılması yanlı çıkarım anlamına gelmez.",
+   "missing_context": [
+    "Çarpıcı rakamın bir genellemeye dayanak yapıldığını gösteren ifade",
+    "Yasa dışı bahis operasyonlarının genel sıklığına dair veri"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "14 ilde eş zamanlı yasa dışı bahis operasyonunda 37 şüpheli adliyeye sevk edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Aydın merkezli 14 ilde bahis operasyonu: 34 tutuklama",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı Aydın merkezli operasyon bir başlıkta adliyeye sevk sayısıyla, bir başkasında tutuklama sayısıyla veriliyor; referans noktası değişiyor ancak bunun bir yargıyı değiştirdiği gösterilmiyor.",
+   "alternative_explanation": "Başlıklar sürecin farklı aşamalarında (sevk ve tutuklama) yayımlandığı için farklı rakamlar içeriyor olabilir.",
+   "missing_context": [
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri",
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Haberlerin tam metinleri ve aynı olgu setine dayandıklarının teyidi"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "gözaltına alınan 37 şüpheliden 34'ü tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Gözaltı sayısı sonraki tutuklama rakamı için bir başvuru noktası olarak metinde yer alıyor; ancak bir yargının bu sayıya haksız biçimde bağlı kaldığı gösterilmiyor.",
+   "alternative_explanation": "Gözaltı ve tutuklama sayılarının birlikte verilmesi standart adli haber pratiğidir.",
+   "missing_context": [
+    "Bir tahminin ya da kararın ilk rakama açıkça dayandırıldığını gösteren ifade"
+   ]
+  }
+ ]
+}

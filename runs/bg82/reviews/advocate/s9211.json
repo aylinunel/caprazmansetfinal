@@ -1,0 +1,229 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ağustosta MB’nin yıl sonu enflasyon tahmini yüzde 28’di.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "2026 yıl sonu enflasyon tahminimizi yüzde 29,5 olarak yukarı yönlü güncelledik",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "TCMB enflasyon tahminlerini 18. kez yükseltti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin önceki tahmini (yüzde 28) ve yeni tahmini (yüzde 29,5) yukarı yönlü güncelleme olarak birbirine bağlıyor; tahminlerin 18 kez yukarı revize edilmesi yetersiz düzeltmeye işaret edebilir, ancak bir akıl yürütme hatası açıkça gösterilmiyor.",
+   "alternative_explanation": "Revizyonlar enerji fiyatları gibi yeni verilere verilen yanıt olabilir; önceki tahmine yakın kalmak gerekçeli bir tercih olabilir.",
+   "missing_context": [
+    "Tahmin modelinin varsayımları",
+    "Önceki revizyonların gerekçeleri"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "TCMB enflasyon tahminlerini 18. kez yükseltti: 2026 sonu yüzde 29,5",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 12:08] Merkez Bankası yıl sonu enflasyon tahminini açıkladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası yıl sonu enflasyon tahminini yukarı yönlü güncelledi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı revizyon '18. kez yükseltti', 'açıkladı' ve 'yukarı yönlü güncelledi' biçimlerinde sunuluyor; bir yargının bu sunuma bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Kurumlar haberin farklı boyutlarını öne çıkarmış olabilir.",
+   "missing_context": [
+    "Okuyucu yargısındaki farkı gösteren veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İran savaşı hesapları bozdu: TCMB enflasyon tahminini yükseltti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "enflasyondaki düşüşün sürdüğünü ancak enerji fiyatları nedeniyle yavaşladığını söyledi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık çarpıcı bir jeopolitik olayı revizyonun nedeni olarak öne çıkarıyor; lede ise enerji fiyatlarını aktarıyor. Bu öne çıkarmanın bir yargıyı haksız etkilediği gösterilmiyor.",
+   "alternative_explanation": "Enerji fiyatlarının arkasındaki gelişme olarak savaş anılmış olabilir.",
+   "missing_context": [
+    "Enflasyon Raporu'ndaki revizyon gerekçeleri"
+   ]
+  },
+  {
+   "card_id": "optimism-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Enflasyonun; 2027 yıl sonunda ara hedeflerimiz olan yüzde 21'e, 2028 yıl sonunda yüzde 13,5'e, 2029 yıl sonunda yüzde 9'a geriledikten sonra",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Enflasyonun 2027 sonunda yüzde 15’e, 2028 yıl sonundaysa yüzde 9’a gerileyeceği öngörülmüştü.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "2026, 2027 ve 2028’e ilişkin enflasyon tahminlerini 18. kez yukarı yönlü revize etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "yıl sonu artış beklentisi yüzde 29,63'ten yüzde 30,04'e yükseldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin olumlu bir düşüş öngörüsü ile önceki tahminlerin tekrar tekrar yukarı revize edildiğini ve piyasa beklentisinin daha yüksek olduğunu birlikte veriyor; ancak bu kalibrasyon kanıtının öngörüde göz ardı edildiği açıkça gösterilmiyor.",
+   "alternative_explanation": "Öngörü para politikasının hedefini yansıtan bir yol haritası olabilir; revizyonlar beklenmedik şoklara dayanabilir.",
+   "missing_context": [
+    "Tahmin aralıkları ve varsayımlar",
+    "Geçmiş tahmin isabeti verisi"
+   ]
+  },
+  {
+   "card_id": "pessimism-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası'nın yıl sonu enflasyon tahmini yükseldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Tahmin var ama olumsuz olasılığın abartıldığını gösteren bir karşılaştırma yok; aksine piyasa beklentisi daha yüksek.",
+   "alternative_explanation": "Yükseltilen tahmin olumsuz bir abartı değil, yeni verilere uyum olabilir.",
+   "missing_context": [
+    "Gerçekleşen enflasyon verisi"
+   ]
+  }
+ ]
+}

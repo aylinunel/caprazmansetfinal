@@ -1,0 +1,231 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 13:00] SON DAKİKA! Emlak Katılım Katılımevim ve Birevim'i satın aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emlak Katılım; Katılımevim, Birevim ve İktisat Katılım'ın devri için gerekli izinleri aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dev Satın Alma Resmen Tamamlandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı KAP açıklaması 'izinleri aldı', 'satın aldı' ve 'dev satın alma tamamlandı' olarak sunuluyor; sunum farkı açık, bir yargının buna bağlandığı ise gösterilmiyor.",
+   "alternative_explanation": "Kurumlar izin sürecinin tamamlanmasını satın almanın tamamlanması olarak yorumlamış olabilir.",
+   "missing_context": [
+    "KAP açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Faizsiz ev ve araba almak için tasarruf finansmanlarına yatırım yapan binlerce kişinin beklediği haber geldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir haber tasarruf sahiplerinin beklentisini öne çıkarıyor; bunun bir yargıyı haksız etkilediği gösterilmiyor.",
+   "alternative_explanation": "Okuyucu kitlesi açısından en ilgili boyut bu olabilir.",
+   "missing_context": [
+    "Tasarruf sahiplerine etkisine dair resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "KAP bildirimi geldi: Satın alma süreci tamamlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "paylarının devralınmasına yönelik izin ve onayları aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Pay devirleri için ilgili kamu kurumlarından gerekli izin ve onaylar alındı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı haberin bir başlığı 'satın alma süreci tamamlandı' derken lede yalnızca izinlerin alındığını aktarıyor; karşılaştırma yapılabiliyor ancak farkın önemli ve haksız olduğu gösterilmiyor.",
+   "alternative_explanation": "Şirket açıklaması süreci tamamlanmış olarak nitelendirmiş olabilir.",
+   "missing_context": [
+    "Devir işleminin kapanış tarihi"
+   ]
+  },
+  {
+   "card_id": "extrinsic-incentive-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emlak Katılım; Katılımevim ve Birevim'i satın aldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir kişiye ya da gruba dış ödül güdüsü atfeden ve bunu içsel güdüyle karşılaştıran bir ifade yok.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Güdü atfı içeren ifadeler"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Katılımevim ve Birevim için yeni dönem! Devir için onay çıktı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin içsel motivasyon, beklenen ödül ve sonrasındaki düşüşe ilişkin bilgi içermiyor.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Motivasyon ve ödül bilgisi"
+   ]
+  },
+  {
+   "card_id": "nostalgia-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Katılımevim ve Birevim satıldı mı? Emlak Katılım hangi şirketleri devralıyor?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde nostaljik bir anı ya da geçmişi çağrıştıran bir ipucu yok.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Nostaljik ipucu içeren bir ifade"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, COP31 Liderler Zirvesi'nde 102 lideri ağırlayacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "COP31 liderler zirvesi bugün başlıyor: Anahtar kelime 'elektrifikasyon'",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Zirvenin başlaması olgusunda bir başlık ev sahipliği ve lider sayısını, diğeri politika içeriğini öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgu, kurumların başlık uzunluğu ya da habere eriştikleri bilgi düzeyindeki farkla açıklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metni",
+    "Kurumların erişebildiği kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dünyanın gözü Antalya'da! COP31'de liderler zirvesi başladı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "COP31 Liderler Zirvesi başlıyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kendi sesinde 'Dünyanın gözü Antalya’da!' değerlendirmesini kullanıyor; diğerleri aynı olguyu yalın veriyor.",
+   "alternative_explanation": "İfade yaygın bir haber kalıbı olabilir.",
+   "missing_context": [
+    "Kurumun benzer zirvelerdeki başlık dili"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Küresel iklim mücadelesine yön verecek COP31'in üçüncü gününde, küresel diplomasinin kalbi Antalya'da atıyor.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dünyanın gözünün çevrildiği",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "COP31 Liderler Zirvesi başlıyor — Antalya'da gerçekleşen BM İklim Değişikliği Çerçeve Sözleşmesi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kurumun spotunda \"yön verecek\", \"diplomasinin kalbi\" ve \"dünyanın gözü\" gibi birden çok olumlu sunum seçimi aynı yönde birleşiyor; başka bir kurum aynı olguyu bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Tanıtım niteliğindeki ajans metni kullanılmış olabilir.",
+   "missing_context": [
+    "Spotun kaynağı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan COP31 Liderler Zirvesi Açılış Programı'na katılacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, COP31 Liderler Zirvesi'nde 102 lideri ağırlayacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi için \"Başkan\" ve \"Cumhurbaşkanı\" unvanları kullanılıyor; farkın çağrışımsal mı yoksa yalnız üslupsal mı olduğu metinden kesinleşmiyor.",
+   "alternative_explanation": "Unvan farkı kurumların yerleşik yazım tercihi olabilir.",
+   "missing_context": [
+    "Kurumların unvan kullanım kılavuzu"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurum sesinde yalnızca iki seçenek sunan bir ifade yok.",
+   "alternative_explanation": "Metinde bu tekniğin koşullarını karşılayan kurum sesiyle yazılmış bir ifade bulunmuyor.",
+   "missing_context": [
+    "Başlık ve spot dışındaki haber metni"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Antalya'da gerçekleşen BM İklim Değişikliği Çerçeve Sözleşmesi 31. Taraflar Konferansı'nda (COP31)",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Spot zirveyi BM süreci içinde konumlandırıyor; ancak bu bir eğilim ya da önceki vakalar sunmaktan çok tanımlayıcı bilgi.",
+   "alternative_explanation": "Kurumsal ad yalnızca kimlik bilgisidir.",
+   "missing_context": [
+    "Önceki COP konferanslarına atıf"
+   ]
+  }
+ ]
+}

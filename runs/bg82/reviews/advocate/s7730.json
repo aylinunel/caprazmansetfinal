@@ -1,0 +1,238 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SON DAKİKA | Fon soruşturmasında yeni dalga! 4 yeni gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında yeni gelişme: 4 isim için yeniden gözaltı kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 20:10] Fon soruşturmasında 4 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı dört gözaltı 'yeni dalga', 'yeniden gözaltı' ve yalın gözaltı olarak sunuluyor; sunum farkı açık, yargı farkı ise metinde kurulmuyor.",
+   "alternative_explanation": "Kurumların bir kısmı iki ismin daha önce serbest bırakıldığı bilgisini öne çıkarmayı habere değer bulmuş olabilir.",
+   "missing_context": [
+    "Okuyucu yargısındaki farkı gösteren veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında dört kritik isme gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sermaye piyasası soruşturmasında BDDK Başkan Yardımcısı dahil 4 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar gözaltına alınanların unvanlarını öne çıkarıyor; ancak bu öne çıkarılmanın bir yargıyı haksız etkilediği gösterilmiyor.",
+   "alternative_explanation": "Üst düzey bir kamu görevlisinin gözaltısı nesnel olarak habere değerdir.",
+   "missing_context": [
+    "Gözaltı gerekçelerine dair savcılık açıklaması"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[diken · 20:23] Fon soruşturmasında iki gözaltı daha",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dirilis · 21:27] Fon soruşturmasında 2 kişi gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında Bulls Yatırım Yönetim Kurulu Başkanı Kemal Akkaya, eski Takasbank Genel Müdürü Yunus Arıncı, BDDK Başkan Yardımcısı Muhammet Erişen ve Ruzy Madencilik Yönetim Kurulu Başkanı Mehmed Nureddin Çevik gözaltına alındı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı yeniden anlatımlar dört gözaltıyı ikiye indiriyor; karşılaştırma yapılabiliyor, ancak farkın önemli ve haksız olduğu ya da bir sonucu etkilediği gösterilmiyor.",
+   "alternative_explanation": "Diken ve Diriliş, diğer iki gözaltı kararı açıklanmadan önce yayımlamış olabilir.",
+   "missing_context": [
+    "Yayın saatlerine göre savcılık açıklamalarının sırası"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "fon soruşturmasında tutuklu sayısı, 6 Kasım itibarıyla 113'e ulaştı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir önceki sayı var ama sonraki bir tahminin ya da kararın bu referans noktasına açıkça bağlandığı görülmüyor.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Bu sayıya dayanan bir tahmin veya karar"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında dört kritik isme gözaltı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir alandaki olumlu izlenimin başka bir alandaki yargıya bağlandığı bir ifade yok.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Kişilere dair değerlendirici yorumlar"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında 4 isim daha gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin içsel motivasyonla yapılan bir etkinlik, beklenen bir ödül ya da ödül sonrası düşüş içermiyor.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Ödül ve motivasyona ilişkin herhangi bir bilgi"
+   ]
+  }
+ ]
+}

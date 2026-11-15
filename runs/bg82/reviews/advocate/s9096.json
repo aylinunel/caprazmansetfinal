@@ -1,0 +1,167 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kayyım atanmıştı… Ozan Elektronik Para'nın faaliyet izni iptal edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası iki elektronik para kuruluşunun faaliyet iznini iptal etti — Türkiye Cumhuriyet Merkez Bankası (TCMB), Ozan Elektronik Para A.Ş. ile A Ödeme",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı karar bir haberde kayyım geçmişiyle, diğerinde yalın idari işlem olarak sunuluyor; bir yargının bu sunuma bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Geçmiş soruşturmayı hatırlatmak okuyucuya bağlam vermek için yapılmış olabilir.",
+   "missing_context": [
+    "İptal kararının gerekçesi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ozan Elektronik Para'nın sahibi Ozan Özerk kimdir?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık şirket sahibinin kimliğini öne çıkarıyor; bunun bir yargıyı haksız etkilediği gösterilmiyor.",
+   "alternative_explanation": "Sahibin kimliği okuyucu ilgisine yanıt veren bir bilgi olabilir.",
+   "missing_context": [
+    "İptal gerekçesi"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 00:08] Merkez Bankası, A Ödeme'nin faaliyet iznini iptal etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 00:26] Merkez Bankası Ozan Elektronik Para'nın faaliyet iznini iptal etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ozan Elektronik Para A.Ş. ile A Ödeme ve Elektronik Para Hizmetleri A.Ş.'nin faaliyet izinlerini iptal etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı yeniden anlatımlar iki kuruluştan yalnızca birini anıyor; karşılaştırma mümkün, ancak bu düzleşmenin bir sonucu haksız etkilediği gösterilmiyor.",
+   "alternative_explanation": "Kararlar Resmi Gazete'de ayrı tebliğlerle yayımlandığı için kurumlar tek tebliği haberleştirmiş olabilir.",
+   "missing_context": [
+    "Resmi Gazete tebliğlerinin metni"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Geçen sene kayyım atanmıştı… Merkez Bankası o kuruluşun faaliyet iznini iptal etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "yasa dışı bahis ve kara para aklama iddialarına ilişkin yürütülen soruşturma kapsamında kayyım atanan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık önce kayyım geçmişini, ardından iptal kararını sunarak bir sıra kuruyor; ancak okuyucunun sonraki bir tepkisi ya da yargısı metinde betimlenmiyor.",
+   "alternative_explanation": "Sıralama yalnızca kronolojik bağlam vermek için yapılmış olabilir.",
+   "missing_context": [
+    "Okuyucu tepkisine dair karşılaştırmalı veri"
+   ]
+  }
+ ]
+}

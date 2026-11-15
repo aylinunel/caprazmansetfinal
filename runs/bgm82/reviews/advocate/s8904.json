@@ -1,0 +1,277 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP trolleri hedef göstermişti: Gözaltına alınan Ahmet Şık'ın eşi Yonca Verdioğlu Şık serbest bırakıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Casusluk soruşturması: TİP milletvekili Ahmet Şık'ın eşi Yonca Şık serbest bırakıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı serbest bırakılma olgusunda bir başlık hedef gösterilmeyi, diğeri casusluk soruşturmasını öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgu, kurumların başlık uzunluğu ya da habere eriştikleri bilgi düzeyindeki farkla açıklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metni",
+    "Kurumların erişebildiği kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Feminist ve hak savunucusu Yonca Verdioğlu Şık",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Heinrich Böll Türkiye çalışanı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TİP'li Ahmet Şık'ın eşi Yonca Verdioğlu Şık gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi kurumların kendi sesinde \"feminist ve hak savunucusu\", \"Heinrich Böll Türkiye çalışanı\" ve \"Ahmet Şık’ın eşi\" olarak anılıyor; ilk etiket tanımlamanın ötesinde olumlu değerlendirme taşıyor.",
+   "alternative_explanation": "Etiketler kişinin kamuya açık rollerinin doğru tanımları olabilir.",
+   "missing_context": [
+    "Kişinin kendi tanımı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP iktidarının sosyal medya trollerinin fon soygunu paylaşımları",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ahmet Şık'ın eşi Yonca Verdioğlu Şık serbest bırakıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kendi sesinde \"troller\" ve \"fon soygunu\" sözcüklerini kullanıyor; diğerleri aynı olayı bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Kurum \"fon soygunu\" ifadesini Şık’ın kendi açıklamalarından aktarıyor olabilir.",
+   "missing_context": [
+    "İfadenin kime ait olduğu"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "\"siyasal veya askeri casusluk\" iddiasıyla yürütülen soruşturma kapsamında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "AKP trolleri hedef göstermişti:",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; bir başlık hedef gösterme eylemini adlandırılmış bir aktöre (\"AKP trolleri\") etken çatıyla ve iddia işareti olmadan atfediyor.",
+   "alternative_explanation": "Paylaşımlar kamuya açık ve doğrulanabilir olabilir.",
+   "missing_context": [
+    "Hedef gösterme iddiasının kaynağı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ahmet Şık'ın eşi askeri casusluktan gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "\"siyasal veya askeri casusluk\" iddiasıyla yürütülen soruşturma kapsamında gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı gözaltı bir kurumda \"casusluktan\" diye doğrudan, diğerinde \"iddiasıyla\" diye işaretlenerek veriliyor; ilki suçlamayı olgu gibi sunuyor.",
+   "alternative_explanation": "Başlık kısalığı nedeniyle \"iddia\" sözcüğü atılmış olabilir.",
+   "missing_context": [
+    "Haberin tam metni"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP trolleri hedef göstermişti:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "fon soygunu paylaşımları sonrası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Savcılıktaki ifadesi tamamlanan Yonca Verdioğlu Şık, işlemlerin ardından serbest",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kurumun başlığı ve spotunda \"troller\" etiketi ile \"fon soygunu\" nitelemesi aynı değerlendirme yönünde birleşiyor; başka bir kurum aynı olguyu bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Kurum siyasi bağlamı haberin gerekli parçası sayıyor olabilir.",
+   "missing_context": [
+    "Haberin tam metni"
+   ]
+  }
+ ]
+}

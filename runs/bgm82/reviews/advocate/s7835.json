@@ -1,0 +1,241 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kırmızı bültenle aranan uyuşturucu baronu Mersin'de yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özbekistan'ın kırmızı bültenle aradığı uyuşturucu zanlısı Mersin'de yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kırmızı bültenle aranan Özbekistan uyruklu şüpheli Mersin'de yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi kurumların kendi sesinde 'uyuşturucu baronu', 'uyuşturucu zanlısı' ve 'şüpheli' olarak anılıyor; 'baron' kimlik tanımının ötesinde suçun büyüklüğüne dair bir değerlendirme taşıyor.",
+   "alternative_explanation": "'Baron' nitelemesi resmi açıklamadaki ifadeden aktarılmış olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "İçişleri Bakanlığı açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kırmızı bültenle aranan uyuşturucu baronu Mersin'de yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özbekistan'ın kırmızı bültenle aradığı uyuşturucu zanlısı Mersin'de yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi için 'baron' ve 'zanlı' sözcükleri kullanılıyor; 'baron' güç ve suç örgütü liderliği çağrıştırırken 'zanlı' yalnızca hukuki statü bildiriyor.",
+   "alternative_explanation": "'Baron' sözcüğü bu tür haberlerde yerleşik bir kalıp olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kırmızı bültenle aranan baron Mersin'de yakalandı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kırmızı bültenle aranan Özbekistan uyruklu şüpheli Mersin'de yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Baron' değerlendirme yüklü bir sözcük olarak kurumun kendi başlığında ünlemle kullanılıyor; aynı olgu başka kurumda 'şüpheli' sözcüğüyle veriliyor.",
+   "alternative_explanation": "'Baron' sözcüğü uyuşturucu haberlerinde yaygın bir tanımlayıcı olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Seraların arasında gizleniyordu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mersin'de uluslararası operasyon",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özbekistan'ın kırmızı bültenle aradığı uyuşturucu baronu, Mersin’de yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı yakalama bir başlıkta saklanma yeri, bir başlıkta operasyonun uluslararası niteliği, bir başlıkta talep eden ülke üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Farklı ayrıntılar aynı resmi açıklamanın farklı unsurlarının seçilmesi olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mersin'de uyuşturucuyla mücadele kapsamında düzenlenen operasyonda",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Lede yakalamayı 'uyuşturucuyla mücadele kapsamında' bir operasyon olarak anıyor; ancak bu ifade bir eğilim, seri ya da politika sürecini somut biçimde ortaya koymuyor.",
+   "alternative_explanation": "İfade rutin bir operasyon tanımı olarak okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede'lerde açık bir nedensellik ifadesi bulunmuyor.",
+   "alternative_explanation": "Haberler bir yakalamayı aktarıyor.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

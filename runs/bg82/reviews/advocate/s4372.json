@@ -1,0 +1,147 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SPK'dan flaş karar: Tera ve Pusula'nın faaliyetleri geçici olarak durduruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SPK düğmeye bastı: Tera ve Pusula portföy faaliyetleri durduruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SPK, Tera Portföy ve Pusula Portföy'ün sermaye piyasası faaliyetlerini geçici olarak durdurdu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı SPK kararı bir yerde 'flaş karar', bir yerde 'düğmeye bastı', bir yerde nötr ve 'geçici' vurgusuyla aktarılıyor; çerçeve farkı gözlenebilir ama bunun bir yargıyı değiştirdiği gösterilmiyor.",
+   "alternative_explanation": "Başlık uzunluğu ve haber dili alışkanlıkları farklı sözcük seçimini açıklayabilir.",
+   "missing_context": [
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri",
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Haberlerin tam metinleri ve aynı olgu setine dayandıklarının teyidi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında sıcak gelişme!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kararın 'sıcak gelişme' olarak öne çıkarılması dikkat çekiciliği artırıyor; fakat bunun bir sıklık ya da risk yargısına dönüştürüldüğü görülmüyor.",
+   "alternative_explanation": "Süregelen bir soruşturmanın yeni aşaması olduğu için haber değeri vurgulanmış olabilir.",
+   "missing_context": [
+    "Dikkat çekici ayrıntının bir sonuca gerekçe yapıldığını gösteren ifade",
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sermaye Piyasası Kurulu (SPK), Tera Portföy ve Pusula Portföy'ün sermaye piyasası faaliyetlerini",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin yetkili kurum olarak SPK'yı açıkça tanımlıyor; ancak kurumun statüsünün bir iddiayı değerlendirmede belirleyici ve haksız ağırlık aldığı gösterilmiyor.",
+   "alternative_explanation": "Düzenleyici kurumun resmi kararını aktarmak, otoriteye haksız ağırlık vermek değildir; karar zaten haberin konusudur.",
+   "missing_context": [
+    "Kararın gerekçesi ve şirketlerin itirazları",
+    "Otoriteye dayanarak karşıt bir kanıtın göz ardı edildiğini gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde olumsuzluk yanlılığının için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Faaliyet durdurma haberi doğası gereği olumsuzdur; olumlu ve olumsuz kanıtların orantısız tartıldığına dair bir karşılaştırma yok.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sırbistan'da seçim şoku: Vucic yenilgiyi kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan’da seçimleri Öğrenci Listesi kazandı, Vucic yenilgiyi kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İsrail yanlısı Vucic 'öğrenciler' karşısında yenilgiyi kabul etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı seçim sonucu bir kurumda 'şok', bir kurumda öğrenci zaferi, bir başkasında İsrail yakınlığı üzerinden sunuluyor; olgu aynı, vurgu farklı. Ancak bu sunumun bir yargıyı değiştirdiğini gösteren açık bir bağ yok.",
+   "alternative_explanation": "Kurumlar farklı okur ilgilerine ve haber değerlerine göre farklı yönleri öne çıkarmış olabilir; bu tek başına okur yargısında çerçeve etkisi kanıtı değildir.",
+   "missing_context": [
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri",
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Haberlerin tam metinleri ve aynı olgu setine dayandıklarının teyidi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İsrail ile yakınlığı dikkat çeken Vucic yenilgiyi kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İsrail Başbakanı Netanyahu’nun \"dostum\" diyerek yakın ilişkiler kurduğu Sırp lider",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Seçim sonucundan bağımsız, dikkat çekici bir ayrıntı (İsrail yakınlığı) başlığa taşınmış; ancak bu ayrıntının bir yargıyı haksız biçimde belirlediği açıkça gösterilmiyor.",
+   "alternative_explanation": "Türkiye okuru için dış politika bağlamı haber değeri taşıyabilir; ayrıntının öne çıkarılması yanlı bir çıkarım olmadan da açıklanabilir.",
+   "missing_context": [
+    "Ayrıntının bir değerlendirmeyi ya da tahmini yönlendirdiğine dair açık ifade",
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sırbistan'da seçim şoku",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde duygu sezgiselinin için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "'Şok' gibi duygusal sözcükler tek başına bir risk/fayda tahmininin duyguyla ikame edildiğini göstermez.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "messenger-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde haberci etkisinin için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Vucic'in yenilgiyi kabul açıklaması tüm kurumlarca aynı biçimde aktarılıyor; mesajın kaynağa göre farklı değerlendirildiği görülmüyor.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  }
+ ]
+}

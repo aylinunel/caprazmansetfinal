@@ -1,0 +1,253 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "fear-appeal",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla açıklarında korkutan deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Muğla’nın Datça ilçesinin 253,19 kilometre açığında 5,1 büyüklüğünde deprem meydana geldi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sarsıntının 9,07 kilometre derinlikte kaydedildiği bildirildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurum kendi başlığında depremi 'korkutan' diye niteliyor; diğer kurumların verdiği ölçeğe göre deprem 5,1 büyüklüğünde ve kıyıdan 253 km açıkta. Başlıkta bu ölçek yer almıyor.",
+   "alternative_explanation": "Sarsıntının kıyıda hissedilmiş olması 'korkutan' nitelemesini olgusal kılabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Depremin karada hissedilip hissedilmediği"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla açıklarında korkutan deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Muğla açıklarında 5,1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Korkutan' değerlendirme sözcüğü kurumun kendi başlığında yer alıyor; aynı deprem başka kurumda bu sözcük olmadan büyüklük bilgisiyle veriliyor.",
+   "alternative_explanation": "'Korkutan deprem' Türk haber dilinde yaygın bir kalıp olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla açıklarında 5.1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Akdeniz'de 5,1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AFAD duyurdu: Datça açıklarında 5,1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı deprem bir başlıkta Muğla kıyısına yakınlık, bir başlıkta açık deniz konumu, bir başlıkta resmi kaynak üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Konum seçimi AFAD duyurusundaki en yakın yerleşim ifadesine dayanıyor olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla Datça açıklarında 5.1 büyüklüğünde sarsıntı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Akdeniz'de 5,1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olay için 'sarsıntı' ve 'deprem', 'Muğla açıkları' ve 'Akdeniz' gibi farklı sözcükler kullanılıyor; farkın çağrışım farkı mı yoksa üslup farkı mı olduğu belirgin değil.",
+   "alternative_explanation": "'Sarsıntı' ve 'deprem' haber dilinde eşanlamlı kullanılır.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla açıklarında 5.1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Osmaniye'de 4,2 büyüklüğünde deprem meydana geldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar tek bir depremi bağımsız bir olay olarak veriyor ve bölgedeki sismik etkinliğe değinmiyor; ancak sağlanan bağlam bu depremin tekrarlayan ya da yapısal bir örüntünün parçası olduğunu açıkça göstermiyor.",
+   "alternative_explanation": "Anlık deprem duyuruları doğası gereği tek olay odaklıdır.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Doğal bir afet haberinde sorumluluğu belirsiz bir soruşturma ya da sorumluluk atfeden bir başlık dilbilgisi yok.",
+   "alternative_explanation": "Haberler doğal bir olayın ölçümünü aktarıyor.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}
