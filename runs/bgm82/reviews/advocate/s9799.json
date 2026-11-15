@@ -1,0 +1,263 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "selective-statistics",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "333 bini aşkın yatırımcı tamamını aldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "444 bin 893 yatırımcıya yaklaşık 161 milyar TL",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "haksız kazanç elde ettiği belirlenen yatırımcıların ara ödeme kapsamı dışında bırakıldığı bildirildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Tam ödeme alan yatırımcı payı (333 bin / 444 bin) başlıklarda öne çıkıyor; kapsam dışı bırakılan yatırımcılara değinen bir kurum olsa da karşılaştırılabilir başka bir nüfusun belgelendiği söylenemez.",
+   "alternative_explanation": "Rakamlar resmi açıklamadaki kapsamla sınırlı biçimde aktarılmış olabilir.",
+   "missing_context": [
+    "Toplam etkilenen yatırımcı sayısı",
+    "Ödeme alamayan yatırımcıların durumu"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "333 bin 493 yatırımcı net yatırım tutarının tamamını aldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "haksız kazanç elde ettiği belirlenen yatırımcıların ara ödeme kapsamı dışında bırakıldığı bildirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı kurumlar tam ödeme alanların sayısını başlığa taşıyor; aynı açıklamadan kapsam dışı kalan yatırımcılar başka bir kurumda veriliyor. Bu bilginin genel sonucu sınırlayıp sınırlamadığı ve ilgili kurumun girişinde yer alıp almadığı tam görülemiyor.",
+   "alternative_explanation": "Başlıklar açıklamanın ana rakamlarını özetliyor olabilir.",
+   "missing_context": [
+    "Açıklamanın tam metni",
+    "Kesik girişlerin devamı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: 161 milyar lira ödeme yapıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SON DAKİKA! Fon tasfiyesinde 161 milyar TL ödeme: 333 bini aşkın yatırımcı tamamını aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon tasfiyesinde 161 milyar TL ödeme: 444 bin yatırımcıya ulaşıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ödeme açıklaması bir kurumda fon dolandırıcılığı boyutuyla, diğerlerinde tam ödeme alanlar ya da ulaşılan yatırımcı sayısı gibi kazanım boyutuyla öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar olayın farklı yönlerini önemli bulmuş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon tasfiyesinde 444 bin 893 yatırımcıya yaklaşık 161 milyar TL!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "333 bin 493 yatırımcı net yatırım tutarının tamamını aldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon tasfiyesinde 161 milyar TL ödeme yapıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum başlığında ünlem ve tam ödeme alanların sayısını birlikte öne çıkarıyor; ancak bunların aynı yönde iki ayrı sunum tercihi oluşturup oluşturmadığı belirsiz.",
+   "alternative_explanation": "Kurum resmi açıklamanın ana rakamlarını aktarıyor olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: 161 milyar lira ödeme yapıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon tasfiyesinde 161 milyar TL ödeme yapıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı süreç bir kurumda 'fon vurgunu', diğerinde 'fon tasfiyesi' olarak adlandırılıyor; 'vurgun' dolandırıcılık çağrıştırırken 'tasfiye' nötr bir idari süreç çağrıştırıyor.",
+   "alternative_explanation": "'Fon vurgunu' kurumun bu konudaki haber dizisinin başlığı olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların ifadelerinde açık bir nedensellik iddiası yok.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  }
+ ]
+}

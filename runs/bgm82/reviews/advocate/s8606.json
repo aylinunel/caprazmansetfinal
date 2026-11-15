@@ -1,0 +1,254 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "TSK'dan ihraç edilen 5 teğmen",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "kılıç çatarak disiplinsiz davranış sergileyen ve sonrasında TSK'dan ihraç edilen 5 eski teğmen",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İhraç teğmenlerin mesnetsiz iddialarına",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişiler bir kurumda yalnızca 'ihraç edilen teğmenler', bir başkasında 'disiplinsiz davranış sergileyen eski teğmenler' diye anılıyor; ikinci etiket tanımlamanın ötesinde bir değerlendirme taşıyor.",
+   "alternative_explanation": "Disiplinsizlik nitelemesi ihraç kararının gerekçesini aktarıyor olabilir.",
+   "missing_context": [
+    "İhraç kararının gerekçesi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kılıçlı yemin sonrası 5 teğmene iftira suçundan 4 yıla kadar hapis istendi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İhraç teğmenlerin mesnetsiz iddialarına iftira davası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TSK'dan ihraç edilen 5 teğmen hakim karşısında! İddianame kabul edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı iddianame kimi başlıkta yemin olayı, kimisinde teğmenlerin iddialarının dayanaksızlığı, kimisinde yargılama aşaması öne alınarak veriliyor.",
+   "alternative_explanation": "Kurumlar davanın farklı unsurlarını öne almış olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kılıç çatma ve korsan yemin",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "kılıçlı yemin etmeleri",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "kılıç çatarak “Mustafa Kemal'in askerleriyiz” sloganı atan",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı tören eylemi bir kurumda 'korsan yemin', diğerinde 'kılıçlı yemin' ya da slogan atma olarak adlandırılıyor; 'korsan' sözcüğü izinsiz ve kuraldışı olma çağrışımı taşıyor.",
+   "alternative_explanation": "'Korsan yemin' ifadesi resmi açıklamalarda kullanılan bir terim olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "bu kez \"iftira\" suçlamasıyla iddianame hazırlandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "TSK'dan ihraç edilen 5 teğmen hakkında iddianame",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Haberler tek bir davayı anlatıyor; bir kurum 'bu kez' diyerek önceki süreçlere değiniyor, ancak bağlam sorunun yapısal ya da tekrarlayan bir örüntü olduğunu belgelemiyor.",
+   "alternative_explanation": "Konu tek bir olayın hukuki sürecidir; tek vaka anlatımı doğal.",
+   "missing_context": [
+    "Davanın önceki aşamaları"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Teğmenler, 9 Şubat 2027’de hâkim karşısına çıkacak.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İhraç teğmenlerin mesnetsiz iddialarına iftira davası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ancak iddialarını destekleyen somut delil bulunamadı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Dava henüz görülmemişken bir kurum başlığında teğmenlerin iddialarını kendi sesiyle 'mesnetsiz' diye niteliyor ve girişte delil bulunamadığını bir kaynak işareti olmadan bildiriyor.",
+   "alternative_explanation": "Delil bulunamadığı bilgisi iddianameden aktarılmış olabilir.",
+   "missing_context": [
+    "İddianamedeki delil değerlendirmesi",
+    "Mahkeme kararı"
+   ]
+  }
+ ]
+}

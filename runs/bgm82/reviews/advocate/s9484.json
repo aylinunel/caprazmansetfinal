@@ -1,0 +1,241 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "New York'ta korkunç olay!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "faciaya yol açtı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "New York'ta bina çöktü — New York'un Brooklyn kentinde çöken binanın enkazı altında kalan en az bir kişi öldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kendi sesiyle 'korkunç olay' ve 'facia' sözcüklerini kullanırken aynı olgular başka bir kurumda bu nitelemeler olmadan veriliyor.",
+   "alternative_explanation": "Can kaybı olan bir çökmeyi 'facia' diye anmak olayın ağırlığıyla orantılı bir betimleme sayılabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "bir binanın kısmen çökmesi faciaya yol açtı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "bir binanın kısmen çökmesi sonucu en az 2 kişi yaşamını yitirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı çökmenin sonucu bir kurumda 'facia' sözcüğüyle, diğerinde can kaybı rakamıyla adlandırılıyor; 'facia' değerlendirme yüklü bir çağrışım taşıyor.",
+   "alternative_explanation": "Fark üslup ve vurgu farkı olabilir; iki ifade aynı olguyu doğru biçimde anlatıyor.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "New York'ta çöken binanın enkazı altında kalan 8 kişi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "New York'ta bina çöktü: Enkazda arama çalışmaları sürüyor!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "New York'ta bina çöktü: Çok sayıda ölü var",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı çökme kimi başlıkta kesin ölü sayısıyla, kimisinde süren arama-kurtarma süreciyle, kimisinde sayısız 'çok sayıda ölü' vurgusuyla öne çıkarılıyor.",
+   "alternative_explanation": "Farklılık, bilginin geldiği saat ve kaynaktaki farklılıktan doğmuş olabilir.",
+   "missing_context": [
+    "Başlıkların güncellenme saatleri"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "faciaya yol açtı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "ilk belirlemelere göre 1 kişi hayatını kaybederken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum 'facia' gibi felaket sözcüğü kullanıyor ve aynı girişte ölçek (1 can kaybı) veriliyor; sözcüğün ölçekle orantısız olup olmadığı açık değil.",
+   "alternative_explanation": "Can kaybı ve enkaz altında kalanlar olan bir çökme için 'facia' orantılı bir ifade sayılabilir.",
+   "missing_context": [
+    "Kesinleşen can kaybı ve yaralı sayısı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "New York'ta bina çöktü",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "inşaat alanının yanındaki 3 katlı bir bina çöktü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Olay açık; ancak hiçbir başlık ya da giriş çökmeyi bir eğilim, önceki vakalar ya da denetim süreci bağlamına yerleştirmiyor, yalnızca konum bilgisi veriliyor.",
+   "alternative_explanation": "Haber ilk saatlerde yazıldığı için bağlam bilgisi henüz yoktu.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde iki seçenekli bir ikilem sunulmuyor.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  }
+ ]
+}

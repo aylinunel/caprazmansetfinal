@@ -1,0 +1,261 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "'Daltonlar' suç örgütüne 30 ilde dev operasyon",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Daltonlar suç örgütüne büyük operasyon!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Daltonlar suç örgütüne 30 ilde operasyon: 85 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar operasyonu 'dev' ve 'büyük' diye niteliyor; aynı olgu başka kurumlarda bu nitelemeler olmadan veriliyor.",
+   "alternative_explanation": "'Dev' ve 'büyük' 30 ili kapsayan bir operasyonun ölçeğini betimleyen sözcükler olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "30'u suça sürüklenen çocuk olmak üzere 85 şüpheli",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "30'u çocuk 85 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişiler bir kurumda 'suça sürüklenen çocuk', diğerinde yalnızca 'çocuk' diye anılıyor; fark hukuki terim ile kısa ifade arasında olup çağrışım farkı belirsiz.",
+   "alternative_explanation": "'Suça sürüklenen çocuk' yasal bir terimdir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Daltonlar suç örgütüne 30 ilde operasyon",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Yeni nesil suç örgülerine operasyon",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sosyal medyadan tetikçi ağı kuran suç örgütüne operasyon",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı örgüt bir kurumda adıyla, bir başkasında 'yeni nesil suç örgütü', bir diğerinde 'tetikçi ağı kuran örgüt' diye anılıyor; bu etiketler tanımlamanın ötesinde nitelendirme taşıyor.",
+   "alternative_explanation": "Etiketler emniyet açıklamasındaki bilgileri özetliyor olabilir.",
+   "missing_context": [
+    "Emniyet açıklamasının metni"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sosyal medyadan tetikçi ağı kuran suç örgütüne operasyon: 85 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "30 ilde Daltonlar'a operasyon. 30'u çocuk 85 şüpheli gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Daltonlar suç örgütüne büyük operasyon! 30 ilde 85 gözaltı var",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı operasyon kimi başlıkta örgütün yöntemi, kimisinde çocuk şüpheliler, kimisinde operasyonun ölçeği öne alınarak veriliyor.",
+   "alternative_explanation": "Kurumlar farklı haber değerlerini öne almış olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde felaket ya da tehdit sözcükleri bulunmuyor.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Daltonlar suç örgütüne 30 ilde operasyon: 85 gözaltı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yeni nesil suç örgütüne 30 ilde operasyon",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Çoğu başlık tek bir operasyonu anlatıyor; ancak bağlam sorunun tekrarlayan ya da yapısal olduğunu belgelemiyor ve bazı kurumlar 'yeni nesil' ifadesiyle daha geniş bir olguya gönderme yapıyor.",
+   "alternative_explanation": "Tek bir operasyonun haberleştirilmesi olağandır.",
+   "missing_context": [
+    "Benzer örgütlere yönelik önceki operasyon verileri"
+   ]
+  }
+ ]
+}

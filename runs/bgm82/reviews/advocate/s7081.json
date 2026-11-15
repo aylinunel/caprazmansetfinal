@@ -1,0 +1,271 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakan Bolat şikayet etmişti: Murat Ağırel ve İsmail Saymaz hakkında 14 yıl hapis cezası talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolat ve bakanlara fon iftirasına iddianame!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İsmail Saymaz ve Murat Ağırel için istenen ceza belli oldu: Haklarında 5 ayrı suçlama var",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı iddianame bir kurumda şikayetçinin bakan olması, bir başkasında gazetecilerin 'iftira'sı, bir diğerinde suçlama sayısı öne alınarak veriliyor.",
+   "alternative_explanation": "Kurumlar iddianamenin farklı unsurlarını haber değeri yüksek bulmuş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gazeteciler İsmail Saymaz ve Murat Ağırel",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "iftiralarda bulunan Cumhuriyet yazarları İsmail Saymaz ve Murat Ağırel",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon skandalını gündeme getiren gazeteciler",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişiler bir kurumda 'gazeteciler', bir başkasında 'iftiralarda bulunan yazarlar', bir diğerinde 'skandalı gündeme getiren gazeteciler' diye anılıyor; son iki etiket tanımlamanın ötesinde zıt yönlü değerlendirmeler taşıyor.",
+   "alternative_explanation": "Kurumlar iddianamenin ya da sanıkların bakış açısını aktarıyor olabilir.",
+   "missing_context": [
+    "İddianamenin içeriği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "fon iftirasına iddianame",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon skandalını gündeme getiren",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "fon soruşturmasına ilişkin dile getirdikleri iddialar",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Gazetecilerin aynı açıklamaları bir kurumda 'iftira', bir başkasında 'skandalı gündeme getirme', bir diğerinde 'dile getirilen iddialar' olarak adlandırılıyor; sözcükler zıt çağrışımlar taşıyor.",
+   "alternative_explanation": "Kurumlar tarafların diline yakın durmuş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İddianamede iki gazeteci için toplam 14 yıl 10 aya kadar hapis cezası talep edildi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bolat ve bakanlara fon iftirasına iddianame!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "iftiralarda bulunan Cumhuriyet yazarları",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Yargılama yalnızca iddianame aşamasındayken bir kurum başlık ve girişte gazetecilerin 'iftira' ettiğini kendi sesiyle, 'iddia' ya da 'savcılığa göre' gibi bir işaret olmadan belirtiyor.",
+   "alternative_explanation": "'İftira' sözcüğü iddianamedeki suç adının kısaltması olarak kullanılmış olabilir.",
+   "missing_context": [
+    "Mahkeme kararı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların ifadelerinde iki seçenekli bir ikilem yok.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bir iddianame de İsmail Saymaz ve Murat Ağırel’e",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İsmail Saymaz ve Murat Ağırel dahil dört isme istenen ceza belli oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar iddianameyi gazetecilere yönelik bir dizi kovuşturmanın parçası ('bir iddianame de') ya da birden çok gazeteciyi kapsayan bir süreç olarak sunuyor.",
+   "alternative_explanation": "Bu çerçeve kovuşturmaların sayısına dair olgusal bir bilgiyi yansıtıyor olabilir.",
+   "missing_context": [
+    "Gazetecilere yönelik önceki iddianameler"
+   ]
+  }
+ ]
+}
