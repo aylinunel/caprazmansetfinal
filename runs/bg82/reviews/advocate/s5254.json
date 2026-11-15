@@ -1,0 +1,124 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tarihi zafer! Şampiyon Kimi Antonelli",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kimi Antonelli 2026 Formula 1 dünya şampiyonu oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde çerçeveleme etkisi için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "20 yaşında Formula 1'in en genç şampiyonu oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kimi Antonelli 2026 Formula 1 dünya şampiyonu oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar yaş ve rekor ayrıntısını öne çıkarırken diğerleri yalnızca şampiyonluğu veriyor; karşılaştırmalı başlık davranışı var, ancak bu belirgin ayrıntının haksız bir yargıya yol açtığı gösterilmiyor.",
+   "alternative_explanation": "En genç şampiyon olmak olayın haber değeri taşıyan gerçek bir özelliğidir.",
+   "missing_context": [
+    "Belirgin ayrıntının bir yargıyı haksız biçimde etkilediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Babasına göre Kimi Antonelli, daha üç yaşında doğuştan yetenekli bir sürücüydü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hale etkisi için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı. Yetenek değerlendirmesi babaya atfedilmiş ve başka bir alana taşınmıyor.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  }
+ ]
+}

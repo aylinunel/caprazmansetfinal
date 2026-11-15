@@ -1,0 +1,243 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in amcasına İstanbul'da maskeli dört kişiden saldırı: Ailenin avukatından açıklama",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in amcasına saldırı. Maskeli dört kişi \"Davayı bırakın\" diyerek dövdü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in amcasına saldırı: 'Sıra Nizamettin'e de gelecek\"",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı saldırıyı bir kurum bilgi kaynağı olan avukat, bir başkası fiziksel şiddet, bir diğeri babaya yönelik tehdit üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgular farklı kaynak açıklamalarına (avukat, baba) dayanıyor olabilir.",
+   "missing_context": [
+    "Saldırıya dair resmi kolluk açıklaması"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Maskeli dört kişi \"Davayı bırakın\" diyerek dövdü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "\"Davayı bırakın\" diyerek darp ettiler",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in ailesine \"Davadan çekilin\" yumruğu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı eylem 'dövdü', 'darp ettiler' ve 'yumruğu' sözcükleriyle anlatılıyor; ancak fark çoğunlukla üslup ve somutluk düzeyinde ve çağrışım farkı açık değil.",
+   "alternative_explanation": "Sözcükler aynı eylemin eşanlamlı ya da kısaltılmış anlatımlarıdır.",
+   "missing_context": [
+    "Saldırının niteliğine dair tıbbi ya da resmi kayıt"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ailesine yönelik tehditlere bir yenisi daha eklendi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in amcasına saldırı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum olayın aileye yönelik tekrarlayan tehditlerin parçası olduğunu belirtiyor; spotsuz bir başlık yalnızca tek saldırıyı veriyor, ancak metinde spot bulunmaması bir veri sınırlaması olabilir ve haberin gövdesinde geniş örüntüye atıf olup olmadığı görülemiyor.",
+   "alternative_explanation": "Spotu olmayan başlıklar kısalık gereği tek olayı aktarır; Rojin Kabaiş adının anılması zaten davaya bir atıftır.",
+   "missing_context": [
+    "Spotsuz haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kimliği belirsiz dört kişinin saldırısına uğradı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Maskeli 4 kişi Rojin Kabaiş’in amcasına saldırdı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Saldırganların kimliği belirsiz; başlıklar etken çatıyı yalnızca adı belirtilmemiş 'maskeli 4 kişi' için kullanıyor ve adlandırılmış bir aktöre kusur yüklemiyor.",
+   "alternative_explanation": "Başlıklar olayın olgusal anlatımını veriyor.",
+   "missing_context": [
+    "Soruşturmanın durumu"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: Rojin Kabaiş'in amcasına saldırı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Van'da kaybolduktan sonra cansız bedeni bulunan üniversite öğrencisi Rojin Kabaiş'in ailesine yönelik tehditlere bir yenisi daha eklendi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum spotunda saldırıyı aileye yönelik bir dizi tehdidin son halkası ve süren ölüm soruşturmasının bağlamı içinde veriyor.",
+   "alternative_explanation": "Ölüm soruşturmasına atıf olayın anlaşılması için gerekli olgusal bağlamdır.",
+   "missing_context": [
+    "Önceki tehditlere dair belgeler"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olgusal gelişmeyi aktarıyor; ya-ya da yapısında bir seçenek daraltması yok.",
+   "missing_context": [
+    "İki seçenekli bir kurgu içeren başlık ya da spot"
+   ]
+  }
+ ]
+}

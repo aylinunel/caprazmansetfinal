@@ -1,0 +1,200 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pendik'te korkunç kaza! CHP'li ilçe başkanı Abidin Ekren ağır yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP Pendik İlçe Başkanı Abidin Ekren feci kazada ağır yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP Pendik İlçe Başkanı Abidin Ekren trafik kazasında ağır yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar 'korkunç' ve 'feci' gibi olumsuz yoğunlaştırıcılar kullanırken diğerleri aynı olguyu yalın veriyor; ancak olumsuz bilginin karşılaştırılabilir olumlu bilgiye göre fazla ağırlık aldığı ve bir değerlendirmeyi etkilediği gösterilmiyor.",
+   "alternative_explanation": "Ağır yaralanmalı bir kazada olumsuz sıfatlar olayın ciddiyetiyle orantılı bir anlatım olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı",
+    "Olumsuz vurgunun bir karara etkisini gösteren kayıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pendik'te korkunç kaza! CHP'li ilçe başkanı Abidin Ekren ağır yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP Pendik İlçe Başkanı Abidin Ekren feci kazada ağır yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP Pendik İlçe Başkanı Abidin Ekren trafik kazasında ağır yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Kazanın çarpıcılığı bazı kurumlarda 'korkunç kaza!' ve 'feci kazada' ile öne çıkarılmış, diğerlerinde yalın verilmiş; karşılaştırmalı davranış var ama haksız bir yargı etkisi metinde yok.",
+   "alternative_explanation": "Sıfat seçimi kurumların genel üslubunu yansıtıyor olabilir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir çıkarımı ya da kararı yönlendirdiğine dair açık ifade"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pendik İlçe Başkanımız, kıymetli yol arkadaşımız Abidin Ekren’in geçirdiği trafik kazasını derin bir üzüntüyle öğrendim",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde duygu sezgisi için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı. Aktarılan üzüntü ifadesi bir risk ya da fayda tahminine bağlanmıyor.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pendik'te korkunç kaza! CHP'li ilçe başkanı Abidin Ekren ağır yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP Pendik İlçe Başkanı Abidin Ekren trafik kazasında ağır yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olgu farklı yoğunlukta sözcüklerle sunulmuş; ancak sunum farkının bir tercihi değiştirdiğine dair açık gerekçe metinde bulunmuyor.",
+   "alternative_explanation": "Fark editoryal üsluptan kaynaklanabilir; olgular tüm başlıklarda aynıdır.",
+   "missing_context": [
+    "Sunuma bağlı bir yargı değişikliğinin kaydı"
+   ]
+  },
+  {
+   "card_id": "identifiable-victim-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde tanımlanabilir kurban etkisi için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı. Adı verilen bir kişi var ancak bir yardım ya da kaynak tahsisi kararı yok.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  }
+ ]
+}

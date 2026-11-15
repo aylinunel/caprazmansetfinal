@@ -1,0 +1,156 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde çerçeveleme etkisi için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesinde 34 tutuklama! Emrah Kozay görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediye Başkanı Emrah Kozay tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık tutuklama sayısını ünlemle öne çıkarırken diğerleri başkanın tutuklanmasını yalın veriyor; karşılaştırmalı vurgu farkı var, ancak yargıya etkisi gösterilmiyor.",
+   "alternative_explanation": "Tutuklu sayısı soruşturmanın kapsamını gösteren ilgili bir bilgidir.",
+   "missing_context": [
+    "Belirgin sayının bir sonuca gerekçe yapıldığına dair açık ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde olumsuzluk yanlılığı için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde erişilebilirlik sezgisi için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İçişleri Bakanlığı duyurdu: Çukurova Belediye Başkanı Emrah Kozay görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde otorite yanlılığı için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  }
+ ]
+}

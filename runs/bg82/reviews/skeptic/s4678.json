@@ -1,0 +1,227 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de derbi mağlubiyetinin ardından teknik direktör İsmail Kartal gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de İsmail Kartal istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Takvim ayrılığı 'gönderildi', TGRT 'istifa etti' diye veriyor; bu iki betimleme olgusal olarak eşdeğer değil. Kurumlar aynı olayı farklı sözcük ve vurgularla veriyor; ancak metin betimlemelerin karar açısından eşdeğer olduğunu açıkça kurmuyor ve hiçbir tercih ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, editoryal üslup, karakter sınırı, kaynak erişimi ya da haber değeri tercihinden kaynaklanabilir; bunlar bilişsel bir hata kanıtı değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin yargısını gösteren veri",
+    "Farklı sunumların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Galatasaray mağlubiyeti sonrası deprem! İsmail Kartal istifa etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı öne çıkarıyor; fakat metin bu ayrıntıyı açıkça bir yargı ya da seçime bağlamıyor, çarpıcılık tek başına hata kanıtı değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması olayın gerçekten önemli bir unsuru olması, haber değeri ya da okunma kaygısıyla açıklanabilir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin bir kararda nasıl tartıldığını gösteren karşılaştırmalı kanıt",
+    "Editör ya da okur yargısına dair doğrudan kayıt"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de derbi mağlubiyetinin ardından teknik direktör İsmail Kartal gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kartalın görevden ayrılma isteğinin kabul edildiği bildirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kulüp açıklamasını aktaran Evrensel ayrılığı Kartal'ın isteği olarak verirken Takvim 'gönderildi' diyor. Kurumların aktarımları arasında bazı ayrıntılar farklılaşıyor ya da düşüyor; bu bir aktarım/özet etkisine işaret edebilir, ancak farkın önemli, gerekçesiz ve bir sonuca etkili olduğu gösterilmiyor.",
+   "alternative_explanation": "Farklar erken saatteki eksik bilgiye, ajans metninin kısaltılmasına, başlık uzunluğu sınırına ya da sonradan güncellenen resmi verilere bağlı olabilir.",
+   "missing_context": [
+    "Özgün kaynak metni (resmi açıklama ya da ajans bülteni)",
+    "Haberlerin güncellenme geçmişi",
+    "Farkın bir sonuca ya da karara etkisini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de İsmail Kartal derbi mağlubiyetinin nedenini açıkladı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir kişinin davranışını kalıcı bir kişilik özelliğine bağlayan ve durumsal etkenleri gerekçesizce göz ardı eden açık bir yargı yok.",
+   "alternative_explanation": "Haberler olayı ve sonucunu aktarıyor; kişilik yargısı yerine olgusal bilgi veriliyor olabilir.",
+   "missing_context": [
+    "Davranışa ilişkin durumsal etkenlerin nasıl değerlendirildiğini gösteren ifade",
+    "Farklı bağlamlardaki davranışların karşılaştırması"
+   ]
+  },
+  {
+   "card_id": "outcome-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de derbi mağlubiyetinin ardından teknik direktör İsmail Kartal gönderildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir sonucu (mağlubiyet, ayrılık) aktarıyor; ancak bir değerlendiricinin karar sürecini yeterli kabul ettiği hâlde kararın kalitesini yalnızca sonuca bakarak yeniden yargıladığı açıkça görülmüyor.",
+   "alternative_explanation": "Sonucun ardından yapılan değişiklik, sonuca bağlı yeni bilgiye dayalı meşru bir sonraki karar olabilir.",
+   "missing_context": [
+    "Kararı veren ve onu değerlendiren aktörün açık gerekçesi",
+    "Karar anında mevcut bilgilere dair kayıt"
+   ]
+  },
+  {
+   "card_id": "recency-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "İlk başlık: 2026-10-27T00:44 · son başlık: 2026-10-27T22:39",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberler zaman damgalı bir sıra oluşturuyor; fakat sonraki bilginin önceki benzer bilgiden daha kolay hatırlandığını ya da daha çok ağırlık aldığını gösteren açık bir ifade yok.",
+   "alternative_explanation": "Sonraki haberlerin farklı olması olayın gelişmesi ve yeni resmi bilginin gelmesiyle açıklanabilir.",
+   "missing_context": [
+    "Bir karar vericinin önceki ve sonraki bilgiyi nasıl tarttığını gösteren kayıt"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dünya Gazetesi’nin sahibi gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında yeni gelişme: Umut Güner gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı gözaltını bir kurum kişinin medya sahipliği üzerinden, bir başkası fon soruşturmasının yeni aşaması olarak ve gazete adını anmadan veriyor.",
+   "alternative_explanation": "Kişinin kamuoyunda en tanınan sıfatı ya da soruşturmanın adı haber başlığı için doğal seçimlerdir.",
+   "missing_context": [
+    "Gözaltı gerekçesine dair resmi açıklama"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dünya Gazetesi'nin patronu Umut Güner fon soruşturmasından gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dünya Gazetesi’nin ortağı Umut Güner gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "iş insanı Umut Güner gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişinin gazeteyle ilişkisi bir kurumda 'patron', bir başkasında 'ortak', bir diğerinde 'iş insanı' olarak anlatılıyor; 'patron' güç ve hiyerarşi çağrıştırırken 'ortak' ve 'iş insanı' nötr.",
+   "alternative_explanation": "'Ortak' ve 'sahip' farkı sermaye payına dair olgusal bir ayrım olabilir (doğrudan yüzde 10,22 pay).",
+   "missing_context": [
+    "Umut Güner'in holdingdeki kontrol payı"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dünya Gazetesi'nin patronu Umut Güner",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "iş insanı Umut Güner gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumun kendi başlığında 'patron', bir başka kurumun spotunda 'iş insanı' olarak anılıyor; 'patron' tanımlamanın ötesinde bir güç değerlendirmesi taşıyor.",
+   "alternative_explanation": "'Patron' Türk basınında medya sahipleri için yerleşik bir gündelik kullanım olabilir.",
+   "missing_context": [
+    "Kurumun diğer medya sahipleri için kullandığı etiketler"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dünya gazetesinin sahibi Umut Güner gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; ancak başlıklar gözaltını edilgen çatıyla veriyor ve kişiye kusur yükleyen bir dil bilgisi kullanmıyor.",
+   "alternative_explanation": "Başlıklar usul gelişmesini olgusal olarak aktarıyor.",
+   "missing_context": [
+    "Soruşturmadaki suçlamalar"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dünya Gazetesi'nin patronu Umut Güner fon soruşturmasından gözaltında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Fon soruşturmasından gözaltında' ifadesi gözaltının hangi soruşturma kapsamında olduğunu belirtiyor; bir olaylar arası nedensellik iddiası kurmuyor.",
+   "alternative_explanation": "Kullanılan nedensel bağlaçlar olayın doğrudan fiziksel ya da usul sonucunu anlatıyor veya resmi bir kaynağa atfediliyor.",
+   "missing_context": [
+    "Nedensel bağın dayandığı kanıtın türü"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SPK'nin 15 fonunu tasfiye kararı aldığı Bulls Yatırım Holding de bulunuyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dünya Gazetesi’nin sahibi gözaltında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam gözaltının daha geniş bir fon soruşturmasının parçası olduğunu gösteriyor ve bir kurumun spotsuz başlığı yalnızca tek kişiyi veriyor; ancak spotun bulunmaması bir veri sınırlaması olabilir ve haberin geniş örüntüye değinmediği kesinleşmiyor.",
+   "alternative_explanation": "Erken saatte yayımlanan kısa başlık, soruşturma adı netleşmeden yazılmış olabilir.",
+   "missing_context": [
+    "Spotsuz haberin tam metni"
+   ]
+  }
+ ]
+}

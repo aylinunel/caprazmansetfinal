@@ -1,0 +1,192 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 19:09] Malatya'da askeri helikopter düştü: 4 askerimiz şehit oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sol · 16:56] Malatya'da askeri helikopter düştü: Dört asker yaşamını yitirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı kurumlar 'askerimiz' iyelik ekiyle bir biz-grubu kuruyor, diğerleri 'asker' diyor; ancak metin bir karar ya da yargıda grup üyeliğine dayalı farklı muamele göstermiyor.",
+   "alternative_explanation": "'Askerimiz' ulusal medyada yerleşik bir sahiplenme kalıbı; değerlendirmeyi değiştirmiyor.",
+   "missing_context": [
+    "Grup üyeliğine bağlı farklı bir değerlendirme."
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda yas ve üzüntü ifadeleri var, ancak bir duygunun bir risk ya da fayda tahminine veya bir karara açıkça bağlandığı görülmüyor.",
+   "alternative_explanation": "Duygusal ifade ölüm haberlerinin olağan bir parçası.",
+   "missing_context": [
+    "Duygunun bir tahmini yönlendirdiğine dair açık ifade."
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 19:09] Malatya'da askeri helikopter düştü: 4 askerimiz şehit oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 19:19] Malatya'da askeri helikopter düştü: 4 asker yaşamını yitirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (dört askerin ölümü) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz bir olay aktarılıyor, ancak olumsuz bilginin karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık aldığını gösteren bir karşılaştırma yok.",
+   "alternative_explanation": "Olumsuz olayın öne çıkması haberin konusunun kendisinden kaynaklanıyor olabilir; olumsuz bilginin orantısız ağırlık aldığını gösteren karşılaştırılabilir olumlu bilgi metinde yok.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve nasıl işlendiği.",
+    "Olumsuz vurgunun bir değerlendirmeyi değiştirdiğine dair kanıt."
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Yangın gibi çarpıcı ayrıntılar başlıklarda yer alıyor, ancak bu ayrıntıların bir yargıya gerekçe yapıldığı görülmüyor.",
+   "alternative_explanation": "Ayrıntılar olayın olgusal parçaları.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir değerlendirmeyi yönlendirdiğine dair ifade."
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir alandaki olumlu izlenimin başka bir alandaki yargıya taşındığı bir ifade bulunmuyor.",
+   "alternative_explanation": "Haberler bir kazayı aktarıyor.",
+   "missing_context": [
+    "İki alan arasında kurulan olumlu yargı bağı."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhuriyetçi Güç Birliği adayı Prof. Dr. Ümit Kocasakal",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "eski İstanbul Barosu Başkanı ve Cumhuriyetçi Güç Birliği adayı Prof. Dr. Ümit Kocasakal",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar Kocasakal'ı grup adaylığı, akademik unvan ve eski başkanlık ile tanımlıyor.",
+   "alternative_explanation": "Bu unvanlar tanımlayıcıdır ve değerlendirme içermez; farklılık bilgi düzeyinden kaynaklanıyor.",
+   "missing_context": [
+    "Herhangi bir kurumun değerlendirici bir sıfat kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Barosu’nun yeni başkanı Ümit Kocasakal oldu! Kaboğlu dönemi resmen bitti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul Barosu seçimleri: Ümit Kocasakal yeni başkan seçildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sabah aynı seçim sonucunu kaybeden tarafın döneminin sona ermesi üzerinden, BirGün ise kazanan üzerinden veriyor.",
+   "alternative_explanation": "Görevdeki başkanın değişmesi haber değeri taşıyan bir olgudur; Sabah bunu bilgilendirme amacıyla eklemiş olabilir.",
+   "missing_context": [
+    "Sabah haberinin gövdesinde Kaboğlu dönemine ilişkin değerlendirme olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Barosu başkanlık seçimini Ümit Kocasakal kazandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul Barosu başkanlığına Ümit Kocasakal seçildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar 'kazandı', 'seçildi', 'oldu' gibi farklı fiiller kullanıyor.",
+   "alternative_explanation": "Bu farklar üslup ve uzunlukla ilgilidir; çağrışım farkı yaratmıyor.",
+   "missing_context": [
+    "Başka sözcük çiftleri"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi seslerinde açık bir nedensellik ifadesi bulunmuyor.",
+   "alternative_explanation": "Haberler seçim sonucunu bildiriyor; neden-sonuç iddiası yok.",
+   "missing_context": [
+    "Seçim sonucuna ilişkin yorum yazıları"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sağlanan bağlam veya diğer kurumların haberleri sorunun tekrarlayan ya da yapısal olduğunu göstermiyor; ilk koşul karşılanmıyor.",
+   "alternative_explanation": "Baro seçimi tekil ve dönemsel bir olaydır; tekil vaka çerçevesi doğal.",
+   "missing_context": [
+    "Benzer olaylara ilişkin önceki vaka veya istatistik bilgisi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Barosu’nun yeni başkanı Ümit Kocasakal oldu! Kaboğlu dönemi resmen bitti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Seçim yarışında kazanan Ümit Kocasakal oldu.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul Barosu’nun yeni başkanı Ümit Kocasakal oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Sabah başlığında ünlem ve 'Kaboğlu dönemi resmen bitti' ifadesi var; ancak lede nötr ve ikinci bir sunum tercihi belirgin değil.",
+   "alternative_explanation": "Tek bir başlık vurgusu, aynı yönde iki ayrı sunum tercihinin bileşimi sayılmaz.",
+   "missing_context": [
+    "Sabah haberinin gövdesindeki diğer tercihler"
+   ]
+  }
+ ]
+}

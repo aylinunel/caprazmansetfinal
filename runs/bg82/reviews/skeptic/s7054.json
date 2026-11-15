@@ -1,0 +1,215 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hapis cezası talep edilmişti! Sadettin Saran ve Ela Rümeysa Cebeci hakkında karar verildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sadettin Saran ve Ela Rümeysa Cebeci beraat etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı sözcük ve vurgularla veriyor; ancak metin betimlemelerin karar açısından eşdeğer olduğunu açıkça kurmuyor ve hiçbir tercih ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, editoryal üslup, karakter sınırı, kaynak erişimi ya da haber değeri tercihinden kaynaklanabilir; bunlar bilişsel bir hata kanıtı değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin yargısını gösteren veri",
+    "Farklı sunumların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ela Rümeysa Cebeci'nin \"Cilveleşiyorduk\" savunması dikkat çekti! Saran ve Cebeci hakkında karar verildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı öne çıkarıyor; fakat metin bu ayrıntıyı açıkça bir yargı ya da seçime bağlamıyor, çarpıcılık tek başına hata kanıtı değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması olayın gerçekten önemli bir unsuru olması, haber değeri ya da okunma kaygısıyla açıklanabilir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin bir kararda nasıl tartıldığını gösteren karşılaştırmalı kanıt",
+    "Editör ya da okur yargısına dair doğrudan kayıt"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İş insanı ve eski Fenerbahçe Başkanı Sadettin Saran",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir alandaki olumlu izlenimin başka bir alandaki olumlu yargıya açıkça bağlandığı bir ifade yok.",
+   "alternative_explanation": "Unvan ya da sıfatların kullanılması kimlik belirtme amaçlı olabilir; ikinci bir yargıyı etkilediği görülmüyor.",
+   "missing_context": [
+    "İki ayrı alandaki yargıyı ve aralarındaki bağı gösteren ifade",
+    "İpucu değişince yargının değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "savcı esasa ilişkin mütalaasını açıkladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mahkeme, Saran ve Cebeci’nin ayrı ayrı beraatine karar verdi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hürriyet 'karar verildi' başlığının altında yalnızca savcının mütalaasını verirken TGRT beraat kararını aktarıyor. Kurumların aktarımları arasında bazı ayrıntılar farklılaşıyor ya da düşüyor; bu bir aktarım/özet etkisine işaret edebilir, ancak farkın önemli, gerekçesiz ve bir sonuca etkili olduğu gösterilmiyor.",
+   "alternative_explanation": "Farklar erken saatteki eksik bilgiye, ajans metninin kısaltılmasına, başlık uzunluğu sınırına ya da sonradan güncellenen resmi verilere bağlı olabilir.",
+   "missing_context": [
+    "Özgün kaynak metni (resmi açıklama ya da ajans bülteni)",
+    "Haberlerin güncellenme geçmişi",
+    "Farkın bir sonuca ya da karara etkisini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ela Rümeysa Cebeci Ne iş yapıyor? Evli mi? Eşi kim? Daha Önce Evlendi mi, Çocuğu Var mı?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar farklı unsurlara yer veriyor; fakat eşit olmayan dikkatin belirli bir sonuca gerekçesiz etki ettiği gösterilmiyor, tek metindeki eksiklik yeterli değil.",
+   "alternative_explanation": "Unsur seçimi haber değeri ve okur ilgisine göre yapılan olağan editoryal tercih olabilir.",
+   "missing_context": [
+    "Dikkat/girdi kayıtları ya da karar sonucu ile bağlantıyı gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir faaliyete önceden içsel katılım, beklenen bir ödül ve ödül sonrası ilgi düşüşü gibi davranışsal veri bulunmuyor.",
+   "alternative_explanation": "Haber bir ödül-güdü ilişkisini konu etmiyor; kart bu olaya uygulanamıyor.",
+   "missing_context": [
+    "Ödül öncesi ve sonrası katılım düzeyini gösteren davranışsal veri"
+   ]
+  }
+ ]
+}

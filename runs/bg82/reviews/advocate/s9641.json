@@ -1,0 +1,217 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 12:42] Örgüt elebaşı Sercan Sayal yakalandı! Yunanistan'dan Türkiye'ye paket",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 22:14] Kırmızı bültenle aranan Sercan Sayal Yunanistan'dan Türkiye'ye getirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (Sayal'ın Türkiye'ye getirilmesi) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 12:39] 90 kurşunlama, 164 tehdit, 1 cinayet...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 15:22] Suç örgütü lideri Sercan Sayal Türkiye'ye getirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "TGRT başlığı tamamen olumsuz suç dökümüyle açılırken Evrensel yalnızca iadeyi veriyor; ancak metinde karşılaştırılabilir olumlu bilgi yok ve olumsuz bilginin orantısız bir değerlendirmeye yol açtığı gösterilmiyor.",
+   "alternative_explanation": "Olumsuz olayın öne çıkması haberin konusunun kendisinden kaynaklanıyor olabilir; olumsuz bilginin orantısız ağırlık aldığını gösteren karşılaştırılabilir olumlu bilgi metinde yok.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve nasıl işlendiği.",
+    "Olumsuz vurgunun bir değerlendirmeyi değiştirdiğine dair kanıt."
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 12:39] 90 kurşunlama, 164 tehdit, 1 cinayet...",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[mynet · 12:41] Son dakika | İzmir'de terör estiriyordu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "TGRT ve Mynet en çarpıcı ayrıntıları başlığa taşıyor; ancak bu çarpıcılığın açık bir yargıya kanıt yerine konduğu ya da karşı bilginin gözardı edildiği metinde gösterilmiyor.",
+   "alternative_explanation": "Ayrıntılar resmi açıklamadaki olgusal suç listesinden geliyor.",
+   "missing_context": [
+    "Suçlamaların yargısal durumu."
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[karar · 20:22] Bakan Gürlek: Kırmızı bültenle aranan Sercan Sayal’ın ülkemize teslimi yapıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karar ve BirGün iade bilgisini Adalet Bakanı'na atfediyor; otorite tanımlı, ancak statünün değerlendirmenin yerine geçtiğine dair bir işaret yok; bu bir kaynak atfı.",
+   "alternative_explanation": "Resmi bir işlemi yetkili bakana atfetmek olağan haberciliktir.",
+   "missing_context": [
+    "İade sürecine dair bağımsız kaynaklar."
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[mynet · 12:41] Son dakika | İzmir'de terör estiriyordu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mynet başlığı Sayal'ı sürekli bir 'terör estirme' davranışıyla tanımlayarak kişiye kalıcı bir nitelik yüklüyor; ancak metinde göz ardı edilen bir durumsal etken ya da bağlamlar arası karşılaştırma bulunmuyor.",
+   "alternative_explanation": "Başlık resmi açıklamada sıralanan eylemlerin özeti olabilir; durumsal açıklama bu konu için ilgili olmayabilir.",
+   "missing_context": [
+    "Suçlamaların yargısal durumu."
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde akla kolay gelen örneklerin bir olasılık ya da risk tahmini için gerekçe olarak kullanıldığı bir ifade yok.",
+   "alternative_explanation": "Haberler bir iade işlemini aktarıyor.",
+   "missing_context": [
+    "Bir genellemenin hatırlanabilir örneklere dayandırıldığı ifade."
+   ]
+  }
+ ]
+}

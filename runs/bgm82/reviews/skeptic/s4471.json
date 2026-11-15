@@ -1,0 +1,237 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da İSKİ'nin çalışmasında iş cinayeti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da yol çöktü. Bir işçi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "sol başlıkta İSKİ'yi anıp ölümü 'iş cinayeti' olarak adlandırıyor; atıf işareti yok.",
+   "alternative_explanation": "'İş cinayeti' işçi ölümleri için işçi örgütlerinin genel terimidir ve İSKİ yalnızca çalışmanın yürütücüsü olarak anılıyor; dilbilgisel olarak İSKİ fail öznesi değil. Malzemede sorumluluğa ilişkin bir soruşturma bilgisi de yok.",
+   "missing_context": [
+    "Kazaya ilişkin soruşturmanın başlatılıp başlatılmadığı",
+    "İşin yüklenicisi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da kazı çalışması sırasında iş cinayeti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bayrampaşa’da göçük faciası: 1 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da yol çöktü: Göçük altında kalan işçi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölümü Evrensel 'iş cinayeti', Karar 'facia', Sözcü yalnızca 'hayatını kaybetti' ile veriyor; ilk ifade kusur, ikincisi felaket çağrıştırıyor.",
+   "alternative_explanation": "Her kurum kendi yerleşik terminolojisini kullanıyor olabilir.",
+   "missing_context": [
+    "Kurumların diğer işçi ölümlerindeki kullanımı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "iş cinayeti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da yol çalışmalarında facia",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da yol çöktü. Bir işçi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "sol/Evrensel 'iş cinayeti', A Haber 'facia' gibi değerlendirici sözcükleri kendi seslerinde kullanıyor; NTV aynı olguyu bunlar olmadan veriyor.",
+   "alternative_explanation": "'İş cinayeti' bazı kurumlarda yerleşik bir terim; 'facia' ölümlü olaylar için yaygın.",
+   "missing_context": [
+    "Kazanın nedeni"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da İSKİ'nin çalışmasında iş cinayeti: Toprak altında kalan işçi yaşamını yitirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da yol çöktü!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "sol, işi yürüten kurumu ve işçi ölümünü, Habertürk ise yolun çökmesini öne çıkarıyor.",
+   "alternative_explanation": "Habertürk ilk anda yalnızca çökme bilgisine sahip olabilir.",
+   "missing_context": [
+    "Habertürk haberinin güncellenmiş hali"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul'da çalışma sırasında yol çöktü: Göçük altında kalan işçi hayatını kaybetti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay bildiriliyor; ancak hiçbir kurumun başlık veya lede'i olayı bir eğilim, seri ya da kurumsal sürece açıkça yerleştirmiyor.",
+   "alternative_explanation": "'İş cinayeti' terimi örtük bir yapısal çerçeveye işaret edebilir, ancak rakam ya da önceki vaka verilmiyor.",
+   "missing_context": [
+    "İş güvenliği istatistikleri"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde iki seçeneği tek seçenek gibi sunan bir kalıp (ya... ya..., tek yol) görülmüyor.",
+   "alternative_explanation": "Başlıklar olayı bildiriyor; seçenek dayatan bir anlatım yok.",
+   "missing_context": [
+    "Haber gövdelerinde ikili seçenek kurgusu olup olmadığı"
+   ]
+  }
+ ]
+}

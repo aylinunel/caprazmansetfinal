@@ -1,0 +1,208 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haber7 · 09:10] Cafer Mahiroğlu soruşturmasında ikinci operasyon — İş insanı Cafer Mahiroğlu'na",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 09:14] Halk TV soruşturmasında ikinci dalga operasyon: 7 kişi gözaltına alındı — Kayyım atanan Halk TV'nin sahibi Cafer Mahiroğlu'na",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (ikinci dalga gözaltılar) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[mynet · 09:01] Cafer Mahiroğlu soruşturmasında 8 gözaltı kararı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 09:16] Cafer Mahiroğlu'na yönelik soruşturmada 7 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar 8 gözaltı kararı ile 7 gözaltı arasında farklı sayıları öne çıkarıyor; ancak bu iki sayı farklı olgulara (karar ve gerçekleşen gözaltı) ait ve bir başlangıç değerinin sonraki bir tahmini yönlendirdiği görülmüyor.",
+   "alternative_explanation": "Sayılar aynı resmi açıklamadaki iki ayrı bilgiden geliyor.",
+   "missing_context": [
+    "Bir tahminin önceki bir değere bağlandığı ifade."
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 10:00] Milyonlarca liralık rüşvet iddiası!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "A Haber çarpıcı bir tutar vurgusuyla açılıyor; ancak bu ayrıntının bir yargıya ya da sıklık tahminine gerekçe yapıldığı metinde yok.",
+   "alternative_explanation": "Tutar iddianamenin olgusal bir parçası olabilir.",
+   "missing_context": [
+    "Tutarın kaynağı."
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz bilginin karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık aldığına dair bir karşılaştırma bulunmuyor.",
+   "alternative_explanation": "Olumsuz olayın öne çıkması haberin konusunun kendisinden kaynaklanıyor olabilir; olumsuz bilginin orantısız ağırlık aldığını gösteren karşılaştırılabilir olumlu bilgi metinde yok.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve nasıl işlendiği.",
+    "Olumsuz vurgunun bir değerlendirmeyi değiştirdiğine dair kanıt."
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Halk TV'nin sahibi Cafer Mahiroğlu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mahiroğlu bir kanalın sahibi olarak tanımlanıyor; ancak metin kişilerin hangi gruba ait olduğunu açıkça kurmuyor ve grup üyeliğine bağlı bir muamele farkı göstermiyor.",
+   "alternative_explanation": "Kanal sahipliği kimlik bilgisi.",
+   "missing_context": [
+    "Grup üyeliğine dayalı farklı bir değerlendirme."
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir alandaki olumlu izlenimin başka bir alandaki yargıyı etkilediğine dair bir ifade yok.",
+   "alternative_explanation": "Haberler soruşturma adımlarını aktarıyor.",
+   "missing_context": [
+    "İki alan arasında kurulan olumlu yargı bağı."
+   ]
+  }
+ ]
+}

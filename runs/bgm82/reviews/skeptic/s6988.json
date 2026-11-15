@@ -1,0 +1,269 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "'İtirafçı oldu' denilmişti: Emir Sarıgül ev hapsiyle tahliye edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'daki kara para aklama soruşturmasında tutuklanan Emir Sarıgül'e \"ev hapsi\" şartıyla tahliye",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül davasında yeni gelişme: Mustafa Sarıgül'ün oğlu tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı tahliyeyi bir kurum itiraf iddiası, bir başkası ev hapsi koşulu, bir diğeri babasıyla akrabalık üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Etkin pişmanlık ve ev hapsi aynı kararın olgusal parçalarıdır; kurumlar farklı ayrıntıları seçmiş olabilir.",
+   "missing_context": [
+    "Mahkeme kararının gerekçesi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İtirafçı olan Emir Sarıgül ev hapsi şartıyla serbest bırakıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emir Sarıgül, etkin pişmanlıktan faydalanarak tahliye edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Soruşturma kapsamında cezaevine gönderilen CHP’li Mustafa",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişiyi bir kurum kendi sesiyle 'itirafçı' olarak, başka kurumlar 'etkin pişmanlıktan faydalanan' olarak anıyor; 'itirafçı' hukuki terimin ötesinde olumsuz bir değerlendirme yükü taşıyor.",
+   "alternative_explanation": "'İtirafçı' sözcüğü etkin pişmanlık için gündelik dilde yaygın bir eşanlamlı olarak da kullanılıyor.",
+   "missing_context": [
+    "Kurumun başka davalarda aynı etiketi kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP bağlantılı karanlık finans çarkına yönelik yürütülen dev kara para aklama soruşturmasında bomba bir gelişme yaşandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kara para soruşturmasında tutuklanan Mustafa Sarıgül’ün oğlu Emir Sarıgül ev hapsi kararıyla adli kontrol uygulanarak cezaevinden tahliye edildi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum spotunda 'karanlık finans çarkı' ve 'bomba bir gelişme' gibi değerlendirici ifadeler kullanıyor; başka bir kurum aynı olguları bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "İfadeler soruşturmanın kapsamını vurgulamak için seçilmiş olabilir; olgusal bilgi diğer kurumlarla aynı.",
+   "missing_context": [
+    "Soruşturmanın partiyle bağlantısına dair resmi açıklama"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İtirafçı olan Emir Sarıgül ev hapsi şartıyla serbest bırakıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül'ün oğlu Emir Sarıgül, etkin pişmanlıktan faydalanarak tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı hukuki durum bir kurumda 'itirafçı olan', başka bir kurumda 'etkin pişmanlıktan faydalanarak' diye anlatılıyor; ilki muhbirlik çağrışımı taşırken ikincisi hukuki terim.",
+   "alternative_explanation": "İki ifade aynı olguyu anlatıyor ve 'itirafçı' gündelik dilde yaygın bir karşılık olabilir.",
+   "missing_context": [
+    "Etkin pişmanlık ifadesinin içeriği"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül'ün oğlu Emir Sarıgül, etkin pişmanlıktan faydalanarak tahliye edildi — İstanbul Cumhuriyet Başsavcılığı Örgütlü Suçlar Soruşturma Bürosu tarafından Sarıgül ailesine ve CHP bağlantılı karanlık finans çarkına",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kara para soruşturmasında tutuklanan Emir Sarıgül ev hapsi kararıyla tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kurumda başlıkta etkin pişmanlık, spotta 'CHP bağlantılı karanlık finans çarkı' nitelemesi yer alıyor; iki tercih seçilebiliyor, ancak etkin pişmanlık olgusal bir bilgi olduğundan ikisinin aynı değerlendirme yönünü gösterdiği açık değil.",
+   "alternative_explanation": "Başlıktaki etkin pişmanlık bilgisi birçok kurumda ortak; tek değerlendirici öğe spottaki niteleme olabilir.",
+   "missing_context": [
+    "Haberin tam metni"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kara para soruşturmasında tutuklanan Emir Sarıgül ev hapsi kararıyla tahliye edildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "CHP bağlantılı karanlık finans çarkına",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; ancak başlıklar tahliyeyi edilgen çatıyla veriyor ve hiçbir başlık adlandırılmış bir aktörü etken çatıyla kusurlu göstermiyor; partiyle ilişkilendirme yalnızca bir spotta ve bir aktör öznesi olmadan geçiyor.",
+   "alternative_explanation": "Başlıklar usul gelişmesini aktarıyor.",
+   "missing_context": [
+    "Spotun devamındaki ifadeler"
+   ]
+  }
+ ]
+}

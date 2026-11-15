@@ -1,0 +1,245 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tarihi zafer! Brezilya'da seçimi Lula da Silva kazandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Brezilya'da tarihi geri dönüş!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Brezilya'da seçimi Lula da Silva kazandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Mynet ve Haberler kendi seslerinde 'tarihi' sözcüğünü kullanıyor; Sözcü aynı sonucu bu sözcük olmadan veriyor.",
+   "alternative_explanation": "ANKA'nın aktardığına göre Lula ülke tarihinde dördüncü kez seçilen ilk isim; 'tarihi' kısmen olgusal bir nitelemeye dayanıyor olabilir.",
+   "missing_context": [
+    "Seçimin tarihsel önemine ilişkin olgusal bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tarihi zafer! Brezilya'da seçimi Lula da Silva kazandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Brezilya’da seçimin galibi sol: Lula yeniden başkan!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Brezilya'da devlet başkanlığı seçimini Lula da Silva kazandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı sonucu Mynet 'zafer', BirGün 'galibi sol', Habertürk 'kazandı' ile veriyor; sözcüklerin çağrışımı farklı.",
+   "alternative_explanation": "'Zafer' ve 'galip' seçim haberlerinde sık kullanılan kalıplar; fark üsluptan kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Kurumların diğer seçim haberlerindeki kullanım"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Brezilya'da Lula da Silva dördüncü kez Devlet Başkanı seçildi, Bolsonaro yenilgiyi kabul etmedi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Brezilya’da seçimin galibi sol: Lula yeniden başkan!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Brezilya'da Lula 4'üncü kez başkan",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "ANKA kaybedenin itirazını, BirGün kazananın ideolojik kimliğini, NTV dönem rekorunu öne çıkarıyor.",
+   "alternative_explanation": "Bolsonaro'nun itirazı ayrı bir gelişme olarak haber değeri taşıyor olabilir.",
+   "missing_context": [
+    "İtirazın resmi niteliği"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "muhalefetin adayı sağcı Flavio Bolsonaro",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rakibi Senatör Flavio Bolsonaro",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "TGRT Bolsonaro'yu 'sağcı', ANKA 'Senatör' olarak tanımlıyor.",
+   "alternative_explanation": "'Sağcı' siyasi yönelimi belirten tanımlayıcı bir sıfat olabilir; tanımlamanın ötesinde bir değerlendirme taşıyıp taşımadığı belirsiz.",
+   "missing_context": [
+    "Kurumun diğer adaylar için ideolojik sıfat kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde iki seçeneği tek seçenek gibi sunan bir kalıp (ya... ya..., tek yol) görülmüyor.",
+   "alternative_explanation": "Başlıklar olayı bildiriyor; seçenek dayatan bir anlatım yok.",
+   "missing_context": [
+    "Haber gövdelerinde ikili seçenek kurgusu olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "oy verme süresinin iki saat uzatılmasını gerekçe göstererek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Tek nedensel bağ Bolsonaro'nun gerekçesi olarak aktarılıyor; kurumun kendi sesinde bir nedensellik iddiası yok.",
+   "alternative_explanation": "Aktarılan gerekçe konuşmacıya aittir.",
+   "missing_context": [
+    "Seçim süresinin uzatılmasına dair resmi açıklama"
+   ]
+  }
+ ]
+}

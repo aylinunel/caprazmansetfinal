@@ -1,0 +1,178 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ekonomistler politika faizinin 100 baz puan düşürülerek yüzde 36’ya çekilmesini bekliyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "politika faizi olan bir hafta vadeli repo ihale faiz oranını yüzde 37’den yüzde 36’ya indirdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde karar öncesi bir beklenti değeri (yüzde 36) ve ardından aynı düzeyde açıklanan karar yer alıyor; ancak kararın bu beklentiye dayandırıldığına dair açık bir bağ ya da gerekçesiz etki gösterilmiyor.",
+   "alternative_explanation": "Ekonomist beklentileri ile kararın örtüşmesi ortak veri ve sinyallere dayanmaktan kaynaklanabilir.",
+   "missing_context": [
+    "Kararın gerekçe metni",
+    "Beklentinin karara etkisine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde çerçeveleme etkisi için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde otorite yanlılığı için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "9 ay sonra bir ilk: Merkez Bankası faizi indirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası faiz kararını açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar '9 ay sonra bir ilk' ifadesiyle kararın yeniliğini öne çıkarırken diğerleri yalnızca kararın açıklandığını veriyor; bu vurgunun haksız bir yargıya yol açtığı gösterilmiyor.",
+   "alternative_explanation": "Uzun bir aradan sonra ilk indirim olması haber değeri taşıyan gerçek bir bağlamdır.",
+   "missing_context": [
+    "Belirgin ayrıntının bir yargıyı haksız biçimde etkilediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "recency-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ocak 2026'dan bu yana faiz oranlarını değiştirmeyen Merkez",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde zamansal bir dizi (ocak indirimi, sabit kalan aylar, ekim kararı) var; ancak sonraki bilginin önceki bilgiye göre daha fazla ağırlık aldığı açıkça belirtilmiyor.",
+   "alternative_explanation": "Güncel karar haberin konusu olduğu için öne çıkması doğaldır.",
+   "missing_context": [
+    "Önceki kararların değerlendirmede göz ardı edildiğine dair açık ifade"
+   ]
+  }
+ ]
+}

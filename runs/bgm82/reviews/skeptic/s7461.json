@@ -1,0 +1,259 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay'da bankacılık krizi hükümeti devirdi: Devlet Başkanı istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay Devlet Başkanı Pena, partisi destekli azil sürecinin ardından istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "355 milyon dolarlık emeklilik fonu krizi Pena’yı koltuğundan etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifa olgusunu bir kurum bankacılık krizinin sonucu olarak, bir başkası partinin desteklediği azil süreci üzerinden, bir diğeri ise emeklilik fonu tutarı üzerinden başlığa taşıyor.",
+   "alternative_explanation": "Farklı vurgular haberin farklı saatlerinde öne çıkan farklı ayrıntılara ve kullanılan ajans metnine bağlı olabilir; seçilen boyutların tümü olgusal.",
+   "missing_context": [
+    "Kurumların kullandığı kaynak ajans metinleri",
+    "Kurumların aynı gün güncelledikleri haber sürümleri"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay'da fon skandalı devlet başkanını devirdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Emeklilik fonlarından yüz milyonlarca doların bankaya aktarılması ve çıkar çatışması iddiaları üzerine azil süreci başlatılan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum skandalı istifanın nedeni olarak sunuyor; ancak aynı metinler azil dosyası, partinin desteğini çekmesi ve iddialar gibi aracı bir mekanizmayı aktarıyor, yani bağ yalnızca zaman sırasına dayanmıyor.",
+   "alternative_explanation": "Skandal, azil süreci ve istifa arasındaki zincir birden çok kurumca ayrıntılı biçimde belgeleniyor; nedensel özet makul bir kısaltma olabilir.",
+   "missing_context": [
+    "Azil dosyasının içeriği",
+    "Pena'nın istifa gerekçesine dair kendi açıklaması"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay'da bankacılık krizi hükümeti devirdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ueno Bank skandalı Paraguay'ı sarstı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Devirdi', 'sarstı' ve 'koltuğundan etti' gibi ifadeler kullanılıyor; ancak bunlar siyasi habercilikte kalıplaşmış deyimlerdir ve bir düşman, tedavi ya da savunma rolü atamıyor.",
+   "alternative_explanation": "Bu ifadeler Türkçe haber dilinde yerleşik kalıplardır ve olayın büyüklüğünü aktarır.",
+   "missing_context": [
+    "Kalıplaşmış deyim ile rol atayan metafor ayrımını destekleyecek kurum içi kullanım örnekleri"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay'da Ueno Bank'a yönelik soruşturmayla bağlantılı olarak",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ueno Bank skandalı Paraguay'ı sarstı: Devlet Başkanı Santiago Pena baskılar üzerine istifa etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; ancak başlıklar bir aktöre sorumluluk ya da kusur yükleyen bir dil bilgisi kullanmıyor, Pena'nın kendi eylemi olan istifayı aktarıyor.",
+   "alternative_explanation": "'Skandal' sözcüğü olayın adlandırılmasıdır; belirli bir kişinin ihmali ya da kusuru ileri sürülmüyor.",
+   "missing_context": [
+    "Soruşturmada kimin sorumlu tutulduğuna dair resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay'da fon skandalı devlet başkanını devirdi: Santiago Pena istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay Devlet Başkanı Pena, bankacılık krizinin ardından istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay'da özel banka battı, Devlet Başkanı Pena görevinden istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olaya bir kurum 'fon skandalı', bir başkası 'bankacılık krizi', bir diğeri 'banka battı' diyor; 'skandal' usulsüzlük çağrıştırırken 'kriz' daha nötr bir ekonomik durum anlatıyor.",
+   "alternative_explanation": "Kurumlar olayın farklı aşamalarını (iflas, fon iddiaları) adlandırıyor olabilir; 'skandal' nitelemesi iddiaların ortaya çıkmasından sonra yaygınlaşmış olabilir.",
+   "missing_context": [
+    "Olayın Paraguay'daki resmi ve yerel adlandırması"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: Paraguay'da bankacılık krizi: İstifa eden Devlet Başkanı Santiago Pena gözaltına alındı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Haziran 2012'de eski Devlet Başkanı Fernando Lugo'nun görevden uzaklaştırılmasının ardından, ülkenin yakın demokratik tarihinde azil süreci sonucunda görevini kaybeden ikinci devlet başkanı oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum spotunda olayı 2012'deki önceki azil vakasıyla ilişkilendirerek ülkenin yakın demokratik tarihindeki bir seriye yerleştiriyor.",
+   "alternative_explanation": "Önceki vakaya atıf ajans metninden gelen standart bir arka plan bilgisi olabilir.",
+   "missing_context": [
+    "Diğer kurumların haber gövdelerinde benzer arka plan bilgisi olup olmadığı"
+   ]
+  }
+ ]
+}

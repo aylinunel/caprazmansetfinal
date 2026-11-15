@@ -1,0 +1,189 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Esenyurt'ta iki metrobüs çarpıştı: Feci kazada 6 yaralı var!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kazada 6 kişinin hafif şekilde yaralandığı öğrenildi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık kazayı 'feci' olarak nitelerken başka bir kurumun girişi yaralanmaların hafif olduğunu belirtiyor; olumsuz yönün öne çıktığı gözleniyor, ancak bunun bir değerlendirme ya da kararı etkilediği gösterilmiyor.",
+   "alternative_explanation": "Toplu taşıma kazası kamu güvenliği açısından ciddi algılanabilir; sıfat kurum üslubundan kaynaklanabilir.",
+   "missing_context": [
+    "Olumsuz vurgunun bir karara etkisini gösteren kayıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Esenyurt'ta iki metrobüs çarpıştı: Feci kazada 6 yaralı var!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt'ta metrobüs kazası: 6 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kaza bir kurumda 'Feci kazada' ve ünlemle, diğerinde yalın verilmiş; karşılaştırmalı vurgu farkı var ama haksız yargı etkisi gösterilmiyor.",
+   "alternative_explanation": "Vurgu farkı başlık üslubundan kaynaklanabilir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıya gerekçe yapıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde erişilebilirlik sezgisi için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde çerçeveleme etkisi için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hale etkisi için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde aşırı gerekçelendirme etkisi için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  }
+ ]
+}

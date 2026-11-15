@@ -1,0 +1,221 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, COP31 Liderler Zirvesi'nde 102 lideri ağırlayacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "COP31 liderler zirvesi bugün başlıyor: Anahtar kelime 'elektrifikasyon'",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "COP31 Liderler Zirvesi’nde akredite basına sınırlı erişim",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Zirvenin başlamasını bir kurum ev sahibi liderin ağırladığı lider sayısıyla, bir başkası gündemdeki politika başlığıyla, bir diğeri basın erişimi kısıtıyla öne çıkarıyor.",
+   "alternative_explanation": "Kümede zirveyle ilgili farklı alt olaylar birleşmiş; farklı vurgular farklı alt olaylara ait olabilir.",
+   "missing_context": [
+    "Kümedeki haberlerin aynı alt olaya (zirve açılışı) ait olup olmadığının ayıklanması",
+    "Emine Erdoğan'ın paylaşımının kendisi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Küresel iklim mücadelesine yön verecek COP31'in üçüncü gününde, küresel diplomasinin kalbi Antalya'da atıyor.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "COP31 Liderler Zirvesi başlıyor — Antalya'da gerçekleşen BM İklim Değişikliği Çerçeve Sözleşmesi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum spotunda 'küresel diplomasinin kalbi Antalya'da atıyor' gibi yüceltici bir dil kullanıyor, başka bir kurum aynı başlıkla bunu kullanmıyor; ancak ifade kartın örneklediği skandal, müjde, tarihi gibi değerlendirici sözcüklerden çok bir söz sanatı.",
+   "alternative_explanation": "Ev sahipliği yapılan uluslararası etkinliklerde bu tür tanıtım dili yaygındır ve olgusal içerik değişmiyor.",
+   "missing_context": [
+    "İfadenin kurumun kendi metni mi yoksa resmi bir bültenden mi alındığı"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emine Erdoğan'dan COP31 paylaşımı: Küresel iş birliği vurgusu yaptı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta yalnızca paylaşımın içeriği ('küresel iş birliği vurgusu') aktarılıyor ve bu vurgu kişiye atfediliyor; aynı yönü gösteren iki ayrı sunum tercihi seçilemiyor.",
+   "alternative_explanation": "Başlık paylaşımın özetini veriyor; değerlendirme kurumun değil paylaşımı yapanındır.",
+   "missing_context": [
+    "Paylaşımın tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan COP31 Liderler Zirvesi Açılış Programı'na katılacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "COP31 Liderler Zirvesi, Cumhurbaşkanı Erdoğan'ın ev sahipliğinde başlıyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar 'Başkan Erdoğan' ve 'Cumhurbaşkanı Erdoğan' gibi farklı unvan biçimleri kullanıyor; ancak fark çoğunlukla üslup ve kısaltma düzeyinde ve çağrışım farkı metinden kanıtlanamıyor.",
+   "alternative_explanation": "'Başkan' kısaltması bazı kurumların sabit yazım tercihidir ve olgusal bir değerlendirme taşımayabilir.",
+   "missing_context": [
+    "Unvan tercihinin kurumun yazım kılavuzunda sabit olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olgusal gelişmeyi aktarıyor; ya-ya da yapısında bir seçenek daraltması yok.",
+   "missing_context": [
+    "İki seçenekli bir kurgu içeren başlık ya da spot"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: Emine Erdoğan'dan COP31 Liderler Zirvesi paylaşımı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Birleşmiş Milletler (BM) İklim Değişikliği Çerçeve Sözleşmesi 31. Taraflar Konferansı (COP31)",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı spotlar zirveyi BM sözleşmesinin 31. taraflar konferansı olarak anıyor; bu kurumsal bir seriye işaret ediyor, ancak bir eğilim ya da süreç anlatımından çok etkinliğin resmi adının verilmesi.",
+   "alternative_explanation": "Konferansın tam adı tanımlayıcı bir bilgidir; olayı bir politika sürecine yerleştiren bir çözümleme sayılmayabilir.",
+   "missing_context": [
+    "Önceki COP konferanslarıyla karşılaştırma ya da süreç bilgisi içeren haber gövdeleri"
+   ]
+  }
+ ]
+}

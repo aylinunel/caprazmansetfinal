@@ -1,0 +1,185 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rize'de can pazarı: Kamyonet dereye devrildi! 3 ölü",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Rize'de feci kaza! Dereye uçan kamyonette 3 can kaybı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Rize'de kamyonet dereye devrildi: 3 ölü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Sabah 'can pazarı', A Haber 'feci kaza' ifadelerini kendi seslerinde kullanıyor; TRT Haber aynı olguyu bunlar olmadan veriyor.",
+   "alternative_explanation": "'Feci kaza' ve 'can pazarı' ölümlü kazalarda Türk basınının kalıp ifadeleri; olayın ağırlığını yansıtıyor olabilir.",
+   "missing_context": [
+    "Kurumların kalıp kullanım sıklığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dereye uçan kamyonette 3 can kaybı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rize'de dereye devrilen kamyonetteki 3 kişi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "A Haber aynı hareketi 'uçan', Mynet 'devrilen' ile anlatıyor; 'uçmak' dramatik bir çağrışım taşıyor.",
+   "alternative_explanation": "Vatan ve Sözcü aracın 'taklalar atarak' yuvarlandığını aktarıyor; 'uçan' fiziksel seyri betimleyen bir abartı olsa da olguya dayanıyor olabilir.",
+   "missing_context": [
+    "Kazanın fiziksel seyri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İdris Kalyoncu (71), Abdurrahman Kalyoncu (60) ve Fikri Lurci (70), hayatını kaybetti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Rize'de kamyonet dereye devrildi: 3 ölü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı kurumlar lede'de kişileri adlarıyla veriyor; ancak başlıkların tamamı ölü sayısını öne çıkarıyor.",
+   "alternative_explanation": "Kart başlıkların farklı boyutları öne çıkarmasını arıyor; burada başlıklar aynı boyutta, fark yalnızca lede ayrıntısında.",
+   "missing_context": [
+    "Haber gövdeleri"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sağlanan bağlam veya diğer kurumların haberleri sorunun tekrarlayan ya da yapısal olduğunu göstermiyor; ilk koşul karşılanmıyor.",
+   "alternative_explanation": "Tekil bir trafik kazası; sağlanan materyal tekrarlayan bir örüntü göstermiyor.",
+   "missing_context": [
+    "Benzer olaylara ilişkin önceki vaka veya istatistik bilgisi"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir oran ya da pay sunulmuyor; yalnızca mutlak ölü sayısı veriliyor.",
+   "alternative_explanation": "İstatistiksel bir karşılaştırma yapılmıyor.",
+   "missing_context": [
+    "Bölgedeki kaza istatistikleri"
+   ]
+  }
+ ]
+}

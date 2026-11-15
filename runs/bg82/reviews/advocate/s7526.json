@@ -1,0 +1,238 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 22:39] Katil Netanyahu dönemi bitiyor!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Takvim başlığı olumsuz duygusal bir etiketle bir sonucu ilan ediyor; ancak metin duyguyu bir risk ya da fayda tahminine açıkça bağlamıyor.",
+   "alternative_explanation": "Başlık kurumun editoryal tutumunu yansıtıyor olabilir; bir duygu-tahmin ilişkisi açıkça kurulmuyor.",
+   "missing_context": [
+    "Duygunun bir tahmini yönlendirdiğine dair açık ifade."
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aksam · 00:12] Netanyahu'ya kötü haber! İsrail'de hükümet kurma görevi Eisenkot'a verildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 22:33] İsrail'de hükümet kurma yetkisi Eisenkot'a verildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (hükümet kurma görevinin Eisenkot'a verilmesi) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çoğunluğu kaybeden Netanyahu, Arap partilerini hedef alarak \"varoluşsal tehdit\" söylemine sığınırken",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Netanyahu, bu hükümetin kurulmasını engellemenin İsrail'in varoluşsal meselesi olduğunu söyledi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Arap partilerinin de desteğiyle 67 milletvekiline ulaşan Eisenkot",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin Arap partilerini ayrı bir grup olarak tanımlıyor ve soL, Netanyahu'nun bu partilerin desteklediği hükümeti grup kimliği üzerinden 'varoluşsal tehdit' olarak nitelediğini aktarıyor; ancak bu tutumun gerekçesiz olduğunu gösteren karşılaştırmalı bir kanıt metinde yok.",
+   "alternative_explanation": "Netanyahu'nun itirazı politik içerik ya da koalisyon programıyla ilgili olabilir; aktarım grup kimliğine dayalı değerlendirmeyi kanıtlamaz.",
+   "missing_context": [
+    "Netanyahu'nun açıklamasının tam metni.",
+    "Arap partilerinin koalisyon koşulları."
+   ]
+  },
+  {
+   "card_id": "optimism-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İsrail'de Netanyahu dönemi sona eriyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Eisenkot ve Netanyahu çoğunluğu sağlayamamıştı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Arap partilerinin desteklediği Eisenkot'u zorlu bir uzlaşma arayışı bekliyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sabah bir sonucu ('Netanyahu dönemi sona eriyor') kesin bir beklenti olarak sunuyor; Mynet ve DW Türkçe ise çoğunluğun belirsiz olduğunu aktarıyor. Ancak bu karşı bilgi aynı kurumun metninde yer almadığından gözardı edildiği gösterilmiyor.",
+   "alternative_explanation": "67 vekilin desteği, beklentiyi makul kılan ilgili bir kanıt olabilir.",
+   "missing_context": [
+    "Koalisyonun kurulma olasılığına dair kaynaklar."
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Netanyahu'ya ağır darbe!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar gelişmeyi Netanyahu açısından olumsuz bir sonuç olarak vurguluyor; ancak olumsuz bilginin karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık aldığı ve bunun bir değerlendirmeyi değiştirdiği gösterilmiyor.",
+   "alternative_explanation": "Olumsuz olayın öne çıkması haberin konusunun kendisinden kaynaklanıyor olabilir; olumsuz bilginin orantısız ağırlık aldığını gösteren karşılaştırılabilir olumlu bilgi metinde yok.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve nasıl işlendiği.",
+    "Olumsuz vurgunun bir değerlendirmeyi değiştirdiğine dair kanıt."
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir etkinliğe önceden içsel motivasyonla katılan, beklenen bir ödül alan ve ödül kalkınca katılımı azalan bir kişi bulunmuyor; kartın davranışsal koşulları gözlenemiyor.",
+   "alternative_explanation": "Haberler bir hukuki ya da siyasi gelişmeyi aktarıyor; ödül-motivasyon ilişkisi konunun dışında.",
+   "missing_context": [
+    "Ödül öncesi ve sonrası davranışa ilişkin karşılaştırmalı veri."
+   ]
+  }
+ ]
+}

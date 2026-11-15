@@ -1,0 +1,282 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP trolleri hedef göstermişti: Gözaltına alınan Ahmet Şık'ın eşi Yonca Verdioğlu Şık serbest bırakıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "5 ay önce başlayan soruşturmada yurt dışı yasağı verilmiş, suçlama konusu çalıştığı dernek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ahmet Şık'ın eşi Yonca Verdioğlu Şık serbest bırakıldı — TİP İstanbul Milletvekili",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı serbest bırakılma olgusunu bir kurum sosyal medya hedef göstermesi üzerinden, bir başkası soruşturmanın süresi ve çalışılan dernek üzerinden, bir diğeri sade biçimde veriyor.",
+   "alternative_explanation": "Kurumlar farklı kaynaklara (parti açıklaması, avukat, savcılık) erişmiş olabilir; vurgu farkı bilgi farkından da doğabilir.",
+   "missing_context": [
+    "Soruşturmanın başlangıç tarihi ve gerekçesine dair resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Feminist ve hak savunucusu Yonca Verdioğlu Şık",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Heinrich Böll Vakfı Türkiye koordinatörü Yonca Verdioğlu Şık",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ahmet Şık'ın eşi Yonca Şık gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumda 'feminist ve hak savunucusu', bir başkasında vakıf koordinatörü, çoğunda 'Ahmet Şık'ın eşi' olarak anılıyor; ancak 'hak savunucusu' nitelemesinin tanımlamanın ötesinde bir değerlendirme mi yoksa kişinin kamusal kimliği mi olduğu metinden belirlenemiyor.",
+   "alternative_explanation": "Kişi kamuoyunda bu kimlikle tanınıyor olabilir; etiketler farklı ama doğru tanımlayıcılar olabilir.",
+   "missing_context": [
+    "Kişinin kendini kamusal olarak nasıl tanımladığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP trolleri hedef göstermişti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ahmet Şık'ın eşi Yonca Verdioğlu Şık serbest bırakıldı — TİP İstanbul Milletvekili",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kendi başlığında 'AKP trolleri' gibi değerlendirici bir niteleme kullanıyor; başka kurumlar aynı serbest bırakılmayı bu niteleme olmadan veriyor.",
+   "alternative_explanation": "'Trol' sözcüğü sosyal medya hesaplarını tanımlamak için yaygın bir terim olarak da kullanılabilir.",
+   "missing_context": [
+    "Hedef gösteren hesapların kimliğine dair doğrulanabilir bilgi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "“siyasal veya askeri casusluk” soruşturması kapsamında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "AKP trolleri hedef göstermişti: Gözaltına alınan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürerken bir kurumun başlığı etken çatıyla adlandırılmış bir aktörü ('AKP trolleri') hedef gösterme eyleminin öznesi yapıyor ve bunu bir atıf işareti olmadan veriyor.",
+   "alternative_explanation": "Başka bir kurum soruşturmanın 5 ay önce başladığını aktarıyor; başlık nedensellik değil yalnızca kronolojik bir öncül olarak okunabilir.",
+   "missing_context": [
+    "Hedef göstermenin gerçekleştiğine dair doğrulama",
+    "Soruşturmanın başlama nedeni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ahmet Şık'ın eşi askeri casusluktan gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "'Casusluk' iddiasıyla gözaltına alınan Heinrich Böll Türkiye çalışanı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı gözaltını bir kurum başlığında 'askeri casusluktan' diye, bir başkası 'casusluk' iddiasıyla diye veriyor; ilki suçlamayı atıfsız bir gerekçe gibi, ikincisi tırnak ve 'iddia' ile mesafeli sunuyor.",
+   "alternative_explanation": "'-dan gözaltı' kalıbı Türkçe haber dilinde suçlamanın kısa anlatımı olarak yaygındır.",
+   "missing_context": [
+    "Kurumun başka casusluk haberlerinde aynı kalıbı kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP trolleri hedef göstermişti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "AKP iktidarının sosyal medya trollerinin fon soygunu paylaşımları sonrası Ahmet Şık'ın arkadaşları, eşi ve ailesine yönelik hedef göstermeleri sonrası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ahmet Şık'ın eşi Yonca Verdioğlu Şık serbest bırakıldı — TİP İstanbul Milletvekili",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kurumun başlığında 'AKP trolleri' etiketi, spotunda 'fon soygunu' ve aileye yönelik hedef gösterme vurgusu birlikte yer alıyor ve aynı değerlendirme yönünü gösteriyor; başka bir kurum aynı olguları bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Kurum Ahmet Şık'ın kamuoyuna yaptığı açıklamaların bağlamını aktarıyor olabilir.",
+   "missing_context": [
+    "Paylaşımların içeriği ve hedef göstermenin kapsamı"
+   ]
+  }
+ ]
+}
