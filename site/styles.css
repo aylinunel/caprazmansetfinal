@@ -2774,3 +2774,4 @@ html.menu-lock,html.menu-lock body{overflow:hidden}
 .rv-badge.rv-insan_bekliyor{color:var(--muted);border-style:dotted}
 .rv-badge.rv-dogrulandi,.rv-badge.rv-duzeltildi{color:var(--paper);background:var(--ink);border-color:var(--ink)}
 .rv-line{font-family:var(--ff-m);font-size:12px;color:var(--muted);margin:0 0 10px}
+.rev-np{display:inline-flex;align-items:center;gap:6px;min-height:40px;font-size:12px;color:var(--ink2)}

@@ -518,7 +518,9 @@ function reviewCountsLine(counts) {
 function reviewsExport(reviews, packVersion) {
   return { pack: packVersion, exported_at: new Date().toISOString(), reviews: Object.keys(reviews).sort().map(function (key) {
     var r = reviews[key];
-    return { key: key, status: r.status, note: r.note || "", at: r.at || "", pack: r.pack == null ? packVersion : r.pack, text: r.text == null ? null : r.text };
+    var out = { key: key, status: r.status, note: r.note || "", at: r.at || "", pack: r.pack == null ? packVersion : r.pack, text: r.text == null ? null : r.text };
+    if (r.new_pattern) out.new_pattern = true;
+    return out;
   }) };
 }
 

@@ -149,5 +149,24 @@ class TaskCatalogTests(unittest.TestCase):
             self.assertEqual(len(task["cards"]), 20)
 
 
+class RollbackTests(unittest.TestCase):
+    def test_writing_results_keeps_the_previous_file(self):
+        from biasguard.news import write_results
+        with tempfile.TemporaryDirectory() as d:
+            out = Path(d) / "biasguard.json"
+            write_results(out, {"v": 1})
+            self.assertFalse((Path(d) / "biasguard.prev.json").exists())
+            write_results(out, {"v": 2})
+            self.assertEqual(json.loads(out.read_text()), {"v": 2})
+            self.assertEqual(json.loads((Path(d) / "biasguard.prev.json").read_text()), {"v": 1})
+
+    def test_rewriting_identical_results_does_not_replace_the_previous_file(self):
+        from biasguard.news import write_results
+        with tempfile.TemporaryDirectory() as d:
+            out = Path(d) / "biasguard.json"
+            write_results(out, {"v": 1}); write_results(out, {"v": 2}); write_results(out, {"v": 2})
+            self.assertEqual(json.loads((Path(d) / "biasguard.prev.json").read_text()), {"v": 1})
+
+
 if __name__ == "__main__":
     unittest.main()

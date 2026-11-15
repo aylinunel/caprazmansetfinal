@@ -6611,7 +6611,8 @@ function bg7Ctl(key) {
   var st = r ? (r.status === "rejected" ? "Reddedildi — kamu sayfalarında görünmüyor" : r.status === "verified" ? "İnsan doğruladı" : "Düzeltildi: " + esc(r.note)) : "Yayında (insan kontrolünden geçmedi)";
   return '<div class="rev-ctl"><span class="cm3-sub">' + st + "</span>" + (REV7OWNER ?
     '<input id="rn-' + esc(key) + '" placeholder="Düzeltme notu" aria-label="Düzeltme notu" value="' + esc(r && r.note || "") + '">' +
-    (key.indexOf("narr__") === 0 ? "" : '<button class="chip" data-rev="' + esc(key) + '" data-act="approve">Onayla</button>') +
+    (key.indexOf("narr__") === 0 ? "" : '<label class="rev-np"><input type="checkbox" id="rp-' + esc(key) + '"' + (r && r.new_pattern ? " checked" : "") +
+      "> Kartlarda olmayan bir örüntü</label>" + '<button class="chip" data-rev="' + esc(key) + '" data-act="approve">Onayla</button>') +
     '<button class="chip" data-rev="' + esc(key) + '" data-act="correct">Düzelt</button>' +
     '<button class="chip" data-rev="' + esc(key) + '" data-act="reject">Reddet</button>' +
     (r ? '<button class="chip" data-rev="' + esc(key) + '" data-act="undo">Geri al</button>' : "") : "") + "</div>";
@@ -6709,12 +6710,13 @@ async function rev7Init() {
     }, function () { REV7MSG = "İnceleme kayıtları okunamadı; YZ sonuçları düzeltmesiz gösteriliyor."; });
   } catch (e) {}
 }
-function rev7Save(key, status, note) {
+function rev7Save(key, status, note, newPattern) {
   if (!REV7DB || !REV7OWNER) return;
   var ref = REV7DB.collection("reviews").doc(key);
   var doc = { status: status, note: note || "", at: new Date().toISOString(), pack: D.meta.built };
   var x = key.indexOf("narr__") === 0 ? null : bg7ev(key.split("__")[0]);
   if (x && x.text) doc.text = x.text;   // the review binds to this event text
+  if (newPattern) doc.new_pattern = true;   // the reviewer saw a pattern no card covers (learning loop)
   (status ? ref.set(doc) : ref.delete())
     .catch(function (e) { REV7MSG = "Kaydedilemedi: " + ((e && e.message) || "bilinmeyen hata"); route(); });
 }
@@ -6740,7 +6742,8 @@ document.addEventListener("click", function (ev) {
   var key = b.getAttribute("data-rev"), act = b.getAttribute("data-act");
   var inp = document.getElementById("rn-" + key);
   if (act === "correct" && !(inp && inp.value.trim())) { if (inp) inp.focus(); return; }
-  rev7Save(key, act === "undo" ? null : act === "reject" ? "rejected" : act === "approve" ? "verified" : "corrected", inp ? inp.value.trim() : "");
+  var np = document.getElementById("rp-" + key);
+  rev7Save(key, act === "undo" ? null : act === "reject" ? "rejected" : act === "approve" ? "verified" : "corrected", inp ? inp.value.trim() : "", !!(np && np.checked));
 });
 function bg7CardLine(e) {
   var x = bg7ev(e.i); if (!x || x.status !== "review_complete") return "";

@@ -398,3 +398,8 @@ test("reviewCounts line lists only non-zero groups", () => {
   assert.equal(L.reviewCountsLine({ insan_bekliyor: 3 }), "3 bulgu insan kontrolü bekliyor");
   assert.equal(L.reviewCountsLine({}), "");
 });
+test("reviewsExport carries the new-pattern flag only when set", () => {
+  const out = L.reviewsExport({ "e1__a": rv("corrected", { note: "n", new_pattern: true }), "e1__b": rv("verified") }, "p1");
+  assert.equal(out.reviews[0].new_pattern, true);
+  assert.equal("new_pattern" in out.reviews[1], false);
+});
