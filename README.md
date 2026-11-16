@@ -32,6 +32,18 @@ and **Davranışsal yanlılıklar**. Seventeen media-technique cards are written
 ([`docs/validation/ITERATIONS.md`](docs/validation/ITERATIONS.md)) turns reviews into a replay set, error
 reports and a promotion gate for detector changes. The data, events and analyses are those of 8.1.
 
+### 8.2 test build (rerun)
+
+Both AI passes were rerun on the 150 widest events of the 8.1 data, with the 17 media-technique cards live (taken live
+for this test build before owner approval and the lab gate). Every finding is shown alike, labelled **AI imzalı**, with
+three texts composed from the reviewers' own fields (`biasguard/explain_rules.py`): Ne fark etti, Ne anlama geliyor,
+Neden kesin değil. Örüntüler has a fifth page, **AI ne buldu** (`#/oruntu?q=yz`), which sets the AI findings against the
+rule-based measures (`python -m capraz_pipeline.aix`, key AIX): AI wording citations are nearly unrelated to the
+rule-based loaded-language score (headline AUC 0.48), blocs differ by a few points at most, and AI responsibility framing
+barely agrees with Anlatı haritası's 'sorumlu tutulan' (κ 0.08). Charts use D3 7.9.0 (`public/vendor/d3.min.js`). The
+look returns to the Rebrand Proposal tokens (newsprint, Newsreader, IBM Plex, Bricolage Grotesque). **8.2'de yeni**
+(`#/yeni82`) compares this build with the earlier 8.2.
+
 ## What is new in 8.1
 
 The collector ([`aylinunel/turkish-news-scraper`](https://github.com/aylinunel/turkish-news-scraper), 72-publisher registry) now supplies 51 outlets through 13 November. Every analysis was recomputed and the site has a page, **8.1’de yeni** (`#/yenilikler`), comparing each result with 8.0. `python -m capraz_pipeline.whatsnew --old <8.0 core.bin> --new <8.1 core.bin>` regenerates it. Anlatı haritası covers 1–13 November (AI-coded, marked YZ); BiasGuard still reviews only the 8.0 events. A Parti is a minor party and never ranks as an outlet's nearest party. Anlatı haritası is its own topic (`#/anlati`: Nasıl okunur, Sezon haritası, Olay haritası); bias names from the AI review carry a short inline explanation.

@@ -26,7 +26,7 @@ document.addEventListener("click", function (ev) {
   b.setAttribute("aria-expanded", on); if (t) t.hidden = !on;
 }, true);
 
-function yzBadge() { return '<span class="yz-badge" title="Yapay zekâ ile üretildi · Yöntem › YZ">YZ</span>'; }
+function yzBadge() { return '<span class="yz-badge" title="Yapay zekâ ile üretildi; insan tarafından doğrulanmadı · Yöntem › YZ">AI imzalı</span>'; }
 
 function yzBlock(innerHtml, title) {
   return '<section class="yz">' + (title ? "<h3>" + esc(title) + " " + yzBadge() + "</h3>" : "") + innerHtml + "</section>";
@@ -38,7 +38,7 @@ function findingBlock(f) {
   var why = f.means || f.example ? '<details class="v7-why"><summary>Neden önemli?</summary>' + (f.means ? '<p class="v7-means">' + glossTerms(f.means) + "</p>" : "") +
     (f.example ? '<p><a href="#/olay?e=' + encodeURIComponent(f.example) + '">Bir örnek olay →</a></p>' : "") + "</details>" : "";
   var tbl = f.table ? '<details class="v7-tbl"><summary>Tabloyu göster</summary>' + f.table + "</details>" : "";
-  return '<section class="v7-find" data-m="scene"' + (f.nopin ? " data-nopin" : "") + ' id="' + esc(f.id || "") + '"><p class="v7-claim">' + glossTerms(f.claim || "") + "</p>" +
+  return '<section class="v7-find" data-m="scene"' + (f.nopin ? " data-nopin" : "") + (f.nocount ? " data-nocount" : "") + ' id="' + esc(f.id || "") + '"><p class="v7-claim">' + glossTerms(f.claim || "") + "</p>" +
     '<div class="v7-viz">' + (f.viz || "") + "</div>" + (f.read ? '<p class="v7-read">' + f.read + "</p>" : "") + why +
     (f.how || tbl ? '<details class="v7-how"><summary>Nasıl ölçtük?</summary>' + (f.how || "") + tbl + "</details>" : "") + "</section>";
 }

@@ -2778,3 +2778,139 @@ html.menu-lock,html.menu-lock body{overflow:hidden}
 /* Medyanın oyunları / Davranışsal yanlılıklar groups on the event page */
 .v7-grp+.v7-grp{margin-top:18px}
 .v7-grp-h{font-family:var(--ff-m);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);margin:12px 0 6px}
+
+/* ===================================================================== 8.2 · brand restored + AI imzalı
+   Rebrand Proposal (§9 colour, §12 type): the 7.0 Kindred block had put grey paper and Inter over the
+   newsprint system. Tokens only; no layout is replaced. Colour stays reserved: red/blue/grey are claims
+   about an outlet, amber is evidence (small numerals, evidence marks), the highlight sits only behind a word. */
+:root{
+  --paper:#F5F0E3; --surface:#FBF8F0; --raise:#FFFDF7; --sunk:#EFE8D6;
+  --line:#DDD5C2; --line2:#C9C0AA; --ink:#1B1813; --ink2:#3A352C; --muted:#5E5749; --mist:#BDB4A0;
+  --np:#FBF8F0; --np-line:#DDD5C2; --hl:#F6C453; --hot:#B45309; --hot-fill:#FDE9C8;
+  --band:#1B1813; --band-ink:#F5F0E3; --band-mute:#BDB4A0; --band-card:#24211A; --band-line:#3A352B; --on-hl:#1B1813;
+  --ff-d:"Newsreader",Georgia,"Times New Roman",serif;
+  --ff-b:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ff-m:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --ff-w:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;
+  --ff-g:var(--ff-d);
+  --gap-sec:72px; --gap-blk:40px;
+}
+:root[data-theme="dark"]{
+  --paper:#1B1813; --surface:#24211A; --raise:#2B271F; --sunk:#14120E;
+  --line:#3A352B; --line2:#4E4839; --ink:#F5F0E3; --ink2:#DDD5C2; --muted:#BDB4A0; --mist:#8F8774;
+  --np:#24211A; --np-line:#3A352B; --hot:#F59E0B; --hot-fill:#3A2A0C; --band:#0F0D0A; --band-card:#1B1813;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#1B1813; --surface:#24211A; --raise:#2B271F; --sunk:#14120E;
+  --line:#3A352B; --line2:#4E4839; --ink:#F5F0E3; --ink2:#DDD5C2; --muted:#BDB4A0; --mist:#8F8774;
+  --np:#24211A; --np-line:#3A352B; --hot:#F59E0B; --hot-fill:#3A2A0C; --band:#0F0D0A; --band-card:#1B1813;
+}}
+body{background:var(--paper);color:var(--ink);font-family:var(--ff-b)}
+::selection{background:var(--hl);color:#1B1813}
+.brand-txt{font-family:var(--ff-w);font-weight:800;letter-spacing:-.01em}
+h1,.phead h1,.v7-claim,.xh1{font-family:var(--ff-d)}
+.num,.mono,.v7-read,.or-hint b,td.r,.num b{font-variant-numeric:tabular-nums}
+
+/* contrast: secondary text on newsprint takes soft ink (6.3:1), never lighter */
+.or-hint,.xsmall,.sub,.v7-note,.v7-read,.lede{color:var(--ink2)}
+.xsmall,.or-hint{color:var(--muted)}
+.v7-read{font-size:13px;line-height:1.55}
+
+/* grouping with spacing: a finding is one group, ruled from the next; sections breathe */
+.or .v7-find{margin:0;padding:var(--gap-blk) 0;border-top:1px solid var(--line)}
+.or .v7-find:first-of-type{border-top:2px solid var(--ink)}
+.or .v7-claim{font-size:clamp(21px,2.3vw,26px);line-height:1.3;max-width:42ch;margin-bottom:22px;text-wrap:pretty}
+.or .v7-viz{margin:8px 0 18px}
+.or-ex{margin-top:var(--gap-sec)}
+.wrap.page .phead{margin-bottom:12px}
+
+/* Nasıl çalışır / Nasıl ölçtük: accent marks the method, everywhere it is offered */
+.v7-how summary,.v7-why summary,.v7-tbl summary{gap:9px;color:var(--ink);border-color:var(--line2)}
+.v7-how summary::before{content:"";width:7px;height:7px;background:var(--hl);outline:1px solid var(--ink);flex:none}
+.v7-why summary::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ink);flex:none}
+.v7-how[open]{background:var(--np);border:1px solid var(--np-line);border-left:3px solid var(--ink);border-radius:0 12px 12px 0;padding:6px 18px 14px;margin-top:12px}
+.v7-how[open] summary{border:0;padding-left:0}
+.or-how li{margin:6px 0;color:var(--ink)}
+.or-how li::marker{color:var(--hot)}
+
+/* the AI imzalı stamp: ink on newsprint, an amber evidence dot, never yellow */
+.yz-badge{display:inline-flex;align-items:center;gap:6px;vertical-align:.12em;margin-left:4px;padding:2px 8px 2px 7px;border:1px solid var(--ink);border-radius:3px;
+  background:var(--np);color:var(--ink);font:600 10px/1.4 var(--ff-m);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+.yz-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--hot)}
+.yz{border-left:0;padding-left:0}
+
+/* evidence card: one AI finding */
+.ai-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:20px;margin:24px 0}
+.ai-grid.one{grid-template-columns:1fr;gap:16px;margin:14px 0}
+.ai-card{position:relative;min-width:0;background:var(--np);border:1px solid var(--np-line);border-top:3px solid var(--ink);border-radius:2px 2px 12px 12px;
+  padding:18px 22px 20px;animation:aiRise .55s cubic-bezier(.2,.7,.2,1) both}
+.ai-grid .ai-card:nth-child(2){animation-delay:.06s}.ai-grid .ai-card:nth-child(3){animation-delay:.12s}.ai-grid .ai-card:nth-child(4){animation-delay:.18s}
+.ai-grid .ai-card:nth-child(5){animation-delay:.24s}.ai-grid .ai-card:nth-child(n+6){animation-delay:.3s}
+@keyframes aiRise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.ai-card{animation:none}}
+.ai-card-h{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 12px}
+.ai-kind{font:600 11px/1.3 var(--ff-m);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+.ai-ev{margin:0 0 14px;font:500 19px/1.3 var(--ff-d);letter-spacing:-.005em}
+.ai-ev a{color:var(--ink);text-decoration:none;background:linear-gradient(var(--line2),var(--line2)) 0 100%/100% 1px no-repeat}
+.ai-ev a:hover{background-size:100% 2px}
+.ai-dl{display:grid;grid-template-columns:minmax(92px,128px) 1fr;gap:10px 18px;margin:0}
+.ai-dl dt{font:500 10.5px/1.6 var(--ff-m);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.ai-dl dd{margin:0;font:400 16px/1.55 var(--ff-d);color:var(--ink);min-width:0;overflow-wrap:anywhere}
+.ai-dl dt.ai-means{color:var(--ink)}
+.ai-dl dd.ai-means{font-size:17px;padding:8px 0 8px 14px;border-left:2px solid var(--ink)}
+.ai-q{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ai-q li{display:grid;gap:2px;padding:0 0 8px;border-bottom:1px dashed var(--line)}
+.ai-q li:last-child{border-bottom:0;padding-bottom:0}
+.ai-q q{font-style:italic;quotes:"“" "”"}
+.ai-who{font:500 11px var(--ff-m);letter-spacing:.06em;color:var(--ink2)}
+@media (max-width:600px){.ai-dl{grid-template-columns:1fr;gap:4px}.ai-dl dd{margin-bottom:8px}.ai-card{padding:16px}}
+
+/* concept list (Örüntüler › AI ne buldu) */
+.ai-concepts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
+@media (max-width:860px){.ai-concepts{grid-template-columns:1fr}}
+.ai-cgrp h3{font:500 21px/1.2 var(--ff-d);margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.ai-sub{font:500 11px var(--ff-m);letter-spacing:.06em;color:var(--muted);margin-left:6px}
+.ai-clist{list-style:none;margin:0;padding:0}
+.ai-clist li{padding:12px 0;border-bottom:1px solid var(--line)}
+.ai-clist a{display:grid;grid-template-columns:minmax(0,1fr) 90px 34px;align-items:center;gap:12px;color:var(--ink);text-decoration:none;min-height:32px}
+.ai-clist a:hover .ai-cn{text-decoration:underline;text-underline-offset:3px}
+.ai-cn{font:600 15px/1.3 var(--ff-b)}
+.ai-cbar{height:6px;background:var(--sunk);border-radius:3px;overflow:hidden}.ai-cbar i{display:block;height:100%;background:var(--ink)}
+.ai-clist b{font:600 13px var(--ff-m);text-align:right}
+.ai-ct{margin:4px 0 0;font-size:13.5px;line-height:1.5;color:var(--ink2);max-width:52ch}
+
+/* charts */
+.ai-d3{margin:6px 0 8px;min-height:120px}
+.ai-svg{width:100%;height:auto;overflow:visible;color:var(--ink2);font-family:var(--ff-m)}
+.ai-ax text{font:11px var(--ff-m);fill:var(--muted)}.ai-ax path{stroke:var(--line2)}.ai-ax line{stroke:var(--line)}
+.ai-axt{font:500 11px var(--ff-m);letter-spacing:.04em;fill:var(--ink2)}
+.ai-lab{font:500 11.5px var(--ff-b);fill:var(--ink)}
+.ai-colh{font:600 11px var(--ff-m);letter-spacing:.14em;text-transform:uppercase}
+.ai-rowh{font:500 13px var(--ff-b);fill:var(--ink)}
+.ai-cell{font:600 12px var(--ff-m)}
+.ai-grp{font:600 11px var(--ff-m);letter-spacing:.14em;text-transform:uppercase;fill:var(--ink)}
+.ai-svg [tabindex]:focus{outline:none}.ai-svg [tabindex]:focus circle,.ai-svg [tabindex]:focus rect{stroke:var(--ink);stroke-width:2}
+.ai-wait,.ai-fail{font:12px var(--ff-m);color:var(--muted);padding:40px 0;text-align:center}
+
+/* 2x2 agreement table */
+.ai-2x2{border-collapse:separate;border-spacing:6px;width:100%;max-width:640px;margin:4px 0 8px}
+.ai-2x2 th{font:500 11px/1.4 var(--ff-m);letter-spacing:.06em;color:var(--ink2);text-align:left;padding:6px 8px;vertical-align:bottom}
+.ai-2x2 th[scope=row]{max-width:200px}
+.ai-x{background:var(--np);border:1px solid var(--np-line);border-radius:8px;padding:14px 16px;vertical-align:top}
+.ai-x b{display:block;font:500 30px/1 var(--ff-d);color:var(--ink)}
+.ai-x span{font:500 12px var(--ff-m);color:var(--muted)}
+.ai-x.on{border:2px solid var(--ink)}
+.ai-x.on span{color:var(--hot)}
+.ai-detail .phead h1{font-family:var(--ff-d)}
+.ai-2x2{table-layout:fixed}
+.ai-2x2 th,.ai-2x2 td{border:0;box-shadow:none}
+.ai-2x2 thead th{vertical-align:bottom;padding:0 8px 6px;border-bottom:2px solid var(--ink)}
+.ai-2x2 thead th:first-child{border-bottom:0}
+.ai-2x2 th[scope=row]{vertical-align:middle;padding:0 12px 0 0;border-right:2px solid var(--ink);text-align:right}
+@media (max-width:600px){.ai-2x2 th{font-size:10px}.ai-x b{font-size:24px}.ai-x{padding:10px}}
+/* 2x2 as a grid (replaces the table rules above) */
+div.ai-2x2{display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,1fr) minmax(0,1fr);gap:8px;max-width:680px;margin:4px 0 10px;border-spacing:0}
+.ai-ch,.ai-rh{font:500 11px/1.4 var(--ff-m);letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
+.ai-ch{align-self:end;padding:0 4px 6px;border-bottom:2px solid var(--ink)}
+.ai-rh{align-self:center;text-align:right;padding-right:12px;border-right:2px solid var(--ink);min-height:100%;display:flex;align-items:center;justify-content:flex-end}
+@media (max-width:600px){div.ai-2x2{grid-template-columns:96px 1fr 1fr}.ai-ch,.ai-rh{font-size:9.5px;letter-spacing:.02em}}

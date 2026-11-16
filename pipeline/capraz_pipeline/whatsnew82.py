@@ -18,6 +18,10 @@ OUT = REPO / "data" / "reference" / "whatsnew-82.json"
 COLS = ["Önceki 8.2", "Yeni 8.2"]
 
 
+def _tr(x: float) -> str:
+    return f"{x:.2f}".replace(".", ",")
+
+
 def _done(bg: dict) -> list[dict]:
     return [e for e in bg["events"] if e["status"] == "review_complete"]
 
@@ -31,7 +35,7 @@ def _top(bg: dict, n: int = 5) -> list[tuple[str, int]]:
     return c.most_common(n)
 
 
-def compare(old: dict, new: dict, media: dict | None) -> dict:
+def compare(old: dict, new: dict, media: dict | None, aix: dict | None = None) -> dict:
     so, sn = old["summary"], new["summary"]
     ev_old, ev_new = {e["event"] for e in old["events"]}, {e["event"] for e in new["events"]}
     both = ev_old & ev_new
@@ -75,8 +79,20 @@ def compare(old: dict, new: dict, media: dict | None) -> dict:
     expl = lambda bg: sum(1 for _, f in _findings(bg) if f.get("explain", {}).get("means"))
     out.append({"id": "anlam", "tag": "yeni", "title": "Her bulgunun yanında “Ne anlama geliyor”",
                 "claim": "Bulgular artık üç kısa metinle gelir: ne fark edildi, okur için ne anlama geliyor, neden kesin değil. "
-                         "Yeni AI bulguları sayfası iki grubun bütün bulgularını kavram kavram listeler.",
+                         "Örüntüler › AI ne buldu iki grubun bütün bulgularını kavram kavram listeler.",
                 "cols": COLS, "rows": [["“Ne anlama geliyor” metni olan bulgu", 0, expl(new) + (expl(media) if media else 0)]]})
+    if aix:
+        w, b = aix["wording"], aix["blame"]
+        out.append({"id": "kural", "tag": "yeni", "title": "AI bulguları sitenin kural tabanlı ölçümleriyle karşılaştırıldı",
+                    "claim": "Örüntüler’e “AI ne buldu” eklendi; AI imzalı bulgular yüklü dil puanı, bloklar ve anlatı haritasıyla yan yana. "
+                             f"AI’nin sözcük tekniği alıntıları kural tabanlı yüklü dil puanıyla neredeyse ilişkisiz (başlık düzeyinde AUC {_tr(w['headlines']['auc'])}, "
+                             f"yazı tura 0,50); sorumluluk çerçevesi ile anlatı haritasının ‘sorumlu tutulan’ kodu da az örtüşüyor (κ {_tr(b['kappa'])}).",
+                    "rows": [["AI ile karşılaştırılan kurum", "—", len(w["outlets"])], ["Karşılaştırılan başlık", "—", w["headlines"]["cited"] + w["headlines"]["notCited"]],
+                             ["Anlatı haritasıyla ortak olay", "—", b["events"]]], "cols": COLS,
+                    "note": "İki ölçünün az örtüşmesi birinin yanlış olduğunu göstermez: kural tabanlı puan sözcüğe, AI kurumlar arasındaki farka bakar."})
+        out.append({"id": "tasarim", "tag": "değişti", "title": "Görünüm marka kurallarına döndü",
+                    "claim": "Gazete kâğıdı zemini, Newsreader başlıklar ve IBM Plex rakamlar geri geldi; AI bulguları kanıt kartlarında, “AI imzalı” damgasıyla. "
+                             "Kırmızı ve mavi yalnızca bir kurum hakkında, sarı yalnızca bir sözcüğün arkasında."})
     out.append({"id": "sinir", "tag": "uyarı", "title": "Bu bir deneme sürümü",
                 "claim": "Medya kartları sahip onayı ve laboratuvar sınaması beklenmeden canlıya alındı. Hiçbir bulgu insan tarafından doğrulanmadı; "
                          "bir olayda bulgu olmaması o olayda teknik ya da yanlılık olmadığı anlamına gelmez."})
@@ -92,9 +108,10 @@ def main() -> None:
     p.add_argument("--old", type=Path, required=True)
     p.add_argument("--new", type=Path, required=True)
     p.add_argument("--media", type=Path)
+    p.add_argument("--aix", type=Path, help="data/reference/aix-82.json (python -m capraz_pipeline.aix)")
     a = p.parse_args()
     load = lambda x: json.loads(Path(x).read_text())
-    res = compare(load(a.old), load(a.new), load(a.media) if a.media else None)
+    res = compare(load(a.old), load(a.new), load(a.media) if a.media else None, load(a.aix) if a.aix else None)
     OUT.write_text(json.dumps(res, ensure_ascii=False, indent=1))
     print(OUT, len(res["findings"]))
 

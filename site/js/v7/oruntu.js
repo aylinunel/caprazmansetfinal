@@ -743,6 +743,7 @@ function pgOruntu(q) {
   if (k === "dil") return orDil();
   if (k === "anlati") return orAnlati();
   if (k === "hiz") return orHiz();
+  if (k === "yz") return orYZ(q);
   return orSecim();
 }
 
@@ -763,6 +764,7 @@ function wireOruntu(q, f) {
   orWire(root); wireGo(root);
   if (f) setTimeout(function () { var t = document.getElementById(f); if (t) t.scrollIntoView({ block: "start" }); }, 30);
   q = OR_PAGES[q] ? q : "secim";
+  if (q === "yz") aiMount(root);
   if (q === "secim") {
     orPut("adv-a", advHeat());
   }

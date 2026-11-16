@@ -74,20 +74,10 @@ function olayHeadlines(e) {
     ledeButton5() + '<div id="alist"></div>' + fixLink("olay", e.i, e.t) + "</section>";
 }
 
-function olayFinding(f, x) {
-  var t = yzText(f, rev7For(x, f));
-  if (!t) return "";
-  var qs = (f.evidence || []).slice(0, 3).map(function (q) {
-    return "<li>“" + esc(q.q) + "”" + ((q.o || []).length ? " — " + q.o.map(function (o) { return esc(srcName(o)); }).join(", ") : "") + "</li>";
-  }).join("");
-  /* 8.2: every finding is shown the same way; no AI/human status on public pages. */
-  return '<div class="v7-yzf"><h4>' + biasChip(f) + "</h4>" +
-    (t.noticed ? "<p><b>" + (t.editor ? "Editör notu" : "Ne fark etti") + ".</b> " + esc(t.noticed) + "</p>" : "") +
-    (qs ? "<ul>" + qs + "</ul>" : "") +
-    (t.means ? "<p><b>Ne anlama geliyor.</b> " + esc(t.means) + "</p>" : "") +
-    (t.why ? "<p><b>Neden kesin değil.</b> " + esc(t.why) + "</p>" : "") + "</div>";
+function olayFinding(f, x, media) {
+  if (yzText(f, rev7For(x, f))) return aiCard({ x: x, f: f }, media, false);
+  return "";
 }
-
 /* AI review of an event in two groups: Medyanın oyunları (what the text does) first, then behavioural
    biases. Rule-based scorer hits are listed beside the AI findings and never added to them. */
 function olayGroups(e) {
@@ -105,7 +95,7 @@ function olayReview(e) {
     else {
       var n = g.findings.length;
       h += '<h4 class="v7-grp-h">AI incelemesi</h4>' + (n ? '<p class="rv-line">' + n + " bulgu.</p>" : "") +
-        g.findings.map(function (f) { return olayFinding(f, src); }).join("");
+        '<div class="ai-grid one">' + g.findings.map(function (f) { return olayFinding(f, src, media); }).join("") + "</div>";
     }
     if (media && rules.length) h += '<h4 class="v7-grp-h">Kural tabanlı ölçüm</h4><p class="rv-line">Başlıklarda kural tabanlı puanlayıcının işaretlediği teknikler (AI bulgularıyla toplanmaz): ' +
       rules.map(function (r) { return esc(r.tr) + " " + r.n + " başlıkta"; }).join(" · ") + ".</p>";

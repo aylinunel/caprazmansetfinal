@@ -163,7 +163,7 @@
    "id": "anlam",
    "tag": "yeni",
    "title": "Her bulgunun yanında “Ne anlama geliyor”",
-   "claim": "Bulgular artık üç kısa metinle gelir: ne fark edildi, okur için ne anlama geliyor, neden kesin değil. Yeni AI bulguları sayfası iki grubun bütün bulgularını kavram kavram listeler.",
+   "claim": "Bulgular artık üç kısa metinle gelir: ne fark edildi, okur için ne anlama geliyor, neden kesin değil. Örüntüler › AI ne buldu iki grubun bütün bulgularını kavram kavram listeler.",
    "cols": [
     "Önceki 8.2",
     "Yeni 8.2"
@@ -175,6 +175,40 @@
      0
     ]
    ]
+  },
+  {
+   "id": "kural",
+   "tag": "yeni",
+   "title": "AI bulguları sitenin kural tabanlı ölçümleriyle karşılaştırıldı",
+   "claim": "Örüntüler’e “AI ne buldu” eklendi; AI imzalı bulgular yüklü dil puanı, bloklar ve anlatı haritasıyla yan yana. AI’nin sözcük tekniği alıntıları kural tabanlı yüklü dil puanıyla neredeyse ilişkisiz (başlık düzeyinde AUC 0,48, yazı tura 0,50); sorumluluk çerçevesi ile anlatı haritasının ‘sorumlu tutulan’ kodu da az örtüşüyor (κ 0,08).",
+   "rows": [
+    [
+     "AI ile karşılaştırılan kurum",
+     "—",
+     43
+    ],
+    [
+     "Karşılaştırılan başlık",
+     "—",
+     3362
+    ],
+    [
+     "Anlatı haritasıyla ortak olay",
+     "—",
+     40
+    ]
+   ],
+   "cols": [
+    "Önceki 8.2",
+    "Yeni 8.2"
+   ],
+   "note": "İki ölçünün az örtüşmesi birinin yanlış olduğunu göstermez: kural tabanlı puan sözcüğe, AI kurumlar arasındaki farka bakar."
+  },
+  {
+   "id": "tasarim",
+   "tag": "değişti",
+   "title": "Görünüm marka kurallarına döndü",
+   "claim": "Gazete kâğıdı zemini, Newsreader başlıklar ve IBM Plex rakamlar geri geldi; AI bulguları kanıt kartlarında, “AI imzalı” damgasıyla. Kırmızı ve mavi yalnızca bir kurum hakkında, sarı yalnızca bir sözcüğün arkasında."
   },
   {
    "id": "sinir",

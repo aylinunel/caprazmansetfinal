@@ -43,7 +43,7 @@ function pgHome7() {
     step(2, "Fark et", "Kurumlar arasında ayrışan sözcükleri işaretleriz.") +
     step(3, "Ölç", "Bu farkların haftalar boyunca tekrar edip etmediğini sayarız.") + "</ol></div></section>";
   if (D.W82) h += '<section class="v7-yn-band"><a class="v7-hc" href="#/yeni82"><b>8.2’de yeni</b><span>' + esc(D.W82.band) + "</span></a></section>" +
-    '<section class="v7-yn-band"><a class="v7-hc" href="#/yz"><b>AI bulguları</b><span>En çok kurumun verdiği olaylarda AI’nin fark ettiği medya teknikleri ve yanlılıklar, ne anlama geldikleriyle.</span></a></section>';
+    '<section class="v7-yn-band"><a class="v7-hc" href="#/oruntu?q=yz"><b>AI ne buldu</b><span>En çok kurumun verdiği olaylarda AI’nin fark ettiği medya teknikleri ve yanlılıklar, ne anlama geldikleriyle.</span></a></section>';
   if (D.W81) h += '<section class="v7-yn-band"><a class="v7-hc" href="#/yenilikler"><b>8.1’de yeni</b><span>' + orN(m.articles) + " başlık, " + D.meta.sources.length +
     " kurum, 13 Kasım’a kadar: eklenen veri hangi bulguları değiştirdi?</span></a></section>";
   h += "<section>" + pHead("Çapraz Manşet", "Daha derine in") + '<div class="v7-hgrid">' + deep + "</div></section>";
