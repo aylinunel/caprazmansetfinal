@@ -1,7 +1,9 @@
 import unittest
+from pathlib import Path
 
-from biasguard.explain_rules import compose
-from biasguard.news import validate_explain
+from biasguard.catalog import load_cards
+from biasguard.explain_rules import BR_ALIAS, compose
+from biasguard.news import _load, validate_explain
 
 TEXT = "[a · 09:00] Fon vurgunu soruşturması başladı — ayrıntı\n[b · 09:05] Fon soruşturması başladı"
 NAMES = {"a": "Kurum A", "b": "Kurum B"}
@@ -37,6 +39,15 @@ class SentenceTest(unittest.TestCase):
         self.assertEqual(_first_sentence("Bakan Dr. Ahmet Yılmaz açıkladı. İkinci cümle."), "Bakan Dr. Ahmet Yılmaz açıkladı.")
         self.assertEqual(_first_sentence("USGS vb. Kurumlar ölçtü. Sonra."), "USGS vb. Kurumlar ölçtü.")
         self.assertEqual(_first_sentence("Tek cümle"), "Tek cümle")
+
+
+class AliasTest(unittest.TestCase):
+    def test_every_card_reaches_a_registry_entry(self):
+        core = _load(Path(__file__).resolve().parents[1] / "public" / "data" / "core.bin")
+        registry = {b["k"] for b in core["BR"]}
+        missing = [c["id"] for c in load_cards() if BR_ALIAS.get(c["id"], c["id"]) not in registry]
+        self.assertEqual(missing, [])
+        self.assertEqual(core.get("BRA", BR_ALIAS), BR_ALIAS)  # the site reads the same map
 
 
 if __name__ == "__main__":

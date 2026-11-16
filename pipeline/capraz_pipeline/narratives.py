@@ -134,9 +134,12 @@ def merge(core: dict) -> None:
     w82 = OUT.parent / "whatsnew-82.json"  # 8.2: old AI review vs the rerun (python -m capraz_pipeline.whatsnew82)
     if w82.exists():
         core["W82"] = json.loads(w82.read_text())
-    bmt = REPO / "biasguard" / "data" / "behavioural_means.json"  # Turkish meanings of behavioural concepts (explain_rules.py)
-    if bmt.exists():
-        core["BMT"] = json.loads(bmt.read_text(encoding="utf-8"))
+    # biasguard/data files the site shares with explain_rules.py: Turkish meanings of behavioural concepts (BMT),
+    # card ids the concept registry stores under an older key (BRA)
+    for key, name in (("BMT", "behavioural_means.json"), ("BRA", "concept_alias.json")):
+        f = REPO / "biasguard" / "data" / name
+        if f.exists():
+            core[key] = json.loads(f.read_text(encoding="utf-8"))
     aix = OUT.parent / "aix-82.json"  # 8.2: AI findings against the rule-based findings (python -m capraz_pipeline.aix)
     if aix.exists():
         core["AIX"] = json.loads(aix.read_text())

@@ -5295,11 +5295,9 @@ function bg7sim() {
     "<b>7.0’daki düzeltmeler:</b> kanıt türü (karşılaştırmalı/ifade) artık alanın adından bağımsız; sağlayıcı hataları ayrıntısıyla kaydediliyor; " +
     "art arda " + 5 + " başarısızlıkta çalışma duruyor ve kalan olaylar “çalıştırılmadı” sayılıyor; her inceleme en çok 6 kavramla sınırlı (uzunluk hatasına karşı).</div></section>";
 }
-/* Concept-level view of the reviews: card ids mapped onto the Çerçeveleme library keys (8 cards use
+/* Concept-level view of the reviews: card ids mapped onto the Çerçeveleme library keys (some cards use
    older library keys), counted over completed reviews only. */
-var BG7ALIAS = { "base-rate-fallacy": "base-rate", "gamblers-fallacy": "gambler-s-fallacy", "identifiable-victim-effect": "identifiable-victim",
-  "just-world-hypothesis": "just-world", "belief-perseverance": "belief-perseverance-the-backfire-effect", "choice-overload-bias": "choice-overload",
-  "levels-of-processing-effect": "levels-of-processing", "illusory-truth-effect": "illusory-truth" };
+var BG7ALIAS = D.BRA || {};  /* biasguard/data/concept_alias.json */
 function bg7k(id) { return BG7ALIAS[id] || id; }
 var BG7S = null;
 function bg7Stats() {

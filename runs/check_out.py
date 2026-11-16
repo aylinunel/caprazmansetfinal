@@ -7,7 +7,11 @@ from biasguard.engine import BiasGuard
 from biasguard.news import catalog_cards, MAX_CANDIDATES
 run, stage, batch = Path(sys.argv[1]), sys.argv[2], Path(sys.argv[3])
 role = sys.argv[4] if len(sys.argv) > 4 else None
-bg = BiasGuard(cards=catalog_cards("media" if "bgm" in run.name else "behavioural"))
+if run.parent.parent.name == "lab":  # validation lab run: runs/lab/<run>/<config>
+    from validation.biaslab import configs
+    bg = BiasGuard(cards=configs.catalog(run.name))
+else:
+    bg = BiasGuard(cards=catalog_cards("media" if "bgm" in run.name else "behavioural"))
 task = json.loads(batch.read_text())
 by = {c["id"]: c for c in bg.cards}
 for ev in task["events"]:

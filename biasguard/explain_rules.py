@@ -40,12 +40,11 @@ MEDIA_MEANS = {
 }
 # Behavioural concepts that have no Turkish definition in the concept registry (core.bin key BR). One source:
 # biasguard/data/behavioural_means.json, also shipped to the site as core key BMT (narratives.merge).
-BEHAVIOURAL_MEANS = json.loads((Path(__file__).resolve().parent / "data" / "behavioural_means.json").read_text(encoding="utf-8"))
-# BiasGuard card ids that the concept registry (core.bin key BR) stores under an older key (BG7ALIAS in app.js)
-BR_ALIAS = {"base-rate-fallacy": "base-rate", "gamblers-fallacy": "gambler-s-fallacy",
-            "identifiable-victim-effect": "identifiable-victim", "just-world-hypothesis": "just-world",
-            "belief-perseverance": "belief-perseverance-the-backfire-effect", "choice-overload-bias": "choice-overload",
-            "levels-of-processing-effect": "levels-of-processing", "illusory-truth-effect": "illusory-truth"}
+_DATA = Path(__file__).resolve().parent / "data"
+BEHAVIOURAL_MEANS = json.loads((_DATA / "behavioural_means.json").read_text(encoding="utf-8"))
+# BiasGuard card ids that the concept registry (core.bin key BR) stores under an older key. One source:
+# biasguard/data/concept_alias.json, also shipped to the site as core key BRA (BG7ALIAS in app.js).
+BR_ALIAS = json.loads((_DATA / "concept_alias.json").read_text(encoding="utf-8"))
 MAX, MIN = 320, 40
 _SENT = re.compile(r"(?<=[.!?…])\s+(?=[A-ZÇĞİÖŞÜ0-9“\"'])")
 # a full stop after these does not end a sentence ("Dr. Ahmet", "vb. Ancak")
