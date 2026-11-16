@@ -455,3 +455,17 @@ test("profileDistance", () => {
   assert.ok(Math.abs(r[0].d - Math.SQRT2) < 1e-9);      // z of 10 among {0,0,10}: (10-10/3)/sd
   assert.equal(r[2].d, r[1].d);
 });
+
+test("notices: a custom URL rule is not cached before the URL packs arrive", () => {
+  // load it as the page does (as a plain script, it registers the global CM3 that its own tail calls)
+  const ctx = {}; require("vm").runInNewContext(require("fs").readFileSync(require("path").join(__dirname, "../js/turkish-layer.js"), "utf8"), ctx);
+  const CM3 = ctx.CM3;
+  const A = [{ i: "a1", s: "o", t: "haber", d: "2026-11-01T10:00", k: [], v: 0, p: 1 }];
+  const D = { S: [{ s: "o" }], A, E: [{ i: "e1", a: ["a1"], s: ["o"] }], FD: [], meta: {} };
+  const rule = { url: "\\/duyuru\\/", keywords: ["MAHKEMESİ"] };
+  assert.equal(CM3.notices(D, rule).total, 0);          // URLs not loaded yet: provisional "no"
+  A[0].u = "https://x.com/duyuru/1";                       // the URL packs arrive
+  assert.equal(CM3.notices(D, rule).total, 1);          // recomputed, not the cached provisional answer
+  A[0].u = undefined; A[0].nu = 1;                         // built-in rule: precomputed bit, cached as before
+  assert.equal(CM3.notices(D).total, 1);
+});

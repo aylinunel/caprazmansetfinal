@@ -124,6 +124,9 @@ def selected_cards(bg: BiasGuard, run: Path, item: dict) -> list[str] | None:
     except Exception:
         return None
     from .catalog import rank_candidates
+    from .engine import _DIRECT_REVIEW_LIMIT
+    if len(bg.cards) <= _DIRECT_REVIEW_LIMIT:  # the engine reviews every card of a small catalogue (engine._select_cards)
+        return [c["id"] for c in bg.cards]
     seeds = [c["id"] for c in rank_candidates(bg.cards, item["text"], item["context"], limit=MAX_CANDIDATES)[:min(6, MAX_CANDIDATES)]]
     ids: list[str] = []
     for cid in [*sel["candidate_ids"], *seeds]:

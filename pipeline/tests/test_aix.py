@@ -36,6 +36,24 @@ class StatsTest(unittest.TestCase):
         self.assertAlmostEqual(kappa(5, 5, 5, 5), 0.0)
 
 
+class HelperTest(unittest.TestCase):
+    def test_bloc_uses_the_configured_thresholds(self):
+        from capraz_pipeline import aix
+        from capraz_pipeline.config import PARAMS
+        self.assertEqual(aix._bloc(PARAMS.bloc_left_below - 1), "left")
+        self.assertEqual(aix._bloc(PARAMS.bloc_left_below), "mid")
+        self.assertEqual(aix._bloc(PARAMS.bloc_right_above + 1), "right")
+        self.assertIsNone(aix._bloc(None))
+
+    def test_quote_without_outlets_falls_back_to_headlines(self):
+        from capraz_pipeline.aix import _cited, _fold
+        heads = [("a", _fold("İSTANBUL'da Fon VURGUNU soruşturması")), ("b", _fold("Fon soruşturması sürüyor"))]
+        f = {"evidence": [{"q": "fon vurgunu", "o": []}, {"q": "x", "o": ["c"]}]}
+        self.assertEqual(_cited(f, heads), {"a", "c"})
+        self.assertEqual(_cited(f), {"c"})                       # no headlines given: only explicit outlets
+        self.assertEqual(_fold("İĞÜŞÖÇI"), "igusoci")             # same folding as trFold in logic.js
+
+
 class ComputeTest(unittest.TestCase):
     def test_compute_shapes_and_rates(self):
         core, arts = core_fixture()

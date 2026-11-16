@@ -26,7 +26,7 @@ from collections import defaultdict
 from datetime import date
 from pathlib import Path
 
-from .config import REPO
+from .config import PARAMS, REPO
 
 OUT = REPO / "data" / "reference" / "aix-82.json"
 WORDING = ("loaded-language", "word-choice", "labeling")
@@ -194,24 +194,40 @@ def profile(core: dict, arts: dict[str, dict], im: dict, ib: dict, first: dict, 
 
 
 def _bloc(lean):
-    return None if lean is None else "left" if lean < 45 else "right" if lean > 55 else "mid"
+    """left / mid / right from a registry placement, with the site's thresholds (config.PARAMS)."""
+    return None if lean is None else "left" if lean < PARAMS.bloc_left_below else "right" if lean > PARAMS.bloc_right_above else "mid"
 
 
-def _cited(f: dict) -> set[str]:
-    return {o for q in f.get("evidence", []) for o in q.get("o", [])}
+def _fold(s: str) -> str:
+    """Turkish case-folding, as trFold in site/js/v7/logic.js."""
+    s = str(s or "").replace("İ", "i").replace("I", "ı").lower()
+    return s.translate(str.maketrans("ıçşğöü", "icsgou"))
+
+
+def _cited(f: dict, heads: list[tuple[str, str]] | None = None) -> set[str]:
+    """Outlets whose headline a finding quotes. A quote without outlets falls back to the event's headlines that
+    contain it, as orQuoteOutlets in site/js/v7/oruntu.js does. heads: (outlet, folded headline) pairs."""
+    out: set[str] = set()
+    for q in f.get("evidence", []):
+        if q.get("o"):
+            out |= set(q["o"])
+        elif heads and q.get("q"):
+            t = _fold(q["q"])
+            out |= {s for s, h in heads if t in h}
+    return out
 
 
 def _live(ev: dict) -> list[dict]:
     return ev.get("supported", []) + ev.get("uncertain", [])
 
 
-def cite_index(passes: dict) -> dict[str, dict[str, set[str]]]:
+def cite_index(passes: dict, heads: dict[str, list[tuple[str, str]]] | None = None) -> dict[str, dict[str, set[str]]]:
     """event -> card id -> outlets whose headline a live finding of that card quotes. Built once per pass."""
     idx: dict[str, dict[str, set[str]]] = {}
     for ev, x in passes.items():
         c: dict[str, set[str]] = defaultdict(set)
         for f in _live(x):
-            c[f["id"]] |= _cited(f)
+            c[f["id"]] |= _cited(f, (heads or {}).get(ev))
         idx[ev] = c
     return idx
 
@@ -254,7 +270,8 @@ def compute(core: dict, arts: dict[str, dict]) -> dict:
     E = {e["i"]: e for e in core["E"]}
     bgm = {x["event"]: x for x in core.get("BGM", {}).get("events", []) if x["status"] == "review_complete" and x["event"] in E}
     bg = {x["event"]: x for x in core.get("BG", {}).get("events", []) if x["status"] == "review_complete" and x["event"] in E}
-    im, ib = cite_index(bgm), cite_index(bg)
+    heads = {ev: [(arts[i]["s"], _fold(arts[i].get("t", ""))) for i in E[ev]["a"] if i in arts] for ev in set(bgm) | set(bg)}
+    im, ib = cite_index(bgm, heads), cite_index(bg, heads)
 
     # first headline per outlet per reviewed event, with its rule-based loaded-language score v
     first: dict[str, dict[str, dict]] = {}
@@ -367,7 +384,7 @@ def load_articles(data: Path, core: dict) -> dict[str, dict]:
     for m in packs["months"]:
         a = _load(data / f"a-{m}.bin")
         for k, i in enumerate(a["i"]):
-            out[i] = {"s": packs["sources"][a["s"][k]], "d": a["d"][k], "v": a["v"][k], "p": a["p"][k], "lv": a["lv"][k]}
+            out[i] = {"s": packs["sources"][a["s"][k]], "d": a["d"][k], "v": a["v"][k], "p": a["p"][k], "lv": a["lv"][k], "t": a["t"][k]}
     return out
 
 

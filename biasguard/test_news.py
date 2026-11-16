@@ -139,6 +139,19 @@ class TaskCatalogTests(unittest.TestCase):
             {"event": "e0", "title": "t", "outlets": 2, "text": TEXT, "context": CONTEXT}) + "\n")
         return run
 
+    def test_small_catalogue_sends_every_card_like_the_engine(self):
+        # the engine reviews every card of a catalogue at or under _DIRECT_REVIEW_LIMIT; the tasks must ask for all of them
+        with tempfile.TemporaryDirectory() as d:
+            from biasguard.engine import BiasGuard
+            from biasguard.news import selected_cards
+            run = self._run(d)
+            small = BiasGuard(cards=BiasGuard().cards[:9])
+            (run / "selections").mkdir()
+            (run / "selections" / "e0.json").write_text(json.dumps(
+                {"candidate_ids": [small.cards[0]["id"]], "selection_uncertainty": [], "selection_note": ""}))
+            item = json.loads((run / "inputs.jsonl").read_text())
+            self.assertEqual(selected_cards(small, run, item), [c["id"] for c in small.cards])
+
     def test_write_tasks_default_uses_the_stock_catalogue(self):
         with tempfile.TemporaryDirectory() as d:
             from biasguard.news import write_tasks

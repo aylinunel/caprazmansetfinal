@@ -461,7 +461,10 @@ function classify(a, P) {
 }
 function notices(D, rulesIn) {
   var R = rulesIn || PARAMS.noticeRules;
-  return memo(D, "notices:" + R.url + "|" + R.keywords.join(","), function () {
+  /* a rule other than the two built-in ones reads a.u, which arrives after the first screen (loader.js cmUrls):
+     until then its answer is provisional and must not be cached */
+  var exact = R.url === PARAMS.noticeRules.url || R.url === PARAMS.noticeRulesV1.url || !D.A.length || D.A[0].u != null;
+  var run = function () {
     var ix = index(D), byArt = {}, byOutlet = {}, events = {}, rules = { url: 0, keyword: 0 }, total = 0;
     D.A.forEach(function (a) {
       var h = ruleHits(a, R), il = h.url || h.keyword;
@@ -481,7 +484,8 @@ function notices(D, rulesIn) {
         newsOutlets: news, clean: news.length >= PARAMS.cleanMinOutlets };
     });
     return { byArt: byArt, byOutlet: byOutlet, events: events, rules: rules, total: total };
-  });
+  };
+  return exact ? memo(D, "notices:" + R.url + "|" + R.keywords.join(","), run) : run();
 }
 
 /* ======================================================= T4 owner voices */
