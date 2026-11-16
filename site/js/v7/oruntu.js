@@ -53,13 +53,6 @@ function orEvList(list, extra) {
   return '<ul class="or-list">' + list.map(function (e) { return orEvRow(e, extra ? extra(e) : ""); }).join("") + "</ul>";
 }
 /* Horizontal bars, html so they can be sorted and clicked. rows: {label, v, disp, c, tip, go} */
-function orBars(rows, max) {
-  max = max || Math.max.apply(null, rows.map(function (r) { return r.v; })) || 1;
-  return '<div class="or-bars">' + rows.map(function (r) {
-    return '<div class="or-bar"' + (r.go ? ' data-go="' + r.go + '" tabindex="0" role="link"' : "") + (r.tip ? orTip(r.tip) : "") + '><span class="or-bl">' + esc(r.label) +
-      '</span><span class="or-bt"><i style="width:' + Math.max(1, 100 * r.v / max) + "%;background:" + (r.c || "var(--ink2)") + '"></i></span><b>' + r.disp + "</b></div>";
-  }).join("") + "</div>";
-}
 function orEnd(list) {
   return '<section class="or-ex">' + pHead("Örüntüler", "Örnek olaylar") + '<p class="or-exs">Bu sayfadaki örüntülerden üçünü gösteren olaylar.</p><div class="xcards">' + cards(list) + "</div></section>";
 }
@@ -92,22 +85,7 @@ function orCoverage() {
   bins.forEach(function (b) { b.ev.sort(function (x, y) { return y.s.length - x.s.length; }); });
   return { bins: bins, pts: pts, n: shares.length, zl: zl, zr: zr, med: shares.length ? shares[Math.floor((shares.length - 1) / 2)] : 0 };
 }
-function orCovDetail(b, tot) {
-  if (!b) return '<p class="or-hint">Bir sütuna dokunun ya da tıklayın: o aralıktaki en çok kurumun verdiği olaylar burada listelenir.</p>';
-  return "<p><b>Sol payı %" + b.lo + "–" + b.hi + "</b> olan " + orN(b.ev.length) + " olay (" + orP(b.ev.length / (tot || 1)) + "). En çok kurumun verdiği " +
-    Math.min(8, b.ev.length) + ":</p>" + (b.ev.length ? orEvList(b.ev.slice(0, 8)) : '<p class="or-hint">Bu aralıkta olay yok.</p>');
-}
 /* Clickable column chart: sets the bins/detail renderer under ORD.cols[set]; the click handler is in wireOruntu. */
-function orCols(set, bins, o) {
-  ORD.cols = ORD.cols || {}; ORD.cols[set] = { bins: bins, detail: o.detail };
-  var mx = Math.max.apply(null, bins.map(function (b) { return b.ev.length; })) || 1, tot = o.n || 1;
-  return '<div class="or-cols" style="--n:' + bins.length + '">' + bins.map(function (b, i) {
-    return '<button type="button" class="or-col" data-set="' + set + '" data-bin="' + i + '" aria-pressed="false"' +
-      orTip("<span class='k'>" + o.label(b) + "</span>" + orN(b.ev.length) + " olay<br>" + orP(b.ev.length / tot) + " · " + orGo().toLowerCase()) +
-      '><b>' + orN(b.ev.length) + '</b><i style="height:' + Math.max(2, 120 * b.ev.length / mx) + 'px"></i></button>';
-  }).join("") + '</div><div class="or-axis" style="--n:' + bins.length + '">' + bins.map(function (b) { return "<span>" + b.lo + "</span>"; }).join("") +
-    '</div><p class="or-axt">' + o.axis + '</p><div class="or-panel" id="or-d-' + set + '" aria-live="polite">' + o.detail(null) + "</div>";
-}
 function orFindCoverage() {
   var C = ORD.cov = orCoverage(), act = V2.active || {}, tot = (act.left || 0) + (act.mid || 0) + (act.right || 0) || 1;
   var exp = 100 * (act.left || 0) / tot;

@@ -73,19 +73,18 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       if (n0 === n1) fails.push(`${tag}: topic chip did not change event count (${n0})`);
     }
     if (route.startsWith("#/olay?e=")) {
-      // Review status: every AI finding carries exactly one badge, and no line reports a zero as a result.
+      // 8.2: every AI finding is an evidence card with exactly one "AI imzalı" stamp, and no line reports a zero as a result.
       const hasYz = await page.evaluate(() => { const d = document.querySelector('details.v7-deep[data-deep="yz"]'); if (d) d.open = true; return !!d; });
       if (hasYz) await sleep(400);   // the block builds on first open
       const rv = await page.evaluate(() => {
-        const labels = ["AI onaylı", "İnsan kontrolü bekliyor", "İnsan doğruladı", "İnsan düzeltti"];
-        const fs = [...document.querySelectorAll(".v7-yzf")];
-        const bad = fs.filter((f) => { const b = [...f.querySelectorAll(".rv-badge")]; return b.length !== 1 || !labels.includes(b[0].textContent.trim()) || !b[0].title; }).length;
+        const fs = [...document.querySelectorAll(".v7-grp .ai-card")];
+        const bad = fs.filter((f) => { const b = [...f.querySelectorAll(".yz-badge")]; return b.length !== 1 || b[0].textContent.trim() !== "AI imzalı" || !b[0].title; }).length;
         const line = (document.querySelector(".rv-line") || {}).textContent || "";
         return { n: fs.length, bad, zero: /(^|\D)0 bulgu/.test(line), line };
       });
       if (hasYz && !rv.n) fails.push(`${tag}: AI review block opened but no finding rendered`);
       // Medyanın oyunları comes first; without a media review it says "incelenemedi" rather than showing an empty group.
-      const grp = await page.evaluate(() => [...document.querySelectorAll(".v7-grp")].map((g) => [g.dataset.grp, g.textContent.includes("incelenemedi"), g.querySelectorAll(".v7-yzf").length]));
+      const grp = await page.evaluate(() => [...document.querySelectorAll(".v7-grp")].map((g) => [g.dataset.grp, g.textContent.includes("incelenemedi"), g.querySelectorAll(".ai-card").length]));
       if (hasYz && (!grp.length || grp[0][0] !== "medya")) fails.push(`${tag}: Medyanın oyunları group is not first`);
       if (hasYz && grp[0] && !grp[0][1] && !grp[0][2]) fails.push(`${tag}: empty Medyanın oyunları group without an incelenemedi note`);
       if (route === "#/olay?e=s5031" && rv.n < 3) fails.push(`${tag}: expected the three reviewed findings of s5031, saw ${rv.n}`);
@@ -160,7 +159,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       if (bad) fails.push(`${tag}: kurum ${bad}`);
     }
     if (route === "#/yontem" && !(await page.evaluate(() => document.body.textContent.includes("Bu veriyle ölçülemiyor") && document.body.textContent.includes("niyet hakkında bir şey söylemez")))) fails.push(`${tag}: method page lacks the Medyanın oyunları lists`);
-    if (route === "#/yontem" && !(await page.evaluate(() => document.body.textContent.includes("Bu bir ölçülmüş doğruluk ya da olasılık değildir")))) fails.push(`${tag}: method page lacks the AI onaylı explanation`);
+    if (route === "#/yontem" && !(await page.evaluate(() => document.body.textContent.includes("bütün AI bulguları aynı biçimde gösterilir")))) fails.push(`${tag}: method page lacks the 8.2 explanation of how AI findings are shown`);
     if (route.startsWith("#/yontem")) {
       const bad = await page.evaluate((r) => {
         const ids = ["veri", "olay", "dil", "anlati", "yz", "yzicerik", "turkiye", "kavramlar", "sinir", "kaynak"];

@@ -132,6 +132,10 @@ function proKey() {
   return D.AIX.profile.matrix.filter(function (c) { return proSig(c) && !(proM(c.a).kind === "ai" && proM(c.b).kind === "ai"); })
     .sort(function (a, b) { return Math.abs(b.rho) - Math.abs(a.rho); });
 }
+function proPlain(c) {
+  var a = proM(c.a).label.toLocaleLowerCase("tr"), b = proM(c.b).label.toLocaleLowerCase("tr");
+  return c.rho > 0 ? "“" + a + "” yüksek olan kurumlarda “" + b + "” de yüksek" : "“" + a + "” yüksek olan kurumlarda “" + b + "” düşük";
+}
 function proSentence(c) {
   var a = proM(c.a).label.toLocaleLowerCase("tr"), b = proM(c.b).label.toLocaleLowerCase("tr");
   return (c.rho > 0 ? "“" + a + "” yüksek olan kurumlarda “" + b + "” de yüksek" : "“" + a + "” yüksek olan kurumlarda “" + b + "” düşük") +
@@ -204,7 +208,9 @@ var AI_DRAW = {
     var ext = rows.slice().sort(function (p, q) { return q.m[b] - p.m[b]; }).slice(0, 1).concat(rows.slice().sort(function (p, q) { return q.m[a] - p.m[a]; }).slice(0, 1));
     if (PRO_SEL.s) ext = ext.concat(rows.filter(function (o) { return o.s === PRO_SEL.s; }));
     var lab = []; ext.forEach(function (o) { if (lab.indexOf(o) < 0) lab.push(o); });
-    svg.append("g").selectAll("text").data(lab).join("text").attr("class", "ai-lab").attr("x", function (o) { return x(o.m[a]) + 9; }).attr("y", function (o) { return y(o.m[b]) - 7; })
+    /* labels in the right third sit left of their dot, so they never run past the chart */
+    svg.append("g").selectAll("text").data(lab).join("text").attr("class", "ai-lab").attr("y", function (o) { return y(o.m[b]) - 7; })
+      .attr("x", function (o) { return x(o.m[a]) > W * .66 ? x(o.m[a]) - 9 : x(o.m[a]) + 9; }).attr("text-anchor", function (o) { return x(o.m[a]) > W * .66 ? "end" : "start"; })
       .text(function (o) { return srcName(o.s); });
     box.append(svg.node());
   },
@@ -265,7 +271,9 @@ var AI_DRAW = {
     /* label only the extremes, never two labels on one spot */
     var lab = [], cand = rows.slice().sort(function (a, b) { return b.rate - a.rate; }).slice(0, 2).concat(rows.slice().sort(function (a, b) { return b.v - a.v; }).slice(0, 2));
     cand.forEach(function (r) { if (lab.every(function (l) { return Math.abs(x(l.v) - x(r.v)) > 90 || Math.abs(y(l.rate) - y(r.rate)) > 18; })) lab.push(r); });
-    svg.append("g").selectAll("text").data(lab).join("text").attr("class", "ai-lab").attr("x", function (r) { return x(r.v) + 9; }).attr("y", function (r) { return y(r.rate) + 4; }).text(function (r) { return srcName(r.s); });
+    svg.append("g").selectAll("text").data(lab).join("text").attr("class", "ai-lab").attr("y", function (r) { return y(r.rate) + 4; })
+      .attr("x", function (r) { return x(r.v) > W * .66 ? x(r.v) - 9 : x(r.v) + 9; }).attr("text-anchor", function (r) { return x(r.v) > W * .66 ? "end" : "start"; })
+      .text(function (r) { return srcName(r.s); });
     box.append(svg.node());
   },
   /* media technique x bloc: share of a bloc's outlet-events the AI quoted for the technique */
@@ -324,7 +332,7 @@ function orFindGenelMatrix() {
     '<span class="ai-key"><i class="k-kural"></i>kural</span><span class="ai-key"><i class="k-ai"></i>AI imzalı</span><span class="ai-key"><i class="k-kayit"></i>kayıt</span></p></div>' +
     "<div>" + aiBox("pair", "Seçili iki ölçünün kurumlara göre saçılımı") + legendHTML([{ c: "var(--left)", t: "sola yerleşik" }, { c: "var(--mid)", t: "merkez" }, { c: "var(--right)", t: "sağa yerleşik" }, { c: "var(--line2)", t: "yerleşimsiz" }], "Kurum") + "</div></div>";
   return { id: "genel-iliski", nopin: true, nocount: true,
-    claim: k0 ? P.measures.length + " ölçü arasındaki " + tested.length + " ilişkiden " + sig.length + " tanesi şansla açıklanamayacak kadar güçlü; en güçlüsü: " + esc(proSentence(k0)) + ". " + yzBadge()
+    claim: k0 ? P.measures.length + " ölçü arasındaki " + tested.length + " ilişkiden " + sig.length + " tanesi şansla açıklanamayacak kadar güçlü; en güçlüsü: " + esc(proPlain(k0)) + ". " + yzBadge()
       : "Ölçüler arasında şansla açıklanamayacak bir ilişki bulunmadı. " + yzBadge(),
     viz: viz,
     read: "Sol: her kare iki ölçünün " + P.outlets.length + " kurum üzerindeki sıra korelasyonu. Bir kareye " + orTap() + ": sağdaki grafik o iki ölçüyü kurum kurum gösterir; her nokta bir kurum, rengi kayıttaki yerleşimi.",
@@ -357,7 +365,38 @@ function orFindGenelStrips() {
       "İlk veren olduğu olay payı: Kim önce veriyor sayfasıyla aynı veri. Sorumlu tutma payı: Anlatı haritasında kodlanmış satırlardan ‘sorumlu tutulan’ boş olmayanların payı (kodlamanın bir kısmı AI ile yapıldı).",
       "AI ölçüleri: kurumun başlığının ilgili AI bulgusunun kanıtında alıntılandığı incelenen olay payı. Sözcük teknikleri: duygu yüklü dil, sözcük seçimi, etiketleme."], "yz") };
 }
-function orGenel() { return orPage("genel", [orFindGenelMatrix(), orFindGenelStrips()], []); }
+/* Which outlets stand furthest from the middle on all behaviour measures at once (registry placement left out):
+   mean absolute z-score over the measures an outlet has. A distance, not a verdict. */
+function orFindGenelOutliers() {
+  var P = D.AIX && D.AIX.profile; if (!P || P.outlets.length < 5) return null;
+  var ms = P.measures.filter(function (m) { return m.kind !== "kayıt"; }), z = {};
+  ms.forEach(function (m) {
+    var v = P.outlets.map(function (o) { return o.m[m.k]; }).filter(function (x) { return x != null; });
+    var mu = v.reduce(function (a, b) { return a + b; }, 0) / v.length, sd = Math.sqrt(v.reduce(function (a, b) { return a + (b - mu) * (b - mu); }, 0) / v.length) || 1;
+    z[m.k] = function (x) { return (x - mu) / sd; };
+  });
+  var rows = P.outlets.map(function (o) {
+    var zs = ms.filter(function (m) { return o.m[m.k] != null; }).map(function (m) { return { m: m, z: z[m.k](o.m[m.k]) }; });
+    return { o: o, d: zs.reduce(function (a, x) { return a + Math.abs(x.z); }, 0) / zs.length,
+      top: zs.slice().sort(function (a, b) { return Math.abs(b.z) - Math.abs(a.z); }).slice(0, 2) };
+  }).sort(function (a, b) { return b.d - a.d; });
+  var show = rows.slice(0, 10), why = function (r) { return r.top.map(function (x) { return x.m.label.toLocaleLowerCase("tr") + (x.z > 0 ? " yüksek" : " düşük"); }).join(", "); };
+  var bars = vzRows(show.map(function (r) {
+    return { k: r.o.s, label: srcName(r.o.s), val: dec(r.d, 2), pts: [{ v: r.d, c: "var(--" + (r.o.bloc || "line2") + ")", big: true }],
+      tip: "<span class='k'>" + esc(srcName(r.o.s)) + "</span>Ortalamadan uzaklık " + dec(r.d, 2) + "<br>En çok: " + esc(why(r)) };
+  }), { min: 0, fmt: function (v) { return dec(v, 1); }, lw: 150, vw: 50, axis: "Ölçüler genelinde ortalamadan uzaklık (standart sapma cinsinden ortalama). 0 tam ortada demektir." });
+  var a = show[0], b = show[1], c = show[2];
+  return { id: "genel-uzak", nocount: true,
+    claim: "Bütün ölçülere birlikte bakınca kurumların ortasından en uzak duran <b>" + esc(srcName(a.o.s)) + "</b>; onu " + esc(srcName(b.o.s)) + " ve " + esc(srcName(c.o.s)) + " izliyor. " + yzBadge(),
+    viz: bars,
+    read: "Her satır bir kurum; nokta sağa gittikçe kurum ölçülerin çoğunda ötekilerden daha farklı. Renk kayıttaki yerleşim. Bir noktaya " + orTap() + ": kurumu en çok hangi ölçünün ayırdığı görünür.",
+    means: esc(srcName(a.o.s)) + " en çok " + esc(why(a)) + " olduğu için, " + esc(srcName(b.o.s)) + " " + esc(why(b)) + " olduğu için öne çıkıyor. " +
+      "Uzaklık bir yön söylemez: çok hızlı veren ya da AI’nin hiç alıntılamadığı bir kurum da ortadan uzak düşer. Bir kurumu tek bir sayıyla yargılamak için değil, profiline nereden bakmaya başlanacağını göstermek için.",
+    table: vzTable(["Kurum", "Blok", "Uzaklık", "En çok ayıran ölçüler"], rows.map(function (r) { return [srcName(r.o.s), SIDE[r.o.bloc] || "yerleşimsiz", dec(r.d, 2), why(r)]; })),
+    how: orHow(["Kayıt yerleşimi dışındaki " + ms.length + " ölçünün her biri kurumlar arasında standartlaştırılır (z-puanı: ortalamadan kaç standart sapma uzakta). Uzaklık, kurumun değeri olan ölçülerdeki mutlak z-puanlarının ortalamasıdır.",
+      "Birim: Genel bakıştaki " + P.outlets.length + " kurum. Bu bir sıralama değil, profil özetidir."], "yz") };
+}
+function orGenel() { return orPage("genel", [orFindGenelMatrix(), orFindGenelStrips(), orFindGenelOutliers()], orExamples("genel")); }
 
 /* ================================================== AI findings, used inside the existing Örüntüler pages */
 function orFindYZConcepts() {
@@ -388,13 +427,13 @@ function orFindYZWording() {
   var h = A.headlines, top = A.outlets[0], low = A.outlets[A.outlets.length - 1], d = h.auc - .5;
   var verdict = Math.abs(d) < .05 ? "<b>neredeyse hiç ilişkili değil</b>" : d > 0 ? "<b>ilişkili</b>: yüksek puanlı başlıklar daha sık alıntılanıyor" : "<b>ters yönde ilişkili</b>: düşük puanlı başlıklar daha sık alıntılanıyor";
   return { id: "dil-yz-kural", nopin: true, nocount: true,
-    claim: "AI’nin bir başlığı sözcük tekniği için alıntılaması, kural tabanlı yüklü dil puanıyla " + verdict + ": kurumlar arasında ρ = " + dec(A.rho, 2) +
-      ", başlık düzeyinde AUC " + dec(h.auc, 2) + " (yazı tura 0,50). " + yzBadge(),
+    claim: "AI’nin bir başlığı sözcük tekniği için alıntılaması, kural tabanlı yüklü dil puanıyla " + verdict + ": alıntılanan başlıkların ortalama puanı " + dec(h.vCited, 1) +
+      ", alıntılanmayanlarınki " + dec(h.vNot, 1) + ". " + yzBadge(),
     viz: aiBox("wording", "Kurumlara göre kural tabanlı yüklü dil puanı ve AI’nin sözcük tekniği alıntılama payı") +
       legendHTML([{ c: "var(--left)", t: "sola yerleşik" }, { c: "var(--mid)", t: "merkez" }, { c: "var(--right)", t: "sağa yerleşik" }, { c: "var(--line2)", t: "yerleşimsiz" }], "Kurum"),
     read: "Her nokta bir kurum (en az " + D.AIX.minEvents + " incelenen olayı olanlar). Sağa gittikçe kural tabanlı puan yüksek, yukarı gittikçe AI daha sık alıntılamış. Dikey çizgi %95 aralık.",
-    means: "Kural tabanlı puan sözcüğün kendisine bakar (“vurgun”, “skandal”); AI ise aynı olayı veren başlıkları karşılaştırır ve bir kurumun ötekilerden farklı adlandırdığı yeri işaretler. Alıntılanan başlıkların ortalama puanı " + dec(h.vCited, 1) + ", alıntılanmayanlarınki " + dec(h.vNot, 1) +
-      ". Birlikte okunduğunda, yüklü sözcük kullanmadan da farklı çerçeveleyen başlıklar görünür olur. En sık alıntılanan " + esc(srcName(top.s)) + " (" + orP(top.rate) + "), en seyrek " + esc(srcName(low.s)) + " (" + orP(low.rate) + ").",
+    means: "Kural tabanlı puan sözcüğün kendisine bakar (“vurgun”, “skandal”); AI ise aynı olayı veren başlıkları karşılaştırır ve bir kurumun ötekilerden farklı adlandırdığı yeri işaretler. Kurumlar arasında sıra korelasyonu ρ = " + dec(A.rho, 2) +
+      ", başlık düzeyinde AUC " + dec(h.auc, 2) + " (yazı tura 0,50). Birlikte okunduğunda, yüklü sözcük kullanmadan da farklı çerçeveleyen başlıklar görünür olur. En sık alıntılanan " + esc(srcName(top.s)) + " (" + orP(top.rate) + "), en seyrek " + esc(srcName(low.s)) + " (" + orP(low.rate) + ").",
     table: vzTable(["Kurum", "Blok", "İncelenen olay", "AI alıntısı", "Pay", "%95 aralık", "Yüklü dil puanı"], A.outlets.map(function (r) {
       return [srcName(r.s), SIDE[r.bloc] || "yerleşimsiz", r.n, r.k, orP(r.rate), orP(r.lo) + " – " + orP(r.hi), dec(r.v, 1)]; })),
     how: orHow(["Sözcük teknikleri: duygu yüklü dil, sözcük seçimi, etiketleme. Bir kurum, bu tekniklerden birinin kanıtında başlığı alıntılandıysa o olayda ‘alıntılandı’ sayılır.",
@@ -426,11 +465,11 @@ function orFindYZBlame() {
     '<span class="ai-rh" role="rowheader">Anlatı haritası birini sorumlu tutuyor</span>' + cell(b.both, "on") + cell(b.rule, "") +
     '<span class="ai-rh" role="rowheader">Kimseyi sorumlu tutmuyor</span>' + cell(b.ai, "") + cell(b.neither, "") + "</div>";
   return { id: "anlati-yz-sorumlu", nopin: true, nocount: true,
-    claim: "Anlatı haritasının “sorumlu tutulan” kodlaması ile AI’nin sorumluluk çerçevesi bulguları " + word + ": " + orN(b.events) + " olayda Cohen κ = " + dec(k, 2) + ". " + yzBadge(),
+    claim: "Anlatı haritasının “sorumlu tutulan” kodlaması ile AI’nin sorumluluk çerçevesi bulguları " + word + ": " + orN(b.events) + " olayda iki yöntemin uyumu " + (k < .2 ? "şans düzeyine yakın" : "şansın üstünde") + ". " + yzBadge(),
     viz: viz,
     read: "Her hücre bir kurum-olay satırı. Sol üst, iki yöntemin de sorumluluk gördüğü başlıklar; köşegen dışı hücreler ayrıştıkları yer.",
     means: "Anlatı haritası " + orN(ruleN) + " satırda başlığın birini sorumlu tuttuğunu kodladı; AI ise " + orN(aiN) + " satırda sorumluluk çerçevesi gördü ve bunların " + orN(b.both) + " tanesi ortak. " +
-      "İki yöntem farklı soru soruyor: anlatı kodu her başlıkta ‘kim sorumlu gösteriliyor’ diye sorar, AI ise yalnızca kurumların sorumluluğu farklı dağıttığı olayları işaretler. Düşük örtüşme birinin yanlış olduğunu göstermez; sorumluluk atfını ölçmenin tek bir yolu olmadığını gösterir.",
+      "Uyum ölçüsü Cohen κ = " + dec(k, 2) + " (0 şans düzeyi, 1 tam uyum). İki yöntem farklı soru soruyor: anlatı kodu her başlıkta ‘kim sorumlu gösteriliyor’ diye sorar, AI ise yalnızca kurumların sorumluluğu farklı dağıttığı olayları işaretler. Düşük örtüşme birinin yanlış olduğunu göstermez; sorumluluk atfını ölçmenin tek bir yolu olmadığını gösterir.",
     table: vzTable(["", "AI buldu", "AI bulmadı"], [["Anlatı: sorumlu var", b.both, b.rule], ["Anlatı: sorumlu yok", b.ai, b.neither]]),
     how: orHow(["Birim: hem anlatı haritasında kodlanmış hem medya incelemesi tamamlanmış " + orN(b.events) + " olaydaki kurum satırları (" + orN(n) + ").",
       "Anlatı tarafı: ‘sorumlu tutulan’ boyutu boş değil ve ‘belirtilmiyor’ değil. AI tarafı: kurumun başlığı, sorumluluk atfı çerçevelemesi bulgusunun kanıtında alıntılanmış.",

@@ -1,6 +1,5 @@
 /* v7 Kurumlar: outlet-page findings, each linking to the Örüntüler finding that holds the full chart. */
 function kuLink(q, id, text) { return '<a class="lnk" href="#/oruntu?q=' + q + "&f=" + id + '">' + text + "</a>"; }
-function kuMore(q, id) { return " " + kuLink(q, id, "Bütün kurumlarla →"); }
 function kuName(k) { var b = BIA[k]; return b ? b.tr + " (" + b.en + ")" : k; }
 /* Fingerprint rows: how often the outlet's political headlines trigger each structure, against all outlets (ratio 1 = average). */
 function kuFp(k) {

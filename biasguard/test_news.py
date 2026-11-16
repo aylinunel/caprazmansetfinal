@@ -145,6 +145,26 @@ class TaskCatalogTests(unittest.TestCase):
             task = json.loads(write_tasks(self._run(d), "select", 10)[0].read_text())
             self.assertEqual(len(task["cards"]), len(BiasGuard().cards))
 
+    def test_review_tasks_are_one_file_per_role(self):
+        with tempfile.TemporaryDirectory() as d:
+            from biasguard.news import write_tasks
+            run = self._run(d)
+            sel = json.loads(write_tasks(run, "select", 10)[0].read_text())
+            self.assertNotIn("enum", sel["output_schema"]["properties"]["candidate_ids"]["items"])
+            ids = [c["id"] for c in sel["cards"][:2]]
+            for e in sel["events"]:
+                (run / "selections").mkdir(exist_ok=True)
+                (run / "selections" / f"{e['event']}.json").write_text(json.dumps(
+                    {"candidate_ids": ids, "selection_uncertainty": [], "selection_note": ""}))
+            paths = write_tasks(run, "review", 10)
+            self.assertEqual(sorted(p.parent.name for p in paths), ["advocate", "skeptic"])
+            for p in paths:
+                t = json.loads(p.read_text())
+                self.assertEqual(t["role"], p.parent.name)
+                self.assertEqual(t["schema_example"]["properties"]["role"]["const"], p.parent.name)
+                self.assertNotIn("provenance", t["cards"][0])
+                self.assertIn("necessary_conditions", t["cards"][0])
+
     def test_write_tasks_accepts_another_catalogue(self):
         with tempfile.TemporaryDirectory() as d:
             from biasguard.news import write_tasks

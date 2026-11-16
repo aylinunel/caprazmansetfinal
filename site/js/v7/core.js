@@ -7,7 +7,6 @@ SUB["/anlati"] = [["/anlati", "nasil", "Nasıl okunur"], ["/anlati", "sezon", "S
 SUB["/oruntu"] = [["/oruntu", "secim", "Kim neyi haber yapıyor"], ["/oruntu", "dil", "Nasıl anlatıyor"],
   ["/oruntu", "anlati", "Kimi sorumlu tutuyor"], ["/oruntu", "hiz", "Kim önce veriyor"]];
 SECTIONS[0].fn = pgHome7;
-SECTIONS.forEach(function (s) { if (s.p === "/anlati") s.fn = pgAnlati; });
 SECTIONS.push({ p: "/oruntu", label: "Örüntüler", fn: pgOruntu });
 DETAIL["/oruntu"] = { fn: pgOruntu, of: "/oruntu" };
 

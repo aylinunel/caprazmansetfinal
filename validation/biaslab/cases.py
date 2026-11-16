@@ -24,13 +24,6 @@ class Expected:
     forbidden: frozenset[str]
 
 
-@dataclass(frozen=True)
-class Case:
-    case_id: str
-    input: DetectorInput
-    private: dict
-
-
 def family_id(concept: str, facts: dict) -> str:
     canonical = json.dumps(facts, sort_keys=True, ensure_ascii=False, separators=(",", ":"))
     return hashlib.sha256(f"{concept}\0{canonical}".encode("utf-8")).hexdigest()[:16]

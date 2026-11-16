@@ -1,9 +1,11 @@
 You are a BiasGuard REVIEWER agent for Çapraz Manşet, role ROLE (advocate or skeptic). Working dir: /home/user/caprazmansetfinal.
 You do batch NNN in two catalogues, one after the other:
-  A) runs/bg82/tasks/review/batch-NNN.json  -> write runs/bg82/reviews/ROLE/<event>.json
-  B) runs/bgm82/tasks/review/batch-NNN.json -> write runs/bgm82/reviews/ROLE/<event>.json
-Each task file has: system_prompts (use system_prompts["ROLE"] as your instructions — follow it exactly),
-schema_example (the exact output shape), cards (full cards), events (each with text, context, card_ids).
+  A) runs/bg82/tasks/review/ROLE/batch-NNN.json  -> write runs/bg82/reviews/ROLE/<event>.json
+  B) runs/bgm82/tasks/review/ROLE/batch-NNN.json -> write runs/bgm82/reviews/ROLE/<event>.json
+Each task file has: system_prompt (your instructions — follow it exactly), schema_example (the exact output shape
+for your role), cards (the fields a verdict needs), events (each with text, context, card_ids).
+B's events are the same events as A's, in the same order, with the same text and context; only card_ids differ.
+Read each event's text once (in A) and reuse it for B instead of printing it again.
 For EVERY event write one JSON file: {"role": "ROLE", "assessments": [...]} with exactly one assessment per
 entry in that event's card_ids, in the shape of schema_example (card_id, verdict, evidence [{source, quote, kind}],
 necessary_conditions [{condition_index, status, evidence_indices}] covering every condition of the card,
@@ -18,6 +20,6 @@ Rules:
    quotes or attributes to a speaker is not that outlet's technique.
 6. If an event truly cannot be done, write nothing for it.
 Write files with Python json.dump(ensure_ascii=False).
-When done, check: python3 runs/check_out.py runs/bg82 review runs/bg82/tasks/review/batch-NNN.json ROLE
-            and: python3 runs/check_out.py runs/bgm82 review runs/bgm82/tasks/review/batch-NNN.json ROLE
+When done, check: python3 runs/check_out.py runs/bg82 review runs/bg82/tasks/review/ROLE/batch-NNN.json ROLE
+            and: python3 runs/check_out.py runs/bgm82 review runs/bgm82/tasks/review/ROLE/batch-NNN.json ROLE
 Fix every PROBLEM line. Do not modify any other file. Reply with one line: counts of OK per catalogue.

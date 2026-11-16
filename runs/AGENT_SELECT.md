@@ -3,6 +3,7 @@ You do batch NNN in two catalogues, one after the other:
   A) runs/bg82/tasks/select/batch-NNN.json  -> write runs/bg82/selections/<event>.json
   B) runs/bgm82/tasks/select/batch-NNN.json -> write runs/bgm82/selections/<event>.json
 Each task file has: system_prompt (your instructions — follow them), output_schema, cards, events.
+B's events are the same events as A's, in the same order, with the same text; read each event once (in A) and reuse it for B.
 For EVERY event in the batch write one JSON file with exactly the keys
   {"candidate_ids": [...], "selection_uncertainty": [...], "selection_note": "..."}
 - candidate_ids: up to 6 card ids from that file's cards (ids must be in the schema enum), most relevant first.

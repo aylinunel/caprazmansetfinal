@@ -158,24 +158,31 @@ def write_tasks(run: Path, stage: str, batch: int, bg: BiasGuard | None = None) 
             if ids is None:
                 continue
             todo.append({"event": it["event"], "text": it["text"], "context": it["context"], "card_ids": ids})
+    # Token budget: compact JSON, one file per reviewer role (its own prompt and schema example only), review cards
+    # without the display-only fields the engine never reads from a task (it re-reads its own catalogue).
+    display_only = ("mitigations", "questions", "source_url", "source_accessed", "provenance")
+    dump = lambda path, obj: path.write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")))
     paths = []
     for n in range(0, len(todo), batch):
-        chunk = todo[n:n + batch]
+        chunk, name = todo[n:n + batch], f"batch-{n // batch:03d}.json"
         if stage == "select":
             compact = [{"id": c["id"], "name": c["name"], "definition": c["definition"],
                         "necessary_conditions": c["necessary_conditions"]} for c in bg.cards]
-            task = {"stage": stage, "system_prompt": prompts("select"),
-                    "output_schema": _selector_schema([c["id"] for c in bg.cards], MAX_CANDIDATES),
-                    "cards": compact, "events": chunk}
-        else:
-            used = sorted({cid for x in chunk for cid in x["card_ids"]})
-            task = {"stage": stage, "system_prompts": {r: prompts("review", r) for r in ("advocate", "skeptic")},
-                    "output_schema_note": "per event: build_reviewer_schema(card_ids, role); see schema_example",
-                    "schema_example": build_reviewer_schema(chunk[0]["card_ids"], "advocate"),
-                    "cards": [card_by_id[c] for c in used], "events": chunk}
-        p = tdir / f"batch-{n // batch:03d}.json"
-        p.write_text(json.dumps(task, ensure_ascii=False, indent=1))
-        paths.append(p)
+            schema = _selector_schema([c["id"] for c in bg.cards], MAX_CANDIDATES)
+            schema["properties"]["candidate_ids"]["items"].pop("enum", None)  # the ids are the cards' ids; the engine re-checks them
+            p = tdir / name
+            dump(p, {"stage": stage, "system_prompt": prompts("select"), "output_schema": schema, "cards": compact, "events": chunk})
+            paths.append(p)
+            continue
+        used = sorted({cid for x in chunk for cid in x["card_ids"]})
+        cards = [{k: v for k, v in card_by_id[c].items() if k not in display_only} for c in used]
+        for role in ("advocate", "skeptic"):
+            p = tdir / role / name
+            p.parent.mkdir(parents=True, exist_ok=True)
+            dump(p, {"stage": stage, "role": role, "system_prompt": prompts("review", role),
+                     "output_schema_note": "per event: build_reviewer_schema(card_ids, role); see schema_example",
+                     "schema_example": build_reviewer_schema(chunk[0]["card_ids"], role), "cards": cards, "events": chunk})
+            paths.append(p)
     return paths
 
 
@@ -327,49 +334,6 @@ def explain_dir(run: Path) -> Path:
     return run / "explain"
 
 
-def explain_tasks(run: Path, batch: int) -> list[Path]:
-    """Writer batches for live findings (supported + uncertain) that have no valid explanation yet."""
-    res = json.loads((run / "biasguard.json").read_text())
-    texts = {it["event"]: it["text"] for it in _inputs(run)}
-    tdir = explain_dir(run) / "tasks"
-    tdir.mkdir(parents=True, exist_ok=True)
-    for old in tdir.glob("batch-*.json"):
-        old.unlink()
-    todo = []
-    for ev in res["events"]:
-        for f in ev.get("supported", []) + ev.get("uncertain", []):
-            key = f"{ev['event']}__{f['id']}"
-            p = explain_dir(run) / f"{key}.json"
-            if p.exists():
-                try:
-                    old = json.loads(p.read_text())
-                    if "means" in old and not validate_explain(old, texts.get(ev["event"], "")):
-                        continue
-                except Exception:
-                    pass
-            role = lambda ms, r: " ".join(m["text"] for m in ms if m.get("role") == r) or " ".join(m["text"] for m in ms)
-            todo.append({
-                "key": key, "output_file": str(explain_dir(run) / f"{key}.json"), "event_title": ev.get("title"),
-                "concept": f["name"], "definition": f["definition"],
-                "quotes": [{"quote": e["q"], "outlets": e.get("o", []), "source": e["src"]} for e in f["evidence"]],
-                "advocate_mechanism": role(f["mechanisms"], "advocate"),
-                "skeptic_alternative": role(f["alternatives"], "skeptic"),
-                "missing_context": f["missing"],
-                "headlines": texts.get(ev["event"], "")})
-    instr = ("Write plain Turkish for a general reader. For each item write {\"noticed\": ..., \"means\": ..., \"why\": ...} "
-             "to its output_file. noticed = what the headlines show, naming the outlets. means = what this tells a reader "
-             "about how the event reached them (what a reader of those outlets saw, or did not see, and why it matters). "
-             "why = why that is not proof. "
-             "Each field is 1-2 sentences, 40-320 characters. Use only quotes given in the item (inside “…”), "
-             "exactly as given. Never use the words 'bağlam gerekli', 'desteklendi', 'uncertain'.")
-    paths = []
-    for n in range(0, len(todo), batch):
-        p = tdir / f"batch-{n // batch:03d}.json"
-        p.write_text(json.dumps({"instructions": instr, "items": todo[n:n + batch]}, ensure_ascii=False, indent=1))
-        paths.append(p)
-    return paths
-
-
 def merge_explain(bg: dict, run: Path) -> dict[str, int]:
     """Attach valid runs/<run>/explain/<event>__<card>.json as finding['explain']; skip invalid or missing."""
     texts = {it["event"]: it["text"] for it in _inputs(run)} if (run / "inputs.jsonl").exists() else {}
@@ -394,7 +358,7 @@ def merge_explain(bg: dict, run: Path) -> dict[str, int]:
 
 def main() -> None:
     p = argparse.ArgumentParser(prog="python -m biasguard.news")
-    p.add_argument("cmd", choices=["inputs", "tasks", "apply", "pack", "explain-tasks", "explain-apply"])
+    p.add_argument("cmd", choices=["inputs", "tasks", "apply", "pack"])
     p.add_argument("--build", type=Path)
     p.add_argument("--run", type=Path, required=True)
     p.add_argument("--top", type=int, default=150)
@@ -418,16 +382,6 @@ def main() -> None:
             return
         for path in write_tasks(a.run, a.stage, a.batch, bg=BiasGuard(cards=catalog_cards(a.catalog))):
             print(path)
-    elif a.cmd == "explain-tasks":
-        for path in explain_tasks(a.run, a.batch):
-            print(path)
-    elif a.cmd == "explain-apply":
-        # merge into the run's biasguard.json (and --out, e.g. dist/.../biasguard.json); pack re-merges anyway
-        res = json.loads((a.run / "biasguard.json").read_text())
-        print(json.dumps(merge_explain(res, a.run)))
-        for out in (a.run / "biasguard.json", a.out):
-            if out:
-                out.write_text(json.dumps(res, ensure_ascii=False))
     elif a.cmd == "pack":
         # Same keys build.py adds, without re-running the 20-minute pipeline.
         core_path = a.build / "core.bin"

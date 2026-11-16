@@ -32,11 +32,9 @@ var WIN = (function () {
 })();
 var STAT = {};
 D.A.forEach(function (a) {
-  var s = STAT[a.s] || (STAT[a.s] = { n: 0, pol: 0, sum: 0, days: {}, keys: {}, hi: null });
-  s.n++; s.days[a.d.slice(0, 10)] = (s.days[a.d.slice(0, 10)] || 0) + 1;
+  var s = STAT[a.s] || (STAT[a.s] = { n: 0, pol: 0, sum: 0, days: {} }), d = a.d.slice(0, 10);
+  s.n++; s.days[d] = (s.days[d] || 0) + 1;
   if (a.p) { s.pol++; s.sum += a.v; }
-  a.k.forEach(function (k) { s.keys[k] = (s.keys[k] || 0) + 1; });
-  if (!s.hi || a.v > s.hi.v) s.hi = a;
 });
 Object.keys(STAT).forEach(function (k) { var s = STAT[k]; s.mean = s.pol ? s.sum / s.pol : null; });
 var LIVE = Object.keys(STAT).sort();
@@ -60,126 +58,6 @@ var fmtD = function (iso) { var d = new Date(iso + ":00Z"); return d.getUTCDate(
 var fmtDT = function (iso) { var d = new Date(iso + ":00Z");
   return d.getUTCDate() + " " + MON[d.getUTCMonth()] + " " + String(d.getUTCHours()).padStart(2, "0") + ":" + String(d.getUTCMinutes()).padStart(2, "0"); };
 
-/* ================================================================ ACID ==
-   React Bits <AcidSquares/> ported to raw WebGL2.
-   The fragment shader is the component's own GLSL, unchanged. The React
-   wrapper and its `ogl` dependency are replaced by ~50 lines of plain WebGL,
-   which is what the wrapper was doing anyway: one full-screen triangle and a
-   uniform update per frame. That keeps the visual identical while letting the
-   page stay a single file with no runtime dependency.
-
-   The three colours are not arbitrary. They are this project's own spectrum
-   encoding — rose for the left pole, blue for the right, black for the ground —
-   so the field reads as the political spectrum itself rather than decoration.  */
-var VERT = "#version 300 es\nin vec2 p;void main(){gl_Position=vec4(p,0.,1.);}";
-var FRAG = ["#version 300 es","precision highp float;",
-"uniform vec2 iResolution;uniform float iTime;uniform float uSpeed;uniform float uWaveDepth;",
-"uniform float uZoom;uniform float uDensity;uniform float uSpread;uniform float uStepSize;",
-"uniform float uGlow;uniform float uExposure;uniform float uColorShift;uniform float uContrast;",
-"uniform float uBrightness;uniform float uOpacity;uniform float uSteps;",
-"uniform vec3 uColor1;uniform vec3 uColor2;uniform vec3 uColor3;",
-"uniform vec2 uMouse;uniform float uMouseStrength;uniform float uMouseRadius;",
-"uniform float uEnableMouse;uniform float uMouseActive;uniform float uGrain;",
-"uniform float uGrainIntensity;uniform float uLightMode;","out vec4 fragColor;",
-"void main(){",
-"vec2 frag=gl_FragCoord.xy;float zoom=max(uZoom,0.05);float aspect=iResolution.x/iResolution.y;",
-"vec2 ndc=(2.0*frag-iResolution.xy)/iResolution.y;vec2 dir=ndc*(0.5/zoom);",
-"vec2 mouseNdc=vec2(uMouse.x*aspect,uMouse.y);float mr=max(uMouseRadius,0.01);",
-"vec2 md=ndc-mouseNdc;float dent=exp(-dot(md,md)/(mr*mr))*(3.0*uMouseStrength*uEnableMouse*uMouseActive);",
-"float travel=sin(iTime*uSpeed)*uWaveDepth;float density=max(uDensity,1.0);",
-"float spread=clamp(uSpread,0.05,0.6);float stepSize=max(uStepSize,0.0005);",
-"float glowGain=max(uGlow,0.0);",
-"vec3 tOffset=vec3(0.0,dent,travel);vec3 p=vec3(0.0);float s=0.0;float glow=0.0;",
-"for(int i=0;i<64;i++){if(float(i)>=uSteps)break;p+=vec3(dir*s,s);vec3 q=p+tOffset;",
-"s+=density-length(q.xz)+length(ceil(q).xy);s=stepSize+abs(s)*spread;glow+=glowGain/s;}",
-"float e=glow/max(uExposure,1.0);",
-"float shimmer=0.5+0.5*dot(cos(iTime*uColorShift+p),vec3(0.3333));",
-"float v=tanh(e*uBrightness*mix(0.7,1.05,shimmer));",
-"v=clamp((v-0.5)*uContrast+0.5,0.0,1.0);",
-"vec3 col=mix(uColor1,uColor2,smoothstep(0.0,0.55,v));",
-"col=mix(col,uColor3,smoothstep(0.55,1.0,v));col*=v;",
-"float a=clamp(v,0.0,1.0)*uOpacity;vec3 outRgb=col*a;",
-"if(uGrain>0.5){float gv=(fract(sin(dot(gl_FragCoord.xy,vec2(12.9898,78.233))+iTime)*43758.5453)-0.5)*uGrainIntensity;",
-"outRgb=clamp(outRgb+gv,0.0,1.0);a=clamp(a+gv,0.0,1.0);}",
-"if(uLightMode>0.5){float peak=max(col.r,max(col.g,col.b));",
-"vec3 chroma=pow(clamp(col/max(peak,0.0001),0.0,1.0),vec3(1.16));",
-"fragColor=vec4(mix(vec3(1.0),chroma,a*0.94),1.0);}else{fragColor=vec4(outRgb,a);}}"].join("\n");
-
-var CFG = { color1: [0, 0, 0], color2: [0.957, 0.247, 0.369], color3: [0.231, 0.510, 0.965],
-  steps: 34, speed: 0.7, waveDepth: 1, zoom: 1.3, density: 10, glow: 1, exposure: 2700,
-  spread: 0.3, stepSize: 0.002, colorShift: 0, contrast: 1, brightness: 1, opacity: 1,
-  mouseStrength: 0.1, mouseRadius: 0.35, grain: 1, grainIntensity: 0.05 };
-
-var acid = null;
-function startAcid(cv) {
-  if (acid) { acid.stop(); acid = null; }
-  var gl = cv.getContext("webgl2", { antialias: false, alpha: true, powerPreference: "low-power" });
-  if (!gl) { cv.style.background = "linear-gradient(140deg,#000,#3B0A1C 45%,#0A1B3D)"; return; }
-  function sh(t, src) { var s = gl.createShader(t); gl.shaderSource(s, src); gl.compileShader(s);
-    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) { console.warn(gl.getShaderInfoLog(s)); return null; } return s; }
-  var vs = sh(gl.VERTEX_SHADER, VERT), fs = sh(gl.FRAGMENT_SHADER, FRAG);
-  if (!vs || !fs) { cv.style.background = "linear-gradient(140deg,#000,#3B0A1C 45%,#0A1B3D)"; return; }
-  var pr = gl.createProgram(); gl.attachShader(pr, vs); gl.attachShader(pr, fs); gl.linkProgram(pr);
-  gl.useProgram(pr);
-  var buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf);
-  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
-  var loc = gl.getAttribLocation(pr, "p"); gl.enableVertexAttribArray(loc);
-  gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
-  var U = {}; ["iResolution","iTime","uSpeed","uWaveDepth","uZoom","uDensity","uSpread","uStepSize",
-    "uGlow","uExposure","uColorShift","uContrast","uBrightness","uOpacity","uSteps","uColor1",
-    "uColor2","uColor3","uMouse","uMouseStrength","uMouseRadius","uEnableMouse","uMouseActive",
-    "uGrain","uGrainIntensity","uLightMode"].forEach(function (n) { U[n] = gl.getUniformLocation(pr, n); });
-
-  var mouse = [0, 0], mActive = 0, raf = 0, t0 = performance.now(), alive = true;
-
-  function size() {
-    var dpr = Math.min(devicePixelRatio || 1, 1.6);
-    var w = Math.max(1, Math.round(cv.clientWidth * dpr)), h = Math.max(1, Math.round(cv.clientHeight * dpr));
-    if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; gl.viewport(0, 0, w, h); }
-  }
-  function draw(now) {
-    if (!alive) return;
-    size();
-    var t = (now - t0) / 1000;
-    gl.uniform2f(U.iResolution, cv.width, cv.height);
-    gl.uniform1f(U.iTime, t);
-    gl.uniform1f(U.uSpeed, CFG.speed); gl.uniform1f(U.uWaveDepth, CFG.waveDepth);
-    gl.uniform1f(U.uZoom, CFG.zoom); gl.uniform1f(U.uDensity, CFG.density);
-    gl.uniform1f(U.uSpread, CFG.spread); gl.uniform1f(U.uStepSize, CFG.stepSize);
-    gl.uniform1f(U.uGlow, CFG.glow); gl.uniform1f(U.uExposure, CFG.exposure);
-    gl.uniform1f(U.uColorShift, CFG.colorShift); gl.uniform1f(U.uContrast, CFG.contrast);
-    gl.uniform1f(U.uBrightness, CFG.brightness); gl.uniform1f(U.uOpacity, CFG.opacity);
-    gl.uniform1f(U.uSteps, CFG.steps);
-    gl.uniform3fv(U.uColor1, CFG.color1); gl.uniform3fv(U.uColor2, CFG.color2);
-    gl.uniform3fv(U.uColor3, CFG.color3);
-    gl.uniform2f(U.uMouse, mouse[0], mouse[1]);
-    gl.uniform1f(U.uMouseStrength, CFG.mouseStrength); gl.uniform1f(U.uMouseRadius, CFG.mouseRadius);
-    gl.uniform1f(U.uEnableMouse, 1); gl.uniform1f(U.uMouseActive, mActive);
-    gl.uniform1f(U.uGrain, CFG.grain); gl.uniform1f(U.uGrainIntensity, CFG.grainIntensity);
-    gl.uniform1f(U.uLightMode, 0);
-    gl.drawArrays(gl.TRIANGLES, 0, 3);
-    raf = requestAnimationFrame(draw);
-  }
-  function onMove(e) {
-    var r = cv.getBoundingClientRect();
-    mouse[0] = ((e.clientX - r.left) / r.width * 2 - 1) * (r.width / r.height);
-    mouse[1] = -((e.clientY - r.top) / r.height * 2 - 1); mActive = 1;
-  }
-  function onLeave() { mActive = 0; }
-  cv.addEventListener("pointermove", onMove); cv.addEventListener("pointerleave", onLeave);
-
-  /* Stop drawing when the masthead scrolls away — a full-screen raymarch has no
-     business burning a laptop battery behind an article the reader is reading. */
-  var io = new IntersectionObserver(function (es) {
-    var vis = es[0].isIntersecting;
-    if (vis && !raf) { t0 = performance.now() - 2400; raf = requestAnimationFrame(draw); }
-    if (!vis && raf) { cancelAnimationFrame(raf); raf = 0; }
-  }, { threshold: 0 });
-  io.observe(cv);
-  raf = requestAnimationFrame(draw);
-  acid = { stop: function () { alive = false; if (raf) cancelAnimationFrame(raf); io.disconnect();
-    cv.removeEventListener("pointermove", onMove); cv.removeEventListener("pointerleave", onLeave); } };
-}
 
 /* ============================================================== tooltip */
 var TIP = null, TIPPIN = null; /* TIPPIN: element whose tooltip a tap pinned; only tipOff(true) or a new pin changes it */
@@ -306,53 +184,6 @@ function fig(id, eyebrow, o) {
     (above/below the corpus average) rather than as bare magnitudes, which is
     the difference between "this outlet triggers 40 times" and "this outlet
     triggers twice as often as everyone else". */
-function barChart(rows, opt) {
-  opt = opt || {};
-  var rh = opt.rh || 20, gap = 8, padL = G4(opt.padL || 108), padT = 16, padB = 28;
-  /* The value sits outside the bar's end, so the right gutter has to fit the
-     longest label — otherwise the biggest bar, which is the one people read
-     first, is the one whose number gets clipped. */
-  var longest = rows.reduce(function (n, r) {
-    return Math.max(n, String(r.display != null ? r.display : r.value).length); }, 0);
-  var padR = G4(Math.max(48, longest * 6.6 + 16));
-  var w = 720, h = G4(padT + rows.length * (rh + gap) + padB);
-  var max = opt.max || Math.max.apply(null, rows.map(function (r) { return r.value; })) || 1;
-  var s = svg(w, h); var iw = w - padL - padR;
-  var X = function (v) { return padL + iw * (v / max); };
-  [0, .25, .5, .75, 1].forEach(function (f) {
-    var x = G4(padL + iw * f);
-    vrule(s, x, padT - 4, h - padB);
-    /* A ratio axis maxing at 5.6 rounds to 0,1,3,4,6 and reads as a broken
-       scale. Keep a decimal while the range is small. */
-    tx(s, x, h - padB + 16, max < 10 ? +(max * f).toFixed(1) : Math.round(max * f),
-      { role: "val", anchor: "middle", size: 10, fill: "var(--muted)" });
-  });
-  if (opt.axis) tx(s, padL, h - padB + 30, opt.axis, { role: "eb", size: 9.5, fill: "var(--muted)" });
-  rows.forEach(function (r, i) {
-    var y = G4(padT + i * (rh + gap));
-    var maxCh = Math.floor((padL - 16) / 6.1);
-    var lb = tx(s, padL - 10, y + rh / 2 + 4, clip(r.label, maxCh),
-      { anchor: "end", weight: r.focal ? 600 : 400, fill: r.focal ? "var(--ink)" : "var(--ink2)" });
-    if (r.label.length > maxCh) { var ti = mk("title", {}); ti.textContent = r.label; lb.appendChild(ti); }
-    var bw = Math.max(2, iw * (r.value / max));
-    var g = mk("g", {});
-    g.appendChild(mk("rect", { x: padL, y: y, width: bw, height: rh, rx: 4,
-      fill: r.color || (r.focal ? "var(--hot)" : "var(--seq3)") }));
-    tx(g, padL + bw + 8, y + rh / 2 + 4, r.display != null ? r.display : r.value,
-      { role: "val", fill: r.focal ? "var(--ink)" : "var(--ink2)", weight: r.focal ? 600 : 400 });
-    if (r.tip) bindTip(g, r.tip);
-    s.appendChild(g);
-  });
-  /* Reference line last, so it reads on top of every bar it cuts through. */
-  if (opt.ref != null && opt.ref <= max) {
-    var rx = X(opt.ref);
-    s.appendChild(mk("line", { x1: rx, x2: rx, y1: padT - 8, y2: h - padB,
-      stroke: "var(--ink)", "stroke-width": 1, "stroke-dasharray": "4,3", "stroke-opacity": .55 }));
-    tx(s, rx, padT - 12, opt.refLabel || "ortalama", { role: "eb", size: 9,
-      anchor: "middle", fill: "var(--ink2)", halo: 3 });
-  }
-  return s;
-}
 
 /* ============================================================= dumbbell ==
    Two values per row joined by a line. Used where the DISTANCE between the two
@@ -487,9 +318,6 @@ var SECTIONS = [
   { p: "/anlati", label: "Anlatı", fn: pgAnlati },
   { p: "/kurumlar", label: "Kurumlar", fn: pgSources, tabs: [
     ["liste", "Kurumlar"], ["karsilastir", "Karşılaştır"], ["partiler", "Partiler"], ["kayit", "Kayıt ve güven"]] },
-  { p: "/yanlilik", label: "Çerçeveleme", fn: pgBias, tabs: [
-    ["kesif", "Araç tezgâhı"], ["cozumleyici", "Çözümleyici"],
-    ["bicimler", "Üretim aşamaları"], ["turkiye", "Türkiye bağlamı"]] },
   { p: "/yontem", label: "Yöntem", fn: pgYontem7 }
 ];
 var DETAIL = { "/olay": { fn: pgOlay7, of: "/olaylar" }, "/kurum": { fn: pgSource, of: "/kurumlar" },
@@ -566,53 +394,10 @@ function storyLabel(e, max) {
   var t = plain ? plain.t : evTitle(e, 4);
   return max && t.length > max ? t.slice(0, max - 1) + "…" : t;
 }
-function topStories(n) {
-  return D.E.slice().filter(function (e) { return e.s.length >= 4; })
-    .sort(function (x, y) { return y.p - x.p || y.s.length - x.s.length; }).slice(0, n || 14);
-}
 
 
 
 /* The comparison view. Everything the site is for happens in this function. */
-function renderStory(id) {
-  var box = $("#storybox"); if (!box) return;
-  var e = D.E.filter(function (x) { return x.i === id; })[0]; if (!e) return;
-  var arts = e.a.map(function (i) { return ART[i]; }).sort(function (x, y) { return y.v - x.v; });
-  var lo = arts[arts.length - 1], hi = arts[0];
-  var c = evCoverage(e);
-
-  /* Devices that appear in the loaded half but not the plain half — the concrete
-     answer to "what did this outlet add that the others did not". */
-  var half = Math.max(1, Math.ceil(arts.length / 2));
-  var inHi = {}, inLo = {};
-  arts.slice(0, half).forEach(function (a) { a.k.forEach(function (k) { inHi[k] = 1; }); });
-  arts.slice(half).forEach(function (a) { a.k.forEach(function (k) { inLo[k] = 1; }); });
-  var added = Object.keys(inHi).filter(function (k) { return !inLo[k]; });
-
-  var h = '<div class="panel" style="padding:20px 22px 8px">';
-  h += '<div style="display:flex;gap:18px;flex-wrap:wrap;align-items:baseline;' +
-    'justify-content:space-between;margin-bottom:4px">' +
-    '<h3 style="font-size:21px;max-width:52ch">' + esc(storyLabel(e)) + "</h3>" +
-    '<span class="gap"><b>' + e.p + "</b> puanlık fark</span></div>";
-  h += '<div style="max-width:340px;margin-bottom:6px">' + covBar(c) + "</div>";
-  h += '<p style="color:var(--ink2);font-size:14px;margin:12px 0 4px;max-width:74ch">' +
-    e.s.length + " kurum bu olayı verdi. En yalın başlık " + lo.v + ", en yüklü başlık " +
-    hi.v + " puan aldı. Aşağıda işaretli kelimeler, farkı yaratan kelimelerdir — " +
-    "üzerlerine gelin ya da yapı adına tıklayın.</p>";
-  if (added.length) {
-    h += '<p style="font-size:13.5px;color:var(--ink2);margin:10px 0 2px">' +
-      '<b>Yüklü yarıda olup yalın yarıda olmayan yapılar:</b> ' +
-      added.map(function (k) {
-        return '<button class="devchip" data-k="' + esc(k) + '">' +
-          esc(BIA[k] ? BIA[k].en : k) + "</button>"; }).join(" ") + "</p>";
-  }
-  h += '<div id="expbox"></div>';
-  arts.forEach(function (a) { h += artRow(a); });
-  h += '<div style="padding:14px 0 8px;border-top:1px solid var(--line);margin-top:4px">' +
-    '<a class="lnk" href="#/olay?e=' + e.i + '">Bu olayı dört soruda incele →</a></div>';
-  box.innerHTML = h + "</div>";
-  wireDevices(box);
-}
 
 /* One handler for every device chip and every highlighted word on the page.
    Both carry the article id, so the modal shows the exact firing rather than a
@@ -848,90 +633,6 @@ function kapsamaHTML() {
   });
   return h + "</div>";
 }
-function pgEventsV1(q) {
-  var tab = tabOf(secFor("/olaylar"), q);
-  var h = '<div class="wrap page">';
-
-  if (tab === "liste") {
-    h += '<div class="phead"><div class="eyebrow">Ortak olaylar</div>' +
-      "<h1>Aynı olayı kimler, nasıl verdi</h1>" +
-      '<p class="lede">En az üç kurumun aynı olayı verdiği haberler. Her kart bir olay: ' +
-      "şeritteki her nokta o olayı veren bir kurumdur, <b>yatay konumu</b> kurumun siyasi " +
-      "yerleşimi, <b>büyüklüğü</b> başlığındaki yüklü dilin miktarıdır. Yelpazenin bir " +
-      "ucunda toplanan büyük noktalar, olayın tek taraftan sert bir dille verildiği " +
-      "anlamına gelir; dağınık büyük noktalar, sertliğin siyasi tarafı olmadığı.</p></div>";
-    h += '<div class="ctl">' +
-      '<input type="search" id="esearch" placeholder="Olay ya da kurum ara…" style="min-width:240px">' +
-      '<label class="eyebrow" for="esort">Sırala</label>' +
-      '<select id="esort"><option value="p">Ayrışma (geniş → dar)</option>' +
-      '<option value="s">Kurum sayısı</option><option value="m">Ortalama yoğunluk</option>' +
-      '<option value="f">Tarih</option></select>' +
-      '<span style="display:inline-flex;gap:4px;margin-left:auto">' +
-      '<button class="chip" data-ev="spectrum" aria-pressed="true">Şerit</button>' +
-      '<button class="chip" data-ev="table" aria-pressed="false">Tablo</button></span>' +
-      '<span id="ecount" class="mono" style="font-size:12px;color:var(--muted)"></span>' +
-      "</div><div id=\"elist\"></div>";
-  }
-
-  if (tab === "kor") {
-    /* The naive test — "a bloc is entirely absent" — finds nothing here, and
-       that is the honest headline. It also would not mean much if it did: the
-       register places 17 live outlets on the right and 7 on the left, so an
-       empty left bloc is far more likely by arithmetic than by editorial choice.
-       So the page reports the null result first, then uses a baseline-relative
-       measure, which is the only version of this question the data can answer. */
-    var nLeft = 0, nRight = 0, nMid = 0;
-    LIVE.forEach(function (k) { var b = bloc(k);
-      if (b === "left") nLeft++; else if (b === "right") nRight++; else if (b !== "none") nMid++; });
-    var baseL = nLeft / LIVE.length;
-    var big = D.E.filter(function (e) { return e.s.length >= 5; });
-    var none = big.filter(function (e) { var c = evCoverage(e); return c.left === 0 || c.right === 0; });
-    var scored = big.map(function (e) {
-      var c = evCoverage(e);
-      return { e: e, c: c, share: c.left / c.total, gap: c.left / c.total - baseL };
-    }).sort(function (a, b) { return a.gap - b.gap; });
-
-    h += '<div class="phead"><div class="eyebrow">Kör noktalar</div>' +
-      "<h1>Bir olay yelpazenin bir tarafında eksik kalıyor mu</h1>" +
-      '<p class="lede">Ground News tarzı “kör nokta”, bir olayın yelpazenin bir tarafında ' +
-      "hiç görünmemesidir. Bu bu dönemdeki haberlerde, en az beş kurumun verdiği " + big.length +
-      " olaydan <b>" + none.length + " tanesi</b> bu tanıma uyuyor.</p></div>";
-
-    h += '<div class="note"><b>Sıfır, burada gerçek bir sonuçtur.</b> Bu dönemdeki bu dönemdeki haberlerde ' +
-      "kurumlar büyük ölçüde <b>aynı olayları</b> veriyor; ayrıştıkları yer olayın seçimi " +
-      "değil, dili. Bu, sitenin geri kalanının neden çerçevelemeye odaklandığını da " +
-      "açıklıyor: ölçülebilir fark orada.</div>";
-
-    h += '<div class="note warn" style="margin-top:12px"><b>Testin kendisi zayıf.</b> ' +
-      "Kayıt defteri bu dönemdeki " + LIVE.length + " kurumdan " + nRight + " tanesini sağda, " +
-      nLeft + " tanesini solda konumlandırıyor. Bu dengesizlikle, “solda hiç yok” sonucu " +
-      "editoryal bir tercihten çok aritmetikten doğar. Ayrıca Halk TV, Karar ve Aydınlık " +
-      "gibi sol/muhalif kurumlar tek bir akış yayınlıyor ve pencerenin yalnızca bir gününü " +
-      "kapsıyor — verinin ince olduğu yerde kör nokta bulmak kolaydır.</div>";
-
-    h += '<section class="sec"><h2>Bloka göre orantısız olaylar</h2>' +
-      '<p class="sub">Mutlak yokluk yerine orana bakan ölçüt. Bu dönemdeki haberlerde sol blok kurumların ' +
-      "%" + Math.round(100 * baseL) + sufNum(Math.round(100 * baseL), 1) + " oluşturuyor; aşağıdaki olaylarda sol blokun payı " +
-      "bu taban çizgisinin en çok altında ya da üstünde. Bu bir kapsama gözlemidir, " +
-      "bir suçlama değil.</p>";
-    h += '<div class="grid g2">';
-    scored.slice(0, 6).concat(scored.slice(-6).reverse()).forEach(function (x, i) {
-      if (i === 6) h += '</div><h3 style="margin:26px 0 12px;font-size:17px">Sol blokun payı ' +
-        "taban çizgisinin üstünde</h3><div class=\"grid g2\">";
-      h += '<div class="card" style="cursor:pointer" onclick="location.hash=\'/olay?e=' + x.e.i + '\'">' +
-        '<div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline">' +
-        "<b>" + esc(storyLabel(x.e, 64)) + "</b>" +
-        '<span class="tag' + (x.gap < -0.15 ? " b" : "") + '">' +
-        (x.gap >= 0 ? "+" : "") + Math.round(100 * x.gap) + " puan</span></div>" +
-        '<div style="margin-top:11px">' + covBar(x.c) + "</div>" +
-        '<div style="margin-top:9px;font-size:12px;color:var(--muted)">' +
-        esc(x.e.s.map(function (sl) { return srcName(sl); }).join(", ")) + "</div></div>";
-    });
-    h += "</div></section>";
-  }
-
-  return h + "</div>";
-}
 var EVVIEW = "spectrum";
 function renderEvents() {
   var k = $("#esort") ? $("#esort").value : "p";
@@ -955,155 +656,6 @@ function renderEvents() {
     list.map(spectrumCard).join("") + "</div>";
 }
 
-function pgEventV1(q) {
-  var e = D.E.filter(function (x) { return x.i === q.e; })[0];
-  if (!e) return '<div class="wrap page"><div class="phead"><h1>Olay bulunamadı</h1>' +
-    '<p class="lede"><a class="lnk" href="#/olaylar">Olay listesine dön</a></p></div></div>';
-  var arts = e.a.map(function (i) { return ART[i]; }).sort(function (a, b) { return b.v - a.v; });
-  var vs = arts.map(function (a) { return a.v; });
-  var lo = Math.min.apply(null, vs), hi = Math.max.apply(null, vs);
-  var plain = arts[arts.length - 1], loud = arts[0];
-
-  /* What they agree on: tokens carried by most of the cluster. */
-  var cnt = {};
-  arts.forEach(function (a) {
-    var seen = {};
-    a.t.toLocaleLowerCase("tr").replace(/['’‘"“”]/g, " ").replace(/[^\p{L}\p{N}\s]/gu, " ")
-      .split(/\s+/).forEach(function (w) { if (w.length >= 4 && !seen[w]) { seen[w] = 1; cnt[w] = (cnt[w] || 0) + 1; } });
-  });
-  var shared = Object.keys(cnt).filter(function (w) { return cnt[w] >= Math.ceil(arts.length * .6); })
-    .sort(function (a, b) { return cnt[b] - cnt[a]; }).slice(0, 10);
-
-  /* Where they differ: the devices that fired, and on whom. */
-  var devs = {};
-  arts.forEach(function (a) { a.e.forEach(function (x) {
-    (devs[x[0]] || (devs[x[0]] = [])).push({ s: a.s, ev: x[1], v: a.v }); }); });
-  var devKeys = Object.keys(devs).sort(function (a, b) { return devs[b].length - devs[a].length; });
-
-  var KINDLBL = { event: ["doğrulanmış olay", "g"],
-    topic: ["konu kümesi — aynı tür olaylar", "b"],
-    unverified: ["ortak özel ad saptanamadı", ""] };
-  var kl = KINDLBL[e.k] || KINDLBL.unverified;
-  var h = '<div class="wrap page"><div class="phead"><div class="eyebrow">Olay ' + esc(e.i) +
-    " · " + fmtD(e.f) + " – " + fmtD(e.l) +
-    ' <span class="tag ' + kl[1] + '" style="margin-left:8px">' + kl[0] + "</span></div>" +
-    "<h1>" + esc(storyLabel(e, 90)) + "</h1>" +
-    '<p class="lede">' + e.s.length + " kurum, " + e.n + " haber. Yüklü dil yoğunluğu " + lo +
-    " ile " + hi + " arasında — " + (hi - lo) + " puanlık aralık.</p></div>";
-
-  h += '<div class="q"><div class="q-n">01</div><div><h3>Ne oldu?</h3>' +
-    "<p>Bu kümedeki en az yüklü başlık, olayın en yalın aktarımıdır: " +
-    '<b>“' + esc(plain.t) + '”</b> — ' + esc(srcName(plain.s)) +
-    ", yoğunluk " + plain.v + " (" + esc(bandOf(plain.v).tr).toLocaleLowerCase("tr") + "). " +
-    "Küme, " + fmtDT(e.f) + " ile " + fmtDT(e.l) + " arasında yayımlanan haberlerden oluşuyor.</p></div></div>";
-
-  var FL = factLayers(e);
-  h += '<div class="q"><div class="q-n">02</div><div><h3>Kaynaklar neyde uzlaşıyor?</h3>' +
-    "<p>Üç katman ayrı tutulur: her kurumun taşıdığı ortak unsurlar, yalnızca bazılarının " +
-    "taşıdığı iddialar, ve bu sitenin kendi okuması. Bunları birbirine karıştırmak bu tür " +
-    "analizlerin en yaygın hatasıdır.</p>";
-  h += '<div style="margin-top:14px"><div style="margin-bottom:14px">' +
-    '<span class="tag g">1 · Olgu — hepsinde ortak</span>' +
-    '<p style="margin-top:7px;font-size:13.5px;color:var(--ink2)">' +
-    (FL.all.length ? "Kümedeki <b>" + FL.n + " başlığın hepsinde</b> geçen unsurlar. " +
-      "Hiçbir kurum bunları tartışmıyor.</p><p style=\"margin-top:7px\">" +
-      FL.all.map(function (w) { return '<span class="tag" style="margin:2px 4px 2px 0">' +
-        esc(w) + "</span>"; }).join("")
-      : "Bu kümede bütün başlıkların paylaştığı bir unsur yok. Kurumlar aynı olayı farklı " +
-        "sözcüklerle adlandırıyor olabilir; bu tek başına ayrışma kanıtı değildir, kümenin " +
-        "gevşek olduğunun da işareti olabilir.") + "</p></div>";
-  if (FL.some.length) {
-    h += '<div style="margin-bottom:14px"><span class="tag b">2 · İddia — yalnızca bazılarında</span>' +
-      '<p style="margin-top:7px;font-size:13.5px;color:var(--ink2)">Kümenin bir bölümünde ' +
-      "geçen, hepsinde geçmeyen unsurlar. Bunlar iddia düzeyindedir: bir kurumun eklediği, " +
-      "diğerlerinin eklemediği bilgi ya da niteleme.</p><p style=\"margin-top:7px\">" +
-      FL.some.map(function (w) { return '<span class="tag" style="margin:2px 4px 2px 0">' +
-        esc(w) + "</span>"; }).join("") + "</p></div>";
-  }
-  h += '<div><span class="tag">3 · Yorum — bu sitenin okuması</span>' +
-    '<p style="margin-top:7px;font-size:13.5px;color:var(--ink2)">Yoğunluk puanları ve yapı ' +
-    "etiketleri <b>yorumdur</b>, olgu değil. Kural tabanlı, denetlenebilir ve " +
-    "tartışılabilirler; her birinin kanıtı işaretli kelimede görünür ve tıklanabilir.</p>" +
-    "</div></div></div></div>";
-
-  h += '<div class="q"><div class="q-n">03</div><div><h3>Nerede ayrışıyorlar?</h3>';
-  if (hi - lo < 8) {
-    h += "<p>Bu olayda kayda değer bir ayrışma yok. Tüm kurumlar " + lo + "–" + hi +
-      " bandında kaldı; başlıklar olayı bildiriyor, yeniden çerçevelemiyor. " +
-      "Ayrışmanın <b>olmaması</b> da bir bulgudur: rutin aktarımda Türk basını büyük ölçüde aynı dili kullanıyor.</p>";
-  } else {
-    h += "<p>En yüksek yoğunluk <b>" + esc(srcName(loud.s)) + "</b>'de (" + loud.v +
-      "), en düşük <b>" + esc(srcName(plain.s)) + "</b>'de (" + plain.v +
-      "). Aradaki fark olgudan değil, dilden geliyor. Tetiklenen yapılar:</p>";
-    h += '<div style="margin-top:12px">';
-    devKeys.forEach(function (k) {
-      var b = BIA[k], hits = devs[k];
-      h += '<div class="card" style="margin-bottom:10px;padding:14px">' +
-        '<div style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap">' +
-        '<b style="font-family:var(--ff-b);font-size:14px">' + esc(b ? b.en : k) + "</b>" +
-        '<span style="color:var(--muted);font-size:13px">' + esc(b ? b.tr : "") + "</span>" +
-        '<span class="tag b" style="margin-left:auto">' + hits.length + " başlıkta</span></div>";
-      if (b) h += '<p style="margin-top:7px;font-size:13.5px;color:var(--ink2);line-height:1.6">' + esc(b.df) + "</p>";
-      h += '<div style="margin-top:9px;font-size:12.5px;color:var(--muted);font-family:var(--ff-m)">' +
-        hits.map(function (x) { return esc(srcName(x.s)) + " → “" + esc(x.ev) + "”"; }).join(" &nbsp;·&nbsp; ") +
-        "</div></div>";
-    });
-    h += "</div>";
-  }
-  h += "</div></div>";
-
-  h += '<div class="q"><div class="q-n">04</div><div><h3>Bu fark neden önemli?</h3><p>';
-  if (hi - lo < 8) {
-    h += "Bu olay, ölçeğin kalibrasyonu için yararlıdır: aralığın dar olduğu durumlar, " +
-      "geniş olduğu durumların gerçekten ayrıştığını gösterir. Her haberde yanlılık aramak, " +
-      "yanlılığın anlamını yitirmesine yol açar.";
-  } else {
-    h += "Aynı olayı okuyan iki kişi, hangi kurumu açtığına göre farklı bir olay hatırlar. " +
-      "Yüksek yoğunluklu başlık okura olayla birlikte bir <b>değerlendirme</b> de verir: kimin " +
-      "sorumlu olduğunu, olayın ne kadar ciddi olduğunu, kime öfkelenmesi gerektiğini. Düşük " +
-      "yoğunluklu başlık bu kararı okura bırakır. Fark, olgunun kendisinde değil, okurun " +
-      "olguyla ne yapacağındadır.";
-  }
-  h += "</p></div></div>";
-
-  h += '<section class="sec"><h2>Kaynak kaynağa karşılaştırma</h2>' +
-    '<p class="sub">Bu olayı veren her kurum, kendi manşeti ve anlatı kodlamasıyla. ' +
-    "Uzlaşılan ve ayrışılan noktalar aynı satırda görünür; yapı adına tıklayarak " +
-    "kanıtını ve açıklamasını açabilirsiniz.</p>" + comparisonTable(e) + "</section>";
-
-  h += '<section class="sec"><h2>Çerçeveleme merdiveni</h2>' +
-    '<p class="sub">Aynı olay, en yalın başlıktan en yüklüsüne. Her basamak, bir ' +
-    "alttakine <b>ne eklediğini</b> söylüyor. Çerçeveleme bir kurumun sahip olduğu bir " +
-    "özellik değil, adım adım kurulan bir şeydir; bu merdiven o adımları gösterir.</p>" +
-    framingLadder(e) + "</section>";
-
-  var wd = wordDivergence(e);
-  if (wd) {
-    h += '<section class="sec"><h2>Kelime düzeyinde ayrışma</h2>' +
-      '<p class="sub">Bu olayda yalnızca bir blokta geçen kelimeler. Bloklar sağlanan ' +
-      "kayıt defteri yerleşimlerinden gelir; tablo hangi kelimelerin hangi yerleşimle " +
-      "birlikte dolaştığını gösterir, bir bloğun neye inandığını değil.</p>" + wd + "</section>";
-  }
-
-  h += '<section class="sec"><h2>Bu olaydaki tüm haberler</h2>' +
-    '<p class="sub">Yoğunluğa göre sıralı. Başlıklara tıklayınca kurumun kendi sayfası açılır.</p>' +
-    '<div class="panel" style="padding:4px 18px 14px">';
-  arts.forEach(function (a) { h += artRow(a); });
-  h += "</div></section>";
-
-  if (NOF(e)) {
-    h += '<div class="note" style="margin-top:22px"><b>Bu olayın anlatı haritası var.</b> ' +
-      "Dokuz boyutta kurumların kurduğu hikâyeler kodlandı — kim merkezde, kim sorumlu " +
-      'tutuluyor, hangi çözüm meşrulaştırılıyor. <a class="lnk" href="#/anlati?n=' +
-      NKEY(e) + '">Anlatı haritasında aç →</a></div>';
-  }
-  h += '<div class="note" style="margin-top:26px"><b>Bu küme bir adaydır.</b> Haberler ortak ' +
-    "kelime dağarcığıyla eşleştirildi; aynı olayı işledikleri editoryal olarak onaylanmadı. " +
-    "Yanlışlıkla bir araya gelmiş bir küme, yapılmamış bir karşılaştırmayı yapılmış gibi gösterir — " +
-    'hatalı eşleşmeleri <a class="lnk" href="#/yontem">yöntem sayfasındaki</a> düzeltme yoluyla bildirin.</div>';
-  h += '<p style="margin-top:22px"><a class="lnk" href="#/olaylar">← Tüm olaylar</a></p></div>';
-  return h;
-}
 
 /* Kurumlar overview rows, shared by the finding text (render) and the charts (v2After). */
 function kuMean() {
@@ -2134,87 +1686,6 @@ function narrBox(key) {
    What the rule engine has actually been tested on. A tool that names biases
    in other people's writing should be able to say where it has been checked
    and where it fails, so this is published rather than kept in a repository. */
-function checklistSection() {
-  var C = D.CL;
-  if (!C) return "";
-  var TY = { MFT: ["Doğrudan yetenek testi",
-      "Aracın belirli bir şeyi yapabildiğini doğrudan sınar."],
-    INV: ["Değişmezlik testi",
-      "Anlamı değiştirmeyen bir düzenleme sonucu değiştirmemeli."],
-    DIR: ["Yönlü test",
-      "Anlamı değiştiren bir ekleme sonucu belirli bir yönde değiştirmeli."] };
-  var CAP = { literal_reporting: "Yalın aktarım", evaluative_language: "Değerlendirici dil",
-    publisher_identity: "Yayıncı kimliği", quotation_scope: "Alıntı kapsamı",
-    causality: "Nedensellik", turkish_negation: "Türkçe olumsuzlama",
-    modality: "Kiplik / ihtimal", speaker_attribution: "Konuşmacıya atıf",
-    sentence_order: "Cümle sırası", untrusted_text: "Güvenilmeyen metin",
-    concept_boundary: "Kavram sınırı", reported_opinion: "Aktarılan görüş" };
-
-  var h = '<section class="sec"><h2>Bu çözümleyici neyle sınandı</h2>' +
-    '<p class="sub">Yanlılık saptadığını söyleyen bir aracın, nerede sınandığını ve ' +
-    "nerede başarısız olduğunu da söylemesi gerekir. Aşağıdaki " + C.total +
-    " vaka, kardeş proje <b>Mercek</b>'in Türkçe davranış testi dizisinden geliyor ve " +
-    "sitenin kendi başlık puanlayıcısı her yapıda bunlara karşı yeniden çalıştırılıyor.</p>";
-
-  h += '<div class="grid g3" style="margin-bottom:20px">' +
-    '<div class="card" style="border-left:3px solid var(--ok)">' +
-    '<div class="num" style="font-size:26px;color:var(--ok)">' + C.real + "</div>" +
-    '<div class="eyebrow" style="margin-top:3px">gerçek geçiş</div>' +
-    '<p style="margin-top:8px;font-size:13px;color:var(--ink2);line-height:1.55">' +
-    "Motorun ilgili yeteneği var ve test edilen davranışı doğru sergiliyor.</p></div>" +
-    '<div class="card"><div class="num" style="font-size:26px">' + C.trivial + "</div>" +
-    '<div class="eyebrow" style="margin-top:3px">boş geçiş</div>' +
-    '<p style="margin-top:8px;font-size:13px;color:var(--ink2);line-height:1.55">' +
-    "Test bir kavramın <b>bulunmamasını</b> istiyor ve motorda o kavram için zaten " +
-    "kural yok. Geçiyor ama hiçbir şey kanıtlamıyor — bu yüzden ayrı sayılıyor.</p></div>" +
-    '<div class="card" style="border-left:3px solid ' + (C.fail ? "var(--hot)" : "var(--line2)") + '">' +
-    '<div class="num" style="font-size:26px;color:' + (C.fail ? "var(--hot)" : "var(--ink)") + '">' +
-    C.fail + "</div>" +
-    '<div class="eyebrow" style="margin-top:3px">başarısız</div>' +
-    '<p style="margin-top:8px;font-size:13px;color:var(--ink2);line-height:1.55">' +
-    (C.fail ? "Aşağıdaki tabloda işaretli." :
-      "Şu anda yok. Bu, motorun doğru olduğu anlamına gelmez — yalnızca bu " +
-      C.total + " vakada yanlış davranmadığı anlamına gelir.") + "</p></div></div>";
-
-  h += '<div class="note warn"><b>Bu bir doğruluk ölçüsü değildir.</b> Vakalar ' +
-    "sentetiktir, uzman incelemesinden geçmemiştir ve dizinin kendisi bunu böyle " +
-    "beyan eder. Gerçek Türkçe başlıklarda kaç saptamanın doğru olduğunu ölçmezler; " +
-    "yalnızca sözlük eşleştiren bir motorun düşmeye en yatkın olduğu tuzakları — " +
-    "olumsuzlama, ihtimal kipi, alıntı içindeki dil ve metni talimat sanma — " +
-    "yayına çıkmadan önce yakalarlar. İnsan tarafından etiketlenmiş bir Türkçe " +
-    "doğrulama kümesi hâlâ yok; bu yüzden sitede hiçbir yerde kesinlik yüzdesi verilmiyor.</div>";
-
-  h += '<div class="scroller panel" style="margin-top:16px"><table><thead><tr>' +
-    "<th>Sınanan yetenek</th><th>Test türü</th><th>Sonuç</th><th>Tetiklenen yapı</th>" +
-    "</tr></thead><tbody>" +
-    C.cases.map(function (c) {
-      var ty = TY[c.type] || [c.type, ""];
-      return "<tr><td><b>" + esc(CAP[c.capability] || c.capability) + "</b>" +
-        '<div class="mono" style="font-size:10.5px;color:var(--muted);margin-top:3px">' +
-        esc(c.id) + "</div></td>" +
-        '<td style="font-size:12.5px;color:var(--ink2)"><b>' + esc(c.type) + "</b> · " +
-        esc(ty[0]) + '<div style="color:var(--muted);font-size:11.5px;margin-top:2px">' +
-        esc(ty[1]) + "</div></td>" +
-        "<td>" + (c.verdict === "FAIL" ?
-          '<span class="tag b">başarısız</span>' :
-          c.kind === "trivial" ? '<span class="tag">boş geçiş</span>' :
-          '<span class="tag g">geçti</span>') +
-        (c.why ? '<div style="font-size:11.5px;color:var(--muted);margin-top:4px">' +
-          esc(c.why) + "</div>" : "") + "</td>" +
-        '<td class="mono" style="font-size:11.5px;color:var(--muted)">' +
-        esc(c.keys || "—") + "</td></tr>";
-    }).join("") + "</tbody></table></div>";
-
-  var failed = C.cases.filter(function (c) { return c.verdict === "FAIL"; });
-  h += '<div class="note" style="margin-top:14px"><b>Bu çalıştırmada ' + (failed.length ? failed.length + " vaka başarısız.</b> " +
-      failed.map(function (c) { return esc(CAP[c.capability] || c.capability) + (c.why ? " (" + esc(c.why) + ")" : ""); }).join(", ") +
-      ". Başarısız vaka, puanlayıcının sözlüğünün o ifadeyi kapsamadığını ya da kavram için kuralı olmadığını gösterir; düzeltilene kadar burada kalır." :
-      "başarısız vaka yok.</b>") +
-    '<br><span class="mono" style="font-size:11.5px;color:var(--muted)">Kaynak: ' +
-    esc(C.source) + (C.engine ? " · motor " + esc(C.engine) : "") + " · son çalıştırma " +
-    esc(String(C.ran).slice(0, 16).replace("T", " ")) + " UTC</span></div>";
-  return h + "</section>";
-}
 
 /* ====================================================== bias explorer ====
    The Yanlılık section, entered through the corpus instead of through a
@@ -2222,7 +1693,6 @@ function checklistSection() {
    reached for it, how often relative to everyone else, and every real example
    with the triggering words marked. The 127-concept library is still there,
    but as a reference behind the working view rather than as the front door. */
-var EXPKEY = null, EXPQ = "";
 
 function deviceStats() {
   var pol = D.A.filter(function (a) { return a.p; });
@@ -2251,382 +1721,11 @@ function deviceStats() {
   return out;
 }
 
-function pgExplorer() {
-  var st = deviceStats();
-  var keys = Object.keys(st).sort(function (a, b) { return st[b].n - st[a].n; });
-  if (!EXPKEY || !st[EXPKEY]) EXPKEY = keys[0];
-  var maxN = st[keys[0]] ? st[keys[0]].n : 1;
-
-  var h = '<div class="wrap page"><div class="phead"><div class="eyebrow">Çerçeveleme</div>' +
-    "<h1>Bu dönem hangi araçlar kullanıldı</h1>" +
-    '<p class="lede">Bir yanlılık sözlüğü değil, bir <b>çalışma tezgâhı</b>. Soldaki ' +
-    "listeden bir araç seçin: o aracın bu dönemdeki haberlerde ne yaptığını, kimin ne " +
-    "sıklıkta başvurduğunu ve tetiklendiği her gerçek başlığı işaretli kelimeleriyle " +
-    "görürsünüz. Kavramın tanımını arıyorsanız, tam kütüphane en altta.</p></div>" + top20();
-
-  h += '<div class="ctl"><input type="search" id="expq" placeholder="Araç ara…" ' +
-    'style="min-width:240px" value="' + esc(EXPQ) + '">' +
-    '<span class="mono" style="font-size:12px;color:var(--muted)">' + keys.length +
-    " araç, bu dönem tetiklendi</span></div>";
-
-  h += '<div class="exp-grid"><div class="exp-list" id="explist" data-lenis-prevent>' +
-    keys.filter(function (k) {
-      if (!EXPQ) return true;
-      var b = BREG[k] || BIA[k] || {};
-      return ((b.en || k) + " " + (b.tr || "")).toLocaleLowerCase("tr")
-        .indexOf(EXPQ.toLocaleLowerCase("tr")) >= 0;
-    }).map(function (k) {
-      var b = BREG[k] || BIA[k] || {};
-      return '<div class="exp-item' + (k === EXPKEY ? " on" : "") + '" data-exp="' + k + '">' +
-        '<span class="nm"><b>' + esc(b.en || k) + "</b>" +
-        "<span>" + esc(b.tr || "") + "</span></span>" +
-        '<span class="exp-bar" style="width:' + Math.max(2, 44 * st[k].n / maxN) + 'px"></span>' +
-        '<span class="ct">' + st[k].n + "</span></div>";
-    }).join("") + "</div>";
-
-  h += '<div class="exp-panel" id="exppanel"></div></div>';
-
-  /* The full library, demoted to a reference. */
-  h += '<section class="sec"><h2>Tam kavram kütüphanesi</h2>' +
-    '<p class="sub">Yukarıdaki tezgâh yalnızca bu dönem <b>tetiklenen</b> araçları ' +
-    "gösterir. Aşağıdaki liste, projenin tanıdığı " + (D.BR || []).length +
-    " kavramın tamamıdır — çoğu bir başlıktan karara bağlanamaz ve hangi kümede " +
-    "olduğu her kayıtta yazar.</p>" +
-    '<div class="ctl"><input type="search" id="bq" placeholder="Kavram ara…" style="min-width:220px">' +
-    '<label class="eyebrow">Küme</label>' +
-    [["all", "Tümü"], ["detected", "Kural saptıyor"], ["codable", "İnsan kodlaması"],
-     ["reference", "Okur davranışı"]].map(function (t) {
-      return '<button class="chip" data-tier="' + t[0] + '" aria-pressed="' +
-        (t[0] === "all") + '">' + t[1] + "</button>"; }).join("") + "</div>" +
-    '<div id="blist"></div></section>';
-
-  h += checklistSection();
-  return h + "</div>";
-}
 
 /** The detail panel: what this device did in this corpus. */
-function renderExpPanel() {
-  var box = $("#exppanel"); if (!box) return;
-  var st = deviceStats(), r = st[EXPKEY];
-  if (!r) { box.innerHTML = ""; return; }
-  var b = BREG[EXPKEY] || BIA[EXPKEY] || {};
-  var tier = b.tier || "detected";
 
-  var h = '<div class="eyebrow">' + esc(TIERL[tier] || tier) + "</div>" +
-    '<h2 style="font-size:26px;margin-top:6px">' + esc(b.en || EXPKEY) + "</h2>" +
-    '<div style="font-family:var(--ff-d);font-size:17px;color:var(--ink2);margin-top:2px">' +
-    esc(b.tr || "") + "</div>";
-  if (b.df) h += '<p class="lead">' + esc(b.df) + "</p>";
 
-  /* What it looks like, in this outlet's own words, with the trigger marked. */
-  var rule = (RULEDEF.filter(function (x) { return x[0] === EXPKEY; })[0] || [])[1];
-  if (rule) {
-    h += '<div class="note"><b>Kural ne arıyor.</b> ' + esc(rule) +
-      ". Aynı metin her zaman aynı sonucu verir; bu bir model tahmini değildir.</div>";
-  }
 
-  h += '<div class="grid g3" style="margin-top:18px">' +
-    kpi(r.n, "başlıkta tetiklendi") +
-    kpi("%" + (100 * r.n / D.A.length).toFixed(1), "tüm haberlerin") +
-    kpi(Object.keys(r.byOutlet).length, "farklı kurum kullandı") + "</div>";
-
-  /* Who reaches for it more than everyone else does. */
-  if (r.top.length) {
-    h += '<section class="sec" style="margin-top:26px"><h3 style="font-size:18px">' +
-      "Kim bu araca daha sık başvuruyor</h3>" +
-      '<p class="sub" style="margin-bottom:14px">Kurumun kendi haberlerinde bu aracın ' +
-      "görülme oranı, aynı oranın tüm haberlerdeki hâline bölünmüş. <b>2.0</b>, o kurumun " +
-      "bu araca iki kat sık başvurduğu anlamına gelir.</p>" +
-      '<div style="display:flex;flex-direction:column;gap:7px">' +
-      r.top.slice(0, 8).map(function (x) {
-        var wdt = Math.min(100, x.ratio / 3 * 100);
-        return '<a href="#/kurum?s=' + x.s + '" style="display:grid;' +
-          "grid-template-columns:130px 1fr 62px;gap:12px;align-items:center;" +
-          'text-decoration:none;font-size:13px">' +
-          "<span>" + esc(srcName(x.s)) + "</span>" +
-          '<span style="height:16px;background:var(--sunk);border-radius:3px;display:block;' +
-          'position:relative"><span style="display:block;height:100%;width:' + wdt +
-          '%;background:' + lean(SRC[x.s] ? SRC[x.s].lean : null) +
-          ';border-radius:3px;opacity:.85"></span></span>' +
-          '<span class="num" style="text-align:right;font-size:12.5px">' +
-          x.ratio.toFixed(1) + "×</span></a>";
-      }).join("") + "</div></section>";
-  }
-
-  /* Every real example, trigger words marked. This is the point of the page. */
-  var ex = r.arts.slice().sort(function (a, b2) { return b2.v - a.v; });
-  h += '<section class="sec" style="margin-top:26px"><h3 style="font-size:18px">' +
-    'Bu dönemdeki gerçek örnekler <span class="mono" style="font-size:13px;' +
-    'color:var(--muted)">' + ex.length + "</span></h3>" +
-    '<p class="sub" style="margin-bottom:12px">İşaretli kelime kuralı tetikleyen ' +
-    "kelimedir. Başlığa tıklayınca kurumun kendi sayfası açılır.</p>" +
-    '<div class="panel" style="padding:4px 18px 14px" id="expex">' +
-    ex.slice(0, 25).map(function (a) { return artRow(a); }).join("") + "</div>";
-  if (ex.length > 25) {
-    h += '<p style="margin-top:10px;font-size:12.5px;color:var(--muted)">İlk 25 örnek ' +
-      "gösteriliyor; kalan " + (ex.length - 25) + " örnek için kurum sayfalarına bakın.</p>";
-  }
-  h += "</section>";
-
-  /* What the tool cannot settle about this device. */
-  if (b.bound) {
-    h += '<div class="note warn" style="margin-top:20px"><b>Sınır.</b> ' + esc(b.bound) + "</div>";
-  }
-  box.innerHTML = h;
-  wireDevices(box);
-}
-
-function pgBias(q) {
-  var tab = tabOf(secFor("/yanlilik"), q);
-  if (tab === "kesif") return pgExplorer();
-  var h = '<div class="wrap page">';
-  var count = {}; D.A.forEach(function (a) { a.k.forEach(function (k) { count[k] = (count[k] || 0) + 1; }); });
-
-  if (tab === "bicimler") {
-    h += '<div class="phead"><div class="eyebrow">Hamborg biçimleri</div>' +
-      "<h1>Çerçeveleme haberin hangi aşamasında oluşur</h1>" +
-      '<p class="lede">Yapı kütüphanesi tek bir başlığın dilini inceler. Hamborg (2023) ' +
-      "çerçevesi bir adım geri çekilir ve yanlılığın haber üretiminin hangi aşamasında " +
-      "girdiğini sorar: hangi olayın habere değer görüldüğü, nasıl anlatıldığı, neyin öne " +
-      "çıkarıldığı. Bir başlığın dili kusursuz olabilir; olayın seçilmiş olması yine de " +
-      "bir tercihtir.</p></div>";
-    var phases = [];
-    D.F.forEach(function (f) { if (phases.indexOf(f.phase) < 0) phases.push(f.phase); });
-    phases.forEach(function (ph) {
-      var fs = D.F.filter(function (f) { return f.phase === ph; });
-      h += '<section class="sec"><h2>' + esc(ph) + " aşaması</h2><div class=\"grid g2\">";
-      fs.forEach(function (f) {
-        h += '<div class="card"><div style="display:flex;gap:9px;align-items:baseline;flex-wrap:wrap">' +
-          '<b style="font-size:15px">' + esc(f.en) + "</b>" +
-          '<span style="color:var(--muted);font-size:13px">' + esc(f.tr) + "</span></div>" +
-          '<p style="margin-top:8px;font-size:13.5px;color:var(--ink2);line-height:1.6">' + esc(f.df) + "</p>" +
-          '<p style="margin-top:9px;font-size:13px;color:var(--muted);border-left:2px solid var(--line2);padding-left:10px">' +
-            '<span class="eyebrow">' + esc(WIN.range) + "</span><br>" + formEx7(f) + "</p>" +
-          (f.det ? '<p style="margin-top:9px;font-size:12.5px"><span class="eyebrow">Nasıl saptanır</span><br>' + esc(f.det) + "</p>" : "") +
-          "</div>";
-      });
-      h += "</div></section>";
-    });
-  }
-
-  if (tab === "cozumleyici") {
-    h += '<div class="phead"><div class="eyebrow">Metin çözümleyici</div>' +
-      "<h1>Bir başlığı kendiniz deneyin</h1>" +
-      '<p class="lede">Türkçe bir haber başlığı yazın; bu dönemdeki haberleri işleyen kuralların aynısı ' +
-      "çalışır ve hangi yapıların neden tetiklendiğini gösterir. Bu bir model tahmini değil, " +
-      "açık ve denetlenebilir yüzey testleridir — aynı metin her zaman aynı sonucu verir.</p></div>";
-    h += '<div class="card"><textarea class="an-in" id="anin" ' +
-      'placeholder="Bir Türkçe haber başlığı yazın…"></textarea>' +
-      '<div style="margin-top:12px"><span class="eyebrow">Bu dönemdeki haberlerden örnek dene</span></div>' +
-      '<div style="margin-top:8px" id="anex"></div>' +
-      '<div class="an-out" id="anout"></div></div>';
-    h += '<div class="note" style="margin-top:18px"><b>Kuralların göremediği.</b> ' +
-      "Bir başlıkta <b>olmayan</b> şeye dayanan yapılar — Confirmation Bias, Cherry Picking, " +
-      "Base Rate Fallacy — tek bir dizeden karara bağlanamaz; bunlar için haberin gövdesini ve " +
-      "karşılaştırma kümesini okumak gerekir. Tarayıcı kolay vakaları denetlenebilir kılmak " +
-      "için vardır, okumanın yerine geçmek için değil.</div>";
-    h += checklistSection();
-  }
-
-  if (tab === "turkiye") {
-    h += '<div class="phead"><div class="eyebrow">Türkiye\'de yanlılık</div>' +
-      "<h1>Beş alanda çerçeveleme kalıpları</h1>" +
-      '<p class="lede">Akademik literatürün Türkiye medya sistemi için tanımladığı yapısal ' +
-      "alanlar ve her birinde hükümete yakın, muhalif ve bağımsız yayınların tipik çerçeveleri. " +
-      "Bunlar bu dönemdeki haberlerden sayılmış değil, literatürden alınmış <b>beklentilerdir</b>; " +
-      "bu dönemdeki haberlerde doğrulanıp doğrulanmadıkları ayrı bir sorudur.</p></div>";
-    D.I.forEach(function (it) {
-      h += '<section class="sec"><h2>' + esc(it.n) + '</h2><p class="sub">' + esc(it.d) + "</p>" +
-        '<div class="persp" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">' +
-        '<div><div class="h" style="color:var(--right)">Hükümete yakın çerçeve</div><p>' + esc(it.pro) + "</p></div>" +
-        '<div><div class="h" style="color:var(--left)">Muhalif çerçeve</div><p>' + esc(it.opp) + "</p></div>" +
-        '<div><div class="h" style="color:var(--mid)">Bağımsız / mesafeli çerçeve</div><p>' + esc(it.ind) + "</p></div>" +
-        "</div>";
-      if (it.pat) h += '<div class="note" style="margin-top:12px"><b>Gözlenen kalıp.</b> ' + esc(it.pat) + "</div>";
-      if (it.ref) h += '<p style="margin-top:9px;font-size:12px;color:var(--muted)">Kaynak: ' + esc(it.ref) + "</p>";
-      h += "</section>";
-    });
-
-    /* Requirement: cite the underlying research, and keep documented structural
-       conditions apart from evidence about an individual article. The second
-       half of that is the harder discipline and gets its own block. */
-    h += '<section class="sec"><h2>Yapısal koşul ile tekil habere ait kanıt</h2>' +
-      '<div class="note warn"><b>Bu ayrım bu sitenin en önemli kuralıdır.</b> ' +
-      "Türk medya sisteminin yapısal koşulları — mülkiyet yoğunlaşması, resmî ilan " +
-      "gelirinin dağıtımı, düzenleyici kurum kararları — akademik olarak belgelenmiştir. " +
-      "Ama <b>belgelenmiş bir yapısal koşul, tek bir haberin neden öyle yazıldığını " +
-      "açıklamaz.</b> Bir yayının devlet reklamına bağımlı olması, o yayının belirli bir " +
-      "başlığı o nedenle kurduğunu göstermez; bunun için o habere ait ayrı bir kanıt " +
-      "gerekir.</div>" +
-      '<div class="grid g2" style="margin-top:14px">' +
-      '<div class="card"><b style="font-size:14px">Yapısal kanıt</b>' +
-      '<p style="margin-top:7px;font-size:13.5px;color:var(--ink2);line-height:1.6">' +
-      "Kurum düzeyinde, zaman içinde, dış kaynaklardan belgelenir: mülkiyet yapısı, " +
-      "BİK resmî ilan geliri, tiraj, düzenleyici kararlar. Bu sitede <b>kurum " +
-      "sayfalarında</b> gösterilir ve haber analizine girdi olarak kullanılmaz.</p></div>" +
-      '<div class="card"><b style="font-size:14px">Habere ait kanıt</b>' +
-      '<p style="margin-top:7px;font-size:13.5px;color:var(--ink2);line-height:1.6">' +
-      "Tek bir metinde gözlenir: hangi kelime kullanılmış, kim sorumlu tutulmuş, hangi " +
-      "çözüm önerilmiş, ne dışarıda bırakılmış. Bu sitede <b>olay sayfalarında</b> " +
-      "gösterilir ve her zaman metinden alınmış bir alıntıya bağlanır.</p></div></div>" +
-      '<p style="margin-top:14px;font-size:13.5px;color:var(--ink2)">Bir kurumun ' +
-      "sayfasındaki BİK rakamı ile o kurumun bir başlığındaki yapı etiketi <b>aynı " +
-      "kanıt türü değildir</b> ve site bunları hiçbir yerde birbirine bağlamaz. " +
-      "İkisini birleştiren bir açıklama kurmak okurun kendi kararıdır; bunun için " +
-      "gereken her iki veri de burada, ayrı ayrı duruyor.</p></section>";
-
-    h += '<section class="sec"><h2>Bu bölümün dayandığı araştırmalar</h2>' +
-      '<p class="sub">Yukarıdaki beş alandaki çerçeveler bu literatürden alınmıştır. ' +
-      "Sayfa bu çalışmalardan sayısal bulgu aktarmıyor; kavramsal çerçeveyi ve " +
-      "belgelenmiş yapısal koşulları adlandırıyor. Özgün metinler proje dosyalarındadır.</p>" +
-      '<div class="scroller panel"><table><thead><tr><th>Çalışma</th><th>İlgili alan</th>' +
-      "<th>Bu sitede ne için kullanılıyor</th></tr></thead><tbody>" +
-      [["Yanatma (2021), <i>Advertising and Media Capture in Turkey</i>",
-        "Medya bağımsızlığı · Ekonomik baskı",
-        "Resmî ilan gelirinin dağıtımının yapısal bir bağımlılık mekanizması olarak " +
-        "tanımlanması. Kurum sayfalarındaki BİK rakamının kaynağı ve yorum çerçevesi."],
-       ["<i>Media Systems and Media Capture in Turkey: A Case Study</i> (MaC 12)",
-        "Medya bağımsızlığı · Demokratik kurumlar",
-        "Mülkiyet yoğunlaşması ve el değişimlerinin sistem düzeyinde tarif edilmesi; " +
-        "kurum künyelerindeki sahiplik geçmişinin çerçevesi."],
-       ["Marschall & Ünal (2021), GLD Working Paper 39",
-        "Demokratik kurumlar · Toplumsal politikalar",
-        "Yerel yönetim ve kurumsal işleyiş bağlamı."],
-       ["Reuters Institute, <i>Digital News Report — Türkiye Eki</i>",
-        "Medya bağımsızlığı · Siyasi çerçeveleme",
-        "Kurum bazlı güven ve erişim verisi; “Güven” sekmesindeki kutuplaşma farkının " +
-        "kaynağı. Anket verisidir, tarih taşır."],
-       ["Hamborg (2023), medya yanlılığı biçimleri",
-        "Siyasi çerçeveleme",
-        "Yanlılığın haber üretiminin hangi aşamasında oluştuğunu ayıran çerçeve; " +
-        "“Hamborg biçimleri” sekmesinin tamamı."],
-       ["Global Disinformation Index (2023), Türkiye raporu",
-        "Medya bağımsızlığı",
-        "İçerik göstergeleri ve risk değerlendirme yaklaşımı."]]
-      .map(function (r) {
-        return "<tr><td style=\"min-width:230px\">" + r[0] + "</td>" +
-          '<td style="color:var(--muted);min-width:150px">' + r[1] + "</td>" +
-          '<td style="color:var(--ink2)">' + r[2] + "</td></tr>";
-      }).join("") + "</tbody></table></div>" +
-      '<div class="note" style="margin-top:12px">Bu tablo, hangi iddianın hangi ' +
-      "çalışmadan geldiğini gösterir. Bu sitede üretilen sayılar — yoğunluk puanları, " +
-      "kapsama oranları, yapı sıklıkları — <b>bu çalışmalardan gelmez</b>; " + WIN.range + " " +
-      "dönemindeki haberlerden hesaplanır. İkisi karıştırılmamalıdır.</div></section>";
-  }
-  return h + "</div>";
-}
-
-var BTIER = "all";
-function renderBiasList() {
-  var box = $("#blist"); if (!box) return;
-  var qs = (($("#bq") && $("#bq").value) || "").toLocaleLowerCase("tr");
-  var count = {}; D.A.forEach(function (a) { a.k.forEach(function (k) { count[k] = (count[k] || 0) + 1; }); });
-  var best = {};
-  D.A.forEach(function (a) { a.k.forEach(function (k) { if (!best[k] || a.v > best[k].v) best[k] = a; }); });
-
-  var list = D.BR.filter(function (b) {
-    if (BTIER === "bg" ? !bg7Stats()[b.k] : BTIER !== "all" && b.tier !== BTIER) return false;
-    if (!qs) return true;
-    return (b.en + " " + (b.tr || "") + " " + (b.df || "") + " " + (b.opdef || ""))
-      .toLocaleLowerCase("tr").indexOf(qs) >= 0;
-  });
-
-  box.innerHTML = '<p style="font-size:12.5px;color:var(--muted);margin-bottom:12px">' +
-    list.length + " yapı gösteriliyor</p>" + list.map(function (b) {
-    var n = count[b.k] || 0, real = best[b.k];
-    return '<div class="card" style="margin-bottom:10px;cursor:pointer" data-bias="' + esc(b.k) + '">' +
-      '<div style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap">' +
-      '<b style="font-size:15.5px">' + esc(b.en) + "</b>" +
-      '<span style="color:var(--muted);font-size:13.5px">' + esc(b.tr || "") + "</span>" +
-      '<span class="tier-b ' + b.tier + '" style="margin-left:auto">' + esc(TIERL[b.tier]) + "</span>" +
-      (n ? '<span class="tag b">' + n + " başlıkta</span>" : "") +
-      (bg7Stats()[b.k] ? '<span class="tag" title="BiasGuard incelemesi, yapay zekâ ile">' + yzSel(b.k) + " olayda YZ incelemesinde seçildi" + "</span>" : "") + "</div>" +
-      '<p style="margin-top:8px;font-size:13.5px;color:var(--ink2);line-height:1.6">' +
-      esc(b.df || "") + "</p>" +
-      (real ? '<p style="margin-top:8px;font-size:12.5px;color:var(--muted)">' +
-        "Bu dönemdeki haberlerden örnek: “" + esc(real.t.slice(0, 78)) + "…” — " +
-        esc(srcName(real.s)) + "</p>" : "") +
-      '<p style="margin-top:9px;font-size:12.5px;color:var(--right)">Ayrıntı, kanıt ve ' +
-      "örnek için tıklayın →</p></div>";
-  }).join("") || '<div class="note">Eşleşen yapı yok.</div>';
-  wireDevices(box);
-}
-
-function runAnalyzer() {
-  var box = $("#anout"), inp = $("#anin"); if (!box || !inp) return;
-  var txt = inp.value.trim();
-  if (!txt) { box.innerHTML = ""; return; }
-  var hits = runRules(txt);
-  var keys = hits.map(function (r) { return r.key; });
-  var v = runScore(txt, keys), b = bandOf(v);
-
-  /* The protocol's verdict vocabulary, applied to a single submitted string.
-     "No rule fired" is NOT "unbiased" — for a short fragment it is usually
-     "not enough text to decide", and the two are kept apart. */
-  var words = txt.split(/\s+/).filter(Boolean).length;
-  var verdict = hits.length ? "supported" : (words < 6 ? "insufficient_evidence" : "not_supported");
-  var VER = {
-    supported: ["Yapı saptandı", "b", "Aşağıdaki yapılar metnin yüzeyinde tetiklendi. " +
-      "Bu bir kanıt değil, incelenecek yer göstergesidir."],
-    not_supported: ["Belirgin yapı saptanmadı", "", "Kuralların baktığı yüzey işaretleri " +
-      "bu metinde yok. Bu, metnin yansız olduğu anlamına <b>gelmez</b>: kuralların " +
-      "göremediği yapılar (Confirmation Bias, Cherry Picking, Base Rate Fallacy) " +
-      "metnin bütününü ve karşılaştırmayı gerektirir."],
-    insufficient_evidence: ["Kanıt yetersiz", "b", "Metin karar vermek için fazla kısa. " +
-      "Yüzey testleri birkaç kelimelik bir parçada güvenilir çalışmaz."]
-  }[verdict];
-
-  var h = '<div style="border-top:1px solid var(--line);padding-top:16px;margin-top:16px">' +
-    '<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:12px">' +
-    '<span class="tag ' + VER[1] + '">' + VER[0] + "</span>" +
-    '<span class="mono" style="font-size:11.5px;color:var(--muted)">' + words + " kelime</span></div>";
-
-  if (verdict === "supported") {
-    h += '<div class="an-score"><div class="n" style="color:' +
-      (v >= 45 ? "var(--hot)" : "var(--ink)") + '">' + v + "</div><div><b>" + esc(b.tr) +
-      '</b><div style="font-size:12.5px;color:var(--muted)">0–100 kalibre edilmiş ' +
-      "yanlılık yoğunluğu</div></div></div>" +
-      '<div class="bar" style="margin-top:12px;height:8px"><i style="width:' + v +
-      "%;background:" + seq(v) + '"></i></div>';
-  }
-  h += '<p style="margin-top:13px;font-size:13.5px;color:var(--ink2);line-height:1.6">' +
-    VER[2] + "</p>";
-
-  if (hits.length) {
-    /* Same evidence-strength derivation the corpus uses, so a pasted headline and
-       the same headline inside the corpus report identically. */
-    var AMB = ["savaş", "kriz", "tehlike", "rekor", "tarihi", "bomba", "gözü", "herkes",
-      "milyonlar", "bildirildi", "öğrenildi"];
-    var stripped = unquoted(txt.toLocaleLowerCase("tr"));
-    hits.forEach(function (r) {
-      var bi = BREG[r.key] || BIA[r.key];
-      var own = r.ev.some(function (t) { return stripped.indexOf(String(t).toLocaleLowerCase("tr")) >= 0; });
-      var spec = r.ev.some(function (t) { return AMB.indexOf(String(t).toLocaleLowerCase("tr")) < 0; });
-      var why = [own ? "own_voice" : "quoted_only"];
-      if (r.ev.length > 1) why.push("multiple_triggers");
-      why.push(spec ? "specific_term" : "ambiguous_term");
-      var lvl = (own && spec && r.ev.length > 1) ? "güçlü" : (own && spec) ? "orta" : "zayıf";
-      h += '<div class="hit"><div style="display:flex;gap:9px;align-items:baseline;flex-wrap:wrap">' +
-        "<b>" + esc(bi ? bi.en : r.key) + "</b>" +
-        '<span style="color:var(--ink2);font-size:13px">' + esc(bi ? bi.tr : "") + "</span>" +
-        '<button class="devchip" data-bias="' + esc(r.key) + '" style="margin-left:auto">' +
-        "ayrıntı</button></div>" +
-        '<div style="font-size:13px;color:var(--ink2);margin-top:5px">' + esc(r.rule) + "</div>" +
-        '<div class="ev">tetikleyen: ' + r.ev.map(function (e2) {
-          return "“" + esc(e2) + "”"; }).join(", ") + "</div>" +
-        '<div style="margin-top:8px">' + strengthBlock(lvl, why) + "</div></div>";
-    });
-  }
-
-  h += '<div class="note" style="margin-top:16px"><b>Yalnızca bu metin elde varken ne ' +
-    "söylenemez.</b> Tek bir metinden şunlar karara bağlanamaz: aynı olayın başka " +
-    "kurumlarda nasıl verildiği, hangi bilginin dışarıda bırakıldığı, kurumun bu yapıyı " +
-    "alışkanlık hâline getirip getirmediği, ve gazetecinin niyeti. Bunlar için " +
-    'karşılaştırma gerekir — <a class="lnk" href="#/olaylar">olay karşılaştırmasına ' +
-    "bakın</a>.</div>";
-  box.innerHTML = h + "</div>";
-  wireDevices(box);
-}
 
 /* ================================================================ /harita */
 
@@ -2639,7 +1738,6 @@ var NARRVIEW = "flow";
 
 /* ============================================================== /yanlilik */
 
-var BTIER = "all";
 
 
 
@@ -2749,75 +1847,11 @@ function narrativeFlow(rows) {
    One event, outlets stacked plainest at the bottom. Each rung names what it
    adds to the rung below it, which is the clearest way to show that framing is
    built up in steps rather than being a property an outlet simply has. */
-function framingLadder(e) {
-  var arts = e.a.map(function (i) { return ART[i]; }).sort(function (a, b) { return a.v - b.v; });
-  var seen = {};
-  var h = '<div class="ladder">';
-  arts.forEach(function (a, i) {
-    var fresh = a.k.filter(function (k) { return !seen[k]; });
-    a.k.forEach(function (k) { seen[k] = 1; });
-    var pf = SRC[a.s];
-    var cls = i === 0 ? " base" : i === arts.length - 1 ? " top" : "";
-    h += '<div class="rung' + cls + '" data-aid="' + a.i + '"><div class="v" style="color:' +
-      (a.v >= 45 ? "var(--hot)" : "var(--ink2)") + '">' + a.v + "</div><div>" +
-      '<div class="hl-t">' + (artUrl(a) ? '<a class="hlnk" href="' + esc(artUrl(a)) +
-        '" target="_blank" rel="noopener">' + hlTitle(a) + "</a>" : hlTitle(a)) + "</div>" +
-      '<div class="who"><span class="dot" style="background:' + lean(pf ? pf.lean : null) +
-      '"></span>' + esc(pf ? pf.n : a.s) + "<span>·</span>" + esc(bandOf(a.v).tr) + "</div>";
-    if (i === 0) {
-      h += '<div class="add" style="color:var(--muted)">Bu basamak olayı bildiriyor; ' +
-        "karşılaştırma buradan başlıyor.</div>";
-    } else if (fresh.length) {
-      h += '<div class="add">Bir alttaki basamağa eklenen: ' +
-        fresh.map(function (k) {
-          return '<b>' + esc(BIA[k] ? BIA[k].en : k) + "</b>"; }).join(", ") +
-        " <span style=\"color:var(--muted)\">(+" + (a.v - arts[i - 1].v) + " puan)</span></div>";
-    } else {
-      h += '<div class="add" style="color:var(--muted)">Yeni bir yapı eklemiyor; fark ' +
-        "vurgu ve noktalamadan geliyor <span>(+" + (a.v - arts[i - 1].v) + " puan)</span></div>";
-    }
-    h += "</div></div>";
-  });
-  return h + "</div>";
-}
 
 /* ================================================== word-level divergence ==
    Vocabulary one bloc used for this event that the other never did. Blocs come
    from the supplied register placements, so this shows which words travel with
    which placement — not what "the left" or "the right" believes. */
-function wordDivergence(e) {
-  var byBloc = { left: [], right: [] };
-  e.a.forEach(function (i) {
-    var a = ART[i], b = bloc(a.s);
-    if (v3on("echoChain") && e.rep && e.rep[i]) return;
-    if (byBloc[b]) byBloc[b].push(a);
-  });
-  if (byBloc.left.length < 1 || byBloc.right.length < 1) return "";
-  var tk = function (t) {
-    return (t || "").toLocaleLowerCase("tr").replace(/['’‘"“”]/g, " ")
-      .replace(/[^\p{L}\p{N}\s]/gu, " ").split(/\s+/)
-      .filter(function (w) { return w.length >= 4; });
-  };
-  var setOf = function (arr) {
-    var s2 = {}; arr.forEach(function (a) { tk(a.t).forEach(function (w) { s2[w] = (s2[w] || 0) + 1; }); });
-    return s2;
-  };
-  var L = setOf(byBloc.left), R = setOf(byBloc.right);
-  var onlyL = Object.keys(L).filter(function (w) { return !R[w]; })
-    .sort(function (a, b) { return L[b] - L[a]; }).slice(0, 16);
-  var onlyR = Object.keys(R).filter(function (w) { return !L[w]; })
-    .sort(function (a, b) { return R[b] - R[a]; }).slice(0, 16);
-  if (!onlyL.length && !onlyR.length) return "";
-  return '<div class="divg">' +
-    '<div><div class="hd" style="color:var(--left)">Yalnızca sol yerleşimli kurumlarda (' +
-    byBloc.left.length + " haber)</div>" +
-    (onlyL.length ? onlyL.map(function (w) { return '<span class="wtag">' + esc(w) + "</span>"; }).join("")
-      : '<span style="color:var(--muted);font-size:13px">Ayrışan kelime yok</span>') + "</div>" +
-    '<div><div class="hd" style="color:var(--right)">Yalnızca sağ yerleşimli kurumlarda (' +
-    byBloc.right.length + " haber)</div>" +
-    (onlyR.length ? onlyR.map(function (w) { return '<span class="wtag">' + esc(w) + "</span>"; }).join("")
-      : '<span style="color:var(--muted);font-size:13px">Ayrışan kelime yok</span>') + "</div></div>";
-}
 
 /* ======================================================== blame network ==
    Across every coded event: who gets named as responsible, and by whom. */
@@ -3470,115 +2504,9 @@ function manifestation(key, terms) {
 var CMPDIMS = [["frame", "Ana çerçeve"], ["blame", "Atfedilen sorumluluk"],
   ["cons", "Öne çıkarılan sonuç"], ["sol", "Meşrulaştırılan çözüm"]];
 
-function comparisonTable(e) {
-  var narr = NOF(e);
-  var arts = e.a.map(function (i) { return ART[i]; }).sort(function (a, b) { return b.v - a.v; });
-  var rows = {};
-  if (narr) (narr.rows || []).forEach(function (r) { rows[r.s] = r; });
-  var supplied = {}, modal = {};
-  CMPDIMS.forEach(function (d) {
-    var vals = Object.keys(rows).filter(function (sl) {
-      return !rows[sl].note && !UNSET(rows[sl][d[0]]); })
-      .map(function (sl) { return String(rows[sl][d[0]]).trim(); });
-    supplied[d[0]] = vals.length;
-    /* The pack's answer on this dimension. Coders write free text, so exact
-       agreement is rare and a normalised comparison would invent agreement
-       that is not there; the modal value is only used to mark which cells
-       DEPART from the most common answer, never to claim the others are wrong. */
-    var c = {};
-    vals.forEach(function (v) { c[v] = (c[v] || 0) + 1; });
-    var best = null;
-    Object.keys(c).forEach(function (v) { if (!best || c[v] > c[best]) best = v; });
-    modal[d[0]] = (best && c[best] >= 2) ? best : null;
-  });
-
-  var h = '<div class="scroller panel"><table><thead><tr><th>Kurum</th><th>Manşet</th>' +
-    CMPDIMS.map(function (d) { return "<th>" + d[1] + "</th>"; }).join("") +
-    "<th>Eksik bırakılan</th><th>Kanıt</th></tr></thead><tbody>";
-  arts.forEach(function (a) {
-    var pf = SRC[a.s], r = rows[a.s];
-    var missing = r ? CMPDIMS.filter(function (d) {
-      return UNSET(r[d[0]]) && supplied[d[0]] >= 2; }).map(function (d) { return d[1]; }) : null;
-    h += '<tr data-aid="' + a.i + '"><td style="white-space:nowrap">' +
-      '<span class="dot" style="background:' + lean(pf ? pf.lean : null) + '"></span> <b>' +
-      esc(pf ? pf.n : a.s) + "</b>" +
-      '<div class="mono" style="font-size:10.5px;color:var(--muted);margin-top:3px">' +
-      (pf && pf.lean != null ? "yerleşim " + pf.lean : "yerleşim —") + " · yoğunluk " + a.v +
-      "</div></td>" +
-      '<td style="min-width:250px"><div style="line-height:1.4">' +
-      (artUrl(a) ? '<a class="hlnk" href="' + esc(artUrl(a)) + '" target="_blank" rel="noopener">' +
-        hlTitle(a) + "</a>" : hlTitle(a)) + "</div>" +
-      (a.k.length ? '<div class="devs">' + devChips(a) + "</div>" : "") + "</td>";
-    if (r && r.note) {
-      /* A coder reading the full text found this row is about a DIFFERENT
-         occurrence. Kept visible rather than deleted: a mis-clustered member is
-         itself a finding about the matcher, and hiding it would make the
-         comparison look cleaner than it is. */
-      h += '<td colspan="' + (CMPDIMS.length + 2) + '">' +
-        '<span class="tag b">farklı olay</span> ' +
-        '<span style="color:var(--muted)">Metnin tamamı okunduğunda bu haberin aynı olayı ' +
-        "değil, ilişkili başka bir olayı anlattığı görüldü. Karşılaştırmaya dahil edilmiyor.</span></td>";
-    } else if (r) {
-      CMPDIMS.forEach(function (d) {
-        var val = r[d[0]], empty = UNSET(val);
-        var diverges = !empty && modal[d[0]] && String(val).trim() !== modal[d[0]];
-        h += '<td class="cmp' + (diverges ? " div" : empty ? " nil" : "") + '">' +
-          (empty ? '<span class="cmp-nil">—</span>' : esc(val)) +
-          (diverges ? '<span class="cmp-tag">ayrışıyor</span>' : "") + "</td>";
-      });
-      h += "<td>" + (missing && missing.length ?
-        '<span class="tag b">' + missing.map(esc).join(", ") + "</span>" :
-        '<span style="color:var(--muted)">—</span>') + "</td>" +
-        '<td style="color:var(--muted);min-width:190px;font-size:12.5px">' +
-        (r.ev ? "“" + esc(r.ev) + "”" : "—") + "</td>";
-    } else {
-      h += '<td colspan="' + (CMPDIMS.length + 2) + '" style="color:var(--muted)">' +
-        "Anlatı kodlaması yok — çerçeve, sorumluluk ve sonuç sütunları doldurulamıyor.</td>";
-    }
-    h += "</tr>";
-  });
-  h += "</tbody></table></div>";
-
-  var coded = Object.keys(rows).length;
-  h += legendHTML([{ c: "var(--hot)", t: "bu boyutta kurumların çoğunluğundan ayrışıyor" },
-    { c: "var(--sunk)", ring: "var(--line2)", t: "kurumun bu boyutu hiç ele almadığı yer" }],
-    "Nasıl okunur");
-  h += '<div class="note" style="margin-top:12px"><b>Bu tablo nasıl doldu.</b> ' +
-    "Çerçeve, sorumluluk, sonuç ve çözüm sütunları anlatı haritasındaki kodlamadan " +
-    "gelir; tablo ile harita bu yüzden birbiriyle çelişemez. " +
-    (coded ? coded + "/" + e.s.length + " kurum kodlanmış" +
-      (coded < e.s.length ? "; kalanlar için sütunlar boş bırakıldı, tahmin edilmedi." : ".") :
-      "Bu olay için henüz anlatı kodlaması yok; yalnızca manşet, yoğunluk ve saptanan " +
-      "yapılar gösteriliyor.") +
-    " <b>Ayrışıyor</b> etiketi, o kurumun ilgili boyutta diğerlerinin çoğunluğuyla " +
-    "aynı yanıtı vermediğini gösterir; hangi yanıtın doğru olduğunu göstermez — " +
-    "çoğunluk da yanılabilir ve kodlamalar serbest metindir." +
-    " <b>“Eksik bırakılan”</b> sütunu, aynı olayı veren <b>başka kurumların doldurduğu</b> " +
-    "ama bu kurumun doldurmadığı boyutları listeler; bilginin bilerek gizlendiği anlamına " +
-    "gelmez — yayının o boyutu hiç ele almamış olması da aynı sonucu verir." +
-    '<br><span class="mono" style="font-size:11.5px;color:var(--muted)">Son güncelleme: ' +
-    esc(String(D.meta.built || "").slice(0, 16).replace("T", " ")) + " UTC</span></div>";
-  return h;
-}
 
 /* Agreed elements, partial claims, and our own reading — kept visually apart,
    because conflating them is the failure mode of this whole genre. */
-function factLayers(e) {
-  var arts = e.a.map(function (i) { return ART[i]; });
-  var cnt = {};
-  arts.forEach(function (a) {
-    var seen2 = {};
-    a.t.toLocaleLowerCase("tr").replace(/['’‘"“”]/g, " ").replace(/[^\p{L}\p{N}\s]/gu, " ")
-      .split(/\s+/).forEach(function (w) {
-        if (w.length >= 4 && !seen2[w]) { seen2[w] = 1; cnt[w] = (cnt[w] || 0) + 1; } });
-  });
-  return {
-    n: arts.length,
-    all: Object.keys(cnt).filter(function (w) { return cnt[w] === arts.length; }),
-    some: Object.keys(cnt).filter(function (w) { return cnt[w] > 1 && cnt[w] < arts.length; })
-      .sort(function (a, b) { return cnt[b] - cnt[a]; }).slice(0, 12),
-  };
-}
 
 /* ================================================================ mount */
 /* =====================================================================
@@ -3666,10 +2594,6 @@ function storyDay(e) {
   var c = {}; e.a.forEach(function (i) { var d = ART[i].d.slice(0, 10); c[d] = (c[d] || 0) + 1; });
   return Object.keys(c).sort(function (x, y) { return c[y] - c[x] || y.localeCompare(x); })[0];
 }
-function origShare(list) {
-  var n = 0, r = 0; list.forEach(function (e) { n += e.n; r += Object.keys(e.rep || {}).length; });
-  return n ? Math.round(100 * (n - r) / n) : 100;
-}
 
 
 function cards(list, size) { return list.map(function (e) { return sCard(e, size); }).join(""); }
@@ -3681,35 +2605,9 @@ function followBtn(kind, k) {
 }
 
 /* ================================================================ HOME */
-var BRIEFDAY = null;
 function briefDays() {
   var by = {}; D.E.forEach(function (e) { if (v3isIlanEvent(e)) return; var d = storyDay(e); (by[d] = by[d] || []).push(e); });
   return by;
-}
-function briefHTML() {
-  var by = briefDays(), days = Object.keys(by).filter(function (d) { return by[d].length >= 3; }).sort();
-  if (!days.length) return "";
-  var d = BRIEFDAY && by[BRIEFDAY] ? BRIEFDAY : days[days.length - 1];
-  var list = by[d].slice().sort(function (a, b) { return b.s.length - a.s.length; }).slice(0, 8);
-  var arts = list.reduce(function (t, e) { return t + e.n; }, 0);
-  var words = list.reduce(function (t, e) { return t + (e.t + " " + e.sum).split(/\s+/).length; }, 0);
-  var h = '<div class="xbrief" id="brief"><div class="xbrief-h"><div><div class="eyebrow">Günün özeti</div>' +
-    '<h2>' + fmtD(d + "T00:00") + " 2026</h2></div>" +
-    '<div class="xbrief-days">' +
-      '<button class="chip" data-bday="' + (days[days.indexOf(d) - 1] || "") + '"' + (days.indexOf(d) > 0 ? "" : " disabled") + ' aria-label="Önceki gün">←</button>' +
-      '<select id="bdaysel" aria-label="Gün seç">' + days.slice().reverse().map(function (x) {
-        return '<option value="' + x + '"' + (x === d ? " selected" : "") + ">" + fmtD(x + "T00:00") + " · " + by[x].length + " olay</option>"; }).join("") + "</select>" +
-      '<button class="chip" data-bday="' + (days[days.indexOf(d) + 1] || "") + '"' + (days.indexOf(d) < days.length - 1 ? "" : " disabled") + ' aria-label="Sonraki gün">→</button>' +
-      "</div></div>" +
-    '<div class="xbrief-stats mono">' + list.length + " olay · " + arts + " haber · ~" +
-    Math.max(1, Math.round(words / 200)) + " dk okuma</div><ol class=\"xbrief-list\">";
-  list.forEach(function (e) {
-    h += '<li><a href="#/olay?e=' + e.i + '"><b>' + esc(e.t) + "</b></a>" +
-      '<div class="xmini">' + bbar(e) + '<span class="xdom">' + e.s.length + " kurum " + bsBadge(e) + "</span></div></li>";
-  });
-  h += "</ol>" + '<div class="xbrief-foot"><span class="xshield">%' + origShare(list) +
-    "</span> bu olaylardaki haberlerin özgün başlık; geri kalanı başka bir kurumun başlığının neredeyse aynısı.</div></div>";
-  return h;
 }
 
 
@@ -4177,13 +3075,6 @@ function wireFollow(root) {
 }
 function v2After(path, tab, params) {
   wireGo(document); wireFollow(document);
-  if (path === "/") {
-    var redraw = function () { var box = $("#brief"); if (box) { box.outerHTML = briefHTML(); v2After("/", null, {}); } };
-    [].forEach.call(document.querySelectorAll("[data-bday]"), function (b) {
-      b.onclick = function () { if (!b.getAttribute("data-bday")) return; BRIEFDAY = b.getAttribute("data-bday"); redraw(); };
-    });
-    var bs = $("#bdaysel"); if (bs) bs.onchange = function () { BRIEFDAY = bs.value; redraw(); };
-  }
   if (path === "/olaylar" && tab === "liste") {
     renderFeed();
     FEEDIDS.forEach(function (s) {
@@ -4245,8 +3136,6 @@ document.documentElement.setAttribute("lang", "tr");
 var NW = D.NW || [];
 var NBYEV = {};
 Object.keys(D.N).forEach(function (k) { if (D.N[k].ev) NBYEV[D.N[k].ev] = k; });
-function NOF(e) { return e && NBYEV[e.i] ? D.N[NBYEV[e.i]] : null; }
-function NKEY(e) { return e && NBYEV[e.i] ? NBYEV[e.i] : null; }
 var NARRW = "w6", NFOC = null, NCUR = null;
 var NDL = { frame: "Çerçeve", hero: "Merkezdeki aktör", blame: "Sorumlu tutulan", cause: "Sunulan neden",
   cons: "Öne çıkan sonuç", aff: "Etkilenen kesim", sol: "Meşrulaştırılan çözüm", moral: "Ahlaki çerçeve", start: "Hikâyenin başlangıcı" };
@@ -4304,13 +3193,6 @@ function narrativeCards(rows) {
   }).join("") + "</div>";
 }
 
-function narrFocusChart() {
-  var weeks = NW.filter(function (w) { return w.k !== "v1"; }), c = {};
-  weeks.forEach(function (w) { w.keys.forEach(function (k) { (D.N[k].focus || []).forEach(function (d) { c[d] = (c[d] || 0) + 1; }); }); });
-  return barChart(NORD.filter(function (d) { return c[d]; }).sort(function (a, b) { return c[b] - c[a]; }).map(function (d, i) {
-    return { label: NDL[d], value: c[d], display: c[d] + " olay", focal: i === 0, color: i === 0 ? "var(--cy)" : "var(--seq2)" };
-  }), { padL: 168 });
-}
 
 function v2bAfter(path, tab, params) {
   if (path === "/" || path === "/anlati" || path === "/olay") wireAnlati(document.getElementById("view"));
@@ -4689,9 +3571,6 @@ var NAV; /* defined in v7/core.js */
 var SUB = {
   "/olaylar": [["/olaylar", "liste", "Tüm olaylar"], ["/olaylar", "kor", "Kör noktalar"], ["/olaylar", "ilan", "Resmî ilanlar"]],
   "/kurumlar": [["/kurumlar", "liste", "Kurumlar"], ["/kurumlar", "karsilastir", "Karşılaştır"], ["/kurumlar", "partiler", "Partiler"], ["/kurumlar", "kayit", "Kayıt ve güven"]],
-  "/bulgular": [["/bulgular", "veriler", "Veriler"], ["/bulgular", "yorumlar", "Yorumlar"], ["/bulgular", "ileri", "İleri analiz"]],
-  "/yanlilik": [["/yanlilik", "kesif", "Yapılar"], ["/yanlilik", "cozumleyici", "Başlık çözümleyici"],
-    ["/yanlilik", "bicimler", "Üretim aşamaları"], ["/yanlilik", "turkiye", "Türkiye bağlamı"]],
   "/benim": [["/benim", "akis", "Size özel"], ["/benim", "denge", "Haber dengem"], ["/benim", "takip", "Takip ettiklerim"]]
 };
 var DETAILP = ["/olay", "/kurum", "/konu", "/ara"];
@@ -5129,18 +4008,7 @@ function median5(xs) { var s = xs.filter(function (x) { return x != null; }).sor
 
 /* Turkish suffixes. Numbers: possessive by how the number is read ("%37'si", "99,2" -> "…iki" -> "'si").
    Names: genitive by vowel harmony ("Sabah'ın", "Diken'in", "NTV'nin": an all-caps name is read letter by letter). */
-function sufNum(str, acc) {
-  var t = String(str).replace(/[^0-9,]/g, ""), dec = t.split(",")[1], n = dec ? parseInt(dec, 10) : parseInt(t.replace(/,/g, ""), 10);
-  var poss = CM3.trSuffix(n || 0);
-  return "'" + poss + (acc ? "n" + poss.slice(-1) : "");
-}
 var LETTER5 = { b: "be", c: "ce", ç: "çe", d: "de", f: "fe", g: "ge", ğ: "yumuşak ge", h: "he", j: "je", k: "ka", l: "le", m: "me", n: "ne", p: "pe", r: "re", s: "se", ş: "şe", t: "te", v: "ve", y: "ye", z: "ze" };
-function sufGen(name) {
-  var w = String(name).trim().split(/\s+/).pop(), low = w.toLocaleLowerCase("tr");
-  if (w.length <= 4 && w === w.toLocaleUpperCase("tr") && LETTER5[low.slice(-1)]) low = LETTER5[low.slice(-1)];
-  var v = (low.match(/[aıoueiöü]/g) || ["e"]).pop(), end = /[aıoueiöü]$/.test(low) ? "n" : "";
-  return "'" + end + ({ a: "ın", ı: "ın", o: "un", u: "un", e: "in", i: "in", ö: "ün", ü: "ün" })[v];
-}
 /* One row per active outlet: every 5.0 measure side by side. */
 function rank5Rows() {
   var LL = (V5.leadLag || {}).outlets || {}, GP = (V5.gap || {}).outlets || {}, SM = V5.similarity || {};
@@ -5210,29 +4078,6 @@ function v5BlindTable() {
 }
 
 /* Anlatı › otomatik: per event, how differently the two blocs worded the same story. */
-function v5NarrAuto() {
-  var rows = [];
-  D.E.forEach(function (e) {
-    var g = { left: [], right: [] };
-    e.a.forEach(function (i) { var a = ART[i], sd = a && sideOf(a.s); if (g[sd] && !(e.rep && e.rep[i])) g[sd].push(a); });
-    if (g.left.length < 2 || g.right.length < 2) return;
-    var m = function (xs) { return xs.reduce(function (t, a) { return t + a.v; }, 0) / xs.length; };
-    var keys = function (xs) { var c = {}; xs.forEach(function (a) { a.k.forEach(function (k) { c[k] = (c[k] || 0) + 1 / xs.length; }); }); return c; };
-    rows.push({ e: e, l: m(g.left), r: m(g.right), kl: keys(g.left), kr: keys(g.right) });
-  });
-  rows.sort(function (a, b) { return Math.abs(b.l - b.r) - Math.abs(a.l - a.r); });
-  var top = function (c) { return Object.keys(c).sort(function (a, b) { return c[b] - c[a]; }).slice(0, 2).map(function (k) { return BIA[k] ? BIA[k].tr : k; }).join(", ") || "—"; };
-  var louder = { l: rows.filter(function (r) { return r.l - r.r >= 5; }).length, r: rows.filter(function (r) { return r.r - r.l >= 5; }).length };
-  return '<section class="sec"><div class="eyebrow">Otomatik · ' + WIN.range + '</div><h2>Bütün dönem: iki blok aynı olayı ne kadar farklı dille verdi</h2>' +
-    '<p class="sub">Elle kodlanan anlatı haritasının yanında, her iki bloktan en az ikişer kurumun verdiği <b>' + rows.length.toLocaleString("tr") +
-    "</b> olayda blokların ortalama yoğunluğu ve en sık yapıları karşılaştırıldı. Sol bloğun en az 5 puan daha yüklü verdiği " + louder.l +
-    ", sağ bloğun en az 5 puan daha yüklü verdiği " + louder.r + " olay var. Bu karşılaştırma kodlanmış anlatı değil, kural tabanlı puanların farkıdır.</p>" +
-    '<div class="scroller panel"><table><thead><tr><th>Olay</th><th class="r">Sol</th><th class="r">Sağ</th><th>Sol: en sık yapı</th><th>Sağ: en sık yapı</th></tr></thead><tbody>' +
-    rows.slice(0, 25).map(function (r) {
-      return '<tr><td><a class="lnk" href="#/olay?e=' + r.e.i + '">' + esc(clip(r.e.t, 90)) + '</a><div class="xsmall">' + fmtD(r.e.f) + " · " + r.e.s.length + ' kurum</div></td><td class="r num">' +
-        dec(r.l) + '</td><td class="r num">' + dec(r.r) + '</td><td class="xsmall">' + esc(top(r.kl)) + '</td><td class="xsmall">' + esc(top(r.kr)) + "</td></tr>";
-    }).join("") + "</tbody></table></div></section>";
-}
 
 /* Yöntem › 5.0: the pipeline, its validation and the new measures. */
 /* Limitations that depend on the data: written from it. */
@@ -5363,13 +4208,6 @@ function v3haberCount(s, n) { var o = v3on("noticeSplit") && v3N().byOutlet[s]; 
 function v3noticeBeside(s) {
   var o = v3on("noticeSplit") && v3N().byOutlet[s];
   return o && o.ilan ? ' <span class="cm3-sub" data-cm3>' + esc(t3("noticeShort", { n: o.ilan })) + "</span>" : "";
-}
-function v3newsOutletCount(e) { return v3on("noticeSplit") ? v3N().events[e.i].newsOutlets.length : e.s.length; }
-function v3evCountLine(e) {
-  var x = v3on("noticeSplit") && v3N().events[e.i];
-  // Without notices the line stays exactly as 2.0 wrote it.
-  if (!x || !x.ilan) return e.n + " başlık · " + e.s.length + " kurum";
-  return esc(t3("evCountsSplit", { h: x.haber, i: x.ilan, k: x.newsOutlets.length }));
 }
 function v3noticeTag(a) { return v3isIlanArt(a) ? '<span class="tag cm3-ntag" data-cm3>' + esc(t3("notice")) + "</span>" : ""; }
 function v3noticeLines() {
@@ -5544,27 +4382,6 @@ function v3panelLine() {
 }
 
 /* ---------------------------------------------- F1 · owner voices */
-function v3voices(e) {
-  var adm = CM3.admittedSet(D, "old"), groups = CM3.ownerGroups(D);
-  var outs = v3N().events[e.i].newsOutlets.filter(function (s) { return adm.indexOf(s) >= 0; });
-  var k = outs.length, v = CM3.voices(outs, groups, true);
-  var present = groups.map(function (g) {
-    return { g: g, m: g.members.filter(function (s) { return outs.indexOf(s) >= 0; }) };
-  }).filter(function (x) { return x.m.length; });
-  var grouped = {};
-  present.forEach(function (x) { x.m.forEach(function (s) { grouped[s] = 1; }); });
-  var anyCited = present.some(function (x) { return x.g.source; });
-  var label = anyCited ? t3("counter", { k: k, v: v, voice: CM3.LBL.voice }) : t3("counterOutletsOnly", { k: k });
-  var body = present.map(function (x) {
-    return '<li><b>' + esc(x.g.label) + "</b>: " + esc(x.m.map(srcName).join(", ")) + "<br>" +
-      (x.g.source ? '<a class="lnk" href="' + esc(x.g.source.url) + '" target="_blank" rel="noopener">' +
-        esc(t3("sourceLine", { title: x.g.source.title, date: x.g.source.date })) + "</a>" : '<span class="xsmall">' + esc(t3("ownerPending")) + "</span>") + "</li>";
-  }).join("") + outs.filter(function (s) { return !grouped[s]; }).map(function (s) {
-    return "<li><b>" + esc(srcName(s)) + '</b>: <span class="xsmall">' + esc(t3("noGroup")) + "</span></li>";
-  }).join("");
-  return '<details class="cm3-voices" data-cm3><summary>' + esc(label) + "</summary><div><p class=\"eyebrow\">" + esc(t3("ownerPanelHead")) + "</p>" +
-    "<ul>" + body + '</ul><p class="xsmall">' + esc(t3("voiceScope", { k: k })) + "</p><p class=\"xsmall\">" + esc(t3("ownerLine")) + "</p></div></details>";
-}
 
 /* ---------------------------------------------- F5 · echo chain */
 function v3time(a) {
@@ -5583,14 +4400,6 @@ function v3echo(e) {
         return '<li><a href="' + esc(artUrl(a)) + '" target="_blank" rel="noopener">' + esc(srcName(a.s)) + '</a><span class="mono">' + v3time(a) + "</span></li>";
       }).join("") + "</ul></div>";
   }).join("") + '<p class="xsmall">' + esc(t3("similarLine")) + "</p></section>";
-}
-function v3flowTable() {
-  var rows = CM3.rankFlows(CM3.clusters(D).flowsKnown);
-  return '<section class="sec" data-cm3 id="cm3flows"><h2>' + esc(t3("flowHead")) + '</h2><p class="sub">' + esc(t3("flowLimit")) + "</p>" +
-    '<div class="scroller panel"><table><thead><tr><th>' + esc(t3("flowEarlier")) + "</th><th>" + esc(t3("flowLater")) + '</th><th class="r">' +
-    esc(t3("flowCount")) + "</th></tr></thead><tbody>" + rows.map(function (r) {
-      return "<tr><td>" + esc(srcName(r.from)) + "</td><td>" + esc(srcName(r.to)) + '</td><td class="r num">' + r.n + "</td></tr>";
-    }).join("") + "</tbody></table></div></section>";
 }
 
 /* ---------------------------------------------- F12 · marked-word appeal */
@@ -5677,21 +4486,6 @@ document.addEventListener("click", function (ev) {
 /* ------------------------------------------- evidence gate and reading list */
 var V3_GRADE = { A: "gradeA", B: "gradeB", C: "gradeC", D: "gradeD", E: "gradeE" };
 var V3_RULE = { owner: "ruleOwner", absence: "ruleAbsence", panel: "rulePanel", context: "ruleContext" };
-function v3cell(v) { return v === "" || v == null || /^Not captured/.test(String(v)) ? t3("notOnRecord") : String(v); }
-function v3literature() {
-  var L = CM3.literature(); if (!L.length) return "";
-  return '<section class="sec cm3-lit" data-cm3 id="cm3lit"><h2>' + esc(t3("litHead")) + '</h2><p class="sub">' + esc(t3("litSub", { n: L.length })) + "</p>" +
-    '<div class="scroller panel"><table><thead><tr><th>' + esc(t3("litSource")) + "</th><th>" + esc(t3("litGrade")) + "</th><th>" + esc(t3("litScope")) +
-    "</th><th>" + esc(t3("litRule")) + "</th></tr></thead><tbody>" + L.map(function (x) {
-      var s = x.src;
-      return '<tr><td class="cm3-lit-src"><b>' + esc(v3cell(s.authors)) + "</b> · " + esc(v3cell(s.year)) + "<br>" +
-        '<a class="lnk" href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.title) + '</a><br><span class="xsmall">' + esc(s.venue) + "</span></td>" +
-        '<td><span class="cm3-grade g' + x.grade + '">' + esc(t3(V3_GRADE[x.grade])) + '</span><br><span class="xsmall">' +
-        esc(t3(x.eligible ? "eligible" : "notEligible")) + "</span></td>" +
-        '<td class="cm3-lit-scope">' + esc(s.kapsam) + "</td><td>" + esc(t3(V3_RULE[s.rule])) + "</td></tr>";
-    }).join("") + "</tbody></table></div>" +
-    (CM3.ownerGroups(D).some(function (g) { return !g.source; }) ? '<p class="xsmall" style="margin-top:10px">' + esc(t3("litOwnerNote")) + "</p>" : "") + "</section>";
-}
 function v3gate() {
   var L = CM3.literature(); if (!L.length) return "";
   var by = {}; L.forEach(function (x) { by[x.grade] = (by[x.grade] || 0) + 1; });
@@ -6009,90 +4803,8 @@ function v3coverage() {
    (foil, film, pearl, content, shine, glare) and the same custom properties, updated from
    scroll and pointer in one requestAnimationFrame. Yellow is left out of the foil, because
    on this site yellow only ever marks a differing word. */
-function v3clamp(v, a, b) { return Math.min(Math.max(v, a), b); }
-function v3foilHTML(inner) {
-  return '<div class="cm3-foil" data-foil><span aria-hidden="true" class="cm3-foil-l foil"></span><span aria-hidden="true" class="cm3-foil-l film"></span>' +
-    '<span aria-hidden="true" class="cm3-foil-l pearl"></span><div class="cm3-foil-c">' + inner + '</div>' +
-    '<span aria-hidden="true" class="cm3-foil-l shine"></span><span aria-hidden="true" class="cm3-foil-l glare"></span></div>';
-}
-function v3foilStart(el, mode) {
-  if (V3.foilStop) V3.foilStop();
-  if (!el) return;
-  var ptr = { x: 0.5, y: 0.5 }, frame = null;
-  function set(k, v) { el.style.setProperty(k, v); }
-  function progress() {
-    if (mode === "document") {
-      var se = document.scrollingElement || document.documentElement, range = se.scrollHeight - innerHeight;
-      return range > 0 ? v3clamp(se.scrollTop / range, 0, 1) : 0;
-    }
-    var r = el.getBoundingClientRect(), span = innerHeight + r.height;
-    return span > 0 ? v3clamp((innerHeight - r.top) / span, 0, 1) : 0;
-  }
-  function apply() {
-    var p = progress(), x = ptr.x, y = ptr.y;
-    set("--foil-shift", (p * 0.82 + (x - 0.5) * 0.18) * 100 + "%");
-    set("--foil-y-shift", (p * 0.28 + (y - 0.5) * 0.12) * 100 + "%");
-    set("--glare-x", x * 100 + "%"); set("--glare-y", y * 100 + "%");
-    set("--pointer-x", x * 100 + "%"); set("--pointer-y", y * 100 + "%");
-    set("--shine-angle", 105 + p * 80 + (x - 0.5) * 28 + "deg");
-    set("--shine-opacity", String(0.56 + Math.abs(x - 0.5) * 0.24 + p * 0.12));
-    frame = null;
-  }
-  function schedule() { if (frame === null) frame = requestAnimationFrame(apply); }
-  function onMove(ev) {
-    var r = el.getBoundingClientRect();
-    ptr = { x: r.width ? v3clamp((ev.clientX - r.left) / r.width, 0.08, 0.92) : 0.5, y: r.height ? v3clamp((ev.clientY - r.top) / r.height, 0.08, 0.92) : 0.5 };
-    schedule();
-  }
-  apply();
-  addEventListener("pointermove", onMove, { passive: true });
-  addEventListener("scroll", schedule, { passive: true });
-  addEventListener("resize", schedule, { passive: true });
-  V3.foilStop = function () {
-    removeEventListener("pointermove", onMove); removeEventListener("scroll", schedule); removeEventListener("resize", schedule);
-    if (frame !== null) cancelAnimationFrame(frame);
-    V3.foilStop = null;
-  };
-}
 
 /* ------------------------------------------- attention: home hero */
-function v3heroPool() {
-  if (V3.heroPool) return V3.heroPool;
-  var lead = leadEvent();
-  var pool = D.E.filter(function (e) { var c = covOf(e); return e !== lead && !v3isIlanEvent(e) && c[0] && c[2] && defaultPair(e); })
-    .sort(function (a, b) { return CM3.cmp(storyDay(b), storyDay(a)) || b.s.length - a.s.length; });
-  // one event per day, most recent first, so the switcher walks back through the period
-  var seen = {}, out = [lead];
-  pool.forEach(function (e) { var d = storyDay(e); if (!seen[d] && out.length < 20) { seen[d] = 1; out.push(e); } });
-  return (V3.heroPool = out);
-}
-function v3sticker(e) {
-  var c = covOf(e);
-  return v3foilHTML('<span class="k">' + esc(t3("stickerKicker")) + '</span><b class="d">' + esc(fmtD(storyDay(e) + "T00:00")) + "</b>" +
-    '<span class="n num">' + esc(t3("stickerCount", { k: e.s.length })) + '</span><span class="n num">' + esc(t3("stickerBlocs", { l: c[0], r: c[2] })) + "</span>");
-}
-function v3heroShow(i) {
-  var pool = v3heroPool(), n = pool.length;
-  V3.heroI = (i + n) % n;
-  var e = pool[V3.heroI], r = document.querySelector(".xhero-r"); if (!r) return;
-  r.innerHTML = v3sticker(e) + '<p class="eyebrow">' + esc(fmtD(storyDay(e) + "T00:00")) + ' · <a class="lnk" href="#/olay?e=' + e.i + '">' + esc(e.t) + "</a></p>" +
-    splitCard(e) + '<div class="cm3-hero-nav"><button type="button" class="chip" data-hero="-1" aria-label="' + esc(t3("heroPrev")) + '">←</button>' +
-    '<span class="mono xsmall">' + esc(t3("heroPos", { i: V3.heroI + 1, n: n })) + '</span><button type="button" class="chip" data-hero="1">' + esc(t3("heroNext")) + " →</button>" +
-    '<span class="cm3-legend xsmall"><mark class="mw">' + esc(t3("diffLabel")) + '</mark></span></div><p class="visually-hidden" aria-live="polite">' + esc(t3("heroLive", { t: e.t })) + "</p>";
-  var cta = document.querySelector(".xhero-l .xbtn"); if (cta) cta.setAttribute("href", "#/olay?e=" + e.i);
-  v3decorateSplits(r);
-  v3foilStart(r.querySelector("[data-foil]"), "element");
-}
-function v3heroWire() {
-  var r = document.querySelector(".xhero-r"); if (!r || r.getAttribute("data-wired")) return;
-  r.setAttribute("data-wired", "1");
-  r.addEventListener("click", function (ev) {
-    var b = ev.target.closest("[data-hero]"); if (!b) return;
-    v3heroShow(V3.heroI + +b.getAttribute("data-hero"));
-    var nb = r.querySelector('[data-hero="' + b.getAttribute("data-hero") + '"]'); if (nb) nb.focus();
-  });
-  v3heroShow(V3.heroI || 0);
-}
 
 /* ------------------------------------------- attention: differing words on event cards */
 function v3diffLine(e) {
@@ -6121,18 +4833,6 @@ function v3day(d, add) {
   return t.getUTCDate() + " " + V3MONTH[t.getUTCMonth()];
 }
 function v3ext() { return D.meta && D.meta.v3 && D.meta.v3.storedEnd ? D.meta.v3 : null; }
-function v3extEventNote(e) {
-  var x = v3ext(); if (!x) return "";
-  if (e.auto) return '<div class="note" data-cm3 style="margin-top:14px"><b>Otomatik olay.</b> ' + v3day(x.storedEnd, 1) +
-    " sonrasının başlıklarından, 2.0'ın belgelenmiş kümeleme kuralının yeniden kurulmuş hâliyle oluşturuldu. Elle yazılmış özet ve " +
-    "anlatı kodlaması yok; başlık olaydaki en az yüklü başlık, konu en yakın kayıtlı konudan otomatik atandı, kör nokta işareti " +
-    'belgelenmiş kuraldan, bu dönemin etkin kurumlarıyla (' + v3day(x.storedEnd, 1) + " sonrası " + x.activeDays + " günün en az yarısında verisi olan: " +
-    (x.active.left || 0) + " sol, " + (x.active.mid || 0) + " merkez, " + (x.active.right || 0) + ' sağ) hesaplandı. <a class="lnk" href="#/yontem?s=veri">Yöntem</a></div>';
-  if (e.joined) return '<p class="xsmall" data-cm3 style="margin-top:8px">' + e.joined + " başlık bu olaya 2.0'dan sonra, aynı bağ kuralıyla " +
-    "katıldı (2.0'da verisi olmayan kurumlardan ya da " + v3day(x.storedEnd, 1) + "–" + v3day(x.seamEnd) + " arasından). " +
-    "Olayın 2.0 rakamları (yük, kör nokta) kayıtlı hâliyle duruyor.</p>";
-  return "";
-}
 function v3extFeedNote() {
   var x = v3ext(); if (!x) return "";
   var auto = D.E.filter(function (e) { return e.auto; }).length;
@@ -6178,7 +4878,6 @@ function v3After(path, tab, params) {
   var view = document.getElementById("view"); if (!view) return;
   if (V3.foilStop && path !== "/") V3.foilStop();
   document.body.classList.toggle("cm3-attn", v3on("attention"));
-  if (v3on("attention") && path === "/") v3heroWire();
   function add(node, where, html) { if (node && html) node.insertAdjacentHTML(where, html); }
 
   if (v3on("panelHealth")) {
@@ -6207,14 +4906,6 @@ function v3After(path, tab, params) {
       var mf = document.getElementById("markflag"); if (mf) mf.hidden = true;
       v3redecorateOnChange("#spA", view); v3redecorateOnChange("#spB", view);
     }
-  }
-  if (path === "/yanlilik" && tab === "turkiye" && v3on("echoChain")) {
-    var hs = [].filter.call(view.querySelectorAll("section.sec"), function (s) { return s.querySelector(".note.warn"); })[0];
-    add(hs, "beforebegin", v3flowTable());
-  }
-  if (v3on("evidence") && path === "/yanlilik" && tab === "turkiye") {
-    var lit = [].filter.call(view.querySelectorAll("section.sec"), function (s) { return /Bu bölümün dayandığı araştırmalar/.test(s.textContent); })[0];
-    add(lit || view.lastElementChild, "afterend", v3literature());
   }
   if (v3on("evidence") && path === "/yontem") add(view.querySelector("section.xwalk"), "afterend", v3methodSection());
   if (v3on("register") && path === "/yontem") {
@@ -6287,25 +4978,8 @@ function route() {
   if (MOTION.lenis) MOTION.lenis.scrollTo(0, { immediate: true, force: true }); else scrollTo(0, 0);
   if (!admin) layoutPills();
   var onTab = document.querySelector(".subrow .subtab.on"); if (onTab && onTab.scrollIntoView) onTab.scrollIntoView({ inline: "center", block: "nearest" });
-  if (home) { var cv = document.getElementById("acid"); if (cv) startAcid(cv); }
-  else if (acid) { acid.stop(); acid = null; }
 
   var put = function (id, node) { var t = document.getElementById(id); if (t && node) t.appendChild(node); };
-
-  if (home) {
-    var pick = $("#pick");
-    var first = topStories(14)[0];
-    if (first) renderStory(first.i);
-    if (pick) {
-      [].forEach.call(pick.querySelectorAll("[data-e]"), function (btn) {
-        btn.onclick = function () {
-          [].forEach.call(pick.querySelectorAll("[data-e]"), function (o) {
-            o.setAttribute("aria-pressed", o === btn ? "true" : "false"); });
-          renderStory(btn.getAttribute("data-e"));
-        };
-      });
-    }
-  }
 
   if (path === "/olaylar" && tab === "liste") {
     renderEvents();
@@ -6404,30 +5078,6 @@ function route() {
 
   if (path === "/kurumlar" && tab === "liste" && params.v === "harita") renderAtlas();
   if (path === "/kurumlar" && tab === "partiler") wireParti();
-  if (path === "/harita" && tab === "atlas") {
-    put("pcoord", parallelCoords());
-    var nnBox = $("#nn");
-    if (nnBox) {
-      var pairs = [];
-      for (var i = 0; i < D.S.length; i++) for (var j = i + 1; j < D.S.length; j++) {
-        var aS = D.S[i], bS = D.S[j], d2 = 0, okAll = true;
-        PCAX.forEach(function (ax) {
-          if (aS[ax[0]] == null || bS[ax[0]] == null) okAll = false;
-          else d2 += Math.pow(aS[ax[0]] - bS[ax[0]], 2);
-        });
-        if (okAll) pairs.push({ a: aS, b: bS, d: Math.sqrt(d2) });
-      }
-      pairs.sort(function (x, y) { return x.d - y.d; });
-      nnBox.innerHTML = '<div class="scroller panel"><table><thead><tr><th>Kurum</th>' +
-        '<th>En yakın kurum</th><th class="r">Mesafe</th><th>Yerleşim farkı</th>' +
-        "</tr></thead><tbody>" + pairs.slice(0, 14).map(function (pr) {
-          return "<tr><td><b>" + esc(pr.a.n) + "</b></td><td><b>" + esc(pr.b.n) + "</b></td>" +
-            '<td class="r num">' + pr.d.toFixed(1) + "</td>" +
-            '<td class="num" style="color:var(--muted)">' + pr.a.lean + " → " + pr.b.lean +
-            " (" + Math.abs(pr.a.lean - pr.b.lean) + ")</td></tr>";
-        }).join("") + "</tbody></table></div>";
-    }
-  }
   if (path === "/anlati") {
     var keysN = narrWeekKeys(params);
     var cur = params.n && D.N[params.n] ? params.n : keysN[0];
@@ -6456,54 +5106,6 @@ function route() {
     else { var cb = $("#cblame");
       if (cb) cb.innerHTML = '<p style="color:var(--muted);font-size:13.5px">' +
         "Kodlanmış olaylarda sorumluluk atfı yeterince az; grafik çizilmedi.</p>"; }
-  }
-
-  if (path === "/yanlilik" && tab === "kesif") {
-    renderExpPanel();
-    renderBiasList();
-    var xq = $("#expq");
-    if (xq) xq.oninput = function () { EXPQ = xq.value; route(); };
-    [].forEach.call(document.querySelectorAll("[data-exp]"), function (el2) {
-      el2.onclick = function () {
-        EXPKEY = el2.getAttribute("data-exp");
-        [].forEach.call(document.querySelectorAll("[data-exp]"), function (o) {
-          o.classList.toggle("on", o === el2); });
-        renderExpPanel();
-        var pn = $("#exppanel"); if (pn) pn.scrollIntoView({ block: "nearest" });
-      };
-    });
-    var bq2 = $("#bq"); if (bq2) bq2.oninput = renderBiasList;
-    [].forEach.call(document.querySelectorAll("[data-tier]"), function (c) {
-      c.onclick = function () {
-        BTIER = c.getAttribute("data-tier");
-        [].forEach.call(document.querySelectorAll("[data-tier]"), function (o) {
-          o.setAttribute("aria-pressed", o === c ? "true" : "false"); });
-        renderBiasList();
-      };
-    });
-  }
-
-  if (path === "/yanlilik" && tab === "cozumleyici") {
-    var inp = $("#anin");
-    if (inp) inp.oninput = runAnalyzer;
-    var ex = $("#anex");
-    if (ex) {
-      var picks = [];
-      [80, 45, 25, 9].forEach(function (floor) {
-        var c2 = D.A.filter(function (x) {
-          return x.v >= floor && x.v < floor + 40 && x.t.length < 92; })
-          .sort(function (x, y) { return y.v - x.v; })[0];
-        if (c2 && picks.indexOf(c2) < 0) picks.push(c2);
-      });
-      ex.innerHTML = picks.map(function (x, i) {
-        return '<button class="ex-btn" data-ex="' + i + '">' +
-          esc(srcName(x.s)) + " · " + x.v + "</button>"; }).join("");
-      [].forEach.call(ex.querySelectorAll("[data-ex]"), function (bt) {
-        bt.onclick = function () {
-          inp.value = picks[+bt.getAttribute("data-ex")].t; runAnalyzer(); };
-      });
-      if (picks.length) { inp.value = picks[0].t; runAnalyzer(); }
-    }
   }
 
   if (path === "/yonetim" && tab === "inceleme") {
@@ -6704,10 +5306,6 @@ function rev7Badge(x, f) {
 function rev7Sorted(x) {
   return bg7Live(x).slice().sort(function (a, b) { return reviewOrder(rev7State(x, a).state) - reviewOrder(rev7State(x, b).state); });
 }
-function rev7CountsLine(x) {
-  var c = {}; bg7Live(x).forEach(function (f) { var st = rev7State(x, f).state; c[st] = (c[st] || 0) + 1; });
-  return reviewCountsLine(c);
-}
 function bg7Live(x) {
   return (x.supported || []).concat(x.uncertain || []).filter(function (f) { var r = rev7For(x, f); return !(r && r.status === "rejected"); });
 }
@@ -6779,78 +5377,8 @@ function bg7Concept(key) {
 /* 7.0: each production-stage card shows what this window's data says about that form, recomputed on
    every build. Forms headlines cannot measure say so instead of carrying an old hand-written anecdote. */
 var FORMEX7 = {};
-function formEx7(f) {
-  if (FORMEX7[f.k] != null) return FORMEX7[f.k];
-  var act = function (s) { return ACT5.indexOf(s) >= 0; }, pc = function (x) { return "%" + Math.round(100 * x); };
-  var sides = ["left", "mid", "right"], out = "";
-  if (f.k === "event-selection") {
-    var bs = D.E.filter(function (e) { return e.bs; }), e0 = bs.slice().sort(function (a, b) { return b.s.length - a.s.length; })[0];
-    out = D.E.length.toLocaleString("tr") + " olaydan " + bs.length + " tanesi kör nokta kuralını karşılıyor" + (e0 ? ". En geniş olanı “" +
-      esc(storyLabel(e0, 80)) + "”: " + e0.s.length + " kurum verdi; sol " + e0.cov[0] + ", merkez " + e0.cov[1] + ", sağ " + e0.cov[2] + " kurum." : ".");
-  } else if (f.k === "source-selection") {
-    var q = {}, n = {};
-    D.A.forEach(function (a) { if (!a.p || !act(a.s)) return; var sd = bloc(a.s); n[sd] = (n[sd] || 0) + 1; if (/[“”"‘’']/.test(a.t)) q[sd] = (q[sd] || 0) + 1; });
-    out = "Başlıklar kaynağı çoğu zaman adlandırmaz; en yakın ölçü, tırnaklı alıntı taşıyan siyasi başlıkların payı: " +
-      sides.filter(function (s) { return n[s]; }).map(function (s) { return SIDE[s].toLocaleLowerCase("tr") + " " + pc((q[s] || 0) / n[s]); }).join(", ") + ".";
-  } else if (f.k === "commission-omission") {
-    var GP = (V5.gap || {}).outlets || {}, ks = Object.keys(GP).filter(act).sort(function (a, b) { return GP[b].cooler - GP[a].cooler; });
-    out = ks.length ? "Spotu başlığından belirgin biçimde daha yüklü olan haberlerin payı (yüklü bilgi başlığa taşınmamış): en yüksek " +
-      esc(srcName(ks[0])) + " " + pc(GP[ks[0]].cooler) + ", en düşük " + esc(srcName(ks[ks.length - 1])) + " " + pc(GP[ks[ks.length - 1]].cooler) + "." : "Spot verisi yok.";
-  } else if (f.k === "labeling" || f.k === "word-choice") {
-    if (f.k === "labeling") {
-      var c = {}, by = {};
-      D.A.forEach(function (a) { (a.e || []).forEach(function (x) { String(x[1] || "").split(/,\s*/).forEach(function (w) {
-        w = w.trim().toLocaleLowerCase("tr"); if (w.length < 4) return; c[w] = (c[w] || 0) + 1; (by[w] || (by[w] = {}))[a.s] = (by[w][a.s] || 0) + 1; }); }); });
-      var top = Object.keys(c).sort(function (a, b) { return c[b] - c[a]; }).slice(0, 3);
-      out = "Dönemin en sık işaretlenen yüklü sözcükleri ve onları en çok kullanan kurum: " + top.map(function (w) {
-        var s0 = Object.keys(by[w]).sort(function (a, b) { return by[w][b] - by[w][a]; })[0];
-        return "“" + esc(w) + "” (" + c[w].toLocaleString("tr") + " başlık; en çok " + esc(srcName(s0)) + ")"; }).join(", ") + ".";
-    } else {
-      var e1 = D.E.filter(function (e) { return e.s.length >= 8; }).sort(function (a, b) { return b.p - a.p; })[0];
-      var as = e1 ? e1.a.map(function (i) { return ART[i]; }).filter(Boolean).sort(function (a, b) { return a.v - b.v; }) : [];
-      out = as.length ? "En geniş yoğunluk aralığı (" + e1.p + " puan) “" + esc(storyLabel(e1, 70)) + "” olayında: “" + esc(as[0].t) + "” (" +
-        esc(srcName(as[0].s)) + ", " + as[0].v + ") ile “" + esc(as[as.length - 1].t) + "” (" + esc(srcName(as[as.length - 1].s)) + ", " + as[as.length - 1].v + ")." : "";
-    }
-  } else if (f.k === "story-placement") {
-    var LL = (V5.leadLag || {}).outlets || {}, ls = Object.keys(LL).filter(act).sort(function (a, b) { return LL[b].firstShare - LL[a].firstShare; });
-    out = ls.length ? "Sayfa düzeni verisi yok; zaman tarafı ölçülüyor. Olayı ilk veren olma payı: en yüksek " + esc(srcName(ls[0])) + " " +
-      pc(LL[ls[0]].firstShare) + ", en düşük " + esc(srcName(ls[ls.length - 1])) + " " + pc(LL[ls[ls.length - 1]].firstShare) + "." : "";
-  } else if (f.k === "size-allocation") {
-    var best = null;
-    D.E.forEach(function (e) { var k = {}; e.a.forEach(function (i) { var a = ART[i]; if (a) k[a.s] = (k[a.s] || 0) + 1; });
-      Object.keys(k).forEach(function (s) { if (!best || k[s] > best.n) best = { e: e, s: s, n: k[s], m: median5(Object.keys(k).map(function (x) { return k[x]; })) }; }); });
-    out = best ? "Manşet alanı ölçülmüyor; en yakın ölçü bir olaya ayrılan başlık sayısı. En çok: " + esc(srcName(best.s)) + ", “" +
-      esc(storyLabel(best.e, 70)) + "” olayına " + best.n + " başlık ayırdı (olayı veren kurumların ortancası " + best.m + ")." : "";
-  } else if (f.k === "spin") {
-    var sv = {}, sn = {};
-    D.A.forEach(function (a) { if (!a.p || !act(a.s)) return; var sd = bloc(a.s); sv[sd] = (sv[sd] || 0) + a.v; sn[sd] = (sn[sd] || 0) + 1; });
-    out = "Aşamaların toplamı tek bir sayıya inmez; en yakın özet, siyasi başlıklarda ortalama yüklü dil yoğunluğu: " +
-      sides.filter(function (s) { return sn[s]; }).map(function (s) { return SIDE[s].toLocaleLowerCase("tr") + " " + (sv[s] / sn[s]).toFixed(1); }).join(", ") + ".";
-  }
-  return (FORMEX7[f.k] = out || "Bu sitenin verisinde (başlık, spot, zaman) karşılığı yok; bu dönem için ölçülmedi.");
-}
 
 /* ---- 7.0 public views built on the reviews ---- */
-function top20() {
-  var st = deviceStats(), rules = Object.keys(st).filter(function (k) { return st[k].n; }).sort(function (a, b) { return st[b].n - st[a].n; });
-  var S = bg7Stats(), ai = Object.keys(S).filter(function (k) { return S[k].unc + S[k].sup; })
-    .sort(function (a, b) { return (S[b].unc + S[b].sup) - (S[a].unc + S[a].sup); }).slice(0, Math.max(0, 20 - rules.length));
-  var top = function (k) { var c = {}; D.A.forEach(function (a) { if (a.k.indexOf(k) >= 0) c[a.s] = (c[a.s] || 0) + 1; });
-    var s0 = Object.keys(c).sort(function (a, b) { return c[b] - c[a]; })[0]; return s0 ? srcName(s0) : "—"; };
-  var O = (bg7() && bg7().summary.outlets) || {};
-  var topAI = function (k) { var best = null; Object.keys(O).forEach(function (o) { var v = 0;
-      Object.keys(O[o]).forEach(function (id) { if (bg7k(id) === k) v += O[o][id]; }); if (v && (!best || v > best[1])) best = [o, v]; });
-    return best ? srcName(best[0]) : "—"; };
-  var name = function (k) { return (BREG[k] || BIA[k] || {}).en || S[k] && S[k].name || k; };
-  return '<section class="sec"><h2>Bu dönemin ' + (rules.length + ai.length) + ' yapısı</h2><p class="sub">Kural tabanlı puanlayıcının saptadığı yapılar ' +
-    "(başlık sayısı) ve YZ incelemesinin “bağlam gerekli” bulduğu kavramlar (" + 'olay sayısı' +
-    "). İki sayı farklı birimdedir. Bir satıra tıklayınca tanım, örnekler ve ilgili olaylar açılır; bütün kavramlar Kütüphane’de.</p>" +
-    '<div class="scroller panel"><table><thead><tr><th>Yapı</th><th>Kaynak</th><th class="r">Sayı</th><th>En çok görülen kurum</th></tr></thead><tbody>' +
-    rules.map(function (k) { return '<tr data-bias7="' + esc(k) + '" style="cursor:pointer"><td><b>' + esc(name(k)) + "</b></td><td>Kural</td>" +
-      '<td class="r num">' + st[k].n.toLocaleString("tr") + " başlık</td><td>" + esc(top(k)) + "</td></tr>"; }).join("") +
-    ai.map(function (k) { return '<tr class="yz-row" data-bias7="' + esc(k) + '" style="cursor:pointer"><td>' + esc(name(k)) + "</td><td>YZ analizi</td>" +
-      '<td class="r">' + (S[k].unc + S[k].sup) + " olay</td><td>" + esc(topAI(k)) + "</td></tr>"; }).join("") + "</tbody></table></div></section>";
-}
 document.addEventListener("click", function (ev) {
   var r = ev.target.closest && ev.target.closest("[data-bias7]"); if (r) openBias(r.getAttribute("data-bias7"));
 });
