@@ -316,8 +316,9 @@ function orFindGenelMatrix() {
     read: "Sol: her kare iki ölçünün " + P.outlets.length + " kurum üzerindeki sıra korelasyonu. Bir kareye " + orTap() + ": sağdaki grafik o iki ölçüyü kurum kurum gösterir; her nokta bir kurum, rengi kayıttaki yerleşimi.",
     means: (key.length ? "Öne çıkan bağlar: " + key.slice(0, 4).map(proSentence).join("; ") + ". " : "") +
       "Kural tabanlı ve AI imzalı ölçüler aynı haritada okununca bir kurumun dili, hızı ve AI’nin onda ne gördüğü birbirinden ayrı soru olmaktan çıkar. " +
-      "AI’nin sözcük alıntıları kural tabanlı yüklü dil puanıyla " + (function () { var c = proCell("loaded", "ai_wording"); return c && c.rho != null ? (proSig(c) ? "ilişkili (ρ " + dec(c.rho, 2) + ")" : "anlamlı biçimde ilişkili değil (ρ " + dec(c.rho, 2) + ")") : "karşılaştırılamadı"; })() +
-      ": iki yöntem aynı şeyi ölçmüyor. Korelasyon neden-sonuç göstermez; çok olay veren kurumlar birçok ölçüde öne çıkabilir.",
+      (function () { var c = proCell("loaded", "ai_wording"); return c && c.rho != null ? "AI’nin sözcük alıntıları kural tabanlı yüklü dil puanıyla " +
+        (proSig(c) ? "ilişkili (ρ " + dec(c.rho, 2) + ")" : "anlamlı biçimde ilişkili değil (ρ " + dec(c.rho, 2) + ")") + ": iki yöntem aynı şeyi ölçmüyor. " : ""; })() +
+      "Korelasyon neden-sonuç göstermez; çok olay veren kurumlar birçok ölçüde öne çıkabilir.",
     table: vzTable(["Ölçü A", "Ölçü B", "Kurum", "ρ", "p", "q", "Anlamlı"], tested.slice().sort(function (a, b) { return Math.abs(b.rho) - Math.abs(a.rho); }).map(function (c) {
       return [proM(c.a).label, proM(c.b).label, c.n, dec(c.rho, 2), dec(c.p, 3), dec(c.q, 3), proSig(c) ? "evet" : "hayır"]; })),
     how: orHow(["Birim: AI incelemesinde en az " + D.AIX.minEvents + " olayı olan " + P.outlets.length + " kurum. Her ölçü kurum başına tek bir sayıdır; tanımlar alttaki şeritlerde.",

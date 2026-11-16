@@ -226,6 +226,20 @@ class MediaPassTests(unittest.TestCase):
         self.assertEqual((f["id"], f["entry_type"], f["tier"]), ("labeling", "media_practice", "ai_confident"))
         self.assertEqual((out["catalog"], out["summary"]["catalog"]), ("media", 1))
 
+    def test_cards_that_have_not_passed_the_lab_go_to_pending(self):
+        card = {**BiasGuard().cards[0], "id": "labeling", "name": "Labeling", "entry_type": "media_practice",
+                "review_policy": "media_pattern_review"}
+        from unittest import mock
+        with tempfile.TemporaryDirectory() as d:
+            run = self._run(d, card)
+            (run / "catalog.json").write_text(json.dumps([card]))   # the run was reviewed against "labeling"
+            with mock.patch("biasguard.news.load_media_cards", return_value=[]):   # ...which has not passed the lab
+                out = apply(run, catalog="media")
+        self.assertEqual(out["events"][0]["supported"], [])
+        self.assertEqual((out["summary"]["supported"], out["summary"]["cardIds"]), (0, []))
+        self.assertEqual(out["pending"]["cards"], [{"id": "labeling", "name": "Labeling"}])
+        self.assertEqual(out["pending"]["events"][0]["supported"][0]["id"], "labeling")
+
     def test_default_catalog_is_behavioural(self):
         with tempfile.TemporaryDirectory() as d:
             run = Path(d)

@@ -68,6 +68,13 @@ class ComputeTest(unittest.TestCase):
         self.assertEqual(r["blame"]["both"], 1)    # 'a': blame set and AI cited for responsibility
         self.assertEqual(r["blame"]["neither"], 2)
 
+    def test_measures_on_cards_that_are_not_live_are_left_out(self):
+        core, arts = core_fixture()
+        core["BGM"]["summary"] = {"cardIds": ["episodic-framing"]}   # wording and responsibility cards wait in Yönetim
+        r = compute(core, arts)
+        self.assertIsNone(r["blame"])
+        self.assertNotIn("ai_wording", [m["k"] for m in r["profile"]["measures"]])
+
 
 if __name__ == "__main__":
     unittest.main()

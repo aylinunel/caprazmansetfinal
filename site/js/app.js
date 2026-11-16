@@ -5246,7 +5246,26 @@ function pgBG7() {
         (x.error ? '<span class="cm3-sub">' + esc(x.error.message || "") + "</span>" : "") + "</div>" +
         bg7AdminFindings(x) + "</div>";
     }).join("") + "</div></section>";
-  return h + bg7NarrAdmin() + bg7sim() + "</div>";
+  return h + bg7NarrAdmin() + bgm7Pending() + bg7sim() + "</div>";
+}
+/* Media cards the lab has not passed yet (D.BGM.pending, biasguard/news.py apply): their findings wait here, off the public pages. */
+function bgm7Pending() {
+  var P = D.BGM && D.BGM.pending; if (!P || !P.cards.length) return "";
+  var by = {};
+  P.events.forEach(function (x) { (x.supported || []).concat(x.uncertain || []).forEach(function (f) {
+    var c = by[f.id] = by[f.id] || { ev: [] }; if (c.ev[c.ev.length - 1] !== x) c.ev.push(x); }); });
+  return '<section class="sec"><h2>Karar bekleyen medya teknikleri</h2><p class="sub">' + P.cards.length + " medya tekniği kartı laboratuvar sınamasını geçemedi; " +
+    "bulguları kamu sayfalarında görünmüyor. Hiçbir kart kontrol vakasında yanlış cevap vermedi: kontrol vakalarının bir kısmında kart hiç incelenmediği için sınama " +
+    "“tamamlanmadı” sayıldı. Kart yeniden sınanıp geçerse ya da kapı değişirse bulgular canlıya çıkar.</p>" +
+    P.cards.map(function (card) {
+      var id = card.id, evs = by[id] ? by[id].ev : [];
+      return '<details class="cm3-voices"><summary>' + esc(card.name) + " · " + evs.length + " olayda bulgu</summary><div>" +
+        evs.map(function (x) {
+          var e = EV[x.event];
+          return '<div class="yz" style="margin-top:6px"><b>' + esc(e ? storyLabel(e, 100) : x.title) + "</b>" +
+            (x.supported || []).concat(x.uncertain || []).filter(function (f) { return f.id === id; }).map(function (f) { return bg7finding(f); }).join("") + "</div>";
+        }).join("") + "</div></details>";
+    }).join("") + "</section>";
 }
 function bg7Ctl(key) {
   var r = rev7(key);

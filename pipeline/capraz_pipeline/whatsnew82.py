@@ -50,15 +50,20 @@ def compare(old: dict, new: dict, media: dict | None, aix: dict | None = None) -
                 "cols": COLS, "rows": [["İncelenen olay", len(ev_old), len(ev_new)], ["Tamamlanan inceleme", so["completed"], sn["completed"]],
                                        ["İki listede ortak olay", len(both), len(both)]],
                 "note": "Ortak olaylarda bile başlık seti farklı: 8.1’de olayı veren kurum sayısı arttı, metin yeniden kuruldu."})
+    pend = (media or {}).get("pending", {})
+    fp = [(e["event"], f) for e in pend.get("events", []) for k in ("supported", "uncertain") for f in e.get(k, [])]
     if media:
         sm = media["summary"]
-        out.append({"id": "medya", "tag": "yeni", "title": "Medyanın oyunları artık canlı",
-                    "claim": f"{sm['catalog']} medya tekniği kartı (sözcük seçimi, etiketleme, vurgu çerçevelemesi …) ayrı bir AI incelemesiyle "
-                             f"{sm['completed']} olayda çalıştırıldı: {len(fm)} bulgu, {hit(fm)} olayda en az bir teknik.",
-                    "cols": COLS, "rows": [["Medya tekniği bulgusu", "—", len(fm)], ["Bulgulu olay", "—", hit(fm)]] +
+        out.append({"id": "medya", "tag": "yeni", "title": "Medyanın oyunları: yalnızca laboratuvardan geçen kartlar canlı",
+                    "claim": f"{sm['catalog'] + len(pend.get('cards', []))} medya tekniği kartı ayrı bir AI incelemesiyle {sm['completed']} olayda çalıştırıldı. "
+                             f"Sahip onayı ve laboratuvar sınamasından {sm['catalog']} kart geçti; canlıda {len(fm)} bulgusu var, {hit(fm)} olayda. "
+                             f"Geçemeyen {len(pend.get('cards', []))} kartın {len(fp)} bulgusu karar verilene kadar Yönetim’de bekliyor.",
+                    "cols": COLS, "rows": [["Canlı medya kartı", "—", sm["catalog"]], ["Canlı medya bulgusu", "—", len(fm)],
+                                           ["Yönetim’de bekleyen kart", "—", len(pend.get("cards", []))], ["Yönetim’de bekleyen bulgu", "—", len(fp)]] +
                                           [[f"En sık: {n}", "—", k] for n, k in _top(fm)],
-                    "note": "Önceki sürümde bu grup bütün olaylarda “incelenemedi” yazıyordu." +
-                            (f" {sm['incomplete'] + sm['notAttempted']} olayın medya incelemesi bu deneme sürümünde tamamlanmadı; o olaylarda grup “incelenemedi” yazar."
+                    "note": "Laboratuvar her kartı yapay vakalarda sınar: olumlu vakada tekniği bulmalı, alıntı ve sınır vakalarında bulmamalı. "
+                            "Bekleyen kartların çoğu, kontrol vakalarında hiç incelenmediği için “tamamlanmadı” sayıldı; yanlış bir cevap yüzünden değil." +
+                            (f" {sm['incomplete'] + sm['notAttempted']} olayın medya incelemesi tamamlanmadı; o olaylarda grup “incelenemedi” yazar."
                              if sm["incomplete"] + sm["notAttempted"] else "")})
     out.append({"id": "davranis", "tag": "değişti", "title": "Davranışsal yanlılıklar yeniden ölçüldü",
                 "claim": f"Bulgu sayısı önce {len(fo)}, şimdi {len(fn)}; en az bir bulgusu olan olay önce {hit(fo)}, şimdi {hit(fn)}.",
@@ -85,23 +90,27 @@ def compare(old: dict, new: dict, media: dict | None, aix: dict | None = None) -
                 "cols": COLS, "rows": [["“Ne anlama geliyor” metni olan bulgu", 0, expl(new) + (expl(media) if media else 0)]]})
     if aix:
         w, b = aix["wording"], aix["blame"]
+        compared = w["headlines"]["auc"] is not None and b is not None
         out.append({"id": "kural", "tag": "yeni", "title": "AI bulguları sitenin kural tabanlı ölçümleriyle karşılaştırıldı",
-                    "claim": "Örüntüler yeniden düzenlendi: “Genel bakış” her kurumu kural tabanlı ve AI imzalı bütün ölçülerde yan yana gösteriyor; AI bulguları konusuna göre öteki sayfalara yerleşti. "
-                             f"AI’nin sözcük tekniği alıntıları kural tabanlı yüklü dil puanıyla neredeyse ilişkisiz (başlık düzeyinde AUC {_tr(w['headlines']['auc'])}, "
-                             f"yazı tura 0,50); sorumluluk çerçevesi ile anlatı haritasının ‘sorumlu tutulan’ kodu da az örtüşüyor (κ {_tr(b['kappa'])}).",
-                    "rows": [["AI ile karşılaştırılan kurum", "—", len(w["outlets"])], ["Karşılaştırılan başlık", "—", w["headlines"]["cited"] + w["headlines"]["notCited"]],
-                             ["Anlatı haritasıyla ortak olay", "—", b["events"]]], "cols": COLS,
-                    "note": "İki ölçünün az örtüşmesi birinin yanlış olduğunu göstermez: kural tabanlı puan sözcüğe, AI kurumlar arasındaki farka bakar."})
+                    "claim": "Örüntüler yeniden düzenlendi: “Genel bakış” her kurumu kural tabanlı ve AI imzalı bütün ölçülerde yan yana gösteriyor; AI bulguları konusuna göre öteki sayfalara yerleşti. " +
+                             (f"AI’nin sözcük tekniği alıntıları kural tabanlı yüklü dil puanıyla neredeyse ilişkisiz (başlık düzeyinde AUC {_tr(w['headlines']['auc'])}, "
+                              f"yazı tura 0,50); sorumluluk çerçevesi ile anlatı haritasının ‘sorumlu tutulan’ kodu da az örtüşüyor (κ {_tr(b['kappa'])})."
+                              if compared else
+                              "Sözcük tekniği ve sorumluluk çerçevesi karşılaştırmaları, bu kartlar laboratuvardan geçene kadar yayında değil."),
+                    "rows": [["AI ile karşılaştırılan kurum", "—", len(w["outlets"])], ["Karşılaştırılan başlık", "—", w["headlines"]["cited"] + w["headlines"]["notCited"]]] +
+                            ([["Anlatı haritasıyla ortak olay", "—", b["events"]]] if b else []), "cols": COLS,
+                    "note": "İki ölçünün az örtüşmesi birinin yanlış olduğunu göstermez: kural tabanlı puan sözcüğe, AI kurumlar arasındaki farka bakar."
+                            if compared else "Karşılaştırmalar Yönetim’de bekleyen medya kartlarının bulgularına dayanıyordu."})
         out.append({"id": "tasarim", "tag": "değişti", "title": "Görünüm marka kurallarına döndü",
                     "claim": "Gazete kâğıdı zemini, Newsreader başlıklar ve IBM Plex rakamlar geri geldi; AI bulguları kanıt kartlarında, “AI imzalı” damgasıyla. "
                              "Kırmızı ve mavi yalnızca bir kurum hakkında, sarı yalnızca bir sözcüğün arkasında."})
     out.append({"id": "sinir", "tag": "uyarı", "title": "Bu bir deneme sürümü",
-                "claim": "Medya kartları sahip onayı ve laboratuvar sınaması beklenmeden canlıya alındı. Hiçbir bulgu insan tarafından doğrulanmadı; "
+                "claim": "Medya kartları canlıya yalnızca sahip onayı ve laboratuvar sınamasıyla çıkar. Hiçbir bulgu insan tarafından doğrulanmadı; "
                          "bir olayda bulgu olmaması o olayda teknik ya da yanlılık olmadığı anlamına gelmez."})
     n_all = len(fn) + len(fm)
-    return {"lede": f"8.2’nin AI incelemesi güncellenen algoritmayla baştan çalıştırıldı: medya teknikleri artık canlı, bütün bulgular ayrımsız yayında, "
+    return {"lede": f"8.2’nin AI incelemesi güncellenen algoritmayla baştan çalıştırıldı: laboratuvardan geçen medya teknikleri canlı, bütün bulgular ayrımsız yayında, "
                     f"her bulgu ne anlama geldiğiyle birlikte veriliyor. Aşağıda önceki 8.2 incelemesi (8.0 olayları) ile yenisi (8.1 verisi) yan yana.",
-            "band": f"Yeniden çalışan AI incelemesi: {n_all} bulgu, medya teknikleri canlı, önceki sürümle karşılaştırma.",
+            "band": f"Yeniden çalışan AI incelemesi: {n_all} bulgu, laboratuvardan geçen medya teknikleri canlı, önceki sürümle karşılaştırma.",
             "findings": out}
 
 

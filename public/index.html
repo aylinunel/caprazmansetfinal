@@ -9617,7 +9617,26 @@ function pgBG7() {
         (x.error ? '<span class="cm3-sub">' + esc(x.error.message || "") + "</span>" : "") + "</div>" +
         bg7AdminFindings(x) + "</div>";
     }).join("") + "</div></section>";
-  return h + bg7NarrAdmin() + bg7sim() + "</div>";
+  return h + bg7NarrAdmin() + bgm7Pending() + bg7sim() + "</div>";
+}
+/* Media cards the lab has not passed yet (D.BGM.pending, biasguard/news.py apply): their findings wait here, off the public pages. */
+function bgm7Pending() {
+  var P = D.BGM && D.BGM.pending; if (!P || !P.cards.length) return "";
+  var by = {};
+  P.events.forEach(function (x) { (x.supported || []).concat(x.uncertain || []).forEach(function (f) {
+    var c = by[f.id] = by[f.id] || { ev: [] }; if (c.ev[c.ev.length - 1] !== x) c.ev.push(x); }); });
+  return '<section class="sec"><h2>Karar bekleyen medya teknikleri</h2><p class="sub">' + P.cards.length + " medya tekniği kartı laboratuvar sınamasını geçemedi; " +
+    "bulguları kamu sayfalarında görünmüyor. Hiçbir kart kontrol vakasında yanlış cevap vermedi: kontrol vakalarının bir kısmında kart hiç incelenmediği için sınama " +
+    "“tamamlanmadı” sayıldı. Kart yeniden sınanıp geçerse ya da kapı değişirse bulgular canlıya çıkar.</p>" +
+    P.cards.map(function (card) {
+      var id = card.id, evs = by[id] ? by[id].ev : [];
+      return '<details class="cm3-voices"><summary>' + esc(card.name) + " · " + evs.length + " olayda bulgu</summary><div>" +
+        evs.map(function (x) {
+          var e = EV[x.event];
+          return '<div class="yz" style="margin-top:6px"><b>' + esc(e ? storyLabel(e, 100) : x.title) + "</b>" +
+            (x.supported || []).concat(x.uncertain || []).filter(function (f) { return f.id === id; }).map(function (f) { return bg7finding(f); }).join("") + "</div>";
+        }).join("") + "</div></details>";
+    }).join("") + "</section>";
 }
 function bg7Ctl(key) {
   var r = rev7(key);
@@ -14189,8 +14208,9 @@ function orFindGenelMatrix() {
     read: "Sol: her kare iki ölçünün " + P.outlets.length + " kurum üzerindeki sıra korelasyonu. Bir kareye " + orTap() + ": sağdaki grafik o iki ölçüyü kurum kurum gösterir; her nokta bir kurum, rengi kayıttaki yerleşimi.",
     means: (key.length ? "Öne çıkan bağlar: " + key.slice(0, 4).map(proSentence).join("; ") + ". " : "") +
       "Kural tabanlı ve AI imzalı ölçüler aynı haritada okununca bir kurumun dili, hızı ve AI’nin onda ne gördüğü birbirinden ayrı soru olmaktan çıkar. " +
-      "AI’nin sözcük alıntıları kural tabanlı yüklü dil puanıyla " + (function () { var c = proCell("loaded", "ai_wording"); return c && c.rho != null ? (proSig(c) ? "ilişkili (ρ " + dec(c.rho, 2) + ")" : "anlamlı biçimde ilişkili değil (ρ " + dec(c.rho, 2) + ")") : "karşılaştırılamadı"; })() +
-      ": iki yöntem aynı şeyi ölçmüyor. Korelasyon neden-sonuç göstermez; çok olay veren kurumlar birçok ölçüde öne çıkabilir.",
+      (function () { var c = proCell("loaded", "ai_wording"); return c && c.rho != null ? "AI’nin sözcük alıntıları kural tabanlı yüklü dil puanıyla " +
+        (proSig(c) ? "ilişkili (ρ " + dec(c.rho, 2) + ")" : "anlamlı biçimde ilişkili değil (ρ " + dec(c.rho, 2) + ")") + ": iki yöntem aynı şeyi ölçmüyor. " : ""; })() +
+      "Korelasyon neden-sonuç göstermez; çok olay veren kurumlar birçok ölçüde öne çıkabilir.",
     table: vzTable(["Ölçü A", "Ölçü B", "Kurum", "ρ", "p", "q", "Anlamlı"], tested.slice().sort(function (a, b) { return Math.abs(b.rho) - Math.abs(a.rho); }).map(function (c) {
       return [proM(c.a).label, proM(c.b).label, c.n, dec(c.rho, 2), dec(c.p, 3), dec(c.q, 3), proSig(c) ? "evet" : "hayır"]; })),
     how: orHow(["Birim: AI incelemesinde en az " + D.AIX.minEvents + " olayı olan " + P.outlets.length + " kurum. Her ölçü kurum başına tek bir sayıdır; tanımlar alttaki şeritlerde.",

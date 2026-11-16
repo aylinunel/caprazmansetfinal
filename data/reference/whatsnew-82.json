@@ -1,6 +1,6 @@
 {
- "lede": "8.2’nin AI incelemesi güncellenen algoritmayla baştan çalıştırıldı: medya teknikleri artık canlı, bütün bulgular ayrımsız yayında, her bulgu ne anlama geldiğiyle birlikte veriliyor. Aşağıda önceki 8.2 incelemesi (8.0 olayları) ile yenisi (8.1 verisi) yan yana.",
- "band": "Yeniden çalışan AI incelemesi: 963 bulgu, medya teknikleri canlı, önceki sürümle karşılaştırma.",
+ "lede": "8.2’nin AI incelemesi güncellenen algoritmayla baştan çalıştırıldı: laboratuvardan geçen medya teknikleri canlı, bütün bulgular ayrımsız yayında, her bulgu ne anlama geldiğiyle birlikte veriliyor. Aşağıda önceki 8.2 incelemesi (8.0 olayları) ile yenisi (8.1 verisi) yan yana.",
+ "band": "Yeniden çalışan AI incelemesi: 405 bulgu, laboratuvardan geçen medya teknikleri canlı, önceki sürümle karşılaştırma.",
  "findings": [
   {
    "id": "olaylar",
@@ -33,50 +33,40 @@
   {
    "id": "medya",
    "tag": "yeni",
-   "title": "Medyanın oyunları artık canlı",
-   "claim": "17 medya tekniği kartı (sözcük seçimi, etiketleme, vurgu çerçevelemesi …) ayrı bir AI incelemesiyle 150 olayda çalıştırıldı: 576 bulgu, 150 olayda en az bir teknik.",
+   "title": "Medyanın oyunları: yalnızca laboratuvardan geçen kartlar canlı",
+   "claim": "17 medya tekniği kartı ayrı bir AI incelemesiyle 150 olayda çalıştırıldı. Sahip onayı ve laboratuvar sınamasından 1 kart geçti; canlıda 18 bulgusu var, 18 olayda. Geçemeyen 16 kartın 558 bulgusu karar verilene kadar Yönetim’de bekliyor.",
    "cols": [
     "Önceki 8.2",
     "Yeni 8.2"
    ],
    "rows": [
     [
-     "Medya tekniği bulgusu",
+     "Canlı medya kartı",
      "—",
-     576
+     1
     ],
     [
-     "Bulgulu olay",
+     "Canlı medya bulgusu",
      "—",
-     150
+     18
     ],
     [
-     "En sık: Emphasis framing (Vurgu çerçevelemesi)",
+     "Yönetim’de bekleyen kart",
      "—",
-     149
+     16
     ],
     [
-     "En sık: Word choice (Sözcük seçimi)",
+     "Yönetim’de bekleyen bulgu",
      "—",
-     135
+     558
     ],
     [
-     "En sık: Loaded language (Duygu yüklü dil)",
+     "En sık: Episodic framing (Olay odaklı çerçeveleme)",
      "—",
-     102
-    ],
-    [
-     "En sık: Labeling (Etiketleme)",
-     "—",
-     56
-    ],
-    [
-     "En sık: Attribution of responsibility framing (Sorumluluk atfı çerçevelemesi)",
-     "—",
-     27
+     18
     ]
    ],
-   "note": "Önceki sürümde bu grup bütün olaylarda “incelenemedi” yazıyordu."
+   "note": "Laboratuvar her kartı yapay vakalarda sınar: olumlu vakada tekniği bulmalı, alıntı ve sınır vakalarında bulmamalı. Bekleyen kartların çoğu, kontrol vakalarında hiç incelenmediği için “tamamlanmadı” sayıldı; yanlış bir cevap yüzünden değil."
   },
   {
    "id": "davranis",
@@ -155,7 +145,7 @@
     [
      "Kamuda gösterilen bulgu",
      439,
-     963
+     405
     ]
    ]
   },
@@ -180,7 +170,7 @@
    "id": "kural",
    "tag": "yeni",
    "title": "AI bulguları sitenin kural tabanlı ölçümleriyle karşılaştırıldı",
-   "claim": "Örüntüler yeniden düzenlendi: “Genel bakış” her kurumu kural tabanlı ve AI imzalı bütün ölçülerde yan yana gösteriyor; AI bulguları konusuna göre öteki sayfalara yerleşti. AI’nin sözcük tekniği alıntıları kural tabanlı yüklü dil puanıyla neredeyse ilişkisiz (başlık düzeyinde AUC 0,49, yazı tura 0,50); sorumluluk çerçevesi ile anlatı haritasının ‘sorumlu tutulan’ kodu da az örtüşüyor (κ 0,08).",
+   "claim": "Örüntüler yeniden düzenlendi: “Genel bakış” her kurumu kural tabanlı ve AI imzalı bütün ölçülerde yan yana gösteriyor; AI bulguları konusuna göre öteki sayfalara yerleşti. Sözcük tekniği ve sorumluluk çerçevesi karşılaştırmaları, bu kartlar laboratuvardan geçene kadar yayında değil.",
    "rows": [
     [
      "AI ile karşılaştırılan kurum",
@@ -191,18 +181,13 @@
      "Karşılaştırılan başlık",
      "—",
      3729
-    ],
-    [
-     "Anlatı haritasıyla ortak olay",
-     "—",
-     45
     ]
    ],
    "cols": [
     "Önceki 8.2",
     "Yeni 8.2"
    ],
-   "note": "İki ölçünün az örtüşmesi birinin yanlış olduğunu göstermez: kural tabanlı puan sözcüğe, AI kurumlar arasındaki farka bakar."
+   "note": "Karşılaştırmalar Yönetim’de bekleyen medya kartlarının bulgularına dayanıyordu."
   },
   {
    "id": "tasarim",
@@ -214,7 +199,7 @@
    "id": "sinir",
    "tag": "uyarı",
    "title": "Bu bir deneme sürümü",
-   "claim": "Medya kartları sahip onayı ve laboratuvar sınaması beklenmeden canlıya alındı. Hiçbir bulgu insan tarafından doğrulanmadı; bir olayda bulgu olmaması o olayda teknik ya da yanlılık olmadığı anlamına gelmez."
+   "claim": "Medya kartları canlıya yalnızca sahip onayı ve laboratuvar sınamasıyla çıkar. Hiçbir bulgu insan tarafından doğrulanmadı; bir olayda bulgu olmaması o olayda teknik ya da yanlılık olmadığı anlamına gelmez."
   }
  ]
 }

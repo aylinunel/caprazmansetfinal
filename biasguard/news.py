@@ -23,7 +23,7 @@ import re
 from pathlib import Path
 from typing import Any
 
-from .catalog import card_hash, load_cards, load_media_cards
+from .catalog import card_hash, load_cards, load_media_cards, validate_cards
 from .engine import BiasGuard
 from .providers import PROMPTS_VERSION, ProviderCallError, _selector_system_prompt, _system_prompt, _selector_schema
 from .routing import in_audit_sample, review_queue, tier
@@ -212,6 +212,13 @@ def apply(run: Path, card_status_path: Path | None = None, pack_version: str = "
           cards: list[dict[str, Any]] | None = None) -> dict[str, Any]:
     if cards is not None and not cards:
         raise ValueError(f"{catalog} catalogue is empty")
+    # A media run reviewed against cards that have not (yet) passed the lab keeps that catalogue in
+    # <run>/catalog.json: findings are scored against it, but only live cards (media_cards.json) are published;
+    # the rest go to result["pending"] for Yönetim.
+    pending_ids: set[str] = set()
+    if cards is None and catalog == "media" and (run / "catalog.json").exists():
+        cards = validate_cards(json.loads((run / "catalog.json").read_text(encoding="utf-8")))
+        pending_ids = {c["id"] for c in cards} - {c["id"] for c in load_media_cards()}
     bg = BiasGuard(cards=cards if cards is not None else catalog_cards(catalog))
     results = []
     # Card statuses come from human feedback (validation/feedback); only entries marked applied count.
@@ -265,6 +272,17 @@ def apply(run: Path, card_status_path: Path | None = None, pack_version: str = "
             "rejectedQuotes": len(r.get("rejected_evidence", [])),
             "quotesVerified": sum(len(a["verified_evidence"]) for o in r.get("reviewer_outcomes", []) for a in o["assessments"]),
         })
+    pending = []
+    for x in results if pending_ids else []:
+        held = {k: [f for f in x.get(k, []) if f["id"] in pending_ids] for k in ("supported", "uncertain", "effects")}
+        if any(held.values()):
+            pending.append({"event": x["event"], "title": x["title"], **held})
+        for k in held:
+            if k in x:
+                x[k] = [f for f in x[k] if f["id"] not in pending_ids]
+        if x.get("selected"):
+            x["selected"] = [i for i in x["selected"] if i not in pending_ids]
+    live_cards = [c for c in bg.cards if c["id"] not in pending_ids]
     done = [x for x in results if x["status"] == "review_complete"]
     count = lambda k: sum(len(x[k]) for x in done)
     shown = [f for x in done for k in ("supported", "uncertain", "effects") for f in x[k]]
@@ -282,9 +300,9 @@ def apply(run: Path, card_status_path: Path | None = None, pack_version: str = "
         "downgraded": sum(x.get("downgraded", 0) for x in done), "quotesVerified": sum(x.get("quotesVerified", 0) for x in done),
         "rejectedQuotes": sum(x.get("rejectedQuotes", 0) for x in done),
         "cards": sorted(by_card.values(), key=lambda c: (-c["supported"], -c["uncertain"], c["id"])),
-        "catalog": len(bg.cards), "maxCandidates": MAX_CANDIDATES,
+        "catalog": len(live_cards), "maxCandidates": MAX_CANDIDATES,
         # the media catalogue is short and changes as cards are promoted, so the site reads its ids from here
-        **({"cardIds": sorted(c["id"] for c in bg.cards)} if catalog == "media" else {}),
+        **({"cardIds": sorted(c["id"] for c in live_cards)} if catalog == "media" else {}),
         # Review status (biasguard/routing.py): a rule, not a probability.
         "aiConfident": sum(f["tier"] == "ai_confident" for f in shown),
         "needsHuman": sum(f["tier"] == "needs_human" for f in shown),
@@ -295,7 +313,9 @@ def apply(run: Path, card_status_path: Path | None = None, pack_version: str = "
         "outlets": _outlet_counts(done),
     }
     return {"pack": pack_version, "catalog": catalog, "summary": summary, "events": results,
-            "reviewQueue": review_queue(done, reviewed_counts or {})}
+            "reviewQueue": review_queue(done, reviewed_counts or {}),
+            **({"pending": {"cards": [{"id": c["id"], "name": c["name"]} for c in sorted(bg.cards, key=lambda c: c["id"])
+                                      if c["id"] in pending_ids], "events": pending}} if pending_ids else {})}
 
 
 def write_results(out: Path, res: dict[str, Any]) -> None:
@@ -341,7 +361,7 @@ def merge_explain(bg: dict, run: Path) -> dict[str, int]:
     """Attach valid runs/<run>/explain/<event>__<card>.json as finding['explain']; skip invalid or missing."""
     texts = {it["event"]: it["text"] for it in _inputs(run)} if (run / "inputs.jsonl").exists() else {}
     live = explained = 0
-    for ev in bg.get("events", []):
+    for ev in bg.get("events", []) + bg.get("pending", {}).get("events", []):
         for f in ev.get("supported", []) + ev.get("uncertain", []):
             live += 1
             p = explain_dir(run) / f"{ev['event']}__{f['id']}.json"

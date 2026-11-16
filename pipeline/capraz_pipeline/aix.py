@@ -158,6 +158,7 @@ def profile(core: dict, arts: dict[str, dict], im: dict, ib: dict, first: dict, 
                 k[s] += s in hit
         return k, nn
     am, an = rate(im)
+    wording_live = bool(set(WORDING) & set(core.get("BGM", {}).get("summary", {}).get("cardIds", WORDING)))
     aw, _ = rate(im, WORDING)
     ab, bn = rate(ib)
     outlets = []
@@ -169,10 +170,12 @@ def profile(core: dict, arts: dict[str, dict], im: dict, ib: dict, first: dict, 
              "gap": sum(gaps[s]) / len(gaps[s]) if len(gaps[s]) >= 20 else None,
              "first": ll.get(s, {}).get("firstShare"),
              "blame": set_b[s] / rows_b[s] if rows_b[s] >= 10 else None,
-             "ai_media": am[s] / an[s], "ai_wording": aw[s] / an[s],
+             "ai_media": am[s] / an[s], **({"ai_wording": aw[s] / an[s]} if wording_live else {}),
              "ai_behav": ab[s] / bn[s] if bn[s] >= min_events else None}
         outlets.append({"s": s, "bloc": _bloc(lean.get(s)), "n": an[s], "m": m})
-    keys = [k for k, _, _ in MEASURES]
+    # a measure built on media cards that have not passed the lab (all zeros) is left out
+    measures = [x for x in MEASURES if x[0] != "ai_wording" or wording_live]
+    keys = [k for k, _, _ in measures]
     matrix = []
     for i, a in enumerate(keys):
         for b in keys[i + 1:]:
@@ -190,7 +193,7 @@ def profile(core: dict, arts: dict[str, dict], im: dict, ib: dict, first: dict, 
     for rank, c in reversed(list(enumerate(tested, 1))):
         q_prev = min(q_prev, c["p"] * m_ / rank)
         c["q"] = q_prev
-    return {"measures": [{"k": k, "label": l, "kind": kd} for k, l, kd in MEASURES], "outlets": outlets, "matrix": matrix}
+    return {"measures": [{"k": k, "label": l, "kind": kd} for k, l, kd in measures], "outlets": outlets, "matrix": matrix}
 
 
 def _bloc(lean):
@@ -341,7 +344,10 @@ def compute(core: dict, arts: dict[str, dict]) -> dict:
         for r in n["rows"]:
             rule = bool(str(r.get("blame") or "").strip()) and not UNSET.search(str(r.get("blame")))
             tab["both" if rule and r["s"] in ai else "rule" if rule else "ai" if r["s"] in ai else "neither"] += 1
-    blame = {**tab, "events": events_both, "kappa": kappa(tab["both"], tab["rule"], tab["ai"], tab["neither"])}
+    # only while the AI side (responsibility-framing) is a live media card; otherwise there is nothing to compare
+    live = core.get("BGM", {}).get("summary", {}).get("cardIds", ["responsibility-framing"])
+    blame = ({**tab, "events": events_both, "kappa": kappa(tab["both"], tab["rule"], tab["ai"], tab["neither"])}
+             if "responsibility-framing" in live else None)
 
     # ---- where: findings per event (both passes) by context
     nf = {ev: len(_live(bgm[ev])) + (len(_live(bg[ev])) if ev in bg else 0) for ev in bgm}
