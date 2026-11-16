@@ -64,6 +64,7 @@
   var urls = null;
   window.cmUrls = function () {
     if (!urls) urls = Promise.all(window.DATA.meta.packs.months.map(function (m) { return load("u-" + m + ".bin"); }))
+      .catch(function (e) { urls = null; throw e; })  /* a failed load can be retried */
       .then(function (ps) {
         var by = {}; window.DATA.A.forEach(function (a) { by[a.i] = a; });
         ps.forEach(function (p) { for (var j = 0; j < p.i.length; j++) { var a = by[p.i[j]]; if (a) a.u = "https://" + p.hosts[p.h[j]] + "/" + p.u[j]; } });
@@ -97,7 +98,10 @@
       core.A = [].concat.apply([], parts);
       window.DATA = core;
       start(core);
-      if (!parts.length || !parts[0].length || parts[0][0].u == null) setTimeout(window.cmUrls, 1500);
+      /* background prefetch; a failure is reported here and retried on the next click (cmUrls resets) */
+      if (!parts.length || !parts[0].length || parts[0][0].u == null) setTimeout(function () {
+        window.cmUrls().catch(function (e) { console.error("Çapraz Manşet: haber bağlantıları yüklenemedi", e); });
+      }, 1500);
     });
   }).catch(function (err) {
     console.error("Çapraz Manşet data load failed", err);

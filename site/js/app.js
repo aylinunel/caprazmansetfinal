@@ -2548,13 +2548,19 @@ function sideOf(slug) { return bloc(slug); }
 /* An article's link. URLs load after the first screen (loader.js window.cmUrls); until then the link is a
    placeholder that the click handler below resolves, so an early click still opens the original story. */
 function artUrl(a) { return a.u != null ? a.u : "#/git?a=" + encodeURIComponent(a.i); }
+function artUrlId(href) { return new URLSearchParams(String(href).split("?")[1] || "").get("a"); }
 document.addEventListener("click", function (ev) {
   var l = ev.target.closest && ev.target.closest('a[href^="#/git?a="]'); if (!l) return;
   ev.preventDefault(); ev.stopPropagation();
-  var id = decodeURIComponent(l.getAttribute("href").slice(9)), w = window.open("", "_blank");
+  var id = artUrlId(l.getAttribute("href")), w = window.open("", "_blank");
+  if (l.hasAttribute("data-a")) logArticle(l.getAttribute("data-a"));  /* stopPropagation above skips the per-link reading log */
   window.cmUrls().then(function () {
     var a = ART[id];
     if (a && a.u) { if (w) { w.opener = null; w.location = a.u; } else location.href = a.u; } else if (w) w.close();
+  }, function (err) {  /* the URL packs did not load: close the empty tab and say so, never leave it blank */
+    if (w) w.close();
+    console.error("Çapraz Manşet: haber bağlantıları yüklenemedi", err);
+    tipOn({ clientX: ev.clientX, clientY: ev.clientY }, "Haber bağlantısı şu anda yüklenemedi; sayfayı yenileyip yeniden deneyin.");
   });
 }, true);
 function srcName(s) { return SRC[s] ? SRC[s].n : (D.SN && D.SN[s]) || s; }
@@ -4959,6 +4965,12 @@ function route() {
       var kv = pair.split("=");
       if (kv[0]) params[decodeURIComponent(kv[0])] = decodeURIComponent(kv[1] || "");
     });
+  }
+  /* a placeholder opened directly (middle-click, new tab, copied link): wait for the URLs, then go to the story */
+  if (path === "/git") {
+    window.cmUrls().then(function () { var a = ART[params.a]; if (a && a.u) location.replace(a.u); else location.replace("#/"); },
+      function () { location.replace("#/"); });
+    return;
   }
   var rd = redirectRoute(path, params);
   if (rd) { location.replace("#" + rd); return; }
