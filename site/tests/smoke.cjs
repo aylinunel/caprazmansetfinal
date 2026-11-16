@@ -87,7 +87,12 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       const grp = await page.evaluate(() => [...document.querySelectorAll(".v7-grp")].map((g) => [g.dataset.grp, g.textContent.includes("incelenemedi"), g.querySelectorAll(".ai-card").length]));
       if (hasYz && (!grp.length || grp[0][0] !== "medya")) fails.push(`${tag}: Medyanın oyunları group is not first`);
       if (hasYz && grp[0] && !grp[0][1] && !grp[0][2]) fails.push(`${tag}: empty Medyanın oyunları group without an incelenemedi note`);
-      if (route === "#/olay?e=s5031" && rv.n < 3) fails.push(`${tag}: expected the three reviewed findings of s5031, saw ${rv.n}`);
+      if (route === "#/olay?e=s5031") {   // every live finding of both passes is shown (pending media cards stay in Yönetim)
+        const want = await page.evaluate(() => [DATA.BG, DATA.BGM].reduce((n, B) => {
+          const x = B && B.events.find((ev) => ev.event === "s5031");
+          return n + (x && x.status === "review_complete" ? x.supported.length + x.uncertain.length : 0); }, 0));
+        if (!want || rv.n !== want) fails.push(`${tag}: expected the ${want} live findings of s5031, saw ${rv.n}`);
+      }
       if (rv.bad) fails.push(`${tag}: ${rv.bad} of ${rv.n} AI finding(s) without exactly one review badge`);
       if (rv.zero) fails.push(`${tag}: review line reports a zero count`);
       if (w === 1280 && theme === "light") console.log(`review status on ${route}: ${rv.n} findings; ${rv.line}`);
