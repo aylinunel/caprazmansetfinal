@@ -66,7 +66,7 @@ function orEnd(list) {
 function orPage(q, finds, ex) {
   var t = OR_PAGES[q];
   return '<div class="wrap page or"><div class="phead"><div class="eyebrow">Örüntüler</div><h1>' + t[0] + '</h1><p class="lede">' + esc(t[1]) + "</p></div>" +
-    finds.map(findingBlock).join("") + (ex && ex.length ? orEnd(ex) : "") + "</div>";
+    finds.filter(Boolean).map(findingBlock).join("") + (ex && ex.length ? orEnd(ex) : "") + "</div>";
 }
 
 /* ======================================================= secim */
@@ -459,52 +459,8 @@ function orQuoteOutlets(x, q) {
   e.a.forEach(function (i) { var a = ART[i]; if (a && trFold(a.t).indexOf(t) >= 0 && out.indexOf(a.s) < 0) out.push(a.s); });
   return out;
 }
-function orBlocAI() {
-  var B = bg7(); if (!B) return null;
-  var cov = { left: 0, mid: 0, right: 0 }, hit = { left: 0, mid: 0, right: 0 }, byC = {}, nEv = 0;
-  B.events.forEach(function (x) {
-    if (x.status !== "review_complete" || !EV[x.event]) return; nEv++;
-    var c = {}; EV[x.event].s.forEach(function (s) { c[bloc(s)] = 1; });
-    var cited = {}; bg7Live(x).forEach(function (f) {
-      var h = {}; (f.evidence || []).forEach(function (q) { orQuoteOutlets(x, q).forEach(function (o) { h[bloc(o)] = 1; cited[bloc(o)] = 1; }); });
-      var r = byC[f.name] = byC[f.name] || { n: 0, cov: { left: 0, mid: 0, right: 0 }, hit: { left: 0, mid: 0, right: 0 } };
-      r.n++; Object.keys(cov).forEach(function (b) { if (c[b]) { r.cov[b]++; if (h[b]) r.hit[b]++; } });
-    });
-    Object.keys(cov).forEach(function (b) { if (c[b]) { cov[b]++; if (cited[b]) hit[b]++; } });
-  });
-  return { cov: cov, hit: hit, byC: byC, nEv: nEv };
-}
-function orFindAI() {
-  var R = orBlocAI();
-  if (!R) return { id: "dil-yz", claim: "YZ incelemesi verisi bu yapıda yok " + yzBadge() + ".", viz: yzBlock("<p>Veri yok.</p>", "Yapay zekâ incelemesi"), means: "İnceleme sonuçları yüklenmediği için bu bulgu hesaplanamadı.", how: orHow(["İnceleme verisi yok."], "yz") };
-  var blocs = ["left", "mid", "right"].filter(function (b) { return R.cov[b]; }), rate = function (b) { return R.cov[b] ? R.hit[b] / R.cov[b] : 0; };
-  var bars = vzRows(blocs.map(function (b) { var ci = vzWilson(R.hit[b], R.cov[b]);
-      return { k: b, label: SIDE[b] + " bloğu", val: orP(rate(b)), pts: [{ v: 100 * rate(b), lo: 100 * ci[0], hi: 100 * ci[1], c: "var(--" + b + ")", big: true }],
-        tip: "<span class='k'>" + SIDE[b] + " bloğu</span>" + R.hit[b] + " / " + R.cov[b] + " olay · " + orP(rate(b)) + "<br>%95 aralık " + orP(ci[0]) + " – " + orP(ci[1]) }; }),
-    { min: 0, max: 100, fmt: function (v) { return "%" + v; }, lw: 120, vw: 60, axis: "Nokta oran, yatay çizgi %95 güven aralığı: az olaylı blokta aralık geniştir; aralıkları örtüşen bloklar arasındaki fark şansla açıklanabilir." });
-  var cs = Object.keys(R.byC).sort(function (a, b) { return R.byC[b].n - R.byC[a].n; }).slice(0, 6);
-  var tbl = '<div class="scroller"><table><thead><tr><th>Kavram</th>' + blocs.map(function (b) { return '<th class="r">' + SIDE[b] + "</th>"; }).join("") + "</tr></thead><tbody>" + cs.map(function (k) {
-    var r = R.byC[k]; return "<tr><td>" + esc(k) + "</td>" + blocs.map(function (b) { return '<td class="r">' + (r.cov[b] ? Math.round(100 * r.hit[b] / r.cov[b]) + "% · " + r.cov[b] : "—") + "</td>"; }).join("") + "</tr>"; }).join("") + "</tbody></table></div>" +
-    '<p class="or-hint">Hücre: alıntılanma oranı · bloğun o kavramda yer aldığı olay sayısı.</p>';
-  var top = blocs.slice().sort(function (a, b) { return rate(b) - rate(a); });
-  var inner = "<p><b>Ne fark etti:</b> yapay zekâ, bazı olaylarda başlıkların aynı olguyu farklı çerçevelerle anlattığını okudu ve her kavram için başlıklardan alıntı yaptı. Aşağıdaki oran, bir bloğun en az bir başlığının alıntılandığı olayların payıdır.</p>" +
-    bars + "<p><b>Neden kesin değil:</b> alıntı, başlığın diğer kurumlardan farklı yazıldığını gösterir; farkın nedenini ya da kasıt olup olmadığını göstermez. İnsan incelemesinden geçmemiş bir okumadır ve kurum bazında oranlar burada verilmez." + "</p>" + tbl;
-  return { id: "dil-yz",
-    claim: "Yapay zekânın incelediği <b>" + orN(R.nEv) + "</b> olayda, en az bir başlığı alıntılanan olayların payı: " +
-      top.map(function (b) { return SIDE[b].toLocaleLowerCase("tr") + " blokta <b>" + orPc(rate(b)) + "</b>"; }).join(", ") + " " + yzBadge() + ".",
-    viz: yzBlock(inner, "Yapay zekâ incelemesi"),
-    read: "Her nokta bir blok; sağa gittikçe o bloğun başlıkları daha sık alıntılanmış. Yatay çizgi, sayının ne kadar oynayabileceğini gösterir.",
-    table: vzTable(["Blok", "Alıntılanan olay", "Bloğun yer aldığı olay", "Oran", "%95 aralık"], blocs.map(function (b) { var ci = vzWilson(R.hit[b], R.cov[b]);
-      return [SIDE[b], R.hit[b], R.cov[b], orP(rate(b)), orP(ci[0]) + " – " + orP(ci[1])]; })),
-    means: "Oranlar en yüksekten en düşüğe " + top.map(function (b) { return SIDE[b].toLocaleLowerCase("tr"); }).join(", ") + " blok; fark " + dec(100 * (rate(top[0]) - rate(top[top.length - 1])), 1) + " puan. " +
-      "Bir blokta oranın yüksek olması o bloğun başlıklarının daha sık farklı yazıldığını gösterebilir, ama blokların kurum sayıları farklıdır ve çok kurumlu blokta alıntılanma şansı daha yüksektir. Bu bir yanlılık hükmü değildir.",
-    how: orHow(["Oranlar: " + top.map(function (b) { return SIDE[b].toLocaleLowerCase("tr") + " " + orP(rate(b)) + " (" + R.hit[b] + " / " + R.cov[b] + ")"; }).join(", ") + "; çizgiler %95 Wilson aralığıdır.",
-      "Kaynak: en çok kurumun verdiği olaylarda YZ incelemesi; editörün reddettiği sonuçlar sayılmaz. Birim: incelenen " + orN(R.nEv) + " olay.",
-      "Oran = bloktan en az bir başlığı kanıt olarak alıntılanan olay / bloğun yer aldığı incelenen olay. Kurum bazında oranlar Kurumlar sayfasındadır."], "yz") };
-}
-
 function orDil() {
-  var fs = [orFindRange(), orFindLoaded(), orFindTop20(), orFindWords(), orFindStyle(), orFindAI()];
+  var fs = [orFindRange(), orFindLoaded(), orFindTop20(), orFindWords(), orFindStyle(), orFindYZConcepts(), orFindYZWording(), orFindYZHeat()];
   return orPage("dil", fs, orExamples("dil"));
 }
 
@@ -615,7 +571,7 @@ function orFindTrend() {
 }
 
 function orAnlati() {
-  return orPage("anlati", [orFindDims(), orFindBlame(), orFindTrend()], orExamples("anlati"));
+  return orPage("anlati", [orFindDims(), orFindBlame(), orFindYZBlame(), orFindTrend()], orExamples("anlati"));
 }
 
 /* ======================================================= hiz */
@@ -733,17 +689,18 @@ function orExamples(q) {
 }
 
 function orSecim() {
-  var fs = [orFindCoverage(), orFindBlind(), orFindAgenda(), orFindTopics(), orFindWeekly()];
+  var fs = [orFindCoverage(), orFindBlind(), orFindAgenda(), orFindTopics(), orFindWeekly(), orFindYZWhere()];
   return orPage("secim", fs, orExamples("secim"));
 }
 
 function pgOruntu(q) {
-  var k = OR_PAGES[q && q.q] ? q.q : "secim";
+  if (q && q.q === "yz" && q.k) return orYZDetail(q);  /* a concept's findings; not a tab of its own */
+  var k = OR_PAGES[q && q.q] ? q.q : "genel";
+  if (k === "genel") return orGenel();
   if (k === "secim") return orSecim();
   if (k === "dil") return orDil();
   if (k === "anlati") return orAnlati();
   if (k === "hiz") return orHiz();
-  if (k === "yz") return orYZ(q);
   return orSecim();
 }
 
@@ -763,8 +720,8 @@ function wireOruntu(q, f) {
   var root = document.getElementById("view"); if (!root) return;
   orWire(root); wireGo(root);
   if (f) setTimeout(function () { var t = document.getElementById(f); if (t) t.scrollIntoView({ block: "start" }); }, 30);
-  q = OR_PAGES[q] ? q : "secim";
-  if (q === "yz") aiMount(root);
+  q = OR_PAGES[q] ? q : "genel";
+  aiMount(root);
   if (q === "secim") {
     orPut("adv-a", advHeat());
   }

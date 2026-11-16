@@ -192,15 +192,17 @@ MOTION_K.scene = function (el, first) {
     end: function () { return "bottom " + (top() + claim.offsetHeight + 24) + "px"; }, pin: claim, pinSpacing: false, toggleClass: "is-pin" });
   if (g6 && !(first && motionInView(g6))) gsap.from(g6, { scale: .86, opacity: 0, duration: 1.2, ease: "power3.out", scrollTrigger: { trigger: g6, start: "top 85%" } });
   var rows = g6 ? [] : [].slice.call(viz.querySelectorAll(".vz-r:not(.vz-ax),.or-bar")), bars = viz.querySelectorAll(".vz-span,.or-bt i");
-  /* statistics (ρ, AUC, κ, a fixed 0,50) must never be shown mid-count: such claims opt out (data-nocount) */
-  var ns = el.hasAttribute("data-nocount") ? [] : motionNums(claim), os = ns.map(function (b) { var t = b.textContent; return { v: 0, n: +t.replace(/\./g, "").replace(",", "."), d: (t.split(",")[1] || "").length, t: t }; });
+  /* data-nocount: the block brings its own D3 motion and its claim carries statistics (ρ, AUC, κ, a fixed 0,50)
+     that must never be shown mid-count, so neither the counts nor the row fade apply */
+  var noCount = el.hasAttribute("data-nocount");
+  var ns = noCount ? [] : motionNums(claim), os = ns.map(function (b) { var t = b.textContent; return { v: 0, n: +t.replace(/\./g, "").replace(",", "."), d: (t.split(",")[1] || "").length, t: t }; });
   var nfs = {}, nf = function (d) { return nfs[d] || (nfs[d] = new Intl.NumberFormat("tr", { minimumFractionDigits: d, maximumFractionDigits: d })); };
   var tl, show = function () {
     var p = tl.progress();
     ns.forEach(function (b, i) { var o = os[i]; b.textContent = p > 0 && p < 1 ? nf(o.d).format(o.v) : o.t; });
   };
   tl = gsap.timeline({ onUpdate: show, scrollTrigger: { trigger: viz, start: "top 85%", end: "bottom 55%", scrub: .6, onLeave: show, onLeaveBack: show } });
-  if (!g6 && !el.hasAttribute("data-nocount")) tl.from(rows.length ? rows : viz, { opacity: 0, y: 24, duration: .4, stagger: .08, ease: "power2.out" }, 0);
+  if (!g6 && !noCount) tl.from(rows.length ? rows : viz, { opacity: 0, y: 24, duration: .4, stagger: .08, ease: "power2.out" }, 0);
   if (bars.length) tl.from(bars, { scaleX: 0, transformOrigin: "0 50%", duration: .4, stagger: .08, ease: "power2.out" }, .1);
   var d = Math.max(.6, tl.duration());
   os.forEach(function (o) { tl.to(o, { v: o.n, duration: d, ease: "power1.out", onUpdate: function () { if (!o.d) o.v = Math.round(o.v); } }, 0); });

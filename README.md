@@ -37,10 +37,12 @@ reports and a promotion gate for detector changes. The data, events and analyses
 Both AI passes were rerun on the 150 widest events of the 8.1 data, with the 17 media-technique cards live (taken live
 for this test build before owner approval and the lab gate). Every finding is shown alike, labelled **AI imzalı**, with
 three texts composed from the reviewers' own fields (`biasguard/explain_rules.py`): Ne fark etti, Ne anlama geliyor,
-Neden kesin değil. Örüntüler has a fifth page, **AI ne buldu** (`#/oruntu?q=yz`), which sets the AI findings against the
-rule-based measures (`python -m capraz_pipeline.aix`, key AIX): AI wording citations are nearly unrelated to the
-rule-based loaded-language score (headline AUC 0.48), blocs differ by a few points at most, and AI responsibility framing
-barely agrees with Anlatı haritası's 'sorumlu tutulan' (κ 0.08). Charts use D3 7.9.0 (`public/vendor/d3.min.js`). The
+Neden kesin değil. Örüntüler opens on **Genel bakış** (`#/oruntu?q=genel`): every outlet on nine measures
+(registry, rule-based, Anlatı haritası, AI imzalı), a Spearman matrix with permutation p-values and Benjamini-Hochberg
+q (click a cell for the scatter), and linked outlet strips. The AI analyses sit on the page their question belongs to
+(`python -m capraz_pipeline.aix`, key AIX): AI concepts, AI wording vs the rule-based loaded-language score (headline
+AUC 0.48) and technique x bloc on Nasıl anlatıyor; AI responsibility framing vs Anlatı haritası's 'sorumlu tutulan'
+(κ 0.08) on Kimi sorumlu tutuyor; where findings cluster on Kim neyi haber yapıyor. Charts use D3 7.9.0 (`public/vendor/d3.min.js`). The
 look returns to the Rebrand Proposal tokens (newsprint, Newsreader, IBM Plex, Bricolage Grotesque). **8.2'de yeni**
 (`#/yeni82`) compares this build with the earlier 8.2.
 

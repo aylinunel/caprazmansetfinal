@@ -31,5 +31,14 @@ class ComposeTest(unittest.TestCase):
         self.assertTrue(x["why"].startswith("Eksik bilgi:"))
 
 
+class SyncTest(unittest.TestCase):
+    def test_behavioural_texts_match_the_site(self):
+        from pathlib import Path
+        from biasguard.explain_rules import BEHAVIOURAL_MEANS
+        js = (Path(__file__).resolve().parents[1] / "site" / "js" / "v7" / "aiimza.js").read_text(encoding="utf-8")
+        for k, v in BEHAVIOURAL_MEANS.items():
+            self.assertIn(f'"{k}": "{v}"', js, k)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -18,8 +18,8 @@ OUT = REPO / "data" / "reference" / "whatsnew-82.json"
 COLS = ["Önceki 8.2", "Yeni 8.2"]
 
 
-def _tr(x: float) -> str:
-    return f"{x:.2f}".replace(".", ",")
+def _tr(x: float | None) -> str:
+    return "—" if x is None else f"{x:.2f}".replace(".", ",")
 
 
 def _done(bg: dict) -> list[dict]:
@@ -27,12 +27,12 @@ def _done(bg: dict) -> list[dict]:
 
 
 def _findings(bg: dict) -> list[tuple[str, dict]]:
-    return [(e["event"], f) for e in _done(bg) for k in ("supported", "uncertain", "effects") for f in e.get(k, [])]
+    # the findings the site shows (bg7Live, aix._live): contextual effects are kept in the pack but not shown
+    return [(e["event"], f) for e in _done(bg) for k in ("supported", "uncertain") for f in e.get(k, [])]
 
 
-def _top(bg: dict, n: int = 5) -> list[tuple[str, int]]:
-    c = Counter(f["name"] for _, f in _findings(bg))
-    return c.most_common(n)
+def _top(fs: list[tuple[str, dict]], n: int | None = 5) -> list[tuple[str, int]]:
+    return Counter(f["name"] for _, f in fs).most_common(n)
 
 
 def compare(old: dict, new: dict, media: dict | None, aix: dict | None = None) -> dict:
@@ -40,6 +40,8 @@ def compare(old: dict, new: dict, media: dict | None, aix: dict | None = None) -
     ev_old, ev_new = {e["event"] for e in old["events"]}, {e["event"] for e in new["events"]}
     both = ev_old & ev_new
     fo, fn = _findings(old), _findings(new)
+    fm = _findings(media) if media else []
+    old_top = dict(_top(fo, None))
     hit = lambda fs: len({e for e, _ in fs})
     out = []
     out.append({"id": "olaylar", "tag": "değişti", "title": "İncelenen olaylar 8.1 verisinden yeniden seçildi",
@@ -49,12 +51,12 @@ def compare(old: dict, new: dict, media: dict | None, aix: dict | None = None) -
                                        ["İki listede ortak olay", len(both), len(both)]],
                 "note": "Ortak olaylarda bile başlık seti farklı: 8.1’de olayı veren kurum sayısı arttı, metin yeniden kuruldu."})
     if media:
-        sm, fm = media["summary"], _findings(media)
+        sm = media["summary"]
         out.append({"id": "medya", "tag": "yeni", "title": "Medyanın oyunları artık canlı",
                     "claim": f"{sm['catalog']} medya tekniği kartı (sözcük seçimi, etiketleme, vurgu çerçevelemesi …) ayrı bir AI incelemesiyle "
                              f"{sm['completed']} olayda çalıştırıldı: {len(fm)} bulgu, {hit(fm)} olayda en az bir teknik.",
                     "cols": COLS, "rows": [["Medya tekniği bulgusu", "—", len(fm)], ["Bulgulu olay", "—", hit(fm)]] +
-                                          [[f"En sık: {n}", "—", k] for n, k in _top(media)],
+                                          [[f"En sık: {n}", "—", k] for n, k in _top(fm)],
                     "note": "Önceki sürümde bu grup bütün olaylarda “incelenemedi” yazıyordu." +
                             (f" {sm['incomplete'] + sm['notAttempted']} olayın medya incelemesi bu deneme sürümünde tamamlanmadı; o olaylarda grup “incelenemedi” yazar."
                              if sm["incomplete"] + sm["notAttempted"] else "")})
@@ -62,7 +64,7 @@ def compare(old: dict, new: dict, media: dict | None, aix: dict | None = None) -
                 "claim": f"Bulgu sayısı önce {len(fo)}, şimdi {len(fn)}; en az bir bulgusu olan olay önce {hit(fo)}, şimdi {hit(fn)}.",
                 "cols": COLS, "rows": [["Bulgu", len(fo), len(fn)], ["Bulgulu olay", hit(fo), hit(fn)],
                                        ["Doğrulanmış alıntı", so["quotesVerified"], sn["quotesVerified"]]] +
-                                      [[f"En sık: {n}", dict(_top(old, 20)).get(n, 0), k] for n, k in _top(new)]})
+                                      [[f"En sık: {n}", old_top.get(n, 0), k] for n, k in _top(fn)]})
     keep = [(e, f["id"]) for e, f in fo if e in both]
     new_ids = {(e, f["id"]) for e, f in fn}
     again = sum(k in new_ids for k in keep)
@@ -75,16 +77,16 @@ def compare(old: dict, new: dict, media: dict | None, aix: dict | None = None) -
                 "claim": f"Önceki sürümde {so.get('aiConfident', 0)} bulgu “AI onaylı”, {so.get('needsHuman', 0)} bulgu “insan kontrolü bekliyor” "
                          "etiketiyle ayrılıyordu. Artık bulunan her şey aynı biçimde yayında; durum etiketi yalnızca Yönetim’de duruyor.",
                 "cols": COLS, "rows": [["Kamuda etiketle ayrılan bulgu", so.get("aiConfident", 0) + so.get("needsHuman", 0), 0],
-                                       ["Kamuda gösterilen bulgu", len(fo), len(fn) + (len(_findings(media)) if media else 0)]]})
+                                       ["Kamuda gösterilen bulgu", len(fo), len(fn) + len(fm)]]})
     expl = lambda bg: sum(1 for _, f in _findings(bg) if f.get("explain", {}).get("means"))
     out.append({"id": "anlam", "tag": "yeni", "title": "Her bulgunun yanında “Ne anlama geliyor”",
                 "claim": "Bulgular artık üç kısa metinle gelir: ne fark edildi, okur için ne anlama geliyor, neden kesin değil. "
-                         "Örüntüler › AI ne buldu iki grubun bütün bulgularını kavram kavram listeler.",
+                         "Örüntüler › Nasıl anlatıyor iki grubun bütün bulgularını kavram kavram listeler.",
                 "cols": COLS, "rows": [["“Ne anlama geliyor” metni olan bulgu", 0, expl(new) + (expl(media) if media else 0)]]})
     if aix:
         w, b = aix["wording"], aix["blame"]
         out.append({"id": "kural", "tag": "yeni", "title": "AI bulguları sitenin kural tabanlı ölçümleriyle karşılaştırıldı",
-                    "claim": "Örüntüler’e “AI ne buldu” eklendi; AI imzalı bulgular yüklü dil puanı, bloklar ve anlatı haritasıyla yan yana. "
+                    "claim": "Örüntüler yeniden düzenlendi: “Genel bakış” her kurumu kural tabanlı ve AI imzalı bütün ölçülerde yan yana gösteriyor; AI bulguları konusuna göre öteki sayfalara yerleşti. "
                              f"AI’nin sözcük tekniği alıntıları kural tabanlı yüklü dil puanıyla neredeyse ilişkisiz (başlık düzeyinde AUC {_tr(w['headlines']['auc'])}, "
                              f"yazı tura 0,50); sorumluluk çerçevesi ile anlatı haritasının ‘sorumlu tutulan’ kodu da az örtüşüyor (κ {_tr(b['kappa'])}).",
                     "rows": [["AI ile karşılaştırılan kurum", "—", len(w["outlets"])], ["Karşılaştırılan başlık", "—", w["headlines"]["cited"] + w["headlines"]["notCited"]],
@@ -96,7 +98,7 @@ def compare(old: dict, new: dict, media: dict | None, aix: dict | None = None) -
     out.append({"id": "sinir", "tag": "uyarı", "title": "Bu bir deneme sürümü",
                 "claim": "Medya kartları sahip onayı ve laboratuvar sınaması beklenmeden canlıya alındı. Hiçbir bulgu insan tarafından doğrulanmadı; "
                          "bir olayda bulgu olmaması o olayda teknik ya da yanlılık olmadığı anlamına gelmez."})
-    n_all = len(fn) + (len(_findings(media)) if media else 0)
+    n_all = len(fn) + len(fm)
     return {"lede": f"8.2’nin AI incelemesi güncellenen algoritmayla baştan çalıştırıldı: medya teknikleri artık canlı, bütün bulgular ayrımsız yayında, "
                     f"her bulgu ne anlama geldiğiyle birlikte veriliyor. Aşağıda önceki 8.2 incelemesi (8.0 olayları) ile yenisi (8.1 verisi) yan yana.",
             "band": f"Yeniden çalışan AI incelemesi: {n_all} bulgu, medya teknikleri canlı, önceki sürümle karşılaştırma.",

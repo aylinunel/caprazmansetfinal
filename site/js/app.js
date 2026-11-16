@@ -4305,7 +4305,7 @@ function v2bAfter(path, tab, params) {
   if (path === "/olay") olayFitBar();
   g6Mount(document.getElementById("view"));
   dmHeads(document.getElementById("view")); dmMount(document.getElementById("view")); fogMount(document.getElementById("view")); dmFeedWatch(document.getElementById("view"));
-  if (path === "/oruntu") wireOruntu(params.q || "secim", params.f);
+  if (path === "/oruntu") wireOruntu(params.q || "genel", params.f);
   if (path === "/olaylar" && tab === "ilan") wireIlan();
   if (path === "/olaylar" && tab === "liste") {
     [].forEach.call(document.querySelectorAll("[data-tchip]"), function (b) {
@@ -6270,7 +6270,7 @@ function route() {
   var skip = '<a class="skip visually-hidden focusable" href="#view">İçeriğe atla</a>';
   document.getElementById("app").innerHTML = skip + (admin
     ? adminShell(tab) + '<main id="view" tabindex="-1">' + fn(params) + "</main>" + adminFoot()
-    : navHTML(path, home, tab || (path === "/oruntu" ? params.q || "secim" : path === "/anlati" ? anPage(params) : null)) + '<main id="view" tabindex="-1">' + fn(params) + "</main>" + footer2());
+    : navHTML(path, home, tab || (path === "/oruntu" ? params.q || "genel" : path === "/anlati" ? anPage(params) : null)) + '<main id="view" tabindex="-1">' + fn(params) + "</main>" + footer2());
   closeModal();
   if (MOTION.lenis) MOTION.lenis.scrollTo(0, { immediate: true, force: true }); else scrollTo(0, 0);
   if (!admin) layoutPills();

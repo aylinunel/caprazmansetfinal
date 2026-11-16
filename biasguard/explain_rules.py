@@ -20,7 +20,7 @@ from typing import Any
 
 from .news import _inputs, explain_dir, validate_explain
 
-# What each media technique means for a reader (kept in step with MEDIA_TR in site/js/v7/bulgu82.js).
+# What each media technique means for a reader (the per-finding view; site/js/v7/aiimza.js MEDIA_TR describes the technique itself).
 MEDIA_MEANS = {
     "ad-hominem": "Okura iddianın kendisi yerine onu söyleyen kişi hakkında bir yargı veriliyor.",
     "causal-overclaim": "Okura, metnin kanıtlamadığı bir neden-sonuç bağı hazır sunuluyor.",
@@ -40,7 +40,8 @@ MEDIA_MEANS = {
     "thematic-framing": "Okur olayı tek vakadan çok genel bir eğilimin parçası olarak görüyor.",
     "word-choice": "Okurun olaya bakışını, kurumun aynı olgu için seçtiği sözcüğün tonu belirliyor.",
 }
-# Behavioural concepts that have no Turkish definition in the concept registry (core.bin key BR)
+# Behavioural concepts that have no Turkish definition in the concept registry (core.bin key BR);
+# the same texts are BEHAV_TR in site/js/v7/aiimza.js (test_explain_rules checks they match)
 BEHAVIOURAL_MEANS = {
     "framing-effect": "Aynı olgu farklı sunulunca okurun ondan çıkardığı yargı da değişebilir.",
     "leveling-and-sharpening": "Aktarıldıkça bazı ayrıntılar silinip bazıları keskinleşir; okur olayın sadeleşmiş bir sürümünü görür.",

@@ -2809,10 +2809,10 @@ body{background:var(--paper);color:var(--ink);font-family:var(--ff-b)}
 ::selection{background:var(--hl);color:#1B1813}
 .brand-txt{font-family:var(--ff-w);font-weight:800;letter-spacing:-.01em}
 h1,.phead h1,.v7-claim,.xh1{font-family:var(--ff-d)}
-.num,.mono,.v7-read,.or-hint b,td.r,.num b{font-variant-numeric:tabular-nums}
+.num,.mono,.v7-read,.or-hint b,td.r{font-variant-numeric:tabular-nums}
 
 /* contrast: secondary text on newsprint takes soft ink (6.3:1), never lighter */
-.or-hint,.xsmall,.sub,.v7-note,.v7-read,.lede{color:var(--ink2)}
+.sub,.v7-note,.v7-read,.lede{color:var(--ink2)}
 .xsmall,.or-hint{color:var(--muted)}
 .v7-read{font-size:13px;line-height:1.55}
 
@@ -2893,24 +2893,36 @@ h1,.phead h1,.v7-claim,.xh1{font-family:var(--ff-d)}
 .ai-wait,.ai-fail{font:12px var(--ff-m);color:var(--muted);padding:40px 0;text-align:center}
 
 /* 2x2 agreement table */
-.ai-2x2{border-collapse:separate;border-spacing:6px;width:100%;max-width:640px;margin:4px 0 8px}
-.ai-2x2 th{font:500 11px/1.4 var(--ff-m);letter-spacing:.06em;color:var(--ink2);text-align:left;padding:6px 8px;vertical-align:bottom}
-.ai-2x2 th[scope=row]{max-width:200px}
-.ai-x{background:var(--np);border:1px solid var(--np-line);border-radius:8px;padding:14px 16px;vertical-align:top}
+.ai-x{background:var(--np);border:1px solid var(--np-line);border-radius:8px;padding:14px 16px}
 .ai-x b{display:block;font:500 30px/1 var(--ff-d);color:var(--ink)}
 .ai-x span{font:500 12px var(--ff-m);color:var(--muted)}
 .ai-x.on{border:2px solid var(--ink)}
 .ai-x.on span{color:var(--hot)}
-.ai-detail .phead h1{font-family:var(--ff-d)}
-.ai-2x2{table-layout:fixed}
-.ai-2x2 th,.ai-2x2 td{border:0;box-shadow:none}
-.ai-2x2 thead th{vertical-align:bottom;padding:0 8px 6px;border-bottom:2px solid var(--ink)}
-.ai-2x2 thead th:first-child{border-bottom:0}
-.ai-2x2 th[scope=row]{vertical-align:middle;padding:0 12px 0 0;border-right:2px solid var(--ink);text-align:right}
-@media (max-width:600px){.ai-2x2 th{font-size:10px}.ai-x b{font-size:24px}.ai-x{padding:10px}}
-/* 2x2 as a grid (replaces the table rules above) */
-div.ai-2x2{display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,1fr) minmax(0,1fr);gap:8px;max-width:680px;margin:4px 0 10px;border-spacing:0}
+@media (max-width:600px){.ai-x b{font-size:24px}.ai-x{padding:10px}}
+/* 2x2 agreement grid */
+.ai-2x2{display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,1fr) minmax(0,1fr);gap:8px;max-width:680px;margin:4px 0 10px}
 .ai-ch,.ai-rh{font:500 11px/1.4 var(--ff-m);letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
 .ai-ch{align-self:end;padding:0 4px 6px;border-bottom:2px solid var(--ink)}
 .ai-rh{align-self:center;text-align:right;padding-right:12px;border-right:2px solid var(--ink);min-height:100%;display:flex;align-items:center;justify-content:flex-end}
-@media (max-width:600px){div.ai-2x2{grid-template-columns:96px 1fr 1fr}.ai-ch,.ai-rh{font-size:9.5px;letter-spacing:.02em}}
+@media (max-width:600px){.ai-2x2{grid-template-columns:96px 1fr 1fr}.ai-ch,.ai-rh{font-size:9.5px;letter-spacing:.02em}}
+
+/* Genel bakış: correlation matrix beside the pair it selects; outlet strips under a picker */
+.ai-mxwrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px;align-items:start}
+@media (max-width:980px){.ai-mxwrap{grid-template-columns:1fr}}
+.ai-mxc{cursor:pointer}.ai-mxc rect{transition:stroke .15s}
+.ai-mxc:hover rect,.ai-mxc:focus rect{stroke:var(--ink);stroke-width:1.5;stroke-dasharray:none}
+.ai-mxc.on rect{stroke:var(--hot);stroke-width:3;stroke-dasharray:none}
+.ai-mxv{font:600 12.5px var(--ff-m);pointer-events:none}
+.ai-pt{font:500 22px var(--ff-d);fill:var(--ink)}
+.ai-ps{font:500 11px var(--ff-m);letter-spacing:.04em;fill:var(--muted)}
+.ai-key{display:inline-flex;align-items:center;gap:5px;margin-left:12px;font:500 11px var(--ff-m);color:var(--ink2)}
+.ai-key i{width:7px;height:7px;border-radius:50%;background:var(--ink)}.ai-key .k-ai{background:var(--hot)}.ai-key .k-kayit{background:var(--mid)}
+.ai-pickrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 6px}
+.ai-pickrow select{min-height:44px;padding:8px 36px 8px 14px;border:1px solid var(--ink);border-radius:999px;background:var(--np);color:var(--ink);font:500 15px var(--ff-b)}
+.ai-kindt{font:500 10px var(--ff-m);letter-spacing:.12em;text-transform:uppercase}
+.ai-sv{font:600 12px var(--ff-m);fill:var(--ink)}
+.ai-sd{transition:opacity .2s,r .2s}
+.ai-colm{font:500 11.5px var(--ff-b);fill:var(--ink2)}
+/* phones: the matrix keeps a readable size and scrolls sideways inside its box (the page itself never scrolls sideways) */
+.ai-d3[data-ai="matrix"],.ai-d3[data-ai="strips"],.ai-d3[data-ai="heat"]{overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media (max-width:640px){.ai-mx{min-width:560px}.ai-strips{min-width:620px}.ai-d3[data-ai="heat"] svg{min-width:560px}}

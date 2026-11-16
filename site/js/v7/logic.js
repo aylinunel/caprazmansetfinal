@@ -289,7 +289,8 @@ var KURUM_TABS = { liste: 1, karsilastir: 1, partiler: 1, kayit: 1 };
 function redirectRoute(path, params) {
   params = params || {};
   if (path.indexOf("/bulgular") === 0) return "/oruntu?q=secim";
-  if (path === "/yz") return "/oruntu?q=yz" + (params.k ? "&g=" + (params.g || "medya") + "&k=" + encodeURIComponent(params.k) : "");
+  if (path === "/yz") return params.k ? "/oruntu?q=yz&g=" + encodeURIComponent(params.g || "medya") + "&k=" + encodeURIComponent(params.k) : "/oruntu?q=dil&f=dil-yz-kavram";
+  if (path === "/oruntu" && params.q === "yz" && !params.k) return "/oruntu?q=dil&f=dil-yz-kavram";
   if (path.indexOf("/yanlilik") === 0) return params.t === "kutuphane" ? "/yontem?s=kavramlar" : "/oruntu?q=dil";
   if (path === "/harita") return "/kurumlar?t=liste&v=harita";
   if (path === "/karsilastir") return "/kurumlar?t=karsilastir";

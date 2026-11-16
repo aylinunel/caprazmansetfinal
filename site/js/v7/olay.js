@@ -74,19 +74,15 @@ function olayHeadlines(e) {
     ledeButton5() + '<div id="alist"></div>' + fixLink("olay", e.i, e.t) + "</section>";
 }
 
-function olayFinding(f, x, media) {
-  if (yzText(f, rev7For(x, f))) return aiCard({ x: x, f: f }, media, false);
-  return "";
-}
 /* AI review of an event in two groups: Medyanın oyunları (what the text does) first, then behavioural
    biases. Rule-based scorer hits are listed beside the AI findings and never added to them. */
-function olayGroups(e) {
-  var x = bg7ev(e.i), m = bgm7ev(e.i);
+function olayGroups(e, x, m) {
+  if (x === undefined) { x = bg7ev(e.i); m = bgm7ev(e.i); }
   var pack = function (ev) { return ev ? { status: ev.status, findings: ev.status === "review_complete" ? rev7Sorted(ev) : [] } : null; };
   return findingGroups(pack(x), pack(m));
 }
 function olayReview(e) {
-  var x = bg7ev(e.i), m = bgm7ev(e.i), groups = olayGroups(e);
+  var x = bg7ev(e.i), m = bgm7ev(e.i), groups = olayGroups(e, x, m);
   if (!groups.length) return "";
   var rules = mediaRuleCounts(e.a.map(function (i) { return ART[i]; }).filter(Boolean));
   return groups.map(function (g) {
@@ -95,7 +91,7 @@ function olayReview(e) {
     else {
       var n = g.findings.length;
       h += '<h4 class="v7-grp-h">AI incelemesi</h4>' + (n ? '<p class="rv-line">' + n + " bulgu.</p>" : "") +
-        '<div class="ai-grid one">' + g.findings.map(function (f) { return olayFinding(f, src, media); }).join("") + "</div>";
+        '<div class="ai-grid one">' + g.findings.map(function (f) { return aiCard({ x: src, f: f }, media, false); }).join("") + "</div>";
     }
     if (media && rules.length) h += '<h4 class="v7-grp-h">Kural tabanlı ölçüm</h4><p class="rv-line">Başlıklarda kural tabanlı puanlayıcının işaretlediği teknikler (AI bulgularıyla toplanmaz): ' +
       rules.map(function (r) { return esc(r.tr) + " " + r.n + " başlıkta"; }).join(" · ") + ".</p>";
@@ -135,7 +131,7 @@ function pgOlay7(q) {
   logStory(e.i);
   var nk = NBYEV[e.i], x = bg7ev(e.i), deep = "";
   if (nk && narrOk(nk) && D.N[nk]) deep += olayDeep("narr", "Anlatı ayrıntısı", '<div id="v7-map" data-key="' + esc(nk) + '"></div>');
-  if (olayGroups(e).length) deep += olayDeep("yz", "AI ne fark etti?", "");
+  if (olayGroups(e, x, bgm7ev(e.i)).length) deep += olayDeep("yz", "AI ne fark etti?", "");
   if (v3on("echoChain") && (CM3.clusters(D).byEvent[e.i] || []).length) deep += olayDeep("echo", "Benzer başlıklar", "");
   return '<div class="wrap page xstory">' + olayHead(e) + olayKisaca(e) + splitBlock(e) + olayHeadlines(e) + olayTiming(e) + deep + olayOutlets(e) + "</div>";
 }

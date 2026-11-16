@@ -1,6 +1,6 @@
 {
  "lede": "8.2’nin AI incelemesi güncellenen algoritmayla baştan çalıştırıldı: medya teknikleri artık canlı, bütün bulgular ayrımsız yayında, her bulgu ne anlama geldiğiyle birlikte veriliyor. Aşağıda önceki 8.2 incelemesi (8.0 olayları) ile yenisi (8.1 verisi) yan yana.",
- "band": "Yeniden çalışan AI incelemesi: 967 bulgu, medya teknikleri canlı, önceki sürümle karşılaştırma.",
+ "band": "Yeniden çalışan AI incelemesi: 913 bulgu, medya teknikleri canlı, önceki sürümle karşılaştırma.",
  "findings": [
   {
    "id": "olaylar",
@@ -34,7 +34,7 @@
    "id": "medya",
    "tag": "yeni",
    "title": "Medyanın oyunları artık canlı",
-   "claim": "17 medya tekniği kartı (sözcük seçimi, etiketleme, vurgu çerçevelemesi …) ayrı bir AI incelemesiyle 135 olayda çalıştırıldı: 580 bulgu, 135 olayda en az bir teknik.",
+   "claim": "17 medya tekniği kartı (sözcük seçimi, etiketleme, vurgu çerçevelemesi …) ayrı bir AI incelemesiyle 135 olayda çalıştırıldı: 526 bulgu, 135 olayda en az bir teknik.",
    "cols": [
     "Önceki 8.2",
     "Yeni 8.2"
@@ -43,7 +43,7 @@
     [
      "Medya tekniği bulgusu",
      "—",
-     580
+     526
     ],
     [
      "Bulgulu olay",
@@ -66,14 +66,14 @@
      93
     ],
     [
-     "En sık: Thematic framing (Bağlamsal çerçeveleme)",
-     "—",
-     59
-    ],
-    [
      "En sık: Labeling (Etiketleme)",
      "—",
      54
+    ],
+    [
+     "En sık: Attribution of responsibility framing (Sorumluluk atfı çerçevelemesi)",
+     "—",
+     26
     ]
    ],
    "note": "Önceki sürümde bu grup bütün olaylarda “incelenemedi” yazıyordu. 15 olayın medya incelemesi bu deneme sürümünde tamamlanmadı; o olaylarda grup “incelenemedi” yazar."
@@ -155,7 +155,7 @@
     [
      "Kamuda gösterilen bulgu",
      439,
-     967
+     913
     ]
    ]
   },
@@ -163,7 +163,7 @@
    "id": "anlam",
    "tag": "yeni",
    "title": "Her bulgunun yanında “Ne anlama geliyor”",
-   "claim": "Bulgular artık üç kısa metinle gelir: ne fark edildi, okur için ne anlama geliyor, neden kesin değil. Örüntüler › AI ne buldu iki grubun bütün bulgularını kavram kavram listeler.",
+   "claim": "Bulgular artık üç kısa metinle gelir: ne fark edildi, okur için ne anlama geliyor, neden kesin değil. Örüntüler › Nasıl anlatıyor iki grubun bütün bulgularını kavram kavram listeler.",
    "cols": [
     "Önceki 8.2",
     "Yeni 8.2"
@@ -180,7 +180,7 @@
    "id": "kural",
    "tag": "yeni",
    "title": "AI bulguları sitenin kural tabanlı ölçümleriyle karşılaştırıldı",
-   "claim": "Örüntüler’e “AI ne buldu” eklendi; AI imzalı bulgular yüklü dil puanı, bloklar ve anlatı haritasıyla yan yana. AI’nin sözcük tekniği alıntıları kural tabanlı yüklü dil puanıyla neredeyse ilişkisiz (başlık düzeyinde AUC 0,48, yazı tura 0,50); sorumluluk çerçevesi ile anlatı haritasının ‘sorumlu tutulan’ kodu da az örtüşüyor (κ 0,08).",
+   "claim": "Örüntüler yeniden düzenlendi: “Genel bakış” her kurumu kural tabanlı ve AI imzalı bütün ölçülerde yan yana gösteriyor; AI bulguları konusuna göre öteki sayfalara yerleşti. AI’nin sözcük tekniği alıntıları kural tabanlı yüklü dil puanıyla neredeyse ilişkisiz (başlık düzeyinde AUC 0,48, yazı tura 0,50); sorumluluk çerçevesi ile anlatı haritasının ‘sorumlu tutulan’ kodu da az örtüşüyor (κ 0,08).",
    "rows": [
     [
      "AI ile karşılaştırılan kurum",
