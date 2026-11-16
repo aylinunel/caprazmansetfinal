@@ -1,0 +1,191 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "4.1 büyüklüğünde sarsıntı kaydedildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kolombiya'da 5,4 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "'Sarsıntı' ve 'deprem' eşanlamlı ve üslup farkı taşıyor; ayrıca Posta'nın haberi farklı bir depreme (Akdeniz) ait.",
+   "alternative_explanation": "Sözcük farkları kaynak metnin farklı aktarılmasından ya da bilgi düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların kaynak aldığı resmi metin",
+    "Aynı kurumların benzer olaylardaki sözcük tercihi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar Dinar'da 4,1 büyüklüğündeki deprem 7,02 kilometre derinlikte oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AFAD duyurdu! Afyonkarahisar'da 4,1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Son Dakika derinliği, Akşam kaynağı (AFAD) öne çıkarıyor; bunlar rakip boyutlar değil teknik ayrıntı farkı.",
+   "alternative_explanation": "Boyut farkları yayın saatindeki bilgi düzeyine, hedef okur kitlesine ve başlık uzunluğuna bağlı olabilir.",
+   "missing_context": [
+    "Her kurumun tam metni",
+    "Başlıkların güncellenme geçmişi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar ve Adana'da deprem",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "CNN Türk Afyonkarahisar ve Adana depremlerini birlikte veriyor; ancak bu bir eğilim ya da seri bağlamı değil aynı gecenin iki olayının birleştirilmesi.",
+   "alternative_explanation": "Arka plan bilgisi vermek olağan haber pratiğidir; bu bir bağlam etkisidir, hata değildir.",
+   "missing_context": [
+    "Kurumun tam metnindeki bağlam bilgisinin kapsamı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde iki seçeneği tek seçenek olarak sunan bir kalıp bulunmuyor.",
+   "alternative_explanation": "Soru biçimli başlıklar ikili bir seçenek dayatmıyor; bilgi talebi biçiminde kurulmuş.",
+   "missing_context": [
+    "Yalnızca iki seçenek sunan ifade ve göz ardı edilen başka seçenek"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam ya da diğer kurumların kapsamı konunun yapısal ya da tekrarlayan bir sorun olduğunu göstermiyor; tek olayın aktarımı bu nedenle epizodik çerçeve sayılamaz.",
+   "alternative_explanation": "Tekil bir gelişmenin haberleştirilmesi haber türünün olağan biçimidir.",
+   "missing_context": [
+    "Konunun tekrarlayan ya da yapısal olduğunu gösteren veri ya da önceki vakalar"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin sorumluluğu soruşturma ya da yargılama ile belirsiz kalan bir olay içermiyor ya da başlık dilbilgisi adı geçen bir aktöre atıf işareti olmadan suç yüklemiyor.",
+   "alternative_explanation": "Başlıklar resmi açıklamaları ve kurum kararlarını aktarıyor.",
+   "missing_context": [
+    "Sorumluluğun belirsiz olduğu bir süreç ve bu süreçte aktöre suç yükleyen başlık"
+   ]
+  }
+ ]
+}

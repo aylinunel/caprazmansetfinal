@@ -1,0 +1,230 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD şokta!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ABD'de Beyaz Saray yakınlarında düzenlenen silahlı saldırıda 5 kişi vuruldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit kendi sesinde 'ABD şokta!' diyor; AA aynı saldırıyı bu sözcük olmadan, aynı olgularla veriyor.",
+   "alternative_explanation": "Değerlendirme yüklü sözcükler bazı kurumların genel başlık üslubunun parçası olabilir.",
+   "missing_context": [
+    "Kurumun aynı türdeki başka haberlerde aynı sözcükleri kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Washington'da güvenlik alarmı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "1 kişi öldü, 1'i ağır 4 kişi yaralandı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar kendi seslerinde tehdit sözcükleri kullanıyor ve metin olayın ölçeğini veriyor; ancak sözcüklerin bu ölçeğe göre orantısız olup olmadığı tartışmalı.",
+   "alternative_explanation": "Başkent yakınında, okulların kapatıldığı bir silahlı saldırıda 'alarm' gibi sözcükler olayın güvenlik boyutunu aktarıyor olabilir.",
+   "missing_context": [
+    "Olayın güvenlik etkisine dair resmi değerlendirme",
+    "Benzer olaylarda aynı kurumların sözcük tercihi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınlarında silahlı çatışma: En az 5 kişi vuruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ABD'de Beyaz Saray yakınlarında düzenlenen silahlı saldırıda 5 kişi vuruldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Hürriyet olayı 'silahlı çatışma', AA 'silahlı saldırı' olarak adlandırıyor; 'çatışma' iki taraflı bir karşılıklı ateş, 'saldırı' tek taraflı bir eylem çağrıştırıyor.",
+   "alternative_explanation": "Sözcük farkları kaynak metnin farklı aktarılmasından ya da bilgi düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların kaynak aldığı resmi metin",
+    "Aynı kurumların benzer olaylardaki sözcük tercihi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınlarında silah sesleri: Ölü ve yaralılar var, saldırgan intihar etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınlarında silah sesleri: 5 kişi vuruldu!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Türkiye Gazetesi saldırganın intiharını, BirGün vurulan kişi sayısını öne çıkarıyor; kişi ve sayı boyutları ayrışıyor.",
+   "alternative_explanation": "Boyut farkları yayın saatindeki bilgi düzeyine, hedef okur kitlesine ve başlık uzunluğuna bağlı olabilir.",
+   "missing_context": [
+    "Her kurumun tam metni",
+    "Başlıkların güncellenme geçmişi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yeni bir silahlı saldırının şokunu yaşıyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Akit 'yeni bir' saldırıdan söz ederek bir seriye işaret ediyor; ancak bir eğilim, rakam ya da önceki vaka verilmiyor.",
+   "alternative_explanation": "Arka plan bilgisi vermek olağan haber pratiğidir; bu bir bağlam etkisidir, hata değildir.",
+   "missing_context": [
+    "Kurumun tam metnindeki bağlam bilgisinin kapsamı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde iki seçeneği tek seçenek olarak sunan bir kalıp bulunmuyor.",
+   "alternative_explanation": "Soru biçimli başlıklar ikili bir seçenek dayatmıyor; bilgi talebi biçiminde kurulmuş.",
+   "missing_context": [
+    "Yalnızca iki seçenek sunan ifade ve göz ardı edilen başka seçenek"
+   ]
+  }
+ ]
+}

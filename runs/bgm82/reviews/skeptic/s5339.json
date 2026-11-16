@@ -1,0 +1,231 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SON DAKİKA! Google'a yapay zeka kıskacı! Rekabet Kurumu duyurdu: Haber özetlerine 'adil paylaşım' tedbiri",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Google’a yapay zekâ freni! Haber özetlerine 'adil paylaşım' tedbiri",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıklarda mecaz kullanılıyor; ancak bunların yerleşik deyim olup olmadığı ve rol atayıp atamadığı tartışmalı.",
+   "alternative_explanation": "'Fren' ve 'kıskaç' Türkçe haber dilinde yerleşik kalıplar olarak kullanılıyor; rol atamaktan çok kısaltma işlevi görebilir.",
+   "missing_context": [
+    "Mecazın bir eylem yolu ya da düşman rolü ima ettiğini gösteren ek ifade"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Google'a yapay zeka soruşturması! Rekabet Kurumundan haber sitelerini koruyacak kritik tedbir",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rekabet Kurulundan Google'ın yapay zeka hizmetlerine soruşturma ve geçici tedbir kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim 'kritik tedbir' ve 'haber sitelerini koruyacak' diyor, AA aynı kararı yalın veriyor; ancak 'kritik' hafif bir vurgu ve değerlendirme yükü tartışmalı.",
+   "alternative_explanation": "Değerlendirme yüklü sözcükler bazı kurumların genel başlık üslubunun parçası olabilir.",
+   "missing_context": [
+    "Kurumun aynı türdeki başka haberlerde aynı sözcükleri kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Google'a yapay zeka kıskacı: Haber özetlerine \"adil paylaşım\" tedbiri",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rekabet Kurulundan Google'ın yapay zeka hizmetlerine soruşturma ve geçici tedbir kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akşam kararı 'kıskaç', AA 'soruşturma ve geçici tedbir kararı' olarak adlandırıyor; 'kıskaç' baskı ve kuşatma çağrıştırıyor.",
+   "alternative_explanation": "Sözcük farkları kaynak metnin farklı aktarılmasından ya da bilgi düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların kaynak aldığı resmi metin",
+    "Aynı kurumların benzer olaylardaki sözcük tercihi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Google'a yapay zeka soruşturması! Rekabet Kurumundan haber sitelerini koruyacak kritik tedbir",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Google yapay zeka hizmetlerine rekabet soruşturması",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim kararın haber sitelerine sağlayacağı korumayı (kim kazanır), Bloomberg HT Google'a yönelik soruşturmayı öne çıkarıyor.",
+   "alternative_explanation": "Boyut farkları yayın saatindeki bilgi düzeyine, hedef okur kitlesine ve başlık uzunluğuna bağlı olabilir.",
+   "missing_context": [
+    "Her kurumun tam metni",
+    "Başlıkların güncellenme geçmişi"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Google'ın yapay zeka özetlerine Rekabet Kurumu incelemesi! Haber siteleri için yeni düzenleme gündemde",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Olay başlığın ana cümlesinde yer alıyor; sonuç ya da beklenen etki ancak ek bir unsur olarak veriliyor.",
+   "alternative_explanation": "Okur açısından önemli bir etkiyi olayla birlikte vermek bilgilendirme amaçlı olabilir.",
+   "missing_context": [
+    "Olayın yalnızca girişte yer aldığı, başlığın yalnızca bir öngörüyü verdiği örnek"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve girişlerde iki olay zaman sırasıyla ('ardından', 'sonrası') yan yana veriliyor; açık bir nedensellik ifadesi kurulmuyor.",
+   "alternative_explanation": "Zaman bildiren bağlaçlar olayın kronolojisini aktarmak için kullanılmış olabilir.",
+   "missing_context": [
+    "Nedensel bağı ileri süren açık bir ifade",
+    "Bağın dayandığı kanıt"
+   ]
+  }
+ ]
+}
