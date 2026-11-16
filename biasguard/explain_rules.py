@@ -12,13 +12,11 @@ quote shown is verbatim from the event text and every field is 1-2 sentences of 
 from __future__ import annotations
 
 import argparse
-import gzip
 import json
 import re
 from pathlib import Path
-from typing import Any
 
-from .news import _inputs, explain_dir, validate_explain
+from .news import _inputs, _load, explain_dir, validate_explain
 
 # What each media technique means for a reader (the per-finding view; site/js/v7/aiimza.js MEDIA_TR describes the technique itself).
 MEDIA_MEANS = {
@@ -40,27 +38,9 @@ MEDIA_MEANS = {
     "thematic-framing": "Okur olayı tek vakadan çok genel bir eğilimin parçası olarak görüyor.",
     "word-choice": "Okurun olaya bakışını, kurumun aynı olgu için seçtiği sözcüğün tonu belirliyor.",
 }
-# Behavioural concepts that have no Turkish definition in the concept registry (core.bin key BR);
-# the same texts are BEHAV_TR in site/js/v7/aiimza.js (test_explain_rules checks they match)
-BEHAVIOURAL_MEANS = {
-    "framing-effect": "Aynı olgu farklı sunulunca okurun ondan çıkardığı yargı da değişebilir.",
-    "leveling-and-sharpening": "Aktarıldıkça bazı ayrıntılar silinip bazıları keskinleşir; okur olayın sadeleşmiş bir sürümünü görür.",
-    "illusory-correlation": "Okura, aslında aralarında bağ kanıtlanmamış iki şey birbirine bağlıymış gibi görünür.",
-    "fundamental-attribution-error": "Okur olayı koşullardan çok kişilerin karakterine bağlamaya yönlendirilir.",
-    "optimism-bias": "Okura gelecek, verilerin desteklediğinden daha iyimser gösterilir.",
-    "outcome-bias": "Okur bir kararı, verildiği andaki bilgiye göre değil sonucuna göre değerlendirmeye yönlendirilir.",
-    "belief-perseverance": "Okurun eski kanaati, onu çürüten bilgi gelse de korunur.",
-    "priming": "Başlıkta önce verilen bir öğe, okurun gerisini nasıl yorumlayacağını önceden belirler.",
-    "hindsight-bias": "Olay olduktan sonra, olacağı baştan belliymiş gibi anlatılır.",
-    "messenger-effect": "Okur bilgiyi içeriğinden çok onu kimin söylediğine göre tartmaya yönlendirilir.",
-    "recency-effect": "Okurun aklında olayın en son gelişmesi kalır; önceki bağlam geri planda kalır.",
-    "illusory-truth-effect": "Bir iddia sık tekrarlandıkça okura doğruymuş gibi gelmeye başlar.",
-    "automation-bias": "Okur, bir makine ya da algoritmanın verdiği sonuca fazla güvenmeye yönlendirilir.",
-    "source-confusion": "Okur bir bilginin nereden geldiğini (iddia mı, resmî açıklama mı) karıştırabilir.",
-    "peak-end-rule": "Okurun olaydan aklında kalan, en çarpıcı anı ve sonu olur.",
-    "affect-heuristic": "Okurun olay hakkındaki yargısını bilgiden çok uyandırılan duygu belirler.",
-    "bikeshedding": "Okurun dikkati önemli konudan, tartışması kolay bir ayrıntıya kayar.",
-}
+# Behavioural concepts that have no Turkish definition in the concept registry (core.bin key BR). One source:
+# biasguard/data/behavioural_means.json, also shipped to the site as core key BMT (narratives.merge).
+BEHAVIOURAL_MEANS = json.loads((Path(__file__).resolve().parent / "data" / "behavioural_means.json").read_text(encoding="utf-8"))
 # BiasGuard card ids that the concept registry (core.bin key BR) stores under an older key (BG7ALIAS in app.js)
 BR_ALIAS = {"base-rate-fallacy": "base-rate", "gamblers-fallacy": "gambler-s-fallacy",
             "identifiable-victim-effect": "identifiable-victim", "just-world-hypothesis": "just-world",
@@ -68,10 +48,17 @@ BR_ALIAS = {"base-rate-fallacy": "base-rate", "gamblers-fallacy": "gambler-s-fal
             "levels-of-processing-effect": "levels-of-processing", "illusory-truth-effect": "illusory-truth"}
 MAX, MIN = 320, 40
 _SENT = re.compile(r"(?<=[.!?…])\s+(?=[A-ZÇĞİÖŞÜ0-9“\"'])")
+# a full stop after these does not end a sentence ("Dr. Ahmet", "vb. Ancak")
+_ABBR = {"vb", "vs", "dr", "av", "no", "prof", "doç", "yrd", "sn", "bkz", "st", "op", "örn", "mah", "cad", "sok"}
 
 
 def _first_sentence(text: str) -> str:
-    return _SENT.split((text or "").strip(), 1)[0].strip()
+    text = (text or "").strip()
+    for m in _SENT.finditer(text):
+        word = re.split(r"[\s(\[“\"']", text[:m.start()].rstrip(".!?…"))[-1]
+        if word.lower() not in _ABBR:
+            return text[:m.start()].strip()
+    return text
 
 
 def _fit(text: str) -> str:
@@ -149,7 +136,7 @@ def concept_means(f: dict, catalog: str, registry: dict[str, dict]) -> str:
 
 
 def run(run_dir: Path, core: Path, catalog: str) -> dict[str, int]:
-    c = json.loads(gzip.decompress(core.read_bytes()))
+    c = _load(core)
     names = {**c.get("SN", {}), **{s["s"]: s.get("n") or s["s"] for s in c.get("S", [])}}  # as srcName() in app.js
     registry = {b["k"]: b for b in c.get("BR", [])}
     texts = {it["event"]: it["text"] for it in _inputs(run_dir)}

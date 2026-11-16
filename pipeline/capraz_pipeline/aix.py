@@ -48,41 +48,37 @@ def wilson(k: int, n: int, z: float = 1.96) -> tuple[float, float]:
     return max(0.0, c - h), min(1.0, c + h)
 
 
+def _ranks(v: list[float]) -> list[float]:
+    """1-based ranks, ties get their average rank."""
+    o = sorted(range(len(v)), key=lambda i: v[i])
+    r, i = [0.0] * len(v), 0
+    while i < len(o):
+        j = i
+        while j + 1 < len(o) and v[o[j + 1]] == v[o[i]]:
+            j += 1
+        for t in range(i, j + 1):
+            r[o[t]] = (i + j) / 2 + 1
+        i = j + 1
+    return r
+
+
 def auc(pos: list[float], neg: list[float]) -> float:
     """P(score of a random positive > random negative), ties half (Mann-Whitney U / n1 n2)."""
     if not pos or not neg:
         return float("nan")
-    allv = sorted([(v, 1) for v in pos] + [(v, 0) for v in neg])
-    ranks, i = [0.0] * len(allv), 0
-    while i < len(allv):
-        j = i
-        while j + 1 < len(allv) and allv[j + 1][0] == allv[i][0]:
-            j += 1
-        for t in range(i, j + 1):
-            ranks[t] = (i + j) / 2 + 1
-        i = j + 1
-    r_pos = sum(r for r, (_, lab) in zip(ranks, allv) if lab)
+    r_pos = sum(_ranks(pos + neg)[:len(pos)])
     return (r_pos - len(pos) * (len(pos) + 1) / 2) / (len(pos) * len(neg))
 
 
-def spearman(x: list[float], y: list[float]) -> float:
-    def rank(v):
-        o = sorted(range(len(v)), key=lambda i: v[i])
-        r = [0.0] * len(v)
-        i = 0
-        while i < len(o):
-            j = i
-            while j + 1 < len(o) and v[o[j + 1]] == v[o[i]]:
-                j += 1
-            for t in range(i, j + 1):
-                r[o[t]] = (i + j) / 2
-            i = j + 1
-        return r
-    rx, ry = rank(x), rank(y)
+def _pearson(rx: list[float], ry: list[float]) -> float:
     mx, my = sum(rx) / len(rx), sum(ry) / len(ry)
     num = sum((a - mx) * (b - my) for a, b in zip(rx, ry))
     den = math.sqrt(sum((a - mx) ** 2 for a in rx) * sum((b - my) ** 2 for b in ry))
     return num / den if den else float("nan")
+
+
+def spearman(x: list[float], y: list[float]) -> float:
+    return _pearson(_ranks(x), _ranks(y))
 
 
 def kappa(a: int, b: int, c: int, d: int) -> float:
@@ -107,11 +103,11 @@ def perm_p(x: list[float], y: list[float], rho: float, n: int = 2000, seed: int 
     """Two-sided permutation p-value for Spearman rho (shuffling y)."""
     if rho != rho:
         return float("nan")
-    rnd, yy, hit = random.Random(seed), list(y), 0
+    # ranks move with their values under a shuffle, so rank once and shuffle the ranks (same p, same seed)
+    rnd, rx, ry, hit = random.Random(seed), _ranks(x), _ranks(y), 0
     for _ in range(n):
-        rnd.shuffle(yy)
-        r = spearman(x, yy)
-        hit += abs(r) >= abs(rho) - 1e-12
+        rnd.shuffle(ry)
+        hit += abs(_pearson(rx, ry)) >= abs(rho) - 1e-12
     return (hit + 1) / (n + 1)
 
 
@@ -362,7 +358,7 @@ def compute(core: dict, arts: dict[str, dict]) -> dict:
                              if r["n"] >= 5], key=lambda r: r["k"])}
     prof = profile(core, arts, im, ib, first)
     return _nn({"wording": wording, "heat": heat, "blame": blame, "where": where, "profile": prof,
-                "minEvents": MIN_EVENTS, "wordingIds": list(WORDING)})
+                "minEvents": MIN_EVENTS})
 
 
 def load_articles(data: Path, core: dict) -> dict[str, dict]:

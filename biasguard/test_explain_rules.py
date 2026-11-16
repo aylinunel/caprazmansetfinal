@@ -31,13 +31,12 @@ class ComposeTest(unittest.TestCase):
         self.assertTrue(x["why"].startswith("Eksik bilgi:"))
 
 
-class SyncTest(unittest.TestCase):
-    def test_behavioural_texts_match_the_site(self):
-        from pathlib import Path
-        from biasguard.explain_rules import BEHAVIOURAL_MEANS
-        js = (Path(__file__).resolve().parents[1] / "site" / "js" / "v7" / "aiimza.js").read_text(encoding="utf-8")
-        for k, v in BEHAVIOURAL_MEANS.items():
-            self.assertIn(f'"{k}": "{v}"', js, k)
+class SentenceTest(unittest.TestCase):
+    def test_abbreviations_do_not_end_a_sentence(self):
+        from biasguard.explain_rules import _first_sentence
+        self.assertEqual(_first_sentence("Bakan Dr. Ahmet Yılmaz açıkladı. İkinci cümle."), "Bakan Dr. Ahmet Yılmaz açıkladı.")
+        self.assertEqual(_first_sentence("USGS vb. Kurumlar ölçtü. Sonra."), "USGS vb. Kurumlar ölçtü.")
+        self.assertEqual(_first_sentence("Tek cümle"), "Tek cümle")
 
 
 if __name__ == "__main__":

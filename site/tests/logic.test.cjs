@@ -439,3 +439,19 @@ test("mediaRuleCounts counts only media-technique rule keys across an event's he
   const arts = [{ k: ["fear-appeal", "anchoring-bias"] }, { k: ["fear-appeal"] }, { k: [] }];
   assert.deepEqual(L.mediaRuleCounts(arts), [{ id: "fear-appeal", tr: "Korkuya başvurma", n: 2 }]);
 });
+
+test("profileSig / profileKey", () => {
+  const m = [{ a: "x", b: "y", rho: .5, q: .01 }, { a: "ai1", b: "ai2", rho: .9, q: .001 }, { a: "x", b: "ai1", rho: -.7, q: .02 }, { a: "y", b: "z", rho: .8, q: .2 }, { a: "z", b: "x", rho: null, q: null }];
+  assert.equal(L.profileSig(m[0]), true); assert.equal(L.profileSig(m[3]), false); assert.equal(L.profileSig(m[4]), false); assert.equal(L.profileSig(null), false);
+  const kind = (k) => (k.startsWith("ai") ? "ai" : "kural");
+  assert.deepEqual(L.profileKey(m, kind).map((c) => c.rho), [-.7, .5]);  // AI x AI dropped, |rho| order, q >= .05 dropped
+});
+test("profileDistance", () => {
+  const ms = [{ k: "a" }, { k: "b" }];
+  const os = [{ s: "p", m: { a: 0, b: 0 } }, { s: "q", m: { a: 0, b: 0 } }, { s: "r", m: { a: 10, b: null } }];
+  const r = L.profileDistance(os, ms);
+  assert.equal(r[0].o.s, "r");                          // the outlier first
+  assert.equal(r[0].top.length, 1);                     // only measures it has
+  assert.ok(Math.abs(r[0].d - Math.SQRT2) < 1e-9);      // z of 10 among {0,0,10}: (10-10/3)/sd
+  assert.equal(r[2].d, r[1].d);
+});

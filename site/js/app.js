@@ -13,6 +13,7 @@ var pct = function (n, d) { return d ? Math.round(100 * n / d) : 0; };
 /* ---------------------------------------------------------------- index */
 var SRC = {}; D.S.forEach(function (s) { SRC[s.s] = s; });
 var ART = {}; D.A.forEach(function (a) { ART[a.i] = a; });
+window.CM_ART = ART;  /* loader.js cmUrls fills a.u through this map */
 var BIA = {}; D.B.forEach(function (b) { BIA[b.k] = b; });
 var FRM = {}; D.F.forEach(function (f) { FRM[f.k] = f; });
 var REG = D.R.map(function (r) { return { s: r[0], n: r[1], u: r[2], v: r[3], lab: r[4] }; });
@@ -2549,6 +2550,12 @@ function sideOf(slug) { return bloc(slug); }
    placeholder that the click handler below resolves, so an early click still opens the original story. */
 function artUrl(a) { return a.u != null ? a.u : "#/git?a=" + encodeURIComponent(a.i); }
 function artUrlId(href) { return new URLSearchParams(String(href).split("?")[1] || "").get("a"); }
+/* once the URLs arrive, links already on the page become real links (hover, copy link, middle-click) */
+window.CM_URLS_READY = function () {
+  [].forEach.call(document.querySelectorAll('a[href^="#/git?a="]'), function (l) {
+    var a = ART[artUrlId(l.getAttribute("href"))]; if (a && a.u) l.setAttribute("href", a.u);
+  });
+};
 document.addEventListener("click", function (ev) {
   var l = ev.target.closest && ev.target.closest('a[href^="#/git?a="]'); if (!l) return;
   ev.preventDefault(); ev.stopPropagation();
@@ -4968,8 +4975,13 @@ function route() {
   }
   /* a placeholder opened directly (middle-click, new tab, copied link): wait for the URLs, then go to the story */
   if (path === "/git") {
-    window.cmUrls().then(function () { var a = ART[params.a]; if (a && a.u) location.replace(a.u); else location.replace("#/"); },
-      function () { location.replace("#/"); });
+    var gone = function () {
+      document.getElementById("app").innerHTML = '<section class="wrap page" role="status" style="padding:48px 0"><h1 style="font-size:22px">Haber bağlantısı açılamadı</h1>' +
+        '<p class="lede">Bağlantılar şu anda yüklenemiyor. Sayfayı yenileyip yeniden deneyin ya da <a class="lnk" href="#/">ana sayfaya dönün</a>.</p></section>';
+    };
+    var known = ART[params.a];
+    if (known && known.u) { location.replace(known.u); return; }
+    window.cmUrls().then(function () { var a = ART[params.a]; if (a && a.u) location.replace(a.u); else gone(); }, gone);
     return;
   }
   var rd = redirectRoute(path, params);

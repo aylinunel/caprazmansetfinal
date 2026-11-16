@@ -24,26 +24,8 @@ var MEDIA_TR = {
   "thematic-framing": "Olayı tek vakadan çok genel bir eğilimin parçası olarak anlatıyor.",
   "word-choice": "Aynı olgu için kurumlar farklı tonda sözcükler seçiyor."
 };
-/* behavioural concepts the registry (D.BR) has no Turkish text for; biasguard/test_explain_rules.py keeps biasguard/explain_rules.py in step */
-var BEHAV_TR = {
-  "framing-effect": "Aynı olgu farklı sunulunca okurun ondan çıkardığı yargı da değişebilir.",
-  "leveling-and-sharpening": "Aktarıldıkça bazı ayrıntılar silinip bazıları keskinleşir; okur olayın sadeleşmiş bir sürümünü görür.",
-  "illusory-correlation": "Okura, aslında aralarında bağ kanıtlanmamış iki şey birbirine bağlıymış gibi görünür.",
-  "fundamental-attribution-error": "Okur olayı koşullardan çok kişilerin karakterine bağlamaya yönlendirilir.",
-  "optimism-bias": "Okura gelecek, verilerin desteklediğinden daha iyimser gösterilir.",
-  "outcome-bias": "Okur bir kararı, verildiği andaki bilgiye göre değil sonucuna göre değerlendirmeye yönlendirilir.",
-  "belief-perseverance": "Okurun eski kanaati, onu çürüten bilgi gelse de korunur.",
-  "priming": "Başlıkta önce verilen bir öğe, okurun gerisini nasıl yorumlayacağını önceden belirler.",
-  "hindsight-bias": "Olay olduktan sonra, olacağı baştan belliymiş gibi anlatılır.",
-  "messenger-effect": "Okur bilgiyi içeriğinden çok onu kimin söylediğine göre tartmaya yönlendirilir.",
-  "recency-effect": "Okurun aklında olayın en son gelişmesi kalır; önceki bağlam geri planda kalır.",
-  "illusory-truth-effect": "Bir iddia sık tekrarlandıkça okura doğruymuş gibi gelmeye başlar.",
-  "automation-bias": "Okur, bir makine ya da algoritmanın verdiği sonuca fazla güvenmeye yönlendirilir.",
-  "source-confusion": "Okur bir bilginin nereden geldiğini (iddia mı, resmî açıklama mı) karıştırabilir.",
-  "peak-end-rule": "Okurun olaydan aklında kalan, en çarpıcı anı ve sonu olur.",
-  "affect-heuristic": "Okurun olay hakkındaki yargısını bilgiden çok uyandırılan duygu belirler.",
-  "bikeshedding": "Okurun dikkati önemli konudan, tartışması kolay bir ayrıntıya kayar."
-};
+/* behavioural concepts the registry (D.BR) has no Turkish text for: biasguard/data/behavioural_means.json, shipped as D.BMT */
+var BEHAV_TR = D.BMT || {};
 var MEDIA_NAME = {}; MEDIA_CONCEPTS.forEach(function (c) { MEDIA_NAME[c.id] = c.tr; });
 
 function aiItems(B) {
@@ -114,6 +96,8 @@ function aiMount(root) {
     });
   });
 }
+/* outlet colour key, shared by the AI scatters (lean colours are claims about outlets) */
+function aiLegend() { return legendHTML([{ c: "var(--left)", t: "sola yerleşik" }, { c: "var(--mid)", t: "merkez" }, { c: "var(--right)", t: "sağa yerleşik" }, { c: "var(--line2)", t: "yerleşimsiz" }], "Kurum"); }
 var aiBlocC = function (T, b) { return b === "left" ? T.left : b === "right" ? T.right : b === "mid" ? T.mid : T.line2; };
 function aiLum(c) { return d3.hsl(c).l; }
 
@@ -126,21 +110,15 @@ function proCell(a, b) {
   var c = D.AIX.profile.matrix.filter(function (c) { return (c.a === a && c.b === b) || (c.a === b && c.b === a); })[0];
   return c || null;
 }
-function proSig(c) { return c && c.rho != null && c.q != null && c.q < .05; }
+var proSig = profileSig;
 /* The pairs worth a sentence: significant, and not two AI measures (those share a source and agree by construction). */
-function proKey() {
-  return D.AIX.profile.matrix.filter(function (c) { return proSig(c) && !(proM(c.a).kind === "ai" && proM(c.b).kind === "ai"); })
-    .sort(function (a, b) { return Math.abs(b.rho) - Math.abs(a.rho); });
-}
+/* the pairs worth a sentence (logic.js profileKey) */
+function proKey() { return profileKey(D.AIX.profile.matrix, function (k) { return proM(k).kind; }); }
 function proPlain(c) {
   var a = proM(c.a).label.toLocaleLowerCase("tr"), b = proM(c.b).label.toLocaleLowerCase("tr");
   return c.rho > 0 ? "“" + a + "” yüksek olan kurumlarda “" + b + "” de yüksek" : "“" + a + "” yüksek olan kurumlarda “" + b + "” düşük";
 }
-function proSentence(c) {
-  var a = proM(c.a).label.toLocaleLowerCase("tr"), b = proM(c.b).label.toLocaleLowerCase("tr");
-  return (c.rho > 0 ? "“" + a + "” yüksek olan kurumlarda “" + b + "” de yüksek" : "“" + a + "” yüksek olan kurumlarda “" + b + "” düşük") +
-    " (ρ " + dec(c.rho, 2) + ", " + c.n + " kurum)";
-}
+function proSentence(c) { return proPlain(c) + " (ρ " + dec(c.rho, 2) + ", " + c.n + " kurum)"; }
 var PRO_SEL = { a: null, b: null, s: null };
 
 var AI_DRAW = {
@@ -181,7 +159,7 @@ var AI_DRAW = {
       var sc = document.querySelector('.ai-d3[data-ai="pair"]'); if (sc) { sc.innerHTML = ""; AI_DRAW.pair(sc, T); }
     };
     g.on("click", function (ev, d) { pick(d); }).on("keydown", function (ev, d) { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); pick(d); } });
-    var start = cells.filter(function (d) { return d.cell && ((d.cell.a === PRO_SEL.a && d.cell.b === PRO_SEL.b) || (d.cell.a === PRO_SEL.b && d.cell.b === PRO_SEL.a)); })[0];
+    var sel = proCell(PRO_SEL.a, PRO_SEL.b), start = sel && cells.filter(function (d) { return d.cell === sel; })[0];
     if (start) g.classed("on", function (e) { return e === start; });
     box.append(svg.node());
   },
@@ -330,7 +308,7 @@ function orFindGenelMatrix() {
   var viz = '<div class="ai-mxwrap"><div>' + aiBox("matrix", "Kurum ölçüleri arasındaki sıra korelasyonları") +
     '<p class="or-hint">Dolu kare: anlamlı ilişki; koyuluk ilişkinin gücü, işaret yönü (+ birlikte artıyor, − biri artarken öteki azalıyor). Kesik çizgili kare: anlamlı değil. ' +
     '<span class="ai-key"><i class="k-kural"></i>kural</span><span class="ai-key"><i class="k-ai"></i>AI imzalı</span><span class="ai-key"><i class="k-kayit"></i>kayıt</span></p></div>' +
-    "<div>" + aiBox("pair", "Seçili iki ölçünün kurumlara göre saçılımı") + legendHTML([{ c: "var(--left)", t: "sola yerleşik" }, { c: "var(--mid)", t: "merkez" }, { c: "var(--right)", t: "sağa yerleşik" }, { c: "var(--line2)", t: "yerleşimsiz" }], "Kurum") + "</div></div>";
+    "<div>" + aiBox("pair", "Seçili iki ölçünün kurumlara göre saçılımı") + aiLegend() + "</div></div>";
   return { id: "genel-iliski", nopin: true, nocount: true,
     claim: k0 ? P.measures.length + " ölçü arasındaki " + tested.length + " ilişkiden " + sig.length + " tanesi şansla açıklanamayacak kadar güçlü; en güçlüsü: " + esc(proPlain(k0)) + ". " + yzBadge()
       : "Ölçüler arasında şansla açıklanamayacak bir ilişki bulunmadı. " + yzBadge(),
@@ -369,17 +347,7 @@ function orFindGenelStrips() {
    mean absolute z-score over the measures an outlet has. A distance, not a verdict. */
 function orFindGenelOutliers() {
   var P = D.AIX && D.AIX.profile; if (!P || P.outlets.length < 5) return null;
-  var ms = P.measures.filter(function (m) { return m.kind !== "kayıt"; }), z = {};
-  ms.forEach(function (m) {
-    var v = P.outlets.map(function (o) { return o.m[m.k]; }).filter(function (x) { return x != null; });
-    var mu = v.reduce(function (a, b) { return a + b; }, 0) / v.length, sd = Math.sqrt(v.reduce(function (a, b) { return a + (b - mu) * (b - mu); }, 0) / v.length) || 1;
-    z[m.k] = function (x) { return (x - mu) / sd; };
-  });
-  var rows = P.outlets.map(function (o) {
-    var zs = ms.filter(function (m) { return o.m[m.k] != null; }).map(function (m) { return { m: m, z: z[m.k](o.m[m.k]) }; });
-    return { o: o, d: zs.reduce(function (a, x) { return a + Math.abs(x.z); }, 0) / zs.length,
-      top: zs.slice().sort(function (a, b) { return Math.abs(b.z) - Math.abs(a.z); }).slice(0, 2) };
-  }).sort(function (a, b) { return b.d - a.d; });
+  var ms = P.measures.filter(function (m) { return m.kind !== "kayıt"; }), rows = profileDistance(P.outlets, ms);
   var show = rows.slice(0, 10), why = function (r) { return r.top.map(function (x) { return x.m.label.toLocaleLowerCase("tr") + (x.z > 0 ? " yüksek" : " düşük"); }).join(", "); };
   var bars = vzRows(show.map(function (r) {
     return { k: r.o.s, label: srcName(r.o.s), val: dec(r.d, 2), pts: [{ v: r.d, c: "var(--" + (r.o.bloc || "line2") + ")", big: true }],
@@ -430,7 +398,7 @@ function orFindYZWording() {
     claim: "AI’nin bir başlığı sözcük tekniği için alıntılaması, kural tabanlı yüklü dil puanıyla " + verdict + ": alıntılanan başlıkların ortalama puanı " + dec(h.vCited, 1) +
       ", alıntılanmayanlarınki " + dec(h.vNot, 1) + ". " + yzBadge(),
     viz: aiBox("wording", "Kurumlara göre kural tabanlı yüklü dil puanı ve AI’nin sözcük tekniği alıntılama payı") +
-      legendHTML([{ c: "var(--left)", t: "sola yerleşik" }, { c: "var(--mid)", t: "merkez" }, { c: "var(--right)", t: "sağa yerleşik" }, { c: "var(--line2)", t: "yerleşimsiz" }], "Kurum"),
+      aiLegend(),
     read: "Her nokta bir kurum (en az " + D.AIX.minEvents + " incelenen olayı olanlar). Sağa gittikçe kural tabanlı puan yüksek, yukarı gittikçe AI daha sık alıntılamış. Dikey çizgi %95 aralık.",
     means: "Kural tabanlı puan sözcüğün kendisine bakar (“vurgun”, “skandal”); AI ise aynı olayı veren başlıkları karşılaştırır ve bir kurumun ötekilerden farklı adlandırdığı yeri işaretler. Kurumlar arasında sıra korelasyonu ρ = " + dec(A.rho, 2) +
       ", başlık düzeyinde AUC " + dec(h.auc, 2) + " (yazı tura 0,50). Birlikte okunduğunda, yüklü sözcük kullanmadan da farklı çerçeveleyen başlıklar görünür olur. En sık alıntılanan " + esc(srcName(top.s)) + " (" + orP(top.rate) + "), en seyrek " + esc(srcName(low.s)) + " (" + orP(low.rate) + ").",

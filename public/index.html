@@ -2485,7 +2485,6 @@ html.menu-lock,html.menu-lock body{overflow:hidden}
 }}
 body{background:var(--paper);color:var(--ink);font-family:var(--ff-b)}
 ::selection{background:var(--hl);color:#1B1813}
-.brand-txt{font-family:var(--ff-w);font-weight:800;letter-spacing:-.01em}
 h1,.phead h1,.v7-claim,.xh1{font-family:var(--ff-d)}
 .num,.mono,.v7-read,.or-hint b,td.r{font-variant-numeric:tabular-nums}
 
@@ -2550,7 +2549,7 @@ h1,.phead h1,.v7-claim,.xh1{font-family:var(--ff-d)}
 .ai-sub{font:500 11px var(--ff-m);letter-spacing:.06em;color:var(--muted);margin-left:6px}
 .ai-clist{list-style:none;margin:0;padding:0}
 .ai-clist li{padding:12px 0;border-bottom:1px solid var(--line)}
-.ai-clist a{display:grid;grid-template-columns:minmax(0,1fr) 90px 34px;align-items:center;gap:12px;color:var(--ink);text-decoration:none;min-height:32px}
+.ai-clist a{display:grid;grid-template-columns:minmax(0,1fr) 90px 34px;align-items:center;gap:12px;color:var(--ink);text-decoration:none;min-height:44px}
 .ai-clist a:hover .ai-cn{text-decoration:underline;text-underline-offset:3px}
 .ai-cn{font:600 15px/1.3 var(--ff-b)}
 .ai-cbar{height:6px;background:var(--sunk);border-radius:3px;overflow:hidden}.ai-cbar i{display:block;height:100%;background:var(--ink)}
@@ -2586,7 +2585,6 @@ h1,.phead h1,.v7-claim,.xh1{font-family:var(--ff-d)}
 
 /* Genel bakış: correlation matrix beside the pair it selects; outlet strips under a picker */
 .ai-mxwrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px;align-items:start}
-@media (max-width:980px){.ai-mxwrap{grid-template-columns:1fr}}
 .ai-mxc{cursor:pointer}.ai-mxc rect{transition:stroke .15s}
 .ai-mxc:hover rect,.ai-mxc:focus rect{stroke:var(--ink);stroke-width:1.5;stroke-dasharray:none}
 .ai-mxc.on rect{stroke:var(--hot);stroke-width:3;stroke-dasharray:none}
@@ -2604,7 +2602,6 @@ h1,.phead h1,.v7-claim,.xh1{font-family:var(--ff-d)}
 /* phones: the matrix keeps a readable size and scrolls sideways inside its box (the page itself never scrolls sideways) */
 .ai-d3[data-ai="matrix"],.ai-d3[data-ai="strips"],.ai-d3[data-ai="heat"]{overflow-x:auto;-webkit-overflow-scrolling:touch}
 @media (max-width:640px){.ai-mx{min-width:560px}.ai-strips{min-width:620px}.ai-d3[data-ai="heat"] svg{min-width:560px}}
-.ai-clist a{min-height:44px}
 .ai-mxwrap>div{min-width:0}
 @media (max-width:980px){.ai-mxwrap{grid-template-columns:minmax(0,1fr)}}
 
@@ -2683,8 +2680,9 @@ h1,.phead h1,.v7-claim,.xh1{font-family:var(--ff-d)}
     if (!urls) urls = Promise.all(window.DATA.meta.packs.months.map(function (m) { return load("u-" + m + ".bin"); }))
       .catch(function (e) { urls = null; throw e; })  /* a failed load can be retried */
       .then(function (ps) {
-        var by = {}; window.DATA.A.forEach(function (a) { by[a.i] = a; });
+        var by = window.CM_ART;  /* the app's id -> article map (app.js ART); no second 388k-key map */
         ps.forEach(function (p) { for (var j = 0; j < p.i.length; j++) { var a = by[p.i[j]]; if (a) a.u = "https://" + p.hosts[p.h[j]] + "/" + p.u[j]; } });
+        if (window.CM_URLS_READY) window.CM_URLS_READY();
       });
     return urls;
   };
@@ -4284,6 +4282,7 @@ var pct = function (n, d) { return d ? Math.round(100 * n / d) : 0; };
 /* ---------------------------------------------------------------- index */
 var SRC = {}; D.S.forEach(function (s) { SRC[s.s] = s; });
 var ART = {}; D.A.forEach(function (a) { ART[a.i] = a; });
+window.CM_ART = ART;  /* loader.js cmUrls fills a.u through this map */
 var BIA = {}; D.B.forEach(function (b) { BIA[b.k] = b; });
 var FRM = {}; D.F.forEach(function (f) { FRM[f.k] = f; });
 var REG = D.R.map(function (r) { return { s: r[0], n: r[1], u: r[2], v: r[3], lab: r[4] }; });
@@ -6918,6 +6917,12 @@ function sideOf(slug) { return bloc(slug); }
    placeholder that the click handler below resolves, so an early click still opens the original story. */
 function artUrl(a) { return a.u != null ? a.u : "#/git?a=" + encodeURIComponent(a.i); }
 function artUrlId(href) { return new URLSearchParams(String(href).split("?")[1] || "").get("a"); }
+/* once the URLs arrive, links already on the page become real links (hover, copy link, middle-click) */
+window.CM_URLS_READY = function () {
+  [].forEach.call(document.querySelectorAll('a[href^="#/git?a="]'), function (l) {
+    var a = ART[artUrlId(l.getAttribute("href"))]; if (a && a.u) l.setAttribute("href", a.u);
+  });
+};
 document.addEventListener("click", function (ev) {
   var l = ev.target.closest && ev.target.closest('a[href^="#/git?a="]'); if (!l) return;
   ev.preventDefault(); ev.stopPropagation();
@@ -9337,8 +9342,13 @@ function route() {
   }
   /* a placeholder opened directly (middle-click, new tab, copied link): wait for the URLs, then go to the story */
   if (path === "/git") {
-    window.cmUrls().then(function () { var a = ART[params.a]; if (a && a.u) location.replace(a.u); else location.replace("#/"); },
-      function () { location.replace("#/"); });
+    var gone = function () {
+      document.getElementById("app").innerHTML = '<section class="wrap page" role="status" style="padding:48px 0"><h1 style="font-size:22px">Haber bağlantısı açılamadı</h1>' +
+        '<p class="lede">Bağlantılar şu anda yüklenemiyor. Sayfayı yenileyip yeniden deneyin ya da <a class="lnk" href="#/">ana sayfaya dönün</a>.</p></section>';
+    };
+    var known = ART[params.a];
+    if (known && known.u) { location.replace(known.u); return; }
+    window.cmUrls().then(function () { var a = ART[params.a]; if (a && a.u) location.replace(a.u); else gone(); }, gone);
     return;
   }
   var rd = redirectRoute(path, params);
@@ -10346,8 +10356,31 @@ function mediaRuleCounts(articles) {
   }).filter(function (c) { return c.n; });
 }
 
+/* Örüntüler › Genel bakış, pure parts (aiimza.js draws them). A matrix cell is significant when q < .05
+   (Benjamini-Hochberg, capraz_pipeline/aix.py). Key pairs: significant, not two AI measures (they share a source),
+   strongest first. Distance: mean |z| over the measures an outlet has, plus its two most deviating measures. */
+function profileSig(c) { return !!(c && c.rho != null && c.q != null && c.q < .05); }
+function profileKey(matrix, kindOf) {
+  return matrix.filter(function (c) { return profileSig(c) && !(kindOf(c.a) === "ai" && kindOf(c.b) === "ai"); })
+    .sort(function (a, b) { return Math.abs(b.rho) - Math.abs(a.rho); });
+}
+function profileDistance(outlets, measures) {
+  var z = {};
+  measures.forEach(function (m) {
+    var v = outlets.map(function (o) { return o.m[m.k]; }).filter(function (x) { return x != null; });
+    var mu = v.reduce(function (a, b) { return a + b; }, 0) / v.length;
+    var sd = Math.sqrt(v.reduce(function (a, b) { return a + (b - mu) * (b - mu); }, 0) / v.length) || 1;
+    z[m.k] = function (x) { return (x - mu) / sd; };
+  });
+  return outlets.map(function (o) {
+    var zs = measures.filter(function (m) { return o.m[m.k] != null; }).map(function (m) { return { m: m, z: z[m.k](o.m[m.k]) }; });
+    return { o: o, d: zs.length ? zs.reduce(function (a, x) { return a + Math.abs(x.z); }, 0) / zs.length : 0,
+      top: zs.slice().sort(function (a, b) { return Math.abs(b.z) - Math.abs(a.z); }).slice(0, 2) };
+  }).sort(function (a, b) { return b.d - a.d; });
+}
+
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
+  module.exports = { profileSig: profileSig, profileKey: profileKey, profileDistance: profileDistance, MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
     axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS };
 }
@@ -13862,26 +13895,8 @@ var MEDIA_TR = {
   "thematic-framing": "Olayı tek vakadan çok genel bir eğilimin parçası olarak anlatıyor.",
   "word-choice": "Aynı olgu için kurumlar farklı tonda sözcükler seçiyor."
 };
-/* behavioural concepts the registry (D.BR) has no Turkish text for; biasguard/test_explain_rules.py keeps biasguard/explain_rules.py in step */
-var BEHAV_TR = {
-  "framing-effect": "Aynı olgu farklı sunulunca okurun ondan çıkardığı yargı da değişebilir.",
-  "leveling-and-sharpening": "Aktarıldıkça bazı ayrıntılar silinip bazıları keskinleşir; okur olayın sadeleşmiş bir sürümünü görür.",
-  "illusory-correlation": "Okura, aslında aralarında bağ kanıtlanmamış iki şey birbirine bağlıymış gibi görünür.",
-  "fundamental-attribution-error": "Okur olayı koşullardan çok kişilerin karakterine bağlamaya yönlendirilir.",
-  "optimism-bias": "Okura gelecek, verilerin desteklediğinden daha iyimser gösterilir.",
-  "outcome-bias": "Okur bir kararı, verildiği andaki bilgiye göre değil sonucuna göre değerlendirmeye yönlendirilir.",
-  "belief-perseverance": "Okurun eski kanaati, onu çürüten bilgi gelse de korunur.",
-  "priming": "Başlıkta önce verilen bir öğe, okurun gerisini nasıl yorumlayacağını önceden belirler.",
-  "hindsight-bias": "Olay olduktan sonra, olacağı baştan belliymiş gibi anlatılır.",
-  "messenger-effect": "Okur bilgiyi içeriğinden çok onu kimin söylediğine göre tartmaya yönlendirilir.",
-  "recency-effect": "Okurun aklında olayın en son gelişmesi kalır; önceki bağlam geri planda kalır.",
-  "illusory-truth-effect": "Bir iddia sık tekrarlandıkça okura doğruymuş gibi gelmeye başlar.",
-  "automation-bias": "Okur, bir makine ya da algoritmanın verdiği sonuca fazla güvenmeye yönlendirilir.",
-  "source-confusion": "Okur bir bilginin nereden geldiğini (iddia mı, resmî açıklama mı) karıştırabilir.",
-  "peak-end-rule": "Okurun olaydan aklında kalan, en çarpıcı anı ve sonu olur.",
-  "affect-heuristic": "Okurun olay hakkındaki yargısını bilgiden çok uyandırılan duygu belirler.",
-  "bikeshedding": "Okurun dikkati önemli konudan, tartışması kolay bir ayrıntıya kayar."
-};
+/* behavioural concepts the registry (D.BR) has no Turkish text for: biasguard/data/behavioural_means.json, shipped as D.BMT */
+var BEHAV_TR = D.BMT || {};
 var MEDIA_NAME = {}; MEDIA_CONCEPTS.forEach(function (c) { MEDIA_NAME[c.id] = c.tr; });
 
 function aiItems(B) {
@@ -13952,6 +13967,8 @@ function aiMount(root) {
     });
   });
 }
+/* outlet colour key, shared by the AI scatters (lean colours are claims about outlets) */
+function aiLegend() { return legendHTML([{ c: "var(--left)", t: "sola yerleşik" }, { c: "var(--mid)", t: "merkez" }, { c: "var(--right)", t: "sağa yerleşik" }, { c: "var(--line2)", t: "yerleşimsiz" }], "Kurum"); }
 var aiBlocC = function (T, b) { return b === "left" ? T.left : b === "right" ? T.right : b === "mid" ? T.mid : T.line2; };
 function aiLum(c) { return d3.hsl(c).l; }
 
@@ -13964,21 +13981,15 @@ function proCell(a, b) {
   var c = D.AIX.profile.matrix.filter(function (c) { return (c.a === a && c.b === b) || (c.a === b && c.b === a); })[0];
   return c || null;
 }
-function proSig(c) { return c && c.rho != null && c.q != null && c.q < .05; }
+var proSig = profileSig;
 /* The pairs worth a sentence: significant, and not two AI measures (those share a source and agree by construction). */
-function proKey() {
-  return D.AIX.profile.matrix.filter(function (c) { return proSig(c) && !(proM(c.a).kind === "ai" && proM(c.b).kind === "ai"); })
-    .sort(function (a, b) { return Math.abs(b.rho) - Math.abs(a.rho); });
-}
+/* the pairs worth a sentence (logic.js profileKey) */
+function proKey() { return profileKey(D.AIX.profile.matrix, function (k) { return proM(k).kind; }); }
 function proPlain(c) {
   var a = proM(c.a).label.toLocaleLowerCase("tr"), b = proM(c.b).label.toLocaleLowerCase("tr");
   return c.rho > 0 ? "“" + a + "” yüksek olan kurumlarda “" + b + "” de yüksek" : "“" + a + "” yüksek olan kurumlarda “" + b + "” düşük";
 }
-function proSentence(c) {
-  var a = proM(c.a).label.toLocaleLowerCase("tr"), b = proM(c.b).label.toLocaleLowerCase("tr");
-  return (c.rho > 0 ? "“" + a + "” yüksek olan kurumlarda “" + b + "” de yüksek" : "“" + a + "” yüksek olan kurumlarda “" + b + "” düşük") +
-    " (ρ " + dec(c.rho, 2) + ", " + c.n + " kurum)";
-}
+function proSentence(c) { return proPlain(c) + " (ρ " + dec(c.rho, 2) + ", " + c.n + " kurum)"; }
 var PRO_SEL = { a: null, b: null, s: null };
 
 var AI_DRAW = {
@@ -14019,7 +14030,7 @@ var AI_DRAW = {
       var sc = document.querySelector('.ai-d3[data-ai="pair"]'); if (sc) { sc.innerHTML = ""; AI_DRAW.pair(sc, T); }
     };
     g.on("click", function (ev, d) { pick(d); }).on("keydown", function (ev, d) { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); pick(d); } });
-    var start = cells.filter(function (d) { return d.cell && ((d.cell.a === PRO_SEL.a && d.cell.b === PRO_SEL.b) || (d.cell.a === PRO_SEL.b && d.cell.b === PRO_SEL.a)); })[0];
+    var sel = proCell(PRO_SEL.a, PRO_SEL.b), start = sel && cells.filter(function (d) { return d.cell === sel; })[0];
     if (start) g.classed("on", function (e) { return e === start; });
     box.append(svg.node());
   },
@@ -14168,7 +14179,7 @@ function orFindGenelMatrix() {
   var viz = '<div class="ai-mxwrap"><div>' + aiBox("matrix", "Kurum ölçüleri arasındaki sıra korelasyonları") +
     '<p class="or-hint">Dolu kare: anlamlı ilişki; koyuluk ilişkinin gücü, işaret yönü (+ birlikte artıyor, − biri artarken öteki azalıyor). Kesik çizgili kare: anlamlı değil. ' +
     '<span class="ai-key"><i class="k-kural"></i>kural</span><span class="ai-key"><i class="k-ai"></i>AI imzalı</span><span class="ai-key"><i class="k-kayit"></i>kayıt</span></p></div>' +
-    "<div>" + aiBox("pair", "Seçili iki ölçünün kurumlara göre saçılımı") + legendHTML([{ c: "var(--left)", t: "sola yerleşik" }, { c: "var(--mid)", t: "merkez" }, { c: "var(--right)", t: "sağa yerleşik" }, { c: "var(--line2)", t: "yerleşimsiz" }], "Kurum") + "</div></div>";
+    "<div>" + aiBox("pair", "Seçili iki ölçünün kurumlara göre saçılımı") + aiLegend() + "</div></div>";
   return { id: "genel-iliski", nopin: true, nocount: true,
     claim: k0 ? P.measures.length + " ölçü arasındaki " + tested.length + " ilişkiden " + sig.length + " tanesi şansla açıklanamayacak kadar güçlü; en güçlüsü: " + esc(proPlain(k0)) + ". " + yzBadge()
       : "Ölçüler arasında şansla açıklanamayacak bir ilişki bulunmadı. " + yzBadge(),
@@ -14207,17 +14218,7 @@ function orFindGenelStrips() {
    mean absolute z-score over the measures an outlet has. A distance, not a verdict. */
 function orFindGenelOutliers() {
   var P = D.AIX && D.AIX.profile; if (!P || P.outlets.length < 5) return null;
-  var ms = P.measures.filter(function (m) { return m.kind !== "kayıt"; }), z = {};
-  ms.forEach(function (m) {
-    var v = P.outlets.map(function (o) { return o.m[m.k]; }).filter(function (x) { return x != null; });
-    var mu = v.reduce(function (a, b) { return a + b; }, 0) / v.length, sd = Math.sqrt(v.reduce(function (a, b) { return a + (b - mu) * (b - mu); }, 0) / v.length) || 1;
-    z[m.k] = function (x) { return (x - mu) / sd; };
-  });
-  var rows = P.outlets.map(function (o) {
-    var zs = ms.filter(function (m) { return o.m[m.k] != null; }).map(function (m) { return { m: m, z: z[m.k](o.m[m.k]) }; });
-    return { o: o, d: zs.reduce(function (a, x) { return a + Math.abs(x.z); }, 0) / zs.length,
-      top: zs.slice().sort(function (a, b) { return Math.abs(b.z) - Math.abs(a.z); }).slice(0, 2) };
-  }).sort(function (a, b) { return b.d - a.d; });
+  var ms = P.measures.filter(function (m) { return m.kind !== "kayıt"; }), rows = profileDistance(P.outlets, ms);
   var show = rows.slice(0, 10), why = function (r) { return r.top.map(function (x) { return x.m.label.toLocaleLowerCase("tr") + (x.z > 0 ? " yüksek" : " düşük"); }).join(", "); };
   var bars = vzRows(show.map(function (r) {
     return { k: r.o.s, label: srcName(r.o.s), val: dec(r.d, 2), pts: [{ v: r.d, c: "var(--" + (r.o.bloc || "line2") + ")", big: true }],
@@ -14268,7 +14269,7 @@ function orFindYZWording() {
     claim: "AI’nin bir başlığı sözcük tekniği için alıntılaması, kural tabanlı yüklü dil puanıyla " + verdict + ": alıntılanan başlıkların ortalama puanı " + dec(h.vCited, 1) +
       ", alıntılanmayanlarınki " + dec(h.vNot, 1) + ". " + yzBadge(),
     viz: aiBox("wording", "Kurumlara göre kural tabanlı yüklü dil puanı ve AI’nin sözcük tekniği alıntılama payı") +
-      legendHTML([{ c: "var(--left)", t: "sola yerleşik" }, { c: "var(--mid)", t: "merkez" }, { c: "var(--right)", t: "sağa yerleşik" }, { c: "var(--line2)", t: "yerleşimsiz" }], "Kurum"),
+      aiLegend(),
     read: "Her nokta bir kurum (en az " + D.AIX.minEvents + " incelenen olayı olanlar). Sağa gittikçe kural tabanlı puan yüksek, yukarı gittikçe AI daha sık alıntılamış. Dikey çizgi %95 aralık.",
     means: "Kural tabanlı puan sözcüğün kendisine bakar (“vurgun”, “skandal”); AI ise aynı olayı veren başlıkları karşılaştırır ve bir kurumun ötekilerden farklı adlandırdığı yeri işaretler. Kurumlar arasında sıra korelasyonu ρ = " + dec(A.rho, 2) +
       ", başlık düzeyinde AUC " + dec(h.auc, 2) + " (yazı tura 0,50). Birlikte okunduğunda, yüklü sözcük kullanmadan da farklı çerçeveleyen başlıklar görünür olur. En sık alıntılanan " + esc(srcName(top.s)) + " (" + orP(top.rate) + "), en seyrek " + esc(srcName(low.s)) + " (" + orP(low.rate) + ").",

@@ -565,8 +565,31 @@ function mediaRuleCounts(articles) {
   }).filter(function (c) { return c.n; });
 }
 
+/* Örüntüler › Genel bakış, pure parts (aiimza.js draws them). A matrix cell is significant when q < .05
+   (Benjamini-Hochberg, capraz_pipeline/aix.py). Key pairs: significant, not two AI measures (they share a source),
+   strongest first. Distance: mean |z| over the measures an outlet has, plus its two most deviating measures. */
+function profileSig(c) { return !!(c && c.rho != null && c.q != null && c.q < .05); }
+function profileKey(matrix, kindOf) {
+  return matrix.filter(function (c) { return profileSig(c) && !(kindOf(c.a) === "ai" && kindOf(c.b) === "ai"); })
+    .sort(function (a, b) { return Math.abs(b.rho) - Math.abs(a.rho); });
+}
+function profileDistance(outlets, measures) {
+  var z = {};
+  measures.forEach(function (m) {
+    var v = outlets.map(function (o) { return o.m[m.k]; }).filter(function (x) { return x != null; });
+    var mu = v.reduce(function (a, b) { return a + b; }, 0) / v.length;
+    var sd = Math.sqrt(v.reduce(function (a, b) { return a + (b - mu) * (b - mu); }, 0) / v.length) || 1;
+    z[m.k] = function (x) { return (x - mu) / sd; };
+  });
+  return outlets.map(function (o) {
+    var zs = measures.filter(function (m) { return o.m[m.k] != null; }).map(function (m) { return { m: m, z: z[m.k](o.m[m.k]) }; });
+    return { o: o, d: zs.length ? zs.reduce(function (a, x) { return a + Math.abs(x.z); }, 0) / zs.length : 0,
+      top: zs.slice().sort(function (a, b) { return Math.abs(b.z) - Math.abs(a.z); }).slice(0, 2) };
+  }).sort(function (a, b) { return b.d - a.d; });
+}
+
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
+  module.exports = { profileSig: profileSig, profileKey: profileKey, profileDistance: profileDistance, MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
     axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS };
 }

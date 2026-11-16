@@ -66,8 +66,9 @@
     if (!urls) urls = Promise.all(window.DATA.meta.packs.months.map(function (m) { return load("u-" + m + ".bin"); }))
       .catch(function (e) { urls = null; throw e; })  /* a failed load can be retried */
       .then(function (ps) {
-        var by = {}; window.DATA.A.forEach(function (a) { by[a.i] = a; });
+        var by = window.CM_ART;  /* the app's id -> article map (app.js ART); no second 388k-key map */
         ps.forEach(function (p) { for (var j = 0; j < p.i.length; j++) { var a = by[p.i[j]]; if (a) a.u = "https://" + p.hosts[p.h[j]] + "/" + p.u[j]; } });
+        if (window.CM_URLS_READY) window.CM_URLS_READY();
       });
     return urls;
   };

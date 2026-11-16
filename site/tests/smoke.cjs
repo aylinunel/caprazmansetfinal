@@ -562,6 +562,29 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       if (!(st > 0) || y1 !== y0) fails.push(`motion d: wheel in .xfix-f scrolled box ${st}, page ${y0}->${y1}`);
     }
     await ctx.close();
+    /* (e) URLs load after the first screen (u-*.bin, loader.js cmUrls): a headline clicked before they arrive opens
+       its own story; links on the page become real links once they arrive; a placeholder opened directly resolves too */
+    {
+      const uctx = await browser.newContext(), up = await uctx.newPage(), asked = [];
+      uctx.on("request", (r) => { if (!r.url().startsWith("http://127.0.0.1")) asked.push(r.url()); });
+      await uctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, (r) => r.abort());   /* outlet sites: record the request, never fetch */
+      await up.route(/\/data\/u-[\d-]+\.bin/, async (r) => { await sleep(4000); r.continue(); });
+      up.on("pageerror", (e) => fails.push(`urls: pageerror ${e.message}`));
+      await up.goto(url("#/ara?q=deprem")); await up.waitForSelector("#view"); await sleep(800);
+      const ph = await up.$eval('a[href^="#/git?a="]', (a) => a.getAttribute("href")).catch(() => null);
+      if (!ph) fails.push("urls: no placeholder link before the URL packs arrived");
+      else {
+        await up.click(`a[href="${ph}"]`); await sleep(6000);
+        const want = await up.evaluate((h) => { const id = new URLSearchParams(h.split("?")[1]).get("a"); return window.CM_ART[id] && window.CM_ART[id].u; }, ph);
+        if (!want || !asked.includes(want)) fails.push(`urls: early click did not open its story (${want})`);
+        const left = await up.$$eval('a[href^="#/git?a="]', (l) => l.length);
+        if (left) fails.push(`urls: ${left} placeholder link(s) left after the URLs arrived`);
+        const dp = await uctx.newPage(); asked.length = 0;
+        await dp.goto(url(ph)); await sleep(9000);
+        if (!asked.includes(want)) fails.push("urls: a placeholder opened directly did not reach its story");
+      }
+      await uctx.close();
+    }
   }
   await browser.close(); srv.close();
   fails.forEach((f) => console.error("FAIL", f));
