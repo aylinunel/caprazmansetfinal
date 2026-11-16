@@ -700,8 +700,8 @@ function artRow(a, opt) {
   var pf = SRC[a.s], b = bandOf(a.v);
   return '<div class="artrow" data-aid="' + a.i + '"><div class="sc" style="color:' +
     (a.v >= 45 ? "var(--hot)" : "var(--ink2)") + '">' + a.v + "</div>" +
-    '<div><div class="ttl">' + (a.u ?
-      '<a class="hlnk" href="' + esc(a.u) + '" target="_blank" rel="noopener">' + hlTitle(a) + "</a>" :
+    '<div><div class="ttl">' + (artUrl(a) ?
+      '<a class="hlnk" href="' + esc(artUrl(a)) + '" target="_blank" rel="noopener">' + hlTitle(a) + "</a>" :
       hlTitle(a)) + "</div>" +
     '<div class="meta"><span class="dot" style="background:' + lean(pf ? pf.lean : null) + '"></span>' +
     (opt.noSrc ? "" : esc(pf ? pf.n : a.s) + "<span>·</span>") + fmtDT(a.d) +
@@ -2760,7 +2760,7 @@ function framingLadder(e) {
     var cls = i === 0 ? " base" : i === arts.length - 1 ? " top" : "";
     h += '<div class="rung' + cls + '" data-aid="' + a.i + '"><div class="v" style="color:' +
       (a.v >= 45 ? "var(--hot)" : "var(--ink2)") + '">' + a.v + "</div><div>" +
-      '<div class="hl-t">' + (a.u ? '<a class="hlnk" href="' + esc(a.u) +
+      '<div class="hl-t">' + (artUrl(a) ? '<a class="hlnk" href="' + esc(artUrl(a)) +
         '" target="_blank" rel="noopener">' + hlTitle(a) + "</a>" : hlTitle(a)) + "</div>" +
       '<div class="who"><span class="dot" style="background:' + lean(pf ? pf.lean : null) +
       '"></span>' + esc(pf ? pf.n : a.s) + "<span>·</span>" + esc(bandOf(a.v).tr) + "</div>";
@@ -3375,7 +3375,7 @@ function openBias(key, hit) {
       '<div class="src"><span class="dot" style="background:' + lean(pf ? pf.lean : null) +
       '"></span>' + esc(pf ? pf.n : a.s) + "<span>·</span>" + fmtDT(a.d) +
       "<span>·</span>yoğunluk " + a.v +
-      (a.u ? '<span>·</span><a class="lnk" href="' + esc(a.u) +
+      (artUrl(a) ? '<span>·</span><a class="lnk" href="' + esc(artUrl(a)) +
         '" target="_blank" rel="noopener">özgün habere git</a>' : "") + "</div></div>";
     if (hit.terms && hit.terms.length) {
       h += '<p style="margin-top:11px">' + manifestation(key, hit.terms) + "</p>";
@@ -3402,7 +3402,7 @@ function openBias(key, hit) {
       '<div class="src"><span class="dot" style="background:' + lean(pf2 ? pf2.lean : null) +
       '"></span>' + esc(pf2 ? pf2.n : ex.a.s) + "<span>·</span>" + fmtDT(ex.a.d) +
       "<span>·</span>kanıt gücü " + esc(ex.lvl || "—") +
-      (ex.a.u ? '<span>·</span><a class="lnk" href="' + esc(ex.a.u) +
+      (artUrl(ex.a) ? '<span>·</span><a class="lnk" href="' + esc(artUrl(ex.a)) +
         '" target="_blank" rel="noopener">özgün habere git</a>' : "") + "</div></div>";
   } else if (ex) {
     h += "<p>Yukarıdaki haber bu yapının bu dönemdeki haberlerde en güçlü örneğidir.</p>";
@@ -3506,7 +3506,7 @@ function comparisonTable(e) {
       (pf && pf.lean != null ? "yerleşim " + pf.lean : "yerleşim —") + " · yoğunluk " + a.v +
       "</div></td>" +
       '<td style="min-width:250px"><div style="line-height:1.4">' +
-      (a.u ? '<a class="hlnk" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
+      (artUrl(a) ? '<a class="hlnk" href="' + esc(artUrl(a)) + '" target="_blank" rel="noopener">' +
         hlTitle(a) + "</a>" : hlTitle(a)) + "</div>" +
       (a.k.length ? '<div class="devs">' + devChips(a) + "</div>" : "") + "</td>";
     if (r && r.note) {
@@ -3617,6 +3617,18 @@ function logArticle(id) {
 /* ---------- shared bits ---------- */
 var SIDE = { left: "Sol", mid: "Merkez", right: "Sağ", none: "Yerleşimsiz" };
 function sideOf(slug) { return bloc(slug); }
+/* An article's link. URLs load after the first screen (loader.js window.cmUrls); until then the link is a
+   placeholder that the click handler below resolves, so an early click still opens the original story. */
+function artUrl(a) { return a.u != null ? a.u : "#/git?a=" + encodeURIComponent(a.i); }
+document.addEventListener("click", function (ev) {
+  var l = ev.target.closest && ev.target.closest('a[href^="#/git?a="]'); if (!l) return;
+  ev.preventDefault(); ev.stopPropagation();
+  var id = decodeURIComponent(l.getAttribute("href").slice(9)), w = window.open("", "_blank");
+  window.cmUrls().then(function () {
+    var a = ART[id];
+    if (a && a.u) { if (w) { w.opener = null; w.location = a.u; } else location.href = a.u; } else if (w) w.close();
+  });
+}, true);
 function srcName(s) { return SRC[s] ? SRC[s].n : (D.SN && D.SN[s]) || s; }
 function covOf(e) { return e.cov || [0, 0, 0]; }
 function covPct(e) {
@@ -3978,7 +3990,7 @@ function artRows(e) {
       '<span class="xlean ' + sd + '">' + SIDE[sd] + (SRC[a.s] ? " · " + SRC[a.s].lean : "") + "</span>" +
       '<span class="xsmall">' + esc(o[1]) + "</span>" +
       '<span class="xsmall mono" style="margin-left:auto">' + fmtDT(a.d) + "</span></div>" +
-      '<a class="xart-t" href="' + esc(a.u) + '" target="_blank" rel="noopener" data-a="' + a.i + '">' + esc(a.t) + "</a>" +
+      '<a class="xart-t" href="' + esc(artUrl(a)) + '" target="_blank" rel="noopener" data-a="' + a.i + '">' + esc(a.t) + "</a>" +
       (LEDES5 && LEDES5.get(a.i) ? '<p class="xsmall" style="margin:4px 0 0">' + esc(LEDES5.get(a.i)) + "</p>" : "") +
       '<div class="xart-f"><span class="tag' + (a.v >= 45 ? " b" : "") + '">' + esc(bandOf(a.v).tr) + " · " + a.v + "</span>" +
       (a.lv != null ? '<span class="tag" title="Aynı kurallarla spotun puanı">spot · ' + a.lv + "</span>" : "") +
@@ -4100,7 +4112,7 @@ function renderSearch() {
       return '<div class="xart"><div class="xart-h"><a class="xsrc" href="#/kurum?s=' + a.s + '">' + esc(srcName(a.s)) +
         '</a><span class="xlean ' + sideOf(a.s) + '">' + SIDE[sideOf(a.s)] + '</span><span class="xsmall mono" style="margin-left:auto">' +
         fmtDT(a.d) + "</span></div>" + (a.st ? '<a class="xart-t" href="#/olay?e=' + a.st + '">' : '<a class="xart-t" href="' +
-        esc(a.u) + '" target="_blank" rel="noopener" data-a="' + a.i + '">') + esc(a.t) + "</a></div>";
+        esc(artUrl(a)) + '" target="_blank" rel="noopener" data-a="' + a.i + '">') + esc(a.t) + "</a></div>";
     }).join("") : '<p class="xempty">Eşleşen başlık yok.</p>') + "</section>";
   box.innerHTML = h; wireGo(box);
 }
@@ -4787,7 +4799,7 @@ function splitCard(e, pair, opt) {
     return '<div class="xsp-p ' + cls + '" style="--lean:' + sd.c + '" aria-label="' + esc(srcName(art.s) + ", " + sd.w.toLocaleLowerCase("tr") + ": " + art.t) + '">' +
       '<p class="xsp-o">' + esc(nm(art.s)) + " · " + esc(sd.w.toLocaleUpperCase("tr")) + (SRC[art.s] && SRC[art.s].lean != null ? ' <span class="num">' + SRC[art.s].lean + "</span>" : "") + "</p>" +
       '<p class="xsp-h">' + (opt.link === false ? markText(art.t, marks) :
-        '<a href="' + esc(art.u) + '" target="_blank" rel="noopener">' + markText(art.t, marks) + "</a>") + "</p></div>";
+        '<a href="' + esc(artUrl(art)) + '" target="_blank" rel="noopener">' + markText(art.t, marks) + "</a>") + "</p></div>";
   };
   var band = '<div class="xsp-band" aria-label="' + esc("Ortak kelimeler: " + (cmp.shared.join(" ") || "yok")) + '">' +
     '<span class="xsp-bl">ORTAK OLAN</span><span class="xsp-bw">' + (cmp.shared.length ? esc(cmp.shared.join(" ")) : "ortak kelime yok") + "</span></div>";
@@ -5454,7 +5466,7 @@ function v3outletNoticeTabs(k) {
   var n = v3N(), o = n.byOutlet[k]; if (!o) return "";
   var mine = D.A.filter(function (a) { return a.s === k; }).sort(function (x, y) { return CM3.cmp(y.d, x.d); });
   function row(a) {
-    return '<li><a href="' + esc(a.u) + '" target="_blank" rel="noopener">' + esc(a.t) + '</a><span class="mono">' + v3time(a) + "</span></li>";
+    return '<li><a href="' + esc(artUrl(a)) + '" target="_blank" rel="noopener">' + esc(a.t) + '</a><span class="mono">' + v3time(a) + "</span></li>";
   }
   var news = mine.filter(function (a) { return !n.byArt[a.i]; }).slice(0, 12);
   var ilan = mine.filter(function (a) { return n.byArt[a.i]; });
@@ -5565,10 +5577,10 @@ function v3echo(e) {
     var first = c.order[0];
     return '<div class="cm3-cl"><p class="eyebrow">' + esc(c.known ? t3("firstSeen") : t3("orderUnknown")) + "</p>" +
       (c.known ? '<div class="cm3-cl-h"><b>' + esc(srcName(first.s)) + '</b><span class="mono">' + v3time(first) + "</span>" +
-        '<p><a href="' + esc(first.u) + '" target="_blank" rel="noopener">' + esc(first.t) + "</a></p></div>" :
+        '<p><a href="' + esc(artUrl(first)) + '" target="_blank" rel="noopener">' + esc(first.t) + "</a></p></div>" :
         '<p class="cm3-cl-t">' + esc(c.members[0].t) + "</p>") +
       '<ul class="cm3-list">' + c.order.slice(c.known ? 1 : 0).map(function (a) {
-        return '<li><a href="' + esc(a.u) + '" target="_blank" rel="noopener">' + esc(srcName(a.s)) + '</a><span class="mono">' + v3time(a) + "</span></li>";
+        return '<li><a href="' + esc(artUrl(a)) + '" target="_blank" rel="noopener">' + esc(srcName(a.s)) + '</a><span class="mono">' + v3time(a) + "</span></li>";
       }).join("") + "</ul></div>";
   }).join("") + '<p class="xsmall">' + esc(t3("similarLine")) + "</p></section>";
 }
@@ -5824,7 +5836,7 @@ function v3ansButtons(coll, id, cur) {
   }).join("") + "</div>";
 }
 function v3headline(a) {
-  return '<p class="cm3-q-h"><b>' + esc(srcName(a.s)) + '</b> <a href="' + esc(a.u) + '" target="_blank" rel="noopener">' + esc(a.t) + "</a></p>";
+  return '<p class="cm3-q-h"><b>' + esc(srcName(a.s)) + '</b> <a href="' + esc(artUrl(a)) + '" target="_blank" rel="noopener">' + esc(a.t) + "</a></p>";
 }
 function v3deskPanel() {
   var k = V3.desk, h = "";

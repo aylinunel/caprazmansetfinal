@@ -425,7 +425,10 @@ function isAllCaps(t) { return t === trUpper(t) && t !== trLower(t); }
 function ruleHits(a, rules) {
   rules = rules ? (rules.noticeRules || rules) : PARAMS.noticeRules;
   var t = a.t || "";
-  return { url: new RegExp(rules.url, "i").test(a.u || ""),
+  /* before the URL packs arrive, a.nu carries the two built-in URL rules' answers (capraz_pipeline/urlpack.py) */
+  var url = a.u != null ? new RegExp(rules.url, "i").test(a.u)
+    : rules.url === PARAMS.noticeRules.url ? !!(a.nu & 1) : rules.url === PARAMS.noticeRulesV1.url ? !!(a.nu & 2) : false;
+  return { url: url,
     keyword: isAllCaps(t) && rules.keywords.some(function (k) { return t.indexOf(k) >= 0; }) };
 }
 /* What issued the notice, read from its all-capitals title. family: court, enforcement (icra and sales)

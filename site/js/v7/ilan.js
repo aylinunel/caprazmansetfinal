@@ -7,14 +7,14 @@ function ilanItems() {
   return ILAN.items = Object.keys(by).map(function (id) {
     var a = ART[id]; if (!a) return null;
     var k = CM3.noticeKind(a.t);
-    return { t: a.t, s: a.s, d: a.d, u: a.u, kind: k.kind, family: k.family };
+    return { i: a.i, t: a.t, s: a.s, d: a.d, kind: k.kind, family: k.family };
   }).filter(Boolean);
 }
 function ilanResults() {
   var all = ilanItems(), q = ILAN.q, hit = ilanSearch(all, { text: q.text, family: q.family, src: q.src, from: q.from, to: q.to ? q.to + "T24" : "" });
   if (!hit.length) return '<p class="v7-ilan-empty">Bu aramayla eşleşen ilan bizim derlemimizde yok. Resmî ilanların tamamı için ilan.gov.tr adresine bakabilirsiniz.</p>';
   return '<p class="xsmall" aria-live="polite">' + orN(hit.length) + " ilan bulundu.</p><ul class=\"v7-ilan-list\" data-m=\"cascade\">" + hit.slice(0, ILAN.n).map(function (i) {
-    return '<li class="v7-ilan-row"><a class="hlnk" href="' + esc(i.u || "#") + '" target="_blank" rel="noopener">' + esc(i.t) + '</a><span class="xsmall">' +
+    return '<li class="v7-ilan-row"><a class="hlnk" href="' + esc(ART[i.i] ? artUrl(ART[i.i]) : "#") + '" target="_blank" rel="noopener">' + esc(i.t) + '</a><span class="xsmall">' +
       esc(srcName(i.s)) + " · " + fmtDT(i.d) + "</span></li>";
   }).join("") + "</ul>" + (hit.length > ILAN.n ? '<button type="button" class="chip" id="ilanmore">Daha fazla göster (' + orN(hit.length - ILAN.n) + ")</button>" : "");
 }
