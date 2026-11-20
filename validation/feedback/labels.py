@@ -27,6 +27,13 @@ class Label:
     audit: bool
     new_pattern: bool
     reviewed_at: str
+    # Structured review from the AI denetim masası (empty for older reviews): the verdict, why it is wrong,
+    # the concept it should have been, each necessary condition's state, and seconds spent on the review.
+    verdict: str = ""
+    reason: str = ""
+    card_correct: str = ""
+    conditions: tuple = ()
+    seconds: float | None = None
 
 
 def import_export(export: dict, results: dict, known_cards: set[str]) -> list[Label]:
@@ -46,6 +53,7 @@ def import_export(export: dict, results: dict, known_cards: set[str]) -> list[La
         problem = problem or ("unknown card" if card not in known_cards else None)
         problem = problem or ("no such finding in the results" if (event, card) not in findings else None)
         problem = problem or ("duplicate key" if key in seen else None)
+        problem = problem or ("unknown correct concept" if r.get("card") and r["card"] not in known_cards else None)
         problem = problem or ("made on another pack" if r.get("pack") != results.get("pack") else None)
         if not problem and r.get("text") != findings[(event, card)][0].get("text"):
             problem = "made on different event text"
@@ -54,7 +62,9 @@ def import_export(export: dict, results: dict, known_cards: set[str]) -> list[La
         seen.add(key)
         _, f = findings[(event, card)]
         labels.append(Label(event, card, results["pack"], r["text"], r["status"], r.get("note", ""),
-                            f.get("tier", ""), bool(f.get("audit")), bool(r.get("new_pattern")), r.get("at", "")))
+                            f.get("tier", ""), bool(f.get("audit")), bool(r.get("new_pattern")), r.get("at", ""),
+                            r.get("verdict", ""), r.get("reason", ""), r.get("card", ""), tuple(r.get("conditions") or ()),
+                            r["ms"] / 1000 if isinstance(r.get("ms"), (int, float)) else None))
     return labels
 
 
@@ -62,7 +72,8 @@ def read(path: Path) -> list[Label]:
     path = Path(path)
     if not path.exists():
         return []
-    return [Label(**json.loads(line)) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    return [Label(**{**r, "conditions": tuple(r.get("conditions") or ())}) for r in rows]
 
 
 def append(path: Path, labels: Sequence[Label]) -> int:

@@ -522,6 +522,7 @@ function reviewsExport(reviews, packVersion) {
     var r = reviews[key];
     var out = { key: key, status: r.status, note: r.note || "", at: r.at || "", pack: r.pack == null ? packVersion : r.pack, text: r.text == null ? null : r.text };
     if (r.new_pattern) out.new_pattern = true;
+    ["verdict", "reason", "card", "conditions", "ms"].forEach(function (k) { if (r[k] != null && r[k] !== "") out[k] = r[k]; });   /* AI denetim masası */
     return out;
   }) };
 }
@@ -588,8 +589,54 @@ function profileDistance(outlets, measures) {
   }).sort(function (a, b) { return b.d - a.d; });
 }
 
+
+/* AI denetim masası (Yönetim › Bilişsel inceleme): one structured expert review per AI finding. The verdict maps onto
+   the review statuses the public pages already read (verified / corrected / rejected); the rest is training data:
+   each necessary condition's state, why a finding is wrong, which concept it should have been. */
+var DESK_VERDICTS = [["correct", "Doğru", "verified"], ["partly", "Kısmen doğru", "corrected"], ["wrong", "Yanlış", "rejected"]];
+var DESK_REASONS = [["quoted_speaker", "Söz kurumun değil, alıntılanan kişinin"], ["condition_unmet", "Zorunlu koşul karşılanmıyor"],
+  ["missing_context", "Kanıt ya da bağlam yetersiz"], ["wrong_concept", "Başka bir kavram"], ["bad_quote", "Alıntı yanlış ya da kopuk"],
+  ["plain_report", "Olgu aktarımı, yanlılık değil"], ["other", "Başka bir neden (açıklamada)"]];
+var DESK_COND = ["met", "unmet", "unclear", ""];
+function deskDoc(form) {
+  var f = form || {}, v = DESK_VERDICTS.filter(function (x) { return x[0] === f.verdict; })[0];
+  var note = (f.note || "").trim(), reason = f.reason || "", card = f.card || "", cond = f.conditions || [];
+  if (!v) return { error: "Bir karar seçin." };
+  if (cond.some(function (c) { return DESK_COND.indexOf(c) < 0; })) return { error: "Koşul yanıtı tanınmadı." };
+  if (v[0] === "wrong" && !reason) return { error: "Yanlış kararı için bir neden seçin." };
+  if (v[0] === "partly" && !note) return { error: "Kısmen doğru için ne düzeltilmesi gerektiğini yazın." };
+  if (reason === "wrong_concept" && !card) return { error: "Doğru kavramı seçin." };
+  return { status: v[2], verdict: v[0], conditions: cond.slice(), reason: v[0] === "correct" ? "" : reason, card: reason === "wrong_concept" ? card : "", note: note };
+}
+/* opts: state todo (default) | done | all; card; outlet. Same concept stays together (consistent judgement), larger events first. */
+function deskQueue(items, reviews, opts) {
+  var o = opts || {}, st = o.state || "todo";
+  return items.filter(function (i) {
+    var done = !!(reviews || {})[i.key];
+    return (st === "all" || (st === "done") === done) && (!o.card || i.card === o.card) && (!o.outlet || (i.outlets || []).indexOf(o.outlet) >= 0);
+  }).sort(function (a, b) { return trCmp(a.name, b.name) || (b.size || 0) - (a.size || 0) || (a.key < b.key ? -1 : 1); });
+}
+/* One-sided 95% Wilson lower bound, as validation/feedback/stats.py wilson_lower (z = 1.6449). */
+function deskLower(k, n) {
+  if (!n) return null;
+  var z = 1.6449, p = k / n;
+  return (p + z * z / (2 * n) - z * Math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))) / (1 + z * z / n);
+}
+function deskStats(items, reviews, min) {
+  var by = {}, done = 0;
+  items.forEach(function (i) {
+    var c = by[i.card] = by[i.card] || { card: i.card, name: i.name, items: 0, reviewed: 0, kept: 0 }, r = (reviews || {})[i.key];
+    c.items++;
+    if (r) { done++; c.reviewed++; if (r.status !== "rejected") c.kept++; }
+  });
+  var cards = Object.keys(by).map(function (k) {
+    var c = by[k]; c.rate = c.reviewed ? c.kept / c.reviewed : null; c.lower = deskLower(c.kept, c.reviewed); c.need = Math.max(0, min - c.reviewed); return c;
+  }).sort(function (a, b) { return a.need - b.need || b.items - a.items; });
+  return { done: done, total: items.length, measurable: cards.filter(function (c) { return !c.need; }).length, cards: cards };
+}
+
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { profileSig: profileSig, profileKey: profileKey, profileDistance: profileDistance, MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
+  module.exports = { deskDoc: deskDoc, deskQueue: deskQueue, deskStats: deskStats, DESK_REASONS: DESK_REASONS, DESK_VERDICTS: DESK_VERDICTS, profileSig: profileSig, profileKey: profileKey, profileDistance: profileDistance, MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
     axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS };
 }

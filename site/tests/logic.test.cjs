@@ -469,3 +469,40 @@ test("notices: a custom URL rule is not cached before the URL packs arrive", () 
   A[0].u = undefined; A[0].nu = 1;                         // built-in rule: precomputed bit, cached as before
   assert.equal(CM3.notices(D).total, 1);
 });
+
+/* AI denetim masası (Yönetim › Bilişsel inceleme): structured expert reviews that train the AI. */
+test("deskDoc maps verdicts onto review statuses and requires the why", () => {
+  assert.equal(L.deskDoc({}).error, "Bir karar seçin.");
+  assert.deepEqual(L.deskDoc({ verdict: "correct", conditions: ["met", "unclear"] }),
+    { status: "verified", verdict: "correct", conditions: ["met", "unclear"], reason: "", card: "", note: "" });
+  assert.equal(L.deskDoc({ verdict: "wrong" }).error, "Yanlış kararı için bir neden seçin.");
+  assert.equal(L.deskDoc({ verdict: "wrong", reason: "quoted_speaker" }).status, "rejected");
+  assert.equal(L.deskDoc({ verdict: "partly", note: "  " }).error, "Kısmen doğru için ne düzeltilmesi gerektiğini yazın.");
+  assert.equal(L.deskDoc({ verdict: "partly", note: "alıntı eksik" }).status, "corrected");
+  assert.equal(L.deskDoc({ verdict: "wrong", reason: "wrong_concept" }).error, "Doğru kavramı seçin.");
+  assert.equal(L.deskDoc({ verdict: "wrong", reason: "wrong_concept", card: "anchoring-bias" }).card, "anchoring-bias");
+  assert.equal(L.deskDoc({ verdict: "correct", conditions: ["met", "maybe"] }).error, "Koşul yanıtı tanınmadı.");
+});
+test("deskQueue filters by state, concept and outlet, groups by concept", () => {
+  const items = [{ key: "e1__b", card: "b", name: "Beta", outlets: ["x"], size: 3 }, { key: "e2__a", card: "a", name: "Alfa", outlets: ["y"], size: 9 },
+    { key: "e3__a", card: "a", name: "Alfa", outlets: ["x"], size: 20 }];
+  const rev = { "e2__a": { status: "verified" } };
+  assert.deepEqual(L.deskQueue(items, rev, {}).map((i) => i.key), ["e3__a", "e1__b"]);
+  assert.deepEqual(L.deskQueue(items, rev, { state: "done" }).map((i) => i.key), ["e2__a"]);
+  assert.deepEqual(L.deskQueue(items, rev, { state: "all", outlet: "x" }).map((i) => i.key), ["e3__a", "e1__b"]);
+  assert.deepEqual(L.deskQueue(items, rev, { state: "all", card: "a" }).map((i) => i.key), ["e3__a", "e2__a"]);
+});
+test("deskStats counts kept reviews per concept with the same lower bound as the Python gate", () => {
+  const items = [1, 2, 3].map((n) => ({ key: "e" + n + "__a", card: "a", name: "Alfa" })).concat([{ key: "e9__b", card: "b", name: "Beta" }]);
+  const rev = { "e1__a": { status: "verified" }, "e2__a": { status: "corrected" }, "e3__a": { status: "rejected" } };
+  const s = L.deskStats(items, rev, 20);
+  assert.equal(s.done, 3); assert.equal(s.total, 4); assert.equal(s.measurable, 0);
+  const a = s.cards.find((c) => c.card === "a");
+  assert.deepEqual([a.reviewed, a.kept, a.need], [3, 2, 17]);
+  assert.ok(Math.abs(a.lower - 0.2535) < 1e-3);   /* wilson_lower(2, 3) in validation/feedback/stats.py */
+  assert.equal(s.cards.find((c) => c.card === "b").lower, null);
+});
+test("reviewsExport carries the structured review", () => {
+  const out = L.reviewsExport({ "e1__a": { status: "rejected", verdict: "wrong", reason: "quoted_speaker", conditions: ["unmet"], card: "", ms: 4200, note: "" } }, "p1");
+  assert.deepEqual([out.reviews[0].verdict, out.reviews[0].reason, out.reviews[0].conditions, out.reviews[0].ms], ["wrong", "quoted_speaker", ["unmet"], 4200]);
+});

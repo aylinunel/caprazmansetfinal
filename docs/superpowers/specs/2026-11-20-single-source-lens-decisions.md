@@ -24,3 +24,16 @@ media presented a specific news story gives more insight into hidden agendas.
 ## Related
 - Stakeholder report: https://claude.ai/artifact/9szRkwkQAYjcGzeGMw1Xv1
 - Plan: docs/superpowers/plans/2026-11-17-ml-narrative-and-behavioural.md (answer key, measurement, learning)
+
+## AI denetim masası (built 2026-11-20)
+- Reviewer: only the owner (a behavioural-science expert); the existing owner-only `reviews` collection is enough.
+- Critique of the old "Bilişsel inceleme (YZ)" page: a 101,501 px report with 1,425 buttons, free-text-only judgement,
+  no progress, hidden evidence, no filters, three words for one status, mixed queues.
+- Strategy: job = "judge each finding fast and in a way the AI can learn from"; outcome = concepts made measurable
+  (20 expert reviews each, keep-rate with a one-sided 95% Wilson lower bound, same as validation/feedback/stats.py).
+- Design: queues (Davranışsal / Medya teknikleri / Bekleyen medya kartları / Anlatı kodlamaları), one finding in focus,
+  all outlets' headlines with quoted words highlighted, the card's necessary conditions (Var / Yok / Belirsiz), verdict
+  Doğru / Kısmen doğru / Yanlış (= verified / corrected / rejected, so public pages keep their meaning), reason chips,
+  correct-concept picker, explanation, seconds spent; keys 1/2/3, J/K, Enter; undo toast; learning panel per concept.
+- Data: core key BGC (necessary conditions of concepts with findings); reviews export and validation/feedback labels
+  carry verdict, reason, card_correct, conditions, seconds. The old report stays at ?v=ozet.

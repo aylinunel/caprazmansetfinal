@@ -4167,7 +4167,7 @@ function v2cAfter(path, tab, params) {
 }
 
 function pgAdmin(q) {
-  if ((q || {}).t === "bilissel") return pgBG7();
+  if ((q || {}).t === "bilissel") return pgDesk(q);   /* AI denetim masası (v7/desk.js); the report is ?v=ozet */
   if (v3on("reviewDesk") && (q || {}).t === "dogrulama") return v3deskPage();
   var h = pgAdminV2(q);
   if (tabOf(ADMIN, q || {}) !== "ozet") return h;
@@ -5205,7 +5205,7 @@ function bg7caveat() {
 }
 function pgBG7() {
   var B = bg7(), S = B && B.summary;
-  var h = '<div class="wrap page"><div class="phead"><div class="eyebrow">Yönetim · bilişsel inceleme ' + bg7AiTag() + '</div>' +
+  var h = '<div class="wrap page"><p style="margin-bottom:12px"><a class="lnk" href="#/yonetim?t=bilissel">← AI denetim masası</a></p><div class="phead"><div class="eyebrow">Yönetim · bilişsel inceleme ' + bg7AiTag() + '</div>' +
     "<h1>" + (S ? "En çok kurumun verdiği " + S.planned + " olayda bilişsel yanlılık incelemesi" : "Bilişsel yanlılık incelemesi") + "</h1>" +
     '<p class="lede">Yüklü dil puanı kelimeye bakar; bu inceleme başlıkların <b>akıl yürütmesine</b> bakar: bir olayı veren kurumların başlık ve ' +
     "spotları yan yana konduğunda, çerçeveleme, kaynak seçimi ya da genelleme gibi bilişsel örüntülerin kanıtı metinde var mı?</p></div>" + bg7caveat();
@@ -5365,10 +5365,11 @@ async function rev7Init() {
     }, function () { REV7MSG = "İnceleme kayıtları okunamadı; YZ sonuçları düzeltmesiz gösteriliyor."; });
   } catch (e) {}
 }
-function rev7Save(key, status, note, newPattern) {
+function rev7Save(key, status, note, newPattern, extra) {
   if (!REV7DB || !REV7OWNER) return;
   var ref = REV7DB.collection("reviews").doc(key);
   var doc = { status: status, note: note || "", at: new Date().toISOString(), pack: D.meta.built };
+  ["verdict", "conditions", "reason", "card", "ms"].forEach(function (k) { if (extra && extra[k] != null && extra[k] !== "") doc[k] = extra[k]; });   /* AI denetim masası */
   var x = key.indexOf("narr__") === 0 ? null : bg7ev(key.split("__")[0]);
   if (x && x.text) doc.text = x.text;   // the review binds to this event text
   if (newPattern) doc.new_pattern = true;   // the reviewer saw a pattern no card covers (learning loop)

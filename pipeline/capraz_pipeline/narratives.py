@@ -122,6 +122,21 @@ def finalize(out: Path) -> dict:
     return {w["k"]: (w["pool"], len(w["keys"])) for w in NW}
 
 
+def _card_conditions(core: dict) -> dict:
+    """{card id: {"n": name, "c": [necessary conditions]}} for every card with a finding in BG or BGM (pending included)."""
+    used = {f["id"] for k in ("BG", "BGM") for ev in core.get(k, {}).get("events", []) + core.get(k, {}).get("pending", {}).get("events", [])
+            for g in ("supported", "uncertain") for f in ev.get(g, [])}
+    data = REPO / "biasguard" / "data"
+    files = [data / "cards.json", data / "media_cards.json", *sorted((REPO / "validation" / "biaslab" / "proposed_cards").glob("*.json"))]
+    out: dict = {}
+    for f in files:
+        x = json.loads(f.read_text(encoding="utf-8"))
+        for c in x if isinstance(x, list) else [x]:
+            if c["id"] in used and c["id"] not in out:
+                out[c["id"]] = {"n": c["name"], "c": c["necessary_conditions"]}
+    return out
+
+
 def merge(core: dict) -> None:
     """7.0 analyses outside the main pipeline: agent-coded Anlatı haritası weeks and the checklist run
     on the current scorer (build.py and biasguard.news pack)."""
@@ -140,6 +155,9 @@ def merge(core: dict) -> None:
         f = REPO / "biasguard" / "data" / name
         if f.exists():
             core[key] = json.loads(f.read_text(encoding="utf-8"))
+    cards = _card_conditions(core)  # AI denetim masası: the conditions an expert checks, one copy per concept with findings
+    if cards:
+        core["BGC"] = cards
     aix = OUT.parent / "aix-82.json"  # 8.2: AI findings against the rule-based findings (python -m capraz_pipeline.aix)
     if aix.exists():
         core["AIX"] = json.loads(aix.read_text())
