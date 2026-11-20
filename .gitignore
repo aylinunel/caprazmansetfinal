@@ -3,3 +3,7 @@ __pycache__/
 dist/
 .superpowers/
 runs/lab/
+
+# graphify working files and cache (the finished graph in graphify-out/ is committed)
+graphify-out/.graphify_*
+graphify-out/cache/
