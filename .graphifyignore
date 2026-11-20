@@ -1,0 +1,17 @@
+# generated AI run outputs and data, not knowledge
+runs/
+public/
+data/
+dist/
+graphify-out/
+.10x/
+.claude/
+validation/mesa_bias_expanded/
+validation/reference/snapshots/
+docs/biasguard-simulation/
+docs/provenance/
+site/vendor/
+*.json
+*.jsonl
+*.bin
+docs/images/
