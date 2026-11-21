@@ -4,7 +4,7 @@
 
 **Goal:** Give the narrative coding (Anlatı haritası) and the behavioural bias review (BiasGuard) a human answer key, measure the AI against it, let the AI learn from it without retraining, and stand up the first trained baselines, so that every later model has a number to beat.
 
-**Architecture:** A new package `validation/answerkey/` turns human coding into one append-only record (blind coding packets out, filled packets in, agreement and gold out). The narrative pipeline gains a task builder whose few-shot examples never include the event being coded, so the agent can be scored against the human-coded weeks. `validation/mlbench/` trains and cross-validates small scikit-learn models against the same gold. The measured narrative quality is shipped as core key `NQ` and shown on the narrative page.
+**Architecture:** A new package `validation/answerkey/` turns human coding into one append-only record (blind packets out, desk exports in, agreement and gold out). Blind coding happens in a blind mode of the AI denetim masası (`site/js/v7/desk.js`): packets ship in core key `BLIND` without the AI's verdicts, and the desk's review export is imported back. There is one expert (the owner), so agreement is same-coder consistency: a second blind pass at least 14 days after the first. The narrative pipeline gains a task builder whose few-shot examples never include the event being coded, so the agent can be scored against the human-coded weeks. `validation/mlbench/` trains and cross-validates small scikit-learn models against the same gold. The measured narrative quality is shipped as core key `NQ` and shown on the narrative page.
 
 **Tech Stack:** Python 3.13, `unittest`, scikit-learn and SciPy (already in `pipeline/requirements.txt`); plain JavaScript in `site/`, tested with `node site/tests/logic.test.cjs`.
 
@@ -13,9 +13,12 @@
 ## Global Constraints
 
 - Gold labels come from people only. AI output (agent codings, BiasGuard findings) is never written as, merged into or resolved as gold.
-- Coders are stored as anonymous slots `"A"`, `"B"`, `"C"`… Never a name, email or user id (same rule as `validation/feedback/labels.py`).
-- A field is *usable* (for measurement, examples or training) only when its double-coded items reach Krippendorff's alpha ≥ 0.67 on at least 30 items. Below that, reports print the number and say "not usable yet".
-- Stage-1 targets from the report: 300 behavioural gold items, at least 20 per live concept; narrative: the 61 human-coded events (weeks v1, w1–w6) plus 20 events re-coded by a second coder.
+- Coders are stored as anonymous slots: a letter for the person and a digit for the pass (`"A1"`, `"A2"`; a second person would be `"B1"`). Never a name, email or user id (same rule as `validation/feedback/labels.py`).
+- One expert (owner decision, 2026-11-21): agreement is measured between two blind passes of the same coder. A second pass opens at least 14 days after its packet is made from the first, never shows the first pass's answers, and every report names the measure "same-coder consistency (two passes ≥ 14 days apart)", never "inter-coder agreement".
+- Blind coding happens only in the desk's blind mode (owner decision, 2026-11-21): a blind item shows no AI verdict, AI coding, confidence, quote highlight, earlier answer or link to the event page. The private key (which items the AI showed) never enters core.
+- A field is *usable* (for measurement, examples or training) only when its items coded in two passes reach Krippendorff's alpha ≥ 0.67 on at least 30 items. Below that, reports print the number and say "not usable yet".
+- Stage-1 targets from the report: 300 behavioural gold items, at least 20 per live concept; narrative: the 61 human-coded events (weeks v1, w1–w6) plus 20 of them re-coded blind by the owner (pass `A2`).
+- Assumption to confirm with the owner: the existing hand-coded weeks are the owner's own coding, so core rows are slot `A1` (`CORE_SLOT` in Task 3). If someone else coded them, `CORE_SLOT` becomes `"H1"` and the narrative report reads "between coders".
 - Cross-validation splits by event (a narrative key or an event id): no event has rows in both train and test.
 - Few-shot examples shown to an AI coder or reviewer never come from an event in the same batch.
 - No new dependencies. Random seeds use `PARAMS.random_state` = `20261028` from `pipeline/capraz_pipeline/config.py`.
@@ -25,11 +28,11 @@
 
 ## Review Focus
 
-1. **Turkish letters in coder input** (`İ`, `ı`, `ş`, trailing spaces, Excel's byte-order mark): a coder typing `Açık`, `açık ` or `AÇIK` expects it to count as `açık`. Pinned in Task 4.
-2. **A filled packet with a missing, extra or renamed row**: the coder expects a clear refusal naming the row, and nothing half-imported. Pinned in Task 4.
-3. **An example leaking into its own test**: coding event X with event X among the examples inflates the agreement number. Pinned in Tasks 5 and 7.
-4. **A class missing from a training fold** (for example no `implied` blame in one fold): the expected result is a prediction of a known class, not a crash. Pinned in Task 8.
-5. **An unmapped free-text value** (a new frame spelling): the expected result is the category `Diğer` and a count of unmapped values in the report, never a silent wrong category. Pinned in Task 2.
+1. **A blind item that gives the answer away**: the coder expects to see only the headline(s) and the concept, never the AI's verdict, an AI-coded narrative value, an "AI imzalı" badge or an earlier pass's answer. Pinned in Task 5 (`blindItemHtml` test).
+2. **An export holding an item no packet has** (an old export, a renamed packet, a hand-edited file): the owner expects a refusal naming the review key, and nothing half-imported. Pinned in Task 4.
+3. **Opening the second pass too early**: the coder expects the pass to stay locked with its opening date until 14 days have passed. Pinned in Tasks 4 and 5.
+4. **An example leaking into its own test**: coding event X with event X among the examples inflates the agreement number. Pinned in Tasks 6 and 8.
+5. **A class missing from a training fold** (for example no `implied` blame in one fold): the expected result is a prediction of a known class, not a crash. Pinned in Task 9.
 
 ---
 
@@ -137,13 +140,14 @@ Expected: FAIL on import of `validation.answerkey.codebook`
 **Interfaces:**
 - Consumes: `krippendorff_alpha`, `percent_agreement` (Task 1); `blame_level`, `frame_category`, `human_rows`, `load_codebook` (Task 2).
 - Produces:
-  - `@dataclass(frozen=True, order=True) class Coding: item: str; coder: str; field: str; value: str` — `item` is `<narrative key>__<outlet slug>` for narratives and `<event>__<card id>` for behaviour; `field` ∈ `FIELDS = ("blame_level", "frame_category", "present")`; `present` values ∈ `("yes", "no", "unsure")`.
-  - `CODINGS = validation/reference/answerkey/codings.jsonl`; `read(path=CODINGS) -> list[Coding]`; `append(codings, path=CODINGS) -> int` (adds only records not present; refuses a second value from the same coder for the same item and field with `ValueError` naming the item).
-  - `from_core(core: dict, codebook: dict) -> list[Coding]` — the existing human narrative coding as coder `"A"` (both narrative fields), derived on the fly, never written to `codings.jsonl`.
-  - `units(codings, field) -> dict[str, list[str | None]]` — per item, one value per coder slot, sorted by slot; `unsure` counts as not coded.
-  - `agreement(codings, field) -> dict` → `{"items_double": int, "alpha": float | None, "percent": float | None, "usable": bool}`; `usable` = `items_double >= 30 and alpha is not None and alpha >= 0.67`.
-  - `gold(codings, field) -> tuple[dict[str, str], list[str]]` → (item → value where every coder who coded it agrees, items with disagreement for adjudication).
-  - CLI: `python -m validation.answerkey agreement` writes `docs/validation/reports/answerkey-agreement.md` (one row per field: double-coded items, alpha, percent, usable) and prints it.
+  - `@dataclass(frozen=True, order=True) class Coding: item: str; coder: str; field: str; value: str` — `item` is `<narrative key>__<outlet slug>` for narratives and `<event>__<card id>` for behaviour; `coder` is a slot matching `^[A-Z][1-9]$` (person letter + pass digit); `field` ∈ `FIELDS = ("blame_level", "frame_category", "present")`; values: `blame_level` ∈ `BLAME_LEVELS + ("unsure",)`, `frame_category` ∈ the codebook categories + `"unsure"`, `present` ∈ `("yes", "no", "unsure")`.
+  - `CORE_SLOT = "A1"` (see the assumption in Global Constraints).
+  - `CODINGS = validation/reference/answerkey/codings.jsonl`; `read(path=CODINGS) -> list[Coding]`; `append(codings, path=CODINGS) -> int` (adds only records not present; refuses a second value from the same slot for the same item and field, and any slot not matching the pattern, with `ValueError` naming the item or slot; nothing is written when it refuses).
+  - `from_core(core: dict, codebook: dict) -> list[Coding]` — the existing human narrative coding as slot `CORE_SLOT` (both narrative fields), derived on the fly, never written to `codings.jsonl`.
+  - `units(codings, field) -> dict[str, list[str | None]]` — per item, one value per slot, sorted by slot; `unsure` counts as not coded.
+  - `agreement(codings, field) -> dict` → `{"items_double": int, "alpha": float | None, "percent": float | None, "usable": bool, "kind": "same coder" | "between coders" | None}`; `items_double` counts items with ≥ 2 non-`unsure` values; `kind` is `"same coder"` when every slot on those items shares one letter, `"between coders"` otherwise, `None` with no such items; `usable` = `items_double >= 30 and alpha is not None and alpha >= 0.67`.
+  - `gold(codings, field) -> tuple[dict[str, str], list[str]]` → (item → value where every slot that coded it, `unsure` aside, agrees; items with disagreement, for adjudication).
+  - CLI: `python -m validation.answerkey agreement` writes `docs/validation/reports/answerkey-agreement.md` (one row per field: items coded twice, alpha, percent, usable, and the measure's name: "same-coder consistency (two passes ≥ 14 days apart)" or "agreement between coders") and prints it.
 
 - [ ] **Step 1: Write the failing tests**
 
@@ -152,29 +156,35 @@ class RecordTest(unittest.TestCase):
     def test_append_dedupes_and_refuses_a_changed_answer(self):
         with tempfile.TemporaryDirectory() as d:
             p = Path(d) / "c.jsonl"
-            a = Coding("e1__framing-effect", "A", "present", "yes")
+            a = Coding("e1__framing-effect", "A1", "present", "yes")
             self.assertEqual(append([a, a], p), 1)
             with self.assertRaisesRegex(ValueError, "e1__framing-effect"):
-                append([Coding("e1__framing-effect", "A", "present", "no")], p)
+                append([Coding("e1__framing-effect", "A1", "present", "no")], p)
+            with self.assertRaisesRegex(ValueError, "Ayşe"):
+                append([Coding("e2__framing-effect", "Ayşe", "present", "no")], p)   # names never stored
     def test_gold_and_disagreement(self):
-        cs = [Coding("i1", "A", "present", "yes"), Coding("i1", "B", "present", "yes"),
-              Coding("i2", "A", "present", "yes"), Coding("i2", "B", "present", "no"),
-              Coding("i3", "A", "present", "unsure")]
+        cs = [Coding("i1", "A1", "present", "yes"), Coding("i1", "A2", "present", "yes"),
+              Coding("i2", "A1", "present", "yes"), Coding("i2", "A2", "present", "no"),
+              Coding("i3", "A1", "present", "unsure")]
         self.assertEqual(gold(cs, "present"), ({"i1": "yes"}, ["i2"]))
-    def test_usable_needs_thirty_double_coded_items(self):
-        cs = [Coding(f"i{n}", c, "present", "yes" if n % 2 else "no") for n in range(29) for c in "AB"]
+    def test_usable_needs_thirty_items_coded_twice(self):
+        cs = [Coding(f"i{n}", c, "present", "yes" if n % 2 else "no") for n in range(29) for c in ("A1", "A2")]
         self.assertFalse(agreement(cs, "present")["usable"])
+    def test_two_passes_of_one_person_are_same_coder(self):
+        cs = [Coding("i1", "A1", "present", "yes"), Coding("i1", "A2", "present", "yes")]
+        self.assertEqual(agreement(cs, "present")["kind"], "same coder")
+        self.assertEqual(agreement(cs + [Coding("i1", "B1", "present", "no")], "present")["kind"], "between coders")
     def test_core_rows_become_coder_a(self):
         core = {"N": {"k1": {"status": "headline_coded", "rows": [{"s": "sabah", "frame": "Adli süreç", "blame": "Yargı (ima)"}]},
                       "k2": {"status": "agent_coded", "rows": [{"s": "sabah", "frame": "Adli süreç", "blame": ""}]}}}
         cb = {"categories": ["Yargı ve soruşturma", "Diğer"], "frames": {"Adli süreç": "Yargı ve soruşturma"}}
-        self.assertEqual(sorted(from_core(core, cb)), [Coding("k1__sabah", "A", "blame_level", "implied"),
-                                                       Coding("k1__sabah", "A", "frame_category", "Yargı ve soruşturma")])
+        self.assertEqual(sorted(from_core(core, cb)), [Coding("k1__sabah", "A1", "blame_level", "implied"),
+                                                       Coding("k1__sabah", "A1", "frame_category", "Yargı ve soruşturma")])
 ```
 
 - [ ] **Step 2: Run to see them fail** — `python3 -m unittest validation.tests.test_answerkey -v` → FAIL, no `record` module
 
-- [ ] **Step 3: Implement `record.py` and the `agreement` sub-command of `__main__.py`** (argparse with sub-commands; later tasks add `packet`, `import`, `narrative-eval`, `behaviour-eval`, `examples`). `agreement` merges `read()` with `from_core(core, load_codebook())`, core from `--core` (default `public/data/core.bin`, read with `biasguard.news._load`).
+- [ ] **Step 3: Implement `record.py` and the `agreement` sub-command of `__main__.py`** (argparse with sub-commands; later tasks add `packet`, `import`, `narrative-eval`, `behaviour-eval`, `examples`). `append` validates the whole batch before writing any line. `agreement` merges `read()` with `from_core(core, load_codebook())`, core from `--core` (default `public/data/core.bin`, read with `biasguard.news._load`).
 
 - [ ] **Step 4: Run the tests** — PASS; then `python3 -m validation.answerkey agreement` prints three rows with `items_double` 0 and "not usable yet".
 
@@ -182,61 +192,148 @@ class RecordTest(unittest.TestCase):
 
 ---
 
-### Task 4: Blind coding packets and their import
+### Task 4: Blind packets and the desk-export import
 
-A packet is a spreadsheet a coder fills in without seeing any other coder's answer or the AI's verdict.
+A packet is a fixed list of items one coder codes blind in the desk (Task 5). Packets ship to the site in core key `BLIND`; the private key (which items the AI showed) stays in the repository, never in core.
 
 **Files:**
-- Create: `validation/answerkey/packets.py`
-- Modify: `validation/answerkey/__main__.py` (sub-commands `packet`, `import`)
-- Test: `validation/tests/test_answerkey.py`
+- Create: `validation/answerkey/packets.py`; data files `data/reference/blind-packets.json` and `validation/reference/answerkey/<packet id>.key.json` (written by the CLI)
+- Modify: `validation/answerkey/__main__.py` (sub-commands `packet`, `import`), `pipeline/capraz_pipeline/narratives.py` (`merge`: core key `BLIND`)
+- Test: `validation/tests/test_answerkey.py`, `pipeline/tests/test_narratives.py`
 
 **Interfaces:**
-- Consumes: `Coding`, `append`, `from_core`, `human_rows` (Tasks 2–3); `biasguard.catalog.load_cards()`.
+- Consumes: `Coding`, `append`, `read`, `human_rows`, `load_codebook`, `BLAME_LEVELS`, `CORE_SLOT` (Tasks 2–3); `biasguard.catalog.load_cards()`; a BiasGuard run's `biasguard.json` (events with `status`, `selected`, `supported`, `uncertain`, each finding with `id`) and `inputs.jsonl` (`event`, `title`, `text`).
 - Produces:
-  - `narrative_packet(core: dict, n_events: int, seed: int) -> list[dict]` — `n_events` narrative keys drawn with `random.Random(seed)` from the human-coded keys; one row per outlet: `{"item", "olay", "kurum", "başlık", "sorumlu_tutma": "", "çerçeve": ""}` (`olay` = `q.happened`, `kurum` = outlet name from core `S`, `başlık` = row `hl`). Rows without `hl` are skipped.
-  - `behaviour_packet(results: dict, cards: list[dict], n_events: int, seed: int) -> tuple[list[dict], dict]` — from `n_events` completed events: every finding shown on the site (`supported` + `uncertain`) plus, per event, `max(shown, 2)` catalogue cards that are not in the event's `selected` list, drawn at random; rows `{"item", "başlıklar", "kavram", "tanım", "koşullar", "var_mı": ""}` in shuffled order; the second value is the private key `{item: {"event", "card", "ai_shown": bool}, "_unflagged": {event: {"sampled": int, "total": int}}}`, written next to the CSV as `<name>.key.json`.
-  - `write_csv(rows, path)` — UTF-8 with byte-order mark, comma-separated, header row.
-  - `read_coded(path, kind: str, coder: str, packet_items: list[str]) -> list[Coding]` — `kind` ∈ `("narrative", "behaviour")`; answers folded with `trFold`-equivalent lower-casing (`İ`→`i`, `I`→`ı`) and stripped; narrative: `sorumlu_tutma` ∈ {`yok`→`none`, `ima`→`implied`, `açık`→`explicit`}, `çerçeve` ∈ the codebook categories; behaviour: `var_mı` ∈ {`evet`→`yes`, `hayır`→`no`, `emin değilim`→`unsure`}; blank cells give no coding; any unknown item, missing item, duplicate item or unknown value raises `ValueError` naming the row number and nothing is returned.
-  - CLI: `packet --kind narrative --events 20 --coder B --out runs/answerkey/narrative-B.csv`; `packet --kind behaviour --results runs/bg82/biasguard.json --events 30 --coder A --out runs/answerkey/behaviour-A.csv`; `import <csv> --kind … --coder …` (items read from the CSV's own `item` column of the packet, re-generated from the same seed to check nothing was added or lost).
+  - `PACKETS = data/reference/blind-packets.json`, shape `{"categories": [codebook categories], "packets": [packet, ...]}`. A packet is `{"id": str, "kind": "narrative" | "behaviour", "coder": slot, "created": "YYYY-MM-DD", "not_before": "YYYY-MM-DD" | null, "events": {...}, "items": [...]}`:
+    - narrative: `events` = `{N key: {"olay": q.happened}}`; item = `{"item": "<N key>__<outlet slug>", "event": N key, "kurum": outlet name from core S, "baslik": row hl}`; rows without `hl` are skipped.
+    - behaviour: `events` = `{event: {"baslik": title, "metin": inputs text}}`; item = `{"item": "<event>__<card id>", "event": event, "card": card id, "ad": card name, "tanim": definition, "kosullar": necessary_conditions}`.
+  - `narrative_packet(core: dict, n_events: int, seed: int, pid: str, coder: str, today: date) -> dict` — `n_events` keys drawn with `random.Random(seed)` from the sorted human-coded N keys; items shuffled with the same generator; `not_before` null.
+  - `behaviour_packet(results: dict, inputs: dict[str, dict], cards: list[dict], n_events: int, seed: int, pid: str, coder: str, today: date) -> tuple[dict, dict]` — `n_events` events with status `review_complete`, drawn as above; per event every shown finding (`supported` + `uncertain`) plus `max(shown, 2)` catalogue cards not in its `selected` list, drawn at random; items shuffled. Second value is the key `{item: {"event", "card", "ai_shown": bool}, "_unflagged": {event: {"sampled": int, "total": int}}}`, where `total` = catalogue cards not in `selected`.
+  - `repeat_packet(first: dict, codings: list[Coding], n_items: int, seed: int, pid: str, coder: str, today: date, gap_days: int = 14) -> dict` — the same kind and events, `n_items` items drawn from `first`'s items that `first["coder"]` coded with a value other than `unsure`, shuffled; `not_before` = `today + gap_days`. Fewer coded items than `n_items` → `ValueError` saying how many are coded.
+  - `upsert(packet: dict, categories: list[str], path=PACKETS) -> None` — adds the packet; an existing id with identical items is a no-op; an existing id with different items → `ValueError` naming the id (a packet never changes once coding may have started).
+  - `read_export(export: dict, packets: dict) -> list[Coding]` — reads the reviews whose `key` starts `blind__`; key = `"blind__" + packet id + "__" + item`; each such review carries `answers`: narrative `{"blame_level", "frame_category"}`, behaviour `{"present"}`, values as in `Coding`. Slot = the packet's `coder`. An unknown packet id, an item not in its packet, a missing or unknown field, or an unknown value → `ValueError` naming the review key, and nothing is returned. Reviews without `blind__` are ignored.
+  - `merge(core)` sets `core["BLIND"]` to the whole `PACKETS` file when it exists.
+  - CLI (seed default `PARAMS.random_state`, `today` = the run date):
+    - `packet --kind narrative --events 20 --coder A2 --id narrative-A2`
+    - `packet --kind behaviour --run runs/bg82 --events 30 --coder A1 --id behaviour-A1` (also writes `validation/reference/answerkey/behaviour-A1.key.json`)
+    - `packet --repeat behaviour-A1 --items 30 --coder A2 --id behaviour-A2` (copies the first packet's key entries for its items into `behaviour-A2.key.json`)
+    - `import <export.json>` → `append(read_export(...))`; prints the new codings per packet.
 
 - [ ] **Step 1: Write the failing tests**
 
 ```python
 class PacketTest(unittest.TestCase):
-    def test_behaviour_packet_is_blind_and_balanced(self):
-        rows, key = behaviour_packet(RESULTS_FIXTURE, CARDS_FIXTURE, n_events=1, seed=1)
-        self.assertEqual(set(rows[0]), {"item", "başlıklar", "kavram", "tanım", "koşullar", "var_mı"})   # no verdict column
-        self.assertEqual(len(rows), 3)                                    # 1 shown finding + max(1, 2) unselected cards
+    def test_behaviour_packet_is_balanced_and_carries_no_verdict(self):
+        p, key = behaviour_packet(RESULTS_FIXTURE, INPUTS_FIXTURE, CARDS_FIXTURE, n_events=1, seed=1,
+                                  pid="b-A1", coder="A1", today=date(2026, 11, 21))
+        self.assertEqual(len(p["items"]), 3)                              # 1 shown finding + max(1, 2) unselected cards
+        self.assertEqual(set(p["items"][0]), {"item", "event", "card", "ad", "tanim", "kosullar"})
+        self.assertNotIn("ai_shown", json.dumps(p))
         self.assertEqual(key["_unflagged"], {"e1": {"sampled": 2, "total": 3}})
-    def test_read_coded_folds_turkish_case(self):
-        p = self._csv([{"item": "k1__sabah", "sorumlu_tutma": " AÇIK", "çerçeve": "Spor"}])
-        self.assertEqual(read_coded(p, "narrative", "B", ["k1__sabah"])[0], Coding("k1__sabah", "B", "blame_level", "explicit"))
-    def test_read_coded_refuses_a_missing_row(self):
-        p = self._csv([{"item": "k1__sabah", "sorumlu_tutma": "yok", "çerçeve": ""}])
-        with self.assertRaisesRegex(ValueError, "k1__ntv"):
-            read_coded(p, "narrative", "B", ["k1__sabah", "k1__ntv"])
-    def test_read_coded_refuses_an_unknown_value(self):
-        p = self._csv([{"item": "k1__sabah", "sorumlu_tutma": "belki", "çerçeve": ""}])
-        with self.assertRaisesRegex(ValueError, "row 2"):
-            read_coded(p, "narrative", "B", ["k1__sabah"])
+    def test_repeat_packet_opens_after_the_gap(self):
+        first = {"id": "b-A1", "kind": "behaviour", "coder": "A1", "events": {}, "items": [{"item": f"e1__c{i}"} for i in range(4)]}
+        cs = [Coding("e1__c0", "A1", "present", "yes"), Coding("e1__c1", "A1", "present", "no"),
+              Coding("e1__c2", "A1", "present", "unsure")]
+        p = repeat_packet(first, cs, n_items=2, seed=1, pid="b-A2", coder="A2", today=date(2026, 11, 21))
+        self.assertEqual(p["not_before"], "2026-12-05")
+        self.assertEqual(sorted(i["item"] for i in p["items"]), ["e1__c0", "e1__c1"])
+        with self.assertRaisesRegex(ValueError, "2"):
+            repeat_packet(first, cs, n_items=3, seed=1, pid="b-A2", coder="A2", today=date(2026, 11, 21))
+    def test_read_export_maps_answers_to_the_packet_slot(self):
+        ex = {"reviews": [{"key": "blind__b-A1__e1__c1", "status": "coded", "answers": {"present": "yes"}},
+                          {"key": "s1__framing-effect", "status": "verified"}]}
+        self.assertEqual(read_export(ex, PACKETS_FIXTURE), [Coding("e1__c1", "A1", "present", "yes")])
+    def test_read_export_refuses_an_item_no_packet_has(self):
+        ex = {"reviews": [{"key": "blind__b-A1__e9__c1", "status": "coded", "answers": {"present": "yes"}}]}
+        with self.assertRaisesRegex(ValueError, "blind__b-A1__e9__c1"):
+            read_export(ex, PACKETS_FIXTURE)
+    def test_upsert_refuses_changed_items(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "p.json"
+            upsert({"id": "x", "items": [{"item": "a"}]}, ["Diğer"], path)
+            upsert({"id": "x", "items": [{"item": "a"}]}, ["Diğer"], path)
+            with self.assertRaisesRegex(ValueError, "x"):
+                upsert({"id": "x", "items": [{"item": "b"}]}, ["Diğer"], path)
 ```
 
-`RESULTS_FIXTURE`, `CARDS_FIXTURE` and `_csv` are test helpers in the same file: one completed event `e1` with `selected: ["c1"]` and one `uncertain` finding of card `c1`, a catalogue of `c1`–`c4`, and a writer that saves rows with a byte-order mark. Row numbers in errors count the header as row 1.
+```python
+def test_merge_ships_blind_packets_without_the_key(self):   # pipeline/tests/test_narratives.py
+    core = {}
+    merge(core)
+    self.assertEqual(core.get("BLIND"), json.loads((REPO / "data/reference/blind-packets.json").read_text(encoding="utf-8")))
+    self.assertNotIn("ai_shown", json.dumps(core["BLIND"]))
+```
 
-- [ ] **Step 2: Run to see them fail** — FAIL, no `packets` module
+`RESULTS_FIXTURE`, `INPUTS_FIXTURE`, `CARDS_FIXTURE` and `PACKETS_FIXTURE` are helpers in the same file: one event `e1` with status `review_complete`, `selected: ["c1"]` and one `uncertain` finding of card `c1`; its inputs entry; a catalogue of `c1`–`c4`; and `{"packets": [{"id": "b-A1", "kind": "behaviour", "coder": "A1", "items": [{"item": "e1__c1"}]}]}`.
 
-- [ ] **Step 3: Implement `packets.py` and the two sub-commands**
+- [ ] **Step 2: Run to see them fail** — `python3 -m unittest validation.tests.test_answerkey -v` → FAIL, no `packets` module
 
-- [ ] **Step 4: Run the tests** — PASS
+- [ ] **Step 3: Implement `packets.py`, the two sub-commands and the `BLIND` line in `merge`**
 
-- [ ] **Step 5: Smoke the round trip** — `python3 -m validation.answerkey packet --kind narrative --events 2 --coder B --out runs/answerkey/try.csv` writes a CSV that opens in a spreadsheet with Turkish letters intact; delete it afterwards.
+- [ ] **Step 4: Run the tests** — PASS (the merge test passes once Step 5 has written the file)
 
-- [ ] **Step 6: Commit** — `feat(answerkey): blind coding packets and import`
+- [ ] **Step 5: Make the two real packets** — `python3 -m validation.answerkey packet --kind behaviour --run runs/bg82 --events 30 --coder A1 --id behaviour-A1` and `python3 -m validation.answerkey packet --kind narrative --events 20 --coder A2 --id narrative-A2`; print each packet's item count (behaviour: every shown finding of 30 events plus the unflagged sample).
+
+- [ ] **Step 6: Commit** — `feat(answerkey): blind packets for the desk and the export import` (code, tests, `blind-packets.json`, `behaviour-A1.key.json`)
 
 ---
 
-### Task 5: Score the narrative agent against the human-coded weeks
+### Task 5: Blind mode in the AI denetim masası
+
+**Files:**
+- Modify: `site/js/v7/logic.js` (`BLIND_FIELDS`, `blindKey`, `blindOpen`, `blindProgress`, `blindItemHtml`; `reviewsExport` keeps `answers`), `site/js/v7/desk.js` (group, packet list, item view, save), `site/js/app.js` (`rev7Save`: keep `answers`; no event-text binding for `blind__` keys), `site/styles.css`
+- Test: `site/tests/logic.test.cjs`, `site/tests/smoke.cjs`
+
+**Interfaces:**
+- Consumes: core `BLIND` (Task 4 shape); `deskName(card, fallback)`; `rev7`, `rev7Save`.
+- Produces:
+  - `BLIND_FIELDS = {narrative: [["blame_level", "Sorumlu tutma", [["none", "Yok"], ["implied", "İma"], ["explicit", "Açık"], ["unsure", "Emin değilim"]]], ["frame_category", "Çerçeve", null]], behaviour: [["present", "Bu kavram bu haberlerde var mı?", [["yes", "Evet"], ["no", "Hayır"], ["unsure", "Emin değilim"]]]]}` — `null` options = `BLIND.categories` plus `["unsure", "Emin değilim"]`.
+  - `blindKey(pid, item) -> string` = `"blind__" + pid + "__" + item`.
+  - `blindOpen(packet, today: "YYYY-MM-DD") -> boolean` — true when `not_before` is null or `today >= not_before`.
+  - `blindProgress(packet, reviews) -> {done: number, total: number}` — `done` counts items whose review has every field of its kind in `answers`.
+  - `blindItemHtml(blind, packet, item, answers) -> string` — the item view: narrative shows `olay`, `kurum`, `baslik`; behaviour shows the event `baslik` and `metin` lines, then the concept (`deskName(card, ad)`, `tanim`, `kosullar` as a list); then one control per field with the saved answer marked. It contains no AI status, verdict, confidence, quote, "AI" badge, other pass's answer or link to the event page.
+  - Desk: group `["kor", "Kör kodlama"]` in `DESK_GROUPS`, shown when `D.BLIND` has packets. The group lists the packets (id, kind in Turkish, `done/total`); a locked one reads "Bu tur <gün ay yıl> tarihinde açılır; ilk turdaki yanıtlarınızın etkisi geçsin diye." Inside a packet: the first item without a complete answer opens; keys `1`–`4` pick the first field's option, the frame is a select, `Enter` saves when every field is answered, `J`/`K` move. Save = `rev7Save(blindKey(pid, item), "coded", "", false, {answers: {...}})`.
+
+- [ ] **Step 1: Write the failing tests**
+
+```js
+test("blind helpers", () => {
+  assert.equal(L.blindKey("b-A1", "e1__c1"), "blind__b-A1__e1__c1");
+  assert.equal(L.blindOpen({ not_before: null }, "2026-11-21"), true);
+  assert.equal(L.blindOpen({ not_before: "2026-12-05" }, "2026-12-04"), false);
+  assert.equal(L.blindOpen({ not_before: "2026-12-05" }, "2026-12-05"), true);
+  const pk = { id: "n-A2", kind: "narrative", items: [{ item: "k1__sabah" }, { item: "k1__ntv" }] };
+  assert.deepEqual(L.blindProgress(pk, { "blind__n-A2__k1__sabah": { answers: { blame_level: "none", frame_category: "Spor" } },
+                                         "blind__n-A2__k1__ntv": { answers: { blame_level: "none" } } }), { done: 1, total: 2 });
+});
+test("blind item shows no AI", () => {
+  const blind = { categories: ["Spor", "Diğer"], packets: [] };
+  const pk = { id: "b-A1", kind: "behaviour", events: { e1: { baslik: "Başlık", metin: "[sabah · 10:00] Haber" } } };
+  const h = L.blindItemHtml(blind, pk, { item: "e1__c1", event: "e1", card: "c1", ad: "Card", tanim: "Tanım", kosullar: ["k1"] }, {});
+  assert.ok(h.includes("[sabah · 10:00] Haber") && h.includes("Tanım"));
+  assert.ok(!/AI|Yapay|kanıt|Doğrulan|Belirsiz|#\/olay/.test(h));
+});
+test("export keeps blind answers", () => {
+  const x = L.reviewsExport({ "blind__b-A1__e1__c1": { status: "coded", answers: { present: "yes" } } }, "p1");
+  assert.deepEqual(x.reviews[0].answers, { present: "yes" });
+});
+```
+
+`blindItemHtml` lives in `logic.js` so Node can test it; `deskName` is not available there, so it takes the concept title from the item's `ad` when the global `deskName` is undefined.
+
+- [ ] **Step 2: Run to see them fail** — `node site/tests/logic.test.cjs` → FAIL
+
+- [ ] **Step 3: Implement the helpers, the desk group and the two `allowlist` lines** (`rev7Save` and `reviewsExport` gain `answers`; `rev7Save` skips the `bg7ev` text binding when the key starts with `blind__`).
+
+- [ ] **Step 4: Run the tests** — PASS
+
+- [ ] **Step 5: Rebuild and check in the browser.** Pack core with the Task 4 packets (`python -m biasguard.news pack --build <dir> --run runs/bg82 --media-run runs/bgm82`), `cd pipeline && python3 -m capraz_pipeline site --site ../public`, then with the owner mock (`window.claude` via `addInitScript`, as the desk was checked before) open the desk's Kör kodlama group at 390 px and 1280 px: `behaviour-A1` and `narrative-A2` are listed with `0/N`, an item saves with `1` then `Enter` and the count becomes `1/N`, and the item view text contains none of the words in the test above. Then `node site/tests/smoke.cjs public <out> "#/yonetim?t=bilissel"` → `smoke ok`.
+
+- [ ] **Step 6: Commit** — `feat(yönetim): blind coding mode in the AI denetim masası`
+
+---
+
+### Task 6: Score the narrative agent against the human-coded weeks
 
 **Files:**
 - Modify: `pipeline/capraz_pipeline/narratives.py` (add `DIM_LABELS`, `tasks()`, CLI command `tasks`)
@@ -290,7 +387,7 @@ def test_compare_scores_matching_rows_only(self):
 
 ---
 
-### Task 6: Measure the behavioural review against blind gold
+### Task 7: Measure the behavioural review against blind gold
 
 **Files:**
 - Create: `validation/answerkey/behaviour_eval.py`
@@ -302,7 +399,7 @@ def test_compare_scores_matching_rows_only(self):
 - Produces:
   - `measure(gold: dict[str, str], key: dict) -> dict` → `{"overall": {...}, "cards": {card: {...}}}` with, per scope: `tp` (AI-shown, gold yes), `fp` (AI-shown, gold no), `found_unflagged` (not shown, gold yes), `missed_est` = Σ over events of `found_unflagged_e × total_e / sampled_e`, `precision` = tp/(tp+fp) or `None`, `precision_lower` = `wilson_lower(tp, tp+fp)`, `recall_est` = tp/(tp+missed_est) or `None`.
   - `as_card_stats(m: dict) -> dict` — the shape `card_status()` reads: `{card: {"reviewed": tp+fp, "kept": tp, "rejected": fp, "precision": …, "lower": …}}`.
-  - CLI: `behaviour-eval --key runs/answerkey/behaviour-A.key.json` writes `docs/validation/reports/behaviour-blind.md`; with `--status` it also writes `validation/reference/card_status.json` through the existing `card_status(stats, gates)`, with `"measure": "blind precision"`.
+  - CLI: `behaviour-eval --key validation/reference/answerkey/behaviour-A1.key.json` writes `docs/validation/reports/behaviour-blind.md`; with `--status` it also writes `validation/reference/card_status.json` through the existing `card_status(stats, gates)`, with `"measure": "blind precision"`.
 
 - [ ] **Step 1: Write the failing test**
 
@@ -327,9 +424,11 @@ def test_measure_estimates_misses_from_the_unflagged_sample(self):
 
 - [ ] **Step 5: Commit** — `feat(answerkey): blind precision and estimated recall for the behavioural review`
 
+- [ ] **Step 6 (after the owner has coded `behaviour-A1` in the desk and the export is imported):** `python3 -m validation.answerkey behaviour-eval --key validation/reference/answerkey/behaviour-A1.key.json` prints overall and per-card precision; `--status` only when the agreement report shows `present` usable.
+
 ---
 
-### Task 7: Human examples for the BiasGuard reviewers (learning without retraining)
+### Task 8: Human examples for the BiasGuard reviewers (learning without retraining)
 
 **Files:**
 - Modify: `biasguard/news.py` (`write_tasks`, `prompts`, CLI `--examples`)
@@ -375,18 +474,18 @@ def _selected_run(self, d):
 
 - [ ] **Step 5: Commit** — `feat(biasguard): human examples in review tasks, never from the same event`
 
-- [ ] **Step 6 (when Task 6 shows a usable `present` field): adopt through the existing gate.** Run the loop in `docs/validation/ITERATIONS.md` with the examples file as the single change: replay run, lab run, `python -m validation.learning promote-check`. Record the Observation Ledger entry whatever the result. The examples become the default only if the promotion gate passes.
+- [ ] **Step 6 (when Task 7 shows a usable `present` field): adopt through the existing gate.** Run the loop in `docs/validation/ITERATIONS.md` with the examples file as the single change: replay run, lab run, `python -m validation.learning promote-check`. Record the Observation Ledger entry whatever the result. The examples become the default only if the promotion gate passes.
 
 ---
 
-### Task 8: First trained baselines (mlbench)
+### Task 9: First trained baselines (mlbench)
 
 **Files:**
 - Create: `validation/mlbench/__init__.py`, `validation/mlbench/data.py`, `validation/mlbench/models.py`, `validation/mlbench/evaluate.py`, `validation/mlbench/__main__.py`
 - Test: `validation/tests/test_mlbench.py`
 
 **Interfaces:**
-- Consumes: `human_rows`, `blame_level`, `frame_category`, `load_codebook` (Task 2); the agent's coded folder from Task 5.
+- Consumes: `human_rows`, `blame_level`, `frame_category`, `load_codebook` (Task 2); the agent's coded folder from Task 6.
 - Produces:
   - `@dataclass(frozen=True) class Row: group: str; outlet: str; text: str; blame_level: str; frame_category: str` and `rows(core, codebook) -> list[Row]` (human rows with a headline `hl`; `group` = N key).
   - `class Predictor(Protocol): name: str; def fit(self, texts: list[str], labels: list[str]) -> None; def predict(self, texts: list[str]) -> list[str]` — the plug-in point for every later model (a Turkish language model, an in-house detector).
@@ -428,7 +527,7 @@ class MlbenchTest(unittest.TestCase):
 
 ---
 
-### Task 9: Show measured narrative quality on the narrative page
+### Task 10: Show measured narrative quality on the narrative page
 
 **Files:**
 - Modify: `pipeline/capraz_pipeline/narratives.py` (`merge`: core key `NQ` from `data/reference/narrative-quality.json`)
@@ -436,7 +535,7 @@ class MlbenchTest(unittest.TestCase):
 - Test: `site/tests/logic.test.cjs`, `pipeline/tests/test_narratives.py`
 
 **Interfaces:**
-- Consumes: `data/reference/narrative-quality.json` (Task 5).
+- Consumes: `data/reference/narrative-quality.json` (Task 6).
 - Produces: `narrQualityLine(nq: object | undefined) -> string` — empty string when `nq` is missing or either agreement is missing; otherwise exactly
   `"Bu kodlama, elle kodlanmış " + nq.events + " olayda insan kodlamasıyla karşılaştırıldı: sorumlu tutmada %" + round(100 × blame agreement) + ", çerçevede %" + round(100 × frame agreement) + " uyum."` followed by `" Kategori listesi henüz onaylanmadı."` when `codebook_approved` is false.
 
