@@ -557,3 +557,11 @@ test("export keeps blind answers", () => {
   const x = L.reviewsExport({ "blind__b-A1__e1__c1": { status: "coded", answers: { present: "yes" } } }, "p1");
   assert.deepEqual(x.reviews[0].answers, { present: "yes" });
 });
+test("narrQualityLine", () => {
+  assert.equal(L.narrQualityLine(undefined), "");
+  assert.equal(L.narrQualityLine({ events: 5, blame_level: { agreement: 0.8 } }), "");
+  const nq = { events: 61, codebook_approved: true, blame_level: { agreement: 0.824 }, frame_category: { agreement: 0.6 } };
+  assert.equal(L.narrQualityLine(nq),
+    "Bu kodlama, elle kodlanmış 61 olayda insan kodlamasıyla karşılaştırıldı: sorumlu tutmada %82, çerçevede %60 uyum.");
+  assert.ok(L.narrQualityLine({ ...nq, codebook_approved: false }).endsWith(" Kategori listesi henüz onaylanmadı."));
+});

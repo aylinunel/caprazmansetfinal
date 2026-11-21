@@ -698,8 +698,16 @@ function blindItemHtml(blind, packet, item, answers) {
   return h + "</div>";
 }
 
+/* One sentence on how well the AI coding matched the human coding; "" when the measurement is missing. */
+function narrQualityLine(nq) {
+  if (!nq || !nq.blame_level || !nq.frame_category || nq.blame_level.agreement == null || nq.frame_category.agreement == null) return "";
+  return "Bu kodlama, elle kodlanmış " + nq.events + " olayda insan kodlamasıyla karşılaştırıldı: sorumlu tutmada %" +
+    Math.round(100 * nq.blame_level.agreement) + ", çerçevede %" + Math.round(100 * nq.frame_category.agreement) + " uyum." +
+    (nq.codebook_approved === false ? " Kategori listesi henüz onaylanmadı." : "");
+}
+
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { blindKey: blindKey, blindDone: blindDone, blindOpen: blindOpen, blindProgress: blindProgress, blindItemHtml: blindItemHtml, BLIND_FIELDS: BLIND_FIELDS,
+  module.exports = { narrQualityLine: narrQualityLine, blindKey: blindKey, blindDone: blindDone, blindOpen: blindOpen, blindProgress: blindProgress, blindItemHtml: blindItemHtml, BLIND_FIELDS: BLIND_FIELDS,
     deskDoc: deskDoc, deskQueue: deskQueue, deskStats: deskStats, DESK_REASONS: DESK_REASONS, DESK_VERDICTS: DESK_VERDICTS, profileSig: profileSig, profileKey: profileKey, profileDistance: profileDistance, MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
     axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS,

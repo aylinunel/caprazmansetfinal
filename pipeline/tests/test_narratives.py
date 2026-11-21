@@ -21,6 +21,13 @@ class CardConditionsTest(unittest.TestCase):
         self.assertEqual(core.get("BLIND"), json.loads((REPO / "data/reference/blind-packets.json").read_text(encoding="utf-8")))
         self.assertNotIn("ai_shown", json.dumps(core["BLIND"]))
 
+    def test_merge_ships_narrative_quality(self):
+        from capraz_pipeline.config import REPO
+        from capraz_pipeline.narratives import merge
+        core = {}
+        merge(core)
+        self.assertEqual(core.get("NQ"), json.loads((REPO / "data/reference/narrative-quality.json").read_text(encoding="utf-8")))
+
     def test_examples_never_include_an_event_of_the_batch(self):
         from capraz_pipeline.narratives import tasks
         gold = [{"key": k, "q": {}, "rows": [{"s": "a", "hl": "H"}], "score": s} for k, s in (("g1", 3.0), ("g2", 2.0), ("g3", 1.0))]

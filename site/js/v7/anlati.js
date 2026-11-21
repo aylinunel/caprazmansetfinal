@@ -98,6 +98,8 @@ function v7Body(n, e) {
     .filter(function (x) { return x[1]; });
   var inner = rows.map(function (x) { return "<h3>" + x[0] + "</h3><p>" + esc(x[1]) + "</p>"; }).join("");
   var h = '<section class="v7-ctx">' + (ai ? yzBlock(inner, "Kısaca") : "<h2>Kısaca</h2>" + inner) + "</section>";
+  var nql = ai ? narrQualityLine(D.NQ) : "";
+  if (nql) h += '<p class="v7-note">' + esc(nql) + "</p>";
   var split = dims.map(function (d) {
     var vs = v7Vals(n, d), filled = vs.reduce(function (a, x) { return a + x.n; }, 0);
     if (vs.length < 2) return "";

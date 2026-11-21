@@ -193,6 +193,9 @@ def merge(core: dict) -> None:
     lens = OUT.parent / "lens-82.json"  # 8.2: single-source lens, same-story measures (python -m capraz_pipeline.lens)
     if lens.exists():
         core["LENS"] = json.loads(lens.read_text())
+    nq = REPO / "data" / "reference" / "narrative-quality.json"  # AI coding vs human coding on hand-coded events (Task 6)
+    if nq.exists():
+        core["NQ"] = json.loads(nq.read_text(encoding="utf-8"))
     if OUT.exists():
         x = json.loads(OUT.read_text())
         core["N"] = {**core.get("N", {}), **x["N"]}
