@@ -550,17 +550,16 @@ test("blindHidden hides an unfinished packet's items from the regular queues", (
   assert.deepEqual([...L.blindHidden(blind, all)], ["narr__k1"]);
   assert.equal(L.blindHidden(null, {}).size, 0);
 });
+const BLIND_CATS = { categories: ["Spor", "Diğer"], packets: [] };
 test("blind item shows no AI", () => {
-  const blind = { categories: ["Spor", "Diğer"], packets: [] };
   const pk = { id: "b-A1", kind: "behaviour", events: { e1: { baslik: "Başlık", metin: "[sabah · 10:00] Haber" } } };
-  const h = L.blindItemHtml(blind, pk, { item: "e1__c1", event: "e1", card: "c1", ad: "Card", tanim: "Tanım", kosullar: ["k1"] }, {});
+  const h = L.blindItemHtml(BLIND_CATS, pk, { item: "e1__c1", event: "e1", card: "c1", ad: "Card", tanim: "Tanım", kosullar: ["k1"] }, {});
   assert.ok(h.includes("[sabah · 10:00] Haber") && h.includes("Tanım"));
   assert.ok(!/AI|Yapay|kanıt|Doğrulan|Belirsiz|#\/olay/.test(h));
 });
 test("blind narrative item and saved answer", () => {
-  const blind = { categories: ["Spor", "Diğer"], packets: [] };
   const pk = { id: "n-A2", kind: "narrative", events: { g: { olay: "Gemi battı." } } };
-  const h = L.blindItemHtml(blind, pk, { item: "g__ntv", event: "g", kurum: "NTV", baslik: "Gemi alabora oldu" }, { blame_level: "implied", frame_category: "Spor" });
+  const h = L.blindItemHtml(BLIND_CATS, pk, { item: "g__ntv", event: "g", kurum: "NTV", baslik: "Gemi alabora oldu" }, { blame_level: "implied", frame_category: "Spor" });
   assert.ok(h.includes("Gemi battı.") && h.includes("NTV") && h.includes("Gemi alabora oldu"));
   assert.ok(/aria-checked="true"[^>]*data-v="implied"/.test(h) && /<option value="Spor" selected/.test(h) && h.includes("Emin değilim"));
 });

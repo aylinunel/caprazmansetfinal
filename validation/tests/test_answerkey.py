@@ -6,7 +6,9 @@ from unittest import mock
 from datetime import date
 from pathlib import Path
 
+from biasguard.catalog import load_cards
 from biasguard.news import _load
+from validation.answerkey import __main__ as cli
 from validation.answerkey.agreement import krippendorff_alpha, percent_agreement
 from validation.answerkey.narrative_eval import compare
 from validation.answerkey.behaviour_eval import as_card_stats, measure
@@ -15,6 +17,12 @@ from validation.answerkey.packets import behaviour_packet, narrative_packet, rea
 from validation.answerkey.record import Coding, agreement, append, from_core, gold
 
 REPO = Path(__file__).resolve().parents[2]
+CORE = REPO / "public" / "data" / "core.bin"
+
+
+def setUpModule():
+    global core_bin
+    core_bin = _load(CORE)
 
 
 class AlphaTest(unittest.TestCase):
@@ -51,8 +59,7 @@ class CodebookTest(unittest.TestCase):
 
     def test_codebook_covers_every_human_frame(self):
         cb = load_codebook()
-        core = _load(REPO / "public" / "data" / "core.bin")
-        raw = {(r.get("frame") or "").strip() for r in human_rows(core)} - {""}
+        raw = {(r.get("frame") or "").strip() for r in human_rows(core_bin)} - {""}
         self.assertEqual(sorted(raw - set(cb["frames"])), [])
         self.assertTrue(set(cb["frames"].values()) <= set(cb["categories"]))
         self.assertEqual(cb["categories"][-1], "Diğer")
@@ -158,24 +165,19 @@ class PacketTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "blind__b-A1__e9__c1"):
             read_export(ex, PACKETS_FIXTURE)
 
-    def test_upsert_refuses_changed_items(self):
+    def test_upsert_is_idempotent_and_refuses_changed_items_or_a_double_underscore_id(self):
         with tempfile.TemporaryDirectory() as d:
             path = Path(d) / "p.json"
             upsert({"id": "x", "items": [{"item": "a"}]}, ["Diğer"], path)
             upsert({"id": "x", "items": [{"item": "a"}]}, ["Diğer"], path)
             with self.assertRaisesRegex(ValueError, "x"):
                 upsert({"id": "x", "items": [{"item": "b"}]}, ["Diğer"], path)
-
-    def test_upsert_refuses_an_id_with_double_underscore(self):
-        with tempfile.TemporaryDirectory() as d:
             with self.assertRaisesRegex(ValueError, "a__b"):
-                upsert({"id": "a__b", "items": []}, ["Diğer"], Path(d) / "p.json")
+                upsert({"id": "a__b", "items": []}, ["Diğer"], path)
 
 
 class CliTest(unittest.TestCase):
     def test_refused_rerun_leaves_the_key_file_unchanged(self):
-        from biasguard.catalog import load_cards
-        from validation.answerkey import __main__ as cli
         cid = load_cards()[0]["id"]
         with tempfile.TemporaryDirectory() as d:
             d = Path(d)
@@ -184,8 +186,7 @@ class CliTest(unittest.TestCase):
             (run / "biasguard.json").write_text(json.dumps({"events": [
                 {"event": "e1", "status": "review_complete", "selected": [cid], "supported": [], "uncertain": []}]}))
             (run / "inputs.jsonl").write_text(json.dumps({"event": "e1", "title": "T", "text": "x"}) + "\n")
-            args = lambda seed: Namespace(repeat=None, kind="behaviour", run=run, events=1, items=None, coder="A1",
-                                          id="b-A1", seed=seed, core=None)
+            args = lambda seed: self._args(run=run, seed=seed)
             with mock.patch.object(cli, "KEYS", d / "keys"):
                 cli.make_packet(args(1), d / "p.json")
                 key = (d / "keys" / "b-A1.key.json").read_text(encoding="utf-8")
@@ -198,7 +199,6 @@ class CliTest(unittest.TestCase):
                             "id": "b-A1", "seed": 1, "core": None, **kw})
 
     def test_coder_must_be_a_slot_and_nothing_is_written(self):
-        from validation.answerkey import __main__ as cli
         with tempfile.TemporaryDirectory() as d:
             d = Path(d)
             for bad in ("Ayşe", "a1", "A0", "AA"):
@@ -207,7 +207,6 @@ class CliTest(unittest.TestCase):
             self.assertFalse((d / "p.json").exists() or (d / "keys").exists())
 
     def test_repeat_needs_same_letter_and_a_different_digit(self):
-        from validation.answerkey import __main__ as cli
         with tempfile.TemporaryDirectory() as d:
             d = Path(d)
             (d / "p.json").write_text(json.dumps(PACKETS_FIXTURE), encoding="utf-8")
@@ -217,7 +216,6 @@ class CliTest(unittest.TestCase):
             self.assertEqual(json.loads((d / "p.json").read_text(encoding="utf-8")), PACKETS_FIXTURE)
 
     def test_repeat_of_a_narrative_packet_needs_no_key_file(self):
-        from validation.answerkey import __main__ as cli
         first = {"id": "n-A1", "kind": "narrative", "coder": "A1", "events": {}, "items": [{"item": "k1__s"}]}
         with tempfile.TemporaryDirectory() as d:
             d = Path(d)
@@ -228,11 +226,10 @@ class CliTest(unittest.TestCase):
             self.assertFalse((d / "keys").exists())
 
     def test_agreement_command_writes_the_report(self):
-        from validation.answerkey import __main__ as cli
         with tempfile.TemporaryDirectory() as d:
             out = Path(d) / "r.md"
             with mock.patch.object(cli, "REPORT", out), mock.patch("builtins.print"):
-                cli.main(["agreement", "--core", str(REPO / "public" / "data" / "core.bin")])
+                cli.main(["agreement", "--core", str(CORE)])
             self.assertIn("# Answer key: agreement", out.read_text(encoding="utf-8"))
 
 
@@ -250,7 +247,6 @@ class ExamplesTest(unittest.TestCase):
         return run
 
     def test_examples_keep_one_yes_and_one_no_per_card_when_present_is_usable(self):
-        from validation.answerkey import __main__ as cli
         with tempfile.TemporaryDirectory() as d:
             d = Path(d)
             run = self._setup(d)
@@ -265,16 +261,14 @@ class ExamplesTest(unittest.TestCase):
         self.assertEqual(out["c2"], [{"event": "e3", "text": "text e3", "present": "no"}])
 
     def test_examples_use_the_text_the_person_coded(self):
-        from validation.answerkey.__main__ import build_examples
         key = {"i1": {"event": "e1", "card": "c1", "ai_shown": True}, "_unflagged": {}}
-        out = build_examples({"i1": "yes"}, key, {"e1": {"event": "e1", "text": "new run text"}},
+        out = cli.build_examples({"i1": "yes"}, key, {"e1": {"event": "e1", "text": "new run text"}},
                              {"e1": {"metin": "coded text"}})
         self.assertEqual(out["c1"][0]["text"], "coded text")
-        out = build_examples({"i1": "yes"}, key, {"e1": {"event": "e1", "text": "new run text"}}, {"e1": {}})
+        out = cli.build_examples({"i1": "yes"}, key, {"e1": {"event": "e1", "text": "new run text"}}, {"e1": {}})
         self.assertEqual(out["c1"][0]["text"], "new run text")
 
     def test_examples_file_is_empty_while_present_is_not_usable(self):
-        from validation.answerkey import __main__ as cli
         with tempfile.TemporaryDirectory() as d:
             d = Path(d)
             run = self._setup(d)
@@ -300,17 +294,15 @@ class NarrativeEvalTest(unittest.TestCase):
         self.assertEqual(r["unmapped_frames"], 1)
 
     def test_narrative_eval_command_writes_both_outputs(self):
-        from validation.answerkey import __main__ as cli
         with tempfile.TemporaryDirectory() as d:
             d = Path(d)
             (d / "coded").mkdir()
-            core = _load(REPO / "public" / "data" / "core.bin")
-            key = next(k for k, e in core["N"].items() if e.get("status") in ("hand_coded", "headline_coded"))
-            rows = [{"s": r["s"], "frame": r["frame"], "blame": r["blame"]} for r in core["N"][key]["rows"]]
+            key = next(k for k, e in core_bin["N"].items() if e.get("status") in ("hand_coded", "headline_coded"))
+            rows = [{"s": r["s"], "frame": r["frame"], "blame": r["blame"]} for r in core_bin["N"][key]["rows"]]
             (d / "coded" / f"{key}.json").write_text(json.dumps({"rows": rows}, ensure_ascii=False), encoding="utf-8")
             with mock.patch.object(cli, "NARRATIVE_QUALITY", d / "q.json"), mock.patch.object(cli, "NARRATIVE_REPORT", d / "r.md"), \
                     mock.patch("builtins.print"):
-                cli.main(["narrative-eval", "--coded", str(d / "coded"), "--core", str(REPO / "public" / "data" / "core.bin")])
+                cli.main(["narrative-eval", "--coded", str(d / "coded"), "--core", str(CORE)])
             q = json.loads((d / "q.json").read_text(encoding="utf-8"))
             self.assertEqual(q["events"], 1)
             self.assertEqual(q["blame_level"]["agreement"], 1.0)
@@ -338,7 +330,6 @@ class BehaviourEvalTest(unittest.TestCase):
         self.assertIsNone(m["overall"]["recall_outside_selection_est"])
 
     def test_command_writes_report_and_status(self):
-        from validation.answerkey import __main__ as cli
         with tempfile.TemporaryDirectory() as d:
             d = Path(d)
             (d / "k.json").write_text(json.dumps(self.KEY), encoding="utf-8")
@@ -353,13 +344,10 @@ class BehaviourEvalTest(unittest.TestCase):
             self.assertEqual(s["measure"], "blind precision")
             self.assertEqual(s["cards"]["c1"]["status"], "unjudged")
 
-
-class BehaviourStatusGateTest(unittest.TestCase):
     def test_status_is_refused_while_present_is_not_usable_and_report_says_so(self):
-        from validation.answerkey import __main__ as cli
         with tempfile.TemporaryDirectory() as d:
             d = Path(d)
-            (d / "k.json").write_text(json.dumps(BehaviourEvalTest.KEY), encoding="utf-8")
+            (d / "k.json").write_text(json.dumps(self.KEY), encoding="utf-8")
             with mock.patch.object(cli, "BEHAVIOUR_REPORT", d / "r.md"), mock.patch.object(cli, "CARD_STATUS", d / "s.json"), \
                     mock.patch.object(cli, "read", return_value=[]), mock.patch("builtins.print"):
                 with self.assertRaisesRegex(SystemExit, "not usable yet"):

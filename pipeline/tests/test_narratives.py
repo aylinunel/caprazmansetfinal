@@ -13,19 +13,13 @@ class CardConditionsTest(unittest.TestCase):
         self.assertEqual(sorted(got), ["framing-effect", "labeling"])
         self.assertTrue(got["framing-effect"]["c"] and got["labeling"]["n"])
 
-    def test_merge_ships_blind_packets_without_the_key(self):
+    def test_merge_ships_blind_packets_without_the_key_and_narrative_quality(self):
         from capraz_pipeline.config import REPO
         from capraz_pipeline.narratives import merge
         core = {}
         merge(core)
         self.assertEqual(core.get("BLIND"), json.loads((REPO / "data/reference/blind-packets.json").read_text(encoding="utf-8")))
         self.assertNotIn("ai_shown", json.dumps(core["BLIND"]))
-
-    def test_merge_ships_narrative_quality(self):
-        from capraz_pipeline.config import REPO
-        from capraz_pipeline.narratives import merge
-        core = {}
-        merge(core)
         self.assertEqual(core.get("NQ"), json.loads((REPO / "data/reference/narrative-quality.json").read_text(encoding="utf-8")))
 
     def test_examples_never_include_an_event_of_the_batch(self):
