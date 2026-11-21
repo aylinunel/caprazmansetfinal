@@ -10570,11 +10570,12 @@ function deskStats(items, reviews, min) {
 
 /* Single-source lens wording. Behaviour words only; no suffix is ever attached to an outlet name. */
 var LENS_MEASURES = [["skip", "büyük olayları atlıyor", "büyük olayı atladı"], ["loaded", "yüklü başlık atıyor", "yüklü başlık"], ["harsher", "başlığı haberinden sert yazıyor", "haberinden sert başlık"], ["first", "olayı ilk veriyor", "ilk veriş"]];
-function lensDec(x) { return (Math.round(x * 10) / 10).toFixed(1).replace(".", ","); }
+function lensDec(x) { return x < 0.05 ? "<0,1" : (Math.round(x * 10) / 10).toFixed(1).replace(".", ","); }
 function lensSentence(name, key, m) {
   var ms = LENS_MEASURES.filter(function (x) { return x[0] === key; })[0] || [key, key, key];
   var noun = "“" + ms[2] + "”";
   if (m.rr === 0) return name + " · bu " + m.n + " haberin hiçbirinde " + noun + " yok; diğer kurumlarda var.";
+  if (m.rr == null && m.none) return name + " · bu " + m.n + " haberin hiçbirinde " + noun + " ne bu kurumda ne diğer kurumlarda var.";
   if (m.rr == null) return name + " · bu " + m.n + " haberde " + noun + " yalnızca bu kurumda var; diğer kurumlarda yok.";
   var ci = m.lo == null || m.hi == null ? "" : "%95 aralık " + lensDec(m.lo) + "–" + lensDec(m.hi) + "; ";
   if (m.strong) return name + " aynı haberlerde sistematik olarak " + (m.rr < 1 ? "daha seyrek " : "daha sık ") + ms[1] + " (" + lensDec(m.rr) + " kat; " + ci + m.n + " haber).";
@@ -14630,7 +14631,7 @@ function lensAiBox(k) {
     var n = D.N[key]; if (!narrOk(key)) return;
     var hand = n.status === "hand_coded" || n.status === "headline_coded";
     (n.rows || []).forEach(function (r) {
-      var v = String(r.blame == null ? "" : r.blame).trim(); if (r.s !== k || !v) return;
+      var v = String(r.blame == null ? "" : r.blame).trim(); if (r.s !== k || !v || /^(Belirtilmiyor|—|Belirsiz)/.test(v)) return;
       var id = v + "|" + hand, c = bl[id] = bl[id] || { v: v, hand: hand, n: 0 }; c.n++;
     });
   });
