@@ -40,10 +40,10 @@ def _write_key(pid: str, key: dict) -> None:
     (KEYS / f"{pid}.key.json").write_text(json.dumps(key, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
-def make_packet(a) -> str:
+def make_packet(a, path: Path = PACKETS) -> str:
     from biasguard.catalog import load_cards
     categories = load_codebook()["categories"]
-    packets = json.loads(PACKETS.read_text(encoding="utf-8")) if PACKETS.exists() else {"packets": []}
+    packets = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"packets": []}
     today = date.today()
     if a.repeat:
         first = next((p for p in packets["packets"] if p["id"] == a.repeat), None)
@@ -51,17 +51,19 @@ def make_packet(a) -> str:
             raise SystemExit(f"unknown packet {a.repeat}")
         p = repeat_packet(first, read(), a.items, a.seed, a.id, a.coder, today)
         first_key = json.loads((KEYS / f"{a.repeat}.key.json").read_text(encoding="utf-8"))
-        _write_key(a.id, {i["item"]: first_key[i["item"]] for i in p["items"] if i["item"] in first_key}
-                   | {"_unflagged": first_key.get("_unflagged", {})})
+        key = ({i["item"]: first_key[i["item"]] for i in p["items"] if i["item"] in first_key}
+               | {"_unflagged": first_key.get("_unflagged", {})})
     elif a.kind == "narrative":
+        key = None
         p = narrative_packet(_load(a.core), a.events, a.seed, a.id, a.coder, today)
     else:
         results = json.loads((a.run / "biasguard.json").read_text(encoding="utf-8"))
         lines = (a.run / "inputs.jsonl").read_text(encoding="utf-8").splitlines()
         inputs = {d["event"]: d for d in map(json.loads, filter(str.strip, lines))}
         p, key = behaviour_packet(results, inputs, load_cards(), a.events, a.seed, a.id, a.coder, today)
+    upsert(p, categories, path)  # refuses a changed packet; only then is the private key written
+    if key is not None:
         _write_key(a.id, key)
-    upsert(p, categories)
     return f"{a.id}: {len(p['items'])} items, {len(p['events'])} events"
 
 
@@ -83,6 +85,11 @@ def main(argv=None) -> None:
     im = sub.add_parser("import", help="append the codings in a desk export")
     im.add_argument("export", type=Path)
     args = ap.parse_args(argv)
+    if args.cmd == "agreement":
+        text = agreement_report(args.core)
+        REPORT.parent.mkdir(parents=True, exist_ok=True)
+        REPORT.write_text(text, encoding="utf-8")
+        print(text)
     if args.cmd == "packet":
         if args.seed is None:
             sys.path.insert(0, str(REPO / "pipeline"))

@@ -69,6 +69,8 @@ def repeat_packet(first: dict, codings: list, n_items: int, seed: int, pid: str,
 
 
 def upsert(packet: dict, categories: list, path=PACKETS) -> None:
+    if "__" in packet["id"]:
+        raise ValueError(f"packet id {packet['id']!r} must not contain '__'")
     p = Path(path)
     data = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {"categories": categories, "packets": []}
     old = next((x for x in data["packets"] if x["id"] == packet["id"]), None)

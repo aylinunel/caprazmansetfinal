@@ -1,6 +1,8 @@
 import json
 import tempfile
 import unittest
+from argparse import Namespace
+from unittest import mock
 from datetime import date
 from pathlib import Path
 
@@ -153,3 +155,37 @@ class PacketTest(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "x"):
                 upsert({"id": "x", "items": [{"item": "b"}]}, ["Diğer"], path)
 
+    def test_upsert_refuses_an_id_with_double_underscore(self):
+        with tempfile.TemporaryDirectory() as d:
+            with self.assertRaisesRegex(ValueError, "a__b"):
+                upsert({"id": "a__b", "items": []}, ["Diğer"], Path(d) / "p.json")
+
+
+class CliTest(unittest.TestCase):
+    def test_refused_rerun_leaves_the_key_file_unchanged(self):
+        from biasguard.catalog import load_cards
+        from validation.answerkey import __main__ as cli
+        cid = load_cards()[0]["id"]
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            run = d / "run"
+            run.mkdir()
+            (run / "biasguard.json").write_text(json.dumps({"events": [
+                {"event": "e1", "status": "review_complete", "selected": [cid], "supported": [], "uncertain": []}]}))
+            (run / "inputs.jsonl").write_text(json.dumps({"event": "e1", "title": "T", "text": "x"}) + "\n")
+            args = lambda seed: Namespace(repeat=None, kind="behaviour", run=run, events=1, items=None, coder="A1",
+                                          id="b-A1", seed=seed, core=None)
+            with mock.patch.object(cli, "KEYS", d / "keys"):
+                cli.make_packet(args(1), d / "p.json")
+                key = (d / "keys" / "b-A1.key.json").read_text(encoding="utf-8")
+                with self.assertRaisesRegex(ValueError, "b-A1"):
+                    cli.make_packet(args(2), d / "p.json")
+                self.assertEqual((d / "keys" / "b-A1.key.json").read_text(encoding="utf-8"), key)
+
+    def test_agreement_command_writes_the_report(self):
+        from validation.answerkey import __main__ as cli
+        with tempfile.TemporaryDirectory() as d:
+            out = Path(d) / "r.md"
+            with mock.patch.object(cli, "REPORT", out), mock.patch("builtins.print"):
+                cli.main(["agreement", "--core", str(REPO / "public" / "data" / "core.bin")])
+            self.assertIn("# Answer key: agreement", out.read_text(encoding="utf-8"))
