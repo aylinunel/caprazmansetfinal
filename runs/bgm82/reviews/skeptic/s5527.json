@@ -1,0 +1,255 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "39 ilde 'Avcı' kıskacı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yapay zeka destekli AVCI ile yasa dışı bahis ağına darbe: 151 gözaltı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar 'kıskaç' ve 'darbe' gibi mecazlarla operasyonu avcı-av ilişkisi olarak sunuyor.",
+   "alternative_explanation": "'Avcı' projenin resmi adıdır; 'kıskaca almak' ve 'darbe vurmak' operasyon haberlerinde kalıplaşmış ifadelerdir ve yeni bir rol ataması yapmayabilir.",
+   "missing_context": [
+    "Proje adının resmi kaynakta nasıl kullanıldığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Batman'da 3.9 milyar TL'lik vurgun deşifre edildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "banka hesaplarında 3 milyar 950 milyon liralık para hareketi tespit edilen 32 şüpheli gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum para hareketini 'vurgun' ve 'deşifre edildi' sözcükleriyle verirken başka bir kurum aynı tutarı 'para hareketi tespit edildi' diye bildiriyor.",
+   "alternative_explanation": "Kurum yasa dışı bahsin doğası gereği kazancı 'vurgun' olarak nitelemiş olabilir; ancak süreç gözaltı aşamasındadır.",
+   "missing_context": [
+    "Para hareketinin ne kadarının suç geliri olarak belirlendiği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Batman'da 3.9 milyar TL'lik vurgun deşifre edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "3 milyar 950 milyon liralık para hareketi tespit edilen",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutar bir kurumda 'vurgun', diğerinde 'para hareketi' olarak adlandırılıyor; ilki suç ve yağma çağrışımı taşıyor, ikincisi nötr.",
+   "alternative_explanation": "Fark, kurumların başlık uzunluğu ve dikkat çekme tercihinden kaynaklanabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yapay zeka destekli AVCI projesiyle 39 ilde yasa dışı bahis operasyonu! 151 şüpheli yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul merkezli 39 ildeki yasa dışı bahis operasyonlarında 151 şüpheli yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı operasyonda bazı başlıklar kullanılan yapay zeka aracını, bazıları yalnızca gözaltı sayısını öne alıyor.",
+   "alternative_explanation": "Araç bilgisi resmi açıklamanın parçasıdır; maliyet/fayda ya da kazanan/kaybeden gibi karşıt bir boyut öne çıkarılmıyor olabilir.",
+   "missing_context": [
+    "İçişleri Bakanlığı açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahis çetesini AVCI yakaladı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul merkezli 39 ilde yasa dışı bahis operasyonu: 151 şüpheli yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişiler bir kurumda 'çete', diğerinde 'şüpheli' olarak anılıyor; 'çete' suçu kesinleşmiş bir örgüt çağrışımı taşıyor.",
+   "alternative_explanation": "'Çete' sözcüğü resmi açıklamadaki örgüt suçlamasının kısaltması olabilir; ancak yargı öncesi aşamada kimlik tanımını aşan bir değerlendirmedir.",
+   "missing_context": [
+    "Resmi açıklamada örgüt suçlamasının nasıl ifade edildiği"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahse geçit yok! Batman'da 3.9 milyar TL'lik vurgun deşifre edildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Batman merkezli 10 ilde yasadışı bahis operasyonu: 32 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı başlıkta 'geçit yok' sloganı, seçilmiş büyük tutar ve 'vurgun' etiketi birlikte operasyonu kesin başarı olarak sunuyor; başka bir kurum aynı olayı bu bileşim olmadan veriyor.",
+   "alternative_explanation": "Tutar resmi bir veridir; slogan ise başlık geleneğinin bir parçası olabilir.",
+   "missing_context": [
+    "Kurumun haber metninin tamamı"
+   ]
+  }
+ ]
+}

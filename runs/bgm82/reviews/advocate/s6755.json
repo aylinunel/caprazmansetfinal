@@ -1,0 +1,307 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[hurriyet · 10:45] Abdul el-Sayed, ABD'nin ilk Müslüman senatörü oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[anka · 11:42] ABD'nin ilk Müslüman senatörü seçildi: Demokratlar Kongrede üstünlüğü sağladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 12:20] İsrail lobisine rağmen kazandı: ABD'nin ilk Müslüman senatörü oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[tgrt · 12:17] ABD'nin ilk Müslüman Senatörü Sayed'den Kongre'ye savaş yetkilerini kullanma çağrısı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı seçim sonucunu veren başlıklar sırasıyla 'ilk' olmayı, Demokratların genel üstünlüğünü, İsrail lobisine karşı kazanmayı ve adayın siyasi çağrısını öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar farklı saatlerde farklı gelişmeleri (sonuç, konuşma, açıklama) yansıtıyor olabilir.",
+   "missing_context": [
+    "Kuruluşların seçimle ilgili diğer haberleri"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mısır kökenli 41 yaşındaki doktor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İşte iflas eden kentte mucizeler yaratan hekim",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Demokratların Müslüman adayı Abdul el-Sayed",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mısır asıllı Müslüman aday Abdul el-Sayed",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi kuruluşların kendi seslerinde 'Mısır kökenli doktor', 'Demokratların Müslüman adayı', 'Mısır asıllı Müslüman aday' ve 'mucizeler yaratan hekim' olarak anılıyor; sonuncusu tanımlamanın ötesinde açık bir övgü taşıyor.",
+   "alternative_explanation": "Etiketler adayın biyografisini tanıtmak için seçilmiş olabilir.",
+   "missing_context": [
+    "Adayın hekimlik ve kamu sağlığı geçmişine dair bilgi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 22:51] ABD'de ilk Müslüman senatör tarihi eşikte! Michigan anketlerinde Abdul El-Sayed zafere koşuyor!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "'Salıncak eyalet' Michigan'da tarihi zafer",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 21:24] Michigan anketlerine göre Abdul El-Sayed ABD'nin ilk Müslüman senatörü olabilir",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 10:45] Abdul el-Sayed, ABD'nin ilk Müslüman senatörü oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Başlıklarda kuruluşların kendi sesinde 'tarihi eşik', 'zafere koşuyor' ve 'tarihi zafer' gibi değerlendirici ifadeler var; aynı anket ve aynı sonuç başka kuruluşlarda bu ifadeler olmadan veriliyor.",
+   "alternative_explanation": "'Tarihi' nitelemesi bir ilki betimleyen olgusal bir vurgu olarak da okunabilir.",
+   "missing_context": [
+    "Kuruluşların diğer ülkelerdeki benzer ilkleri nasıl verdiği"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Demokratlar, Cumhuriyetçilerin elindeki en az yedi Senato sandalyesini kazanırken, Temsilciler Meclisi'nde de çoğunluğu elde ederek",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 11:20] 7 Müslüman isim kongreye seçildi!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Seçim sonucu bazı metinlerde ara seçimlerin genel tablosu ve Kongre'ye seçilen Müslüman adaylar dizisi içine yerleştiriliyor.",
+   "alternative_explanation": "Genel seçim tablosu sonucun anlamını açıklayan olgusal bir bağlamdır.",
+   "missing_context": [
+    "Ara seçimlerin tam sonuçları"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 13:40] ABD'nin ilk Müslüman senatörü Sayed, inancı nedeniyle hedef alınmasına ve İsrail lobisine rağmen kazandı! Trump'a ve JD Vance'e böyle seslendi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 10:45] Abdul el-Sayed, ABD'nin ilk Müslüman senatörü oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı başlık iki tercihi birleştiriyor: adayın karşılaştığı engelleri (inancı nedeniyle hedef alınma, İsrail lobisi) seçip 'rağmen kazandı' kurgusuyla vermek ve Trump'a yanıtını öne çıkarmak; ikisi de sonucu güçlü rakiplere karşı kazanılmış bir zafer yönünde sunuyor. Başka bir kuruluş aynı sonucu bu bileşim olmadan veriyor.",
+   "alternative_explanation": "Engellerin anılması kampanya sürecinin olgusal bir özeti olarak görülebilir.",
+   "missing_context": [
+    "Lobi desteğine ve hedef göstermeye ilişkin kaynaklar"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 10:43] ABD tarihinin ilk Müslüman senatörü seçildi: Abdul El-Sayed, Cumhuriyetçi Mike Rogers'ı yendi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Michigan eyaletinde Cumhuriyetçi Mike Rogers'ı mağlup ederek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhuriyetçi rakibi Mike Rogers'a üstünlük sağlayarak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Trump'ın desteklediği Cumhuriyetçi rakibini geride bırakarak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı sonuç 'yendi', 'mağlup ederek', 'üstünlük sağlayarak' ve 'geride bırakarak' ifadeleriyle veriliyor; ancak bu farkların çağrışımda mı yoksa yalnızca üslupta mı olduğu kesin değil.",
+   "alternative_explanation": "İfadeler Türkçede seçim sonuçları için birbirinin yerine kullanılan eş anlamlılar olabilir.",
+   "missing_context": [
+    "Kuruluşların diğer seçim sonuçlarında kullandığı fiiller"
+   ]
+  }
+ ]
+}

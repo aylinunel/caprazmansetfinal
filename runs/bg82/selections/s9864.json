@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "in-group-bias",
+  "halo-effect",
+  "messenger-effect",
+  "salience-bias"
+ ],
+ "selection_uncertainty": [
+  "Şüpheli sayıları (5, 6, 8) kurumlar arasında farklı.",
+  "Soruşturma sürüyor; suçlamalar kanıtlanmış değil."
+ ],
+ "selection_note": "Kişiyi 'firari patron' ya da 'iş insanı' olarak sunmak çerçeveleme ve grup eğilimi açısından incelenebilir."
+}

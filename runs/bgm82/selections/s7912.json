@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "metaphorical-framing",
+  "word-choice",
+  "emphasis-framing"
+ ],
+ "selection_uncertainty": [
+  "Yalnız başlık/özet var; tam metin ve kaynak alıntı ayrımı sınırlı.",
+  "Sayı farkı farklı zamanlı bilgiden kaynaklanabilir."
+ ],
+ "selection_note": "'Katliam gibi', 'can pazarı' gibi kurum dili."
+}

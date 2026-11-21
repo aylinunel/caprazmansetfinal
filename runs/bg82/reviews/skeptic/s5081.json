@@ -1,0 +1,171 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 18:03] Genel müdürü fon soruşturmasında gözaltına alındı: Borsa İstanbul'un başına 'vekaleten' Atila Türeli getirildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 06:09] Borsa İstanbul AŞ Genel Müdürlüğü görevine vekaleten Atila Türeli getirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkına bağlanan bir tercih, yargı ya da öneri içermiyor.",
+   "alternative_explanation": "Önceki genel müdürün gözaltısı atamanın doğrudan bağlamı olduğundan anılması bilgilendirici olabilir.",
+   "missing_context": [
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğine dair veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar belirli bir ayrıntıyı öne çıkarıyor; ancak bu ayrıntının bir yargının ya da tercihin yerine geçtiğini gösteren açık bir bağ yok.",
+   "alternative_explanation": "Öne çıkan ayrıntı haber değeri yüksek ve doğrulanmış bir bilgi olabilir.",
+   "missing_context": [
+    "Çarpıcı ayrıntı ile daha az çarpıcı bilgi arasında ağırlıklandırma karşılaştırması",
+    "Ayrıntının sıklık kanıtı gibi kullanıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 18:07] Borsa İstanbul Genel Müdürü Atila Türeli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 06:09] Borsa İstanbul AŞ Genel Müdürlüğü görevine vekaleten Atila Türeli getirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Star başlığı 'vekaleten' nitelemesini düşürerek atamayı kalıcı gibi veriyor; AA ise vekaleten atamayı belirtiyor. Bu bir düzleştirme farkıdır, ancak bir sonuca etkisi gösterilmiyor.",
+   "alternative_explanation": "Başlık kısaltması olabilir; haberin gövdesinde vekalet bilgisi yer alıyor olabilir.",
+   "missing_context": [
+    "Özgün kaynak metni (resmî açıklama ya da kurum duyurusu)",
+    "Farkın bir sonuca ya da karara etki ettiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "omission-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde aynı karar bağlamında karşılaştırılabilir bir eylem ve eylemsizlik ile bunlara ilişkin ahlaki yargılar yok.",
+   "alternative_explanation": "Haber bir atamayı aktarıyor; eylem-eylemsizlik kıyası içermiyor.",
+   "missing_context": [
+    "Karşılaştırılabilir eylem ve eylemsizlik",
+    "Eylemin daha ağır yargılandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde önceki bir uyaranın sonraki bir yargıyı etkilediğini gösteren açık bir sıra ve karşılaştırmalı kanıt yok.",
+   "alternative_explanation": "Önceki gelişmelere yapılan göndermeler haberin arka planını veriyor.",
+   "missing_context": [
+    "Uyaran ile tepki arasında karşılaştırmalı ya da tekrarlanan gözlem"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,240 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 11:14] Fenerbahçe, Dirk Kuyt ile yollarını ayırdı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe, Dirk Kuyt ile Yolların Ayrıldığını Açıkladı: Kulüpten Duygusal Veda Mesajı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'den beklenen açıklama geldi: Dirk Kuyt düğümü çözüldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar aynı ayrılık olgusunu veriyor; onedio veda mesajının duygusal tonunu, turkiyegz belirsizliğin sona ermesini öne çıkarıyor. Ancak bu farklar maliyet/fayda veya kazanan/kaybeden gibi ayrı boyutlar değil, aynı olgunun anlatım çeşitlemesi.",
+   "alternative_explanation": "Başlık farkları kulübün resmi paylaşımının farklı bölümlerinin ve haberin yayın saatinin yansıması olabilir.",
+   "missing_context": [
+    "Başlıkların olgunun farklı bir boyutunu (ör. kulüp açısından sonuç, Kuyt'un yeni görevi) öne çıkardığını gösteren daha belirgin karşıtlık"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[t24 · 11:09] Dirk Kuyt ile yollar ayrıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[memurlar · 11:20] Dirk Kuyt, Fenerbahçe'den ayrıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar 'yollar ayrıldı', 'ayrıldı' ve 'veda etti' gibi farklı ifadeler kullanıyor; bu ifadeler çağrışım bakımından değil yalnızca üslup bakımından farklı.",
+   "alternative_explanation": "Ayrılık için kullanılan ifadeler Türkçe spor haberciliğinde eşdeğer kalıplardır.",
+   "missing_context": [
+    "Aynı eylem için çağrışımı belirgin biçimde farklı bir sözcük kullanan kurum"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SON DAKİKA: Fenerbahçe Dirk Kuyt ile yolların ayrıldığını açıkladı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kulüpten Duygusal Veda Mesajı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Başlıklarda 'SON DAKİKA' ve 'Duygusal' gibi ifadeler var; bunlar bir olayı değerlendiren yüklü sözcükler (skandal, rezalet, müjde) değil, aciliyet ve ton belirten etiketler.",
+   "alternative_explanation": "'Duygusal veda' kulübün kendi mesajının tonunu betimliyor olabilir; 'son dakika' yayın etiketi.",
+   "missing_context": [
+    "Olayı açıkça değerlendiren yüklü sözcük içeren bir başlık"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dirk Kuyt düğümü çözüldü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "turkiyegz 'düğümü çözüldü' ifadesini kullanıyor; bu kalıplaşmış bir deyim ve aktörlere düşman/çare gibi roller atamıyor.",
+   "alternative_explanation": "'Düğüm çözülmek' belirsizliğin sona ermesini anlatan yerleşik bir Türkçe deyim.",
+   "missing_context": [
+    "Rol atayan, kalıplaşmamış bir metafor"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe Kulübü, Dirk Kuyt ile yolların ayrıldığını açıklayarak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay kulübün resmi açıklamasıyla duyurulan bir ayrılık; sorumluluğu belirsiz bir soruşturma veya kaza söz konusu değil.",
+   "alternative_explanation": "Ayrılık kulübün kendi duyurusu olduğundan faillik atanması doğrudan olgudur.",
+   "missing_context": [
+    "Sorumluluğu tartışmalı bir olay"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sezona İsmail Kartal'ın ekibinde başlayan Hollandalı teknik adam, Kartal'ın ayrılığının ardından iki maçta takımın başında yer almıştı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe’de yaşanan teknik direktör değişiminin ardından gözler Dirk Kuyt’ın geleceğine çevrildi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "onedio ve karar ledeleri ayrılığı teknik direktör değişimi ve Kuyt'un önceki görevleriyle birlikte veriyor; ancak bu bir eğilim veya kurumsal süreç bağlamından çok kısa bir biyografik arka plan.",
+   "alternative_explanation": "Önceki görevlerin anılması okuru bilgilendirmeye yönelik standart arka plan bilgisidir.",
+   "missing_context": [
+    "Kulüpteki teknik ekip değişikliklerini bir dizi olarak sunan daha açık bir anlatım"
+   ]
+  }
+ ]
+}

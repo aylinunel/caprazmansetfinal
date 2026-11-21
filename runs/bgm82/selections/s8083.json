@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "labeling",
+  "word-choice",
+  "emphasis-framing",
+  "responsibility-framing"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "'Vurgun' nitelemesi kurumun kendi dili mi alıntı mı belirsiz olabilir."
+ ],
+ "selection_note": "'Fon vurgunu' etiketi ve 'Özgür Özel'in işaret ettiği' atfı vurgu ve sorumluluk çerçevesi adayları."
+}

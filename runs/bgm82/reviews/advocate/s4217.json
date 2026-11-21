@@ -1,0 +1,239 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tarihi zafer!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Brezilya'da tarihi geri dönüş!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 04:34] Brezilya'da devlet başkanlığı seçimini Lula da Silva kazandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Mynet ve Haberler \"tarihi zafer\", \"tarihi geri dönüş\" değerlendirmelerini kendi sesiyle kullanırken Habertürk aynı sonucu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Dördüncü dönem rekoru \"tarihi\" nitelemesini olgusal kılabilir.",
+   "missing_context": [
+    "Rekorun resmi doğrulaması"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tarihi zafer! Brezilya'da seçimi Lula da Silva kazandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Brezilya’da seçimin galibi sol: Lula yeniden başkan!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 05:15] Brezilya'da Lula da Silva yeniden devlet başkanı seçildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı sonuç Mynet'te \"tarihi zafer\", BirGün'de \"seçimin galibi sol\", TRT Haber'de \"yeniden seçildi\" olarak veriliyor; ilk ikisi kutlayıcı ve ideolojik çağrışım taşıyor.",
+   "alternative_explanation": "Farklı sözcükler başlık üslubu ve okur kitlesine göre seçilmiş olabilir.",
+   "missing_context": [
+    "Kurumların benzer seçim sonuçlarındaki sözcük tercihleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bolsonaro'dan itiraz",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Brezilya'da Lula 4'üncü kez başkan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolsonaro yenilgiyi kabul etmedi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı seçim sonucunu NTV kazananın rekoru, Mynet ve ANKA ise kaybedenin itirazı üzerinden öne çıkarıyor (kazanan ve kaybeden).",
+   "alternative_explanation": "İtiraz haberi ayrı bir gelişme olarak eklenmiş olabilir.",
+   "missing_context": [
+    "İtirazın resmi başvuru durumu"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "muhalefetin adayı sağcı Flavio Bolsonaro",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rakibi Senatör Flavio Bolsonaro",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı aktör TGRT'de kendi sesiyle \"sağcı\", ANKA'da \"Senatör\" olarak anılıyor; \"sağcı\" tanımlamanın ötesinde ideolojik bir konumlandırma taşıyor.",
+   "alternative_explanation": "\"Sağcı\" yabancı siyaset haberlerinde okuru bilgilendiren yaygın bir tanımlayıcı olabilir.",
+   "missing_context": [
+    "Kurumun Lula için de ideolojik etiket kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kurumun kendi sesiyle yalnızca iki seçenek sunduğu bir ifade"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kurumun kendi sesiyle kurduğu açık bir nedensellik ifadesi"
+   ]
+  }
+ ]
+}

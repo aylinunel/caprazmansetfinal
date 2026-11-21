@@ -1,0 +1,255 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de derbi mağlubiyetinin ardından teknik direktör İsmail Kartal gönderildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay bir soruşturma ya da sorumluluğu belirsiz bir olay değil; bir teknik direktörün ayrılığı aktarılıyor.",
+   "alternative_explanation": "Ayrılık kulüp tarafından duyurulmuş bir yönetim kararıdır.",
+   "missing_context": [
+    "Ayrılığın gerekçesine dair kulüp açıklaması"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Galatasaray mağlubiyeti sonrası deprem! İsmail Kartal istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "derbi mağlubiyetinin ardından teknik direktör İsmail Kartal gönderildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar derbi yenilgisi ile ayrılığı 'sonrası' ve 'ardından' ifadeleriyle yan yana getiriyor; dayanak yalnızca zaman sırası, ancak açık bir nedensellik eki kullanılmıyor.",
+   "alternative_explanation": "Zaman ifadeleri yalnızca kronolojiyi aktarıyor olabilir.",
+   "missing_context": [
+    "Kulübün ayrılık gerekçesi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 19:26] İstifasını sundu! Fenerbahçe'de İsmail Kartal dönemi sona erdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 22:09] Fenerbahçe'de derbi mağlubiyetinin ardından teknik direktör İsmail Kartal gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de İsmail Kartal ile yollar ayrıldı: En güçlü aday açıklandı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ayrılık bir başlıkta Kartal'ın istifası, birinde derbi yenilgisi ve kulübün göndermesi, bir diğerinde halef adayı üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar haberin farklı aşamalarında farklı yeni bilgileri öne çıkarmış olabilir.",
+   "missing_context": [
+    "Haberlerin güncelleme geçmişi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 20:33] Fenerbahçe'de İsmail Kartal istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "teknik direktör İsmail Kartal gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe resmen açıkladı... İsmail Kartal ile yollar ayrıldı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı ayrılık kurumların kendi sesinde 'istifa etti', 'gönderildi' ve 'yollar ayrıldı' olarak adlandırılıyor; 'gönderildi' kararı kulübe, 'istifa etti' Kartal'a yükleyen farklı çağrışımlar taşıyor.",
+   "alternative_explanation": "Takvim gayriresmî bir anlatım kullanmış ya da farklı bir kaynağa dayanmış olabilir.",
+   "missing_context": [
+    "Kulübün resmi açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de 4. İsmail Kartal dönemi sona erdi: İstifası kabul edildi! Yerine gelecek isim de belli oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Halef bilgisi başlıkta yer alsa da ayrılık olayı başlığın ana cümlesinde de veriliyor.",
+   "alternative_explanation": "Halef bilgisi ek yeni bilgi olarak eklenmiş olabilir.",
+   "missing_context": [
+    "Halef adayına dair kulüp açıklaması"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: Fenerbahçe'de 4. İsmail Kartal dönemi sona erdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[tgrt · 20:33] Fenerbahçe'de İsmail Kartal istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bağlam Kartal'ın kulüpteki dördüncü dönemine işaret ediyor; bazı başlıklar bu tekrarlayan örüntüye değinmeden tek bir ayrılık olarak veriyor, ancak tek bir teknik direktör ayrılığının 'bütün hikâye' olarak sunulup sunulmadığı belirsiz.",
+   "alternative_explanation": "Bir ayrılık haberinin önceki dönemlere değinmemesi kısa başlık pratiği olabilir.",
+   "missing_context": [
+    "Önceki Kartal dönemlerinin süreleri"
+   ]
+  }
+ ]
+}

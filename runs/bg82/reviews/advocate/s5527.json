@@ -1,0 +1,196 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "automation-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahis çetesini AVCI yakaladı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Yapay zeka destekli AVCI ile yasa dışı bahis ağına darbe",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık yakalamayı doğrudan yapay zeka destekli AVCI sistemine atfediyor; otomatik sistem çıktısı anlatının öznesi oluyor. Ancak sistemin tek başına yeterli otorite sayıldığı ve bağımsız değerlendirmenin dışlandığı açıkça gösterilmiyor.",
+   "alternative_explanation": "Bakanlık açıklaması AVCI projesini vurguladığı için kurumlar resmi anlatıyı özetlemiş olabilir; operasyonu yürütenler yine de savcılık ve emniyettir.",
+   "missing_context": [
+    "AVCI çıktısının nasıl doğrulandığına dair bilgi",
+    "Operasyonda insan incelemesinin rolü",
+    "Resmi açıklamanın tam metni"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İçişleri Bakanlığı, yapay zekâ destekli AVCI projesinin kullanıldığı operasyonlarda 151 şüphelinin yakalandığını açıkladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kaynak olarak İçişleri Bakanlığı açıkça tanımlanıyor; ancak bakanlığın statüsünün karşıt bir kanıtı bastırmak için kullanıldığı görülmüyor.",
+   "alternative_explanation": "Resmi açıklamayı kaynak göstermek olağan ve şeffaf bir habercilik pratiğidir.",
+   "missing_context": [
+    "Bakanlık açıklamasının bağımsız teyidi",
+    "Karşıt ya da şüpheli tarafın beyanları"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yapay zeka destekli AVCI ile yasa dışı bahis ağına darbe: 151 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "39 ilde yasa dışı bahis operasyonu: 151 şüpheli yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı 151 gözaltılık operasyon bir başlıkta teknoloji başarısı ve 'darbe' olarak, bir başkasında nötr sayı olarak sunuluyor; yargıya bağlanan açık bir tercih ise yok.",
+   "alternative_explanation": "Bakanlığın vurgusu farklı kurumlarca farklı ölçüde aktarılmış olabilir.",
+   "missing_context": [
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri",
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Haberlerin tam metinleri ve aynı olgu setine dayandıklarının teyidi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Batman'da 3.9 milyar TL'lik vurgun deşifre edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "20 milyarlık ağda 100 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Büyük para rakamları başlığa taşınarak operasyon çarpıcı kılınıyor; bu rakamın bir genelleme ya da risk yargısına dayanak yapıldığı ise gösterilmiyor.",
+   "alternative_explanation": "Para hareketi rakamları resmi kaynaktan gelen somut bilgilerdir.",
+   "missing_context": [
+    "Rakamın bir yargıya gerekçe yapıldığını gösteren ifade",
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hale etkisinin için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Metinde bir alandaki olumlu izlenimin başka bir alandaki yargıya taşındığına dair açık bağ yok.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  }
+ ]
+}

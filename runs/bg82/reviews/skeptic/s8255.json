@@ -1,0 +1,181 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ulaştırma ve Altyapı Bakanı Abdulkadir Uraloğlu, Ankara'da 247 kilometrelik Akıllı Ulaşım Sistemleri (AUS) koridoru oluşturulmasına yönelik proje çalışmalarının devam ettiğini belirtti.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ankara akıllı ulaşım koridoru haberleri: İlk koşul alıntıyla karşılanıyor; sonraki koşullar metinde gözlenemiyor. Bir kişi veya kurum otorite olarak tanımlanabiliyor; ancak metin, bu statüye kanıtların yerine geçen belirleyici bir ağırlık verildiğini ya da etkinin haksız olduğunu göstermiyor.",
+   "alternative_explanation": "Resmi açıklamaların ilgili makamlara atfedilmesi olağan haber kaynağı kullanımıdır; ilgili yetkiye başvurmak gerekçeli olabilir.",
+   "missing_context": [
+    "Statünün iddianın değerlendirilmesinin yerine geçtiğini gösteren açık ifade",
+    "Otoritenin konuya uygun uzmanlığı olmadığına dair kanıt"
+   ]
+  },
+  {
+   "card_id": "optimism-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ankara akıllı ulaşım koridoru haberleri: Metinde olumlu bir sonuca ilişkin belirli bir olasılık beklentisi ile buna karşı temel oran veya karşıt kanıtın göz ardı edildiğini gösteren bir ifade yok.",
+   "alternative_explanation": "Plan veya hedef açıklamaları olağan bilgilendirmedir; iyimserlik tek başına hata değildir.",
+   "missing_context": [
+    "Somut bir olasılık veya beklenti",
+    "Karşılaştırılabilir temel oran ya da kalibrasyon verisi"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ankara akıllı ulaşım koridoru haberleri: Kurumlar aynı olayı farklı vurgu ve sözcüklerle veriyor; fakat metinde seçeneklerin eşdeğer olduğunu açıkça kurup bir yargıyı ya da tercihi bu sunuma bağlayan bir akıl yürütme yok.",
+   "alternative_explanation": "Başlık farkları yayın formatı, karakter sınırı, güncelleme saati ve kurum üslubuyla açıklanabilir; sunum farkı tek başına bir karar hatası göstermez.",
+   "missing_context": [
+    "Aynı bilginin farklı sunumunun bir okur veya karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri",
+    "Metinde açıkça eşdeğerlik kuran ve tercihi sunuma dayandıran bir ifade"
+   ]
+  },
+  {
+   "card_id": "planning-fallacy",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ankara akıllı ulaşım koridoru haberleri: Metinde bir görev için somut süre veya kaynak tahmini ve bunu karşılaştırabilecek geçmiş benzer projelere ait bir referans bulunmuyor.",
+   "alternative_explanation": "Proje çalışmalarının sürdüğünün bildirilmesi bir süre tahmini değildir; iyimser hedef tek başına planlama yanılgısı göstermez.",
+   "missing_context": [
+    "Projenin tamamlanma takvimi ve bütçesi",
+    "Benzer projelerin gerçekleşen süre ve maliyetleri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ankara akıllı ulaşım koridoru haberleri: Bazı başlıklar çarpıcı ayrıntıları öne çıkarıyor; ancak metin bu ayrıntıyı açıkça bir yargıya veya tercihe bağlamıyor ve ilgili karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Öne çıkarılan ayrıntı haber değeri taşıyan gerçek bir unsur olabilir; dikkat çekicilik kendi başına haksız bir etki kanıtı değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı haksız biçimde yönlendirdiğine dair doğrudan anlatım",
+    "Okur tepkisi veya editoryal karar kayıtları"
+   ]
+  },
+  {
+   "card_id": "look-elsewhere-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ankara akıllı ulaşım koridoru haberleri: Metinde birçok test, grup veya analiz seçeneği arasından seçilmiş bir sonuç ve bunun düzeltme yapılmadan doğrulayıcı sayıldığı gösterilmiyor.",
+   "alternative_explanation": "Haber istatistiksel bir arama veya çoklu karşılaştırma içermiyor; kart uygulanamıyor.",
+   "missing_context": [
+    "Analizin arama kapsamı",
+    "Önceden belirlenmiş birincil test bilgisi"
+   ]
+  }
+ ]
+}

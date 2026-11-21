@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "emphasis-framing",
+  "word-choice",
+  "labeling",
+  "selective-statistics"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Talep ve karar sayıları karışmış olabilir."
+ ],
+ "selection_note": "'Büyük şok', başkanın babasına vurgu ve parti etiketi adaylar."
+}

@@ -1,0 +1,276 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan istemişti: Erdoğan, başdanışmanı Oktay Saral'ı görevden aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakü’nün Ankara’dan Oktay Saral’ın görevden alınmasını talep ettiği iddia edilmişti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "“başörtüsü” geriliminin ardından",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Başlık Azerbaycan talebini görevden almanın gerekçesi olarak iki nokta ile bağlıyor; lede'de bu bağ için sunulan dayanak yalnızca bir iddia ve 'ardından' zaman sırasıdır.",
+   "alternative_explanation": "Başlık iki olguyu yan yana koyuyor; okur bunu açık bir nedensellik iddiası olarak değil, bağlam olarak da okuyabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Cumhurbaşkanlığının resmi açıklaması",
+    "Azerbaycan talebinin belgelenmiş kaynağı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan'ın okullarda türbanı yasaklamasını",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başörtüsü yasağına karşı çıkıp Azerbaycan'ın tepkisini çekmişti!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan, başdanışmanı Oktay Saral'ı görevden aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Oktay Saral görevinden istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı yasak bir kurumda 'türban', başka kurumda 'başörtüsü' sözcüğüyle; aynı ayrılık bir kurumda 'görevden aldı', başka kurumda 'istifa etti' ile anlatılıyor. Bu sözcükler farklı siyasi ve olgusal çağrışımlar taşıyor.",
+   "alternative_explanation": "Görevden alma ve istifa ifadeleri farklı zamanlarda yayımlanmış farklı bilgi düzeylerini yansıtıyor olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan talep etmişti: Cumhurbaşkanı Başdanışmanı Oktay Saral görevden alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Oktay Saral görevden alındığını açıkladı: \"Kimseye kırgınlığım yok\"",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Başdanışmanı Oktay Saral 10 yıllık görevinden istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ayrılık bir başlıkta dış talep, bir başlıkta Saral'ın kırgın olmadığı beyanı, bir başlıkta görev süresi üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Haberler farklı saatlerde ve farklı açıklamalara dayanarak yazılmış olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan talep etmişti: Cumhurbaşkanı Başdanışmanı Oktay Saral görevden alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Başlık görevden almayı iddia işareti olmadan Azerbaycan talebine bağlıyor; ancak olay bir soruşturma ya da yargı süreci değil, kartın ilk koşulu karşılanmıyor olabilir.",
+   "alternative_explanation": "Görevden alma bir yönetsel karar; sorumluluk soruşturma anlamında belirsiz bir olay değildir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Başdanışmanı Oktay Saral",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Başdanışmanı Saral istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar Saral'ı aynı resmi unvanla anıyor; değerlendirme taşıyan farklı bir etiket gözlenmiyor.",
+   "alternative_explanation": "Resmi unvan kullanımı standart bir tanımlamadır.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan hükümeti ile AKP arasında yaşanan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Azerbaycan Cumhurbaşkanı İlham Aliyev’in liderliğindeki Yeni Azerbaycan Partisi’nin (YAP), ülkedeki okullarda başörtüsünü yasaklaması",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar ayrılığı Azerbaycan'daki başörtüsü yasağı ve iki ülke arasındaki gerilim gibi daha geniş bir siyasi bağlam içinde sunuyor.",
+   "alternative_explanation": "Bağlam bilgisi ayrılığın arka planını açıklayan olgusal bilgi olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

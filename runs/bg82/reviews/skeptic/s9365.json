@@ -1,0 +1,201 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "sabah saatlerinde dev bir operasyon için düğmeye basıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 08:27] Mustafa Sarıgül soruşturması: 17 kişi hakkında gözaltı kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkına bağlanan bir tercih, yargı ya da öneri içermiyor.",
+   "alternative_explanation": "Sözcük farkı yayın üslubundan kaynaklanabilir; bir karar vericinin tercihi aktarılmıyor.",
+   "missing_context": [
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğine dair veri"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde sonraki bir yargının önceki bir değere açıkça bağlandığı ya da o değerin gerekçesiz biçimde korunduğu görülmüyor.",
+   "alternative_explanation": "Farklı sayılar haberin farklı saatlerde güncellenmesinden ya da farklı kaynaklardan kaynaklanabilir.",
+   "missing_context": [
+    "Bir karar vericinin önceki değeri referans aldığını gösteren açık ifade",
+    "Revizyonu gerektiren kanıtla karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar belirli bir ayrıntıyı öne çıkarıyor; ancak bu ayrıntının bir yargının ya da tercihin yerine geçtiğini gösteren açık bir bağ yok.",
+   "alternative_explanation": "Öne çıkan ayrıntı haber değeri yüksek ve doğrulanmış bir bilgi olabilir.",
+   "missing_context": [
+    "Çarpıcı ayrıntı ile daha az çarpıcı bilgi arasında ağırlıklandırma karşılaştırması",
+    "Ayrıntının sıklık kanıtı gibi kullanıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 06:00] Sarıgül soruşturmasında 19 kişi hakkında gözaltı kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 08:38] Sarıgül soruşturmasında yeni operasyon: 17 gözaltı kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "18 kişi hakkında gözaltı kararı verildi. Şüphelilerden 16'sı gözaltına alındı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar gözaltı kararı sayısını 17, 18 ve 19 olarak farklı veriyor; anlatılar arasında bir fark kaydedilebilir, ancak bunun bir sonuca etkisi gösterilmiyor.",
+   "alternative_explanation": "Sayılar farklı saatlerde güncellenen savcılık bilgilerinden ya da ek gözaltı kararlarından kaynaklanabilir.",
+   "missing_context": [
+    "Özgün kaynak metni (resmî açıklama ya da kurum duyurusu)",
+    "Farkın bir sonuca ya da karara etki ettiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin olumsuz bir gelişmeyi aktarıyor; ancak olumsuz bilgiye karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık verildiğini gösteren bir belge ya da tekrarlanan davranış yok.",
+   "alternative_explanation": "Olumsuz içerik olayın kendisinden kaynaklanıyor; haberin konusu olumsuz bir gelişme.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgiyle ağırlıklandırma kıyası",
+    "Orantısız ağırlığın bir değerlendirmeyi etkilediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "just-world-hypothesis",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin hiçbir kişinin başına gelen sonucu ahlaki hak edişe ya da karaktere bağlamıyor; soruşturma bir yargı süreci olarak aktarılıyor.",
+   "alternative_explanation": "Gözaltı bilgileri savcılık açıklamalarını aktarıyor olabilir.",
+   "missing_context": [
+    "Sonucu hak edişle açıklayan açık ifade",
+    "Bağlamsal nedenlerin göz ardı edildiğine dair kanıt"
+   ]
+  }
+ ]
+}

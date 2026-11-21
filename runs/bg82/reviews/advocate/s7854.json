@@ -1,0 +1,237 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 18:28] Polonya'da yargı krizi sonrası silahlı saldırı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yargı krizinin ardından Polonya'da silahlı saldırı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Saldırganın evinde de üç aile üyesinin cesedi bulundu. Hastanede ölen saldırganın aşırı sağcı ideolojiden",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Takvim ve A Haber saldırıyı 'yargı krizi' ile başlıkta eşleştiriyor; BBC Türkçe ise aile içi ölümler ve saldırganın ideolojisi gibi farklı etkenler aktarıyor. Eşleştirme için kanıt sunulmuyor, ancak ilişkinin yanılsama olduğu da karşılaştırmalı veri olmadan gösterilemiyor.",
+   "alternative_explanation": "Başlıklar yalnızca ülkenin güncel bağlamını hatırlatıyor olabilir, bir ilişki iddiası taşımayabilir.",
+   "missing_context": [
+    "Saldırganın gerekçesine ilişkin resmi açıklama."
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[trthaber · 23:55] Krakov'daki silahlı saldırıda 5 kişi öldü, 10'dan fazla kişi yaralandı — Polonya'nın Krakov kentinde düzenlenen silahlı saldırıda 6 kişi hayatını kaybetti, 15 kişi yaralandı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[milligazete · 20:13] Polonya'da silahlı saldırı iddiası: 5 ölü, 10'dan fazla yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 07:14] Polonya'nın Krakov kentinde düzenlenen silahlı saldırıda 6 kişi öldü, 15 kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "TRT Haber başlıkta erken dönem rakamı olan '5 kişi öldü'yü korurken aynı haberin lede'i 6 ölü ve 15 yaralı diyor; Milli Gazete de AA'nın 6 ölü bildirmesinden sonra 5 ölü veriyor. İlk rakam bir referans noktası gibi korunuyor, ancak metin sonraki değerlendirmeyi bu ilk rakama açıkça bağlamıyor.",
+   "alternative_explanation": "Başlık güncellenmemiş bir ilk sürüm olabilir; tutarsızlık bir yargı hatası değil, editoryal bir gecikme olabilir.",
+   "missing_context": [
+    "Başlıkların güncellenme saatleri."
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 19:28] Polonya'da kanlı saldırı: Çok sayıda ölü ve yaralılar var",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 19:12] Polonya'da silahlı saldırı: 6 kişi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (Krakov'daki saldırı) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aksam · 00:08] Polonya'da silahlı saldırı dehşeti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akşam olumsuz olayı 'dehşet' sözcüğüyle güçlendiriyor; ancak olumsuz bilginin karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık aldığı gösterilmiyor.",
+   "alternative_explanation": "Olumsuz olayın öne çıkması haberin konusunun kendisinden kaynaklanıyor olabilir; olumsuz bilginin orantısız ağırlık aldığını gösteren karşılaştırılabilir olumlu bilgi metinde yok.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve nasıl işlendiği.",
+    "Olumsuz vurgunun bir değerlendirmeyi değiştirdiğine dair kanıt."
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde akla kolay gelen örneklerin bir olasılık ya da risk tahmini için gerekçe olarak kullanıldığı açık bir ifade yok.",
+   "alternative_explanation": "Haberler tek bir saldırıyı aktarıyor.",
+   "missing_context": [
+    "Bir genellemenin hatırlanabilir örneklere dayandırıldığı ifade."
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[mynet · 18:43] Polonya'da silahlı saldırı! Aracından insanlara ateş etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mynet saldırının çarpıcı bir ayrıntısını başlığa taşıyor; ancak bu ayrıntının bir yargıya gerekçe yapıldığı görülmüyor.",
+   "alternative_explanation": "Ayrıntı olayın olgusal bir parçası.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir değerlendirmeyi yönlendirdiğine dair ifade."
+   ]
+  }
+ ]
+}

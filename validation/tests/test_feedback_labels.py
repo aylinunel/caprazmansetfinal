@@ -28,6 +28,12 @@ class LabelsTest(unittest.TestCase):
     def tearDown(self):
         self.dir.cleanup()
 
+    def test_blind_packet_reviews_are_skipped_like_narrative_ones(self):
+        ls = import_export(export(rev("ev1__framing-effect"),
+                                  rev("blind__behaviour-A1__ev1__framing-effect", "coded", answers={"present": "yes"}),
+                                  rev("narr__k1", "coded")), RESULTS, CARDS)
+        self.assertEqual([l.card_id for l in ls], ["framing-effect"])
+
     def test_import_round_trip(self):
         ls = import_export(export(rev("ev1__framing-effect"), rev("ev1__salience-bias", "rejected", "değil")),
                            RESULTS, CARDS)
@@ -41,6 +47,26 @@ class LabelsTest(unittest.TestCase):
     def test_new_pattern_flag_is_carried(self):
         l = import_export(export(rev("ev1__framing-effect", "corrected", "n", new_pattern=True)), RESULTS, CARDS)[0]
         self.assertTrue(l.new_pattern)
+
+    def test_structured_desk_review_is_carried_and_read_back(self):
+        r = rev("ev1__framing-effect", "rejected", "", verdict="wrong", reason="wrong_concept", card="salience-bias",
+                conditions=["met", "unmet"], ms=4200)
+        append(self.path, import_export(export(r), RESULTS, CARDS))
+        l = read(self.path)[0]
+        self.assertEqual((l.verdict, l.reason, l.card_correct, l.conditions, l.seconds),
+                         ("wrong", "wrong_concept", "salience-bias", ("met", "unmet"), 4.2))
+        self.assertEqual(append(self.path, read(self.path)), 0)   # read-back labels are hashable and dedupe
+
+    def test_desk_review_naming_an_unknown_concept_is_refused(self):
+        r = rev("ev1__framing-effect", "rejected", verdict="wrong", reason="wrong_concept", card="no-such-card")
+        with self.assertRaisesRegex(ValueError, "unknown correct concept"):
+            import_export(export(r), RESULTS, CARDS)
+
+    def test_old_label_lines_still_read(self):
+        self.path.write_text(json.dumps({"event": "ev1", "card_id": "framing-effect", "pack_version": "p1", "text_sha256": "t",
+                                         "outcome": "verified", "note": "", "tier_at_review": "", "audit": False,
+                                         "new_pattern": False, "reviewed_at": ""}) + "\n")
+        self.assertEqual(read(self.path)[0].reason, "")
 
     def test_narrative_reviews_are_skipped(self):
         ls = import_export(export(rev("narr__abc"), rev("ev1__framing-effect")), RESULTS, CARDS)

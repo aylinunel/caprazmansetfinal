@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "emphasis-framing",
+  "labeling",
+  "word-choice",
+  "selective-statistics"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Sayılar kaynaklara göre farklı.",
+  "Suçlamalar iddia aşamasında."
+ ],
+ "selection_note": "'Sıcak gelişme', 'dev operasyon', 'eski CHP'li' gibi etiketleme ve yüklü dil adayları."
+}

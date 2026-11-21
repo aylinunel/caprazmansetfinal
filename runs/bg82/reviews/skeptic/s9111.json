@@ -1,0 +1,218 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Batı'daki yozlaşmış iş dünyasının son örneği haline dönüşen",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akit tek bir vakayı \"Batı'daki yozlaşmış iş dünyası\" genellemesine bağlıyor; ancak bu ilişkinin seçilmiş tesadüflere dayandığını gösteren karşılaştırmalı veri metinde yok.",
+   "alternative_explanation": "Kurumun yerleşik yorum çizgisi; bir istatistik iddiası olarak değil, editoryal nitelendirme olarak okunabilir.",
+   "missing_context": [
+    "Genellemeye dayanak gösterilen başka örnekler",
+    "Karşılaştırmalı oranlar"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Teknoloji devinde ahlaksızlık depremi!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Nvidia, Jensen Huang'ın başkan ve CEO olarak istifa ettiğini duyurdu.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Ahlaki ve kurumsal anlatım aynı istifanın farklı yüzleri.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Nvidia CEO'su Jensen Huang ilk değil! Çin istihbaratının 'bal tuzağı' dosyaları yeniden gündemde",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki örnekler hatırlatılıyor; ama bunların bir tahminin gerekçesi olarak kullanıldığı açık değil.",
+   "alternative_explanation": "Arka plan haberciliği.",
+   "missing_context": [
+    "Hatırlanan örneklere dayanan açık bir sıklık iddiası"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hisseler çakıldı...",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz piyasa haberi var; orantısız ağırlıklandırma belgelenmiyor.",
+   "alternative_explanation": "Hisse düşüşü gerçek bir olgu.",
+   "missing_context": [
+    "Olumlu ve olumsuz kanıtın karşılaştırması"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Silikon Vadisi'ni sarsan aşk",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı ayrıntı öne çıkıyor; bir yargıya haksız etkisi gösterilmiyor.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "Yargıya bağlantı"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çapkınlıkları dünyanın en güçlü CEO’sunu bitirdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "özel hayatına ilişkin iddiaların ulusal güvenlik tartışmalarına yol açmasının ardından",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Nvidia CEO Jensen Huang resigns amid board investigation",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "10haber istifayı kişinin \"çapkınlıklarına\" bağlıyor; diğer kurumlar ulusal güvenlik tartışmasını ve yönetim kurulu soruşturmasını durumsal etken olarak veriyor.",
+   "alternative_explanation": "Kurumsal etkenlerin bilindiği halde gerekçesiz göz ardı edildiği metinde açık değil; başlık sıkıştırılmış bir özet olabilir.",
+   "missing_context": [
+    "İstifanın resmi gerekçesi",
+    "Yönetim kurulu soruşturmasının bulguları"
+   ]
+  }
+ ]
+}

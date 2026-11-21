@@ -1,0 +1,277 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "YENİ Partili Merkezefendi Belediye Başkanı Şeniz Doğan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tutuklanan Merkezefendi Belediye Başkanı Doğan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Parti Yeni vurgun eski",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumda parti üyeliğiyle, bir başkasında tutuklu sıfatıyla anılırken bir kurum kendi sesiyle 'vurgun' nitelemesini ekliyor; bu son etiket tanımlamanın ötesinde bir değerlendirme taşıyor.",
+   "alternative_explanation": "Parti ve tutukluluk bilgisi olgusal bağlam olarak verilmiş olabilir.",
+   "missing_context": [
+    "Soruşturmanın aşaması"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Parti Yeni vurgun eski",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Merkezefendi Belediye Başkanı Şeniz Doğan görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kendi sesiyle 'vurgun' sözcüğünü kullanıyor; aynı olgu diğer kurumlarda bu sözcük olmadan veriliyor.",
+   "alternative_explanation": "Kurum soruşturmanın konusunu kısa ve çarpıcı biçimde özetlemiş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "\"rüşvet almak, ihaleye fesat karıştırmak ve irtikap\" iddiasıyla tutuklanan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Parti Yeni vurgun eski",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Rüşvetten tutuklanmıştı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bir kurumun girişinde suçlamanın iddia aşamasında olduğu belirtiliyor; buna karşın başka kurumların başlıkları 'vurgun' ve 'rüşvetten' ifadeleriyle eylemi adı geçen başkana iddia işareti kullanmadan bağlıyor.",
+   "alternative_explanation": "'Rüşvetten tutuklanmıştı' tutuklamanın dayandığı suçlamayı aktarıyor olabilir; suçluluk iddiası olarak okunması zorunlu değil.",
+   "missing_context": [
+    "Soruşturmanın aşaması",
+    "Mahkeme kararı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rüşvetten tutuklanmıştı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "iddiasıyla tutuklanan",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklama bir kurumda 'rüşvetten', diğerinde 'iddiasıyla' sözcükleriyle anlatılıyor; ilki suçu olgu gibi, ikincisi henüz kanıtlanmamış bir iddia gibi çağrıştırıyor.",
+   "alternative_explanation": "Kısa başlık ihtiyacı nedeniyle 'iddia' sözcüğü düşmüş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Son dakika... YENİ Partili Merkezefendi Belediye Başkanı Şeniz Doğan görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İçişleri Bakanlığı duyurdu: Merkezefendi Belediye Başkanı Şeniz Doğan görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Merkezefendi'de rüşvet soruşturması: Belediye Başkanı Doğan görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı görevden uzaklaştırma kimi başlıkta partisi, kimisinde kararı veren bakanlık, kimisinde soruşturmanın konusu öne alınarak veriliyor.",
+   "alternative_explanation": "Kurumlar farklı okur ilgilerine göre öncelik belirlemiş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Parti Yeni vurgun eski",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bağlam bu tür görevden uzaklaştırmaların süregelen bir örüntü olduğunu belgelemiyor; ayrıca bir kurum 'vurgun eski' ifadesiyle zaten daha geniş bir örüntüye gönderme yapıyor.",
+   "alternative_explanation": "Haber tek bir idari karara ilişkin olduğundan tek vaka anlatımı doğal.",
+   "missing_context": [
+    "Benzer görevden uzaklaştırmalara dair veriler"
+   ]
+  }
+ ]
+}

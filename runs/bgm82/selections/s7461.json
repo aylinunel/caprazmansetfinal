@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "emphasis-framing",
+  "causal-overclaim",
+  "metaphorical-framing",
+  "responsibility-framing",
+  "word-choice"
+ ],
+ "selection_uncertainty": [
+  "Yalnız başlık/özet var; tam metin ve kaynak alıntı ayrımı sınırlı.",
+  "İstifa nedenini kurumlar farklı veriyor; nedensellik iddiası kontrol edilmeli."
+ ],
+ "selection_note": "'Krizi hükümeti devirdi', 'koltuğundan etti' gibi neden ve vurgu farkları."
+}

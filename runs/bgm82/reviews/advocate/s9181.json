@@ -1,0 +1,287 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 08:10] AKP'deki fon savaşı kelle aldı: Şahap Kavcıoğlu istifa etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "soL başlığı istifayı bir 'savaş'ın 'kelle alması' olarak anlatıyor; metafor taraflar, çatışma ve kurban rolleri dağıtıyor ve olayı parti içi bir mücadele mantığına yerleştiriyor.",
+   "alternative_explanation": "'Kelle almak' Türkçede görevden ayrılmalar için yaygın kullanılan bir deyim olabilir; metafor olayın okunuşunu yeni bir rol düzenine sokmuyor olabilir.",
+   "missing_context": [
+    "Metinde 'AKP'deki fon savaşı' iddiasını destekleyen bir kaynağın bulunup bulunmadığı."
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "BDDK'da fon skandalıyla anıldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "enflasyon patlaması",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 10:59] Fon vurgununda hedefteydi:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 10:55] BDDK Başkanı Şahap Kavcıoğlu istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      3
+     ]
+    }
+   ],
+   "mechanism": "Kısa Dalga 'fon skandalı' ve 'enflasyon patlaması', Karar 'Fon vurgununda hedefteydi' gibi kurumun kendi sesindeki değerlendirici sözcüklerle istifayı aktarıyor; Sözcü aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "'Fon skandalı' ve 'fon vurgunu' kamuoyunda yerleşmiş adlar olabilir; Kısa Dalga'nın ifadeleri geçmiş dönemin özetlenmesi olarak okunabilir.",
+   "missing_context": [
+    "Kurumların aynı ifadeleri önceki haberlerde soruşturma adı olarak kullanıp kullanmadığı."
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 08:10] AKP'deki fon savaşı kelle aldı: Şahap Kavcıoğlu istifa etti — BDDK Başkanı Şahap Kavcıoğlu, bugün görevinden istifa etti. Kavcıoğlu daha bu sabah yaptığı açıklamada",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "soL başlığı istifayı 'AKP'deki fon savaşı'nın sonucu olarak sunuyor; lede'de bu bağ için yalnızca istifadan önce yapılan açıklamanın zamanı veriliyor, parti içi bir çatışmayı istifaya bağlayan kaynak gösterilmiyor.",
+   "alternative_explanation": "Kurum, metinde yer almayan başka kaynaklara dayanıyor olabilir; Kavcıoğlu'nun kendi açıklamasındaki 'iddialar' ifadesi nedensel bağın bir kısmını destekleyebilir.",
+   "missing_context": [
+    "İstifa ile parti içi tartışma arasındaki bağı belgeleyen kaynaklar.",
+    "soL haberinin tam metni."
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 10:51] BDDK Başkanı Şahap Kavcıoğlu istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 11:09] BDDK Başkanı Kavcıoğlu, görevinden affını istedi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sol · 08:10] AKP'deki fon savaşı kelle aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 10:57] Bankacılık sektöründe tepe değişimi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı ayrılık TGRT'de 'istifa etti', AA'da 'görevinden affını istedi', Takvim'de 'tepe değişimi', soL'da 'kelle aldı' sözcükleriyle anlatılıyor; 'affını istemek' gönüllü ve saygılı bir ayrılık, 'kelle almak' zorla uzaklaştırma çağrışımı taşıyor.",
+   "alternative_explanation": "'Affını istedi' Kavcıoğlu'nun kendi açıklamasındaki ifadeden geliyor olabilir; bu durumda kurumun değil konuşanın sözcüğüdür.",
+   "missing_context": [
+    "Kavcıoğlu'nun açıklamasının tam metni.",
+    "Ayrılığın resmi kararnamedeki ifadesi."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ensonhaber · 21:12] İstifa eden BDDK Başkanı Şahap Kavcıoğlu, 2 yıl boyunca maaş almaya devam edecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[kisadalga · 11:42] Şahap Kavcıoğlu istifa etti: Merkez Bankası'nda faiz indirimleriyle, BDDK'da fon skandalıyla anıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 11:14] Şahap Kavcıoğlu'ndan ayrılık kararı: Cumhurbaşkanı Erdoğan'dan affımı istedim",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 10:59] Fon vurgununda hedefteydi: BDDK Başkanı Şahap Kavcıoğlu istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifa için Star Kavcıoğlu'nun kendi gerekçesini, Karar soruşturmadaki şüpheyi, Kısa Dalga geçmiş görev sicilini, Ensonhaber ise ayrılık sonrası maaş hakkını başlığa taşıyor.",
+   "alternative_explanation": "Ensonhaber'in haberi saatler sonra ortaya çıkan ek bir bilgiye dayanıyor; farklı vurgular kısmen gelişen hikâyenin farklı anlarından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Maaş bilgisinin hangi saatte ve hangi kaynaktan çıktığı."
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kavcıoğlu, fon soruşturmasında kendisi hakkında soru sorulup sorulmadığını bilmediğini belirtti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 10:59] Fon vurgununda hedefteydi:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "BDDK'da fon skandalıyla anıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Kavcıoğlu hakkında bir sorumluluk tespiti yokken Karar 'Fon vurgununda hedefteydi', Kısa Dalga 'fon skandalıyla anıldı' diyerek adı skandalla ilişkilendiriyor; ancak başlık dilbilgisi Kavcıoğlu'nu eylemin faili yapmıyor.",
+   "alternative_explanation": "'Hedefteydi' ve 'anıldı' ifadeleri sorumluluk atfı değil, kamuoyundaki tartışmanın aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Kavcıoğlu hakkında soruşturma açılıp açılmadığı.",
+    "İfadelerin bir kaynağa atfedilip atfedilmediği."
+   ]
+  }
+ ]
+}

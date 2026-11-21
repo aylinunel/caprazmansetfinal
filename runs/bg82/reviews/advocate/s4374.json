@@ -1,0 +1,176 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne şafak operasyonu! Belediye başkan yardımcısı dahil 4 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne operasyon: 4 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne soruşturma: Başkan Yardımcısı dahil 4 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı gözaltı olgusu kurumlarca 'şafak operasyonu!', 'operasyon' ve 'soruşturma' gibi farklı sunumlarla verilmiş; ancak bu farkın bir tercih ya da yargıyı değiştirdiğine dair açık bir bağ metinde yok.",
+   "alternative_explanation": "Başlık farkları yayın üslubu, karakter sınırı ve ajans metnine bağlılık düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin bu sunum farkıyla yargısını değiştirdiğine dair kayıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne şafak operasyonu! Belediye başkan yardımcısı dahil 4 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne operasyon: 4 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar 'şafak operasyonu!' ve ünlem gibi çarpıcı unsurları öne çıkarırken diğerleri yalın sayı vermiş; karşılaştırmalı başlık davranışı var, ancak çarpıcı ayrıntının bir yargıyı haksız biçimde yönlendirdiği gösterilmiyor.",
+   "alternative_explanation": "Operasyon saatinin belirtilmesi bilgi verici bir ayrıntı olabilir; ünlem kullanımı kurumun genel başlık üslubudur.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir sonuca gerekçe yapıldığını gösteren açık ifade",
+    "Okur algısı ya da editoryal karar kayıtları"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde olumsuzluk yanlılığı için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde erişilebilirlik sezgisi için gerekli açık akıl yürütme, karar ya da karşılaştırmalı ağırlıklandırma kanıtı yok; başlık ve girişler olayı aktarmakla sınırlı.",
+   "alternative_explanation": "Kurumlar aynı olayı rutin haber diliyle ve kendi yazım alışkanlıklarına göre aktarmış olabilir; bu bir yargı hatası göstermez.",
+   "missing_context": [
+    "Bu sunumla değişen bir yargı ya da karara ilişkin açık kayıt",
+    "Karşılaştırmalı davranış veya yazışma kanıtı"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olayı vermeyen etkin kurumlar: akit, aydinlik, cnnturk, hurriyet, takvim, trthaber, turkiyegz, yenisafak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam, etkin bazı kurumların olayı hiç vermediğini kaydediyor; bu, aynı malzemeye eşit olmayan ilgi gösterildiğine dair karşılaştırmalı bir gözlemdir, fakat bu farkın belirli bir yanlış sonuca bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Kapsamama, gündem yoğunluğu, yerel haber önceliği ya da veri toplama penceresinden kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların haberi görüp görmediğine dair kayıt",
+    "Kapsamamanın bir yargıya yol açtığını gösteren kanıt"
+   ]
+  }
+ ]
+}

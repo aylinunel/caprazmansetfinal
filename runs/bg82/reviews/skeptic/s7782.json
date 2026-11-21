@@ -1,0 +1,240 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye ile Azerbaycan arasındaki kardeşlik, günübirlik siyasi ilişkilerin çok ötesindedir",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karabağ Zaferi'nin 6. yıl dönümü kutlamaları haberinde bir gruba ya da kuruma ait aidiyet ifadesi geçiyor; ancak metin güvenilirlik, suçlama veya fayda farkını bu aidiyete bağlamıyor ve tutarsız standart uygulandığını göstermiyor.",
+   "alternative_explanation": "Aidiyet ifadesi kimlik belirleme amaçlı olgusal bir bilgi veya alıntılanan açıklamanın aktarımı olabilir.",
+   "missing_context": [
+    "Grup üyeliğine göre farklı muamele gördüğü gösterilen karşılaştırılabilir vakalar",
+    "Kararın grup kimliğine dayandırıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "dost ve kardeş Azerbaycan'ın 8 Kasım Zafer Günü'nü en kalbi duygularımla kutluyorum",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karabağ Zaferi'nin 6. yıl dönümü kutlamaları haberinde olumlu bir nitelendirme yer alıyor; ancak metin bir alandaki olumlu izlenimin başka bir alandaki ayrı bir yargıya taşındığını açıkça göstermiyor.",
+   "alternative_explanation": "Olumlu nitelendirme alıntılanan resmi açıklamanın veya olayın doğrudan özelliğinin aktarımı olabilir; iki ayrı alan arasında bir aktarım yok.",
+   "missing_context": [
+    "Birinci alandaki izlenimin ikinci yargıyı belirlediğini gösteren ifade",
+    "Alanların karar için ilgisiz olduğuna dair kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 13:56] Cumhurbaşkanı Erdoğan, Karabağ Zaferi'nin 6. yılını kutladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Azerbaycan yolunda!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karabağ Zaferi'nin 6. yıl dönümü kutlamaları farklı kurumlarca farklı sözcük ve vurgularla başlıklandırılmış; ancak metin bu sunum farkını hiçbir tercihe, yargıya veya karara bağlamıyor ve başlıkların karar-ilgili olgularda eşdeğer olduğunu açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, eldeki bilginin güncellenmesi, haber ajansı metninin kısaltılması ve kurumların editoryal üslubundan kaynaklanabilir; bir okuyucu ya da karar verici üzerinde çerçeve etkisi gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okuyucu yargısını değiştirdiğini gösteren karşılaştırmalı ölçüm",
+    "Başlıkların aynı olgulara dayandığını açıkça gösteren bilgi",
+    "Herhangi bir tercih veya yargının bu sunuma dayandırıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "social-norms",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AK Parti Sözcüsü Çelik Karabağ Zaferi'nin 6. yılını kutladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ekonomi yönetimi Karabağ Zaferi'ni kutladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karabağ Zaferi'nin 6. yıl dönümü kutlamaları haberinde çok sayıda yetkilinin kutlama mesajı aktarılıyor; ancak metin bir grubun davranışını veya onay beklentisini belirli bir tercihe açıkça bağlamıyor.",
+   "alternative_explanation": "Kutlama mesajları diplomatik protokol ve resmi ilişkilerin olağan bir parçasıdır; norm kaynaklı bir sapma gösterilmiyor.",
+   "missing_context": [
+    "Algılanan normun belirli bir seçimi belirlediğini gösteren ifade",
+    "Belirtilen gerekçelerden norm kaynaklı sapmayı gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "bandwagon-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AK Parti Sözcüsü Çelik Karabağ Zaferi'nin 6. yılını kutladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ekonomi yönetimi Karabağ Zaferi'ni kutladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karabağ Zaferi'nin 6. yıl dönümü kutlamaları haberinde birçok kişinin kutlama yaptığı aktarılıyor; ancak bir inanç veya eylemin popülerliğine dayandırıldığı açıkça ifade edilmiyor.",
+   "alternative_explanation": "Çok sayıda kutlama mesajı yıl dönümünün resmi niteliğinden kaynaklanır; popülerlik bir doğruluk kanıtı olarak sunulmuyor.",
+   "missing_context": [
+    "Popülerliğin belirleyici gerekçe olarak sunulduğu ifade",
+    "Popülerliğin doğruluk kanıtı sayıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "illusion-of-transparency",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "dost ve kardeş Azerbaycan'ın 8 Kasım Zafer Günü'nü en kalbi duygularımla kutluyorum",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karabağ Zaferi'nin 6. yıl dönümü kutlamaları haberinde bir kişinin iç durumunun bir dinleyici kitlesince algılanabileceğine inandığı açıkça atfedilmiyor; aktarılan ifade açık bir kutlama mesajı.",
+   "alternative_explanation": "Duygular açıkça dile getirilmiş; söylenmemiş bir iç durumun anlaşıldığı varsayımı yok.",
+   "missing_context": [
+    "Kişinin söylenmemiş iç durumunun anlaşıldığına inandığını gösteren ifade",
+    "Tahmin ile gözlemci algısı arasındaki uyumsuzluğa dair kanıt"
+   ]
+  }
+ ]
+}

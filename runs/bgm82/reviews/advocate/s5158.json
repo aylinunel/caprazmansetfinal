@@ -1,0 +1,196 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 11:38] Fenerbahçe, Göztepe'ye 2-1 yenildikten sonra Liverpool maçının hazırlıklarına başladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 14:37] Fenerbahçe, Liverpool maçı hazırlıklarına başladı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 12:21] Fenerbahçe - Liverpool maçına Fransız hakem!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 12:22] Fenerbahçe - Liverpool maçının hakemi belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı hazırlık olgusu bir başlıkta önceki yenilgiyle birlikte, diğerinde yalnızca hazırlık olarak veriliyor; hakem ataması da bir başlıkta uyruk, diğerinde duyuru boyutuyla öne çıkarılıyor.",
+   "alternative_explanation": "Yenilgi bilgisi bağlam vermek için eklenmiş olabilir; uyruk bilgisi Avrupa maçlarında standart bir ayrıntıdır.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 14:52] Fenerbahçe, Liverpool maçı hazırlıklarına start verdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 14:38] Fenerbahçe Liverpool maçının hazırlıklarına başladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Start verdi' ile 'başladı' aynı eylemi farklı sözcüklerle anlatıyor, ancak fark yalnızca üslupla ilgili; çağrışım farkı yok.",
+   "alternative_explanation": "Spor dilinde yerleşik bir ifade tercihi.",
+   "missing_context": []
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 12:38] Fenerbahçe-Liverpool maçına Fransız hakem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fransız hakem Clement Turpin yönetecek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hakem farklı kurumlarda 'Fransız hakem' veya adıyla anılıyor; bu tanımlama düzeyinde kalıyor, değerlendirme içermiyor.",
+   "alternative_explanation": "Uyruk bilgisi tanımlayıcı bir ayrıntı.",
+   "missing_context": []
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tek bir olayı aktarıyor, ancak bağlam veya diğer haberler konunun yinelenen ya da yapısal bir sorun olduğunu göstermiyor; tek vakanın bütün hikâye olarak sunulduğu söylenemez.",
+   "alternative_explanation": "Tekil bir spor veya gündem olayının olay odaklı aktarılması haberin doğasından kaynaklanıyor.",
+   "missing_context": [
+    "Konunun yinelenen veya yapısal olduğunu gösteren önceki vakalar ya da veriler"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin, genel bir sonuca destek olarak seçilmiş göstergeler sunmuyor; bağlamda bu sonucu sınırlayan başka veri de yok.",
+   "alternative_explanation": "Başlıklar tek bir duyuruyu (hakem ataması, hazırlık) aktarıyor.",
+   "missing_context": [
+    "Aynı kaynaktan sonucu sınırlayan başka veriler"
+   ]
+  }
+ ]
+}

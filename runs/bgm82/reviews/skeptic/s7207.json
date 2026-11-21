@@ -1,0 +1,186 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Süper Lig'de haftanın hakemleri açıklandı! Zorlu maça sürpriz atama",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 12:12] Süper Lig'de 11. haftanın hakemleri belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Hakem atamaları olgusunu Takvim tek bir maçın atamasını öne çıkararak, Cumhuriyet genel duyuru olarak veriyor; fark karşıt boyutlardan çok odak ayrıntısında.",
+   "alternative_explanation": "Zirve maçının hakemi okur için en çok ilgi gören bilgi olabilir; diğer başlıkların bir kısmı ise hafta programı gibi farklı bir olguya ait.",
+   "missing_context": [
+    "Diğer kurumların spotlarında aynı maç atamasının öne çıkıp çıkmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Süper Lig'de 11. haftanın hakemleri açıklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Süper Lig'de 11. haftanın hakemleri belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Açıklandı' ile 'belli oldu' aynı olgu için üslup varyantı; çağrışım farkı yok.",
+   "alternative_explanation": "Fark tamamen biçimsel.",
+   "missing_context": [
+    "Çağrışım bakımından ayrışan bir sözcük çifti"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Zorlu maça sürpriz atama",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Trendyol Süper Lig'de 11. hafta karşılaşmalarında düdük çalacak hakemler açıklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim atamayı kendi sesinde 'sürpriz' diye nitelendiriyor, spotta bunun gerekçesi verilmiyor; TRT Haber aynı atamaları değerlendirici sözcük olmadan duyuruyor.",
+   "alternative_explanation": "'Sürpriz' hakemin beklenmeyen bir tercih olduğuna dair spor kamuoyundaki beklentiyi yansıtıyor olabilir; metin bunu belirlemeye yetmiyor.",
+   "missing_context": [
+    "Atamanın neden beklenmedik sayıldığına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Süper Lig'de 11. hafta heyecanı başlıyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurum kendi sözleriyle konuyu birbirini dışlayan iki seçeneğe indirgemiyor.",
+   "alternative_explanation": "Başlıklar bilgi aktarımı ya da soru biçiminde; ikili bir seçim dayatılmıyor.",
+   "missing_context": [
+    "Kurumun kendi sesinde 'ya… ya…' türü bir ikilem kuran ifade"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Süper Lig'de 11. haftanın hakemleri belli oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tekrarlanan ya da yapısal bir sorunu tek bir vaka üzerinden anlatmıyor; haber tekil, zamanı belli bir olay.",
+   "alternative_explanation": "Olayın kendisi tekil bir gelişme olduğundan tek vaka anlatımı yapısal bir örüntünün gizlenmesi anlamına gelmiyor.",
+   "missing_context": [
+    "Olayın tekrarlanan ya da yapısal bir sorunun parçası olduğunu gösteren bağlam"
+   ]
+  }
+ ]
+}

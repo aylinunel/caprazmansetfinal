@@ -1,0 +1,248 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Batı'daki yozlaşmış iş dünyasının son örneği haline dönüşen şirket CEO’su Jensen Huang",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[milligazete · 23:59] Nvidia CEO'su Jensen Huang ilk değil! Çin istihbaratının 'bal tuzağı' dosyaları yeniden gündemde",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akit tek bir vakadan 'Batı'daki yozlaşmış iş dünyası' ile ahlaki skandallar arasında genel bir ilişki çıkarıyor ve bunun için karşılaştırma verisi sunmuyor; Milli Gazete de bu vakayı seçilmiş önceki örneklerle bir seriye bağlıyor. İlişkinin gerçekten yanılsama olup olmadığı karşılaştırmalı veri olmadan değerlendirilemiyor.",
+   "alternative_explanation": "Kurumlar metinde bulunmayan başka örneklere ve verilere dayanıyor olabilir.",
+   "missing_context": [
+    "İş dünyasında benzer skandalların sıklığına dair karşılaştırmalı veri."
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberler · 16:57] Adı yasak aşk iddialarına karışan Nvidia CEO’su Jensen Huang istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 17:11] Nvidia CEO'su Jensen Huang istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (Huang'ın istifası) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 23:59] Nvidia CEO'su Jensen Huang ilk değil! Çin istihbaratının 'bal tuzağı' dosyaları yeniden gündemde",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milli Gazete akla gelen önceki 'bal tuzağı' örneklerini bu vakayı yorumlamak için öne çıkarıyor; ancak bu örneklerin bir sıklık ya da olasılık tahmini yerine geçtiği açıkça gösterilmiyor.",
+   "alternative_explanation": "Önceki vakalar ilgili ve belgelenmiş olabilir; hatırlatma bağlam sağlıyor olabilir.",
+   "missing_context": [
+    "Anılan önceki vakaların neler olduğu ve belgelenme düzeyi."
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 10:31] Nvidia CEO'su Jensen Huang koltuğunu kaybedebilir! 1 trilyon dolarlık kayıp",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Nvidia hisseleri yüzde 10'dan fazla değer kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "TGRT kaybı '1 trilyon dolar' gibi büyük ve olumsuz bir rakamla öne çıkarırken Evrensel yüzde olarak veriyor; ancak metinde ağırlığı karşılaştırılabilecek olumlu bir bilgi bulunmuyor ve bir değerlendirme etkisi gösterilmiyor.",
+   "alternative_explanation": "Olumsuz olayın öne çıkması haberin konusunun kendisinden kaynaklanıyor olabilir; olumsuz bilginin orantısız ağırlık aldığını gösteren karşılaştırılabilir olumlu bilgi metinde yok.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve nasıl işlendiği.",
+    "Olumsuz vurgunun bir değerlendirmeyi değiştirdiğine dair kanıt."
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[t24 · 16:56] Silikon Vadisi'ni sarsan aşk",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Çapkınlıkları dünyanın en güçlü CEO’sunu bitirdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "10Haber en çarpıcı ayrıntıyı (ilişkiler) istifanın tek açıklaması olarak sunuyor; ancak bu ayrıntının başka ilgili bilgilerin (yönetim kurulu incelemesi, ulusal güvenlik tartışması) yerine konduğu açıkça gösterilmiyor ve karşılaştırmalı bir kanıt yok.",
+   "alternative_explanation": "İlişki iddiaları gerçekten istifanın ana nedeni olabilir.",
+   "missing_context": [
+    "Yönetim kurulunun istifa gerekçesi."
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[10haber · 17:25] Çapkınlıkları dünyanın en güçlü CEO’sunu bitirdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 05:11] Nvidia CEO Jensen Huang resigns amid board investigation",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "özel hayatına ilişkin iddiaların ulusal güvenlik tartışmalarına yol açmasının ardından istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "10Haber istifayı Huang'ın kişisel eğilimine ('çapkınlıkları') bağlıyor; AA ve Ensonhaber ise yönetim kurulu incelemesi ve ulusal güvenlik tartışması gibi durumsal etkenleri aktarıyor. Durumsal etkenler metinde mevcut, ancak bu nitelemenin bir sonucu gerekçesiz biçimde belirlediği tam olarak gösterilmiyor.",
+   "alternative_explanation": "Başlık ahlaki bir değerlendirme değil, iddiaların özetlenmesi olarak okunabilir.",
+   "missing_context": [
+    "Yönetim kurulu incelemesinin kapsamı."
+   ]
+  }
+ ]
+}

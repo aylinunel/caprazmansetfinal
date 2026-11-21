@@ -1,0 +1,177 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "BM: Türkiye neden Feridun Sinirlioğlu kartını şimdi oynadı?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan, eski Dışişleri Bakanı Sinirlioğlu'nu BM Genel Sekreterliğine aday gösterdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 01:45] Türkiye, Feridun Sinirlioğlu'nu BM Genel Sekreterliği için aday gösterdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı adaylık 'kart oynamak', bir kişinin kararı ve devletin resmî adımı olarak farklı çerçevelerde sunuluyor; buna bağlı bir yargı metinde yok.",
+   "alternative_explanation": "Farklı kelime seçimleri aynı olgunun meşru biçimde farklı yönlerini öne çıkarıyor olabilir; metinde bir tercih ya da yargının çerçeveye bağlandığı görülmüyor.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren kanıt",
+    "Açıklamaların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "eski Dışişleri Bakanı ve halen Avrupa Güvenlik ve İşbirliği Teşkilatı Genel Sekreteri görevini yürüten Büyükelçi Feridun Sinirlioğlu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler adayın unvan ve deneyimini belirtiyor; ancak bu statüye bir iddiada belirleyici ağırlık verildiği görülmüyor.",
+   "alternative_explanation": "Unvanlar, adayın kim olduğunu tanıtmak için standart bilgidir.",
+   "missing_context": [
+    "Statünün bir değerlendirmede tek gerekçe olarak kullanıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde grup üyeliğine dayalı farklı bir değerlendirme açıkça kurulmuyor.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber başlıkları bir olayı aktarıyor; metinde bu kartın gerektirdiği karar, yargı veya akıl yürütme adımı açıkça yer almıyor.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "messenger-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan, Avrupa Güvenlik ve İşbirliği Teşkilatı (AGİT) Genel Sekreteri Feridun Sinirlioğlu'nun Birleşmiş Milletler (BM) Genel Sekreterliği görevine aday gösterilmesini memnuniyetle karşıladı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Adaylığa ilişkin bir değerlendirme (Azerbaycan'ın memnuniyeti) aktarılıyor; bu değerlendirmenin mesajı iletenin kimliğine bağlandığı metinde yok.",
+   "alternative_explanation": "Değerlendirme, ülkeler arası ilişkilerin olağan diplomatik ifadesi olabilir.",
+   "missing_context": [
+    "Aynı iddiaya farklı kaynaklardan gelen tepkilerin karşılaştırması"
+   ]
+  }
+ ]
+}

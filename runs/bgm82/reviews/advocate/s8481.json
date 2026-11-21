@@ -1,0 +1,221 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Antalya'da! BM Genel Sekreteri Guterres ile kritik görüşme",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, BM Genel Sekreteri Guterres ile zeytin fidanı dikti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, BM Genel Sekreteri Guterres ile görüştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Görüşmeyi bir başlık 'kritik görüşme' olarak, bir başlık yalın 'görüştü' olarak veriyor; bir başka başlık ise fidan dikimini öne çıkarıyor. Ancak fidan dikimi ayrı bir an ya da olgu olabilir.",
+   "alternative_explanation": "Kurumlar aynı günün farklı etkinliklerini haberleştirmiş olabilir.",
+   "missing_context": [
+    "Fidan dikiminin görüşmeyle aynı etkinlik olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SON DAKİKA... Başkan Erdoğan BM Genel Sekreteri Guterres ile bir araya geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, BM Genel Sekreteri Guterres ile Antalya'da görüştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir başlıkta 'Başkan', başka bir başlıkta 'Cumhurbaşkanı' unvanıyla anılıyor; farkın çağrışım mı yoksa yalnızca kısaltma mı olduğu metinden belirlenemiyor.",
+   "alternative_explanation": "'Başkan' unvanı parti genel başkanlığına da gönderme yapan yaygın bir kısaltma olabilir.",
+   "missing_context": [
+    "Kurumların bu unvanı sistematik kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "BM Genel Sekreteri Guterres'ten COP31'de Türkiye'ye övgü! 'Örnek alınmasını umuyorum'",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "BM Genel Sekreteri Guterres'ten COP31'de kritik uyarı: Artık eyleme geçme zamanı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kurumun kendi sözcüğüyle 'övgü!' nitelemesini ve konuşmacıdan seçilmiş bir alıntıyı birlikte kullanıyor; başka bir kurum aynı konuşmadan uyarı boyutunu öne çıkarıyor. Ancak alıntı konuşmacıya ait olduğundan iki ayrı kurum seçimi açıkça ayrıştırılamıyor.",
+   "alternative_explanation": "'Övgü' sözcüğü konuşmacının ifadesinin içeriğini özetliyor olabilir.",
+   "missing_context": [
+    "Guterres konuşmasının tam metni"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde seçici veri kullanımı kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor. Metinde bir sonucu destekleyen seçilmiş göstergeler ya da sınırlayıcı rakamlar yok.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Antalya'da! BM Genel Sekreteri Guterres ile kritik görüşme",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan COP31 zirvesinde BM Genel Sekreteri Guterres ile görüştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık görüşmeyi kurumun kendi sesiyle 'kritik' olarak niteliyor; başka bir kurum aynı görüşmeyi bu nitelemeden yoksun biçimde veriyor.",
+   "alternative_explanation": "'Kritik' sözcüğü haber dilinde önemli görüşmeler için yaygın bir kalıptır.",
+   "missing_context": [
+    "Görüşmenin gündemine dair bilgi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde tematik çerçeveleme kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  }
+ ]
+}

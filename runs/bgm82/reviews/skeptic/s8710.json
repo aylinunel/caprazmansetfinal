@@ -1,0 +1,179 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "A Milli Futbol Takımı, Belçika maçının hazırlıklarına devam etti: Sergen Yalçın'dan farklı antrenman yöntemi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 18:37] A Milli Futbol Takımı, Belçika maçının hazırlıklarına devam etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Antrenman olgusunu Habertürk teknik direktörün yöntemini öne çıkararak, DHA ise yalnızca hazırlığın sürdüğünü belirterek veriyor; ancak bu fark maliyet–fayda ya da kazanan–kaybeden gibi farklı bir boyuttan çok ek ayrıntı düzeyinde.",
+   "alternative_explanation": "Habertürk'ün ek ayrıntısı antrenmanda gözlenen yeni bir uygulamayı aktarıyor olabilir; aynı olgunun karşıt boyutları öne çıkarılmıyor.",
+   "missing_context": [
+    "Diğer kurumların spotlarında antrenman yöntemine değinilip değinilmediği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "A Milli Futbol Takımımızın konuğu Belçika",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ensonhaber · 17:16] A Milli Futbol Takımı, Belçika maçı için İzmir'de",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "TRT Haber kendi sesinde 'Takımımız' diyerek iyelik eki kullanıyor, diğer kurumlar 'A Milli Futbol Takımı' diyor; bu bir sahiplenme çağrışımı taşıyabilir, ancak milli takım için birinci çoğul kullanım yaygın bir üslup.",
+   "alternative_explanation": "Milli takım haberlerinde 'takımımız' ifadesi birçok kamu yayıncısında kalıplaşmış üslup olabilir; çağrışım farkı mı yalnızca üslup farkı mı olduğu metinden belirlenemiyor.",
+   "missing_context": [
+    "TRT Haber'in milli takım haberlerinde bu ifadeyi süreklilikle kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "A Milli Futbol Takımı, Belçika maçı için İzmir'de",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurum kendi sözleriyle konuyu birbirini dışlayan iki seçeneğe indirgemiyor.",
+   "alternative_explanation": "Başlıklar bilgi aktarımı ya da soru biçiminde; ikili bir seçim dayatılmıyor.",
+   "missing_context": [
+    "Kurumun kendi sesinde 'ya… ya…' türü bir ikilem kuran ifade"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "A Milli Futbol Takımı, Belçika maçı için İzmir'de",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklardaki 'için' bir amaç bildiriyor, nedensel bir iddia kurmuyor; nedensellik ifadesi bulunmuyor.",
+   "alternative_explanation": "Takımın maç yapılacak şehre gitmesi doğrudan programla ilgili; aşırı nedensellik söz konusu değil.",
+   "missing_context": [
+    "Bir sonucu bir nedene bağlayan açık ifade"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "UEFA Uluslar A Ligi 1. Grup'taki beşinci maçında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tekrarlanan ya da yapısal bir sorunu tek bir vaka üzerinden anlatmıyor; haber tekil, zamanı belli bir olay.",
+   "alternative_explanation": "Olayın kendisi tekil bir gelişme olduğundan tek vaka anlatımı yapısal bir örüntünün gizlenmesi anlamına gelmiyor.",
+   "missing_context": [
+    "Olayın tekrarlanan ya da yapısal bir sorunun parçası olduğunu gösteren bağlam"
+   ]
+  }
+ ]
+}

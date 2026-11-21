@@ -1,0 +1,227 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adliyeye gelen Fatma Betül Sayan Kaya'nın gözlükleri dikkat çekti! İşte güncel fiyatı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fiyatı ağızları açık bıraktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta çarpıcı bir ayrıntı öne çıkarılıyor (gözlük fiyatı); ancak metin bu ayrıntının bir yargıya ya da seçime gerekçe yapıldığını açıkça göstermiyor.",
+   "alternative_explanation": "Çarpıcı ayrıntı haber değeri ve tıklanma kaygısıyla seçilmiş olabilir; bu tek başına bir yargı hatası değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının okur ya da karar verici yargısını etkilediğini gösteren karşılaştırmalı kanıt"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya’nın gözlüğünün fiyatı ortaya çıktı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya gözlük markası ve fiyatı 2026!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya'nın tutuklama talebinin gerekçesi ortaya çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Birden fazla kurum başlığını gözlüğün fiyatına ayırırken diğerleri tutuklama gerekçesine odaklanıyor; dikkat eşitsiz dağılıyor, ancak bunun belirli bir sonuca bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Gözlük haberleri okur ilgisine yönelik ayrı içerikler olabilir; aynı kurumlar esas haberi de vermiş olabilir.",
+   "missing_context": [
+    "Aynı kurumların esas soruşturma haberlerini nasıl verdiği",
+    "Dikkat farkının bir yargıya etkisi"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Bir alandaki olumlu izlenimin başka bir alandaki yargıya bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakan Akın Gürlek’ten Fatma Betül Sayan Kaya’nın tutuklandığı süreçte dikkat çeken paylaşım",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya hakkında hazırlanan tutuklamaya sevk yazısı ortaya çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olgu farklı kurumlarca farklı sözcük ve vurguyla sunuluyor (paylaşım ile sevk yazısı); ancak metin bu sunum farkının bir tercihi ya da yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Farklı ifadeler kurumların üslup, uzunluk ve okur kitlesi tercihlerinden kaynaklanabilir; okur üzerinde etki gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okur yargısını ya da bir kararı değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Bir duygunun bir risk ya da karar tahminine açıkça bağlandığı ifade"
+   ]
+  },
+  {
+   "card_id": "bikeshedding",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya’nın adliyeye gelirken taktığı gözlük olay oldu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "'içerden bilgi öğrenme' ve 'olağandışı para transferi'",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı kurumlar başlığı gözlüğe ayırırken soruşturmanın ağır iddiaları (içeriden bilgi, olağandışı para transferi) başka kurumlarda yer alıyor; ancak iki konunun göreli önemi metinde açık hedeflerle temellendirilmiyor ve dağılımın haksızlığı gösterilmiyor.",
+   "alternative_explanation": "Gözlük haberi ana haberin yanında ek bir içerik olarak yayımlanmış olabilir.",
+   "missing_context": [
+    "Kurumların bu konulara ayırdığı toplam alan ve içerik sayısı"
+   ]
+  }
+ ]
+}

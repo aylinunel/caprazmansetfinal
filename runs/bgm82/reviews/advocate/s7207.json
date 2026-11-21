@@ -1,0 +1,178 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 13:14] Süper Lig'de haftanın hakemleri açıklandı! Zorlu maça sürpriz atama",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 12:12] Süper Lig'de 11. haftanın hakemleri belli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[akit · 12:29] Süper Lig'de 11. hafta başlıyor! Haftanın maçı İstanbul’da oynanacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı hakem duyurusu bir başlıkta tek bir maça yapılan atama öne çıkarılarak, diğerinde genel duyuru olarak veriliyor; başka bir başlık ise haftanın maçını öne çıkarıyor.",
+   "alternative_explanation": "Kurum okurlarının ilgisini çeken maçı öne çıkarmış olabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 13:14] Süper Lig'de haftanın hakemleri açıklandı! Zorlu maça sürpriz atama",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 13:02] MHK atamaları duyurdu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı atama bir kurumda 'sürpriz atama', diğerinde yalın 'atamalar' olarak anılıyor; ancak diğer kurumlar söz konusu maçın atamasını başlıkta ayrıca adlandırmıyor, bu yüzden aynı şeyin farklı adlandırıldığı tam kurulamıyor.",
+   "alternative_explanation": "'Sürpriz' kurumun beklenti değerlendirmesi olabilir.",
+   "missing_context": [
+    "Diğer kurumların aynı maçın atamasını nasıl aktardığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Zorlu maça sürpriz atama",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 12:34] Süper Lig'de 11. hafta maçlarını yönetecek hakemler belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kendi sesinde 'sürpriz' değerlendirmesini kullanıyor; başka kurumlar aynı duyuruyu bu sözcük olmadan veriyor.",
+   "alternative_explanation": "'Sürpriz' beklenmedik bir atamayı olgusal olarak betimlemek için kullanılmış olabilir.",
+   "missing_context": [
+    "Atamanın neden sürpriz sayıldığına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca iki seçeneği tek seçenek olarak sunan bir 'ya… ya…' kalıbı bulunmuyor.",
+   "alternative_explanation": "Başlıklar olay bilgisini aktarıyor; seçenek sunan bir yapı yok.",
+   "missing_context": [
+    "Kurumun iki seçenekli bir kalıp kullandığı başlık veya spot"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tek bir olayı aktarıyor, ancak bağlam veya diğer haberler konunun yinelenen ya da yapısal bir sorun olduğunu göstermiyor; tek vakanın bütün hikâye olarak sunulduğu söylenemez.",
+   "alternative_explanation": "Tekil bir spor veya gündem olayının olay odaklı aktarılması haberin doğasından kaynaklanıyor.",
+   "missing_context": [
+    "Konunun yinelenen veya yapısal olduğunu gösteren önceki vakalar ya da veriler"
+   ]
+  }
+ ]
+}

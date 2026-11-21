@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "fear-appeal",
+  "loaded-language",
+  "word-choice",
+  "emphasis-framing"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Meteoroloji uyarısının resmi içeriği metinde tam yok."
+ ],
+ "selection_note": "'Sağanak alarmı', 'fırtına' gibi yoğunlaştırıcı kelimeler; korku çağrısı sınırda."
+}

@@ -1,0 +1,226 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[birgun · 15:39] Sadettin Saran ve Ela Rümeysa Cebeci beraat etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sosyetenin zehir skandalında ikinci perde! Ela Rümeysa Cebeci hâkim karşısında kıvırdı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hapis cezası talep edilmişti! Sadettin Saran ve Ela Rümeysa Cebeci hakkında karar verildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı beraat kararı 'beraat etti', 'zehir skandalı/kıvırdı' ve 'hapis talep edilmişti' çerçeveleriyle veriliyor; sunum farkı açık, okuyucu yargısının buna bağlandığı ise gösterilmiyor.",
+   "alternative_explanation": "Kurumlar duruşmanın farklı anlarını (savunma, mütalaa, karar) haberleştirmiş olabilir.",
+   "missing_context": [
+    "Gerekçeli karar",
+    "Okuyucu yargısındaki farkı gösteren veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ela Rümeysa Cebeci'nin \"Cilveleşiyorduk\" savunması dikkat çekti!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık savunmadaki çarpıcı bir sözü karardan önce öne çıkarıyor; ancak bunun bir yargıyı haksız etkilediği gösterilmiyor.",
+   "alternative_explanation": "Savunmadaki ifade haberin ilgi çekici yeni bilgisi olabilir.",
+   "missing_context": [
+    "Mahkemenin gerekçesi"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İş insanı ve eski Fenerbahçe Başkanı Sadettin Saran ile spiker Ela Rümeysa Cebeci’nin yargılandığı davada",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Unvanlar tanıtım amacıyla veriliyor; bir alandaki olumlu izlenimin ayrı bir yargıya bağlandığı yok.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Mahkemenin değerlendirme ölçütleri"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Uyuşturucu davasında yeni gelişme: Sadettin Saran ve Ela Rümeysa Cebeci hakkında karar verildi — İş insanı Steven Sadettin Saran ve spiker Ela Rümeysa Cebeci hakkında açılan uyuşturucu davasında savcı esasa ilişkin mütalaasını açıkladı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mahkeme heyeti, suçun yasal unsurlarının oluşmadığı gerekçesiyle iki sanığın da beraatine hükmetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir haber başlıkta 'karar verildi' derken ledede yalnızca mütalaayı aktarıyor; diğer haberlerdeki beraat bilgisiyle karşılaştırılabilir bir düzleşme var, ancak bir sonucu haksız etkilediği gösterilmiyor.",
+   "alternative_explanation": "Haber mütalaa aşamasında yazılıp başlığı sonradan güncellenmiş olabilir.",
+   "missing_context": [
+    "Haberin güncelleme geçmişi"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ela Rümeysa Cebeci Ne iş yapıyor? Evli mi? Eşi kim?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Tek tek haberlerin ilgi odağı farklı, ancak bir karar vericinin ilgili malzemeye eşitsiz dikkat verip buna dayalı bir sonuca vardığı gösterilmiyor.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Dikkat kayıtları veya karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sadettin Saran ile Ela Rümeysa Cebeci beraat etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin içsel motivasyon ve ödüle ilişkin bilgi içermiyor.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Motivasyon ve ödül bilgisi"
+   ]
+  }
+ ]
+}

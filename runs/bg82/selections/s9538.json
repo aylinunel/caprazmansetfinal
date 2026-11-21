@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "negativity-bias",
+  "salience-bias",
+  "availability-heuristic",
+  "affect-heuristic",
+  "framing-effect"
+ ],
+ "selection_uncertainty": [
+  "Fırtınanın gerçek şiddeti özetlerde sınırlı.",
+  "Yalnızca başlık ve kısa özetler var; tam metin yok."
+ ],
+ "selection_note": "'Lodos vurdu', 'asıl fırtına yarın geliyor' gibi ifadeler olumsuzluk ve duygu sezgisi açısından aday."
+}

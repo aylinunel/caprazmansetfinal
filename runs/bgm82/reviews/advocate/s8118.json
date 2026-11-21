@@ -1,0 +1,270 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çatalca'da eğitim uçağı pistten çıktı! Pilot yara almadan kurtuldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 02:05] Hezarfen Havaalanı'nda eğitim uçağı iniş sırasında kaza kırıma uğradı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da eğitim uçağı pistten çıktı! Çok sayıda ekip sevk edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olayı bir kurum pilotun durumu, biri uçağın hasarı, biri ise müdahale ekipleri üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklı boyutların öne çıkması kurumların erişilen bilgi, yayın saati ve okur ilgisi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Kurumların aynı saatte erişebildiği bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul'da eğitim uçağı iniş sırasında kaza kırıma uğradı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 12:17] Hezarfen Havalimanı'nda eğitim uçağı pistten çıktı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da eğitim uçağı iniş sırasında kaza yaptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay 'kaza kırıma uğradı', 'pistten çıktı' ve 'kaza yaptı' olarak adlandırılıyor; ilki ciddi hasar, ikincisi sınırlı bir olay çağrışımı taşıyor.",
+   "alternative_explanation": "'Kaza kırım' havacılıkta teknik bir terim olabilir.",
+   "missing_context": [
+    "Uçaktaki hasarın boyutu"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pilottan hayati manevra",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 12:39] Hezarfen Havalimanı'nda eğitim uçağı pistten çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kendi sesinde 'hayati manevra' değerlendirmesini kullanıyor; başka bir kurum aynı olguyu bu değerlendirme olmadan veriyor.",
+   "alternative_explanation": "Değerlendirici kelimeler başlıkta dikkat çekmek için kullanılan yaygın kalıplar olabilir; olgular diğer metinlerle aynıdır.",
+   "missing_context": [
+    "Pilotun müdahalesine ilişkin bağımsız bilgi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pilottan hayati manevra",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "pilotun soğukkanlı müdahalesiyle uçak emniyetle durdurulurken",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "küçük çaplı kaza meydana geldi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "iniş sırasında pistten çıkarak kaza kırıma uğradı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı metinde 'hayati manevra', 'soğukkanlı müdahale' ve 'küçük çaplı kaza' seçimleri bir arada ve olayı hafifletip pilotu öne çıkaran tek bir yöne işaret ediyor; başka bir kurum aynı olguyu 'kaza kırım' olarak veriyor.",
+   "alternative_explanation": "Seçimler yaralanma olmamasını vurgulayan olgusal bir aktarım olabilir.",
+   "missing_context": [
+    "Kazanın nedenine ilişkin inceleme sonucu"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "pilotun soğukkanlı müdahalesiyle uçak emniyetle durdurulurken",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "henüz belirlenemeyen bir nedenle pistten çıkarak toprak alana girdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir metin uçağın güvenle durmasını pilotun müdahalesine bağlıyor; başka metin olayın nedeninin belirlenmediğini söylüyor. Ancak pilotun uçağı durdurduğu başka kaynaklarda da bildirildiği için bağın yalnızca zaman sırasına dayandığı net değil.",
+   "alternative_explanation": "Pilotun uçağı durdurduğu gözlemsel bir olgu olabilir.",
+   "missing_context": [
+    "Teknik inceleme raporu"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Uçak, teknik inceleme yapılmak üzere bulunduğu yerden çekilirken kazanın nedeninin belirlenmesi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir metin olayı teknik inceleme sürecine değinerek aktarıyor; bunun daha geniş bir eğilim veya kurumsal bağlam sayılıp sayılmayacağı net değil.",
+   "alternative_explanation": "İnceleme bilgisi yalnızca olayın olağan devamını aktarıyor olabilir.",
+   "missing_context": [
+    "Benzer kazalara veya uçuş okulu güvenliğine ilişkin bağlam"
+   ]
+  }
+ ]
+}

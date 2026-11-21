@@ -1,0 +1,181 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ünlü oyuncu Gürkan Uygun'un en acı günü! Babası vefat etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Oyuncular Gürkan ve Volkan Uygun'un babası Kocaeli'de toprağa verildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı cenaze bir başlıkta 'en acı günü!', diğerinde 'toprağa verildi' ifadesiyle veriliyor; ancak fark duygusal yoğunlukla mı yoksa yalnızca anlatım düzeyiyle mi ilgili belirsiz.",
+   "alternative_explanation": "'Acı gün' Türkçede vefat haberleri için yerleşik bir kalıptır.",
+   "missing_context": [
+    "Kurumların vefat haberlerindeki genel kalıpları"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kurtlar Vadisi'nin Memati'si Gürkan Uygun babasını kaybetti!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Oyuncular Gürkan ve Volkan Uygun'un babası Kocaeli'de toprağa verildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bahattin Uygun kimdir, neden öldü, kaç yaşındaydı?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı vefatı bir başlık oyuncunun dizi karakteriyle, bir başlık iki kardeş ve cenaze yeriyle, bir başka başlık ölen kişinin kimliği ve ölüm nedeniyle öne çıkarıyor.",
+   "alternative_explanation": "Ünlü yakınının vefatında okurun tanıdığı kişiyi öne çıkarmak haber değerinin olağan bir ifadesidir.",
+   "missing_context": [
+    "Haberlerin kaynağı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kurtlar Vadisi'nin Memati'si Gürkan Uygun babasını kaybetti! 86 yaşındaki Bahattin Uygun gözyaşlarıyla uğurlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Oyuncu Gürkan Uygun'un babası toprağa verildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık cenazeyi 'gözyaşlarıyla uğurlandı' ifadesiyle duygusal bir tonla veriyor; başka bir kurum aynı olguyu yalın veriyor. Ancak bir ölümü bildirmek kendi başına yüklü dil değildir.",
+   "alternative_explanation": "İfade cenazedeki gözlemlenen durumu betimliyor olabilir.",
+   "missing_context": [
+    "Cenazeye ilişkin görsel ya da tanık bilgisi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde epizodik çerçeveleme kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde tematik çerçeveleme kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  }
+ ]
+}

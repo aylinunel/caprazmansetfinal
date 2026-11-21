@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "in-group-bias",
+  "framing-effect",
+  "salience-bias",
+  "attentional-bias"
+ ],
+ "selection_uncertainty": [
+  "Haberler çoğunlukla nötr hazırlık duyurusu.",
+  "Yalnızca başlık ve kısa özetler var; tam metin yok."
+ ],
+ "selection_note": "'Takımımız' gibi grup dili ve hazırlık vurgusunun yenilgiye göre ağırlığı aday."
+}

@@ -1,0 +1,262 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 15:17] Başkan Erdoğan ve Katar Emiri",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 16:29] Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile görüştü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Sayın Recep Tayyip Erdoğan ile Katar Emiri Al Sani'nin",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı aktör kurumların kendi sesinde 'Başkan Erdoğan', 'Cumhurbaşkanı Erdoğan' ve 'Cumhurbaşkanı Sayın Recep Tayyip Erdoğan' olarak anılıyor; 'Sayın' tanımlamanın ötesinde saygı bildiren bir değerlendirme ekliyor.",
+   "alternative_explanation": "Unvan farkları kurumların yerleşik üslup kılavuzlarından kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların üslup kılavuzları"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan ve Katar Emiri Şeyh Temim bin Hamed Al Sani'den kritik görüşme",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dolmabahçe'de kritik zirve: Cumhurbaşkanı Erdoğan Katar Emiri Al-Sani ile bir araya geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 16:29] Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile görüştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar görüşmeyi kendi seslerinde 'kritik' diye nitelerken başka bir kurum aynı olguyu bu nitelemeden aktarıyor.",
+   "alternative_explanation": "'Kritik' sözcüğü haber dilinde yaygın ve zayıf bir vurgu olarak kullanılmış olabilir.",
+   "missing_context": [
+    "Görüşmenin gündemine dair resmi açıklama"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Katar Emiri Al Sani'yi kabul etti: İki ülke arasında 5 kritik anlaşma",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile görüştü: İşbirliğimiz artarak sürecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Görüşme, basına kapalı gerçekleşti.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı görüşme bir başlıkta imzalanan anlaşma sayısı, birinde liderin işbirliği vurgusu, bir başkasında törenin ve basına kapalılığın üzerinden veriliyor.",
+   "alternative_explanation": "Farklı vurgular haberlerin yayın saatindeki bilgi düzeyini yansıtabilir.",
+   "missing_context": [
+    "Anlaşmaların listesi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Katar Emiri Al Sani'yi kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 04:30] Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile görüştü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 15:17] Başkan Erdoğan ve Katar Emiri",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı buluşma 'kabul etti' ve 'görüştü' fiilleriyle, aynı kişi 'Başkan' ve 'Cumhurbaşkanı' sözcükleriyle anılıyor; 'kabul etti' ev sahipliği ve hiyerarşi, 'Başkan' ise farklı bir siyasal çağrışım taşıyor.",
+   "alternative_explanation": "Fiil farkı protokol dilinin farklı kalıplarından kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların üslup kılavuzları"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "COP31 İklim Zirvesi'nin ardından diplomasi trafiğine hız kesmeden devam eden Cumhurbaşkanı Recep Tayyip Erdoğan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Yeni Şafak görüşmeyi kendi ledesinde bir diplomasi trafiği dizisinin parçası olarak yerleştiriyor.",
+   "alternative_explanation": "Dizi bağlamı okuyucuya zamanlama bilgisi vermek için eklenmiş olabilir.",
+   "missing_context": [
+    "Aynı haftadaki diğer diplomatik görüşmeler"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Erdoğan, İstanbul'da Katar Emiri'yle görüştü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olayı betimliyor; seçenek kurgusu yok.",
+   "missing_context": [
+    "İki seçenekli bir ifade içeren haber metni"
+   ]
+  }
+ ]
+}

@@ -36,12 +36,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: python -m pip install -r biasguard/requirements.txt
       - name: BiasGuard offline tests (no provider calls)
         run: python -m unittest biasguard.test_news -v
       - name: Review-status routing on the recorded run
         run: python -m unittest biasguard.test_routing -v
       - name: Media-technique catalogue
         run: python -m unittest biasguard.test_catalog_media -v
+      - name: BiasGuard explanation composer
+        run: python -m unittest biasguard.test_explain_rules -v
 
   site-logic:
     runs-on: ubuntu-latest
@@ -73,7 +76,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install -r pipeline/requirements.txt -r validation/requirements.txt
+      - run: python -m pip install -r pipeline/requirements.txt -r validation/requirements.txt -r biasguard/requirements.txt
       - name: Validation lab and feedback tests (offline)
         run: python -m unittest discover -s validation/tests -t . -v
 

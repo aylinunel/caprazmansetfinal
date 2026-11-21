@@ -1,0 +1,173 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mahkeme kararıyla CHP genel başkanlığına getirilen Kemal Kılıçdaroğlu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP Genel Başkanı Kemal Kılıçdaroğlu, kız kardeşini kaybeden",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı gelişmeyi farklı vurgu ve sözcüklerle veriyor; ancak metin, eşdeğer seçeneklerin sunuluş farkının bir tercih ya da yargıyı değiştirdiğini açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları kurumların farklı ayrıntıları, farklı yayın saatlerini veya arama motoru odaklı biçimleri tercih etmesiyle açıklanabilir; okurun ya da yazarın yargısının sunuluşa göre değiştiğine dair kayıt yok.",
+   "missing_context": [
+    "Okur ya da editör yargısının sunuluşa göre değiştiğini gösteren bir ölçüm veya beyan",
+    "Başlıkların eşdeğer olgular üzerine kurulduğunun açık teyidi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kız kardeşi Osmaniye’de toprağa verildi!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar dikkat çekici bir ayrıntıyı öne çıkarıyor; ancak metin bu ayrıntının bir yargıyı haksız biçimde belirlediğini açıkça bağlamıyor.",
+   "alternative_explanation": "Öne çıkarılan ayrıntı haber değeri taşıyan, doğrulanmış ve okur için ilgili bir bilgi olabilir; belirginlik tek başına hata kanıtı değildir.",
+   "missing_context": [
+    "Öne çıkan ayrıntının bir karar ya da değerlendirmeyi nasıl etkilediğine dair açık ifade",
+    "Belirgin ve daha az belirgin bilgilerin ağırlıklandırılmasını karşılaştıran bir kayıt"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[birgun · 13:38] Özgür Özel'den Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 13:18] Son dakika… Kılıçdaroğlu'ndan MHP lideri Devlet Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kimi kurumlar yalnız Özel'in, kimileri yalnız Kılıçdaroğlu'nun ziyaretini başlığa taşıyor; ancak metin bir grup üyeliğinin bir değerlendirmeyi değiştirdiğini açıkça kurmuyor, kurumların grup aidiyeti de metinde tanımlanmıyor.",
+   "alternative_explanation": "Kurumların farklı aktörlere ya da sahiplenici ifadelere yer vermesi yayın üslubu, haber kaynağı veya erişim farkıyla açıklanabilir.",
+   "missing_context": [
+    "Grup üyeliğinin açıkça belirtildiği bir karar veya yargı",
+    "Karşılaştırılabilir durumlarda farklı standart uygulandığını gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[birgun · 13:38] Özgür Özel'den Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 13:18] Son dakika… Kılıçdaroğlu'ndan MHP lideri Devlet Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AK Parti, CHP ve Yeni Parti'den Bahçeli'ye taziye ziyareti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı gün üç ziyaret gerçekleşmişken bazı kurumlar yalnızca birini başlığa taşıyor; bu kurumlar arası eşitsiz dikkat karşılaştırmayla görülebiliyor. Ancak bunun belirli bir sonuca ya da hataya yol açtığı gösterilmiyor.",
+   "alternative_explanation": "Kurumların farklı saatlerde, farklı haber aşamalarını (ön bilgi, gelişme, sonuç) vermesi eşitsiz dikkati değil, haber akışının zamanlamasını yansıtabilir.",
+   "missing_context": [
+    "Kurumların hangi bilgilere eriştiğine dair kayıt",
+    "Eşitsiz dikkatin belirli bir sonuca bağlandığını gösteren açık ifade"
+   ]
+  }
+ ]
+}

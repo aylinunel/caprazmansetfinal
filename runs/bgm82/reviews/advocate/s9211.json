@@ -1,0 +1,254 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "TCMB enflasyon tahminlerini 18. kez yükseltti: 2026 sonu yüzde 29,5",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası enflasyon tahminini yükseltti: İşte emekli ve memur maaşlarında yeni zam hesabı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TCMB yıl sonu enflasyon tahminini yükseltti, BIST 100 ilk yarıda yüzde 1,48 arttı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı revizyon Cumhuriyet'te kurumun tahmin geçmişi, Karar'da emekli ve memurlara etkisi, sondakika'da borsa hareketi üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar farklı okuyucu ilgilerine yanıt veriyor olabilir.",
+   "missing_context": [
+    "Enflasyon Raporu"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası enflasyon tahminini yükseltti: İşte emekli ve memur maaşlarında yeni zam hesabı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karar başlığı maaş zammına etkiyi öne çıkarıyor, ancak tahminin yükseltilmesi olayı da başlığın ana cümlesinde yer alıyor.",
+   "alternative_explanation": "Etki bilgisi okuyucu ilgisine yanıt olarak eklenmiş olabilir.",
+   "missing_context": [
+    "Zam hesabının dayandığı resmi formül"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası'nın yıl sonu enflasyon tahmini 29,5'e yükseldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sunulan oran bir pay ya da alt grup oranı değil; pay ve paydası tanımlanabilen bir oran ve farklı bir karşılaştırma nüfusu yok.",
+   "alternative_explanation": "Enflasyon tahmini tek bir makro gösterge olarak veriliyor.",
+   "missing_context": [
+    "Yok"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "TCMB enflasyon tahminlerini 18. kez yükseltti: 2026 sonu yüzde 29,5",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kasım ayı Piyasa Katılımcıları Anketi'ne göre, Tüketici Fiyat Endeksi'nde yıl sonu artış beklentisi yüzde 29,63'ten yüzde 30,04'e yükseldi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların başlıkları belirli göstergeleri genel bir sonuca dayanak olarak seçmiyor; bağlamda bu sonucu sınırlayan ve başlıktan çıkarılmış bir rakam da gösterilmiyor.",
+   "alternative_explanation": "Sayılar betimsel olarak aktarılıyor.",
+   "missing_context": [
+    "Önceki tahminler ve gerçekleşmelerin tam listesi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası yıl sonu enflasyon tahminini yukarı yönlü güncelledi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası yıl sonu enflasyon tahminlerini bir kez daha yukarı çekti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TCMB enflasyon tahminlerini 18. kez yükseltti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı revizyon ANKA'nın kendi başlığında 'yukarı yönlü güncelledi', Evrensel'de 'bir kez daha yukarı çekti', Cumhuriyet'te '18. kez yükseltti' olarak adlandırılıyor; 'güncelleme' teknik ve yumuşatıcı, diğerleri tekrarlanan başarısızlık çağrışımı taşıyor.",
+   "alternative_explanation": "ANKA Merkez Bankası Başkanı'nın ifadesini başlığa yansıtmış olabilir.",
+   "missing_context": [
+    "Kurumların üslup kılavuzları"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "TCMB, yılın son Enflasyon Raporu’nda 2026, 2027 ve 2028’e ilişkin enflasyon tahminlerini 18. kez yukarı yönlü revize etti.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ağustosta MB’nin yıl sonu enflasyon tahmini yüzde 28’di.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Cumhuriyet revizyonu bir yukarı revizyonlar dizisine, 10haber önceki raporun tahminiyle karşılaştırmaya yerleştirerek zaman içindeki gidişata bağlıyor.",
+   "alternative_explanation": "Önceki tahmin bilgisi okuyucuya karşılaştırma imkânı vermek için eklenmiş olabilir.",
+   "missing_context": [
+    "Önceki 17 revizyonun ayrıntıları"
+   ]
+  }
+ ]
+}

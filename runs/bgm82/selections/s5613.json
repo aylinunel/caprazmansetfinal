@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "loaded-language",
+  "responsibility-framing",
+  "word-choice",
+  "emphasis-framing"
+ ],
+ "selection_uncertainty": [
+  "Metinler kısaltılmış.",
+  "Suçlama henüz yargılanmadı."
+ ],
+ "selection_note": "'Parti Yeni vurgun eski' ve 'rüşvetten tutuklanmıştı' başlıkları sorumluluğu önceden belirliyor."
+}

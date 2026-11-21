@@ -1,0 +1,207 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pendik'te korkunç kaza! CHP'li ilçe başkanı Abidin Ekren ağır yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP Pendik İlçe Başkanı Abidin Ekren trafik kazasında ağır yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "ahaber kazayı kendi sesiyle 'korkunç kaza' olarak niteliyor; aynı olgular başka kurumlarda değerlendirici sıfat olmadan 'trafik kazasında ağır yaralandı' biçiminde veriliyor.",
+   "alternative_explanation": "Aracın devrilmesi, sürücünün sıkışması ve entübe edilmesi ağır bir kazaya işaret ediyor; sıfat olgusal ağırlığı yansıtıyor olabilir.",
+   "missing_context": [
+    "Kazanın ağırlığına ilişkin resmi tıbbi bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pendik'te feci kaza: CHP İlçe Başkanı ağır yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP Pendik İlçe Başkanı Abidin Ekren trafik kazasında ağır yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay ntv'de 'feci kaza', diğerlerinde 'trafik kazası' sözcüğüyle adlandırılıyor; 'feci' duygusal bir çağrışım ekliyor.",
+   "alternative_explanation": "'Feci kaza' Türkçe haber dilinde yerleşik bir kalıp olabilir; olayın ciddiyeti bu kullanımı olgusal olarak destekleyebilir.",
+   "missing_context": [
+    "Kurumun benzer kazalarda aynı ifadeyi kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pendik'te 2 araca çarpan otomobil devrildi: CHP İlçe Başkanı Abidin Ekren ağır yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP Pendik İlçe Başkanı Abidin Ekren trafik kazası geçirdi! İşte son sağlık durumu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir grup başlık kazanın oluş biçimini (araca çarpma, devrilme), diğerleri kişinin sağlık durumunu öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgu, haberin farklı saatlerde güncellenmesinden ve ajans metninin başlığının aynen kullanılmasından kaynaklanabilir.",
+   "missing_context": [
+    "Başlıkların yayın sırası ve güncelleme geçmişi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam veya diğer haberler bu kazanın tekrarlayan ya da yapısal bir sorunun parçası olduğunu göstermiyor.",
+   "alternative_explanation": "Tek bir trafik kazasının tek olay olarak haberleştirilmesi olayın niteliğine uygun.",
+   "missing_context": [
+    "Aynı yolda veya bölgede tekrarlayan kazalara ilişkin veri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kaza, saat 20.45 sıralarında Tersane Köprüsü Sabiha Gökçen Havalimanı bağlantı yolunda meydana geldi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay tanımlanabilir; ancak hiçbir kurum onu bir eğilim, seri veya kurumsal süreç içine yerleştirmiyor.",
+   "alternative_explanation": "Haber anlık bir kaza bildirimi; bağlam eklenmemesi olayın niteliğinden kaynaklanabilir.",
+   "missing_context": [
+    "Kaza istatistikleri veya yol güvenliği bağlamı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneği tek seçenek olarak sunan bir ifade yok.",
+   "alternative_explanation": "Kaza haberi seçenek tartışması içermiyor.",
+   "missing_context": [
+    "İkili seçenek kuran bir ifade"
+   ]
+  }
+ ]
+}

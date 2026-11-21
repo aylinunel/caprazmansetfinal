@@ -1,0 +1,222 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "14 ilde eş zamanlı yasa dışı bahis operasyonunda 37 şüpheli adliyeye sevk edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "14 ilde yasa dışı bahis operasyonu: 34 kişi tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "MASAK incelemesinde şüphelilere ait hesaplarda 3 milyar 484 milyon liralık para hareketi tespit edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı Aydın merkezli operasyon bir başlıkta adliyeye sevk sayısıyla, bir başlıkta tutuklama sayısıyla, bir lede'de para hareketi büyüklüğüyle öne çıkarılıyor.",
+   "alternative_explanation": "Farklı yayın saatleri sürecin farklı aşamalarına denk geliyor olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Aydın merkezli yasa dışı bahis operasyonunda 37 zanlı adliyeye sevk edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "14 ilde eş zamanlı yasa dışı bahis operasyonunda 37 şüpheli adliyeye sevk edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişiler bir kurumda 'zanlı', diğerinde 'şüpheli' olarak anılıyor; ancak iki sözcük arasındaki fark büyük ölçüde kayıt farkı.",
+   "alternative_explanation": "'Zanlı' ve 'şüpheli' hukuki dilde eşanlamlı olarak kullanılır.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "34 ildeki dev yasa dışı bahis operasyonunda 90 tutuklama",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "34 ilde yasa dışı bahis operasyonu: 90 şüpheli tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Dev' nitelemesi kurumun kendi başlığında operasyona büyüklük değeri yüklüyor; aynı olgu başka bir kurumda bu sözcük olmadan veriliyor.",
+   "alternative_explanation": "'Dev' sözcüğü il ve gözaltı sayısını özetleyen yerleşik bir haber kalıbı olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emniyetin yapay zeka destekli “Avcı” programıyla tespit edilen şüphelilere",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Böylece soruşturma kapsamında toplam 35 kişi tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar operasyonu emniyetin yapay zeka destekli programı ve süren soruşturmanın toplam rakamları gibi kurumsal bir süreç içine yerleştiriyor.",
+   "alternative_explanation": "Program ve soruşturma bilgisi olgusal yöntem bilgisi olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir başlık ya da lede yalnızca iki seçenek sunan bir kurgu içermiyor.",
+   "alternative_explanation": "Haberler operasyon rakamlarını aktarıyor.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yapay zeka destekli AVCI projesi kullanılarak yapılan teknik incelemenin ardından",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Lede operasyonu yapay zeka destekli incelemenin 'ardından' gelen bir sonuç olarak sunuyor; bağ zaman sırasına dayanıyor, ancak metinde 'yüzünden', 'sayesinde' gibi açık bir neden ifadesi yok.",
+   "alternative_explanation": "İfade operasyonun hangi yöntemle hazırlandığını betimleyen resmi açıklamanın özeti olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

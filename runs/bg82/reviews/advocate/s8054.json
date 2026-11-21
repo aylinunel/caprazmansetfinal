@@ -1,0 +1,219 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında iki tutuklama daha! BDDK Başkan Yardımcısı ve banka genel müdürü cezaevinde",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık 'cezaevinde' ifadesiyle sonucu çarpıcı biçimde öne çıkarıyor; bunun bir yargıyı haksız etkilediği gösterilmiyor.",
+   "alternative_explanation": "Tutuklama sonucunu aktarmanın bir başka yolu olabilir.",
+   "missing_context": [
+    "Tutuklama gerekçesi"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: BDDK Başkan Yardımcısı Erişen ve Katılım Bankası Genel Müdürü Yönaç tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 10:12] Fon soruşturması: BDDK Başkan Yardımcısı Erişen tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı tutuklama 'fon vurgunu soruşturması' ve 'fon soruşturması' olarak sunuluyor; bir yargının bu sunuma bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Kurum soruşturmayı önceki haberlerindeki adıyla anıyor olabilir.",
+   "missing_context": [
+    "Okuyucu yargısındaki farkı gösteren veri"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dr Muhammet Erişen kimdir, kaç yaşında, nereli?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Unvan ve kimlik bilgisi var; bir alandaki izlenimin başka bir yargıya bağlandığı yok.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Değerlendirici yorumlar"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yenisafak · 04:00] BDDK Başkan Yardımcısı tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "BDDK Başkan Yardımcısı Muhammet Erişen ile Adil Katılım Bankası Genel Müdürü Murat Yönaç tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir yeniden anlatım iki tutuklamadan yalnızca birini başlığa taşıyor; karşılaştırma mümkün ancak farkın bir sonucu haksız etkilediği gösterilmiyor.",
+   "alternative_explanation": "Başlık uzunluğu ya da en üst düzey ismi öne çıkarma tercihi olabilir.",
+   "missing_context": [
+    "Haberin tam metni"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında BDDK Başkan Yardımcısı Muhammet Erişen gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Unvan anılıyor ama bir iddianın değerlendirilmesinde bu statüye belirleyici ağırlık verildiği bir akıl yürütme yok.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Unvana dayalı bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "BDDK Başkan Yardımcısı Erişen tutuklandı: Fon soruşturması",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin içsel motivasyon ve ödüle ilişkin bilgi içermiyor.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Motivasyon ve ödül bilgisi"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,202 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kayyım atanmıştı… Ozan Elektronik Para'nın faaliyet izni iptal edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ozan Elektronik Para'nın sahibi Ozan Özerk kimdir?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 08:07] Merkez Bankası iki elektronik para kuruluşunun faaliyet iznini iptal etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı iptal kararı Cumhuriyet'te önceki kayyım süreci, Karar'da şirket sahibi, NTV'de kurumsal işlem boyutuyla öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar okuyucunun bilmek isteyeceği farklı ayrıntıları seçmiş olabilir.",
+   "missing_context": [
+    "İptal kararının gerekçesi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2025 yılının ekim ayında yasa dışı bahis ve kara para aklama iddialarına ilişkin yürütülen soruşturma kapsamında kayyım atanan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Cumhuriyet iptal kararını ledesinde önceki soruşturma ve kayyım süreciyle birlikte, bir kurumsal sürecin halkası olarak veriyor.",
+   "alternative_explanation": "Geçmiş bilgi yalnızca kimlik tanıtımı amacıyla eklenmiş olabilir.",
+   "missing_context": [
+    "Soruşturmanın güncel durumu"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahis ve kara para aklama iddialarıyla geçen yıl TMSF'nin el koyduğu Ozan Elektronik Para'nın",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "soruşturma kapsamında kayyım atanan Ozan Elektronik Para A.Ş.'nin",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı önceki işlem Karar'ın kendi sesinde 'el koyduğu', Cumhuriyet'te 'kayyım atanan' olarak anılıyor; 'el koymak' daha zorlayıcı bir müdahale çağrışımı taşıyor.",
+   "alternative_explanation": "'El koyma' TMSF işlemleri için yerleşik bir terim olabilir.",
+   "missing_context": [
+    "TMSF işleminin hukuki niteliği"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ozan Elektronik Para ve A Ödeme'nin faaliyet izni neden iptal edildi?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi sesinde açık bir nedensellik ifadesi yok; neden sorusu yalnızca soru biçiminde soruluyor.",
+   "alternative_explanation": "Haberler Resmi Gazete kararını betimliyor.",
+   "missing_context": [
+    "İptal kararının resmi gerekçesi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kayyım atanmıştı… Ozan Elektronik Para'nın faaliyet izni iptal edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye Cumhuriyet Merkez Bankası (TCMB), A Ödeme ve Elektronik Para Hizmetleri A.Ş. ile Ozan Elektronik Para A.Ş.'nin",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar önceki kayyım sürecine değiniyor ve haberler iki kuruluşu birlikte veriyor; tek bir vakanın daha geniş örüntüden koparılarak bütün hikâye olarak sunulduğu görülmüyor.",
+   "alternative_explanation": "Kısa başlıklar ayrıntıyı ledeye bırakmış olabilir.",
+   "missing_context": [
+    "Elektronik para sektöründeki diğer lisans iptalleri"
+   ]
+  }
+ ]
+}

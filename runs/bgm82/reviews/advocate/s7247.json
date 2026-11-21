@@ -1,0 +1,218 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Şüphe bulutları dağıldı, Adli Tıp son sözü söyledi: Arif Ahmet Denizolgun'un ölüm sebebi kesinleşti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başsavcılık, 'Süleymancılar'ın eski lideri Arif Ahmet Denizolgun'un ölümüne ilişkin ek rapor talep edecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı rapor olgusunda bir başlık kesinliği, diğeri ek rapor talebini öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgu, kurumların başlık uzunluğu ya da habere eriştikleri bilgi düzeyindeki farkla açıklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metni",
+    "Kurumların erişebildiği kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Arif Ahmet Denizolgun'un ölüm sebebi kesinleşti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Arif Ahmet Denizolgun'un ölüm nedeni belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı rapor sonucu bir kurumda \"kesinleşti\", diğerinde \"belli oldu\" diye anılıyor; \"kesinleşti\" kesinlik ve kapanış çağrıştırıyor.",
+   "alternative_explanation": "İki ifade gündelik dilde yakın anlamlıdır.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Süleymancılar soruşturması... Arif Ahmet Denizolgun'un Adli Tıp raporu çıktı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir kurumun başlığı raporu daha geniş bir soruşturma süreci içine yerleştiriyor.",
+   "alternative_explanation": "Soruşturma adı ajans arka planı olabilir.",
+   "missing_context": [
+    "Diğer kurumlarda aynı bağlam"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Süleymancılar Cemaati'nin eski lideri Arif Ahmet Denizolgun",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eski Ulaştırma Bakanı Arif Ahmet Denizolgun",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi \"cemaatin eski lideri\" ve \"eski bakan\" diye anılıyor; ilk etiketin değerlendirme taşıyıp taşımadığı belirsiz.",
+   "alternative_explanation": "Her iki etiket de olgusal tanımlar olabilir.",
+   "missing_context": [
+    "Etiketin haberle ilgisi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurum sesinde yalnızca iki seçenek sunan bir ifade yok.",
+   "alternative_explanation": "Metinde bu tekniğin koşullarını karşılayan kurum sesiyle yazılmış bir ifade bulunmuyor.",
+   "missing_context": [
+    "Başlık ve spot dışındaki haber metni"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adli Tıp Kurumunca veriler üzerinde yapılan incelemede",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ölüm nedeni adı verilen Adli Tıp raporuna atfediliyor.",
+   "alternative_explanation": "Metinde bu tekniğin koşullarını karşılayan kurum sesiyle yazılmış bir ifade bulunmuyor.",
+   "missing_context": [
+    "Başlık ve spot dışındaki haber metni"
+   ]
+  }
+ ]
+}

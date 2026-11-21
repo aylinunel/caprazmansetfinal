@@ -1,0 +1,243 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Dirk Kuyt ile yollar ayrıldı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dirk Kuyt'ın Fenerbahçe'deki yeni görevi ne olacak?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı gelişmeyi veren kurumlardan biri başlıkta ayrılığı, diğeri Kuyt'ın kulüpte alabileceği olası yeni görevi öne çıkarıyor; ayrılık ile süreklilik boyutları farklı biçimde ön plana alınıyor.",
+   "alternative_explanation": "Soru biçimli başlık, açıklama yapılmadan önce yazılmış ve sonradan güncellenmemiş bir haber olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi",
+    "Başlıkların yayın ve güncellenme saatleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dirk Kuyt düğümü çözüldü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe, Dirk Kuyt ile yollarını ayırdı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dirk Kuyt, Fenerbahçe'den ayrıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı ayrılık bir kurumda çözülmesi gereken bir 'düğüm' olarak, diğerlerinde 'yolları ayırma' ya da Kuyt'un 'ayrılması' olarak adlandırılıyor; 'düğüm' sözcüğü durumu bir sorun olarak çağrıştırıyor, diğerleri ise eylemi kulübe ya da Kuyt'a yüklüyor.",
+   "alternative_explanation": "'Düğüm çözüldü' spor basınında belirsizliğin sona erdiğini anlatan yaygın bir kalıp olabilir; çağrışım farkı sınırlı olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kulüpten Duygusal Veda Mesajı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe, Dirk Kuyt ile yollarını ayırdı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum veda mesajını 'duygusal' diye niteliyor; aynı olgu başka bir kurumda nitelemesiz veriliyor. Ancak 'duygusal' sözcüğünün değerlendirme yüklü olup olmadığı belirsiz.",
+   "alternative_explanation": "'Duygusal' kulübün mesajının içeriğini betimleyen bir sıfat olabilir.",
+   "missing_context": [
+    "Kulüp mesajının tam metni"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dirk Kuyt düğümü çözüldü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Düğüm' mecazı Kuyt'ın durumunu çözülmesi gereken bir sorun olarak sunuyor; ancak bunun rol atayan ya da eylem öneren bir mecaz mı yoksa kalıplaşmış bir deyim mi olduğu belirsiz.",
+   "alternative_explanation": "'Düğüm çözüldü' Türkçede kalıplaşmış bir deyimdir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kulübün resmi sosyal medya hesabından yapılan açıklamada",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ayrılık kulübün resmi açıklamasıyla duyurulmuş; sorumluluğu belirsiz bir olay ya da süren bir soruşturma yok.",
+   "alternative_explanation": "Haber resmi bir duyuruyu aktarıyor.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Dirk Kuyt ile yollar ayrıldı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sezona İsmail Kartal'ın ekibinde başlayan Hollandalı teknik adam, Kartal'ın ayrılığının ardından iki maçta takımın başında yer almıştı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Emre Belözoğlu'nun teknik direktörlük görevine getirilmesinin ardından",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar ayrılığı teknik heyetteki art arda değişikliklerin (Kartal'ın ayrılığı, Belözoğlu'nun gelişi) bir halkası olarak bağlama yerleştiriyor.",
+   "alternative_explanation": "Bu bilgi okurun olayı anlaması için gereken temel arka plan olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  }
+ ]
+}

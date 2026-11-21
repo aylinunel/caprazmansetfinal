@@ -1,0 +1,212 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD şokta!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz sözcükler ve kayıp ayrıntıları öne çıkıyor; ancak olumsuz kanıtın karşılaştırılabilir olumlu kanıta göre orantısız ağırlık aldığını ve bunun bir değerlendirmeyi gerekçesiz etkilediğini gösteren açık kayıt yok.",
+   "alternative_explanation": "Can kaybı ve yaralanma haberin özüdür; olumsuz ayrıntıya yer vermek olayla orantılı bir aktarım olabilir.",
+   "missing_context": [
+    "Olumlu ve olumsuz kanıtların bir değerlendirmede nasıl tartıldığını gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "dehşet saçtığı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duygu yüklü ifadeler bulunuyor; fakat metin belirli bir duyguyu bir risk/fayda tahminine ya da karara açıkça bağlamıyor.",
+   "alternative_explanation": "Duygusal sözcükler haber dilinin dikkat çekme üslubu olabilir; bir tahminin yerine geçtiği gösterilmiyor.",
+   "missing_context": [
+    "Duygu ile risk tahmini arasındaki açık bağı gösteren ifade",
+    "Olgular sabitken tahminin duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınlarında silahlı saldırı! A Haber olay yerinden canlı yayında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı öne çıkarıyor; fakat metin bu ayrıntıyı açıkça bir yargı ya da seçime bağlamıyor, çarpıcılık tek başına hata kanıtı değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması olayın gerçekten önemli bir unsuru olması, haber değeri ya da okunma kaygısıyla açıklanabilir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin bir kararda nasıl tartıldığını gösteren karşılaştırmalı kanıt",
+    "Editör ya da okur yargısına dair doğrudan kayıt"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yeni bir silahlı saldırının şokunu yaşıyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akit 'yeni bir' saldırıdan söz ediyor, ancak bunu bir sıklık ya da risk tahmininin gerekçesi yapmıyor. Metin hatırlanabilirliği ya da canlı örnekleri bir tahminin, genellemenin ya da risk yargısının gerekçesi olarak kullanmıyor.",
+   "alternative_explanation": "Olayların aktarımı bir sıklık tahmini içermiyor; yalnızca tek tek olaylar haberleştiriliyor.",
+   "missing_context": [
+    "Bir sıklık ya da risk tahmini ve onun dayanağı",
+    "Karşılaştırmalı sıklık verisi"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınlarında silahlı çatışma: En az 5 kişi vuruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ABD'de Beyaz Saray yakınlarında düzenlenen silahlı saldırıda 5 kişi vuruldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı sözcük ve vurgularla veriyor; ancak metin betimlemelerin karar açısından eşdeğer olduğunu açıkça kurmuyor ve hiçbir tercih ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, editoryal üslup, karakter sınırı, kaynak erişimi ya da haber değeri tercihinden kaynaklanabilir; bunlar bilişsel bir hata kanıtı değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin yargısını gösteren veri",
+    "Farklı sunumların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınlarında silahlı saldırı paniği: 4 kişi vuruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ABD'de Beyaz Saray yakınlarında düzenlenen silahlı saldırıda 5 kişi vuruldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karar 4, AA 5 kişinin vurulduğunu bildiriyor; sayı aktarımlar arasında değişiyor. Kurumların aktarımları arasında bazı ayrıntılar farklılaşıyor ya da düşüyor; bu bir aktarım/özet etkisine işaret edebilir, ancak farkın önemli, gerekçesiz ve bir sonuca etkili olduğu gösterilmiyor.",
+   "alternative_explanation": "Farklar erken saatteki eksik bilgiye, ajans metninin kısaltılmasına, başlık uzunluğu sınırına ya da sonradan güncellenen resmi verilere bağlı olabilir.",
+   "missing_context": [
+    "Özgün kaynak metni (resmi açıklama ya da ajans bülteni)",
+    "Haberlerin güncellenme geçmişi",
+    "Farkın bir sonuca ya da karara etkisini gösteren kanıt"
+   ]
+  }
+ ]
+}

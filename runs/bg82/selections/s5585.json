@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "salience-bias",
+  "in-group-bias",
+  "attentional-bias"
+ ],
+ "selection_uncertainty": [
+  "Hangi ziyaretin öne çıkarıldığının nedeni bilinmiyor.",
+  "Yalnızca başlık ve kısa özetler var; tam metin yok."
+ ],
+ "selection_note": "Kurumların farklı ziyaretçileri öne çıkarması ve unvan nitelemeleri çerçeveleme açısından aday."
+}

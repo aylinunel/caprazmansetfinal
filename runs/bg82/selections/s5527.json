@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "automation-bias",
+  "authority-bias",
+  "framing-effect",
+  "salience-bias",
+  "halo-effect"
+ ],
+ "selection_uncertainty": [
+  "Yapay zekâ sisteminin rolüne dair ayrıntı yok.",
+  "Kümede farklı operasyonlar karışmış."
+ ],
+ "selection_note": "'Yapay zeka destekli AVCI' vurgusu otomasyona aşırı güven çağrışımı taşıyabilir."
+}

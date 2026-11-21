@@ -1,0 +1,231 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül hakkındaki 'cinsel istismar' dosyası Ankara'ya gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül soruşturmasında yetkisizlik kararı: Dosya Ankara'ya gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül'ün dosyası Ankara'ya gönderildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı dosya gönderimini bir kurum suçlamalardan birini başlığa taşıyarak, bir başkası usul gerekçesi olan yetkisizlik kararıyla, diğerleri sade biçimde veriyor.",
+   "alternative_explanation": "Suçlamaların adları resmi açıklamada yer alıyor; kurumlar haber değeri yüksek gördükleri olgusal öğeyi seçmiş olabilir.",
+   "missing_context": [
+    "Başsavcılık açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Suçlamalar vahim!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül'ün dosyası Ankara'ya gönderildi — Mustafa Sarıgül hakkında yürütülen soruşturmada yetkisizlik kararı verilmesinin ardından",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kendi başlığında 'Suçlamalar vahim!' değerlendirmesini kullanıyor; başka bir kurum aynı gönderimi bu değerlendirme olmadan veriyor.",
+   "alternative_explanation": "'Vahim' suçlamaların hukuki ağırlığını anlatan bir sıfat olarak da okunabilir.",
+   "missing_context": [
+    "Değerlendirmenin bir kaynağa atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül hakkındaki suç örgütü ve cinsel saldırı dosyası Ankara Başsavcılığı'na gönderildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "cinsel saldırı iddialarını içeren soruşturma dosyasında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; başlıklar dosyanın gönderilmesini edilgen çatıyla veriyor ve 'hakkındaki' yapısıyla suçlamayı bir dosya konusu olarak anıyor, aynı haberin spotu 'iddia' sözcüğünü kullanıyor.",
+   "alternative_explanation": "Suçlama adlarının anılması resmi dosya içeriğinin aktarılmasıdır.",
+   "missing_context": [
+    "Soruşturmanın aşaması ve iddiaların kaynağı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül hakkındaki 'cinsel istismar' dosyası Ankara'ya gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül'ün tahkikat dosyası Ankara Cumhuriyet Başsavcılığı'na gönderildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı dosya bir kurumda 'cinsel istismar dosyası', bir başkasında 'tahkikat dosyası' olarak adlandırılıyor; ancak ilk ad resmi suçlamalardan birini seçiyor ve tırnak içinde veriyor, bu yüzden çağrışım farkı mı yoksa vurgu seçimi mi olduğu belirsiz.",
+   "alternative_explanation": "Fark sözcük seçiminden çok hangi olgusal öğenin öne çıkarıldığıyla ilgili olabilir.",
+   "missing_context": [
+    "Dosyadaki suçlamaların resmi sıralaması"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olgusal gelişmeyi aktarıyor; ya-ya da yapısında bir seçenek daraltması yok.",
+   "missing_context": [
+    "İki seçenekli bir kurgu içeren başlık ya da spot"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: Mustafa Sarıgül'ün dosyası Ankara'ya gönderildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ömer Sarıgül'ün de aralarında bulunduğu 27 şüphelinin tutuklandığı soruşturma kapsamında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum spotunda dosya gönderimini 27 şüphelinin tutuklandığı daha geniş soruşturmanın içine yerleştiriyor.",
+   "alternative_explanation": "Geniş soruşturmaya atıf, haberin anlaşılması için gereken olgusal arka plan bilgisidir.",
+   "missing_context": [
+    "Diğer kurumların haber gövdelerindeki arka plan bilgisi"
+   ]
+  }
+ ]
+}

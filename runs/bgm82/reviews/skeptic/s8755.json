@@ -1,0 +1,223 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 07:36] ABD'de Pete Hegseth görevden alınmaktan kurtuldu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dwturkce · 10:46] ABD Savunma Bakanı Hegseth hakkındaki azil girişimini Cumhuriyetçiler engelledi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı oylamada A Haber sonucu Hegseth'in kazancı olarak, DW Türkçe ise girişimi engelleyen tarafın Cumhuriyetçiler olduğunu öne çıkararak veriyor.",
+   "alternative_explanation": "Özne seçimi başlık kısalığından kaynaklanabilir; her iki boyut da olgusal.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Temsilciler Meclisi'nden azil tasarısına ret",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "azil önergesinin Genel Kurul’da oylanmasını engelleyerek önergeyi Adalet Komisyonu’na sevk etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "A Haber usul kararını 'ret' olarak adlandırırken Haber7 aynı işlemi komisyona sevk olarak tanımlıyor; 'ret' nihai bir sonuç çağrışımı taşıyor.",
+   "alternative_explanation": "'Ret' gündelik dilde usule ilişkin engellemenin kısaltması olarak kullanılmış olabilir.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "'Siyasi şov' demişti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi seslerinde skandal, şok gibi değerlendirici sözcükler bulunmuyor; Milliyet'teki 'Siyasi şov' ifadesi bir konuşmacıya atfedilen alıntıdır ve kurumun tekniği sayılamaz.",
+   "alternative_explanation": "Haberler bir oylamayı olgusal dille aktarıyor.",
+   "missing_context": [
+    "Kurumun kendi sesinde değerlendirici bir sözcük"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: ABD Temsilciler Meclisi, Savunma Bakanı Hegseth'e yönelik azil girişimini engelledi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay sonucu kayıtlı bir meclis oylamasıdır; sorumluluğu belirsiz bir soruşturma ya da yargılama söz konusu olmadığından ilk koşul karşılanmıyor.",
+   "alternative_explanation": "Oylamayı yapan tarafın belirtilmesi olgusal bir bilgidir.",
+   "missing_context": [
+    "Sorumluluğu belirsiz bir süreç"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD'de Pete Hegseth görevden alınmaktan kurtuldu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Temsilciler Meclisi'nden azil tasarısına ret",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 08:49] ABD Temsilciler Meclisi, Savunma Bakanı Hegseth'e yönelik azil girişimini engelledi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "A Haber başlığında 'kurtuldu' ifadesi ve 'ret' sözcüğü birlikte yer alıyor; AA aynı olguyu bu birleşim olmadan veriyor. İkisinin aynı değerlendirici yönü gösterdiği ise açık değil.",
+   "alternative_explanation": "Her iki seçim de oylamanın sonucunu kısa biçimde özetleme çabası olabilir.",
+   "missing_context": [
+    "Haberin gövdesi",
+    "Komisyona sevk bilgisinin haberde verilip verilmediği"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca iki seçeneği tek seçenek olarak sunan bir ya…ya da kalıbı yok.",
+   "alternative_explanation": "Haberler bir gelişmeyi aktarıyor; seçenekler arasında bir tercih dayatmıyor.",
+   "missing_context": [
+    "İki seçenekli bir kalıp kullanan başlık ya da spot"
+   ]
+  }
+ ]
+}

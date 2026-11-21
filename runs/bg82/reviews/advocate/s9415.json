@@ -1,0 +1,194 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi ölü bulundu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rusya'nın Washington Büyükelçisi Darçiyev aniden hayatını kaybetti! Ölüm sebebi bilinmiyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Ölü bulundu' ve 'aniden' gibi ifadeler belirsizliği çarpıcı kılıyor; bunun bir neden çıkarımına dönüştürüldüğü ise metinde yok.",
+   "alternative_explanation": "İlk resmi açıklamada ölüm nedeni verilmediği için belirsizliğin vurgulanması olgusal olabilir.",
+   "missing_context": [
+    "Ölüm nedenine dair sonraki resmi açıklama",
+    "Ayrıntının bir yargıya gerekçe yapıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde olumsuzluk yanlılığının için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Ölüm haberi olumsuzdur; olumsuz bilgiye orantısız ağırlık verildiğine dair karşılaştırma yok.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi ölü bulundu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi Aleksandr Darçiyev hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı ölüm bir başlıkta 'ölü bulundu', diğerinde 'hayatını kaybetti' olarak sunuluyor; ilk ifade şüphe çağrıştırıyor. Ancak bir yargıya açık bağ yok.",
+   "alternative_explanation": "'Ölü bulundu' ifadesi kaynak haberden çeviri tercihi olabilir.",
+   "missing_context": [
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri",
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Haberlerin tam metinleri ve aynı olgu setine dayandıklarının teyidi"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde duygu sezgiselinin için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Başlıklarda bir duygu ile risk/fayda tahmini arasında açık bir bağ yok.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hale etkisinin için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Diplomata yönelik övgü Rusya Dışişleri Bakanlığına atfediliyor; bir alandaki izlenimin başka bir yargıya taşındığı görülmüyor.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde aşırı gerekçelendirme etkisinin için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Metin ödül, içsel motivasyon ya da etkinliğe katılım değişimiyle ilgili hiçbir bilgi içermiyor.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  }
+ ]
+}

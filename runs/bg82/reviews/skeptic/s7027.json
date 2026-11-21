@@ -1,0 +1,119 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "KYK BURS SONUCU 2026 SORGULAMA EKRANI!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan çarpıcı bir ayrıntı var (KYK BURS SONUCU 2026 SORGULAMA EKRANI!); fakat metin bu ayrıntıyı bir sıklık, risk ya da seçim yargısına açıkça bağlamıyor.",
+   "alternative_explanation": "Ayrıntının öne çıkarılması haber değeri ve dikkat çekici başlık geleneğiyle açıklanabilir; çarpıtılmış bir yargı gösterilmiyor.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir tahmin ya da karar gerekçesi yapıldığını gösteren ifade",
+    "Belirgin ve az belirgin bilgiye verilen ağırlığı karşılaştıran veri"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Son dakika... KYK burs ve öğrenim kredisi başvuru sonuçları açıklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakan Bak duyurdu: KYK burs ve kredi sonuçları açıklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurguyla veriyor (Son dakika... KYK burs ve öğrenim kredisi başvuru sonuçları açıklandı); ancak metinde bu sunum farkına açıkça bağlanan bir tercih, yargı ya da karar yer almıyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati ve ajans metninin kısaltılmasıyla açıklanabilir; bir okurun ya da karar vericinin çerçeveden etkilendiğine dair veri yok.",
+   "missing_context": [
+    "Çerçevelerin karar açısından eşdeğer olduğunu açıkça kuran bir ifade",
+    "Sunum farkına bağlı bir tercih ya da yargıyı gösteren okur/karar verici verisi"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gençlik ve Spor Bakanı Osman Aşkın Bak detayları sosyal medya hesabından duyurdu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir yetkili ya da kurumu kaynak olarak anıyor (Gençlik ve Spor Bakanı Osman Aşkın Bak detayları sosyal medya hesabından duyurdu); ancak bu statünün içerik yerine belirleyici ağırlık aldığı ya da karşı kanıtın bu yüzden göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi kurum ya da yetkilinin açıklamasını aktarmak olağan haber pratiğidir ve kaynağın konuyla ilgisi açıktır; haksız bir etki görünmüyor.",
+   "missing_context": [
+    "Kaynağın yetkinliğinin konuyla uyuşmadığını gösteren kanıt",
+    "Statünün tek gerekçe olduğunu ya da karşı kanıtın yok sayıldığını gösteren ifade"
+   ]
+  }
+ ]
+}

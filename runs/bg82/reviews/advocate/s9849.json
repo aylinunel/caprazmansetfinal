@@ -1,0 +1,210 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[karar · 10:56] 15 Temmuz Şehitler Köprüsü'nde İsrail karşıtı protesto",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dirilis · 17:04] 15 Temmuz Şehitler Köprüsü'nde silahlı eylem: Trafik kilitlendi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olay bir kurumda 'İsrail karşıtı protesto', diğerinde 'silahlı eylem' olarak adlandırılıyor; olgu aynı, nitelendirme farklı, ancak bir yargı bu farka açıkça bağlanmıyor.",
+   "alternative_explanation": "Farklı başlıklar, aynı olgunun farklı ayrıntılarını farklı saatlerde ve farklı okur ihtiyaçlarına göre vermekten kaynaklanabilir; bir tercih veya yargının çerçeveye bağlandığı gösterilmiyor.",
+   "missing_context": [
+    "Sunum farkının bir tercih veya yargıyı değiştirdiğini gösteren açık ifade",
+    "Okur tepkisine veya karar davranışına dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 11:22] Bir elinde bayrak bir elinde silah!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 09:29] 15 Temmuz Şehitler Köprüsü'nde elinde tabancayla aracının üzerine çıkan kişi ikna edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum silah ve bayrak görüntüsünü ünlemle öne çıkarırken diğeri olayın ikna ile sonuçlandığını veriyor; canlı ayrıntı karşılaştırmalı olarak gözleniyor ama bir yargıya bağlanmıyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı, olayın haber değeri taşıyan gerçek bir unsuru olabilir; bunun bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Canlı ayrıntının bir yargı veya seçime açıkça bağlandığını gösteren ifade",
+    "Daha az belirgin bilginin göz ardı edildiğine dair doğrudan anlatım"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "silahlı şahıs alarmı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda olumsuz sözcükler bulunsa da metin, olumsuz kanıta olumlu ve karşılaştırılabilir kanıttan orantısız ağırlık verildiğini belgelemiyor.",
+   "alternative_explanation": "Olumsuz ifade, olayın kendisinin olumsuz niteliğini (kaza, sakatlık, tehdit) yansıtıyor olabilir; bu orantılı bir haber dilidir.",
+   "missing_context": [
+    "Aynı kurumun benzer olumlu ve olumsuz olayları nasıl ağırlıklandırdığına dair karşılaştırmalı kayıt",
+    "Olumsuz vurgunun bir değerlendirmeyi veya kararı nasıl etkilediğine dair açık ifade"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gözaltına alınan şüphelinin psikolojik sorunları olduğu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü'nde İsrail karşıtı protesto",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum davranışı kişinin psikolojik durumuna bağlayan bir bilgi aktarıyor; başka bir kurum durumsal/siyasi bir bağlam (protesto) veriyor. Ancak durumsal etkenin gerekçesiz göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Psikolojik durum bilgisi resmi kaynaklardan aktarılmış olabilir ve protesto bağlamıyla çelişmeyebilir; spot metni kesik.",
+   "missing_context": [
+    "Psikolojik sorun bilgisinin kaynağı",
+    "Kurumun durumsal etkenleri nasıl değerlendirdiğine dair metnin tamamı"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin, belirtilen bir duyguyu belirli bir karar veya risk/fayda tahminine açıkça bağlamıyor; duygusal sözcük kullanımı tek başına yeterli değil.",
+   "alternative_explanation": "Duygusal ifadeler olayın dramatik yönünü aktarmak için kullanılmış olabilir; bir tahmini çarpıttığına dair kanıt yok.",
+   "missing_context": [
+    "Duygunun bir risk veya fayda tahminine dönüştüğünü gösteren açık gerekçe",
+    "Aynı olgular sabitken duyguya göre değişen tahminleri gösteren karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir tahminin veya genellemenin akla gelme kolaylığına, canlılığa ya da yakın tarihli örneklere dayandırıldığını gösteren açık bir gerekçe yok.",
+   "alternative_explanation": "Başlıklar güncel olayı aktarıyor; hatırlanabilirliğe dayalı bir sıklık veya risk tahmini yapılmıyor.",
+   "missing_context": [
+    "Bir sıklık veya risk tahmininin yakın tarihli örneklere dayandırıldığını gösteren ifade",
+    "Aynı konuda karşılaştırmalı sıklık verisi"
+   ]
+  }
+ ]
+}

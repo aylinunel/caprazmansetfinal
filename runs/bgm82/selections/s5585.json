@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "emphasis-framing",
+  "word-choice"
+ ],
+ "selection_uncertainty": [
+  "Ziyaretçi seçiminin nedeni bilinmiyor.",
+  "Yalnızca başlık ve kısa özetler var; tam metin yok."
+ ],
+ "selection_note": "'Mahkeme kararıyla getirilen' gibi nitelemeler ve farklı ziyaretçilerin öne çıkarılması aday."
+}

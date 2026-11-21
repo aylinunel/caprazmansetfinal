@@ -1,0 +1,16 @@
+{
+ "events": 59,
+ "blame_level": {
+  "n": 657,
+  "agreement": 0.7047184170471842,
+  "alpha": 0.24040675135683187
+ },
+ "frame_category": {
+  "n": 657,
+  "agreement": 0.1811263318112633,
+  "alpha": -0.06061343134781927
+ },
+ "unmapped_frames": 475,
+ "codebook_approved": false,
+ "measured": "2026-11-21"
+}

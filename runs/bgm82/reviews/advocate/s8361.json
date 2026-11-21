@@ -1,0 +1,230 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Avukat Abdurrahman Karabulut: Rojin Kabaiş'in amcası, İstanbul'da yüzleri maskeli 4 kişinin saldırısına uğradı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in amcasına saldırı: 'Sıra Nizamettin'e de gelecek\"",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı saldırıda bir başlık bilgi kaynağını, diğeri babaya yönelik tehdidi öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgu, kurumların başlık uzunluğu ya da habere eriştikleri bilgi düzeyindeki farkla açıklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metni",
+    "Kurumların erişebildiği kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in ailesine \"Davadan çekilin\" yumruğu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Maskeli dört kişi \"Davayı bırakın\" diyerek dövdü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "\"Davayı bırakın\" diyerek darp ettiler",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı saldırı kurumların kendi sesinde \"yumruk\", \"dövdü\" ve \"darp ettiler\" diye anılıyor; \"yumruk\" imgesi saldırıyı aileye yönelik bir mesaj olarak çağrıştırıyor.",
+   "alternative_explanation": "Farklar üslup ve başlık uzunluğundan kaynaklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ailesine yönelik tehditlere bir yenisi daha eklendi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in amcasına saldırı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başka bir kurum tehditlerin tekrarladığını gösteriyor; bazı başlıklar yalnızca tek saldırıyı veriyor, ancak bu yeni bir olayın ilk haberi olabilir.",
+   "alternative_explanation": "İlk haber anında geniş örüntü henüz ilgili olmayabilir.",
+   "missing_context": [
+    "Başlık dışındaki haber metni"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kimliği belirsiz dört kişinin saldırısına uğradı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Saldırganların kimliği belirsiz ve soruşturma sürüyor; başlıklar sorumluluğu adlandırılmış bir aktöre atfetmiyor.",
+   "alternative_explanation": "Faillerin bilinmemesi olgusal bir durum.",
+   "missing_context": [
+    "Soruşturmanın aşaması"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ailesine yönelik tehditlere bir yenisi daha eklendi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir kurumun spotu saldırıyı aileye yönelik tehditler dizisi içine yerleştiriyor.",
+   "alternative_explanation": "Arka plan avukatın açıklamasından alınmış olabilir.",
+   "missing_context": [
+    "Önceki tehditlere dair kaynak"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurum sesinde yalnızca iki seçenek sunan bir ifade yok; \"davayı bırakın\" saldırganlara atfediliyor.",
+   "alternative_explanation": "Metinde bu tekniğin koşullarını karşılayan kurum sesiyle yazılmış bir ifade bulunmuyor.",
+   "missing_context": [
+    "Başlık ve spot dışındaki haber metni"
+   ]
+  }
+ ]
+}

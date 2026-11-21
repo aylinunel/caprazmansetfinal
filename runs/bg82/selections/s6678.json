@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "source-confusion",
+  "illusory-truth-effect",
+  "authority-bias",
+  "framing-effect",
+  "salience-bias"
+ ],
+ "selection_uncertainty": [
+  "Resmi açıklama öncesi ve sonrası başlıklar karışık."
+ ],
+ "selection_note": "Söylenti, yorumcu iddiası ve resmi duyuru aynı kümede; tekrar ve kaynak karışıklığı olası."
+}

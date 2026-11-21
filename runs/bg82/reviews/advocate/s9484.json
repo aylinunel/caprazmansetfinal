@@ -1,0 +1,222 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "en az bir kişinin öldüğü",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Enkaz altında kalanlar var! 1 kişi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "New York'ta bina çöktü: 2 ölü, 17 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Erken saatte verilen 'en az bir kişi' rakamı, daha geç saatte başka kurumlar 2 ölü verirken bir kurumun başlığında sürüyor; bu ilk değere bağlılık olabilir ama metin sonraki tahmini açıkça o referansa bağlamıyor.",
+   "alternative_explanation": "Kurumlar farklı kaynaklardan ya da güncellenmemiş ajans metninden yararlanmış olabilir; rakamın korunması bilinçli bir çıpalama değil güncelleme gecikmesi olabilir.",
+   "missing_context": [
+    "Kurumların hangi kaynak ve saatte rakam güncellediği",
+    "Haberlerin sonradan güncellenip güncellenmediği"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde akla gelme kolaylığının bir tahmine gerekçe yapıldığı bir ifade yok.",
+   "alternative_explanation": "Metin yalnızca haber başlıkları ve kısa girişlerden oluşuyor; bir karar vericinin akıl yürütmesine ya da gerekçesine dair açık beyan yok.",
+   "missing_context": [
+    "Kararı veren kişinin gerekçesine dair açık beyan",
+    "Karşılaştırmalı veya zaman içinde izlenen davranış verisi"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "New York'ta bina çöktü: Çok sayıda ölü var",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Çok sayıda ölü var' gibi olumsuz vurgu mevcut; ancak olumsuz kanıta orantısız ağırlık verildiğini ve bunun bir değerlendirmeyi etkilediğini gösteren karşılaştırma yok.",
+   "alternative_explanation": "Metin yalnızca haber başlıkları ve kısa girişlerden oluşuyor; bir karar vericinin akıl yürütmesine ya da gerekçesine dair açık beyan yok.",
+   "missing_context": [
+    "Kararı veren kişinin gerekçesine dair açık beyan",
+    "Karşılaştırmalı veya zaman içinde izlenen davranış verisi"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "New York'ta korkunç olay!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Korkunç olay' duygusal bir nitelemedir; bu duygunun bir risk tahminine dönüştüğü gösterilmiyor.",
+   "alternative_explanation": "Metin yalnızca haber başlıkları ve kısa girişlerden oluşuyor; bir karar vericinin akıl yürütmesine ya da gerekçesine dair açık beyan yok.",
+   "missing_context": [
+    "Kararı veren kişinin gerekçesine dair açık beyan",
+    "Karşılaştırmalı veya zaman içinde izlenen davranış verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "New York'ta çöken binanın enkazı altında kalan 8 kişi hayatını kaybetti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ölü sayısı başlıkta öne çıkarılıyor, fakat bu çarpıcı ayrıntının bir yargıya bağlandığı ya da karşı kanıtın göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Metin yalnızca haber başlıkları ve kısa girişlerden oluşuyor; bir karar vericinin akıl yürütmesine ya da gerekçesine dair açık beyan yok.",
+   "missing_context": [
+    "Kararı veren kişinin gerekçesine dair açık beyan",
+    "Karşılaştırmalı veya zaman içinde izlenen davranış verisi"
+   ]
+  },
+  {
+   "card_id": "illusory-truth-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "8 kişi hayatını kaybetti",
+     "kind": "statement"
+    },
+    {
+     "source": "context",
+     "quote": "Olay: New York'ta bina çöktü: 2 ölü, 17 yaralı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar arasında ölü sayısı farklı olsa da hiçbir önermenin bağımsız olarak yanlış olduğu ya da tekrarın kabulü artırdığı gösterilmiyor.",
+   "alternative_explanation": "Metin yalnızca haber başlıkları ve kısa girişlerden oluşuyor; bir karar vericinin akıl yürütmesine ya da gerekçesine dair açık beyan yok.",
+   "missing_context": [
+    "Kararı veren kişinin gerekçesine dair açık beyan",
+    "Karşılaştırmalı veya zaman içinde izlenen davranış verisi"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "negativity-bias",
+  "salience-bias",
+  "framing-effect",
+  "availability-heuristic",
+  "leveling-and-sharpening"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Uyarının içeriği (yağış mı fırtına mı) kaynaklarda farklı aktarılmış."
+ ],
+ "selection_note": "Sarı kodlu uyarı 'alarm', 'fırtına' gibi farklı yoğunlukta verilmiş; olumsuzluk vurgusu adayları."
+}

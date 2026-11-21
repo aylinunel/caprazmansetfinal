@@ -1,0 +1,211 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Van'da katliam gibi kaza! Tır ile minibüs çarpıştı: 9 ölü, 5 yaralı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz olay olumsuz ifadelerle aktarılıyor; ancak olumsuz kanıta karşılaştırılabilir olumlu kanıta göre orantısız ağırlık verildiği belgelenmiyor.",
+   "alternative_explanation": "Can kaybı içeren bir olayda olumsuz vurgu olayın kendisiyle orantılı olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıt",
+    "Orantısız ağırlığın bir değerlendirmeyi etkilediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Van'da korkunç kaza! Tır ile minibüs çarpıştı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin belirtilen bir duyguyu belirli bir karar ya da risk-fayda tahminine açıkça bağlamıyor; duygusal sözcükler tek başına yeterli değil.",
+   "alternative_explanation": "Duygusal ifadeler olayın ağırlığını aktaran habercilik dili olabilir.",
+   "missing_context": [
+    "Duygu ile karar arasındaki açık bağlantı",
+    "Olgular sabitken tercihin duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Van'da tır minibüsle çarpıştı: 7 ölü, 7 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Van'da tır minibüsle çarpıştı: 9 ölü, 5 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar farklı ölü ve yaralı sayıları veriyor; ancak bir yargının önceki sayıya açıkça bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Farklı rakamlar haberin farklı saatlerde güncellenmesinden ve farklı resmi kaynaklardan gelebilir.",
+   "missing_context": [
+    "Sonraki yargının önceki değere dayandığını gösteren açık ifade",
+    "Rakamların zaman sırası ve kaynakları"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Van'da can pazarı: Tır ile minibüs çarpıştı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı ya da rakamı öne çıkarıyor; metin bu ayrıntıyı bir yargıya ya da seçime açıkça bağlamıyor ve karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı olayın haber değeri taşıyan olgusal bir parçası olabilir; çarpıcılık tek başına hatalı ağırlıklandırma kanıtı değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı belirlediğini gösteren açık ifade",
+    "Belirgin ve belirgin olmayan bilginin nasıl ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Van'da tır ile minibüsün çarpışması sonucu 9 kişi öldü, 5 kişi yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Van'da katliam gibi kaza! Tır ile minibüs çarpıştı: 9 ölü, 5 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı vurgularla başlıklandırıyor; ancak metin, bu sunum farkına bağlanmış bir tercih, yargı ya da öneri göstermiyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinden, ajans metinlerinden, olayın gelişen aşamalarından ve yer sınırından kaynaklanabilir; açıklamaların karar açısından eşdeğer olduğu metinde kurulmuyor.",
+   "missing_context": [
+    "Başlıkların okur yargısını değiştirdiğini gösteren karşılaştırmalı veri",
+    "Kümedeki Kütahya ve Balıkesir kazalarının ayrı olaylar olduğunun ayıklanması"
+   ]
+  },
+  {
+   "card_id": "illusion-of-transparency",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin kimseye, bir kitlenin kendi içsel durumunu sezebileceği inancını atfetmiyor.",
+   "alternative_explanation": "Haber olgusal kaza bilgisi aktarıyor; içsel durum ya da iletişim varsayımı yok.",
+   "missing_context": [
+    "Kişiye atfedilen şeffaflık inancı",
+    "Bu inancın yanlış olduğunu gösteren kanıt"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,268 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Soykırımcı Netanyahu için yolun sonu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Katil Netanyahu dönemi bitiyor!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İsrail'de hükümet kurma yetkisi Eisenkot'a verildi — İsrail Cumhurbaşkanı İzak Herzog",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "A Haber ve Takvim kendi sesiyle \"soykırımcı\" ve \"katil\" sözcüklerini kullanıyor; Yeni Şafak aynı kararı bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Kurumlar bu nitelemeleri Gazze savaşına dair yerleşik editoryal tutumlarıyla kullanıyor olabilir; yine de sözcükler kurumların kendi sesinde.",
+   "missing_context": [
+    "Kurumların editoryal çizgisi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "katil Netanyahu'nun en güçlü rakibi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Soykırımcı Netanyahu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Başbakan Netanyahu'nun rakibi Eisenkot'a",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı aktör bir kurumda \"Başbakan Netanyahu\", diğerlerinde \"katil\" ve \"soykırımcı\" diye anılıyor; ikinci gruptaki etiketler tanımlamanın ötesinde değerlendirme taşıyor.",
+   "alternative_explanation": "Etiketler, uluslararası suçlamalara dayanan bir editoryal tutumu yansıtıyor olabilir.",
+   "missing_context": [
+    "Etiketin dayandığı yargı kararları"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Netanyahu'dan darbe girişimi gibi çağrı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Haber7, Netanyahu'nun çağrısını kendi sesiyle \"darbe girişimi\"ne benzetiyor; bu, aktöre demokratik düzeni tehdit eden rolünü atayan, kalıplaşmamış bir benzetme.",
+   "alternative_explanation": "Benzetme, Netanyahu'nun \"varoluşsal mesele\" söylemine bir yorum olabilir.",
+   "missing_context": [
+    "Netanyahu'nun açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İsrail'de Netanyahu dönemi bitiyor. Hükümet kurma görevi Eisenkot'a verildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Netanyahu hükümeti sona erdi: Herzog hükümeti kurma görevini Eisenkot’a verdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Eisenkot ve Netanyahu çoğunluğu sağlayamamıştı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar bir öngörüyü öne alıyor; ancak olay (görevin verilmesi) her başlıkta da yer alıyor, bu yüzden olayın yalnızca lede'de geçmesi koşulu karşılanmıyor.",
+   "alternative_explanation": "Öngörü olayın yanında sunuluyor, onun yerine geçmiyor.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Katil Netanyahu dönemi bitiyor! İsrail'de hükümeti kurma görevi Gadi Eisenkot'a verildi — İsrail'de 27 Ekim seçimlerinin ardından Cumhurbaşkanı Isaac Herzog, hükümeti kurma görevini katil Netanyahu'nun rakibi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İsrail'de hükümet kurma yetkisi Eisenkot'a verildi — İsrail Cumhurbaşkanı İzak Herzog, hükümeti kurma görevini Yashar Partisi lideri Gadi Eisenkot'a verdi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim başlıkta öngörü (\"dönemi bitiyor\") ile değerlendirici etiketi (\"katil\") birleştirip lede'de etiketi tekrarlıyor; ikisi aynı yönde. Yeni Şafak aynı olguları bu birleşim olmadan veriyor.",
+   "alternative_explanation": "İki seçim, kurumun tutarlı editoryal tutumunun sonucu olabilir.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İsrail'de Netanyahu'ya büyük darbe!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eisenkot'a hükümeti kurması için 28 gün süre verilecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı karar bir kurumda Netanyahu'nun kaybı, diğerinde Eisenkot'un süreç takvimi açısından öne çıkarılıyor.",
+   "alternative_explanation": "Farklı kurumların farklı okur ilgisine yanıt vermesi.",
+   "missing_context": [
+    "—"
+   ]
+  }
+ ]
+}

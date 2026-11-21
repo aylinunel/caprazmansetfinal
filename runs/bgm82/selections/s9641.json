@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "loaded-language",
+  "emphasis-framing",
+  "word-choice",
+  "responsibility-framing"
+ ],
+ "selection_uncertainty": [
+  "'Elebaşı' nitelemesi İçişleri Bakanlığı açıklamasından aktarılmış olabilir.",
+  "Yargılama sonuçlanmamış."
+ ],
+ "selection_note": "'Elebaşı', 'yeni nesil organize suç örgütü' nitelemeleri ve tgrt suç sayıları vurgusu; yakalandı/getirildi farkı."
+}

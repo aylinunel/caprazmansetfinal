@@ -1,0 +1,182 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "identifiable-victim-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in amcasına saldırı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir yardım ya da kaynak tahsisi kararı ve bu kararı veren kişi tanımlanmıyor; adı geçen bir mağdur tek başına yeterli değil.",
+   "alternative_explanation": "Mağdurların adının ya da sayısının anılması olgusal haberciliktir; bir öncelik kararı karşılaştırılmıyor.",
+   "missing_context": [
+    "Tahsis kararı ve karar verici",
+    "Tanımlanabilir kişi ile grup arasında karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in amcasına İstanbul'da maskeli dört kişiden saldırı: Ailenin avukatından açıklama",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rojin Kabaiş'in ailesine \"Davadan çekilin\" yumruğu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı vurgularla başlıklandırıyor; ancak metin, bu sunum farkına bağlanmış bir tercih, yargı ya da öneri göstermiyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinden, ajans metinlerinden, olayın gelişen aşamalarından ve yer sınırından kaynaklanabilir; açıklamaların karar açısından eşdeğer olduğu metinde kurulmuyor.",
+   "missing_context": [
+    "Başlıkların karar açısından eşdeğer olduğuna dair açık tespit",
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Acılı babadan çarpıcı iddia",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin belirtilen bir duyguyu belirli bir karar ya da risk-fayda tahminine açıkça bağlamıyor; duygusal sözcükler tek başına yeterli değil.",
+   "alternative_explanation": "Duygusal ifadeler olayın ağırlığını aktaran habercilik dili olabilir.",
+   "missing_context": [
+    "Duygu ile karar arasındaki açık bağlantı",
+    "Olgular sabitken tercihin duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ailenin avukatı duyurdu...",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar olayı ailenin avukatının açıklamasına dayandırıyor ve bunu açıkça belirtiyor; kaynağın statüsüne gerekçesiz belirleyici ağırlık verildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi kurumlara atıf, haberciliğin olağan kaynak gösterme pratiğidir ve atıf işaretleri statünün kanıt yerine konmadığını düşündürür.",
+   "missing_context": [
+    "Statünün tek gerekçe olarak kullanıldığını gösteren ifade",
+    "Göz ardı edilen ilgili karşı kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Saldırganlardan tehdit mesajı: Onu da senin gibi yapacağız",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı ya da rakamı öne çıkarıyor; metin bu ayrıntıyı bir yargıya ya da seçime açıkça bağlamıyor ve karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı olayın haber değeri taşıyan olgusal bir parçası olabilir; çarpıcılık tek başına hatalı ağırlıklandırma kanıtı değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı belirlediğini gösteren açık ifade",
+    "Belirgin ve belirgin olmayan bilginin nasıl ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  }
+ ]
+}

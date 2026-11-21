@@ -1,0 +1,235 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında gemi karaya oturdu: 13 personel kurtarıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında gemi karaya oturdu; 13 personel tahliye edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Gemide bulunan 13 personel, ekiplerin çalışmalarıyla kurtarıldı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Evrensel 'kurtarıldı', DHA başlığında 'tahliye edildi' diyor.",
+   "alternative_explanation": "DHA aynı haberde hem 'tahliye edildi' hem 'kurtarıldı' kullanıyor; iki sözcük bu bağlamda eşanlamlı gibi kullanılıyor ve çağrışım farkı zayıf.",
+   "missing_context": [
+    "Personelin gerçek tehlike altında olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakan Uraloğlu açıkladı: 13 personel tahliye edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında gemi kazası! Makine arızası nedeniyle karaya oturan gemideki 13 personel kurtarıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Vatan bakanın açıklamasını, A Haber arıza nedenini öne çıkarıyor.",
+   "alternative_explanation": "Bakanın açıklaması bilginin kaynağını belirtmek için eklenmiş olabilir; bu farklı bir olgu boyutu değil kaynak bilgisi.",
+   "missing_context": [
+    "Bakan açıklamasının içeriği"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde iki seçeneği tek seçenek gibi sunan bir kalıp (ya... ya..., tek yol) görülmüyor.",
+   "alternative_explanation": "Başlıklar olayı bildiriyor; seçenek dayatan bir anlatım yok.",
+   "missing_context": [
+    "Haber gövdelerinde ikili seçenek kurgusu olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında karaya oturan gemide can pazarı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında korkutan kaza",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında gemi karaya oturdu. 13 personel tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Vatan 'can pazarı', Takvim 'korkutan kaza' ifadelerini kendi seslerinde kullanıyor; NTV aynı olguyu bunlar olmadan veriyor.",
+   "alternative_explanation": "Takvim'in aktardığı ağır hava koşulları personelin gerçekten zor durumda kaldığını gösterebilir; ifadeler bu koşulları yansıtıyor olabilir.",
+   "missing_context": [
+    "Tahliye sırasındaki koşullar"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sağlanan bağlam veya diğer kurumların haberleri sorunun tekrarlayan ya da yapısal olduğunu göstermiyor; ilk koşul karşılanmıyor.",
+   "alternative_explanation": "Tekil bir deniz kazası; sağlanan materyal tekrarlayan bir örüntü göstermiyor.",
+   "missing_context": [
+    "Benzer olaylara ilişkin önceki vaka veya istatistik bilgisi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında korkutan kaza: Çelik yüklü gemi karaya oturdu, 13 personel kurtarıldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ağır hava şartları nedeniyle gemide mahsur kalan 13 personel",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Beykoz açıklarında gemi karaya oturdu: 13 personel tahliye edildi — İstanbul Beykoz açıklarında makine arızası",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Takvim başlıkta 'korkutan kaza', lede'de 'mahsur kalan' ifadelerini kullanıyor; Karar aynı olguyu bunlar olmadan veriyor.",
+   "alternative_explanation": "'Mahsur kalan' ve ağır hava şartları olgusal bilgiler olabilir; iki tercihin aynı değerlendirici yönü kurduğu kesin değil.",
+   "missing_context": [
+    "Hava koşullarına ilişkin resmi bilgi"
+   ]
+  }
+ ]
+}

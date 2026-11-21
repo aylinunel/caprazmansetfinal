@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "causal-overclaim",
+  "word-choice",
+  "emphasis-framing",
+  "responsibility-framing",
+  "labeling"
+ ],
+ "selection_uncertainty": [
+  "Azerbaycan talebi iddia düzeyinde.",
+  "Saral'ın sözleri alıntı."
+ ],
+ "selection_note": "'Azerbaycan istemişti' başlıkları iddiayı neden olarak sunuyor; 'görevden alındı' / 'istifa' farkı."
+}

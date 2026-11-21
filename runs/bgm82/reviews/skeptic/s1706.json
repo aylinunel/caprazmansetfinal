@@ -1,0 +1,259 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül’ün oğlu Emir Sarıgül tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kara para soruşturması: Emir Sarıgül tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Emir Sarıgül bazı kurumlarda 'Mustafa Sarıgül'ün oğlu' diye, bazılarında yalnız adıyla anılıyor; akrabalık bilgisi bir tanımlama, meşruiyete dair değerlendirme taşımıyor.",
+   "alternative_explanation": "Babasının kamuya mal olmuş bir siyasetçi olması kimliği tanıtmak için olağan bir bilgi.",
+   "missing_context": [
+    "Etiketin değerlendirme içerdiğini gösteren bir ifade"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Siyaset, medya ve iş dünyasını sarsan milyar avroluk kara para aklama soruşturmasında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dev operasyonda tutuklu sayısı 16'ya yükseldi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da kara para soruşturmasında Sarıgül tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Milli Gazete 'siyaset, medya ve iş dünyasını sarsan', Takvim 'dev operasyon' gibi kendi seslerinde değerlendirici ifadeler kullanıyor; TRT Haber aynı tutuklamayı bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "'Milyar avroluk' bir büyüklük bilgisi olabilir; soruşturmanın kapsamı geniş.",
+   "missing_context": [
+    "Soruşturmadaki iddia edilen tutarın resmi kaynağı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emir Sarıgül tutuklandı, işte 16 kişilik tutuklu listesi!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sol · 19:32] Mustafa Sarıgül’ün oğlu Emir Sarıgül tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kara para soruşturması: Emir Sarıgül tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklamayı Takvim tutuklu sayısı ve listeyle, Sol aile bağıyla, Star soruşturmanın türüyle başlığa taşıyor.",
+   "alternative_explanation": "Her boyut olgusal; kurumlar farklı okur ilgisine göre ayrıntı seçmiş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kara para soruşturmasında Emir Sarıgül adliyede",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "suçtan kaynaklanan mal varlığı değerlerini aklama suçu kapsamında yürütülen soruşturmada",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Diriliş 'kara para', Cumhuriyet yasal terim olan 'suçtan kaynaklanan mal varlığı değerlerini aklama' diyor; fark çağrışımdan çok gündelik ve hukuki dil arasındaki üslup farkı olabilir.",
+   "alternative_explanation": "'Kara para aklama' Türkçede yasal suçun yaygın adı; çağrışım farkı sınırlı.",
+   "missing_context": [
+    "Kurumların aynı haberde iki ifadeyi birlikte kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında Emir Sarıgül adliyeye sevk edildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "kaynağı belirsiz yüksek miktardaki paranın yurt içi ve yurt dışında kurulan şirketler üzerinden aklandığı iddialarına",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; başlıklar 'tutuklandı' ve 'adliyeye sevk edildi' gibi edilgen, usule ilişkin fiillerle veriliyor ve suçu bir kişiye etken yapıyla yüklemiyor. Spotlarda 'iddia' belirteci kullanılıyor.",
+   "alternative_explanation": "Tutuklama olgusal bir usul işlemi; sorumluluk atfı değil.",
+   "missing_context": [
+    "Suçu doğrudan kişiye yükleyen bir başlık"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emir Sarıgül tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurum kendi sözleriyle konuyu birbirini dışlayan iki seçeneğe indirgemiyor.",
+   "alternative_explanation": "Başlıklar bilgi aktarımı ya da soru biçiminde; ikili bir seçim dayatılmıyor.",
+   "missing_context": [
+    "Kurumun kendi sesinde 'ya… ya…' türü bir ikilem kuran ifade"
+   ]
+  }
+ ]
+}

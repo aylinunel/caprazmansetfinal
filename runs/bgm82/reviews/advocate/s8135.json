@@ -1,0 +1,232 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[hurriyet · 17:04] Mısır'da yolcu treni raydan çıktı: Onlarca kişi yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haber7 · 18:42] Mısır'da tren kazası: 7 ölü 112 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 10:02] Mısır'da tren faciası! Yolcu treni başka bir trene arkadan çarptı: 7 ölü, 112 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kazayı veren başlıklardan biri raydan çıkmayı ve yaralıları, biri sayısal bilançoyu, biri çarpışmanın biçimini öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar farklı saatlerde eldeki bilgiyi yansıtıyor olabilir.",
+   "missing_context": [
+    "Mısır makamlarının açıklamalarının zaman çizelgesi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yenisafak · 18:36] Mısır'da tren faciası: Yedi ölü 112 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haber7 · 18:42] Mısır'da tren kazası: 7 ölü 112 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 19:02] Mısır'da feci tren kazası: 7 kişi öldü, 112 kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay 'facia', 'kaza' ve 'feci kaza' sözcükleriyle adlandırılıyor; 'facia' ve 'feci' olaya ağırlık yükleyen bir çağrışım taşıyor.",
+   "alternative_explanation": "Sözcükler Türkçe haber dilinde çok ölümlü kazalar için yerleşik kullanımlar olabilir.",
+   "missing_context": [
+    "Kuruluşların benzer kazalarda kullandığı sözcükler"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milliyet · 16:49] Mısır'da korkunç tren kazası: 64 kişi yaralandı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[mynet · 17:45] Mısır'da tren kazası: 64 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kendi sesinde 'korkunç' değerlendirici sözcüğünü kullanıyor; aynı rakam başka bir kuruluşta bu sözcük olmadan veriliyor.",
+   "alternative_explanation": "Sözcük kazanın ciddiyetini aktarmak için seçilmiş olabilir.",
+   "missing_context": [
+    "Kazanın boyutuna ilişkin tüm bilgiler"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kazanın nedeni henüz bilinmiyor ancak kazanın yaşandığı bölge geçmişteki ölümcül tren kazalarıyla biliniyor.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir kuruluşun ledi kazayı bölgede geçmişte yaşanan ölümcül tren kazaları dizisi içine yerleştiriyor.",
+   "alternative_explanation": "Geçmiş kazaların anılması bölgenin özelliğini anlatan olgusal bir bağlamdır.",
+   "missing_context": [
+    "Bölgedeki önceki kazalara ait tarih ve rakamlar"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde konuyu iki karşıt seçeneğe indiren bir kurgu bulunmuyor.",
+   "alternative_explanation": "Haberler bir kazayı aktarıyor.",
+   "missing_context": [
+    "İki seçenekli bir sunum"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "iki yolcu treninin çarpışması sonucu yedi kişi hayatını kaybetti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kazanın nedeni henüz bilinmiyor ancak kazanın yaşandığı bölge geçmişteki ölümcül tren kazalarıyla biliniyor.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde 'çarpışması sonucu' gibi nedensel ifadeler var; ancak çarpışma ile ölümler arasındaki bağlantı doğrudan fiziksel bir olgudur, ve kazanın kendi nedeni hakkında metinler nedenin bilinmediğini belirtiyor.",
+   "alternative_explanation": "Çarpışma ile can kaybı arasındaki ilişki zaman sırasından öte doğrudan bir nedenselliktir.",
+   "missing_context": [
+    "Kazanın nedenine ilişkin resmi açıklama"
+   ]
+  }
+ ]
+}

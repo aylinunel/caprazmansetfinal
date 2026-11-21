@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "anchoring-bias",
+  "availability-heuristic",
+  "negativity-bias",
+  "affect-heuristic",
+  "salience-bias"
+ ],
+ "selection_uncertainty": [
+  "Metinler kısaltılmış.",
+  "Can kaybı sayısı zamanla değişiyor."
+ ],
+ "selection_note": "Ölü sayısı kurumlar arasında 1, 2 ve 8 olarak farklı; ilk rakam çapa olabilir."
+}

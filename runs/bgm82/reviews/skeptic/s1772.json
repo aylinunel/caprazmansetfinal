@@ -1,0 +1,222 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 11:10] Zonguldak'ta maden ocağından acı haber! İsimleri belli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 10:49] Zonguldak'ta maden ocağındaki grizu patlaması: 3 kişi tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı patlamada Takvim ölenlerin kimliğini, BirGün tutuklamaları öne çıkarıyor.",
+   "alternative_explanation": "Haberler farklı günlerde olayın farklı aşamalarını aktarıyor olabilir.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[dirilis · 11:55] Zonguldak’ta maden ocağında grizu faciası!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 11:16] Zonguldak'ta maden ocağında patlama",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Diriliş kendi sesiyle 'facia', Mynet 'Kahreden haber' ifadesini kullanıyor; TRT Haber aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Can kaybı olan maden kazaları için 'facia' Türk basınında yaygın ve olguya yakın bir niteleme.",
+   "missing_context": [
+    "Değerlendirici ifadenin haberin gövdesinde bir kaynağa atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "olayla ilgili soruşturma başlatıldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 19:32] Zonguldak’ta maden ocağındaki patlamanın ardından firari işletme müdürü tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; ancak başlıklar edilgen yapı kullanıyor ve adı geçen bir aktöre kusur yükleyen etken bir dil ya da 'X'in ihmali' kalıbı yok.",
+   "alternative_explanation": "Tutuklama bilgisini aktarmak olgusal bir aktarımdır.",
+   "missing_context": [
+    "Başlıkta adı geçen aktöre kusur yükleyen ifade"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tele1 · 14:20] Zonguldak'ta maden ocağında patlama! 3 madenci can verdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[diken · 11:26] Zonguldak'ta maden ocağında patlama: Üç işçi öldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Tele1 'can verdi', Milli Gazete 'vefat etti', Diken 'öldü' diyor; farkın çağrışımdan mı yoksa yalnızca üslup düzeyinden mi kaynaklandığı belirsiz.",
+   "alternative_explanation": "Ölüm için kullanılan farklı fiiller Türkçede üslup ve saygı düzeyi farkları olabilir.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam ya da diğer kurumların haberleri bu olayın tekrarlayan ya da yapısal bir sorunun parçası olduğunu göstermiyor; bu nedenle ilk koşul karşılanmıyor.",
+   "alternative_explanation": "Maden kazaları Türkiye'de tekrarlayan bir konu olabilir; ancak bu çıkarım sağlanan metin ve bağlamda yer almıyor.",
+   "missing_context": [
+    "Benzer önceki olaylara ya da yapısal verilere ilişkin bağlam"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "grizu patlaması sonucu 3 kişi hayatını kaybetti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Star ölümleri grizu patlamasına bağlıyor; bu doğrudan fiziksel bir neden-sonuç ilişkisidir ve yalnızca zaman sırasına dayanmıyor.",
+   "alternative_explanation": "Patlamanın ölümlere yol açması olayın kendisidir.",
+   "missing_context": [
+    "Resmî inceleme raporu"
+   ]
+  }
+ ]
+}

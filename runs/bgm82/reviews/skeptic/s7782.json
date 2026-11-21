@@ -1,0 +1,230 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Azerbaycan yolunda!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 13:56] Cumhurbaşkanı Erdoğan, Karabağ Zaferi'nin 6. yılını kutladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "ahaber kendi sesinden 'Başkan Erdoğan', star 'Cumhurbaşkanı Erdoğan' diyor; unvan farkı var ama 'Başkan' unvanının kimlik belirlemenin ötesinde bir değerlendirme taşıyıp taşımadığı metinden kurulamıyor.",
+   "alternative_explanation": "'Başkan' kısaltması kurumun yerleşik üslubu olabilir.",
+   "missing_context": [
+    "Unvanın değerlendirme taşıdığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AK Parti Sözcüsü Çelik Karabağ Zaferi'nin 6. yılını kutladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emine Erdoğan, Karabağ Zaferi'nin 6'ncı yılını kutladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar farklı kişilerin ayrı kutlama mesajlarını veriyor; bunlar aynı olgunun farklı boyutları değil, ayrı olgular.",
+   "alternative_explanation": "Her haber farklı bir açıklamayı aktarıyor.",
+   "missing_context": [
+    "Aynı olguyu farklı boyutlarla veren başlıklar"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Karabağ Zaferi'nin üzerinden 6 yıl geçti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Karabağ Zaferi'nin 6. yıl dönümü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar olayı 'Karabağ Zaferi' adıyla aynı biçimde anıyor; aynı eylem veya şey için farklı sözcük kullanımı görülmüyor.",
+   "alternative_explanation": "'Karabağ Zaferi' olayın yerleşik adıdır.",
+   "missing_context": [
+    "Aynı şey için farklı sözcük seçimi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan ordusunun yaklaşık 30 yıl boyunca Ermenistan'ın işgali altında bulunan Karabağ ve çevresindeki illeri kurtarmasının üzerinden 6 yıl geçti.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "trthaber lede'i yıl dönümünü yaklaşık 30 yıllık bir tarihsel süreç içine yerleştiriyor.",
+   "alternative_explanation": "Tarihsel arka plan yıl dönümü haberinin doğal bir parçasıdır.",
+   "missing_context": [
+    "Çatışmanın diğer tarafların anlatımı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ermenistan'ın işgali altında bulunan Karabağ ve çevresindeki illeri kurtarmasının",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haber7 · 15:30] Karabağ Zaferi'nin 6. yıl dönümü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "trthaber kendi sesinden 'işgal' ve 'kurtarma' sözcüklerini kullanıyor; haber7 olayı bu sözcükler olmadan veriyor. Ancak bu sözcükler uluslararası belgelerde de geçen yerleşik terimler olabileceğinden değerlendirici yükleri belirsiz.",
+   "alternative_explanation": "'İşgal' nitelemesi BM kararlarında kullanılan terminolojiyle uyumlu olabilir.",
+   "missing_context": [
+    "Terimlerin uluslararası kaynaklardaki kullanımı"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 20:11] Erzurum'da Karabağ Zaferi'nin 6. yılı kutlandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber bir yıl dönümü kutlamasını aktarıyor; tekrarlayan veya yapısal bir sorunun tek bir vakayla anlatıldığı bir durum yok.",
+   "alternative_explanation": "Yıl dönümü haberleri bir sorun anlatısı değildir.",
+   "missing_context": [
+    "Yapısal bir sorunun varlığına dair bağlam"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,201 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe takım otobüsüne silahlı saldırı: 5 şüpheli hakkında 11 yıl sonra iddianame hazırlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne saldırı soruşturmasında yeni iddianame: 5 şüpheli için istenen ceza belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı iddianamede bir başlık geçen süreyi, diğeri istenen cezayı öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgu, kurumların başlık uzunluğu ya da habere eriştikleri bilgi düzeyindeki farkla açıklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metni",
+    "Kurumların erişebildiği kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe takım otobüsüne saldırı davasında çember daraldı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne saldırı soruşturmasında iddianame hazırlandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı iddianame bir kurumda \"çember daraldı\", diğerinde \"iddianame hazırlandı\" diye anılıyor; ilki sonucun yaklaştığını çağrıştırıyor.",
+   "alternative_explanation": "İfade soruşturmanın ilerlemesini anlatan yaygın bir kalıp olabilir.",
+   "missing_context": [
+    "Haberin tam metni"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "5 şüpheli hakkında 11 yıl sonra iddianame hazırlandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Başlık iddianameyi 2015’ten bu yana süren sürecin zaman çizgisine yerleştiriyor.",
+   "alternative_explanation": "Tarih bilgisi tüm kurumlarda bulunan arka plan olabilir.",
+   "missing_context": [
+    "Diğer kurumlarda aynı ifade"
+   ]
+  },
+  {
+   "card_id": "ad-hominem",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kişinin karakterine yönelen kurum sesinde nitelendirme yok.",
+   "alternative_explanation": "Metinde bu tekniğin koşullarını karşılayan kurum sesiyle yazılmış bir ifade bulunmuyor.",
+   "missing_context": [
+    "Başlık ve spot dışındaki haber metni"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurum sesinde yalnızca iki seçenek sunan bir ifade yok.",
+   "alternative_explanation": "Metinde bu tekniğin koşullarını karşılayan kurum sesiyle yazılmış bir ifade bulunmuyor.",
+   "missing_context": [
+    "Başlık ve spot dışındaki haber metni"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni deliller ışığında hazırlanan iddianamede",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Nedensellik ifadeleri (\"yeni deliller ışığında\") savcılık açıklamasına atfediliyor.",
+   "alternative_explanation": "Metinde bu tekniğin koşullarını karşılayan kurum sesiyle yazılmış bir ifade bulunmuyor.",
+   "missing_context": [
+    "Başlık ve spot dışındaki haber metni"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,215 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[birgun · 03:25] Afyonkarahisar'da 4.1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 03:50] Afyonkarahisar'da 4,1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu aynı sözcüklerle veriyor; bağlamsal çağrışım farkı yok.",
+   "alternative_explanation": "Deprem haberleri standart kalıplarla yazılıyor.",
+   "missing_context": [
+    "Yok"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar Dinar'da 4,1 büyüklüğündeki deprem 7,02 kilometre derinlikte oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar'da 4,1 büyüklüğünde deprem! AFAD verileri açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık derinliği, diğeri kaynağı öne çıkarıyor; ancak bunlar maliyet-fayda gibi farklı boyutlar değil, aynı teknik bilginin parçaları.",
+   "alternative_explanation": "Farklar başlık uzunluğu tercihlerinden kaynaklanabilir.",
+   "missing_context": [
+    "Yok"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar ve Adana'da deprem — AFAD tarafından yapılan açıklamalara göre; sabaha karşı 3 sularında Afyonkarahisar’da 4.1 büyüklüğünde, Adana'da ise 3.8 büyüklüğünde deprem meydana geldi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "CNN Türk depremi aynı gece yaşanan başka bir depremle birlikte bir dizi içinde veriyor.",
+   "alternative_explanation": "İki deprem yalnızca haber derlemesi kolaylığı için birleştirilmiş olabilir.",
+   "missing_context": [
+    "Bölgedeki deprem geçmişi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar'da 4.1 büyüklüğünde deprem!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olayı betimliyor; seçenek kurgusu yok.",
+   "missing_context": [
+    "İki seçenekli bir ifade içeren haber metni"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar'da 4,1 büyüklüğünde deprem — Afyonkarahisar'ın Dinar ilçesinde saat 03.23'te 4,1 büyüklüğünde deprem meydana geldi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam konunun yapısal bir sorun olarak tartışıldığını göstermiyor ve haberler bir kişiyi öne çıkarmıyor.",
+   "alternative_explanation": "Küçük ölçekli deprem haberleri betimsel olarak verilir.",
+   "missing_context": [
+    "Bölgesel deprem riski verileri"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AFAD duyurdu! Afyonkarahisar'da 4,1 büyüklüğünde deprem",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay doğal bir sarsıntıdır; sorumluluk atfı yok.",
+   "alternative_explanation": "Yok.",
+   "missing_context": [
+    "Yok"
+   ]
+  }
+ ]
+}

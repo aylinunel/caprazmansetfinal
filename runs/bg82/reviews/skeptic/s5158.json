@@ -1,0 +1,153 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe - Liverpool maçına Fransız hakem!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar dikkat çekici bir ayrıntıyı öne çıkarıyor; ancak metin bu ayrıntının bir yargıyı haksız biçimde belirlediğini açıkça bağlamıyor.",
+   "alternative_explanation": "Öne çıkarılan ayrıntı haber değeri taşıyan, doğrulanmış ve okur için ilgili bir bilgi olabilir; belirginlik tek başına hata kanıtı değildir.",
+   "missing_context": [
+    "Öne çıkan ayrıntının bir karar ya da değerlendirmeyi nasıl etkilediğine dair açık ifade",
+    "Belirgin ve daha az belirgin bilgilerin ağırlıklandırılmasını karşılaştıran bir kayıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe, Göztepe'ye 2-1 yenildikten sonra Liverpool maçının hazırlıklarına başladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe, Liverpool maçı hazırlıklarına başladı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı gelişmeyi farklı vurgu ve sözcüklerle veriyor; ancak metin, eşdeğer seçeneklerin sunuluş farkının bir tercih ya da yargıyı değiştirdiğini açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları kurumların farklı ayrıntıları, farklı yayın saatlerini veya arama motoru odaklı biçimleri tercih etmesiyle açıklanabilir; okurun ya da yazarın yargısının sunuluşa göre değiştiğine dair kayıt yok.",
+   "missing_context": [
+    "Okur ya da editör yargısının sunuluşa göre değiştiğini gösteren bir ölçüm veya beyan",
+    "Başlıkların eşdeğer olgular üzerine kurulduğunun açık teyidi"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Clement Turpin kimdir? Fenerbahçe-Liverpool maçının hakemi kaç yaşında?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar arasında konunun farklı yönlerine farklı ölçüde yer verildiği görülebiliyor; fakat bu eşitsiz dikkatin belirli bir sonuca ya da hataya yol açtığını gösteren kanıt yok.",
+   "alternative_explanation": "Kurumların farklı saatlerde, farklı haber aşamalarını (ön bilgi, gelişme, sonuç) vermesi eşitsiz dikkati değil, haber akışının zamanlamasını yansıtabilir.",
+   "missing_context": [
+    "Kurumların hangi bilgilere eriştiğine dair kayıt",
+    "Eşitsiz dikkatin belirli bir sonuca bağlandığını gösteren açık ifade"
+   ]
+  },
+  {
+   "card_id": "serial-position-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe - Liverpool Maçına Doğru | Muhtemel 11'ler",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin sıralı bir dizi ve bu dizideki öğelerin hatırlanması ya da seçilmesi hakkında hiçbir şey söylemiyor.",
+   "alternative_explanation": "Başlıkların listedeki sırası yayın saatine göre dizilmiş görünüyor; bu, hatırlama ya da seçimle ilgili bir konum etkisi değildir.",
+   "missing_context": [
+    "Bir sıralı dizi ve hatırlama ya da seçim verisi",
+    "Konum ile hatırlama farkı arasında bağlantı kuran bir kayıt"
+   ]
+  }
+ ]
+}

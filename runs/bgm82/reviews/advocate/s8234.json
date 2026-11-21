@@ -1,0 +1,259 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 20:38] Galatasaray efsanesi Cevad Prekazi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 23:37] Galatasaray'ın eski futbolcusu Cevad Prekazi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 23:34] Futbolun efsanesi Yugoslav Cevad Prekazi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi Evrensel'de 'eski futbolcu', Sondakika'da 'Galatasaray efsanesi', BirGün'de 'Futbolun efsanesi Yugoslav' olarak anılıyor; 'efsane' kimlik belirtmenin ötesinde olumlu bir değerlendirme taşıyor.",
+   "alternative_explanation": "'Efsane' spor haberlerinde ölen ünlü futbolcular için yerleşik bir saygı ifadesi; olumsuz bir meşruiyet yargısı içermiyor.",
+   "missing_context": [
+    "Kulübün resmi açıklamasında kullanılan ifade."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[t24 · 23:37] Partizan ve Galatasaray'ın efsane futbolcularından Cevad Prekazi, yaşamını yitirdi!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[kisadalga · 08:27] “Kalbim sol tarafta, ben de sol taraftayım” diyen Cevad Prekazi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cnnturk · 02:58] Cevad Prekazi neden öldü, hastalığı neydi?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 23:32] Galatasaray efsanesi Cevad Prekazi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölüm için A Haber Galatasaray kimliğini, T24 Partizan'ı da ekleyerek iki kulüp kariyerini, Kısa Dalga siyasi görüşünü, CNN Türk ölüm nedenini öne çıkarıyor.",
+   "alternative_explanation": "Kısa Dalga'nın başlığı Prekazi'nin kendi sözünü aktarıyor; vurgu seçimi kurumun, ifade ise konuşanın.",
+   "missing_context": [
+    "Başlıkların türü (son dakika, biyografi, arama odaklı)."
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 23:37] Galatasaray'ın eski futbolcusu Cevad Prekazi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 23:27] Galatasaray'ın efsane ismi Cevad Prekazi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[milligazete · 00:19] Galatasaray efsanesi Cevad Prekazi 69 yaşında vefat etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi için Evrensel 'eski futbolcusu', Sözcü 'efsane ismi' diyor; 'efsane' güçlü bir övgü çağrışımı taşırken 'eski futbolcu' nötr. Ölüm de 'hayatını kaybetti' ve 'vefat etti' olarak farklı sözcüklerle veriliyor.",
+   "alternative_explanation": "'Vefat etti' ile 'hayatını kaybetti' arasındaki fark büyük ölçüde üslup farkı; 'efsane' ise ölüm haberlerinde yerleşik bir saygı kalıbı.",
+   "missing_context": [
+    "Kurumların benzer ölüm haberlerindeki kullanım."
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde kurumun kendi sesiyle iki seçenekli bir 'ya … ya …' ya da 'tek yol' kurgusu bulunmuyor; başlıklar tek bir olayı aktarıyor.",
+   "alternative_explanation": "Olay ikili bir tercih içermiyor; ikili seçenek sunulmaması haberin konusundan kaynaklanıyor.",
+   "missing_context": [
+    "Kurumların tam metinlerinde ikili seçenek kurgusu olup olmadığı."
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Uzun yıllar Partizan’da oynadıktan sonra 1985’te Galatasaray’a gelen Prekazi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kosova’da bir işçi ailesinde büyüyen Prekazi, sosyalizmi savunurken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "soL ve Kısa Dalga ölüm haberini Prekazi'nin kariyer ve yaşam öyküsü içine yerleştiriyor; ancak bu biyografik bağlam bir eğilim, seri ya da kurumsal süreç değil.",
+   "alternative_explanation": "Biyografik arka plan ölüm haberlerinin olağan bileşeni.",
+   "missing_context": [
+    "Haberlerin tam metni."
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray’ı Monaco’ya sol ayağıyla attığı frikikle Avrupa’da yarı finale taşıyan Cevad Prekazi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Kısa Dalga yarı final başarısını tek bir frikik golüne bağlıyor; metin bu bağ için yalnızca golün ve sonucun birlikte gerçekleşmesini veriyor, ancak bunun bir spor olgusu olarak doğru olup olmadığı metinden değerlendirilemiyor.",
+   "alternative_explanation": "Gol eşleşmeyi gerçekten belirlemiş olabilir; bu durumda ifade nedensellik abartısı değil olgusal bir aktarımdır.",
+   "missing_context": [
+    "Eşleşmenin skorları."
+   ]
+  }
+ ]
+}

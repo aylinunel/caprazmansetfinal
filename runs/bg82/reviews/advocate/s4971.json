@@ -1,0 +1,103 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "automation-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray-Stuttgart maçı için olay tahmin! Yapay zeka sonucu açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık bir yapay zekâ tahminini 'sonucu açıkladı' diye sunarak otomatik çıktıyı haberin merkezine koyuyor; ancak bu çıktının bağımsız değerlendirmenin yerine geçtiği ya da bir karara dayanak yapıldığı açıkça gösterilmiyor.",
+   "alternative_explanation": "Yapay zekâ tahmini eğlence amaçlı bir içerik türü olarak sunulmuş olabilir.",
+   "missing_context": [
+    "Haberin tam metni ve tahminin nasıl sunulduğu",
+    "Tahminin bir karar ya da yargıya dayanak yapılıp yapılmadığı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde belirginlik yanlılığının için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Maç öncesi haberlerinde çarpıcı bir ayrıntıyla kurulan bir yargı yok.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray devler sahnesinde!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde çerçeve etkisinin için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Başlıklar farklı içerikleri (hazırlık, yayın bilgisi, kadro) aktarıyor; eşdeğer olgunun farklı çerçevelendiği bir yargı yok.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  }
+ ]
+}

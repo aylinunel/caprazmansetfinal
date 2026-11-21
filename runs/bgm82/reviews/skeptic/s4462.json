@@ -1,0 +1,157 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ballon d'Or'un sahibi Harry Kane oldu! 25 yıl sonra ödülü kazanan ilk İngiliz",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ballon d'Or 2026 kazananı Harry Kane oldu, Mbappe ikinci",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "haberler kazananın uyruğuna bağlı tarihsel ilkliği, dirilis sıralamadaki ikinciyi öne çıkarıyor.",
+   "alternative_explanation": "Her iki unsur da ödülün olgusal ayrıntısıdır; fark okur ilgisine yönelik başlık seçimi olabilir.",
+   "missing_context": [
+    "Tam sıralama ve oy dağılımı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ballon d'Or 2026: Altın Top'un sahibi Harry Kane oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "2026 Ballon d'Or'un sahibi Harry Kane oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Altın Top' ve 'Ballon d'Or' aynı ödülün Türkçe ve özgün adıdır; çağrışım farkı yok.",
+   "alternative_explanation": "Fark yalnızca dil ve üslup tercihidir.",
+   "missing_context": [
+    "Çağrışımı farklı sözcük kullanımı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "70. Kez Düzenlenen Ballon D'Or Ödüllerinde Kazanan Harry Kane Oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "25 yıl sonra ödülü kazanan ilk İngiliz",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "onedio ödülü 70 yıllık seriye, haberler İngiliz kazananlar dizisine yerleştiriyor.",
+   "alternative_explanation": "Tarihsel karşılaştırma ödül haberlerinin olağan bağlamıdır; kusur değildir.",
+   "missing_context": [
+    "Önceki İngiliz kazananların listesi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Konu tekrarlayan veya yapısal bir sorun değil; bir ödül töreni.",
+   "alternative_explanation": "Tek kazananın haberleştirilmesi olayın doğasına uygun.",
+   "missing_context": [
+    "Yapısal bir soruna işaret eden bağlam"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "emphasis-framing",
+  "word-choice",
+  "loaded-language",
+  "spin",
+  "causal-overclaim"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Kaza nedeni belirlenmemiş."
+ ],
+ "selection_note": "'Pilottan hayati manevra', 'soğukkanlı müdahale' gibi olumlu vurgu ile 'kaza kırım' arasında fark var."
+}

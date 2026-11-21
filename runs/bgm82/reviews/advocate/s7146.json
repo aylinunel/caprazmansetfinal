@@ -1,0 +1,246 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adliyeye gelen Fatma Betül Sayan Kaya'nın gözlükleri dikkat çekti!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon tasfiyesinden 1 gün önce dikkat çeken satış",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eski Bakan Kaya'nın tutuklanmasının ardından Akın Gürlek'ten dikkat çeken paylaşım",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklama sürecini kurumlar gözlük, hisse satışının zamanlaması ve Adalet Bakanının paylaşımı gibi çok farklı boyutlarla öne çıkarıyor.",
+   "alternative_explanation": "Süreç birkaç gün sürdüğünden kurumlar farklı gelişmeleri ayrı haberler olarak vermiş olabilir.",
+   "missing_context": [
+    "Her başlığın yayımlandığı andaki mevcut bilgi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya’nın adliyeye gelirken taktığı gözlük olay oldu! Fiyatı ağızları açık bıraktı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haber7 · 20:42] Son dakika haberi: Fatma Betül Sayan Kaya'nın tutuklanması talep edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit başlıkta \"olay oldu\" değerlendirmesi ile \"ağızları açık bıraktı\" fiyat vurgusunu birleştiriyor; ikisi de lüks ve tepki yönünde. Haber7 aynı kişiyi bu bileşim olmadan veriyor.",
+   "alternative_explanation": "Gözlük haberi okur merakına yönelik hafif bir içerik olabilir.",
+   "missing_context": [
+    "Gözlüğün gerçek fiyatı ve kaynağı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: Fatma Betül Sayan Kaya'nın tutuklanma sevk yazısı ortaya çıktı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fiyatı ağızları açık bıraktı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya hakkında hazırlanan tutuklamaya sevk yazısı ortaya çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Diken \"vurgun\", Akit \"ağızları açık bıraktı\" gibi değerlendirici ifadeler kullanırken DHA aynı sevk yazısı haberini bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "\"Fon vurgunu\" kamuoyunda yerleşmiş dosya adı olarak kullanılıyor olabilir.",
+   "missing_context": [
+    "Savcılığın dosyaya verdiği resmi ad"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adalet Bakanı Sayın Akın Gürlek'in",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Adalet Bakanı Akın Gürlek’in",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı aktör Türkiye Gazetesi'nde kurumun kendi sesiyle \"Sayın\" saygı sözüyle, Yeni Şafak'ta yalnızca unvanıyla anılıyor; \"Sayın\" tanımlamanın ötesinde olumlu bir tutum taşıyor.",
+   "alternative_explanation": "Bazı kurumların yazım kılavuzunda bakanlar için \"Sayın\" kullanımı rutin olabilir.",
+   "missing_context": [
+    "Kurumun diğer bakanlar için de aynı hitabı kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kurumun kendi sesiyle yalnızca iki seçenek sunduğu bir ifade"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "\"şüpheli\" sıfatıyla ifadeye çağrılan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon tasfiyesinden 1 gün önce dikkat çeken satış",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kaya soruşturmada şüpheli konumunda, sorumluluk belirlenmemiş; A Haber başlığı satışın zamanlamasını vurguluyor ancak bunu \"Sevk yazısı ortaya çıktı\" ifadesine bağladığından atfın kurumun kendi dilbilgisiyle yapıldığı belirsiz.",
+   "alternative_explanation": "Başlık savcılık sevk yazısının içeriğini aktarıyor olabilir.",
+   "missing_context": [
+    "Başlığın savcılık belgesini mi yoksa kurumun kendi yargısını mı aktardığı"
+   ]
+  }
+ ]
+}

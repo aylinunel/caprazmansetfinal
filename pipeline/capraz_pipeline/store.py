@@ -11,7 +11,7 @@ import hashlib
 import json
 import os
 import re
-from datetime import date, datetime
+from datetime import datetime
 from pathlib import Path
 from typing import Iterable, Iterator
 from urllib.parse import urlsplit, urlunsplit
@@ -113,8 +113,3 @@ class Store:
     def day_hash(self, day: str) -> str:
         p = self.path(day)
         return hashlib.sha256(p.read_bytes()).hexdigest() if p.exists() else ""
-
-
-def daterange(since: str, until: str) -> list[str]:
-    a, b = date.fromisoformat(since), date.fromisoformat(until)
-    return [date.fromordinal(o).isoformat() for o in range(a.toordinal(), b.toordinal() + 1)]

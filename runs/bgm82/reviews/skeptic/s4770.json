@@ -1,0 +1,232 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 10:12] Bakırköy Belediyesi’nde büyük şok: 40 kişi tutuklandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 10:59] Bakırköy Belediyesine yönelik soruşturmada 39 şüpheli tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit kendi sesiyle 'büyük şok', Akşam 'ihale vurgunu' ifadelerini kullanıyor; AA aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Toplu tutuklamanın büyüklüğü 'şok' gibi nitelemeleri yaygınlaştırmış olabilir.",
+   "missing_context": [
+    "Değerlendirici ifadenin haberin gövdesinde bir kaynağa atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 09:57] SON DAKİKA... Bakırköy Belediyesi soruşturmasında karar çıktı! 39 kişi tutuklandı, başkanın babasına ev hapsi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 10:34] Bakırköy Belediyesi'ne yolsuzluk operasyonunda 39 tutuklama",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklama kararında Sözcü belediye başkanının babasını, NTV yalnızca tutuklu sayısını öne çıkarıyor.",
+   "alternative_explanation": "Başkanın yakınlarının durumu kamu ilgisi taşıyan bir ayrıntıdır.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aksam · 12:30] Bakırköy Belediyesi'nde ihale vurgunu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "'ihaleye fesat karıştırma' ve 'irtikap' suçlarına ilişkin soruşturma",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akşam iddia edilen eylemi 'ihale vurgunu', Star 'ihaleye fesat karıştırma ve irtikap suçlarına ilişkin soruşturma' diye adlandırıyor; 'vurgun' sabitlenmiş bir suç çağrışımı taşıyor.",
+   "alternative_explanation": "'Vurgun' yolsuzluk haberlerinde gündelik bir eşanlamlı olarak kullanılabilir.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 10:59] Bakırköy Belediyesine yönelik soruşturmada 39 şüpheli tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 10:15] Son dakika... Bakırköy Belediyesi'ne operasyonda yeni gelişme: 39 kişi tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar tutuklananlar için 'şüpheli' ya da 'kişi' diyor; bu farklar değerlendirici bir etiket değil, hukuki ya da gündelik tanımlama.",
+   "alternative_explanation": "Hukuki terim kullanımı olgusaldır.",
+   "missing_context": [
+    "Aynı aktör için değerlendirici bir sıfat"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "gözaltına alınan 63 şüpheliden 39'u tutuklandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "sulh ceza hakimliğine sevk edilen 57 kişiden 39 kişi hakkında tutuklama kararı verildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Star 63 gözaltıdan, ANKA mahkemeye sevk edilen 57 kişiden 39'unun tutuklandığını veriyor; paydalar farklı ama hiçbir kurum bu paydaların ötesine uzanan bir genelleme yapmıyor.",
+   "alternative_explanation": "Paydalar sürecin farklı aşamalarını (gözaltı ve hâkimliğe sevk) gösteriyor.",
+   "missing_context": [
+    "Paydaların kapsadığı aşamalara dair resmî açıklama"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca iki seçeneği tek seçenek olarak sunan bir ya…ya da kalıbı yok.",
+   "alternative_explanation": "Haberler bir gelişmeyi aktarıyor; seçenekler arasında bir tercih dayatmıyor.",
+   "missing_context": [
+    "İki seçenekli bir kalıp kullanan başlık ya da spot"
+   ]
+  }
+ ]
+}

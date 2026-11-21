@@ -1,0 +1,197 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mısır'da tren kazası: 64 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mısır'da tren kazası: 7 ölü, 112 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İlk rakamlar (64 yaralı, 4 ölü/88 yaralı) sonradan 7 ölü/112 yaralıya güncelleniyor; kurumların ilk rakama bağlı kaldığı ve bunun bir akıl yürütme hatası olduğu gösterilmiyor. İlk açıklanan bilgiler sonraki haberlere referans olabilir; ancak metin sonraki bir tahminin bu ilk değere açıkça bağlandığını ve yeni kanıta rağmen ona yakın tutulduğunu göstermiyor.",
+   "alternative_explanation": "Sayılar arasındaki farklar resmî açıklamaların güncellenmesi ve farklı yayın saatleriyle açıklanabilir; eski rakamı kullanan kurum güncel bilgiye henüz ulaşmamış olabilir.",
+   "missing_context": [
+    "Her kurumun rakamı aldığı kaynak ve saat",
+    "Güncel rakam bilindiği hâlde eski değerde ısrar edildiğini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mısır'da korkunç tren kazası: 64 kişi yaralandı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz niteleme olayın ciddiyetiyle orantılı görünüyor. Olumsuz sözcükler ve can kaybı vurgusu görülüyor; ancak kart karşılaştırılabilir olumlu kanıta göre orantısız ağırlığın açıkça belgelenmesini istiyor ve olumsuz ifade tek başına yeterli sayılmıyor.",
+   "alternative_explanation": "Olumsuz olaylarda olumsuz vurgu olayın kendisiyle orantılı olabilir; can kaybı ve hasar haberin temel bilgisidir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin metinde bulunup küçümsendiğini gösteren kanıt",
+    "Olumsuz ağırlıklandırmanın bir değerlendirmeyi haksız biçimde etkilediğini gösteren veri"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kazanın nedeni henüz bilinmiyor ancak kazanın yaşandığı bölge geçmişteki ölümcül tren kazalarıyla biliniyor.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "BBC Türkçe geçmiş kazaları hatırlatıyor ama nedenin bilinmediğini açıkça söylüyor; geçmiş örneklerden nedensel ya da sıklık çıkarımı yapılmıyor. Kart, hatırlanabilirlik ya da canlılığın bir tahmin veya genellemenin gerekçesi olarak açıkça kullanılmasını istiyor; metinlerde bir olayın kolay hatırlanmasına dayanarak risk ya da sıklık tahmini yapılmıyor.",
+   "alternative_explanation": "Önceki olaylara atıf bağlam bilgisi olarak verilmiş olabilir; bu bir sıklık tahmini yerine geçmiyor.",
+   "missing_context": [
+    "Bir risk ya da sıklık tahmininin canlı örneğe dayandırıldığını gösteren ifade",
+    "Metinde bu tahmine karşıt daha güçlü sıklık verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Vagonlar raydan çıktı: Onlarca kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Görsel ayrıntı bir yargıya bağlanmıyor. Göze çarpan ayrıntılar başlıklarda öne çıkarılıyor; fakat bu ayrıntının bir yargı ya da tercihe açıkça bağlandığı veya ilgili karşı kanıtın göz ardı edildiği metinde gösterilmiyor. Tek metindeki vurgu bu kart için yeterli değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması haber değeri ve habercilik konvansiyonlarıyla açıklanabilir; bu bir yargı hatası değil, sunum tercihidir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin farklı ağırlıklandırıldığını gösteren karşılaştırmalı karar verisi",
+    "Vurgunun bir sıklık ya da risk tahminine dönüştürüldüğünü gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumlu izlenim ve alanlar arası aktarım yok. Kart, bir alandaki olumlu izlenimin ayrı bir alandaki olumlu yargıya açıkça bağlanmasını istiyor; metinde böyle iki ayrı alan ve aralarında kurulmuş bir bağ yok.",
+   "alternative_explanation": "Olumlu nitelemeler kurumun alışılmış üslubu ya da kaynağın kendi açıklamasının aktarımı olabilir; bir alandan diğerine yargı aktarımı yapılmıyor.",
+   "missing_context": [
+    "İlk alandaki izlenimle ikinci alandaki yargı arasında açık gerekçe bağı",
+    "Alanların karar için ilgisiz olduğuna dair kanıt"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde ödül-motivasyon ilişkisi yok. Bu etki kartı, ödül öncesi içsel ilgi, ödüle bağlı beklenti ve ödül sonrası ölçülebilir düşüş verisi istiyor; haber metinlerinde bu üç koşuldan hiçbiri gözlenemiyor.",
+   "alternative_explanation": "Konu bir ödül-motivasyon ilişkisi değil, bir haber olayıdır; kartın kavramsal alanı metne uymuyor.",
+   "missing_context": [
+    "Ödül öncesi gönüllü katılım düzeyi",
+    "Ödülün beklenip kaldırıldığına dair bilgi",
+    "Sonraki katılımdaki ölçülebilir değişim"
+   ]
+  }
+ ]
+}

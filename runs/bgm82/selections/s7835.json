@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "word-choice",
+  "loaded-language",
+  "emphasis-framing"
+ ],
+ "selection_uncertainty": [
+  "Yargı durumu belirsiz."
+ ],
+ "selection_note": "'Baron' ve 'taciri' etiketleri ile saklanma ayrıntısı vurgusu."
+}

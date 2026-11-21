@@ -1,0 +1,271 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi'ne yolsuzluk operasyonu: Başkan yardımcısı dahil 17 gözaltı — Esenyurt Belediyesine yönelik yürütülen yolsuzluk soruşturması kapsamında düzenlenen operasyonda belediye başkan yardımcısının da aralarında bulunduğu 17 zanlı yakalandı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesine operasyon: 17 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "star aynı kişileri '17 zanlı yakalandı', evrensel '17 kişi gözaltına alındı' diye veriyor; 'zanlı/yakalandı' suç çağrışımı taşıyor.",
+   "alternative_explanation": "'Zanlı' hukuki olarak 'şüpheli' ile eşanlamlıdır; fark kurumun yerleşik üslubundan kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların benzer haberlerde kullandığı yerleşik terimler"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi'ne yolsuzluk operasyonu: Başkan yardımcısı dahil 17 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi'ne 'yolsuzluk' operasyonu! 19 kişi hakkında gözaltı kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi'ne yolsuzluk operasyonu. 9 şüpheli tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı operasyonda star başkan yardımcısını, turkiyegz gözaltı kararı sayısını, ntv tutuklama sonucunu öne çıkarıyor.",
+   "alternative_explanation": "Fark farklı saatlerde güncellenen gelişmelerden (gözaltı, tutuklama) kaynaklanabilir.",
+   "missing_context": [
+    "Başlıkların güncellenme zamanları"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kayyım yönetimindeki Esenyurt Belediyesi'ne yolsuzluk iddiasıyla",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Gözaltına alınanlar arasında kayyımın göreve getirdiği Yusuf Ulutaş da bulunuyor.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "17 zanlı yakalandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Belediye ve gözaltındakiler bazı kurumlarda 'kayyım yönetimindeki', 'kayyımın göreve getirdiği', bazılarında 'zanlı' olarak anılıyor.",
+   "alternative_explanation": "'Kayyım yönetimi' belediyenin olgusal yönetim statüsünü belirtir; 'zanlı' ile 'şüpheli' hukuken eşdeğerdir. Meşruiyet yargısı taşıdığı sağlanan metinden kesinleşmiyor.",
+   "missing_context": [
+    "Belediyenin yönetim statüsüne ilişkin resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kayyum idaresindeki Esenyurt Belediyesi'ne yönelik yürüttüğü yolsuzluk soruşturmasında düğmeye bastı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi’ne operasyon: 19 kişi hakkında gözaltı kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "milligazete 'düğmeye bastı' deyimini kullanıyor; karar aynı olguyu bu ifade olmadan veriyor.",
+   "alternative_explanation": "'Düğmeye bastı' başlatma anlamında yerleşik bir deyimdir ve olayı açıkça olumlu ya da olumsuz değerlendirmiyor.",
+   "missing_context": [
+    "Deyimin değerlendirici okunduğuna dair kanıt"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "19 şüpheli hakkında gözaltı kararı verdi. 17 şüpheli gözaltına alındı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "19 kararın 17'sinin uygulandığı bildiriliyor; daha geniş bir karşılaştırma nüfusu bağlamda belgelenmiyor ve iddia paydanın ötesine geçmiyor.",
+   "alternative_explanation": "Sayılar aynı soruşturmanın olgusal aşamalarıdır.",
+   "missing_context": [
+    "Karşılaştırılabilir daha geniş bir nüfus"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çeşme Belediyesi'nde usulsüzlük operasyonu: Başkan Yardımcısı ve İmar Müdürü gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir Bayraklı Belediyesi'ne operasyon: Eski Belediye Başkanı dahil çok sayıda gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt Belediyesi'ne operasyon: 17 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Diğer kurumların haberleri aynı dönemde başka belediyelere de operasyonlar yapıldığını gösteriyor; Esenyurt başlıkları bu örüntüye değinmiyor.",
+   "alternative_explanation": "Somut bir operasyonun haberi tek vakayı 'hikâyenin tamamı' olarak sunmak anlamına gelmeyebilir; ayrı soruşturmalar ayrı haberlerde ele alınıyor.",
+   "missing_context": [
+    "Belediyelere yönelik soruşturmaların sayısı ve dönemi"
+   ]
+  }
+ ]
+}

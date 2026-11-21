@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "salience-bias",
+  "attentional-bias",
+  "halo-effect",
+  "framing-effect",
+  "affect-heuristic",
+  "bikeshedding"
+ ],
+ "selection_uncertainty": [
+  "Gözlük fiyatı haberlerinin soruşturmayla ilgisi metinde yok.",
+  "Paylaşımın içeriği özetlerde verilmiyor."
+ ],
+ "selection_note": "Soruşturma haberinde gözlük fiyatı gibi ilgisiz ayrıntılar öne çıkıyor."
+}

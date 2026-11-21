@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "halo-effect",
+  "salience-bias",
+  "attentional-bias",
+  "authority-bias"
+ ],
+ "selection_uncertainty": [
+  "Başlık ve kısa özetler; tam metin ve okur tepkisi yok.",
+  "Zirve haberlerinin bir kısmı protokol ve kişi odaklı; içerik bilgisi az."
+ ],
+ "selection_note": "Kişi/protokol öne çıkarma ve olumlu çerçeve adayları."
+}

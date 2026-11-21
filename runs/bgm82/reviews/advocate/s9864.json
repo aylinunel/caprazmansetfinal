@@ -1,0 +1,304 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 11:19] İş insanı Cafer Mahiroğlu'na yönelik soruşturmada gözaltına alınan 5 şüpheli tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 20:55] Halk TV'nin firari patronu Cafer Mahiroğlu soruşturmasında yeni gelişme",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Halk TV Yönetim Kurulu Başkanı Cafer Mahiroğlu hakkında yürütülen soruşturmada",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 10:28] Firari Cafer Mahiroğlu soruşturması!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi kuruluşların kendi seslerinde 'İş insanı', 'Halk TV'nin firari patronu', 'Halk TV Yönetim Kurulu Başkanı' ve 'Firari' olarak anılıyor; 'firari patron' tanımlamanın ötesinde olumsuz bir değerlendirme taşıyor.",
+   "alternative_explanation": "'Firari' nitelemesi kişinin yurt dışında olması ve hakkında yakalama kararı bulunması gibi olgulara dayanıyor olabilir.",
+   "missing_context": [
+    "Mahiroğlu hakkında yakalama kararı olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Halk TV sahibi firari Cafer Mahiroğlu hakkında yürütülen soruşturmada belediye ihalelerinden milyonluk rüşvet pazarlıklarına uzanan para trafiği savcılık dosyasına girdi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[tgrt · 23:10] Cafer Mahiroğlu soruşturmasında 5 kişi daha tutuklandı — Halk TV sahibi iş insanı Cafer Mahiroğlu soruşturmasında gözaltına alınan 8 kişiden 5'i tutuklandı, 3 kişi adli kontrolle serbest bırakıldı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kuruluşun ledi kendi sesinde 'milyonluk rüşvet pazarlıkları' ve 'para trafiği' gibi değerlendirici ifadeler kullanıyor; aynı tutuklamalar başka bir kuruluşta bu ifadeler olmadan veriliyor.",
+   "alternative_explanation": "İfadeler savcılık dosyasındaki iddiaların özetlenmesi olabilir.",
+   "missing_context": [
+    "Savcılık dosyasındaki iddiaların tam metni"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 11:19] İş insanı Cafer Mahiroğlu'na yönelik soruşturmada gözaltına alınan 5 şüpheli tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 23:17] Cafer Mahiroğlu soruşturmasında beş tutuklama: Eski İzmir Büyükşehir yöneticisi de aralarında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "14 Ekim'de kayyum atanan Halk TV'nin sahibi Cafer Mahiroğlu'na yönelik soruşturmada",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 23:51] Halk TV sahibi Cafer Mahiroğlu soruşturmasında belediye ihaleleri ve milyonluk rüşvet pazarlığı! 5 tutuklama",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklamaları veren metinlerden biri tutuklama sayısını, biri tutuklananlar arasındaki eski belediye yöneticisini, biri Halk TV'ye kayyum atanmasını, biri rüşvet iddialarını öne çıkarıyor.",
+   "alternative_explanation": "Vurgu farkları kuruluşların erişebildiği ayrıntılara bağlı olabilir.",
+   "missing_context": [
+    "Tutuklananların tam listesi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 20:55] Halk TV'nin firari patronu Cafer Mahiroğlu soruşturmasında yeni gelişme",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[milligazete · 21:59] Halk TV sahibi Mahiroğlu soruşturmasında yeni gelişme!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Halk TV Yönetim Kurulu Başkanı Cafer Mahiroğlu hakkında yürütülen soruşturmada",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişinin kanalla ilişkisi 'patron', 'sahip' ve 'Yönetim Kurulu Başkanı' sözcükleriyle veriliyor; 'patron' gündelik ve hiyerarşik bir çağrışım taşırken diğerleri hukuki ya da kurumsal bir ilişkiyi anlatıyor.",
+   "alternative_explanation": "'Patron' sözcüğü medya sahipleri için gündelik dilde yaygın kullanılıyor olabilir.",
+   "missing_context": [
+    "Kuruluşların diğer medya sahipleri için kullandığı sözcükler"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 23:51] Halk TV sahibi Cafer Mahiroğlu soruşturmasında belediye ihaleleri ve milyonluk rüşvet pazarlığı! 5 tutuklama",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Halk TV sahibi firari Cafer Mahiroğlu hakkında yürütülen soruşturmada belediye ihalelerinden milyonluk rüşvet pazarlıklarına uzanan para trafiği savcılık dosyasına girdi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[tgrt · 23:10] Cafer Mahiroğlu soruşturmasında 5 kişi daha tutuklandı — Halk TV sahibi iş insanı Cafer Mahiroğlu soruşturmasında gözaltına alınan 8 kişiden 5'i tutuklandı, 3 kişi adli kontrolle serbest bırakıldı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kuruluşun başlığı rüşvet pazarlığını seçip öne çıkarıyor, ledi ise 'firari' etiketini ve 'para trafiği' ifadesini ekliyor; bu tercihler aynı olumsuz yöne işaret ediyor. Başka bir kuruluş aynı tutuklamaları bu bileşim olmadan veriyor.",
+   "alternative_explanation": "Tercihler savcılık dosyasındaki ayrıntıları ve kişinin hukuki durumunu aktarmak için yapılmış olabilir.",
+   "missing_context": [
+    "Savcılık dosyasının içeriği",
+    "Kişinin hukuki durumu"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "suçlarından yürütülen soruşturma kapsamında düzenlenen ikinci dalga operasyonda",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 23:51] Halk TV sahibi Cafer Mahiroğlu soruşturmasında belediye ihaleleri ve milyonluk rüşvet pazarlığı! 5 tutuklama",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor ve sorumluluk belirlenmemiş; bir başlık rüşvet pazarlığını iddia işareti olmadan veriyor, ancak başlığın dilbilgisi rüşveti açıkça adı verilen bir aktöre özne ya da kusur olarak yüklemiyor ve led bilgiyi savcılık dosyasına dayandırıyor.",
+   "alternative_explanation": "Başlık, savcılık dosyasına giren iddiaların kısaltılmış bir özeti olabilir.",
+   "missing_context": [
+    "Başlıktaki iddiaların kime atfedildiği",
+    "Savcılık dosyasının içeriği"
+   ]
+  }
+ ]
+}

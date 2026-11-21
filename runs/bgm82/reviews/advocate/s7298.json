@@ -1,0 +1,241 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Vali Gül A Haber'de açıkladı: Gerekli soruşturma başlatıldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bahçelievler'de toprak altında kalan 2 işçiden 1'i hayatını kaybetti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Göçük altında kalan kardeş iki işçiden biri kurtarıldı, diğerinin cansız bedenine ulaşıldı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Metinler olayı tek bir kaza olarak aktarıyor ve daha geniş bir örüntüye değinmiyor; ancak sağlanan bağlamda olayın tekrarlayan veya yapısal bir sorun olduğunu gösteren veri yok.",
+   "alternative_explanation": "Tek bir kaza haberinde yapısal bağlam beklenmeyebilir.",
+   "missing_context": [
+    "İnşaat iş kazalarına ilişkin dönemsel veriler",
+    "Benzer önceki vakalar"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 10:17] Bahçelievler'de inşaatta toprak kayması! 1 işçi kurtarıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Göçük altında kalan 1 işçinin cansız bedenine ulaşıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bahçelievler'de toprak altında kalan işçinin kurtarılma anı kamerada",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olayı bir kurum kurtarılan işçi, biri hayatını kaybeden işçi, biri ise kurtarma görüntüsü üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklı boyutların öne çıkması kurumların erişilen bilgi, yayın saati ve okur ilgisi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Kurumların aynı saatte erişebildiği bilgi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bahçelievler'de korkutan toprak kayması!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 13:26] Bahçelievler'de inşaat temelinde toprak kayması: Göçük altındaki işçinin cansız bedenine ulaşıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kendi sesinde 'korkutan' sıfatını kullanıyor; başka bir kurum aynı olguyu bu değerlendirme olmadan veriyor.",
+   "alternative_explanation": "Değerlendirici kelimeler başlıkta dikkat çekmek için kullanılan yaygın kalıplar olabilir; olgular diğer metinlerle aynıdır.",
+   "missing_context": [
+    "Olayın ölçeğine ilişkin bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bahçelievler'de inşaatta göçük: Bir işçi öldü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bahçelievler'de inşaatta toprak kayması. Bir işçi yaşamını yitirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olay 'göçük / toprak kayması' ve 'öldü / yaşamını yitirdi' gibi farklı kelimelerle veriliyor; farkın yan anlamda mı yoksa üslupta mı olduğu net değil.",
+   "alternative_explanation": "Kelime farkları üslup, ajans metninden aktarım veya başlık uzunluğu farkı olabilir.",
+   "missing_context": [
+    "Kelimelerin farklı çağrışımlarını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gerekli soruşturma başlatıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma başlatılmış; ancak hiçbir başlık dilbilgisi yoluyla belirli bir aktöre sorumluluk atfetmiyor.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler olayı bir eğilim veya kurumsal bağlam içine yerleştirmiyor.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  }
+ ]
+}

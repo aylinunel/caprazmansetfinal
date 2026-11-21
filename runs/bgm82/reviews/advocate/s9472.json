@@ -1,0 +1,248 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 15:26] Manifest grubunun yapımcısı Tolga Akış'a tahliye: Yurt dışına çıkışı yasak... \"+18\" savunması",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[tgrt · 14:22] Manifest'in kurucusu Tolga Akış hakkında karar verildi: İfadesi de ortaya çıktı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 14:39] Manifest'in kurucusu Tolga Akış tahliye edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Müstehcenlik, uyuşturucu madde kullanma ve suçtan kaynaklanan mal varlığı değerlerini aklama suçlamalarıyla yargılanan",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı tahliyeyi veren metinlerden biri yurt dışı yasağını ve savunmayı, biri ifadenin ortaya çıkmasını, biri yalnızca tahliyeyi, biri de müstehcenliğin yanında diğer suçlamaları öne çıkarıyor.",
+   "alternative_explanation": "Kuruluşlar duruşmanın farklı ayrıntılarına farklı zamanlarda erişmiş olabilir.",
+   "missing_context": [
+    "İddianamedeki suçlamaların tam listesi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 14:30] Manifest’in menajeri Tolga Akış tahliye oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "bugün çıkartıldığı mahkeme heyeti tarafından serbest bırakıldı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 14:39] Manifest'in kurucusu Tolga Akış tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı karar 'tahliye oldu', 'tahliye edildi' ve 'serbest bırakıldı' biçimlerinde veriliyor; ancak farkın çağrışımda değil daha çok üslupta olduğu görülüyor.",
+   "alternative_explanation": "İfadeler adli haberlerde eş anlamlı olarak kullanılıyor olabilir.",
+   "missing_context": [
+    "Çağrışım bakımından farklılaşan sözcükler"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 15:26] Manifest grubunun yapımcısı Tolga Akış'a tahliye: Yurt dışına çıkışı yasak... \"+18\" savunması",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 14:30] Manifest’in menajeri Tolga Akış tahliye oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 14:39] Manifest'in kurucusu Tolga Akış tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi kuruluşların kendi seslerinde 'yapımcı', 'menajer' ve 'kurucu' olarak anılıyor; ancak bu etiketlerin meşruiyete ilişkin bir değerlendirme taşıdığı metinden açıkça çıkmıyor, daha çok farklı görevleri tanımlıyor.",
+   "alternative_explanation": "Kişi grubun hem kurucusu hem menajeri olduğu için etiketler olgusal olarak doğru olabilir.",
+   "missing_context": [
+    "Akış'ın gruptaki resmi görevi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kamuoyunda tartışmalara yol açan Manifest grubu konserlerine ilişkin davada",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Duruşma, 18 Mart 2027 tarihine ertelendi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "28 Ağustos'ta tutuklanmasının ardından \"müstehcenlik\" suçlamasıyla bugün ilk kez hâkim karşısına çıktı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Tahliye haberi bazı ledlerde konserlere ilişkin kamuoyu tartışması ve tutuklamadan ertelenen duruşmaya uzanan dava süreci içine yerleştiriliyor.",
+   "alternative_explanation": "Süreç bilgisi kararın anlamını açıklayan olgusal bir bağlamdır.",
+   "missing_context": [
+    "Davanın soruşturma aşamasına ilişkin bilgiler"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde konuyu iki karşıt seçeneğe indiren bir kurgu bulunmuyor.",
+   "alternative_explanation": "Haberler bir duruşma kararını aktarıyor.",
+   "missing_context": [
+    "İki seçenekli bir sunum"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde kuruluşların kendi sesinde bir şeyin diğerine neden olduğunu söyleyen nedensel bir ifade yok.",
+   "alternative_explanation": "Haberler bir kararı ve savunmayı aktarıyor.",
+   "missing_context": [
+    "Nedensel bir ifade"
+   ]
+  }
+ ]
+}

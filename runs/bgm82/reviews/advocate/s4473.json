@@ -1,0 +1,237 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'li Belediye Başkanı görevinden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tutuklanan Milas Belediye Başkanı Fevzi Topuz",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumda adı verilmeden yalnızca parti kimliğiyle, diğerinde tutuklu sıfatı ve adıyla anılıyor; parti etiketinin tanımlamanın ötesinde değerlendirme taşıyıp taşımadığı belirsiz.",
+   "alternative_explanation": "Parti bilgisi siyasi bağlam için olgusal bir tanımlamadır.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla Cumhuriyet Başsavcılığı'nca yürütülen soruşturma kapsamında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "CHP'li belediyede rüşvet operasyonu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürerken bir kurum başlığında 'CHP'li belediyede rüşvet operasyonu' diyor; ancak bu ifade suçu belirli bir kişiye özne olarak yüklemiyor, operasyonun konusunu belirtiyor.",
+   "alternative_explanation": "Operasyonun resmi adı ya da konusu olabilir.",
+   "missing_context": [
+    "Soruşturmanın içeriği"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tutuklama sonrası düğmeye basıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Düğmeye basıldı' mecazı idari kararı mekanik bir tetikleme olarak sunuyor; ancak bu kalıplaşmış bir deyim olabilir ve belirgin bir rol ataması yapmıyor.",
+   "alternative_explanation": "'Düğmeye basmak' Türkçede yaygın bir deyimdir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rüşvet soruşturmasında Milas Belediye Başkanı Fevzi Topuz görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Milas Belediye Başkanı Fevzi Topuz görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu büyük ölçüde aynı sözcüklerle veriyor; fark sözcük seçiminden çok ayrıntı eklenmesinde.",
+   "alternative_explanation": "Ajans metninin ortak kullanımı.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'li Belediye Başkanı görevinden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İçişleri Bakanlığı duyurdu: Milas Belediye Başkanı Fevzi Topuz görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tutuklanan Milas Belediye Başkanı Fevzi Topuz görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı görevden uzaklaştırma kimi başlıkta parti kimliği, kimisinde kararı açıklayan bakanlık, kimisinde tutuklama öne alınarak veriliyor.",
+   "alternative_explanation": "Kurumlar farklı haber değerlerini öne almış olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam görevden uzaklaştırmaların tekrarlayan bir örüntü olduğunu belgelemiyor.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  }
+ ]
+}

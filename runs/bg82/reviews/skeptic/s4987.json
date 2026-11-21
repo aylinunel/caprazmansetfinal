@@ -1,0 +1,143 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturması Borsa İstanbul'a uzandı: Genel Müdür Korkmaz Enes Ergun gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı gözaltı soruşturmanın genişlemesi ya da yalın olay olarak veriliyor; tercih bağı yok. Kart, eşdeğer seçeneklerin açıkça eşdeğer olduğunun metinde kurulmasını ve bir tercihin yalnızca sunuluş farkına bağlanmasını şart koşuyor; başlıklar arasında ifade farkı görülse de hiçbir metin bir karar ya da tercihi bu farka dayandırmıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatleri, farklı ajans kaynakları ve olayın farklı aşamalarının haberleştirilmesiyle açıklanabilir; kurumların editoryal tercihi bir akıl yürütme hatası değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin bu çerçevelere maruz kalıp farklı yargıya vardığını gösteren veri",
+    "Başlıkların bilgi açısından eşdeğer olduğunu açıkça belirten bir ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'de sermaye piyasalarını sarsan fon soruşturmasında kritik bir gelişme yaşandı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz niteleme var ama orantısız ağırlıklandırma belgelenmiyor. Olumsuz sözcükler ve can kaybı vurgusu görülüyor; ancak kart karşılaştırılabilir olumlu kanıta göre orantısız ağırlığın açıkça belgelenmesini istiyor ve olumsuz ifade tek başına yeterli sayılmıyor.",
+   "alternative_explanation": "Olumsuz olaylarda olumsuz vurgu olayın kendisiyle orantılı olabilir; can kaybı ve hasar haberin temel bilgisidir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin metinde bulunup küçümsendiğini gösteren kanıt",
+    "Olumsuz ağırlıklandırmanın bir değerlendirmeyi haksız biçimde etkilediğini gösteren veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "rüşvet ve örgüt üyeliği iddiasıyla gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Suçlamalar 'iddia' kaydıyla aktarılıyor; çarpıcılık bir yargıya dönüştürülmüyor. Göze çarpan ayrıntılar başlıklarda öne çıkarılıyor; fakat bu ayrıntının bir yargı ya da tercihe açıkça bağlandığı veya ilgili karşı kanıtın göz ardı edildiği metinde gösterilmiyor. Tek metindeki vurgu bu kart için yeterli değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması haber değeri ve habercilik konvansiyonlarıyla açıklanabilir; bu bir yargı hatası değil, sunum tercihidir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin farklı ağırlıklandırıldığını gösteren karşılaştırmalı karar verisi",
+    "Vurgunun bir sıklık ya da risk tahminine dönüştürüldüğünü gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "“suç işlemek amacıyla kurulan örgüte üye olma” ve “rüşvet” suçlamalarıyla gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Suçlamalar savcılığa atfedilerek veriliyor; kişiye kalıcı bir karakter atfı yapılmıyor. Kart, gözlenen davranışın kalıcı bir karaktere bağlanmasını ve mevcut durumsal etkenin gerekçesiz göz ardı edilmesini istiyor; metinlerde kişiye istikrarlı bir eğilim atfeden açık bir nedensel yargı bulunmuyor.",
+   "alternative_explanation": "Haberler olayı ve hukuki/olgusal süreci aktarıyor; kişilik ya da karakter üzerinden açıklama yapılmıyor.",
+   "missing_context": [
+    "Davranışı kişilik özelliğine bağlayan açık ifade",
+    "Bilinen durumsal etkenin gerekçesiz reddedildiğine dair kanıt"
+   ]
+  }
+ ]
+}

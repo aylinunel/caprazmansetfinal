@@ -1,0 +1,255 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "72 telefon görüşmesi ve planlı eylem ifşa oldu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "72 görüşmelik iz!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe takım otobüsüne saldırı iddianamesi kabul edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar 'ifşa oldu' ve 'iz' gibi sansasyonel sözcükler kullanıyor; aynı gelişme diğer kurumlarda yalın usul bilgisiyle veriliyor.",
+   "alternative_explanation": "Sözcükler iddianamedeki bulguları kısa yoldan özetlemek için seçilmiş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "5 sanık hakkında düzenlenen iddianame kabul edildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "72 telefon görüşmesi ve planlı eylem ifşa oldu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Dava henüz başlamamışken bir kurum 'planlı eylem ifşa oldu' diyerek iddia işareti olmadan kesinlik bildiriyor; ancak başlık belirli bir kişiyi özne olarak suçlamıyor.",
+   "alternative_explanation": "İddianamedeki değerlendirmenin kısa aktarımı olabilir.",
+   "missing_context": [
+    "Mahkeme kararı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne saldırıda iddianame kabul edildi: 72 telefon görüşmesi, çelişkili ifadeler ve yeni bulgular",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe takım otobüsüne saldırı iddianamesi kabul edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "5 sanığa dava... 11 yıl sonra yeniden",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı iddianame kabulü kimi başlıkta bulgular, kimisinde usul, kimisinde geçen süre boyutuyla öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar farklı ayrıntılara erişmiş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "planlı eylem ifşa oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "yeni detaylar ortaya çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "İddianamedeki bilgilerin açığa çıkması bir kurumda 'ifşa oldu', diğerinde 'ortaya çıktı' diye anlatılıyor; 'ifşa' gizlenen bir şeyin teşhirini çağrıştırıyor.",
+   "alternative_explanation": "Fark üslup farkı olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "ad-hominem",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde bir kişinin karakteri ya da geçmişi bir iddianın değerlendirilmesi yerine kullanılmıyor.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne saldırıda iddianame kabul edildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "11 yıl sonra yeniden",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Takipsizlik kararının kaldırılmasıyla ivme kazanan soruşturma",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum iddianameyi 11 yıllık bir hukuki süreç ve takipsizlik kararının kaldırılması gibi kurumsal aşamalar içine yerleştiriyor.",
+   "alternative_explanation": "Bu, olayın anlaşılması için gerekli arka plan bilgisidir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  }
+ ]
+}

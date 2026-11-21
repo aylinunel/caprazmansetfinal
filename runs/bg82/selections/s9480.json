@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "salience-bias",
+  "framing-effect",
+  "negativity-bias"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Sefer sayısı başlıkta 8, olay adında 10."
+ ],
+ "selection_note": "Haberler büyük ölçüde aynı; yalnızca 'fırtına alarmı' gibi sınırlı vurgu farkı."
+}

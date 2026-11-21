@@ -1,0 +1,150 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 12:35] Galatasaray-Stuttgart maçına İngiliz hakem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 12:56] Galatasaray-Stuttgart maçını Kavanagh yönetecek!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı atama bir başlıkta hakemin uyruğu, diğerinde adı öne çıkarılarak veriliyor; ancak bu fark farklı boyutlardan çok tanımlama ayrıntısı düzeyinde.",
+   "alternative_explanation": "Uyruk ve ad Avrupa maçı haberlerinde standart ayrıntılar.",
+   "missing_context": []
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cnnturk · 17:06] Galatasaray - Stuttgart maçında İngiliz hakem düdük çalacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 12:58] Galatasaray-Stuttgart maçını İngiliz hakem Kavanagh yönetecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Düdük çalacak' ile 'yönetecek' aynı eylemi anlatıyor; fark üslupla ilgili, çağrışımla değil.",
+   "alternative_explanation": "Spor dilinde yerleşik kalıp.",
+   "missing_context": []
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[birgun · 12:49] Galatasaray-Stuttgart maçını Chris Kavanagh yönetecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 13:34] Galatasaray-Stuttgart maçına İngiliz hakem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hakem adıyla veya uyruğuyla anılıyor; nitelemeler tanımlama düzeyinde kalıyor.",
+   "alternative_explanation": "Uyruk tanımlayıcı bir ayrıntı.",
+   "missing_context": []
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tek bir olayı aktarıyor, ancak bağlam veya diğer haberler konunun yinelenen ya da yapısal bir sorun olduğunu göstermiyor; tek vakanın bütün hikâye olarak sunulduğu söylenemez.",
+   "alternative_explanation": "Tekil bir spor veya gündem olayının olay odaklı aktarılması haberin doğasından kaynaklanıyor.",
+   "missing_context": [
+    "Konunun yinelenen veya yapısal olduğunu gösteren önceki vakalar ya da veriler"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,227 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "600 bin dolar iddiası: Özgür Özel'den Emir Sarıgül hakkında suç duyurusu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özgür Özel'den Emir Sarıgül'e suç duyurusu ve 1 milyon TL'lik dava",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özgür Özel, Emir Sarıgül'e iftira suçundan suç duyurusu yapacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı hukuki girişim kimi başlıkta iddianın tutarı, kimisinde tazminat miktarı, kimisinde 'iftira' suçlaması öne alınarak veriliyor.",
+   "alternative_explanation": "Kurumlar farklı ayrıntıları haber değeri yüksek bulmuş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emir Sarıgül’e iki ayrı dava hamlesi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özgür Özel'den Emir Sarıgül'e dava hazırlığı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı girişim bir kurumda 'hamle', diğerinde 'hazırlık' olarak adlandırılıyor; 'hamle' stratejik bir karşı atak çağrıştırabilir, ancak çağrışım farkı sınırlı.",
+   "alternative_explanation": "Fark üslup farkı olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kara para soruşturmasında tutuklanan Emir Sarıgül",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ev hapsiyle serbest bırakılan Emir Sarıgül",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül'ün oğlu Emir Sarıgül",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi farklı kurumlarda 'tutuklanan', 'ev hapsiyle serbest bırakılan' ya da 'milletvekilinin oğlu' diye anılıyor; ancak bu etiketlerin değerlendirme mi yoksa farklı zamanlardaki olgusal durum mu olduğu belirsiz.",
+   "alternative_explanation": "Kişinin hukuki durumu zaman içinde değişmiş olabilir.",
+   "missing_context": [
+    "Emir Sarıgül'ün güncel hukuki durumu"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar Özel'in kendi hukuki girişimini ona atfediyor; sorumluluğu belirsiz bir olayda kurumun kendi sesiyle suç yüklediği bir ifade yok.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların ifadelerinde iki seçenekli bir ikilem yok.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ileri sürdüğü iddialar nedeniyle",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "'İddialar nedeniyle' ifadesi dava gerekçesini aktarıyor; bu, eş zamanlılığa dayanan bir nedensellik iddiası değil, tarafın beyan ettiği gerekçe.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  }
+ ]
+}

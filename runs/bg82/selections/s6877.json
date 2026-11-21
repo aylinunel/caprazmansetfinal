@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "anchoring-bias",
+  "framing-effect",
+  "salience-bias",
+  "outcome-bias",
+  "identifiable-victim-effect"
+ ],
+ "selection_uncertainty": [
+  "Ölü sayısı 69 ve 74 olarak farklı veriliyor.",
+  "İstifa gerekçesi metinde ayrıntılı değil."
+ ],
+ "selection_note": "İstifa, ölü sayısıyla birlikte sunuluyor; sayılar kaynaklar arasında farklı."
+}

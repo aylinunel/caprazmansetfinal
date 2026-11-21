@@ -1,0 +1,257 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "29 zanlı gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "29 şüpheli gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fetullahçı Terör Örgütü'nün (FETÖ)",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişiler bir kurumda 'zanlı', diğerinde 'şüpheli' diye anılıyor; iki terim büyük ölçüde eş anlamlı olduğundan değerlendirme farkı belirsiz.",
+   "alternative_explanation": "Fark yalnızca üslup ya da ajans metni farkı olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "örgütün güncel faaliyetlerini yürüttükleri tespit edilen 6 şüpheli",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "örgütsel faaliyetlerde bulundukları iddia edilen 6 şüpheli",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı şüphelilere ilişkin aynı bilgi bir kurumda 'tespit edilen' (kesinleşmiş), diğerinde 'iddia edilen' (henüz kanıtlanmamış) diye veriliyor; iki sözcük farklı kesinlik çağrışımı taşıyor.",
+   "alternative_explanation": "'Tespit edilen' ifadesi resmi açıklamanın dilinden aynen alınmış olabilir.",
+   "missing_context": [
+    "Resmi açıklamanın orijinal metni"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ankara'da FETÖ operasyonu: 6 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "MİT ve Emniyet'ten FETÖ operasyonu: 6 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir merkezli 14 ilde FETÖ operasyonu: Çok sayıda şüpheli gözaltında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı Ankara operasyonu bir kurumda yer üzerinden, diğerinde operasyonu yapan kurumlar (MİT ve Emniyet) üzerinden başlığa taşınıyor; İzmir operasyonunda da bir kurum rakam yerine 'çok sayıda' vurgusunu öne çıkarıyor.",
+   "alternative_explanation": "Başlık uzunluğu ve ajans metni seçimi farkı olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ankara'da FETÖ operasyonu: 6 gözaltı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "örgüt üyeliğinden daha önce haklarında işlem yapılan veya yapılmayan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum girişte daha önceki işlemlere değiniyor; ancak bu ifadenin kurumun kendi bağlamlandırması mı yoksa savcılık açıklamasının aktarımı mı olduğu belirsiz.",
+   "alternative_explanation": "İfade resmi açıklamadan alınmış olabilir.",
+   "missing_context": [
+    "Savcılık açıklamasının metni"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların ifadelerinde açık bir nedensellik iddiası yok.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Osmaniye’de FETÖ operasyonu: 5 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ankara'da FETÖ operasyonu: 6 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "14 ilde FETÖ operasyonu: 29 gözaltı — İzmir merkezli 14 ilde FETÖ'nün \"güncel kadın eğitim yapılanması\"na yönelik operasyonda 29 zanlı gözaltına alındı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Diğer kurumların haberleri aynı günlerde farklı illerde art arda operasyonlar yapıldığını gösteriyor; buna karşın tek tek başlık ve girişler yalnızca kendi operasyonunu veriyor, süren operasyon dizisine değinmiyor.",
+   "alternative_explanation": "Her operasyon ayrı bir savcılık soruşturması olduğundan ayrı haber yapılması doğal olabilir.",
+   "missing_context": [
+    "Operasyonlar arasındaki ilişki",
+    "Yıllık operasyon istatistikleri"
+   ]
+  }
+ ]
+}

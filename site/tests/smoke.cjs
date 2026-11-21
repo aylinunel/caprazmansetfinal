@@ -73,22 +73,26 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       if (n0 === n1) fails.push(`${tag}: topic chip did not change event count (${n0})`);
     }
     if (route.startsWith("#/olay?e=")) {
-      // Review status: every AI finding carries exactly one badge, and no line reports a zero as a result.
+      // 8.2: every AI finding is an evidence card with exactly one "AI imzalı" stamp, and no line reports a zero as a result.
       const hasYz = await page.evaluate(() => { const d = document.querySelector('details.v7-deep[data-deep="yz"]'); if (d) d.open = true; return !!d; });
       if (hasYz) await sleep(400);   // the block builds on first open
       const rv = await page.evaluate(() => {
-        const labels = ["AI onaylı", "İnsan kontrolü bekliyor", "İnsan doğruladı", "İnsan düzeltti"];
-        const fs = [...document.querySelectorAll(".v7-yzf")];
-        const bad = fs.filter((f) => { const b = [...f.querySelectorAll(".rv-badge")]; return b.length !== 1 || !labels.includes(b[0].textContent.trim()) || !b[0].title; }).length;
+        const fs = [...document.querySelectorAll(".v7-grp .ai-card")];
+        const bad = fs.filter((f) => { const b = [...f.querySelectorAll(".yz-badge")]; return b.length !== 1 || b[0].textContent.trim() !== "AI imzalı" || !b[0].title; }).length;
         const line = (document.querySelector(".rv-line") || {}).textContent || "";
         return { n: fs.length, bad, zero: /(^|\D)0 bulgu/.test(line), line };
       });
       if (hasYz && !rv.n) fails.push(`${tag}: AI review block opened but no finding rendered`);
       // Medyanın oyunları comes first; without a media review it says "incelenemedi" rather than showing an empty group.
-      const grp = await page.evaluate(() => [...document.querySelectorAll(".v7-grp")].map((g) => [g.dataset.grp, g.textContent.includes("incelenemedi"), g.querySelectorAll(".v7-yzf").length]));
+      const grp = await page.evaluate(() => [...document.querySelectorAll(".v7-grp")].map((g) => [g.dataset.grp, g.textContent.includes("incelenemedi"), g.querySelectorAll(".ai-card").length]));
       if (hasYz && (!grp.length || grp[0][0] !== "medya")) fails.push(`${tag}: Medyanın oyunları group is not first`);
       if (hasYz && grp[0] && !grp[0][1] && !grp[0][2]) fails.push(`${tag}: empty Medyanın oyunları group without an incelenemedi note`);
-      if (route === "#/olay?e=s5031" && rv.n < 3) fails.push(`${tag}: expected the three reviewed findings of s5031, saw ${rv.n}`);
+      if (route === "#/olay?e=s5031") {   // every live finding of both passes is shown (pending media cards stay in Yönetim)
+        const want = await page.evaluate(() => [DATA.BG, DATA.BGM].reduce((n, B) => {
+          const x = B && B.events.find((ev) => ev.event === "s5031");
+          return n + (x && x.status === "review_complete" ? x.supported.length + x.uncertain.length : 0); }, 0));
+        if (!want || rv.n !== want) fails.push(`${tag}: expected the ${want} live findings of s5031, saw ${rv.n}`);
+      }
       if (rv.bad) fails.push(`${tag}: ${rv.bad} of ${rv.n} AI finding(s) without exactly one review badge`);
       if (rv.zero) fails.push(`${tag}: review line reports a zero count`);
       if (w === 1280 && theme === "light") console.log(`review status on ${route}: ${rv.n} findings; ${rv.line}`);
@@ -149,6 +153,32 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
         if (!(await page.$eval(sel + " .v7-lz", (e) => e.childElementCount))) fails.push(`${tag}: ${key} row empty after open`);
       }
     }
+    if (route === "#/kurum?s=takvim") {
+      /* single-source lens: heading, slice switch, one row per measure shown, one AI badge in the extra-findings box, slice switch changes the distance */
+      const bad = await page.evaluate(() => {
+        const s = document.querySelector("section.lens"); if (!s) return "no section.lens";
+        if (s.querySelector("h2").textContent.trim() !== "Bu kaynağı tek başına okusaydınız") return "wrong h2";
+        if (![...s.querySelectorAll(".lens-sw button")].some((b) => b.textContent.trim() === "Bütün sezon")) return "no Bütün sezon button";
+        if (!s.querySelectorAll(".lens-row").length) return "no .lens-row";
+        if (s.querySelectorAll(".lens-ai .yz-badge").length !== 1) return "need exactly one AI imzalı badge in .lens-ai";
+        return "";
+      });
+      if (bad) fails.push(`${tag}: lens ${bad}`);
+      if (w === 1280 && theme === "light") {
+        const d0 = await page.$eval(".lens-dist", (e) => e.textContent);
+        await page.evaluate(() => [...document.querySelectorAll(".lens-sw button")].find((b) => b.textContent.trim() === "Eylül").click()); await sleep(300);
+        const d1 = await page.$eval(".lens-dist", (e) => e.textContent);
+        if (d0 === d1) fails.push(`${tag}: lens-dist did not change for the Eylül slice (${d0})`);
+      }
+    }
+    if (route === "#/kurum?s=aa") {
+      const bad = await page.evaluate((reason) => {
+        if (document.querySelector("section.lens")) return "excluded outlet has a lens section";
+        const n = document.querySelector(".lens-none"); return n && n.textContent.trim() === reason ? "" : "lens-none missing or not the registry reason";
+      }, JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/reference/lens-groups.json"), "utf8")).exclude.aa);
+      if (bad) fails.push(`${tag}: lens ${bad}`);
+    }
+    if (route === "#/kurumlar" && w === 1280 && theme === "light" && !(await page.evaluate(() => document.querySelectorAll(".lens-rl li a").length >= 3))) fails.push(`${tag}: lens ranking missing`);
     if (route.startsWith("#/kurum?s=")) {
       const bad = await page.evaluate(() => {
         const n = document.querySelectorAll('.v7-kurum-lines a[href^="#/oruntu"]').length;
@@ -160,7 +190,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       if (bad) fails.push(`${tag}: kurum ${bad}`);
     }
     if (route === "#/yontem" && !(await page.evaluate(() => document.body.textContent.includes("Bu veriyle ölçülemiyor") && document.body.textContent.includes("niyet hakkında bir şey söylemez")))) fails.push(`${tag}: method page lacks the Medyanın oyunları lists`);
-    if (route === "#/yontem" && !(await page.evaluate(() => document.body.textContent.includes("Bu bir ölçülmüş doğruluk ya da olasılık değildir")))) fails.push(`${tag}: method page lacks the AI onaylı explanation`);
+    if (route === "#/yontem" && !(await page.evaluate(() => document.body.textContent.includes("bütün AI bulguları aynı biçimde gösterilir")))) fails.push(`${tag}: method page lacks the 8.2 explanation of how AI findings are shown`);
     if (route.startsWith("#/yontem")) {
       const bad = await page.evaluate((r) => {
         const ids = ["veri", "olay", "dil", "anlati", "yz", "yzicerik", "turkiye", "kavramlar", "sinir", "kaynak"];
@@ -563,6 +593,29 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       if (!(st > 0) || y1 !== y0) fails.push(`motion d: wheel in .xfix-f scrolled box ${st}, page ${y0}->${y1}`);
     }
     await ctx.close();
+    /* (e) URLs load after the first screen (u-*.bin, loader.js cmUrls): a headline clicked before they arrive opens
+       its own story; links on the page become real links once they arrive; a placeholder opened directly resolves too */
+    {
+      const uctx = await browser.newContext(), up = await uctx.newPage(), asked = [];
+      uctx.on("request", (r) => { if (!r.url().startsWith("http://127.0.0.1")) asked.push(r.url()); });
+      await uctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, (r) => r.abort());   /* outlet sites: record the request, never fetch */
+      await up.route(/\/data\/u-[\d-]+\.bin/, async (r) => { await sleep(4000); r.continue(); });
+      up.on("pageerror", (e) => fails.push(`urls: pageerror ${e.message}`));
+      await up.goto(url("#/ara?q=deprem")); await up.waitForSelector("#view"); await sleep(800);
+      const ph = await up.$eval('a[href^="#/git?a="]', (a) => a.getAttribute("href")).catch(() => null);
+      if (!ph) fails.push("urls: no placeholder link before the URL packs arrived");
+      else {
+        await up.click(`a[href="${ph}"]`); await sleep(6000);
+        const want = await up.evaluate((h) => { const id = new URLSearchParams(h.split("?")[1]).get("a"); return window.CM_ART[id] && window.CM_ART[id].u; }, ph);
+        if (!want || !asked.includes(want)) fails.push(`urls: early click did not open its story (${want})`);
+        const left = await up.$$eval('a[href^="#/git?a="]', (l) => l.length);
+        if (left) fails.push(`urls: ${left} placeholder link(s) left after the URLs arrived`);
+        const dp = await uctx.newPage(); asked.length = 0;
+        await dp.goto(url(ph)); await sleep(9000);
+        if (!asked.includes(want)) fails.push("urls: a placeholder opened directly did not reach its story");
+      }
+      await uctx.close();
+    }
   }
   await browser.close(); srv.close();
   fails.forEach((f) => console.error("FAIL", f));

@@ -1,0 +1,229 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Van'da katliam gibi kaza!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Van'da can pazarı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Van'da tır ile minibüsün çarpışması sonucu 9 kişi öldü, 5 kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar kendi başlıklarında 'katliam gibi', 'can pazarı' gibi değerlendirici ifadeler kullanıyor; başka bir kurum aynı olguları bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Dokuz kişinin öldüğü bir kazada ağır ifadeler olayın şiddetini aktarmak için kullanılan yerleşik habercilik kalıplarıdır.",
+   "missing_context": [
+    "Kurumların benzer ölçekteki kazalarda aynı ifadeleri kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Van'da katliam gibi kaza! Tır ile minibüs çarpıştı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Van’da katliam gibi kaza",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Van'da katliam gibi kaza! TIR ile minibüs çarpıştı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Katliam gibi kaza' benzetmesi kullanılıyor; ancak aynı kalıp üç kurumda birebir tekrarlanıyor, bu da sabit bir habercilik kalıbı olduğunu düşündürüyor ve bir fail rolü atadığı metinden kanıtlanamıyor.",
+   "alternative_explanation": "İfade ağır trafik kazalarında kullanılan kalıplaşmış bir benzetmedir.",
+   "missing_context": [
+    "Kalıbın kaynağı (ortak ajans metni olup olmadığı)"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Van'da katliam gibi kaza! Tır ile minibüs çarpıştı: 9 ölü, 5 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Van'da tır ile minibüs çarpıştı: 9 ölü, 5 yaralı — Van'da tır ile minibüsün çarpıştığı kazada",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kazayı bir kurum 'katliam gibi kaza', bir başkası yalnızca 'kaza' diye adlandırıyor; 'katliam' kasıt ve fail çağrıştırırken 'kaza' nötr.",
+   "alternative_explanation": "Benzetme kazanın şiddetini vurgulamak için kullanılıyor olabilir; olgusal içerik değişmiyor.",
+   "missing_context": [
+    "Kaza nedenine dair resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Van'da TIR minibüsle çarpıştı: 9 ölü! Cenazeler İran'a gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Van-Özalp karayolunda tır ile minibüs çarpıştı, 9 kişi öldü, 5 kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kazayı bir kurum ölenlerin uyruğu ve cenazelerin gönderilmesi üzerinden, diğerleri sayı üzerinden veriyor.",
+   "alternative_explanation": "Uyruk bilgisi sonraki gün ortaya çıkan bir gelişmedir; vurgu farkı yayın zamanından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Kümedeki Kütahya ve Balıkesir kazalarının ayrı olaylar olduğunun ayıklanması",
+    "7 ölü ve 9 ölü sayıları arasındaki farkın kaynağı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olgusal gelişmeyi aktarıyor; ya-ya da yapısında bir seçenek daraltması yok.",
+   "missing_context": [
+    "İki seçenekli bir kurgu içeren başlık ya da spot"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Van'da tır ile minibüsün çarpışması sonucu 9 kişi öldü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "'Çarpışması sonucu' açık bir nedensel ifade; ancak çarpışma ile ölümler arasındaki bağ doğrudan fiziksel bir sonuçtur, yalnızca zaman sırasına dayanmıyor.",
+   "alternative_explanation": "Kullanılan nedensel bağlaçlar olayın doğrudan fiziksel ya da usul sonucunu anlatıyor veya resmi bir kaynağa atfediliyor.",
+   "missing_context": [
+    "Nedensel bağın dayandığı kanıtın türü"
+   ]
+  }
+ ]
+}

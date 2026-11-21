@@ -1,0 +1,213 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası'ndan kredi hamlesi: İhtiyaç, taşıt ve ticari kredilerde yeni dönem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası'ndan kredi kararı: İhtiyaç, taşıt ve ticari kredilerde yeni oranlar belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı karar \"hamle\" ve \"karar\" diye farklı adlandırılıyor.",
+   "alternative_explanation": "\"Hamle\" ekonomi haberciliğinde her politika adımı için kullanılan yaygın bir sözcük; çağrışım farkı belirsiz.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası Kredi Freninde Gevşemeye Gitti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "\"Kredi freni\" bir metafor; ancak ekonomi dilinde yerleşik bir ifade ve rol atamıyor.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası sınırlarını yükseltti: İhtiyaç, taşıt ve ticari kredilerinde yeni dönem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye Cumhuriyet Merkez Bankası (TCMB), bankaların ve finansman şirketlerinin 1 yıldan uzun vadeli Türk lirası ve yabancı para cinsinden mevduat dışı yükümlülükleri için tesis edilen zorunlu karşılıklara",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar ya kredi sınırlarını ya da zorunlu karşılık değişikliğini öne çıkarıyor.",
+   "alternative_explanation": "Bunlar aynı olgunun boyutları değil, aynı açıklamadaki farklı kararlar olabilir.",
+   "missing_context": [
+    "Açıklamanın tam metni"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası'ndan kredi hamlesi: İhtiyaç, taşıt ve ticari kredilerde yeni dönem",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "\"Yeni dönem\" bir sonuç niteliği taşıyor; ancak olay (\"kredi hamlesi\") de başlıkta geçiyor.",
+   "alternative_explanation": "\"Yeni dönem\" bir öngörü değil, yürürlüğe giren düzenlemenin nitelendirmesi olabilir.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ihtiyaç ve taşıt kredilerinin sekiz haftalık büyüme sınırını yüzde 3'ten yüzde 3,5'e yükseltirken",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "makrofinansal istikrarı ve parasal aktarım mekanizmasını desteklemek amacıyla",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar kararı önceki oranlar ve para politikası süreci bağlamında veriyor.",
+   "alternative_explanation": "Bilgilendirici bir pratik.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hiçbir kurum kendi sesiyle yalnızca iki seçenek sunan bir \"ya … ya\" kalıbı kullanmıyor.",
+   "alternative_explanation": "Olay haberi bir seçenekler tartışması içermiyor.",
+   "missing_context": [
+    "İki seçenekli bir ifade"
+   ]
+  }
+ ]
+}

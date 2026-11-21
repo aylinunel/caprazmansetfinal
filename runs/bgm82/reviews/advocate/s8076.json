@@ -1,0 +1,203 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Rafael Leao şoku!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 12:49] Galatasaray'dan Leao'nun sağlık durumu hakkında açıklama",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar kendi sesinde 'şok' sözcüğünü kullanıyor; başka bir kurum aynı açıklamayı bu sözcük olmadan veriyor.",
+   "alternative_explanation": "'Şok' spor medyasında önemli oyuncu kayıplarında yaygın bir kalıp.",
+   "missing_context": []
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Rafael Leao fırtınası!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık 'fırtına' mecazını kullanıyor, ancak bu, etkili performans için yerleşik bir spor deyimi; rol atamıyor veya eylem önermiyor.",
+   "alternative_explanation": "Yerleşik deyimsel kullanım.",
+   "missing_context": []
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 13:02] Galatasaray'da Rafael Leao şoku: Sakatlığı açıklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 12:49] Galatasaray'dan Rafael Leao açıklaması! Sağlık durumu belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kulüp açıklaması bir kurumda 'şok' ve 'sakatlık', diğerinde 'açıklama' ve 'sağlık durumu' sözcükleriyle veriliyor; ilki olumsuz sürpriz, ikincisi nötr bilgilendirme çağrıştırıyor.",
+   "alternative_explanation": "Fark üslup tercihinden kaynaklanabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cnnturk · 11:18] Galatasaray'da Rafael Leao'nun dönüşü uzun sürecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 14:21] Rafael Leao sakatlandı mı, sahalardan ne kadar uzak kalacak? Galatasaray'dan resmî açıklama geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[milligazete · 23:59] Galatasaray'da Rafael Leao şoku! MR sonucu açıklandı, 4 hafta sahalardan uzak kalabilir",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı MR açıklaması bir başlıkta uzun dönüş süresi, diğerinde resmi açıklama, bir başkasında hafta sayısı öne çıkarılarak veriliyor; bir kurum ayrıca kulübün süre vermediğini belirtiyor.",
+   "alternative_explanation": "Süre tahminleri farklı kaynaklardan alınmış olabilir.",
+   "missing_context": [
+    "Kulübün resmi açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca eşzamanlılığa veya zaman sırasına dayanan açık bir nedensellik iddiası bulunmuyor.",
+   "alternative_explanation": "Metindeki 'nedeniyle' gibi bağlaçlar doğrudan gözlenen, tartışmasız bağlantıları aktarıyor.",
+   "missing_context": [
+    "Nedensellik iddiasının dayandığı kanıt"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların başlık veya spotları olayı zaman içindeki veriler, önceki vakalar ya da bir politika süreci gibi daha geniş bir bağlama yerleştirmiyor.",
+   "alternative_explanation": "Olayın anlık bilgi ihtiyacı (sefer iptali, sakatlık durumu) bağlamsal çerçeveyi gereksiz kılmış olabilir.",
+   "missing_context": [
+    "Olayı bir eğilim veya seriye bağlayan başlık ya da spot ifadesi"
+   ]
+  }
+ ]
+}

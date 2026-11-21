@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "word-choice",
+  "loaded-language",
+  "emphasis-framing",
+  "fear-appeal"
+ ],
+ "selection_uncertainty": [
+  "'Şehit' MSB açıklamasından geliyor olabilir.",
+  "milligazete 'çok sayıda' ifadesi sayıyla uyumsuz olabilir."
+ ],
+ "selection_note": "'Şehit' / 'yaşamını yitirdi' farkı ve akit 'kahreden haber' sözcük seçimi ve yüklü dil için aday."
+}

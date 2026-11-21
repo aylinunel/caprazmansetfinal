@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "emphasis-framing",
+  "word-choice",
+  "thematic-framing"
+ ],
+ "selection_uncertainty": [
+  "Metinler kısaltılmış.",
+  "Kutlama ifadeleri siyasetçilerden alıntı; kurum tekniği değil."
+ ],
+ "selection_note": "'Başkan Erdoğan' unvanı ve haberin ziyaret ya da kutlama üzerinden vurgulanması farklı."
+}

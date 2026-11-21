@@ -1,0 +1,154 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Geçen sene kayyım atanmıştı… Merkez Bankası o kuruluşun faaliyet iznini iptal etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TCMB, iki ödeme kuruluşunun faaliyet iznini iptal etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı sözcük ve vurgularla veriyor; ancak metin betimlemelerin karar açısından eşdeğer olduğunu açıkça kurmuyor ve hiçbir tercih ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, editoryal üslup, karakter sınırı, kaynak erişimi ya da haber değeri tercihinden kaynaklanabilir; bunlar bilişsel bir hata kanıtı değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin yargısını gösteren veri",
+    "Farklı sunumların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ozan Elektronik Para'nın sahibi Ozan Özerk kimdir? Faaliyet izni Merkez Bankası tarafından resmen iptal edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı öne çıkarıyor; fakat metin bu ayrıntıyı açıkça bir yargı ya da seçime bağlamıyor, çarpıcılık tek başına hata kanıtı değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması olayın gerçekten önemli bir unsuru olması, haber değeri ya da okunma kaygısıyla açıklanabilir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin bir kararda nasıl tartıldığını gösteren karşılaştırmalı kanıt",
+    "Editör ya da okur yargısına dair doğrudan kayıt"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası, A Ödeme'nin faaliyet iznini iptal etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası iki elektronik para kuruluşunun faaliyet iznini iptal etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "TGRT yalnızca A Ödeme'yi, NTV iki kuruluşu birlikte veriyor; bir unsur aktarımda düşüyor. Kurumların aktarımları arasında bazı ayrıntılar farklılaşıyor ya da düşüyor; bu bir aktarım/özet etkisine işaret edebilir, ancak farkın önemli, gerekçesiz ve bir sonuca etkili olduğu gösterilmiyor.",
+   "alternative_explanation": "Farklar erken saatteki eksik bilgiye, ajans metninin kısaltılmasına, başlık uzunluğu sınırına ya da sonradan güncellenen resmi verilere bağlı olabilir.",
+   "missing_context": [
+    "Özgün kaynak metni (resmi açıklama ya da ajans bülteni)",
+    "Haberlerin güncellenme geçmişi",
+    "Farkın bir sonuca ya da karara etkisini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kayyım atanan Ozan Elektronik Para A.Ş.'nin faaliyet izni iptal edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı haberler önceki bir gelişmeye (kayyım) gönderme yapıyor; ancak bu önceki uyaranın sonraki bir yanıtı etkilediğini gösteren karşılaştırmalı ya da açık kanıt yok.",
+   "alternative_explanation": "Önceki gelişmenin anılması arka plan bilgisi vermek içindir.",
+   "missing_context": [
+    "Önceki maruziyet ile sonraki yanıt arasındaki bağı gösteren karşılaştırmalı veri"
+   ]
+  }
+ ]
+}

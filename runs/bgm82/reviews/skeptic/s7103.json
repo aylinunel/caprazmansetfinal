@@ -1,0 +1,169 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 15:42] Trabzonspor, Freiburg'a 8 eksikle hazır",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 14:04] Trabzonspor Freiburg maçına hazır",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Trabzonspor, Freiburg maçına hazır! 7 oyuncu antrenmana çıkmadı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Takımın maça hazır olduğu aynı olgusu Yeni Şafak'ta yalnızca hazırlık olarak, Sözcü ve TGRT'de ise eksik oyuncu sayısı öne çıkarılarak veriliyor; başlıklar aynı olgunun farklı boyutlarını (hazırlık ile eksikler) ön plana taşıyor.",
+   "alternative_explanation": "Eksik sayısı farklı yayın saatlerinde öğrenilmiş ek bir bilgi olabilir; Sözcü (8) ile TGRT (7) farklı rakamlar veriyor, bu da sayının saatler içinde değiştiğine işaret edebilir.",
+   "missing_context": [
+    "Eksik oyuncu sayısının resmi kaynağı ve hangi saatte açıklandığı",
+    "Yeni Şafak haberinin spotunda eksiklerden söz edilip edilmediği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 09:41] Trabzonspor, Freiburg'a yenildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Trabzonspor Freiburg'a kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Freiburg’a 1-0'lık skorla mağlup oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sonuç için 'yenildi', 'kaybetti' ve 'mağlup oldu' kullanılıyor; bunlar aynı anlamın üslup varyantları, çağrışım farkı taşımıyor.",
+   "alternative_explanation": "Sözcük farkları ajans ve kurum üslubundan ibaret; olumlu ya da olumsuz bir yük farkı yok.",
+   "missing_context": [
+    "Sonucu farklı çağrışımla (ör. 'hezimet', 'talihsiz yenilgi') veren bir başlık"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "UEFA Konferans Ligi'nin 3. haftasında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tekrarlanan ya da yapısal bir sorunu tek bir vaka üzerinden anlatmıyor; haber tekil, zamanı belli bir olay.",
+   "alternative_explanation": "Olayın kendisi tekil bir gelişme olduğundan tek vaka anlatımı yapısal bir örüntünün gizlenmesi anlamına gelmiyor.",
+   "missing_context": [
+    "Olayın tekrarlanan ya da yapısal bir sorunun parçası olduğunu gösteren bağlam"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Trabzonspor, Freiburg'a yenildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olayda sorumluluğu belirlenecek bir soruşturma ya da yargı süreci yok; başlıklar kimseye kusur yüklemiyor.",
+   "alternative_explanation": "Haber bir duyuru ya da sonuç bildirimi; sorumluluk tartışması içermiyor.",
+   "missing_context": [
+    "Sorumluluğun belirsiz olduğu bir soruşturma ya da inceleme süreci"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,288 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 17:06] Eski zihniyetli Yeni Parti’de deprem:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "eski zihniyetin yeni çatıdaki ortaklığı ilk günden çatırdadı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 16:52] Yeni Parti'de istifa depremi!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kuruluşlar kendi seslerinde istifayı 'deprem' olarak adlandırıyor; bir kuruluş bunu partiyi bir 'çatı' olarak kurgulayan ve 'çatırdama' ile çökme yönünde bir süreç ima eden bir imgeye genişletiyor.",
+   "alternative_explanation": "'Deprem' Türk siyasi haberciliğinde ani gelişmeler için kalıplaşmış bir deyim olarak okunabilir.",
+   "missing_context": [
+    "Kuruluşların başka partilerdeki istifalar için aynı imgeyi kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Koltuk ve ikbal kavgalarıyla çalkalanan Yeni Parti’de kriz tavan yaptı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[akit · 17:06] Eski zihniyetli Yeni Parti’de deprem",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 17:06] Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer, Yeni Parti'den istifa etti — Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer, Yeni Parti'den istifa ettiğini açıkladı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Kuruluşların kendi seslerinde 'ikbal kavgaları', 'kriz tavan yaptı', 'eski zihniyetli' gibi değerlendirici sözcükler yer alıyor; aynı istifa başka bir kuruluşta bu sözcükler olmadan aynı olgularla veriliyor.",
+   "alternative_explanation": "Sözcükler Yüceer'in açıklamasındaki 'koltuk hesabı' eleştirisinin özetlenmesi olarak da görülebilir.",
+   "missing_context": [
+    "Yüceer'in açıklamasının tam metni",
+    "Değerlendirici ifadelerin kime ait olduğunu gösteren tırnak kullanımı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 13:48] Tekirdağ Büyükşehir Başkanı Yüceer, delege krizi nedeniyle Yeni Parti'den istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[akit · 17:06] Eski zihniyetli Yeni Parti’de deprem: Tekirdağ Belediye Başkanı istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[milligazete · 19:11] Candan Yüceer'in eşi kim, mesleği ne, siyasi kariyeri ve hayatı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifayı veren başlıklar sırasıyla kişisel gerekçeyi, parti üzerindeki etkiyi ve istifa edenin özel hayatını öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar farklı okur ilgilerine ya da arama alışkanlıklarına göre biçimlenmiş olabilir.",
+   "missing_context": [
+    "Kuruluşların aynı gün yayımladığı diğer ilgili haberler"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 16:52] Yeni Parti'de istifa depremi! Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer'den zehir zemberek sözlerle rest",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haber7 · 16:54] Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer Yeni Parti'den istifa etti — Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer, Yeni Parti'den istifa ettiğini duyurdu.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "YENİ Parti'den istifa etti, yoluna nasıl devam edeceğine dair bilgi vermedi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifa bir kuruluşta 'istifa depremi' ve 'zehir zemberek sözlerle rest', diğerlerinde 'istifa ettiğini duyurdu' olarak veriliyor; sözcükler çağrışım bakımından farklılaşıyor.",
+   "alternative_explanation": "Sözcük farkı yayınların genel üslup ve başlık uzunluğu tercihlerinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Yüceer'in açıklamasındaki ifadelerin sertlik düzeyi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "\"Mutlak butlan\" kararı sonrası CHP'den istifa ederek Yeni Parti'ye katılan Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer, bugün de Yeni Parti’den istifa etti.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kısa süre önce CHP’den istifa ederek YENİ Parti’ye katılan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "İstifa haberi bazı ledlerde 'mutlak butlan' kararı ve CHP'den ayrılma süreci içine yerleştiriliyor.",
+   "alternative_explanation": "Önceki parti değişikliği, istifayı anlamak için gerekli bir arka plan bilgisi olarak verilmiş olabilir.",
+   "missing_context": [
+    "'Mutlak butlan' sürecinin ayrıntıları",
+    "Yeni Parti'deki diğer istifalar"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 16:55] Yeni Parti’de \"iç hesaplaşma\" patladı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Koltuk ve ikbal kavgalarıyla çalkalanan Yeni Parti’de kriz tavan yaptı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "kurultay delegesi yazılmayınca zehir zemberek sözlerle partisinden istifa etti.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 16:55] Tekirdağ Büyükşehir Belediye Başkanı Yüceer, Yeni Parti'den istifa etti — Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer, Yeni Parti'den istifa ettiğini açıkladı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı kuruluşun başlığı ve ledi 'iç hesaplaşma patladı', 'ikbal kavgaları', 'kriz tavan yaptı' ve 'zehir zemberek' ifadelerini birleştiriyor; hepsi partiyi kriz içinde gösteren aynı yöne işaret ediyor. Başka bir kuruluş aynı olguyu bu bileşim olmadan veriyor.",
+   "alternative_explanation": "İfadeler Yüceer'in açıklamasındaki eleştirilerin yoğunlaştırılmış bir özeti olarak da okunabilir.",
+   "missing_context": [
+    "Yüceer'in açıklamasının tam metni",
+    "Kuruluşun diğer partilerdeki istifaları verirken kullandığı dil"
+   ]
+  }
+ ]
+}

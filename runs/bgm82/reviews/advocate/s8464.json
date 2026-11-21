@@ -1,0 +1,227 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Aliyev çifti COP31 için Antalya'ya geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Gerilim sona erdi: Aliyev COP31 için Antalya'ya geliyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İlham Aliyev COP31'e katılmak üzere Antalya'ya geldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı geliş bir kurumda çiftin ziyareti, bir başkasında ikili ilişkilerdeki gerilimin sonu, diğerlerinde zirveye katılım boyutuyla öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar farklı haber değerlerini öne almış olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Aliyev çifti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İlham Aliyev ve eşi Mihriban Aliyeva",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişiler bir kurumda 'Aliyev çifti', diğerinde 'İlham Aliyev ve eşi' diye anılıyor; fark çağrışımdan çok üslup ve uzunluk farkı olabilir.",
+   "alternative_explanation": "Kısa başlık ihtiyacı.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gerilim sona erdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İlham Aliyev COP31'e katılmak üzere Antalya'ya geldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum ziyareti 'gerilim sona erdi' değerlendirmesiyle sunuyor; diğer kurumlar aynı geliş haberini bu değerlendirme olmadan veriyor. 'Gerilim' sözcüğünün kartın örneklediği türden yüklü bir sözcük olup olmadığı belirsiz.",
+   "alternative_explanation": "Önceki diplomatik gerginliğe dair olgusal bir gönderme olabilir.",
+   "missing_context": [
+    "Önceki gerilime dair bilgi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların ifadelerinde iki seçenekli bir ikilem yok.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan Cumhurbaşkanı İlham Aliyev Türkiye'ye geldi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Geçtiğimiz günlerde Cumhurbaşkanı Erdoğan'ı ülkesinde ağırlayan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Gerilim sona erdi:",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar ziyareti önceki karşılıklı ziyaretler ve ikili ilişkilerin seyri bağlamına yerleştiriyor.",
+   "alternative_explanation": "Bu bağlam okura gerekli arka planı sunmak için verilmiş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gerilim sona erdi: Aliyev COP31 için Antalya'ya geliyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Gerilim sona erdi' ile geliş arasında açık bir nedensellik bağlacı kurulmuyor.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  }
+ ]
+}

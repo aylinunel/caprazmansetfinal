@@ -1,0 +1,235 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ela Rümeysa Cebeci'nin \"Cilveleşiyorduk\" savunması dikkat çekti! Saran ve Cebeci hakkında karar verildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sadettin Saran ve Ela Rümeysa Cebeci beraat etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hapis cezası talep edilmişti! Sadettin Saran ve Ela Rümeysa Cebeci hakkında karar verildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "A Haber sanığın savunmasındaki bir sözü, BirGün beraat kararını, Star savcının hapis talebini öne çıkarıyor.",
+   "alternative_explanation": "Boyut farkları yayın saatindeki bilgi düzeyine, hedef okur kitlesine ve başlık uzunluğuna bağlı olabilir.",
+   "missing_context": [
+    "Her kurumun tam metni",
+    "Başlıkların güncellenme geçmişi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ela Rümeysa Cebeci hâkim karşısında kıvırdı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sadettin Saran ve Ela Rümeysa Cebeci beraat etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Akit 'kıvırdı' ile Cebeci'yi özne yapıp kaçamak davranış yüklüyor ve atıf işareti kullanmıyor; ancak metindeki diğer kurumlar beraat kararını bildirdiği için sorumluluğun belirsiz olduğu koşulu tartışmalı.",
+   "alternative_explanation": "Başlıklar resmi açıklamaları ve kurum kararlarını aktarıyor.",
+   "missing_context": [
+    "Sorumluluğun belirsiz olduğu bir süreç ve bu süreçte aktöre suç yükleyen başlık"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "hâkim karşısında kıvırdı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "davanın ikinci duruşmasında ilk kez hakim karşısına çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit sanığın savunmasını 'kıvırdı', Onedio 'hakim karşısına çıktı' diye veriyor; 'kıvırmak' kaçamaklık çağrıştırıyor.",
+   "alternative_explanation": "Sözcük farkları kaynak metnin farklı aktarılmasından ya da bilgi düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların kaynak aldığı resmi metin",
+    "Aynı kurumların benzer olaylardaki sözcük tercihi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sosyetenin zehir skandalında ikinci perde!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ela Rümeysa Cebeci ve Sadettin Saran hakkında beraat kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit kendi sesinde 'zehir skandalı' diyor; Yeni Şafak aynı davayı bu nitelemesiz veriyor.",
+   "alternative_explanation": "Değerlendirme yüklü sözcükler bazı kurumların genel başlık üslubunun parçası olabilir.",
+   "missing_context": [
+    "Kurumun aynı türdeki başka haberlerde aynı sözcükleri kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ünlü isimlere yönelik soruşturma: Sadettin Saran ve Ela Rümeysa Cebeci için beraat kararı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Evrensel başlığı davayı 'ünlü isimlere yönelik soruşturma' adlı daha geniş bir sürecin parçası olarak konumluyor.",
+   "alternative_explanation": "Arka plan bilgisi vermek olağan haber pratiğidir; bu bir bağlam etkisidir, hata değildir.",
+   "missing_context": [
+    "Kurumun tam metnindeki bağlam bilgisinin kapsamı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde iki seçeneği tek seçenek olarak sunan bir kalıp bulunmuyor.",
+   "alternative_explanation": "Soru biçimli başlıklar ikili bir seçenek dayatmıyor; bilgi talebi biçiminde kurulmuş.",
+   "missing_context": [
+    "Yalnızca iki seçenek sunan ifade ve göz ardı edilen başka seçenek"
+   ]
+  }
+ ]
+}

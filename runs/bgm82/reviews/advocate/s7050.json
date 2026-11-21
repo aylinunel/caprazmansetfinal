@@ -1,0 +1,220 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Esenyurt'ta iki metrobüs çarpıştı: Feci kazada 6 yaralı var!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kazada 6 yolcu hafif şekilde yaralandı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Esenyurt'ta metrobüs kazası: 6 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kazayı kurumun kendi sesiyle 'Feci kazada' olarak niteliyor; başka bir kurum aynı olguyu yalın veriyor ve yaralanmaların hafif olduğunu belirtiyor.",
+   "alternative_explanation": "Başlık, kazanın ilk anlarındaki belirsizlik içinde yazılmış olabilir.",
+   "missing_context": [
+    "Yaralıların durumuna ilişkin resmî açıklama"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Esenyurt'ta iki metrobüs çarpıştı: Feci kazada 6 yaralı var!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da metrobüs kazası: 6 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kaza bir başlıkta 'feci kaza', başka bir başlıkta 'metrobüs kazası' olarak adlandırılıyor; ilki ağırlık ve dehşet çağrışımı taşıyor.",
+   "alternative_explanation": "Sıfat kurumun genel başlık üslubunu yansıtıyor olabilir.",
+   "missing_context": [
+    "Kurumun benzer kazalardaki sözcük tercihleri"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde epizodik çerçeveleme kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İki metrobüs çarpıştı! 6 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul Esenyurt'ta metrobüs kazası: Yolcu alan araca arkadan çarptı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kaza nedeniyle seferlerde aksamalar yaşandı, bölgede uzun metrobüs kuyrukları oluştu.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kazayı bir başlık yaralı sayısıyla, bir başlık kazanın oluş biçimiyle öne çıkarıyor; bir kurumun girişi ise seferlerdeki aksamalara yer veriyor.",
+   "alternative_explanation": "Farklı ayrıntılar farklı saatlerde erişilebilir hale gelmiş olabilir.",
+   "missing_context": [
+    "Haberlerin yayım anındaki bilgi durumu"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde tematik çerçeveleme kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "henüz bilinmeyen bir nedenle çarpıştı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde nedensellik abartısı kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor. Metin kazanın nedenini açıkça bilinmiyor olarak veriyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  }
+ ]
+}

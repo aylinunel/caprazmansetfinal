@@ -1,0 +1,199 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 16:48] SON DAKİKA... Özgür Özel'in işaret ettiği Enver Çevik tekrar gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 17:23] Fon soruşturmasında Enver Çevik gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkına bağlanan bir tercih, yargı ya da öneri içermiyor.",
+   "alternative_explanation": "Siyasi bağlantının anılması kamuya açık önceki açıklamalara gönderme olabilir; bir karar vericinin tercihi aktarılmıyor.",
+   "missing_context": [
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğine dair veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar belirli bir ayrıntıyı öne çıkarıyor; ancak bu ayrıntının bir yargının ya da tercihin yerine geçtiğini gösteren açık bir bağ yok.",
+   "alternative_explanation": "Öne çıkan ayrıntı haber değeri yüksek ve doğrulanmış bir bilgi olabilir.",
+   "missing_context": [
+    "Çarpıcı ayrıntı ile daha az çarpıcı bilgi arasında ağırlıklandırma karşılaştırması",
+    "Ayrıntının sıklık kanıtı gibi kullanıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde önceki bir uyaranın sonraki bir yargıyı etkilediğini gösteren açık bir sıra ve karşılaştırmalı kanıt yok.",
+   "alternative_explanation": "Önceki gelişmelere yapılan göndermeler haberin arka planını veriyor.",
+   "missing_context": [
+    "Uyaran ile tepki arasında karşılaştırmalı ya da tekrarlanan gözlem"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin olumsuz bir gelişmeyi aktarıyor; ancak olumsuz bilgiye karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık verildiğini gösteren bir belge ya da tekrarlanan davranış yok.",
+   "alternative_explanation": "Olumsuz içerik olayın kendisinden kaynaklanıyor; haberin konusu olumsuz bir gelişme.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgiyle ağırlıklandırma kıyası",
+    "Orantısız ağırlığın bir değerlendirmeyi etkilediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Özgür Özel'in işaret ettiği Enver Çevik tekrar gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Lydia Holding Yönetim Kurulu Başkanı Enver Çevik gözaltına alındı. Çevik 23 Eylül'de de gözaltına alınan isimler arasında yer almış",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sözcü gözaltıyı bir siyasetçinin önceki işaretine bağlayarak keskinleştirirken Akit önceki gözaltıyı veriyor; anlatılar arasında fark var, ancak bir sonuca etkisi gösterilmiyor.",
+   "alternative_explanation": "Farklı arka plan bilgileri kurumların farklı önceki haberlerine dayanıyor olabilir.",
+   "missing_context": [
+    "Özgün kaynak metni (resmî açıklama ya da kurum duyurusu)",
+    "Farkın bir sonuca ya da karara etki ettiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "messenger-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Özgür Özel'in işaret ettiği Enver Çevik",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir iddianın değerlendirmesinin onu iletenin kimliğine bağlandığını gösteren açık ifade ya da karşılaştırma yok.",
+   "alternative_explanation": "Kaynağın anılması haberin atıf gereği olabilir.",
+   "missing_context": [
+    "Aynı iddianın farklı iletenlerde farklı değerlendirildiğini gösteren karşılaştırma"
+   ]
+  }
+ ]
+}

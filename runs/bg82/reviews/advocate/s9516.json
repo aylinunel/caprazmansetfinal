@@ -1,0 +1,232 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD şokta! Beyaz Saray yakınında silahlı saldırı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz sözcükler var, ancak olumsuz kanıta karşılaştırılabilir olumlu kanıta göre orantısız ağırlık verildiğini belgeleyen bir ifade yok.",
+   "alternative_explanation": "Silahlı saldırı doğası gereği olumsuz bir olaydır; olumsuz dil olayla orantılı olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgilerin nasıl ele alındığına dair veri"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD, Beyaz Saray yakınında yeni bir silahlı saldırının şokunu yaşıyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Şok' gibi duygu ifadeleri var ama bu duygunun bir risk ya da fayda tahminine açıkça bağlandığı görülmüyor.",
+   "alternative_explanation": "Duygu sözcükleri olayın ciddiyetini aktarmak için kullanılmış olabilir.",
+   "missing_context": [
+    "Duyguya dayalı bir risk tahmini içeren ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Washington'da güvenlik alarmı! Beyaz Saray'a yakın bölgede silahlı saldırı: 4 kişi vuruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beyaz Saray’a birkaç kilometre uzaklıktaki Logan Circle semtinde düzenlenen silahlı saldırıda",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Saldırganın, apartman yönetimiyle yaşadığı anlaşmazlığın ardından dehşet saçtığı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar Beyaz Saray'a yakınlığı öne çıkarırken ledeler olayın birkaç kilometre uzakta ve kişisel bir anlaşmazlıktan kaynaklandığını aktarıyor; çarpıcı konumun bir yargıyı haksız etkilediği ise açıkça kurulmuyor.",
+   "alternative_explanation": "Beyaz Saray, okuyucunun yeri tanıması için kullanılan bir konum referansı olabilir.",
+   "missing_context": [
+    "Okuyucu ya da yetkili yargısının bu konum vurgusuyla değiştiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD, Beyaz Saray yakınında yeni bir silahlı saldırının şokunu yaşıyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Yeni bir saldırı' ifadesi önceki olaylara gönderme yapıyor ama hatırlanabilirliğin bir sıklık ya da risk tahmininin gerekçesi olarak kullanıldığı görülmüyor.",
+   "alternative_explanation": "Önceki olaylara gönderme, bağlam vermek için yapılmış olabilir.",
+   "missing_context": [
+    "Silahlı saldırı sıklığına dair bir tahmin ve dayandığı veri"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınlarında silahlı çatışma: En az 5 kişi vuruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 17:20] Beyaz Saray yakınlarında silahlı saldırı: 5 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınında silahlı saldırı: 5 kişi vuruldu, 1 kişi öldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olay 'çatışma', 'saldırı', '5 yaralı' ve '1 kişi öldü' gibi farklı çerçevelerle veriliyor; ancak bir yargının bu sunum farkına bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Rakam ve nitelendirme farkları olayın gelişen ilk saatlerindeki bilgi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Yayın saatlerine göre resmi açıklamaların sırası"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yenisafak · 17:25] Beyaz Saray yakınlarında silahlı saldırı: Yaralılar var",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "silahlı saldırıda 5 kişi vuruldu, 1 kişi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Beyaz Saray yakınlarında silahlı saldırı paniği: 4 kişi vuruldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olayın yeniden anlatımları ölü sayısını düşürüyor ya da vurulan sayısını farklı veriyor; karşılaştırma mümkün, fakat farkın bir sonuca haksız biçimde yön verdiği gösterilmiyor.",
+   "alternative_explanation": "Farklar bilginin zaman içinde güncellenmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Her haberin yayın anındaki resmi bilgi",
+    "Haberlerin sonradan güncellenip güncellenmediği"
+   ]
+  }
+ ]
+}

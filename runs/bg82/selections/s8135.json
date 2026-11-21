@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "anchoring-bias",
+  "negativity-bias",
+  "availability-heuristic",
+  "salience-bias"
+ ],
+ "selection_uncertainty": [
+  "Kurumlar farklı zamanlarda farklı ölü/yaralı sayıları veriyor (4/88, 7/112, 64 yaralı)."
+ ],
+ "selection_note": "Değişen bilanço rakamları çapa etkisi ve olumsuzluk vurgusu açısından incelenebilir."
+}

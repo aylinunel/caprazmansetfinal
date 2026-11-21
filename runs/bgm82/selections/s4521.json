@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "responsibility-framing",
+  "emphasis-framing",
+  "word-choice",
+  "loaded-language",
+  "thematic-framing",
+  "episodic-framing"
+ ],
+ "selection_uncertainty": [
+  "'İş cinayeti ve katliam' TKP'ye ait alıntı; kurum tekniği sayılmaz.",
+  "'Sarı kodlu uyarı' vurgusunun sorumluluk ima edip etmediği belirsiz."
+ ],
+ "selection_note": "Facia/felaket/kaza sözcük farkları ve sorumluluğun doğa olayına ya da ihmale bağlanması aday."
+}

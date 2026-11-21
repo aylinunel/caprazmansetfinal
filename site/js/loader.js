@@ -40,10 +40,12 @@
   function unpack(p, packs, member) {
     var out = new Array(p.i.length);
     for (var j = 0; j < p.i.length; j++) {
-      var a = { i: p.i[j], s: packs.sources[p.s[j]], t: p.t[j], u: "https://" + p.hosts[p.h[j]] + "/" + p.u[j],
+      var a = { i: p.i[j], s: packs.sources[p.s[j]], t: p.t[j],
         d: p.d[j], c: packs.cats[p.c[j]], k: p.k[j].map(function (x) { return packs.keys[x]; }), v: p.v[j],
         b: packs.bands[p.b[j]], p: p.p[j], e: p.e[j] || [] };
       if (p.lv[j] != null) a.lv = p.lv[j];
+      if (p.u) a.u = "https://" + p.hosts[p.h[j]] + "/" + p.u[j];  /* older packs still carry URLs */
+      else if (p.nu[j]) a.nu = p.nu[j];  /* notice-rule bits for the URL (capraz_pipeline/urlpack.py) */
       if (member[a.i]) a.st = member[a.i];
       out[j] = a;
     }
@@ -58,6 +60,18 @@
     });
   }
 
+  /* URLs: u-YYYY-MM.bin, fetched once after the page is up; resolves when every article has a.u. */
+  var urls = null;
+  window.cmUrls = function () {
+    if (!urls) urls = Promise.all(window.DATA.meta.packs.months.map(function (m) { return load("u-" + m + ".bin"); }))
+      .catch(function (e) { urls = null; throw e; })  /* a failed load can be retried */
+      .then(function (ps) {
+        var by = window.CM_ART;  /* the app's id -> article map (app.js ART); no second 388k-key map */
+        ps.forEach(function (p) { for (var j = 0; j < p.i.length; j++) { var a = by[p.i[j]]; if (a) a.u = "https://" + p.hosts[p.h[j]] + "/" + p.u[j]; } });
+        if (window.CM_URLS_READY) window.CM_URLS_READY();
+      });
+    return urls;
+  };
   var ledes = null;
   window.cmLedes = function () {
     if (!ledes) ledes = Promise.all(window.DATA.meta.packs.months.map(function (m) { return load("l-" + m + ".bin"); }))
@@ -85,6 +99,10 @@
       core.A = [].concat.apply([], parts);
       window.DATA = core;
       start(core);
+      /* background prefetch; a failure is reported here and retried on the next click (cmUrls resets) */
+      if (!parts.length || !parts[0].length || parts[0][0].u == null) setTimeout(function () {
+        window.cmUrls().catch(function (e) { console.error("Çapraz Manşet: haber bağlantıları yüklenemedi", e); });
+      }, 1500);
     });
   }).catch(function (err) {
     console.error("Çapraz Manşet data load failed", err);

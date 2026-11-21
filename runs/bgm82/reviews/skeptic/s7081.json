@@ -1,0 +1,257 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakan Bolat şikayet etmişti: Murat Ağırel ve İsmail Saymaz hakkında 14 yıl hapis cezası talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolat ve bakanlara fon iftirasına iddianame!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Murat Ağırel ve İsmail Saymaz hakkında istenen ceza belli oldu: 5 ayrı suç iddianameye girdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı iddianame için sol şikâyetçi bakanı, akit gazetecilerin açıklamalarının 'iftira' niteliğini, tgrt suçlama sayısını başlığa taşıyor; şikâyetçi, sanık ve suçlama boyutları ayrışıyor.",
+   "alternative_explanation": "Vurgu farkları iddianamenin farklı bölümlerinin öne alınmasından kaynaklanabilir.",
+   "missing_context": [
+    "İddianamenin tam metni"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon skandalını gündeme getiren gazeteciler hakkında iddianame hazırlandı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "iftiralarda bulunan Cumhuriyet yazarları İsmail Saymaz ve Murat Ağırel",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "sozcu gazetecileri 'fon skandalını gündeme getiren', akit 'iftiralarda bulunan Cumhuriyet yazarları' diye anıyor; iki etiket de kimlik belirlemenin ötesinde zıt yönlü değerlendirme taşıyor.",
+   "alternative_explanation": "Etiketler iddianamede ve kamuoyunda tartışılan konunun iki farklı özetini yansıtıyor olabilir.",
+   "missing_context": [
+    "Fon soruşturmasının sonucu"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bolat ve bakanlara fon iftirasına iddianame!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "fon soruşturmasıyla ilgili bazı iddiaları dile getiren gazeteciler",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Gazetecilerin yayındaki açıklamaları için akit kendi sesinden 'iftira', anka 'iddiaları dile getiren' ifadesini kullanıyor; biri kesin bir suç nitelemesi, diğeri nötr bir betimleme.",
+   "alternative_explanation": "akit iddianamedeki suç adını kısaltarak aktarmış olabilir.",
+   "missing_context": [
+    "Mahkemenin iftira suçlamasına dair kararı"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Savcılık Ağırel ve Saymaz’ın 14 yıl 10’ar aya kadar hapisle cezalandırılmasını istedi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bolat ve bakanlara fon iftirasına iddianame! Ağırel ve Saymaz için 14 yıl 10 ay hapis talebi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Metin davanın iddianame aşamasında olduğunu gösteriyor; akit başlığı 'fon iftirası' ifadesini Ağırel ve Saymaz'ın adlarıyla birlikte kullanıyor ve iddia işaretleyicisi içermiyor.",
+   "alternative_explanation": "akit 'iftira' sözcüğünü iddianamedeki suçlama adını aktarmak için kullanmış olabilir; ancak başlıkta bu bağ açıkça kurulmamış.",
+   "missing_context": [
+    "Yargılamanın sonucu"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İsmail Saymaz ve Murat Ağırel için istenen cezalar belli oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneği tek seçenek olarak sunan bir ifade yok.",
+   "alternative_explanation": "Haber bir iddianame aktarımı.",
+   "missing_context": [
+    "İki seçenekli çerçeve"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[bianet · 13:11] Bir iddianame de İsmail Saymaz ve Murat Ağırel’e",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İsmail Saymaz ve Murat Ağırel dahil dört isme istenen ceza belli oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "bianet başlığı 'Bir iddianame de' diyerek davayı bir iddianameler dizisine, ntv ise dört gazeteciyi kapsayan bir sürece yerleştiriyor.",
+   "alternative_explanation": "Diğer gazetecilerin anılması aynı iddianamenin kapsamını aktarmaktan ibaret olabilir.",
+   "missing_context": [
+    "Gazeteciler hakkındaki diğer davalara dair bilgi"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,255 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 05:28] MHP Genel Başkanı Bahçeli, Fatih Terim'i kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 14:15] Fatih Terim'den Devlet Bahçeli'ye sürpriz ziyaret",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 19:55] Fatih Terim'den MHP lideri Devlet Bahçeli'ye ziyaret! Görüşmeye ilişkin ilk açıklama geldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı görüşmeyi veren başlıklardan biri ev sahibinin kabulünü, biri ziyaretin beklenmedikliğini, biri görüşmeye dair açıklamayı öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgular, kuruluşların erişebildiği bilgi ve yayın saatine bağlı olabilir.",
+   "missing_context": [
+    "Görüşmeye ilişkin resmi açıklamanın içeriği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 17:40] MHP Lideri Bahçeli, Fatih Terim'i kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[10haber · 08:10] Fatih Terim, Devlet Bahçeli’ye gitti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[t24 · 17:27] Fatih Terim, Devlet Bahçeli'yi ziyaret etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı buluşma 'kabul etti', 'ziyaret etti' ve 'gitti' fiilleriyle veriliyor; 'kabul etmek' ev sahibini makam sahibi olarak konumlandıran, 'gitmek' ise yönü öne çıkaran farklı çağrışımlar taşıyor.",
+   "alternative_explanation": "Fiil farkları yalnızca cümlenin öznesini kimin oluşturduğuna bağlı dilbilgisel bir tercih olabilir.",
+   "missing_context": [
+    "Kuruluşların benzer protokol ziyaretlerinde kullandığı fiiller"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ünlü teknik direktör Fatih Terim",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Türk futbolunun önemli isimlerinden Fatih Terim",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "A Milli Futbol Takımı'nın eski teknik direktörü Fatih Terim",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray'ın eski futbolcusu ve teknik direktörü Fatih Terim",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi kuruluşların kendi seslerinde 'Ünlü teknik direktör', 'Türk futbolunun önemli isimlerinden', 'A Milli Futbol Takımı'nın eski teknik direktörü' ve 'Galatasaray'ın eski futbolcusu' olarak anılıyor; ilk ikisi tanımlamanın ötesinde bir değer yargısı taşıyor.",
+   "alternative_explanation": "Övgülü nitelemeler, kamuoyunca bilinen bir spor insanını tanıtmak için kullanılan yerleşik kalıplar olabilir.",
+   "missing_context": [
+    "Etiketlerin MHP'nin duyurusundan alınıp alınmadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 14:15] Fatih Terim'den Devlet Bahçeli'ye sürpriz ziyaret",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[t24 · 17:27] Fatih Terim, Devlet Bahçeli'yi ziyaret etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar kuruluşun kendi sesinde ziyareti 'sürpriz' olarak niteliyor; aynı ziyaret başka kuruluşlarda bu nitelemesiz aynı olguyla veriliyor.",
+   "alternative_explanation": "'Sürpriz', önceden duyurulmamış bir ziyareti betimleyen olgusal bir niteleme olarak da okunabilir.",
+   "missing_context": [
+    "Ziyaretin önceden kamuoyuna duyurulup duyurulmadığı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 17:17] Fatih Terim MHP lideri Bahçeli'yi ziyaret etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ziyaret tanımlanabilir bir olay; ancak hiçbir başlık ya da led onu bir eğilim, dizi ya da kurumsal süreç içine yerleştirmiyor. Metinde geçen 'Terörsüz Türkiye' süreci başka bir ziyarete (Kurtulmuş) ait.",
+   "alternative_explanation": "Kısa bir protokol ziyareti haberi bağlam gerektirmeyebilir.",
+   "missing_context": [
+    "Terim'in başka siyasetçilerle yaptığı görüşmelere dair bilgi"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde bir şeyin diğerine neden olduğunu söyleyen açık bir nedensellik ifadesi bulunmuyor.",
+   "alternative_explanation": "Haberler yalnızca bir görüşmenin gerçekleştiğini aktarıyor.",
+   "missing_context": [
+    "Nedensel bağlantı içeren bir ifade"
+   ]
+  }
+ ]
+}

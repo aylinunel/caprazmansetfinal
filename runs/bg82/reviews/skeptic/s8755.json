@@ -1,0 +1,215 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 07:36] ABD'de Pete Hegseth görevden alınmaktan kurtuldu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 08:49] ABD Temsilciler Meclisi, Savunma Bakanı Hegseth'e yönelik azil girişimini engelledi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkına bağlanan bir tercih, yargı ya da öneri içermiyor.",
+   "alternative_explanation": "Farklı özne seçimi (Hegseth ya da Meclis) haber başlığı üslubu olabilir; bir karar vericinin tercihi söz konusu değil.",
+   "missing_context": [
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğine dair veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "'Siyasi şov' demişti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milliyet başlığı bir alıntıyı öne çıkarıyor; ancak bu ayrıntının bir yargının yerine geçtiğini gösteren açık bir bağ yok.",
+   "alternative_explanation": "Alıntı, haberin taraflarından birinin tutumunu aktarmak için seçilmiş olabilir.",
+   "missing_context": [
+    "Çarpıcı ayrıntı ile daha az çarpıcı bilgi arasında ağırlıklandırma karşılaştırması",
+    "Ayrıntının sıklık kanıtı gibi kullanıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 07:36] ABD'de Pete Hegseth görevden alınmaktan kurtuldu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ancak konu Ocak ayından sonra yeniden gündeme gelebilir.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "azil önergesinin Genel Kurul’da oylanmasını engelleyerek önergeyi Adalet Komisyonu’na sevk etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "A Haber sonucu kesin bir kurtuluş olarak verirken DW Türkçe konunun yeniden gündeme gelebileceğini, Haber7 önergenin komisyona sevk edildiğini aktarıyor; anlatılar arasında bir düzleştirme farkı var, ancak bir sonuca etkisi gösterilmiyor.",
+   "alternative_explanation": "'Kurtuldu' ifadesi oylamanın kısa vadeli sonucunu özetleyen bir başlık kısaltması olabilir.",
+   "missing_context": [
+    "Özgün kaynak metni (resmî açıklama ya da kurum duyurusu)",
+    "Farkın bir sonuca ya da karara etki ettiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde sonraki bir yargının önceki bir değere açıkça bağlandığı ya da o değerin gerekçesiz biçimde korunduğu görülmüyor.",
+   "alternative_explanation": "Farklı sayılar haberin farklı saatlerde güncellenmesinden ya da farklı kaynaklardan kaynaklanabilir.",
+   "missing_context": [
+    "Bir karar vericinin önceki değeri referans aldığını gösteren açık ifade",
+    "Revizyonu gerektiren kanıtla karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD Savunma Bakanı Pete Hegseth'e azil girişimine Pentagon'dan sert tepki",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Pentagon'un tepkisi bir kurumsal tutum olarak aktarılıyor; ancak bu statünün bir iddianın değerlendirilmesinde belirleyici ağırlık aldığını gösteren bir gerekçe yok.",
+   "alternative_explanation": "Unvanların anılması haber yazımında standart kimlik bilgisidir.",
+   "missing_context": [
+    "Statünün içeriğin yerine geçtiğini gösteren açık gerekçe",
+    "Karşıt kanıtın statü nedeniyle göz ardı edildiğine dair ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin olumsuz bir gelişmeyi aktarıyor; ancak olumsuz bilgiye karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık verildiğini gösteren bir belge ya da tekrarlanan davranış yok.",
+   "alternative_explanation": "Olumsuz içerik olayın kendisinden kaynaklanıyor; haberin konusu olumsuz bir gelişme.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgiyle ağırlıklandırma kıyası",
+    "Orantısız ağırlığın bir değerlendirmeyi etkilediğine dair kanıt"
+   ]
+  }
+ ]
+}

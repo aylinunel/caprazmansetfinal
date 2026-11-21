@@ -1,0 +1,208 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP trolleri hedef göstermişti: Gözaltına alınan Ahmet Şık'ın eşi Yonca Verdioğlu Şık serbest bırakıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ahmet Şık'ın eşi askeri casusluktan gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı vurgularla başlıklandırıyor; ancak metin, bu sunum farkına bağlanmış bir tercih, yargı ya da öneri göstermiyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinden, ajans metinlerinden, olayın gelişen aşamalarından ve yer sınırından kaynaklanabilir; açıklamaların karar açısından eşdeğer olduğu metinde kurulmuyor.",
+   "missing_context": [
+    "Başlıkların karar açısından eşdeğer olduğuna dair açık tespit",
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP iktidarının sosyal medya trollerinin fon soygunu paylaşımları sonrası",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum gözaltıyı bir siyasi grubun hedef göstermesiyle ilişkilendiriyor; ancak metin bir karar vericinin grup üyeliğine göre farklı standart uyguladığını açıkça göstermiyor.",
+   "alternative_explanation": "Parti ya da kurum aidiyetinin anılması olgusal kimlik bilgisi olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir vakalara farklı standart uygulandığını gösteren kanıt",
+    "Grup üyeliğinin bir yargıya bağlandığı açık ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "“siyasal veya askeri casusluk” soruşturması kapsamında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin resmi kurumları ya da makam sahiplerini kaynak olarak anıyor; ancak bu statüye belirleyici ağırlık verilerek ilgili karşı kanıtın ya da itirazın gerekçesiz biçimde göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi kurumlara atıf, haberciliğin olağan kaynak gösterme pratiğidir ve atıf işaretleri statünün kanıt yerine konmadığını düşündürür.",
+   "missing_context": [
+    "Statünün tek gerekçe olarak kullanıldığını gösteren ifade",
+    "Göz ardı edilen ilgili karşı kanıt"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde açıkça belirtilmiş bir ön inanç ve bu inanç lehine kanıtın asimetrik değerlendirildiğini gösteren bir akıl yürütme yok.",
+   "alternative_explanation": "Haber metinleri gelişmeleri aktarıyor; bir hipotezin seçici biçimde doğrulandığı gösterilmiyor.",
+   "missing_context": [
+    "Açıkça belirtilmiş ön inanç",
+    "Karşıt kanıtın gerekçesiz reddedildiğini gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Devletten hukuku çıkardığınızda elinizde kalanın adına devlet değil çete",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı ya da rakamı öne çıkarıyor; metin bu ayrıntıyı bir yargıya ya da seçime açıkça bağlamıyor ve karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Çarpıcı ifade bir kaynağa (Ahmet Şık) atfedilmiş bir alıntıdır; kurumun kendi yargısı değil.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı belirlediğini gösteren açık ifade",
+    "Belirgin ve belirgin olmayan bilginin nasıl ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Feminist ve hak savunucusu Yonca Verdioğlu Şık",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum kişiyi olumlu bir kimlikle tanıtıyor; ancak bu izlenimin suçlamaya ilişkin ayrı bir yargıya aktarıldığı açıkça gösterilmiyor.",
+   "alternative_explanation": "Olumlu ya da saygılı ifadeler protokol dili veya olgusal betimleme olabilir; ikinci bir alana yargı aktarımı yapılmıyor.",
+   "missing_context": [
+    "İki ayrı alandaki yargıyı bağlayan açık ifade",
+    "İpucunun değişmesiyle yargının değiştiğini gösteren karşılaştırma"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "loaded-language",
+  "emphasis-framing",
+  "word-choice",
+  "metaphorical-framing"
+ ],
+ "selection_uncertainty": [
+  "'Diplomasi trafiği' kalıp deyim olabilir."
+ ],
+ "selection_note": "'Başkan' / 'Cumhurbaşkanı' unvan farkı ve 'kritik görüşmeler' nitelemesi."
+}

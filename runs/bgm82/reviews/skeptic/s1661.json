@@ -1,0 +1,263 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Avrupa alev alev yanıyor!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mynet olayları 'Avrupa alev alev yanıyor' metaforuyla veriyor.",
+   "alternative_explanation": "'Alev alev yanmak' Türkçede yaygın bir kalıp deyimdir; bir düşman, çare ya da savunma rolü atadığı metinden açıkça görülmüyor.",
+   "missing_context": [
+    "Metaforun haber gövdesinde bir rol veya eylem önerisine bağlanıp bağlanmadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Protestolar kontrolden çıktı! Fransa'da sokağa çıkma yasağı ilan edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fransa'da bazı kentlerde sokağa çıkma yasağı ilan edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fransa'da protestolar durdurulamıyor!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Star ve Türkiye Gazetesi kendi seslerinde 'kontrolden çıktı', 'durdurulamıyor' gibi değerlendirici ifadeler kullanıyor; NTV aynı sokağa çıkma yasağını bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Şiddet ve yağma olayları bildirildiği için bu ifadeler kurumların olay ölçeğine ilişkin olgusal bir okuması da olabilir.",
+   "missing_context": [
+    "Olayların ölçeğine dair bağımsız veriler (gözaltı, hasar sayıları)"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Avrupa alev alev yanıyor! Fransa'da sokağa çıkma yasağı, ordu sokağa indi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Gösteriler Arnavutluk, Belçika, İspanya, İtalya, Yunanistan ve Portekiz'e de sıçradı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "uygulanan bölgesel sokağa çıkma yasaklarının gecenin sakin geçmesine katkıda bulunduğunu açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Mynet felaket çağrışımlı bir dil kullanıyor ve protestoların yayıldığı ülkeleri sayıyor; BBC aynı süreçte gecenin sakin geçtiğini aktarıyor.",
+   "alternative_explanation": "Birden çok ülkeye yayılan protestolar ve yağma haberi ciddi bir ölçek gösterir; dilin bu ölçeğe orantısız olduğu metinden kesin olarak çıkmıyor.",
+   "missing_context": [
+    "Ordunun gerçekten sokağa inip inmediğine dair doğrulama",
+    "Olayların ülke genelindeki ölçeği"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fransa’da hükümet gösterilere karşı sokağa çıkma yasaklarına başladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Protestolar kontrolden çıktı! Fransa'da sokağa çıkma yasağı ilan edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fransa'da bazı kentlerde sokağa çıkma yasağı ilan edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı sokağa çıkma yasağı bir kurumda hükümetin göstericilere karşı tutumu, diğerinde protestoların kontrolden çıkması üzerinden veriliyor.",
+   "alternative_explanation": "Kurumlar farklı yayın saatlerinde, olayın farklı aşamalarını haberleştirmiş olabilir; vurgu farkı bilgi akışından da doğabilir.",
+   "missing_context": [
+    "Haberlerin yayın sırasındaki olay gelişimi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fransa'da başlayıp Avrupa'nın birçok ülkesinde hayat pahalılığı protestoları giderek hızlanıyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Belçika’nın ardından Fransa’da da sokağa çıkma yasağı devreye giriyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Mynet ve Sabah, Fransa'daki yasağı Avrupa genelindeki protesto dalgası ve diğer ülkelerdeki önlemler bağlamına yerleştiriyor.",
+   "alternative_explanation": "Bu bağlam olgusal olarak doğru olabilir ve bilgilendirici bir arka plan sunar; bu kart bir hata değil bağlamsal bir etki tanımlar.",
+   "missing_context": [
+    "Diğer ülkelerdeki protestoların gerçek ölçeği"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Avrupa alev alev yanıyor! Fransa'da sokağa çıkma yasağı, ordu sokağa indi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fransa'da ülke çapında lüks markaların mağazaları talan edilirken",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fransa'da, aralarında Lille'in de bulunduğu kuzey kentlerinde bugün ve yarın 20.00'dan 06.00'a kadar sokağa çıkma yasağı ilan edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Mynet başlıkta metafor ve 'ordu sokağa indi' iddiasını, lede'de talan ayrıntısını bir araya getiriyor; NTV aynı yasağı bu bileşim olmadan veriyor.",
+   "alternative_explanation": "Talan ve yayılma bilgisi olgusal olabilir; kurum yalnızca en dikkat çekici unsurları seçmiş olabilir.",
+   "missing_context": [
+    "'Ordu sokağa indi' bilgisinin kaynağı"
+   ]
+  }
+ ]
+}

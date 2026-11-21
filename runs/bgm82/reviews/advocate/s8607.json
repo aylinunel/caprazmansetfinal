@@ -1,0 +1,215 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül hakkındaki 'cinsel istismar' dosyası Ankara'ya gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Gerekçe 'yetkisizlik'; Mustafa Sarıgül hakkındaki",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı dosya gönderiminde bir başlık tek bir suçlamayı, diğeri usul gerekçesini öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgu, kurumların başlık uzunluğu ya da habere eriştikleri bilgi düzeyindeki farkla açıklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metni",
+    "Kurumların erişebildiği kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Suçlamalar vahim! Mustafa Sarıgül'ün dosyası Ankara'ya gönderildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül'ün dosyası Ankara'ya gönderildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kendi sesinde \"Suçlamalar vahim!\" değerlendirmesini ekliyor; diğerleri aynı olguyu bu değerlendirme olmadan veriyor.",
+   "alternative_explanation": "Suçlamaların ağırlığına dair bir özet olabilir.",
+   "missing_context": [
+    "Haberin tam metni"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "soruşturma yürütülmesi amacıyla hazırlanan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; ancak başlıklar bir sorumluluk ya da suç atfı kurmuyor, yalnızca dosyanın gönderildiğini söylüyor.",
+   "alternative_explanation": "Usul haberidir.",
+   "missing_context": [
+    "Başlıkların tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Suçlamalar vahim!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "iddialarını içeren soruşturma dosyasında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı içerik bir kurumda \"suçlamalar\", diğerinde \"iddialar\" diye anılıyor; çağrışım farkı sınırlı olabilir.",
+   "alternative_explanation": "İki sözcük haber dilinde eşanlamlı kullanılabilir.",
+   "missing_context": [
+    "Kurumların terim tercihi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurum sesinde yalnızca iki seçenek sunan bir ifade yok.",
+   "alternative_explanation": "Metinde bu tekniğin koşullarını karşılayan kurum sesiyle yazılmış bir ifade bulunmuyor.",
+   "missing_context": [
+    "Başlık ve spot dışındaki haber metni"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ömer Sarıgül'ün de aralarında bulunduğu 27 şüphelinin tutuklandığı soruşturma kapsamında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir kurumun spotu dosya gönderimini 27 tutuklu bulunan daha geniş soruşturma süreci içine yerleştiriyor.",
+   "alternative_explanation": "Arka plan bilgisi ajans metninden gelmiş olabilir.",
+   "missing_context": [
+    "Diğer kurumlarda aynı bilginin bulunup bulunmadığı"
+   ]
+  }
+ ]
+}

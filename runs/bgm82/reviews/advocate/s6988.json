@@ -1,0 +1,281 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emir Sarıgül, etkin pişmanlıktan faydalanarak tahliye edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emir Sarıgül “ev hapsi” şartıyla tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı tahliyede bir başlık etkin pişmanlığı, diğeri ev hapsi şartını öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgu, kurumların başlık uzunluğu ya da habere eriştikleri bilgi düzeyindeki farkla açıklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metni",
+    "Kurumların erişebildiği kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İtirafçı olan Emir Sarıgül",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül'ün oğlu Emir Sarıgül tahliye edildi!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP’li Mustafa",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erzincan Milletvekili Mustafa Sarıgül'ün oğlu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişiler kurumların kendi sesinde \"itirafçı\", \"oğlu\", \"CHP’li\" ve \"Erzincan Milletvekili\" diye anılıyor; \"itirafçı\" etiketi tanımlamanın ötesinde değerlendirme taşıyor.",
+   "alternative_explanation": "\"İtirafçı\" terimi etkin pişmanlığın gündelik karşılığı olarak kullanılmış olabilir.",
+   "missing_context": [
+    "Kurumların etiket kullanım kılavuzu"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP bağlantılı karanlık finans çarkına yönelik yürütülen dev kara para aklama soruşturmasında bomba bir gelişme yaşandı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Emir Sarıgül ev hapsiyle tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kendi sesinde \"karanlık finans çarkı\" ve \"bomba bir gelişme\" ifadelerini kullanıyor; diğerleri aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "İfadeler soruşturma dosyasındaki nitelemelerden aktarılmış olabilir.",
+   "missing_context": [
+    "İfadelerin kaynağı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İtirafçı olan Emir Sarıgül ev hapsi şartıyla serbest bırakıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emir Sarıgül, etkin pişmanlıktan faydalanarak tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı hukuki durum bir kurumda \"itirafçı\", diğerinde \"etkin pişmanlık\" diye adlandırılıyor; ilki olumsuz gündelik çağrışım taşıyor.",
+   "alternative_explanation": "Biri teknik terim, diğeri gündelik karşılığı olabilir.",
+   "missing_context": [
+    "Kurumların terim tercihi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP bağlantılı karanlık finans çarkına",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "bomba bir gelişme yaşandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül’ün oğlu Emir Sarıgül, yürütülen soruşturma kapsamında hakkında ev hapsi şeklinde adli kontrol kararı verilerek tahliye edildi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kurumun spotunda parti bağlantısı etiketi ve \"bomba gelişme\" nitelemesi aynı değerlendirme yönünde birleşiyor; başka bir kurum aynı olguyu bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Kurum soruşturmanın kapsamını özetliyor olabilir.",
+   "missing_context": [
+    "Haberin tam metni"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgül ailesine yönelik kara para soruşturması kapsamında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "CHP bağlantılı karanlık finans çarkına",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; spot bir finans ağını iddia işareti olmadan bir partiye bağlıyor, ancak bu başlık dilbilgisinde değil spotta yer alıyor.",
+   "alternative_explanation": "İfade soruşturma kapsamının tanımı olabilir.",
+   "missing_context": [
+    "Başlığın tamamı"
+   ]
+  }
+ ]
+}

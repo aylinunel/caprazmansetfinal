@@ -1,0 +1,237 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Azerbaycan yolunda!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Karabağ Zaferi'nin 6. yılını kutladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumda 'Başkan', diğerinde 'Cumhurbaşkanı' diye anılıyor; 'Başkan' unvanının tanımlamanın ötesinde bir değerlendirme taşıyıp taşımadığı belirsiz.",
+   "alternative_explanation": "'Başkan' kısaltılmış bir unvan kullanımı olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Erzurum'da Karabağ Zaferi'nin 6. yılı kutlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Karabağ Zaferi'nin 6. yılını kutladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Karabağ Zaferi'nin üzerinden 6 yıl geçti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı yıl dönümü kimi başlıkta yerel kutlama, kimisinde Cumhurbaşkanı'nın mesajı, kimisinde tarihsel olay öne alınarak veriliyor.",
+   "alternative_explanation": "Kurumlar farklı haber kaynaklarını kullanmış olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Karabağ Zaferi'nin 6. yıl dönümü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar olayı büyük ölçüde aynı sözcüklerle ('Karabağ Zaferi') adlandırıyor; aynı eylem için çağrışımı farklı sözcük seçimi gözlenmiyor.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Karabağ Zaferi'nin üzerinden 6 yıl geçti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "yaklaşık 30 yıl boyunca Ermenistan'ın işgali altında bulunan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum yıl dönümünü 30 yıllık işgal ve ardından gelen zafer sürecine yerleştiriyor.",
+   "alternative_explanation": "Tarihsel arka plan yıl dönümü haberinin doğal parçasıdır.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Şuşa'da önemli buluşma",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ermenistan'ın işgali altında bulunan Karabağ",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Karabağ Zaferi'nin 6. yılı Şuşa'da kutlandı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumların kendi sesinde 'önemli' ve 'işgal' gibi değerlendirme içerebilecek sözcükler var; ancak bunların kartın örneklediği türden yüklü sözcükler olup olmadığı belirsiz.",
+   "alternative_explanation": "'İşgal' uluslararası belgelerde de kullanılan bir terimdir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberler bir yıl dönümü kutlamasını anlatıyor; bağlam tekrarlayan ya da yapısal bir sorun belgelemiyor.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  }
+ ]
+}

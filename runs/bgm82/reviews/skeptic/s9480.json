@@ -1,0 +1,145 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 03:05] Olumsuz hava BUDO’nun 10 seferini iptal ettirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 08:04] BUDO 10 seferini iptal etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akit havayı özne yapıp 'iptal ettirdi', Star BUDO'yu özne yapıp 'iptal etti' diyor; fark dilbilgisel çatıda ve çağrışım farkı taşımıyor.",
+   "alternative_explanation": "Özne seçimi başlık kısaltmasıdır.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 01:22] Marmara'da fırtına alarmı: BUDO 8 seferini iptal etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 01:22] BUDO'nun 8 seferi olumsuz hava koşulları nedeniyle iptal edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "TGRT bölgesel fırtınayı başlığa taşıyor, AA iptali ve nedenini aktarıyor; ancak ikisi de aynı neden-sonuç boyutunu verdiğinden farklı bir boyut öne çıkarıldığı belirsiz.",
+   "alternative_explanation": "Fark yalnızca ayrıntı düzeyinde olabilir.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam ya da diğer kurumların haberleri bu olayın tekrarlayan ya da yapısal bir sorunun parçası olduğunu göstermiyor; bu nedenle ilk koşul karşılanmıyor.",
+   "alternative_explanation": "Sefer iptalleri hava koşullarına bağlı tekil bir duyurudur; kurumlar nedeni olarak havayı açıkça belirtiyor.",
+   "missing_context": [
+    "Benzer önceki olaylara ya da yapısal verilere ilişkin bağlam"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: BUDO'nun 10 seferi olumsuz hava nedeniyle iptal edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İptallerin nedeni metinde olumsuz hava olarak belirtiliyor; sorumluluğu belirsiz bir soruşturma söz konusu değil.",
+   "alternative_explanation": "İptal duyurusu operatörün resmî açıklamasıdır.",
+   "missing_context": [
+    "Sorumluluğu belirsiz bir süreç"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,219 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Dirk Kuyt ile yollar ayrıldı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'den Dirk Kuyt kararı: Resmi açıklama geldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı ayrılık olgusu bir kurumda 'yollar ayrıldı' diye, diğerinde 'karar' ve 'resmi açıklama' vurgusuyla sunuluyor; olgusal eşdeğerlik karşılaştırmayla görülüyor ancak bu sunum farkına bağlanan bir yargı yok.",
+   "alternative_explanation": "Farklı başlıklar kurumların editoryal üslup, uzunluk ve tık hedefi tercihlerinden kaynaklanabilir; bir yargı ya da tercihin sunuma bağlandığı gösterilmiyor.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin bu sunum farkına göre tercih değiştirdiğini gösteren veri",
+    "Kurumların başlık seçim gerekçeleri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SON DAKİKA: Fenerbahçe Dirk Kuyt ile yolların ayrıldığını açıkladı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'SON DAKİKA' etiketi haberi öne çıkarıyor, fakat bu öne çıkarmanın bir yargıya bağlandığı ya da sıklık kanıtı yerine kullanıldığı gösterilmiyor.",
+   "alternative_explanation": "Metin yalnızca haber başlıkları ve kısa girişlerden oluşuyor; bir karar vericinin akıl yürütmesine ya da gerekçesine dair açık beyan yok.",
+   "missing_context": [
+    "Kararı veren kişinin gerekçesine dair açık beyan",
+    "Karşılaştırmalı veya zaman içinde izlenen davranış verisi"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olayı vermeyen etkin kurumlar: akit, aydinlik, cnnturk",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı kurumların olayı vermemesi bağlamda listeleniyor; kartın belirttiği gibi tek başına yer vermeme eşitsiz dikkatin bir sonuca etki ettiğini göstermez.",
+   "alternative_explanation": "Metin yalnızca haber başlıkları ve kısa girişlerden oluşuyor; bir karar vericinin akıl yürütmesine ya da gerekçesine dair açık beyan yok.",
+   "missing_context": [
+    "Kararı veren kişinin gerekçesine dair açık beyan",
+    "Karşılaştırmalı veya zaman içinde izlenen davranış verisi"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kulüpten Duygusal Veda Mesajı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Duygusal veda' ifadesi bir duyguyu anıyor ama bu duygunun bir risk ya da fayda tahminine bağlandığı yok.",
+   "alternative_explanation": "Metin yalnızca haber başlıkları ve kısa girişlerden oluşuyor; bir karar vericinin akıl yürütmesine ya da gerekçesine dair açık beyan yok.",
+   "missing_context": [
+    "Kararı veren kişinin gerekçesine dair açık beyan",
+    "Karşılaştırmalı veya zaman içinde izlenen davranış verisi"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Teşekkürler Dirk Kuyt!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kulübün teşekkür mesajı aktarılıyor; bir alandaki olumlu izlenimin başka bir alandaki yargıya taşındığını gösteren bağ yok.",
+   "alternative_explanation": "Metin yalnızca haber başlıkları ve kısa girişlerden oluşuyor; bir karar vericinin akıl yürütmesine ya da gerekçesine dair açık beyan yok.",
+   "missing_context": [
+    "Kararı veren kişinin gerekçesine dair açık beyan",
+    "Karşılaştırmalı veya zaman içinde izlenen davranış verisi"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde ödül öncesi içsel motivasyon, beklenen dış ödül ya da ödül sonrası düşüş verisi yok.",
+   "alternative_explanation": "Metin yalnızca haber başlıkları ve kısa girişlerden oluşuyor; bir karar vericinin akıl yürütmesine ya da gerekçesine dair açık beyan yok.",
+   "missing_context": [
+    "Kararı veren kişinin gerekçesine dair açık beyan",
+    "Karşılaştırmalı veya zaman içinde izlenen davranış verisi"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,217 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne şafak operasyonu: 4 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne soruşturma: Başkan Yardımcısı dahil 4 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı gözaltı olayı bazı başlıklarda 'şafak operasyonu', bbcturkce'de 'soruşturma' sözcüğüyle veriliyor.",
+   "alternative_explanation": "'Şafak' operasyonun saatini bildiren olgusal bir ayrıntı olabilir (star ledinde 'sabah saatlerinde' geçiyor); fark çağrışımdan çok üslup ve uzunluk farkı olabilir.",
+   "missing_context": [
+    "'Şafak operasyonu' ifadesinin olgusal saat bilgisinin ötesinde bir çağrışım taşıdığına dair karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne şafak operasyonu! Belediye başkan yardımcısı dahil 4 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne operasyon: Belediye Başkan Yardımcısı dahil 4 kişi gözaltında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıklarda ünlem ve 'şafak' ifadesi var; ancak bunlar skandal, rezalet gibi açıkça değerlendirici sözcükler değil.",
+   "alternative_explanation": "Ünlem ve zaman ifadesi son dakika haber kalıbıdır; olayı olumlu ya da olumsuz yönde değerlendiren bir sözcük bulunmuyor.",
+   "missing_context": [
+    "Değerlendirici sözcük içeren bir başlık"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne operasyon: 4 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne operasyon! Başkan Yardımcısı Rasim Özdemir dahil 4 kişi gözaltında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar yalnızca sayıyı, bazıları başkan yardımcısının adını öne alıyor.",
+   "alternative_explanation": "Fark başlık uzunluğu ve ilk ajans metnine erişimle açıklanabilir; her iki başlık da aynı boyutu (gözaltı) öne çıkarıyor, maliyet/fayda gibi farklı boyutlar yok.",
+   "missing_context": [
+    "Başlıkların aynı olgunun gerçekten farklı boyutlarını seçtiğini gösteren daha belirgin bir ayrım"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'ne soruşturma: Beş başkan yardımcısı dahil 58 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne yeni operasyon! Başkan yardımcısı dahil 4 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kümede başka bir belediye operasyonu ve 'yeni operasyon' ifadesi var; ancak haberler bir kişiyi yapısal bir sorunun tümü olarak sunmuyor.",
+   "alternative_explanation": "Somut bir operasyonun haberleştirilmesi olay habercliğinin olağan biçimidir; mynet 'yeni operasyon' diyerek önceki süreçlere işaret ediyor.",
+   "missing_context": [
+    "Belediyelere yönelik operasyonların sayısı ve süreci hakkında bağlam"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberlerde payı ve paydası belirlenebilen bir oran veya yüzde sunulmuyor; yalnızca gözaltı sayısı veriliyor.",
+   "alternative_explanation": "Mutlak sayı aktarımı seçici istatistik değildir.",
+   "missing_context": [
+    "Oran ya da pay içeren bir ifade"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir başlık veya led konuyu iki seçeneğe indirgeyen bir ifade kullanmıyor.",
+   "alternative_explanation": "Haberler bir gözaltı olayını aktarıyor; seçenek sunan bir tartışma yok.",
+   "missing_context": [
+    "İkili seçenek kuran bir ifade"
+   ]
+  }
+ ]
+}

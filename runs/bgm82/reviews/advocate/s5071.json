@@ -1,0 +1,224 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'dan Güney Kore'ye kritik ziyaret",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan Güney Kore'ye gidecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi \"Başkan Erdoğan\" ve yalnızca \"Erdoğan\" diye anılıyor; farkın değerlendirme taşıyıp taşımadığı metinden kesinleşmiyor.",
+   "alternative_explanation": "Unvan farkı yerleşik yazım tercihi olabilir.",
+   "missing_context": [
+    "Kurumların unvan kılavuzu"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'dan Güney Kore'ye kritik ziyaret",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Güney Kore'yi ziyaret edecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kendi sesinde ziyareti \"kritik\" diye niteliyor; başka bir kurum aynı olguyu bu niteleme olmadan veriyor.",
+   "alternative_explanation": "\"Kritik\" sözcüğü gündemdeki anlaşmaların önemini anlatan yaygın bir kalıp olabilir.",
+   "missing_context": [
+    "Haberin tam metni"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan Güney Kore'ye gidiyor: Nükleer santral inşası, savunma sanayii gündemde",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan 8 yıl sonra Güney Kore'ye gidiyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı ziyarette bir başlık gündem konularını, diğeri aradan geçen süreyi öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgu, kurumların başlık uzunluğu ya da habere eriştikleri bilgi düzeyindeki farkla açıklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metni",
+    "Kurumların erişebildiği kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'dan Güney Kore'ye kritik ziyaret",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'dan Güney Kore'ye önemli ziyaret",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı ziyaret \"kritik\" ve \"önemli\" diye niteleniyor; çağrışım farkı sınırlı.",
+   "alternative_explanation": "Sözcükler eşanlamlı kullanılmış olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "ad-hominem",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kişinin karakterine yönelen kurum sesinde nitelendirme yok.",
+   "alternative_explanation": "Metinde bu tekniğin koşullarını karşılayan kurum sesiyle yazılmış bir ifade bulunmuyor.",
+   "missing_context": [
+    "Başlık ve spot dışındaki haber metni"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam olayın tekrarlayan ya da yapısal bir sorun olduğunu göstermiyor.",
+   "alternative_explanation": "Metinde bu tekniğin koşullarını karşılayan kurum sesiyle yazılmış bir ifade bulunmuyor.",
+   "missing_context": [
+    "Başlık ve spot dışındaki haber metni"
+   ]
+  }
+ ]
+}

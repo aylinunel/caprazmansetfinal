@@ -1,0 +1,255 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında iki tutuklama daha! BDDK Başkan Yardımcısı ve banka genel müdürü cezaevinde",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 04:00] BDDK Başkan Yardımcısı tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: BDDK Başkan Yardımcısı Erişen ve Katılım Bankası Genel Müdürü Yönaç tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklama Star'da soruşturmanın genişlemesi ve cezaevi sonucu, Yeni Şafak'ta yalnızca bir kamu görevlisinin unvanı, Evrensel'de soruşturmanın konusu üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Başlık uzunluğu ve kurum üslubu farkları belirleyici olabilir.",
+   "missing_context": [
+    "Savcılık açıklaması"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dr Muhammet Erişen kimdir, kaç yaşında, nereli?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında BDDK Başkan Yardımcısı Muhammet Erişen gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi 'Dr' ve 'BDDK Başkan Yardımcısı' olarak anılıyor; her ikisi de tanımlayıcı unvanlardır, değerlendirme içermiyor.",
+   "alternative_explanation": "Unvanlar kimlik tanıtımı içindir.",
+   "missing_context": [
+    "Yok"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: BDDK Başkan Yardımcısı Erişen ve Katılım Bankası Genel Müdürü Yönaç tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 10:12] Fon soruşturması: BDDK Başkan Yardımcısı Erişen tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma Evrensel'in kendi sesinde 'fon vurgunu soruşturması', BirGün'de 'fon soruşturması' olarak adlandırılıyor; 'vurgun' yağma ve haksız kazanç çağrışımı taşıyor.",
+   "alternative_explanation": "Evrensel soruşturmayı önceki haberlerinde kullandığı adla anıyor olabilir.",
+   "missing_context": [
+    "Soruşturmanın resmi adı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında dikkat çeken gelişme! BDDK Başkan Yardımcısı Muhammet Erişen gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturması kapsamında Bankacılık Düzenleme ve Denetleme Kurumu Başkan Yardımcısı Muhammet Erişen ile Adil Katılım Bankası Genel Müdürü Murat Yönaç tutuklandı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Evrensel 'vurgun' sözcüğünü kullanırken Kısa Dalga aynı olguyu değerlendirici sözcük olmadan veriyor.",
+   "alternative_explanation": "'Vurgun' sözcüğü kamuoyunda yerleşmiş bir adlandırma olabilir.",
+   "missing_context": [
+    "Yok"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "7 Kasım'da gözaltına alınan isimlerden BDDK Başkan Yardımcısı Muhammet Erişen ile Adil Katılım Bankası Genel Müdürü Murat Yönaç",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul Cumhuriyet Başsavcılığınca, sermaye piyasalarındaki işlemlere ilişkin yürütülen fon soruşturması sürüyor.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim ve 10haber tutuklamayı önceki gözaltılar ve süregelen bir soruşturma sürecinin parçası olarak veriyor.",
+   "alternative_explanation": "Süreç bilgisi savcılık açıklamasından aktarılmış olabilir.",
+   "missing_context": [
+    "Soruşturmanın toplam tutuklu sayısı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında BDDK Başkan Yardımcısı ve Adil Katılım Bankası Genel Müdürü tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olayı betimliyor; seçenek kurgusu yok.",
+   "missing_context": [
+    "İki seçenekli bir ifade içeren haber metni"
+   ]
+  }
+ ]
+}

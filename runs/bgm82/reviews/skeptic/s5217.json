@@ -1,0 +1,183 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Diyarbakır’da feci kaza! Kamyon ile hafif ticari araç çarpıştı: 2 ölü, 13 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Diyarbakır’da tüp yüklü kamyon ile hafif ticari araç çarpıştı: 2 ölü, 12 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sözcü kendi sesinde 'feci kaza!' diyor; ANKA aynı kazayı ve aynı kayıp sayılarını bu nitelemesiz veriyor.",
+   "alternative_explanation": "Değerlendirme yüklü sözcükler bazı kurumların genel başlık üslubunun parçası olabilir.",
+   "missing_context": [
+    "Kurumun aynı türdeki başka haberlerde aynı sözcükleri kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Diyarbakır'da tüp kamyonu ile hafif ticari araç çarpıştı! Araca 12 kişi binmişler... 2 kardeş vefat etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Diyarbakır'da kamyon ile hafif ticari aracın çarpıştığı kazada 2 kişi öldü, 12 kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Mynet 'vefat etti', AA 'öldü' diyor; fark çağrışımdan çok üslup düzeyinde olabilir.",
+   "alternative_explanation": "Sözcük farkları kaynak metnin farklı aktarılmasından ya da bilgi düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların kaynak aldığı resmi metin",
+    "Aynı kurumların benzer olaylardaki sözcük tercihi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kütahya'da kamyonet ile hafif ticari araç çarpıştı: 1 ölü, 3 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Diyarbakır’da tüp yüklü kamyon ile hafif ticari araç çarpıştı: 2 ölü, 12 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Metinde aynı gün başka kazalar da var, ancak bunlar ayrı olayların kümeye karışması; bağlam trafik kazalarının yapısal bir sorun olduğunu göstermiyor.",
+   "alternative_explanation": "Tekil bir gelişmenin haberleştirilmesi haber türünün olağan biçimidir.",
+   "missing_context": [
+    "Konunun tekrarlayan ya da yapısal olduğunu gösteren veri ya da önceki vakalar"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde iki seçeneği tek seçenek olarak sunan bir kalıp bulunmuyor.",
+   "alternative_explanation": "Soru biçimli başlıklar ikili bir seçenek dayatmıyor; bilgi talebi biçiminde kurulmuş.",
+   "missing_context": [
+    "Yalnızca iki seçenek sunan ifade ve göz ardı edilen başka seçenek"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde payı ve paydası belirlenebilen bir oran ve farklı bir karşılaştırma nüfusu bulunmuyor.",
+   "alternative_explanation": "Haberler mutlak sayılar ya da tahminler veriyor; oran seçimi söz konusu değil.",
+   "missing_context": [
+    "Oran, payda ve alternatif karşılaştırma nüfusu"
+   ]
+  }
+ ]
+}

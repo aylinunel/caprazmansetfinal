@@ -1,0 +1,220 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi aniden öldü: Rusya açıklamadı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan çarpıcı bir ayrıntı var (Rusya'nın ABD Büyükelçisi aniden öldü: Rusya açıklamadı); fakat metin bu ayrıntıyı bir sıklık, risk ya da seçim yargısına açıkça bağlamıyor.",
+   "alternative_explanation": "Ayrıntının öne çıkarılması haber değeri ve dikkat çekici başlık geleneğiyle açıklanabilir; çarpıtılmış bir yargı gösterilmiyor.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir tahmin ya da karar gerekçesi yapıldığını gösteren ifade",
+    "Belirgin ve az belirgin bilgiye verilen ağırlığı karşılaştıran veri"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi ölü bulundu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz sözcük ya da olgular var (Rusya'nın ABD Büyükelçisi ölü bulundu); ancak olumlu ve olumsuz kanıtın orantısız tartıldığı ya da bunun bir değerlendirmeyi haksız biçimde etkilediği belgelenmiyor.",
+   "alternative_explanation": "Olumsuz yönün öne çıkması olayın doğasından ya da haber değerinden kaynaklanabilir; karşılaştırılabilir olumlu kanıtın dışlandığı gösterilmiyor.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıtın varlığı ve ona verilen ağırlık",
+    "Olumsuz ağırlığın bir karar ya da değerlendirmeyi değiştirdiğini gösteren veri"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi hayatını kaybetti: Moskova'dan komplo teorilerine cevap",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rusya'nın Washington Büyükelçisi Darçiyev hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurguyla veriyor (Rusya'nın ABD Büyükelçisi hayatını kaybetti: Moskova'dan komplo teorilerine cevap); ancak metinde bu sunum farkına açıkça bağlanan bir tercih, yargı ya da karar yer almıyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati ve ajans metninin kısaltılmasıyla açıklanabilir; bir okurun ya da karar vericinin çerçeveden etkilendiğine dair veri yok.",
+   "missing_context": [
+    "Çerçevelerin karar açısından eşdeğer olduğunu açıkça kuran bir ifade",
+    "Sunum farkına bağlı bir tercih ya da yargıyı gösteren okur/karar verici verisi"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ölümün ardından ortaya atılan komplo teorilerine tepki gösteren",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duygu ya da değer yüklü bir ifade var (Ölümün ardından ortaya atılan komplo teorilerine tepki gösteren); ancak bir duygunun belirli bir risk ya da fayda tahminine bağlandığı açık bir ifade yok.",
+   "alternative_explanation": "Duygu yüklü dil haber üslubunun ya da aktarılan beyanın parçası olabilir; duygu ile bir tahmin arasında bağ kurulmamış.",
+   "missing_context": [
+    "Duygunun risk/fayda tahminini belirlediğini söyleyen açık ifade",
+    "Olgular sabitken yargının duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Darçiyev'in seçkin bir diplomat ve deneyimli bir yönetici olduğu vurgulanarak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir alandaki olumlu izlenim ya da unvan var (Darçiyev'in seçkin bir diplomat ve deneyimli bir yönetici olduğu vurgulanarak); ancak bunun ayrı bir alandaki olumlu yargıya açıkça bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Unvan ve olumlu ifadeler kimlik tanımı ya da protokol dilidir; başka bir alana aktarılan bir yargı yok.",
+   "missing_context": [
+    "İki ayrı alandaki yargının birbirine bağlandığını gösteren ifade",
+    "Alanların karar açısından ilgisiz olduğunu gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'nın Washington Büyükelçisi Aleksandr Darçiyev, 66 yaşında hayatını kaybetti.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir kişinin ölümünü aktarıyor (Rusya'nın Washington Büyükelçisi Aleksandr Darçiyev, 66 yaşında hayatını kaybetti.); içsel motivasyon, ödül ve ödül sonrası davranış değişimi ile ilgili hiçbir bilgi yok.",
+   "alternative_explanation": "Kart bu olayla ilgisiz; haberde teşvik ya da ödül yapısı bulunmuyor.",
+   "missing_context": [
+    "Ödül öncesi gönüllü katılım düzeyi",
+    "Ödülün kaldırılmasından sonraki davranış verisi"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,258 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ankara ve İstanbul'a yeni nesil ulaşım: Yeni akıllı ulaşım koridoru nerede yapılıyor?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye'nin ulaşım altyapısında devrim yaratacak Kooperatif Akıllı Ulaşım Sistemleri (K-AUS) projesinin detaylarını paylaştı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ankara’da 247 kilometrelik akıllı ulaşım koridoru planlanıyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "karar başlıkta 'yeni nesil ulaşım' ve 'yapılıyor', ledde kendi sesiyle 'devrim yaratacak' ifadelerini kullanıyor; ikisi de projeyi olumlu yönde sunuyor. aydinlik aynı olguyu 'planlanıyor' diye veriyor.",
+   "alternative_explanation": "İfadeler bakanlığın yazılı açıklamasının çerçevesini aktarıyor olabilir; teknoloji haberlerinde coşkulu dil yaygındır.",
+   "missing_context": [
+    "Bakanlık açıklamasının tam metni",
+    "Projenin takvimi ve bütçesi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ankara'da 247 kilometrelik akıllı yol projesi: Hangi güzergahları kapsayacak?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başkente 247 kilometrelik akıllı rota... Otonom sürüş için yeni adım",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'dan sonra sıra Ankara'da! 5G destekli akıllı ulaşım koridoru geliyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı açıklamada ahaber güzergahı, akşam otonom sürüşü, haber7 İstanbul'dan sonraki sırayı öne çıkarıyor.",
+   "alternative_explanation": "Bunlar aynı açıklamanın farklı ayrıntılarıdır; karşıt boyutlar değil, okur ilgisine yönelik başlık seçimleri olabilir.",
+   "missing_context": [
+    "Açıklamada hangi unsurların ön planda olduğu"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Uraloğlu, Ankara'da 247 kilometrelik AUS koridoru çalışmalarının sürdüğünü söyledi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ankara'ya 247 kilometrelik akıllı ulaşım koridoru kuruluyor — Ulaştırma ve Altyapı Bakanı Abdulkadir Uraloğlu, toplam 247 kilometrelik akıllı ulaşım sistemi koridoru oluşturulmasına yönelik proje çalışmalarına devam ettiklerini bildirdi.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ankara’da 247 kilometrelik akıllı ulaşım koridoru planlanıyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı aşama 'çalışmalar sürüyor', 'planlanıyor' ve 'kuruluyor' sözcükleriyle veriliyor; aa'nın ledi proje çalışmalarından söz ederken başlığı 'kuruluyor' diyor, bu fiil fiili inşaat çağrışımı taşıyor.",
+   "alternative_explanation": "'Kuruluyor' Türkçede süreç başlangıcını genel olarak anlatmak için de kullanılabilir; fark başlık kısalığından kaynaklanabilir.",
+   "missing_context": [
+    "Projenin fiilen inşaat aşamasında olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'nin ulaşım altyapısında devrim yaratacak",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Başkent trafiğinde dijital dönüşüm! 247 kilometrelik akıllı yol ağı kuruluyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ankara'da 247 kilometrelik akıllı ulaşım koridoru oluşturulacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "karar 'devrim yaratacak', star 'dijital dönüşüm!' gibi değerlendirici ifadeler kullanıyor; trthaber aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "'Devrim' nitelemesi bakanlık açıklamasından alınmış olabilir; bu durumda kurumun kendi tekniği sayılmaz.",
+   "missing_context": [
+    "Bakanlık açıklamasında 'devrim' ifadesinin geçip geçmediği"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkente 247 kilometrelik akıllı rota... Otonom sürüş için yeni adım",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber bir bakan açıklaması; başlıklar ana cümlede olayın yerine öngörülen bir etkiyi koymuyor, koridorun kendisini veriyor.",
+   "alternative_explanation": "'Yeni adım' ifadesi olayı niteliyor, bir sonuç öngörüsü sunmuyor.",
+   "missing_context": [
+    "Başlığın ana cümlesinde öngörülen bir etkinin yer aldığı örnek"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurum konuyu iki seçeneğe indirgemiyor.",
+   "alternative_explanation": "Proje haberi seçenek tartışması içermiyor.",
+   "missing_context": [
+    "İkili seçenek kuran bir ifade"
+   ]
+  }
+ ]
+}

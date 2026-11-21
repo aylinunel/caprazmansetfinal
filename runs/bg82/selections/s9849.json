@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "salience-bias",
+  "negativity-bias",
+  "fundamental-attribution-error",
+  "affect-heuristic",
+  "availability-heuristic"
+ ],
+ "selection_uncertainty": [
+  "Kişinin motivasyonu ve durumu doğrulanmamış.",
+  "'Protesto', 'eylem', 'psikolojik sorun' nitelemeleri farklı."
+ ],
+ "selection_note": "Olayın protesto, eylem ya da kişisel durum olarak farklı sunulması çerçeveleme ve atıf açısından aday."
+}

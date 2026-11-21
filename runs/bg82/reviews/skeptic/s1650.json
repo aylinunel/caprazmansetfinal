@@ -1,0 +1,222 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'li Çukurova Belediyesi'ne rüşvet ve yolsuzluk operasyonu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "YENİ Partili Çukurova Belediyesi'ne operasyon: Başkan dahil 44 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurguyla veriyor (CHP'li Çukurova Belediyesi'ne rüşvet ve yolsuzluk operasyonu); ancak metinde bu sunum farkına açıkça bağlanan bir tercih, yargı ya da karar yer almıyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati ve ajans metninin kısaltılmasıyla açıklanabilir; bir okurun ya da karar vericinin çerçeveden etkilendiğine dair veri yok.",
+   "missing_context": [
+    "Çerçevelerin karar açısından eşdeğer olduğunu açıkça kuran bir ifade",
+    "Sunum farkına bağlı bir tercih ya da yargıyı gösteren okur/karar verici verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "başkanın teyzesinin örgüt yöneticisi konumunda olduğu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan çarpıcı bir ayrıntı var (başkanın teyzesinin örgüt yöneticisi konumunda olduğu); fakat metin bu ayrıntıyı bir sıklık, risk ya da seçim yargısına açıkça bağlamıyor.",
+   "alternative_explanation": "Ayrıntının öne çıkarılması haber değeri ve dikkat çekici başlık geleneğiyle açıklanabilir; çarpıtılmış bir yargı gösterilmiyor.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir tahmin ya da karar gerekçesi yapıldığını gösteren ifade",
+    "Belirgin ve az belirgin bilgiye verilen ağırlığı karşılaştıran veri"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP’den istifa ederek Yeni Parti’ye geçen Belediye Başkanı Emrah Kozay",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin aktörleri parti üyeliğiyle tanımlıyor (CHP’den istifa ederek Yeni Parti’ye geçen Belediye Başkanı Emrah Kozay); ancak güvenilirlik, suç ya da fayda farkının bu üyeliğe bağlandığı ve tutarsız standart uygulandığı gösterilmiyor.",
+   "alternative_explanation": "Parti kimliğinin anılması siyasi bağlamı vermek için yapılmış olabilir; grup üyeliğine dayalı farklı muamele kanıtı yok.",
+   "missing_context": [
+    "Karşılaştırılabilir vakalarda farklı standart uygulandığını gösteren veri",
+    "Yargının grup üyeliğine dayandırıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adana güne hareketli dakikalarla başladı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duygu ya da değer yüklü bir ifade var (Adana güne hareketli dakikalarla başladı.); ancak bir duygunun belirli bir risk ya da fayda tahminine bağlandığı açık bir ifade yok.",
+   "alternative_explanation": "Duygu yüklü dil haber üslubunun ya da aktarılan beyanın parçası olabilir; duygu ile bir tahmin arasında bağ kurulmamış.",
+   "missing_context": [
+    "Duygunun risk/fayda tahminini belirlediğini söyleyen açık ifade",
+    "Olgular sabitken yargının duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesi'ne rüşvet operasyonu! Eski ve yeni başkanlar gözaltında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz sözcük ya da olgular var (Çukurova Belediyesi'ne rüşvet operasyonu! Eski ve yeni başkanlar gözaltında); ancak olumlu ve olumsuz kanıtın orantısız tartıldığı ya da bunun bir değerlendirmeyi haksız biçimde etkilediği belgelenmiyor.",
+   "alternative_explanation": "Olumsuz yönün öne çıkması olayın doğasından ya da haber değerinden kaynaklanabilir; karşılaştırılabilir olumlu kanıtın dışlandığı gösterilmiyor.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıtın varlığı ve ona verilen ağırlık",
+    "Olumsuz ağırlığın bir karar ya da değerlendirmeyi değiştirdiğini gösteren veri"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ihale ve doğrudan temin işlemlerinde usulsüzlük yapıldığı iddialarına ilişkin yürütülen soruşturma",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde soruşturma iddiaları aktarılıyor (ihale ve doğrudan temin işlemlerinde usulsüzlük yapıldığı iddialarına ilişkin yürütülen soruşturma); ancak açıkça belirtilmiş bir ön inanç ve kanıtın bu inanç lehine asimetrik ele alındığı gösterilmiyor.",
+   "alternative_explanation": "Haberler savcılık açıklamasını aktarıyor; seçici kanıt kullanımı metinde kurulmuyor.",
+   "missing_context": [
+    "Açıkça ifade edilmiş bir ön kabul",
+    "Karşı kanıtın gerekçesiz dışlandığını gösteren ifade"
+   ]
+  }
+ ]
+}

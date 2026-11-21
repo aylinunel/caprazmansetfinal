@@ -1,0 +1,206 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında eski SPK yöneticisi dahil 6 şüpheli adliyeye sevk edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "gözaltına alınan 6 kişiden 4’ü tutukla",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde önceki bir değer veya bilgi bulunsa da sonraki yargının bu referans noktasına açıkça bağlandığı ve haksız biçimde ona yakın tutulduğu gösterilmiyor.",
+   "alternative_explanation": "Farklı sayılar veya güncellemeler bilgi akışının farklı aşamalarını yansıtıyor olabilir.",
+   "missing_context": [
+    "Sonraki yargının önceki değere dayandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: Eski SPK Başkanvekili Enver Usca ve 3 kişi tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eski SPK Başkan Vekili Enver Usca tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olguyu bildiren kurumlar farklı sözcük/vurgu kullanıyor (eşdeğerlik karşılaştırmalı başlıklarda gözleniyor); ancak bu sunum farkına bağlanan bir tercih veya yargı metinde yok.",
+   "alternative_explanation": "Başlık farkları üslup, yayın saati, hedef kitle ya da farklı kaynak açıklamalarından kaynaklanabilir; bir karar vericinin çerçeveye dayanarak yargı değiştirdiği gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okur veya karar verici yargısını değiştirdiğine dair karşılaştırmalı veri",
+    "Haber gövdelerinin tam metni"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı öne çıkarıyor; ancak metin bu ayrıntıyı bir yargı veya seçime açıkça bağlamıyor ve haksız etkiyi göstermiyor.",
+   "alternative_explanation": "Çarpıcı ayrıntıların öne çıkarılması haber değeri ve okur ilgisiyle açıklanabilir; tek bir metin ağırlıklandırma hatasını kanıtlamaz.",
+   "missing_context": [
+    "Kurumların daha az çarpıcı bilgileri nasıl ağırlıklandırdığına dair karşılaştırmalı kayıt",
+    "Editoryal karar süreçleri"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Cumhuriyet Başsavcılığı tarafından yürütülen fon soruşturması",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir yetkili kaynak anılıyor; ancak bu statüye belirleyici ağırlık verilerek ilgili karşı kanıtın göz ardı edildiği açıkça gösterilmiyor.",
+   "alternative_explanation": "Resmi kaynaklara atıf habercilikte olağan bir kaynak gösterme uygulamasıdır.",
+   "missing_context": [
+    "Karşı kanıtın varlığı ve kurumların bunu nasıl ele aldığı"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir alandaki olumlu izlenimi başka bir alandaki olumlu yargıya açıkça bağlayan bir ifade yok.",
+   "alternative_explanation": "Unvan veya geçmiş görevlerin anılması tanımlayıcı bilgi olabilir; ikinci bir yargıyı belirlediği gösterilmiyor.",
+   "missing_context": [
+    "Olumlu izlenimle ikinci yargı arasındaki bağı gösteren ifade",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde teşvik öncesi içsel motivasyon, beklenen dış ödül ve ödül sonrası davranış düşüşü kanıtı yok.",
+   "alternative_explanation": "Olay bir yargı süreciyle ilgilidir; motivasyon değişimine ilişkin bilgi içermez.",
+   "missing_context": [
+    "Teşvik öncesi ve sonrası davranış verisi"
+   ]
+  }
+ ]
+}

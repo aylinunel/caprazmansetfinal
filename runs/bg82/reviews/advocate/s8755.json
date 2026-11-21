@@ -1,0 +1,213 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD'de Pete Hegseth görevden alınmaktan kurtuldu! Temsilciler Meclisi'nden azil tasarısına ret",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "211'e karşı 204 oyla ilgili komisyona havale edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 08:49] ABD Temsilciler Meclisi, Savunma Bakanı Hegseth'e yönelik azil girişimini engelledi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı oylama 'kurtuldu', 'ret', 'engelledi' ve 'komisyona havale edildi' biçimlerinde farklı referans noktalarıyla sunuluyor; bu farkın bir yargıya bağlandığı ise gösterilmiyor.",
+   "alternative_explanation": "Farklı kelime seçimleri aynı olgunun meşru biçimde farklı yönlerini öne çıkarıyor olabilir; metinde bir tercih ya da yargının çerçeveye bağlandığı görülmüyor.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren kanıt",
+    "Açıklamaların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber başlıkları bir olayı aktarıyor; metinde bu kartın gerektirdiği karar, yargı veya akıl yürütme adımı açıkça yer almıyor.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "önergeyi Adalet Komisyonu’na sevk etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Temsilciler Meclisi'nden azil tasarısına ret",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ancak konu Ocak ayından sonra yeniden gündeme gelebilir.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum önergenin komisyona sevk edildiğini aktarırken başka biri bunu 'ret' olarak sadeleştiriyor; sürecin devam edebileceği ayrıntısı yalnızca bazı metinlerde var.",
+   "alternative_explanation": "Ayrıntı farkları yayın saatindeki bilgi düzeyi, ajans kaynağı ve başlık uzunluğu sınırıyla açıklanabilir; bu bir hata kanıtı değildir.",
+   "missing_context": [
+    "Olayın birincil kaynağı (resmî açıklama veya ajans metni)",
+    "Farklılığın bir sonuca veya karara etki ettiğini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde sonraki bir tahmini veya kararı önceki bir değere açıkça bağlayan bir akıl yürütme yok.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD Başkanı Trump ise",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir metinde ABD Başkanı'nın konuya ilişkin tutumuna değiniliyor; ancak metin kesik olduğundan bu statüye belirleyici ağırlık verildiği görülmüyor.",
+   "alternative_explanation": "Başkan'ın görüşü olayın tarafı olarak haber değeri taşıdığı için aktarılmış olabilir.",
+   "missing_context": [
+    "Trump'ın açıklamasının tam metni",
+    "Oylamada statünün gerekçe olarak kullanıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde olumsuz kanıta orantısız ağırlık verildiğini gösteren bir karşılaştırma yok.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  }
+ ]
+}

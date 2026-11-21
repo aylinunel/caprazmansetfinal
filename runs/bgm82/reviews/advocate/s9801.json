@@ -1,0 +1,257 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "karayoluna tarihi iniş kalkış testi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Milli SİHA'lardan kritik başarı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "AKINCI ve Bayraktar TB2 kara yoluna iniş-kalkış yaptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar testi kendi sesiyle 'tarihi' ve 'kritik başarı' diye niteliyor; aynı olgu başka bir kurumda bu sözcükler olmadan veriliyor.",
+   "alternative_explanation": "Kurumlar testin teknik açıdan ilk olmasını vurgulamak istemiş olabilir.",
+   "missing_context": [
+    "Testin daha önce benzer bir uygulaması olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Milli SİHA'lardan kritik başarı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKINCI VE Bayraktar TB2'den acil durum senaryo testi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı uygulama bir kurumda 'başarı', diğerinde 'test' olarak adlandırılıyor; 'başarı' olumlu bir sonuç çağrıştırırken 'test' süren bir değerlendirmeyi çağrıştırıyor.",
+   "alternative_explanation": "Test başarıyla tamamlandığı için iki ifade de olguya uygun olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Milli SİHA'lardan kritik başarı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Baykar tarafından milli ve özgün imkanlarla geliştirilen",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "AKINCI ve Bayraktar TB2 kara yoluna iniş-kalkış yaptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kurumun başlığında değerlendirici 'kritik başarı' etiketi, girişinde 'milli ve özgün' vurgusu yer alıyor; ikisi de olumlu yönde. Başka bir kurum aynı olguyu bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Milli üretim bilgisi olgusal bir tanımlama olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Her koşulda göreve hazır! AKINCI ve TB2 kara yoluna indi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Akıncı ve Bayraktar TB2 kara yoluna inip kalktı: Sıra Kızılelma’da!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakan Uraloğlu, AKINCI ve Bayraktar TB2'nin kara yoluna iniş-kalkış yapmasına ilişkin paylaşım",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı test bir kurumda operasyonel hazırlık, bir başkasında sıradaki platform, bir diğerinde bakanın değerlendirmesi boyutuyla öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar farklı kaynak ve açıklamaları temel almış olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların ifadelerinde iki seçenekli bir ikilem yok.",
+   "alternative_explanation": "Başlık ve girişler olayı standart haber diliyle aktarıyor; kartın aradığı biçimsel özellik metinde gözlenmiyor.",
+   "missing_context": [
+    "Haberlerin tam metni"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKINCI ile Bayraktar TB2 kara yoluna inip kalktı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "başlatılan saha çalışmalarının ilk uygulaması gerçekleştirildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sıra Kızılelma’da!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar testi başlatılan bir saha çalışmaları dizisinin ilk adımı ve sonraki platformlara uzanan bir program olarak sunuyor.",
+   "alternative_explanation": "Bu bilgi Baykar açıklamasından aktarılmış olabilir.",
+   "missing_context": [
+    "Programın resmi açıklaması"
+   ]
+  }
+ ]
+}

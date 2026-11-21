@@ -1,0 +1,111 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde belirginlik yanlılığının için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Sonuç duyurusu haberlerinde çarpıcı bir ayrıntıya dayanan yargı bulunmuyor.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakan Bak duyurdu: KYK burs ve öğrenim kredisi başvuru sonuçları açıklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Gençlik ve Spor Bakanlığı burs ve öğrenim kredisi başvuru sonuçları açıklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı duyuru bir başlıkta bakanın kişisel duyurusu, bir başlıkta kurumsal işlem olarak sunuluyor; ancak bir yargı farkı gözlenmiyor.",
+   "alternative_explanation": "Duyurunun bakanın sosyal medya hesabından yapılmış olması bu vurguyu açıklayabilir.",
+   "missing_context": [
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri",
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Haberlerin tam metinleri ve aynı olgu setine dayandıklarının teyidi"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gençlik ve Spor Bakanı Osman Aşkın Bak, 2026-2027 eğitim öğretim yılı burs ve öğrenim kredisi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duyurunun kaynağı olarak bakan açıkça tanımlanıyor; ancak statünün bir iddiayı haksız biçimde ağır bastırdığı yok.",
+   "alternative_explanation": "Bakanlık duyurusunu kaynak göstermek olağan bir pratiktir.",
+   "missing_context": [
+    "Bakan beyanına karşıt bir iddia ya da kanıt"
+   ]
+  }
+ ]
+}

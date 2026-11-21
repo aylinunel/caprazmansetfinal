@@ -1,0 +1,146 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 12:47] Galatasaray'da Rafael Leao şoku!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 12:49] Galatasaray'dan Leao'nun sağlık durumu hakkında açıklama",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kulüp açıklaması bir kurumda 'şok' olarak, diğerinde yalın 'açıklama' olarak veriliyor; olgu aynı, sunum farklı, ancak bir tercih bu farka bağlanmıyor.",
+   "alternative_explanation": "Farklı başlıklar, aynı olgunun farklı ayrıntılarını farklı saatlerde ve farklı okur ihtiyaçlarına göre vermekten kaynaklanabilir; bir tercih veya yargının çerçeveye bağlandığı gösterilmiyor.",
+   "missing_context": [
+    "Sunum farkının bir tercih veya yargıyı değiştirdiğini gösteren açık ifade",
+    "Okur tepkisine veya karar davranışına dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 23:59] Galatasaray'da Rafael Leao şoku! MR sonucu açıklandı, 4 hafta sahalardan uzak kalabilir",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kulüp, Portekizli yıldızın sahalara dönüş tarihi hakkında henüz net bir süre vermedi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum tahmini dönüş süresini öne çıkarırken diğeri kulübün süre vermediğini belirtiyor; belirgin ayrıntı ve karşıt bilgi karşılaştırmalı olarak gözleniyor, ancak bir yargıya bağlanmıyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı, olayın haber değeri taşıyan gerçek bir unsuru olabilir; bunun bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Canlı ayrıntının bir yargı veya seçime açıkça bağlandığını gösteren ifade",
+    "Daha az belirgin bilginin göz ardı edildiğine dair doğrudan anlatım"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Rafael Leao şoku!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda olumsuz sözcükler bulunsa da metin, olumsuz kanıta olumlu ve karşılaştırılabilir kanıttan orantısız ağırlık verildiğini belgelemiyor.",
+   "alternative_explanation": "Olumsuz ifade, olayın kendisinin olumsuz niteliğini (kaza, sakatlık, tehdit) yansıtıyor olabilir; bu orantılı bir haber dilidir.",
+   "missing_context": [
+    "Aynı kurumun benzer olumlu ve olumsuz olayları nasıl ağırlıklandırdığına dair karşılaştırmalı kayıt",
+    "Olumsuz vurgunun bir değerlendirmeyi veya kararı nasıl etkilediğine dair açık ifade"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin, belirtilen bir duyguyu belirli bir karar veya risk/fayda tahminine açıkça bağlamıyor; duygusal sözcük kullanımı tek başına yeterli değil.",
+   "alternative_explanation": "Duygusal ifadeler olayın dramatik yönünü aktarmak için kullanılmış olabilir; bir tahmini çarpıttığına dair kanıt yok.",
+   "missing_context": [
+    "Duygunun bir risk veya fayda tahminine dönüştüğünü gösteren açık gerekçe",
+    "Aynı olgular sabitken duyguya göre değişen tahminleri gösteren karşılaştırmalı kayıt"
+   ]
+  }
+ ]
+}

@@ -74,11 +74,12 @@ class SnapshotTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 write(changed, CORE_STUB, "behavioural", Path(d))
 
-    def test_real_pack_produces_439_finding_rows(self):
+    def test_real_pack_produces_387_finding_rows(self):
+        # the 8.2 rerun on the 8.1 events (runs/bg82); the 8.0-event pack had 439 / 257
         core = load_core(CORE)
         rs = rows(core["BG"], core, "behavioural")
-        self.assertEqual(sum(r["tier"] is not None for r in rs), 439)
-        self.assertEqual(sum(r["tier"] == "ai_confident" for r in rs), 257)
+        self.assertEqual(sum(r["tier"] is not None for r in rs), 387)
+        self.assertEqual(sum(r["tier"] == "ai_confident" for r in rs), 140)
         self.assertEqual(len({r["event"] for r in rs}), 150)
 
 

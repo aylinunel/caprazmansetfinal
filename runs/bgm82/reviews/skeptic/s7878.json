@@ -1,0 +1,234 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan ABD Başkanı Trump ile görüştü: Barış için çabalarımız sürecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Masada İran ve Ukrayna vardı! Cumhurbaşkanı Erdoğan ile Trump telefonda görüştü!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, ABD Başkanı Trump ile telefonda görüştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı görüşmeyi bir kurum Erdoğan'ın barış vurgusu, bir başkası gündemdeki çatışmalar üzerinden, diğerleri sade biçimde veriyor.",
+   "alternative_explanation": "Vurgular İletişim Başkanlığı açıklamasının farklı cümlelerinden alınmış olabilir.",
+   "missing_context": [
+    "İletişim Başkanlığı açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SON DAKİKA | Başkan Erdoğan, ABD Başkanı Trump ile görüştü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKP Genel Başkanı ve Cumhurbaşkanı Recep Tayyip Erdoğan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan, telefonda Trump ile görüştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi 'Başkan Erdoğan', 'AKP Genel Başkanı ve Cumhurbaşkanı' ve yalın 'Erdoğan' olarak anılıyor; ancak tüm unvanlar olgusal olarak doğru ve tanımlamanın ötesinde bir değerlendirme taşıyıp taşımadıkları metinden kanıtlanamıyor.",
+   "alternative_explanation": "Unvan farkları kurumların sabit yazım tercihleridir.",
+   "missing_context": [
+    "Kurumların yazım kılavuzlarındaki unvan kuralları"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Görüşmede, ABD ile İran arasındaki savaşın sona ermesi için",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Görüşmede iki ülke ilişkileri, İran-ABD gerilimi, Ukrayna-Rusya savaşı konuları gündeme geldi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı durumu bir kurum kendi spotunda 'ABD ile İran arasındaki savaş', bir başkası 'İran-ABD gerilimi' diye adlandırıyor; 'savaş' silahlı çatışma, 'gerilim' daha düşük yoğunluklu bir anlaşmazlık çağrıştırıyor.",
+   "alternative_explanation": "Kurumlar resmi açıklamanın farklı ifadelerini aktarmış olabilir; durumun hukuki niteliği tartışmalı olabilir.",
+   "missing_context": [
+    "Resmi açıklamada kullanılan ifade"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan ABD Başkanı Trump ile görüştü: Barış için çabalarımız sürecek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıktaki değerlendirici öğe Erdoğan'a ait bir alıntıdır; kural gereği konuşmacıya atfedilen ifade kurumun tekniği sayılmaz ve aynı yönde ikinci bir kurum tercihi seçilemiyor.",
+   "alternative_explanation": "Başlık resmi açıklamadaki bir cümleyi aktarıyor.",
+   "missing_context": [
+    "Alıntının resmi açıklamadaki bağlamı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: Cumhurbaşkanı Erdoğan, ABD Başkanı Trump ile telefonda görüştü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve spotlar olayı tek bir gelişme olarak aktarıyor; zaman içindeki rakamlara, önceki vakalara ya da bir politika sürecine yerleştirmiyor.",
+   "alternative_explanation": "Son dakika haberlerinde yer kısıtı nedeniyle bağlam verilmemesi olağandır; geniş bağlam haberin gövdesinde olabilir.",
+   "missing_context": [
+    "Haber gövdesindeki bağlam bilgisi"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca eş zamanlılık ya da zaman sırasına dayanan açık bir nedensellik iddiası bulunmuyor.",
+   "alternative_explanation": "Kullanılan nedensel bağlaçlar olayın doğrudan fiziksel ya da usul sonucunu anlatıyor veya resmi bir kaynağa atfediliyor.",
+   "missing_context": [
+    "Nedensel bağın dayandığı kanıtın türü"
+   ]
+  }
+ ]
+}

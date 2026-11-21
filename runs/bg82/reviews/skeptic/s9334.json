@@ -1,0 +1,156 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "MİT ve Emniyet'ten FETÖ operasyonu: 6 gözaltı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "FETÖ'ye yönelik operasyonlarda gözaltılar haberinde bir otorite veya resmi makam anılıyor; ancak metin bu statüye bir iddianın değerlendirilmesinde belirleyici ağırlık verildiğini ya da karşıt kanıtın statü nedeniyle göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Resmi makamın anılması haberin kaynağını belirtme gereğidir; otoriteye dayalı bir akıl yürütme hatası değil.",
+   "missing_context": [
+    "Otoritenin yalnızca statüsü nedeniyle takip edildiğini gösteren ifade",
+    "Göz ardı edilen karşıt kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "faaliyetlerini yürüttükleri tespit edilen 6 şüpheli",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "örgütsel faaliyetlerde bulundukları iddia edilen 6 şüpheli",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "FETÖ'ye yönelik operasyonlarda gözaltılar farklı kurumlarca farklı sözcük ve vurgularla başlıklandırılmış; ancak metin bu sunum farkını hiçbir tercihe, yargıya veya karara bağlamıyor ve başlıkların karar-ilgili olgularda eşdeğer olduğunu açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, eldeki bilginin güncellenmesi, haber ajansı metninin kısaltılması ve kurumların editoryal üslubundan kaynaklanabilir; bir okuyucu ya da karar verici üzerinde çerçeve etkisi gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okuyucu yargısını değiştirdiğini gösteren karşılaştırmalı ölçüm",
+    "Başlıkların aynı olgulara dayandığını açıkça gösteren bilgi",
+    "Herhangi bir tercih veya yargının bu sunuma dayandırıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fetullahçı Terör Örgütü'nün (FETÖ) \"güncel kadın eğitim yapılanması\"na yönelik operasyonda 29 zanlı gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "FETÖ'ye yönelik operasyonlarda gözaltılar haberinde bir gruba ya da kuruma ait aidiyet ifadesi geçiyor; ancak metin güvenilirlik, suçlama veya fayda farkını bu aidiyete bağlamıyor ve tutarsız standart uygulandığını göstermiyor.",
+   "alternative_explanation": "Aidiyet ifadesi kimlik belirleme amaçlı olgusal bir bilgi veya alıntılanan açıklamanın aktarımı olabilir.",
+   "missing_context": [
+    "Grup üyeliğine göre farklı muamele gördüğü gösterilen karşılaştırılabilir vakalar",
+    "Kararın grup kimliğine dayandırıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "örgütsel faaliyetlerde bulundukları iddia edilen 6 şüpheli",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "FETÖ'ye yönelik operasyonlarda gözaltılar haberinde açıkça belirtilmiş bir ön inanç ile kanıtın asimetrik ele alındığını gösteren bir akıl yürütme yok; metin olayı ve tarafların açıklamalarını aktarıyor.",
+   "alternative_explanation": "Kurumların farklı ayrıntıları seçmesi kaynak erişimi ve editoryal tercihten kaynaklanabilir; ön inancı destekleyen kanıtın seçici ele alındığı gösterilmiyor.",
+   "missing_context": [
+    "Açıkça belirtilmiş bir ön inanç veya hipotez",
+    "Karşıt kanıtın gerekçesiz reddedildiğini gösteren ifade"
+   ]
+  }
+ ]
+}

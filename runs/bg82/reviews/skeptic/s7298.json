@@ -1,0 +1,200 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "identifiable-victim-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İşçilerden Hasan Uzunoğlu'nun cansız bedenine ulaşıldı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir yardım ya da kaynak tahsisi kararı ve karar verici yok; mağdurların adlarının verilmesi tek başına koşulu karşılamıyor.",
+   "alternative_explanation": "İsimlerin verilmesi haber yazımında olağan kimlik bilgisidir.",
+   "missing_context": [
+    "Belirli bir tahsis kararı ve karar verici",
+    "Tanımlanabilir kişi ile istatistiksel grup arasında karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin olumsuz bir gelişmeyi aktarıyor; ancak olumsuz bilgiye karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık verildiğini gösteren bir belge ya da tekrarlanan davranış yok.",
+   "alternative_explanation": "Olumsuz içerik olayın kendisinden kaynaklanıyor; haberin konusu olumsuz bir gelişme.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgiyle ağırlıklandırma kıyası",
+    "Orantısız ağırlığın bir değerlendirmeyi etkilediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yenisafak · 14:30] Bahçelievler'de inşaat göçüğünün altında kalan bir işçi kurtarıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 16:25] Bahçelievler'de toprak altında kalan 2 işçiden 1'i hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkına bağlanan bir tercih, yargı ya da öneri içermiyor.",
+   "alternative_explanation": "Kurtarılan ya da ölen işçiyi öne çıkarmak yayın saati ve bilgi akışından kaynaklanabilir; bir karar vericinin tercihi aktarılmıyor.",
+   "missing_context": [
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğine dair veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar belirli bir ayrıntıyı öne çıkarıyor; ancak bu ayrıntının bir yargının ya da tercihin yerine geçtiğini gösteren açık bir bağ yok.",
+   "alternative_explanation": "Öne çıkan ayrıntı haber değeri yüksek ve doğrulanmış bir bilgi olabilir.",
+   "missing_context": [
+    "Çarpıcı ayrıntı ile daha az çarpıcı bilgi arasında ağırlıklandırma karşılaştırması",
+    "Ayrıntının sıklık kanıtı gibi kullanıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[diken · 16:16] Bahçelievler'de inşaatta göçük: Bir işçi öldü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İşçiden biri kurtarıldı, diğeri için çalışma sürüyor.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Diken başlığı bir işçinin öldüğünü söylerken aynı haberin gövdesi çalışmanın sürdüğünü aktarıyor; başlık ile gövde arasında bir fark var, ancak bir sonuca etkisi gösterilmiyor.",
+   "alternative_explanation": "Başlık sonradan güncellenmiş, gövde ise ilk bilgiye göre kalmış olabilir.",
+   "missing_context": [
+    "Özgün kaynak metni (resmî açıklama ya da kurum duyurusu)",
+    "Farkın bir sonuca ya da karara etki ettiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde ödül öncesi içsel motivasyon, beklenen bir ödül ve ödül sonrası ilgide ölçülmüş bir düşüş yok.",
+   "alternative_explanation": "Haber bir kaza ya da iptal olayını aktarıyor; motivasyonla ilgili içerik taşımıyor.",
+   "missing_context": [
+    "Ödül öncesi ve sonrası davranış karşılaştırması"
+   ]
+  }
+ ]
+}

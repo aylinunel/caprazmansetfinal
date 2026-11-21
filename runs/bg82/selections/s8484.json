@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "negativity-bias",
+  "anchoring-bias",
+  "availability-heuristic",
+  "fundamental-attribution-error",
+  "framing-effect",
+  "identifiable-victim-effect"
+ ],
+ "selection_uncertainty": [
+  "Başlık ve kısa özetler; tam metin ve okur tepkisi yok.",
+  "Can kaybı sayıları zamanla değişiyor; sorumluluk bilgisi henüz yok."
+ ],
+ "selection_note": "Değişen kayıp sayıları ve sorumluluk/neden vurgusu adayları."
+}

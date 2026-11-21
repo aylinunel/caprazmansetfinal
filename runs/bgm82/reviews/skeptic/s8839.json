@@ -1,0 +1,258 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "72 telefon görüşmesi ve planlı eylem ifşa oldu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne saldırıda yeni gelişme! 72 görüşmelik iz!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 19:54] Fenerbahçe takım otobüsüne saldırı iddianamesi kabul edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "aksam 'ifşa oldu', cnnturk 'iz' ifadelerini kullanıyor; haberturk aynı olguyu bunlar olmadan veriyor. Ancak bu sözcükler skandal/şok türü açık bir değerlendirme değil, dramatize eden bir anlatım.",
+   "alternative_explanation": "'İfşa' iddianamede ortaya konan bulguları aktarmanın gündelik bir yolu olabilir.",
+   "missing_context": [
+    "Sözcüklerin bir değerlendirme mi yoksa betimleme mi olduğuna dair tam metin"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İddianamede, 2'si tutuklu 5 sanığın",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Saldırının önceden planlandığı değerlendirmesine yer verilen",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Dava iddianame aşamasında; başlıklar adı geçen bir aktöre etken çatıyla suç atamıyor, cnnturk planlama değerlendirmesini iddianameye atfediyor.",
+   "alternative_explanation": "Başlıklar prosedürel gelişmeyi aktarıyor.",
+   "missing_context": [
+    "Adı verilen bir aktöre suç atayan başlık"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne saldırıda iddianame kabul edildi: 72 telefon görüşmesi, çelişkili ifadeler ve yeni bulgular",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne saldırıda iddianame kabul edildi: 5 sanığa dava... 11 yıl sonra yeniden",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 07:59] Fenerbahçe takım otobüsüne saldırı iddianamesi kabul edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı iddianame kabulü için t24 delil ayrıntılarını, takvim geçen süreyi, aa ise prosedürel adımı öne çıkarıyor; delil içeriği ile zaman boyutu ayrışıyor.",
+   "alternative_explanation": "Farklı vurgular kurumların iddianameden aldığı ayrıntılara bağlı olabilir.",
+   "missing_context": [
+    "İddianamenin tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne silahlı saldırıda yeni gelişme! 5 sanık hakkında iddianame kabul edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 21:01] Fenerbahçe takım otobüsüne saldırı iddianamesi kabul edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar 'saldırı' ve 'silahlı saldırı' gibi ifadeler kullanıyor; farklar ayrıntı düzeyinde, çağrışım bakımından değil.",
+   "alternative_explanation": "Ek sıfat olgusal bir ayrıntıdır.",
+   "missing_context": [
+    "Çağrışımı farklı sözcük seçimi"
+   ]
+  },
+  {
+   "card_id": "ad-hominem",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2'si tutuklu 5 sanık hakkında düzenlenen iddianame kabul edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin sanıklara dair bir hukuki işlemi aktarıyor; kurumların kendi dilinde sanıkların karakterini veya geçmişini nitelendiren bir ifade yok.",
+   "alternative_explanation": "Haber iddianamenin içeriğini aktarıyor.",
+   "missing_context": [
+    "Aktörün karakterine dair nitelendirme"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Takipsizlik kararının kaldırılmasıyla ivme kazanan soruşturma",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "11 yıl sonra yeniden",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "takvim başlığı ve lede'i iddianameyi 2015'ten bu yana süren hukuki süreç ve takipsizlik kararının kaldırılmasıyla ilişkilendirerek kurumsal bir süreç içine yerleştiriyor.",
+   "alternative_explanation": "Sürece dair bilgi okur için kısa bir arka plan sağlıyor.",
+   "missing_context": [
+    "Soruşturmanın önceki aşamalarına dair ayrıntı"
+   ]
+  }
+ ]
+}

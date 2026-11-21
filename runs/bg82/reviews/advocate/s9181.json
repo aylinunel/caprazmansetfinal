@@ -1,0 +1,236 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 10:51] BDDK Başkanı Şahap Kavcıoğlu istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 11:09] BDDK Başkanı Kavcıoğlu, görevinden affını istedi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (Kavcıoğlu'nun görevden ayrılması) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 08:10] AKP'deki fon savaşı kelle aldı: Şahap Kavcıoğlu istifa etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "\"Son günlerdeki iddialar üzerine, Kurumumuzun daha fazla yıpranmaması için",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "soL başlığı istifayla 'AKP'deki fon savaşı' arasında açık bir ilişki kuruyor; Kavcıoğlu'nun kendi açıklaması ise istifayı iddialara bağlıyor. İlişkinin seçilmiş tesadüflere dayandığını ya da yanlış olduğunu gösteren karşılaştırmalı kanıt metinde yok.",
+   "alternative_explanation": "Kurum, metinde bulunmayan kaynaklara dayanarak gerçek bir ilişkiyi aktarıyor olabilir.",
+   "missing_context": [
+    "Parti içi tartışmanın varlığını belgeleyen kaynaklar."
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası Başkanlığı döneminde faiz indirimleri, Türk lirasındaki tarihi değer kaybı, enflasyon patlaması ve kur korumalı mevduat uygulamasıyla tartışmaların odağında bulunan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kısa Dalga Kavcıoğlu'nun geçmiş görevlerini sıralıyor; ancak istifayı kalıcı bir kişilik özelliğine bağlayan açık bir ifade yok.",
+   "alternative_explanation": "Geçmiş görev sicilinin hatırlatılması olgusal arka plan bilgisi.",
+   "missing_context": [
+    "İstifayı kişilik özelliğine bağlayan bir ifade."
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ensonhaber · 21:12] İstifa eden BDDK Başkanı Şahap Kavcıoğlu, 2 yıl boyunca maaş almaya devam edecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ensonhaber istifanın dikkat çekici bir ayrıntısını (2 yıl maaş) başlığa taşıyor; ancak bu ayrıntının bir yargıya ya da tercihe gerekçe yapıldığı metinde görünmüyor.",
+   "alternative_explanation": "Maaş hakkı kamu yararı açısından haber değeri taşıyan olgusal bir bilgi.",
+   "missing_context": [
+    "Ayrıntının bir değerlendirmeyi yönlendirdiğine dair ifade."
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "\"Sayın Cumhurbaşkanımız Recep Tayyip Erdoğan'dan affımı istedim\"",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kavcıoğlu'nun açıklaması kararını Cumhurbaşkanı'na yöneltilmiş bir af talebi olarak çerçeveliyor; otorite metinde açıkça tanımlanıyor, ancak statünün ilgili gerekçelerin yerine geçtiği gösterilmiyor.",
+   "alternative_explanation": "İfade, atanmış bir yöneticinin atama makamına yönelik olağan bir usul kalıbı olabilir.",
+   "missing_context": [
+    "Ayrılığın talep üzerine mi yoksa gönüllü mü olduğu."
+   ]
+  },
+  {
+   "card_id": "hindsight-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kavcıoğlu daha bu sabah yaptığı açıklamada, \"BDDK’nın fonla uzaktan yakından ilgisi yok\" demişti.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Hakkındaki iddiaları saatler önce verdiği röportajda reddeden Kavcıoğlu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "soL ve Karar istifa sonucunu bildikten sonra Kavcıoğlu'nun aynı sabahki inkârını hatırlatıyor; sonuç ve önceki ifade metinde birlikte var, ancak sonucun yalnızca gerçekleştiği için öngörülebilir sayıldığı açıkça ileri sürülmüyor.",
+   "alternative_explanation": "Önceki ifadenin hatırlatılması olayın zaman çizelgesini veren olgusal bir karşılaştırma olabilir.",
+   "missing_context": [
+    "Kurumların istifadan önce bir öngörüde bulunup bulunmadığı."
+   ]
+  }
+ ]
+}

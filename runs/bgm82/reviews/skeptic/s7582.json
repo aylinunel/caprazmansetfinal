@@ -1,0 +1,213 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe takım otobüsüne silahlı saldırı: 5 şüpheli hakkında 11 yıl sonra iddianame hazırlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne saldırıda 5 şüpheliye ceza istemi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İddianame: Fenerbahçe'nin otobüsüne saldırı planlı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı iddianameyi bir kurum aradan geçen 11 yıl, bir başkası ceza istemi, bir diğeri saldırının planlı olduğu tespiti üzerinden başlığa taşıyor.",
+   "alternative_explanation": "Kurumlar iddianamenin farklı olgusal öğelerini seçiyor; ayrıntıların bir kısmı sonraki gün ortaya çıkmış.",
+   "missing_context": [
+    "İddianamenin tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe takım otobüsüne saldırı davasında çember daraldı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe takım otobüsüne saldırıya ilişkin 5 şüpheli hakkındaki iddianame tamamlandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı gelişmeyi bir kurum 'çember daraldı', bir başkası 'iddianame tamamlandı' diye anlatıyor; ancak 'çember daraldı' kalıplaşmış bir habercilik deyimi ve çağrışım farkının suçluluk varsayımı taşıyıp taşımadığı metinden kesinleşmiyor.",
+   "alternative_explanation": "Deyim soruşturmanın ilerlediğini anlatan yaygın bir ifadedir.",
+   "missing_context": [
+    "Kurumun benzer soruşturmalarda aynı deyimi kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: Fenerbahçe otobüsüne saldırı soruşturmasında 5 şüpheli hakkında iddianame hazırlandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne yönelik saldırı nedeniyle beş kişi hakkında 11 yıl sonra iddianame düzenlendi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar iddianameyi 11 yıllık bir soruşturma sürecinin içine yerleştiriyor.",
+   "alternative_explanation": "Saldırı tarihine atıf olayın tanımlanması için gereken temel bilgidir; tam bir süreç çözümlemesi sayılmayabilir.",
+   "missing_context": [
+    "Önceki soruşturma aşamalarına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "ad-hominem",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadeleri bir kişinin iddiasını değerlendirmek yerine onun karakterini ya da geçmişini öne çıkarmıyor.",
+   "alternative_explanation": "Kişilerin unvan ve görevleriyle anılması tanımlayıcı bilgidir; bir iddianın yerine geçen nitelendirme yok.",
+   "missing_context": [
+    "Bir iddianın yerine kişinin karakterine yönelen kurum ifadesi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olgusal gelişmeyi aktarıyor; ya-ya da yapısında bir seçenek daraltması yok.",
+   "missing_context": [
+    "İki seçenekli bir kurgu içeren başlık ya da spot"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne yönelik saldırı nedeniyle beş kişi hakkında 11 yıl sonra iddianame düzenlendi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "'Saldırı nedeniyle' bir nedensellik ifadesi; ancak bir saldırı hakkında iddianame düzenlenmesi bir usul sonucudur, yalnızca zaman sırasına dayanan bir çıkarım değil.",
+   "alternative_explanation": "Kullanılan nedensel bağlaçlar olayın doğrudan fiziksel ya da usul sonucunu anlatıyor veya resmi bir kaynağa atfediliyor.",
+   "missing_context": [
+    "Nedensel bağın dayandığı kanıtın türü"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde olumsuzluk yanlılığının için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Deprem haberi olumsuz bir olaydır; olumsuz kanıta orantısız ağırlık verildiğini gösteren karşılaştırma yok.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AFAD büyüklüğünü duyurdu: Muğla açıklarında korkutan deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurum depremi 'korkutan' diye niteleyip duygusal açıdan çarpıcı kılıyor, oysa diğer kurumlar merkez üssünün Datça'ya 253 km uzaklıkta olduğunu veriyor; ancak bunun bir risk yargısına dönüştürüldüğü açıkça yazılı değil.",
+   "alternative_explanation": "Sarsıntının kıyıda hissedilmiş olması 'korkutan' nitelemesini açıklayabilir.",
+   "missing_context": [
+    "Depremin kara üzerinde hissedilip hissedilmediği",
+    "Nitelemenin bir risk tahminine bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde erişilebilirlik sezgiselinin için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Metinde geçmiş depremlerin hatırlanabilirliğine dayanan bir tahmin ya da genelleme yok.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla açıklarında korkutan deprem",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde duygu sezgiselinin için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "'Korkutan' sözcüğü duygusal bir nitelemedir ama bir risk tahminine açıkça bağlanmıyor; kart duygusal sözcüğü tek başına yetersiz sayıyor.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muğla açıklarında 5.1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Akdeniz'de 5,1 büyüklüğünde deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Muğla’nın Datça ilçesinin 253,19 kilometre açığında 5,1 büyüklüğünde deprem meydana geldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı deprem bir başlıkta 'Muğla açıkları', bir başlıkta 'Akdeniz' olarak konumlanıyor; merkezin 253 km açıkta olduğu bilgisi ile yakınlık algısı farklılaşıyor. Bunun bir yargıyı değiştirdiği ise gösterilmiyor.",
+   "alternative_explanation": "AFAD duyurusunda en yakın yerleşim olarak Datça anıldığı için kurumlar bunu başlığa taşımış olabilir.",
+   "missing_context": [
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri",
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Haberlerin tam metinleri ve aynı olgu setine dayandıklarının teyidi"
+   ]
+  }
+ ]
+}

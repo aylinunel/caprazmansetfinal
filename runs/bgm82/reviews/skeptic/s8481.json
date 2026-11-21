@@ -1,0 +1,228 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, BM Genel Sekreteri Guterres ile zeytin fidanı dikti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Antalya'da! BM Genel Sekreteri Guterres ile kritik görüşme",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "ntv fidan dikimini, ahaber görüşmenin önemini öne çıkarıyor.",
+   "alternative_explanation": "Kümedeki başlıkların bir kısmı aynı görüşmenin değil, farklı anların veya ayrı olayların (COP konuşması, Krakow saldırısı) haberidir; aynı olgunun farklı boyutları olduğu kesin değil.",
+   "missing_context": [
+    "Fidan dikiminin görüşmeyle aynı etkinlik olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan BM Genel Sekreteri Guterres ile bir araya geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, BM Genel Sekreteri Guterres ile Antalya'da görüştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi sabah'ta 'Başkan', anka'da 'Cumhurbaşkanı' unvanıyla anılıyor.",
+   "alternative_explanation": "'Başkan' kısaltması başlık uzunluğuyla ilgili bir üslup tercihi olabilir; çağrışım farkı sağlanan metinden kanıtlanamıyor.",
+   "missing_context": [
+    "Unvan farkının çağrışımına ilişkin karşılaştırmalı kanıt"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "BM Genel Sekreteri Guterres'ten COP31'de Türkiye'ye övgü! 'Örnek alınmasını umuyorum'",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "BM Genel Sekreteri Guterres'ten COP31'de kritik uyarı: Artık eyleme geçme zamanı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "milliyet övgüyü seçip ünlemle sunuyor; tgrt aynı konuşmadan uyarıyı öne alıyor.",
+   "alternative_explanation": "'Örnek alınmasını umuyorum' Guterres'e atfedilen bir alıntıdır; atfedilen sözler kurumun tekniği sayılmaz. Ayrı iki seçimin aynı yönde birleştiği net değil.",
+   "missing_context": [
+    "Guterres'in konuşmasının tam metni"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlamda başlıklardaki sonucu sınırlayan aynı kaynaktan başka rakamlar bulunmuyor.",
+   "alternative_explanation": "Haberler gösterge veya rakam temelli bir genel sonuç ileri sürmüyor.",
+   "missing_context": [
+    "Sınırlayıcı rakam veya göstergeler"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Antalya'da! BM Genel Sekreteri Guterres ile kritik görüşme",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, BM Genel Sekreteri Guterres ile Antalya'da görüştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "ahaber görüşmeyi kendi sesiyle 'kritik' diye niteliyor; anka ve aa aynı görüşmeyi bu nitelemeyi kullanmadan veriyor.",
+   "alternative_explanation": "'Kritik' sözcüğü haber dilinde önem belirten yerleşik bir kalıptır; görüşmenin içeriği bilinmeden aşırı olduğu söylenemez.",
+   "missing_context": [
+    "Görüşmenin gündemi ve sonuçları"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Recep Tayyip Erdoğan, Birleşmiş Milletler İklim Değişikliği Konferansı (COP31) kapsamında Liderler Zirvesi'ne katılmak üzere Antalya'ya geldi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "yenisafak görüşmeyi COP31 Liderler Zirvesi'nin kurumsal bağlamına yerleştiriyor.",
+   "alternative_explanation": "Bu bağlam olayın gerçekleştiği çerçevenin kendisidir; bir kusur değil, bağlam seçimidir.",
+   "missing_context": [
+    "Görüşmenin COP dışındaki gündem maddeleri"
+   ]
+  }
+ ]
+}

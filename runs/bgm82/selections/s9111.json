@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "causal-overclaim",
+  "consequence-framing",
+  "metaphorical-framing",
+  "labeling",
+  "emphasis-framing"
+ ],
+ "selection_uncertainty": [
+  "İddialar doğrulanmamış.",
+  "Bazı ifadeler senatör veya kaynak aktarımı olabilir."
+ ],
+ "selection_note": "'Yasak aşk', 'skandallar', 'çakıldı', servet kaybını istifaya bağlama ve 'koltuğunu kaybedebilir' sonuç çerçevesi."
+}

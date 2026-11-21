@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "in-group-bias",
+  "framing-effect",
+  "salience-bias",
+  "bandwagon-effect",
+  "anchoring-bias"
+ ],
+ "selection_uncertainty": [
+  "Erken başlıklar anket tahminine, sonrakiler sonuca dayanıyor."
+ ],
+ "selection_note": "Dini kimliğin öne çıkarılması grup içi eğilim ve çerçeveleme açısından incelenebilir."
+}

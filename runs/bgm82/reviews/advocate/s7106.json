@@ -1,0 +1,314 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 17:34] 'Fon' vurgununda yeni gelişme",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Foncular için hesap vakti!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 17:39] Fon vurgunu soruşturması:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 10:48] Eski bakan Fatma Betül Sayan Kaya fon soruşturması kapsamında tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      3
+     ]
+    }
+   ],
+   "mechanism": "Cumhuriyet ve Evrensel başlıkta soruşturmayı kendi sesleriyle 'vurgun' diye adlandırıyor, Mynet ise lede'de 'Foncular için hesap vakti!' diyor; AA aynı gelişmeyi bu sözcükler olmadan 'fon soruşturması' olarak veriyor.",
+   "alternative_explanation": "'Fon vurgunu' bazı kurumlarda soruşturmanın yerleşik kısa adı olarak kullanılıyor olabilir; bu durumda sözcük değerlendirmeden çok etiket işlevi görür.",
+   "missing_context": [
+    "'Fon vurgunu' ifadesinin savcılık belgelerinde geçip geçmediği.",
+    "Kurumların bu adlandırmayı önceki haberlerde de tutarlı kullanıp kullanmadığı."
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 17:39] Fon vurgunu soruşturması: Fatma Betül Sayan Kaya, İlyas Kaya ve İbrahim Ömer Gönül ifadeye çağırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 17:35] Fatma Betül Sayan Kaya, İlyas Kaya ve İbrahim Ömer Gönül ifadeye çağrıldı — Sermaye piyasası işlemlerine ilişkin soruşturmada",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 18:51] Fon soruşturması. Fatma Betül Sayan Kaya, İlyas Kaya ve İbrahim Ömer Gönül ifadeye çağrıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı ifadeye çağrılma olgusu için Evrensel 'fon vurgunu soruşturması', Habertürk 'sermaye piyasası işlemlerine ilişkin soruşturma', NTV 'fon soruşturması' diyor; 'vurgun' suç işlendiğini ima eden olumsuz bir çağrışım taşırken diğerleri işlemsel ve nötr.",
+   "alternative_explanation": "Farklı adlandırmalar kurumların soruşturmayı önceki haberlerde hangi adla izlediğine bağlı bir alışkanlık olabilir.",
+   "missing_context": [
+    "Soruşturmanın resmi adının ne olduğu.",
+    "Kurumların daha önceki haberlerinde aynı adı kullanıp kullanmadığı."
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "şüpheli sıfatıyla ifadeye çağrıldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[t24 · 11:05] Fon vurgunu: Görevden alınan AKP'li Fatma Betül Sayan Kaya hakkında tutuklama talebi!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kaya'nın şüpheli sıfatıyla ifadeye çağrıldığı, yani sorumluluğun belirlenmediği bir aşamada T24 başlığı 'Fon vurgunu:' çerçevesini isimle yan yana koyuyor ve bir atıf işareti kullanmıyor; ancak başlığın dilbilgisi Kaya'yı doğrudan fail olarak özne yapmıyor.",
+   "alternative_explanation": "Başlık yalnızca soruşturmanın kısa adını ve tutuklama talebini aktarıyor; sorumluluk atfı değil, gelişme bildirimi olabilir.",
+   "missing_context": [
+    "Başlıktaki 'Fon vurgunu' ifadesinin soruşturma adı mı yoksa nitelendirme mi olduğu.",
+    "Haberin tam metninde atıf işaretleri bulunup bulunmadığı."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[agos · 09:50] AKP'li eski bakan Fatma Betül Sayan Kaya tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haber7 · 02:14] Fatma Betül Sayan Kaya tutuklandı! 2 isim şartlı serbest bırakıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[vatan · 09:22] SPK soruşturması: Fatma Betül Sayan Kaya tutuklandı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dwturkce · 08:31] Fon krizi: Fatma Betül Sayan Kaya tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklama olgusunu Agos parti kimliğini ('AKP'li eski bakan'), Haber7 diğer iki şüphelinin serbest kalmasını, Vatan soruşturmanın kurumsal adını ('SPK soruşturması'), DW Türkçe ise 'Fon krizi' bağlamını öne çıkararak veriyor.",
+   "alternative_explanation": "Başlık uzunluğu ve okur kitlesinin bildiği bağlam, hangi boyutun öne çıktığını belirliyor olabilir; farklı vurgu farklı bilgi ihtiyacına yanıt olabilir.",
+   "missing_context": [
+    "Başlıkların aynı saat aralığında aynı bilgiye sahip olarak yazılıp yazılmadığı."
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 10:48] Eski bakan Fatma Betül Sayan Kaya",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Görevden alınan AKP'li Fatma Betül Sayan Kaya",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKP'deki görevlerinden istifa eden eski Bakan Fatma Betül Sayan K",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[kisadalga · 11:08] AKP'li Fatma Betül Sayan Kaya ve eşi İlyas Kaya ikinci kez adliyede",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi AA'da 'Eski bakan', Kısa Dalga'da 'AKP'li', T24'te 'Görevden alınan AKP'li' olarak anılıyor; T24'ün 'Görevden alınan' nitelemesi Sözcü'nün 'görevlerinden istifa eden' aktarımıyla çelişiyor ve kimlik bilgisinin ötesinde bir değerlendirme taşıyor.",
+   "alternative_explanation": "'AKP'li' kişinin parti bağını belirten bilgilendirici bir tanım olabilir; 'görevden alınan' ifadesi kurumun elindeki farklı bir bilgiye dayanıyor olabilir.",
+   "missing_context": [
+    "Kaya'nın parti görevinden istifa mı ettiği yoksa görevden mi alındığı.",
+    "Kurumların bu kişiyi önceki haberlerde nasıl andığı."
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[t24 · 11:05] Fon vurgunu: Görevden alınan AKP'li Fatma Betül Sayan Kaya hakkında tutuklama talebi!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 11:47] Fon soruşturmasında yeni gelişme: Fatma Betül Sayan Kaya hakkında tutuklama talebi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "T24 başlığında olumsuz yüklü 'Fon vurgunu' adlandırması, 'Görevden alınan AKP'li' etiketi ve ünlem birlikte kullanılıyor ve aynı yönü gösteriyor; Takvim aynı tutuklama talebini bu bileşim olmadan veriyor.",
+   "alternative_explanation": "Seçimler ayrı ayrı kurumun yerleşik üslubundan ya da başlık kısalığından kaynaklanıyor olabilir; bir bütün olarak yön verme amacı metinden çıkarılamaz.",
+   "missing_context": [
+    "T24 haberinin tam metni ve lede'i.",
+    "Diğer kurumların aynı saatteki başlıkları."
+   ]
+  }
+ ]
+}

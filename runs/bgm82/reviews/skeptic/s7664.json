@@ -1,0 +1,255 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hakan Bahçetepe’ye 6 yıl 3 ay hapis cezası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe'ye ev hapsiyle tahliye",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "haksız mal edinme ve suçtan kaynaklanan malvarlığı değerlerini aklama suçlarından ayrı ayrı beraat etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı mahkeme kararı Sabah'ta hapis cezası, BirGün'de tahliye, Cumhuriyet'in spotunda önce beraat üzerinden veriliyor. Kart, aynı olguyu aktaran kurumların başlıklarda o olgunun farklı boyutlarını öne çıkarmasını arıyor; karşılaştırma başlıklar arasında yapılıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinde elde bulunan bilgiden, ajans metninin farklı paragraflarının seçilmesinden ya da olayın farklı aşamalarının haberleştirilmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Her kurumun haberinin tam metni",
+    "Başlıkların yayımlandığı andaki mevcut bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hakan Bahçetepe hakkında ev hapsi kararı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hakan Bahçetepe hakkında tahliye kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı adli kontrol kararı Mynet'te 'ev hapsi kararı', Haberler'de 'tahliye kararı' diye adlandırılıyor; biri kısıtlama, diğeri serbest kalma çağrışımı taşıyor. Kart, aynı eylem ya da şey için kurumların kendi seslerinde çağrışımı farklı sözcükler kullanmasını arıyor; yalnızca üslup ya da uzunluk farkı yeterli değil.",
+   "alternative_explanation": "Sözcük farkları ajans metninin uyarlanması, başlık kısalığı ya da hukuki terminolojinin farklı aktarımıyla açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı sözcükleri diğer haberlerde nasıl kullandığı",
+    "Sözcüklerin resmî açıklamadaki karşılığı"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Görevden uzaklaştırılan eski Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe'ye ev hapsi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe'ye ev hapsiyle tahliye",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Takvim 'görevden uzaklaştırılan eski başkan', BirGün 'Belediye Başkanı' diyor. 'Görevden uzaklaştırılan' olgusal bir statü; 'eski' nitelemesinin değerlendirme mi yoksa statüyü farklı yorumlama mı olduğu belirsiz. Kart, aynı aktör için kurumların kendi seslerinde farklı sıfat/unvan kullanmasını ve en az birinin tanımlamanın ötesinde değerlendirme taşımasını arıyor.",
+   "alternative_explanation": "Unvan farkları kurumların yerleşik yazım kuralları, kişinin o anki resmî statüsü ya da başlık uzunluğu sınırlarıyla da açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı aktör için diğer haberlerde kullandığı unvanlar",
+    "Aktörün olay anındaki resmî statüsü"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hakan Bahçetepe’ye 6 yıl 3 ay hapis cezası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "iki suçtan da beraat kararı aldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sabah başlığı yalnızca hapis cezasını veriyor; beraat ve tahliye başka kurumlarda var. Ancak başlık genel bir sonuç ileri sürmüyor ve Sabah'ın spotu kesik olduğundan sınırlayıcı bilgilerin yokluğu doğrulanamıyor. Kart, belirli göstergelerin genel bir sonuca destek olarak sunulmasını, aynı kaynaktan o sonucu sınırlayan başka rakamların bulunmasını ve bunların başlık ile spotta yer almamasını arıyor.",
+   "alternative_explanation": "Başlıkta tek bir karar unsurunun öne çıkarılması başlık uzunluğu sınırından kaynaklanabilir; spotun kesik olması diğer unsurların haberde bulunmadığını göstermez.",
+   "missing_context": [
+    "Haberin tam metni ve kesilmemiş spot"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hakan Bahçetepe’ye 6 yıl 3 ay hapis cezası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Gaziosmanpaşa Belediye Başkanlığı görevinden tutuklanarak uzaklaştırılan Hakan Bahçetepe",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 19:45] Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe'ye tahliye",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Sabah başlıkta cezayı, spotta görevden uzaklaştırılmayı öne alıyor; Karar aynı kararı tahliye ve beraatle veriyor. Ancak spot kesik ve her iki öğe de olgusal; aynı değerlendirme yönüne işaret ettikleri tartışmalı. Bu bağlam kartı, aynı kurumun başlık ve spotunda aynı değerlendirme yönüne işaret eden en az iki sunum tercihini ve başka bir kurumun aynı olguları bu bileşim olmadan verdiğini arıyor.",
+   "alternative_explanation": "Başlık ve spottaki tercihler ajans metninin yapısından ya da haberin kısaltılmasından kaynaklanabilir.",
+   "missing_context": [
+    "Haberin tam metni",
+    "Spotun kesilmemiş hâli"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde kurumların kendi sesinde ikili seçenek kurgusu bulunmuyor. Kart, kurumun kendi sesinde yalnızca iki seçeneği tek seçenekler gibi sunan 'ya… ya…' türü bir ifade arıyor; metinde böyle bir yapı yok.",
+   "alternative_explanation": "Haberler olgusal gelişmeyi aktarıyor; seçenek kurgusu yapılmıyor.",
+   "missing_context": [
+    "Haberlerin tam metninde ikili seçenek kurgusu olup olmadığı"
+   ]
+  }
+ ]
+}

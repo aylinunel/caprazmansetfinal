@@ -1,0 +1,245 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "çalışma sırasında oluşan göçüğe düşen işçi Ali Demirci",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da İSKİ'nin çalışmasında iş cinayeti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Metinlerde sorumluluğu belirleyen bir soruşturma sonucu yok; Sol başlığında İSKİ'yi adıyla anıp olayı \"iş cinayeti\" olarak niteliyor ve bu atfa iddia ya da kaynak işareti eşlik etmiyor.",
+   "alternative_explanation": "\"İş cinayeti\" işçi sağlığı örgütlerinin iş kazaları için kullandığı yerleşik bir terim olabilir.",
+   "missing_context": [
+    "Olaya ilişkin başlatılan soruşturma ve bilirkişi bulguları"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da kazı çalışması sırasında iş cinayeti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bayrampaşa’da göçük faciası: 1 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 19:37] Bayrampaşa'da yol çöktü. Bir işçi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölüm Evrensel'de \"iş cinayeti\", Karar'da \"göçük faciası\", NTV'de \"yol çöktü\" olarak adlandırılıyor; \"iş cinayeti\" kusur, \"facia\" felaket çağrışımı taşıyor.",
+   "alternative_explanation": "Sözcükler kurumların iş güvenliğine bakış alışkanlığından ya da üsluptan kaynaklanabilir.",
+   "missing_context": [
+    "Kazanın nedenine ilişkin resmi bulgular"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da yol çalışmalarında facia: 1 işçi hayatını kaybetti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da İSKİ'nin çalışmasında iş cinayeti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 19:37] Bayrampaşa'da yol çöktü. Bir işçi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "A Haber \"facia\", Sol \"iş cinayeti\" değerlendirmelerini kullanırken NTV aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Bir işçinin ölümü bu sözcükleri kurumların gözünde betimleyici kılmış olabilir.",
+   "missing_context": [
+    "Olayın nedenine dair resmi açıklama"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da İSKİ'nin çalışmasında iş cinayeti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 18:45] Bayrampaşa'da yol çöktü!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Göçükte kalan işçi Ali Demirci hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olayı Sol işi yürüten kurum (İSKİ), Habertürk yolun çökmesi, Takvim ise ölen işçinin kimliği üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklar haberin yayımlandığı andaki bilgi düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "İlk bilgilerin hangi saatte doğrulandığı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayrampaşa'da İSKİ'nin çalışmasında iş cinayeti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "\"İş cinayeti\" nitelemesi olayı iş güvenliği ihlalleri kategorisine yerleştiriyor olabilir; ancak başlık ya da giriş açıkça bir eğilim, dizi ya da rakam vermiyor.",
+   "alternative_explanation": "Terim yalnızca bir nitelendirme olarak kullanılmış olabilir.",
+   "missing_context": [
+    "İş kazalarına dair zaman serisi ya da önceki vakalara atıf"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kurumun kendi sesiyle yalnızca iki seçenek sunduğu bir ifade"
+   ]
+  }
+ ]
+}

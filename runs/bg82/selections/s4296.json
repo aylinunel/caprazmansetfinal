@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "source-confusion",
+  "salience-bias",
+  "authority-bias"
+ ],
+ "selection_uncertainty": [
+  "Görevden alma mı istifa mı olduğu kaynaklar arasında çelişkili.",
+  "Azerbaycan talebi iddia düzeyinde."
+ ],
+ "selection_note": "İddia, doğrulama ve açıklama kaynakları karışıyor; nedensellik farklı sunuluyor."
+}

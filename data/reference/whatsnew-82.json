@@ -1,0 +1,205 @@
+{
+ "lede": "8.2’nin AI incelemesi güncellenen algoritmayla baştan çalıştırıldı: laboratuvardan geçen medya teknikleri canlı, bütün bulgular ayrımsız yayında, her bulgu ne anlama geldiğiyle birlikte veriliyor. Aşağıda önceki 8.2 incelemesi (8.0 olayları) ile yenisi (8.1 verisi) yan yana.",
+ "band": "Yeniden çalışan AI incelemesi: 405 bulgu, laboratuvardan geçen medya teknikleri canlı, önceki sürümle karşılaştırma.",
+ "findings": [
+  {
+   "id": "olaylar",
+   "tag": "değişti",
+   "title": "İncelenen olaylar 8.1 verisinden yeniden seçildi",
+   "claim": "Önceki inceleme 8.0’ın en çok kurumun verdiği 150 olayına bakıyordu. Yeni inceleme 8.1 verisinin (51 kurum, 13 Kasım’a kadar) en geniş 150 olayına bakıyor; iki listede ortak 49 olay var.",
+   "cols": [
+    "Önceki 8.2",
+    "Yeni 8.2"
+   ],
+   "rows": [
+    [
+     "İncelenen olay",
+     150,
+     150
+    ],
+    [
+     "Tamamlanan inceleme",
+     150,
+     150
+    ],
+    [
+     "İki listede ortak olay",
+     49,
+     49
+    ]
+   ],
+   "note": "Ortak olaylarda bile başlık seti farklı: 8.1’de olayı veren kurum sayısı arttı, metin yeniden kuruldu."
+  },
+  {
+   "id": "medya",
+   "tag": "yeni",
+   "title": "Medyanın oyunları: yalnızca laboratuvardan geçen kartlar canlı",
+   "claim": "17 medya tekniği kartı ayrı bir AI incelemesiyle 150 olayda çalıştırıldı. Sahip onayı ve laboratuvar sınamasından 1 kart geçti; canlıda 18 bulgusu var, 18 olayda. Geçemeyen 16 kartın 558 bulgusu karar verilene kadar Yönetim’de bekliyor.",
+   "cols": [
+    "Önceki 8.2",
+    "Yeni 8.2"
+   ],
+   "rows": [
+    [
+     "Canlı medya kartı",
+     "—",
+     1
+    ],
+    [
+     "Canlı medya bulgusu",
+     "—",
+     18
+    ],
+    [
+     "Yönetim’de bekleyen kart",
+     "—",
+     16
+    ],
+    [
+     "Yönetim’de bekleyen bulgu",
+     "—",
+     558
+    ],
+    [
+     "En sık: Episodic framing (Olay odaklı çerçeveleme)",
+     "—",
+     18
+    ]
+   ],
+   "note": "Laboratuvar her kartı yapay vakalarda sınar: olumlu vakada tekniği bulmalı, alıntı ve sınır vakalarında bulmamalı. Bekleyen kartların çoğu, kontrol vakalarında hiç incelenmediği için “tamamlanmadı” sayıldı; yanlış bir cevap yüzünden değil."
+  },
+  {
+   "id": "davranis",
+   "tag": "değişti",
+   "title": "Davranışsal yanlılıklar yeniden ölçüldü",
+   "claim": "Bulgu sayısı önce 439, şimdi 387; en az bir bulgusu olan olay önce 137, şimdi 145.",
+   "cols": [
+    "Önceki 8.2",
+    "Yeni 8.2"
+   ],
+   "rows": [
+    [
+     "Bulgu",
+     439,
+     387
+    ],
+    [
+     "Bulgulu olay",
+     137,
+     145
+    ],
+    [
+     "Doğrulanmış alıntı",
+     2236,
+     1763
+    ],
+    [
+     "En sık: Framing Effect",
+     119,
+     133
+    ],
+    [
+     "En sık: Salience Bias",
+     112,
+     92
+    ],
+    [
+     "En sık: Leveling and Sharpening",
+     89,
+     27
+    ],
+    [
+     "En sık: Authority Bias",
+     24,
+     27
+    ],
+    [
+     "En sık: In-group Bias",
+     21,
+     17
+    ]
+   ]
+  },
+  {
+   "id": "tekrar",
+   "tag": "sürüyor",
+   "title": "Aynı olaylarda aynı kavramlar ne kadar tekrar çıktı?",
+   "claim": "Ortak 49 olayda önceki incelemenin bulduğu 151 kavramın 93 tanesi (%62) yeniden incelemede de bulundu.",
+   "note": "Ayrışma, kısmen yeni kurumların eklenen başlıklarından, kısmen AI incelemesinin kendi oynaklığından gelir; bu oran bir doğruluk ölçüsü değildir."
+  },
+  {
+   "id": "ayrim",
+   "tag": "değişti",
+   "title": "“AI onaylı / insan kontrolü bekliyor” ayrımı kamu sayfalarından kalktı",
+   "claim": "Önceki sürümde 257 bulgu “AI onaylı”, 182 bulgu “insan kontrolü bekliyor” etiketiyle ayrılıyordu. Artık bulunan her şey aynı biçimde yayında; durum etiketi yalnızca Yönetim’de duruyor.",
+   "cols": [
+    "Önceki 8.2",
+    "Yeni 8.2"
+   ],
+   "rows": [
+    [
+     "Kamuda etiketle ayrılan bulgu",
+     439,
+     0
+    ],
+    [
+     "Kamuda gösterilen bulgu",
+     439,
+     405
+    ]
+   ]
+  },
+  {
+   "id": "anlam",
+   "tag": "yeni",
+   "title": "Her bulgunun yanında “Ne anlama geliyor”",
+   "claim": "Bulgular artık üç kısa metinle gelir: ne fark edildi, okur için ne anlama geliyor, neden kesin değil. Örüntüler › Nasıl anlatıyor iki grubun bütün bulgularını kavram kavram listeler.",
+   "cols": [
+    "Önceki 8.2",
+    "Yeni 8.2"
+   ],
+   "rows": [
+    [
+     "“Ne anlama geliyor” metni olan bulgu",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "id": "kural",
+   "tag": "yeni",
+   "title": "AI bulguları sitenin kural tabanlı ölçümleriyle karşılaştırıldı",
+   "claim": "Örüntüler yeniden düzenlendi: “Genel bakış” her kurumu kural tabanlı ve AI imzalı bütün ölçülerde yan yana gösteriyor; AI bulguları konusuna göre öteki sayfalara yerleşti. Sözcük tekniği ve sorumluluk çerçevesi karşılaştırmaları, bu kartlar laboratuvardan geçene kadar yayında değil.",
+   "rows": [
+    [
+     "AI ile karşılaştırılan kurum",
+     "—",
+     45
+    ],
+    [
+     "Karşılaştırılan başlık",
+     "—",
+     3729
+    ]
+   ],
+   "cols": [
+    "Önceki 8.2",
+    "Yeni 8.2"
+   ],
+   "note": "Karşılaştırmalar Yönetim’de bekleyen medya kartlarının bulgularına dayanıyordu."
+  },
+  {
+   "id": "tasarim",
+   "tag": "değişti",
+   "title": "Görünüm marka kurallarına döndü",
+   "claim": "Gazete kâğıdı zemini, Newsreader başlıklar ve IBM Plex rakamlar geri geldi; AI bulguları kanıt kartlarında, “AI imzalı” damgasıyla. Kırmızı ve mavi yalnızca bir kurum hakkında, sarı yalnızca bir sözcüğün arkasında."
+  },
+  {
+   "id": "sinir",
+   "tag": "uyarı",
+   "title": "Bu bir deneme sürümü",
+   "claim": "Medya kartları canlıya yalnızca sahip onayı ve laboratuvar sınamasıyla çıkar. Hiçbir bulgu insan tarafından doğrulanmadı; bir olayda bulgu olmaması o olayda teknik ya da yanlılık olmadığı anlamına gelmez."
+  }
+ ]
+}

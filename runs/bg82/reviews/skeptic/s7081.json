@@ -1,0 +1,190 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakan Bolat şikayet etmişti: Murat Ağırel ve İsmail Saymaz hakkında 14 yıl hapis cezası talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolat ve bakanlara fon iftirasına iddianame!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Gazeteciler Saymaz ve Ağırel hakkındaki hapis istemi farklı kurumlarca farklı sözcük ve vurgularla başlıklandırılmış; ancak metin bu sunum farkını hiçbir tercihe, yargıya veya karara bağlamıyor ve başlıkların karar-ilgili olgularda eşdeğer olduğunu açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, eldeki bilginin güncellenmesi, haber ajansı metninin kısaltılması ve kurumların editoryal üslubundan kaynaklanabilir; bir okuyucu ya da karar verici üzerinde çerçeve etkisi gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okuyucu yargısını değiştirdiğini gösteren karşılaştırmalı ölçüm",
+    "Başlıkların aynı olgulara dayandığını açıkça gösteren bilgi",
+    "Herhangi bir tercih veya yargının bu sunuma dayandırıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Arkadaşımız Mustafa Balcı'ya 10 yıl 10 ay",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Gazeteciler Saymaz ve Ağırel hakkındaki hapis istemi haberinde bir gruba ya da kuruma ait aidiyet ifadesi geçiyor; ancak metin güvenilirlik, suçlama veya fayda farkını bu aidiyete bağlamıyor ve tutarsız standart uygulandığını göstermiyor.",
+   "alternative_explanation": "Aidiyet ifadesi kimlik belirleme amaçlı olgusal bir bilgi veya alıntılanan açıklamanın aktarımı olabilir.",
+   "missing_context": [
+    "Grup üyeliğine göre farklı muamele gördüğü gösterilen karşılaştırılabilir vakalar",
+    "Kararın grup kimliğine dayandırıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ticaret Bakanı Ömer Bolat'ın şikayeti üzerine yürütülen soruşturmada",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Gazeteciler Saymaz ve Ağırel hakkındaki hapis istemi haberinde bir otorite veya resmi makam anılıyor; ancak metin bu statüye bir iddianın değerlendirilmesinde belirleyici ağırlık verildiğini ya da karşıt kanıtın statü nedeniyle göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Resmi makamın anılması haberin kaynağını belirtme gereğidir; otoriteye dayalı bir akıl yürütme hatası değil.",
+   "missing_context": [
+    "Otoritenin yalnızca statüsü nedeniyle takip edildiğini gösteren ifade",
+    "Göz ardı edilen karşıt kanıt"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "5 yıl 2 aydan 14 yıl 10 aya kadar hapis cezası talep edildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İsmail Saymaz ve Murat Ağırel'e yaklaşık 15'er yıl hapis istendi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Gazeteciler Saymaz ve Ağırel hakkındaki hapis istemi haberinde daha önce verilen bir değer ile sonraki bir değer birlikte görünüyor; ancak metin sonraki değerin öncekine dayandırıldığını kurmuyor, aksine değerler yeni bilgiyle güncellenmiş görünüyor.",
+   "alternative_explanation": "Farklı rakamlar farklı saatlerde güncellenen resmi bilgiyi veya hukuki istemin alt-üst sınırını yansıtabilir; bir çapa etkisi göstermez.",
+   "missing_context": [
+    "Sonraki yargının önceki değere açıkça dayandırıldığını gösteren ifade",
+    "Çapaya rağmen revizyon gerektiren kanıtın göz ardı edildiğine dair bilgi"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Gazeteciler Saymaz ve Ağırel hakkındaki hapis istemi haberinde bir etkinliğe içsel motivasyonla katılım, beklenen bir dış ödül ya da ödül sonrası katılımda düşüş gibi öğeler hiç yer almıyor.",
+   "alternative_explanation": "Haber metni motivasyon ve ödül ilişkisiyle ilgili değil; kart bu olaya uygulanamıyor.",
+   "missing_context": [
+    "Ödül öncesi gönüllü katılım düzeyi",
+    "Beklenen ve etkinliğe bağlı bir ödül",
+    "Ödül sonrası katılımı ölçen karşılaştırmalı veri"
+   ]
+  }
+ ]
+}

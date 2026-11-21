@@ -1,0 +1,259 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "takip sistemlerini kapatıp Hürmüz Boğazı'ndan geçmeye çalışan iki petrol tankerinin",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dünya enerji ticaretinin en kritik geçiş noktalarından",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ABD'nin sorumluluğuna işaret etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı mayın olayını NTV tankerlerin takip sistemini kapatması, Akit küresel enerji ticareti, Sol ise ABD'nin sorumluluğu boyutuyla öne çıkarıyor.",
+   "alternative_explanation": "Kurumlar farklı saatlerde farklı resmi açıklamaları aktarmış olabilir.",
+   "missing_context": [
+    "İran açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "deniz mayınlarına çarparak patladığını ve alev aldığını ileri sürdü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "iki petrol tankerinin mayına çarparak yandığını açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı İran açıklaması için CNN Türk kendi sesiyle \"ileri sürdü\", NTV \"açıkladı\" diyor; \"ileri sürmek\" şüphe çağrışımı taşırken \"açıklamak\" nötr.",
+   "alternative_explanation": "Doğrulanmamış iddia için \"ileri sürdü\" gazetecilik temkini olabilir.",
+   "missing_context": [
+    "İddianın bağımsız doğrulanma durumu"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda alarm:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Körfez'de sıcak saatler:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[milligazete · 17:55] İran Ordusu: Hürmüz Boğazı'nın doğusunda 2 petrol tankeri deniz mayınlarına çarptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Akit \"alarm\", Sol \"sıcak saatler\" gibi değerlendirici ifadeler kullanırken Milli Gazete aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Stratejik boğazdaki olay kurumlarca güçlü dili haklı kılan bir gelişme olarak görülmüş olabilir.",
+   "missing_context": [
+    "Olayın enerji piyasalarına gerçek etkisi"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 05:30] İran Ordusu: Hürmüz Boğazı'nın doğusunda 2 petrol tankeri deniz mayınlarına çarptı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay (mayın çarpması) başlıkların ana cümlesinde yer alıyor; başlıklar öngörülen bir sonucu öne çıkarmıyor.",
+   "alternative_explanation": "Başlıklar olayı doğrudan bildiriyor.",
+   "missing_context": [
+    "Başlıkta öne çıkarılan öngörülen bir sonuç"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda alarm:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "2 petrol tankeri deniz mayınlarına çarptı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akit kendi sesiyle \"alarm\" diyor; ölçek (iki tanker) ve kaynak (İran Ordusu) veriliyor. Kritik bir boğazdaki iki tanker olayı için dilin orantısız olup olmadığı belirsiz.",
+   "alternative_explanation": "Hürmüz Boğazı küresel enerji için kritik olduğundan uyarı dili orantılı olabilir.",
+   "missing_context": [
+    "Hasarın, can kaybının ve deniz trafiğine etkinin ölçeği"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dünya enerji ticaretinin en kritik geçiş noktalarından Hürmüz Boğazı'nda yeni bir gelişme yaşandı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "ABD ise Umman Körfezi’nde bir ticari gemiyi etkisiz hale getirdiğini",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit olayı küresel enerji ticareti bağlamına, Sol ise İran-ABD gerginliğindeki olaylar dizisine yerleştiriyor.",
+   "alternative_explanation": "Arka plan bilgisi okurun olayın önemini anlaması için verilmiş olabilir.",
+   "missing_context": [
+    "Bölgedeki önceki olayların listesi"
+   ]
+  }
+ ]
+}

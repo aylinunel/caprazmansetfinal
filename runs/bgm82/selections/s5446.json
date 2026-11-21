@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "word-choice",
+  "loaded-language",
+  "emphasis-framing",
+  "labeling",
+  "responsibility-framing"
+ ],
+ "selection_uncertainty": [
+  "Tutuklandı/talep farkı zamanlama kaynaklı olabilir."
+ ],
+ "selection_note": "'Vurgun', 'Türkiye'yi sarsan fon skandalı' ifadeleri ve 'eski'/'Genel Müdür' unvan farkları."
+}

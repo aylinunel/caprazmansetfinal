@@ -1,0 +1,200 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İzmir'de demir çelik fabrikasında şiddetli patlama! Can kaybı giderek artıyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz olay olumsuz ifadelerle aktarılıyor; ancak olumsuz kanıta karşılaştırılabilir olumlu kanıta göre orantısız ağırlık verildiği belgelenmiyor.",
+   "alternative_explanation": "Can kaybı içeren bir olayda olumsuz vurgu olayın kendisiyle orantılı olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıt",
+    "Orantısız ağırlığın bir değerlendirmeyi etkilediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Aliağa’daki demir çelik fabrikasında patlama: 3 ölü, 14 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir'de demir çelik fabrikasında patlama: 17 ölü, 12 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Can kaybı sayısı farklı saatlerde 3, 6, 10, 16 ve 17 olarak veriliyor; bu bilginin güncellenmesidir ve bir tahminin ilk sayıya gerekçesiz biçimde bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Farklı rakamlar haberin farklı saatlerde güncellenmesinden ve farklı resmi kaynaklardan gelebilir.",
+   "missing_context": [
+    "Sonraki yargının önceki değere dayandığını gösteren açık ifade",
+    "Rakamların zaman sırası ve kaynakları"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir tahmin ya da genelleme için hatırlanabilirlik ya da canlılığı gerekçe olarak kullanmıyor.",
+   "alternative_explanation": "Haber olayın kendisini aktarıyor; sıklık ya da risk tahmini yapılmıyor.",
+   "missing_context": [
+    "Hatırlanabilirliğe dayanan açık bir tahmin",
+    "Sıklık ya da karşılaştırma verisi"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Olayla ilgili olduğu değerlendirilen 5 şüpheli gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir kişinin davranışını kalıcı bir karakter özelliğine bağlayan nedensel ya da değerlendirici bir iddia içermiyor.",
+   "alternative_explanation": "Olay soruşturma aşamasındadır ve metinler sorumluluk atfını resmi süreçlere bırakıyor.",
+   "missing_context": [
+    "Kişilik özelliğine dayalı bir atıf",
+    "Göz ardı edilen durumsal etkenler"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "17 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir’de demir çelik fabrikasında patlama: İşçiler yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı vurgularla başlıklandırıyor; ancak metin, bu sunum farkına bağlanmış bir tercih, yargı ya da öneri göstermiyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinden, ajans metinlerinden, olayın gelişen aşamalarından ve yer sınırından kaynaklanabilir; açıklamaların karar açısından eşdeğer olduğu metinde kurulmuyor.",
+   "missing_context": [
+    "Başlıkların karar açısından eşdeğer olduğuna dair açık tespit",
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "identifiable-victim-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir yardım ya da kaynak tahsisi kararı ve bu kararı veren kişi tanımlanmıyor; adı geçen bir mağdur tek başına yeterli değil.",
+   "alternative_explanation": "Mağdurların adının ya da sayısının anılması olgusal haberciliktir; bir öncelik kararı karşılaştırılmıyor.",
+   "missing_context": [
+    "Tahsis kararı ve karar verici",
+    "Tanımlanabilir kişi ile grup arasında karşılaştırma"
+   ]
+  }
+ ]
+}

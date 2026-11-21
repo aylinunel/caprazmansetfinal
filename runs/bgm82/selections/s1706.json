@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "loaded-language",
+  "emphasis-framing",
+  "word-choice",
+  "responsibility-framing"
+ ],
+ "selection_uncertainty": [
+  "Soruşturma sürüyor; suç sabit değil.",
+  "Yalnızca başlık ve kısa özetler var; tam metin yok."
+ ],
+ "selection_note": "Şüphelinin 'milletvekilinin oğlu' diye anılması ve 'dev/sarsan' gibi ifadeler etiketleme ve yüklü dil açısından aday."
+}

@@ -1,0 +1,162 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 14:06] Trabzonspor, Freiburg maçına hazır",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 15:42] Trabzonspor, Freiburg'a 8 eksikle hazır",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[tgrt · 18:00] Trabzonspor, Freiburg maçına hazır! 7 oyuncu antrenmana çıkmadı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı hazırlık olgusu bir başlıkta yalın 'hazır' olarak, diğerlerinde eksik oyuncu sayısı öne çıkarılarak veriliyor; başlıklar hazırlık ile eksiklik boyutlarını farklı biçimde ön plana alıyor.",
+   "alternative_explanation": "Eksik oyuncu bilgisi farklı saatlerde ortaya çıkmış ve sonraki haberlere eklenmiş olabilir.",
+   "missing_context": [
+    "Eksik oyuncu bilgisinin ilk kez ne zaman duyurulduğu"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[trthaber · 22:39] Trabzonspor Freiburg'a kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dirilis · 22:42] Trabzonspor, Freiburg'a yenildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Freiburg’a 1-0'lık skorla mağlup oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sonuç 'kaybetti', 'yenildi' ve 'mağlup oldu' sözcükleriyle aktarılıyor; bu sözcükler eş anlamlı olup çağrışım farkı taşımıyor.",
+   "alternative_explanation": "Fark yalnızca üslup ve uzunlukla ilgili.",
+   "missing_context": []
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "UEFA Konferans Ligi'nin 3. haftasında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tek bir olayı aktarıyor, ancak bağlam veya diğer haberler konunun yinelenen ya da yapısal bir sorun olduğunu göstermiyor; tek vakanın bütün hikâye olarak sunulduğu söylenemez.",
+   "alternative_explanation": "Tekil bir spor veya gündem olayının olay odaklı aktarılması haberin doğasından kaynaklanıyor.",
+   "missing_context": [
+    "Konunun yinelenen veya yapısal olduğunu gösteren önceki vakalar ya da veriler"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metindeki olayda belirsiz bir sorumluluk veya süren bir soruşturma bulunmuyor; başlıklar bir aktöre suç veya ihmal yüklemiyor.",
+   "alternative_explanation": "Olay, sorumluluk tartışması gerektirmeyen rutin bir gelişme.",
+   "missing_context": [
+    "Olayla ilgili bir soruşturma veya sorumluluk tartışması"
+   ]
+  }
+ ]
+}

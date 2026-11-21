@@ -1,0 +1,226 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 14:06] Trabzonspor, Freiburg maçına hazır",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 15:42] Trabzonspor, Freiburg'a 8 eksikle hazır",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı hazırlık olgusu bir kurumda yalın 'hazır', diğerinde '8 eksikle hazır' olarak sunuluyor; betimlemeler aynı olguya dayanıp vurguda ayrışıyor, ancak bir tercih bu farka bağlanmıyor.",
+   "alternative_explanation": "Farklı başlıklar, aynı olgunun farklı ayrıntılarını farklı saatlerde ve farklı okur ihtiyaçlarına göre vermekten kaynaklanabilir; bir tercih veya yargının çerçeveye bağlandığı gösterilmiyor.",
+   "missing_context": [
+    "Sunum farkının bir tercih veya yargıyı değiştirdiğini gösteren açık ifade",
+    "Okur tepkisine veya karar davranışına dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "optimism-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Trabzonspor'da hedef 3'te 3",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 09:41] Trabzonspor, Freiburg'a yenildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık olumlu bir sonuç beklentisini ('hedef 3'te 3') aktarıyor; maçın yenilgiyle bittiği de metinde var, ancak beklentinin karşıt kanıtı göz ardı ettiği gösterilmiyor.",
+   "alternative_explanation": "'Hedef' ifadesi kulübün beyan ettiği bir amaç olabilir; bir olasılık tahmini veya yanlış kalibrasyon kanıtı değildir.",
+   "missing_context": [
+    "Beklentinin bir taban oranı veya karşıt kanıt karşısında nasıl oluşturulduğu",
+    "Hedefi kimin belirlediğine dair bilgi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 18:00] Trabzonspor, Freiburg maçına hazır! 7 oyuncu antrenmana çıkmadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 15:59] Trabzonspor, Freiburg maçına hazır",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum eksik oyuncu sayısını başlığa taşırken diğeri yalın hazırlık haberi veriyor; karşılaştırmalı fark var ama bunun bir yargıya bağlandığı görülmüyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı, olayın haber değeri taşıyan gerçek bir unsuru olabilir; bunun bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Canlı ayrıntının bir yargı veya seçime açıkça bağlandığını gösteren ifade",
+    "Daha az belirgin bilginin göz ardı edildiğine dair doğrudan anlatım"
+   ]
+  },
+  {
+   "card_id": "outcome-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Thomas Reis’ten ilk 11 kararı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "CANLI Trabzonspor-Freiburg maç sonu değerlendirmesi Libero'da",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Trabzonspor, Freiburg'a yenildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin maç öncesi bir kadro kararını ve sonucu bilen bir maç sonu değerlendirmesini anıyor; ancak değerlendirmenin kararın kalitesini sonuca göre yargıladığı aktarılmıyor.",
+   "alternative_explanation": "Maç sonu değerlendirmesi, karar sürecini o anki bilgilerle de ele almış olabilir; içeriği metinde yok.",
+   "missing_context": [
+    "Maç sonu değerlendirmesinin içeriği",
+    "Kadro kararının sonuca göre yeniden puanlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberler · 17:34] Trabzonspor Freiburg maçı ne zaman, saat kaçta, hangi kanalda",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 23:01] Trabzonspor – Freiburg : 0-1",
+     "kind": "behavioral"
+    },
+    {
+     "source": "context",
+     "quote": "Olayı vermeyen etkin kurumlar: akit, aydinlik, cnnturk, diken, hurriyet, karar, milligazete, mynet",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların bir kısmı yayın bilgisine, bir kısmı sonuca odaklanıyor; bazı etkin kurumlar olayı hiç vermiyor. Karşılaştırmalı dikkat farkı gözleniyor, ancak bir sonuca bağlanmıyor.",
+   "alternative_explanation": "Kurumlar arasındaki dikkat farkı, yayın saati, okur ilgisi veya editoryal kapasite gibi meşru nedenlerden kaynaklanabilir.",
+   "missing_context": [
+    "Dikkat farkını belirli bir sonuca veya eyleme bağlayan kanıt",
+    "Kurumların editoryal karar kayıtları"
+   ]
+  }
+ ]
+}

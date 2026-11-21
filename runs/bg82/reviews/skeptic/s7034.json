@@ -1,0 +1,230 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kaşif Kozinoğlu'nun Kesin Ölüm Nedeni Belli Oldu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kaşif Kozinoğlu'nun ölüm nedeni belli oldu! Zehirlenme şüphesi aydınlatıldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Başsavcılık itiraz edecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar Adli Tıp raporunu kesin ve şüpheyi kapatan bir sonuç olarak sunarken başka kurumlar savcılığın itirazını bildiriyor.",
+   "alternative_explanation": "Adli Tıp ilgili uzman kurum olduğu için rapora dayanmak gerekçesiz sayılmaz; başlıklar raporun sonucunu özetliyor olabilir.",
+   "missing_context": [
+    "Raporun gerekçesi ve antimon bulgusunun değerlendirilmesi",
+    "İtirazın içeriği"
+   ]
+  },
+  {
+   "card_id": "belief-perseverance",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başsavcılık iki değerlendirmeye itiraz edecek",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Antimon tespit edilmişti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Savcılık rapora rağmen itiraz edeceğini bildiriyor; ancak antimon bulgusu gibi çözülmemiş kanıt itirazı gerekçelendirebileceğinden haksız bir göz ardı gösterilmiyor.",
+   "alternative_explanation": "İtiraz, olağan bir usul hakkı ve meşru bir görüş ayrılığı.",
+   "missing_context": [
+    "İtirazın gerekçesi"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kaşif Kozinoğlu’nun şüpheli ölümüne ilişkin 15 yıl sonra hazırlanan Adli Tıp raporu tartışma yarattı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki bir şüpheye gönderme var; ama kanıtın asimetrik değerlendirildiği gösterilmiyor.",
+   "alternative_explanation": "\"Şüpheli ölüm\" soruşturmanın konusu olarak tanımlayıcı.",
+   "missing_context": [
+    "Açıkça belirtilmiş önceki inanç ve seçici kanıt kullanımı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Zehirlenme şüphesi aydınlatıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kaşif Kozinoğlu'nun ölüm nedeni açıklanmıştı! Başsavcılık rapordaki o sonuca itiraz edecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Raporun sonucu ve itiraz aynı gelişmenin iki boyutu.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Antimon tespit edilmişti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı bir ayrıntı başlıkta; yargıya haksız etkisi gösterilmiyor.",
+   "alternative_explanation": "Önceki bulgu bağlam olarak hatırlatılıyor.",
+   "missing_context": [
+    "Yargıya bağlantı"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İçsel motivasyon, ödül veya azalma unsuru yok.",
+   "alternative_explanation": "Adli rapor haberi kart alanının dışında.",
+   "missing_context": [
+    "Ödül öncesi/sonrası davranış kaydı"
+   ]
+  }
+ ]
+}

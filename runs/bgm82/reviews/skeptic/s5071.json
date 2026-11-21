@@ -1,0 +1,240 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'dan Güney Kore'ye önemli ziyaret",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Güney Kore'ye gidiyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan Güney Kore'ye gidecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi 'Başkan Erdoğan', 'Cumhurbaşkanı Erdoğan' ve yalın 'Erdoğan' olarak anılıyor; ancak unvan farklarının tanımlamanın ötesinde bir değerlendirme taşıdığı metinden kanıtlanamıyor.",
+   "alternative_explanation": "Unvan farkları kurumların sabit yazım tercihleridir.",
+   "missing_context": [
+    "Kurumların yazım kılavuzlarındaki unvan kuralları"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'dan Güney Kore'ye kritik ziyaret",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Güney Kore'yi ziyaret edecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kendi başlığında ziyareti 'kritik' diye nitelendiriyor; başka bir kurum aynı ziyareti bu değerlendirme olmadan veriyor.",
+   "alternative_explanation": "'Kritik' gündemdeki anlaşmaların önemini anlatan yaygın bir habercilik sıfatı olabilir.",
+   "missing_context": [
+    "Ziyaretin gündemine dair resmi açıklama"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan Güney Kore'ye gidiyor: Nükleer santral inşası, savunma sanayii gündemde",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan 8 yıl sonra Güney Kore'ye gidiyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Seul'den davet: Başkan Erdoğan, Güney Kore'ye gidecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ziyaret bir kurumda gündem konuları, bir başkasında aradan geçen süre, bir diğerinde davetin kaynağı üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Tüm vurgular resmi açıklamadaki olgusal bilgilerdir.",
+   "missing_context": [
+    "İletişim Başkanlığı açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Güney Kore'ye gidiyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Güney Kore'yi ziyaret edecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Gidiyor' ve 'ziyaret edecek' gibi fiiller farklı; ancak fark yalnızca üslup ve zaman kipi düzeyinde, çağrışım farkı taşımıyor.",
+   "alternative_explanation": "Fiil seçimi başlık uzunluğu ve haber zamanlamasıyla ilgilidir.",
+   "missing_context": [
+    "Çağrışım farkı taşıyan alternatif sözcük kullanımı"
+   ]
+  },
+  {
+   "card_id": "ad-hominem",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadeleri bir kişinin iddiasını değerlendirmek yerine onun karakterini ya da geçmişini öne çıkarmıyor.",
+   "alternative_explanation": "Kişilerin unvan ve görevleriyle anılması tanımlayıcı bilgidir; bir iddianın yerine geçen nitelendirme yok.",
+   "missing_context": [
+    "Bir iddianın yerine kişinin karakterine yönelen kurum ifadesi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sağlanan bağlam olayın tekrarlayan ya da yapısal bir sorunun parçası olduğunu göstermiyor; bu nedenle tek vaka anlatımı bir teknik sayılamıyor.",
+   "alternative_explanation": "Olay kendi başına bir haber konusudur; yapısal bir örüntüye atıf beklenmesi için gerekçe yok.",
+   "missing_context": [
+    "Olayın tekrarlayan ya da yapısal bir sürecin parçası olduğuna dair kanıt"
+   ]
+  }
+ ]
+}

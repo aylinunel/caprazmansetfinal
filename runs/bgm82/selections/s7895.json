@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "emphasis-framing",
+  "word-choice",
+  "thematic-framing",
+  "loaded-language",
+  "spin"
+ ],
+ "selection_uncertainty": [
+  "'Başkan' unvanının bir meşruiyet yargısı taşıyıp taşımadığı belirsiz."
+ ],
+ "selection_note": "Unvan farkları (Başkan/Cumhurbaşkanı/AKP Genel Başkanı) ve 'Aliyev gelmedi ama' gibi vurgular aday."
+}

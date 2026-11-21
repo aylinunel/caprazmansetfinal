@@ -1,0 +1,224 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Erdoğan gerilim sonrası Azerbaycan'da: Aliyev havalimanında karşıladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan Azerbaycan'da: Aliyev havalimanında karşıladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Evrensel ile haber7 aynı karşılamayı farklı vurguyla veriyor; fakat bu iki ifadenin karar açısından eşdeğer olduğu metinde açıkça kurulmuyor ve bir tercih bu farka bağlanmıyor. Kart, eşdeğer seçeneklerin açıkça eşdeğer olduğunun metinde kurulmasını ve bir tercihin yalnızca sunuluş farkına bağlanmasını şart koşuyor; başlıklar arasında ifade farkı görülse de hiçbir metin bir karar ya da tercihi bu farka dayandırmıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatleri, farklı ajans kaynakları ve olayın farklı aşamalarının haberleştirilmesiyle açıklanabilir; kurumların editoryal tercihi bir akıl yürütme hatası değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin bu çerçevelere maruz kalıp farklı yargıya vardığını gösteren veri",
+    "Başlıkların bilgi açısından eşdeğer olduğunu açıkça belirten bir ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Başkan Erdoğan'ın programına ilişkin detayları paylaştı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sabah programı resmî iletişim başkanına dayandırıyor; bu yalnızca bilgi kaynağının gösterilmesi. Metinde yetkili bir kaynak anılıyor; ancak bu statünün bir iddiayı değerlendirmede belirleyici ağırlık aldığı ya da karşıt kanıtın statü yüzünden göz ardı edildiği gösterilmiyor. Resmî kaynağa atıf haberciliğin olağan kaynak gösterme pratiğidir.",
+   "alternative_explanation": "Resmî kurum veya yetkiliye atıf, doğrulanabilir bilginin kaynağını belirtmek için yapılan standart bir gazetecilik pratiği olabilir; yetkinlik ile iddia arasında uyumsuzluk görülmüyor.",
+   "missing_context": [
+    "Kaynağın görüşüne karşı ileri sürülen ve gerekçesiz reddedilen bir kanıt",
+    "Statünün tek gerekçe olarak sunulduğunu gösteren açık ifade"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kardeşlik sofrası: Cumhurbaşkanı Erdoğan, Azerbaycan'da onuruna verilen yemeğe katıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Yeni Şafak yemeği 'kardeşlik' olarak niteliyor; ancak bir alandaki izlenimden başka bir alana yargı aktarımı yapılmıyor. Kart, bir alandaki olumlu izlenimin ayrı bir alandaki olumlu yargıya açıkça bağlanmasını istiyor; metinde böyle iki ayrı alan ve aralarında kurulmuş bir bağ yok.",
+   "alternative_explanation": "Olumlu nitelemeler kurumun alışılmış üslubu ya da kaynağın kendi açıklamasının aktarımı olabilir; bir alandan diğerine yargı aktarımı yapılmıyor.",
+   "missing_context": [
+    "İlk alandaki izlenimle ikinci alandaki yargı arasında açık gerekçe bağı",
+    "Alanların karar için ilgisiz olduğuna dair kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pistte kol kola yürüdüler... Erdoğan Azerbaycan'da",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Cumhuriyet görsel bir ayrıntıyı öne alıyor; bu ayrıntı bir yargıya bağlanmıyor. Göze çarpan ayrıntılar başlıklarda öne çıkarılıyor; fakat bu ayrıntının bir yargı ya da tercihe açıkça bağlandığı veya ilgili karşı kanıtın göz ardı edildiği metinde gösterilmiyor. Tek metindeki vurgu bu kart için yeterli değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması haber değeri ve habercilik konvansiyonlarıyla açıklanabilir; bu bir yargı hatası değil, sunum tercihidir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin farklı ağırlıklandırıldığını gösteren karşılaştırmalı karar verisi",
+    "Vurgunun bir sıklık ya da risk tahminine dönüştürüldüğünü gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Tayyip Erdoğan, Azerbaycan'a gitti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Parti etiketi bir aidiyet bildiriyor ama bir güvenilirlik ya da suçlama farkı bu aidiyete bağlanmıyor. Kart, grup üyeliğinin açıkça kurulmasını ve güvenilirlik/suçlama/fayda farkının bu üyeliğe bağlanmasını istiyor; metinde grup aidiyetiyle gerekçelendirilmiş bir yargı farkı bulunmuyor.",
+   "alternative_explanation": "Siyasi ya da kimlik etiketleri kişileri tanıtmak için kullanılmış olabilir; kurumların yerleşim farkı tek başına grup kayırmacılığını kanıtlamaz.",
+   "missing_context": [
+    "Karşılaştırılabilir olaylarda farklı grup üyelerine uygulanan tutarsız ölçüt",
+    "Grup kimliği nedeniyle indirgenen bir kanıt"
+   ]
+  },
+  {
+   "card_id": "primacy-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 09:18] Cumhurbaşkanı Erdoğan, bugün Azerbaycan'a gidecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[akit · 10:56] Başkan Erdoğan Azerbaycan'da! Aliyev karşıladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberler bir zaman dizisinde sıralanıyor; hatırlama verisi yok. Haberler zaman sırasıyla yayımlanmış olsa da hiçbir metin önce gelen bilginin daha iyi hatırlandığını ya da sonraki bilgiden ağır bastığını bildirmiyor; sıra tek başına yetersiz.",
+   "alternative_explanation": "Erken ve geç başlıklar arasındaki farklar olayın gelişen aşamalarından ve güncellenen bilgiden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Okur ya da karar vericinin hatırlama ya da ağırlıklandırma verisi",
+    "Erken bilginin sonraki ilgili kanıta rağmen korunduğunu gösteren karşılaştırma"
+   ]
+  }
+ ]
+}

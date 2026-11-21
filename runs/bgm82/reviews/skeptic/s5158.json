@@ -1,0 +1,203 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 11:38] Fenerbahçe, Göztepe'ye 2-1 yenildikten sonra Liverpool maçının hazırlıklarına başladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 14:37] Fenerbahçe, Liverpool maçı hazırlıklarına başladı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Hazırlıkların başlaması olgusunu Son Dakika bir önceki yenilgiyle birlikte veriyor, Sabah ise yalnızca hazırlığa odaklanıyor; başlıklar aynı olgunun farklı boyutunu öne çıkarıyor.",
+   "alternative_explanation": "Önceki maçın sonucu zaman sırasını anlatan bağlamsal bir bilgi olabilir; hakem haberlerinde (ör. 'Fransız hakem' ile 'hakemi belli oldu') ise fark yalnızca ayrıntı düzeyinde.",
+   "missing_context": [
+    "Sabah haberinin spotunda önceki yenilgiye değinilip değinilmediği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe, Liverpool maçı hazırlıklarına start verdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe Liverpool maçının hazırlıklarına başladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dev mücadelede Fransız düdük",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akit 'start verdi', Sözcü 'başladı' diyor; TGRT hakem için 'Fransız düdük' kullanıyor. Farklar üslup ve deyim düzeyinde, çağrışım yükü taşımıyor.",
+   "alternative_explanation": "Spor dilinde 'start vermek' ve 'düdük' yerleşik ifadeler; anlam farkı yaratmıyor.",
+   "missing_context": [
+    "Aynı olgu için çağrışım bakımından ayrışan bir sözcük çifti"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe-Liverpool maçına Fransız hakem — Şampiyonlar Ligi'nin 4. haftasında Fenerbahçe ile Liverpool arasında oynanacak maçı Fransız hakem Clement Turpin yönetecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Clement Turpin kimdir?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hakem 'Fransız hakem' ya da adıyla anılıyor; bu etiketler kimlik bildiriyor, meşruiyete dair bir değerlendirme taşımıyor.",
+   "alternative_explanation": "Uyruk belirtmek UEFA hakem atamalarında olağan bir tanıtım biçimi.",
+   "missing_context": [
+    "Hakemi değerlendiren (ör. 'tartışmalı hakem') bir nitelendirme"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Şampiyonlar Ligi'nin 4. haftasında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tekrarlanan ya da yapısal bir sorunu tek bir vaka üzerinden anlatmıyor; haber tekil, zamanı belli bir olay.",
+   "alternative_explanation": "Olayın kendisi tekil bir gelişme olduğundan tek vaka anlatımı yapısal bir örüntünün gizlenmesi anlamına gelmiyor.",
+   "missing_context": [
+    "Olayın tekrarlanan ya da yapısal bir sorunun parçası olduğunu gösteren bağlam"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe-Liverpool maçının hakemi belli oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin seçilmiş göstergelerle genel bir sonuç desteklemiyor; başlıklar atama ve hazırlık bilgisi veriyor.",
+   "alternative_explanation": "Duyuru haberlerinde bir sonuç savunulmadığı için seçici gösterge kullanımı söz konusu değil.",
+   "missing_context": [
+    "Genel bir sonuç ve onu sınırlayan aynı kaynaktan veriler"
+   ]
+  }
+ ]
+}

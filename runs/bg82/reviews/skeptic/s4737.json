@@ -1,0 +1,177 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 10:47] Erdoğan, eski Dışişleri Bakanı Sinirlioğlu'nu BM Genel Sekreterliğine aday gösterdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 01:45] Türkiye, Feridun Sinirlioğlu'nu BM Genel Sekreterliği için aday gösterdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkına bağlanan bir tercih, yargı ya da öneri içermiyor.",
+   "alternative_explanation": "Devlet ya da devlet başkanını özne yapmak üslup tercihi olabilir; bir karar vericinin sunuma bağlı tercihi yok.",
+   "missing_context": [
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğine dair veri"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "eski Dışişleri Bakanı ve halen Avrupa Güvenlik ve İşbirliği Teşkilatı Genel Sekreteri görevini yürüten Büyükelçi Feridun Sinirlioğlu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin adayın unvanlarını sıralıyor; ancak bu unvanların bir iddiayı değerlendirmede belirleyici ağırlık aldığını gösteren bir gerekçe yok.",
+   "alternative_explanation": "Bir adaylık haberinde adayın önceki görevlerini vermek olağan bilgilendirmedir.",
+   "missing_context": [
+    "Statünün içeriğin yerine geçtiğini gösteren açık gerekçe",
+    "Karşıt kanıtın statü nedeniyle göz ardı edildiğine dair ifade"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan: Memnuniyete karşılıyoruz",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin grup aidiyetini bir güvenilirlik, suçlama ya da seçim farkına bağlamıyor.",
+   "alternative_explanation": "Kurum, kulüp, ülke ya da akrabalık bilgisinin anılması kimlik bilgisi olabilir.",
+   "missing_context": [
+    "Grup aidiyetine bağlanan açık bir yargı farkı",
+    "Benzer durumlarda tutarsız standart uygulandığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar belirli bir ayrıntıyı öne çıkarıyor; ancak bu ayrıntının bir yargının ya da tercihin yerine geçtiğini gösteren açık bir bağ yok.",
+   "alternative_explanation": "Öne çıkan ayrıntı haber değeri yüksek ve doğrulanmış bir bilgi olabilir.",
+   "missing_context": [
+    "Çarpıcı ayrıntı ile daha az çarpıcı bilgi arasında ağırlıklandırma karşılaştırması",
+    "Ayrıntının sıklık kanıtı gibi kullanıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "messenger-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakan Fidan duyurdu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir iddianın değerlendirmesinin onu iletenin kimliğine bağlandığını gösteren açık ifade ya da karşılaştırma yok.",
+   "alternative_explanation": "Kaynağın anılması haberin atıf gereği olabilir.",
+   "missing_context": [
+    "Aynı iddianın farklı iletenlerde farklı değerlendirildiğini gösteren karşılaştırma"
+   ]
+  }
+ ]
+}

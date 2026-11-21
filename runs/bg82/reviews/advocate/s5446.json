@@ -1,0 +1,171 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 17:12] Fon vurgunu soruşturması: Borsa İstanbul A.Ş. Genel Müdürü Korkmaz Enes Ergun hakkında tutuklama talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 17:46] Fon soruşturmasında Korkmaz Enes Ergun için tutuklama talebi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (Ergun hakkında tutuklama talebi) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 16:58] Borsa İstanbul eski genel müdürü Enes Ergun tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 16:59] Fon soruşturması: Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun hakkında tutuklama talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[mynet · 08:07] Eski Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun tutuklandı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "soL 16:58'de 'tutuklandı' derken BirGün bir dakika sonra yalnızca 'tutuklama talebi'ni veriyor ve tutuklama haberi diğer kurumlarda ertesi sabah geliyor; soL'un aktarımı karşılaştırmalı olarak aşamayı keskinleştiriyor. Ancak bu farkın bir sonucu gerekçesiz biçimde etkilediği gösterilmiyor.",
+   "alternative_explanation": "soL'un başlığı sonradan güncellenmiş olabilir; saat damgası ilk yayına ait olmayabilir.",
+   "missing_context": [
+    "soL haberinin güncellenme zamanı."
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz bilginin karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık aldığına dair bir karşılaştırma yok.",
+   "alternative_explanation": "Olumsuz olayın öne çıkması haberin konusunun kendisinden kaynaklanıyor olabilir; olumsuz bilginin orantısız ağırlık aldığını gösteren karşılaştırılabilir olumlu bilgi metinde yok.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve nasıl işlendiği.",
+    "Olumsuz vurgunun bir değerlendirmeyi değiştirdiğine dair kanıt."
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda çarpıcı bir ayrıntının bir yargıya ya da tercihe gerekçe yapıldığı görülmüyor.",
+   "alternative_explanation": "Başlıklar hukuki süreci aktarıyor.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir değerlendirmeyi yönlendirdiğine dair ifade."
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir başlangıç değerinin sonraki bir tahmin ya da kararı yönlendirdiği bir sayı ya da öneri bulunmuyor.",
+   "alternative_explanation": "Haberler bir tutuklama sürecini aktarıyor.",
+   "missing_context": [
+    "Bir tahminin önceki bir değere bağlandığı ifade."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,162 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[birgun · 11:45] Merkezefendi Belediye Başkanı Şeniz Doğan görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Parti Yeni vurgun eski: Merkezefendi Belediye Başkanı Şeniz Doğan uzaklaştırıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Merkezefendi Belediye Başkanı Şeniz Doğan'ın görevden uzaklaştırılması farklı kurumlarca farklı sözcük ve vurgularla başlıklandırılmış; ancak metin bu sunum farkını hiçbir tercihe, yargıya veya karara bağlamıyor ve başlıkların karar-ilgili olgularda eşdeğer olduğunu açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, eldeki bilginin güncellenmesi, haber ajansı metninin kısaltılması ve kurumların editoryal üslubundan kaynaklanabilir; bir okuyucu ya da karar verici üzerinde çerçeve etkisi gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okuyucu yargısını değiştirdiğini gösteren karşılaştırmalı ölçüm",
+    "Başlıkların aynı olgulara dayandığını açıkça gösteren bilgi",
+    "Herhangi bir tercih veya yargının bu sunuma dayandırıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Parti Yeni vurgun eski",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "\"rüşvet almak, ihaleye fesat karıştırmak ve irtikap\" iddiasıyla tutuklanan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Merkezefendi Belediye Başkanı Şeniz Doğan'ın görevden uzaklaştırılması haberinde kişinin davranışını kalıcı bir karakter özelliğine bağlayan açık bir nedensel yargı kurulmuyor; metin soruşturma ve idari işlemi aktarıyor.",
+   "alternative_explanation": "Haber dili, hukuki süreci ve suçlamaları aktarıyor; durumsal etkenlerin göz ardı edildiğine dair bir akıl yürütme yok.",
+   "missing_context": [
+    "Davranışı karaktere bağlayan açık yargı",
+    "Göz ardı edilen durumsal etkenler",
+    "Farklı bağlamlarda karşılaştırmalı davranış"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "YENİ Partili Merkezefendi Belediye Başkanı Şeniz Doğan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Merkezefendi Belediye Başkanı Şeniz Doğan'ın görevden uzaklaştırılması haberinde bir gruba ya da kuruma ait aidiyet ifadesi geçiyor; ancak metin güvenilirlik, suçlama veya fayda farkını bu aidiyete bağlamıyor ve tutarsız standart uygulandığını göstermiyor.",
+   "alternative_explanation": "Aidiyet ifadesi kimlik belirleme amaçlı olgusal bir bilgi veya alıntılanan açıklamanın aktarımı olabilir.",
+   "missing_context": [
+    "Grup üyeliğine göre farklı muamele gördüğü gösterilen karşılaştırılabilir vakalar",
+    "Kararın grup kimliğine dayandırıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Parti Yeni vurgun eski: Merkezefendi Belediye Başkanı Şeniz Doğan uzaklaştırıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Merkezefendi Belediye Başkanı Şeniz Doğan'ın görevden uzaklaştırılması haberinde açıkça belirtilmiş bir ön inanç ile kanıtın asimetrik ele alındığını gösteren bir akıl yürütme yok; metin olayı ve tarafların açıklamalarını aktarıyor.",
+   "alternative_explanation": "Kurumların farklı ayrıntıları seçmesi kaynak erişimi ve editoryal tercihten kaynaklanabilir; ön inancı destekleyen kanıtın seçici ele alındığı gösterilmiyor.",
+   "missing_context": [
+    "Açıkça belirtilmiş bir ön inanç veya hipotez",
+    "Karşıt kanıtın gerekçesiz reddedildiğini gösteren ifade"
+   ]
+  }
+ ]
+}

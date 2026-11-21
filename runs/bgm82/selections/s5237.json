@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "responsibility-framing",
+  "word-choice",
+  "loaded-language",
+  "labeling",
+  "emphasis-framing",
+  "fear-appeal"
+ ],
+ "selection_uncertainty": [
+  "Suçlama iddia aşamasında.",
+  "Şüpheli sayısı kaynaklar arasında farklı (4/5)."
+ ],
+ "selection_note": "Bazı başlıkların 'iddia' kaydını düşürüp 'suikast planı'nı kesinmiş gibi sunması sorumluluk çerçevelemesi açısından aday."
+}

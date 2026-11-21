@@ -1,0 +1,242 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "600 bin dolar iddiası: Özgür Özel'den Emir Sarıgül hakkında suç duyurusu ve 1 milyon lira tazminat talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özgür Özel'den Emir Sarıgül'e suç duyurusu ve 1 milyon TL'lik dava",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı hukuki adım için t24 başlığa Özel'e yöneltilen iddianın tutarını, birgun ise Özel'in açtığı davanın tutarını taşıyor; suçlama boyutu ile yanıt boyutu ayrışıyor.",
+   "alternative_explanation": "t24 okura davanın konusunu hatırlatmak için iddiayı anmış olabilir.",
+   "missing_context": [
+    "İddianın kaynağı olan ifade tutanağı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Özgür Özel’den Emir Sarıgül’e iki ayrı dava hamlesi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özgür Özel'den Emir Sarıgül'e dava hazırlığı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "sozcu 'dava hamlesi', haber7 'dava hazırlığı' diyor; fark belirgin bir çağrışım farkından çok üslup farkı.",
+   "alternative_explanation": "Her iki ifade de aynı hukuki girişimi betimleyen yaygın kalıplar.",
+   "missing_context": [
+    "Çağrışımı belirgin biçimde farklı sözcük seçimi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Erzincan Milletvekili Mustafa Sarıgül'ün oğlu Emir Sarıgül",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kara para soruşturmasında tutuklanan Emir Sarıgül",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "diken Emir Sarıgül'ü babasıyla, cnnturk soruşturmadaki durumuyla tanımlıyor; her iki tanım da olgusal kimlik bilgisi ve ek bir değerlendirme taşıdığı açık değil.",
+   "alternative_explanation": "Tanımlar okurun kişiyi tanıması için verilen olgusal bilgilerdir.",
+   "missing_context": [
+    "Değerlendirici yükü olan bir etiket"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emir Sarıgül, babası Mustafa Sarıgül'ün Yeni Parti lideri Özgür Özel'e 600 bin dolar para verdiğini öne sürmüştü.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 15:05] Özgür Özel'den Emir Sarıgül'e suç duyurusu ve 1 milyon TL'lik dava",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İddialar 'öne sürmüştü' işaretleyicisiyle aktarılıyor; başlıklar Özel'i suç duyurusu yapan taraf olarak özne yapıyor ama kimseye suç atamıyor.",
+   "alternative_explanation": "Başlıklar bir hukuki girişimi aktarıyor.",
+   "missing_context": [
+    "Başlıkta adı verilen bir aktöre suç atanması"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Özgür Özel’den Emir Sarıgül’e hem suç duyurusu hem tazminat davası",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneği tek seçenek olarak sunan bir ifade yok; 'hem... hem' iki adımın birlikte atıldığını belirtiyor.",
+   "alternative_explanation": "'Hem... hem' bir seçim değil birliktelik bildiriyor.",
+   "missing_context": [
+    "İki seçenekli çerçeve"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ileri sürdüğü iddialar nedeniyle Emir Sarıgül hakkında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Metinde 'nedeniyle' ifadesi geçiyor; ancak bu bağ Özel'in kendi duyurduğu gerekçedir, birliktelik veya zaman sırasından çıkarılmış bir nedensellik değil.",
+   "alternative_explanation": "Suç duyurusunun gerekçesi tarafın kendi açıklamasıdır.",
+   "missing_context": [
+    "Birliktelikten çıkarılmış bir nedensellik iddiası"
+   ]
+  }
+ ]
+}

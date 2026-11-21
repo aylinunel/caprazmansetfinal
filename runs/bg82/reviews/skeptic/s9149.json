@@ -1,0 +1,202 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin olumsuz bir gelişmeyi aktarıyor; ancak olumsuz bilgiye karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık verildiğini gösteren bir belge ya da tekrarlanan davranış yok.",
+   "alternative_explanation": "Haber resmî bir hava uyarısını aktarıyor; olumsuz içerik uyarının kendisinden kaynaklanıyor.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgiyle ağırlıklandırma kıyası",
+    "Orantısız ağırlığın bir değerlendirmeyi etkilediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fırtınanın hızı 90 kilometreye çıkabilir",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar belirli bir ayrıntıyı öne çıkarıyor; ancak bu ayrıntının bir yargının ya da tercihin yerine geçtiğini gösteren açık bir bağ yok.",
+   "alternative_explanation": "Öne çıkan ayrıntı haber değeri yüksek ve doğrulanmış bir bilgi olabilir.",
+   "missing_context": [
+    "Çarpıcı ayrıntı ile daha az çarpıcı bilgi arasında ağırlıklandırma karşılaştırması",
+    "Ayrıntının sıklık kanıtı gibi kullanıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aksam · 18:12] Marmara için sağanak alarmı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 19:12] Meteoroloji'den aralarında İstanbul'un da olduğu 11 il için sarı kodlu uyarı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkına bağlanan bir tercih, yargı ya da öneri içermiyor.",
+   "alternative_explanation": "'Alarm' ile 'uyarı' arasındaki fark üslup farkı olabilir; bir karar vericinin tercihi aktarılmıyor.",
+   "missing_context": [
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğine dair veri"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hatırlanabilirlik, canlılık ya da yakınlık bir tahminin veya genellemenin gerekçesi olarak kullanılmıyor.",
+   "alternative_explanation": "Haberler resmî bir uyarıyı aktarıyor; sıklık tahmini yapmıyor.",
+   "missing_context": [
+    "Akla kolay gelen örneklere dayanan açık bir tahmin ya da genelleme",
+    "Daha güçlü sıklık kanıtıyla çelişki"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[t24 · 18:59] Meteoroloji'den İstanbul dahil 11 kente sarı kodlu yağış uyarısı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[diken · 18:36] Fırtına: İstanbul dahil 11 ile sarı kodlu uyarı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "MGM, Kıyı Ege ile Antalya, Bartın, Sinop ve Samsun çevrelerinde sağanak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar uyarının konusunu yağış ya da fırtına olarak farklı aktarıyor ve ANKA farklı bölgeleri sayıyor; anlatılar arasında fark var, ancak bir sonuca etkisi gösterilmiyor.",
+   "alternative_explanation": "Uyarı hem yağışı hem fırtınayı kapsıyor olabilir; farklar güncellenen tahminlerden kaynaklanabilir.",
+   "missing_context": [
+    "Özgün kaynak metni (resmî açıklama ya da kurum duyurusu)",
+    "Farkın bir sonuca ya da karara etki ettiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir alandaki olumlu izlenimin ayrı bir alandaki olumlu yargıya açıkça bağlandığı görülmüyor.",
+   "alternative_explanation": "Olumlu nitelendirmeler varsa bile aynı alandaki gözlenen olgulara dayanıyor olabilir.",
+   "missing_context": [
+    "İki farklı alanda verilen yargı ve aralarındaki açık bağ",
+    "Ölçütlerin yerine izlenimin geçtiğine dair kanıt"
+   ]
+  }
+ ]
+}

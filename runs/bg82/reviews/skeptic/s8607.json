@@ -1,0 +1,199 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül hakkındaki 'cinsel istismar' dosyası Ankara'ya gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül soruşturmasında yetkisizlik kararı: Dosya Ankara'ya gönderildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı vurgularla başlıklandırıyor; ancak metin, bu sunum farkına bağlanmış bir tercih, yargı ya da öneri göstermiyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinden, ajans metinlerinden, olayın gelişen aşamalarından ve yer sınırından kaynaklanabilir; açıklamaların karar açısından eşdeğer olduğu metinde kurulmuyor.",
+   "missing_context": [
+    "Başlıkların karar açısından eşdeğer olduğuna dair açık tespit",
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Suçlamalar vahim! Mustafa Sarıgül'ün dosyası Ankara'ya gönderildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı ya da rakamı öne çıkarıyor; metin bu ayrıntıyı bir yargıya ya da seçime açıkça bağlamıyor ve karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı olayın haber değeri taşıyan olgusal bir parçası olabilir; çarpıcılık tek başına hatalı ağırlıklandırma kanıtı değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı belirlediğini gösteren açık ifade",
+    "Belirgin ve belirgin olmayan bilginin nasıl ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Suçlamalar vahim!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz olay olumsuz ifadelerle aktarılıyor; ancak olumsuz kanıta karşılaştırılabilir olumlu kanıta göre orantısız ağırlık verildiği belgelenmiyor.",
+   "alternative_explanation": "Suçlamaların niteliği resmi açıklamada yer alıyor; olumsuz vurgu olayın içeriğinden kaynaklanabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıt",
+    "Orantısız ağırlığın bir değerlendirmeyi etkilediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin, önceki bir uyarana maruz kalan birinin sonraki bir yanıtını tanımlamıyor; olayların sıralanması tek başına hazırlama etkisi göstermez.",
+   "alternative_explanation": "Olayların art arda aktarılması kronolojik haberciliğin gereğidir; bir maruziyet-yanıt ilişkisi iddia edilmiyor.",
+   "missing_context": [
+    "Somut bir önceki maruziyet ve sonraki yanıt",
+    "Karşılaştırmalı ya da tekrarlanan gözlem"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Cumhuriyet Başsavcılığı'ndan yapılan açıklamaya göre",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin resmi kurumları ya da makam sahiplerini kaynak olarak anıyor; ancak bu statüye belirleyici ağırlık verilerek ilgili karşı kanıtın ya da itirazın gerekçesiz biçimde göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi kurumlara atıf, haberciliğin olağan kaynak gösterme pratiğidir ve atıf işaretleri statünün kanıt yerine konmadığını düşündürür.",
+   "missing_context": [
+    "Statünün tek gerekçe olarak kullanıldığını gösteren ifade",
+    "Göz ardı edilen ilgili karşı kanıt"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir etkinliğe içsel motivasyonla katılım, beklenen bir ödül ve ödül sonrası katılım düşüşü yer almıyor.",
+   "alternative_explanation": "Haber bir yargısal usul gelişmesini aktarıyor; motivasyon ya da ödül konusu yok.",
+   "missing_context": [
+    "Ödül öncesi taban çizgisi",
+    "Ödül kaldırıldıktan sonraki davranış verisi"
+   ]
+  }
+ ]
+}

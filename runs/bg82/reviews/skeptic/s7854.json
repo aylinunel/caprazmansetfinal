@@ -1,0 +1,216 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da yargı krizi sonrası silahlı saldırı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yargı krizinin ardından Polonya'da silahlı saldırı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Hastanede ölen saldırganın aşırı sağcı ideolojiden",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum saldırıyı \"yargı krizi\" ile zaman bağlacıyla yan yana koyuyor; kart yakınlığın tek başına ilişki iddiası sayılmadığını belirtiyor.",
+   "alternative_explanation": "Zaman bilgisi bağlam olarak verilmiş olabilir; diğer kurumlar faile ilişkin farklı bir bağlam (ideoloji) aktarıyor.",
+   "missing_context": [
+    "Saldırının motivasyonuna ilişkin resmi açıklama"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Krakov'daki silahlı saldırıda 5 kişi öldü, 10'dan fazla kişi yaralandı — Polonya'nın Krakov kentinde düzenlenen silahlı saldırıda 6 kişi hayatını kaybetti, 15 kişi yaralandı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "TRT Haber başlığı erken ilk sayıyı (5 ölü) korurken aynı haberin lede'i güncel sayıyı (6 ölü, 15 yaralı) veriyor.",
+   "alternative_explanation": "Başlığın güncellenmemesi teknik bir gecikme olabilir; ilk sayının bir yargıya gerekçe yapıldığı açık değil.",
+   "missing_context": [
+    "Haberin güncellenme geçmişi"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı dehşeti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı: 6 ölü,15 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Duygusal ve sayısal başlık aynı olguya ilişkin üslup farkı.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da kanlı saldırı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz sözcük var; orantısız ağırlıklandırma belgelenmiyor.",
+   "alternative_explanation": "Ölümcül bir saldırının olumsuz dille anlatılması orantılı olabilir.",
+   "missing_context": [
+    "Karşılaştırmalı kanıt"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "güvenlik güçleri alarmda",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hatırlanabilirlik bir tahmin gerekçesi olarak kullanılmıyor.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "Kolay hatırlanan örneğe dayanan tahmin"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı şoku!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı vurgu var; yargıya haksız etkisi gösterilmiyor.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "Yargıya bağlantı"
+   ]
+  }
+ ]
+}

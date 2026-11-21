@@ -1,0 +1,259 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[onedio · 22:10] Kaşif Kozinoğlu'nun Kesin Ölüm Nedeni Belli Oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[tgrt · 22:11] Kaşif Kozinoğlu'nun ölüm nedeni belli oldu! Zehirlenme şüphesi aydınlatıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başsavcılık iki değerlendirmeye itiraz edecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kabirden alınan tırnak örneğinde antimon seviyesinin yüksek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Onedio ve TGRT Adli Tıp raporunu 'kesin' ve şüpheyi 'aydınlatan' bir sonuç olarak sunuyor; oysa Yeni Şafak başsavcılığın itirazını, TGRT'nin kendi lede'i de yüksek antimon bulgusunu aktarıyor. Kurumsal otoriteye belirleyici ağırlık veriliyor, ancak karşı kanıtın gerekçesiz biçimde gözardı edildiği tam olarak gösterilmiyor; TGRT bulguyu metninde anıyor.",
+   "alternative_explanation": "Adli Tıp Kurumu ölüm nedeni konusunda yetkili ve ilgili uzmanlığa sahip; rapora güvenmek gerekçeli bir tercih olabilir.",
+   "missing_context": [
+    "Başsavcılığın itiraz gerekçeleri.",
+    "Raporun antimon bulgusunu nasıl açıkladığı."
+   ]
+  },
+  {
+   "card_id": "belief-perseverance",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 23:31] Kaşif Kozinoğlu'nun ölüm nedeni belli oldu! Antimon tespit edilmişti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Başsavcılık itiraz edecek",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "zehirlenerek öldüğünün tıbbi delillerinin bulunmadığı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Daha önceki zehirlenme şüphesi (antimon bulgusu) ve buna karşı rapordaki 'zehirlenme delili bulunmadığı' bulgusu metinde birlikte var; başsavcılık rapora itiraz ederek önceki konumunu sürdürüyor. Ancak itirazın gerekçesiz olduğu metinde gösterilmiyor.",
+   "alternative_explanation": "İtiraz, rapordaki metodolojik sorunlara dayanan gerekçeli bir hukuki adım olabilir.",
+   "missing_context": [
+    "İtirazın içeriği ve gerekçesi."
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 23:31] Kaşif Kozinoğlu'nun ölüm nedeni belli oldu! Antimon tespit edilmişti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[tgrt · 22:11] Kaşif Kozinoğlu'nun ölüm nedeni belli oldu! Zehirlenme şüphesi aydınlatıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milli Gazete raporla çelişen antimon bulgusunu, TGRT ise raporu destekleyen kapanışı öne çıkarıyor; kurumlar arasında kanıtların asimetrik vurgulandığı görülüyor, ancak hiçbir metin açık bir önceki inancı ve bu inanç lehine seçici bir değerlendirmeyi belirtmiyor.",
+   "alternative_explanation": "Vurgu farkları raporun farklı bölümlerini aktaran olağan editoryal seçimler olabilir.",
+   "missing_context": [
+    "Kurumların daha önceki haberlerde savunduğu tez."
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 22:11] Kaşif Kozinoğlu'nun ölüm nedeni belli oldu! Zehirlenme şüphesi aydınlatıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[bianet · 09:28] Kozinoğlu'nun ölümüne ilişkin Adli Tıp raporu: Savcılık itiraz edecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (Adli Tıp raporunun açıklanması) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Antimon tespit edilmişti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milli Gazete daha önceki çarpıcı bulguyu (antimon) başlığa taşıyor; ancak bu ayrıntının açık bir yargıya kanıt yerine konduğu metinde gösterilmiyor.",
+   "alternative_explanation": "Bulgu dosyanın olgusal bir parçası ve itirazla ilgili olabilir.",
+   "missing_context": [
+    "Antimon bulgusunun raporda nasıl değerlendirildiği."
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir etkinliğe önceden içsel motivasyonla katılan, beklenen bir ödül alan ve ödül kalkınca katılımı azalan bir kişi bulunmuyor; kartın davranışsal koşulları gözlenemiyor.",
+   "alternative_explanation": "Haberler bir hukuki ya da siyasi gelişmeyi aktarıyor; ödül-motivasyon ilişkisi konunun dışında.",
+   "missing_context": [
+    "Ödül öncesi ve sonrası davranışa ilişkin karşılaştırmalı veri."
+   ]
+  }
+ ]
+}

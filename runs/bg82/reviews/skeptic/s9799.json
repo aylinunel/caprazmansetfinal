@@ -1,0 +1,226 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[bianet · 17:22] Fon tasfiyesinde 161 milyar TL ödeme yapıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: 161 milyar lira ödeme yapıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fon tasfiyesinde yatırımcılara yapılan 161 milyar TL ödeme farklı kurumlarca farklı sözcük ve vurgularla başlıklandırılmış; ancak metin bu sunum farkını hiçbir tercihe, yargıya veya karara bağlamıyor ve başlıkların karar-ilgili olgularda eşdeğer olduğunu açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, eldeki bilginin güncellenmesi, haber ajansı metninin kısaltılması ve kurumların editoryal üslubundan kaynaklanabilir; bir okuyucu ya da karar verici üzerinde çerçeve etkisi gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okuyucu yargısını değiştirdiğini gösteren karşılaştırmalı ölçüm",
+    "Başlıkların aynı olgulara dayandığını açıkça gösteren bilgi",
+    "Herhangi bir tercih veya yargının bu sunuma dayandırıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "444 bin 893 tekil yatırımcıya yaklaşık 161 milyar TL",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "333 bin 493 yatırımcı net yatırım tutarının tamamını aldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fon tasfiyesinde yatırımcılara yapılan 161 milyar TL ödeme haberinde daha önce verilen bir değer ile sonraki bir değer birlikte görünüyor; ancak metin sonraki değerin öncekine dayandırıldığını kurmuyor, aksine değerler yeni bilgiyle güncellenmiş görünüyor.",
+   "alternative_explanation": "Farklı rakamlar farklı saatlerde güncellenen resmi bilgiyi veya hukuki istemin alt-üst sınırını yansıtabilir; bir çapa etkisi göstermez.",
+   "missing_context": [
+    "Sonraki yargının önceki değere açıkça dayandırıldığını gösteren ifade",
+    "Çapaya rağmen revizyon gerektiren kanıtın göz ardı edildiğine dair bilgi"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Yardımcısı Cevdet Yılmaz başkanlığında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fon tasfiyesinde yatırımcılara yapılan 161 milyar TL ödeme haberinde bir otorite veya resmi makam anılıyor; ancak metin bu statüye bir iddianın değerlendirilmesinde belirleyici ağırlık verildiğini ya da karşıt kanıtın statü nedeniyle göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Resmi makamın anılması haberin kaynağını belirtme gereğidir; otoriteye dayalı bir akıl yürütme hatası değil.",
+   "missing_context": [
+    "Otoritenin yalnızca statüsü nedeniyle takip edildiğini gösteren ifade",
+    "Göz ardı edilen karşıt kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "333 bini aşkın yatırımcı tamamını aldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fon tasfiyesinde yatırımcılara yapılan 161 milyar TL ödeme haberinde dikkat çekici bir ifade bulunuyor; fakat metin bu ayrıntıyı bir yargıya, tahmine veya seçime açıkça bağlamıyor ve daha az çarpıcı bilgilerle karşılaştırmalı bir ağırlıklandırma göstermiyor.",
+   "alternative_explanation": "Çarpıcı ifade haber başlığı yazımının olağan bir öğesi olabilir; olayın kendisi gerçekten dikkat çekici olabilir ve bu, bir akıl yürütme hatası anlamına gelmez.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir karar veya tahmini etkilediğine dair açık ifade",
+    "Çarpıcı ve sıradan bilgilerin farklı ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "base-rate-fallacy",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "haksız kazanç elde ettiği belirlenen yatırımcıların ara ödeme kapsamı dışında bırakıldığı bildirildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fon tasfiyesinde yatırımcılara yapılan 161 milyar TL ödeme haberinde bir olasılık yargısı ve buna karşı göz ardı edilen bir taban oranı kurulmuyor; metin toplam rakamları aktarıyor.",
+   "alternative_explanation": "Rakamlar resmi açıklamanın aktarımıdır; vakaya özgü ayrıntı lehine taban oranının dışlandığı bir çıkarım yok.",
+   "missing_context": [
+    "Açık bir olasılık yargısı",
+    "Uygulanabilir taban oranı ve onun göz ardı edildiğini gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fon tasfiyesinde yatırımcılara yapılan 161 milyar TL ödeme haberinde bir etkinliğe içsel motivasyonla katılım, beklenen bir dış ödül ya da ödül sonrası katılımda düşüş gibi öğeler hiç yer almıyor.",
+   "alternative_explanation": "Haber metni motivasyon ve ödül ilişkisiyle ilgili değil; kart bu olaya uygulanamıyor.",
+   "missing_context": [
+    "Ödül öncesi gönüllü katılım düzeyi",
+    "Beklenen ve etkinliğe bağlı bir ödül",
+    "Ödül sonrası katılımı ölçen karşılaştırmalı veri"
+   ]
+  }
+ ]
+}

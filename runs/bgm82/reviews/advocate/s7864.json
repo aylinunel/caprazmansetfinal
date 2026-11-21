@@ -1,0 +1,262 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ethem Büyükışık'ın oğlu Dorukhan Büyükışık cinayeti davası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık'ın şüpheli ölümüne ilişkin davada 12 sanığa tahliye",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık'ın ölümüne ilişkin davada 12 sanık tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı dava bir başlıkta 'cinayeti davası', bir başlıkta 'şüpheli ölümü', bir başlıkta yalnızca 'ölümü' olarak adlandırılıyor; sözcükler olayın niteliği konusunda farklı çağrışımlar taşıyor.",
+   "alternative_explanation": "Kurumlar iddianame içeriğine ya da aile beyanlarına dayanarak farklı adlandırmalar kullanmış olabilir.",
+   "missing_context": [
+    "İddianamede olayın nasıl nitelendiği",
+    "Yargılamanın güncel durumu"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tümgeneral oğlu Dorukhan Büyükışık davasında 22 saatlik duruşma!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık davasında 12 sanığa tahliye",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Duruşma 20 saat sürdü! Dorukhan Büyükışık davasında yeni gelişme",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ara kararı bir başlık maktulün babasının rütbesi ve duruşma süresiyle, bir başlık tahliye sayısıyla, bir başka başlık ise yalnızca duruşma süresiyle öne çıkarıyor.",
+   "alternative_explanation": "Duruşmanın olağandışı uzunluğu ve ailenin kimliği haber değeri taşıyan olgusal ayrıntılardır.",
+   "missing_context": [
+    "Kararın tam içeriği"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tutuklu 25 sanıktan 12'si tahliye edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "26 tutuklu sanıktan 13'ü tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde seçici istatistik kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor. Kurumlar arasında sayı farkı var, ancak dar bir paydanın daha geniş bir iddiaya taşındığı gösterilmiyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tümgeneral oğlu Dorukhan Büyükışık davasında 22 saatlik duruşma!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "27 yaşındaki Dorukhan Büyükışık'ın hayatını kaybetmesine ilişkin",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir başlıkta 'Tümgeneral oğlu', başka bir metinde yaşıyla tanıtılıyor; ancak bu nitelemeler meşruiyet yargısı taşımaktan çok kimlik bilgisi veriyor.",
+   "alternative_explanation": "Ailenin kimliği davanın kamuoyundaki bilinirliğini açıklayan olgusal bir bilgidir.",
+   "missing_context": [
+    "Etiketin okur üzerinde değerlendirici bir anlam taşıyıp taşımadığına dair veri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ethem Büyükışık'ın oğlu Dorukhan Büyükışık cinayeti davası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık’ın ölümü: Maraton duruşmada 13 kişi tahliye edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık'ın ölümüne ilişkin davada 12 sanık tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık olayı kurumun kendi sesiyle 'cinayeti' olarak, başka bir başlık duruşmayı 'Maraton' olarak niteliyor; diğer kurumlar aynı olguyu bu sözcükler olmadan veriyor. 'Cinayet' nitelemesi yargılama sürerken olgunun ötesine geçebilir.",
+   "alternative_explanation": "Dava cinayet iddiasıyla yürütülüyorsa 'cinayet davası' ifadesi davanın konusunu adlandırıyor olabilir.",
+   "missing_context": [
+    "Davadaki suçlamanın hukuki niteliği"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde epizodik çerçeveleme kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  }
+ ]
+}

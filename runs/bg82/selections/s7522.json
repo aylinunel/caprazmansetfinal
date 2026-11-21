@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "salience-bias",
+  "framing-effect",
+  "negativity-bias",
+  "in-group-bias",
+  "leveling-and-sharpening",
+  "attentional-bias"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Kadro listesinin tamamı metinde yok."
+ ],
+ "selection_note": "Kadro haberlerinde 'flaş karar', 'kritik eksik', 'Fenerbahçeli yıldızlar kadro dışı' gibi seçici vurgular var."
+}

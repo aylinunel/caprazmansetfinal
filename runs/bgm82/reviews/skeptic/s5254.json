@@ -1,0 +1,211 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tarihi zafer! Şampiyon Kimi Antonelli",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kimi Antonelli 2026 Formula 1 dünya şampiyonu oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı şampiyonluk akşam'da 'tarihi zafer', aa'da 'dünya şampiyonu oldu' olarak veriliyor.",
+   "alternative_explanation": "Spor haberciliğinde coşkulu dil yaygın bir üsluptur; rekorun kendisi 'tarihi' nitelemesini olgusal olarak karşılayabilir, fark çağrışımdan çok üslup farkı olabilir.",
+   "missing_context": [
+    "Sözcüklerin çağrışım farkının okur algısında karşılığı olduğuna dair veri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kimi Antonelli: 'Garajda doğan' ve pistte büyüyen dünya şampiyonu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Formula 1'de tarihi rekor! 20 yaşındaki Kimi Antonelli en genç dünya şampiyonu oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Çoğu başlık yaş rekorunu, bbcturkce yaşam öyküsünü öne çıkarıyor.",
+   "alternative_explanation": "bbcturkce metni ayrı bir portre yazısı olabilir; rekor ve unvan aynı başarının boyutları olup karşıt boyutlar (kazanan/kaybeden, maliyet/fayda) değil.",
+   "missing_context": [
+    "bbcturkce metninin olay haberi mi portre mi olduğu"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tarihi zafer! Şampiyon Kimi Antonelli",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kimi Antonelli 2026 Formula 1 dünya şampiyonu oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "akşam 'Tarihi zafer!' diyor; aa aynı olayı değerlendirici sözcük olmadan veriyor.",
+   "alternative_explanation": "Pilot 'tarihin en genç şampiyonu' olduğu için 'tarihi' nitelemesi bildirilen olgunun ötesine geçmeyebilir.",
+   "missing_context": [
+    "'Tarihi' sözcüğünün olgusal rekorun ötesinde bir değerlendirme taşıyıp taşımadığı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kimi Antonelli, sezonun bitimine dört yarış kala şampiyonluğunu ilan ederek Sebastian Vettel'in rekorunu geride bıraktı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "evrensel şampiyonluğu önceki rekorlar serisine (Vettel'in rekoru) yerleştiriyor.",
+   "alternative_explanation": "Rekor karşılaştırması olayın kendisinin tanımlayıcı unsurudur; bu bir kusur değil, bağlam seçimidir.",
+   "missing_context": [
+    "Diğer genç şampiyonlara ilişkin tam liste"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Konu tekrarlayan veya yapısal bir sorun değil; bir spor başarısı.",
+   "alternative_explanation": "Tek bir kişinin başarısının haberleştirilmesi olayın doğasına uygun.",
+   "missing_context": [
+    "Yapısal bir soruna işaret eden bağlam"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sorumluluğu belirsiz ve soruşturma altında bir olay yok; başlıklar suç veya kusur atfetmiyor.",
+   "alternative_explanation": "Spor başarısı haberinde sorumluluk atfı söz konusu değil.",
+   "missing_context": [
+    "Süren bir soruşturma veya kusur iddiası"
+   ]
+  }
+ ]
+}

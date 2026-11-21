@@ -1,0 +1,164 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile görüştü: İşbirliğimiz artarak sürecek",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Sayın Recep Tayyip Erdoğan ile Katar Emiri Al Sani'nin Dolmabahçe'deki görüşmesinden 5 anlaşma çıktı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir makam sahibini ve onun öngörüsünü başlığa taşıyor; ancak bu statünün bir iddiayı değerlendirmede belirleyici ağırlık aldığı ya da karşıt bir kanıtın bu yüzden gözardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Devlet başkanlarının görüşmesinde resmi açıklamanın aktarılması olağan haber pratiğidir.",
+   "missing_context": [
+    "Anlaşmaların içeriği ve bağımsız değerlendirmeler"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan ve Katar Emiri Şeyh Temim bin Hamed Al Sani'den kritik görüşme",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 16:29] Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile görüştü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Katar Emiri Al Sani'yi kabul etti: İki ülke arasında 5 kritik anlaşma",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı görüşme 'kritik görüşme', 'kabul etti' ve yalın 'görüştü' biçimlerinde sunuluyor; sunum farkı gözleniyor ama bir tercih veya yargının bu sunuma bağlandığı belirtilmiyor.",
+   "alternative_explanation": "Farklı vurgular kurumların farklı ayrıntılara (anlaşmalar, mekân) erişimini yansıtabilir.",
+   "missing_context": [
+    "Okuyucu yargısının sunuma göre değiştiğine dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani'yi kabul etti: 5 anlaşmaya imza atıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "imzalar arasında karşılıklı savunma anlaşması da yer aldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar anlaşma sayısını ve savunma anlaşmasını öne çıkarıyor; ancak bu öne çıkan ayrıntının bir yargıyı haksız biçimde etkilediği metinde yok.",
+   "alternative_explanation": "İmzalanan anlaşmalar görüşmenin en somut çıktısı olduğu için öne çıkarılmış olabilir.",
+   "missing_context": [
+    "Anlaşmaların ayrıntılı listesi"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Recep Tayyip Erdoğan, Katar Emiri Şeyh Temim bin Hamed Al Sani ile görüştü.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir alandaki olumlu izlenimin başka bir alandaki ayrı bir olumlu yargıya açıkça bağlandığı bir ifade yok.",
+   "alternative_explanation": "Haber başlıkları olayı farklı ayrıntılarla aktaran olağan editoryal tercihler olabilir; metin bir karar vericinin akıl yürütmesini belgelemiyor.",
+   "missing_context": [
+    "Görüşmeye ilişkin değerlendirici yorumlar"
+   ]
+  }
+ ]
+}

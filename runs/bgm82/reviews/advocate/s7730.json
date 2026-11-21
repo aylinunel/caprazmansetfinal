@@ -1,0 +1,241 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında yeni gelişme: 4 isim için yeniden gözaltı kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sermaye piyasası soruşturmasında BDDK Başkan Yardımcısı dahil 4 kişi gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SON DAKİKA | Fon soruşturmasında yeni dalga! 4 yeni gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı dört gözaltı bir başlıkta iki ismin yeniden gözaltısı, birinde bir kamu görevlisinin unvanı, bir diğerinde soruşturmanın genişlemesi üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar farklı ayrıntıları habere değer bulmuş olabilir.",
+   "missing_context": [
+    "Savcılık açıklamasının metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SON DAKİKA | Fon soruşturmasında yeni dalga! 4 yeni gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında sıcak gelişme: 4 kişi gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 22:55] Fon soruşturmasında yeni gelişme: 4 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı gözaltılar 'yeni dalga', 'sıcak gelişme' ve 'yeni gelişme' olarak adlandırılıyor; 'dalga' yayılan ve büyüyen bir operasyon çağrışımı taşıyor.",
+   "alternative_explanation": "Sözcük farkı kurum üslubundan kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların üslup kılavuzları"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında yeni dalga!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında dört kritik isme gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 20:10] Fon soruşturmasında 4 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "'Yeni dalga!' ve 'kritik isme' değerlendirici ifadeleri kullanılırken Evrensel aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Vurgu sözcükleri haber dilinin olağan unsurları olabilir.",
+   "missing_context": [
+    "Savcılık açıklaması"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "fon soruşturmasında tutuklu sayısı, 6 Kasım itibarıyla 113'e ulaştı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde belirli göstergelerin genel bir sonucu desteklemek için seçildiği bir çıkarım yok.",
+   "alternative_explanation": "Sayılar betimsel olarak veriliyor.",
+   "missing_context": [
+    "Aynı dönemden başka göstergeler"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında 4 isim daha gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olayı betimliyor; seçenek kurgusu yok.",
+   "missing_context": [
+    "İki seçenekli bir ifade içeren haber metni"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında yeni gözaltı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde açık bir nedensellik ifadesi yok.",
+   "alternative_explanation": "Haberler gözaltı olgusunu betimliyor.",
+   "missing_context": [
+    "Gözaltı gerekçesi"
+   ]
+  }
+ ]
+}

@@ -180,7 +180,7 @@ function firstSentence(t) { t = String(t || "").trim(); var i = t.indexOf(". ");
 function yzText(f, review) {
   if (review && review.status === "rejected") return null;
   if (review && review.status === "corrected") return { noticed: review.note || "", why: "", editor: true };
-  if (f.explain) return { noticed: f.explain.noticed, why: f.explain.why, editor: false };
+  if (f.explain) return { noticed: f.explain.noticed, means: f.explain.means || "", why: f.explain.why, editor: false };
   var pick = function (list, role) { return (list || []).filter(function (x) { return x.role === role; })[0]; };
   var adv = pick(f.mechanisms, "advocate"), sk = pick(f.alternatives, "skeptic");
   return { noticed: firstSentence(adv && adv.text), why: firstSentence((sk || adv || {}).text), editor: false };
@@ -289,6 +289,8 @@ var KURUM_TABS = { liste: 1, karsilastir: 1, partiler: 1, kayit: 1 };
 function redirectRoute(path, params) {
   params = params || {};
   if (path.indexOf("/bulgular") === 0) return "/oruntu?q=secim";
+  if (path === "/yz") return params.k ? "/oruntu?q=yz&g=" + encodeURIComponent(params.g || "medya") + "&k=" + encodeURIComponent(params.k) : "/oruntu?q=dil&f=dil-yz-kavram";
+  if (path === "/oruntu" && params.q === "yz" && !params.k) return "/oruntu?q=dil&f=dil-yz-kavram";
   if (path.indexOf("/yanlilik") === 0) return params.t === "kutuphane" ? "/yontem?s=kavramlar" : "/oruntu?q=dil";
   if (path === "/harita") return "/kurumlar?t=liste&v=harita";
   if (path === "/karsilastir") return "/kurumlar?t=karsilastir";
@@ -520,6 +522,7 @@ function reviewsExport(reviews, packVersion) {
     var r = reviews[key];
     var out = { key: key, status: r.status, note: r.note || "", at: r.at || "", pack: r.pack == null ? packVersion : r.pack, text: r.text == null ? null : r.text };
     if (r.new_pattern) out.new_pattern = true;
+    ["verdict", "reason", "card", "conditions", "ms", "answers"].forEach(function (k) { if (r[k] != null && r[k] !== "") out[k] = r[k]; });   /* AI denetim masası */
     return out;
   }) };
 }
@@ -563,8 +566,157 @@ function mediaRuleCounts(articles) {
   }).filter(function (c) { return c.n; });
 }
 
+/* Örüntüler › Genel bakış, pure parts (aiimza.js draws them). A matrix cell is significant when q < .05
+   (Benjamini-Hochberg, capraz_pipeline/aix.py). Key pairs: significant, not two AI measures (they share a source),
+   strongest first. Distance: mean |z| over the measures an outlet has, plus its two most deviating measures. */
+function profileSig(c) { return !!(c && c.rho != null && c.q != null && c.q < .05); }
+function profileKey(matrix, kindOf) {
+  return matrix.filter(function (c) { return profileSig(c) && !(kindOf(c.a) === "ai" && kindOf(c.b) === "ai"); })
+    .sort(function (a, b) { return Math.abs(b.rho) - Math.abs(a.rho); });
+}
+function profileDistance(outlets, measures) {
+  var z = {};
+  measures.forEach(function (m) {
+    var v = outlets.map(function (o) { return o.m[m.k]; }).filter(function (x) { return x != null; });
+    var mu = v.reduce(function (a, b) { return a + b; }, 0) / v.length;
+    var sd = Math.sqrt(v.reduce(function (a, b) { return a + (b - mu) * (b - mu); }, 0) / v.length) || 1;
+    z[m.k] = function (x) { return (x - mu) / sd; };
+  });
+  return outlets.map(function (o) {
+    var zs = measures.filter(function (m) { return o.m[m.k] != null; }).map(function (m) { return { m: m, z: z[m.k](o.m[m.k]) }; });
+    return { o: o, d: zs.length ? zs.reduce(function (a, x) { return a + Math.abs(x.z); }, 0) / zs.length : 0,
+      top: zs.slice().sort(function (a, b) { return Math.abs(b.z) - Math.abs(a.z); }).slice(0, 2) };
+  }).sort(function (a, b) { return b.d - a.d; });
+}
+
+
+/* AI denetim masası (Yönetim › Bilişsel inceleme): one structured expert review per AI finding. The verdict maps onto
+   the review statuses the public pages already read (verified / corrected / rejected); the rest is training data:
+   each necessary condition's state, why a finding is wrong, which concept it should have been. */
+var DESK_VERDICTS = [["correct", "Doğru", "verified"], ["partly", "Kısmen doğru", "corrected"], ["wrong", "Yanlış", "rejected"]];
+var DESK_REASONS = [["quoted_speaker", "Söz kurumun değil, alıntılanan kişinin"], ["condition_unmet", "Zorunlu koşul karşılanmıyor"],
+  ["missing_context", "Kanıt ya da bağlam yetersiz"], ["wrong_concept", "Başka bir kavram"], ["bad_quote", "Alıntı yanlış ya da kopuk"],
+  ["plain_report", "Olgu aktarımı, yanlılık değil"], ["other", "Başka bir neden (açıklamada)"]];
+var DESK_COND = ["met", "unmet", "unclear", ""];
+function deskDoc(form) {
+  var f = form || {}, v = DESK_VERDICTS.filter(function (x) { return x[0] === f.verdict; })[0];
+  var note = (f.note || "").trim(), reason = f.reason || "", card = f.card || "", cond = f.conditions || [];
+  if (!v) return { error: "Bir karar seçin." };
+  if (cond.some(function (c) { return DESK_COND.indexOf(c) < 0; })) return { error: "Koşul yanıtı tanınmadı." };
+  if (v[0] === "wrong" && !reason) return { error: "Yanlış kararı için bir neden seçin." };
+  if (v[0] === "partly" && !note) return { error: "Kısmen doğru için ne düzeltilmesi gerektiğini yazın." };
+  if (reason === "wrong_concept" && !card) return { error: "Doğru kavramı seçin." };
+  return { status: v[2], verdict: v[0], conditions: cond.slice(), reason: v[0] === "correct" ? "" : reason, card: reason === "wrong_concept" ? card : "", note: note };
+}
+/* opts: state todo (default) | done | all; card; outlet. Same concept stays together (consistent judgement), larger events first. */
+function deskQueue(items, reviews, opts) {
+  var o = opts || {}, st = o.state || "todo";
+  return items.filter(function (i) {
+    var done = !!(reviews || {})[i.key];
+    return (st === "all" || (st === "done") === done) && (!o.card || i.card === o.card) && (!o.outlet || (i.outlets || []).indexOf(o.outlet) >= 0);
+  }).sort(function (a, b) { return trCmp(a.name, b.name) || (b.size || 0) - (a.size || 0) || (a.key < b.key ? -1 : 1); });
+}
+/* One-sided 95% Wilson lower bound, as validation/feedback/stats.py wilson_lower (z = 1.6449). */
+function deskLower(k, n) {
+  if (!n) return null;
+  var z = 1.6449, p = k / n;
+  return (p + z * z / (2 * n) - z * Math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))) / (1 + z * z / n);
+}
+function deskStats(items, reviews, min) {
+  var by = {}, done = 0;
+  items.forEach(function (i) {
+    var c = by[i.card] = by[i.card] || { card: i.card, name: i.name, items: 0, reviewed: 0, kept: 0 }, r = (reviews || {})[i.key];
+    c.items++;
+    if (r) { done++; c.reviewed++; if (r.status !== "rejected") c.kept++; }
+  });
+  var cards = Object.keys(by).map(function (k) {
+    var c = by[k]; c.rate = c.reviewed ? c.kept / c.reviewed : null; c.lower = deskLower(c.kept, c.reviewed); c.need = Math.max(0, min - c.reviewed); return c;
+  }).sort(function (a, b) { return a.need - b.need || b.items - a.items; });
+  return { done: done, total: items.length, measurable: cards.filter(function (c) { return !c.need; }).length, cards: cards };
+}
+
+/* Single-source lens wording. Behaviour words only; no suffix is ever attached to an outlet name. */
+var LENS_MEASURES = [["skip", "büyük olayları atlıyor", "büyük olayı atladı"], ["loaded", "yüklü başlık atıyor", "yüklü başlık"], ["harsher", "başlığı haberinden sert yazıyor", "haberinden sert başlık"], ["first", "olayı ilk veriyor", "ilk veriş"]];
+function lensDec(x) { return x < 0.05 ? "<0,1" : (Math.round(x * 10) / 10).toFixed(1).replace(".", ","); }
+function lensSentence(name, key, m) {
+  var ms = LENS_MEASURES.filter(function (x) { return x[0] === key; })[0] || [key, key, key];
+  var noun = "“" + ms[2] + "”";
+  if (m.rr === 0) return name + " · bu " + m.n + " haberin hiçbirinde " + noun + " yok; diğer kurumlarda var.";
+  if (m.rr == null && m.none) return name + " · bu " + m.n + " haberin hiçbirinde " + noun + " ne bu kurumda ne diğer kurumlarda var.";
+  if (m.rr == null) return name + " · bu " + m.n + " haberde " + noun + " yalnızca bu kurumda var; diğer kurumlarda yok.";
+  var ci = m.lo == null || m.hi == null ? "" : "%95 aralık " + lensDec(m.lo) + "–" + lensDec(m.hi) + "; ";
+  if (m.strong) return name + " aynı haberlerde sistematik olarak " + (m.rr < 1 ? "daha seyrek " : "daha sık ") + ms[1] + " (" + lensDec(m.rr) + " kat; " + ci + m.n + " haber).";
+  return name + ", aynı haberlerde " + noun + " bakımından diğer kurumların " + lensDec(m.rr) + " katı (" + ci + m.n + " haber).";
+}
+function lensDistanceText(d) {
+  return d == null ? "Bu dilimde yeterli haber yok." : "Ortalamada diğer kurumlardan " + lensDec(d) + " kat farklı davranıyor.";
+}
+
+/* Kör kodlama: the owner codes items without seeing any AI result; the answers go to the human answer key.
+   A packet's items are in D.BLIND (data/reference/blind-packets.json). */
+var BLIND_UNSURE = ["unsure", "Emin değilim"];
+var BLIND_FIELDS = {
+  narrative: [["blame_level", "Sorumlu tutma", [["none", "Yok"], ["implied", "İma"], ["explicit", "Açık"], BLIND_UNSURE]], ["frame_category", "Çerçeve", null]],
+  behaviour: [["present", "Bu kavram bu haberlerde var mı?", [["yes", "Evet"], ["no", "Hayır"], BLIND_UNSURE]]]
+};
+function blindKey(pid, item) { return "blind__" + pid + "__" + item; }
+function blindOpen(packet, today) { return !packet.not_before || today >= packet.not_before; }
+function blindDone(kind, answers) { return (BLIND_FIELDS[kind] || []).every(function (f) { return answers && answers[f[0]]; }); }
+function blindProgress(packet, reviews) {
+  var done = packet.items.filter(function (i) { var r = reviews[blindKey(packet.id, i.item)]; return r && blindDone(packet.kind, r.answers); }).length;
+  return { done: done, total: packet.items.length };
+}
+/* Keys of regular desk items to hide while a packet is unfinished: its behaviour items (same event__card as the desk's
+   Davranışsal queue, which shows the AI verdict) and the narr__ items of its narrative events. */
+function blindHidden(blind, reviews) {
+  var hide = new Set();
+  ((blind && blind.packets) || []).forEach(function (p) {
+    var pr = blindProgress(p, reviews || {}); if (pr.done >= pr.total) return;
+    p.items.forEach(function (i) { hide.add(p.kind === "narrative" ? "narr__" + i.event : i.item); });
+  });
+  return hide;
+}
+function blindEsc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]; }); }
+/* The item view. It carries no AI result, quote, badge, other pass's answer or event link: only what is being coded. */
+function blindItemHtml(blind, packet, item, answers) {
+  answers = answers || {};
+  var ev = (packet.events || {})[item.event] || {}, h = '<section class="desk-box blind-text">';
+  if (packet.kind === "narrative") {
+    h += "<h3>Olay</h3><p>" + blindEsc(ev.olay) + '</p><h3>Kurum</h3><p><b>' + blindEsc(item.kurum) + "</b></p><h3>Başlık</h3><p>" + blindEsc(item.baslik) + "</p>";
+  } else {
+    var name = typeof deskName === "function" ? deskName(item.card, item.ad) : item.ad;
+    h += "<h3>" + blindEsc(ev.baslik) + "</h3>" + String(ev.metin || "").split("\n").filter(Boolean).map(function (l) { return "<p>" + blindEsc(l) + "</p>"; }).join("") +
+      '</section><section class="desk-box blind-concept"><h3>' + blindEsc(name) + "</h3><p>" + blindEsc(item.tanim) + "</p><ul>" +
+      (item.kosullar || []).map(function (k) { return "<li>" + blindEsc(k) + "</li>"; }).join("") + "</ul>";
+  }
+  h += '</section><div class="desk-form">';
+  (BLIND_FIELDS[packet.kind] || []).forEach(function (f, n) {
+    var opts = f[2] || (blind.categories || []).map(function (c) { return [c, c]; }).concat([BLIND_UNSURE]);
+    h += '<fieldset><legend>' + blindEsc(f[1]) + "</legend>";
+    if (f[2]) h += '<div class="desk-seg" role="radiogroup">' + opts.map(function (o, i) {
+      return '<button type="button" role="radio" aria-checked="' + (answers[f[0]] === o[0]) + '" data-desk="blind-field" data-f="' + f[0] + '" data-v="' + blindEsc(o[0]) + '">' +
+        (n === 0 ? "<kbd>" + (i + 1) + "</kbd> " : "") + blindEsc(o[1]) + "</button>";
+    }).join("") + "</div>";
+    else h += '<select data-desk="blind-sel" data-f="' + f[0] + '" aria-label="' + blindEsc(f[1]) + '"><option value="">Seçin</option>' + opts.map(function (o) {
+      return '<option value="' + blindEsc(o[0]) + '"' + (answers[f[0]] === o[0] ? " selected" : "") + ">" + blindEsc(o[1]) + "</option>";
+    }).join("") + "</select>";
+    h += "</fieldset>";
+  });
+  return h + "</div>";
+}
+
+/* One sentence on how well the AI coding matched the human coding; "" when the measurement is missing. */
+function narrQualityLine(nq) {
+  if (!nq || !nq.blame_level || !nq.frame_category || nq.blame_level.agreement == null || nq.frame_category.agreement == null) return "";
+  return "Bu kodlama, elle kodlanmış " + nq.events + " olayda insan kodlamasıyla karşılaştırıldı: sorumlu tutmada %" +
+    Math.round(100 * nq.blame_level.agreement) + ", çerçevede %" + Math.round(100 * nq.frame_category.agreement) + " uyum." +
+    (nq.codebook_approved === false ? " Kategori listesi henüz onaylanmadı." : "");
+}
+
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
+  module.exports = { narrQualityLine: narrQualityLine, blindKey: blindKey, blindDone: blindDone, blindOpen: blindOpen, blindProgress: blindProgress, blindHidden: blindHidden, blindItemHtml: blindItemHtml, BLIND_FIELDS: BLIND_FIELDS,
+    deskDoc: deskDoc, deskQueue: deskQueue, deskStats: deskStats, DESK_REASONS: DESK_REASONS, DESK_VERDICTS: DESK_VERDICTS, profileSig: profileSig, profileKey: profileKey, profileDistance: profileDistance, MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
-    axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS };
+    axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS,
+    LENS_MEASURES: LENS_MEASURES, lensSentence: lensSentence, lensDistanceText: lensDistanceText };
 }

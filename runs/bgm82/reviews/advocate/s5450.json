@@ -1,0 +1,208 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 23:24] Kanser tedavisi görüyordu! İş adamı Ahmet Nazif Zorlu hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 23:23] İş dünyasının acı kaybı: Ahmet Nazif Zorlu vefat etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 23:12] Zorlu Holding Yönetim Kurulu Başkanı Ahmet Nazif Zorlu hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölüm için Türkiye Gazetesi hastalığı, Karar iş dünyası açısından kaybı, Sözcü ise kişinin holdingteki unvanını öne çıkarıyor.",
+   "alternative_explanation": "Hastalık bilgisi okurun en çok merak ettiği soru olabilir; vurgu farkı ilgi odaklı bir seçimdir.",
+   "missing_context": [
+    "Hastalık bilgisinin kaynağı."
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 20:16] İş insanı Ahmet Nazif Zorlu hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 23:24] Kanser tedavisi görüyordu! İş adamı Ahmet Nazif Zorlu hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dirilis · 23:21] Zorlu Holding Yönetim Kurulu Başkanı Ahmet Nazif Zorlu vefat etti!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar 'İş insanı' ile 'İş adamı', 'hayatını kaybetti' ile 'vefat etti' arasında farklı sözcükler seçiyor; ancak bu fark çağrışımdan çok üslup ve kayıt farkı gibi görünüyor.",
+   "alternative_explanation": "Sözcükler eş anlamlı; fark yayın kuruluşlarının üslup kılavuzlarından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Kurumların üslup kılavuzları."
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türk iş dünyasının ve tekstil sektörünün duayen isimlerinden",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 23:23] İş dünyasının acı kaybı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 23:12] Zorlu Holding Yönetim Kurulu Başkanı Ahmet Nazif Zorlu hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Mynet 'duayen isimlerinden', Karar 'acı kaybı' gibi kurumun kendi sesindeki olumlu değerlendirici ifadelerle ölümü aktarıyor; Sözcü aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Ölüm haberlerinde saygı ifadeleri yerleşik bir gelenek; olgulara bir şey eklemiyor olabilir.",
+   "missing_context": [
+    "Kurumların benzer ölüm haberlerindeki üslubu."
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tekstil sektöründe başladığı iş hayatında Vestel, Korteks ve Zorlu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Karar ölüm haberini Zorlu'nun iş yaşamı öyküsü içine yerleştiriyor; ancak bu biyografik bağlam bir eğilim ya da kurumsal süreç değil.",
+   "alternative_explanation": "Biyografi ölüm haberlerinin olağan bileşeni.",
+   "missing_context": [
+    "Haberlerin tam metni."
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir iş insanının ölümü yinelenen ya da yapısal bir sorun değil; bölüm odaklı çerçeve kartının koşulları oluşmuyor.",
+   "alternative_explanation": "Ölüm haberi doğası gereği tek bir kişiyle ilgili.",
+   "missing_context": [
+    "Olayın yapısal bir sorunla bağlantısını gösteren bir bağlam."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,230 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "consequence-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kira artışında esas alınacak oran, TÜİK tarafından açıklanacak enflasyon verileri doğrultusunda netleşecek.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[cnnturk · 16:00] KASIM AYI KİRA ARTIŞ ORANI 2026 | Kasım ayında kiralara ne kadar zam gelecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Olay TÜİK'in enflasyon açıklaması; bir başlık kiralara gelecek zammı (beklenen etki) öne çıkarıyor ve açıklama yalnızca spotta geçiyor. Ancak başlık bir sonucu bildirmekten çok soru soruyor.",
+   "alternative_explanation": "Başlık okurun arama alışkanlığına uygun bir soru kalıbı olabilir.",
+   "missing_context": [
+    "Başlığın ana cümlesinin soru mu yoksa bir sonuç bildirimi mi sayılacağı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 10:10] Ev sahibi ve kiracılar dikkat! 2026 Kasım ayı kira artış oranı belli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[akit · 10:13] Milyonlarca kişi açıklanmasını bekliyordu! Kasım ayı kira artış oranları belli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[onedio · 10:05] Ekim Ayı Enflasyonu Açıklandı, Kasım Ayı Kira Zam Oranı Belli Oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "kasım ayı kira artış tavanı yüzde 31,23 oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı oran duyurusu bir başlıkta etkilenen taraflar (ev sahibi ve kiracılar), bir diğerinde bekleyen kişi sayısı, başka birinde veri kaynağı (enflasyon) öne çıkarılarak veriliyor; rakam ise yalnızca bazı spotlarda yer alıyor.",
+   "alternative_explanation": "Farklı kurumlar farklı okur gruplarına hitap ediyor olabilir.",
+   "missing_context": [
+    "Başlıklarda rakamın neden yer almadığına dair editoryal bilgi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Milyonlarca kişi açıklanmasını bekliyordu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar ünlem ve dikkat çekici kalıplar kullanıyor, ancak 'skandal', 'müjde' gibi değerlendirme yüklü sözcükler içermiyor.",
+   "alternative_explanation": "Ünlemler haber sitelerinde yaygın tıklama kalıplarıdır.",
+   "missing_context": []
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 10:01] Son dakika... Kasım ayı kira zam oranı belli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 14:51] 2026 Kasım kira artış oranı ne zaman",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "kasım ayında konut ve iş yerlerine uygulanabilecek kira artış tavanı yüzde 31,23 olarak belirlendi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı oran bazı kurumlarda 'zam oranı', bazılarında 'artış oranı', bir kurumda ise 'uygulanabilecek artış tavanı' olarak adlandırılıyor; 'zam' yükü, 'tavan' ise yasal üst sınırı çağrıştırıyor.",
+   "alternative_explanation": "'Zam' ve 'artış' gündelik dilde eş anlamlı kullanılıyor olabilir.",
+   "missing_context": [
+    "Okurların bu terimleri nasıl algıladığına dair veri"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca iki seçeneği tek seçenek olarak sunan bir 'ya… ya…' kalıbı bulunmuyor.",
+   "alternative_explanation": "Başlıklar olay bilgisini aktarıyor; seçenek sunan bir yapı yok.",
+   "missing_context": [
+    "Kurumun iki seçenekli bir kalıp kullandığı başlık veya spot"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ekim ayı enflasyon verilerinin açıklanmasıyla kasım ayında konut ve iş yerlerine uygulanabilecek kira artış tavanı yüzde 31,23 olarak belirlendi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin oranın enflasyon verisiyle belirlendiğini söylüyor; bu bağlantı yasal hesaplama yöntemine dayanıyor, yalnızca zaman sırasına değil.",
+   "alternative_explanation": "Kira tavanı yasal formülle hesaplanıyor.",
+   "missing_context": []
+  }
+ ]
+}

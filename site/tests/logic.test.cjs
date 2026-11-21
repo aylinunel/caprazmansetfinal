@@ -30,7 +30,8 @@ test("yzText", () => {
   const f = { mechanisms: [{ role: "advocate", text: "Birinci. İkinci." }], alternatives: [{ role: "skeptic", text: "Şüphe bir. Şüphe iki." }] };
   assert.equal(L.yzText(f, { status: "rejected" }), null);
   assert.deepEqual(L.yzText(f, { status: "corrected", note: "not" }), { noticed: "not", why: "", editor: true });
-  assert.deepEqual(L.yzText({ ...f, explain: { noticed: "n", why: "w" } }, null), { noticed: "n", why: "w", editor: false });
+  assert.deepEqual(L.yzText({ ...f, explain: { noticed: "n", why: "w" } }, null), { noticed: "n", means: "", why: "w", editor: false });
+  assert.equal(L.yzText({ ...f, explain: { noticed: "n", means: "m", why: "w" } }, null).means, "m");
   assert.deepEqual(L.yzText(f, null), { noticed: "Birinci.", why: "Şüphe bir.", editor: false });
 });
 test("ilanSearch", () => {
@@ -437,4 +438,140 @@ test("mediaCoverage sorts 26 concepts into live, not live and not measurable", (
 test("mediaRuleCounts counts only media-technique rule keys across an event's headlines", () => {
   const arts = [{ k: ["fear-appeal", "anchoring-bias"] }, { k: ["fear-appeal"] }, { k: [] }];
   assert.deepEqual(L.mediaRuleCounts(arts), [{ id: "fear-appeal", tr: "Korkuya başvurma", n: 2 }]);
+});
+
+test("profileSig / profileKey", () => {
+  const m = [{ a: "x", b: "y", rho: .5, q: .01 }, { a: "ai1", b: "ai2", rho: .9, q: .001 }, { a: "x", b: "ai1", rho: -.7, q: .02 }, { a: "y", b: "z", rho: .8, q: .2 }, { a: "z", b: "x", rho: null, q: null }];
+  assert.equal(L.profileSig(m[0]), true); assert.equal(L.profileSig(m[3]), false); assert.equal(L.profileSig(m[4]), false); assert.equal(L.profileSig(null), false);
+  const kind = (k) => (k.startsWith("ai") ? "ai" : "kural");
+  assert.deepEqual(L.profileKey(m, kind).map((c) => c.rho), [-.7, .5]);  // AI x AI dropped, |rho| order, q >= .05 dropped
+});
+test("profileDistance", () => {
+  const ms = [{ k: "a" }, { k: "b" }];
+  const os = [{ s: "p", m: { a: 0, b: 0 } }, { s: "q", m: { a: 0, b: 0 } }, { s: "r", m: { a: 10, b: null } }];
+  const r = L.profileDistance(os, ms);
+  assert.equal(r[0].o.s, "r");                          // the outlier first
+  assert.equal(r[0].top.length, 1);                     // only measures it has
+  assert.ok(Math.abs(r[0].d - Math.SQRT2) < 1e-9);      // z of 10 among {0,0,10}: (10-10/3)/sd
+  assert.equal(r[2].d, r[1].d);
+});
+
+test("notices: a custom URL rule is not cached before the URL packs arrive", () => {
+  // load it as the page does (as a plain script, it registers the global CM3 that its own tail calls)
+  const ctx = {}; require("vm").runInNewContext(require("fs").readFileSync(require("path").join(__dirname, "../js/turkish-layer.js"), "utf8"), ctx);
+  const CM3 = ctx.CM3;
+  const A = [{ i: "a1", s: "o", t: "haber", d: "2026-11-01T10:00", k: [], v: 0, p: 1 }];
+  const D = { S: [{ s: "o" }], A, E: [{ i: "e1", a: ["a1"], s: ["o"] }], FD: [], meta: {} };
+  const rule = { url: "\\/duyuru\\/", keywords: ["MAHKEMESİ"] };
+  assert.equal(CM3.notices(D, rule).total, 0);          // URLs not loaded yet: provisional "no"
+  A[0].u = "https://x.com/duyuru/1";                       // the URL packs arrive
+  assert.equal(CM3.notices(D, rule).total, 1);          // recomputed, not the cached provisional answer
+  A[0].u = undefined; A[0].nu = 1;                         // built-in rule: precomputed bit, cached as before
+  assert.equal(CM3.notices(D).total, 1);
+});
+
+/* AI denetim masası (Yönetim › Bilişsel inceleme): structured expert reviews that train the AI. */
+test("deskDoc maps verdicts onto review statuses and requires the why", () => {
+  assert.equal(L.deskDoc({}).error, "Bir karar seçin.");
+  assert.deepEqual(L.deskDoc({ verdict: "correct", conditions: ["met", "unclear"] }),
+    { status: "verified", verdict: "correct", conditions: ["met", "unclear"], reason: "", card: "", note: "" });
+  assert.equal(L.deskDoc({ verdict: "wrong" }).error, "Yanlış kararı için bir neden seçin.");
+  assert.equal(L.deskDoc({ verdict: "wrong", reason: "quoted_speaker" }).status, "rejected");
+  assert.equal(L.deskDoc({ verdict: "partly", note: "  " }).error, "Kısmen doğru için ne düzeltilmesi gerektiğini yazın.");
+  assert.equal(L.deskDoc({ verdict: "partly", note: "alıntı eksik" }).status, "corrected");
+  assert.equal(L.deskDoc({ verdict: "wrong", reason: "wrong_concept" }).error, "Doğru kavramı seçin.");
+  assert.equal(L.deskDoc({ verdict: "wrong", reason: "wrong_concept", card: "anchoring-bias" }).card, "anchoring-bias");
+  assert.equal(L.deskDoc({ verdict: "correct", conditions: ["met", "maybe"] }).error, "Koşul yanıtı tanınmadı.");
+});
+test("deskQueue filters by state, concept and outlet, groups by concept", () => {
+  const items = [{ key: "e1__b", card: "b", name: "Beta", outlets: ["x"], size: 3 }, { key: "e2__a", card: "a", name: "Alfa", outlets: ["y"], size: 9 },
+    { key: "e3__a", card: "a", name: "Alfa", outlets: ["x"], size: 20 }];
+  const rev = { "e2__a": { status: "verified" } };
+  assert.deepEqual(L.deskQueue(items, rev, {}).map((i) => i.key), ["e3__a", "e1__b"]);
+  assert.deepEqual(L.deskQueue(items, rev, { state: "done" }).map((i) => i.key), ["e2__a"]);
+  assert.deepEqual(L.deskQueue(items, rev, { state: "all", outlet: "x" }).map((i) => i.key), ["e3__a", "e1__b"]);
+  assert.deepEqual(L.deskQueue(items, rev, { state: "all", card: "a" }).map((i) => i.key), ["e3__a", "e2__a"]);
+});
+test("deskStats counts kept reviews per concept with the same lower bound as the Python gate", () => {
+  const items = [1, 2, 3].map((n) => ({ key: "e" + n + "__a", card: "a", name: "Alfa" })).concat([{ key: "e9__b", card: "b", name: "Beta" }]);
+  const rev = { "e1__a": { status: "verified" }, "e2__a": { status: "corrected" }, "e3__a": { status: "rejected" } };
+  const s = L.deskStats(items, rev, 20);
+  assert.equal(s.done, 3); assert.equal(s.total, 4); assert.equal(s.measurable, 0);
+  const a = s.cards.find((c) => c.card === "a");
+  assert.deepEqual([a.reviewed, a.kept, a.need], [3, 2, 17]);
+  assert.ok(Math.abs(a.lower - 0.2535) < 1e-3);   /* wilson_lower(2, 3) in validation/feedback/stats.py */
+  assert.equal(s.cards.find((c) => c.card === "b").lower, null);
+});
+test("reviewsExport carries the structured review", () => {
+  const out = L.reviewsExport({ "e1__a": { status: "rejected", verdict: "wrong", reason: "quoted_speaker", conditions: ["unmet"], card: "", ms: 4200, note: "" } }, "p1");
+  assert.deepEqual([out.reviews[0].verdict, out.reviews[0].reason, out.reviews[0].conditions, out.reviews[0].ms], ["wrong", "quoted_speaker", ["unmet"], 4200]);
+});
+test("lensSentence: strong wording only when strong", () => {
+  assert.equal(L.lensSentence("Sabah", "loaded", { n: 40, rr: 2.4, lo: 1.8, hi: 3.1, strong: true }),
+    "Sabah aynı haberlerde sistematik olarak daha sık yüklü başlık atıyor (2,4 kat; %95 aralık 1,8–3,1; 40 haber).");
+  assert.equal(L.lensSentence("Sabah", "first", { n: 30, rr: 0.6, lo: 0.4, hi: 0.9, strong: false }),
+    "Sabah, aynı haberlerde “ilk veriş” bakımından diğer kurumların 0,6 katı (%95 aralık 0,4–0,9; 30 haber).");
+  assert.equal(L.lensSentence("Sabah", "loaded", { n: 25, rr: 0, lo: null, hi: null, strong: false }),
+    "Sabah · bu 25 haberin hiçbirinde “yüklü başlık” yok; diğer kurumlarda var.");
+  assert.equal(L.lensSentence("Sabah", "loaded", { n: 25, rr: null, lo: null, hi: null, strong: false }),
+    "Sabah · bu 25 haberde “yüklü başlık” yalnızca bu kurumda var; diğer kurumlarda yok.");
+});
+test("lensSentence: nobody does it is not 'only this outlet'; tiny bounds print <0,1", () => {
+  assert.equal(L.lensSentence("Tele1", "harsher", { n: 45, rr: null, lo: null, hi: null, none: true, strong: false }),
+    "Tele1 · bu 45 haberin hiçbirinde “haberinden sert başlık” ne bu kurumda ne diğer kurumlarda var.");
+  assert.equal(L.lensSentence("Diken", "loaded", { n: 30, rr: 0.4, lo: 0.02, hi: 0.9, strong: false }),
+    "Diken, aynı haberlerde “yüklü başlık” bakımından diğer kurumların 0,4 katı (%95 aralık <0,1–0,9; 30 haber).");
+});
+test("lensSentence: strong and rr<1 says daha seyrek", () => {
+  assert.match(L.lensSentence("Sabah", "skip", { n: 40, rr: 0.5, lo: 0.3, hi: 0.8, strong: true }), /daha seyrek büyük olayları atlıyor/);
+});
+test("lensDistanceText", () => {
+  assert.equal(L.lensDistanceText(1.6), "Ortalamada diğer kurumlardan 1,6 kat farklı davranıyor.");
+  assert.equal(L.lensDistanceText(null), "Bu dilimde yeterli haber yok.");
+});
+
+test("blind helpers", () => {
+  assert.equal(L.blindKey("b-A1", "e1__c1"), "blind__b-A1__e1__c1");
+  assert.equal(L.blindOpen({ not_before: null }, "2026-11-21"), true);
+  assert.equal(L.blindOpen({ not_before: "2026-12-05" }, "2026-12-04"), false);
+  assert.equal(L.blindOpen({ not_before: "2026-12-05" }, "2026-12-05"), true);
+  const pk = { id: "n-A2", kind: "narrative", items: [{ item: "k1__sabah" }, { item: "k1__ntv" }] };
+  assert.deepEqual(L.blindProgress(pk, { "blind__n-A2__k1__sabah": { answers: { blame_level: "none", frame_category: "Spor" } },
+                                         "blind__n-A2__k1__ntv": { answers: { blame_level: "none" } } }), { done: 1, total: 2 });
+});
+test("blindHidden hides an unfinished packet's items from the regular queues", () => {
+  const blind = { packets: [
+    { id: "b-A1", kind: "behaviour", items: [{ item: "e1__c1", event: "e1" }, { item: "e1__c2", event: "e1" }] },
+    { id: "n-A2", kind: "narrative", items: [{ item: "k1__sabah", event: "k1" }, { item: "k1__ntv", event: "k1" }] }] };
+  const done = (id, i) => ({ ["blind__" + id + "__" + i]: { answers: { present: "yes", blame_level: "none", frame_category: "Spor" } } });
+  assert.deepEqual([...L.blindHidden(blind, {})].sort(), ["e1__c1", "e1__c2", "narr__k1"]);
+  assert.deepEqual([...L.blindHidden(blind, done("b-A1", "e1__c1"))].sort(), ["e1__c1", "e1__c2", "narr__k1"]);
+  const all = { ...done("b-A1", "e1__c1"), ...done("b-A1", "e1__c2") };
+  assert.deepEqual([...L.blindHidden(blind, all)], ["narr__k1"]);
+  assert.equal(L.blindHidden(null, {}).size, 0);
+});
+const BLIND_CATS = { categories: ["Spor", "Diğer"], packets: [] };
+test("blind item shows no AI", () => {
+  const pk = { id: "b-A1", kind: "behaviour", events: { e1: { baslik: "Başlık", metin: "[sabah · 10:00] Haber" } } };
+  const h = L.blindItemHtml(BLIND_CATS, pk, { item: "e1__c1", event: "e1", card: "c1", ad: "Card", tanim: "Tanım", kosullar: ["k1"] }, {});
+  assert.ok(h.includes("[sabah · 10:00] Haber") && h.includes("Tanım"));
+  assert.ok(!/AI|Yapay|kanıt|Doğrulan|Belirsiz|#\/olay/.test(h));
+});
+test("blind narrative item and saved answer", () => {
+  const pk = { id: "n-A2", kind: "narrative", events: { g: { olay: "Gemi battı." } } };
+  const h = L.blindItemHtml(BLIND_CATS, pk, { item: "g__ntv", event: "g", kurum: "NTV", baslik: "Gemi alabora oldu" }, { blame_level: "implied", frame_category: "Spor" });
+  assert.ok(h.includes("Gemi battı.") && h.includes("NTV") && h.includes("Gemi alabora oldu"));
+  assert.ok(/aria-checked="true"[^>]*data-v="implied"/.test(h) && /<option value="Spor" selected/.test(h) && h.includes("Emin değilim"));
+});
+test("export keeps blind answers", () => {
+  const x = L.reviewsExport({ "blind__b-A1__e1__c1": { status: "coded", answers: { present: "yes" } } }, "p1");
+  assert.deepEqual(x.reviews[0].answers, { present: "yes" });
+});
+test("narrQualityLine", () => {
+  assert.equal(L.narrQualityLine(undefined), "");
+  assert.equal(L.narrQualityLine({ events: 5, blame_level: { agreement: 0.8 } }), "");
+  const nq = { events: 61, codebook_approved: true, blame_level: { agreement: 0.824 }, frame_category: { agreement: 0.6 } };
+  assert.equal(L.narrQualityLine(nq),
+    "Bu kodlama, elle kodlanmış 61 olayda insan kodlamasıyla karşılaştırıldı: sorumlu tutmada %82, çerçevede %60 uyum.");
+  assert.ok(L.narrQualityLine({ ...nq, codebook_approved: false }).endsWith(" Kategori listesi henüz onaylanmadı."));
 });

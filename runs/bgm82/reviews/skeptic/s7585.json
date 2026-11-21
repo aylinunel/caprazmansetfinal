@@ -1,0 +1,202 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "14 ilde eş zamanlı yasa dışı bahis operasyonunda 37 şüpheli adliyeye sevk edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Aydın merkezli 14 ilde bahis operasyonu: 34 tutuklama",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı operasyon bir başlıkta adliyeye sevk, diğerinde tutuklama sayısıyla veriliyor.",
+   "alternative_explanation": "Fark, farklı boyutların öne çıkarılması değil, sürecin farklı saatlerdeki aşamalarının bildirilmesidir; ayrıca kümede başka illerdeki ayrı operasyonlar da yer alıyor.",
+   "missing_context": [
+    "Kümedeki başlıkların hangilerinin aynı operasyona ait olduğu"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Aydın merkezli yasa dışı bahis operasyonunda 37 zanlı adliyeye sevk edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "14 ilde eş zamanlı yasa dışı bahis operasyonunda 37 şüpheli adliyeye sevk edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar aynı kişiler için 'zanlı' ve 'şüpheli' sözcüklerini kullanıyor.",
+   "alternative_explanation": "'Zanlı' ve 'şüpheli' hukuki açıdan eş anlamlıdır; fark yalnızca üsluptadır.",
+   "missing_context": []
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "34 ildeki dev yasa dışı bahis operasyonunda 90 tutuklama",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "34 ilde yasa dışı bahis operasyonu: 90 şüpheli tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum operasyonu 'dev' olarak nitelerken başka bir kurum aynı operasyonu bu nitelemeden yoksun veriyor.",
+   "alternative_explanation": "'Dev' sözcüğü 34 il ve 119 gözaltı ölçeğine dayanan bir büyüklük betimlemesi olabilir; skandal ya da şok gibi açık bir değerlendirme taşıdığı kesin değil.",
+   "missing_context": [
+    "Operasyonun benzerleriyle ölçek karşılaştırması"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahis suçuna yönelik yapay zeka destekli AVCI projesi kullanılarak yapılan teknik incelemenin ardından",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum operasyonu bir proje kapsamında anıyor; ancak bu, olayın Aydın operasyonundan farklı bir operasyona ait.",
+   "alternative_explanation": "Kümedeki başlıklar ayrı ayrı operasyonları tek tek bildiriyor; olayın kendisi için bir eğilim ya da politika süreci bağlamı açıkça kurulmuyor.",
+   "missing_context": [
+    "Aydın operasyonunun daha geniş bir kampanyanın parçası olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir başlık iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Haber bir gelişmeyi bildiriyor; iki seçenek arasında zorunlu tercih sunulmuyor.",
+   "missing_context": [
+    "Kurumun kendi sesiyle 'ya … ya …' kalıbında sunduğu seçenekler"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar gözaltı ve tutuklama sayılarını bildiriyor; kurumun kendi sesinde açık bir nedensellik ifadesi yok.",
+   "alternative_explanation": "Başlıklar olguyu doğrudan bildiriyor; nedensellik iddiası kurulmadığı için aşırı nedensel çıkarım değerlendirilemez.",
+   "missing_context": [
+    "Kurumun kendi sesiyle kurduğu açık bir nedensellik ifadesi"
+   ]
+  }
+ ]
+}

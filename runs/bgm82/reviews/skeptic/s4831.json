@@ -1,0 +1,250 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü'nde feci kaza!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 12:00] 15 Temmuz Şehitler Köprüsü'nde 5 araç birbirine girdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit kazayı kendi sesinde 'feci' diye nitelendiriyor; Karar aynı kazayı aynı olgularla bu sözcük olmadan veriyor. Metinde yaralı ya da ölü bilgisi geçmiyor.",
+   "alternative_explanation": "'Feci' kazaların ağırlığını anlatmak için sık kullanılan bir sözcük; olay yerinde metne yansımamış ağır hasar bulunabilir.",
+   "missing_context": [
+    "Kazada yaralı olup olmadığı",
+    "Akit haberinin spotu"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul'u kilitleyen kaza",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü girişinde kaza: Köprüde trafik yoğunluğu oluştu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Anadolu yakası yönünde trafik durdu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Trafik etkisi Takvim'de 'İstanbul'u kilitleyen', TGRT'de 'trafik yoğunluğu', Akit'te 'trafik durdu' diye anlatılıyor; ölçek bakımından farklı izlenim veriyor. Ancak farklar farklı saatlerdeki farklı trafik durumunu yansıtabilir.",
+   "alternative_explanation": "Kurumlar trafiği farklı anlarda gözlemlemiş olabilir; fark çağrışımdan çok olgusal olabilir. Ayrıca Takvim 4, diğerleri 5 araç diyor.",
+   "missing_context": [
+    "Trafiğin gerçek etkisine dair resmi veri",
+    "Her haberin hangi ana ait olduğu"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 12:29] 15 Temmuz Şehitler Köprüsü'nde 5 araçlı zincirleme kaza",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü girişinde zincirleme kaza! Trafik kilitlendi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kazayı Cumhuriyet araç sayısıyla, A Haber trafik etkisiyle başlığa taşıyor; başlıklar olgunun farklı boyutlarını öne çıkarıyor.",
+   "alternative_explanation": "Trafik etkisi İstanbul okuru için en pratik bilgi olabilir; iki boyut da olgusal.",
+   "missing_context": [
+    "Kazanın can kaybı ya da yaralanma boyutu"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü'nde feci kaza!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "5 aracın karıştığı zincirleme trafik kazası meydana geldi. Kaza nedeniyle Anadolu Yakası yönünde trafik yoğunluğu oluştu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Karar ölçeği (5 araç, trafik yoğunluğu) veriyor; Akit'in 'feci' sözcüğü ağırlık bildirse de tehdit ya da felaket sözlüğü (alarm, dehşet) kullanılmıyor. Orantısızlık, yaralanma bilgisi olmadığı için belirlenemiyor.",
+   "alternative_explanation": "'Feci kaza' tehdit dili değil, kazanın ağırlığını anlatan yerleşik bir ifade.",
+   "missing_context": [
+    "Yaralı ya da ölü sayısı"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kaza nedeniyle Anadolu Yakası yönünde trafik yoğunluğu oluştu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Karar trafik yoğunluğunu kazaya bağlıyor; bu, aynı yerde ve aynı anda doğrudan gözlenebilen fiziksel bir sonuç olduğundan salt birliktelik iddiası değil.",
+   "alternative_explanation": "Zincirleme kazanın şerit kapatması trafik yoğunluğunun doğrudan nedeni; ek kanıt gerektirmeyen olağan bir ilişki.",
+   "missing_context": [
+    "Kaza öncesi trafik durumu"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü girişinde kaza",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tekrarlanan ya da yapısal bir sorunu tek bir vaka üzerinden anlatmıyor; haber tekil, zamanı belli bir olay.",
+   "alternative_explanation": "Olayın kendisi tekil bir gelişme olduğundan tek vaka anlatımı yapısal bir örüntünün gizlenmesi anlamına gelmiyor.",
+   "missing_context": [
+    "Olayın tekrarlanan ya da yapısal bir sorunun parçası olduğunu gösteren bağlam"
+   ]
+  }
+ ]
+}

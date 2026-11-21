@@ -1,0 +1,209 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[diken · 14:53] Sergen Yalçın milli takım aday kadrosunu duyurdu: Kerem Aktürkoğlu yok",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Diken başlığı kadroda olmayan tek bir oyuncuyu öne çıkarıyor; ancak bu ayrıntının bir yargının yerine geçtiğini gösteren açık bir bağ yok.",
+   "alternative_explanation": "Kerem Aktürkoğlu'nun kadro dışı kalması haber değeri yüksek bir gelişme olabilir.",
+   "missing_context": [
+    "Çarpıcı ayrıntı ile daha az çarpıcı bilgi arasında ağırlıklandırma karşılaştırması",
+    "Ayrıntının sıklık kanıtı gibi kullanıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 14:23] Sergen Yalçın A Milli Takım kadrosunu açıkladı: Fenerbahçeli yıldızlar kadro dışı kaldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 14:00] Sergen Yalçın Milli Takım aday kadrosunu açıkladı! Berke Özer geri döndü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkına bağlanan bir tercih, yargı ya da öneri içermiyor.",
+   "alternative_explanation": "Kurumlar aynı kadronun farklı haber değeri taşıyan yönlerini seçmiş olabilir.",
+   "missing_context": [
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğine dair veri"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin olumsuz bir gelişmeyi aktarıyor; ancak olumsuz bilgiye karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık verildiğini gösteren bir belge ya da tekrarlanan davranış yok.",
+   "alternative_explanation": "Kadro dışı kalan oyuncuların vurgulanması okur ilgisinden kaynaklanabilir; olumlu yönler (geri dönen oyuncular) de başka kurumlarda veriliyor.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgiyle ağırlıklandırma kıyası",
+    "Orantısız ağırlığın bir değerlendirmeyi etkilediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçeli yıldızlar kadro dışı kaldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milli Gazete kadro kararını ve oyuncuların kulübünü birlikte veriyor; ancak kararın kulüp aidiyetine bağlandığını gösteren bir ifade yok.",
+   "alternative_explanation": "Kurum, kulüp, ülke ya da akrabalık bilgisinin anılması kimlik bilgisi olabilir.",
+   "missing_context": [
+    "Grup aidiyetine bağlanan açık bir yargı farkı",
+    "Benzer durumlarda tutarsız standart uygulandığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2 kritik eksik dikkat çekti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "son aday kadroda yer alan 4 ismi milli takıma çağırmadı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "TGRT iki 'kritik eksik'ten, Habertürk önceki kadrodaki dört ismin çağrılmadığından söz ediyor; anlatılar arasında bir sayı farkı var, ancak bir sonuca etkisi gösterilmiyor.",
+   "alternative_explanation": "TGRT yalnızca öne çıkan iki eksiği seçmiş olabilir; iki ifade birbiriyle çelişmek zorunda değil.",
+   "missing_context": [
+    "Özgün kaynak metni (resmî açıklama ya da kurum duyurusu)",
+    "Farkın bir sonuca ya da karara etki ettiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar arasındaki vurgu farkı bir karar vericinin dikkat dağılımını göstermiyor; dikkat farkını belirli bir hatalı sonuca bağlayan kanıt yok.",
+   "alternative_explanation": "Başlık seçimleri editoryal yer ve zaman kısıtlarından kaynaklanabilir.",
+   "missing_context": [
+    "Dikkat ya da girdi kayıtları",
+    "Dikkat farkını hatalı bir sonuca bağlayan karşılaştırma"
+   ]
+  }
+ ]
+}

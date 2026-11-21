@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "word-choice",
+  "emphasis-framing",
+  "loaded-language",
+  "fear-appeal"
+ ],
+ "selection_uncertainty": [
+  "Kişinin motivasyonu doğrulanmamış.",
+  "Yalnızca başlık ve kısa özetler var; tam metin yok."
+ ],
+ "selection_note": "Olayın 'protesto', 'silahlı eylem', 'alarm' olarak farklı adlandırılması etiketleme ve kelime seçimi açısından aday."
+}

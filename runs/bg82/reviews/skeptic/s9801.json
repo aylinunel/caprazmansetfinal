@@ -1,0 +1,228 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Baykar tarafından milli ve özgün imkanlarla geliştirilen",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "AKINCI ve TB2'nin kara yoluna iniş-kalkış testi haberinde olumlu bir nitelendirme yer alıyor; ancak metin bir alandaki olumlu izlenimin başka bir alandaki ayrı bir yargıya taşındığını açıkça göstermiyor.",
+   "alternative_explanation": "Olumlu nitelendirme alıntılanan resmi açıklamanın veya olayın doğrudan özelliğinin aktarımı olabilir; iki ayrı alan arasında bir aktarım yok.",
+   "missing_context": [
+    "Birinci alandaki izlenimin ikinci yargıyı belirlediğini gösteren ifade",
+    "Alanların karar için ilgisiz olduğuna dair kanıt"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'nin yerli ve millî insansız hava araçları",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "AKINCI ve TB2'nin kara yoluna iniş-kalkış testi haberinde bir gruba ya da kuruma ait aidiyet ifadesi geçiyor; ancak metin güvenilirlik, suçlama veya fayda farkını bu aidiyete bağlamıyor ve tutarsız standart uygulandığını göstermiyor.",
+   "alternative_explanation": "Aidiyet ifadesi kimlik belirleme amaçlı olgusal bir bilgi veya alıntılanan açıklamanın aktarımı olabilir.",
+   "missing_context": [
+    "Grup üyeliğine göre farklı muamele gördüğü gösterilen karşılaştırılabilir vakalar",
+    "Kararın grup kimliğine dayandırıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayraktar AKINCI ve TB2'den karayoluna tarihi iniş kalkış testi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "AKINCI ve TB2'nin kara yoluna iniş-kalkış testi haberinde duygusal ya da değer yüklü bir ifade var; ancak metin bu duyguyu bir risk veya fayda tahminine ya da karara açıkça bağlamıyor. Duygusal sözcük tek başına yetersiz.",
+   "alternative_explanation": "Duygusal ifade olayın niteliğini aktaran veya alıntılanan açıklamayı yansıtan olağan bir haber dili olabilir.",
+   "missing_context": [
+    "Duygunun bir risk/fayda yargısının yerine geçtiğini gösteren açık ifade",
+    "Olgular sabitken yargının duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 05:09] AKINCI ve Bayraktar TB2 kara yoluna iniş-kalkış yaptı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Milli SİHA'lardan kritik başarı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "AKINCI ve TB2'nin kara yoluna iniş-kalkış testi farklı kurumlarca farklı sözcük ve vurgularla başlıklandırılmış; ancak metin bu sunum farkını hiçbir tercihe, yargıya veya karara bağlamıyor ve başlıkların karar-ilgili olgularda eşdeğer olduğunu açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, eldeki bilginin güncellenmesi, haber ajansı metninin kısaltılması ve kurumların editoryal üslubundan kaynaklanabilir; bir okuyucu ya da karar verici üzerinde çerçeve etkisi gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okuyucu yargısını değiştirdiğini gösteren karşılaştırmalı ölçüm",
+    "Başlıkların aynı olgulara dayandığını açıkça gösteren bilgi",
+    "Herhangi bir tercih veya yargının bu sunuma dayandırıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "optimism-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pist olmadan görev yapacaklar!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "AKINCI ve TB2'nin kara yoluna iniş-kalkış testi haberinde olumlu bir beklenti ifadesi bulunuyor; ancak metin karşıt kanıt ya da taban oranı sunup bunun göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Olumlu ifade başarılı geçen testin olgusal aktarımı veya alıntılanan açıklama olabilir.",
+   "missing_context": [
+    "Beklentiyle çelişen kanıt veya taban oranı",
+    "Kalibrasyon ya da karşılaştırmalı sonuç verisi"
+   ]
+  },
+  {
+   "card_id": "look-elsewhere-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "saha çalışmalarının ilk uygulaması gerçekleştirildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "AKINCI ve TB2'nin kara yoluna iniş-kalkış testi haberinde sonucun çok sayıda test veya analiz seçeneği arasından seçildiğine dair bir bilgi yok; tek bir test aktarılıyor.",
+   "alternative_explanation": "Haber tek bir saha testini aktarıyor; çoklu karşılaştırma veya sonradan seçim söz konusu değil.",
+   "missing_context": [
+    "Yapılan tüm denemelerin sayısı ve sonuçları",
+    "Önceden belirlenmiş başarı ölçütü"
+   ]
+  }
+ ]
+}

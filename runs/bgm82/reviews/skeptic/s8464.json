@@ -1,0 +1,213 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gerilim sona erdi: Aliyev COP31 için Antalya'ya geliyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 18:45] İlham Aliyev COP31'e katılmak üzere Antalya'ya geldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı ziyaret için sozcu başlığa ilişkilerde 'gerilimin sona ermesini', dha ise yalnızca zirveye katılımı taşıyor; ikili ilişki boyutu ile protokol boyutu ayrışıyor.",
+   "alternative_explanation": "sozcu'nun başlığı önceki günlerdeki görüşmelere dair kendi haber geçmişine dayanıyor olabilir.",
+   "missing_context": [
+    "Metinde adı geçen 'gerilimin' ne olduğuna dair bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Aliyev çifti COP31 için Antalya'ya geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Azerbaycan Cumhurbaşkanı İlham Aliyev ve eşi COP31 için Antalya'da",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "aksam 'Aliyev çifti', tgrt 'Aliyev ve eşi' diyor; fark yalnızca üslup ve uzunluk bakımından.",
+   "alternative_explanation": "İki ifade aynı bilgiyi eşdeğer biçimde veriyor.",
+   "missing_context": [
+    "Çağrışımı farklı sözcük seçimi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gerilim sona erdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "sozcu 'Gerilim sona erdi' ifadesini kullanıyor; bu bir olayın değerlendirilmesi (skandal, müjde) değil, ilişkilerin durumuna dair bir betimleme.",
+   "alternative_explanation": "İfade önceki diplomatik gelişmelere dair bir olgu özeti olabilir.",
+   "missing_context": [
+    "Değerlendirici yüklü sözcük"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İlham Aliyev COP31'e katılmak üzere Antalya'ya geldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneği tek seçenek olarak sunan bir ifade yok.",
+   "alternative_explanation": "Haber bir ziyaret aktarımı.",
+   "missing_context": [
+    "İki seçenekli çerçeve"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Geçtiğimiz günlerde Cumhurbaşkanı Erdoğan'ı ülkesinde ağırlayan Azerbaycan Cumhurbaşkanı İlham Aliyev",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "ensonhaber lede'i ziyareti Erdoğan'ın birkaç gün önceki Azerbaycan ziyaretiyle ilişkilendirerek karşılıklı ziyaretler dizisi içine yerleştiriyor.",
+   "alternative_explanation": "Önceki ziyaretin anılması kısa bir arka plan bilgisidir.",
+   "missing_context": [
+    "İki ülke arasındaki ziyaretlerin daha geniş seyri"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Aliyev COP31 için Antalya'ya geliyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde açık bir nedensellik ifadesi yok; 'için' ziyaretin amacını belirtiyor.",
+   "alternative_explanation": "Amaç bildiren ifade nedensel bir iddia değildir.",
+   "missing_context": [
+    "Açık bir nedensellik ifadesi"
+   ]
+  }
+ ]
+}

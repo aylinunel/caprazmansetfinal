@@ -1,0 +1,214 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 18:03] Genel müdürü fon soruşturmasında gözaltına alındı: Borsa İstanbul'un başına 'vekaleten' Atila Türeli getirildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 06:09] Borsa İstanbul AŞ Genel Müdürlüğü görevine vekaleten Atila Türeli getirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı atamada Cumhuriyet önceki genel müdürün gözaltısını, AA yalnızca atamayı öne çıkarıyor.",
+   "alternative_explanation": "Gözaltı atamanın doğrudan nedeni olduğundan anılması bilgilendirici olabilir.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 18:39] Borsa İstanbul'da görev değişikliği! Enes Ergun'un yerine Atila Türeli atandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 18:08] Borsa İstanbul'da yönetim değişikliği! Atila Türeli görevi vekaleten üstlendi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milli Gazete 'atandı', Takvim 'vekaleten üstlendi' diyor; fark bilgi düzeyinde (vekalet) ve çağrışım farkı belirgin değil.",
+   "alternative_explanation": "Sözcük farkları başlık uzunluğu ve bilgi seçimiyle ilgili olabilir.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar genel bir sonuç için seçilmiş göstergeler sunmuyor; bir atamayı aktarıyor.",
+   "alternative_explanation": "Atama haberi doğası gereği tek bir olgu içeriyor.",
+   "missing_context": [
+    "Genel bir sonucu destekleyen seçilmiş göstergeler"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Tek bir kurumun başlık ve spotunda aynı değerlendirici yönü gösteren iki sunum seçimi tespit edilmiyor.",
+   "alternative_explanation": "Haberler büyük ölçüde kurum duyurusunu aktarıyor.",
+   "missing_context": [
+    "Aynı yönde iki sunum seçimi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "fon soruşturması kapsamında “suç örgütü üyeliği” ve “rüşvet” suçlamalarıyla gözaltına alınmasının ardından",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 18:03] Genel müdürü fon soruşturmasında gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fon soruşturması sürüyor; ancak başlıklar edilgen yapı kullanıyor ve bir aktöre fail ya da kusur atfeden etken bir dil bulunmuyor. Karar suçlamaları tırnak içinde veriyor.",
+   "alternative_explanation": "Gözaltı bilgisinin verilmesi olgusal bir aktarımdır.",
+   "missing_context": [
+    "Başlıkta failliği adı geçen bir aktöre yükleyen ifade"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aksam · 21:56] Fon soruşturmasında yeni gelişme: Borsa İstanbul Genel Müdürlüğüne Atila Türeli getirildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Akşam atamayı 'fon soruşturmasında yeni gelişme' olarak sunarak süren bir soruşturma dizisinin içine yerleştiriyor.",
+   "alternative_explanation": "Atamanın gözaltının hemen ardından gelmesi bu bağlamı olgusal kılıyor.",
+   "missing_context": [
+    "Fon soruşturmasının önceki aşamaları"
+   ]
+  }
+ ]
+}

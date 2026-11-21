@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "selective-statistics",
+  "cherry-picking",
+  "emphasis-framing",
+  "spin",
+  "word-choice"
+ ],
+ "selection_uncertainty": [
+  "Metinler kısaltılmış.",
+  "Toplam alacak ve kalan tutar verilmemiş."
+ ],
+ "selection_note": "'333 bin tamamını aldı' oranı ve resmi rakamlar bağlamsız öne çıkarılıyor olabilir."
+}

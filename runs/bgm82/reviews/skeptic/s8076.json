@@ -1,0 +1,222 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Rafael Leao şoku! Yıldız futbolcunun sakatlığında son durum",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray'dan Leao'nun sağlık durumu hakkında açıklama",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "A Haber kendi sesinde 'şoku' diyerek sakatlık haberini duygusal bir yükle sunuyor; AA aynı olguyu 'sağlık durumu hakkında açıklama' diye nötr veriyor.",
+   "alternative_explanation": "'Şok' spor medyasında önemli oyuncu sakatlıkları için kalıplaşmış bir sözcük; sakatlık ileri derecede.",
+   "missing_context": [
+    "Sakatlığın kesin süresi"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Rafael Leao fırtınası!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Mynet 'Leao fırtınası' diyor; bu spor dilinde etkili performans için kalıplaşmış bir deyim, rol ya da eylem yolu atamıyor.",
+   "alternative_explanation": "Deyim yerleşik; ek bir mantık getirmiyor.",
+   "missing_context": [
+    "Rol atayan, kalıp dışı bir mecaz"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Rafael Leao şoku: Sakatlığı açıklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray'dan Rafael Leao açıklaması! Sağlık durumu belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı açıklama TGRT'de 'Leao şoku', Star'da 'Leao açıklaması' diye adlandırılıyor; 'şok' olumsuz bir sarsıntı çağrışımı taşıyor, 'açıklama' nötr.",
+   "alternative_explanation": "Fark ölçüde yüklü dil kartıyla örtüşüyor; 'şok' kalıplaşmış bir başlık formülü olabilir.",
+   "missing_context": [
+    "Kurumların sakatlık haberlerinde bu sözcüğü süreklilikle kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray'da Rafael Leao şoku! MR sonucu açıklandı, 4 hafta sahalardan uzak kalabilir",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Galatasaray'dan Rafael Leao açıklaması: Sakatlığı belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı MR açıklamasını Milli Gazete sahalardan uzak kalma süresini, Sözcü yalnızca sakatlığın belli olduğunu öne çıkararak veriyor. Habertürk'ün spotunda ise oyuncunun 'ciddi sakatlığım yok' sözü yer alıyor; bu oyuncuya ait bir alıntı.",
+   "alternative_explanation": "Süre bilgisi okurun en çok merak ettiği olgu olabilir; kulüp kesin süre vermemiş (Karar).",
+   "missing_context": [
+    "Kulübün resmi açıklamasında süre geçip geçmediği"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Amedspor maçında sakatlanmıştı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir sonucu bir nedene bağlayan açık nedensellik ifadesi yok; haberler sakatlığı ve MR sonucunu bildiriyor.",
+   "alternative_explanation": "Olgu bildirimi nedensellik iddiası içermiyor.",
+   "missing_context": [
+    "Kurumun kendi sesinde açık bir nedensellik ifadesi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Galatasaray’dan Amedspor karşılaşmasında sakatlanan Rafael Leao hakkında açıklama",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Haberler sakatlığı tek bir olay olarak veriyor; sakatlık geçmişi, takımın sakatlık eğilimi gibi daha geniş bir bağlam başlık ya da spotta yok.",
+   "alternative_explanation": "Haber sıcak bir gelişmeyi aktarıyor.",
+   "missing_context": [
+    "Oyuncunun ya da takımın önceki sakatlıklarına atıf"
+   ]
+  }
+ ]
+}

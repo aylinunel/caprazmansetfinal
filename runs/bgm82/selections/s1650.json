@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "responsibility-framing",
+  "labeling",
+  "word-choice",
+  "emphasis-framing",
+  "loaded-language",
+  "spin"
+ ],
+ "selection_uncertainty": [
+  "Soruşturma sürüyor.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "'Yolsuzluk operasyonu' ve 'CHP'li' etiketi kurumlar arasında farklılaşıyor."
+}

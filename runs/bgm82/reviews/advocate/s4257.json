@@ -1,0 +1,285 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sırbistan’da seçimleri Öğrenci Listesi kazandı, Vucic yenilgiyi kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan'da 12 yıllık Vucic dönemi bitti: Seçimi öğrenciler kazandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan'da Vucic seçim mağlubiyetini kabul etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı seçim sonucu bir başlıkta kazanan öğrenci listesiyle, bir başlıkta sona eren 12 yıllık iktidarla, bir başlıkta kaybedenin kabulüyle öne çıkarılıyor; kazanan ile kaybeden boyutları farklı başlıklarda öne geçiyor.",
+   "alternative_explanation": "Kazananı ya da kaybedeni öne almak seçim haberlerinde iki eşit derecede olağan başlık kalıbıdır.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İsrail yanlısı Vucic 'öğrenciler' karşısında yenilgiyi kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan'da eski Cumhurbaşkanı Vucic başbakanlık seçiminde yenilgiyi kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan'da başbakan adayı Vucic",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Vucic bir kurumun kendi sesinde 'İsrail yanlısı', diğerlerinde 'eski Cumhurbaşkanı' ve 'başbakan adayı' olarak anılıyor; 'İsrail yanlısı' kimlik tanımının ötesinde siyasi bir değerlendirme taşıyor.",
+   "alternative_explanation": "'İsrail yanlısı' nitelemesi Vucic'in dış politika tutumunu özetleyen bir tanımlayıcı olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Nitelemenin dayandığı somut olgular"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sırbistan'da tarihi seçim: 12 yıllık Vucic dönemi sona erdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan erken genel seçim: Vucic yenilgiyi kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan'da seçim şoku: Vucic yenilgiyi kabul etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı seçim bir kurumda 'tarihi seçim', bir kurumda 'seçim şoku', bir diğerinde 'erken genel seçim' olarak adlandırılıyor; 'tarihi' ve 'şok' sözcükleri yalnızca kayıt farkı değil, olumlu ya da sarsıcı çağrışım farkı taşıyor.",
+   "alternative_explanation": "'Tarihi' nitelemesi uzun süreli bir iktidarın sona ermesini betimleyen olgusal bir vurgu olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Novi Sad’daki tren garı faciasının ardından başlayan protestolar, iki yıl içinde seçim zaferine dönüştü",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Novi Sad kazası sonrası başlayan ve iki yıldır devam eden halk protestolarının öncülüğünü yapan öğrenci hareketinin",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Seçim sonucu, kurumların kendi lede'lerinde Novi Sad faciasıyla başlayan iki yıllık protesto süreci içine yerleştiriliyor.",
+   "alternative_explanation": "Protesto süreci seçimin doğrudan arka planı olduğundan bu bağlam bilgi verici bir özet olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sırbistan'da seçim şoku",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan'da tarihi seçim",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan erken genel seçim: Vucic yenilgiyi kabul etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "'Şok' ve 'tarihi' değerlendirme sözcükleri kurumların kendi başlıklarında yer alıyor; aynı olgu başka bir kurumda bu sözcükler olmadan veriliyor.",
+   "alternative_explanation": "'Tarihi' sözcüğü uzun süreli iktidar değişimini betimleyen yerleşik bir haber ifadesi olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sırbistan'da 12 yıllık iktidar bitti! İsrail yanlısı Vucic 'öğrenciler' karşısında yenilgiyi kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan erken genel seçim: Vucic yenilgiyi kabul etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı başlıkta ünlemli '12 yıllık iktidar bitti!' vurgusu ve 'İsrail yanlısı' etiketi birlikte kullanılıyor; ikisi de Vucic'i olumsuz yönde konumluyor. Başka bir kurum aynı olguyu bu birleşim olmadan veriyor.",
+   "alternative_explanation": "İktidar süresi ve dış politika tutumu okura arka plan sunan iki ayrı olgu olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

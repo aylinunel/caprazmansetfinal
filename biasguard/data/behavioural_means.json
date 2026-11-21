@@ -1,0 +1,19 @@
+{
+ "framing-effect": "Aynı olgu farklı sunulunca okurun ondan çıkardığı yargı da değişebilir.",
+ "leveling-and-sharpening": "Aktarıldıkça bazı ayrıntılar silinip bazıları keskinleşir; okur olayın sadeleşmiş bir sürümünü görür.",
+ "illusory-correlation": "Okura, aslında aralarında bağ kanıtlanmamış iki şey birbirine bağlıymış gibi görünür.",
+ "fundamental-attribution-error": "Okur olayı koşullardan çok kişilerin karakterine bağlamaya yönlendirilir.",
+ "optimism-bias": "Okura gelecek, verilerin desteklediğinden daha iyimser gösterilir.",
+ "outcome-bias": "Okur bir kararı, verildiği andaki bilgiye göre değil sonucuna göre değerlendirmeye yönlendirilir.",
+ "belief-perseverance": "Okurun eski kanaati, onu çürüten bilgi gelse de korunur.",
+ "priming": "Başlıkta önce verilen bir öğe, okurun gerisini nasıl yorumlayacağını önceden belirler.",
+ "hindsight-bias": "Olay olduktan sonra, olacağı baştan belliymiş gibi anlatılır.",
+ "messenger-effect": "Okur bilgiyi içeriğinden çok onu kimin söylediğine göre tartmaya yönlendirilir.",
+ "recency-effect": "Okurun aklında olayın en son gelişmesi kalır; önceki bağlam geri planda kalır.",
+ "illusory-truth-effect": "Bir iddia sık tekrarlandıkça okura doğruymuş gibi gelmeye başlar.",
+ "automation-bias": "Okur, bir makine ya da algoritmanın verdiği sonuca fazla güvenmeye yönlendirilir.",
+ "source-confusion": "Okur bir bilginin nereden geldiğini (iddia mı, resmî açıklama mı) karıştırabilir.",
+ "peak-end-rule": "Okurun olaydan aklında kalan, en çarpıcı anı ve sonu olur.",
+ "affect-heuristic": "Okurun olay hakkındaki yargısını bilgiden çok uyandırılan duygu belirler.",
+ "bikeshedding": "Okurun dikkati önemli konudan, tartışması kolay bir ayrıntıya kayar."
+}

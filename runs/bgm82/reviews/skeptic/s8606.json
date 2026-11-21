@@ -1,0 +1,231 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kılıç çatarak disiplinsiz davranış sergileyen ve sonrasında TSK'dan ihraç edilen 5 eski teğmen",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kılıçlı yemin töreni yapan 5 teğmene iftira davası",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "takvim teğmenleri kendi sesinden 'disiplinsiz davranış sergileyen' diye, hurriyet 'kılıçlı yemin töreni yapan' diye anıyor; takvim'in etiketi kimlik belirlemenin ötesinde bir değerlendirme taşıyor.",
+   "alternative_explanation": "'Disiplinsiz' nitelemesi ihraç kararının gerekçesinin aktarımı olabilir; ancak metinde atıf yok.",
+   "missing_context": [
+    "İhraç kararının resmi gerekçesi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ihraç sürecinde baskı yapıldığı ve oyların değiştirildiği yönündeki açıklamaları nedeniyle",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İhraç teğmenlerin mesnetsiz iddialarına iftira davası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TSK'dan ihraç edilen 5 teğmen hakim karşısında! İddianame kabul edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı dava için karar teğmenlerin baskı iddiasının içeriğini, yenisafak iddiaların 'mesnetsiz' olduğunu, star ise yargılama sürecini öne çıkarıyor; sanık açısı ile şikâyetçi açısı ayrışıyor.",
+   "alternative_explanation": "Vurgular iddianamenin farklı bölümlerinin öne alınmasından kaynaklanabilir.",
+   "missing_context": [
+    "İddianamenin tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kılıç çatma ve korsan yemin nedeniyle TSK'dan ihraç edilen 5 teğmen",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kılıçlı yemin nedeniyle ihraç edilen 5 teğmene hapis istemi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı tören için yenisafak 'korsan yemin', memurlar 'kılıçlı yemin' ifadesini kullanıyor; 'korsan' yasadışılık çağrışımı taşırken diğeri betimleyici.",
+   "alternative_explanation": "'Korsan yemin' ifadesi resmi açıklamalarda geçen bir nitelemenin aktarımı olabilir.",
+   "missing_context": [
+    "Resmi belgelerde kullanılan ifade"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "bu kez \"iftira\" suçlamasıyla iddianame hazırlandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Sağlanan bağlam konunun tekrarlayan veya yapısal olduğunu gösteren başka vakalar içermiyor; ayrıca cumhuriyet 'bu kez' diyerek davayı önceki ihraç sürecine bağlıyor.",
+   "alternative_explanation": "Haber tek bir davaya dair; önceki süreç ledelerde anılıyor.",
+   "missing_context": [
+    "Benzer davalara dair bağlam"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Teğmenler, 9 Şubat 2027’de hâkim karşısına çıkacak.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İhraç teğmenlerin mesnetsiz iddialarına iftira davası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ancak iddialarını destekleyen somut delil bulunamadı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Metin yargılamanın henüz başlamadığını gösteriyor; yenisafak başlığı teğmenlerin iddialarını kendi sesinden 'mesnetsiz' diye niteliyor, lede de delil bulunamadığını atıf işaretleyicisi olmadan aktarıyor.",
+   "alternative_explanation": "'Mesnetsiz' nitelemesi iddianamedeki savcılık değerlendirmesinin özeti olabilir; ancak başlık ve lede bu kaynağı belirtmiyor.",
+   "missing_context": [
+    "İddianamenin ilgili bölümü",
+    "Mahkeme kararı"
+   ]
+  }
+ ]
+}

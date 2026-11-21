@@ -1,0 +1,254 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cristiano Ronaldo veda etti: O olay sonu getirdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ronaldo'nun son dönemde Portekiz Teknik Direktörü Jorge Jesus'la yaşadığı kriz, ayrılıkta önemli rol oynadığı ifade ediliyor.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kendi sesiyle ayrılığı belirsiz bir 'olay'a bağlayan nedensel bir ifade kuruyor; metinlerde bu bağ için verilen dayanak yalnızca son dönemdeki bir krizin ayrılıktan önce yaşanmış olması.",
+   "alternative_explanation": "Başlık, özet metinde görünmeyen bir kaynağa veya Ronaldo'nun kendi açıklamasına dayanıyor olabilir.",
+   "missing_context": [
+    "Ronaldo'nun veda açıklamasının tam metni",
+    "Teknik direktörle yaşanan krize ilişkin kaynak"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ronaldo, Portekiz formasıyla çıktığı 234 maç ve attığı 146 golle, bir milli takım formasını en çok giyen ve milli takımda en çok gol atan erkek oyuncu rekorlarını elinde tutuyor.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ronaldo'nun son dönemde Portekiz Teknik Direktörü Jorge Jesus'la yaşadığı kriz, ayrılıkta önemli rol oynadığı ifade ediliyor.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ronaldo Kimdir, Kaç yaşında, Hangi Takımlarda Oynadı?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ayrılığı veren kurumlardan biri rekorları, biri teknik direktörle krizi, biri ise biyografik soruları öne çıkarıyor.",
+   "alternative_explanation": "Farklı boyutların öne çıkması kurumların erişilen bilgi, yayın saati ve okur ilgisi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Kurumların aynı saatte erişebildiği bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 13:36] Cristiano Ronaldo Portekiz Milli Takımı'nı bıraktı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cristiano Ronaldo Portekiz Milli Takımı'na veda etti: 23 yıllık kariyer sona erdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "The End: Cristiano Ronaldo milli takıma veda etti!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı eylem için 'bıraktı', 'veda etti' ve 'The End' gibi farklı kelimeler kullanıyor; farkın yan anlamda mı yoksa yalnızca üslupta mı olduğu net değil.",
+   "alternative_explanation": "Kelime farkları üslup, ajans metninden aktarım veya başlık uzunluğu farkı olabilir.",
+   "missing_context": [
+    "Kelimelerin okurda farklı çağrışım yarattığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bir devrin sonu! Cristiano Ronaldo milli takımı bıraktığını açıkladı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Futbol tarihine adını altın harflerle yazdıran Cristiano Ronaldo",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 13:37] Cristiano Ronaldo milli takım kariyerini sonlandırdı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar kendi seslerinde 'Bir devrin sonu!' ve 'altın harflerle' gibi değerlendirici ifadeler kullanıyor; başka bir kurum aynı olguyu bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "Değerlendirici kelimeler başlıkta dikkat çekmek için kullanılan yaygın kalıplar olabilir; olgular diğer metinlerle aynıdır.",
+   "missing_context": [
+    "Değerlendirici ifadelerin olgusal içeriği değiştirip değiştirmediği"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay tek bir sporcunun ayrılığıdır; metin ya da bağlam bunun tekrarlayan veya yapısal bir sorun olduğunu göstermiyor.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ronaldo Portekiz Milli Takımı'nı bıraktı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Milli formayı 234 maçta giyen 41 yaşındaki yıldız oyuncu, 146 gol ve 45 asiste imza attı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cristiano Ronaldo milli takımı bıraktı: 23 yıllık dönem sona erdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar ayrılık haberini 23 yıllık kariyer ve maç-gol istatistikleri bağlamına yerleştiriyor.",
+   "alternative_explanation": "Kariyer istatistikleri bir emeklilik haberinin standart arka planıdır.",
+   "missing_context": [
+    "Diğer kurumların tam metinlerinde benzer bağlamın olup olmadığı"
+   ]
+  }
+ ]
+}

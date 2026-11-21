@@ -2,7 +2,8 @@
 var YN_TAG = { yeni: "Yeni", "değişti": "Değişti", "sürüyor": "Sürüyor", "uyarı": "Sınır" };
 function ynCard(f, i) {
   var rows = f.rows || [], three = rows.length && rows[0].length === 3 && !f.events, ev = f.events;
-  var head = three ? "<tr><th></th><th class=\"r\">8.0</th><th class=\"r\">8.1</th></tr>" : ev ? "<tr><th>Olay</th><th class=\"r\">Kurum</th></tr>" : "";
+  var cols = f.cols || ["8.0", "8.1"];
+  var head = three ? "<tr><th></th><th class=\"r\">" + esc(cols[0]) + "</th><th class=\"r\">" + esc(cols[1]) + "</th></tr>" : ev ? "<tr><th>Olay</th><th class=\"r\">Kurum</th></tr>" : "";
   var body = rows.map(function (r) {
     if (ev) return '<tr><td><a href="#/olay?e=' + encodeURIComponent(r[2]) + '">' + esc(r[0]) + '</a></td><td class="r num">' + esc(r[1]) + "</td></tr>";
     return "<tr><td>" + esc(r[0]) + '</td><td class="r num">' + esc(r[1]) + "</td>" + (r[2] !== "" ? '<td class="r num">' + esc(r[2]) + "</td>" : "") + "</tr>";

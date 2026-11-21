@@ -1,0 +1,239 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci'den Sergen Yalçın'a olay gönderme",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sergen Yalçın'a gönderme yapmadığını açıkladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde açıkça ifade edilmiş bir ön inanç ve bu inanca göre kanıtın asimetrik işlendiği bir akıl yürütme bulunmuyor.",
+   "alternative_explanation": "Kurumların gol sevincini 'gönderme' olarak sunması ya da oyuncunun yalanlamasını öne çıkarması, kamuoyundaki tartışmayı ve oyuncunun açıklamasını aktarmaktan ibaret olabilir.",
+   "missing_context": [
+    "Açıkça belirtilmiş bir ön inanç",
+    "Karşıt kanıtın gerekçesiz reddedildiğini gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci’den Sergen Yalçın’a olay gönderme! A Milli Takım kadrosuna alınmamıştı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "\"Gol sevincimin Sergen hoca ile ilgisi yok\"",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar gol sevinci ile Sergen Yalçın'a gönderme arasında bir ilişki kuruyor; ancak metin bu ilişkinin yanıltıcı olduğunu gösteren karşılaştırmalı kanıt sunmuyor, oyuncunun yalanlaması da tek başına ilişkinin olmadığını kanıtlamaz.",
+   "alternative_explanation": "İlişki, kadroya alınmama ve hareketin zamanlaması gibi somut olgulara dayanan makul bir yorum olabilir; yorum olarak aktarılması da bir yanılsama kanıtı değildir.",
+   "missing_context": [
+    "Hareketin anlamına dair bağımsız bir kanıt",
+    "İlişkiyi doğrulayan ya da çürüten karşılaştırmalı gözlem"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci'den şampiyonluk sözleri!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci'den Sergen Yalçın'ı pişman ettirecek performans",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı gelişmeyi farklı vurgu ve sözcüklerle veriyor; ancak metin, eşdeğer seçeneklerin sunuluş farkının bir tercih ya da yargıyı değiştirdiğini açıkça kurmuyor.",
+   "alternative_explanation": "Başlık farkları kurumların farklı ayrıntıları, farklı yayın saatlerini veya arama motoru odaklı biçimleri tercih etmesiyle açıklanabilir; okurun ya da yazarın yargısının sunuluşa göre değiştiğine dair kayıt yok.",
+   "missing_context": [
+    "Okur ya da editör yargısının sunuluşa göre değiştiğini gösteren bir ölçüm veya beyan",
+    "Başlıkların eşdeğer olgular üzerine kurulduğunun açık teyidi"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İrfan Can Kahveci Sergen Yalçın'la dalga mı geçti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir kişinin davranışını açıkça kalıcı bir karakter özelliğine bağlayıp durumsal etkenleri gerekçesiz biçimde göz ardı etmiyor.",
+   "alternative_explanation": "Davranışın nedenine dair ifadeler, kaynaklara dayanan ya da kişinin kendi açıklamasını aktaran bilgiler olabilir.",
+   "missing_context": [
+    "Davranışı kişilik özelliğine bağlayan açık bir değerlendirme",
+    "Göz ardı edilen durumsal etkene dair açık kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Görüntüler viral oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar dikkat çekici bir ayrıntıyı öne çıkarıyor; ancak metin bu ayrıntının bir yargıyı haksız biçimde belirlediğini açıkça bağlamıyor.",
+   "alternative_explanation": "Öne çıkarılan ayrıntı haber değeri taşıyan, doğrulanmış ve okur için ilgili bir bilgi olabilir; belirginlik tek başına hata kanıtı değildir.",
+   "missing_context": [
+    "Öne çıkan ayrıntının bir karar ya da değerlendirmeyi nasıl etkilediğine dair açık ifade",
+    "Belirgin ve daha az belirgin bilgilerin ağırlıklandırılmasını karşılaştıran bir kayıt"
+   ]
+  },
+  {
+   "card_id": "illusion-of-transparency",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gol sevincinin perde arkası ortaya çıktı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin hiç kimseye, bir kitlenin kendi iç durumunu kolayca anlayabileceğine dair bir inanç atfetmiyor.",
+   "alternative_explanation": "Oyuncunun hareketinin farklı yorumlanması ve sonradan açıklama yapması iletişimin belirsizliğini gösterir; bir şeffaflık yanılsaması atfedildiğini değil.",
+   "missing_context": [
+    "Kişinin kitlenin kendisini nasıl anlayacağına dair inancını belirten ifade",
+    "Bu inancın yanlış olduğunu gösteren tahmin–gözlemci karşılaştırması"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,240 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Zonguldak'ta maden ocağından acı haber! İsimleri belli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Zonguldak'ta maden ocağındaki grizu patlaması: 3 kişi tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 11:27] Zonguldak'ta maden ocağındaki grizu patlamasında 3 kişi öldü, 5 kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı patlamayı bir kurum hayatını kaybedenlerin kimliği, biri hukuki süreç, biri ise kayıp sayısı üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklı boyutların öne çıkması kurumların erişilen bilgi, yayın saati ve okur ilgisi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Kurumların aynı saatte erişebildiği bilgi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kahreden haber: 3 işçi öldü, 5 yaralı var",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Zonguldak’ta maden ocağında grizu faciası!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 11:16] Zonguldak'ta maden ocağında patlama",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar kendi seslerinde 'Kahreden haber' ve 'facia' ifadelerini kullanıyor; başka bir kurum aynı olguyu bunlar olmadan veriyor.",
+   "alternative_explanation": "Can kaybı olan bir olayda duygusal ifadeler olayın ağırlığıyla orantılı görülebilir.",
+   "missing_context": [
+    "Okurların ifadeleri nasıl algıladığına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "patlamayla ilgili soruşturma başlatıldığını",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma başlatılmış; ancak başlıklar belirli bir aktöre dilbilgisi yoluyla sorumluluk atfetmiyor, tutuklamalar edilgen yapıda bildiriliyor.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Zonguldak'ta maden ocağında grizu patlaması! 3 işçi vefat etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "3 madenci can verdi, isimleri belli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Zonguldak'ta maden ocağında patlama: Üç işçi öldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olgu 'vefat etti', 'can verdi' ve 'öldü' kelimeleriyle veriliyor; 'can verdi' fedakârlık çağrışımı, 'vefat' ise saygılı bir ton taşıyor.",
+   "alternative_explanation": "Kelime farkları üslup, ajans metninden aktarım veya başlık uzunluğu farkı olabilir.",
+   "missing_context": [
+    "Kelimelerin okurda farklı çağrışım yarattığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler tek bir olayı aktarıyor; ancak sağlanan bağlamda olayın tekrarlayan veya yapısal bir sorun olduğunu gösteren önceki vakalar ya da rakamlar yok.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Öte yandan patlamanın nedeninin de metan gazı olduğu bildirildi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Patlamanın nedeni 'bildirildi' ifadesiyle aktarılıyor; kurum kendi sesinde eşzamanlılığa dayanan bir nedensellik kurmuyor.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  }
+ ]
+}

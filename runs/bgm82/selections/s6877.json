@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "responsibility-framing",
+  "emphasis-framing",
+  "word-choice",
+  "causal-overclaim"
+ ],
+ "selection_uncertainty": [
+  "İstifa gerekçesi metinde verilmiyor.",
+  "Ölü sayısı 69/74 farklı."
+ ],
+ "selection_note": "'Kazanın ardından istifa' kurgusu nedensellik ima edebilir; 'facia'/'kaza' kelime farkı var."
+}

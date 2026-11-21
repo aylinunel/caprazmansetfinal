@@ -1,0 +1,229 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Can kayıplarının vurgulanması olayın kendisiyle orantılıdır; olumsuz kanıta orantısız ağırlık verildiğine dair bir karşılaştırma yok.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "identifiable-victim-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ocakta mahsur kalan Cengiz Bölükbaşı, Recep Çolakoğlu ve Murat Kaya’nın cansız bedenleri çıkarıldı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı metinler hayatını kaybeden işçilerin isimlerini veriyor; ancak bir yardım veya kaynak tahsisi kararı metinde yer almıyor.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kahreden haber: 3 işçi öldü, 5 yaralı var",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Zonguldak’ta maden ocağında grizu faciası!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 11:09] Zonguldak'ta maden ocağında patlama. 3 can kaybı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı patlama 'kahreden haber', 'facia' ve nötr can kaybı bildirimi çerçeveleriyle veriliyor; buna bağlı bir yargı metinde yok.",
+   "alternative_explanation": "Farklı kelime seçimleri aynı olgunun meşru biçimde farklı yönlerini öne çıkarıyor olabilir; metinde bir tercih ya da yargının çerçeveye bağlandığı görülmüyor.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren kanıt",
+    "Açıklamaların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber başlıkları bir olayı aktarıyor; metinde bu kartın gerektirdiği karar, yargı veya akıl yürütme adımı açıkça yer almıyor.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Vali Hacıbektaşoğlu: \"İki işçi hayatını kaybetti, bir işçiyi çıkarma çalışmaları sürüyor\"",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "grizu patlaması sonucu 2 kişi hayatını kaybetti, 5 kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İlk resmî açıklamadaki iki can kaybı rakamı bir referans oluşturuyor ve bir metin bu rakamı veriyor; ancak rakamın yeni bilgiye rağmen tutulduğu açıkça gösterilmiyor.",
+   "alternative_explanation": "Metin, sayının güncellenmesinden önce yazılmış olabilir.",
+   "missing_context": [
+    "Metinlerin hazırlanma ve güncellenme zamanı"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Patlamanın ardından 3 madenci hayatını kaybederken, 4 işçi de yaralandı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "grizu patlaması sonucu 3 kişi hayatını kaybetti, 5 kişi yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başlatılan soruşturma kapsamında iki şüpheli hakkında gözaltı kararı verildi.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "üç işçinin hayatını kaybetmesiyle ilgili üç kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler yaralı sayısında (4 / 5) ve gözaltı sayısında (iki / üç) farklılaşıyor; farkın bir sonuca etkisi gösterilmiyor.",
+   "alternative_explanation": "Ayrıntı farkları yayın saatindeki bilgi düzeyi, ajans kaynağı ve başlık uzunluğu sınırıyla açıklanabilir; bu bir hata kanıtı değildir.",
+   "missing_context": [
+    "Olayın birincil kaynağı (resmî açıklama veya ajans metni)",
+    "Farklılığın bir sonuca veya karara etki ettiğini gösteren kanıt"
+   ]
+  }
+ ]
+}

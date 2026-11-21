@@ -1,0 +1,140 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Pendik'teki trafik kazası haberleri: Olumsuz içerik haberin konusunun kendisi; metin, olumsuz bilgiye karşılaştırılabilir olumlu bilgiden orantısız ağırlık verildiğini ve bunun bir değerlendirmeyi etkilediğini belgelemiyor.",
+   "alternative_explanation": "Olumsuz olayların haberleştirilmesi olayın doğasından kaynaklanabilir; olumsuz sözcük kullanımı kart ölçütünü karşılamaz.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve ona verilen ağırlık",
+    "Ağırlıklandırmanın bir karara etkisini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Pendik'teki trafik kazası haberleri: Bazı başlıklar çarpıcı ayrıntıları öne çıkarıyor; ancak metin bu ayrıntıyı açıkça bir yargıya veya tercihe bağlamıyor ve ilgili karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Öne çıkarılan ayrıntı haber değeri taşıyan gerçek bir unsur olabilir; dikkat çekicilik kendi başına haksız bir etki kanıtı değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı haksız biçimde yönlendirdiğine dair doğrudan anlatım",
+    "Okur tepkisi veya editoryal karar kayıtları"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Pendik'teki trafik kazası haberleri: Duygusal sözcükler mevcut olsa da metin bir duyguyu açıkça belirli bir risk/fayda tahminine veya karara bağlamıyor.",
+   "alternative_explanation": "Duygusal dil haberin konusu olan olayın niteliğini yansıtabilir; duygu tek başına hata kanıtı değildir.",
+   "missing_context": [
+    "Duygunun bir karar ölçütünün yerine geçtiğini gösteren açık ifade",
+    "Olgular sabitken duyguya göre değişen tahminleri gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Pendik'teki trafik kazası haberleri: Kurumlar aynı olayı farklı vurgu ve sözcüklerle veriyor; fakat metinde seçeneklerin eşdeğer olduğunu açıkça kurup bir yargıyı ya da tercihi bu sunuma bağlayan bir akıl yürütme yok.",
+   "alternative_explanation": "Başlık farkları yayın formatı, karakter sınırı, güncelleme saati ve kurum üslubuyla açıklanabilir; sunum farkı tek başına bir karar hatası göstermez.",
+   "missing_context": [
+    "Aynı bilginin farklı sunumunun bir okur veya karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri",
+    "Metinde açıkça eşdeğerlik kuran ve tercihi sunuma dayandıran bir ifade"
+   ]
+  },
+  {
+   "card_id": "identifiable-victim-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Pendik'teki trafik kazası haberleri: Metinde bir yardım veya kaynak tahsisi kararı ve bu kararı veren kişi tanımlanmıyor; tanımlanabilir kişi ile daha geniş bir grup arasında karşılaştırma da yok.",
+   "alternative_explanation": "Bir kişinin adıyla haberleştirilmesi kamusal rolünden kaynaklanabilir; bu bir öncelik kararı değildir.",
+   "missing_context": [
+    "Gerçek ya da önerilen bir tahsis kararı",
+    "Karşılaştırılabilir ihtiyaçları olan bir grupla kıyas"
+   ]
+  }
+ ]
+}

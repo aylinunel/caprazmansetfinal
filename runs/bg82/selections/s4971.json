@@ -1,0 +1,11 @@
+{
+ "candidate_ids": [
+  "automation-bias",
+  "salience-bias",
+  "framing-effect"
+ ],
+ "selection_uncertainty": [
+  "Spor önizleme haberi; seçicilik sinyali zayıf."
+ ],
+ "selection_note": "Sözcü'nün 'yapay zeka sonucu açıkladı' başlığı otomasyon çıktısına ağırlık veriyor olabilir."
+}

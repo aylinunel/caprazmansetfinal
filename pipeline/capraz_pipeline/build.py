@@ -19,7 +19,7 @@ from pathlib import Path
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 from . import analyze as an
-from . import classify, cluster, events as ev, narratives, score, topics
+from . import classify, cluster, events as ev, narratives, score, topics, urlpack
 from .config import PARAMS, REPO, params_dict
 from .derived import DayCache
 from .events import WORD, STOP
@@ -190,7 +190,9 @@ def build(root: Path, ref: Path, out: Path, since: str | None = None, until: str
         months[a["d"][:7]].append(a)
     sizes = {}
     for m, xs in sorted(months.items()):
-        sizes[f"a-{m}.bin"] = _gz(out / f"a-{m}.bin", pack_month(xs, sources, cats, keys))
+        slim, urls = urlpack.split(pack_month(xs, sources, cats, keys))  # URLs load after the first screen
+        sizes[f"a-{m}.bin"] = _gz(out / f"a-{m}.bin", slim)
+        sizes[f"u-{m}.bin"] = _gz(out / f"u-{m}.bin", urls)
         sizes[f"l-{m}.bin"] = _gz(out / f"l-{m}.bin", {"i": [a["i"] for a in xs if a["i"] in ledes],
                                                          "l": [ledes[a["i"]] for a in xs if a["i"] in ledes]})
     start = datetime.fromisoformat(days[0]).replace(tzinfo=timezone.utc)

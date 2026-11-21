@@ -1,0 +1,268 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "fear-appeal",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteoroloji'den 11 Kente Sarı Kodlu Uyarı: Fırtına ve Kuvvetli Yağış İlleri Vuracak",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Meteoroloji'den 11 ile sarı kodlu alarm!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Marmara ve Ege'de güney ve güneybatı yönlü rüzgarın saatte 40 ila 60 kilometreye ulaşması bekleniyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 06:06] İstanbul'un da aralarında bulunduğu 11 il için sarı kodlu uyarı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar kendi seslerinde 'alarm' ve 'İlleri Vuracak' gibi tehdit sözcükleri kullanıyor; aynı metinlerde ve diğerlerinde verilen ölçek ise 'sarı kodlu uyarı' ve saatte 40-60 km rüzgâr.",
+   "alternative_explanation": "Fırtına uyarıları kamu güvenliği için dikkat çekici dil gerektirebilir; ani rüzgârın 90 km'ye ulaşabileceği de bildiriliyor.",
+   "missing_context": [
+    "Sarı kodun uyarı ölçeğindeki yeri",
+    "Meteoroloji'nin resmî uyarı metni"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fırtına ve Kuvvetli Yağış İlleri Vuracak",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kuvvetli fırtına kapıda",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 09:38] Meteoroloji'den 11 il için sarı kodlu uyarı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar kendi seslerinde 'Vuracak' ve 'kapıda' gibi değerlendirici ifadeler kullanıyor; başka bir kurum aynı uyarıyı bunlar olmadan veriyor.",
+   "alternative_explanation": "Değerlendirici kelimeler başlıkta dikkat çekmek için kullanılan yaygın kalıplar olabilir; olgular diğer metinlerle aynıdır.",
+   "missing_context": [
+    "Resmî tahmin metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteoroloji'den 11 ile sarı kodlu alarm!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 18:27] 11 il için sarı kodlu uyarı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Marmara için sağanak alarmı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı resmî bildirim bazı kurumlarda 'uyarı', bazılarında 'alarm' olarak adlandırılıyor; 'alarm' daha yüksek bir tehlike çağrışımı taşıyor.",
+   "alternative_explanation": "Kelime farkları üslup, ajans metninden aktarım veya başlık uzunluğu farkı olabilir.",
+   "missing_context": [
+    "Resmî uyarının adlandırılışı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteoroloji'den İstanbul dahil 11 il için sarı kodlu uyarı! Fırtınanın hızı 90 kilometreye çıkabilir",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hava sıcaklığının da iç ve batı kesimlerinde 3 ila 5 derece artacağı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul Valiliği ulaşımda aksamalar",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı uyarıyı bir kurum rüzgâr hızı, biri sıcaklık değişimi, biri ise ulaşım etkisi üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklı boyutların öne çıkması kurumların erişilen bilgi, yayın saati ve okur ilgisi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Kurumların aynı saatte erişebildiği bilgi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde iki seçenekli bir sunum yok.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "beklenen kuvvetli yağış nedeniyle",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Meteoroloji Genel Müdürlüğü'nden yapılan son tahminlere göre",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Nedeniyle' ifadeleri uyarıyı beklenen hava olayına bağlıyor; bu bağ eşzamanlılığa değil resmî tahmine dayanıyor.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  }
+ ]
+}

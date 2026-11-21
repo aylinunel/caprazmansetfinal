@@ -1,0 +1,291 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "consequence-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İBB el mi değiştirecek?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "olası seçimde belediye el değiştirebilir",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "DEM Parti'den 'meclis üyeleri' kararı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar başlıkta kararın kendisinden önce İBB'nin el değiştirebileceği öngörüsünü öne çıkarıyor; bu bir öngörü, ancak karar da başlıkta yer aldığı için olayın yalnızca girişte verildiği koşulu tam karşılanmıyor.",
+   "alternative_explanation": "Kararın siyasi sonucu okur için haberin asıl önemi olduğundan öne alınmış olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP’den seçilen üyeler DEM’e geçiyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP'deki meclis üyeleri partiye geri dönüyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "‘Kent Uzlaşısı’yla seçilen meclis üyeleri DEM Parti çatısında görev yapacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı katılım bir kurumda başka partiye 'geçme', diğerinde kendi partisine 'geri dönme', bir başkasında 'parti çatısında görev yapma' olarak adlandırılıyor; 'geçmek' saf değiştirmeyi, 'dönmek' aidiyete geri gelişi çağrıştırıyor.",
+   "alternative_explanation": "Üyeler CHP listesinden seçilmiş DEM Partili isimler olduğu için her iki ifade de olgusal açıdan savunulabilir.",
+   "missing_context": [
+    "Üyelerin seçim öncesi parti üyelik durumu"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kent uzlaşısı dağıldı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kent Uzlaşısı bitti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "‘Kent Uzlaşısı’yla seçilen meclis üyeleri DEM Parti çatısında görev yapacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar kendi sesiyle uzlaşının 'dağıldığını' ya da 'bittiğini' ilan ediyor; aynı karar başka bir kurumda bu değerlendirme olmadan veriliyor.",
+   "alternative_explanation": "Kurumlar kararın uzlaşının fiilen sona ermesi anlamına geldiğini düşünerek olgusal bir yorum yapmış olabilir.",
+   "missing_context": [
+    "Tarafların uzlaşının durumuna ilişkin açıklamaları"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP’den seçilen üyeler",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kent Uzlaşısı ile seçilen meclis üyelerimiz",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "CHP'deki meclis üyeleri",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı meclis üyeleri farklı kurumlarda 'CHP’den seçilen' ya da 'CHP'deki' diye anılıyor; ancak bu etiketlerin tanımlamanın ötesinde bir değerlendirme taşıyıp taşımadığı açık değil.",
+   "alternative_explanation": "Etiketler seçildikleri listeyi belirtmek için kullanılmış olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İBB el mi değiştirecek?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kent Uzlaşısı bitti: CHP’den seçilen üyeler DEM’e geçiyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kent Uzlaşısı meclis üyelerinin DEM Parti'ye katılma talebi uygun görüldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı karar bir kurumda İBB'deki güç dengesi, bir başkasında ittifakın sonu, bir diğerinde usulle ilgili onay boyutuyla öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar okur kitlelerinin ilgilendiği farklı sonuçları öne almış olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kent Uzlaşısı bitti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "31 Mart 2024 yerel seçimlerinde “Kent Uzlaşısı” kapsamında seçilen",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "kent uzlaşısı stratejisi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar kararı 2024 yerel seçimlerindeki uzlaşı stratejisinin süreci içine yerleştiriyor.",
+   "alternative_explanation": "Bu, kararın anlaşılması için gereken temel arka plan olabilir.",
+   "missing_context": [
+    "Haberlerin tam metni ve görsel yerleşimi"
+   ]
+  }
+ ]
+}

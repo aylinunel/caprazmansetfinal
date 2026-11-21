@@ -1,0 +1,249 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni Partili Çukurova Belediye Başkanı Emrah Kozay ‘yolsuzluk’ soruşturmasında tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediye Başkanı Emrah Kozay tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir başlıkta parti bağlantısıyla 'Yeni Partili', diğerinde yalnızca unvanıyla anılıyor; ancak parti bilgisi meşruiyet yargısı taşımaktan çok tanımlayıcı bir bilgi olabilir.",
+   "alternative_explanation": "Parti üyeliği okur için ilgili kimlik bilgisidir.",
+   "missing_context": [
+    "Etiketin değerlendirici bir yük taşıyıp taşımadığına dair bağlam"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesinde 34 tutuklama! Emrah Kozay görevden uzaklaştırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediye Başkanı Emrah Kozay tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Yeni Partili Çukurova Belediye Başkanı Emrah Kozay ‘yolsuzluk’ soruşturmasında tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturmayı bir başlık toplam tutuklu sayısı ve görevden uzaklaştırmayla, bir başlık başkanın tutuklanmasıyla, bir başka başlık başkanın parti bağlantısıyla öne çıkarıyor.",
+   "alternative_explanation": "Görevden uzaklaştırma tutuklamadan sonra gelen ayrı bir gelişme olabilir.",
+   "missing_context": [
+    "Gelişmelerin zaman sırası"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesinde 34 tutuklama! Emrah Kozay görevden uzaklaştırıldı — Adana'da Çukurova Belediyesine yönelik usulsüzlük soruşturmasında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesi'ne yönelik \"ihale ve doğrudan teminlerde yolsuzluk\" iddiasıyla yürütülen soruşturma",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma bir kurumda 'usulsüzlük soruşturması', başka bir kurumda tırnak içinde 'yolsuzluk' iddiası olarak adlandırılıyor; 'usulsüzlük' idari aykırılık, 'yolsuzluk' suç çağrışımı taşıyor.",
+   "alternative_explanation": "Kurumlar savcılık metninden farklı ifadeleri seçmiş olabilir.",
+   "missing_context": [
+    "Savcılık açıklamasındaki suç nitelendirmesi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesindeki usulsüzlüklere yönelik soruşturma kapsamında adliyeye sevk edilen 49 şüpheliden",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediye Başkanı Emrah Kozay tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; bazı girişler 'usulsüzlüklere yönelik soruşturma' diyerek usulsüzlüklerin varlığını iddia işareti olmadan anlatıyor. Ancak bu ifade başlıkta değil girişte ve belirli bir aktöre fail olarak yüklenmiyor.",
+   "alternative_explanation": "İfade soruşturmanın konusunu kısaltılmış biçimde adlandırıyor olabilir.",
+   "missing_context": [
+    "Başlık dilbilgisinde bir aktöre sorumluluk yüklenip yüklenmediği"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde epizodik çerçeveleme kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adana Çukurova Belediyesi’ne yönelik yürütülen ihalelerde usulsüzlük ve yolsuzluk soruşturmasında sıcak gelişmeler yaşandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediye Başkanı Emrah Kozay tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurumun girişi 'sıcak gelişmeler' ifadesini kullanıyor; başka kurumlar aynı olguyu yalın veriyor. Ancak ifadenin değerlendirici yükü sınırlı.",
+   "alternative_explanation": "'Sıcak gelişme' haber dilinde yeni gelişmeler için kullanılan bir kalıptır.",
+   "missing_context": [
+    "Kurumun genel dil kullanımı"
+   ]
+  }
+ ]
+}

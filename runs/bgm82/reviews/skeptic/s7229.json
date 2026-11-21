@@ -1,0 +1,253 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Körfez'de sıcak saatler: Hürmüz Boğazı'nda iki tanker mayına çarptı, ABD Umman Körfezi'nde gemi vurdu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İran: Hürmüz Boğazı'nda 2 petrol tankeri mayına çarptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "sol, tanker olayını ABD'nin ayrı bir eylemiyle yan yana koyuyor; çoğu kurum yalnızca İran açıklamasını veriyor.",
+   "alternative_explanation": "sol'un eklediği ABD eylemi aynı olgunun farklı bir boyutu değil, ayrı bir olgu olabilir; başlıkların çoğu aynı boyutu öne çıkarıyor. Tanker sayısındaki fark (bir/iki) farklı açıklamalardan kaynaklanıyor olabilir.",
+   "missing_context": [
+    "İran'ın birden çok açıklama yapıp yapmadığı",
+    "ABD eyleminin tanker olayıyla bağlantısı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda iki petrol tankeri için mayın iddiası!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "deniz mayınlarına çarparak patladığını ve alev aldığını ileri sürdü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İran Devrim Muhafızları Ordusu, Hürmüz Boğazı'nda 2 tankerin mayına çarptığını duyurdu.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı Devrim Muhafızları açıklamasını CNN Türk kendi sesinde 'iddia' ve 'ileri sürdü', DHA ise 'duyurdu' ile veriyor; çağrışım farkı kaynağa güven düzeyini değiştiriyor.",
+   "alternative_explanation": "'İddia' sözcüğü doğrulanmamış bir askeri açıklama için gazetecilik ihtiyatının gereği olabilir.",
+   "missing_context": [
+    "Olayın bağımsız kaynaklarca doğrulanıp doğrulanmadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda alarm: 2 petrol tankeri deniz mayınlarına çarptı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İran Ordusu: Hürmüz Boğazı'nın doğusunda 2 petrol tankeri deniz mayınlarına çarptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit aynı olguyu 'alarm' ile veriyor; diğer kurumlar bu sözcük olmadan aynı olguyu aktarıyor.",
+   "alternative_explanation": "'Alarm' değerlendirici değil tehdit bildiren bir sözcük; kritik bir geçiş noktasındaki olay için haber değerini vurguluyor olabilir.",
+   "missing_context": [
+    "Kurumun bu tür olaylarda rutin başlık dili"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İran: Hürmüz Boğazı'nda iki petrol tankeri mayına çarptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkların ana cümlesi olayın kendisini (tankerlerin mayına çarpması) veriyor; bir sonuç ya da beklenen etki öne çıkarılmıyor.",
+   "alternative_explanation": "Olay doğrudan bildiriliyor; sonuç çerçevesi yok.",
+   "missing_context": [
+    "Petrol fiyatı gibi sonuçların başka haberlerde öne çıkıp çıkmadığı"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda alarm",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dünya enerji ticaretinin en kritik geçiş noktalarından Hürmüz Boğazı'nda yeni bir gelişme yaşandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akit 'alarm' sözcüğünü kullanıyor ve riskin önemini boğazın enerji ticaretindeki yeriyle açıklıyor.",
+   "alternative_explanation": "Kritik bir enerji koridorunda iki tankerin yanması ciddi bir olaydır; dilin orantısız olduğu metinden çıkarılamıyor.",
+   "missing_context": [
+    "Tankerlerdeki hasarın ve trafiğe etkisinin ölçeği"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Körfez'de sıcak saatler: Hürmüz Boğazı'nda iki tanker mayına çarptı, ABD Umman Körfezi'nde gemi vurdu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dünya enerji ticaretinin en kritik geçiş noktalarından Hürmüz Boğazı'nda yeni bir gelişme yaşandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "sol olayı Körfez'deki eşzamanlı gelişmelerle, Akit ise boğazdaki süregelen gelişmeler dizisiyle ilişkilendiriyor.",
+   "alternative_explanation": "Bu bağlam okura ilgili arka planı sunuyor; bağlamsal bir etki olup hata değildir.",
+   "missing_context": [
+    "Bölgedeki önceki olayların ayrıntısı"
+   ]
+  }
+ ]
+}

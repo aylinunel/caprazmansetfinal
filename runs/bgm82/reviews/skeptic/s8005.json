@@ -1,0 +1,269 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni Parti'de istifa depremi!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "eski zihniyetin yeni çatıdaki ortaklığı ilk günden çatırdadı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "A Haber 'istifa depremi', Akit 'yeni çatı… çatırdadı' mecazlarını kendi sesinde kullanıyor. 'Deprem' siyasi haberde kalıplaşmış bir deyim; 'çatırdayan çatı' ise yapının çöktüğünü ima edebilir ama bir rol ya da eylem yönü atadığı açık değil. Kart, kurumun kendi sesinde olay ya da aktörler için kalıplaşmış deyim olmayan, rol atayan ya da bir eylem yönü ima eden bir mecaz arıyor.",
+   "alternative_explanation": "Siyasi haber dilinde 'deprem', 'sarsmak', 'uzanmak' gibi ifadeler kalıplaşmış deyimlerdir ve rol atamadan kullanılabilir.",
+   "missing_context": [
+    "Mecazın kurumun genel haber dilinde ne sıklıkla kalıp olarak kullanıldığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Koltuk ve ikbal kavgalarıyla çalkalanan Yeni Parti’de kriz tavan yaptı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Eski zihniyetli Yeni Parti’de deprem",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haber7 · 16:54] Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer Yeni Parti'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Takvim ve Akit kendi seslerinde 'ikbal kavgaları', 'kriz tavan yaptı', 'eski zihniyetli' ifadelerini kullanıyor; haber7 aynı istifayı yalın veriyor. Kart, kurumun kendi sesinde değerlendirme yüklü sözcük kullanmasını ve aynı olgunun bu sözcükler olmadan da aktarılabildiğini arıyor; alıntılanan ya da bir kişiye atfedilen ifade kurumun tekniği sayılmaz.",
+   "alternative_explanation": "Duygusal sözcükler olayın büyüklüğünü aktarmak için yaygın kullanılan kalıplar olabilir.",
+   "missing_context": [
+    "Sözcüğün bir kaynaktan aktarılıp aktarılmadığı",
+    "Kurumun benzer olaylarda kullandığı dil"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tekirdağ Büyükşehir Başkanı Yüceer, delege krizi nedeniyle Yeni Parti'den istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Yeni Parti'de deprem! Belediye Başkanı Yüceer istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Candan Yüceer'in eşi kim, mesleği ne",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifa bir başlıkta kişisel gerekçeyle (delege krizi), bir başlıkta partideki çalkantıyla, Milli Gazete'de ise kişinin özel hayatıyla öne çıkarılıyor. Kart, aynı olguyu aktaran kurumların başlıklarda o olgunun farklı boyutlarını öne çıkarmasını arıyor; karşılaştırma başlıklar arasında yapılıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinde elde bulunan bilgiden, ajans metninin farklı paragraflarının seçilmesinden ya da olayın farklı aşamalarının haberleştirilmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Her kurumun haberinin tam metni",
+    "Başlıkların yayımlandığı andaki mevcut bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Candan Yüceer'den zehir zemberek sözlerle rest",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "sosyal medya hesabından yaptığı açıklamayla YENİ Parti'den istifa ettiğini duyurdu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "A Haber istifa açıklamasını 'zehir zemberek sözlerle rest' diye anlatırken Cumhuriyet ve Yeni Şafak aynı açıklamayı 'açıklamayla duyurdu' diye veriyor; ilki çatışma çağrışımı taşıyor. Kart, aynı eylem ya da şey için kurumların kendi seslerinde çağrışımı farklı sözcükler kullanmasını arıyor; yalnızca üslup ya da uzunluk farkı yeterli değil.",
+   "alternative_explanation": "Sözcük farkları ajans metninin uyarlanması, başlık kısalığı ya da hukuki terminolojinin farklı aktarımıyla açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı sözcükleri diğer haberlerde nasıl kullandığı",
+    "Sözcüklerin resmî açıklamadaki karşılığı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "\"Mutlak butlan\" kararı sonrası CHP'den istifa ederek Yeni Parti'ye katılan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Özgür Özel ile birlikte CHP’den koparak Yeni Parti’ye katılan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sol ve Akit spotları istifayı 'mutlak butlan' kararı ve CHP'den kopuş sürecine yerleştiriyor. Bu bağlam kartı, kurumun kendi başlık ya da spotunda olayı daha geniş bir eğilim, dizi ya da kurumsal sürece yerleştirip yerleştirmediğine bakıyor.",
+   "alternative_explanation": "Bağlam bilgisi okura arka plan sunmak için eklenmiş olabilir; tek başına bir yanlılık göstergesi değildir.",
+   "missing_context": [
+    "Haberlerin tam metnindeki arka plan bilgisi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni Parti’de \"iç hesaplaşma\" patladı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Koltuk ve ikbal kavgalarıyla çalkalanan Yeni Parti’de kriz tavan yaptı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 16:55] Tekirdağ Büyükşehir Belediye Başkanı Yüceer, Yeni Parti'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Takvim başlıkta 'iç hesaplaşma patladı', spotta 'ikbal kavgaları… kriz tavan yaptı' diyerek aynı yönde iki tercih kullanıyor; TRT Haber aynı olguyu bu bileşim olmadan veriyor. Bu bağlam kartı, aynı kurumun başlık ve spotunda aynı değerlendirme yönüne işaret eden en az iki sunum tercihini ve başka bir kurumun aynı olguları bu bileşim olmadan verdiğini arıyor.",
+   "alternative_explanation": "Başlık ve spottaki tercihler ajans metninin yapısından ya da haberin kısaltılmasından kaynaklanabilir.",
+   "missing_context": [
+    "Haberin tam metni",
+    "Spotun kesilmemiş hâli"
+   ]
+  }
+ ]
+}

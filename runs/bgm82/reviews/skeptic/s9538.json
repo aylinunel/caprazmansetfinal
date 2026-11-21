@@ -1,0 +1,273 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul'da lodos alarmı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da Fırtına Alarmı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da fırtına: 74 ihbar, 12 park ve koru kapatıldı, vapur seferleri iptal edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "T24 ve Onedio 'alarm' sözcüğünü kendi seslerinde kullanıyor; Bianet ölçeği (74 ihbar, 12 park kapatıldı, sefer iptalleri) veriyor. Sözlüğün bu ölçekle orantısız olup olmadığı, resmi uyarı düzeyi metinde bulunmadığından belirlenemiyor.",
+   "alternative_explanation": "Meteoroloji ya da valilik resmi bir uyarı yayımlamışsa 'alarm' bu uyarıyı aktaran olgusal bir kullanım olabilir.",
+   "missing_context": [
+    "Meteorolojinin uyarı düzeyi (sarı/turuncu)",
+    "Can ya da mal kaybı olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Megakenti lodos vurdu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da lodos ulaşımı vurdu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akşam ve Takvim 'lodos vurdu' diyor; hava olayları için 'vurmak' Türkçede kalıplaşmış bir deyim, bir düşman ya da savunma rolü atamıyor.",
+   "alternative_explanation": "Deyim haber dilinde yerleşik; ek bir mantık getirmiyor.",
+   "missing_context": [
+    "Rol atayan, kalıp dışı bir mecaz"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Megakenti lodos vurdu! Vapur seferleri iptal, metroda aksama",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da bazı vapur seferleri lodos nedeniyle iptal edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıklarda dramatik fiiller var, ancak olayı olumlu ya da olumsuz değerlendiren sözcükler (skandal, rezalet) yer almıyor.",
+   "alternative_explanation": "Dramatik fiiller betimleyici; değerlendirme yapmıyor.",
+   "missing_context": [
+    "Olayı değerlendiren bir sıfat"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul'da lodos alarmı: Metro seferleri aksadı, bazı vapur seferleri iptal edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da fırtına nedeniyle yeşil alanlar kapatıldı, vapur seferleri iptal edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da bazı vapur seferleri lodos nedeniyle iptal edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı fırtına olgusunu T24 metro aksamasını, AA yeşil alanların kapatılmasını, Evrensel ve Yeni Şafak yalnız vapur iptallerini öne çıkararak veriyor.",
+   "alternative_explanation": "Kurumlar farklı saatlerde fırtınanın farklı etkilerini öğrenmiş olabilir; etkiler birbirini tamamlıyor.",
+   "missing_context": [
+    "Etkilerin hangi saatlerde ortaya çıktığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul'da lodos etkili: Bazı vapur seferleri iptal edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da lodos fırtınası. Şehir Hatları, İDO ve BUDO seferleri iptal edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da fırtına nedeniyle yeşil alanlar kapatıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı hava olayı 'lodos etkili', 'lodos fırtınası' ve 'fırtına' diye anılıyor; yoğunluk izlenimi farklı. Ancak 'fırtına' meteorolojik bir sınıflama olabilir, fark çağrışımdan çok olgusal olabilir.",
+   "alternative_explanation": "Rüzgâr hızı fırtına eşiğini aşmışsa sözcük farkı ölçüm farkıdır.",
+   "missing_context": [
+    "Ölçülen rüzgâr hızı ve resmi sınıflama"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Marmara Bölgesi'nde dün başlayan lodos fırtınası bu sabah saatlerinde şiddetini artırırken",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Asıl fırtına yarın geliyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Onedio ve Takvim olayı günler süren bir sürecin içine yerleştiriyor; ancak bu, aynı fırtınanın gelişimidir, geniş bir eğilim, seri ya da kurumsal bağlam değil.",
+   "alternative_explanation": "Zaman içindeki gelişimi vermek tek olayın anlatımının parçası olabilir.",
+   "missing_context": [
+    "Önceki benzer fırtınalara ya da ulaşım politikasına yapılan atıf"
+   ]
+  }
+ ]
+}

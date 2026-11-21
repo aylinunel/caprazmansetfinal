@@ -1,0 +1,160 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan istemişti: Erdoğan, başdanışmanı Oktay Saral'ı görevden aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Başdanışmanı Oktay Saral görevinden istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ayrılık bir kurumda Azerbaycan talebiyle görevden alma, başka kurumlarda istifa olarak sunuluyor; ancak bu çerçeve farkının bir değerlendirmeye bağlandığı açıkça yazılı değil.",
+   "alternative_explanation": "İlk haberler görevden alma iddiasına, sonrakiler Saral'ın istifa açıklamasına dayanıyor; fark zamanlamadan kaynaklanabilir.",
+   "missing_context": [
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri",
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Haberlerin tam metinleri ve aynı olgu setine dayandıklarının teyidi"
+   ]
+  },
+  {
+   "card_id": "source-confusion",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fuat Uğur, Cumhurbaşkanı Başdanışmanı Oktay Saral'ın görevden alındığını öne sürdü",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Oktay Saral istifa ettiğini açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Görevden alma bilgisinin kaynağı (köşe yazarı Fuat Uğur) açıkça belirtiliyor; daha sonra Saral'ın istifa açıklaması farklı bir anlatı sunuyor. Ancak bir kaynağın yanlış atfedildiğini gösteren açık bir düzeltme yok.",
+   "alternative_explanation": "İki anlatı aynı anda doğru olabilir: talimatla istifa, görevden almanın bir biçimi olarak aktarılmış olabilir.",
+   "missing_context": [
+    "Cumhurbaşkanlığından resmi açıklama",
+    "Saral'ın açıklamasının tam metni",
+    "Kaynak atfına dair düzeltme"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başörtüsü yasağına karşı çıkıp Azerbaycan'ın tepkisini çekmişti!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başörtüsü tartışması gibi duygusal olarak çarpıcı bir ayrıntı başlığın başına yerleştiriliyor; bunun bir yargıyı haksız yönlendirdiği ise açıkça gösterilmiyor.",
+   "alternative_explanation": "Ayrılığın bağlamı olarak bu tartışma ilgili ve haber değeri olan bir bilgidir.",
+   "missing_context": [
+    "Ayrıntının yargıya gerekçe yapıldığını gösteren ifade",
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanının talimatı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ayrılık Cumhurbaşkanının talimatına bağlanıyor ve yetki sahibi açıkça tanımlanıyor; ancak bu otoritenin bir iddiayı haksız biçimde ağır bastırdığı gösterilmiyor.",
+   "alternative_explanation": "Talimatın aktarılması, kararın kimden geldiğini belirten olgusal bir bilgidir.",
+   "missing_context": [
+    "Talimatın gerekçesi",
+    "Karşıt bir değerlendirmenin otorite nedeniyle göz ardı edildiğine dair ifade"
+   ]
+  }
+ ]
+}

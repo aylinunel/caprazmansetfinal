@@ -1,0 +1,256 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya’nın adliyeye gelirken taktığı gözlük olay oldu! Fiyatı ağızları açık bıraktı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya hakkında suç duyurusunu SPK yapmış: Tutuklama sevk yazısında ortaya çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklama sürecinde Akit kişisel bir ayrıntıyı (gözlüğün fiyatı), Karar ise suçlamanın dayanağını öne çıkarıyor.",
+   "alternative_explanation": "Gözlük haberleri sosyal medyadaki ilgiye yanıt veren ayrı bir haber türü olabilir; kurum tutuklama haberini ayrıca vermiş olabilir.",
+   "missing_context": [
+    "Akit'in aynı gün tutuklamanın esasına ilişkin haberi olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: Fatma Betül Sayan Kaya'nın tutuklanma sevk yazısı ortaya çıktı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "tutuklama talebinde 'içerden bilgi öğrenme' ve 'olağandışı para transferi'",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya hakkında hazırlanan tutuklamaya sevk yazısı ortaya çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Diken başlıkta 'fon vurgunu' etiketini, lede'de suçlayıcı ayrıntıların seçimini birleştiriyor; DHA aynı sevk yazısını bu bileşim olmadan veriyor.",
+   "alternative_explanation": "Ayrıntılar savcılık belgesinden aktarılıyor; seçim haber değeri yüksek unsurlara odaklanmaktan kaynaklanabilir.",
+   "missing_context": [
+    "Sevk yazısının tam içeriği"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu: Fatma Betül Sayan Kaya'nın tutuklanma sevk yazısı ortaya çıktı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fiyatı ağızları açık bıraktı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya hakkında hazırlanan tutuklamaya sevk yazısı ortaya çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Diken 'vurgun', Akit 'ağızları açık bıraktı' gibi değerlendirici ifadeleri kendi seslerinde kullanıyor; DHA aynı olguyu bunlar olmadan veriyor.",
+   "alternative_explanation": "'Fon vurgunu' soruşturmanın kamuoyundaki yerleşik adı olarak kullanılıyor olabilir.",
+   "missing_context": [
+    "Kurumların bu soruşturmaya ilişkin önceki adlandırmaları"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Aynı dakikalarda Adalet Bakanı Sayın Akın Gürlek'in yaptığı paylaşım ise dikkat çekti.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Adalet Bakanı Akın Gürlek’in sosyal medya paylaşımı gündem oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Türkiye Gazetesi kendi sesinde bakan için 'Sayın' nezaket unvanını kullanıyor; Yeni Şafak aynı kişiyi yalnızca görev unvanıyla anıyor. 'Sayın' tanımlamanın ötesinde bir saygı değerlendirmesi taşıyor.",
+   "alternative_explanation": "'Sayın' bazı kurumların yerleşik yazım kuralı olabilir; bu durumda belirli bir kişiye yönelik bir değerlendirme olmayabilir.",
+   "missing_context": [
+    "Kurumun diğer yetkililer için de 'Sayın' kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde iki seçeneği tek seçenek gibi sunan bir kalıp (ya... ya..., tek yol) görülmüyor.",
+   "alternative_explanation": "Başlıklar olayı bildiriyor; seçenek dayatan bir anlatım yok.",
+   "missing_context": [
+    "Haber gövdelerinde ikili seçenek kurgusu olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "fon soruşturması kapsamında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Savcılığın hakimliğe gönderdiği sevk yazısına göre Kaya",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "‘Fon vurgunu’na dahil olduğu öne sürülünce",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; ancak sorumluluk atıfları 'göre' ve 'öne sürülünce' gibi atıf işaretleriyle veriliyor.",
+   "alternative_explanation": "Kurumlar savcılık belgesini aktarıyor; failliği kendi seslerinde atamıyor.",
+   "missing_context": [
+    "Başlık dilbilgisinde adı geçen kişiye doğrudan fail rolü veren başka örnekler"
+   ]
+  }
+ ]
+}

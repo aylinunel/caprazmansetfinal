@@ -93,6 +93,10 @@ class ExplainTests(unittest.TestCase):
     def test_validate_explain_accepts_good(self):
         self.assertEqual(validate_explain(GOOD, TEXT), [])
 
+    def test_validate_explain_checks_means_when_present(self):
+        self.assertEqual(validate_explain({**GOOD, "means": GOOD["why"]}, TEXT), [])
+        self.assertTrue(validate_explain({**GOOD, "means": "kısa"}, TEXT))
+
     def test_validate_explain_rejects_status_words(self):
         for w in ("bağlam gerekli", "desteklendi", "uncertain"):
             bad = {**GOOD, "why": f"Bu durumda {w} çünkü başlıklar farklı ve okuyucu için eksik bilgi kalıyor."}
@@ -135,11 +139,73 @@ class TaskCatalogTests(unittest.TestCase):
             {"event": "e0", "title": "t", "outlets": 2, "text": TEXT, "context": CONTEXT}) + "\n")
         return run
 
+    def _selected_run(self, d):
+        # _run (inputs.jsonl with event e0) plus a selection, so the review stage has cards to send
+        run = self._run(d)
+        (run / "selections").mkdir()
+        (run / "selections" / "e0.json").write_text(json.dumps(
+            {"candidate_ids": ["framing-effect"], "selection_uncertainty": [], "selection_note": ""}))
+        return run
+
+    def test_review_tasks_carry_examples_from_other_events_only(self):
+        from biasguard.news import write_tasks
+        ex = {"framing-effect": [{"event": "e0", "text": "x", "present": "yes"},
+                                 {"event": "e9", "text": "y", "present": "no"},
+                                 {"event": "e8", "text": "z", "present": "yes"},
+                                 {"event": "e7", "text": "w", "present": "no"}]}
+        with tempfile.TemporaryDirectory() as d:
+            run = self._selected_run(d)
+            path = write_tasks(run, "review", 10, examples=ex)[0]
+            task = json.loads(path.read_text())
+            card = next(c for c in task["cards"] if c["id"] == "framing-effect")
+        self.assertEqual([e["event"] for e in card["examples"]], ["e9", "e8"])  # never e0; at most 2
+        self.assertIn("Örnekler başka olaylardan", task["system_prompt"])
+
+    def test_no_examples_file_leaves_tasks_unchanged(self):
+        from biasguard.news import write_tasks
+        with tempfile.TemporaryDirectory() as d:
+            task = json.loads(write_tasks(self._selected_run(d), "review", 10)[0].read_text())
+        self.assertFalse(any("examples" in c for c in task["cards"]))
+        self.assertNotIn("Örnekler başka olaylardan", task["system_prompt"])
+
+    def test_small_catalogue_sends_every_card_like_the_engine(self):
+        # the engine reviews every card of a catalogue at or under _DIRECT_REVIEW_LIMIT; the tasks must ask for all of them
+        with tempfile.TemporaryDirectory() as d:
+            from biasguard.engine import BiasGuard
+            from biasguard.news import selected_cards
+            run = self._run(d)
+            small = BiasGuard(cards=BiasGuard().cards[:9])
+            (run / "selections").mkdir()
+            (run / "selections" / "e0.json").write_text(json.dumps(
+                {"candidate_ids": [small.cards[0]["id"]], "selection_uncertainty": [], "selection_note": ""}))
+            item = json.loads((run / "inputs.jsonl").read_text())
+            self.assertEqual(selected_cards(small, run, item), [c["id"] for c in small.cards])
+
     def test_write_tasks_default_uses_the_stock_catalogue(self):
         with tempfile.TemporaryDirectory() as d:
             from biasguard.news import write_tasks
             task = json.loads(write_tasks(self._run(d), "select", 10)[0].read_text())
             self.assertEqual(len(task["cards"]), len(BiasGuard().cards))
+
+    def test_review_tasks_are_one_file_per_role(self):
+        with tempfile.TemporaryDirectory() as d:
+            from biasguard.news import write_tasks
+            run = self._run(d)
+            sel = json.loads(write_tasks(run, "select", 10)[0].read_text())
+            self.assertNotIn("enum", sel["output_schema"]["properties"]["candidate_ids"]["items"])
+            ids = [c["id"] for c in sel["cards"][:2]]
+            for e in sel["events"]:
+                (run / "selections").mkdir(exist_ok=True)
+                (run / "selections" / f"{e['event']}.json").write_text(json.dumps(
+                    {"candidate_ids": ids, "selection_uncertainty": [], "selection_note": ""}))
+            paths = write_tasks(run, "review", 10)
+            self.assertEqual(sorted(p.parent.name for p in paths), ["advocate", "skeptic"])
+            for p in paths:
+                t = json.loads(p.read_text())
+                self.assertEqual(t["role"], p.parent.name)
+                self.assertEqual(t["schema_example"]["properties"]["role"]["const"], p.parent.name)
+                self.assertNotIn("provenance", t["cards"][0])
+                self.assertIn("necessary_conditions", t["cards"][0])
 
     def test_write_tasks_accepts_another_catalogue(self):
         with tempfile.TemporaryDirectory() as d:
@@ -188,6 +254,20 @@ class MediaPassTests(unittest.TestCase):
         f = out["events"][0]["supported"][0]
         self.assertEqual((f["id"], f["entry_type"], f["tier"]), ("labeling", "media_practice", "ai_confident"))
         self.assertEqual((out["catalog"], out["summary"]["catalog"]), ("media", 1))
+
+    def test_cards_that_have_not_passed_the_lab_go_to_pending(self):
+        card = {**BiasGuard().cards[0], "id": "labeling", "name": "Labeling", "entry_type": "media_practice",
+                "review_policy": "media_pattern_review"}
+        from unittest import mock
+        with tempfile.TemporaryDirectory() as d:
+            run = self._run(d, card)
+            (run / "catalog.json").write_text(json.dumps([card]))   # the run was reviewed against "labeling"
+            with mock.patch("biasguard.news.load_media_cards", return_value=[]):   # ...which has not passed the lab
+                out = apply(run, catalog="media")
+        self.assertEqual(out["events"][0]["supported"], [])
+        self.assertEqual((out["summary"]["supported"], out["summary"]["cardIds"]), (0, []))
+        self.assertEqual(out["pending"]["cards"], [{"id": "labeling", "name": "Labeling"}])
+        self.assertEqual(out["pending"]["events"][0]["supported"][0]["id"], "labeling")
 
     def test_default_catalog_is_behavioural(self):
         with tempfile.TemporaryDirectory() as d:

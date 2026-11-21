@@ -1,0 +1,198 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ağustosta MB’nin yıl sonu enflasyon tahmini yüzde 28’di.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası'nın yıl sonu enflasyon tahmini 29,5'e yükseldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki tahmin (yüzde 28) ve yeni tahmin (29,5) yan yana veriliyor; ancak yeni tahminin eskisine takılı kaldığı belirtilmiyor. Metinde daha sonraki bir yargının önceki bir değere açıkça bağlandığı ve bu bağın gerekçesiz olduğu gösterilmiyor.",
+   "alternative_explanation": "Sayıların ya da önceki değerlerin anılması olgusal bilgi vermek içindir; bir yargının onlara takıldığı görülmüyor.",
+   "missing_context": [
+    "Sonraki tahminin önceki değere nasıl dayandırıldığını gösteren açıklama",
+    "Revizyonu gerektiren kanıtın göz ardı edildiğine dair ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası yıl sonu enflasyon tahminini yukarı yönlü güncelledi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TCMB enflasyon tahminlerini yükseltti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı sözcük ve vurgularla veriyor; ancak metin betimlemelerin karar açısından eşdeğer olduğunu açıkça kurmuyor ve hiçbir tercih ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, editoryal üslup, karakter sınırı, kaynak erişimi ya da haber değeri tercihinden kaynaklanabilir; bunlar bilişsel bir hata kanıtı değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin yargısını gösteren veri",
+    "Farklı sunumların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası enflasyon tahminini yükseltti: İşte emekli ve memur maaşlarında yeni zam hesabı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı öne çıkarıyor; fakat metin bu ayrıntıyı açıkça bir yargı ya da seçime bağlamıyor, çarpıcılık tek başına hata kanıtı değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması olayın gerçekten önemli bir unsuru olması, haber değeri ya da okunma kaygısıyla açıklanabilir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin bir kararda nasıl tartıldığını gösteren karşılaştırmalı kanıt",
+    "Editör ya da okur yargısına dair doğrudan kayıt"
+   ]
+  },
+  {
+   "card_id": "optimism-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Enflasyonun; 2027 yıl sonunda ara hedeflerimiz olan yüzde 21'e, 2028 yıl sonunda yüzde 13,5'e",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "enflasyon tahminlerini 18. kez yukarı yönlü revize etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin enflasyonun gelecekte düşeceğine dair açık bir beklenti ve önceki tahminlerin tekrar tekrar yukarı revize edildiğine dair bilgi içeriyor; ancak bu kalibrasyon kanıtının tahminde göz ardı edildiği açıkça gösterilmiyor.",
+   "alternative_explanation": "Ara hedefler bir para politikası taahhüdü olarak sunuluyor olabilir; revizyon yapılması yeni verinin dikkate alındığını da gösterir.",
+   "missing_context": [
+    "Tahmin yönteminin önceki hataları nasıl hesaba kattığı",
+    "Bağımsız tahminlerle sistematik karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "pessimism-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası yıl sonu enflasyon tahminlerini bir kez daha yukarı çekti: Yüzde 29,5'e çıkarıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde olumsuz bir olayın olasılığını abartan ve bir karşılaştırma ölçütüyle çürütülen bir tahmin bulunmuyor.",
+   "alternative_explanation": "Enflasyon tahmininin yükseltilmesi veriye dayalı bir revizyon olabilir; karamsar bir çarpıklık gösterilmiyor.",
+   "missing_context": [
+    "Tahmini kalibre edilmiş bir ölçütle karşılaştıran veri"
+   ]
+  }
+ ]
+}

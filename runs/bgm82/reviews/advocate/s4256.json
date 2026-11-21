@@ -1,0 +1,237 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhuriyetçi Güç Birliği adayı Prof. Dr. Ümit Kocasakal",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "eski İstanbul Barosu Başkanı ve Cumhuriyetçi Güç Birliği adayı Prof. Dr. Ümit Kocasakal",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ceza hukuku profesörü Ümit Kocasakal",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı aktör kurumlarca farklı unvan ve sıfatlarla (Prof. Dr., eski baro başkanı, ceza hukuku profesörü) anılıyor; ancak bu etiketler tanıtıcı nitelikte ve açık bir değerlendirme taşımıyor.",
+   "alternative_explanation": "Unvan farkları yer kısıtı ve kurumların biyografik bilgi tercihinden kaynaklanabilir.",
+   "missing_context": [
+    "Etiketlerden birinin tanıtımın ötesinde değerlendirme taşıdığını gösteren karşıt örnek"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Barosu’nun yeni başkanı Ümit Kocasakal oldu! Kaboğlu dönemi resmen bitti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "9 bin 970 oy alarak seçimi önde tamamladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul Baro seçimlerinde Cumhuriyetçi Güç Birliği adayı Ümit Kocasakal kazandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı seçim sonucunu Sabah kaybedenin döneminin bitişi, Yeni Şafak oy sayıları, Evrensel ise kazananın grubu üzerinden öne çıkarıyor (kim kaybetti / sayı / kim kazandı).",
+   "alternative_explanation": "Kurumlar okurlarının en çok merak ettiği yönü başlığa taşımış olabilir.",
+   "missing_context": [
+    "Kesin resmi sonuçlar ve oy farkı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "seçimi önde tamamladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ümit Kocasakal seçimi 9 bin 548 oy ile kazandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı sonuç için bir kurum \"seçimi önde tamamladı\", diğeri \"kazandı\" diyor; farkın çağrışımda mı yoksa yalnızca üslupta mı olduğu belirsiz.",
+   "alternative_explanation": "\"Önde tamamladı\" resmi olmayan sonuçlara dayalı temkinli bir ifade olabilir.",
+   "missing_context": [
+    "Sözcük farkının okurda farklı bir değerlendirme yarattığını gösteren ölçüt"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kurumun kendi sesiyle kurduğu açık bir nedensellik ifadesi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Olayın tekrarlayan ya da yapısal olduğunu gösteren bağlam"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Barosu’nun yeni başkanı Ümit Kocasakal oldu! Kaboğlu dönemi resmen bitti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 18:59] İstanbul Barosu’nun yeni başkanı Ümit Kocasakal oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sabah başlıkta ünlem ve kaybeden üzerinden \"dönem bitti\" seçimini birleştiriyor; Yeni Şafak aynı sonucu bu bileşim olmadan veriyor. İki seçimin aynı değerlendirme yönünü gösterip göstermediği açık değil.",
+   "alternative_explanation": "Ünlem ve dönem vurgusu yalnızca haber değerini artırmaya yönelik olabilir.",
+   "missing_context": [
+    "Seçimlerin ortak bir değerlendirme yönünü gösteren ek ifade"
+   ]
+  }
+ ]
+}

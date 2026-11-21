@@ -1,0 +1,263 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü'nde elinde tabancayla aracının üzerine çıkan kişi ikna edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Silahıyla aracın üzerine çıktı, şüpheli gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Silahıyla aracın üzerine çıkan şahıs gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi 'kişi', 'şahıs' ve 'şüpheli' diye anılıyor; 'şüpheli' gözaltı sonrası hukuki statüyü bildiriyor ve meşruiyete dair bir değerlendirmeden çok tanımlama işlevi görüyor.",
+   "alternative_explanation": "Etiket farkı haberin hangi aşamada (gözaltı öncesi/sonrası) yazıldığına bağlı olabilir.",
+   "missing_context": [
+    "Gözaltının ve suçlamanın hukuki niteliği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü'nde İsrail karşıtı protesto",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü'nde silahlı eylem: Trafik kilitlendi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü'nde hareketli anlar",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay Karar'da 'İsrail karşıtı protesto', Diriliş'te 'silahlı eylem', Sözcü ve Cumhuriyet'te 'hareketli anlar' diye adlandırılıyor; 'protesto' siyasi ifade, 'silahlı eylem' tehdit çağrışımı taşıyor.",
+   "alternative_explanation": "Karar sloganların içeriğine dair ek bilgiye sahip olabilir; adlandırma farkı bilgi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Atılan sloganların içeriği",
+    "Bayrakların kimliği (metinde Türk–Pakistan ve 'yeşil-beyaz' olarak farklı aktarılıyor)"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü trafiğe kapatıldı: Silahlı kişi aracının üzerine çıktı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 09:29] 15 Temmuz Şehitler Köprüsü'nde elinde tabancayla aracının üzerine çıkan kişi ikna edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Evrensel olayın trafik etkisini, Son Dakika ikna ile sona ermesini başlığa taşıyor; aynı olgunun farklı boyutları öne çıkıyor.",
+   "alternative_explanation": "Haberler farklı aşamalarda yazılmış; Evrensel olay sürerken, Son Dakika sonrasında yayımlamış olabilir.",
+   "missing_context": [
+    "Haberlerin güncellenme saatleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bir elinde bayrak bir elinde silah! 15 Temmuz Şehitler Köprüsü'nü birbirine kattı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü'nde elinde tabancayla aracının üzerine çıkan kişi ikna edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Türkiye Gazetesi kendi sesinde 'birbirine kattı' gibi abartılı, değerlendirici bir ifade kullanıyor; Son Dakika aynı olayı aynı olgularla bu ifade olmadan veriyor.",
+   "alternative_explanation": "'Birbirine katmak' gündelik dilde kalabalık ve karmaşayı anlatan bir deyim; trafik ve polis müdahalesi olgusal olarak var.",
+   "missing_context": [
+    "Olay sırasında köprüdeki fiili kargaşanın boyutu"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "15 Temmuz Şehitler Köprüsü'nde silahlı kişi alarmı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yaklaşık 1 saat süren ikna çalışmasının ardından eylemini sonlandıran şahıs gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Milli Gazete ve TGRT 'alarm' diyor; ancak metin tehdidin ölçeğini (tek kişi, elinde silah, bir saatlik ikna, gözaltı) veriyor ve silahlı bir kişinin trafiği durdurması gerçek bir risk; sözlük ölçekle orantısız görünmüyor.",
+   "alternative_explanation": "'Alarm' polisin alarma geçmesini anlatan olgusal bir kullanım olabilir.",
+   "missing_context": [
+    "Silahın gerçek olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bir elinde bayrak bir elinde silah!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Bir elinde bayrak bir elinde silah' bir betimleme; iki seçeneği tek seçenek olarak sunan bir ikilem değil.",
+   "alternative_explanation": "İfade olayın görüntüsünü anlatıyor.",
+   "missing_context": [
+    "Kurumun kendi sesinde ikili bir seçim kuran ifade"
+   ]
+  }
+ ]
+}

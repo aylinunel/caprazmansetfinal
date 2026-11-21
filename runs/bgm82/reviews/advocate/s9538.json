@@ -1,0 +1,240 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul'da lodos alarmı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da Fırtına Alarmı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "bazı vapur seferleri iptal edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar 'alarm' sözcüğünü kullanıyor; metin riskin ölçeğini (bazı sefer iptalleri, metroda aksama) veriyor. Spotlarda meteoroloji uyarısına değiniliyor olabilir; orantısızlık açık değil.",
+   "alternative_explanation": "'Alarm' resmi hava uyarısını aktarıyor olabilir.",
+   "missing_context": [
+    "Meteorolojinin uyarı düzeyi"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Megakenti lodos vurdu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul'da lodos ulaşımı vurdu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar lodosu 'vurmak' fiiliyle özne konumuna yerleştiriyor; ancak 'fırtına vurdu' Türkçe haber dilinde yerleşik bir kalıp olduğundan rol atayan bir mecaz olup olmadığı belirsiz.",
+   "alternative_explanation": "Yerleşik deyimsel kullanım.",
+   "missing_context": []
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Megakenti lodos vurdu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 16:12] İstanbul'da lodos etkili: Bazı vapur seferleri iptal edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık 'Megakent' ve ünlemli 'vurdu' kullanıyor; başka bir kurum aynı olguyu nötr dille veriyor. Ancak kullanılan sözcükler açık bir değerlendirme sözcüğü sayılmaya sınırda.",
+   "alternative_explanation": "'Megakent' İstanbul için yaygın bir eşanlam olabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 10:22] İstanbul'da fırtına nedeniyle yeşil alanlar kapatıldı, vapur seferleri iptal edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[bianet · 13:19] İstanbul'da fırtına: 74 ihbar, 12 park ve koru kapatıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[t24 · 16:55] İstanbul'da lodos alarmı: Metro seferleri aksadı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı fırtına olgusu bir başlıkta yeşil alan kapanmaları, bir diğerinde ihbar sayısı, bir başkasında metro aksaması öne çıkarılarak veriliyor; başlıklar sayı ile hizmet etkisi boyutlarını farklı biçimde ön plana alıyor.",
+   "alternative_explanation": "Kurumlar farklı saatlerde farklı resmi duyurulara ulaşmış olabilir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 16:12] İstanbul'da lodos etkili",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 15:55] Megakenti lodos vurdu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 08:42] İstanbul'da lodos fırtınası",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı hava olayı bir kurumda 'etkili', diğerinde 'vurdu', bir başkasında 'fırtına' olarak anlatılıyor; 'vurdu' saldırı ve hasar, 'etkili' ise ılımlı bir etki çağrıştırıyor.",
+   "alternative_explanation": "Hava olayının farklı saatlerdeki şiddeti farklı olabilir.",
+   "missing_context": [
+    "Rüzgâr hızına dair meteoroloji verisi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların başlık veya spotları olayı zaman içindeki veriler, önceki vakalar ya da bir politika süreci gibi daha geniş bir bağlama yerleştirmiyor.",
+   "alternative_explanation": "Olayın anlık bilgi ihtiyacı (sefer iptali, sakatlık durumu) bağlamsal çerçeveyi gereksiz kılmış olabilir.",
+   "missing_context": [
+    "Olayı bir eğilim veya seriye bağlayan başlık ya da spot ifadesi"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,242 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sergen Yalçın A Milli Takım kadrosunu açıkladı: Fenerbahçeli yıldızlar kadro dışı kaldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sergen Yalçın Milli Takım aday kadrosunu açıkladı! Berke Özer geri döndü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sergen Yalçın, ilk milli takım kadrosunu duyurdu! En çok hangi takımdan oyuncu çağırdı?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kadroda bir kurum çağrılmayanları, biri geri dönen oyuncuyu, biri ise kulüp dağılımını öne çıkarıyor.",
+   "alternative_explanation": "Farklı boyutların öne çıkması kurumların erişilen bilgi, yayın saati ve okur ilgisi farkından kaynaklanabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Kurumların aynı saatte erişebildiği bilgi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sergen Yalçın'dan flaş karar!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "A Milli Takım kadrosunda değişim rüzgarı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 02:39] Sergen Yalçın, A Milli Futbol Takımı'nın aday kadrosunu açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar kendi seslerinde 'flaş karar!' ve 'değişim rüzgarı' gibi değerlendirmeler kullanıyor; başka bir kurum aynı duyuruyu bunlar olmadan veriyor.",
+   "alternative_explanation": "Değerlendirici kelimeler başlıkta dikkat çekmek için kullanılan yaygın kalıplar olabilir; olgular diğer metinlerle aynıdır.",
+   "missing_context": [
+    "Kadronun önceki kadrolarla karşılaştırması"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçeli yıldızlar kadro dışı kaldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sergen Yalçın o isimleri çağırmadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kerem Aktürkoğlu yok",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olgu (bazı oyuncuların çağrılmaması) 'kadro dışı kaldı', 'çağırmadı' ve 'yok' biçiminde veriliyor; 'kadro dışı' dışlanma çağrışımı taşıyor.",
+   "alternative_explanation": "Kelime farkları üslup, ajans metninden aktarım veya başlık uzunluğu farkı olabilir.",
+   "missing_context": [
+    "Kelimelerin okurda farklı çağrışım yarattığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde seçilmiş göstergelerle genel bir sonuç desteklenmiyor; sınırlayıcı rakam içeren bir bağlam da yok.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçeli yıldızlar kadro dışı kaldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçeli Kerem Aktürkoğlu'nun kadroda olmaması",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı oyuncu(lar) bir başlıkta 'Fenerbahçeli yıldızlar', bir metinde adıyla anılıyor; 'yıldız' sıfatının meşruiyet değerlendirmesi taşıyıp taşımadığı net değil.",
+   "alternative_explanation": "Sıfatlar oyuncuyu tanıtmaya yönelik olağan spor dili olabilir.",
+   "missing_context": [
+    "Etiketin okurda değerlendirme yarattığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde iki seçenekli bir sunum yok.",
+   "alternative_explanation": "Metindeki sunum, olayın olağan ve olgusal bir aktarımı olarak okunabilir.",
+   "missing_context": [
+    "Bu örüntüyü gösterecek ek metin veya bağlam"
+   ]
+  }
+ ]
+}

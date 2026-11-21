@@ -1,0 +1,208 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[onedio · 07:08] Merkez Bankası Kredi Freninde Gevşemeye Gitti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 11:09] TCMB kredi büyüme sınırlarını yükseltti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (kredi büyüme sınırlarının yükseltilmesi) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ihtiyaç ve taşıt kredilerinin sekiz haftalık büyüme sınırını yüzde 3'ten yüzde 3,5'e yükseltirken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki sınır (yüzde 3) yeni sınır için açık bir referans noktası; ancak metin yeni oranın gerekçesiz biçimde eski orana yakın tutulduğunu göstermiyor ve kararın gerekçesini (makrofinansal istikrar) veriyor.",
+   "alternative_explanation": "Kademeli ayar para politikasının olağan yöntemi olabilir.",
+   "missing_context": [
+    "TCMB'nin oran seçimindeki gerekçeleri."
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "makrofinansal istikrarı ve parasal aktarım mekanizmasını desteklemek amacıyla",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberler TCMB'nin kararını ve kendi gerekçesini aktarıyor; otorite tanımlı, ancak statünün değerlendirmenin yerine geçtiğine dair bir işaret yok.",
+   "alternative_explanation": "Bir düzenleyici kurumun kararını gerekçesiyle aktarmak olağan haberciliktir.",
+   "missing_context": [
+    "Kararın bağımsız değerlendirmeleri."
+   ]
+  },
+  {
+   "card_id": "optimism-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 23:11] Merkez Bankası sınırlarını yükseltti: İhtiyaç, taşıt ve ticari kredilerinde yeni dönem",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Yeni dönem' ifadesi olumlu bir ton taşıyor; ancak belirli bir olasılık ya da beklenti ifadesi ve bunun karşısında gözardı edilen bir kanıt metinde yok.",
+   "alternative_explanation": "İfade düzenlemenin başlangıcını anlatan bir kalıp olabilir.",
+   "missing_context": [
+    "Düzenlemenin beklenen etkilerine dair tahminler."
+   ]
+  },
+  {
+   "card_id": "cashless-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde nakitsiz bir ödeme bağlamı ve bununla ilişkili bir harcama kararı yok; konu bankaların kredi büyüme sınırları.",
+   "alternative_explanation": "Kredi düzenlemesi, ödeme biçimiyle ilgili tüketici davranışını ele almıyor.",
+   "missing_context": [
+    "Ödeme biçimine bağlı harcama verisi."
+   ]
+  },
+  {
+   "card_id": "bounded-rationality",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir seçim sürecinin bilgi, zaman ya da kaynak sınırı nedeniyle yeterli bir eşikte durdurulduğunu açıkça göstermiyor.",
+   "alternative_explanation": "Haberler bir para politikası kararını aktarıyor.",
+   "missing_context": [
+    "Karar sürecine ve kısıtlarına dair bilgi."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "HABAŞ demir-çelik fabrikasında patlama: 17 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir'de demir çelik fabrikasında patlama! 4 Cumhuriyet savcısı görevlendirildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir'de demir çelik fabrikasında yangın",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı patlamayı bir kurum ölen işçi sayısı ve şirket adıyla, bir başkası görevlendirilen savcılarla, bir diğeri yangınla başlığa taşıyor.",
+   "alternative_explanation": "Başlıklar farklı saatlerde yayımlanmış; erken haberler can kaybı bilgisi kesinleşmeden yazılmış olabilir.",
+   "missing_context": [
+    "Başlıkların yayın saatindeki resmi can kaybı bilgisi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "17 işçinin hayatını kaybettiği patlamaya ilişkin soruşturmada 6 kişi gözaltına alındı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "HABAŞ demir-çelik fabrikasında patlama",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; ancak başlıklar şirket adını yalnızca olay yeri olarak anıyor ve bir aktörü etken çatıyla kusurlu gösteren bir dil bilgisi kullanmıyor.",
+   "alternative_explanation": "Şirket adının anılması olay yerinin tanımlanmasıdır.",
+   "missing_context": [
+    "Soruşturmada sorumluluğa dair resmi bulgular"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yaşanan elim kazanın ardından",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir'de demir çelik fabrikasında patlama: 17 ölü, 12 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum spotunda 'elim kaza' ifadesini kullanıyor, başka kurumlar aynı olguları bu sözcük olmadan veriyor; ancak 'elim' kalıplaşmış bir taziye sıfatı ve değerlendirici yükü belirsiz.",
+   "alternative_explanation": "'Elim' sözcüğü ölüm haberlerinde yerleşik bir kalıptır.",
+   "missing_context": [
+    "Patlamanın kaza olarak nitelenmesinin resmi kaynağı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "17 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir'de demir çelik fabrikasında patlama! Ölü sayısı 17'ye yükseldi, yaralılar var — İzmir'in Aliağa ilçesindeki demir çelik fabrikasında meydana gelen patlamada 17 kişi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "yaşanan elim kazanın ardından",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölümleri bir kurum '17 işçi', bir başkası '17 kişi' olarak veriyor; bir başka kurum olayı 'kaza' diye adlandırıyor. 'İşçi' iş yeri ve çalışma koşullarını, 'kaza' ise kazara bir olayı çağrıştırıyor.",
+   "alternative_explanation": "'Kişi' ajans metinlerinin standart ifadesidir; 'işçi' de ölenlerin olgusal tanımıdır.",
+   "missing_context": [
+    "Ölenlerin tamamının fabrika çalışanı olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İzmir'de demir çelik fabrikasında şiddetli patlama!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Tablo ağırlaşıyor!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Şiddetli patlama' ve 'Tablo ağırlaşıyor' gibi ifadeler kullanılıyor; ancak aynı metinlerde ölü ve yaralı sayıları veriliyor ve 17 ölümlü bir olayda bu dil ölçeğe orantısız değil.",
+   "alternative_explanation": "Çok sayıda can kaybı olan bir felakette ağır ifadeler olayın gerçek ölçeğini yansıtır.",
+   "missing_context": [
+    "İfadelerin yayımlandığı saatteki resmi can kaybı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Olay: İzmir'de demir çelik fabrikasında patlama: 17 ölü, 12 yaralı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve spotlar olayı tek bir gelişme olarak aktarıyor; zaman içindeki rakamlara, önceki vakalara ya da bir politika sürecine yerleştirmiyor.",
+   "alternative_explanation": "Son dakika haberlerinde yer kısıtı nedeniyle bağlam verilmemesi olağandır; geniş bağlam haberin gövdesinde olabilir.",
+   "missing_context": [
+    "Önceki iş kazaları ya da iş güvenliği istatistiklerine atıf yapan haber gövdeleri"
+   ]
+  }
+ ]
+}

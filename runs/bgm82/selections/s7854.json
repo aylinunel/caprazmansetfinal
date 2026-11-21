@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "causal-overclaim",
+  "thematic-framing",
+  "fear-appeal",
+  "emphasis-framing",
+  "word-choice",
+  "selective-statistics"
+ ],
+ "selection_uncertainty": [
+  "Saldırı motivasyonu bilinmiyor.",
+  "Sayı farkları erken bilgi kaynaklı olabilir."
+ ],
+ "selection_note": "takvim/ahaber 'yargı krizi sonrası' başlığı iki olayı bağlıyor; 'alarmda' ve 'terör saldırısı' nitelemesi incelenebilir."
+}

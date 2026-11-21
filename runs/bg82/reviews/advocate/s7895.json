@@ -1,0 +1,228 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yeniasya · 08:49] Aliyev gelmedi ama Erdoğan Azerbaycan'a gidiyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[t24 · 09:15] Cumhurbaşkanı Erdoğan bugün Aliyev'in daveti üzerine Azerbaycan'a gidecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı ziyaret bir kuruluşta Aliyev'in daha önce gelmemesine karşıtlıkla, diğerinde davet üzerine yapılan bir ziyaret olarak sunuluyor; sunum farkı gözlenebilir, ancak metinde bu farka dayanan bir tercih ya da yargı açıkça kurulmuyor.",
+   "alternative_explanation": "Kuruluşlar ziyaretin farklı arka plan bilgilerini aktarıyor olabilir; farklı sunum, okurun bir seçim yaptığı anlamına gelmez.",
+   "missing_context": [
+    "Sunum farkına dayanarak varılan açık bir yargı ya da tercih",
+    "Okurların farklı başlıklara verdiği tepkiye dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Başkan Erdoğan'ın programına ilişkin detayları paylaştı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Program bilgisinin kaynağı olarak resmi bir makam gösteriliyor; ancak bu makamın statüsünün bir iddiayı değerlendirmenin yerine geçtiğini ya da karşı kanıtı bastırdığını gösteren bir ifade yok.",
+   "alternative_explanation": "Resmi bir ziyaret programı için İletişim Başkanlığına başvurmak ilgili ve olağan bir kaynak kullanımıdır.",
+   "missing_context": [
+    "Kaynağın statüsü nedeniyle göz ardı edilen karşıt bir bilgi",
+    "Kaynağa yalnızca statüsü için güvenildiğini gösteren bir ifade"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yenisafak · 18:57] Kardeşlik sofrası: Cumhurbaşkanı Erdoğan, Azerbaycan'da onuruna verilen yemeğe katıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Yemeğe olumlu bir nitelik yükleniyor; ancak bu olumlu izlenimin başka, ilgisiz bir alandaki yargıya taştığını gösteren bir bağlantı metinde yok.",
+   "alternative_explanation": "Olumlu ifade, iki ülke ilişkisine dair yaygın bir söylemin aktarımı olabilir; başka bir alanda yargı kurulmuyor.",
+   "missing_context": [
+    "Birinci alandaki olumlu izlenimden türetilen ikinci bir yargı",
+    "İki alanın karar açısından ilgisiz olduğunu gösteren bilgi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 13:04] Pistte kol kola yürüdüler... Erdoğan Azerbaycan'da: Aliyev, havalimanında karşıladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan ile Aliyev'in kol kola olduğu anlar dikkat çekti.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 13:29] Cumhurbaşkanı Erdoğan, Azerbaycan'da",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kuruluş görsel ve canlı bir ayrıntıyı (kol kola yürüme) başlığın en önüne taşıyor, diğerleri ziyaretin kendisini veriyor; ancak bu ayrıntının bir yargıya bağlandığı ya da daha az belirgin bilgiyi bastırdığı açıkça gösterilmiyor.",
+   "alternative_explanation": "Görsel ayrıntı, önceki gerilim haberlerinin devamı olarak haber değeri taşıdığı için öne çıkarılmış olabilir.",
+   "missing_context": [
+    "Canlı ayrıntıya dayanan açık bir değerlendirme",
+    "Belirgin ve daha az belirgin bilgilerin ağırlıklandırılmasını karşılaştıran bir gözlem"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Tayyip Erdoğan, Azerbaycan'a gitti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 13:01] Başkan Erdoğan Azerbaycan'da!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kuruluşlar Erdoğan'ı farklı unvanlarla anıyor; ancak grup üyeliğine dayanan bir güvenilirlik, suçlama ya da fayda farkı içeren bir karar veya yargı metinde yer almıyor.",
+   "alternative_explanation": "Unvan farkları yayın üslubu ve editoryal tercihlerle ilgili olabilir; bir grup kayırması kararı gözlenmiyor.",
+   "missing_context": [
+    "Grup üyeliğine bağlanan açık bir değerlendirme farkı",
+    "Benzer durumlarda farklı standart uygulandığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "primacy-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar zaman damgalı bir sırada yayımlanmış olsa da hiçbir metin erken bilgilerin daha iyi hatırlandığını bildirmiyor ya da göstermiyor; sıralama tek başına yeterli değil.",
+   "alternative_explanation": "Kuruluşların farklı saatlerde farklı ayrıntılar vermesi, olayın gelişimine ve haber akışına bağlı olabilir.",
+   "missing_context": [
+    "Okurun ya da editörün hangi bilgiyi hatırladığına dair bir bildirim",
+    "Erken ve geç bilgilerin hatırlanmasını karşılaştıran bir gözlem"
+   ]
+  }
+ ]
+}

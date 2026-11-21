@@ -1,0 +1,228 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne şafak operasyonu! Belediye başkan yardımcısı dahil 4 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne soruşturma: Başkan Yardımcısı dahil 4 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı gözaltı olgusu bir başlıkta 'şafak operasyonu!', başka bir başlıkta 'soruşturma' sözcüğüyle veriliyor; ilki baskın ve zaman vurgusu taşıyan, ikincisi hukuki süreci adlandıran bir sözcük.",
+   "alternative_explanation": "'Operasyon' ve 'şafak operasyonu' Türk haber dilinde emniyet işlemleri için yerleşik kalıplar olabilir; fark yalnızca üslup düzeyinde kalabilir.",
+   "missing_context": [
+    "Kurumların aynı tür olaylarda genel sözcük tercihleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne şafak operasyonu! Belediye başkan yardımcısı dahil 4 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne operasyon: Belediye Başkan Yardımcısı dahil 4 kişi gözaltında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık 'şafak operasyonu' ifadesini ünlemle kullanırken diğerleri aynı olguyu bu ifade olmadan veriyor; ancak 'şafak' sözcüğü değerlendirici olmaktan çok operasyonun saatini belirten bir kalıp olabilir.",
+   "alternative_explanation": "İfade operasyonun sabah saatlerinde yapıldığını bildiren olgusal bir ayrıntı olabilir.",
+   "missing_context": [
+    "Operasyonun gerçekleşme saati"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne operasyon: 4 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne operasyon! Başkan Yardımcısı Rasim Özdemir dahil 4 kişi gözaltında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olguyu bir başlık yalnızca gözaltı sayısıyla, diğeri gözaltına alınan başkan yardımcısının adıyla öne çıkarıyor; sayı ile kişi boyutları farklı biçimde ön plana alınıyor.",
+   "alternative_explanation": "Başlık uzunluğu sınırları ya da isim bilgisinin yayın anında doğrulanmamış olması farkı açıklayabilir.",
+   "missing_context": [
+    "Başlıkların yayımlandığı anda isim bilgisinin erişilebilir olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'ne soruşturma: Beş başkan yardımcısı dahil 58 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne yeni operasyon! Başkan yardımcısı dahil 4 kişi gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bolu Belediyesi'ne operasyon: 4 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Metindeki diğer satırlar başka belediyelere yönelik soruşturmaları ve 'yeni operasyon' ifadesi önceki işlemleri gösteriyor; bazı başlıklar ise Bolu olayını tek başına veriyor. Ancak bu ilk anlarda verilen son dakika haberi niteliğinde.",
+   "alternative_explanation": "Son dakika haberinde daha geniş örüntüye değinmemek olağan bir pratiktir.",
+   "missing_context": [
+    "Haberlerin tam metninde önceki operasyonlara değinilip değinilmediği"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde seçici istatistik kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor. Metinde oran ya da pay sunulmuyor; yalnızca gözaltı sayısı veriliyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde yanlış ikilem kartının gerekli koşullarını karşılayan bir sunum örüntüsü bulunmuyor.",
+   "alternative_explanation": "Kurumlar aynı olguyu benzer, yalın haber diliyle aktarıyor.",
+   "missing_context": [
+    "Karşılaştırma için gereken ek kaynak ya da veri"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "BDDK Başkanı Şahap Kavcıoğlu istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "BDDK Başkanı Kavcıoğlu, görevinden affını istedi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "\"İstifa\" ve \"affını istemek\" aynı ayrılışın olağan ifadeleri; ikincisi Kavcıoğlu'nun kendi sözüdür.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'deki fon savaşı kelle aldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "BDDK ve şahsımla ilgili son günlerdeki iddialar üzerine",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sol, istifayı \"fon savaşı\"na bağlıyor; ancak istifanın iddialarla ilişkisini Kavcıoğlu kendi açıklamasında belirtiyor, bu yüzden ilişki seçilmiş tesadüflere dayanmıyor.",
+   "alternative_explanation": "İlişki, kişinin kendi beyanıyla desteklenen makul bir bağlantı.",
+   "missing_context": [
+    "\"Fon savaşı\" iddiasının kaynağı"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası'nda faiz indirimleriyle, BDDK'da fon skandalıyla anıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kişinin geçmiş görevleri özetleniyor; davranış kalıcı bir karakter özelliğine bağlanmıyor.",
+   "alternative_explanation": "Biyografik özet, kamusal görev geçmişini hatırlatma amaçlı olabilir.",
+   "missing_context": [
+    "Davranışı karaktere bağlayan açık ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2 yıl boyunca maaş almaya devam edecek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Dikkat çekici bir ayrıntı başlığa taşınmış; bunun bir yargıyı haksız belirlediği gösterilmiyor.",
+   "alternative_explanation": "Yasal bir hükmün haber değeri taşıması olağan.",
+   "missing_context": [
+    "Ayrıntının bir yargıya bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sayın Cumhurbaşkanımız Recep Tayyip Erdoğan'dan affımı istedim",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir otorite figürü anılıyor; ancak bir iddianın yalnızca statü nedeniyle kabul edildiği gösterilmiyor.",
+   "alternative_explanation": "Görevden ayrılmanın atama yetkilisine bildirilmesi kurumsal bir usuldür.",
+   "missing_context": [
+    "Otoriteye gerekçesiz ağırlık verildiğini gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "hindsight-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kavcıoğlu daha bu sabah yaptığı açıklamada, \"BDDK’nın fonla uzaktan yakından ilgisi yok\" demişti.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki bir açıklama ile sonraki istifa yan yana konuyor; ancak sonucun önceden öngörülebilir olduğu iddiası yapılmıyor.",
+   "alternative_explanation": "Kurum, çelişkiyi haber değeri için aktarıyor olabilir; öngörülebilirlik çıkarımı yok.",
+   "missing_context": [
+    "Sonucun \"belliydi\" diye sunulduğunu gösteren ifade"
+   ]
+  }
+ ]
+}
