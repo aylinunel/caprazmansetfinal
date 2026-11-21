@@ -2159,53 +2159,53 @@
    "created": "2026-11-21",
    "not_before": null,
    "events": {
-    "girne": {
-     "olay": "1 Eylül 2026'da KKTC'nin Girne açıklarında bir yolcu gemisi alabora oldu; 8 kişi öldü, 20 kişi kayboldu. Enkaz 550 metre derinlikte bulundu."
-    },
     "w1-s141": {
      "olay": "Gençlik ve Spor Bakanlığı 2026-2027 KYK yurt ücretlerini açıkladı; ücretler yaklaşık yüzde 23 arttı."
     },
-    "w1-s5": {
-     "olay": "Gülistan Doku'nun kaybolmasına ilişkin soruşturmada bir kişi daha tutuklandı ve tutuklu sayısı 30'a çıktı; Doku'nun eski erkek arkadaşı yaklaşık dört saat ifade verdi."
+    "w1-s25": {
+     "olay": "Gazeteci Oya Lale (Özan) Arslan bir soruşturma kapsamında gözaltına alındı ve tutuklandı."
     },
-    "w2-s159": {
-     "olay": "Konserinde Filistin'e destek veren rapçi Macklemore, Ed Sheeran'ın ABD turnesinden çıkarıldı."
+    "w1-s8": {
+     "olay": "Oyuncu Serhat Mustafa Kılıç İstanbul'daki evinde ölü bulundu; olayla ilgili soruşturma başlatıldı."
     },
-    "w2-s236": {
-     "olay": "Mehmet Ali Erbil'in kalp krizi geçirdiği ve stent takıldığı haberleri yayıldı; ardından bu iddialara yalanlama geldi."
+    "w2-s27": {
+     "olay": "Ayşe Tokyaz'ın öldürülmesine ilişkin davada eski polis Cemil Koç ağırlaştırılmış müebbet hapis cezasına çarptırıldı."
     },
     "w2-s29": {
      "olay": "'Vanlı Kara Haydar' soruşturmasında İstanbul'da yakalanan eşi Çağla Öz Tançalan Van'a götürüldü ve tutuklandı."
     },
-    "w3-s51": {
-     "olay": "İstanbul Fatih'te bir döviz bürosunda çıkan silahlı kavgada ölü ve yaralılar oldu; olayla ilgili 10 kişi gözaltına alındı."
+    "w2-s89": {
+     "olay": "Kaşif Kozinoğlu soruşturmasının ikinci dalgasında 9 kişi gözaltına alındı; bir kişi tutuklandı, sekizine adli kontrol verildi."
     },
     "w4-s104": {
      "olay": "İçişleri Bakanlığı, 29'u kırmızı bültenle aranan 76 firari şüphelinin 8 ülkeden Türkiye'ye iade edildiğini açıkladı."
     },
-    "w4-s179": {
-     "olay": "ABD Başkanı Trump, İran'ın 7 günlük ateşkes teklifini reddettiğini açıkladı."
+    "w4-s15": {
+     "olay": "Emlak Katılım, Katılımevim ve Birevim'in devri için resmi başvuru yaptığını ve devrin kısa sürede tamamlanacağını açıkladı."
     },
-    "w4-s31": {
-     "olay": "Aleyna Çakır'ın ölümüne ilişkin davada Ümitcan Uygun 'intihara yönlendirme' suçundan dört yıl hapis cezasına çarptırıldı, başka bir suçtan beraat etti."
+    "w4-s32": {
+     "olay": "Ankara Büyükşehir Belediye Başkanı Mansur Yavaş CHP'den istifa etti ve siyasi yoluna bağımsız olarak devam edeceğini açıkladı."
     },
     "w4-s36": {
      "olay": "Fon soruşturmasında Mustafa Sandal'ın eşi Melis Sandal hakkında mal varlığı tedbiri ve yurt dışı çıkış yasağı, kayınpederi hakkında yakalama kararı verildi."
     },
-    "w4-s53": {
-     "olay": "Kaşif Kozinoğlu soruşturmasında ifadesi alınan Enver Altaylı tutuklandı; ifadesinde Kozinoğlu'nu tanımadığını söyledi."
-    },
     "w4-s59": {
      "olay": "'Bir bakan istifa edecek' paylaşımı yapan gazeteci Ali Tarakcı gözaltına alındı ve tutuklandı."
     },
-    "w5-s191": {
-     "olay": "Adana ve Osmaniye'de 24 dakika içinde üç deprem meydana geldi; yetkililer olumsuz bir durum olmadığını açıkladı."
+    "w4-s60": {
+     "olay": "Fon soruşturmasında adı geçen AK Parti Genel Başkan Yardımcısı Fatma Betül Sayan Kaya tüm parti görevlerinden istifa etti."
     },
-    "w5-s20": {
-     "olay": "Felsefe ve insan hakları alanındaki çalışmalarıyla tanınan Prof. Dr. İoanna Kuçuradi hayatını kaybetti ve son yolculuğuna uğurlandı."
+    "w5-s18": {
+     "olay": "Eski SPK Başkanı İbrahim Ömer Gönül fon soruşturması kapsamında şüpheli sıfatıyla ifade verdi."
+    },
+    "w5-s22": {
+     "olay": "Hakemlere yönelik soruşturmada MHK Başkanı Ferhat Gündoğdu ve kurul üyeleri adliyeye sevk edildi; Gündoğdu tutuklandı ve görevinden istifa etti."
     },
     "w5-s294": {
      "olay": "Sosyal medya fenomeni Dilan Polat 'Cumhurbaşkanına hakaret' suçlamasıyla gözaltına alındı ve adli kontrol şartıyla serbest bırakıldı."
+    },
+    "w5-s35": {
+     "olay": "Fon soruşturmasında başsavcılık, eski bakan Fatma Betül Sayan Kaya ve eşi İlyas Kaya'nın mal varlıklarının dondurulmasını talep etti."
     },
     "w6-s2": {
      "olay": "İçişleri Bakanlığı, Yahşihan Belediyesi'ne yönelik yolsuzluk soruşturması kapsamında Belediye Başkan Vekili Aydın Demirdirek'i görevden uzaklaştırdı."
@@ -2222,160 +2222,16 @@
    },
    "items": [
     {
-     "item": "w5-s20__aydinlik",
-     "event": "w5-s20",
-     "kurum": "Aydınlık",
-     "baslik": "Prof. Dr. İoanna Kuçuradi hayatını kaybetti: ‘İnsan onuru’ temennisi ne kadar gerçek?"
-    },
-    {
-     "item": "w5-s294__aydinlik",
-     "event": "w5-s294",
-     "kurum": "Aydınlık",
-     "baslik": "Sosyal medya fenomeni Dilan Polat gözaltına alındı"
-    },
-    {
-     "item": "w6-s3__sabah",
+     "item": "w6-s3__ahaber",
      "event": "w6-s3",
-     "kurum": "Sabah",
-     "baslik": "Son dakika | Ticaret Bakanı Ömer Bolat'tan İsmail Saymaz ve Murat Ağırel'e suç duyurusu"
-    },
-    {
-     "item": "w5-s20__milligazete",
-     "event": "w5-s20",
-     "kurum": "Milli Gazete",
-     "baslik": "İoanna Kuçuradi hayatını kaybetti: İoanna Kuçuradi, neden öldü? Kaç yaşındaydı"
-    },
-    {
-     "item": "w6-s2__milligazete",
-     "event": "w6-s2",
-     "kurum": "Milli Gazete",
-     "baslik": "Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
-    },
-    {
-     "item": "w4-s179__ahaber",
-     "event": "w4-s179",
      "kurum": "A Haber",
-     "baslik": "Trump İran’ın 7 günlük ateşkes teklifini reddetti"
+     "baslik": "Ticaret Bakanlığından İsmail Saymaz ve Murat Ağırel hakkında suç duyurusu"
     },
     {
-     "item": "w1-s141__karar",
-     "event": "w1-s141",
-     "kurum": "Karar",
-     "baslik": "Üniversite öğrencileri dikkat: KYK yurt ücretlerine yüzde 23 zam"
-    },
-    {
-     "item": "w5-s294__yenisafak",
-     "event": "w5-s294",
-     "kurum": "Yeni Şafak",
-     "baslik": "Dilan Polat gözaltına mı alındı neden?"
-    },
-    {
-     "item": "w6-s2__cumhuriyet",
-     "event": "w6-s2",
-     "kurum": "Cumhuriyet",
-     "baslik": "Yahşihan Belediyesi Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
-    },
-    {
-     "item": "w4-s59__ahaber",
-     "event": "w4-s59",
+     "item": "w4-s15__ahaber",
+     "event": "w4-s15",
      "kurum": "A Haber",
-     "baslik": "“Bakan istifa edecek” paylaşımına tutuklama! Gazeteci Ali Tarakcı cezaevine gönderildi"
-    },
-    {
-     "item": "w4-s59__aydinlik",
-     "event": "w4-s59",
-     "kurum": "Aydınlık",
-     "baslik": "Gazeteci Ali Tarakcı tutuklandı"
-    },
-    {
-     "item": "w5-s20__haberturk",
-     "event": "w5-s20",
-     "kurum": "Habertürk",
-     "baslik": "Felsefeci-Prof. Dr. İoanna Kuçuradi yaşamını yitirdi - Haberler Habertürk"
-    },
-    {
-     "item": "w5-s191__milligazete",
-     "event": "w5-s191",
-     "kurum": "Milli Gazete",
-     "baslik": "Adana ve Osmaniye beşik gibi sallandı! Peş peşe 3 deprem"
-    },
-    {
-     "item": "w5-s20__mynet",
-     "event": "w5-s20",
-     "kurum": "Mynet",
-     "baslik": "AK Parti Sözcüsü Çelik, Prof. Dr. İoanna Kuçuradi'nin vefatını \"Değerli bir öğretmenden yoksunuz artık\" sözleriyle duyurdu | İoanna Kuçuradi kimdir? - Güncel Haberler"
-    },
-    {
-     "item": "w6-s331__mynet",
-     "event": "w6-s331",
-     "kurum": "Mynet",
-     "baslik": "2026 Nobel Barış Ödülü'nün sahibi açıklandı - TREND"
-    },
-    {
-     "item": "w4-s59__karar",
-     "event": "w4-s59",
-     "kurum": "Karar",
-     "baslik": "\"Bakan istifa edecek\" demişti: Ali Tarakcı gözaltına alındı"
-    },
-    {
-     "item": "w4-s31__sozcu",
-     "event": "w4-s31",
-     "kurum": "Sözcü",
-     "baslik": "Aleyna Çakır davasında karar çıktı! İşte Ümitcan Uygun'a verilen ceza"
-    },
-    {
-     "item": "w1-s141__sabah",
-     "event": "w1-s141",
-     "kurum": "Sabah",
-     "baslik": "GSB 2026-2027 KYK Yurt Ücretleri ve Oda Tipleri || 1, 2, 3, 4, 5 ve 6. tip KYK yurt fiyatı ne kadar, kaç TL?"
-    },
-    {
-     "item": "w4-s59__takvim",
-     "event": "w4-s59",
-     "kurum": "Takvim",
-     "baslik": "Ali Tarakcı tutuklandı! Bir de 'engel' kararı"
-    },
-    {
-     "item": "w6-s3__karar",
-     "event": "w6-s3",
-     "kurum": "Karar",
-     "baslik": "Murat Ağırel ve İsmail Saymaz'a ev hapsi"
-    },
-    {
-     "item": "w5-s20__cumhuriyet",
-     "event": "w5-s20",
-     "kurum": "Cumhuriyet",
-     "baslik": "Prof. Dr. İoanna Kuçuradi kimdir, eserleri neler? İoanna Kuçuradi neden hayatını kaybetti?"
-    },
-    {
-     "item": "w4-s36__aydinlik",
-     "event": "w4-s36",
-     "kurum": "Aydınlık",
-     "baslik": "Fon soruşturmasında yeni gelişme! Mustafa Sandal'ın eşi ve kayınpederi için yakalama kararı"
-    },
-    {
-     "item": "w4-s104__ntv",
-     "event": "w4-s104",
-     "kurum": "NTV",
-     "baslik": "İçişleri Bakanlığı açıkladı. 76 suçlu Türkiye'ye iade edildi"
-    },
-    {
-     "item": "w5-s191__ntv",
-     "event": "w5-s191",
-     "kurum": "NTV",
-     "baslik": "Adana ve Osmaniye'de peş peşe depremler. AFAD'dan ön değerlendirme raporları"
-    },
-    {
-     "item": "w4-s36__cumhuriyet",
-     "event": "w4-s36",
-     "kurum": "Cumhuriyet",
-     "baslik": "Fon krizinden Mustafa Sandal'ın eşi çıktı: Melis Sütşurup Sandal hakkında 11 milyar TL'lik fon iddiası!"
-    },
-    {
-     "item": "w5-s20__ntv",
-     "event": "w5-s20",
-     "kurum": "NTV",
-     "baslik": "Felsefenin öncü ismi Prof. Dr. İoanna Kuçuradi'ye veda"
+     "baslik": "Emlak Katılım'dan Katılımevim ve Birevim için kritik adım"
     },
     {
      "item": "w2-s29__star",
@@ -2384,736 +2240,22 @@
      "baslik": "'Vanlı Kara Haydar' dosyasında yeni gelişme! İstanbul'da gözaltına alınan Çağla Öz Tançalan Van'a götürüldü"
     },
     {
-     "item": "w6-s2__birgun",
-     "event": "w6-s2",
-     "kurum": "BirGün",
-     "baslik": "Yahşihan Belediyesi'ne yönelik yolsuzluk operasyonu: Başkanvekili Aydın Demirdirek görevden uzaklaştırıldı"
+     "item": "w5-s22__sozcu",
+     "event": "w5-s22",
+     "kurum": "Sözcü",
+     "baslik": "SON DAKİKA | MHK Başkanı Ferhat Gündoğdu ve 6 kişi adliyeye sevk edildi"
     },
     {
-     "item": "w2-s236__ntv",
-     "event": "w2-s236",
-     "kurum": "NTV",
-     "baslik": "Mehmet Ali Erbil kalp krizi mi geçirdi? Açıklama geldi"
-    },
-    {
-     "item": "w2-s29__diken",
-     "event": "w2-s29",
-     "kurum": "Diken",
-     "baslik": "Düğünüyle gündem olmuştu: Vanlı Kara Haydar'ın eşi Çağla Öz gözaltında"
-    },
-    {
-     "item": "w6-s2__karar",
-     "event": "w6-s2",
-     "kurum": "Karar",
-     "baslik": "Yahşihan Belediye Başkanvekili Aydın Demirdirek görevden uzaklaştırıldı"
-    },
-    {
-     "item": "w4-s59__trthaber",
-     "event": "w4-s59",
-     "kurum": "TRT Haber",
-     "baslik": "'Bakan istifa edecek' paylaşımı yapan Ali Tarakcı gözaltına alındı"
-    },
-    {
-     "item": "w2-s29__sabah",
-     "event": "w2-s29",
-     "kurum": "Sabah",
-     "baslik": "SON DAKİKA | Vanlı Kara Haydar soruşturmasında yeni gelişme: Eşi Çağla Öz İstanbul’da yakalandı"
-    },
-    {
-     "item": "w6-s3__ahaber",
-     "event": "w6-s3",
-     "kurum": "A Haber",
-     "baslik": "Ticaret Bakanlığından İsmail Saymaz ve Murat Ağırel hakkında suç duyurusu"
-    },
-    {
-     "item": "w6-s2__ahaber",
-     "event": "w6-s2",
-     "kurum": "A Haber",
-     "baslik": "İçişleri duyurdu: Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
-    },
-    {
-     "item": "w4-s36__takvim",
+     "item": "w4-s36__cumhuriyet",
      "event": "w4-s36",
-     "kurum": "Takvim",
-     "baslik": "11 milyar TL'lik vurgunda Dubai detayı! Mustafa Sandal'ın eşi Melis Sandal Dubai'ye mi taşındı?"
-    },
-    {
-     "item": "w5-s191__cumhuriyet",
-     "event": "w5-s191",
      "kurum": "Cumhuriyet",
-     "baslik": "Son Dakika Deprem... Adana ve Osmaniye’de peş peşe deprem! 24 dakika arayla sallandı"
+     "baslik": "Fon krizinden Mustafa Sandal'ın eşi çıktı: Melis Sütşurup Sandal hakkında 11 milyar TL'lik fon iddiası!"
     },
     {
-     "item": "w3-s51__ahaber",
-     "event": "w3-s51",
-     "kurum": "A Haber",
-     "baslik": "Fatih'te döviz bürosunda silah sesleri! Alacak verecek meselesi can aldı: 2 ölü 2 yaralı"
-    },
-    {
-     "item": "w5-s294__sozcu",
-     "event": "w5-s294",
-     "kurum": "Sözcü",
-     "baslik": "'Cumhurbaşkanına hakaret'ten gözaltına alınan Dilan Polat adli kontrol şartıyla serbest bırakıldı"
-    },
-    {
-     "item": "w6-s3__star",
-     "event": "w6-s3",
-     "kurum": "Star",
-     "baslik": "Fon soruşturmasında dezenformasyon! Murat Ağırel ve İsmail Saymaz hakkında karar verildi"
-    },
-    {
-     "item": "w6-s325__ntv",
-     "event": "w6-s325",
-     "kurum": "NTV",
-     "baslik": "Maltepe'de çöken binada kontrollü yıkım sürüyor"
-    },
-    {
-     "item": "w6-s325__aydinlik",
-     "event": "w6-s325",
-     "kurum": "Aydınlık",
-     "baslik": "Maltepe'de çöken binada kurtarılanlar konuştu"
-    },
-    {
-     "item": "w6-s3__trthaber",
-     "event": "w6-s3",
+     "item": "w4-s60__trthaber",
+     "event": "w4-s60",
      "kurum": "TRT Haber",
-     "baslik": "Bakanlık'tan İsmail Saymaz ve Murat Ağırel hakkında suç duyurusu"
-    },
-    {
-     "item": "w4-s53__milligazete",
-     "event": "w4-s53",
-     "kurum": "Milli Gazete",
-     "baslik": "Kaşif Kozinoğlu soruşturmasında Enver Altaylı tutuklandı"
-    },
-    {
-     "item": "w1-s5__takvim",
-     "event": "w1-s5",
-     "kurum": "Takvim",
-     "baslik": "Gülistan Doku soruşturmasında Ali Kahraman ve eşine kritik sorular"
-    },
-    {
-     "item": "w1-s5__ntv",
-     "event": "w1-s5",
-     "kurum": "NTV",
-     "baslik": "Gülistan Doku soruşturması. Eski erkek arkadaşı ifade verdi"
-    },
-    {
-     "item": "w6-s3__mynet",
-     "event": "w6-s3",
-     "kurum": "Mynet",
-     "baslik": "Son dakika | İsmail Saymaz ve Murat Ağırel hakkında karar değişti: Ev hapsi cezası! - Güncel Haberler"
-    },
-    {
-     "item": "w6-s2__turkiyegz",
-     "event": "w6-s2",
-     "kurum": "Türkiye Gazetesi",
-     "baslik": "Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
-    },
-    {
-     "item": "w5-s191__takvim",
-     "event": "w5-s191",
-     "kurum": "Takvim",
-     "baslik": "Adana ve Osmaniye’de peş peşe depremler! Kozan’da kopan kaya kütlesi kamerada"
-    },
-    {
-     "item": "w4-s31__sabah",
-     "event": "w4-s31",
-     "kurum": "Sabah",
-     "baslik": "SON DAKİKA… Aleyna Çakır davasında yeni gelişme: Ümitcan Uygun'un cezası belli oldu! Pişkin savunması pes dedirtti…"
-    },
-    {
-     "item": "w6-s3__milligazete",
-     "event": "w6-s3",
-     "kurum": "Milli Gazete",
-     "baslik": "Ticaret Bakanı Ömer Bolat’tan Ağırel ve Saymaz hakkında suç duyurusu"
-    },
-    {
-     "item": "w4-s53__karar",
-     "event": "w4-s53",
-     "kurum": "Karar",
-     "baslik": "Tutuklanan Enver Altaylı’nın ifadesi ortaya çıktı: “Kaşif Kozinoğlu’nu hiç tanımıyorum”"
-    },
-    {
-     "item": "w5-s191__ahaber",
-     "event": "w5-s191",
-     "kurum": "A Haber",
-     "baslik": "Adana ve Osmaniye'de peş peşe korkutan depremler! Vali Yavuz: Olumsuz bir ihbar almadık"
-    },
-    {
-     "item": "w4-s31__star",
-     "event": "w4-s31",
-     "kurum": "Star",
-     "baslik": "Aleyna Çakır davasında karar çıktı! Ümitcan Uygun'un cezası belli oldu"
-    },
-    {
-     "item": "w3-s51__sabah",
-     "event": "w3-s51",
-     "kurum": "Sabah",
-     "baslik": "Döviz bürosundaki silahlı kavgada 2 kişi hayatını kaybetmişti: 10 kişi gözaltında!"
-    },
-    {
-     "item": "w5-s294__milligazete",
-     "event": "w5-s294",
-     "kurum": "Milli Gazete",
-     "baslik": "Dilan Polat bir kez daha gözaltına alındı: Bu sefer \"Cumhurbaşkanına hakaret\""
-    },
-    {
-     "item": "w2-s159__ntv",
-     "event": "w2-s159",
-     "kurum": "NTV",
-     "baslik": "Grammy ödüllü rapçi “Özgür Filistin” dedi, Ed Sheeran'ın turnesinden çıkarıldı"
-    },
-    {
-     "item": "w6-s325__star",
-     "event": "w6-s325",
-     "kurum": "Star",
-     "baslik": "Maltepe'de çöken binadan acı haber: Can kaybı 5'e yükseldi"
-    },
-    {
-     "item": "w6-s331__sabah",
-     "event": "w6-s331",
-     "kurum": "Sabah",
-     "baslik": "SON DAKİKA | 2026 Nobel Barış Ödülü: Sahibi belli oldu!"
-    },
-    {
-     "item": "w3-s51__ntv",
-     "event": "w3-s51",
-     "kurum": "NTV",
-     "baslik": "Fatih'te döviz bürosunda silahlı kavga: İki can kaybı"
-    },
-    {
-     "item": "w2-s236__sozcu",
-     "event": "w2-s236",
-     "kurum": "Sözcü",
-     "baslik": "'Mehmet Ali Erbil evinde kalp krizi geçirdi' haberleri sonrası açıklama"
-    },
-    {
-     "item": "w6-s2__takvim",
-     "event": "w6-s2",
-     "kurum": "Takvim",
-     "baslik": "Yahşihan’da tutuklama sonrası kritik karar! Aydın Demirdirek görevden uzaklaştırıldı"
-    },
-    {
-     "item": "w2-s159__ahaber",
-     "event": "w2-s159",
-     "kurum": "A Haber",
-     "baslik": "Filistin desteği nedeniyle ABD'deki Loop Tour turnesinden çıkarılan Macklemore, Ed Sheeran'ın kalan..."
-    },
-    {
-     "item": "w4-s53__ahaber",
-     "event": "w4-s53",
-     "kurum": "A Haber",
-     "baslik": "Kaşif Kozinoğlu soruşturmasında kritik eşik! Hesap sırası FETÖ'cü Enver Altaylı'da: Mektuptaki talimat..."
-    },
-    {
-     "item": "w4-s31__milligazete",
-     "event": "w4-s31",
-     "kurum": "Milli Gazete",
-     "baslik": "Aleyna Çakır davasında Ümitcan Uygun'a 4 yıl hapis"
-    },
-    {
-     "item": "w4-s179__trthaber",
-     "event": "w4-s179",
-     "kurum": "TRT Haber",
-     "baslik": "WSJ: Trump, İran'ın 7 günlük ateşkes teklifini reddetti"
-    },
-    {
-     "item": "w5-s191__sabah",
-     "event": "w5-s191",
-     "kurum": "Sabah",
-     "baslik": "SON DAKİKA! Adana ve Osmaniye'de peş peşe depremler! İşte AFAD'dan ilk açıklama"
-    },
-    {
-     "item": "w4-s36__ntv",
-     "event": "w4-s36",
-     "kurum": "NTV",
-     "baslik": "Mustafa Sandal'ın eşi ve kayınpederi hakkında yakalama kararı"
-    },
-    {
-     "item": "w1-s5__aydinlik",
-     "event": "w1-s5",
-     "kurum": "Aydınlık",
-     "baslik": "Gülistan Doku soruşturmasında yeni ifadeler ortaya çıktı! İki tutuklama talebi daha"
-    },
-    {
-     "item": "w4-s36__ahaber",
-     "event": "w4-s36",
-     "kurum": "A Haber",
-     "baslik": "Fon soruşturmasında Mustafa Sandal’ın eşi Melis Sütşurup Sandal da mercek altında! 11 milyarlık para..."
-    },
-    {
-     "item": "w4-s53__trthaber",
-     "event": "w4-s53",
-     "kurum": "TRT Haber",
-     "baslik": "Kozinoğlu soruşturmasında yeni gelişme: Enver Altaylı ifade verecek"
-    },
-    {
-     "item": "w5-s20__star",
-     "event": "w5-s20",
-     "kurum": "Star",
-     "baslik": "Filozof İoanna Kuçuradi hayatını kaybetti! AK Parti Sözcüsü Çelik: Çok üzgünüz"
-    },
-    {
-     "item": "w1-s5__star",
-     "event": "w1-s5",
-     "kurum": "Star",
-     "baslik": "Gülistan Doku soruşturmasında yeni gelişme: Tutuklu sayısı 30'a yükseldi"
-    },
-    {
-     "item": "w4-s179__sozcu",
-     "event": "w4-s179",
-     "kurum": "Sözcü",
-     "baslik": "Son dakika... Trump: İran'ın ateşkes teklifini reddettim"
-    },
-    {
-     "item": "w6-s325__cumhuriyet",
-     "event": "w6-s325",
-     "kurum": "Cumhuriyet",
-     "baslik": "Maltepe'de çöken binada ölü veya yaralı var mı? Bina kaç yıllık, neden çöktü?"
-    },
-    {
-     "item": "w2-s159__karar",
-     "event": "w2-s159",
-     "kurum": "Karar",
-     "baslik": "Macklemore Ed Sheeran'ın turnesinden kazandığı gelirin 1 milyon dolarını Filistin'e bağışlayacak"
-    },
-    {
-     "item": "w1-s5__ahaber",
-     "event": "w1-s5",
-     "kurum": "A Haber",
-     "baslik": "Gülistan Doku soruşturmasında yeni tutuklama kararı! Eski erkek arkadaşı 4 saat ifade verdi"
-    },
-    {
-     "item": "w4-s53__diken",
-     "event": "w4-s53",
-     "kurum": "Diken",
-     "baslik": "Kozinoğlu soruşturması: Enver Altaylı tutuklandı"
-    },
-    {
-     "item": "w6-s331__sozcu",
-     "event": "w6-s331",
-     "kurum": "Sözcü",
-     "baslik": "Trump'tan bir garip Nobel Barış Ödülü açıklaması"
-    },
-    {
-     "item": "w4-s36__sabah",
-     "event": "w4-s36",
-     "kurum": "Sabah",
-     "baslik": "Mustafa Sandal’ın eşi Melis Sandal’ın hesabından 11 milyar TL’lik çıkış..."
-    },
-    {
-     "item": "w4-s36__mynet",
-     "event": "w4-s36",
-     "kurum": "Mynet",
-     "baslik": "Mustafa Sandal’ın eşi Melis Sütşurup Sandal'dan 11 milyar 515 milyon TL'lik fon çıkışı! Soluğu Dubai'de almış - Finans haberlerinin doğru adresi - Mynet Finans Haber"
-    },
-    {
-     "item": "w4-s59__sabah",
-     "event": "w4-s59",
-     "kurum": "Sabah",
-     "baslik": "\"Bakan istifa edecek\" paylaşımına soruşturma! Ali Tarakcı hakkında gözaltı kararı"
-    },
-    {
-     "item": "w2-s159__sabah",
-     "event": "w2-s159",
-     "kurum": "Sabah",
-     "baslik": "Özgür Filistin dedi, Ed Sheeran’ın turnesinden çıkarıldı! Tarafsız kalınamaz"
-    },
-    {
-     "item": "w5-s20__trthaber",
-     "event": "w5-s20",
-     "kurum": "TRT Haber",
-     "baslik": "Felsefeci Prof. Dr. İoanna Kuçuradi hayatını kaybetti"
-    },
-    {
-     "item": "w5-s294__karar",
-     "event": "w5-s294",
-     "kurum": "Karar",
-     "baslik": "Dilan Polat 'Cumhurbaşkanı'na hakaret'ten gözaltında"
-    },
-    {
-     "item": "w2-s29__haberturk",
-     "event": "w2-s29",
-     "kurum": "Habertürk",
-     "baslik": "Son dakika: Gözaltına alınan Vanlı Kara Haydar'ın eşi Çağla Öz, Van'a getirildi - Habertürk Son Dakika Haber"
-    },
-    {
-     "item": "w2-s29__trthaber",
-     "event": "w2-s29",
-     "kurum": "TRT Haber",
-     "baslik": "'Vanlı Kara Haydar'ın İstanbul'da yakalanan eşi Çağla Öz Van'a götürüldü"
-    },
-    {
-     "item": "w2-s236__sabah",
-     "event": "w2-s236",
-     "kurum": "Sabah",
-     "baslik": "69 yaşındaki ünlü şovmenden korkutan haber! Mehmet Ali Erbil kalp krizi geçirdi!"
-    },
-    {
-     "item": "w4-s36__yenisafak",
-     "event": "w4-s36",
-     "kurum": "Yeni Şafak",
-     "baslik": "Mustafa Sandal’ın eşi Melis Sandal hakkında yurt dışı çıkış yasağı kararı: 11 milyar TL'lik para çekmiş"
-    },
-    {
-     "item": "w1-s141__sozcu",
-     "event": "w1-s141",
-     "kurum": "Sözcü",
-     "baslik": "KYK yurt ücretlerine zam geldi"
-    },
-    {
-     "item": "w2-s29__ahaber",
-     "event": "w2-s29",
-     "kurum": "A Haber",
-     "baslik": "Vanlı Kara Haydar'ın yeni görüntüleri ortaya çıktı! Eşi Çağla Öz tutuklandı"
-    },
-    {
-     "item": "w6-s2__trthaber",
-     "event": "w6-s2",
-     "kurum": "TRT Haber",
-     "baslik": "Yahşihan Belediye Başkan Vekili görevden uzaklaştırıldı"
-    },
-    {
-     "item": "w4-s59__star",
-     "event": "w4-s59",
-     "kurum": "Star",
-     "baslik": "'İstifa' manipülasyonu! Ali Tarakcı tutuklandı"
-    },
-    {
-     "item": "w4-s53__star",
-     "event": "w4-s53",
-     "kurum": "Star",
-     "baslik": "Kozinoğlu soruşturmasında yeni gelişme! FETÖ'cü Enver Altaylı ifadeye getirildi"
-    },
-    {
-     "item": "w6-s325__takvim",
-     "event": "w6-s325",
-     "kurum": "Takvim",
-     "baslik": "Maltepe’de çöken binada kentsel dönüşüm detayı"
-    },
-    {
-     "item": "w2-s159__diken",
-     "event": "w2-s159",
-     "kurum": "Diken",
-     "baslik": "Filistin'e destek veren Macklemore, Ed Sheeran'ın turnesinden çıkarıldı"
-    },
-    {
-     "item": "w5-s20__takvim",
-     "event": "w5-s20",
-     "kurum": "Takvim",
-     "baslik": "İoanna Kuçuradi kimdir? Prof. Dr. Kuçuradi hayatını kaybetti"
-    },
-    {
-     "item": "w4-s31__karar",
-     "event": "w4-s31",
-     "kurum": "Karar",
-     "baslik": "'Aleyna Çakır' davasında Ümitcan Uygun'a hapis cezası"
-    },
-    {
-     "item": "w4-s104__sabah",
-     "event": "w4-s104",
-     "kurum": "Sabah",
-     "baslik": "SON DAKİKA! İçişleri Bakanlığı açıkladı: 76 suçlu 8 farklı ülkeden Türkiye'ye getirildi!"
-    },
-    {
-     "item": "w2-s29__mynet",
-     "event": "w2-s29",
-     "kurum": "Mynet",
-     "baslik": "Düğündeki altınlarla gündem olmuştu: 'Vanlı Kara Haydar'ın eşi fenomen Çağla Öz Tançalan tutuklandı - Güncel Haberler"
-    },
-    {
-     "item": "w2-s236__milligazete",
-     "event": "w2-s236",
-     "kurum": "Milli Gazete",
-     "baslik": "Mehmet Ali Erbil sağlık durumu nasıl, kalp krizi mi geçirdi? Son dakika iddiası"
-    },
-    {
-     "item": "w4-s53__cumhuriyet",
-     "event": "w4-s53",
-     "kurum": "Cumhuriyet",
-     "baslik": "Enver Altaylı kimdir? Enver Altaylı kaç yaşında, nereli? Enver Altaylı neden tutuklandı?"
-    },
-    {
-     "item": "w6-s325__karar",
-     "event": "w6-s325",
-     "kurum": "Karar",
-     "baslik": "Maltepe'de çöken binadan örnekler alındı"
-    },
-    {
-     "item": "w2-s29__aydinlik",
-     "event": "w2-s29",
-     "kurum": "Aydınlık",
-     "baslik": "'Vanlı Kara Haydar'ın eşi Çağla Öz Tançalan tutuklandı"
-    },
-    {
-     "item": "w6-s331__ntv",
-     "event": "w6-s331",
-     "kurum": "NTV",
-     "baslik": "Trump \"Bana verin\" diyordu. Nobel Barış Ödülü'nün sahibi belli oldu, haberi mahkemedeyken aldı"
-    },
-    {
-     "item": "w4-s36__milligazete",
-     "event": "w4-s36",
-     "kurum": "Milli Gazete",
-     "baslik": "Mustafa Sandal'ın eşi serveti ne kadar ve kayınpederi neden gündemde, Melis Sandal'ın fon işlemleri ne?"
-    },
-    {
-     "item": "w5-s191__turkiyegz",
-     "event": "w5-s191",
-     "kurum": "Türkiye Gazetesi",
-     "baslik": "Adana ve Osmaniye peş peşe sallandı! Bakanlardan ve Vali Yavuz'dan ilk açıklama"
-    },
-    {
-     "item": "w5-s294__sabah",
-     "event": "w5-s294",
-     "kurum": "Sabah",
-     "baslik": "SON DAKİKA! Dilan Polat’a Cumhurbaşkanına Hakaret suçundan gözaltına alınmıştı! Adli kontrol şartıyla serbest bırakıldı."
-    },
-    {
-     "item": "w1-s5__trthaber",
-     "event": "w1-s5",
-     "kurum": "TRT Haber",
-     "baslik": "Gülistan Doku soruşturmasında tutuklu sayısı 30'a yükseldi"
-    },
-    {
-     "item": "w4-s104__sozcu",
-     "event": "w4-s104",
-     "kurum": "Sözcü",
-     "baslik": "Bakanlık açıkladı: 76 suçlu Türkiye'ye iade edildi"
-    },
-    {
-     "item": "w1-s5__mynet",
-     "event": "w1-s5",
-     "kurum": "Mynet",
-     "baslik": "Gülistan Doku soruşturmasında yeni tutuklama - Güncel Haberler"
-    },
-    {
-     "item": "w4-s31__diken",
-     "event": "w4-s31",
-     "kurum": "Diken",
-     "baslik": "'Aleyna Çakır'ın ölümü: Ümitcan Uygun'a dört yıl hapis"
-    },
-    {
-     "item": "w6-s3__birgun",
-     "event": "w6-s3",
-     "kurum": "BirGün",
-     "baslik": "Savcı karara itiraz etti: Gazeteci İsmail Saymaz ve Murat Ağırel'e ev hapsi!"
-    },
-    {
-     "item": "w1-s141__aydinlik",
-     "event": "w1-s141",
-     "kurum": "Aydınlık",
-     "baslik": "KYK yurt ücretlerine zam geldi: İşte yeni fiyatlar"
-    },
-    {
-     "item": "w3-s51__milligazete",
-     "event": "w3-s51",
-     "kurum": "Milli Gazete",
-     "baslik": "Fatih'te döviz bürosunda kanlı çatışma! 2 ölü, 2 yaralı var"
-    },
-    {
-     "item": "w4-s59__mynet",
-     "event": "w4-s59",
-     "kurum": "Mynet",
-     "baslik": "‘Çok önemli bir bakan cuma günü istifa edecek’ paylaşımı yapan Ali Tarakcı, gözaltına alındı - Güncel Haberler"
-    },
-    {
-     "item": "w6-s2__diken",
-     "event": "w6-s2",
-     "kurum": "Diken",
-     "baslik": "AKP'li Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
-    },
-    {
-     "item": "w3-s51__cumhuriyet",
-     "event": "w3-s51",
-     "kurum": "Cumhuriyet",
-     "baslik": "İstanbul'da döviz bürosunda silahlı kavga: 2 kişi hayatını kaybetti"
-    },
-    {
-     "item": "w4-s104__karar",
-     "event": "w4-s104",
-     "kurum": "Karar",
-     "baslik": "Yurt dışına kaçmışlardı: 76 suçlu Türkiye'ye getirildi"
-    },
-    {
-     "item": "w4-s179__karar",
-     "event": "w4-s179",
-     "kurum": "Karar",
-     "baslik": "Trump bu kez şaşırttı: İran’ın 7 günlük ateşkes teklifini reddetti"
-    },
-    {
-     "item": "w6-s2__yenisafak",
-     "event": "w6-s2",
-     "kurum": "Yeni Şafak",
-     "baslik": "Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
-    },
-    {
-     "item": "w1-s5__diken",
-     "event": "w1-s5",
-     "kurum": "Diken",
-     "baslik": "Gülistan Doku soruşturmasında bir tutuklama daha"
-    },
-    {
-     "item": "w1-s141__milligazete",
-     "event": "w1-s141",
-     "kurum": "Milli Gazete",
-     "baslik": "KYK yurt ücretlerine zam geldi! 2026 KYK yurt ücreti ne kadar oldu? İşte öğrencilerin yeni aylık ödemesi"
-    },
-    {
-     "item": "w4-s104__mynet",
-     "event": "w4-s104",
-     "kurum": "Mynet",
-     "baslik": "Bakanlık duyurdu! Kırmızı bültenle ve ulusal seviyede aranan 76 suçlu Türkiye'ye getirildi - Güncel Haberler"
-    },
-    {
-     "item": "w4-s59__sozcu",
-     "event": "w4-s59",
-     "kurum": "Sözcü",
-     "baslik": "Gazeteci Ali Tarakcı tutuklandı"
-    },
-    {
-     "item": "w4-s104__trthaber",
-     "event": "w4-s104",
-     "kurum": "TRT Haber",
-     "baslik": "Kırmızı bültenle ve ulusal seviyede aranan 76 suçlu Türkiye’ye getirildi"
-    },
-    {
-     "item": "w4-s31__ntv",
-     "event": "w4-s31",
-     "kurum": "NTV",
-     "baslik": "Aleyna Çakır davasında Ümitcan Uygun'a 4 yıl hapis cezası"
-    },
-    {
-     "item": "w4-s53__mynet",
-     "event": "w4-s53",
-     "kurum": "Mynet",
-     "baslik": "Kaşif Kozinoğlu soruşturmasında yeni gelişme: Enver Altaylı’nın ifadesi alınacak - Güncel Haberler"
-    },
-    {
-     "item": "w3-s51__karar",
-     "event": "w3-s51",
-     "kurum": "Karar",
-     "baslik": "Fatih’te döviz bürosunda silahlı kavga: Ölü ve yaralılar var"
-    },
-    {
-     "item": "w4-s36__star",
-     "event": "w4-s36",
-     "kurum": "Star",
-     "baslik": "Mal varlıklarına el konuldu! Mustafa Sandal'ın eşi ve kayınpederi hakkında yakalama kararı"
-    },
-    {
-     "item": "w4-s179__cumhuriyet",
-     "event": "w4-s179",
-     "kurum": "Cumhuriyet",
-     "baslik": "Trump, İran’ın 7 günlük ateşkes teklifini reddetti: 'Kabul edilemez'"
-    },
-    {
-     "item": "w4-s31__takvim",
-     "event": "w4-s31",
-     "kurum": "Takvim",
-     "baslik": "Aleyna Çakır davasında Ümitcan Uygun'a 4 yıl hapis cezası"
-    },
-    {
-     "item": "w4-s59__diken",
-     "event": "w4-s59",
-     "kurum": "Diken",
-     "baslik": "Gazeteci Ali Tarakcı paylaşımı nedeniyle gözaltında"
-    },
-    {
-     "item": "w4-s179__sabah",
-     "event": "w4-s179",
-     "kurum": "Sabah",
-     "baslik": "7 günlük ateşkes teklifi"
-    },
-    {
-     "item": "w4-s36__haberturk",
-     "event": "w4-s36",
-     "kurum": "Habertürk",
-     "baslik": "Mustafa Sandal'ın eşi Melis Sandal'ın malvarlıklarına tedbir kararı - Haberler Habertürk"
-    },
-    {
-     "item": "w2-s29__ntv",
-     "event": "w2-s29",
-     "kurum": "NTV",
-     "baslik": "Vanlı Kara Haydar'ın eşi Çağla Öz tutuklandı"
-    },
-    {
-     "item": "w1-s5__sozcu",
-     "event": "w1-s5",
-     "kurum": "Sözcü",
-     "baslik": "Gülistan Doku soruşturmasında kritik 4 saat: Eski erkek arkadaşı ifade verdi"
-    },
-    {
-     "item": "w5-s191__karar",
-     "event": "w5-s191",
-     "kurum": "Karar",
-     "baslik": "Adana ve Osmaniye peş peşe sallandı: 24 dakikada 3 deprem"
-    },
-    {
-     "item": "w5-s191__star",
-     "event": "w5-s191",
-     "kurum": "Star",
-     "baslik": "Merkez üssü Adana ve Osmaniye'de peş peşe deprem! Bakan Çiftçi: Olumsuz bir durum yok"
-    },
-    {
-     "item": "w6-s325__milligazete",
-     "event": "w6-s325",
-     "kurum": "Milli Gazete",
-     "baslik": "Maltepe'de çöken binada acı bilanço: Can kaybı 3'e çıktı"
-    },
-    {
-     "item": "w5-s20__karar",
-     "event": "w5-s20",
-     "kurum": "Karar",
-     "baslik": "Prof. Dr. İoanna Kuçuradi son yolculuğuna uğurlandı"
-    },
-    {
-     "item": "w2-s236__karar",
-     "event": "w2-s236",
-     "kurum": "Karar",
-     "baslik": "Sunucu Mehmet Ali Erbil kalp krizi geçirdi"
-    },
-    {
-     "item": "w4-s31__aydinlik",
-     "event": "w4-s31",
-     "kurum": "Aydınlık",
-     "baslik": "Aleyna Çakır davasında karar çıktı! Ümitcan Uygun'a 4 yıl hapis"
-    },
-    {
-     "item": "w1-s5__karar",
-     "event": "w1-s5",
-     "kurum": "Karar",
-     "baslik": "Gülistan Doku soruşturmasında 1 kişi daha tutuklandı: Tutuklu sayısı 30’a çıktı"
-    },
-    {
-     "item": "w1-s141__cumhuriyet",
-     "event": "w1-s141",
-     "kurum": "Cumhuriyet",
-     "baslik": "KYK yurt ücretlerine zam geldi: Öğrencilerin aylık ödemesi belli oldu"
-    },
-    {
-     "item": "w2-s159__cumhuriyet",
-     "event": "w2-s159",
-     "kurum": "Cumhuriyet",
-     "baslik": "Filistin'e destek veren ünlü rapçi Macklemore, Ed Sheeran'ın ABD turnesinden çıkarıldı"
-    },
-    {
-     "item": "w6-s2__sozcu",
-     "event": "w6-s2",
-     "kurum": "Sözcü",
-     "baslik": "Son dakika...Yahşihan Belediye Başkan vekili Aydın Demirdirek görevden alındı"
-    },
-    {
-     "item": "w5-s20__sozcu",
-     "event": "w5-s20",
-     "kurum": "Sözcü",
-     "baslik": "İnsan hakları ve felsefeye adanmış bir ömür sona erdi: Filozof Prof. Dr. İoanna Kuçuradi Vefat Etti"
-    },
-    {
-     "item": "w5-s20__diken",
-     "event": "w5-s20",
-     "kurum": "Diken",
-     "baslik": "İoanna Kuçuradi son yolculuğuna uğurlandı"
+     "baslik": "AK Parti Genel Başkan Yardımcısı Fatma Betül Sayan Kaya görevinden istifa etti"
     },
     {
      "item": "w6-s3__sozcu",
@@ -3122,34 +2264,10 @@
      "baslik": "Son dakika... İsmail Saymaz ve Murat Ağırel'e ev hapsi kararı..."
     },
     {
-     "item": "w1-s141__ntv",
-     "event": "w1-s141",
-     "kurum": "NTV",
-     "baslik": "KYK yurt ücretleri 2026-2027: KYK yurt ücretleri ne kadar oldu, zam geldi mi?"
-    },
-    {
-     "item": "w2-s29__karar",
-     "event": "w2-s29",
-     "kurum": "Karar",
-     "baslik": "“Vanlı Kara Haydar” soruşturmasında yeni gelişme: Eşi Van’a sevk edildi"
-    },
-    {
-     "item": "w6-s2__ntv",
-     "event": "w6-s2",
-     "kurum": "NTV",
-     "baslik": "Yahşihan Belediyesi soruşturması. Başkanvekili Aydın Demirdirek görevden uzaklaştırıldı"
-    },
-    {
-     "item": "w6-s3__ntv",
-     "event": "w6-s3",
-     "kurum": "NTV",
-     "baslik": "İsmail Saymaz ve Murat Ağırel'e ev hapsi kararı"
-    },
-    {
-     "item": "w6-s3__yenisafak",
-     "event": "w6-s3",
-     "kurum": "Yeni Şafak",
-     "baslik": "İsmail Saymaz ve Murat Ağırel ifade vermek için adliyeye geldi"
+     "item": "w4-s60__star",
+     "event": "w4-s60",
+     "kurum": "Star",
+     "baslik": "Fatma Betül Sayan Kaya görevinden istifa etti"
     },
     {
      "item": "w2-s29__sozcu",
@@ -3158,40 +2276,46 @@
      "baslik": "\"Vanlı Kara Haydar\"ın İstanbul'da yakalanan eşi Van'a götürüldü"
     },
     {
-     "item": "w4-s31__ahaber",
-     "event": "w4-s31",
-     "kurum": "A Haber",
-     "baslik": "Aleyna Çakır davasında karar: Ümitcan Uygun'a 4 yıl hapis"
-    },
-    {
-     "item": "w3-s51__star",
-     "event": "w3-s51",
-     "kurum": "Star",
-     "baslik": "İstanbul'da döviz bürosunda silahlı dehşet! 3 kişi hayatını kaybetti"
-    },
-    {
-     "item": "w2-s159__takvim",
-     "event": "w2-s159",
-     "kurum": "Takvim",
-     "baslik": "Macklemore Filistin mesajları sonrası Ed Sheeran turnesinden çıkarıldı! 10 konserin 8'i planlıydı"
-    },
-    {
-     "item": "w4-s53__sabah",
-     "event": "w4-s53",
-     "kurum": "Sabah",
-     "baslik": "SON DAKİKA… Kaşif Kozinoğlu soruşturmasında yeni gelişme: Enver Altaylı tutuklandı!"
-    },
-    {
-     "item": "w4-s31__mynet",
-     "event": "w4-s31",
-     "kurum": "Mynet",
-     "baslik": "Son dakika | Aleyna Çakır davasında Ümitcan Uygun'a 4 yıl hapis cezası! O suçtan beraat etti - Mynet Yaşam"
-    },
-    {
-     "item": "w4-s59__cumhuriyet",
-     "event": "w4-s59",
+     "item": "w6-s3__cumhuriyet",
+     "event": "w6-s3",
      "kurum": "Cumhuriyet",
-     "baslik": "'Bir bakan istifa edecek' demişti: Gazeteci Ali Tarakcı gözaltına alındı"
+     "baslik": "Ticaret Bakanı Ömer Bolat'tan gazeteci Murat Ağırel ve İsmail Saymaz'a 'fon' suç duyurusu"
+    },
+    {
+     "item": "w4-s36__ntv",
+     "event": "w4-s36",
+     "kurum": "NTV",
+     "baslik": "Mustafa Sandal'ın eşi ve kayınpederi hakkında yakalama kararı"
+    },
+    {
+     "item": "w6-s2__diken",
+     "event": "w6-s2",
+     "kurum": "Diken",
+     "baslik": "AKP'li Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
+    },
+    {
+     "item": "w6-s331__mynet",
+     "event": "w6-s331",
+     "kurum": "Mynet",
+     "baslik": "2026 Nobel Barış Ödülü'nün sahibi açıklandı - TREND"
+    },
+    {
+     "item": "w4-s15__star",
+     "event": "w4-s15",
+     "kurum": "Star",
+     "baslik": "Katılımevim ve Birevim'in devir süreci! Emlak Katılım son gelişmeyi duyurdu"
+    },
+    {
+     "item": "w5-s22__milligazete",
+     "event": "w5-s22",
+     "kurum": "Milli Gazete",
+     "baslik": "Ferhat Gündoğdu (biyografisi) kimdir, neden tutuklandı, neden istifa etti, MHK Başkanı kim olacak?"
+    },
+    {
+     "item": "w4-s60__takvim",
+     "event": "w4-s60",
+     "kurum": "Takvim",
+     "baslik": "AK Parti Genel Başkan Yardımcısı Fatma Betül Sayan Kaya istifa etti: Fon soruşturmasında adı gündeme..."
     },
     {
      "item": "w6-s2__mynet",
@@ -3200,28 +2324,256 @@
      "baslik": "Yahşıyan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı - Politika Siyaset Haberleri"
     },
     {
-     "item": "w4-s179__aydinlik",
-     "event": "w4-s179",
-     "kurum": "Aydınlık",
-     "baslik": "WSJ: Trump İran'ın 7 günlük ateşkes teklifini reddetti, 'ara seçim' sonrasını işaret etti"
+     "item": "w2-s29__trthaber",
+     "event": "w2-s29",
+     "kurum": "TRT Haber",
+     "baslik": "'Vanlı Kara Haydar'ın İstanbul'da yakalanan eşi Çağla Öz Van'a götürüldü"
     },
     {
-     "item": "w4-s31__cumhuriyet",
-     "event": "w4-s31",
+     "item": "w5-s18__cumhuriyet",
+     "event": "w5-s18",
      "kurum": "Cumhuriyet",
-     "baslik": "Ümitcan Uygun’a 'intihara teşvik'ten 4 yıl hapis cezası verildi... Aleyna Çakır davasındaki 'karanlık noktaları' ailenin avukatı anlattı"
+     "baslik": "İbrahim Ömer Gönül kimdir? Eski SPK Başkanı İbrahim Ömer Gönül hangi görevlerde bulundu?"
     },
     {
-     "item": "w3-s51__takvim",
-     "event": "w3-s51",
+     "item": "w5-s294__milligazete",
+     "event": "w5-s294",
+     "kurum": "Milli Gazete",
+     "baslik": "Dilan Polat bir kez daha gözaltına alındı: Bu sefer \"Cumhurbaşkanına hakaret\""
+    },
+    {
+     "item": "w1-s25__ntv",
+     "event": "w1-s25",
+     "kurum": "NTV",
+     "baslik": "Oya Lale Arslan tutuklandı"
+    },
+    {
+     "item": "w6-s3__star",
+     "event": "w6-s3",
+     "kurum": "Star",
+     "baslik": "Fon soruşturmasında dezenformasyon! Murat Ağırel ve İsmail Saymaz hakkında karar verildi"
+    },
+    {
+     "item": "w4-s104__sabah",
+     "event": "w4-s104",
+     "kurum": "Sabah",
+     "baslik": "SON DAKİKA! İçişleri Bakanlığı açıkladı: 76 suçlu 8 farklı ülkeden Türkiye'ye getirildi!"
+    },
+    {
+     "item": "w6-s2__yenisafak",
+     "event": "w6-s2",
+     "kurum": "Yeni Şafak",
+     "baslik": "Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
+    },
+    {
+     "item": "w4-s15__ntv",
+     "event": "w4-s15",
+     "kurum": "NTV",
+     "baslik": "Katılımevim ve Birevim için açıklama geldi, başvurular yapıldı"
+    },
+    {
+     "item": "w5-s35__trthaber",
+     "event": "w5-s35",
+     "kurum": "TRT Haber",
+     "baslik": "Fatma Betül Sayan Kaya'nın mal varlıklarının dondurulması istendi"
+    },
+    {
+     "item": "w5-s294__sabah",
+     "event": "w5-s294",
+     "kurum": "Sabah",
+     "baslik": "SON DAKİKA! Dilan Polat’a Cumhurbaşkanına Hakaret suçundan gözaltına alınmıştı! Adli kontrol şartıyla serbest bırakıldı."
+    },
+    {
+     "item": "w4-s59__sabah",
+     "event": "w4-s59",
+     "kurum": "Sabah",
+     "baslik": "\"Bakan istifa edecek\" paylaşımına soruşturma! Ali Tarakcı hakkında gözaltı kararı"
+    },
+    {
+     "item": "w4-s60__ntv",
+     "event": "w4-s60",
+     "kurum": "NTV",
+     "baslik": "Fatma Betül Sayan Kaya: Tüm görevlerimden affımı istedim"
+    },
+    {
+     "item": "w5-s18__ahaber",
+     "event": "w5-s18",
+     "kurum": "A Haber",
+     "baslik": "Fon soruşturmasında gelişme! Eski SPK Başkanı İbrahim Ömer Gönül şüpheli sıfatıyla ifade verdi"
+    },
+    {
+     "item": "w4-s15__takvim",
+     "event": "w4-s15",
      "kurum": "Takvim",
-     "baslik": "Fatih’te döviz bürosunda silahlı kavga! 2 kişi hayatını kaybetti"
+     "baslik": "Binlerce yatırımcının merakla beklediği haber: Emlak Katılım'dan Katılımevim ve Birevim açıklaması"
     },
     {
-     "item": "w2-s236__cumhuriyet",
-     "event": "w2-s236",
+     "item": "w1-s8__haberturk",
+     "event": "w1-s8",
+     "kurum": "Habertürk",
+     "baslik": "SON DAKİKA: Ünlü oyuncu Serhat Kılıç evinde ölü bulundu, soruşturma başlatıldı! Serhat Kılıç kimdir? - Haberler Habertürk"
+    },
+    {
+     "item": "w4-s32__milligazete",
+     "event": "w4-s32",
+     "kurum": "Milli Gazete",
+     "baslik": "Mansur Yavaş CHP'den istifa etti! Yeni durağı neresi olacak?"
+    },
+    {
+     "item": "w1-s8__karar",
+     "event": "w1-s8",
+     "kurum": "Karar",
+     "baslik": "Seksenler dizisinin oyuncusu Serhat Mustafa Kılıç evinde ölü bulundu"
+    },
+    {
+     "item": "w6-s3__ntv",
+     "event": "w6-s3",
+     "kurum": "NTV",
+     "baslik": "İsmail Saymaz ve Murat Ağırel'e ev hapsi kararı"
+    },
+    {
+     "item": "w1-s8__mynet",
+     "event": "w1-s8",
+     "kurum": "Mynet",
+     "baslik": "Serhat Mustafa Kılıç evinde ölü bulunmuştu! İlk inceleme sonucu dikkat çekti - Magazin Haberleri"
+    },
+    {
+     "item": "w6-s3__sabah",
+     "event": "w6-s3",
+     "kurum": "Sabah",
+     "baslik": "Son dakika | Ticaret Bakanı Ömer Bolat'tan İsmail Saymaz ve Murat Ağırel'e suç duyurusu"
+    },
+    {
+     "item": "w5-s35__star",
+     "event": "w5-s35",
+     "kurum": "Star",
+     "baslik": "Fon soruşturması genişliyor... Fatma Betül Sayan Kaya ve eşinin mal varlıklarının dondurulması istendi"
+    },
+    {
+     "item": "w2-s27__cumhuriyet",
+     "event": "w2-s27",
      "kurum": "Cumhuriyet",
-     "baslik": "Ünlü şovmen Mehmet Ali Erbil kalp krizi geçirdi: Hastaneye kaldırılan Erbil'e stent takıldı"
+     "baslik": "'Ayşe Tokyaz' cinayetinde karar çıktı: Eski polise ağırlaştırılmış müebbet verildi!"
+    },
+    {
+     "item": "w2-s89__cumhuriyet",
+     "event": "w2-s89",
+     "kurum": "Cumhuriyet",
+     "baslik": "Kaşif Kozinoğlu soruşturması: Bir kişi tutuklandı"
+    },
+    {
+     "item": "w4-s36__ahaber",
+     "event": "w4-s36",
+     "kurum": "A Haber",
+     "baslik": "Fon soruşturmasında Mustafa Sandal’ın eşi Melis Sütşurup Sandal da mercek altında! 11 milyarlık para..."
+    },
+    {
+     "item": "w4-s32__aydinlik",
+     "event": "w4-s32",
+     "kurum": "Aydınlık",
+     "baslik": "Mansur Yavaş CHP'den istifa etti"
+    },
+    {
+     "item": "w6-s3__trthaber",
+     "event": "w6-s3",
+     "kurum": "TRT Haber",
+     "baslik": "Bakanlık'tan İsmail Saymaz ve Murat Ağırel hakkında suç duyurusu"
+    },
+    {
+     "item": "w1-s141__milligazete",
+     "event": "w1-s141",
+     "kurum": "Milli Gazete",
+     "baslik": "KYK yurt ücretlerine zam geldi! 2026 KYK yurt ücreti ne kadar oldu? İşte öğrencilerin yeni aylık ödemesi"
+    },
+    {
+     "item": "w6-s2__trthaber",
+     "event": "w6-s2",
+     "kurum": "TRT Haber",
+     "baslik": "Yahşihan Belediye Başkan Vekili görevden uzaklaştırıldı"
+    },
+    {
+     "item": "w4-s15__trthaber",
+     "event": "w4-s15",
+     "kurum": "TRT Haber",
+     "baslik": "Katılım ve Birevim'in Emlak Katılım'a devri için başvurular yapıldı"
+    },
+    {
+     "item": "w6-s3__karar",
+     "event": "w6-s3",
+     "kurum": "Karar",
+     "baslik": "Murat Ağırel ve İsmail Saymaz'a ev hapsi"
+    },
+    {
+     "item": "w2-s27__star",
+     "event": "w2-s27",
+     "kurum": "Star",
+     "baslik": "Ayşe Tokyaz cinayetinde yeni gelişme: Ağırlaştırılmış müebbet hapis cezasına çarptırıldı"
+    },
+    {
+     "item": "w4-s104__sozcu",
+     "event": "w4-s104",
+     "kurum": "Sözcü",
+     "baslik": "Bakanlık açıkladı: 76 suçlu Türkiye'ye iade edildi"
+    },
+    {
+     "item": "w6-s331__ntv",
+     "event": "w6-s331",
+     "kurum": "NTV",
+     "baslik": "Trump \"Bana verin\" diyordu. Nobel Barış Ödülü'nün sahibi belli oldu, haberi mahkemedeyken aldı"
+    },
+    {
+     "item": "w2-s89__karar",
+     "event": "w2-s89",
+     "kurum": "Karar",
+     "baslik": "Kaşif Kozinoğlu soruşturmasında yeni operasyon: 9 gözaltı"
+    },
+    {
+     "item": "w4-s32__cumhuriyet",
+     "event": "w4-s32",
+     "kurum": "Cumhuriyet",
+     "baslik": "Son dakika... Mansur Yavaş, CHP'den istifa etti: 'Yoluma bağımsız olarak devam edeceğim'"
+    },
+    {
+     "item": "w1-s141__sabah",
+     "event": "w1-s141",
+     "kurum": "Sabah",
+     "baslik": "GSB 2026-2027 KYK Yurt Ücretleri ve Oda Tipleri || 1, 2, 3, 4, 5 ve 6. tip KYK yurt fiyatı ne kadar, kaç TL?"
+    },
+    {
+     "item": "w5-s22__diken",
+     "event": "w5-s22",
+     "kurum": "Diken",
+     "baslik": "MHK Başkanı Ferhat Gündoğdu dahil beş kişi tutuklandı"
+    },
+    {
+     "item": "w5-s22__ntv",
+     "event": "w5-s22",
+     "kurum": "NTV",
+     "baslik": "Tutuklanan MHK Başkanı Ferhat Gündoğdu görevinden istifa etti"
+    },
+    {
+     "item": "w6-s325__cumhuriyet",
+     "event": "w6-s325",
+     "kurum": "Cumhuriyet",
+     "baslik": "Maltepe'de çöken binada ölü veya yaralı var mı? Bina kaç yıllık, neden çöktü?"
+    },
+    {
+     "item": "w4-s15__cumhuriyet",
+     "event": "w4-s15",
+     "kurum": "Cumhuriyet",
+     "baslik": "Emlak Katılım'dan Katılımevim ve Birevim açıklaması"
+    },
+    {
+     "item": "w4-s60__cumhuriyet",
+     "event": "w4-s60",
+     "kurum": "Cumhuriyet",
+     "baslik": "Fatma Betül Sayan Kaya kimdir? AKP Genel Başkan Yardımcısı Fatma Betül Sayan Kaya neden istifa etti?"
+    },
+    {
+     "item": "w4-s104__ntv",
+     "event": "w4-s104",
+     "kurum": "NTV",
+     "baslik": "İçişleri Bakanlığı açıkladı. 76 suçlu Türkiye'ye iade edildi"
     },
     {
      "item": "w4-s104__ahaber",
@@ -3230,190 +2582,142 @@
      "baslik": "İçişleri Bakanlığı duyurdu! 76 suçlu Türkiye'ye getirildi: Hangi ülkeden iade edildiler?"
     },
     {
-     "item": "w4-s36__diken",
-     "event": "w4-s36",
-     "kurum": "Diken",
-     "baslik": "Mustafa Sandal'ın eşi: Fon krizinde mağdurum"
+     "item": "w1-s8__takvim",
+     "event": "w1-s8",
+     "kurum": "Takvim",
+     "baslik": "Serhat Mustafa Kılıç evinde ölü bulundu! Son görüntüleri ortaya çıktı"
     },
     {
-     "item": "w2-s236__mynet",
-     "event": "w2-s236",
-     "kurum": "Mynet",
-     "baslik": "Mehmet Ali Erbil kalp krizi mi geçirdi? Gerçek ortaya çıktı - Magazin Haberleri"
-    },
-    {
-     "item": "w4-s179__mynet",
-     "event": "w4-s179",
-     "kurum": "Mynet",
-     "baslik": "ABD Başkanı Trump, \"İran'ın 7 günlük teklifini reddediyorum\" - Dünya Haberleri"
-    },
-    {
-     "item": "w2-s159__sozcu",
-     "event": "w2-s159",
-     "kurum": "Sözcü",
-     "baslik": "Ed Sheeran’ın turnesinde kriz büyüyor: 4 sanatçı daha ayrıldı"
-    },
-    {
-     "item": "w6-s3__cumhuriyet",
-     "event": "w6-s3",
-     "kurum": "Cumhuriyet",
-     "baslik": "Ticaret Bakanı Ömer Bolat'tan gazeteci Murat Ağırel ve İsmail Saymaz'a 'fon' suç duyurusu"
-    },
-    {
-     "item": "w2-s159__trthaber",
-     "event": "w2-s159",
-     "kurum": "TRT Haber",
-     "baslik": "Macklemore, konserinde Filistin'e destek verdiği için Ed Sheeran'ın turnesinden çıkarıldı"
-    },
-    {
-     "item": "w4-s53__sozcu",
-     "event": "w4-s53",
-     "kurum": "Sözcü",
-     "baslik": "Kaşif Kozinoğlu soruşturmasında yeni gelişme: Enver Altaylı adliyeye getirildi"
-    },
-    {
-     "item": "w5-s20__sabah",
-     "event": "w5-s20",
+     "item": "w4-s60__sabah",
+     "event": "w4-s60",
      "kurum": "Sabah",
-     "baslik": "Prof. Dr. İoanna Kuçuradi hayatını kaybetti: Siyasilerden peş peşe taziye mesajları"
+     "baslik": "AK Parti Genel Başkan Yardımcısı Fatma Betül Sayan Kaya görevinden istifa etti"
     },
     {
-     "item": "w6-s2__sabah",
+     "item": "w5-s35__mynet",
+     "event": "w5-s35",
+     "kurum": "Mynet",
+     "baslik": "Fatma Betül Sayan Kaya ve İlyas Kaya'nın mal varlıklarının dondurulması talep edildi - Gündem Haberleri"
+    },
+    {
+     "item": "w6-s3__yenisafak",
+     "event": "w6-s3",
+     "kurum": "Yeni Şafak",
+     "baslik": "İsmail Saymaz ve Murat Ağırel ifade vermek için adliyeye geldi"
+    },
+    {
+     "item": "w4-s15__mynet",
+     "event": "w4-s15",
+     "kurum": "Mynet",
+     "baslik": "Emlak Katılım'dan Katılımevim ve Birevim açıklaması - Finans haberlerinin doğru adresi - Mynet Finans Haber"
+    },
+    {
+     "item": "w2-s89__haberturk",
+     "event": "w2-s89",
+     "kurum": "Habertürk",
+     "baslik": "Kozinoğlu soruşturmasında 1 tutuklama kararı - Haberler Habertürk"
+    },
+    {
+     "item": "w6-s2__milligazete",
      "event": "w6-s2",
-     "kurum": "Sabah",
-     "baslik": "SON DAKiKA I İçişleri Bakanlığı duyurdu: Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı!"
-    },
-    {
-     "item": "w1-s141__diken",
-     "event": "w1-s141",
-     "kurum": "Diken",
-     "baslik": "KYK yurt ücretleri belli oldu"
-    },
-    {
-     "item": "w4-s104__milligazete",
-     "event": "w4-s104",
      "kurum": "Milli Gazete",
-     "baslik": "Kırmızı bültenle aranıyorlardı: 76 suçlu Türkiye'ye getirildi"
+     "baslik": "Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
     },
     {
-     "item": "w2-s236__ahaber",
-     "event": "w2-s236",
-     "kurum": "A Haber",
-     "baslik": "Mehmet Ali Erbil’in kalp krizi geçirdiği ve stent takıldığı iddialarına yalanlama geldi"
-    },
-    {
-     "item": "w1-s141__ahaber",
-     "event": "w1-s141",
-     "kurum": "A Haber",
-     "baslik": "Odaya göre öğrenci dostu fiyatlar! KYK yurt ücretleri belli oldu"
-    },
-    {
-     "item": "w6-s3__diken",
-     "event": "w6-s3",
+     "item": "w1-s8__diken",
+     "event": "w1-s8",
      "kurum": "Diken",
-     "baslik": "İsmail Saymaz ve Murat Ağırel hakkında suç duyurusu"
+     "baslik": "Oyuncu Serhat Kılıç evinde ölü bulundu"
     },
     {
-     "item": "w1-s5__sabah",
-     "event": "w1-s5",
-     "kurum": "Sabah",
-     "baslik": "Gülistan Doku soruşturmasında flaş: 1 kişi daha tutuklandı!"
+     "item": "w1-s25__milligazete",
+     "event": "w1-s25",
+     "kurum": "Milli Gazete",
+     "baslik": "Lale Özan Arslan Kimdir, Neden Gözaltına Alındı? Oya Lale Özan Arslan Evli mi, Eşi Kimdir, Erk Acarer ile Ne Yayın Yaptı?"
     },
     {
-     "item": "w3-s51__aydinlik",
-     "event": "w3-s51",
-     "kurum": "Aydınlık",
-     "baslik": "Fatih'teki döviz bürosunda silahlı kavga: 2 ölü, 2 yaralı"
+     "item": "w5-s35__milligazete",
+     "event": "w5-s35",
+     "kurum": "Milli Gazete",
+     "baslik": "Fatma Betül Sayan Kaya ve eşi İlyas Kaya'nın tüm mal varlıkları için dondurma talebi"
     },
     {
-     "item": "w5-s294__takvim",
+     "item": "w5-s294__yenisafak",
      "event": "w5-s294",
-     "kurum": "Takvim",
-     "baslik": "Dilan Polat gözaltına alındı! Adli kontrolle serbest bırakıldı"
+     "kurum": "Yeni Şafak",
+     "baslik": "Dilan Polat gözaltına mı alındı neden?"
     },
     {
-     "item": "w2-s29__cumhuriyet",
-     "event": "w2-s29",
-     "kurum": "Cumhuriyet",
-     "baslik": "Düğündeki takılar gündem olmuştu: 'Vanlı Kara Haydar'ın eşi Çağla Öz gözaltına alındı"
+     "item": "w5-s294__karar",
+     "event": "w5-s294",
+     "kurum": "Karar",
+     "baslik": "Dilan Polat 'Cumhurbaşkanı'na hakaret'ten gözaltında"
     },
     {
-     "item": "w4-s104__aydinlik",
-     "event": "w4-s104",
+     "item": "w4-s36__aydinlik",
+     "event": "w4-s36",
      "kurum": "Aydınlık",
-     "baslik": "İçişleri Bakanlığı'ndan dev iade operasyonu: 8 ülkeden 76 firari suçlu Türkiye'ye getirildi"
+     "baslik": "Fon soruşturmasında yeni gelişme! Mustafa Sandal'ın eşi ve kayınpederi için yakalama kararı"
     },
     {
-     "item": "w6-s331__diken",
-     "event": "w6-s331",
-     "kurum": "Diken",
-     "baslik": "Trump: Sekiz Nobel Barış Ödülü almam gerekirdi"
-    },
-    {
-     "item": "w3-s51__diken",
-     "event": "w3-s51",
-     "kurum": "Diken",
-     "baslik": "İstanbul'da döviz bürosunda silahlı kavga: İki ölü, iki yaralı"
-    },
-    {
-     "item": "w6-s331__takvim",
-     "event": "w6-s331",
-     "kurum": "Takvim",
-     "baslik": "Nobel Barış Ödülü'ne layık görülen isim belli oldu"
-    },
-    {
-     "item": "w6-s3__aydinlik",
-     "event": "w6-s3",
-     "kurum": "Aydınlık",
-     "baslik": "Fon soruşturmasında yeni karar! Murat Ağırel ve İsmail Saymaz'a ev hapsi"
-    },
-    {
-     "item": "w4-s53__ntv",
-     "event": "w4-s53",
-     "kurum": "NTV",
-     "baslik": "Kaşif Kozinoğlu soruşturmasında Enver Altaylı tutuklandı, ifade sırasında tehditte bulundu"
-    },
-    {
-     "item": "w4-s179__star",
-     "event": "w4-s179",
-     "kurum": "Star",
-     "baslik": "Trump'tan İran'a rest: 7 günlük ateşkes teklifini reddediyorum"
-    },
-    {
-     "item": "w4-s104__cumhuriyet",
-     "event": "w4-s104",
-     "kurum": "Cumhuriyet",
-     "baslik": "İçişleri açıkladı: 29'u kırmızı bültenli 76 suçlu Türkiye'ye iade edildi"
-    },
-    {
-     "item": "w3-s51__sozcu",
-     "event": "w3-s51",
+     "item": "w5-s18__sozcu",
+     "event": "w5-s18",
      "kurum": "Sözcü",
-     "baslik": "Döviz bürosunda kanlı düello: 3 ölü 1 yaralı"
+     "baslik": "Eski SPK Başkanı bugün ifade verecek"
     },
     {
-     "item": "w1-s5__cumhuriyet",
-     "event": "w1-s5",
-     "kurum": "Cumhuriyet",
-     "baslik": "Gülistan Doku soruşturmasında yeni gelişme: Abarakov'dan 4 saatlik ifade"
-    },
-    {
-     "item": "w5-s294__cumhuriyet",
-     "event": "w5-s294",
-     "kurum": "Cumhuriyet",
-     "baslik": "Dilan Polat'a 'Cumhurbaşkanına hakaret'ten gözaltı: Adli kontrol kararıyla serbest bırakıldı"
-    },
-    {
-     "item": "w1-s5__milligazete",
-     "event": "w1-s5",
-     "kurum": "Milli Gazete",
-     "baslik": "Gülistan Doku soruşturmasında 1 zanlı daha tutuklandı"
-    },
-    {
-     "item": "w6-s331__star",
-     "event": "w6-s331",
+     "item": "w6-s2__star",
+     "event": "w6-s2",
      "kurum": "Star",
-     "baslik": "2026 Nobel Barış Ödülü sahibini buldu"
+     "baslik": "Bakanlık duyurdu: Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
+    },
+    {
+     "item": "w5-s22__turkiyegz",
+     "event": "w5-s22",
+     "kurum": "Türkiye Gazetesi",
+     "baslik": "Türk futbolunda deprem: MHK Başkanı Ferhat Gündoğdu ve 4 kişi tutuklandı"
+    },
+    {
+     "item": "w1-s25__takvim",
+     "event": "w1-s25",
+     "kurum": "Takvim",
+     "baslik": "Oya Lale Arslan yürütülen soruşturma kapsamında tutuklandı, dijital materyallere el konuldu"
+    },
+    {
+     "item": "w4-s32__karar",
+     "event": "w4-s32",
+     "kurum": "Karar",
+     "baslik": "Mansur Yavaş CHP’den istifa etti: “Siyasi yoluma bağımsız olarak devam ediyorum”"
+    },
+    {
+     "item": "w5-s35__sabah",
+     "event": "w5-s35",
+     "kurum": "Sabah",
+     "baslik": "SON DAKİKA | Fatma Betül Sayan Kaya ve eşi İlyas Kaya'nın mal varlıklarının dondurulması istendi"
+    },
+    {
+     "item": "w1-s25__ahaber",
+     "event": "w1-s25",
+     "kurum": "A Haber",
+     "baslik": "Oya Lale Arslan gözaltına alındı! İfadesi ortaya çıktı"
+    },
+    {
+     "item": "w5-s18__diken",
+     "event": "w5-s18",
+     "kurum": "Diken",
+     "baslik": "Eski SPK başkanı Ömer Gönül 'şüpheli' sıfatıyla ifade verecek"
+    },
+    {
+     "item": "w4-s59__takvim",
+     "event": "w4-s59",
+     "kurum": "Takvim",
+     "baslik": "Ali Tarakcı tutuklandı! Bir de 'engel' kararı"
+    },
+    {
+     "item": "w4-s36__milligazete",
+     "event": "w4-s36",
+     "kurum": "Milli Gazete",
+     "baslik": "Mustafa Sandal'ın eşi serveti ne kadar ve kayınpederi neden gündemde, Melis Sandal'ın fon işlemleri ne?"
     },
     {
      "item": "w6-s325__sozcu",
@@ -3422,16 +2726,868 @@
      "baslik": "Maltepe'de çöken 7 katlı binada ölü ya da yaralı var mı?"
     },
     {
+     "item": "w2-s89__mynet",
+     "event": "w2-s89",
+     "kurum": "Mynet",
+     "baslik": "Kaşif Kozinoğlu soruşturmasında 1 şüpheli tutuklandı, 8 kişiye adli kontrol - Güncel Haberler"
+    },
+    {
+     "item": "w4-s59__karar",
+     "event": "w4-s59",
+     "kurum": "Karar",
+     "baslik": "\"Bakan istifa edecek\" demişti: Ali Tarakcı gözaltına alındı"
+    },
+    {
+     "item": "w4-s59__sozcu",
+     "event": "w4-s59",
+     "kurum": "Sözcü",
+     "baslik": "Gazeteci Ali Tarakcı tutuklandı"
+    },
+    {
+     "item": "w6-s325__ntv",
+     "event": "w6-s325",
+     "kurum": "NTV",
+     "baslik": "Maltepe'de çöken binada kontrollü yıkım sürüyor"
+    },
+    {
+     "item": "w4-s59__mynet",
+     "event": "w4-s59",
+     "kurum": "Mynet",
+     "baslik": "‘Çok önemli bir bakan cuma günü istifa edecek’ paylaşımı yapan Ali Tarakcı, gözaltına alındı - Güncel Haberler"
+    },
+    {
+     "item": "w4-s60__karar",
+     "event": "w4-s60",
+     "kurum": "Karar",
+     "baslik": "Fon iddiaları sonrası Fatma Betül Sayan Kaya görevinden istifa etti"
+    },
+    {
+     "item": "w5-s18__aydinlik",
+     "event": "w5-s18",
+     "kurum": "Aydınlık",
+     "baslik": "Eski SPK Başkanı İbrahim Ömer Gönül şüpheli sıfatıyla ifade verecek"
+    },
+    {
+     "item": "w5-s35__yenisafak",
+     "event": "w5-s35",
+     "kurum": "Yeni Şafak",
+     "baslik": "Mal varlıkları donduruluyor: Fatma Betül Sayan Kaya ve eşi hakkında 'fon' kararı"
+    },
+    {
+     "item": "w6-s325__star",
+     "event": "w6-s325",
+     "kurum": "Star",
+     "baslik": "Maltepe'de çöken binadan acı haber: Can kaybı 5'e yükseldi"
+    },
+    {
+     "item": "w2-s89__takvim",
+     "event": "w2-s89",
+     "kurum": "Takvim",
+     "baslik": "Kaşif Kozinoğlu soruşturmasında ikinci dalga! 9 şüpheli adliyeye sevk edildi"
+    },
+    {
+     "item": "w1-s8__aydinlik",
+     "event": "w1-s8",
+     "kurum": "Aydınlık",
+     "baslik": "Serhat Mustafa Kılıç hayatını kaybetti"
+    },
+    {
+     "item": "w6-s2__takvim",
+     "event": "w6-s2",
+     "kurum": "Takvim",
+     "baslik": "Yahşihan’da tutuklama sonrası kritik karar! Aydın Demirdirek görevden uzaklaştırıldı"
+    },
+    {
+     "item": "w4-s36__takvim",
+     "event": "w4-s36",
+     "kurum": "Takvim",
+     "baslik": "11 milyar TL'lik vurgunda Dubai detayı! Mustafa Sandal'ın eşi Melis Sandal Dubai'ye mi taşındı?"
+    },
+    {
+     "item": "w4-s59__trthaber",
+     "event": "w4-s59",
+     "kurum": "TRT Haber",
+     "baslik": "'Bakan istifa edecek' paylaşımı yapan Ali Tarakcı gözaltına alındı"
+    },
+    {
+     "item": "w5-s18__trthaber",
+     "event": "w5-s18",
+     "kurum": "TRT Haber",
+     "baslik": "Eski SPK Başkanı Gönül, fon soruşturması kapsamında ifade verecek"
+    },
+    {
+     "item": "w1-s8__star",
+     "event": "w1-s8",
+     "kurum": "Star",
+     "baslik": "Kendisinden haber alınamıyordu! Oyuncu Serhat Mustafa Kılıç evinde ölü bulundu"
+    },
+    {
+     "item": "w1-s141__diken",
+     "event": "w1-s141",
+     "kurum": "Diken",
+     "baslik": "KYK yurt ücretleri belli oldu"
+    },
+    {
+     "item": "w1-s25__karar",
+     "event": "w1-s25",
+     "kurum": "Karar",
+     "baslik": "Gazeteci Oya Lale Arslan hakkında gözaltı kararı"
+    },
+    {
+     "item": "w2-s29__mynet",
+     "event": "w2-s29",
+     "kurum": "Mynet",
+     "baslik": "Düğündeki altınlarla gündem olmuştu: 'Vanlı Kara Haydar'ın eşi fenomen Çağla Öz Tançalan tutuklandı - Güncel Haberler"
+    },
+    {
+     "item": "w1-s8__ahaber",
+     "event": "w1-s8",
+     "kurum": "A Haber",
+     "baslik": "Ünlü oyuncu Serhat Mustafa Kılıç hayatını kaybetti! Cenaze programı ve törenin detayları belli oldu"
+    },
+    {
+     "item": "w4-s59__cumhuriyet",
+     "event": "w4-s59",
+     "kurum": "Cumhuriyet",
+     "baslik": "'Bir bakan istifa edecek' demişti: Gazeteci Ali Tarakcı gözaltına alındı"
+    },
+    {
+     "item": "w4-s36__diken",
+     "event": "w4-s36",
+     "kurum": "Diken",
+     "baslik": "Mustafa Sandal'ın eşi: Fon krizinde mağdurum"
+    },
+    {
+     "item": "w6-s331__diken",
+     "event": "w6-s331",
+     "kurum": "Diken",
+     "baslik": "Trump: Sekiz Nobel Barış Ödülü almam gerekirdi"
+    },
+    {
+     "item": "w4-s15__diken",
+     "event": "w4-s15",
+     "kurum": "Diken",
+     "baslik": "Katılımevim ve Birevim'in Emlak Katılım'a devri için başvuru"
+    },
+    {
+     "item": "w2-s89__star",
+     "event": "w2-s89",
+     "kurum": "Star",
+     "baslik": "Kaşif Kozinoğlu soruşturması: 10 şüpheli adliyede"
+    },
+    {
+     "item": "w5-s18__sabah",
+     "event": "w5-s18",
+     "kurum": "Sabah",
+     "baslik": "SON DAKİKA | Fon soruşturmasında yeni gelişme! Eski SPK Başkanı İbrahim Ömer Gönül ifade verecek"
+    },
+    {
+     "item": "w2-s29__ntv",
+     "event": "w2-s29",
+     "kurum": "NTV",
+     "baslik": "Vanlı Kara Haydar'ın eşi Çağla Öz tutuklandı"
+    },
+    {
+     "item": "w5-s18__mynet",
+     "event": "w5-s18",
+     "kurum": "Mynet",
+     "baslik": "SON DAKİKA | Eski SPK Başkanı İbrahim Ömer Gönül ifade verecek - Finans haberlerinin doğru adresi - Mynet Finans Haber"
+    },
+    {
+     "item": "w5-s35__diken",
+     "event": "w5-s35",
+     "kurum": "Diken",
+     "baslik": "Başsavcılık: Fatma Betül Sayan Kaya ve eşinin mal varlığını dondurun"
+    },
+    {
+     "item": "w4-s60__milligazete",
+     "event": "w4-s60",
+     "kurum": "Milli Gazete",
+     "baslik": "Fatma Betül Sayan Kaya kimdir, nereli? Fatma Betül Sayan Kaya hangi partilerde çalıştı? Neden istifa etti?"
+    },
+    {
+     "item": "w4-s104__trthaber",
+     "event": "w4-s104",
+     "kurum": "TRT Haber",
+     "baslik": "Kırmızı bültenle ve ulusal seviyede aranan 76 suçlu Türkiye’ye getirildi"
+    },
+    {
+     "item": "w6-s3__diken",
+     "event": "w6-s3",
+     "kurum": "Diken",
+     "baslik": "İsmail Saymaz ve Murat Ağırel hakkında suç duyurusu"
+    },
+    {
+     "item": "w2-s27__sozcu",
+     "event": "w2-s27",
+     "kurum": "Sözcü",
+     "baslik": "SON DAKİKA: Ayşe Tokyaz cinayeti davasında müebbet hapis kararı"
+    },
+    {
+     "item": "w4-s104__cumhuriyet",
+     "event": "w4-s104",
+     "kurum": "Cumhuriyet",
+     "baslik": "İçişleri açıkladı: 29'u kırmızı bültenli 76 suçlu Türkiye'ye iade edildi"
+    },
+    {
+     "item": "w6-s331__sozcu",
+     "event": "w6-s331",
+     "kurum": "Sözcü",
+     "baslik": "Trump'tan bir garip Nobel Barış Ödülü açıklaması"
+    },
+    {
+     "item": "w4-s104__karar",
+     "event": "w4-s104",
+     "kurum": "Karar",
+     "baslik": "Yurt dışına kaçmışlardı: 76 suçlu Türkiye'ye getirildi"
+    },
+    {
+     "item": "w1-s141__ahaber",
+     "event": "w1-s141",
+     "kurum": "A Haber",
+     "baslik": "Odaya göre öğrenci dostu fiyatlar! KYK yurt ücretleri belli oldu"
+    },
+    {
+     "item": "w6-s2__sozcu",
+     "event": "w6-s2",
+     "kurum": "Sözcü",
+     "baslik": "Son dakika...Yahşihan Belediye Başkan vekili Aydın Demirdirek görevden alındı"
+    },
+    {
+     "item": "w2-s27__ahaber",
+     "event": "w2-s27",
+     "kurum": "A Haber",
+     "baslik": "Cesedi bavulda bulunan Ayşe Tokyaz cinayetinde karar: Eski polis Cemil Koç ağırlaştırılmış müebbet ve 10..."
+    },
+    {
+     "item": "w2-s29__diken",
+     "event": "w2-s29",
+     "kurum": "Diken",
+     "baslik": "Düğünüyle gündem olmuştu: Vanlı Kara Haydar'ın eşi Çağla Öz gözaltında"
+    },
+    {
+     "item": "w2-s27__haberturk",
+     "event": "w2-s27",
+     "kurum": "Habertürk",
+     "baslik": "Ayşe Tokyaz davasında karar - Habertürk Son Dakika Haber"
+    },
+    {
+     "item": "w5-s22__star",
+     "event": "w5-s22",
+     "kurum": "Star",
+     "baslik": "MHK Başkanı Gündoğdu adliyeye sevk edildi"
+    },
+    {
+     "item": "w4-s32__sozcu",
+     "event": "w4-s32",
+     "kurum": "Sözcü",
+     "baslik": "Mansur Yavaş CHP'den istifa etti"
+    },
+    {
+     "item": "w4-s15__sozcu",
+     "event": "w4-s15",
+     "kurum": "Sözcü",
+     "baslik": "Katılımevim ve Birevim satılıyor"
+    },
+    {
+     "item": "w5-s22__mynet",
+     "event": "w5-s22",
+     "kurum": "Mynet",
+     "baslik": "SON DAKİKA | MHK Başkanı Ferhat Gündoğdu ve 6 isim adliyeye sevk edildi - Futbol"
+    },
+    {
+     "item": "w6-s325__aydinlik",
+     "event": "w6-s325",
+     "kurum": "Aydınlık",
+     "baslik": "Maltepe'de çöken binada kurtarılanlar konuştu"
+    },
+    {
+     "item": "w5-s22__sabah",
+     "event": "w5-s22",
+     "kurum": "Sabah",
+     "baslik": "SON DAKİKA… Hakem soruşturmasında yeni gelişme! Merkez Hakem Kurulu MHK Başkanı Ferhat Gündoğdu tutuklandı"
+    },
+    {
+     "item": "w2-s27__aydinlik",
+     "event": "w2-s27",
+     "kurum": "Aydınlık",
+     "baslik": "Ayşe Tokyaz davasında karar açıklandı"
+    },
+    {
+     "item": "w1-s25__sozcu",
+     "event": "w1-s25",
+     "kurum": "Sözcü",
+     "baslik": "Oya Lale Arslan kimdir, kaç yaşında ve nereli, neden gözaltına alındı?"
+    },
+    {
+     "item": "w1-s141__aydinlik",
+     "event": "w1-s141",
+     "kurum": "Aydınlık",
+     "baslik": "KYK yurt ücretlerine zam geldi: İşte yeni fiyatlar"
+    },
+    {
+     "item": "w1-s25__aydinlik",
+     "event": "w1-s25",
+     "kurum": "Aydınlık",
+     "baslik": "Gazeteci Oya Lale Özan Arslan gözaltına alındı"
+    },
+    {
+     "item": "w6-s3__milligazete",
+     "event": "w6-s3",
+     "kurum": "Milli Gazete",
+     "baslik": "Ticaret Bakanı Ömer Bolat’tan Ağırel ve Saymaz hakkında suç duyurusu"
+    },
+    {
+     "item": "w6-s3__aydinlik",
+     "event": "w6-s3",
+     "kurum": "Aydınlık",
+     "baslik": "Fon soruşturmasında yeni karar! Murat Ağırel ve İsmail Saymaz'a ev hapsi"
+    },
+    {
+     "item": "w1-s141__karar",
+     "event": "w1-s141",
+     "kurum": "Karar",
+     "baslik": "Üniversite öğrencileri dikkat: KYK yurt ücretlerine yüzde 23 zam"
+    },
+    {
+     "item": "w4-s60__ahaber",
+     "event": "w4-s60",
+     "kurum": "A Haber",
+     "baslik": "AK Parti Genel Başkan Yardımcısı Fatma Betül Sayan Kaya görevinden istifa etti"
+    },
+    {
+     "item": "w4-s32__sabah",
+     "event": "w4-s32",
+     "kurum": "Sabah",
+     "baslik": "SON DAKİKA! Ankara Büyükşehir Belediye Başkanı Mansur Yavaş CHP'den istifa etti: Yoluma bağımsız devam edeceğim"
+    },
+    {
+     "item": "w5-s22__karar",
+     "event": "w5-s22",
+     "kurum": "Karar",
+     "baslik": "MHK Başkanı Ferhat Gündoğdu ve 6 kişi adliyeye sevk edildi"
+    },
+    {
+     "item": "w5-s18__milligazete",
+     "event": "w5-s18",
+     "kurum": "Milli Gazete",
+     "baslik": "KGK Başkanı İbrahim Ömer Gönül kimdir, babası kim, kaç yaşında, daha önce hangi görevlerde bulundu?"
+    },
+    {
+     "item": "w5-s18__haberturk",
+     "event": "w5-s18",
+     "kurum": "Habertürk",
+     "baslik": "SPK'nin eski başkanı İbrahim Ömer Gönül ifade verdi - Haberler Habertürk"
+    },
+    {
+     "item": "w6-s2__ahaber",
+     "event": "w6-s2",
+     "kurum": "A Haber",
+     "baslik": "İçişleri duyurdu: Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
+    },
+    {
+     "item": "w4-s36__star",
+     "event": "w4-s36",
+     "kurum": "Star",
+     "baslik": "Mal varlıklarına el konuldu! Mustafa Sandal'ın eşi ve kayınpederi hakkında yakalama kararı"
+    },
+    {
+     "item": "w2-s27__takvim",
+     "event": "w2-s27",
+     "kurum": "Takvim",
+     "baslik": "Ayşe Tokyaz davasında karar çıktı: Cemil Koç'a ağırlaştırılmış müebbet hapis cezası verildi"
+    },
+    {
+     "item": "w4-s15__aydinlik",
+     "event": "w4-s15",
+     "kurum": "Aydınlık",
+     "baslik": "Emlak Katılım'dan Katılımevim ve Birevim için resmi başvuru"
+    },
+    {
+     "item": "w5-s22__aydinlik",
+     "event": "w5-s22",
+     "kurum": "Aydınlık",
+     "baslik": "Tutuklanan MHK Başkanı Ferhat Gündoğdu istifa etti"
+    },
+    {
+     "item": "w4-s32__mynet",
+     "event": "w4-s32",
+     "kurum": "Mynet",
+     "baslik": "Son dakika! ABB Başkanı Mansur Yavaş CHP'den istifa etti: \"Bağımsız olarak devam edeceğim\" - Güncel Haberler"
+    },
+    {
+     "item": "w5-s22__trthaber",
+     "event": "w5-s22",
+     "kurum": "TRT Haber",
+     "baslik": "MHK Başkanı Ferhat Gündoğdu görevinden istifa etti"
+    },
+    {
+     "item": "w4-s36__mynet",
+     "event": "w4-s36",
+     "kurum": "Mynet",
+     "baslik": "Mustafa Sandal’ın eşi Melis Sütşurup Sandal'dan 11 milyar 515 milyon TL'lik fon çıkışı! Soluğu Dubai'de almış - Finans haberlerinin doğru adresi - Mynet Finans Haber"
+    },
+    {
+     "item": "w4-s60__mynet",
+     "event": "w4-s60",
+     "kurum": "Mynet",
+     "baslik": "AK Parti’den fon soruşturmasıyla ilgili yeni açıklama: Fatma Betül Sayan Kaya'nın istifası kabul edildi - Güncel Haberler"
+    },
+    {
+     "item": "w4-s32__takvim",
+     "event": "w4-s32",
+     "kurum": "Takvim",
+     "baslik": "Beklenen oldu! Mansur Yavaş CHP'den istifa etti"
+    },
+    {
+     "item": "w2-s89__sabah",
+     "event": "w2-s89",
+     "kurum": "Sabah",
+     "baslik": "Kaşif Kozinoğlu soruşturması: 1 şüpheli tutuklandı"
+    },
+    {
+     "item": "w1-s141__sozcu",
+     "event": "w1-s141",
+     "kurum": "Sözcü",
+     "baslik": "KYK yurt ücretlerine zam geldi"
+    },
+    {
+     "item": "w1-s8__sozcu",
+     "event": "w1-s8",
+     "kurum": "Sözcü",
+     "baslik": "Ünlü oyuncu Serhat Mustafa Kılıç evinde ölü bulundu"
+    },
+    {
+     "item": "w6-s2__cumhuriyet",
+     "event": "w6-s2",
+     "kurum": "Cumhuriyet",
+     "baslik": "Yahşihan Belediyesi Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
+    },
+    {
+     "item": "w5-s35__sozcu",
+     "event": "w5-s35",
+     "kurum": "Sözcü",
+     "baslik": "Fatma Betül Sayan Kaya ve eşinin mal varlıklarının dondurulması talebi"
+    },
+    {
+     "item": "w6-s325__karar",
+     "event": "w6-s325",
+     "kurum": "Karar",
+     "baslik": "Maltepe'de çöken binadan örnekler alındı"
+    },
+    {
+     "item": "w4-s104__milligazete",
+     "event": "w4-s104",
+     "kurum": "Milli Gazete",
+     "baslik": "Kırmızı bültenle aranıyorlardı: 76 suçlu Türkiye'ye getirildi"
+    },
+    {
+     "item": "w2-s27__diken",
+     "event": "w2-s27",
+     "kurum": "Diken",
+     "baslik": "Ayşe Tokyaz cinayeti: Cemil Koç'a ağırlaştırılmış müebbet hapis cezası"
+    },
+    {
+     "item": "w4-s15__milligazete",
+     "event": "w4-s15",
+     "kurum": "Milli Gazete",
+     "baslik": "Katılımevim ve Birevim kime satılıyor, Emlak Katılım ne kadar ödeyecek, pay devri ne zaman olacak?"
+    },
+    {
+     "item": "w1-s8__ntv",
+     "event": "w1-s8",
+     "kurum": "NTV",
+     "baslik": "Oyuncu Serhat Mustafa Kılıç evinde ölü bulundu"
+    },
+    {
+     "item": "w5-s18__star",
+     "event": "w5-s18",
+     "kurum": "Star",
+     "baslik": "Eski SPK Başkanı İbrahim Ömer Gönül şüpheli sıfatıyla ifade verecek"
+    },
+    {
+     "item": "w1-s25__cumhuriyet",
+     "event": "w1-s25",
+     "kurum": "Cumhuriyet",
+     "baslik": "Oya Lale Özan Arslan kimdir? Lale Özan Arslan kaç yaşında, nereli? Oya Lale Özan Arslan neden gözaltına alındı?"
+    },
+    {
+     "item": "w2-s29__cumhuriyet",
+     "event": "w2-s29",
+     "kurum": "Cumhuriyet",
+     "baslik": "Düğündeki takılar gündem olmuştu: 'Vanlı Kara Haydar'ın eşi Çağla Öz gözaltına alındı"
+    },
+    {
+     "item": "w5-s35__cumhuriyet",
+     "event": "w5-s35",
+     "kurum": "Cumhuriyet",
+     "baslik": "Eski bakan Fatma Betül Sayan Kaya ve eşi İlyas Kaya’nın mal varlıkları için dondurma talebi"
+    },
+    {
+     "item": "w6-s2__turkiyegz",
+     "event": "w6-s2",
+     "kurum": "Türkiye Gazetesi",
+     "baslik": "Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
+    },
+    {
+     "item": "w4-s104__mynet",
+     "event": "w4-s104",
+     "kurum": "Mynet",
+     "baslik": "Bakanlık duyurdu! Kırmızı bültenle ve ulusal seviyede aranan 76 suçlu Türkiye'ye getirildi - Güncel Haberler"
+    },
+    {
+     "item": "w4-s104__aydinlik",
+     "event": "w4-s104",
+     "kurum": "Aydınlık",
+     "baslik": "İçişleri Bakanlığı'ndan dev iade operasyonu: 8 ülkeden 76 firari suçlu Türkiye'ye getirildi"
+    },
+    {
+     "item": "w6-s2__karar",
+     "event": "w6-s2",
+     "kurum": "Karar",
+     "baslik": "Yahşihan Belediye Başkanvekili Aydın Demirdirek görevden uzaklaştırıldı"
+    },
+    {
+     "item": "w1-s25__mynet",
+     "event": "w1-s25",
+     "kurum": "Mynet",
+     "baslik": "Gazeteci Oya Lale Arslan tutuklandı - Güncel Haberler"
+    },
+    {
+     "item": "w1-s141__ntv",
+     "event": "w1-s141",
+     "kurum": "NTV",
+     "baslik": "KYK yurt ücretleri 2026-2027: KYK yurt ücretleri ne kadar oldu, zam geldi mi?"
+    },
+    {
+     "item": "w6-s2__birgun",
+     "event": "w6-s2",
+     "kurum": "BirGün",
+     "baslik": "Yahşihan Belediyesi'ne yönelik yolsuzluk operasyonu: Başkanvekili Aydın Demirdirek görevden uzaklaştırıldı"
+    },
+    {
+     "item": "w6-s3__mynet",
+     "event": "w6-s3",
+     "kurum": "Mynet",
+     "baslik": "Son dakika | İsmail Saymaz ve Murat Ağırel hakkında karar değişti: Ev hapsi cezası! - Güncel Haberler"
+    },
+    {
+     "item": "w5-s294__sozcu",
+     "event": "w5-s294",
+     "kurum": "Sözcü",
+     "baslik": "'Cumhurbaşkanına hakaret'ten gözaltına alınan Dilan Polat adli kontrol şartıyla serbest bırakıldı"
+    },
+    {
+     "item": "w1-s141__cumhuriyet",
+     "event": "w1-s141",
+     "kurum": "Cumhuriyet",
+     "baslik": "KYK yurt ücretlerine zam geldi: Öğrencilerin aylık ödemesi belli oldu"
+    },
+    {
+     "item": "w4-s36__haberturk",
+     "event": "w4-s36",
+     "kurum": "Habertürk",
+     "baslik": "Mustafa Sandal'ın eşi Melis Sandal'ın malvarlıklarına tedbir kararı - Haberler Habertürk"
+    },
+    {
+     "item": "w2-s89__diken",
+     "event": "w2-s89",
+     "kurum": "Diken",
+     "baslik": "Kaşif Kozinoğlu soruşturması: Bir kişi tutuklandı, yedi kişi adli kontrolle serbest"
+    },
+    {
+     "item": "w2-s29__karar",
+     "event": "w2-s29",
+     "kurum": "Karar",
+     "baslik": "“Vanlı Kara Haydar” soruşturmasında yeni gelişme: Eşi Van’a sevk edildi"
+    },
+    {
+     "item": "w4-s32__diken",
+     "event": "w4-s32",
+     "kurum": "Diken",
+     "baslik": "Mansur Yavaş CHP'den istifa etti"
+    },
+    {
+     "item": "w5-s294__aydinlik",
+     "event": "w5-s294",
+     "kurum": "Aydınlık",
+     "baslik": "Sosyal medya fenomeni Dilan Polat gözaltına alındı"
+    },
+    {
+     "item": "w4-s15__sabah",
+     "event": "w4-s15",
+     "kurum": "Sabah",
+     "baslik": "SON DAKİKA! Emlak Katılım, Katılımevim ve Birevim için yeni aşamaya geçti: Kısa sürede tamamlanacak"
+    },
+    {
+     "item": "w4-s60__aydinlik",
+     "event": "w4-s60",
+     "kurum": "Aydınlık",
+     "baslik": "Fatma Betül Sayan Kaya, AK Parti'deki tüm görevlerinden istifa etti"
+    },
+    {
+     "item": "w5-s18__yenisafak",
+     "event": "w5-s18",
+     "kurum": "Yeni Şafak",
+     "baslik": "İbrahim Ömer Gönül kimdir? İbrahim Ömer Gönül ne zaman SPK başkanı oldu hangi dönemde görev yaptı?"
+    },
+    {
+     "item": "w4-s32__ntv",
+     "event": "w4-s32",
+     "kurum": "NTV",
+     "baslik": "Mansur Yavaş CHP'den istifa etti, Kemal Kılıçdaroğlu ne dedi?"
+    },
+    {
+     "item": "w4-s15__karar",
+     "event": "w4-s15",
+     "kurum": "Karar",
+     "baslik": "Emlak Katılım'dan Katılımevim ve Birevim açıklaması: Devir süreci en kısa sürede tamamlanacak"
+    },
+    {
+     "item": "w2-s89__aydinlik",
+     "event": "w2-s89",
+     "kurum": "Aydınlık",
+     "baslik": "Kaşif Kozinoğlu soruşturmasında 2. dalga: 9 şüpheli gözaltında"
+    },
+    {
+     "item": "w2-s29__sabah",
+     "event": "w2-s29",
+     "kurum": "Sabah",
+     "baslik": "SON DAKİKA | Vanlı Kara Haydar soruşturmasında yeni gelişme: Eşi Çağla Öz İstanbul’da yakalandı"
+    },
+    {
+     "item": "w4-s59__ahaber",
+     "event": "w4-s59",
+     "kurum": "A Haber",
+     "baslik": "“Bakan istifa edecek” paylaşımına tutuklama! Gazeteci Ali Tarakcı cezaevine gönderildi"
+    },
+    {
+     "item": "w2-s89__ntv",
+     "event": "w2-s89",
+     "kurum": "NTV",
+     "baslik": "\"Cinayet ihtimali de masada\" | Kaşif Kozinoğlu soruşturmasında 1 şüpheli tutuklandı"
+    },
+    {
+     "item": "w2-s29__ahaber",
+     "event": "w2-s29",
+     "kurum": "A Haber",
+     "baslik": "Vanlı Kara Haydar'ın yeni görüntüleri ortaya çıktı! Eşi Çağla Öz tutuklandı"
+    },
+    {
+     "item": "w5-s294__takvim",
+     "event": "w5-s294",
+     "kurum": "Takvim",
+     "baslik": "Dilan Polat gözaltına alındı! Adli kontrolle serbest bırakıldı"
+    },
+    {
+     "item": "w4-s32__trthaber",
+     "event": "w4-s32",
+     "kurum": "TRT Haber",
+     "baslik": "ABB Başkanı Mansur Yavaş CHP'den istifa etti"
+    },
+    {
+     "item": "w6-s331__sabah",
+     "event": "w6-s331",
+     "kurum": "Sabah",
+     "baslik": "SON DAKİKA | 2026 Nobel Barış Ödülü: Sahibi belli oldu!"
+    },
+    {
+     "item": "w2-s29__aydinlik",
+     "event": "w2-s29",
+     "kurum": "Aydınlık",
+     "baslik": "'Vanlı Kara Haydar'ın eşi Çağla Öz Tançalan tutuklandı"
+    },
+    {
+     "item": "w6-s2__sabah",
+     "event": "w6-s2",
+     "kurum": "Sabah",
+     "baslik": "SON DAKiKA I İçişleri Bakanlığı duyurdu: Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı!"
+    },
+    {
      "item": "w6-s331__trthaber",
      "event": "w6-s331",
      "kurum": "TRT Haber",
      "baslik": "Nobel Barış Ödülü sahibini buldu"
     },
     {
-     "item": "w6-s2__star",
-     "event": "w6-s2",
+     "item": "w2-s29__haberturk",
+     "event": "w2-s29",
+     "kurum": "Habertürk",
+     "baslik": "Son dakika: Gözaltına alınan Vanlı Kara Haydar'ın eşi Çağla Öz, Van'a getirildi - Habertürk Son Dakika Haber"
+    },
+    {
+     "item": "w4-s36__sabah",
+     "event": "w4-s36",
+     "kurum": "Sabah",
+     "baslik": "Mustafa Sandal’ın eşi Melis Sandal’ın hesabından 11 milyar TL’lik çıkış..."
+    },
+    {
+     "item": "w5-s22__cumhuriyet",
+     "event": "w5-s22",
+     "kurum": "Cumhuriyet",
+     "baslik": "'Hakemler dosyası' soruşturması... MHK Başkanı Ferhat Gündoğdu dahil 7 kişi adliyeye sevk edildi"
+    },
+    {
+     "item": "w5-s35__ntv",
+     "event": "w5-s35",
+     "kurum": "NTV",
+     "baslik": "Fon soruşturması: Fatma Betül Sayan Kaya ve eşinin mal varlıklarının dondurulması istendi"
+    },
+    {
+     "item": "w1-s25__diken",
+     "event": "w1-s25",
+     "kurum": "Diken",
+     "baslik": "Gazeteci Oya Lale Arslan tutuklandı"
+    },
+    {
+     "item": "w4-s59__star",
+     "event": "w4-s59",
      "kurum": "Star",
-     "baslik": "Bakanlık duyurdu: Yahşihan Belediye Başkan Vekili Aydın Demirdirek görevden uzaklaştırıldı"
+     "baslik": "'İstifa' manipülasyonu! Ali Tarakcı tutuklandı"
+    },
+    {
+     "item": "w2-s27__mynet",
+     "event": "w2-s27",
+     "kurum": "Mynet",
+     "baslik": "Üniversite öğrencisi Ayşe Tokyaz'ı katleden eski polis Cemil Koç'un cezası belli oldu: Ağırlaştırılmış müebbet hapis! - Güncel Haberler"
+    },
+    {
+     "item": "w1-s25__star",
+     "event": "w1-s25",
+     "kurum": "Star",
+     "baslik": "Terör örgütü propagandası yapmakla suçlanıyor! Oya Lale Arslan tutuklandı"
+    },
+    {
+     "item": "w5-s35__takvim",
+     "event": "w5-s35",
+     "kurum": "Takvim",
+     "baslik": "Fatma Betül Sayan Kaya ve eşi İlyas Kaya için müzekkere! Mal varlıklarının dondurulması talep edildi"
+    },
+    {
+     "item": "w1-s8__sabah",
+     "event": "w1-s8",
+     "kurum": "Sabah",
+     "baslik": "SON DAKİKA | Ünlü oyuncu Serhat Mustafa Kılıç evinde ölü bulundu: Kol ve bacaklarında morluklar..."
+    },
+    {
+     "item": "w2-s27__karar",
+     "event": "w2-s27",
+     "kurum": "Karar",
+     "baslik": "Ayşe Tokyaz cinayetinde karar: Eski polis Cemil Koç'a ağırlaştırılmış müebbet hapis cezası"
+    },
+    {
+     "item": "w5-s18__karar",
+     "event": "w5-s18",
+     "kurum": "Karar",
+     "baslik": "Soruşturma eski SPK Başkanı’na uzandı: İbrahim Ömer Gönül 'şüpheli' sıfatıyla savcılıkta"
+    },
+    {
+     "item": "w1-s25__sabah",
+     "event": "w1-s25",
+     "kurum": "Sabah",
+     "baslik": "SON DAKİKA | Oya Lale Arslan tutuklandı"
+    },
+    {
+     "item": "w4-s59__aydinlik",
+     "event": "w4-s59",
+     "kurum": "Aydınlık",
+     "baslik": "Gazeteci Ali Tarakcı tutuklandı"
+    },
+    {
+     "item": "w6-s325__takvim",
+     "event": "w6-s325",
+     "kurum": "Takvim",
+     "baslik": "Maltepe’de çöken binada kentsel dönüşüm detayı"
+    },
+    {
+     "item": "w2-s27__ntv",
+     "event": "w2-s27",
+     "kurum": "NTV",
+     "baslik": "Ayşe Tokyaz cinayeti davasında karar. Eski polis Cemil Koç'a ağırlaştırılmış müebbet cezası verildi"
+    },
+    {
+     "item": "w6-s331__takvim",
+     "event": "w6-s331",
+     "kurum": "Takvim",
+     "baslik": "Nobel Barış Ödülü'ne layık görülen isim belli oldu"
+    },
+    {
+     "item": "w5-s294__cumhuriyet",
+     "event": "w5-s294",
+     "kurum": "Cumhuriyet",
+     "baslik": "Dilan Polat'a 'Cumhurbaşkanına hakaret'ten gözaltı: Adli kontrol kararıyla serbest bırakıldı"
+    },
+    {
+     "item": "w4-s36__yenisafak",
+     "event": "w4-s36",
+     "kurum": "Yeni Şafak",
+     "baslik": "Mustafa Sandal’ın eşi Melis Sandal hakkında yurt dışı çıkış yasağı kararı: 11 milyar TL'lik para çekmiş"
+    },
+    {
+     "item": "w4-s32__ahaber",
+     "event": "w4-s32",
+     "kurum": "A Haber",
+     "baslik": "Ankara Büyükşehir Belediye Başkanı Mansur Yavaş CHP'den neden istifa etti? Krizin perde arkası A..."
+    },
+    {
+     "item": "w4-s59__diken",
+     "event": "w4-s59",
+     "kurum": "Diken",
+     "baslik": "Gazeteci Ali Tarakcı paylaşımı nedeniyle gözaltında"
+    },
+    {
+     "item": "w2-s27__sabah",
+     "event": "w2-s27",
+     "kurum": "Sabah",
+     "baslik": "SON DAKİKA! Ayşe Tokyaz cinayeti davasında karar günü! İşte Katil Cemil Koç için istenen ceza"
+    },
+    {
+     "item": "w1-s8__cumhuriyet",
+     "event": "w1-s8",
+     "kurum": "Cumhuriyet",
+     "baslik": "Evinde ölü bulunmuştu... Oyuncu Serhat Kılıç'ın son görüntüsü ortaya çıktı"
+    },
+    {
+     "item": "w6-s325__milligazete",
+     "event": "w6-s325",
+     "kurum": "Milli Gazete",
+     "baslik": "Maltepe'de çöken binada acı bilanço: Can kaybı 3'e çıktı"
+    },
+    {
+     "item": "w5-s22__takvim",
+     "event": "w5-s22",
+     "kurum": "Takvim",
+     "baslik": "Türk futbolunda deprem! MHK Başkanı Ferhat Gündoğdu tutuklandı"
+    },
+    {
+     "item": "w1-s8__trthaber",
+     "event": "w1-s8",
+     "kurum": "TRT Haber",
+     "baslik": "Oyuncu Serhat Mustafa Kılıç hayatını kaybetti"
+    },
+    {
+     "item": "w6-s331__star",
+     "event": "w6-s331",
+     "kurum": "Star",
+     "baslik": "2026 Nobel Barış Ödülü sahibini buldu"
+    },
+    {
+     "item": "w6-s2__ntv",
+     "event": "w6-s2",
+     "kurum": "NTV",
+     "baslik": "Yahşihan Belediyesi soruşturması. Başkanvekili Aydın Demirdirek görevden uzaklaştırıldı"
+    },
+    {
+     "item": "w6-s3__birgun",
+     "event": "w6-s3",
+     "kurum": "BirGün",
+     "baslik": "Savcı karara itiraz etti: Gazeteci İsmail Saymaz ve Murat Ağırel'e ev hapsi!"
+    },
+    {
+     "item": "w5-s35__karar",
+     "event": "w5-s35",
+     "kurum": "Karar",
+     "baslik": "2,2 milyarlık iade yetmedi: Fatma Betül Sayan Kaya'nın tüm mal varlıklarına dondurma talebi"
     }
    ]
   }
