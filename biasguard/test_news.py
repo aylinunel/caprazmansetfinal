@@ -139,6 +139,35 @@ class TaskCatalogTests(unittest.TestCase):
             {"event": "e0", "title": "t", "outlets": 2, "text": TEXT, "context": CONTEXT}) + "\n")
         return run
 
+    def _selected_run(self, d):
+        # _run (inputs.jsonl with event e0) plus a selection, so the review stage has cards to send
+        run = self._run(d)
+        (run / "selections").mkdir()
+        (run / "selections" / "e0.json").write_text(json.dumps(
+            {"candidate_ids": ["framing-effect"], "selection_uncertainty": [], "selection_note": ""}))
+        return run
+
+    def test_review_tasks_carry_examples_from_other_events_only(self):
+        from biasguard.news import write_tasks
+        ex = {"framing-effect": [{"event": "e0", "text": "x", "present": "yes"},
+                                 {"event": "e9", "text": "y", "present": "no"},
+                                 {"event": "e8", "text": "z", "present": "yes"},
+                                 {"event": "e7", "text": "w", "present": "no"}]}
+        with tempfile.TemporaryDirectory() as d:
+            run = self._selected_run(d)
+            path = write_tasks(run, "review", 10, examples=ex)[0]
+            task = json.loads(path.read_text())
+            card = next(c for c in task["cards"] if c["id"] == "framing-effect")
+        self.assertEqual([e["event"] for e in card["examples"]], ["e9", "e8"])  # never e0; at most 2
+        self.assertIn("Örnekler başka olaylardan", task["system_prompt"])
+
+    def test_no_examples_file_leaves_tasks_unchanged(self):
+        from biasguard.news import write_tasks
+        with tempfile.TemporaryDirectory() as d:
+            task = json.loads(write_tasks(self._selected_run(d), "review", 10)[0].read_text())
+        self.assertFalse(any("examples" in c for c in task["cards"]))
+        self.assertNotIn("Örnekler başka olaylardan", task["system_prompt"])
+
     def test_small_catalogue_sends_every_card_like_the_engine(self):
         # the engine reviews every card of a catalogue at or under _DIRECT_REVIEW_LIMIT; the tasks must ask for all of them
         with tempfile.TemporaryDirectory() as d:

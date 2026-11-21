@@ -193,6 +193,46 @@ class CliTest(unittest.TestCase):
             self.assertIn("# Answer key: agreement", out.read_text(encoding="utf-8"))
 
 
+class ExamplesTest(unittest.TestCase):
+    def _setup(self, d):
+        run = d / "run"
+        run.mkdir()
+        (run / "inputs.jsonl").write_text("".join(json.dumps({"event": e, "title": "T", "text": f"text {e}"}) + "\n"
+                                                  for e in ("e1", "e2", "e3")))
+        (d / "keys").mkdir()
+        key = {"i1": {"event": "e1", "card": "c1", "ai_shown": True}, "i2": {"event": "e2", "card": "c1", "ai_shown": True},
+               "i3": {"event": "e3", "card": "c1", "ai_shown": True}, "i4": {"event": "e3", "card": "c2", "ai_shown": False},
+               "_unflagged": {}}
+        (d / "keys" / "behaviour-A1.key.json").write_text(json.dumps(key))
+        return run
+
+    def test_examples_keep_one_yes_and_one_no_per_card_when_present_is_usable(self):
+        from validation.answerkey import __main__ as cli
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            run = self._setup(d)
+            gold_ = ({"i1": "yes", "i2": "yes", "i3": "no", "i4": "no"}, [])
+            with mock.patch.object(cli, "KEYS", d / "keys"), mock.patch.object(cli, "read", return_value=[]), \
+                    mock.patch.object(cli, "agreement", return_value={"usable": True}), \
+                    mock.patch.object(cli, "gold", return_value=gold_), mock.patch("builtins.print"):
+                cli.main(["examples", "--run", str(run), "--out", str(d / "ex.json")])
+            out = json.loads((d / "ex.json").read_text(encoding="utf-8"))
+        self.assertEqual(out["c1"], [{"event": "e1", "text": "text e1", "present": "yes"},
+                                     {"event": "e3", "text": "text e3", "present": "no"}])
+        self.assertEqual(out["c2"], [{"event": "e3", "text": "text e3", "present": "no"}])
+
+    def test_examples_file_is_empty_while_present_is_not_usable(self):
+        from validation.answerkey import __main__ as cli
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            run = self._setup(d)
+            with mock.patch.object(cli, "KEYS", d / "keys"), mock.patch.object(cli, "read", return_value=[]), \
+                    mock.patch("builtins.print") as pr:
+                cli.main(["examples", "--run", str(run), "--out", str(d / "ex.json")])
+            self.assertEqual(json.loads((d / "ex.json").read_text(encoding="utf-8")), {})
+            self.assertIn("present not usable yet", " ".join(str(c.args[0]) for c in pr.call_args_list))
+
+
 class NarrativeEvalTest(unittest.TestCase):
     CODEBOOK = {"approved": False, "categories": ["Yargı ve soruşturma", "Diğer"],
                 "frames": {"Adli süreç": "Yargı ve soruşturma"}}

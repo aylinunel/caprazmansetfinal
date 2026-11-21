@@ -7,7 +7,7 @@ other reviewer that follows ``prompts()``); the engine's own quote, condition an
 gates decide every verdict.
 
     python -m biasguard.news inputs  --build dist/capraz-8/build --run runs/2026-11-04 --top 150
-    python -m biasguard.news tasks   --run runs/2026-11-04 --stage select|review --batch 10
+    python -m biasguard.news tasks   --run runs/2026-11-04 --stage select|review --batch 10 [--examples examples.json]
     python -m biasguard.news apply   --run runs/2026-11-04 --out dist/capraz-8/build/biasguard.json
 
 A missing or invalid reviewer file never counts as a negative: the event is
@@ -135,17 +135,22 @@ def selected_cards(bg: BiasGuard, run: Path, item: dict) -> list[str] | None:
     return ids or [c["id"] for c in bg.cards[:MAX_CANDIDATES]]
 
 
-def prompts(stage: str, role: str | None = None) -> str:
+EXAMPLES_NOTE = "Örnekler başka olaylardan, insanların kodladığı yanıtlardır; bu olayın kanıtı değildir."
+
+
+def prompts(stage: str, role: str | None = None, examples: bool = False) -> str:
     if stage == "select":
         return _selector_system_prompt()
     return _system_prompt(role) + (
         "\n\nNEWS INPUT\ntext has one line per outlet: [outlet · HH:MM] headline — lede. context has the event, "
         "outlet placements and active outlets that did not cover it. A behavioral quote is a comparative observation "
         "of what an outlet actually published (e.g. its headline set against the others); quote it exactly from text. "
-        "Write mechanism, alternative_explanation and missing_context in Turkish.")
+        "Write mechanism, alternative_explanation and missing_context in Turkish."
+        + (f"\n{EXAMPLES_NOTE}" if examples else ""))
 
 
-def write_tasks(run: Path, stage: str, batch: int, bg: BiasGuard | None = None) -> list[Path]:
+def write_tasks(run: Path, stage: str, batch: int, bg: BiasGuard | None = None,
+                examples: dict[str, list[dict]] | None = None) -> list[Path]:
     bg = bg or BiasGuard()  # a caller may supply another catalogue (the validation lab does)
     items = _inputs(run)
     tdir = run / "tasks" / stage
@@ -179,10 +184,17 @@ def write_tasks(run: Path, stage: str, batch: int, bg: BiasGuard | None = None) 
             continue
         used = sorted({cid for x in chunk for cid in x["card_ids"]})
         cards = [{k: v for k, v in card_by_id[c].items() if k not in display_only} for c in used]
+        if examples:  # human-coded answers from other events only, at most 2 per card
+            here = {x["event"] for x in chunk}
+            for c in cards:
+                own = [e for e in examples.get(c["id"], []) if e["event"] not in here][:2]
+                if own:
+                    c["examples"] = own
+        with_examples = any("examples" in c for c in cards)
         for role in ("advocate", "skeptic"):
             p = tdir / role / name
             p.parent.mkdir(parents=True, exist_ok=True)
-            dump(p, {"stage": stage, "role": role, "system_prompt": prompts("review", role),
+            dump(p, {"stage": stage, "role": role, "system_prompt": prompts("review", role, with_examples),
                      "output_schema_note": "per event: build_reviewer_schema(card_ids, role); see schema_example",
                      "schema_example": build_reviewer_schema(chunk[0]["card_ids"], role), "cards": cards, "events": chunk})
             paths.append(p)
@@ -388,6 +400,7 @@ def main() -> None:
     p.add_argument("--stage", choices=["select", "review"])
     p.add_argument("--batch", type=int, default=10)
     p.add_argument("--out", type=Path)
+    p.add_argument("--examples", type=Path, help="tasks: human examples file (python -m validation.answerkey examples)")
     p.add_argument("--card-status", type=Path, help="validation/reference/card_status.json")
     p.add_argument("--pack", default="", help="data-pack version; fixes the audit sample")
     p.add_argument("--catalog", choices=["behavioural", "media"], default="behavioural",
@@ -403,7 +416,8 @@ def main() -> None:
         if a.catalog == "media" and not load_media_cards():
             print("media catalogue is empty: no card has been approved and passed the lab yet")
             return
-        for path in write_tasks(a.run, a.stage, a.batch, bg=BiasGuard(cards=catalog_cards(a.catalog))):
+        ex = json.loads(a.examples.read_text(encoding="utf-8")) if a.examples else None
+        for path in write_tasks(a.run, a.stage, a.batch, bg=BiasGuard(cards=catalog_cards(a.catalog)), examples=ex):
             print(path)
     elif a.cmd == "pack":
         # Same keys build.py adds, without re-running the 20-minute pipeline.

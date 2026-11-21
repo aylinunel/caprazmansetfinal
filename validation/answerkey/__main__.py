@@ -77,6 +77,19 @@ def make_packet(a, path: Path = PACKETS) -> str:
     return f"{a.id}: {len(p['items'])} items, {len(p['events'])} events"
 
 
+def build_examples(agreed: dict, key: dict, inputs: dict) -> dict:
+    """{card: [{event, text, present}]}: the first agreed yes and the first agreed no per card, in item order."""
+    out: dict = {}
+    for item, meta in sorted(key.items()):
+        v, ev = agreed.get(item), inputs.get(meta.get("event")) if item != "_unflagged" else None
+        if v not in ("yes", "no") or ev is None:
+            continue
+        mine = out.setdefault(meta["card"], [])
+        if all(e["present"] != v for e in mine):
+            mine.append({"event": ev["event"], "text": ev["text"], "present": v})
+    return {c: sorted(e, key=lambda x: x["present"] != "yes") for c, e in out.items() if e}
+
+
 def main(argv=None) -> None:
     ap = argparse.ArgumentParser(prog="python -m validation.answerkey")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -100,6 +113,9 @@ def main(argv=None) -> None:
     be = sub.add_parser("behaviour-eval", help="blind precision and estimated recall of the behavioural review")
     be.add_argument("--key", type=Path, required=True)
     be.add_argument("--status", action="store_true", help="also write card_status.json from blind precision")
+    ex = sub.add_parser("examples", help="human-coded examples for the reviewers, from a run's blind packets")
+    ex.add_argument("--run", type=Path, required=True)
+    ex.add_argument("--out", type=Path, required=True)
     args = ap.parse_args(argv)
     if args.cmd == "agreement":
         text = agreement_report(args.core)
@@ -138,6 +154,18 @@ def main(argv=None) -> None:
         NARRATIVE_REPORT.parent.mkdir(parents=True, exist_ok=True)
         NARRATIVE_REPORT.write_text(text, encoding="utf-8")
         print(text)
+    if args.cmd == "examples":
+        codings, out = read(), {}
+        if agreement(codings, "present")["usable"]:
+            key = {}
+            for kp in sorted(KEYS.glob("behaviour-*.key.json")):
+                key |= json.loads(kp.read_text(encoding="utf-8"))
+            lines = (args.run / "inputs.jsonl").read_text(encoding="utf-8").splitlines()
+            out = build_examples(gold(codings, "present")[0], key, {d["event"]: d for d in map(json.loads, filter(str.strip, lines))})
+        else:
+            print("present not usable yet: writing an empty examples file")
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        args.out.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     if args.cmd == "behaviour-eval":
         agreed, disputed = gold(read(), "present")
         m = measure(agreed, json.loads(args.key.read_text(encoding="utf-8")))
