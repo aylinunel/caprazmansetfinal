@@ -36,6 +36,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: python -m pip install -r biasguard/requirements.txt
       - name: BiasGuard offline tests (no provider calls)
         run: python -m unittest biasguard.test_news -v
       - name: Review-status routing on the recorded run
@@ -75,7 +76,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install -r pipeline/requirements.txt -r validation/requirements.txt
+      - run: python -m pip install -r pipeline/requirements.txt -r validation/requirements.txt -r biasguard/requirements.txt
       - name: Validation lab and feedback tests (offline)
         run: python -m unittest discover -s validation/tests -t . -v
 

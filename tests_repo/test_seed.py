@@ -5,6 +5,13 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+# sha256 of the seed's decompressed a-*.bin JSON (seed files at 2927c16, whose gzip bytes match seed-manifest.json).
+# Split packs are compared by content: re-gzipped bytes differ between zlib builds (CI vs local).
+SEED_JSON = {
+    "public/data/a-2026-09.bin": "e96084678e7aee2ec3fe68b09aca02e01a4bddd987e5da88b4e33b880e51b532",
+    "public/data/a-2026-10.bin": "54a43e3049ebb9e9b298f9791a7b7920bce981128f1bdce6ceeea6c8fe2c5ea5",
+    "public/data/a-2026-11.bin": "e7e60ee5724c3006ab440651bf2f1dbbe61c82089152dee8e54afb111d6eb491",
+}
 
 
 class SeedTest(unittest.TestCase):
@@ -45,8 +52,7 @@ class SeedTest(unittest.TestCase):
                     joined[k] = v
                     if k == "t":
                         joined["h"], joined["u"] = urls["h"], urls["u"]
-                data = gzip.compress(json.dumps(joined, ensure_ascii=False, separators=(",", ":")).encode(),
-                                     compresslevel=9, mtime=0)
+                data, expected = json.dumps(joined, ensure_ascii=False, separators=(",", ":")).encode(), SEED_JSON[rel]
             self.assertEqual(hashlib.sha256(data).hexdigest(), expected, rel)
 
     def test_this_repos_design_documents_survive(self):
