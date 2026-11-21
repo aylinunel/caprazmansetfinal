@@ -1,10 +1,6 @@
 """Grouped cross-validation and fixed-prediction scoring."""
-from typing import Callable
-
 from sklearn.metrics import accuracy_score, f1_score
 from sklearn.model_selection import GroupKFold
-
-from .models import Predictor
 
 
 def _metrics(gold: list[str], pred: list[str]) -> dict:
@@ -15,7 +11,7 @@ def _metrics(gold: list[str], pred: list[str]) -> dict:
             "per_class": {c: {"f1": float(f), "support": gold.count(c)} for c, f in zip(classes, f1s)}}
 
 
-def cross_validate(make: Callable[[], Predictor], rows, label: str, folds: int = 5) -> dict:
+def cross_validate(make, rows, label: str, folds: int = 5) -> dict:
     gold, pred = [], []
     for tr, te in GroupKFold(n_splits=folds).split(rows, groups=[r.group for r in rows]):
         m = make()
