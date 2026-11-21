@@ -79,7 +79,10 @@ def _by_item(codings, field) -> dict[str, dict[str, str]]:
     d: dict[str, dict[str, str]] = {}
     for c in codings:
         if c.field == field:
-            d.setdefault(c.item, {})[c.coder] = c.value
+            slot = d.setdefault(c.item, {})
+            if slot.get(c.coder, c.value) != c.value:
+                raise ValueError(f"{c.item}: slot {c.coder} has two values for {c.field}: {slot[c.coder]!r} and {c.value!r}")
+            slot[c.coder] = c.value
     return d
 
 

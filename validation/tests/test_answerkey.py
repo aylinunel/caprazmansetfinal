@@ -76,6 +76,14 @@ class RecordTest(unittest.TestCase):
                     append([ok, bad], p)
             self.assertFalse(p.exists())
 
+    def test_conflicting_duplicate_slot_is_an_error(self):  # e.g. a file record colliding with a core A1 row
+        a, b = Coding("k1__sabah", "A1", "present", "yes"), Coding("k1__sabah", "A1", "present", "no")
+        with self.assertRaisesRegex(ValueError, "k1__sabah.*A1.*present"):
+            agreement([a, b], "present")
+        with self.assertRaises(ValueError):
+            gold([a, b], "present")
+        self.assertEqual(agreement([a, a], "present")["items_double"], 0)  # identical duplicate is fine
+
     def test_gold_and_disagreement(self):
         cs = [Coding("i1", "A1", "present", "yes"), Coding("i1", "A2", "present", "yes"),
               Coding("i2", "A1", "present", "yes"), Coding("i2", "A2", "present", "no"),
