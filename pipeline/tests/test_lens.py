@@ -3,7 +3,7 @@ import re
 import unittest
 
 from capraz_pipeline.config import REPO
-from capraz_pipeline.lens import NOTICE_KEYWORDS, feed_complete, group, is_notice_article, notice_events, season_days
+from capraz_pipeline.lens import NOTICE_KEYWORDS, big_stories, confirmed_skips, feed_complete, group, is_notice_article, notice_events, season_days
 
 
 class GroupTest(unittest.TestCase):
@@ -49,3 +49,22 @@ class GroupTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SkipTest(unittest.TestCase):
+    def test_a_matching_headline_outside_the_event_is_not_a_skip(self):
+        core = {"E": [{"i": "e1", "a": ["x1", "x2"], "s": ["sabah", "sozcu"], "f": "2026-09-01T10:00"}]}
+        arts = {"x1": {"s": "sabah", "t": "Bakan istifa etti", "d": "2026-09-01T10:00"},
+                "x2": {"s": "sozcu", "t": "Bakan istifa etti, yerine atama", "d": "2026-09-01T10:05"},
+                "y1": {"s": "karar", "t": "Bakan istifa etti ve gitti", "d": "2026-09-01T12:00"},
+                "z1": {"s": "birgun", "t": "Hava durumu yağmurlu", "d": "2026-09-01T12:00"}}
+        stories = [{"event": "e1", "day": "2026-09-01", "active": ["sabah", "sozcu", "karar", "birgun"], "covered": ["sabah", "sozcu"]}]
+        self.assertEqual(confirmed_skips(stories, core, arts, ["karar", "birgun"]), {"karar": set(), "birgun": {"e1"}})
+
+    def test_big_story_needs_half_of_the_active_comparison_outlets(self):
+        core = {"E": [{"i": "e1", "a": ["x1"], "f": "2026-09-01T10:00"}, {"i": "e2", "a": ["x2"], "f": "2026-09-01T11:00"}]}
+        arts = {"x1": {"s": "a", "d": "2026-09-01T10:00"}, "x2": {"s": "a", "d": "2026-09-01T11:00"},
+                "y": {"s": "b", "d": "2026-09-01T09:00"}, "z": {"s": "c", "d": "2026-09-01T09:00"}}
+        g = {"a": {"lens": True}, "b": {"lens": True}, "c": {"lens": False}}
+        got = big_stories(core, arts, g, {"e2"})
+        self.assertEqual(got, [{"event": "e1", "day": "2026-09-01", "active": ["a", "b"], "covered": ["a"]}])

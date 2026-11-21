@@ -5,6 +5,7 @@ import statistics
 from collections import defaultdict
 from datetime import date, timedelta
 
+from .cluster import minutes, vectors
 from .config import PARAMS
 from .store import tr_lower
 
@@ -84,3 +85,59 @@ def feed_complete(counts: dict[str, int], n_days: int) -> tuple[bool, dict]:
           "at_max_share": sum(1 for v in vals if v == top) / len(vals)}
     ok = st["active_share"] >= PARAMS.active_day_share and st["median"] >= MIN_MEDIAN and st["at_max_share"] < MAX_DAY_SHARE
     return ok, st
+
+
+def big_stories(core: dict, arts: dict, group_out: dict, notices: set[str]) -> list[dict]:
+    """Non-notice events covered by >= half of the comparison outlets that were active on the event's first day."""
+    lens = {s for s, g in group_out.items() if g["lens"]}
+    days = days_active(arts)
+    out = []
+    for e in core["E"]:
+        if e["i"] in notices:
+            continue
+        day = e["f"][:10]
+        active = sorted(s for s in lens if days.get(s, {}).get(day))
+        have = {arts[i]["s"] for i in e["a"] if i in arts}
+        covered = [s for s in active if s in have]
+        if active and len(covered) / len(active) >= 0.5:
+            out.append({"event": e["i"], "day": day, "active": active, "covered": covered})
+    return out
+
+
+def confirmed_skips(stories: list[dict], core: dict, arts: dict, outlets: list[str]) -> dict[str, set[str]]:
+    """Outlet -> big events it skipped: no headline within 48 h of the event's first headline matches any event headline."""
+    events = {e["i"]: e for e in core["E"]}
+    window = 48 * 60
+    by_outlet: dict[str, list[tuple[int, str]]] = defaultdict(list)
+    for aid, a in arts.items():
+        if a["s"] in outlets:
+            by_outlet[a["s"]].append((minutes(a["d"]), aid))
+    # (outlet, event) pairs to test: the outlet was active that day but has no article in the event.
+    pairs = []
+    for st in stories:
+        e = events[st["event"]]
+        t0 = minutes(e["f"])
+        for s in outlets:
+            if s in st["active"] and s not in st["covered"]:
+                near = [aid for m, aid in by_outlet[s] if t0 <= m <= t0 + window]
+                pairs.append((s, e, near))
+    out: dict[str, set[str]] = {s: set() for s in outlets}
+    need = {aid for _, e, near in pairs for aid in near} | {i for _, e, _ in pairs for i in e["a"] if i in arts}
+    if not pairs:
+        return out
+    ids = sorted(need)
+    try:
+        X = vectors([arts[i]["t"] for i in ids])
+    except ValueError:  # empty vocabulary: nothing can be confirmed
+        return out
+    row = {aid: n for n, aid in enumerate(ids)}
+    for s, e, near in pairs:
+        own = [row[i] for i in e["a"] if i in row]
+        if not own:
+            continue
+        if near:
+            sim = X[[row[i] for i in near]] @ X[own].T
+            if sim.max() >= PARAMS.cluster_threshold:
+                continue
+        out[s].add(e["i"])
+    return out
