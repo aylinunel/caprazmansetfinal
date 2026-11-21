@@ -14887,8 +14887,9 @@ function deskLearning(st) {
 
 function deskTabs() {
   return '<nav class="desk-tabs" aria-label="Kuyruklar">' + DESK_GROUPS.map(function (g) {
-    var n = g[0] === "kor" ? blindPackets().length : deskItems(g[0]).length; if (!n) return "";
-    return '<button class="subtab' + (g[0] === DESK.g ? " on" : "") + '" data-desk="group" data-v="' + g[0] + '">' + esc(g[1]) + ' <span class="mono">' + n + "</span></button>";
+    /* In blind mode no count derived from the AI queues is shown. */
+    var blind = DESK.g === "kor", n = g[0] === "kor" ? blindPackets().length : blind ? 1 : deskItems(g[0]).length; if (!n) return "";
+    return '<button class="subtab' + (g[0] === DESK.g ? " on" : "") + '" data-desk="group" data-v="' + g[0] + '">' + esc(g[1]) + (blind ? "" : ' <span class="mono">' + n + "</span>") + "</button>";
   }).join("") + "</nav>";
 }
 function pgDesk(q) {
@@ -14999,7 +15000,7 @@ var BLIND_KIND = { behaviour: "Davranışsal kavram", narrative: "Anlatı" };
 function blindPackets() { return (D.BLIND && D.BLIND.packets) || []; }
 function blindToday() { return new Date().toISOString().slice(0, 10); }
 function blindDateTr(d) { return +d.slice(8, 10) + " " + V3MONTH[+d.slice(5, 7) - 1] + " " + d.slice(0, 4); }
-function blindPacket() { return blindPackets().filter(function (p) { return p.id === DESK.bp; })[0]; }
+function blindPacket() { return blindPackets().filter(function (p) { return p.id === DESK.bp && blindOpen(p, blindToday()); })[0]; }
 function blindStart(pk, key) {
   var items = pk.items, cur = items.filter(function (i) { return i.item === key; })[0] ||
     items.filter(function (i) { var r = rev7(blindKey(pk.id, i.item)); return !(r && blindDone(pk.kind, r.answers)); })[0] || items[0];
@@ -15008,7 +15009,7 @@ function blindStart(pk, key) {
 }
 function blindList() {
   return '<div class="wrap page desk"><div class="desk-top"><div><div class="eyebrow">Yönetim · Kör kodlama</div><h1>Kör kodlama</h1></div></div>' + deskTabs() +
-    '<p class="desk-sub">Yapay zekânın kararı gösterilmez; yanıtlarınız insan anahtarına aktarılır.</p><ul class="blind-packets">' + blindPackets().map(function (p) {
+    '<p class="desk-sub">Hiçbir otomatik karar gösterilmez; yanıtlarınız insan anahtarına aktarılır.</p><ul class="blind-packets">' + blindPackets().map(function (p) {
       var pr = blindProgress(p, REV7), ok = blindOpen(p, blindToday());
       return "<li><button" + (ok ? "" : " disabled") + ' data-desk="blind-packet" data-v="' + esc(p.id) + '"><b>' + esc(p.id) + "</b> <span>" + BLIND_KIND[p.kind] + '</span> <span class="mono">' + pr.done + "/" + pr.total + "</span>" +
         (ok ? "" : '<span class="desk-sub">Bu tur ' + blindDateTr(p.not_before) + " tarihinde açılır; ilk turdaki yanıtlarınızın etkisi geçsin diye.</span>") + "</button></li>";
@@ -15061,7 +15062,7 @@ function blindClick(a, v, b) {
 function blindKeydown(ev) {
   var pk = blindPacket(); if (!pk) return;
   var typing = /^(TEXTAREA|INPUT|SELECT)$/.test((ev.target || {}).tagName || "");
-  if (ev.key === "Enter" && !typing) { ev.preventDefault(); return blindSave(); }
+  if (ev.key === "Enter" && (!typing || ev.target.tagName === "SELECT")) { ev.preventDefault(); return blindSave(); }
   if (typing || ev.ctrlKey) return;
   var k = ev.key.toLowerCase(), f = BLIND_FIELDS[pk.kind][0], o = f[2] && f[2][+k - 1];
   if (o) { DESK.ba[f[0]] = o[0]; DESK.msg = ""; deskRerender(); }
