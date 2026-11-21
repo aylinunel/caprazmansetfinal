@@ -737,6 +737,7 @@ function pgSources(q) {
     h += '<section class="sec v7-pick" style="margin-top:0"><h2>Bir kurum seç</h2>' +
       '<input type="search" class="kp-q" id="kq" data-for="kp-liste" placeholder="Kurum ara…" aria-label="Kurum ara">' +
       outletPicker("kp-liste", function (s) { return "#/kurum?s=" + s; }) + "</section>";
+    h += lensRanking();
     h += '<section class="sec"><h2>Kurum başına ortalama yoğunluk</h2>' + kuFindMean() + "</section>";
     h += '<section class="sec"><h2>Hangi yapılar ne sıklıkta tetikleniyor</h2>' + kuFindKeys() + "</section>";
     h += '<section class="sec"><h2>Hangi kurum nerede sesini yükseltiyor</h2>' +
@@ -3769,6 +3770,7 @@ function pgSource(q) {
   var h = '<div class="wrap page v7-kp"><nav class="v7-bc" aria-label="Konum"><a href="#/kurumlar">Kurumlar</a><span aria-hidden="true">›</span><span aria-current="page">' + name + "</span></nav>" +
     '<div class="phead"><div class="eyebrow">Kurum</div><h1>' + name + "</h1>" + (p.note ? '<p class="lede">' + esc(p.note) + "</p>" : "") +
     '<div class="xsrc-top">' + chip + '<span class="xsmall">' + esc(o[0]) + " · " + esc(o[1]) + '</span><span class="xsmall num">' + v3haberCount(k, st.n) + " haber</span>" + followBtn("s", k) + "</div></div>";
+  h += lensSection(k);
   var evs = orEvents(), mine = evs.filter(function (e) { return e.s.indexOf(k) >= 0; }), dl = kuDil(k), rr = rank5Rows().filter(function (x) { return x.s === k; })[0];
   var kis = outletKisaca({ name: p.n, events: mine.length, total: evs.length, mean: dl && dl.row.mean, blocMean: dl && dl.bl, placed: placed,
     nb: rr ? rr.nb.slice(0, 2).map(srcName) : [] });

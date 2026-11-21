@@ -2688,6 +2688,40 @@ kbd{font-family:var(--ff-m);font-size:11px;padding:1px 5px;border:1px solid curr
 .desk-q>*{flex:none}
 .desk-tabs .subtab .mono{margin-left:6px}
 
+/* ============================================================ single-source lens ====== */
+.lens-none{max-width:62ch;margin:14px 0;color:var(--muted);font-size:14px}
+.lens h3,.lens-ai h3{font-size:16px;margin:26px 0 8px}
+.lens-dist{font-size:20px;line-height:1.35;max-width:46ch;margin:4px 0 10px}
+.lens-strip{margin:6px 0 2px;max-width:640px}
+.lens-svg{display:block;width:100%;height:auto;overflow:visible}
+.lens-axis{stroke:var(--line2);stroke-width:1.5}
+.lens-tick{stroke:var(--line2);stroke-width:1}
+.lens-one{stroke:var(--ink);stroke-width:1.5}
+.lens-tl,.lens-me{font-size:15px;fill:var(--muted);font-family:inherit}
+.lens-me{fill:var(--ink);font-weight:600}
+.lens-ci{stroke:var(--ink);stroke-width:3;stroke-linecap:round}
+.lens-dot{fill:var(--paper);stroke:var(--ink);stroke-width:2.5}
+.lens-dot.strong,.lens-dot.me{fill:var(--ink)}
+.lens-dot.other{fill:var(--line2);stroke:none}
+.lens-dot.zero{stroke-dasharray:3 2}
+.lens-miss{list-style:none;margin:0;padding:0;display:grid;gap:2px;max-width:62ch}
+.lens-miss a{display:flex;align-items:center;min-height:44px;line-height:1.35}
+.lens-row{margin:0 0 18px;max-width:640px}
+.lens-lab{font-weight:600;font-size:14px;margin-bottom:2px}
+.lens-sent{font-size:14px;color:var(--ink2,var(--ink));max-width:62ch;margin-top:2px}
+.lens-sw{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 4px}
+.lens-sw .chip{min-height:44px;display:inline-flex;align-items:center}
+.lens-sw .chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.lens-ai{margin-top:26px;padding:16px 20px 18px;background:var(--np);border:1px solid var(--np-line);border-top:3px solid var(--ink);border-radius:2px 2px 12px 12px;max-width:640px}
+.lens-ai h3{margin-top:0;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.lens-dl{margin:10px 0 0}.lens-dl dt{font-weight:600;font-size:13px;margin-top:12px}.lens-dl dd{margin:2px 0 0;font-size:14px}
+.lens-rl{list-style:none;margin:14px 0 0;padding:0;max-width:640px}
+.lens-rl a{display:grid;grid-template-columns:minmax(90px,150px) 1fr 52px;align-items:center;gap:12px;min-height:44px;text-decoration:none}
+.lens-rl a:hover .lens-rn{text-decoration:underline}
+.lens-tr{position:relative;height:2px;background:var(--line2);display:block}
+.lens-tr i{position:absolute;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--ink)}
+.lens-rl b{text-align:right;font-size:14px}
+
 </style>
 </head>
 <body>
@@ -5191,6 +5225,7 @@ function pgSources(q) {
     h += '<section class="sec v7-pick" style="margin-top:0"><h2>Bir kurum seç</h2>' +
       '<input type="search" class="kp-q" id="kq" data-for="kp-liste" placeholder="Kurum ara…" aria-label="Kurum ara">' +
       outletPicker("kp-liste", function (s) { return "#/kurum?s=" + s; }) + "</section>";
+    h += lensRanking();
     h += '<section class="sec"><h2>Kurum başına ortalama yoğunluk</h2>' + kuFindMean() + "</section>";
     h += '<section class="sec"><h2>Hangi yapılar ne sıklıkta tetikleniyor</h2>' + kuFindKeys() + "</section>";
     h += '<section class="sec"><h2>Hangi kurum nerede sesini yükseltiyor</h2>' +
@@ -8223,6 +8258,7 @@ function pgSource(q) {
   var h = '<div class="wrap page v7-kp"><nav class="v7-bc" aria-label="Konum"><a href="#/kurumlar">Kurumlar</a><span aria-hidden="true">›</span><span aria-current="page">' + name + "</span></nav>" +
     '<div class="phead"><div class="eyebrow">Kurum</div><h1>' + name + "</h1>" + (p.note ? '<p class="lede">' + esc(p.note) + "</p>" : "") +
     '<div class="xsrc-top">' + chip + '<span class="xsmall">' + esc(o[0]) + " · " + esc(o[1]) + '</span><span class="xsmall num">' + v3haberCount(k, st.n) + " haber</span>" + followBtn("s", k) + "</div></div>";
+  h += lensSection(k);
   var evs = orEvents(), mine = evs.filter(function (e) { return e.s.indexOf(k) >= 0; }), dl = kuDil(k), rr = rank5Rows().filter(function (x) { return x.s === k; })[0];
   var kis = outletKisaca({ name: p.n, events: mine.length, total: evs.length, mean: dl && dl.row.mean, blocMean: dl && dl.bl, placed: placed,
     nb: rr ? rr.nb.slice(0, 2).map(srcName) : [] });
@@ -10531,10 +10567,27 @@ function deskStats(items, reviews, min) {
   return { done: done, total: items.length, measurable: cards.filter(function (c) { return !c.need; }).length, cards: cards };
 }
 
+/* Single-source lens wording. Behaviour words only; no suffix is ever attached to an outlet name. */
+var LENS_MEASURES = [["skip", "büyük olayları atlıyor", "büyük olayı atladı"], ["loaded", "yüklü başlık atıyor", "yüklü başlık"], ["harsher", "başlığı haberinden sert yazıyor", "haberinden sert başlık"], ["first", "olayı ilk veriyor", "ilk veriş"]];
+function lensDec(x) { return (Math.round(x * 10) / 10).toFixed(1).replace(".", ","); }
+function lensSentence(name, key, m) {
+  var ms = LENS_MEASURES.filter(function (x) { return x[0] === key; })[0] || [key, key, key];
+  var noun = "“" + ms[2] + "”";
+  if (m.rr === 0) return name + " · bu " + m.n + " haberin hiçbirinde " + noun + " yok; diğer kurumlarda var.";
+  if (m.rr == null) return name + " · bu " + m.n + " haberde " + noun + " yalnızca bu kurumda var; diğer kurumlarda yok.";
+  var ci = m.lo == null || m.hi == null ? "" : "%95 aralık " + lensDec(m.lo) + "–" + lensDec(m.hi) + "; ";
+  if (m.strong) return name + " aynı haberlerde sistematik olarak " + (m.rr < 1 ? "daha seyrek " : "daha sık ") + ms[1] + " (" + lensDec(m.rr) + " kat; " + ci + m.n + " haber).";
+  return name + ", aynı haberlerde " + noun + " bakımından diğer kurumların " + lensDec(m.rr) + " katı (" + ci + m.n + " haber).";
+}
+function lensDistanceText(d) {
+  return d == null ? "Bu dilimde yeterli haber yok." : "Ortalamada diğer kurumlardan " + lensDec(d) + " kat farklı davranıyor.";
+}
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { deskDoc: deskDoc, deskQueue: deskQueue, deskStats: deskStats, DESK_REASONS: DESK_REASONS, DESK_VERDICTS: DESK_VERDICTS, profileSig: profileSig, profileKey: profileKey, profileDistance: profileDistance, MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
-    axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS };
+    axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS,
+    LENS_MEASURES: LENS_MEASURES, lensSentence: lensSentence, lensDistanceText: lensDistanceText };
 }
 
 /* v7 core: navigation, YZ marker and the finding block (inlined into app.js IIFE after logic.js). */
@@ -13807,7 +13860,7 @@ function pgYontem7(params) {
     '<p class="sub">Çapraz Manşet’in veri toplama, olay tespiti, ölçüm ve çözümleme adımlarının, Türkiye’ye uyarlamaların ve yapay zekâ ile üretilen her parçanın dökümü.</p></div>' +
     '<nav class="ym-toc" aria-label="İçindekiler"><b>İçindekiler</b><ol>' + [["cm3method", "İşlem hattı ve durum"]].concat(YM_TOC).map(function (t, i) { return '<li' + (i ? "" : ' value="0" class="x0"') + '><a href="#/yontem?s=' + t[0] + '">' + t[1] + "</a></li>"; }).join("") + "</ol></nav>" +
     '<article class="xpaper">' + M.intro + X.walk +
-    h2("veri", "Veri") + M.veri + h2("olay", "Olay tespiti") + M.olay + h2("dil", "Yüklü dil puanlayıcısı") + M.dil + h2("anlati", "Anlatı kodlaması") + M.anlati +
+    h2("veri", "Veri") + M.veri + h2("olay", "Olay tespiti") + M.olay + lensMethod() + h2("dil", "Yüklü dil puanlayıcısı") + M.dil + h2("anlati", "Anlatı kodlaması") + M.anlati +
     h2("yz", "Bilişsel inceleme", 1) + yzBlock(yzMethodHtml()) + h2("yzicerik", "Yapay zekâ ile üretilen içerik", 1) + yzBlock(yzIcerikHtml()) +
     h2("turkiye", "Türkiye bağlamı") + '<p>Başlık analizi için İngilizce dünyada geliştirilmiş birçok varsayım Türkçede çalışmaz. Her uyarlama için sorunu, ne yaptığımızı ve sınırını yazdık; rakamlar kodun ve verinin kendisinden okunur.</p>' +
     '<div class="v7-tr">' + turkiyeBlocks() + "</div>" +
@@ -14507,6 +14560,141 @@ function pgYeni82() {
 }
 SECTIONS.push({ p: "/yeni82", label: "8.2’de yeni", fn: pgYeni82 });
 DETAIL["/yeni82"] = { fn: pgYeni82, of: "/yeni82" };
+
+/* Single-source lens (data/reference/lens-82.json, D.LENS): what you would have missed and how an outlet tells the SAME stories
+   compared with the others. Outlet page: lensSection(slug); Kurumlar list: lensRanking(). Pure strings (inline SVG), no chart library.
+   Numbers and sentences come from logic.js (LENS_MEASURES, lensSentence, lensDistanceText). AI findings sit in their own box and never enter a measure. */
+var LENS_PARTIAL = "Bu kurumun derlemesi eksik olabildiği için atlanan olaylar ve ilk veriş ölçülmedi; bütün resimden uzaklık için en az üç ölçü gerekiyor.";
+var LENS_MIN = 20;   /* stories a measure needs before it is shown (pipeline PARAMS) */
+var LENS_SLICE = {};   /* outlet slug -> slice key chosen on the page */
+
+function lensX(v, w) { return Math.round(w * (Math.log(Math.min(4, Math.max(0.25, v))) / Math.LN2 + 2) / 4 * 10) / 10; }
+/* one measure: dot and interval on a log axis centred on 1 (open ends run to the axis edge; RR 0 sits on the left edge, hollow) */
+function lensRowSvg(m, label) {
+  var W = 600, y = 16, tk = [0.25, 0.5, 1, 2, 4], s = '<svg class="lens-svg" viewBox="0 0 ' + W + ' 40" role="img" aria-label="' + esc(label) + '" focusable="false">' +
+    '<line x1="0" x2="' + W + '" y1="' + y + '" y2="' + y + '" class="lens-axis"/>';
+  tk.forEach(function (t) {
+    var x = lensX(t, W - 2) + 1;
+    s += '<line x1="' + x + '" x2="' + x + '" y1="' + (y - (t === 1 ? 12 : 5)) + '" y2="' + (y + (t === 1 ? 12 : 5)) + '" class="' + (t === 1 ? "lens-one" : "lens-tick") + '"/>' +
+      '<text x="' + Math.min(W - 14, Math.max(14, x)) + '" y="38" text-anchor="middle" class="lens-tl">' + (t < 1 ? "1/" + Math.round(1 / t) : t) + "×</text>";
+  });
+  if (m.rr != null) {
+    var lo = m.lo == null ? 0 : lensX(m.lo, W - 2) + 1, hi = m.hi == null ? W : lensX(m.hi, W - 2) + 1, x = m.rr === 0 ? 5 : lensX(m.rr, W - 2) + 1;
+    if (m.rr === 0) lo = 0;
+    s += '<line x1="' + lo + '" x2="' + hi + '" y1="' + y + '" y2="' + y + '" class="lens-ci"/>' +
+      '<circle cx="' + x + '" cy="' + y + '" r="7" class="lens-dot' + (m.strong ? " strong" : "") + (m.rr === 0 ? " zero" : "") + '"/>';
+  }
+  return s + "</svg>";
+}
+/* all lens outlets on one line by distance; this outlet is the large dot */
+function lensStripSvg(k, sl) {
+  var rows = [], max = 1.5, W = 600;
+  Object.keys(D.LENS.outlets).forEach(function (s) {
+    var o = D.LENS.outlets[s], d = o.lens && o.slices[sl] ? o.slices[sl].distance : null;
+    if (d != null) { rows.push([s, d]); if (d > max) max = d; }
+  });
+  var x = function (d) { return Math.round(8 + (W - 16) * (d - 1) / (max * 1.04 - 1)); };
+  var s = '<svg class="lens-svg lens-strip-svg" viewBox="0 0 ' + W + ' 64" role="img" aria-label="Kurumların bütün resimden uzaklığı; bu kurum işaretli" focusable="false">' +
+    '<line x1="8" x2="' + (W - 8) + '" y1="34" y2="34" class="lens-axis"/>';
+  rows.filter(function (r) { return r[0] !== k; }).forEach(function (r) { s += '<circle cx="' + x(r[1]) + '" cy="34" r="5" class="lens-dot other"><title>' + esc(srcName(r[0])) + " · " + lensDec(r[1]) + " kat</title></circle>"; });
+  var me = rows.filter(function (r) { return r[0] === k; })[0];
+  if (me) s += '<circle cx="' + x(me[1]) + '" cy="34" r="9" class="lens-dot me"/><text x="' + Math.min(W - 60, Math.max(60, x(me[1]))) + '" y="14" text-anchor="middle" class="lens-me">' + esc(srcName(k)) + "</text>";
+  return s + '<text x="8" y="62" class="lens-tl">1× (herkes gibi)</text><text x="' + (W - 8) + '" y="62" text-anchor="end" class="lens-tl">' + lensDec(max) + "×</text></svg>";
+}
+
+/* ---- Ek bulgular: AI citation rates, most-quoted concepts, narrative blame codes. Never part of a measure. ---- */
+function lensAiBox(k) {
+  var parts = [], P = D.AIX && D.AIX.profile, row = P && P.outlets.filter(function (o) { return o.s === k; })[0];
+  if (row) {
+    var rs = P.measures.filter(function (m) { return m.kind === "ai" && row.m[m.k] != null; });
+    if (rs.length) parts.push("<dt>AI incelemesinde alıntılanma</dt><dd>" + rs.map(function (m) { return esc(m.label) + ": <b class=\"num\">" + esc(proFmt(m.k, row.m[m.k])) + "</b>"; }).join("<br>") + "</dd>");
+  }
+  var cnt = {};
+  [[bgm7(), true], [bg7(), false]].forEach(function (p) {
+    if (!p[0]) return;
+    p[0].events.forEach(function (x) {
+      if (x.status !== "review_complete") return;
+      bg7Live(x).forEach(function (f) {
+        var n = (f.evidence || []).filter(function (q) { return (q.o || []).indexOf(k) >= 0; }).length;
+        if (!n) return;
+        var id = (p[1] ? "m:" : "b:") + f.id, c = cnt[id] = cnt[id] || { name: aiConceptName(f, p[1]), n: 0 };
+        c.n += n;
+      });
+    });
+  });
+  var top = Object.keys(cnt).map(function (i) { return cnt[i]; }).sort(function (a, b) { return b.n - a.n || trCmp(a.name, b.name); }).slice(0, 3);
+  if (top.length) parts.push("<dt>En çok alıntılanan üç kavram</dt><dd>" + top.map(function (c) { return esc(c.name) + " · <span class=\"num\">" + c.n + "</span> alıntı"; }).join("<br>") + "</dd>");
+  var bl = {};
+  Object.keys(D.N).forEach(function (key) {
+    var n = D.N[key]; if (!narrOk(key)) return;
+    var hand = n.status === "hand_coded" || n.status === "headline_coded";
+    (n.rows || []).forEach(function (r) {
+      var v = String(r.blame == null ? "" : r.blame).trim(); if (r.s !== k || !v) return;
+      var id = v + "|" + hand, c = bl[id] = bl[id] || { v: v, hand: hand, n: 0 }; c.n++;
+    });
+  });
+  var bt = Object.keys(bl).map(function (i) { return bl[i]; }).sort(function (a, b) { return b.n - a.n || trCmp(a.v, b.v); }).slice(0, 3);
+  if (bt.length) parts.push("<dt>Anlatıda en sık sorumlu tutulan</dt><dd>" + bt.map(function (c) {
+    return esc(c.v) + " · <span class=\"num\">" + c.n + "</span> olay · " + (c.hand ? "elle kodlandı" : "AI ile kodlandı"); }).join("<br>") + "</dd>");
+  if (!parts.length) return "";
+  return '<div class="lens-ai"><h3>Ek bulgular ' + yzBadge() + '</h3><p class="sub">Bunlar yukarıdaki ölçülere ve uzaklığa girmez; yalnızca bağlam verir.</p><dl class="lens-dl">' + parts.join("") + "</dl></div>";
+}
+
+function lensBody(k, sl) {
+  var L = D.LENS, o = L.outlets[k], name = srcName(k), S = o.slices[sl] || { measures: {}, distance: null }, h = "";
+  var d = S.distance;
+  h += '<p class="lens-dist">' + esc(d == null && !o.feed.complete ? LENS_PARTIAL : lensDistanceText(d)) + "</p>";
+  if (d != null) h += '<div class="lens-strip">' + lensStripSvg(k, sl) + "</div>";
+  h += "<h3>Kaçırdığınız büyük olaylar</h3>";
+  if (!o.feed.complete) h += '<p class="sub lens-miss-none">Bu kurumun derlemesi eksik olabildiği için atlanan olaylar ölçülmedi.</p>';
+  else {
+    var ms = (o.missed || []).filter(function (id) { return EV[id]; });
+    h += ms.length ? '<ul class="lens-miss">' + ms.map(function (id) { return '<li><a href="#/olay?e=' + encodeURIComponent(id) + '">' + esc(storyLabel(EV[id], 110)) + "</a></li>"; }).join("") + "</ul>"
+      : '<p class="sub">Bu kurum, büyük olayların hiçbirini atlamamış görünüyor.</p>';
+  }
+  h += "<h3>Aynı haberleri nasıl anlattı</h3>";
+  var shown = LENS_MEASURES.filter(function (m) { var x = S.measures[m[0]]; return x && x.n >= LENS_MIN; });
+  h += shown.length ? shown.map(function (m) {
+    var x = S.measures[m[0]], sent = lensSentence(name, m[0], x);
+    return '<div class="lens-row"><div class="lens-lab">' + esc(m[1].charAt(0).toLocaleUpperCase("tr") + m[1].slice(1)) + "</div>" + lensRowSvg(x, sent) + '<p class="lens-sent">' + esc(sent) + "</p></div>";
+  }).join("") : '<p class="sub lens-few">Bu dilimde yeterli haber yok.</p>';
+  h += '<div class="lens-sw" role="group" aria-label="Dilim">' + L.slices.map(function (s) {
+    return '<button type="button" class="chip" data-lens-slice="' + esc(s.k) + '" aria-pressed="' + (s.k === sl) + '">' + esc(s.l) + "</button>";
+  }).join("") + "</div>";
+  return h + lensAiBox(k);
+}
+function lensSection(k) {
+  var L = typeof D !== "undefined" && D.LENS, o = L && L.outlets[k]; if (!o) return "";
+  if (!o.lens) return o.reason ? '<p class="lens-none sub">' + esc(o.reason) + "</p>" : "";
+  return '<section class="sec lens" data-k="' + esc(k) + '"><h2>Bu kaynağı tek başına okusaydınız</h2><div class="lens-in">' + lensBody(k, LENS_SLICE[k] || "all") + "</div></section>";
+}
+document.addEventListener("click", function (ev) {
+  var b = ev.target.closest && ev.target.closest("button[data-lens-slice]"); if (!b) return;
+  var sec = b.closest("section.lens"), k = sec && sec.getAttribute("data-k"), sl = b.getAttribute("data-lens-slice");
+  if (!k || !D.LENS) return;
+  LENS_SLICE[k] = sl; sec.querySelector(".lens-in").innerHTML = lensBody(k, sl);
+  var nb = sec.querySelector('button[data-lens-slice="' + sl + '"]'); if (nb) nb.focus({ preventScroll: true });
+});
+
+/* ---- Kurumlar: lens outlets by distance from the whole picture (whole season) ---- */
+function lensRanking() {
+  var L = typeof D !== "undefined" && D.LENS; if (!L) return "";
+  var all = Object.keys(L.outlets).filter(function (s) { return L.outlets[s].lens && SRC[s]; }), dist = function (s) { return (L.outlets[s].slices.all || {}).distance; };
+  var rs = all.filter(function (s) { return dist(s) != null; }).sort(function (a, b) { return dist(b) - dist(a) || trCmp(srcName(a), srcName(b)); });
+  if (!rs.length) return "";
+  var max = Math.max(1.5, dist(rs[0]));
+  var h = '<section class="sec lens-rank"><h2>Kim bütün resimden ne kadar uzak</h2><p class="sub">Aynı haberlerde dört ölçüde (büyük olayı atlama, yüklü başlık, başlığı haberinden sert yazma, ilk verme) diğer kurumlardan ortalama kaç kat farklı davrandığı; 1 kat tam ortalamadır. Bütün sezon. Bir kuruma tıklayınca ölçüler açılır.</p><ol class="lens-rl">' +
+    rs.map(function (s) {
+      var d = dist(s);
+      return '<li><a href="#/kurum?s=' + encodeURIComponent(s) + '"><span class="lens-rn">' + esc(srcName(s)) + '</span><span class="lens-tr" aria-hidden="true"><i style="left:' + (100 * (d - 1) / (max * 1.04 - 1)).toFixed(1) + '%"></i></span><b class="num">' + lensDec(d) + "×</b></a></li>";
+    }).join("") + "</ol>";
+  var no = all.filter(function (s) { return dist(s) == null; });
+  if (no.length) h += '<p class="sub">Uzaklığı hesaplanamayan kurumlar (yeterli ölçü yok): ' + no.map(function (s) { return '<a class="lnk" href="#/kurum?s=' + encodeURIComponent(s) + '">' + esc(srcName(s)) + "</a>"; }).join(", ") + ".</p>";
+  return h + "</section>";
+}
+function lensMethod() {
+  return "<h3>Tek kaynak merceği (8.2)</h3><p>Bir kurumun sayfasındaki “Bu kaynağı tek başına okusaydınız” bölümü dört şeyi ölçer: büyük bir olayı atlamayı, yüklü başlık atmayı, başlığı haberinin kendisinden sert yazmayı ve olayı ilk vermeyi. Her ölçü aynı haberler üzerinde karşılaştırılır: bir olayda hem bu kurum hem diğerleri varsa, kurumun o olaydaki davranışı diğerlerinin aynı olaydaki davranışıyla kıyaslanır, böylece kurumun hangi haberleri seçtiği sonucu bulandırmaz. Karşılaştırma grubu, sezonun yarısında en az etkin olan genel haber kurumlarıdır (ajanslar ve özel yayınlar dışında). “Sistematik” denmesi için en az 20 haber, iki kat ya da yarısı kadar fark, çoklu karşılaştırma düzeltmesinden sonra q < 0,01 ve her ayda aynı yönde en az 1,5 kat fark gerekir (en az iki ayda). Derlemesi eksik olabilen kurumlarda atlanan olay ve ilk veriş ölçülmez. AI bulguları hiçbir ölçüye, uzaklığa ya da hükme girmez.</p>";
+}
 
 /* AI denetim masası (Yönetim › Bilişsel inceleme): the owner, a behavioural-science expert, judges one AI finding at a
    time. Each judgement is a structured review (each necessary condition, a verdict, why it is wrong, the concept it

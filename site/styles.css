@@ -2675,3 +2675,37 @@ kbd{font-family:var(--ff-m);font-size:11px;padding:1px 5px;border:1px solid curr
 }
 .desk-q>*{flex:none}
 .desk-tabs .subtab .mono{margin-left:6px}
+
+/* ============================================================ single-source lens ====== */
+.lens-none{max-width:62ch;margin:14px 0;color:var(--muted);font-size:14px}
+.lens h3,.lens-ai h3{font-size:16px;margin:26px 0 8px}
+.lens-dist{font-size:20px;line-height:1.35;max-width:46ch;margin:4px 0 10px}
+.lens-strip{margin:6px 0 2px;max-width:640px}
+.lens-svg{display:block;width:100%;height:auto;overflow:visible}
+.lens-axis{stroke:var(--line2);stroke-width:1.5}
+.lens-tick{stroke:var(--line2);stroke-width:1}
+.lens-one{stroke:var(--ink);stroke-width:1.5}
+.lens-tl,.lens-me{font-size:15px;fill:var(--muted);font-family:inherit}
+.lens-me{fill:var(--ink);font-weight:600}
+.lens-ci{stroke:var(--ink);stroke-width:3;stroke-linecap:round}
+.lens-dot{fill:var(--paper);stroke:var(--ink);stroke-width:2.5}
+.lens-dot.strong,.lens-dot.me{fill:var(--ink)}
+.lens-dot.other{fill:var(--line2);stroke:none}
+.lens-dot.zero{stroke-dasharray:3 2}
+.lens-miss{list-style:none;margin:0;padding:0;display:grid;gap:2px;max-width:62ch}
+.lens-miss a{display:flex;align-items:center;min-height:44px;line-height:1.35}
+.lens-row{margin:0 0 18px;max-width:640px}
+.lens-lab{font-weight:600;font-size:14px;margin-bottom:2px}
+.lens-sent{font-size:14px;color:var(--ink2,var(--ink));max-width:62ch;margin-top:2px}
+.lens-sw{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 4px}
+.lens-sw .chip{min-height:44px;display:inline-flex;align-items:center}
+.lens-sw .chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.lens-ai{margin-top:26px;padding:16px 20px 18px;background:var(--np);border:1px solid var(--np-line);border-top:3px solid var(--ink);border-radius:2px 2px 12px 12px;max-width:640px}
+.lens-ai h3{margin-top:0;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.lens-dl{margin:10px 0 0}.lens-dl dt{font-weight:600;font-size:13px;margin-top:12px}.lens-dl dd{margin:2px 0 0;font-size:14px}
+.lens-rl{list-style:none;margin:14px 0 0;padding:0;max-width:640px}
+.lens-rl a{display:grid;grid-template-columns:minmax(90px,150px) 1fr 52px;align-items:center;gap:12px;min-height:44px;text-decoration:none}
+.lens-rl a:hover .lens-rn{text-decoration:underline}
+.lens-tr{position:relative;height:2px;background:var(--line2);display:block}
+.lens-tr i{position:absolute;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--ink)}
+.lens-rl b{text-align:right;font-size:14px}

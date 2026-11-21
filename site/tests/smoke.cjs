@@ -153,6 +153,32 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
         if (!(await page.$eval(sel + " .v7-lz", (e) => e.childElementCount))) fails.push(`${tag}: ${key} row empty after open`);
       }
     }
+    if (route === "#/kurum?s=takvim") {
+      /* single-source lens: heading, slice switch, one row per measure shown, one AI badge in the extra-findings box, slice switch changes the distance */
+      const bad = await page.evaluate(() => {
+        const s = document.querySelector("section.lens"); if (!s) return "no section.lens";
+        if (s.querySelector("h2").textContent.trim() !== "Bu kaynağı tek başına okusaydınız") return "wrong h2";
+        if (![...s.querySelectorAll(".lens-sw button")].some((b) => b.textContent.trim() === "Bütün sezon")) return "no Bütün sezon button";
+        if (!s.querySelectorAll(".lens-row").length) return "no .lens-row";
+        if (s.querySelectorAll(".lens-ai .yz-badge").length !== 1) return "need exactly one AI imzalı badge in .lens-ai";
+        return "";
+      });
+      if (bad) fails.push(`${tag}: lens ${bad}`);
+      if (w === 1280 && theme === "light") {
+        const d0 = await page.$eval(".lens-dist", (e) => e.textContent);
+        await page.evaluate(() => [...document.querySelectorAll(".lens-sw button")].find((b) => b.textContent.trim() === "Eylül").click()); await sleep(300);
+        const d1 = await page.$eval(".lens-dist", (e) => e.textContent);
+        if (d0 === d1) fails.push(`${tag}: lens-dist did not change for the Eylül slice (${d0})`);
+      }
+    }
+    if (route === "#/kurum?s=aa") {
+      const bad = await page.evaluate((reason) => {
+        if (document.querySelector("section.lens")) return "excluded outlet has a lens section";
+        const n = document.querySelector(".lens-none"); return n && n.textContent.trim() === reason ? "" : "lens-none missing or not the registry reason";
+      }, JSON.parse(fs.readFileSync(path.join(__dirname, "../../data/reference/lens-groups.json"), "utf8")).exclude.aa);
+      if (bad) fails.push(`${tag}: lens ${bad}`);
+    }
+    if (route === "#/kurumlar" && w === 1280 && theme === "light" && !(await page.evaluate(() => document.querySelectorAll(".lens-rl li a").length >= 3))) fails.push(`${tag}: lens ranking missing`);
     if (route.startsWith("#/kurum?s=")) {
       const bad = await page.evaluate(() => {
         const n = document.querySelectorAll('.v7-kurum-lines a[href^="#/oruntu"]').length;

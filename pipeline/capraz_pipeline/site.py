@@ -12,7 +12,7 @@ from pathlib import Path
 from .config import REPO, SCORER
 
 SITE = REPO / "site"
-V7_ORDER = ["logic", "core", "graph", "viz", "dots", "fog", "press", "motion", "home", "anlati", "anlativ", "olay", "oruntu", "kurum", "parti", "yontem", "ilan", "yenilikler", "aiimza", "desk"]
+V7_ORDER = ["logic", "core", "graph", "viz", "dots", "fog", "press", "motion", "home", "anlati", "anlativ", "olay", "oruntu", "kurum", "parti", "yontem", "ilan", "yenilikler", "aiimza", "lens", "desk"]
 
 
 def assemble(data_dir: Path, dest: Path, title: str = "Çapraz Manşet 8.2", fragment: bool = False) -> Path:
