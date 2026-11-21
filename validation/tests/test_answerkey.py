@@ -1,6 +1,11 @@
 import unittest
+from pathlib import Path
 
+from biasguard.news import _load
 from validation.answerkey.agreement import krippendorff_alpha, percent_agreement
+from validation.answerkey.codebook import blame_level, frame_category, human_rows, load_codebook
+
+REPO = Path(__file__).resolve().parents[2]
 
 
 class AlphaTest(unittest.TestCase):
@@ -19,3 +24,26 @@ class AlphaTest(unittest.TestCase):
 
     def test_percent(self):
         self.assertEqual(percent_agreement([["a", "a"], ["a", "b"], ["c", None]]), 0.5)
+
+
+class CodebookTest(unittest.TestCase):
+    def test_blame_level(self):
+        self.assertEqual(blame_level(""), "none")
+        for raw in ("—", "Belirtilmiyor", "Belirsiz (ima)"):
+            self.assertEqual(blame_level(raw), "none")
+        self.assertEqual(blame_level("Yargı (ima)"), "implied")
+        self.assertEqual(blame_level("Belediye yönetimi"), "explicit")
+
+    def test_frame_category(self):
+        cb = {"categories": ["Yargı ve soruşturma", "Diğer"], "frames": {"Adli süreç": "Yargı ve soruşturma"}}
+        self.assertEqual(frame_category(" Adli süreç ", cb), "Yargı ve soruşturma")
+        self.assertEqual(frame_category("Adli surec", cb), "Diğer")  # unmapped spelling -> Diğer, never a guess
+        self.assertEqual(frame_category("", cb), "Diğer")
+
+    def test_codebook_covers_every_human_frame(self):
+        cb = load_codebook()
+        core = _load(REPO / "public" / "data" / "core.bin")
+        raw = {(r.get("frame") or "").strip() for r in human_rows(core)} - {""}
+        self.assertEqual(sorted(raw - set(cb["frames"])), [])
+        self.assertTrue(set(cb["frames"].values()) <= set(cb["categories"]))
+        self.assertEqual(cb["categories"][-1], "Diğer")
