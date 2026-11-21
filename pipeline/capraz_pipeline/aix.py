@@ -27,6 +27,7 @@ from datetime import date
 from pathlib import Path
 
 from .config import PARAMS, REPO
+from .stats import bh_q
 
 OUT = REPO / "data" / "reference" / "aix-82.json"
 WORDING = ("loaded-language", "word-choice", "labeling")
@@ -187,12 +188,9 @@ def profile(core: dict, arts: dict[str, dict], im: dict, ib: dict, first: dict, 
             rho = spearman(xs, ys)
             matrix.append({"a": a, "b": b, "n": len(pts), "rho": rho, "p": perm_p(xs, ys, rho)})
     # Benjamini-Hochberg over the tested pairs, so 'significant' survives the many comparisons
-    tested = sorted((c for c in matrix if c["p"] is not None), key=lambda c: c["p"])
-    m_ = len(tested)
-    q_prev = 1.0
-    for rank, c in reversed(list(enumerate(tested, 1))):
-        q_prev = min(q_prev, c["p"] * m_ / rank)
-        c["q"] = q_prev
+    tested = [c for c in matrix if c["p"] is not None]
+    for c, q in zip(tested, bh_q([c["p"] for c in tested])):
+        c["q"] = q
     return {"measures": [{"k": k, "label": l, "kind": kd} for k, l, kd in measures], "outlets": outlets, "matrix": matrix}
 
 
