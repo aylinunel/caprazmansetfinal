@@ -2,12 +2,11 @@
 import json
 import os
 import random
-import tempfile
 from datetime import date, timedelta
 from pathlib import Path
 
-from .codebook import BLAME_LEVELS, human_rows
-from .record import UNSURE, Coding
+from .codebook import human_rows
+from .record import UNSURE, Coding, allowed
 
 REPO = Path(__file__).resolve().parents[2]
 PACKETS = REPO / "data" / "reference" / "blind-packets.json"
@@ -17,11 +16,11 @@ ANSWERS = {"narrative": ("blame_level", "frame_category"), "behaviour": ("presen
 
 def narrative_packet(core: dict, n_events: int, seed: int, pid: str, coder: str, today: date) -> dict:
     rng = random.Random(seed)
-    rows = human_rows(core)
-    keys = rng.sample(sorted({r["key"] for r in rows if r.get("hl")}), n_events)
+    rows = [r for r in human_rows(core) if r.get("hl")]
+    keys = set(rng.sample(sorted({r["key"] for r in rows}), n_events))
     outlets = {s["s"]: s["n"] for s in core["S"]}
     items = [{"item": f"{r['key']}__{r['s']}", "event": r["key"], "kurum": outlets.get(r["s"], r["s"]), "baslik": r["hl"]}
-             for r in rows if r["key"] in keys and r.get("hl")]
+             for r in rows if r["key"] in keys]
     rng.shuffle(items)
     return {"id": pid, "kind": "narrative", "coder": coder, "created": today.isoformat(), "not_before": None,
             "events": {k: {"olay": core["N"][k]["q"]["happened"]} for k in sorted(keys)}, "items": items}
@@ -81,14 +80,14 @@ def upsert(packet: dict, categories: list, path=PACKETS) -> None:
     data["categories"] = categories
     data["packets"].append(packet)
     p.parent.mkdir(parents=True, exist_ok=True)
-    fd, tmp = tempfile.mkstemp(dir=p.parent, suffix=".tmp")
-    with os.fdopen(fd, "w", encoding="utf-8") as f:
-        f.write(json.dumps(data, ensure_ascii=False, indent=1) + "\n")
+    tmp = p.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     os.replace(tmp, p)
 
 
 def read_export(export: dict, packets: dict) -> list:
-    out = []
+    out, ok = [], allowed(packets.get("categories", []))
+    items = {x["id"]: {i["item"] for i in x["items"]} for x in packets["packets"]}
     for r in export.get("reviews", []):
         k = r.get("key", "")
         if not k.startswith(PREFIX):
@@ -97,16 +96,14 @@ def read_export(export: dict, packets: dict) -> list:
         if pk is None:
             raise ValueError(f"{k}: unknown packet")
         item = k[len(PREFIX) + len(pk["id"]) + 2:]
-        if item not in {i["item"] for i in pk["items"]}:
+        if item not in items[pk["id"]]:
             raise ValueError(f"{k}: item not in packet {pk['id']}")
         answers = r.get("answers") or {}
         fields = ANSWERS[pk["kind"]]
         if set(answers) != set(fields):
             raise ValueError(f"{k}: answers must have exactly {list(fields)}, got {sorted(answers)}")
-        allowed = {"blame_level": BLAME_LEVELS + (UNSURE,), "present": ("yes", "no", UNSURE),
-                   "frame_category": tuple(packets.get("categories", [])) + (UNSURE,)}
         for f in fields:
-            if answers[f] not in allowed[f]:
+            if answers[f] not in ok[f]:
                 raise ValueError(f"{k}: value {answers[f]!r} not allowed for {f}")
             out.append(Coding(item, pk["coder"], f, answers[f]))
     return out

@@ -14,15 +14,11 @@ def krippendorff_alpha(units: Sequence[Sequence[Optional[str]]]) -> Optional[flo
     than 2 pairable values or no expected disagreement (only one value used).
     """
     o = Counter()  # coincidence matrix, ordered pairs of values
-    for unit in units:
-        vals = _coded(unit)
-        m = len(vals)
-        if m < 2:
-            continue
+    for vals in map(_coded, units):
         for i, a in enumerate(vals):
             for j, b in enumerate(vals):
                 if i != j:
-                    o[(a, b)] += 1 / (m - 1)
+                    o[(a, b)] += 1 / (len(vals) - 1)
     n = sum(o.values())
     if n < 2:
         return None

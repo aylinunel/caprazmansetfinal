@@ -111,7 +111,7 @@ class FileReviewer:
 
 
 def _inputs(run: Path) -> list[dict[str, Any]]:
-    return [json.loads(l) for l in (run / "inputs.jsonl").read_text().splitlines() if l.strip()]
+    return [json.loads(l) for l in (run / "inputs.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
 
 
 def selected_cards(bg: BiasGuard, run: Path, item: dict) -> list[str] | None:

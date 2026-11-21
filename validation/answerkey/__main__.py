@@ -5,18 +5,18 @@ import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from biasguard.news import _load
+from biasguard.catalog import load_cards
+from biasguard.news import _inputs, _load
 
 from validation.feedback.stats import card_status
 
 from .behaviour_eval import as_card_stats, measure
 from .behaviour_eval import report as behaviour_report
 from .codebook import load_codebook
-from .narrative_eval import compare, read_coded, report
-from .packets import PACKETS, behaviour_packet, narrative_packet, read_export, repeat_packet, upsert
+from .narrative_eval import _fmt, compare, read_coded, report
+from .packets import PACKETS, REPO, behaviour_packet, narrative_packet, read_export, repeat_packet, upsert
 from .record import FIELDS, agreement, append, check_slot, from_core, gold, read
 
-REPO = Path(__file__).resolve().parents[2]
 KEYS = REPO / "validation" / "reference" / "answerkey"
 REPORT = REPO / "docs" / "validation" / "reports" / "answerkey-agreement.md"
 NARRATIVE_QUALITY = REPO / "data" / "reference" / "narrative-quality.json"
@@ -25,10 +25,6 @@ BEHAVIOUR_REPORT = REPO / "docs" / "validation" / "reports" / "behaviour-blind.m
 CARD_STATUS = REPO / "validation" / "reference" / "card_status.json"
 GATES = REPO / "validation" / "reference" / "gates.json"
 NAMES = {"same coder": "same-coder consistency (two passes ≥ 14 days apart)", "between coders": "agreement between coders"}
-
-
-def _fmt(x):
-    return "—" if x is None else f"{x:.3f}"
 
 
 def agreement_report(core_path: Path) -> str:
@@ -45,13 +41,12 @@ def agreement_report(core_path: Path) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _write_key(pid: str, key: dict) -> None:
-    KEYS.mkdir(parents=True, exist_ok=True)
-    (KEYS / f"{pid}.key.json").write_text(json.dumps(key, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+def _dump(path: Path, obj) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(obj, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 def make_packet(a, path: Path = PACKETS) -> str:
-    from biasguard.catalog import load_cards
     categories = load_codebook()["categories"]
     packets = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"packets": []}
     today = date.today()
@@ -59,6 +54,7 @@ def make_packet(a, path: Path = PACKETS) -> str:
         check_slot(a.coder)
     except ValueError as e:
         raise SystemExit(f"--coder: {e}") from None
+    key = None
     if a.repeat:
         first = next((p for p in packets["packets"] if p["id"] == a.repeat), None)
         if first is None:
@@ -67,22 +63,19 @@ def make_packet(a, path: Path = PACKETS) -> str:
             raise SystemExit(f"--coder: a repeat of {a.repeat} (coder {first['coder']}) needs the same letter and a "
                              f"different digit, e.g. {first['coder'][0]}{'2' if first['coder'][1] != '2' else '3'}; got {a.coder}")
         p = repeat_packet(first, read(), a.items, a.seed, a.id, a.coder, today)
-        key = None
         if first["kind"] == "behaviour":  # narrative packets have no private key
             first_key = json.loads((KEYS / f"{a.repeat}.key.json").read_text(encoding="utf-8"))
             key = ({i["item"]: first_key[i["item"]] for i in p["items"] if i["item"] in first_key}
                    | {"_unflagged": first_key.get("_unflagged", {})})
     elif a.kind == "narrative":
-        key = None
         p = narrative_packet(_load(a.core), a.events, a.seed, a.id, a.coder, today)
     else:
         results = json.loads((a.run / "biasguard.json").read_text(encoding="utf-8"))
-        lines = (a.run / "inputs.jsonl").read_text(encoding="utf-8").splitlines()
-        inputs = {d["event"]: d for d in map(json.loads, filter(str.strip, lines))}
+        inputs = {d["event"]: d for d in _inputs(a.run)}
         p, key = behaviour_packet(results, inputs, load_cards(), a.events, a.seed, a.id, a.coder, today)
     upsert(p, categories, path)  # refuses a changed packet; only then is the private key written
     if key is not None:
-        _write_key(a.id, key)
+        _dump(KEYS / f"{a.id}.key.json", key)
     return f"{a.id}: {len(p['items'])} items, {len(p['events'])} events"
 
 
@@ -92,7 +85,7 @@ def build_examples(agreed: dict, key: dict, inputs: dict, events: dict | None = 
     The text is the packet's `metin` (what the person coded); the run's text is only a fallback."""
     out: dict = {}
     for item, meta in sorted(key.items()):
-        if item == "_unflagged" or agreed.get(item) not in ("yes", "no"):
+        if agreed.get(item) not in ("yes", "no"):
             continue
         v, event = agreed[item], meta.get("event")
         text = ((events or {}).get(event) or {}).get("metin") or (inputs.get(event) or {}).get("text")
@@ -101,19 +94,19 @@ def build_examples(agreed: dict, key: dict, inputs: dict, events: dict | None = 
         mine = out.setdefault(meta["card"], [])
         if all(e["present"] != v for e in mine):
             mine.append({"event": event, "text": text, "present": v})
-    return {c: sorted(e, key=lambda x: x["present"] != "yes") for c, e in out.items() if e}
+    return {c: sorted(e, key=lambda x: x["present"] != "yes") for c, e in out.items()}
 
 
 def main(argv=None) -> None:
     ap = argparse.ArgumentParser(prog="python -m validation.answerkey")
     sub = ap.add_subparsers(dest="cmd", required=True)
-    ag = sub.add_parser("agreement", help="write the agreement report")
-    ag.add_argument("--core", type=Path, default=REPO / "public" / "data" / "core.bin")
-    pk = sub.add_parser("packet", help="make a blind packet")
+    core = argparse.ArgumentParser(add_help=False)
+    core.add_argument("--core", type=Path, default=REPO / "public" / "data" / "core.bin")
+    sub.add_parser("agreement", help="write the agreement report", parents=[core])
+    pk = sub.add_parser("packet", help="make a blind packet", parents=[core])
     pk.add_argument("--kind", choices=("narrative", "behaviour"))
     pk.add_argument("--repeat", help="id of the packet to repeat")
     pk.add_argument("--run", type=Path)
-    pk.add_argument("--core", type=Path, default=REPO / "public" / "data" / "core.bin")
     pk.add_argument("--events", type=int)
     pk.add_argument("--items", type=int)
     pk.add_argument("--coder", required=True)
@@ -121,9 +114,8 @@ def main(argv=None) -> None:
     pk.add_argument("--seed", type=int)
     im = sub.add_parser("import", help="append the codings in a desk export")
     im.add_argument("export", type=Path)
-    ne = sub.add_parser("narrative-eval", help="score the narrative agent against the human-coded weeks")
+    ne = sub.add_parser("narrative-eval", help="score the narrative agent against the human-coded weeks", parents=[core])
     ne.add_argument("--coded", type=Path, required=True)
-    ne.add_argument("--core", type=Path, default=REPO / "public" / "data" / "core.bin")
     be = sub.add_parser("behaviour-eval", help="blind precision and estimated recall of the behavioural review")
     be.add_argument("--key", type=Path, required=True)
     be.add_argument("--status", action="store_true", help="also write card_status.json from blind precision")
@@ -133,7 +125,6 @@ def main(argv=None) -> None:
     args = ap.parse_args(argv)
     if args.cmd == "agreement":
         text = agreement_report(args.core)
-        REPORT.parent.mkdir(parents=True, exist_ok=True)
         REPORT.write_text(text, encoding="utf-8")
         print(text)
     if args.cmd == "packet":
@@ -163,26 +154,20 @@ def main(argv=None) -> None:
     if args.cmd == "narrative-eval":
         result = compare(read_coded(args.coded), _load(args.core), load_codebook())
         text = report(result)
-        NARRATIVE_QUALITY.write_text(json.dumps({**result, "measured": date.today().isoformat()}, ensure_ascii=False, indent=1) + "\n",
-                                     encoding="utf-8")
-        NARRATIVE_REPORT.parent.mkdir(parents=True, exist_ok=True)
+        _dump(NARRATIVE_QUALITY, {**result, "measured": date.today().isoformat()})
         NARRATIVE_REPORT.write_text(text, encoding="utf-8")
         print(text)
     if args.cmd == "examples":
         codings, out = read(), {}
         if agreement(codings, "present")["usable"]:
-            key = {}
-            for kp in sorted(KEYS.glob("behaviour-*.key.json")):
-                key |= json.loads(kp.read_text(encoding="utf-8"))
-            lines = (args.run / "inputs.jsonl").read_text(encoding="utf-8").splitlines()
-            events = {}
-            for pk in json.loads(PACKETS.read_text(encoding="utf-8"))["packets"] if PACKETS.exists() else []:
-                events = pk["events"] | events
-            out = build_examples(gold(codings, "present")[0], key, {d["event"]: d for d in map(json.loads, filter(str.strip, lines))}, events)
+            key = {k: v for kp in sorted(KEYS.glob("behaviour-*.key.json"))
+                   for k, v in json.loads(kp.read_text(encoding="utf-8")).items()}
+            packets = json.loads(PACKETS.read_text(encoding="utf-8"))["packets"] if PACKETS.exists() else []
+            events = {k: v for pk in reversed(packets) for k, v in pk["events"].items()}  # the earliest packet wins
+            out = build_examples(gold(codings, "present")[0], key, {d["event"]: d for d in _inputs(args.run)}, events)
         else:
             print("present not usable yet: writing an empty examples file")
-        args.out.parent.mkdir(parents=True, exist_ok=True)
-        args.out.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        _dump(args.out, out)
     if args.cmd == "behaviour-eval":
         codings = read()
         present = agreement(codings, "present")
@@ -192,14 +177,13 @@ def main(argv=None) -> None:
         agreed, disputed = gold(codings, "present")
         m = measure(agreed, json.loads(args.key.read_text(encoding="utf-8")))
         text = behaviour_report(m, len(disputed), present)
-        BEHAVIOUR_REPORT.parent.mkdir(parents=True, exist_ok=True)
         BEHAVIOUR_REPORT.write_text(text, encoding="utf-8")
         if args.status:
             gates = json.loads(GATES.read_text(encoding="utf-8"))
             out = {"pack_version": "", "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                    "agreed": gates["agreed"], "measure": "blind precision",
                    "cards": card_status(as_card_stats(m), gates)}
-            CARD_STATUS.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+            _dump(CARD_STATUS, out)
         print(text)
 
 

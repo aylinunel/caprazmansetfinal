@@ -7,8 +7,7 @@ from .codebook import HUMAN_STATUSES, blame_level, frame_category
 
 
 def _measure(pairs: list[tuple[str, str]]) -> dict:
-    units = [list(p) for p in pairs]
-    return {"n": len(pairs), "agreement": percent_agreement(units), "alpha": krippendorff_alpha(units)}
+    return {"n": len(pairs), "agreement": percent_agreement(pairs), "alpha": krippendorff_alpha(pairs)}
 
 
 def compare(agent: dict[str, dict], core: dict, codebook: dict) -> dict:
