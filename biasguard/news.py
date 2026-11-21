@@ -135,9 +135,6 @@ def selected_cards(bg: BiasGuard, run: Path, item: dict) -> list[str] | None:
     return ids or [c["id"] for c in bg.cards[:MAX_CANDIDATES]]
 
 
-EXAMPLES_NOTE = "Örnekler başka olaylardan, insanların kodladığı yanıtlardır; bu olayın kanıtı değildir."
-
-
 def prompts(stage: str, role: str | None = None, examples: bool = False) -> str:
     if stage == "select":
         return _selector_system_prompt()
@@ -146,7 +143,7 @@ def prompts(stage: str, role: str | None = None, examples: bool = False) -> str:
         "outlet placements and active outlets that did not cover it. A behavioral quote is a comparative observation "
         "of what an outlet actually published (e.g. its headline set against the others); quote it exactly from text. "
         "Write mechanism, alternative_explanation and missing_context in Turkish."
-        + (f"\n{EXAMPLES_NOTE}" if examples else ""))
+        + ("\nÖrnekler başka olaylardan, insanların kodladığı yanıtlardır; bu olayın kanıtı değildir." if examples else ""))
 
 
 def write_tasks(run: Path, stage: str, batch: int, bg: BiasGuard | None = None,
@@ -187,14 +184,12 @@ def write_tasks(run: Path, stage: str, batch: int, bg: BiasGuard | None = None,
         if examples:  # human-coded answers from other events only, at most 2 per card
             here = {x["event"] for x in chunk}
             for c in cards:
-                own = [e for e in examples.get(c["id"], []) if e["event"] not in here][:2]
-                if own:
+                if own := [e for e in examples.get(c["id"], []) if e["event"] not in here][:2]:
                     c["examples"] = own
-        with_examples = any("examples" in c for c in cards)
         for role in ("advocate", "skeptic"):
             p = tdir / role / name
             p.parent.mkdir(parents=True, exist_ok=True)
-            dump(p, {"stage": stage, "role": role, "system_prompt": prompts("review", role, with_examples),
+            dump(p, {"stage": stage, "role": role, "system_prompt": prompts("review", role, any("examples" in c for c in cards)),
                      "output_schema_note": "per event: build_reviewer_schema(card_ids, role); see schema_example",
                      "schema_example": build_reviewer_schema(chunk[0]["card_ids"], role), "cards": cards, "events": chunk})
             paths.append(p)

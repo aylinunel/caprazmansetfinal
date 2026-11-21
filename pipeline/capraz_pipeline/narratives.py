@@ -29,7 +29,7 @@ KEEP = 20  # most differentiated events shown per agent-coded week (S, § 6.3)
 DIM_LABELS = {"frame": "Çerçeve", "hero": "Merkezdeki aktör", "blame": "Sorumlu tutulan", "cause": "Sunulan neden",
               "cons": "Öne çıkan sonuç", "aff": "Etkilenen kesim", "sol": "Meşrulaştırılan çözüm", "moral": "Ahlaki çerçeve",
               "start": "Hikâyenin başlangıcı"}
-DIMS = ["frame", "hero", "blame", "cause", "cons", "aff", "sol", "moral", "start"]
+DIMS = list(DIM_LABELS)
 WEIGHT = {"blame": 1.2, "sol": 1.2, "frame": 1.0, "cause": 1.0, "moral": 1.0, "start": 0.8, "aff": 0.8, "hero": 0.6, "cons": 0.5}
 OUT = REPO / "data" / "reference" / "narratives-7.json"
 METHOD = ("Başlıklardan otomatik kodlandı: her kurumun bu olaydaki ilk başlığını bir Claude ajanı okuyup dokuz boyut atadı "
@@ -193,7 +193,7 @@ def merge(core: dict) -> None:
     lens = OUT.parent / "lens-82.json"  # 8.2: single-source lens, same-story measures (python -m capraz_pipeline.lens)
     if lens.exists():
         core["LENS"] = json.loads(lens.read_text())
-    nq = REPO / "data" / "reference" / "narrative-quality.json"  # AI coding vs human coding on hand-coded events (Task 6)
+    nq = OUT.parent / "narrative-quality.json"  # AI coding vs human coding on hand-coded events (Task 6)
     if nq.exists():
         core["NQ"] = json.loads(nq.read_text(encoding="utf-8"))
     if OUT.exists():
