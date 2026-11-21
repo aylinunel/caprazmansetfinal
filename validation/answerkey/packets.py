@@ -87,7 +87,7 @@ def upsert(packet: dict, categories: list, path=PACKETS) -> None:
 
 def read_export(export: dict, packets: dict) -> list:
     out, ok = [], allowed(packets.get("categories", []))
-    items = {x["id"]: {i["item"] for i in x["items"]} for x in packets["packets"]}
+    items = {x["id"]: {i["item"] for i in x["items"]} for x in packets.get("packets", [])}
     for r in export.get("reviews", []):
         k = r.get("key", "")
         if not k.startswith(PREFIX):
