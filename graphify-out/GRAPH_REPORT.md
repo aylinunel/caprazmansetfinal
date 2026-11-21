@@ -1,25 +1,30 @@
 # Graph Report - caprazmansetfinal  (2026-11-21)
 
 ## Corpus Check
-- 192 files · ~263,021 words
+- 201 files · ~270,954 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 6 file(s) not represented in the graph (top: (none) 5, .css 1)
 
 ## Summary
-- 2710 nodes · 6593 edges · 119 communities (108 shown, 11 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 442 edges (avg confidence: 0.87)
-- Token cost: 0 input · 132,873 output
+- 2847 nodes · 7006 edges · 130 communities (117 shown, 13 thin omitted)
+- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 454 edges (avg confidence: 0.87)
+- Token cost: 674,905 input · 0 output
+
+## Graph Freshness
+- Built from commit: `3dabc30b`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Site Tests and Deep Links
 - App Router and Data Access
 - Core Finding Blocks
-- BiasGuard CLI
-- URL Packing
+- json
+- gzip
 - Turkish Layer and Appeals
 - Rule Explanations
 - Sources and Answers UI
-- Agreement Statistic
+- record.py
 - Review Export Import
 - AI-vs-Rules Analysis
 - BiasGuard News Runner
@@ -27,7 +32,7 @@
 - CI Workflow
 - Outlet Analysis
 - 7.0 Structure and Findings
-- Article Ingest
+- capraz_pipeline/__main__.py
 - BiasGuard Engine
 - Validation Lab Cases
 - Whats New Builder
@@ -38,27 +43,27 @@
 - Data Architecture ADRs
 - Answer Key Plan Tasks
 - Replay Runs
-- Article Rows and Compare
+- srcName
 - ML and Lens Plans
 - Narrative Map Pages
 - Leak Guard
 - Change Protocol Metrics
-- Lab Concept Targets
+- answerkey/__main__.py
 - Admin Shell and Footer
 - AI Imza Box
 - Reference Adapter Results
 - UX Rethink
 - Bias Concepts Overview
-- Media Techniques Group
+- olay.js
 - Broadsheet Motion
 - Crosswalk and Evidence Tiers
-- Mesa Simulation
+- errors.py
 - Section Classifier
 - Span Verification
-- BiasGuard Gate Tests
+- news.py
 - Event Clustering
 - Promotion Gate
-- Review Queue Tiers
+- test_routing.py
 - Events and Blind Spots
 - Scored Bias Keys
 - Detector Protocol
@@ -66,11 +71,11 @@
 - Topic Models
 - Media Technique Cards
 - Lens Measures and Verdicts
-- Narratives Pipeline
+- test_mlbench.py
 - Reviewer Agents
-- Card Data and Configs
+- configs.py
 - Rate Statistics
-- Headline Compare
+- home.js
 - Lab-Gated Promotion
 - Party Page
 - Omission and Loaded Language
@@ -80,8 +85,8 @@
 - Comparison Charts
 - AI Denetim Masası
 - Navigation and Smoke Tests
-- Apply-on-Run Tests
-- Blind Reference Packets
+- mlbench/__main__.py
+- narrative_eval.py
 - AI Onaylı Meaning
 - Blind Spot Pages
 - Dot-Matrix Engine
@@ -89,7 +94,7 @@
 - Method Page
 - Editorial Schema
 - Agenda Graph
-- Finding Routing
+- card_stats
 - Provenance Seed
 - Kindred Style
 - Validation Lab Overview
@@ -107,45 +112,54 @@
 - Iframe Scroll Test
 - Method Wheel Test
 - Perf Test
-- Method Diagrams
+- storyLabel
 - Lens Page Rendering
 - Implementation Plans
 - Score Bridge
 - Data Loader
 - Attribution Notice
-- Article Row Controls
+- write_tasks
 - Outlet Page
-- Lens Distance
+- test_answerkey.py
 - Mobile and Accessibility
-- Method Scroll
+- route
 - Fog Hero
 - Official Notices Page
 - Turkish Layer Tasks
-- Lens Compute Tests
-- Vendored Mesa Tests
+- test_aix.py
+- cli.py
 - Cloud Setup Script
+- make_packet
+- blind.cjs
+- confirmed_skips
+- rules.cjs
+- build_examples
+- findingGroups
+- cli_more.py
+- mlbench.md
+- narrative-agent-vs-human.md
 
 ## God Nodes (most connected - your core abstractions)
-1. `BiasGuard` - 65 edges
+1. `BiasGuard` - 62 edges
 2. `srcName()` - 45 edges
 3. `build()` - 43 edges
 4. `route()` - 37 edges
 5. `t3()` - 34 edges
 6. `Çapraz Manşet README` - 33 edges
 7. `render()` - 31 edges
-8. `Store` - 30 edges
-9. `apply()` - 28 edges
-10. `load_cards()` - 27 edges
+8. `load_cards()` - 31 edges
+9. `Store` - 30 edges
+10. `apply()` - 28 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `assert_no_leak()` --semantically_similar_to--> `packets.blind_packet()`  [INFERRED] [semantically similar]
   validation/biaslab/renderer.py → docs/superpowers/plans/parked/2026-11-14-blind-reference-study.md
 - `promotable()` --semantically_similar_to--> `gate.decide()`  [INFERRED] [semantically similar]
   validation/biaslab/promote.py → docs/superpowers/plans/parked/2026-11-14-blind-reference-study.md
-- `ENTRY_TYPES media_practice / REVIEW_POLICIES media_pattern_review` --conceptually_related_to--> `load_media_cards()`  [INFERRED]
-  docs/superpowers/plans/2026-11-14-medyanin-oyunlari.md → biasguard/catalog.py
 - `core.bin key BGM (biasguard-media.json)` --shares_data_with--> `apply()`  [INFERRED]
   docs/superpowers/plans/2026-11-14-medyanin-oyunlari.md → biasguard/news.py
+- `NAV / SUB navigation tables` --references--> `anPage()`  [INFERRED]
+  docs/superpowers/plans/2026-11-14-anlati-nav-bias-toc.md → site/js/v7/logic.js
 - `Anlatı topic, bias explainers, Nasıl çalışır scroll fix Plan` --references--> `assemble()`  [EXTRACTED]
   docs/superpowers/plans/2026-11-14-anlati-nav-bias-toc.md → pipeline/capraz_pipeline/site.py
 
@@ -153,72 +167,72 @@
 - None detected.
 
 ## Hyperedges (group relationships)
-- **BiasGuard selector/advocate/skeptic review and apply flow** — biasguard_agent_review_news_inputs, biasguard_agent_review_news_tasks, biasguard_agent_review_selector_agents, biasguard_agent_review_advocate_agents, biasguard_agent_review_skeptic_agents, biasguard_agent_review_news_apply, biasguard_agent_review_biasguard_json [EXTRACTED 1.00]
-- **Headline scorer steps (quote stripping, lexicon, weights, bands, evidence)** — docs_biases_and_detection_unquoted, docs_biases_and_detection_lexicon_rules, docs_biases_and_detection_anchoring_structural_rule, docs_biases_and_detection_weights_score, docs_biases_and_detection_score_bands, docs_biases_and_detection_evidence_strength [EXTRACTED 1.00]
-- **Learning loop iteration cycle (snapshot, errors, replay, promotion, insights)** — docs_superpowers_plans_2026_11_14_learning_loop_build_snapshots, docs_superpowers_plans_2026_11_14_learning_loop_error_analysis, docs_superpowers_plans_2026_11_14_learning_loop_replay_set, docs_superpowers_plans_2026_11_14_learning_loop_promotion_gate_module, docs_superpowers_plans_2026_11_14_learning_loop_drift_and_insights, docs_validation_iterations_the_loop [EXTRACTED 1.00]
-- **Media card lifecycle: candidate → lab → promotion → site** — docs_superpowers_plans_2026_11_14_medyanin_oyunlari_seventeen_media_cards, validation_biaslab_renderer, validation_biaslab_promote_promotable, validation_biaslab_promote_promote, biasguard_data_media_cards, biasguard_news_apply, site_js_v7_logic_findinggroups [INFERRED 0.85]
-- **Lab build→tasks→score pipeline** — validation_biaslab_renderer, validation_biaslab_renderer_assert_no_leak, validation_biaslab_adapter, validation_biaslab_ledger, validation_biaslab_metrics, validation_biaslab_metrics_paired_bootstrap, validation_biaslab_run [EXTRACTED 1.00]
-- **Review status and feedback flow (routing, audit, editor review, labels, card gate, badges)** — docs_superpowers_plans_2026_11_14_review_status_and_feedback_routing_rule_tier, docs_superpowers_plans_2026_11_14_review_status_and_feedback_audit_sample, docs_superpowers_plans_2026_11_14_review_status_and_feedback_editor_review_export, docs_superpowers_plans_2026_11_14_review_status_and_feedback_label_import, docs_superpowers_plans_2026_11_14_review_status_and_feedback_card_stats_and_gate, docs_superpowers_plans_2026_11_14_review_status_and_feedback_status_badges [EXTRACTED 1.00]
-- **Publication gating chain (gate → label_status → BGG → bgLabelState)** — validation_biaslab_gate_decide, validation_reference_gates, validation_reference_label_status, pipeline_capraz_pipeline_build_bgg_bgv, site_js_v7_logic_bglabelstate [EXTRACTED 1.00]
-- **Claude Code guard, check contract and plan-first runner control system** — docs_superpowers_plans_parked_2026_11_14_claude_code_controls_check_contract, docs_superpowers_plans_parked_2026_11_14_claude_code_controls_guard_classify, docs_superpowers_plans_parked_2026_11_14_claude_code_controls_pretooluse_hook, docs_superpowers_plans_parked_2026_11_14_claude_code_controls_safe_check_change_set, docs_superpowers_plans_parked_2026_11_14_claude_code_controls_safe_check_plan, docs_superpowers_plans_parked_2026_11_14_claude_code_controls_safe_check_run, docs_superpowers_plans_parked_2026_11_14_claude_code_controls_ci_checks_workflow [EXTRACTED 1.00]
-- **Finding block evolution across 7.0 structure, UX rethink and broadsheet motion** — docs_superpowers_specs_2026_11_05_capraz_7_structure_design_finding_block, docs_superpowers_plans_2026_11_05_capraz_7_structure_findingblock, docs_superpowers_specs_2026_11_05_ux_rethink_design_finding_block_layered, docs_superpowers_plans_2026_11_05_ux_rethink_findingblock_v8, docs_superpowers_specs_2026_11_06_broadsheet_motion_design_body_components [INFERRED 0.85]
-- **Homepage hero evolution: dot-matrix LED hero -> fog split card -> both headlines with tint** — docs_superpowers_plans_2026_11_05_kindred_style_dot_matrix_hero, docs_superpowers_plans_2026_11_05_ux_rethink_foghero, docs_superpowers_specs_2026_11_05_ux_rethink_design_fog_split_card_hero, docs_superpowers_plans_2026_11_06_broadsheet_motion_hero_click_to_tint, docs_superpowers_specs_2026_11_06_broadsheet_motion_design_hero_both_headlines_tint [INFERRED 0.85]
-- **Outlet distance score: proven measures + within-story regression + AI insights** — docs_superpowers_specs_2026_11_20_single_source_lens_decisions_distance_from_full_picture, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_proven_measures, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_event_fixed_effects_regression, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_additional_insights_ai_imzali [EXTRACTED 1.00]
-- **Expert review learning loop** — docs_superpowers_specs_2026_11_20_single_source_lens_decisions_ai_denetim_masasi, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_expert_feedback_training_loop, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_reviews_export_labels, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_concept_measurability_criterion, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_expert_answer_key [INFERRED 0.85]
-- **Pattern naming safeguards** — docs_superpowers_specs_2026_11_20_single_source_lens_decisions_pattern_strength_wording, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_unmistakable_pattern_rule, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_behaviour_not_motive [EXTRACTED 1.00]
-- **Çapraz Manşet pipeline stage flow (ingest → export)** — pipeline_readme_ingest, pipeline_readme_score, pipeline_readme_classify, pipeline_readme_cluster, pipeline_readme_events, pipeline_readme_topics, pipeline_readme_analyse, pipeline_readme_export [EXTRACTED 1.00]
 - **Answer-key measurement pipeline (record, packets, desk, evals)** — docs_superpowers_plans_2026_11_17_ml_narrative_and_behavioural_coding_record, docs_superpowers_plans_2026_11_17_ml_narrative_and_behavioural_blind_packets, docs_superpowers_plans_2026_11_17_ml_narrative_and_behavioural_blind_desk_mode, docs_superpowers_plans_2026_11_17_ml_narrative_and_behavioural_behaviour_eval [EXTRACTED 0.90]
 - **Single-source lens build pipeline** — docs_superpowers_plans_2026_11_21_single_source_lens_stats_module, docs_superpowers_plans_2026_11_21_single_source_lens_lens_module, docs_superpowers_plans_2026_11_21_single_source_lens_core_key_lens, docs_superpowers_plans_2026_11_21_single_source_lens_lens_js [EXTRACTED 0.90]
+- **BiasGuard selector/advocate/skeptic review and apply flow** — biasguard_agent_review_news_inputs, biasguard_agent_review_news_tasks, biasguard_agent_review_selector_agents, biasguard_agent_review_advocate_agents, biasguard_agent_review_skeptic_agents, biasguard_agent_review_news_apply, biasguard_agent_review_biasguard_json [EXTRACTED 1.00]
+- **Çapraz Manşet pipeline stage flow (ingest → export)** — pipeline_readme_ingest, pipeline_readme_score, pipeline_readme_classify, pipeline_readme_cluster, pipeline_readme_events, pipeline_readme_topics, pipeline_readme_analyse, pipeline_readme_export [EXTRACTED 1.00]
+- **Claude Code guard, check contract and plan-first runner control system** — docs_superpowers_plans_parked_2026_11_14_claude_code_controls_check_contract, docs_superpowers_plans_parked_2026_11_14_claude_code_controls_guard_classify, docs_superpowers_plans_parked_2026_11_14_claude_code_controls_pretooluse_hook, docs_superpowers_plans_parked_2026_11_14_claude_code_controls_safe_check_change_set, docs_superpowers_plans_parked_2026_11_14_claude_code_controls_safe_check_plan, docs_superpowers_plans_parked_2026_11_14_claude_code_controls_safe_check_run, docs_superpowers_plans_parked_2026_11_14_claude_code_controls_ci_checks_workflow [EXTRACTED 1.00]
+- **Outlet distance score: proven measures + within-story regression + AI insights** — docs_superpowers_specs_2026_11_20_single_source_lens_decisions_distance_from_full_picture, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_proven_measures, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_event_fixed_effects_regression, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_additional_insights_ai_imzali [EXTRACTED 1.00]
+- **Pattern naming safeguards** — docs_superpowers_specs_2026_11_20_single_source_lens_decisions_pattern_strength_wording, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_unmistakable_pattern_rule, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_behaviour_not_motive [EXTRACTED 1.00]
+- **Headline scorer steps (quote stripping, lexicon, weights, bands, evidence)** — docs_biases_and_detection_unquoted, docs_biases_and_detection_lexicon_rules, docs_biases_and_detection_anchoring_structural_rule, docs_biases_and_detection_weights_score, docs_biases_and_detection_score_bands, docs_biases_and_detection_evidence_strength [EXTRACTED 1.00]
+- **Learning loop iteration cycle (snapshot, errors, replay, promotion, insights)** — docs_superpowers_plans_2026_11_14_learning_loop_build_snapshots, docs_superpowers_plans_2026_11_14_learning_loop_error_analysis, docs_superpowers_plans_2026_11_14_learning_loop_replay_set, docs_superpowers_plans_2026_11_14_learning_loop_promotion_gate_module, docs_superpowers_plans_2026_11_14_learning_loop_drift_and_insights, docs_validation_iterations_the_loop [EXTRACTED 1.00]
+- **Lab build→tasks→score pipeline** — validation_biaslab_renderer, validation_biaslab_renderer_assert_no_leak, validation_biaslab_adapter, validation_biaslab_ledger, validation_biaslab_metrics, validation_biaslab_metrics_paired_bootstrap, validation_biaslab_run [EXTRACTED 1.00]
+- **Publication gating chain (gate → label_status → BGG → bgLabelState)** — validation_biaslab_gate_decide, validation_reference_gates, validation_reference_label_status, pipeline_capraz_pipeline_build_bgg_bgv, site_js_v7_logic_bglabelstate [EXTRACTED 1.00]
+- **Review status and feedback flow (routing, audit, editor review, labels, card gate, badges)** — docs_superpowers_plans_2026_11_14_review_status_and_feedback_routing_rule_tier, docs_superpowers_plans_2026_11_14_review_status_and_feedback_audit_sample, docs_superpowers_plans_2026_11_14_review_status_and_feedback_editor_review_export, docs_superpowers_plans_2026_11_14_review_status_and_feedback_label_import, docs_superpowers_plans_2026_11_14_review_status_and_feedback_card_stats_and_gate, docs_superpowers_plans_2026_11_14_review_status_and_feedback_status_badges [EXTRACTED 1.00]
+- **Expert review learning loop** — docs_superpowers_specs_2026_11_20_single_source_lens_decisions_ai_denetim_masasi, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_expert_feedback_training_loop, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_reviews_export_labels, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_concept_measurability_criterion, docs_superpowers_specs_2026_11_20_single_source_lens_decisions_expert_answer_key [INFERRED 0.85]
+- **Finding block evolution across 7.0 structure, UX rethink and broadsheet motion** — docs_superpowers_specs_2026_11_05_capraz_7_structure_design_finding_block, docs_superpowers_plans_2026_11_05_capraz_7_structure_findingblock, docs_superpowers_specs_2026_11_05_ux_rethink_design_finding_block_layered, docs_superpowers_plans_2026_11_05_ux_rethink_findingblock_v8, docs_superpowers_specs_2026_11_06_broadsheet_motion_design_body_components [INFERRED 0.85]
+- **Homepage hero evolution: dot-matrix LED hero -> fog split card -> both headlines with tint** — docs_superpowers_plans_2026_11_05_kindred_style_dot_matrix_hero, docs_superpowers_plans_2026_11_05_ux_rethink_foghero, docs_superpowers_specs_2026_11_05_ux_rethink_design_fog_split_card_hero, docs_superpowers_plans_2026_11_06_broadsheet_motion_hero_click_to_tint, docs_superpowers_specs_2026_11_06_broadsheet_motion_design_hero_both_headlines_tint [INFERRED 0.85]
+- **Media card lifecycle: candidate → lab → promotion → site** — docs_superpowers_plans_2026_11_14_medyanin_oyunlari_seventeen_media_cards, validation_biaslab_renderer, validation_biaslab_promote_promotable, validation_biaslab_promote_promote, biasguard_data_media_cards, biasguard_news_apply, site_js_v7_logic_findinggroups [INFERRED 0.85]
 
-## Communities (119 total, 11 thin omitted)
+## Communities (130 total, 13 thin omitted)
 
 ### Community 0 - "Site Tests and Deep Links"
 Cohesion: 0.05
-Nodes (67): Stretched card link (.xstretch), 9 not-measurable concepts ('Bu veriyle ölçülemiyor'), BREG bias registry / bg7k alias, biasChip(), aliasEscape(), anEmpty(), anPage(), anVal() (+59 more)
+Nodes (74): Stretched card link (.xstretch), BREG bias registry / bg7k alias, biasChip(), aliasEscape(), anEmpty(), anPage(), anVal(), axisDist() (+66 more)
 
 ### Community 1 - "App Router and Data Access"
-Cohesion: 0.06
-Nodes (64): actorMatrix(), actorsOf(), bg7(), bg7AdminFindings(), bg7AiTag(), bg7CardLine(), bg7caveat(), bg7Concept() (+56 more)
+Cohesion: 0.05
+Nodes (60): ADR-0001, ADR-0002, actorMatrix(), actorsOf(), artRow(), bg7AdminFindings(), bg7AiTag(), bg7CardLine() (+52 more)
 
 ### Community 2 - "Core Finding Blocks"
 Cohesion: 0.10
 Nodes (63): findingBlock(), glClose(), glOpen(), yzBadge(), yzBlock(), orAnBars(), orAnKeys(), orAnlati() (+55 more)
 
-### Community 3 - "BiasGuard CLI"
-Cohesion: 0.07
-Nodes (13): _build_parser(), _emit(), _load_capabilities(), main(), _read_utf8(), review_keys(), OptionalReviewKeysTest, build() (+5 more)
+### Community 3 - "json"
+Cohesion: 0.10
+Nodes (10): build_reference(), dataset_from_html(), article_id(), convert(), _dump(), main(), split(), UrlPackTest (+2 more)
 
-### Community 4 - "URL Packing"
+### Community 4 - "gzip"
 Cohesion: 0.07
-Nodes (27): convert(), _dump(), main(), split(), UrlPackTest, clusters(), confusion(), joined() (+19 more)
+Nodes (27): candidates(), diverge(), first(), _card_conditions(), finalize(), _focus(), _load(), merge() (+19 more)
 
 ### Community 5 - "Turkish Layer and Appeals"
 Cohesion: 0.07
 Nodes (52): admittedSet(), appealPayload(), appealSubmit(), appealValidate(), applyOwnerSources(), basisEligible(), blocOf(), blocOfLean() (+44 more)
 
 ### Community 6 - "Rule Explanations"
-Cohesion: 0.07
-Nodes (26): compose(), concept_means(), _first_sentence(), _fit(), _join(), main(), _outlets(), _quote_line() (+18 more)
+Cohesion: 0.09
+Nodes (18): compose(), concept_means(), _first_sentence(), _fit(), _join(), main(), _outlets(), _quote_line() (+10 more)
 
 ### Community 7 - "Sources and Answers UI"
 Cohesion: 0.07
-Nodes (56): renderSources(), t3(), v3After(), v3ansButtons(), v3answers(), v3bars(), v3bindStore(), v3chip() (+48 more)
+Nodes (59): artUrl(), renderSources(), t3(), v3After(), v3ansButtons(), v3answers(), v3bindStore(), v3chip() (+51 more)
 
-### Community 8 - "Agreement Statistic"
-Cohesion: 0.08
-Nodes (23): _coded(), krippendorff_alpha(), percent_agreement(), blame_level(), frame_category(), human_rows(), load_codebook(), agreement_report() (+15 more)
+### Community 8 - "record.py"
+Cohesion: 0.25
+Nodes (8): agreement(), _by_item(), _check(), check_slot(), Coding, gold(), units(), RecordTest
 
 ### Community 9 - "Review Export Import"
-Cohesion: 0.11
-Nodes (13): append(), import_export(), Label, latest(), read(), card_stats(), card_status(), wilson_lower() (+5 more)
+Cohesion: 0.19
+Nodes (7): append(), import_export(), read(), main(), export(), LabelsTest, rev()
 
 ### Community 10 - "AI-vs-Rules Analysis"
-Cohesion: 0.09
-Nodes (25): auc(), _bloc(), _bloc_rate(), boot_mean_ci(), cite_index(), cited(), _cited(), compute() (+17 more)
+Cohesion: 0.11
+Nodes (19): _bloc(), _bloc_rate(), boot_mean_ci(), cite_index(), cited(), compute(), group(), _live() (+11 more)
 
 ### Community 11 - "BiasGuard News Runner"
-Cohesion: 0.11
-Nodes (16): _outlet_counts(), prompts(), selected_cards(), write_tasks(), _mapping(), OpenAIReviewer, _parse_provider_json(), ProviderCallError (+8 more)
+Cohesion: 0.19
+Nodes (8): _mapping(), OpenAIReviewer, _parse_provider_json(), ProviderCallError, ProviderConfigurationError, _redacted_exception(), _selector_schema(), _user_prompt()
 
 ### Community 12 - "Project Principles"
 Cohesion: 0.07
@@ -230,31 +244,31 @@ Nodes (42): runs-on, steps, timeout-minutes, jobs, biasguard, lab, mesa, pipelin
 
 ### Community 14 - "Outlet Analysis"
 Cohesion: 0.09
-Nodes (19): active_outlets(), advanced_outlets(), agenda(), feed_table(), framing_pca(), headline_lede_gap(), jsd(), mantel() (+11 more)
+Nodes (19): advanced_outlets(), agenda(), feed_table(), framing_pca(), headline_lede_gap(), jsd(), lead_lag(), mantel() (+11 more)
 
 ### Community 15 - "7.0 Structure and Findings"
 Cohesion: 0.10
 Nodes (32): blameByBloc, Capraz Manset 7.0 Structure Redesign Implementation Plan, biasguard explain stage (explain-tasks / explain-apply / validate_explain), findingBlock (claim / viz / means / Nasil olctuk), ilanSearch / trFold Turkish-folded search, kurumLines7 outlet profile links to patterns, logic.js pure logic module (CommonJS-exported), narrGroups (+24 more)
 
-### Community 16 - "Article Ingest"
-Cohesion: 0.10
-Nodes (16): collector_files(), ingest(), _lines(), main(), build_reference(), dataset_from_html(), assemble(), article_id() (+8 more)
+### Community 16 - "capraz_pipeline/__main__.py"
+Cohesion: 0.24
+Nodes (3): main(), assemble(), V7Inline
 
 ### Community 17 - "BiasGuard Engine"
-Cohesion: 0.11
-Nodes (8): _all_offsets(), BiasGuard, _copy_call_metadata(), InputRejectedError, _safe_message(), _sha(), ReviewerSchemaError, TaskCatalogTests
+Cohesion: 0.13
+Nodes (6): _all_offsets(), BiasGuard, _copy_call_metadata(), InputRejectedError, _safe_message(), ReviewerSchemaError
 
 ### Community 18 - "Validation Lab Cases"
-Cohesion: 0.10
-Nodes (19): Case kinds (positive, inactive/boundary/quoted controls, missing_context), illusory_truth_effect (pilot concept), Perturbations (reverse_outlets, relabel_outlets, irrelevant_detail), selective_statistics (pilot concept), cases.Case, case_id(), DetectorInput, cases.expected() (+11 more)
+Cohesion: 0.11
+Nodes (18): Case kinds (positive, inactive/boundary/quoted controls, missing_context), Perturbations (reverse_outlets, relabel_outlets, irrelevant_detail), cases.Case, case_id(), DetectorInput, cases.expected(), expected(), Expected (+10 more)
 
 ### Community 19 - "Whats New Builder"
-Cohesion: 0.09
-Nodes (15): build(), _d(), _load(), _n(), _sig(), co_occurrence(), drift(), new_pattern_notes() (+7 more)
+Cohesion: 0.11
+Nodes (12): Label, latest(), co_occurrence(), drift(), new_pattern_notes(), proposals(), _rate_by_card(), report() (+4 more)
 
 ### Community 20 - "Card Catalog"
-Cohesion: 0.12
-Nodes (14): _card_document(), card_hash(), CatalogError, coverage(), ENTRY_TYPES media_practice / REVIEW_POLICIES media_pattern_review, load_cards(), load_media_cards(), load_source_index() (+6 more)
+Cohesion: 0.10
+Nodes (16): _card_document(), card_hash(), CatalogError, coverage(), ENTRY_TYPES media_practice / REVIEW_POLICIES media_pattern_review, load_cards(), load_media_cards(), load_source_index() (+8 more)
 
 ### Community 21 - "Concept Catalogue and Deps"
 Cohesion: 0.09
@@ -265,8 +279,8 @@ Cohesion: 0.15
 Nodes (36): advHeat(), advScatter(), atlasColor(), atlasEntities(), atlasNeighbours(), atlasParallel(), atlasRadius(), atlasScatter() (+28 more)
 
 ### Community 23 - "Single-Source Lens Build"
-Cohesion: 0.12
-Nodes (18): big_stories(), compute(), confirmed_skips(), days_active(), _eligible(), feed_complete(), group(), is_all_caps() (+10 more)
+Cohesion: 0.10
+Nodes (19): big_stories(), compute(), days_active(), distance(), _eligible(), feed_complete(), group(), is_all_caps() (+11 more)
 
 ### Community 24 - "Data Architecture ADRs"
 Cohesion: 0.09
@@ -277,12 +291,12 @@ Cohesion: 0.07
 Nodes (29): Blind precision and estimated recall for BiasGuard review, Blind mode in the AI denetim masasi (desk.js), Blind packets and desk-export import (core key BLIND), Coding record, gold and agreement report, Human few-shot examples for BiasGuard reviewers, Krippendorff's alpha (agreement statistic), validation/mlbench baselines (majority, TF-IDF LogReg), Narrative codebook (blame level, frame category) (+21 more)
 
 ### Community 26 - "Replay Runs"
-Cohesion: 0.16
-Nodes (11): run(), build(), _id(), read(), ReplayCase, score(), write(), write_inputs() (+3 more)
+Cohesion: 0.19
+Nodes (10): run(), build(), _id(), read(), ReplayCase, score(), write(), write_inputs() (+2 more)
 
-### Community 27 - "Article Rows and Compare"
+### Community 27 - "srcName"
 Cohesion: 0.11
-Nodes (35): artRows(), artUrl(), bbar(), cards(), cmpBrief(), compareMark(), dietBar(), dietCounts() (+27 more)
+Nodes (37): artOf(), artRows(), blameStats(), bloc(), cmpBrief(), compareHeads(), compareMark(), covOf() (+29 more)
 
 ### Community 28 - "ML and Lens Plans"
 Cohesion: 0.08
@@ -290,31 +304,31 @@ Nodes (28): Plan: ML narrative and behavioural (2026-11-17), validation/answerke
 
 ### Community 29 - "Narrative Map Pages"
 Cohesion: 0.13
-Nodes (30): anPageNasil(), narrMap(), pgAnlati(), pgAnlatiOlay(), v7BlocTxt(), v7Body(), v7Cell(), v7Colors() (+22 more)
+Nodes (31): anPageNasil(), anPageOlay(), narrMap(), pgAnlati(), pgAnlatiOlay(), v7BlocTxt(), v7Body(), v7Cell() (+23 more)
 
 ### Community 30 - "Leak Guard"
-Cohesion: 0.11
-Nodes (6): assert_no_leak(), kinds(), Leak, render(), variants(), RendererTest
+Cohesion: 0.08
+Nodes (11): assert_no_leak(), kinds(), Leak, render(), variants(), _sources(), realize(), scenario() (+3 more)
 
 ### Community 31 - "Change Protocol Metrics"
-Cohesion: 0.14
-Nodes (13): CHANGE_PROTOCOL.md, compare() / NotComparable, paired_bootstrap(), diff(), _r(), ratio(), Row, summarize() (+5 more)
-
-### Community 32 - "Lab Concept Targets"
 Cohesion: 0.08
-Nodes (7): target(), build(), _jsonl(), lab_concepts(), score(), MediaCardsTest, RunTest
+Nodes (20): Reference states (supported, reviewed_negative, unresolved, ineligible), CHANGE_PROTOCOL.md, compare() / NotComparable, paired_bootstrap(), diff(), _r(), ratio(), Row (+12 more)
+
+### Community 32 - "answerkey/__main__.py"
+Cohesion: 0.15
+Nodes (14): _load(), as_card_stats(), _f(), measure(), _present_line(), report(), _scope(), load_codebook() (+6 more)
 
 ### Community 33 - "Admin Shell and Footer"
-Cohesion: 0.09
-Nodes (33): adminFoot(), adminShell(), fixLink(), follows(), footer2(), forYou(), isFollowing(), layoutPills() (+25 more)
+Cohesion: 0.11
+Nodes (33): bbar(), blindspotPage(), cards(), dietBar(), fold5(), followBtn(), follows(), forYou() (+25 more)
 
 ### Community 34 - "AI Imza Box"
 Cohesion: 0.12
 Nodes (29): aiBox(), aiCard(), aiConceptName(), aiConceptText(), aiItems(), aiLegend(), aiMount(), aiQuote() (+21 more)
 
 ### Community 35 - "Reference Adapter Results"
-Cohesion: 0.16
-Nodes (10): cases.private.jsonl (private case records), Lab statuses (supported, contextual_effect, not_supported, uncertain, unassessed, ineligible, error), Assessment, Span, Attempt, Ledger, _assess(), text_summary() (+2 more)
+Cohesion: 0.08
+Nodes (16): cases.private.jsonl (private case records), Lab statuses (supported, contextual_effect, not_supported, uncertain, unassessed, ineligible, error), Assessment, Span, Attempt, Ledger, main(), _assess() (+8 more)
 
 ### Community 36 - "UX Rethink"
 Cohesion: 0.11
@@ -324,97 +338,97 @@ Nodes (27): Capraz Manset UX Rethink Implementation Plan, Event page story-first
 Cohesion: 0.14
 Nodes (26): Biases and bias detection (Çapraz Manşet 6.0 and Mercek), Active outlet (≥ half of days + placement), Agenda similarity (φ, average linkage, Mantel r=0.03), Blind spots (Ground News rule adapted; binomial p<0.10; 42 in 6.0), Çapraz Manşet 6.0 (deterministic detection; 194,383 articles), Event clustering (pair F1 0.857; 140 locked events), Event selection (Olay seçimi), Evidence strength (evidenceOf: güçlü / orta / zayıf) (+18 more)
 
-### Community 38 - "Media Techniques Group"
-Cohesion: 0.13
-Nodes (23): 'incelenemedi' state, 'Medyanın oyunları' group (vs 'Davranışsal yanlılıklar'), core.bin keys BGG / BGV, core.bin key BGM (biasguard-media.json), bandOf(), evidenceOf(), runRules(), runScore() (+15 more)
+### Community 38 - "olay.js"
+Cohesion: 0.30
+Nodes (10): olayCommon(), olayDeep(), olayGroups(), olayHead(), olayHeadlines(), olayKisaca(), olayOutlets(), olayReview() (+2 more)
 
 ### Community 39 - "Broadsheet Motion"
 Cohesion: 0.16
 Nodes (20): CSS intro zoom + incoming page turn, Broadsheet in Motion Implementation Plan, GSAP 3.12.5 + ScrollTrigger + Lenis 1.1.13 (vendor first, CDN fallback), motion.js (motionLoad, motionMount, motionUnmount, MOTION), MOTION_K component timeline registry, Newsreader display font and --serif token, Performance trace (no task > 50 ms at 4x throttle) and screenshots, pNums Turkish count-phrase extractor (+12 more)
 
 ### Community 40 - "Crosswalk and Evidence Tiers"
-Cohesion: 0.17
-Nodes (10): Crosswalk review status (needs_domain_review/pilot/approved/rejected), Evidence tiers (headline_lede → internal_state), coverage(), Entry, load(), parse(), resolve(), _resolves() (+2 more)
+Cohesion: 0.16
+Nodes (11): Crosswalk review status (needs_domain_review/pilot/approved/rejected), Evidence tiers (headline_lede → internal_state), illusory_truth_effect (pilot concept), coverage(), Entry, load(), parse(), resolve() (+3 more)
 
-### Community 41 - "Mesa Simulation"
-Cohesion: 0.19
-Nodes (6): _sources(), realize(), Realized, scenario(), MediaRendererTest, SimTest
+### Community 41 - "errors.py"
+Cohesion: 0.18
+Nodes (10): clusters(), confusion(), joined(), next_move(), report(), stuck_conditions(), _wilson(), ErrorsTest (+2 more)
 
 ### Community 42 - "Section Classifier"
-Cohesion: 0.14
+Cohesion: 0.13
 Nodes (8): apply(), cross_validate(), doc(), load_labels(), path_words(), TextModel, train(), DayCache
 
 ### Community 43 - "Span Verification"
-Cohesion: 0.19
-Nodes (5): normalize(), verify_spans(), StubReviewer, AdapterTest, run()
+Cohesion: 0.17
+Nodes (6): normalize(), verify_spans(), assessment(), StubReviewer, AdapterTest, run()
 
-### Community 44 - "BiasGuard Gate Tests"
-Cohesion: 0.12
-Nodes (7): write_results(), _card(), GateTests, MediaPassTests, _review(), Reviewer, RollbackTests
+### Community 44 - "news.py"
+Cohesion: 0.07
+Nodes (18): apply(), catalog_cards(), event_inputs(), FileReviewer, main(), _outlet_counts(), prompts(), write_results() (+10 more)
 
 ### Community 45 - "Event Clustering"
-Cohesion: 0.15
-Nodes (9): lead_lag(), cluster(), links(), merge(), minutes(), pair_scores(), vectors(), art() (+1 more)
+Cohesion: 0.14
+Nodes (6): cluster(), links(), merge(), pair_scores(), art(), ClusterTest
 
 ### Community 46 - "Promotion Gate"
-Cohesion: 0.17
+Cohesion: 0.15
 Nodes (8): assert_promotion_ready(), decide(), _kept_rate(), metrics_from(), record(), slice_regressions(), PromotionTest, replay()
 
-### Community 47 - "Review Queue Tiers"
-Cohesion: 0.17
-Nodes (7): review_queue(), tier(), a(), ev(), QueueTest, TierTest, one()
+### Community 47 - "test_routing.py"
+Cohesion: 0.08
+Nodes (12): stamped(), in_audit_sample(), review_queue(), tier(), a(), ApplyOnRecordedRunTest, AuditTest, ev() (+4 more)
 
 ### Community 48 - "Events and Blind Spots"
-Cohesion: 0.16
-Nodes (8): binom_cdf(), blind_spot(), build_events(), event_record(), keywords(), near_duplicates(), stable_ids(), EventsTest
+Cohesion: 0.15
+Nodes (10): active_outlets(), binom_cdf(), blind_spot(), bloc(), build_events(), event_record(), keywords(), near_duplicates() (+2 more)
 
 ### Community 49 - "Scored Bias Keys"
 Cohesion: 0.13
 Nodes (23): Ad Hominem (scored key), Anchoring Bias (scored key), Anchoring structural rule (number + unit before first colon/dash), Authority Bias (scored key), Bandwagon Effect (scored key), Base Rate Fallacy, Cherry Picking, Consequence Framing (+15 more)
 
 ### Community 50 - "Detector Protocol"
-Cohesion: 0.19
+Cohesion: 0.21
 Nodes (13): Assessment, build_records(), Detector, DetectorInput, Evidence, load(), main(), MockContractDetector (+5 more)
 
 ### Community 51 - "Headline Scoring"
-Cohesion: 0.17
-Nodes (4): rules_key(), score(), Store, CrossDayTest
+Cohesion: 0.11
+Nodes (12): collector_files(), ingest(), _lines(), rules_key(), score(), canonical_url(), local_day(), Store (+4 more)
 
 ### Community 52 - "Topic Models"
-Cohesion: 0.13
-Nodes (6): decide(), event_topic_model(), gsdmm(), headline_topics(), npmi(), TopicsTest
+Cohesion: 0.15
+Nodes (6): wording_similarity(), decide(), event_topic_model(), gsdmm(), npmi(), TopicsTest
 
 ### Community 53 - "Media Technique Cards"
 Cohesion: 0.20
 Nodes (21): Ad hominem (Kisiye saldiri), Causal overclaim (Kanitsiz nedensellik), Cherry picking (Secmeci kanit kullanimi), Consequence framing (Sonuc cercevelemesi), effect_context_only policy, Emphasis framing (Vurgu cercevelemesi), Episodic framing (Olay odakli cerceveleme), False dilemma (Yanlis ikilem) (+13 more)
 
 ### Community 54 - "Lens Measures and Verdicts"
-Cohesion: 0.14
-Nodes (5): strata(), verdict(), complete_fixture(), MeasureTest, small_fixture()
+Cohesion: 0.23
+Nodes (3): strata(), verdict(), MeasureTest
 
-### Community 55 - "Narratives Pipeline"
-Cohesion: 0.16
-Nodes (10): candidates(), diverge(), first(), _card_conditions(), finalize(), _focus(), _load(), merge() (+2 more)
+### Community 55 - "test_mlbench.py"
+Cohesion: 0.13
+Nodes (9): Row, cross_validate(), _metrics(), score_fixed(), Majority, Predictor, TfidfLogReg, MlbenchTest (+1 more)
 
 ### Community 56 - "Reviewer Agents"
 Cohesion: 0.22
 Nodes (16): Reviewer agents (Çapraz Manşet 7.0) – AGENT_REVIEW.md, Advocate agents, biasguard.json → core.bin key BG, Circuit breaker (BREAKER_TRIPPED after five failed batches; not_attempted), FileReviewer (select/review interface), 'incelenemedi' display for empty media catalogue, biasguard/data/media_cards.json (empty until approved and lab-passed), Media-technique pass (Medyanın oyunları, --catalog media) (+8 more)
 
-### Community 57 - "Card Data and Configs"
-Cohesion: 0.18
-Nodes (8): biasguard/data/cards.json (116 behavioural cards), biasguard/data/media_cards.json, _card_ids(), catalog(), manifest(), _proposed(), Lab-only proposed card selective-statistics, ConfigsTest
+### Community 57 - "configs.py"
+Cohesion: 0.08
+Nodes (14): data/reference/editorial.json, 17 candidate media-technique cards, selective_statistics (pilot concept), _card_ids(), catalog(), manifest(), _proposed(), target() (+6 more)
 
 ### Community 58 - "Rate Statistics"
-Cohesion: 0.18
+Cohesion: 0.16
 Nodes (5): _rate(), bh_q(), cmh_p(), mh_rr(), StatsTest
 
-### Community 59 - "Headline Compare"
-Cohesion: 0.22
-Nodes (17): artOf(), compareHeads(), covOf(), defaultPair(), exampleEvent(), htoks(), leadEvent(), markText() (+9 more)
+### Community 59 - "home.js"
+Cohesion: 0.70
+Nodes (4): feedCard(), feedHTML(), feedMore(), pgHome7()
 
 ### Community 60 - "Lab-Gated Promotion"
-Cohesion: 0.19
-Nodes (4): Lab-gated promotion, promotable(), promote(), PromoteTest
+Cohesion: 0.11
+Nodes (7): biasguard/data/cards.json (116 behavioural cards), biasguard/data/media_cards.json, Lab-gated promotion, card_outcomes(), promotable(), promote(), PromoteTest
 
 ### Community 61 - "Party Page"
 Cohesion: 0.30
@@ -433,32 +447,36 @@ Cohesion: 0.20
 Nodes (14): New-pattern reviewer notes (Kartlarda olmayan bir oruntu), Deterministic 5% audit sample (in_audit_sample), Card statistics and gate (wilson_lower, card_stats, card_status), Editor review approve action and export (reviewsExport, reviewState), gates.json thresholds (agreed: false), Label import (validation/feedback/labels.py, Label, labels.jsonl), Review queue (least-reviewed cards first), Review Status and Feedback Implementation Plan (+6 more)
 
 ### Community 65 - "Wording Similarity Build"
-Cohesion: 0.22
-Nodes (9): wording_similarity(), build(), _gz(), ingest_totals(), _json(), load_articles(), pack_month(), params_dict() (+1 more)
+Cohesion: 0.14
+Nodes (13): build(), _gz(), ingest_totals(), _json(), load_articles(), pack_month(), review_keys(), params_dict() (+5 more)
 
 ### Community 66 - "Comparison Charts"
-Cohesion: 0.16
-Nodes (16): bloc(), cmpBest(), cmpState(), deviceStats(), fig(), firstBy(), kuFindKeys(), kuFindMean() (+8 more)
+Cohesion: 0.31
+Nodes (9): fig(), kuFindKeys(), kuFindMean(), kuMean(), pgMap(), pgSources(), polOf(), registerCheck() (+1 more)
 
 ### Community 67 - "AI Denetim Masası"
-Cohesion: 0.29
-Nodes (15): deskCardOptions(), deskHeadlines(), deskItems(), deskLearning(), deskName(), deskOpen(), deskOutlets(), deskRerender() (+7 more)
+Cohesion: 0.19
+Nodes (28): blindClick(), blindDateTr(), blindKeydown(), blindList(), blindPacket(), blindPackets(), blindSave(), blindStart() (+20 more)
 
 ### Community 68 - "Navigation and Smoke Tests"
 Cohesion: 0.13
 Nodes (12): Anlatı topic, bias explainers, Nasıl çalışır scroll fix Plan, Anlatı haritası top-level topic, NAV / SUB navigation tables, argv, { chromium }, clicks, evals, fs (+4 more)
 
-### Community 70 - "Blind Reference Packets"
+### Community 69 - "mlbench/__main__.py"
+Cohesion: 0.20
+Nodes (11): blame_level(), frame_category(), human_rows(), read_coded(), from_core(), rows(), agent_predictions(), main() (+3 more)
+
+### Community 70 - "narrative_eval.py"
 Cohesion: 0.15
-Nodes (7): Reference states (supported, reviewed_negative, unresolved, ineligible), packets.py (blind/verify packets, CSV import), packets.blind_packet(), packets.import_csv(), agreement() (Cohen's kappa), build_reference(), reference.Label (append-only human label)
+Nodes (9): _coded(), krippendorff_alpha(), percent_agreement(), compare(), _fmt(), _measure(), report(), AlphaTest (+1 more)
 
 ### Community 71 - "AI Onaylı Meaning"
 Cohesion: 0.25
 Nodes (9): Claude Code controls (guard, safe_check, reviewer) - on hold, Layer 3: human reference and measured improvement, Capraz Manset Final: integration design, Layer 1: foundation (seeded copy of 8.1), Medyanin oyunlari media catalogue (media_cards.json), Owner decisions (14 November 2026), 8.1 run: 0 supported, 439 uncertain findings, Owner-only editor review (rev7) (+1 more)
 
 ### Community 72 - "Blind Spot Pages"
-Cohesion: 0.21
-Nodes (14): bg7k(), bg7Stats(), blindspotPage(), briefDays(), evx(), feedChips(), feedFilters(), fSel() (+6 more)
+Cohesion: 0.20
+Nodes (15): bg7(), bg7ev(), bg7k(), bg7Live(), bg7Rates(), bg7Stats(), evx(), feedChips() (+7 more)
 
 ### Community 73 - "Dot-Matrix Engine"
 Cohesion: 0.26
@@ -469,8 +487,8 @@ Cohesion: 0.20
 Nodes (6): vzDist(), vzLine(), vzQ(), vzRows(), vzTicks(), vzTipAttr()
 
 ### Community 75 - "Method Page"
-Cohesion: 0.27
-Nodes (12): conceptLibrary(), glossaryHTML(), kaynakHtml(), pgYontem7(), trBlock(), trN(), trQ(), turkiyeBlocks() (+4 more)
+Cohesion: 0.20
+Nodes (17): MOTION.lenis smooth scroll path, conceptLibrary(), glossaryHTML(), kaynakHtml(), pgYontem7(), trBlock(), trN(), trQ() (+9 more)
 
 ### Community 76 - "Editorial Schema"
 Cohesion: 0.18
@@ -480,13 +498,13 @@ Nodes (11): collectorArticleSchema, CollectorBatch, collectorBatchSchema, httpsU
 Cohesion: 0.21
 Nodes (7): tipOff(), g6AgendaData(), g6Bloc(), g6Build(), g6Load(), g6Mount(), g6Tok()
 
-### Community 78 - "Finding Routing"
-Cohesion: 0.24
-Nodes (3): stamped(), in_audit_sample(), AuditTest
+### Community 78 - "card_stats"
+Cohesion: 0.27
+Nodes (6): _finish(), card_stats(), card_status(), wilson_lower(), labels(), StatsTest
 
 ### Community 79 - "Provenance Seed"
-Cohesion: 0.18
-Nodes (7): docs/provenance/seed.json, docs/provenance/seed-manifest.json, public/data packs (7, byte-identical), Source snapshot caprazmansetnov26 @ 49b60bc (Çapraz Manşet 8.1), SeedTest, Vendored Mesa bias simulator (mesa_bias_expanded), ExpandedDecisionModel
+Cohesion: 0.22
+Nodes (5): docs/provenance/seed.json, docs/provenance/seed-manifest.json, public/data packs (7, byte-identical), Source snapshot caprazmansetnov26 @ 49b60bc (Çapraz Manşet 8.1), SeedTest
 
 ### Community 80 - "Kindred Style"
 Cohesion: 0.24
@@ -517,8 +535,8 @@ Cohesion: 0.22
 Nodes (6): GitHub Actions checks.yml, CI job biasguard, CI job pipeline, CI job repo, CI job site-logic, CiTest
 
 ### Community 87 - "Editorial Policy"
-Cohesion: 0.20
-Nodes (8): data/reference/editorial.json, effect_context_only policy (thematic_framing, spin), 17 candidate media-technique cards, Review status and feedback plan, gate.decide(), wilson_lower(), validation/reference/gates.json, label_status.json
+Cohesion: 0.33
+Nodes (5): effect_context_only policy (thematic_framing, spin), Review status and feedback plan, gate.decide(), wilson_lower(), validation/reference/gates.json
 
 ### Community 88 - "Detector Iterations"
 Cohesion: 0.36
@@ -541,7 +559,7 @@ Cohesion: 0.31
 Nodes (5): motionAdd(), motionEach(), motionLoad(), motionMount(), motionRun()
 
 ### Community 93 - "Iframe Scroll Test"
-Cohesion: 0.22
+Cohesion: 0.25
 Nodes (6): { chromium }, fs, http, path, root, TYPES
 
 ### Community 94 - "Method Wheel Test"
@@ -552,17 +570,17 @@ Nodes (6): { chromium }, fs, http, path, root, TYPES
 Cohesion: 0.22
 Nodes (6): { chromium }, fs, http, path, [siteDir, route = "#/olay?e=s4374"], TYPES
 
-### Community 96 - "Method Diagrams"
-Cohesion: 0.31
-Nodes (9): dArrow(), dBox(), diaBlind(), diaPipeline(), diaScheme(), limits5(), methodSecs(), nfmt() (+1 more)
+### Community 96 - "storyLabel"
+Cohesion: 0.14
+Nodes (20): covBar(), dArrow(), dBox(), diaBlind(), diaPipeline(), diaScheme(), evCoverage(), evTable() (+12 more)
 
 ### Community 97 - "Lens Page Rendering"
 Cohesion: 0.36
 Nodes (6): lensAiBox(), lensBody(), lensRowSvg(), lensSection(), lensStripSvg(), lensX()
 
 ### Community 98 - "Implementation Plans"
-Cohesion: 0.36
-Nodes (7): Foundation Implementation Plan, Medyanın Oyunları Implementation Plan, Mesa Validation Lab Implementation Plan, Validation lab (validation/biaslab), Blind Reference Study Implementation Plan (NOT SCHEDULED), Parked plan: Claude Code controls, Çapraz Final Integration Design Spec
+Cohesion: 0.24
+Nodes (9): Foundation Implementation Plan, Medyanın Oyunları Implementation Plan, 9 not-measurable concepts ('Bu veriyle ölçülemiyor'), 'Medyanın oyunları' group (vs 'Davranışsal yanlılıklar'), Mesa Validation Lab Implementation Plan, Validation lab (validation/biaslab), Blind Reference Study Implementation Plan (NOT SCHEDULED), Parked plan: Claude Code controls (+1 more)
 
 ### Community 99 - "Score Bridge"
 Cohesion: 0.25
@@ -576,21 +594,25 @@ Nodes (4): gunzip(), ADR-0002, load(), unbase64()
 Cohesion: 0.33
 Nodes (5): NOTICE.md: Attribution and permission status, Çapraz Manşet 3.0 uploaded HTML (design, branding, dataset source), data/import-manifest.json (asset/data hashes), Ponytail skill (.claude/skills/ponytail/SKILL.md, MIT, DietrichGebert), scraper/upstream/UPSTREAM_PROVENANCE.json
 
-### Community 102 - "Article Row Controls"
-Cohesion: 0.33
-Nodes (7): artRow(), devChips(), hlTitle(), qLoad(), qRecord(), qSave(), renderQueue()
+### Community 102 - "write_tasks"
+Cohesion: 0.19
+Nodes (5): selected_cards(), write_tasks(), build_reviewer_schema(), validate_reviewer_structure(), TaskCatalogTests
 
 ### Community 103 - "Outlet Page"
 Cohesion: 0.52
 Nodes (6): kuDil(), kuFirst(), kuFp(), kuLink(), kuName(), kurumFindings7()
 
+### Community 105 - "test_answerkey.py"
+Cohesion: 0.19
+Nodes (7): behaviour_packet(), narrative_packet(), read_export(), repeat_packet(), upsert(), BehaviourStatusGateTest, PacketTest
+
 ### Community 106 - "Mobile and Accessibility"
 Cohesion: 0.50
 Nodes (4): smoke.cjs Playwright route smoke test, Mobile and accessibility pass (44px targets, 4.5:1 contrast, tap tooltips), Remove reduced motion (dmCalm, g6Calm, vzCalm, reduce), Mobile, accessibility, motion budget and performance
 
-### Community 107 - "Method Scroll"
-Cohesion: 0.60
-Nodes (5): MOTION.lenis smooth scroll path, wireYontem(), ymGo(), ymOpen(), ymScrollTo()
+### Community 107 - "route"
+Cohesion: 0.15
+Nodes (14): adminFoot(), adminShell(), footer2(), layoutPills(), menuLock(), navGroup(), navHTML(), rev7Init() (+6 more)
 
 ### Community 108 - "Fog Hero"
 Cohesion: 0.60
@@ -604,28 +626,56 @@ Nodes (4): ilanItems(), ilanResults(), pgIlan(), wireIlan()
 Cohesion: 0.50
 Nodes (4): T3 notice split (resmî ilan detection; ≥50% notices listed separately), T6 near-duplicates (char n-gram cosine ≥0.90; duplicate_cosine), T7 suffix-aware word marking (≤2 suffix layers, stem ≥4 letters), turkish-layer.js Turkish refinements (T1–T7)
 
+### Community 111 - "test_aix.py"
+Cohesion: 0.15
+Nodes (9): auc(), _cited(), _fold(), kappa(), wilson(), ComputeTest, core_fixture(), HelperTest (+1 more)
+
+### Community 112 - "cli.py"
+Cohesion: 0.29
+Nodes (5): _build_parser(), _emit(), _load_capabilities(), main(), _read_utf8()
+
+### Community 119 - "make_packet"
+Cohesion: 0.33
+Nodes (3): make_packet(), _write_key(), CliTest
+
+### Community 120 - "blind.cjs"
+Cohesion: 0.25
+Nodes (6): { chromium }, fs, http, path, [siteDir, outDir], TYPES
+
+### Community 121 - "confirmed_skips"
+Cohesion: 0.33
+Nodes (3): vectors(), confirmed_skips(), SkipTest
+
+### Community 122 - "rules.cjs"
+Cohesion: 0.57
+Nodes (6): bandOf(), evidenceOf(), runRules(), runScore(), scoreText(), unquoted()
+
+### Community 124 - "findingGroups"
+Cohesion: 0.40
+Nodes (6): 'incelenemedi' state, core.bin keys BGG / BGV, core.bin key BGM (biasguard-media.json), bgLabelState(), findingGroups(), label_status.json
+
 ## Ambiguous Edges - Review These
 - `Mobile and accessibility pass (44px targets, 4.5:1 contrast, tap tooltips)` → `Remove reduced motion (dmCalm, g6Calm, vzCalm, reduce)`  [AMBIGUOUS]
   docs/superpowers/plans/2026-11-06-broadsheet-motion.md · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **91 isolated node(s):** `ADR-0001`, `ADR-0002`, `ADR-0002`, `ADR-0001`, `scraper/upstream/UPSTREAM_PROVENANCE.json` (+86 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 543 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **91 isolated node(s):** `ADR-0001`, `ADR-0002`, `ADR-0002`, `ADR-0001`, `Stretched card link (.xstretch)` (+86 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 570 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `core.bin key BGM (biasguard-media.json)` connect `Media Techniques Group` to `Wording Similarity Build`, `Rule Explanations`?**
-  _High betweenness centrality (0.198) - this node is a cross-community bridge._
-- **Are the 13 inferred relationships involving `BiasGuard` (e.g. with `OpenAIReviewer` and `ProviderCallError`) actually correct?**
-  _`BiasGuard` has 13 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `core.bin key BGM (biasguard-media.json)` connect `findingGroups` to `Wording Similarity Build`, `news.py`?**
+  _High betweenness centrality (0.179) - this node is a cross-community bridge._
+- **Are the 9 inferred relationships involving `BiasGuard` (e.g. with `OpenAIReviewer` and `ProviderCallError`) actually correct?**
+  _`BiasGuard` has 9 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `ADR-0001`, `ADR-0002`, `ADR-0002` to the rest of the system?**
   _91 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Site Tests and Deep Links` be split into smaller, more focused modules?**
-  _Cohesion score 0.05403508771929825 - nodes in this community are weakly interconnected._
-- **Why does `findingGroups()` connect `Media Techniques Group` to `Site Tests and Deep Links`?**
-  _High betweenness centrality (0.194) - this node is a cross-community bridge._
+  _Cohesion score 0.051189400782896716 - nodes in this community are weakly interconnected._
+- **Why does `findingGroups()` connect `findingGroups` to `Site Tests and Deep Links`, `Implementation Plans`, `olay.js`?**
+  _High betweenness centrality (0.176) - this node is a cross-community bridge._
 - **Are the 9 inferred relationships involving `srcName()` (e.g. with `pgSource()` and `renderFeed()`) actually correct?**
   _`srcName()` has 9 INFERRED edges - model-reasoned connections that need verification._
 
