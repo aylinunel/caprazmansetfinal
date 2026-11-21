@@ -68,3 +68,14 @@ class SkipTest(unittest.TestCase):
         g = {"a": {"lens": True}, "b": {"lens": True}, "c": {"lens": False}}
         got = big_stories(core, arts, g, {"e2"})
         self.assertEqual(got, [{"event": "e1", "day": "2026-09-01", "active": ["a", "b"], "covered": ["a"]}])
+
+    def test_result_does_not_depend_on_the_other_outlets_in_the_call(self):
+        core = {"E": [{"i": "e1", "a": ["x1", "x2"], "s": ["sabah", "sozcu"], "f": "2026-09-01T10:00"}]}
+        arts = {"x1": {"s": "sabah", "t": "Bakan istifa etti", "d": "2026-09-01T10:00"},
+                "x2": {"s": "sozcu", "t": "Bakan istifa etti, yerine atama", "d": "2026-09-01T10:05"},
+                "y1": {"s": "karar", "t": "Bakan istifa etti ve gitti", "d": "2026-09-01T12:00"},
+                "z1": {"s": "birgun", "t": "Hava durumu yağmurlu", "d": "2026-09-01T12:00"}}
+        stories = [{"event": "e1", "day": "2026-09-01", "active": ["sabah", "sozcu", "karar", "birgun"], "covered": ["sabah", "sozcu"]}]
+        for x in ("karar", "birgun"):
+            y = "birgun" if x == "karar" else "karar"
+            self.assertEqual(confirmed_skips(stories, core, arts, [x])[x], confirmed_skips(stories, core, arts, [x, y])[x])

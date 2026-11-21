@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import statistics
+from bisect import bisect_left, bisect_right
 from collections import defaultdict
 from datetime import date, timedelta
 
@@ -105,27 +106,31 @@ def big_stories(core: dict, arts: dict, group_out: dict, notices: set[str]) -> l
 
 
 def confirmed_skips(stories: list[dict], core: dict, arts: dict, outlets: list[str]) -> dict[str, set[str]]:
-    """Outlet -> big events it skipped: no headline within 48 h of the event's first headline matches any event headline."""
+    """Outlet -> big events it skipped: no headline within 48 h of the event's first headline matches any event headline.
+
+    The vectoriser is fit once on every headline in `arts`, so a result never depends on which outlets or stories are passed."""
     events = {e["i"]: e for e in core["E"]}
     window = 48 * 60
     by_outlet: dict[str, list[tuple[int, str]]] = defaultdict(list)
     for aid, a in arts.items():
         if a["s"] in outlets:
             by_outlet[a["s"]].append((minutes(a["d"]), aid))
-    # (outlet, event) pairs to test: the outlet was active that day but has no article in the event.
+    for v in by_outlet.values():
+        v.sort()
+    stamps = {s: [m for m, _ in v] for s, v in by_outlet.items()}
+    # (outlet, event, in-window headline ids): the outlet was active that day but has no article in the event.
     pairs = []
     for st in stories:
         e = events[st["event"]]
         t0 = minutes(e["f"])
         for s in outlets:
             if s in st["active"] and s not in st["covered"]:
-                near = [aid for m, aid in by_outlet[s] if t0 <= m <= t0 + window]
-                pairs.append((s, e, near))
+                lo, hi = bisect_left(stamps.get(s, []), t0), bisect_right(stamps.get(s, []), t0 + window)
+                pairs.append((s, e, [aid for _, aid in by_outlet.get(s, [])[lo:hi]]))
     out: dict[str, set[str]] = {s: set() for s in outlets}
-    need = {aid for _, e, near in pairs for aid in near} | {i for _, e, _ in pairs for i in e["a"] if i in arts}
     if not pairs:
         return out
-    ids = sorted(need)
+    ids = list(arts)
     try:
         X = vectors([arts[i]["t"] for i in ids])
     except ValueError:  # empty vocabulary: nothing can be confirmed
@@ -135,9 +140,7 @@ def confirmed_skips(stories: list[dict], core: dict, arts: dict, outlets: list[s
         own = [row[i] for i in e["a"] if i in row]
         if not own:
             continue
-        if near:
-            sim = X[[row[i] for i in near]] @ X[own].T
-            if sim.max() >= PARAMS.cluster_threshold:
-                continue
+        if near and (X[[row[i] for i in near]] @ X[own].T).max() >= PARAMS.cluster_threshold:
+            continue
         out[s].add(e["i"])
     return out
