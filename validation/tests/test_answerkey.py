@@ -1,9 +1,11 @@
+import tempfile
 import unittest
 from pathlib import Path
 
 from biasguard.news import _load
 from validation.answerkey.agreement import krippendorff_alpha, percent_agreement
 from validation.answerkey.codebook import blame_level, frame_category, human_rows, load_codebook
+from validation.answerkey.record import Coding, agreement, append, from_core, gold
 
 REPO = Path(__file__).resolve().parents[2]
 
@@ -47,3 +49,50 @@ class CodebookTest(unittest.TestCase):
         self.assertEqual(sorted(raw - set(cb["frames"])), [])
         self.assertTrue(set(cb["frames"].values()) <= set(cb["categories"]))
         self.assertEqual(cb["categories"][-1], "Diğer")
+
+
+class RecordTest(unittest.TestCase):
+    def test_append_dedupes_and_refuses_a_changed_answer(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "c.jsonl"
+            a = Coding("e1__framing-effect", "A1", "present", "yes")
+            self.assertEqual(append([a, a], p), 1)
+            with self.assertRaisesRegex(ValueError, "e1__framing-effect"):
+                append([Coding("e1__framing-effect", "A1", "present", "no")], p)
+            with self.assertRaisesRegex(ValueError, "Ayşe"):
+                append([Coding("e2__framing-effect", "Ayşe", "present", "no")], p)  # names never stored
+            self.assertEqual(len(p.read_text(encoding="utf-8").splitlines()), 1)
+
+    def test_append_checks_values_and_writes_nothing_on_refusal(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "c.jsonl"
+            ok = Coding("i1", "A1", "present", "yes")
+            for bad in (Coding("i2", "A1", "present", "maybe"), Coding("i2", "A1", "colour", "yes"),
+                        Coding("i2", "A1", "frame_category", "not a category")):
+                with self.assertRaises(ValueError):
+                    append([ok, bad], p)
+            self.assertFalse(p.exists())
+
+    def test_gold_and_disagreement(self):
+        cs = [Coding("i1", "A1", "present", "yes"), Coding("i1", "A2", "present", "yes"),
+              Coding("i2", "A1", "present", "yes"), Coding("i2", "A2", "present", "no"),
+              Coding("i3", "A1", "present", "unsure")]
+        self.assertEqual(gold(cs, "present"), ({"i1": "yes"}, ["i2"]))
+
+    def test_usable_needs_thirty_items_coded_twice(self):
+        cs = [Coding(f"i{n}", c, "present", "yes" if n % 2 else "no") for n in range(29) for c in ("A1", "A2")]
+        self.assertFalse(agreement(cs, "present")["usable"])
+        cs += [Coding("i29", c, "present", "yes") for c in ("A1", "A2")]
+        self.assertTrue(agreement(cs, "present")["usable"])
+
+    def test_two_passes_of_one_person_are_same_coder(self):
+        cs = [Coding("i1", "A1", "present", "yes"), Coding("i1", "A2", "present", "yes")]
+        self.assertEqual(agreement(cs, "present")["kind"], "same coder")
+        self.assertEqual(agreement(cs + [Coding("i1", "B1", "present", "no")], "present")["kind"], "between coders")
+
+    def test_core_rows_become_coder_a(self):
+        core = {"N": {"k1": {"status": "headline_coded", "rows": [{"s": "sabah", "frame": "Adli süreç", "blame": "Yargı (ima)"}]},
+                      "k2": {"status": "agent_coded", "rows": [{"s": "sabah", "frame": "Adli süreç", "blame": ""}]}}}
+        cb = {"categories": ["Yargı ve soruşturma", "Diğer"], "frames": {"Adli süreç": "Yargı ve soruşturma"}}
+        self.assertEqual(sorted(from_core(core, cb)), [Coding("k1__sabah", "A1", "blame_level", "implied"),
+                                                       Coding("k1__sabah", "A1", "frame_category", "Yargı ve soruşturma")])

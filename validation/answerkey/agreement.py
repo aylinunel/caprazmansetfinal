@@ -1,4 +1,4 @@
-"""Inter-coder agreement: nominal Krippendorff's alpha and raw percent agreement."""
+"""Agreement between passes or coders: nominal Krippendorff's alpha and raw percent agreement."""
 from collections import Counter
 from typing import Optional, Sequence
 
