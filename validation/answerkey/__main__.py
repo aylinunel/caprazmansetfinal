@@ -8,12 +8,15 @@ from pathlib import Path
 from biasguard.news import _load
 
 from .codebook import load_codebook
+from .narrative_eval import compare, read_coded, report
 from .packets import PACKETS, behaviour_packet, narrative_packet, read_export, repeat_packet, upsert
 from .record import FIELDS, agreement, append, from_core, read
 
 REPO = Path(__file__).resolve().parents[2]
 KEYS = REPO / "validation" / "reference" / "answerkey"
 REPORT = REPO / "docs" / "validation" / "reports" / "answerkey-agreement.md"
+NARRATIVE_QUALITY = REPO / "data" / "reference" / "narrative-quality.json"
+NARRATIVE_REPORT = REPO / "docs" / "validation" / "reports" / "narrative-agent-vs-human.md"
 NAMES = {"same coder": "same-coder consistency (two passes ≥ 14 days apart)", "between coders": "agreement between coders"}
 
 
@@ -84,6 +87,9 @@ def main(argv=None) -> None:
     pk.add_argument("--seed", type=int)
     im = sub.add_parser("import", help="append the codings in a desk export")
     im.add_argument("export", type=Path)
+    ne = sub.add_parser("narrative-eval", help="score the narrative agent against the human-coded weeks")
+    ne.add_argument("--coded", type=Path, required=True)
+    ne.add_argument("--core", type=Path, default=REPO / "public" / "data" / "core.bin")
     args = ap.parse_args(argv)
     if args.cmd == "agreement":
         text = agreement_report(args.core)
@@ -114,6 +120,14 @@ def main(argv=None) -> None:
             if n:
                 print(f"{p['id']}: {n} new codings")
         print(f"{len(new)} new codings in total")
+    if args.cmd == "narrative-eval":
+        result = compare(read_coded(args.coded), _load(args.core), load_codebook())
+        text = report(result)
+        NARRATIVE_QUALITY.write_text(json.dumps({**result, "measured": date.today().isoformat()}, ensure_ascii=False, indent=1) + "\n",
+                                     encoding="utf-8")
+        NARRATIVE_REPORT.parent.mkdir(parents=True, exist_ok=True)
+        NARRATIVE_REPORT.write_text(text, encoding="utf-8")
+        print(text)
 
 
 if __name__ == "__main__":

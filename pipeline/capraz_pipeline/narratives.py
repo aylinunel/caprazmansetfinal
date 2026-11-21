@@ -26,6 +26,9 @@ WEEKS = [("w7", "11–17 Ekim", "2026-10-11", "2026-10-17"), ("w8", "18–24 Eki
          ("w9", "25–31 Ekim", "2026-10-25", "2026-10-31"), ("w10", "1–7 Kasım", "2026-11-01", "2026-11-07"),
          ("w11", "8–13 Kasım", "2026-11-08", "2026-11-13")]
 KEEP = 20  # most differentiated events shown per agent-coded week (S, § 6.3)
+DIM_LABELS = {"frame": "Çerçeve", "hero": "Merkezdeki aktör", "blame": "Sorumlu tutulan", "cause": "Sunulan neden",
+              "cons": "Öne çıkan sonuç", "aff": "Etkilenen kesim", "sol": "Meşrulaştırılan çözüm", "moral": "Ahlaki çerçeve",
+              "start": "Hikâyenin başlangıcı"}
 DIMS = ["frame", "hero", "blame", "cause", "cons", "aff", "sol", "moral", "start"]
 WEIGHT = {"blame": 1.2, "sol": 1.2, "frame": 1.0, "cause": 1.0, "moral": 1.0, "start": 0.8, "aff": 0.8, "hero": 0.6, "cons": 0.5}
 OUT = REPO / "data" / "reference" / "narratives-7.json"
@@ -76,6 +79,27 @@ def candidates(build: Path, out: Path) -> int:
                          "headlines": [{"s": s, "hl": a["t"]} for s, a in sorted(f.items(), key=lambda x: x[1]["d"])]})
     (out / "candidates.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1))
     return len(rows)
+
+
+def tasks(items: list[dict], examples: list[dict], out: Path, batch: int = 12, n_examples: int = 2) -> list[Path]:
+    """Writes out/tasks/batch-K.json. Examples are the highest-score human-coded entries whose key is not an event of
+    that batch, so the agent never sees the answer to a task it is given."""
+    ranked = sorted(examples, key=lambda x: -x.get("score", 0))
+    (out / "tasks").mkdir(parents=True, exist_ok=True)
+    files = []
+    for k, i in enumerate(range(0, len(items), batch), 1):
+        evs = items[i:i + batch]
+        taken = {e["event"] for e in evs}
+        ex = [{"key": g["key"], "q": g["q"], "rows": g["rows"]} for g in ranked if g["key"] not in taken][:n_examples]
+        f = out / "tasks" / f"batch-{k}.json"
+        f.write_text(json.dumps({"dimensions": DIM_LABELS, "examples": ex, "events": evs}, ensure_ascii=False, indent=1))
+        files.append(f)
+    return files
+
+
+def _gold(core: dict) -> list[dict]:
+    return [{"key": k, "q": e["q"], "rows": e["rows"], "score": e.get("score", 0), "week": e.get("w", ""), "title": e.get("label", "")}
+            for k, e in core["N"].items() if e.get("status") in ("hand_coded", "headline_coded")]
 
 
 def _focus(rows: list[dict]) -> tuple[list[str], float]:
@@ -175,8 +199,21 @@ def merge(core: dict) -> None:
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser(prog="python -m capraz_pipeline.narratives")
-    p.add_argument("cmd", choices=["candidates", "finalize"])
+    p.add_argument("cmd", choices=["candidates", "finalize", "tasks"])
     p.add_argument("--build", type=Path)
     p.add_argument("--out", type=Path, required=True)
+    p.add_argument("--source", choices=["gold", "candidates"], default="candidates")
+    p.add_argument("--core", type=Path, default=REPO / "public" / "data" / "core.bin")
     a = p.parse_args()
-    print(candidates(a.build, a.out) if a.cmd == "candidates" else finalize(a.out))
+    if a.cmd == "tasks":
+        gold = _gold(_load(a.core))
+        if a.source == "gold":
+            items = [{"event": g["key"], "week": g["week"], "title": g["title"],
+                      "headlines": [{"s": r["s"], "hl": r["hl"]} for r in g["rows"]]}
+                     for g in gold if all(r.get("hl") for r in g["rows"])]  # hand_coded events carry no headline text
+        else:
+            items = json.loads((a.out / "candidates.json").read_text())
+        files = tasks(items, gold, a.out)
+        print(f"{len(files)} batch files, {len(items)} events")
+    else:
+        print(candidates(a.build, a.out) if a.cmd == "candidates" else finalize(a.out))

@@ -8,6 +8,7 @@ from pathlib import Path
 
 from biasguard.news import _load
 from validation.answerkey.agreement import krippendorff_alpha, percent_agreement
+from validation.answerkey.narrative_eval import compare
 from validation.answerkey.codebook import blame_level, frame_category, human_rows, load_codebook
 from validation.answerkey.packets import behaviour_packet, read_export, repeat_packet, upsert
 from validation.answerkey.record import Coding, agreement, append, from_core, gold
@@ -189,3 +190,36 @@ class CliTest(unittest.TestCase):
             with mock.patch.object(cli, "REPORT", out), mock.patch("builtins.print"):
                 cli.main(["agreement", "--core", str(REPO / "public" / "data" / "core.bin")])
             self.assertIn("# Answer key: agreement", out.read_text(encoding="utf-8"))
+
+
+class NarrativeEvalTest(unittest.TestCase):
+    CODEBOOK = {"approved": False, "categories": ["Yargı ve soruşturma", "Diğer"],
+                "frames": {"Adli süreç": "Yargı ve soruşturma"}}
+
+    def test_compare_scores_matching_rows_only(self):
+        core = {"N": {"k1": {"status": "headline_coded", "rows": [
+            {"s": "sabah", "frame": "Adli süreç", "blame": "Yargı"}, {"s": "ntv", "frame": "Adli süreç", "blame": ""}]}}}
+        agent = {"k1": {"rows": [{"s": "sabah", "frame": "Adli süreç", "blame": "Savcı"}, {"s": "ntv", "frame": "Spor", "blame": ""},
+                                 {"s": "cnn", "frame": "x", "blame": ""}]}}
+        r = compare(agent, core, self.CODEBOOK)
+        self.assertEqual((r["blame_level"]["n"], r["blame_level"]["agreement"]), (2, 1.0))
+        self.assertEqual(r["frame_category"]["agreement"], 0.5)
+        self.assertEqual(r["unmapped_frames"], 1)
+
+    def test_narrative_eval_command_writes_both_outputs(self):
+        from validation.answerkey import __main__ as cli
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "coded").mkdir()
+            core = _load(REPO / "public" / "data" / "core.bin")
+            key = next(k for k, e in core["N"].items() if e.get("status") in ("hand_coded", "headline_coded"))
+            rows = [{"s": r["s"], "frame": r["frame"], "blame": r["blame"]} for r in core["N"][key]["rows"]]
+            (d / "coded" / f"{key}.json").write_text(json.dumps({"rows": rows}, ensure_ascii=False), encoding="utf-8")
+            with mock.patch.object(cli, "NARRATIVE_QUALITY", d / "q.json"), mock.patch.object(cli, "NARRATIVE_REPORT", d / "r.md"), \
+                    mock.patch("builtins.print"):
+                cli.main(["narrative-eval", "--coded", str(d / "coded"), "--core", str(REPO / "public" / "data" / "core.bin")])
+            q = json.loads((d / "q.json").read_text(encoding="utf-8"))
+            self.assertEqual(q["events"], 1)
+            self.assertEqual(q["blame_level"]["agreement"], 1.0)
+            self.assertIn("measured", q)
+            self.assertIn("# ", (d / "r.md").read_text(encoding="utf-8"))
