@@ -388,7 +388,8 @@ def load_articles(data: Path, core: dict) -> dict[str, dict]:
     for m in packs["months"]:
         a = _load(data / f"a-{m}.bin")
         for k, i in enumerate(a["i"]):
-            out[i] = {"s": packs["sources"][a["s"][k]], "d": a["d"][k], "v": a["v"][k], "p": a["p"][k], "lv": a["lv"][k], "t": a["t"][k]}
+            out[i] = {"s": packs["sources"][a["s"][k]], "d": a["d"][k], "v": a["v"][k], "p": a["p"][k], "lv": a["lv"][k], "t": a["t"][k],
+                      "nu": a["nu"][k] if "nu" in a else 0}
     return out
 
 

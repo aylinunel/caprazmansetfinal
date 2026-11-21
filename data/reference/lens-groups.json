@@ -1,0 +1,15 @@
+{
+  "exclude": {
+    "haberler": "Haber toplayıcı: başka kurumların haberlerini yeniden yayımlıyor.",
+    "sondakika": "Haber toplayıcı: başka kurumların haberlerini yeniden yayımlıyor.",
+    "mynet": "Haber toplayıcı: başka kurumların haberlerini yeniden yayımlıyor.",
+    "aa": "Haber ajansı: haberleri kurumlara dağıtıyor.",
+    "dha": "Haber ajansı: haberleri kurumlara dağıtıyor.",
+    "anka": "Haber ajansı: haberleri kurumlara dağıtıyor.",
+    "bbcturkce": "Yabancı yayıncının Türkçe servisi.",
+    "dwturkce": "Yabancı yayıncının Türkçe servisi.",
+    "bloomberght": "Tek bir konuya odaklı yayın.",
+    "agos": "Tek bir konuya odaklı yayın.",
+    "teyit": "Doğrulama platformu."
+  }
+}
