@@ -9,6 +9,7 @@ from pathlib import Path
 from biasguard.news import _load
 from validation.answerkey.agreement import krippendorff_alpha, percent_agreement
 from validation.answerkey.narrative_eval import compare
+from validation.answerkey.behaviour_eval import as_card_stats, measure
 from validation.answerkey.codebook import blame_level, frame_category, human_rows, load_codebook
 from validation.answerkey.packets import behaviour_packet, read_export, repeat_packet, upsert
 from validation.answerkey.record import Coding, agreement, append, from_core, gold
@@ -223,3 +224,36 @@ class NarrativeEvalTest(unittest.TestCase):
             self.assertEqual(q["blame_level"]["agreement"], 1.0)
             self.assertIn("measured", q)
             self.assertIn("# ", (d / "r.md").read_text(encoding="utf-8"))
+
+
+class BehaviourEvalTest(unittest.TestCase):
+    KEY = {"e1__c1": {"event": "e1", "card": "c1", "ai_shown": True},
+           "e1__c2": {"event": "e1", "card": "c2", "ai_shown": True},
+           "e1__c3": {"event": "e1", "card": "c3", "ai_shown": False},
+           "_unflagged": {"e1": {"sampled": 1, "total": 4}}}
+
+    def test_measure_estimates_misses_from_the_unflagged_sample(self):
+        m = measure({"e1__c1": "yes", "e1__c2": "no", "e1__c3": "yes"}, self.KEY)
+        self.assertEqual((m["overall"]["tp"], m["overall"]["fp"], m["overall"]["missed_est"]), (1, 1, 4.0))
+        self.assertEqual(m["overall"]["precision"], 0.5)
+        self.assertAlmostEqual(m["overall"]["recall_est"], 0.2)
+        self.assertEqual(as_card_stats(m)["c1"]["kept"], 1)
+
+    def test_measure_with_no_gold_is_none_not_a_crash(self):
+        m = measure({}, self.KEY)
+        self.assertIsNone(m["overall"]["precision"])
+        self.assertIsNone(m["overall"]["precision_lower"])
+        self.assertIsNone(m["overall"]["recall_est"])
+
+    def test_command_writes_report_and_status(self):
+        from validation.answerkey import __main__ as cli
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "k.json").write_text(json.dumps(self.KEY), encoding="utf-8")
+            with mock.patch.object(cli, "BEHAVIOUR_REPORT", d / "r.md"), mock.patch.object(cli, "CARD_STATUS", d / "s.json"), \
+                    mock.patch.object(cli, "gold", return_value=({"e1__c1": "yes", "e1__c2": "no"}, [])), mock.patch("builtins.print"):
+                cli.main(["behaviour-eval", "--key", str(d / "k.json"), "--status"])
+            self.assertIn("# ", (d / "r.md").read_text(encoding="utf-8"))
+            s = json.loads((d / "s.json").read_text(encoding="utf-8"))
+            self.assertEqual(s["measure"], "blind precision")
+            self.assertEqual(s["cards"]["c1"]["status"], "unjudged")

@@ -2,21 +2,28 @@
 import argparse
 import json
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from biasguard.news import _load
 
+from validation.feedback.stats import card_status
+
+from .behaviour_eval import as_card_stats, measure
+from .behaviour_eval import report as behaviour_report
 from .codebook import load_codebook
 from .narrative_eval import compare, read_coded, report
 from .packets import PACKETS, behaviour_packet, narrative_packet, read_export, repeat_packet, upsert
-from .record import FIELDS, agreement, append, from_core, read
+from .record import FIELDS, agreement, append, from_core, gold, read
 
 REPO = Path(__file__).resolve().parents[2]
 KEYS = REPO / "validation" / "reference" / "answerkey"
 REPORT = REPO / "docs" / "validation" / "reports" / "answerkey-agreement.md"
 NARRATIVE_QUALITY = REPO / "data" / "reference" / "narrative-quality.json"
 NARRATIVE_REPORT = REPO / "docs" / "validation" / "reports" / "narrative-agent-vs-human.md"
+BEHAVIOUR_REPORT = REPO / "docs" / "validation" / "reports" / "behaviour-blind.md"
+CARD_STATUS = REPO / "validation" / "reference" / "card_status.json"
+GATES = REPO / "validation" / "reference" / "gates.json"
 NAMES = {"same coder": "same-coder consistency (two passes ≥ 14 days apart)", "between coders": "agreement between coders"}
 
 
@@ -90,6 +97,9 @@ def main(argv=None) -> None:
     ne = sub.add_parser("narrative-eval", help="score the narrative agent against the human-coded weeks")
     ne.add_argument("--coded", type=Path, required=True)
     ne.add_argument("--core", type=Path, default=REPO / "public" / "data" / "core.bin")
+    be = sub.add_parser("behaviour-eval", help="blind precision and estimated recall of the behavioural review")
+    be.add_argument("--key", type=Path, required=True)
+    be.add_argument("--status", action="store_true", help="also write card_status.json from blind precision")
     args = ap.parse_args(argv)
     if args.cmd == "agreement":
         text = agreement_report(args.core)
@@ -127,6 +137,19 @@ def main(argv=None) -> None:
                                      encoding="utf-8")
         NARRATIVE_REPORT.parent.mkdir(parents=True, exist_ok=True)
         NARRATIVE_REPORT.write_text(text, encoding="utf-8")
+        print(text)
+    if args.cmd == "behaviour-eval":
+        agreed, disputed = gold(read(), "present")
+        m = measure(agreed, json.loads(args.key.read_text(encoding="utf-8")))
+        text = behaviour_report(m, len(disputed))
+        BEHAVIOUR_REPORT.parent.mkdir(parents=True, exist_ok=True)
+        BEHAVIOUR_REPORT.write_text(text, encoding="utf-8")
+        if args.status:
+            gates = json.loads(GATES.read_text(encoding="utf-8"))
+            out = {"pack_version": "", "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                   "agreed": gates["agreed"], "measure": "blind precision",
+                   "cards": card_status(as_card_stats(m), gates)}
+            CARD_STATUS.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         print(text)
 
 
