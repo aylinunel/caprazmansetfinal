@@ -23,13 +23,24 @@ class CardConditionsTest(unittest.TestCase):
 
     def test_examples_never_include_an_event_of_the_batch(self):
         from capraz_pipeline.narratives import tasks
-        gold = [{"key": k, "q": {}, "rows": [], "score": s} for k, s in (("g1", 3.0), ("g2", 2.0), ("g3", 1.0))]
+        gold = [{"key": k, "q": {}, "rows": [{"s": "a", "hl": "H"}], "score": s} for k, s in (("g1", 3.0), ("g2", 2.0), ("g3", 1.0))]
         items = [{"event": "g1", "week": "w1", "title": "t", "headlines": []}]
         with tempfile.TemporaryDirectory() as d:
             b = json.loads(tasks(items, gold, Path(d), batch=12, n_examples=2)[0].read_text())
         self.assertEqual([x["key"] for x in b["examples"]], ["g2", "g3"])
         self.assertEqual(b["events"][0]["event"], "g1")
         self.assertIn("frame", b["dimensions"])
+
+    def test_example_without_headlines_is_never_chosen(self):
+        from capraz_pipeline.narratives import tasks
+        row = {"s": "a", "hl": "H", "frame": "F"}
+        gold = [{"key": "nohl", "q": {}, "rows": [{"s": "a", "frame": "F"}], "score": 9.0},
+                {"key": "empty", "q": {}, "rows": [], "score": 8.0},
+                {"key": "ok", "q": {}, "rows": [row], "score": 1.0}]
+        items = [{"event": "x", "week": "w1", "title": "t", "headlines": []}]
+        with tempfile.TemporaryDirectory() as d:
+            b = json.loads(tasks(items, gold, Path(d))[0].read_text())
+        self.assertEqual([x["key"] for x in b["examples"]], ["ok"])
 
     def test_tasks_split_events_into_batches(self):
         from capraz_pipeline.narratives import tasks

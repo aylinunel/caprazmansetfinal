@@ -84,7 +84,8 @@ def candidates(build: Path, out: Path) -> int:
 def tasks(items: list[dict], examples: list[dict], out: Path, batch: int = 12, n_examples: int = 2) -> list[Path]:
     """Writes out/tasks/batch-K.json. Examples are the highest-score human-coded entries whose key is not an event of
     that batch, so the agent never sees the answer to a task it is given."""
-    ranked = sorted(examples, key=lambda x: -x.get("score", 0))
+    # an example must show how headlines map to codes, so every one of its rows needs headline text
+    ranked = sorted((x for x in examples if x["rows"] and all(r.get("hl") for r in x["rows"])), key=lambda x: -x.get("score", 0))
     (out / "tasks").mkdir(parents=True, exist_ok=True)
     files = []
     for k, i in enumerate(range(0, len(items), batch), 1):
@@ -98,8 +99,9 @@ def tasks(items: list[dict], examples: list[dict], out: Path, batch: int = 12, n
 
 
 def _gold(core: dict) -> list[dict]:
-    return [{"key": k, "q": e["q"], "rows": e["rows"], "score": e.get("score", 0), "week": e.get("w", ""), "title": e.get("label", "")}
-            for k, e in core["N"].items() if e.get("status") in ("hand_coded", "headline_coded")]
+    return [{"key": k, "q": e["q"], "rows": e["rows"], "score": e.get("score", 0), "week": e.get("w", ""),
+             "title": next((r["hl"] for r in e["rows"] if r.get("hl")), "")}  # first headline; never q.happened (human coding)
+            for k, e in core["N"].items() if e.get("status") in ("hand_coded", "headline_coded") and e["rows"]]
 
 
 def _focus(rows: list[dict]) -> tuple[list[str], float]:
