@@ -1,6 +1,6 @@
 # Single-source lens ("Tek kaynak okuru") — design
 
-Status: draft for owner approval. Decisions so far: `docs/superpowers/specs/2026-11-20-single-source-lens-decisions.md`.
+Status: draft for owner approval (builder check done 2026-11-21; owner answered the two open questions). Decisions so far: `docs/superpowers/specs/2026-11-20-single-source-lens-decisions.md`.
 
 ## Intent
 
@@ -41,6 +41,36 @@ where the same choice repeats across many stories, it is a pattern worth naming.
 | B. In the browser | The page computes on the fly from all headlines | Free exploration; slow tests on phones, weaker verdicts, against the roadmap |
 | C. Hybrid | Build ships per-outlet-per-story rows; browser sums them | Free filters plus rigorous headline verdicts; two places to keep in sync, filtered views without verdicts |
 
+## Who is compared, and who gets a lens (owner decision)
+
+The comparison group and the lens are for **active general-news outlets only**: registry type print, tv, web or online,
+active on at least 50% of the season's days (`PARAMS.active_day_share`), and not on the exclusion list
+`data/reference/lens-groups.json`, which names each left-out outlet and why: aggregators (haberler, sondakika, mynet),
+wire agencies (aa, dha, anka), foreign broadcasters' Turkish services (bbcturkce, dwturkce), single-topic outlets
+(bloomberght, agos), the fact-checker (teyit). Outlets outside the registry, and part-season outlets, are left out
+automatically. A left-out outlet's page says why it has no lens. The list is data, so the owner can change it.
+
+## Stories that count (builder check; my calls)
+
+- Official-notice events are left out, as on every Örüntüler page. The lens uses the same rule as the browser: the URL
+  notice rules already shared with Python (`capraz_pipeline/urlpack.NOTICE_URL`, kept identical by a test) and the same
+  event share threshold; a parity test compares the Python notice-event set with the browser's on the real data.
+- Loaded headline and headline-vs-lede use **political headlines only** (`p`), as every existing figure on the site does,
+  so the outlet page never shows two different loaded figures. Skipped and first-to-report use all non-notice stories.
+- First-to-report leaves out headlines whose time is exactly 00:00 (date-only timestamps).
+
+## Skipped stories (owner decision, with my calls on the details)
+
+A skip is counted only for outlets whose collection looks **complete**, and only after a text check:
+- complete feed (my thresholds): active on ≥ 50% of days, median ≥ 20 collected headlines per active day, and fewer
+  than 10% of active days at the outlet's own maximum daily count (a capped feed hits its ceiling repeatedly); the lens
+  report lists every outlet's numbers so the rule can be checked;
+- confirmation (my call, for accuracy): before a story counts as skipped, the outlet's unclustered and other-event
+  headlines within the story's 48-hour window are compared with the story's headlines (TF-IDF cosine ≥ 0.33, the
+  clustering threshold); a close match means the outlet did cover it, and it is not a skip;
+- outlets without a complete feed get no skip measure; their page says "bu kurumun derlemesi eksik olabildiği için
+  atlanan olaylar ölçülmedi".
+
 ## Measures (proven, rule-based; the outlet's first headline per story)
 
 All four are yes/no per outlet per story, so each comparison is a **rate ratio on the same stories**:
@@ -59,7 +89,7 @@ outlets that covered the story.
 
 **Distance from the full picture** (one number per outlet and slice): the mean over measures of |log2 RR|, each RR clipped
 to [1/4, 4], shown as "on average N times as often or as rarely as the other outlets on the same stories" (N = 2^mean).
-A measure with fewer than 20 stories is left out; an outlet needs at least 3 measures to get a distance.
+A measure with fewer than 20 stories is left out (about 10 outlets have almost no ledes, so they lack headline-vs-lede); an outlet needs at least 3 measures to get a distance.
 
 ## The "systematically" rule (owner-approved thresholds)
 
@@ -83,7 +113,7 @@ outlet most (BG / live BGM evidence), and its most frequent narrative blame code
 
 - **Build:** `pipeline/capraz_pipeline/lens.py` — `compute(core, arts) -> dict`, CLI `python -m capraz_pipeline.lens
   --data <build>` writes `data/reference/lens-82.json`; `narratives.merge` ships it as core key `LENS`. Pure statistics
-  (`mh_rr`, `cmh_p`, BH reuse from `aix`) unit-tested against hand-computed values.
+  (`mh_rr`, `cmh_p`, and Benjamini–Hochberg pulled out of `aix.profile` into one shared function) unit-tested against hand-computed values.
 - **Site:** a new section at the top of each outlet page (Kurumlar › outlet): "Bu kaynağı tek başına okusaydınız"
   - a strip of all outlets by distance, this one marked (D3);
   - "Kaçırdığınız büyük olaylar": its largest skipped stories, linked;
