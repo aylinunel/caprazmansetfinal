@@ -227,11 +227,12 @@ def strata(measure: str, outlet: str, stories: list[dict], arts: dict, others: l
 
 
 def _rate(ss: list[tuple[int, int, int, int]]) -> dict:
-    """Raw MH ratio and CMH p. rr 0 = the outlet never does it while others do; None = only it does, or nobody does."""
+    """Raw MH ratio and CMH p. rr 0 = the outlet never does it while others do; None = only it does, or nobody does (then none=True)."""
     rr, lo, hi = mh_rr(ss)
     if not any(b for _, _, b, _ in ss):
         rr, lo, hi = None, None, None
-    return {"n": len(ss), "rr": rr, "lo": lo, "hi": hi, "p": cmh_p(ss)}
+    none = not any(a or b for a, _, b, _ in ss)   # nobody does it: rr is undefined, but it is not "only this outlet"
+    return {"n": len(ss), "rr": rr, "lo": lo, "hi": hi, "p": cmh_p(ss), "none": none}
 
 
 def verdict(m: dict, months: dict[str, dict]) -> bool:

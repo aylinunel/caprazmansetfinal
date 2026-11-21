@@ -12,6 +12,9 @@ class StatsTest(unittest.TestCase):
         self.assertAlmostEqual(lo, 2.2015, places=4)
         self.assertAlmostEqual(hi, 6.3311, places=4)
 
+    def test_cmh_p_continuity_correction_is_floored(self):
+        self.assertAlmostEqual(cmh_p([(1, 1, 0, 1), (0, 1, 1, 1)]), 1.0)
+
     def test_cmh_p(self):
         self.assertAlmostEqual(cmh_p(S), 2.1324e-05, delta=1e-8)
 

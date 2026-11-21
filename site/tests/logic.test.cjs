@@ -516,6 +516,12 @@ test("lensSentence: strong wording only when strong", () => {
   assert.equal(L.lensSentence("Sabah", "loaded", { n: 25, rr: null, lo: null, hi: null, strong: false }),
     "Sabah · bu 25 haberde “yüklü başlık” yalnızca bu kurumda var; diğer kurumlarda yok.");
 });
+test("lensSentence: nobody does it is not 'only this outlet'; tiny bounds print <0,1", () => {
+  assert.equal(L.lensSentence("Tele1", "harsher", { n: 45, rr: null, lo: null, hi: null, none: true, strong: false }),
+    "Tele1 · bu 45 haberin hiçbirinde “haberinden sert başlık” ne bu kurumda ne diğer kurumlarda var.");
+  assert.equal(L.lensSentence("Diken", "loaded", { n: 30, rr: 0.4, lo: 0.02, hi: 0.9, strong: false }),
+    "Diken, aynı haberlerde “yüklü başlık” bakımından diğer kurumların 0,4 katı (%95 aralık <0,1–0,9; 30 haber).");
+});
 test("lensSentence: strong and rr<1 says daha seyrek", () => {
   assert.match(L.lensSentence("Sabah", "skip", { n: 40, rr: 0.5, lo: 0.3, hi: 0.8, strong: true }), /daha seyrek büyük olayları atlıyor/);
 });

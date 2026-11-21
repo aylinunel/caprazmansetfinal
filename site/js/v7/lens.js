@@ -66,7 +66,7 @@ function lensAiBox(k) {
     var n = D.N[key]; if (!narrOk(key)) return;
     var hand = n.status === "hand_coded" || n.status === "headline_coded";
     (n.rows || []).forEach(function (r) {
-      var v = String(r.blame == null ? "" : r.blame).trim(); if (r.s !== k || !v) return;
+      var v = String(r.blame == null ? "" : r.blame).trim(); if (r.s !== k || !v || /^(Belirtilmiyor|—|Belirsiz)/.test(v)) return;
       var id = v + "|" + hand, c = bl[id] = bl[id] || { v: v, hand: hand, n: 0 }; c.n++;
     });
   });

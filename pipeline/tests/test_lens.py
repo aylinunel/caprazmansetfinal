@@ -198,6 +198,8 @@ class MeasureTest(unittest.TestCase):
             a["v"] = 0
         m = compute(core, arts, groups)["outlets"]["o"]["slices"]["all"]["measures"]["loaded"]
         self.assertEqual((m["n"], m["rr"], m["lo"], m["hi"], m["p"]), (25, None, None, None, None))
+        self.assertTrue(m["none"])
+        self.assertFalse(compute(*small_fixture())["outlets"]["o"]["slices"]["all"]["measures"]["loaded"]["none"])   # only o does it
 
 
 if __name__ == "__main__":

@@ -54,4 +54,4 @@ def cmh_p(strata):
         sv += n1 * n0 * m1 * (n - m1) / (n * n * (n - 1))
     if sv == 0:
         return None
-    return float(chi2.sf((abs(sa - se) - 0.5) ** 2 / sv, 1))
+    return float(chi2.sf(max(abs(sa - se) - 0.5, 0) ** 2 / sv, 1))
