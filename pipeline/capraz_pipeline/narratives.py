@@ -161,6 +161,9 @@ def merge(core: dict) -> None:
     aix = OUT.parent / "aix-82.json"  # 8.2: AI findings against the rule-based findings (python -m capraz_pipeline.aix)
     if aix.exists():
         core["AIX"] = json.loads(aix.read_text())
+    lens = OUT.parent / "lens-82.json"  # 8.2: single-source lens, same-story measures (python -m capraz_pipeline.lens)
+    if lens.exists():
+        core["LENS"] = json.loads(lens.read_text())
     if OUT.exists():
         x = json.loads(OUT.read_text())
         core["N"] = {**core.get("N", {}), **x["N"]}

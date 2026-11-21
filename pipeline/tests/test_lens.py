@@ -3,7 +3,8 @@ import re
 import unittest
 
 from capraz_pipeline.config import REPO
-from capraz_pipeline.lens import NOTICE_KEYWORDS, big_stories, confirmed_skips, feed_complete, group, is_notice_article, notice_events, season_days
+from capraz_pipeline.lens import (NOTICE_KEYWORDS, big_stories, compute, confirmed_skips, distance, feed_complete, group,
+                                  is_notice_article, notice_events, season_days, strata, verdict)
 
 
 class GroupTest(unittest.TestCase):
@@ -47,10 +48,6 @@ class GroupTest(unittest.TestCase):
         self.assertEqual(g["aksam"]["reason"], "Yalnızca sezonun bir kısmında derlendi.")
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class SkipTest(unittest.TestCase):
     def test_a_matching_headline_outside_the_event_is_not_a_skip(self):
         core = {"E": [{"i": "e1", "a": ["x1", "x2"], "s": ["sabah", "sozcu"], "f": "2026-09-01T10:00"}]}
@@ -79,3 +76,97 @@ class SkipTest(unittest.TestCase):
         for x in ("karar", "birgun"):
             y = "birgun" if x == "karar" else "karar"
             self.assertEqual(confirmed_skips(stories, core, arts, [x])[x], confirmed_skips(stories, core, arts, [x, y])[x])
+
+
+def small_fixture():
+    """2 lens outlets covering the same 25 stories, one a day; "q" is never loaded, "o" always is."""
+    core = {"S": [{"s": "o", "t": "print"}, {"s": "q", "t": "web"}],
+            "TP": [{"k": "yargi", "n": "Yargı ve soruşturmalar"}],
+            "meta": {"window": {"start": "2026-09-01T00:00:00.000Z", "end": "2026-09-25T23:59:00.000Z"}}, "E": []}
+    arts = {}
+    for i in range(25):
+        day = f"2026-09-{1 + i:02d}"
+        arts[f"o{i}"] = {"s": "o", "t": f"Olay {i} oldu", "d": f"{day}T10:00", "v": 30, "p": 1, "lv": 0, "nu": 0}
+        arts[f"q{i}"] = {"s": "q", "t": f"Olay {i} yaşandı", "d": f"{day}T12:00", "v": 0, "p": 1, "lv": 0, "nu": 0}
+        core["E"].append({"i": f"e{i}", "a": [f"o{i}", f"q{i}"], "s": ["o", "q"], "f": f"{day}T10:00", "tp": ["yargi"]})
+    return core, arts, {"exclude": {}}
+
+
+class MeasureTest(unittest.TestCase):
+    def test_verdict_needs_every_condition(self):
+        m = {"n": 40, "rr": 2.4, "q": 0.004}
+        months = {"2026-09": {"n": 12, "rr": 2.1}, "2026-10": {"n": 15, "rr": 1.8}, "2026-11": {"n": 3, "rr": 0.5}}
+        self.assertTrue(verdict(m, months))                                   # the 3-story month is ignored
+        self.assertFalse(verdict({**m, "q": 0.02}, months))
+        self.assertFalse(verdict({**m, "rr": 1.9}, months))
+        self.assertFalse(verdict(m, {"2026-09": {"n": 12, "rr": 2.1}}))        # only one month with 5+ stories
+        self.assertFalse(verdict(m, {**months, "2026-10": {"n": 15, "rr": 1.2}}))
+
+    def test_verdict_downward_and_undefined(self):
+        down = {"n": 40, "rr": 0.0, "q": 0.001}
+        self.assertTrue(verdict(down, {"2026-09": {"n": 12, "rr": 0.0}, "2026-10": {"n": 9, "rr": 0.6}}))
+        self.assertFalse(verdict(down, {"2026-09": {"n": 12, "rr": 0.0}, "2026-10": {"n": 9, "rr": 0.7}}))
+        self.assertFalse(verdict({**down, "rr": None}, {"2026-09": {"n": 12, "rr": None}, "2026-10": {"n": 9, "rr": None}}))
+        self.assertFalse(verdict({**down, "q": None}, {"2026-09": {"n": 12, "rr": 0.0}, "2026-10": {"n": 9, "rr": 0.0}}))
+
+    def test_distance_clips_and_needs_three_measures(self):
+        self.assertAlmostEqual(distance({"a": {"n": 30, "rr": 8.0}, "b": {"n": 30, "rr": 0.5}, "c": {"n": 30, "rr": 1.0}}), 2 ** ((2 + 1 + 0) / 3))
+        self.assertIsNone(distance({"a": {"n": 30, "rr": 2.0}, "b": {"n": 30, "rr": 2.0}, "c": {"n": 10, "rr": 2.0}}))
+
+    def test_no_ledes_means_no_harsher_measure(self):
+        arts = {"x": {"s": "o", "v": 30, "lv": None, "p": 1, "d": "2026-09-01T10:00"}}
+        self.assertEqual(strata("harsher", "o", [{"event": "e1", "first": {"o": "x", "q": "y"}}], arts | {"y": {"s": "q", "v": 0, "lv": 0, "p": 1, "d": "2026-09-01T10:00"}}, ["q"]), [])
+
+    def test_eligibility_political_and_timed(self):
+        arts = {"x": {"s": "o", "v": 30, "lv": 0, "p": 0, "d": "2026-09-01T00:00"}, "y": {"s": "q", "v": 30, "lv": 0, "p": 1, "d": "2026-09-01T10:00"}}
+        st = [{"event": "e1", "first": {"o": "x", "q": "y"}}]
+        self.assertEqual(strata("loaded", "o", st, arts, ["q"]), [])          # the outlet's headline is not political
+        self.assertEqual(strata("first", "o", st, arts, ["q"]), [])           # its time is a bare date
+
+    def test_first_counts_from_the_earliest_timed_comparison_headline(self):
+        arts = {"x": {"s": "o", "d": "2026-09-01T11:01"}, "y": {"s": "q", "d": "2026-09-01T10:00"},
+                "z": {"s": "r", "d": "2026-09-01T00:00"}, "w": {"s": "u", "d": "2026-09-01T10:59"}}
+        st = [{"event": "e1", "first": {"o": "x", "q": "y", "r": "z", "u": "w", "agency": "y"}}]
+        # reference 10:00 (q); r has a bare date and is not eligible; o is 61 minutes late, u is within the hour
+        self.assertEqual(strata("first", "o", st, arts, ["q", "r", "u"]), [(0, 1, 2, 2)])
+        self.assertEqual(strata("first", "u", st, arts, ["q", "r", "o"]), [(1, 1, 1, 2)])
+
+    def test_skip_compares_only_outlets_active_that_day(self):
+        st = [{"event": "e1", "first": {}, "active": ["o", "q", "r"], "skipped": {"o", "r"}},
+              {"event": "e2", "first": {}, "active": ["q", "r"], "skipped": set()},
+              {"event": "e3", "first": {}}]
+        self.assertEqual(strata("skip", "o", st, {}, ["q", "r", "z"]), [(1, 1, 1, 2)])
+
+    def test_loaded_and_harsher_strata(self):
+        arts = {"x": {"s": "o", "v": 30, "lv": 10, "p": 1, "d": "2026-09-01T10:00"},
+                "y": {"s": "q", "v": 25, "lv": 20, "p": 1, "d": "2026-09-01T10:00"},
+                "z": {"s": "r", "v": 40, "lv": None, "p": 1, "d": "2026-09-01T10:00"}}
+        st = [{"event": "e1", "first": {"o": "x", "q": "y", "r": "z"}}]
+        self.assertEqual(strata("loaded", "o", st, arts, ["q", "r"]), [(1, 1, 2, 2)])
+        self.assertEqual(strata("harsher", "o", st, arts, ["q", "r"]), [(1, 1, 0, 1)])
+
+    def test_compute_writes_json_safe_output(self):
+        res = compute(*small_fixture())
+        json.dumps(res, allow_nan=False)
+        self.assertEqual([s["k"] for s in res["slices"]], ["all", "2026-09", "tp:yargi"])
+        self.assertEqual(res["slices"][2]["l"], "Yargı ve soruşturmalar")
+        o, q = res["outlets"]["o"]["slices"]["all"]["measures"], res["outlets"]["q"]["slices"]["all"]["measures"]
+        self.assertEqual(q["loaded"]["rr"], 0.0)                              # q never loaded while o always is
+        self.assertIsNone(o["loaded"]["rr"])                                  # only o does it
+        self.assertEqual(o["loaded"]["n"], 25)
+        self.assertIn("q", o["loaded"]); self.assertIn("strong", o["loaded"])
+        self.assertNotIn("q", res["outlets"]["o"]["slices"]["2026-09"]["measures"]["loaded"])
+        self.assertNotIn("skip", o)                                           # neither feed is complete
+        self.assertEqual(res["outlets"]["o"]["missed"], [])
+        self.assertFalse(res["outlets"]["o"]["feed"]["complete"])
+
+    def test_nobody_doing_it_is_undefined_not_zero(self):
+        core, arts, groups = small_fixture()
+        for a in arts.values():
+            a["v"] = 0
+        m = compute(core, arts, groups)["outlets"]["o"]["slices"]["all"]["measures"]["loaded"]
+        self.assertEqual((m["n"], m["rr"], m["lo"], m["hi"], m["p"]), (25, None, None, None, None))
+
+
+if __name__ == "__main__":
+    unittest.main()
