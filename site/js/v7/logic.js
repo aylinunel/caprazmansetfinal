@@ -656,17 +656,14 @@ function lensDistanceText(d) {
    A packet's items are in D.BLIND (data/reference/blind-packets.json). */
 var BLIND_UNSURE = ["unsure", "Emin değilim"];
 var BLIND_FIELDS = {
-  narrative: [["blame_level", "Sorumlu tutma", [["none", "Yok"], ["implied", "İma"], ["explicit", "Açık"], ["unsure", "Emin değilim"]]], ["frame_category", "Çerçeve", null]],
-  behaviour: [["present", "Bu kavram bu haberlerde var mı?", [["yes", "Evet"], ["no", "Hayır"], ["unsure", "Emin değilim"]]]]
+  narrative: [["blame_level", "Sorumlu tutma", [["none", "Yok"], ["implied", "İma"], ["explicit", "Açık"], BLIND_UNSURE]], ["frame_category", "Çerçeve", null]],
+  behaviour: [["present", "Bu kavram bu haberlerde var mı?", [["yes", "Evet"], ["no", "Hayır"], BLIND_UNSURE]]]
 };
 function blindKey(pid, item) { return "blind__" + pid + "__" + item; }
 function blindOpen(packet, today) { return !packet.not_before || today >= packet.not_before; }
-function blindDone(kind, answers) {
-  return (BLIND_FIELDS[kind] || []).every(function (f) { return answers && answers[f[0]]; });
-}
+function blindDone(kind, answers) { return (BLIND_FIELDS[kind] || []).every(function (f) { return answers && answers[f[0]]; }); }
 function blindProgress(packet, reviews) {
-  var done = 0;
-  packet.items.forEach(function (i) { var r = reviews[blindKey(packet.id, i.item)]; if (r && blindDone(packet.kind, r.answers)) done++; });
+  var done = packet.items.filter(function (i) { var r = reviews[blindKey(packet.id, i.item)]; return r && blindDone(packet.kind, r.answers); }).length;
   return { done: done, total: packet.items.length };
 }
 /* Keys of regular desk items to hide while a packet is unfinished: its behaviour items (same event__card as the desk's
