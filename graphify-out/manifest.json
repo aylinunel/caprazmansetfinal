@@ -390,9 +390,9 @@
     "semantic_hash": "1de93306d251606f24c14a09454fc126"
   },
   "site/js/v7/logic.js": {
-    "mtime": 1795223068.9773073,
-    "seen": 1795276895.3796916,
-    "ast_hash": "7d765a1f30351f97803ba2091a5cb68b",
+    "mtime": 1795277376.278436,
+    "seen": 1795278115.774757,
+    "ast_hash": "82b34dbbfa9f663069abe1a3a0b5af40",
     "semantic_hash": ""
   },
   "site/js/v7/motion.js": {
@@ -450,9 +450,9 @@
     "semantic_hash": "4451eda80b71468d93dbf3c622c9c7d7"
   },
   "site/tests/logic.test.cjs": {
-    "mtime": 1795223068.9773073,
-    "seen": 1795276895.3797007,
-    "ast_hash": "69f08e3e73fdc666a55c126c0d63be2b",
+    "mtime": 1795277376.2786381,
+    "seen": 1795278115.77477,
+    "ast_hash": "7909858a1b777e0f018d9bc2ee78683d",
     "semantic_hash": ""
   },
   "site/tests/perf.cjs": {
@@ -1014,33 +1014,33 @@
     "semantic_hash": ""
   },
   "pipeline/capraz_pipeline/lens.py": {
-    "mtime": 1795275073.0977306,
-    "seen": 1795276895.37964,
-    "ast_hash": "5635fdef298a2a19479fcf460daae42b",
+    "mtime": 1795277376.277375,
+    "seen": 1795278115.7746916,
+    "ast_hash": "ba2185c321424ac07eaa85fd479e2085",
     "semantic_hash": ""
   },
   "pipeline/capraz_pipeline/stats.py": {
-    "mtime": 1795222810.1325903,
-    "seen": 1795276895.3796477,
-    "ast_hash": "1f37a960b37bcf80b38141ccc7f2143d",
+    "mtime": 1795277376.2775664,
+    "seen": 1795278115.7747018,
+    "ast_hash": "b174084ed1d09ab2e5fac1bb40619972",
     "semantic_hash": ""
   },
   "pipeline/tests/test_lens.py": {
-    "mtime": 1795275081.2919502,
-    "seen": 1795276895.3796644,
-    "ast_hash": "19318b370bfee25d4358078d18b938dd",
+    "mtime": 1795277376.2777123,
+    "seen": 1795278115.7747197,
+    "ast_hash": "0e9a51c49c9389a28d86dd87f62515b0",
     "semantic_hash": ""
   },
   "pipeline/tests/test_stats.py": {
-    "mtime": 1795222810.133298,
-    "seen": 1795276895.3796687,
-    "ast_hash": "c9800257eb9f24990647e87a1e51859c",
+    "mtime": 1795277376.2778456,
+    "seen": 1795278115.7747254,
+    "ast_hash": "b11b981d52ac86b45d030f763ae20c90",
     "semantic_hash": ""
   },
   "site/js/v7/lens.js": {
-    "mtime": 1795275622.6509655,
-    "seen": 1795276895.3796906,
-    "ast_hash": "7b91e22685a06ccddbdf416be0c58e58",
+    "mtime": 1795277376.2788267,
+    "seen": 1795278115.774756,
+    "ast_hash": "c286915c15f92c692188f6bdf8bdd0c4",
     "semantic_hash": ""
   },
   "docs/superpowers/plans/2026-11-21-single-source-lens.md": {
