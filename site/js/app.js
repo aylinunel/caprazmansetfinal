@@ -5371,8 +5371,8 @@ function rev7Save(key, status, note, newPattern, extra) {
   if (!REV7DB || !REV7OWNER) return;
   var ref = REV7DB.collection("reviews").doc(key);
   var doc = { status: status, note: note || "", at: new Date().toISOString(), pack: D.meta.built };
-  ["verdict", "conditions", "reason", "card", "ms"].forEach(function (k) { if (extra && extra[k] != null && extra[k] !== "") doc[k] = extra[k]; });   /* AI denetim masası */
-  var x = key.indexOf("narr__") === 0 ? null : bg7ev(key.split("__")[0]);
+  ["verdict", "conditions", "reason", "card", "ms", "answers"].forEach(function (k) { if (extra && extra[k] != null && extra[k] !== "") doc[k] = extra[k]; });   /* AI denetim masası */
+  var x = key.indexOf("narr__") === 0 || key.indexOf("blind__") === 0 ? null : bg7ev(key.split("__")[0]);
   if (x && x.text) doc.text = x.text;   // the review binds to this event text
   if (newPattern) doc.new_pattern = true;   // the reviewer saw a pattern no card covers (learning loop)
   (status ? ref.set(doc) : ref.delete())
@@ -5382,7 +5382,7 @@ document.addEventListener("click", function (ev) {
   var x = ev.target.closest && ev.target.closest("[data-revexport]"); if (!x || !REV7OWNER) return;
   ev.preventDefault();
   var out = reviewsExport(REV7, D.meta.built);
-  out.reviews.forEach(function (r) { if (r.text == null && r.key.indexOf("narr__") !== 0) { var e = bg7ev(r.key.split("__")[0]); r.text = e && e.text || null; } });
+  out.reviews.forEach(function (r) { if (r.text == null && r.key.indexOf("narr__") !== 0 && r.key.indexOf("blind__") !== 0) { var e = bg7ev(r.key.split("__")[0]); r.text = e && e.text || null; } });
   var blob = new Blob([JSON.stringify(out, null, 1)], { type: "application/json" });
   var name = "reviews-" + String(D.meta.built || "").slice(0, 10) + ".json";
   var plain = function () {   // a normally hosted copy of the site: an ordinary download link

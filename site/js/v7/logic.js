@@ -522,7 +522,7 @@ function reviewsExport(reviews, packVersion) {
     var r = reviews[key];
     var out = { key: key, status: r.status, note: r.note || "", at: r.at || "", pack: r.pack == null ? packVersion : r.pack, text: r.text == null ? null : r.text };
     if (r.new_pattern) out.new_pattern = true;
-    ["verdict", "reason", "card", "conditions", "ms"].forEach(function (k) { if (r[k] != null && r[k] !== "") out[k] = r[k]; });   /* AI denetim masası */
+    ["verdict", "reason", "card", "conditions", "ms", "answers"].forEach(function (k) { if (r[k] != null && r[k] !== "") out[k] = r[k]; });   /* AI denetim masası */
     return out;
   }) };
 }
@@ -652,8 +652,55 @@ function lensDistanceText(d) {
   return d == null ? "Bu dilimde yeterli haber yok." : "Ortalamada diğer kurumlardan " + lensDec(d) + " kat farklı davranıyor.";
 }
 
+/* Kör kodlama: the owner codes items without seeing any AI result; the answers go to the human answer key.
+   A packet's items are in D.BLIND (data/reference/blind-packets.json). */
+var BLIND_UNSURE = ["unsure", "Emin değilim"];
+var BLIND_FIELDS = {
+  narrative: [["blame_level", "Sorumlu tutma", [["none", "Yok"], ["implied", "İma"], ["explicit", "Açık"], ["unsure", "Emin değilim"]]], ["frame_category", "Çerçeve", null]],
+  behaviour: [["present", "Bu kavram bu haberlerde var mı?", [["yes", "Evet"], ["no", "Hayır"], ["unsure", "Emin değilim"]]]]
+};
+function blindKey(pid, item) { return "blind__" + pid + "__" + item; }
+function blindOpen(packet, today) { return !packet.not_before || today >= packet.not_before; }
+function blindDone(kind, answers) {
+  return (BLIND_FIELDS[kind] || []).every(function (f) { return answers && answers[f[0]]; });
+}
+function blindProgress(packet, reviews) {
+  var done = 0;
+  packet.items.forEach(function (i) { var r = reviews[blindKey(packet.id, i.item)]; if (r && blindDone(packet.kind, r.answers)) done++; });
+  return { done: done, total: packet.items.length };
+}
+function blindEsc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]; }); }
+/* The item view. It carries no AI result, quote, badge, other pass's answer or event link: only what is being coded. */
+function blindItemHtml(blind, packet, item, answers) {
+  answers = answers || {};
+  var ev = (packet.events || {})[item.event] || {}, h = '<section class="desk-box blind-text">';
+  if (packet.kind === "narrative") {
+    h += "<h3>Olay</h3><p>" + blindEsc(ev.olay) + '</p><h3>Kurum</h3><p><b>' + blindEsc(item.kurum) + "</b></p><h3>Başlık</h3><p>" + blindEsc(item.baslik) + "</p>";
+  } else {
+    var name = typeof deskName === "function" ? deskName(item.card, item.ad) : item.ad;
+    h += "<h3>" + blindEsc(ev.baslik) + "</h3>" + String(ev.metin || "").split("\n").filter(Boolean).map(function (l) { return "<p>" + blindEsc(l) + "</p>"; }).join("") +
+      '</section><section class="desk-box blind-concept"><h3>' + blindEsc(name) + "</h3><p>" + blindEsc(item.tanim) + "</p><ul>" +
+      (item.kosullar || []).map(function (k) { return "<li>" + blindEsc(k) + "</li>"; }).join("") + "</ul>";
+  }
+  h += '</section><div class="desk-form">';
+  (BLIND_FIELDS[packet.kind] || []).forEach(function (f, n) {
+    var opts = f[2] || (blind.categories || []).map(function (c) { return [c, c]; }).concat([BLIND_UNSURE]);
+    h += '<fieldset><legend>' + blindEsc(f[1]) + "</legend>";
+    if (f[2]) h += '<div class="desk-seg" role="radiogroup">' + opts.map(function (o, i) {
+      return '<button type="button" role="radio" aria-checked="' + (answers[f[0]] === o[0]) + '" data-desk="blind-field" data-f="' + f[0] + '" data-v="' + blindEsc(o[0]) + '">' +
+        (n === 0 ? "<kbd>" + (i + 1) + "</kbd> " : "") + blindEsc(o[1]) + "</button>";
+    }).join("") + "</div>";
+    else h += '<select data-desk="blind-sel" data-f="' + f[0] + '" aria-label="' + blindEsc(f[1]) + '"><option value="">Seçin</option>' + opts.map(function (o) {
+      return '<option value="' + blindEsc(o[0]) + '"' + (answers[f[0]] === o[0] ? " selected" : "") + ">" + blindEsc(o[1]) + "</option>";
+    }).join("") + "</select>";
+    h += "</fieldset>";
+  });
+  return h + "</div>";
+}
+
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { deskDoc: deskDoc, deskQueue: deskQueue, deskStats: deskStats, DESK_REASONS: DESK_REASONS, DESK_VERDICTS: DESK_VERDICTS, profileSig: profileSig, profileKey: profileKey, profileDistance: profileDistance, MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
+  module.exports = { blindKey: blindKey, blindDone: blindDone, blindOpen: blindOpen, blindProgress: blindProgress, blindItemHtml: blindItemHtml, BLIND_FIELDS: BLIND_FIELDS,
+    deskDoc: deskDoc, deskQueue: deskQueue, deskStats: deskStats, DESK_REASONS: DESK_REASONS, DESK_VERDICTS: DESK_VERDICTS, profileSig: profileSig, profileKey: profileKey, profileDistance: profileDistance, MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
     axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS,
     LENS_MEASURES: LENS_MEASURES, lensSentence: lensSentence, lensDistanceText: lensDistanceText };

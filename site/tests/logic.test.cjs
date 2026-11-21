@@ -529,3 +529,31 @@ test("lensDistanceText", () => {
   assert.equal(L.lensDistanceText(1.6), "Ortalamada diğer kurumlardan 1,6 kat farklı davranıyor.");
   assert.equal(L.lensDistanceText(null), "Bu dilimde yeterli haber yok.");
 });
+
+test("blind helpers", () => {
+  assert.equal(L.blindKey("b-A1", "e1__c1"), "blind__b-A1__e1__c1");
+  assert.equal(L.blindOpen({ not_before: null }, "2026-11-21"), true);
+  assert.equal(L.blindOpen({ not_before: "2026-12-05" }, "2026-12-04"), false);
+  assert.equal(L.blindOpen({ not_before: "2026-12-05" }, "2026-12-05"), true);
+  const pk = { id: "n-A2", kind: "narrative", items: [{ item: "k1__sabah" }, { item: "k1__ntv" }] };
+  assert.deepEqual(L.blindProgress(pk, { "blind__n-A2__k1__sabah": { answers: { blame_level: "none", frame_category: "Spor" } },
+                                         "blind__n-A2__k1__ntv": { answers: { blame_level: "none" } } }), { done: 1, total: 2 });
+});
+test("blind item shows no AI", () => {
+  const blind = { categories: ["Spor", "Diğer"], packets: [] };
+  const pk = { id: "b-A1", kind: "behaviour", events: { e1: { baslik: "Başlık", metin: "[sabah · 10:00] Haber" } } };
+  const h = L.blindItemHtml(blind, pk, { item: "e1__c1", event: "e1", card: "c1", ad: "Card", tanim: "Tanım", kosullar: ["k1"] }, {});
+  assert.ok(h.includes("[sabah · 10:00] Haber") && h.includes("Tanım"));
+  assert.ok(!/AI|Yapay|kanıt|Doğrulan|Belirsiz|#\/olay/.test(h));
+});
+test("blind narrative item and saved answer", () => {
+  const blind = { categories: ["Spor", "Diğer"], packets: [] };
+  const pk = { id: "n-A2", kind: "narrative", events: { g: { olay: "Gemi battı." } } };
+  const h = L.blindItemHtml(blind, pk, { item: "g__ntv", event: "g", kurum: "NTV", baslik: "Gemi alabora oldu" }, { blame_level: "implied", frame_category: "Spor" });
+  assert.ok(h.includes("Gemi battı.") && h.includes("NTV") && h.includes("Gemi alabora oldu"));
+  assert.ok(/aria-checked="true"[^>]*data-v="implied"/.test(h) && /<option value="Spor" selected/.test(h) && h.includes("Emin değilim"));
+});
+test("export keeps blind answers", () => {
+  const x = L.reviewsExport({ "blind__b-A1__e1__c1": { status: "coded", answers: { present: "yes" } } }, "p1");
+  assert.deepEqual(x.reviews[0].answers, { present: "yes" });
+});

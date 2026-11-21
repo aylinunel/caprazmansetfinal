@@ -4,7 +4,7 @@
    public pages' meaning (verified / corrected / rejected), the rest is training data for the learning loop
    (validation/feedback). Pure rules live in logic.js: deskDoc, deskQueue, deskStats. */
 var DESK = { g: "davranis", state: "todo", card: "", outlet: "", key: "", form: null, t0: 0, msg: "", undo: null };
-var DESK_GROUPS = [["davranis", "Davranışsal"], ["medya", "Medya teknikleri"], ["bekleyen", "Bekleyen medya kartları"], ["anlati", "Anlatı kodlamaları"]];
+var DESK_GROUPS = [["davranis", "Davranışsal"], ["medya", "Medya teknikleri"], ["bekleyen", "Bekleyen medya kartları"], ["anlati", "Anlatı kodlamaları"], ["kor", "Kör kodlama"]];
 var DESK_NARR_REASONS = [["unsupported", "Başlık bu kodu desteklemiyor"], ["wrong_outlet", "Kurumlar karışmış"],
   ["missing_dim", "Önemli bir boyut eksik"], ["other", "Başka bir neden (açıklamada)"]];
 var DESK_MIN = 20;   /* reviews per concept before its keep-rate counts (validation/reference/gates.json min_reviews_to_judge is 15; 20 is the report's stage-1 target) */
@@ -130,10 +130,17 @@ function deskLearning(st) {
     " incelemeye ulaşınca dış görünüme katılmaya aday olur; yapay zekâ değişikliği ancak öğrenme kapısını geçerse yayına girer.</p></details>";
 }
 
+function deskTabs() {
+  return '<nav class="desk-tabs" aria-label="Kuyruklar">' + DESK_GROUPS.map(function (g) {
+    var n = g[0] === "kor" ? blindPackets().length : deskItems(g[0]).length; if (!n) return "";
+    return '<button class="subtab' + (g[0] === DESK.g ? " on" : "") + '" data-desk="group" data-v="' + g[0] + '">' + esc(g[1]) + ' <span class="mono">' + n + "</span></button>";
+  }).join("") + "</nav>";
+}
 function pgDesk(q) {
   q = q || {};
   if (q.v === "ozet") return pgBG7();
   if (q.g && DESK_GROUPS.some(function (g) { return g[0] === q.g; })) DESK.g = q.g;
+  if (DESK.g === "kor") return pgBlind();
   var items = deskItems(DESK.g), rev = deskReviews(items), st = deskStats(items, rev, DESK_MIN);
   var queue = deskQueue(items, rev, { state: DESK.state, card: DESK.card, outlet: DESK.outlet });
   if (q.k && !DESK.key) DESK.key = q.k;
@@ -146,10 +153,7 @@ function pgDesk(q) {
     '<div class="desk-prog" aria-label="İlerleme"><span class="mono">' + st.done + " / " + st.total + "</span> incelendi" +
     '<span class="desk-bar wide"><i style="width:' + pct + '%"></i></span></div>' +
     '<a class="lnk desk-ozet" href="#/yonetim?t=bilissel&v=ozet">Özet ve yöntem</a></div>';
-  h += '<nav class="desk-tabs" aria-label="Kuyruklar">' + DESK_GROUPS.map(function (g) {
-    var n = deskItems(g[0]).length; if (!n) return "";
-    return '<button class="subtab' + (g[0] === DESK.g ? " on" : "") + '" data-desk="group" data-v="' + g[0] + '">' + esc(g[1]) + ' <span class="mono">' + n + "</span></button>";
-  }).join("") + "</nav>" + deskLearning(st);
+  h += deskTabs() + deskLearning(st);
   h += (REV7MSG ? '<div class="note warn">' + esc(REV7MSG) + "</div>" : "") + '<div class="desk-grid"><aside class="desk-q" aria-label="Kuyruk">' +
     deskSeg("state", [["todo", "İncelenmedi"], ["done", "İncelendi"], ["all", "Tümü"]], DESK.state) +
     (DESK.g === "anlati" ? "" : '<select data-desk="fcard" aria-label="Kavram"><option value="">Bütün kavramlar</option>' + Object.keys(cards).sort(function (a, b) { return trCmp(cards[a], cards[b]); })
@@ -194,7 +198,8 @@ document.addEventListener("click", function (ev) {
   var a = b.getAttribute("data-desk"), v = b.getAttribute("data-v"), F = DESK.form;
   if (b.tagName === "SELECT" || b.tagName === "TEXTAREA") return;
   ev.preventDefault();
-  if (a === "group") { DESK.g = v; DESK.card = DESK.outlet = DESK.key = ""; DESK.form_key = null; }
+  if (a.indexOf("blind-") === 0) return blindClick(a, v, b);
+  if (a === "group") { DESK.g = v; DESK.bp = ""; DESK.card = DESK.outlet = DESK.key = ""; DESK.form_key = null; }
   else if (a === "state") { DESK.state = v; DESK.key = ""; DESK.form_key = null; }
   else if (a === "pick") { var it = deskItems(DESK.g).filter(function (i) { return i.key === v; })[0]; deskOpen(it, rev7(v)); }
   else if (a === "verdict") { F.verdict = v; if (v === "correct") { F.reason = ""; F.card = ""; } DESK.msg = ""; }
@@ -214,6 +219,7 @@ document.addEventListener("click", function (ev) {
 document.addEventListener("change", function (ev) {
   var s = ev.target; if (!s.closest || !s.closest(".desk")) return;
   var a = s.getAttribute("data-desk");
+  if (a === "blind-sel") { DESK.ba[s.getAttribute("data-f")] = s.value; DESK.msg = ""; return deskRerender(); }
   if (a === "fcard") DESK.card = s.value; else if (a === "foutlet") DESK.outlet = s.value; else if (a === "card") DESK.form.card = s.value; else return;
   if (a !== "card") { DESK.key = ""; DESK.form_key = null; }
   deskRerender();
@@ -223,6 +229,7 @@ document.addEventListener("toggle", function (ev) { if (ev.target.hasAttribute &
 document.addEventListener("submit", function (ev) { if (ev.target.hasAttribute("data-desk-form")) { ev.preventDefault(); deskSave(); } });
 document.addEventListener("keydown", function (ev) {
   if (!document.querySelector(".desk") || ev.altKey || ev.metaKey && ev.key !== "Enter") return;
+  if (DESK.g === "kor") return blindKeydown(ev);
   var typing = /^(TEXTAREA|INPUT|SELECT)$/.test((ev.target || {}).tagName || "");
   if (ev.key === "Enter" && (ev.ctrlKey || ev.metaKey || !typing)) { ev.preventDefault(); return deskSave(); }
   if (typing || ev.ctrlKey) return;
@@ -231,3 +238,78 @@ document.addEventListener("keydown", function (ev) {
   else if (k === "j") deskStep(1);
   else if (k === "k") deskStep(-1);
 });
+
+/* Kör kodlama: packets of items the owner codes without any AI result (logic.js: blind*). */
+var BLIND_KIND = { behaviour: "Davranışsal kavram", narrative: "Anlatı" };
+function blindPackets() { return (D.BLIND && D.BLIND.packets) || []; }
+function blindToday() { return new Date().toISOString().slice(0, 10); }
+function blindDateTr(d) { return +d.slice(8, 10) + " " + V3MONTH[+d.slice(5, 7) - 1] + " " + d.slice(0, 4); }
+function blindPacket() { return blindPackets().filter(function (p) { return p.id === DESK.bp; })[0]; }
+function blindStart(pk, key) {
+  var items = pk.items, cur = items.filter(function (i) { return i.item === key; })[0] ||
+    items.filter(function (i) { var r = rev7(blindKey(pk.id, i.item)); return !(r && blindDone(pk.kind, r.answers)); })[0] || items[0];
+  var r = cur && rev7(blindKey(pk.id, cur.item));
+  DESK.bi = cur ? cur.item : ""; DESK.ba = Object.assign({}, r && r.answers || {}); DESK.msg = "";
+}
+function blindList() {
+  return '<div class="wrap page desk"><div class="desk-top"><div><div class="eyebrow">Yönetim · Kör kodlama</div><h1>Kör kodlama</h1></div></div>' + deskTabs() +
+    '<p class="desk-sub">Yapay zekânın kararı gösterilmez; yanıtlarınız insan anahtarına aktarılır.</p><ul class="blind-packets">' + blindPackets().map(function (p) {
+      var pr = blindProgress(p, REV7), ok = blindOpen(p, blindToday());
+      return "<li><button" + (ok ? "" : " disabled") + ' data-desk="blind-packet" data-v="' + esc(p.id) + '"><b>' + esc(p.id) + "</b> <span>" + BLIND_KIND[p.kind] + '</span> <span class="mono">' + pr.done + "/" + pr.total + "</span>" +
+        (ok ? "" : '<span class="desk-sub">Bu tur ' + blindDateTr(p.not_before) + " tarihinde açılır; ilk turdaki yanıtlarınızın etkisi geçsin diye.</span>") + "</button></li>";
+    }).join("") + "</ul></div>";
+}
+function pgBlind() {
+  var pk = blindPacket(); if (!pk) return blindList();
+  if (!DESK.bi || !pk.items.some(function (i) { return i.item === DESK.bi; })) blindStart(pk);
+  var pr = blindProgress(pk, REV7), cur = pk.items.filter(function (i) { return i.item === DESK.bi; })[0];
+  var h = '<div class="wrap page desk"><div class="desk-top"><div><div class="eyebrow">Yönetim · Kör kodlama · ' + esc(pk.id) + '</div><h1>Kör kodlama</h1></div>' +
+    '<div class="desk-prog"><span class="mono">' + pr.done + " / " + pr.total + '</span> kodlandı<span class="desk-bar wide"><i style="width:' + Math.round(100 * pr.done / (pr.total || 1)) + '%"></i></span></div>' +
+    '<button class="chip" data-desk="blind-back">Paketler</button></div>' + deskTabs();
+  h += '<div class="desk-grid"><aside class="desk-q" aria-label="Öğeler"><ol class="desk-list">' + pk.items.slice(0, 400).map(function (i) {
+    var r = rev7(blindKey(pk.id, i.item)), ev = (pk.events || {})[i.event] || {}, t = pk.kind === "narrative" ? i.kurum + " · " + i.baslik : (i.ad || i.card);
+    return '<li><button data-desk="blind-pick" data-v="' + esc(i.item) + '"' + (i.item === DESK.bi ? ' aria-current="true"' : "") + '><span class="desk-dot s-' + (r && blindDone(pk.kind, r.answers) ? "verified" : "todo") + '"></span><b>' + esc(t) + "</b><span>" + esc(ev.baslik || ev.olay || "") + "</span></button></li>";
+  }).join("") + '</ol></aside><main class="desk-w" id="desk-w">';
+  h += cur ? blindItemHtml(D.BLIND, pk, cur, DESK.ba) : '<div class="desk-empty"><h2>Bu pakette öğe yok.</h2></div>';
+  h += (DESK.msg ? '<p class="desk-msg" role="alert">' + esc(DESK.msg) + "</p>" : "") +
+    '<div class="desk-act"><button type="button" class="desk-save" data-desk="blind-save"' + (REV7OWNER ? "" : " disabled") + '>Kaydet ve sonraki <kbd>↵</kbd></button>' +
+    '<button type="button" class="chip" data-desk="blind-prev"><kbd>K</kbd> Önceki</button><button type="button" class="chip" data-desk="blind-next">Atla <kbd>J</kbd></button></div></main></div></div>';
+  return h;
+}
+function blindStep(d) {
+  var pk = blindPacket(); if (!pk) return;
+  var i = pk.items.findIndex(function (x) { return x.item === DESK.bi; }), nx = pk.items[Math.max(0, Math.min(pk.items.length - 1, i + d))];
+  if (nx) blindStart(pk, nx.item);
+}
+function blindSave() {
+  var pk = blindPacket(); if (!pk || !REV7OWNER) return;
+  if (!blindDone(pk.kind, DESK.ba)) { DESK.msg = "Önce bütün alanları yanıtlayın."; return deskRerender(); }
+  var key = blindKey(pk.id, DESK.bi), answers = Object.assign({}, DESK.ba);
+  rev7Save(key, "coded", "", false, { answers: answers });
+  REV7[key] = { status: "coded", note: "", answers: answers };
+  var i = pk.items.findIndex(function (x) { return x.item === DESK.bi; }), nx = pk.items.slice(i + 1).concat(pk.items.slice(0, i + 1)).filter(function (x) {
+    var r = rev7(blindKey(pk.id, x.item)); return !(r && blindDone(pk.kind, r.answers));
+  })[0];
+  if (nx) blindStart(pk, nx.item); else DESK.bp = "";
+  deskRerender();
+}
+function blindClick(a, v, b) {
+  if (a === "blind-packet") { DESK.bp = v; DESK.bi = ""; }
+  else if (a === "blind-back") DESK.bp = "";
+  else if (a === "blind-pick") blindStart(blindPacket(), v);
+  else if (a === "blind-field") DESK.ba[b.getAttribute("data-f")] = v;
+  else if (a === "blind-save") return blindSave();
+  else if (a === "blind-next") blindStep(1);
+  else if (a === "blind-prev") blindStep(-1);
+  deskRerender();
+}
+function blindKeydown(ev) {
+  var pk = blindPacket(); if (!pk) return;
+  var typing = /^(TEXTAREA|INPUT|SELECT)$/.test((ev.target || {}).tagName || "");
+  if (ev.key === "Enter" && !typing) { ev.preventDefault(); return blindSave(); }
+  if (typing || ev.ctrlKey) return;
+  var k = ev.key.toLowerCase(), f = BLIND_FIELDS[pk.kind][0], o = f[2] && f[2][+k - 1];
+  if (o) { DESK.ba[f[0]] = o[0]; DESK.msg = ""; deskRerender(); }
+  else if (k === "j") { blindStep(1); deskRerender(); }
+  else if (k === "k") { blindStep(-1); deskRerender(); }
+}

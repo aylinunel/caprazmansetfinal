@@ -2710,3 +2710,11 @@ kbd{font-family:var(--ff-m);font-size:11px;padding:1px 5px;border:1px solid curr
 .lens-tr i{position:absolute;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--ink)}
 .lens-rl b{text-align:right;font-size:14px}
 @media (max-width:640px){.lens-tl,.lens-me{font-size:24px}.lens-svg{margin-bottom:6px}}
+.blind-packets{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:10px;max-width:640px}
+.blind-packets button{width:100%;min-height:56px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;text-align:left;padding:12px 14px;border:1px solid var(--line2);border-radius:10px;background:var(--surface);cursor:pointer}
+.blind-packets button:disabled{cursor:not-allowed;color:var(--muted)}
+.blind-packets .desk-sub{flex-basis:100%}
+.blind-text h3{margin:10px 0 2px;font-size:13px;color:var(--muted);font-weight:600}
+.blind-text p,.blind-concept p{margin:4px 0}
+.blind-concept ul{margin:6px 0 0;padding-left:20px}
+.desk-w fieldset select{min-height:44px;max-width:100%}
