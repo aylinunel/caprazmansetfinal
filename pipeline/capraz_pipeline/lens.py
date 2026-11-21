@@ -32,6 +32,7 @@ REASON_PART = "Yalnızca sezonun bir kısmında derlendi."
 REASON_TYPE = "Kayıt defterinde genel haber kurumu olarak geçmiyor."
 
 MEASURES = ("skip", "loaded", "harsher", "first")
+FEED_MEASURES = {"skip", "first"}  # computed only for complete-feed lens outlets, against complete-feed lens outlets
 LOADED_V = 25                     # loaded: headline score v >= 25 (political headlines only)
 HARSHER_GAP = 15                  # harsher: v - lv >= 15 (political headlines with a lede)
 FIRST_MINUTES = 60                # first to report: within 60 minutes of the earliest timed comparison headline
@@ -201,7 +202,8 @@ def _stratum(measure: str, outlet: str, st: dict, arts: dict, others: list[str])
         if not peers:
             return None
         return (int(outlet in skipped), 1, sum(1 for s in peers if s in skipped), len(peers))
-    first = st["first"]
+    # "first" judges each outlet by its earliest real-timed headline in the story ("timed"); the rest by its first headline.
+    first = st.get("timed", st["first"]) if measure == "first" else st["first"]
     if outlet not in first or not _eligible(measure, arts[first[outlet]]):
         return None
     peers = [arts[first[s]] for s in others if s in first and _eligible(measure, arts[first[s]])]
@@ -212,7 +214,7 @@ def _stratum(measure: str, outlet: str, st: dict, arts: dict, others: list[str])
         yes = lambda a: a["v"] >= LOADED_V
     elif measure == "harsher":
         yes = lambda a: a["v"] - a["lv"] >= HARSHER_GAP
-    else:  # first: reference = earliest timed first headline of the outlet and the others that covered the story
+    else:  # first: reference = earliest timed headline of the outlet and the others that covered the story
         ref = datetime.fromisoformat(min([own["d"]] + [a["d"] for a in peers]))
         yes = lambda a: (datetime.fromisoformat(a["d"]) - ref).total_seconds() <= FIRST_MINUTES * 60
     return (int(yes(own)), 1, sum(1 for a in peers if yes(a)), len(peers))
@@ -293,10 +295,13 @@ def compute(core: dict, arts: dict, groups: dict) -> dict:
         if e["i"] in notices:
             continue
         first: dict[str, str] = {}
+        timed: dict[str, str] = {}
         for aid in sorted((i for i in e["a"] if i in arts), key=lambda i: (arts[i]["d"], i)):
             first.setdefault(arts[aid]["s"], aid)
+            if _timed(arts[aid]):
+                timed.setdefault(arts[aid]["s"], aid)
         b = big_by.get(e["i"])
-        stories.append({"event": e["i"], "month": e["f"][:7], "tp": e.get("tp") or [], "first": first,
+        stories.append({"event": e["i"], "month": e["f"][:7], "tp": e.get("tp") or [], "first": first, "timed": timed,
                         "active": b["active"] if b else [],
                         "skipped": {s for s in complete if e["i"] in skips[s]} if b else set()})
 
@@ -314,8 +319,10 @@ def compute(core: dict, arts: dict, groups: dict) -> dict:
     for slug, x in g.items():
         o = {"lens": x["lens"], "reason": x["reason"], "feed": feeds[slug], "slices": {}, "missed": []}
         if x["lens"]:
-            ms = [m for m in MEASURES if m != "skip" or slug in complete]
-            others = {m: [s for s in (complete if m == "skip" else lens) if s != slug] for m in ms}
+            # skip and first only for complete feeds, against the other complete feeds: a partial or capped feed
+            # distorts which stories we collected from it and when, not what the newsroom published.
+            ms = [m for m in MEASURES if m not in FEED_MEASURES or slug in complete]
+            others = {m: [s for s in (complete if m in FEED_MEASURES else lens) if s != slug] for m in ms}
             o["slices"], month_rates[slug] = outlet_lens(slug, ms, others, stories, arts, members, months)
             if slug in complete:
                 o["missed"] = sorted(skips[slug], key=lambda i: (-len(events[i]["s"]), events[i]["f"], i))[:MAX_MISSED]

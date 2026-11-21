@@ -92,6 +92,21 @@ def small_fixture():
     return core, arts, {"exclude": {}}
 
 
+def complete_fixture():
+    """small_fixture with complete feeds (20-44 headlines a day); "o" also has a bare-date copy of every story."""
+    core, arts, groups = small_fixture()
+    for i in range(25):
+        day = f"2026-09-{1 + i:02d}"
+        for s in ("o", "q"):
+            for k in range(20 + i):
+                arts[f"f{s}{i}-{k}"] = {"s": s, "t": f"Dolgu {s} {i} {k}", "d": f"{day}T08:00", "v": 0, "p": 0, "lv": None, "nu": 0}
+        arts[f"z{i}"] = {"s": "o", "t": f"Olay {i} oldu", "d": f"{day}T00:00", "v": 30, "p": 1, "lv": 0, "nu": 0}
+        arts[f"o{i}"]["d"] = f"{day}T10:30"
+        arts[f"q{i}"]["d"] = f"{day}T10:00"
+        core["E"][i]["a"].append(f"z{i}")
+    return core, arts, groups
+
+
 class MeasureTest(unittest.TestCase):
     def test_verdict_needs_every_condition(self):
         m = {"n": 40, "rr": 2.4, "q": 0.004}
@@ -131,6 +146,22 @@ class MeasureTest(unittest.TestCase):
         self.assertEqual(strata("first", "o", st, arts, ["q", "r", "u"]), [(0, 1, 2, 2)])
         self.assertEqual(strata("first", "u", st, arts, ["q", "r", "o"]), [(1, 1, 1, 2)])
 
+    def test_first_uses_the_earliest_timed_headline(self):
+        arts = {"x0": {"s": "o", "d": "2026-09-01T00:00"}, "x1": {"s": "o", "d": "2026-09-01T10:30"},
+                "y": {"s": "q", "d": "2026-09-01T10:00"}}
+        st = [{"event": "e1", "first": {"o": "x0", "q": "y"}, "timed": {"o": "x1", "q": "y"}}]
+        self.assertEqual(strata("first", "o", st, arts, ["q"]), [(1, 1, 1, 1)])
+        st = [{"event": "e1", "first": {"o": "x0", "q": "y"}, "timed": {"q": "y"}}]  # only bare dates from o
+        self.assertEqual(strata("first", "o", st, arts, ["q"]), [])
+
+    def test_first_only_for_complete_feeds_and_judged_by_timed_headlines(self):
+        res = compute(*complete_fixture())
+        o = res["outlets"]["o"]
+        self.assertTrue(o["feed"]["complete"])
+        # o's earliest headline in every story is 00:00; its timed one (10:30) is within the hour of q (10:00)
+        self.assertEqual((o["slices"]["all"]["measures"]["first"]["n"], o["slices"]["all"]["measures"]["first"]["rr"]), (25, 1.0))
+        self.assertIn("skip", o["slices"]["all"]["measures"])
+
     def test_skip_compares_only_outlets_active_that_day(self):
         st = [{"event": "e1", "first": {}, "active": ["o", "q", "r"], "skipped": {"o", "r"}},
               {"event": "e2", "first": {}, "active": ["q", "r"], "skipped": set()},
@@ -157,6 +188,7 @@ class MeasureTest(unittest.TestCase):
         self.assertIn("q", o["loaded"]); self.assertIn("strong", o["loaded"])
         self.assertNotIn("q", res["outlets"]["o"]["slices"]["2026-09"]["measures"]["loaded"])
         self.assertNotIn("skip", o)                                           # neither feed is complete
+        self.assertNotIn("first", o)                                          # so no first-to-report either
         self.assertEqual(res["outlets"]["o"]["missed"], [])
         self.assertFalse(res["outlets"]["o"]["feed"]["complete"])
 
