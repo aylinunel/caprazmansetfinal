@@ -1,10 +1,13 @@
+import json
 import tempfile
 import unittest
+from datetime import date
 from pathlib import Path
 
 from biasguard.news import _load
 from validation.answerkey.agreement import krippendorff_alpha, percent_agreement
 from validation.answerkey.codebook import blame_level, frame_category, human_rows, load_codebook
+from validation.answerkey.packets import behaviour_packet, read_export, repeat_packet, upsert
 from validation.answerkey.record import Coding, agreement, append, from_core, gold
 
 REPO = Path(__file__).resolve().parents[2]
@@ -96,3 +99,49 @@ class RecordTest(unittest.TestCase):
         cb = {"categories": ["Yargı ve soruşturma", "Diğer"], "frames": {"Adli süreç": "Yargı ve soruşturma"}}
         self.assertEqual(sorted(from_core(core, cb)), [Coding("k1__sabah", "A1", "blame_level", "implied"),
                                                        Coding("k1__sabah", "A1", "frame_category", "Yargı ve soruşturma")])
+
+
+RESULTS_FIXTURE = {"events": [{"event": "e1", "status": "review_complete", "selected": ["c1"], "supported": [],
+                              "uncertain": [{"id": "c1"}]}]}
+INPUTS_FIXTURE = {"e1": {"event": "e1", "title": "T", "text": "[a · 10:00] x"}}
+CARDS_FIXTURE = [{"id": f"c{i}", "name": f"Card {i}", "definition": "d", "necessary_conditions": ["k"]} for i in range(1, 5)]
+PACKETS_FIXTURE = {"packets": [{"id": "b-A1", "kind": "behaviour", "coder": "A1", "items": [{"item": "e1__c1"}]}]}
+
+
+class PacketTest(unittest.TestCase):
+    def test_behaviour_packet_is_balanced_and_carries_no_verdict(self):
+        p, key = behaviour_packet(RESULTS_FIXTURE, INPUTS_FIXTURE, CARDS_FIXTURE, n_events=1, seed=1,
+                                  pid="b-A1", coder="A1", today=date(2026, 11, 21))
+        self.assertEqual(len(p["items"]), 3)  # 1 shown finding + max(1, 2) unselected cards
+        self.assertEqual(set(p["items"][0]), {"item", "event", "card", "ad", "tanim", "kosullar"})
+        self.assertNotIn("ai_shown", json.dumps(p))
+        self.assertEqual(key["_unflagged"], {"e1": {"sampled": 2, "total": 3}})
+
+    def test_repeat_packet_opens_after_the_gap(self):
+        first = {"id": "b-A1", "kind": "behaviour", "coder": "A1", "events": {}, "items": [{"item": f"e1__c{i}"} for i in range(4)]}
+        cs = [Coding("e1__c0", "A1", "present", "yes"), Coding("e1__c1", "A1", "present", "no"),
+              Coding("e1__c2", "A1", "present", "unsure")]
+        p = repeat_packet(first, cs, n_items=2, seed=1, pid="b-A2", coder="A2", today=date(2026, 11, 21))
+        self.assertEqual(p["not_before"], "2026-12-05")
+        self.assertEqual(sorted(i["item"] for i in p["items"]), ["e1__c0", "e1__c1"])
+        with self.assertRaisesRegex(ValueError, "2"):
+            repeat_packet(first, cs, n_items=3, seed=1, pid="b-A2", coder="A2", today=date(2026, 11, 21))
+
+    def test_read_export_maps_answers_to_the_packet_slot(self):
+        ex = {"reviews": [{"key": "blind__b-A1__e1__c1", "status": "coded", "answers": {"present": "yes"}},
+                          {"key": "s1__framing-effect", "status": "verified"}]}
+        self.assertEqual(read_export(ex, PACKETS_FIXTURE), [Coding("e1__c1", "A1", "present", "yes")])
+
+    def test_read_export_refuses_an_item_no_packet_has(self):
+        ex = {"reviews": [{"key": "blind__b-A1__e9__c1", "status": "coded", "answers": {"present": "yes"}}]}
+        with self.assertRaisesRegex(ValueError, "blind__b-A1__e9__c1"):
+            read_export(ex, PACKETS_FIXTURE)
+
+    def test_upsert_refuses_changed_items(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "p.json"
+            upsert({"id": "x", "items": [{"item": "a"}]}, ["Diğer"], path)
+            upsert({"id": "x", "items": [{"item": "a"}]}, ["Diğer"], path)
+            with self.assertRaisesRegex(ValueError, "x"):
+                upsert({"id": "x", "items": [{"item": "b"}]}, ["Diğer"], path)
+

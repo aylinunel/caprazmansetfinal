@@ -1,13 +1,18 @@
 """CLI: python -m validation.answerkey <command>."""
 import argparse
+import json
+import sys
+from datetime import date
 from pathlib import Path
 
 from biasguard.news import _load
 
 from .codebook import load_codebook
-from .record import FIELDS, agreement, from_core, read
+from .packets import PACKETS, behaviour_packet, narrative_packet, read_export, repeat_packet, upsert
+from .record import FIELDS, agreement, append, from_core, read
 
 REPO = Path(__file__).resolve().parents[2]
+KEYS = REPO / "validation" / "reference" / "answerkey"
 REPORT = REPO / "docs" / "validation" / "reports" / "answerkey-agreement.md"
 NAMES = {"same coder": "same-coder consistency (two passes ≥ 14 days apart)", "between coders": "agreement between coders"}
 
@@ -30,17 +35,78 @@ def agreement_report(core_path: Path) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _write_key(pid: str, key: dict) -> None:
+    KEYS.mkdir(parents=True, exist_ok=True)
+    (KEYS / f"{pid}.key.json").write_text(json.dumps(key, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
+def make_packet(a) -> str:
+    from biasguard.catalog import load_cards
+    categories = load_codebook()["categories"]
+    packets = json.loads(PACKETS.read_text(encoding="utf-8")) if PACKETS.exists() else {"packets": []}
+    today = date.today()
+    if a.repeat:
+        first = next((p for p in packets["packets"] if p["id"] == a.repeat), None)
+        if first is None:
+            raise SystemExit(f"unknown packet {a.repeat}")
+        p = repeat_packet(first, read(), a.items, a.seed, a.id, a.coder, today)
+        first_key = json.loads((KEYS / f"{a.repeat}.key.json").read_text(encoding="utf-8"))
+        _write_key(a.id, {i["item"]: first_key[i["item"]] for i in p["items"] if i["item"] in first_key}
+                   | {"_unflagged": first_key.get("_unflagged", {})})
+    elif a.kind == "narrative":
+        p = narrative_packet(_load(a.core), a.events, a.seed, a.id, a.coder, today)
+    else:
+        results = json.loads((a.run / "biasguard.json").read_text(encoding="utf-8"))
+        lines = (a.run / "inputs.jsonl").read_text(encoding="utf-8").splitlines()
+        inputs = {d["event"]: d for d in map(json.loads, filter(str.strip, lines))}
+        p, key = behaviour_packet(results, inputs, load_cards(), a.events, a.seed, a.id, a.coder, today)
+        _write_key(a.id, key)
+    upsert(p, categories)
+    return f"{a.id}: {len(p['items'])} items, {len(p['events'])} events"
+
+
 def main(argv=None) -> None:
     ap = argparse.ArgumentParser(prog="python -m validation.answerkey")
     sub = ap.add_subparsers(dest="cmd", required=True)
     ag = sub.add_parser("agreement", help="write the agreement report")
     ag.add_argument("--core", type=Path, default=REPO / "public" / "data" / "core.bin")
+    pk = sub.add_parser("packet", help="make a blind packet")
+    pk.add_argument("--kind", choices=("narrative", "behaviour"))
+    pk.add_argument("--repeat", help="id of the packet to repeat")
+    pk.add_argument("--run", type=Path)
+    pk.add_argument("--core", type=Path, default=REPO / "public" / "data" / "core.bin")
+    pk.add_argument("--events", type=int)
+    pk.add_argument("--items", type=int)
+    pk.add_argument("--coder", required=True)
+    pk.add_argument("--id", required=True)
+    pk.add_argument("--seed", type=int)
+    im = sub.add_parser("import", help="append the codings in a desk export")
+    im.add_argument("export", type=Path)
     args = ap.parse_args(argv)
-    if args.cmd == "agreement":
-        text = agreement_report(args.core)
-        REPORT.parent.mkdir(parents=True, exist_ok=True)
-        REPORT.write_text(text, encoding="utf-8")
-        print(text)
+    if args.cmd == "packet":
+        if args.seed is None:
+            sys.path.insert(0, str(REPO / "pipeline"))
+            from capraz_pipeline.config import PARAMS
+            args.seed = PARAMS.random_state
+        if args.repeat and not args.items:
+            ap.error("--repeat needs --items")
+        if not args.repeat and (not args.kind or not args.events):
+            ap.error("--kind and --events are required")
+        if args.kind == "behaviour" and not args.repeat and not args.run:
+            ap.error("--kind behaviour needs --run")
+        print(make_packet(args))
+    if args.cmd == "import":
+        packets = json.loads(PACKETS.read_text(encoding="utf-8"))
+        codings = read_export(json.loads(args.export.read_text(encoding="utf-8")), packets)
+        before = set(read())
+        append(codings)
+        new = [c for c in codings if c not in before]
+        for p in packets["packets"]:
+            ids = {i["item"] for i in p["items"]}
+            n = sum(1 for c in new if c.coder == p["coder"] and c.item in ids)
+            if n:
+                print(f"{p['id']}: {n} new codings")
+        print(f"{len(new)} new codings in total")
 
 
 if __name__ == "__main__":
