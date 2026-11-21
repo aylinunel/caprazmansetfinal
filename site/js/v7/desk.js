@@ -19,6 +19,10 @@ function deskOutlets(f) {
 }
 /* Every reviewable item, by group. A review counts only on the pack and event text it was made on (reviewValid). */
 function deskItems(g) {
+  var hide = blindHidden(D.BLIND, REV7);   /* items of an unfinished blind packet stay out of every queue (blindness) */
+  return deskItemsAll(g).filter(function (i) { return !hide.has(i.key); });
+}
+function deskItemsAll(g) {
   if (g === "anlati") return Object.keys(D.N).filter(function (k) { return D.N[k].status === "agent_coded"; }).map(function (k) {
     var n = D.N[k]; return { key: "narr__" + k, card: "anlati", name: "Anlatı kodlaması", nk: k, event: n.ev, size: (n.rows || []).length, outlets: (n.rows || []).map(function (r) { return r.s; }) };
   });

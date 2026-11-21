@@ -6,6 +6,7 @@ from pathlib import Path
 from biasguard.news import _load
 from validation.answerkey.codebook import blame_level, frame_category, load_codebook
 from validation.answerkey.narrative_eval import read_coded
+from validation.answerkey.record import agreement, from_core, read
 
 from .data import rows
 from .evaluate import cross_validate, score_fixed
@@ -31,7 +32,7 @@ def run(core: dict, coded: dict, codebook: dict) -> dict:
                   "agent": score_fixed(agent[lab], rs, lab)} for lab in LABELS}
 
 
-def report(res: dict, approved: bool, unmapped: int, total: int) -> str:
+def report(res: dict, approved: bool, unmapped: int, total: int, agree: dict | None = None) -> str:
     lines = ["# Temel modeller: anlatı kodlaması (mlbench)", "",
              "İnsan kodlamasına karşı 5 katlı, olay bazında gruplanmış çapraz doğrulama; ajan sabit tahmin olarak puanlanır.", "",
              "| Etiket | Model | n | Doğruluk | Makro F1 |", "|---|---|---|---|---|"]
@@ -39,9 +40,13 @@ def report(res: dict, approved: bool, unmapped: int, total: int) -> str:
         for m in MODELS:
             r = res[lab][m]
             lines.append(f"| {lab} | {m} | {r['n']} | {r['accuracy']:.3f} | {r['macro_f1']:.3f} |")
-    lines += ["", f"Çerçeve kod kitabı henüz onaylı değil (approved={str(approved).lower()}). Ajanın {total} çerçevesinden "
-              f"{unmapped} tanesi kod kitabının dışında; bunlar Diğer sayılır, dolayısıyla ajanın çerçeve sayısı çoğunlukla "
-              "sözcük dağarcığını yansıtır.", ""]
+    lines += [""]
+    for lab, a in (agree or {}).items():
+        lines.append(f"- {lab}: alan {'kullanılabilir' if a['usable'] else 'henüz kullanılabilir değil (not usable yet)'} "
+                     f"(iki kez kodlanan {a['items_double']} öğe)")
+    lines += ["", ("" if approved else "Çerçeve kod kitabı henüz onaylı değil (approved=false). ") +
+              f"Ajanın {total} çerçevesinden {unmapped} tanesi kod kitabının dışında; bunlar Diğer sayılır, dolayısıyla "
+              "ajanın çerçeve sayısı çoğunlukla sözcük dağarcığını yansıtır.", ""]
     return "\n".join(lines)
 
 
@@ -53,12 +58,14 @@ def main(argv=None):
     r.add_argument("--coded", type=Path, required=True)
     a = ap.parse_args(argv)
     codebook, coded = load_codebook(), read_coded(a.coded)
-    res = run(_load(a.core), coded, codebook)
+    core = _load(a.core)
+    res = run(core, coded, codebook)
     (REPO / "validation" / "reference" / "mlbench.json").write_text(
         json.dumps(res, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     frames = [(r.get("frame") or "").strip() for c in coded.values() for r in c.get("rows", [])]
     unmapped = sum(bool(f) and f not in codebook["frames"] for f in frames)
-    md = report(res, bool(codebook.get("approved")), unmapped, len(frames))
+    codings = read() + from_core(core, codebook)
+    md = report(res, bool(codebook.get("approved")), unmapped, len(frames), {lab: agreement(codings, lab) for lab in LABELS})
     (REPO / "docs" / "validation" / "reports" / "mlbench.md").write_text(md, encoding="utf-8")
     print(md)
 

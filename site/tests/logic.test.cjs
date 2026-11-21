@@ -539,6 +539,17 @@ test("blind helpers", () => {
   assert.deepEqual(L.blindProgress(pk, { "blind__n-A2__k1__sabah": { answers: { blame_level: "none", frame_category: "Spor" } },
                                          "blind__n-A2__k1__ntv": { answers: { blame_level: "none" } } }), { done: 1, total: 2 });
 });
+test("blindHidden hides an unfinished packet's items from the regular queues", () => {
+  const blind = { packets: [
+    { id: "b-A1", kind: "behaviour", items: [{ item: "e1__c1", event: "e1" }, { item: "e1__c2", event: "e1" }] },
+    { id: "n-A2", kind: "narrative", items: [{ item: "k1__sabah", event: "k1" }, { item: "k1__ntv", event: "k1" }] }] };
+  const done = (id, i) => ({ ["blind__" + id + "__" + i]: { answers: { present: "yes", blame_level: "none", frame_category: "Spor" } } });
+  assert.deepEqual([...L.blindHidden(blind, {})].sort(), ["e1__c1", "e1__c2", "narr__k1"]);
+  assert.deepEqual([...L.blindHidden(blind, done("b-A1", "e1__c1"))].sort(), ["e1__c1", "e1__c2", "narr__k1"]);
+  const all = { ...done("b-A1", "e1__c1"), ...done("b-A1", "e1__c2") };
+  assert.deepEqual([...L.blindHidden(blind, all)], ["narr__k1"]);
+  assert.equal(L.blindHidden(null, {}).size, 0);
+});
 test("blind item shows no AI", () => {
   const blind = { categories: ["Spor", "Diğer"], packets: [] };
   const pk = { id: "b-A1", kind: "behaviour", events: { e1: { baslik: "Başlık", metin: "[sabah · 10:00] Haber" } } };

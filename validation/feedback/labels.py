@@ -45,8 +45,8 @@ def import_export(export: dict, results: dict, known_cards: set[str]) -> list[La
     labels, seen = [], set()
     for number, r in enumerate(export["reviews"], 1):
         key = r.get("key", "")
-        if key.startswith("narr__"):
-            continue   # narrative-coding reviews are a different record
+        if key.startswith(("narr__", "blind__")):
+            continue   # narrative-coding and blind-packet reviews are different records
         event, sep, card = key.partition("__")
         problem = (None if sep and event and card else "key is not <event>__<card>")
         problem = problem or ("unknown status" if r.get("status") not in OUTCOMES else None)

@@ -11,4 +11,7 @@
 | frame_category | tfidf_logreg | 657 | 0.478 | 0.244 |
 | frame_category | agent | 657 | 0.181 | 0.137 |
 
+- blame_level: alan henüz kullanılabilir değil (not usable yet) (iki kez kodlanan 0 öğe)
+- frame_category: alan henüz kullanılabilir değil (not usable yet) (iki kez kodlanan 0 öğe)
+
 Çerçeve kod kitabı henüz onaylı değil (approved=false). Ajanın 657 çerçevesinden 475 tanesi kod kitabının dışında; bunlar Diğer sayılır, dolayısıyla ajanın çerçeve sayısı çoğunlukla sözcük dağarcığını yansıtır.

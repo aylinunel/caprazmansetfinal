@@ -11,7 +11,7 @@ from validation.answerkey.agreement import krippendorff_alpha, percent_agreement
 from validation.answerkey.narrative_eval import compare
 from validation.answerkey.behaviour_eval import as_card_stats, measure
 from validation.answerkey.codebook import blame_level, frame_category, human_rows, load_codebook
-from validation.answerkey.packets import behaviour_packet, read_export, repeat_packet, upsert
+from validation.answerkey.packets import behaviour_packet, narrative_packet, read_export, repeat_packet, upsert
 from validation.answerkey.record import Coding, agreement, append, from_core, gold
 
 REPO = Path(__file__).resolve().parents[2]
@@ -139,6 +139,15 @@ class PacketTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "2"):
             repeat_packet(first, cs, n_items=3, seed=1, pid="b-A2", coder="A2", today=date(2026, 11, 21))
 
+    def test_narrative_packet_samples_only_events_with_headline_text(self):
+        rows = lambda hl: [{"s": "sabah", "frame": "x", "blame": "", "hl": hl}]
+        core = {"S": [{"s": "sabah", "n": "Sabah"}], "N": {
+            f"k{i}": {"status": "headline_coded", "q": {"happened": "o"}, "rows": rows("" if i < 3 else "Başlık")}
+            for i in range(6)}}
+        p = narrative_packet(core, 3, 1, "n-A2", "A2", date(2026, 11, 21))
+        self.assertEqual(sorted(p["events"]), ["k3", "k4", "k5"])
+        self.assertEqual(len(p["items"]), 3)
+
     def test_read_export_maps_answers_to_the_packet_slot(self):
         ex = {"reviews": [{"key": "blind__b-A1__e1__c1", "status": "coded", "answers": {"present": "yes"}},
                           {"key": "s1__framing-effect", "status": "verified"}]}
@@ -184,6 +193,40 @@ class CliTest(unittest.TestCase):
                     cli.make_packet(args(2), d / "p.json")
                 self.assertEqual((d / "keys" / "b-A1.key.json").read_text(encoding="utf-8"), key)
 
+    def _args(self, **kw):
+        return Namespace(**{"repeat": None, "kind": "behaviour", "run": None, "events": 1, "items": None, "coder": "A1",
+                            "id": "b-A1", "seed": 1, "core": None, **kw})
+
+    def test_coder_must_be_a_slot_and_nothing_is_written(self):
+        from validation.answerkey import __main__ as cli
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            for bad in ("Ayşe", "a1", "A0", "AA"):
+                with mock.patch.object(cli, "KEYS", d / "keys"), self.assertRaisesRegex(SystemExit, "--coder"):
+                    cli.make_packet(self._args(coder=bad), d / "p.json")
+            self.assertFalse((d / "p.json").exists() or (d / "keys").exists())
+
+    def test_repeat_needs_same_letter_and_a_different_digit(self):
+        from validation.answerkey import __main__ as cli
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "p.json").write_text(json.dumps(PACKETS_FIXTURE), encoding="utf-8")
+            for bad in ("A1", "B2"):
+                with mock.patch.object(cli, "KEYS", d / "keys"), self.assertRaisesRegex(SystemExit, "same letter"):
+                    cli.make_packet(self._args(repeat="b-A1", items=1, coder=bad, id="b-A2"), d / "p.json")
+            self.assertEqual(json.loads((d / "p.json").read_text(encoding="utf-8")), PACKETS_FIXTURE)
+
+    def test_repeat_of_a_narrative_packet_needs_no_key_file(self):
+        from validation.answerkey import __main__ as cli
+        first = {"id": "n-A1", "kind": "narrative", "coder": "A1", "events": {}, "items": [{"item": "k1__s"}]}
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "p.json").write_text(json.dumps({"categories": ["Diğer"], "packets": [first]}), encoding="utf-8")
+            with mock.patch.object(cli, "KEYS", d / "keys"), mock.patch.object(cli, "read", return_value=[Coding("k1__s", "A1", "blame_level", "none")]):
+                msg = cli.make_packet(self._args(kind="narrative", repeat="n-A1", items=1, coder="A2", id="n-A2"), d / "p.json")
+            self.assertIn("n-A2: 1 items", msg)
+            self.assertFalse((d / "keys").exists())
+
     def test_agreement_command_writes_the_report(self):
         from validation.answerkey import __main__ as cli
         with tempfile.TemporaryDirectory() as d:
@@ -220,6 +263,15 @@ class ExamplesTest(unittest.TestCase):
         self.assertEqual(out["c1"], [{"event": "e1", "text": "text e1", "present": "yes"},
                                      {"event": "e3", "text": "text e3", "present": "no"}])
         self.assertEqual(out["c2"], [{"event": "e3", "text": "text e3", "present": "no"}])
+
+    def test_examples_use_the_text_the_person_coded(self):
+        from validation.answerkey.__main__ import build_examples
+        key = {"i1": {"event": "e1", "card": "c1", "ai_shown": True}, "_unflagged": {}}
+        out = build_examples({"i1": "yes"}, key, {"e1": {"event": "e1", "text": "new run text"}},
+                             {"e1": {"metin": "coded text"}})
+        self.assertEqual(out["c1"][0]["text"], "coded text")
+        out = build_examples({"i1": "yes"}, key, {"e1": {"event": "e1", "text": "new run text"}}, {"e1": {}})
+        self.assertEqual(out["c1"][0]["text"], "new run text")
 
     def test_examples_file_is_empty_while_present_is_not_usable(self):
         from validation.answerkey import __main__ as cli
@@ -276,14 +328,14 @@ class BehaviourEvalTest(unittest.TestCase):
         m = measure({"e1__c1": "yes", "e1__c2": "no", "e1__c3": "yes"}, self.KEY)
         self.assertEqual((m["overall"]["tp"], m["overall"]["fp"], m["overall"]["missed_est"]), (1, 1, 4.0))
         self.assertEqual(m["overall"]["precision"], 0.5)
-        self.assertAlmostEqual(m["overall"]["recall_est"], 0.2)
+        self.assertAlmostEqual(m["overall"]["recall_outside_selection_est"], 0.2)
         self.assertEqual(as_card_stats(m)["c1"]["kept"], 1)
 
     def test_measure_with_no_gold_is_none_not_a_crash(self):
         m = measure({}, self.KEY)
         self.assertIsNone(m["overall"]["precision"])
         self.assertIsNone(m["overall"]["precision_lower"])
-        self.assertIsNone(m["overall"]["recall_est"])
+        self.assertIsNone(m["overall"]["recall_outside_selection_est"])
 
     def test_command_writes_report_and_status(self):
         from validation.answerkey import __main__ as cli
@@ -291,9 +343,30 @@ class BehaviourEvalTest(unittest.TestCase):
             d = Path(d)
             (d / "k.json").write_text(json.dumps(self.KEY), encoding="utf-8")
             with mock.patch.object(cli, "BEHAVIOUR_REPORT", d / "r.md"), mock.patch.object(cli, "CARD_STATUS", d / "s.json"), \
-                    mock.patch.object(cli, "gold", return_value=({"e1__c1": "yes", "e1__c2": "no"}, [])), mock.patch("builtins.print"):
+                    mock.patch.object(cli, "gold", return_value=({"e1__c1": "yes", "e1__c2": "no"}, [])), \
+                    mock.patch.object(cli, "agreement", return_value={"usable": True, "alpha": 0.8, "items_double": 30}), \
+                    mock.patch("builtins.print"):
                 cli.main(["behaviour-eval", "--key", str(d / "k.json"), "--status"])
             self.assertIn("# ", (d / "r.md").read_text(encoding="utf-8"))
+            self.assertIn("0.800", (d / "r.md").read_text(encoding="utf-8"))
             s = json.loads((d / "s.json").read_text(encoding="utf-8"))
             self.assertEqual(s["measure"], "blind precision")
             self.assertEqual(s["cards"]["c1"]["status"], "unjudged")
+
+
+class BehaviourStatusGateTest(unittest.TestCase):
+    def test_status_is_refused_while_present_is_not_usable_and_report_says_so(self):
+        from validation.answerkey import __main__ as cli
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "k.json").write_text(json.dumps(BehaviourEvalTest.KEY), encoding="utf-8")
+            with mock.patch.object(cli, "BEHAVIOUR_REPORT", d / "r.md"), mock.patch.object(cli, "CARD_STATUS", d / "s.json"), \
+                    mock.patch.object(cli, "read", return_value=[]), mock.patch("builtins.print"):
+                with self.assertRaisesRegex(SystemExit, "not usable yet"):
+                    cli.main(["behaviour-eval", "--key", str(d / "k.json"), "--status"])
+                self.assertEqual(list(d.glob("[rs].*")), [])
+                cli.main(["behaviour-eval", "--key", str(d / "k.json")])
+            text = (d / "r.md").read_text(encoding="utf-8")
+            self.assertIn("not usable yet", text)
+            self.assertIn("herkese açık olay sayfalarında", text)
+            self.assertIn("seçim dışı tahmini duyarlılık", text.lower())

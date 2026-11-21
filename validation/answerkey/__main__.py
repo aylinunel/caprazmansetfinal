@@ -14,7 +14,7 @@ from .behaviour_eval import report as behaviour_report
 from .codebook import load_codebook
 from .narrative_eval import compare, read_coded, report
 from .packets import PACKETS, behaviour_packet, narrative_packet, read_export, repeat_packet, upsert
-from .record import FIELDS, agreement, append, from_core, gold, read
+from .record import FIELDS, agreement, append, check_slot, from_core, gold, read
 
 REPO = Path(__file__).resolve().parents[2]
 KEYS = REPO / "validation" / "reference" / "answerkey"
@@ -55,14 +55,23 @@ def make_packet(a, path: Path = PACKETS) -> str:
     categories = load_codebook()["categories"]
     packets = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"packets": []}
     today = date.today()
+    try:
+        check_slot(a.coder)
+    except ValueError as e:
+        raise SystemExit(f"--coder: {e}") from None
     if a.repeat:
         first = next((p for p in packets["packets"] if p["id"] == a.repeat), None)
         if first is None:
             raise SystemExit(f"unknown packet {a.repeat}")
+        if a.coder[0] != first["coder"][0] or a.coder == first["coder"]:
+            raise SystemExit(f"--coder: a repeat of {a.repeat} (coder {first['coder']}) needs the same letter and a "
+                             f"different digit, e.g. {first['coder'][0]}{'2' if first['coder'][1] != '2' else '3'}; got {a.coder}")
         p = repeat_packet(first, read(), a.items, a.seed, a.id, a.coder, today)
-        first_key = json.loads((KEYS / f"{a.repeat}.key.json").read_text(encoding="utf-8"))
-        key = ({i["item"]: first_key[i["item"]] for i in p["items"] if i["item"] in first_key}
-               | {"_unflagged": first_key.get("_unflagged", {})})
+        key = None
+        if first["kind"] == "behaviour":  # narrative packets have no private key
+            first_key = json.loads((KEYS / f"{a.repeat}.key.json").read_text(encoding="utf-8"))
+            key = ({i["item"]: first_key[i["item"]] for i in p["items"] if i["item"] in first_key}
+                   | {"_unflagged": first_key.get("_unflagged", {})})
     elif a.kind == "narrative":
         key = None
         p = narrative_packet(_load(a.core), a.events, a.seed, a.id, a.coder, today)
@@ -77,16 +86,21 @@ def make_packet(a, path: Path = PACKETS) -> str:
     return f"{a.id}: {len(p['items'])} items, {len(p['events'])} events"
 
 
-def build_examples(agreed: dict, key: dict, inputs: dict) -> dict:
-    """{card: [{event, text, present}]}: the first agreed yes and the first agreed no per card, in item order."""
+def build_examples(agreed: dict, key: dict, inputs: dict, events: dict | None = None) -> dict:
+    """{card: [{event, text, present}]}: the first agreed yes and the first agreed no per card, in item order.
+
+    The text is the packet's `metin` (what the person coded); the run's text is only a fallback."""
     out: dict = {}
     for item, meta in sorted(key.items()):
-        v, ev = agreed.get(item), inputs.get(meta.get("event")) if item != "_unflagged" else None
-        if v not in ("yes", "no") or ev is None:
+        if item == "_unflagged" or agreed.get(item) not in ("yes", "no"):
+            continue
+        v, event = agreed[item], meta.get("event")
+        text = ((events or {}).get(event) or {}).get("metin") or (inputs.get(event) or {}).get("text")
+        if text is None:
             continue
         mine = out.setdefault(meta["card"], [])
         if all(e["present"] != v for e in mine):
-            mine.append({"event": ev["event"], "text": ev["text"], "present": v})
+            mine.append({"event": event, "text": text, "present": v})
     return {c: sorted(e, key=lambda x: x["present"] != "yes") for c, e in out.items() if e}
 
 
@@ -161,15 +175,23 @@ def main(argv=None) -> None:
             for kp in sorted(KEYS.glob("behaviour-*.key.json")):
                 key |= json.loads(kp.read_text(encoding="utf-8"))
             lines = (args.run / "inputs.jsonl").read_text(encoding="utf-8").splitlines()
-            out = build_examples(gold(codings, "present")[0], key, {d["event"]: d for d in map(json.loads, filter(str.strip, lines))})
+            events = {}
+            for pk in json.loads(PACKETS.read_text(encoding="utf-8"))["packets"] if PACKETS.exists() else []:
+                events = pk["events"] | events
+            out = build_examples(gold(codings, "present")[0], key, {d["event"]: d for d in map(json.loads, filter(str.strip, lines))}, events)
         else:
             print("present not usable yet: writing an empty examples file")
         args.out.parent.mkdir(parents=True, exist_ok=True)
         args.out.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     if args.cmd == "behaviour-eval":
-        agreed, disputed = gold(read(), "present")
+        codings = read()
+        present = agreement(codings, "present")
+        if args.status and not present["usable"]:
+            raise SystemExit("behaviour-eval --status refused: the present field is not usable yet "
+                             f"(alpha {_fmt(present['alpha'])}, {present['items_double']} items coded twice); nothing was written")
+        agreed, disputed = gold(codings, "present")
         m = measure(agreed, json.loads(args.key.read_text(encoding="utf-8")))
-        text = behaviour_report(m, len(disputed))
+        text = behaviour_report(m, len(disputed), present)
         BEHAVIOUR_REPORT.parent.mkdir(parents=True, exist_ok=True)
         BEHAVIOUR_REPORT.write_text(text, encoding="utf-8")
         if args.status:

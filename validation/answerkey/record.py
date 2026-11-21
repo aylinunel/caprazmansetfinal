@@ -15,6 +15,11 @@ _SLOT = re.compile(r"[A-Z][1-9]")
 MIN_ITEMS, MIN_ALPHA = 30, 0.67
 
 
+def check_slot(coder: str) -> None:
+    if not _SLOT.fullmatch(coder):
+        raise ValueError(f"coder slot {coder!r} must be a letter and a digit, e.g. A1")
+
+
 @dataclass(frozen=True, order=True)
 class Coding:
     item: str
@@ -31,8 +36,10 @@ def read(path: Path = CODINGS) -> list[Coding]:
 
 
 def _check(c: Coding, categories: list[str]) -> None:
-    if not _SLOT.fullmatch(c.coder):
-        raise ValueError(f"coder slot {c.coder!r} must be a letter and a digit, e.g. A1 ({c.item})")
+    try:
+        check_slot(c.coder)
+    except ValueError as e:
+        raise ValueError(f"{e} ({c.item})") from None
     if c.field not in FIELDS:
         raise ValueError(f"unknown field {c.field!r} ({c.item})")
     allowed = {"blame_level": BLAME_LEVELS + (UNSURE,), "present": ("yes", "no", UNSURE),

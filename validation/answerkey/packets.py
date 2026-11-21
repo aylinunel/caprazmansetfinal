@@ -18,7 +18,7 @@ ANSWERS = {"narrative": ("blame_level", "frame_category"), "behaviour": ("presen
 def narrative_packet(core: dict, n_events: int, seed: int, pid: str, coder: str, today: date) -> dict:
     rng = random.Random(seed)
     rows = human_rows(core)
-    keys = rng.sample(sorted({r["key"] for r in rows}), n_events)
+    keys = rng.sample(sorted({r["key"] for r in rows if r.get("hl")}), n_events)
     outlets = {s["s"]: s["n"] for s in core["S"]}
     items = [{"item": f"{r['key']}__{r['s']}", "event": r["key"], "kurum": outlets.get(r["s"], r["s"]), "baslik": r["hl"]}
              for r in rows if r["key"] in keys and r.get("hl")]

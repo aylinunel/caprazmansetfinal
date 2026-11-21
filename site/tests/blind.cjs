@@ -25,6 +25,17 @@ const BAD = /\bAI\b(?! Literacy)|Yapay|Doğrulan|kanıt|#\/olay/;
     p.on("pageerror", (e) => { if (!/V3\.user/.test(e.message)) fails.push(w + ": " + e.message); });   // the mock user has no V3 profile methods
     await p.goto(`http://localhost:${srv.address().port}/#/yonetim?t=bilissel`);
     await p.waitForFunction(() => window.DATA && document.querySelector(".desk"), null, { timeout: 60000 }); await p.waitForTimeout(500);
+    // blindness: while a packet is unfinished the regular queues must not list its items
+    for (const [g, sel] of [["davranis", "behaviour"], ["anlati", "narrative"]]) {
+      await p.click(`[data-desk="group"][data-v="${g}"]`); await p.waitForTimeout(200);
+      const leak = await p.evaluate((kind) => {
+        const hide = new Set(); window.DATA.BLIND.packets.filter((x) => x.kind === kind).forEach((x) => x.items.forEach((i) => hide.add(kind === "narrative" ? "narr__" + i.event : i.item)));
+        const keys = [...document.querySelectorAll('[data-desk="pick"]')].map((b) => b.getAttribute("data-v"));
+        return { shown: keys.length, hidden: hide.size, leaked: keys.filter((k) => hide.has(k)) };
+      }, sel);
+      if (leak.hidden === 0) fails.push(`${w}: no ${sel} packet items to check`);
+      if (leak.leaked.length) fails.push(`${w}: ${g} queue lists packet items: ${leak.leaked.slice(0, 3)}`);
+    }
     await p.click('[data-desk="group"][data-v="kor"]'); await p.waitForTimeout(200);
     const text = () => p.evaluate(() => document.querySelector(".desk").textContent + [...document.querySelectorAll(".desk a")].map((a) => a.getAttribute("href")).join(" "));
     const chk = async (what) => { const t = await text(), m = t.match(BAD); if (m) fails.push(`${w}: ${what} contains "${t.slice(Math.max(0, m.index - 30), m.index + 30)}"`); };

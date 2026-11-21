@@ -28,6 +28,12 @@ class LabelsTest(unittest.TestCase):
     def tearDown(self):
         self.dir.cleanup()
 
+    def test_blind_packet_reviews_are_skipped_like_narrative_ones(self):
+        ls = import_export(export(rev("ev1__framing-effect"),
+                                  rev("blind__behaviour-A1__ev1__framing-effect", "coded", answers={"present": "yes"}),
+                                  rev("narr__k1", "coded")), RESULTS, CARDS)
+        self.assertEqual([l.card_id for l in ls], ["framing-effect"])
+
     def test_import_round_trip(self):
         ls = import_export(export(rev("ev1__framing-effect"), rev("ev1__salience-bias", "rejected", "değil")),
                            RESULTS, CARDS)

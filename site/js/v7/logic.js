@@ -669,6 +669,16 @@ function blindProgress(packet, reviews) {
   packet.items.forEach(function (i) { var r = reviews[blindKey(packet.id, i.item)]; if (r && blindDone(packet.kind, r.answers)) done++; });
   return { done: done, total: packet.items.length };
 }
+/* Keys of regular desk items to hide while a packet is unfinished: its behaviour items (same event__card as the desk's
+   Davranışsal queue, which shows the AI verdict) and the narr__ items of its narrative events. */
+function blindHidden(blind, reviews) {
+  var hide = new Set();
+  ((blind && blind.packets) || []).forEach(function (p) {
+    var pr = blindProgress(p, reviews || {}); if (pr.done >= pr.total) return;
+    p.items.forEach(function (i) { hide.add(p.kind === "narrative" ? "narr__" + i.event : i.item); });
+  });
+  return hide;
+}
 function blindEsc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]; }); }
 /* The item view. It carries no AI result, quote, badge, other pass's answer or event link: only what is being coded. */
 function blindItemHtml(blind, packet, item, answers) {
@@ -707,7 +717,7 @@ function narrQualityLine(nq) {
 }
 
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { narrQualityLine: narrQualityLine, blindKey: blindKey, blindDone: blindDone, blindOpen: blindOpen, blindProgress: blindProgress, blindItemHtml: blindItemHtml, BLIND_FIELDS: BLIND_FIELDS,
+  module.exports = { narrQualityLine: narrQualityLine, blindKey: blindKey, blindDone: blindDone, blindOpen: blindOpen, blindProgress: blindProgress, blindHidden: blindHidden, blindItemHtml: blindItemHtml, BLIND_FIELDS: BLIND_FIELDS,
     deskDoc: deskDoc, deskQueue: deskQueue, deskStats: deskStats, DESK_REASONS: DESK_REASONS, DESK_VERDICTS: DESK_VERDICTS, profileSig: profileSig, profileKey: profileKey, profileDistance: profileDistance, MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
     axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS,

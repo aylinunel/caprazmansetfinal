@@ -111,3 +111,17 @@ Regression added: none yet (the replay set is empty until reviews exist)
 Debt created: 430 AI-written explanations now ship with findings and are unreviewed
 Next iteration: test media-technique cards in the lab
 ```
+
+## Owner workflow: blind answer key
+
+| Step | What to do |
+|---|---|
+| 1. Make a packet | `python3 -m validation.answerkey packet --kind behaviour --run runs/bg82 --events 30 --coder A1 --id behaviour-A1` (or `--kind narrative --events 20 --coder A2 --id narrative-A2`). The coder is a slot (letter and digit), never a name. Rebuild core so BLIND ships. |
+| 2. Code it | Yönetim › AI denetim masası › Kör kodlama. Until a packet is fully answered, its items are hidden from the regular desk queues. The AI findings stay visible on the public event pages, so blindness holds inside the desk only. |
+| 3. Export | Export the desk reviews as JSON. |
+| 4. Import | `python -m validation.answerkey import <export.json>` appends the codings by coder slot. |
+| 5. Agreement | `python -m validation.answerkey agreement` writes the usable/not usable line per field. |
+| 6. Second pass | `python -m validation.answerkey packet --repeat behaviour-A1 --items 30 --coder A2 --id behaviour-A2`; it opens 14 days after it is made (same letter, different digit). |
+| 7. Evaluate | `python -m validation.answerkey behaviour-eval --key validation/reference/answerkey/behaviour-A1.key.json` writes blind precision and the outside-selection recall estimate. |
+| 8. Status | `behaviour-eval --status` refuses until `present` is usable. Once written, blind precision supersedes the feedback measure in `validation/reference/card_status.json`. |
+| 9. Examples | `python -m validation.answerkey examples --run <run> --out <file>` writes human-coded examples (the text the person coded) for the reviewers. |

@@ -1,5 +1,6 @@
 import unittest
 
+from validation.mlbench.__main__ import report
 from validation.mlbench.data import Row
 from validation.mlbench.evaluate import cross_validate, score_fixed
 from validation.mlbench.models import Majority, TfidfLogReg
@@ -29,6 +30,16 @@ class MlbenchTest(unittest.TestCase):
     def test_majority_baseline(self):
         rs = [Row("g1", "o", "x", "none", "Diğer")] * 3 + [Row("g2", "o", "y", "explicit", "Diğer")]
         self.assertEqual(score_fixed({("g1", "o"): "none", ("g2", "o"): "none"}, rs, "blame_level")["accuracy"], 0.75)
+
+    def test_report_prints_usable_line_and_approval_note_only_when_unapproved(self):
+        res = {lab: {m: {"n": 1, "accuracy": 0.5, "macro_f1": 0.5} for m in ("majority", "tfidf_logreg", "agent")}
+               for lab in ("blame_level", "frame_category")}
+        agree = {"blame_level": {"usable": False, "items_double": 0}, "frame_category": {"usable": True, "items_double": 31}}
+        text = report(res, False, 1, 2, agree)
+        self.assertIn("blame_level: alan henüz kullanılabilir değil", text)
+        self.assertIn("frame_category: alan kullanılabilir", text)
+        self.assertIn("henüz onaylı değil", text)
+        self.assertNotIn("henüz onaylı değil", report(res, True, 1, 2, agree))
 
 
 if __name__ == "__main__":
