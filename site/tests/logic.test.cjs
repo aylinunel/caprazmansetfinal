@@ -506,3 +506,20 @@ test("reviewsExport carries the structured review", () => {
   const out = L.reviewsExport({ "e1__a": { status: "rejected", verdict: "wrong", reason: "quoted_speaker", conditions: ["unmet"], card: "", ms: 4200, note: "" } }, "p1");
   assert.deepEqual([out.reviews[0].verdict, out.reviews[0].reason, out.reviews[0].conditions, out.reviews[0].ms], ["wrong", "quoted_speaker", ["unmet"], 4200]);
 });
+test("lensSentence: strong wording only when strong", () => {
+  assert.equal(L.lensSentence("Sabah", "loaded", { n: 40, rr: 2.4, lo: 1.8, hi: 3.1, strong: true }),
+    "Sabah aynı haberlerde sistematik olarak daha sık yüklü başlık atıyor (2,4 kat; %95 aralık 1,8–3,1; 40 haber).");
+  assert.equal(L.lensSentence("Sabah", "first", { n: 30, rr: 0.6, lo: 0.4, hi: 0.9, strong: false }),
+    "Sabah, aynı haberlerde “ilk veriş” bakımından diğer kurumların 0,6 katı (%95 aralık 0,4–0,9; 30 haber).");
+  assert.equal(L.lensSentence("Sabah", "loaded", { n: 25, rr: 0, lo: null, hi: null, strong: false }),
+    "Sabah · bu 25 haberin hiçbirinde “yüklü başlık” yok; diğer kurumlarda var.");
+  assert.equal(L.lensSentence("Sabah", "loaded", { n: 25, rr: null, lo: null, hi: null, strong: false }),
+    "Sabah · bu 25 haberde “yüklü başlık” yalnızca bu kurumda var; diğer kurumlarda yok.");
+});
+test("lensSentence: strong and rr<1 says daha seyrek", () => {
+  assert.match(L.lensSentence("Sabah", "skip", { n: 40, rr: 0.5, lo: 0.3, hi: 0.8, strong: true }), /daha seyrek büyük olayları atlıyor/);
+});
+test("lensDistanceText", () => {
+  assert.equal(L.lensDistanceText(1.6), "Ortalamada diğer kurumlardan 1,6 kat farklı davranıyor.");
+  assert.equal(L.lensDistanceText(null), "Bu dilimde yeterli haber yok.");
+});

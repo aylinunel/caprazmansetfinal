@@ -635,8 +635,25 @@ function deskStats(items, reviews, min) {
   return { done: done, total: items.length, measurable: cards.filter(function (c) { return !c.need; }).length, cards: cards };
 }
 
+/* Single-source lens wording. Behaviour words only; no suffix is ever attached to an outlet name. */
+var LENS_MEASURES = [["skip", "büyük olayları atlıyor", "büyük olayı atladı"], ["loaded", "yüklü başlık atıyor", "yüklü başlık"], ["harsher", "başlığı haberinden sert yazıyor", "haberinden sert başlık"], ["first", "olayı ilk veriyor", "ilk veriş"]];
+function lensDec(x) { return (Math.round(x * 10) / 10).toFixed(1).replace(".", ","); }
+function lensSentence(name, key, m) {
+  var ms = LENS_MEASURES.filter(function (x) { return x[0] === key; })[0] || [key, key, key];
+  var noun = "“" + ms[2] + "”";
+  if (m.rr === 0) return name + " · bu " + m.n + " haberin hiçbirinde " + noun + " yok; diğer kurumlarda var.";
+  if (m.rr == null) return name + " · bu " + m.n + " haberde " + noun + " yalnızca bu kurumda var; diğer kurumlarda yok.";
+  var ci = m.lo == null || m.hi == null ? "" : "%95 aralık " + lensDec(m.lo) + "–" + lensDec(m.hi) + "; ";
+  if (m.strong) return name + " aynı haberlerde sistematik olarak " + (m.rr < 1 ? "daha seyrek " : "daha sık ") + ms[1] + " (" + lensDec(m.rr) + " kat; " + ci + m.n + " haber).";
+  return name + ", aynı haberlerde " + noun + " bakımından diğer kurumların " + lensDec(m.rr) + " katı (" + ci + m.n + " haber).";
+}
+function lensDistanceText(d) {
+  return d == null ? "Bu dilimde yeterli haber yok." : "Ortalamada diğer kurumlardan " + lensDec(d) + " kat farklı davranıyor.";
+}
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { deskDoc: deskDoc, deskQueue: deskQueue, deskStats: deskStats, DESK_REASONS: DESK_REASONS, DESK_VERDICTS: DESK_VERDICTS, profileSig: profileSig, profileKey: profileKey, profileDistance: profileDistance, MEDIA_CONCEPTS: MEDIA_CONCEPTS, findingGroups: findingGroups, mediaCoverage: mediaCoverage, mediaRuleCounts: mediaRuleCounts, reviewValid: reviewValid, reviewState: reviewState, reviewOrder: reviewOrder, reviewCountsLine: reviewCountsLine, reviewsExport: reviewsExport, biasBrief: biasBrief, anPage: anPage, anEmpty: anEmpty, narrHabits: narrHabits, narrFindings: narrFindings, narrTimeline: narrTimeline, narrMatrix: narrMatrix, trFold: trFold, weekEvents: weekEvents, pickWeek: pickWeek, narrGroups: narrGroups, orderOutlets: orderOutlets,
     dimShares: dimShares, blameByBloc: blameByBloc, yzText: yzText, ilanSearch: ilanSearch, redirectRoute: redirectRoute, NAV_SUB: NAV_SUB, yontemAnchor: yontemAnchor, weeklySplits: weeklySplits, outletKisaca: outletKisaca, recentSplits: recentSplits, whatDiffers: whatDiffers, GLOSSARY: GLOSSARY, glossTerms: glossTerms, pNums: pNums, pSplitPoints: pSplitPoints,
-    axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS };
+    axisDist: axisDist, partyRank: partyRank, nearestParty: nearestParty, compileAliases: compileAliases, matchParties: matchParties, mentionStats: mentionStats, mentionShares: mentionShares, toneCell: toneCell, PARTI_ALIAS: PARTI_ALIAS,
+    LENS_MEASURES: LENS_MEASURES, lensSentence: lensSentence, lensDistanceText: lensDistanceText };
 }
