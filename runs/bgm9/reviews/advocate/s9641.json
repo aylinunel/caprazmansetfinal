@@ -1,0 +1,271 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İzmir'de terör estiriyordu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Suç örgütü lideri Sercan Sayal",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "suç örgütü elebaşı Sercan Sayal",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi 'lider' ve 'elebaşı' olarak adlandırılıyor; Mynet başlığı ayrıca 'terör estiriyordu' ile kimlik belirtmenin ötesinde değerlendirme ekliyor.",
+   "alternative_explanation": "Farklı unvanlar kaynağın (bakanlık, savcılık) kullandığı ifadeyi izliyor olabilir.",
+   "missing_context": [
+    "Kurumların unvan seçimlerinin kaynağı",
+    "Kişinin resmi unvanları"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İzmir'de terör estiriyordu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Suç örgütü lideri Sercan Sayal Türkiye'ye getirildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Mynet başlığı 'terör estiriyordu' ifadesini kendi sesinde kullanıyor; Tele1 aynı getirilme olgusunu bu ifade olmadan veriyor.",
+   "alternative_explanation": "Değerlendirici sözcükler kurumun olağan başlık üslubu olabilir.",
+   "missing_context": [
+    "Aynı olguyu yalın aktaran kurumların oranı",
+    "Başlığın tam bağlamı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "116 suçtan aranıyordu! Kırmızı bültenli Sercan Sayal Türkiye’ye getirildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "90 kurşunlama, 164 tehdit, 1 cinayet... Kırmızı bültenle aranan suç örgütü elebaşı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Suç örgütü elebaşı Yunanistan'da yakalandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olayda bir başlık toplam suç sayısını, biri suç türlerinin dökümünü, biri yakalanma yerini öne çıkarıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, karakter sınırı veya o anki bilgi düzeyinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Kurumların tam başlık ve metinleri",
+    "Yayın sırası ve güncellemeler"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yunanistan'dan Türkiye'ye paket...",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sercan Sayal Yunanistan'dan getirildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye'ye iade edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı nakil için 'getirildi', 'iade edildi' ve 'paket...' sözcükleri kullanılıyor; Takvim'in 'paket' ifadesi çağrışım olarak ayrışıyor.",
+   "alternative_explanation": "Sözcük farkları yalnızca üslup veya kurum yazım kuralı farkı olabilir.",
+   "missing_context": [
+    "Sözcüklerin okur algısına etkisi",
+    "Kurum üslup kılavuzları"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "116 suçtan aranıyordu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar '116 suç' rakamını öne çıkarıyor; ancak bu rakamı sınırlayan aynı kaynaktan başka bir veri bağlamda verilmemiş.",
+   "alternative_explanation": "Başlık yer sınırı nedeniyle ayrıntıyı dışarıda bırakıyor olabilir.",
+   "missing_context": [
+    "Aynı kaynaktan sınırlayıcı veri",
+    "Başlık ve girişin tam metni"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sercan Sayal Türkiye'ye getirildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sayal'ın İzmir'de 90 kurşunlama, 3 yaralama, bir kasten öldürme ve 164 tehdit eylemini organize ettiği belirlendi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sol başlığın girişi getirilme olayını İzmir'deki önceki kurşunlama, tehdit ve cinayet eylemleri dizisinin içine yerleştiriyor.",
+   "alternative_explanation": "Bağlam eklemek tek başına kusur değildir; haberin okunmasına yardımcı olabilir.",
+   "missing_context": [
+    "Alternatif bağlam seçenekleri",
+    "Kurumun başka haberlerindeki bağlam kullanımı"
+   ]
+  }
+ ]
+}

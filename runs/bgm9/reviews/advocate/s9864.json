@@ -1,0 +1,264 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Halk TV'nin firari patronu Cafer Mahiroğlu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İş insanı Cafer Mahiroğlu'na yönelik soruşturmada gözaltına alınan 5 şüpheli tutuklandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Halk TV Yönetim Kurulu Başkanı Cafer Mahiroğlu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi 'firari patronu', 'iş insanı' ve 'Yönetim Kurulu Başkanı' olarak adlandırılıyor; 'firari patronu' kimlik belirtmenin ötesinde meşruiyet değerlendirmesi taşıyor.",
+   "alternative_explanation": "Farklı unvanlar kaynağın (bakanlık, savcılık) kullandığı ifadeyi izliyor olabilir.",
+   "missing_context": [
+    "Kurumların unvan seçimlerinin kaynağı",
+    "Kişinin resmi unvanları"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cafer Mahiroğlu soruşturmasında 5 kişi daha tutuklandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cafer Mahiroğlu soruşturması: Beş kişi tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı tutuklama için 'daha tutuklandı' ve yalın 'tutuklandı' kullanılıyor; farkın çağrışımsal olup olmadığı belirsiz.",
+   "alternative_explanation": "Sözcük farkları yalnızca üslup veya kurum yazım kuralı farkı olabilir.",
+   "missing_context": [
+    "Sözcüklerin okur algısına etkisi",
+    "Kurum üslup kılavuzları"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cafer Mahiroğlu soruşturmasında 6 şüpheliye tutuklama talebi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cafer Mahiroğlu soruşturmasında 5 kişi daha tutuklandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "belediye ihalelerinden milyonluk rüşvet pazarlıklarına uzanan para trafiği",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma haberinde bir başlık tutuklama talebini, biri tutuklama sonucunu, biri rüşvet ve para akışı ayrıntılarını öne çıkarıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, karakter sınırı veya o anki bilgi düzeyinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Kurumların tam başlık ve metinleri",
+    "Yayın sırası ve güncellemeler"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Halk TV sahibi firari Cafer Mahiroğlu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "milyonluk rüşvet pazarlıkları",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cafer Mahiroğlu soruşturmasında 6 şüpheliye tutuklama talebi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Takvim'de 'firari' etiketi, 'milyonluk rüşvet pazarlığı' ifadesi ve seçilmiş para ayrıntıları olumsuz yönde birleşiyor; Habertürk aynı gelişmeyi bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Seçimler birbirinden bağımsız ve olağan başlık üslubu olabilir.",
+   "missing_context": [
+    "Kurumun diğer haberlerindeki genel eğilimi",
+    "Aynı olguyu yalın veren kurumların karşılaştırması"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "belediye ihalelerinden milyonluk rüşvet pazarlıklarına uzanan para trafiği",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cafer Mahiroğlu soruşturmasında 6 şüpheliye tutuklama talebi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim 'milyonluk rüşvet pazarlığı' ve 'para trafiği' gibi değerlendirici ifadeleri kendi sesinde kullanıyor; Habertürk aynı gelişmeyi yalın veriyor.",
+   "alternative_explanation": "Değerlendirici sözcükler kurumun olağan başlık üslubu olabilir.",
+   "missing_context": [
+    "Aynı olguyu yalın aktaran kurumların oranı",
+    "Başlığın tam bağlamı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneğe indirgenmiş bir sunum bulunmuyor.",
+   "alternative_explanation": "Metinde iki seçenekli bir sunum yok.",
+   "missing_context": [
+    "Seçenek sunan ifade"
+   ]
+  }
+ ]
+}

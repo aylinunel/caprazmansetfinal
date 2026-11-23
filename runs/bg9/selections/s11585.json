@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "anchoring-bias",
+  "negativity-bias",
+  "availability-heuristic",
+  "framing-effect",
+  "salience-bias"
+ ],
+ "selection_uncertainty": [
+  "İl sayısı kaynaklara ve tarihe göre değişiyor (9/12/32).",
+  "Uyarılar farklı günlere ait olabilir."
+ ],
+ "selection_note": "'Kritik uyarı', 'alarm' gibi ifadeler tehdit algısını artırabilir."
+}

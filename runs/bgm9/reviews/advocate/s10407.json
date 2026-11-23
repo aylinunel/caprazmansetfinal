@@ -1,0 +1,310 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Devletimiz unutmaz! Şehit Binbaşı Arslan Kulaksız’ın firari faili",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Devlet unutmadı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Şehidimizin kanı yerde kalmadı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Şehit Jandarma Binbaşı Arslan Kulaksız'ın faillerinden biri yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      3
+     ]
+    }
+   ],
+   "mechanism": "Takvim, Türkiye Gazetesi ve Karar başlıklarında tırnak/atıf olmadan 'Devletimiz unutmaz!', 'Devlet unutmadı!', 'kanı yerde kalmadı' gibi değerlendirici ifadeleri kendi sesiyle kullanıyor; aynı gerçekler AA/Sondakika'da bu ifadeler olmadan veriliyor.",
+   "alternative_explanation": "İfadeler Bakan Çiftçi'nin sözlerinden devralınmış olabilir; atıf başlıkta açıkça yapılmamış olsa da kaynak söylemi yansıtılıyor olabilir.",
+   "missing_context": [
+    "Takvim ve Karar başlıklarındaki ifadelerin Bakan'a ait olup olmadığı",
+    "Gözaltı sürecinin hukuki durumu"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "3 terörist yakalandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "firari şüphelisi 11 yıl sonra yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "zanlı yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "faili yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi için Takvim 'terörist', Cumhuriyet 'firari şüphelisi', NTV 'zanlı', birçok kurum 'fail' diyor; 'terörist' ve 'fail' kimliklendirmenin ötesinde yargı taşıyor, 'şüpheli/zanlı' ise masumiyet karinesini korur.",
+   "alternative_explanation": "Bakanlık açıklamasında kullanılan terimler olduğu için kurumlar resmî dili aktarıyor olabilir.",
+   "missing_context": [
+    "Kurumların kendi sesi ile alıntı ayrımı",
+    "Mahkeme kararı olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2015'te öldürülen Binbaşı Arslan Kulaksız'ın firari şüphelisi yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Şehit Binbaşı Kulaksız'ın faili Bitlis'te yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "BirGün aynı olayı 'öldürülen' ve 'firari şüphelisi' diye anarken Memurlar 'şehit' ve 'faili' diyor; sözcükler kutsallık/yargı bakımından farklı çağrışımlar taşıyor, yalnızca register farkı değil.",
+   "alternative_explanation": "'Şehit' resmî ve yerleşik bir sıfat olarak kullanılmış olabilir.",
+   "missing_context": [
+    "Kurum yazım kılavuzları",
+    "Başlıktaki sözcüklerin alıntı olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "11 yıl sonra Tatvan’da yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "11 yıl geçse de hesap sorulacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "3 kişi yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakan Çiftçi: Devlet unutmaz",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı yakalama haberinde kurumlar farklı boyutu öne çıkarıyor: yakalanma yeri ve süre (11 yıl), devletin hesap sorma vurgusu, yakalanan kişi sayısı, bakanın sözü.",
+   "alternative_explanation": "Farklı kurumların farklı ayrıntıları başlığa taşıması olağan bir editoryal seçimdir.",
+   "missing_context": [
+    "Kurumların başlık yazım politikaları"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Devletimiz unutmaz! Şehit Binbaşı Arslan Kulaksız’ın firari faili",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "3 terörist yakalandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "2 kişiye daha gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Takvim aynı başlık ve lede içinde hem değerlendirici slogan ('Devletimiz unutmaz!') hem yargı taşıyan etiket ('firari faili', '3 terörist') kullanıyor; ikisi de aynı yönde devletin başarısını ve failin suçluluğunu öne çıkarıyor. Sondakika aynı gerçekleri bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Bakanlığın duyurusundaki dilin doğrudan aktarımı olabilir.",
+   "missing_context": [
+    "Başlıktaki sloganın alıntı olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yürütülen soruşturmada 11 yıl sonra önemli bir gelişme",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Faillerden biri yakalandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürerken bazı başlıklar ('Faillerden biri yakalandı', 'şehit etmişlerdi!') şüpheliyi atıfsız biçimde fail olarak sunuyor; ancak başlıkta adlandırılmış bir aktör yok, yalnızca baş harfler lede'de geçiyor.",
+   "alternative_explanation": "Bakanlık açıklaması 'fail' sözcüğünü kullanmış olabilir ve haber açıklamayı aktarıyor olabilir.",
+   "missing_context": [
+    "İddianame veya mahkeme kararı",
+    "Atfın başlıkta mı lede'de mi yapıldığı"
+   ]
+  }
+ ]
+}

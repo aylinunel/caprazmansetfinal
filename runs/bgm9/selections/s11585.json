@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "fear-appeal",
+  "emphasis-framing",
+  "word-choice",
+  "loaded-language"
+ ],
+ "selection_uncertainty": [
+  "İl sayıları farklı uyarılara ait olabilir."
+ ],
+ "selection_note": "'Kritik uyarı', 'geliyor' ifadeleri sarı kod düzeyini aşabilir."
+}

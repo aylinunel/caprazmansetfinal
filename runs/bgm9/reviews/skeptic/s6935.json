@@ -1,0 +1,249 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'yi savaş riskine sokan Mekke Anlaşması, TBMM'den geçti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Üçlü savunma paktında tarihi adım: Mekke Anlaşması TBMM'den geçti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP anlaşmaya destek verdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kabul Evrensel'de riskle, Star'da tarihi başarıyla, Akit'te CHP desteğiyle öne çıkarılıyor. Kart, aynı olguyu aktaran kurumların başlıklarda o olgunun farklı boyutlarını öne çıkarmasını arıyor; karşılaştırma başlıklar arasında yapılıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinde elde bulunan bilgiden, ajans metninin farklı paragraflarının seçilmesinden ya da olayın farklı aşamalarının haberleştirilmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Her kurumun haberinin tam metni",
+    "Başlıkların yayımlandığı andaki mevcut bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mekke İttifakı TBMM'de kabul edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mekke Anlaşması TBMM'de kabul edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Üçlü savunma paktında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı belge 'ittifak', 'anlaşma' ve 'pakt' diye anılıyor; ancak 'Mekke İttifakı' adı kamuoyunda yerleşmiş bir ad olabilir ve çağrışım farkının kurumsal tercih mi yoksa ad kullanımı mı olduğu belirsiz. Kart, aynı eylem ya da şey için kurumların kendi seslerinde çağrışımı farklı sözcükler kullanmasını arıyor; yalnızca üslup ya da uzunluk farkı yeterli değil.",
+   "alternative_explanation": "Sözcük farkları ajans metninin uyarlanması, başlık kısalığı ya da hukuki terminolojinin farklı aktarımıyla açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı sözcükleri diğer haberlerde nasıl kullandığı",
+    "Sözcüklerin resmî açıklamadaki karşılığı"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'yi savaş riskine sokan Mekke Anlaşması",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Teklife AKP, MHP ve CHP kabul oyu verdi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 00:07] Mekke Anlaşması TBMM'de kabul edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Evrensel başlıkta risk nitelemesini, spotta oy veren partileri veriyor; NTV aynı olguyu bu bileşim olmadan aktarıyor. Ancak spottaki oy bilgisi olgusal ve başlıktaki değerlendirmeyle aynı yöne işaret ettiği açık değil. Bu bağlam kartı, aynı kurumun başlık ve spotunda aynı değerlendirme yönüne işaret eden en az iki sunum tercihini ve başka bir kurumun aynı olguları bu bileşim olmadan verdiğini arıyor.",
+   "alternative_explanation": "Başlık ve spottaki tercihler ajans metninin yapısından ya da haberin kısaltılmasından kaynaklanabilir.",
+   "missing_context": [
+    "Haberin tam metni",
+    "Spotun kesilmemiş hâli"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'yi savaş riskine sokan Mekke Anlaşması, TBMM'den geçti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Evrensel başlığında sonuç bir sıfat cümleciğinde, olayın kendisi (TBMM'den geçti) ana cümlede yer alıyor. Kart, başlığın ana cümlesinin bir sonucu ya da beklenen etkiyi söylemesini ve olayın yalnızca spotta yer almasını arıyor.",
+   "alternative_explanation": "Olayın kendisi başlığın ana cümlesinde yer aldığında sonuç ifadesi ek bir niteleme olarak kalır.",
+   "missing_context": [
+    "Başlığın tam sözdizimi ve spotun tamamı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye, Suudi Arabistan ve Pakistan arasındaki Mekke İttifakı'nda iç onay süreci tamamlandı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "7 Ağustos'ta imzalanan Mekke Anlaşması",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Posta ve DW Türkçe kabulü imzadan iç onaya uzanan bir kurumsal sürece yerleştiriyor. Bu bağlam kartı, kurumun kendi başlık ya da spotunda olayı daha geniş bir eğilim, dizi ya da kurumsal sürece yerleştirip yerleştirmediğine bakıyor.",
+   "alternative_explanation": "Bağlam bilgisi okura arka plan sunmak için eklenmiş olabilir; tek başına bir yanlılık göstergesi değildir.",
+   "missing_context": [
+    "Haberlerin tam metnindeki arka plan bilgisi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde kurumların kendi sesinde ikili seçenek kurgusu bulunmuyor. Kart, kurumun kendi sesinde yalnızca iki seçeneği tek seçenekler gibi sunan 'ya… ya…' türü bir ifade arıyor; metinde böyle bir yapı yok.",
+   "alternative_explanation": "Haberler olgusal gelişmeyi aktarıyor; seçenek kurgusu yapılmıyor.",
+   "missing_context": [
+    "Haberlerin tam metninde ikili seçenek kurgusu olup olmadığı"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "authority-bias",
+  "framing-effect",
+  "salience-bias",
+  "illusory-truth-effect",
+  "negativity-bias",
+  "messenger-effect"
+ ],
+ "selection_uncertainty": [
+  "Bilgiler tek resmi kaynaktan (Bakan) aktarılıyor.",
+  "Rakamlar (35/135 adres) kurumlar arasında tutarsız."
+ ],
+ "selection_note": "Resmi açıklama tekrarlanıyor; 'dev operasyon' vurgusu var."
+}

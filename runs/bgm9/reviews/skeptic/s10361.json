@@ -1,0 +1,215 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyaz Saray duyurdu; Trump, Çin'de Şi ve Putin'le üçlü görüşme yapacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Masada İran ve nükleer silahlar",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Üçlü zirve için nefesler tutuldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kremlin, Putin, Şi ve Trump'ın 19 Kasım'da üçlü görüşme yapacağını duyurdu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı görüşmeyi T24 Beyaz Saray duyurusuyla, Yeni Şafak gündem maddeleriyle, Haber7 beklenti duygusuyla, Habertürk/Haberler ise Kremlin'in verdiği tarihle öne çıkarıyor.",
+   "alternative_explanation": "Kurumların elindeki kaynak (Beyaz Saray veya Kremlin açıklaması) başlık odağını belirlemiş olabilir.",
+   "missing_context": [
+    "Hangi kaynağın hangi saatte açıklama yaptığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Trump, Şi ve Putin'le üçlü görüşme gerçekleştirecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Üçlü zirve için nefesler tutuldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Birçok kurum 'üçlü görüşme' derken Haber7 'üçlü zirve' sözcüğünü kendi sesiyle kullanıyor; ikisi aynı buluşmayı anlatıyor.",
+   "alternative_explanation": "'Zirve' ve 'görüşme' arasındaki fark çağrışımdan çok üslup düzeyinde olabilir; APEC zirvesi bağlamında 'zirve' zaten olağan.",
+   "missing_context": [
+    "Sözcük farkının çağrışım mı üslup mu olduğu"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "bu üç ülke lideri arasında gerçekleşecek ilk görüşme olacak",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Asya-Pasifik Ekonomik İş Birliği (APEC) Zirvesi kapsamında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "CNN Türk, görüşmeyi üç lider arasındaki ilk buluşma olarak seriye, DHA ise APEC zirvesine kurumsal bağlama yerleştiriyor.",
+   "alternative_explanation": "Bağlam olayın anlaşılması için gerekli arka plan olabilir.",
+   "missing_context": [
+    "Alternatif bağlam seçenekleri"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Şi ve Putin'le üçlü zirve gerçekleşecek mi?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "A Haber başlığı evet/hayır sorusudur; konuyu birbirini dışlayan iki seçeneğe indirgeyen 'ya … ya …' yapısı yok.",
+   "alternative_explanation": "Soru başlığı belirsizliği yansıtıyor olabilir.",
+   "missing_context": [
+    "Konuyu iki seçeneğe indirgeyen ifade"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede'lerde bir şeyin başka bir şeye yol açtığını söyleyen açık nedensellik ifadesi görülmüyor.",
+   "alternative_explanation": "Metinler planlanan bir görüşmeyi duyuruyor.",
+   "missing_context": [
+    "Nedensellik ifadesi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tekil bir duyuruyu aktarıyor; yinelenen veya yapısal bir sorun olduğuna dair bağlam sunulmuyor.",
+   "alternative_explanation": "Haber, tek seferlik bir diplomatik programı bildiriyor.",
+   "missing_context": [
+    "Yinelenen bir sorun olduğunu gösteren bağlam"
+   ]
+  }
+ ]
+}

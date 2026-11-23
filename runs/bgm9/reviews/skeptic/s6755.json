@@ -1,0 +1,275 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İsrail lobisine rağmen kazandı: ABD'nin ilk Müslüman senatörü oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ABD'nin ilk Müslüman senatörü seçildi: Demokratlar Kongrede üstünlüğü sağladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İşte iflas eden kentte mucizeler yaratan hekim",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı seçim sonucu Akşam'da İsrail lobisine karşı zafer, ANKA'da parti dengesi, Sözcü'de adayın kişisel başarı öyküsü üzerinden öne çıkarılıyor. Kart, aynı olguyu aktaran kurumların başlıklarda o olgunun farklı boyutlarını öne çıkarmasını arıyor; karşılaştırma başlıklar arasında yapılıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinde elde bulunan bilgiden, ajans metninin farklı paragraflarının seçilmesinden ya da olayın farklı aşamalarının haberleştirilmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Her kurumun haberinin tam metni",
+    "Başlıkların yayımlandığı andaki mevcut bilgi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "mucizeler yaratan hekim",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mısır asıllı Müslüman aday Abdul el-Sayed",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Demokratların Michigan adayı Abdul el-Sayed",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Sözcü adayı kendi sesinde 'mucizeler yaratan hekim' diye nitelerken diğerleri köken ya da parti bilgisiyle tanımlıyor. Kart, aynı aktör için kurumların kendi seslerinde farklı sıfat/unvan kullanmasını ve en az birinin tanımlamanın ötesinde değerlendirme taşımasını arıyor.",
+   "alternative_explanation": "Unvan farkları kurumların yerleşik yazım kuralları, kişinin o anki resmî statüsü ya da başlık uzunluğu sınırlarıyla da açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı aktör için diğer haberlerde kullandığı unvanlar",
+    "Aktörün olay anındaki resmî statüsü"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "'Salıncak eyalet' Michigan'da tarihi zafer",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 10:32] Abdul el-Sayed, ABD Senatosuna seçilen ilk Müslüman senatör oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Türkiye Gazetesi 'tarihi zafer' diyor; TRT Haber aynı olguyu bu nitelemesiz veriyor. Kart, kurumun kendi sesinde değerlendirme yüklü sözcük kullanmasını ve aynı olgunun bu sözcükler olmadan da aktarılabildiğini arıyor; alıntılanan ya da bir kişiye atfedilen ifade kurumun tekniği sayılmaz.",
+   "alternative_explanation": "Duygusal sözcükler olayın büyüklüğünü aktarmak için yaygın kullanılan kalıplar olabilir.",
+   "missing_context": [
+    "Sözcüğün bir kaynaktan aktarılıp aktarılmadığı",
+    "Kurumun benzer olaylarda kullandığı dil"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Demokratlar, Cumhuriyetçilerin elindeki en az yedi Senato sandalyesini kazanırken",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "7 Müslüman isim kongreye seçildi!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "ANKA ve Sabah sonucu ara seçimin genel tablosuna ve Müslüman adayların başarısı dizisine yerleştiriyor. Bu bağlam kartı, kurumun kendi başlık ya da spotunda olayı daha geniş bir eğilim, dizi ya da kurumsal sürece yerleştirip yerleştirmediğine bakıyor.",
+   "alternative_explanation": "Bağlam bilgisi okura arka plan sunmak için eklenmiş olabilir; tek başına bir yanlılık göstergesi değildir.",
+   "missing_context": [
+    "Haberlerin tam metnindeki arka plan bilgisi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İsrail lobisine rağmen kazandı - Abdul el-Sayed, Senatoya giren ilk Müslüman olarak tarihe geçti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "dini inancı nedeniyle hedef alınmasına rağmen Senatoya giren ilk Müslüman olarak tarihe geçti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 10:45] Abdul el-Sayed, ABD'nin ilk Müslüman senatörü oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Yeni Asya başlıkta lobi engelini, spotta inanç nedeniyle hedef alınmayı vererek iki tercihi aynı 'engelleri aşma' yönünde kullanıyor; Hürriyet aynı sonucu bu bileşim olmadan veriyor. Bu bağlam kartı, aynı kurumun başlık ve spotunda aynı değerlendirme yönüne işaret eden en az iki sunum tercihini ve başka bir kurumun aynı olguları bu bileşim olmadan verdiğini arıyor.",
+   "alternative_explanation": "Başlık ve spottaki tercihler ajans metninin yapısından ya da haberin kısaltılmasından kaynaklanabilir.",
+   "missing_context": [
+    "Haberin tam metni",
+    "Spotun kesilmemiş hâli"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Michigan'da tarihi zafer",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ABD Senatosuna seçilen ilk Müslüman senatör oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Zafer' ile 'seçildi' aynı sonucu anlatıyor; ancak 'tarihi zafer' bir eylem adlandırmasından çok değerlendirme ve bu fark yüklü dil kartıyla örtüşüyor. Kart, aynı eylem ya da şey için kurumların kendi seslerinde çağrışımı farklı sözcükler kullanmasını arıyor; yalnızca üslup ya da uzunluk farkı yeterli değil.",
+   "alternative_explanation": "Sözcük farkları ajans metninin uyarlanması, başlık kısalığı ya da hukuki terminolojinin farklı aktarımıyla açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı sözcükleri diğer haberlerde nasıl kullandığı",
+    "Sözcüklerin resmî açıklamadaki karşılığı"
+   ]
+  }
+ ]
+}

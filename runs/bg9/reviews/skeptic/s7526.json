@@ -1,0 +1,214 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Soykırımcı Netanyahu için yolun sonu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Güçlü olumsuz duygu ve bir öngörü aynı başlıkta; fakat duygunun tahminin gerekçesi olduğu açıkça bağlanmıyor.",
+   "alternative_explanation": "\"Yolun sonu\" seçim sonuçlarına dayalı bir yorum olabilir.",
+   "missing_context": [
+    "Duygu ile tahmin arasındaki açık bağ"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Netanyahu’ya soğuk duş!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İsrail'de hükümet kurma yetkisi Eisenkot'a verildi — İsrail Cumhurbaşkanı İzak Herzog",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Aynı karar kaybeden ya da kazanan açısından anlatılabilir; bu editoryal seçimdir.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Arap partilerinin de desteğiyle 67 milletvekiline ulaşan Eisenkot",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Gruplar anılıyor, ancak grup üyeliğine bağlı bir güvenilirlik ya da suçlama farkı kurulmuyor.",
+   "alternative_explanation": "Koalisyon aritmetiğinin aktarımı.",
+   "missing_context": [
+    "Gruba bağlı tutarsız standart"
+   ]
+  },
+  {
+   "card_id": "optimism-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Netanyahu dönemi bitiyor!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Eisenkot ve Netanyahu çoğunluğu sağlayamamıştı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eisenkot'u zorlu bir uzlaşma arayışı bekliyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı kurumlar Netanyahu döneminin bittiğini kesin bir beklenti olarak sunarken diğerleri çoğunluğun sağlanmadığını ve zorlu bir uzlaşma gerektiğini bildiriyor.",
+   "alternative_explanation": "Başlık, 67 vekillik desteğe dayanan makul bir yorum olabilir; aynı kurumun karşı kanıtı bilerek göz ardı ettiği gösterilmiyor.",
+   "missing_context": [
+    "Hükümetin kurulma olasılığına ilişkin bağımsız değerlendirme",
+    "Aynı kurumun karşı kanıtı ele alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Netanyahu'ya kötü haber!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz sözcük var; orantısız ağırlıklandırma belgelenmiyor.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "Karşılaştırmalı kanıt"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde içsel motivasyon, ödül ve sonrasında azalma gibi kartın gerektirdiği hiçbir unsur yok.",
+   "alternative_explanation": "Siyasi haber bu kartın alanı dışında.",
+   "missing_context": [
+    "Ödül öncesi ve sonrası davranış kaydı"
+   ]
+  }
+ ]
+}

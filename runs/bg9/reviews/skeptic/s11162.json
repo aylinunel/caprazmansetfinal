@@ -1,0 +1,194 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AK Parti’ye geçeceği konuşulan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Parti aidiyeti anılıyor; bir kararın grup üyeliğine bağlandığı ve tutarsız standart uygulandığı gösterilmiyor.",
+   "alternative_explanation": "İstifa haberinde partilerin anılması olayın doğal bağlamıdır.",
+   "missing_context": [
+    "Grup kimliğine bağlı farklı muamele kanıtı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 14:07] Karaahmetoğlu CHP'den ayrıldı: Beyoğlu'nda gerekçe iç kavgalar",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 17:02] Üç gündür ulaşılamıyordu! Beyoğlu Belediye Başkanvekili CHP'den istifa etti, AKP'ye geçebilir",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı istifa bir kurumda 'iç kavgalar' gerekçesiyle, diğerinde 'ulaşılamıyordu... AKP'ye geçebilir' vurgusuyla veriliyor; ancak bu farkın bir tercihe bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Başlıklar istifanın farklı kamuya açık yönlerini (açıklanan gerekçe, partiler arası geçiş söylentisi) özetliyor olabilir.",
+   "missing_context": [
+    "İstifa gerekçesine ilişkin bağımsız doğrulama",
+    "Sunum farkının okur yargısına etkisi"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Belirtilmiş önceki bir inanç ve kanıtın seçici işlendiği gösterilmiyor.",
+   "alternative_explanation": "Metin bir kişinin istifasını ve açıklamasını aktarıyor.",
+   "missing_context": [
+    "Önceki inanç ve kanıta asimetrik muamele"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'de istifa depremi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'İstifa depremi' gibi çarpıcı ifade var; bunun bir yargıya dayanak yapıldığı gösterilmiyor.",
+   "alternative_explanation": "Başlık üslubu; gerçek bir gelişmeye ilgi çekme amaçlı olabilir.",
+   "missing_context": [
+    "Çarpıcı ifadenin yargıya bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "bandwagon-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir görüş ya da eylemin popülerliğe veya çoğunluğa bağlandığı ifade yok.",
+   "alternative_explanation": "Metin tek bir kişinin istifasını bildiriyor.",
+   "missing_context": [
+    "Popülerliğin gerekçe olarak sunulduğu ifade"
+   ]
+  },
+  {
+   "card_id": "reactive-devaluation",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Belirli bir teklifin kaynağı nedeniyle reddedildiğini gösteren ifade yok.",
+   "alternative_explanation": "İstifa gerekçesi parti içi tartışmalardır; bir teklif söz konusu değil.",
+   "missing_context": [
+    "Bir teklif ve kaynağına göre değerlendirme farkı"
+   ]
+  }
+ ]
+}

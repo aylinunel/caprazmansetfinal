@@ -1,0 +1,219 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 17:39] Fon vurgunu soruşturması: Fatma Betül Sayan Kaya, İlyas Kaya ve İbrahim Ömer Gönül ifadeye çağırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 17:35] Fatma Betül Sayan Kaya, İlyas Kaya ve İbrahim Ömer Gönül ifadeye çağrıldı — Sermaye piyasası işlemlerine ilişkin soruşturmada",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (üç kişinin ifadeye çağrılması) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Foncular için hesap vakti!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mynet lede'inde olumsuz ve suçlayıcı bir vurgu var; ancak metin olumsuz bilgiye karşılaştırılabilir olumlu bilgiden daha fazla ağırlık verildiğini ya da bunun bir değerlendirmeyi değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Olumsuz olayın öne çıkması haberin konusunun kendisinden kaynaklanıyor olabilir; olumsuz bilginin orantısız ağırlık aldığını gösteren karşılaştırılabilir olumlu bilgi metinde yok.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve nasıl işlendiği.",
+    "Olumsuz vurgunun bir değerlendirmeyi değiştirdiğine dair kanıt."
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda bir ayrıntının dikkat çekiciliği ile bir yargı ya da tercih arasında açık bir bağ kurulmuyor; çarpıcılığın kanıt yerine konduğu görülmüyor.",
+   "alternative_explanation": "Başlıklar soruşturmadaki usul adımlarını aktarıyor.",
+   "missing_context": [
+    "Çarpıcı bir ayrıntının bir değerlendirmeyi yönlendirdiğine dair açık ifade."
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[kisadalga · 11:08] AKP'li Fatma Betül Sayan Kaya ve eşi İlyas Kaya ikinci kez adliyede",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 10:48] Eski bakan Fatma Betül Sayan Kaya fon soruşturması kapsamında tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı kurumlar Kaya'nın parti üyeliğini ('AKP'li') açıkça başlığa taşıyor, AA ise unvanla yetiniyor; grup üyeliği metinde açık, ancak bu üyeliğin kurumların suçlama ya da güvenilirlik değerlendirmesini değiştirdiği gösterilmiyor.",
+   "alternative_explanation": "Parti bağı, siyasi bir figürle ilgili haberde okura verilen olağan kimlik bilgisi olabilir.",
+   "missing_context": [
+    "Kurumların farklı partilerden benzer şüphelileri nasıl andığına dair karşılaştırma."
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde akla kolay gelen örneklerin bir olasılık ya da sıklık tahmini için gerekçe olarak kullanıldığı açık bir ifade yok.",
+   "alternative_explanation": "Haberler tek bir soruşturma adımını aktarıyor.",
+   "missing_context": [
+    "Bir genellemenin hatırlanabilir örneklere dayandırıldığı ifade."
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 08:22] Fatma Betül Sayan Kaya tutuklandı — Fon vurgunu soruşturmasında eski AKP Genel Başkan Yardımcısı Fatma Betül Sayan Kaya, eşi İlyas Kaya ve eski SPK Başkanı İbrahim Ömer Gönül bugün ikinci kez \"şüpheli\" olarak savcılığa çıktı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 10:18] Fon vurgunu soruşturması: Fatma Betül Sayan Kaya tutuklama istemiyle mahkemeye sevk edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 17:34] 'Fon' vurgununda yeni gelişme: Fatma Betül Sayan Kaya ve eşi ikinci kez ifadeye çağrıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı aşamayı soL başlıkta 'tutuklandı' olarak keskinleştirirken BirGün daha sonra 'tutuklama istemiyle sevk' aşamasını veriyor; Cumhuriyet 'ikinci kez' ayrıntısını öne çıkarırken başka kurumlar bunu düzleştiriyor. Fark kurumlar arası karşılaştırmayla görülüyor, ancak sonucu etkileyen gerekçesiz bir çarpıtma gösterilmiyor.",
+   "alternative_explanation": "Saat damgaları farklı günlere ait olabilir; soL'un başlığı tutuklama kararından sonra güncellenmiş olabilir.",
+   "missing_context": [
+    "Başlıkların tam yayın tarihleri.",
+    "Tutuklama kararının saati."
+   ]
+  }
+ ]
+}

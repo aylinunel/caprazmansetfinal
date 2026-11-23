@@ -1,0 +1,239 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "fear-appeal",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Uzmanından kritik uyarı: Son güne bırakmayın",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "SOĞUK HAVADA YAZ LASTİĞİ FREN MESAFESİNİ UZATIYOR",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "TGRT başlığı bir uzmana atfedilen 'kritik uyarı' içeriyor, Posta lede'i büyük harfle fren mesafesi uyarısı veriyor; felaket veya dehşet türü bir sözcük kullanılmıyor.",
+   "alternative_explanation": "Mevsimsel güvenlik uyarısı hizmet gazeteciliğinin olağan biçimidir; uyarı ifadesi uzmana atfedilmiş.",
+   "missing_context": [
+    "Fren mesafesine ilişkin sayısal veri",
+    "Risk kaynağı ve olasılığı"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Zorunlu kış lastiği uygulaması yarın başlıyor: Takmayanlara ceza kesilecek",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kış lastiği uygulaması yarın başlıyor! Değiştirmeyen ceza yiyecek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "T24 ve Mynet başlıkları cezayı öne çıkarıyor, ancak uygulamanın yarın başlaması olayı aynı başlıkta ilk sırada yer alıyor; olay başlıktan çıkarılmıyor.",
+   "alternative_explanation": "Ceza bilgisi, kuralın içeriğinin parçası olduğu için başlığa alınmış olabilir.",
+   "missing_context": [
+    "Başlıkların yayın kararı süreci"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Uzmanından kritik uyarı: Son güne bırakmayın",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Değiştirmeyen ceza yiyecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "hangi araçları kapsayacak?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sanayilerde lastik mesaisi arttı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Lastik üzerindeki işaretlerin anlamları neler?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    }
+   ],
+   "mechanism": "Aynı uygulamayı TGRT uzman uyarısı, Mynet ceza, Habertürk kapsam, Karar sanayi yoğunluğu, Türkiye Gazetesi ise lastik işaretleri boyutuyla öne çıkarıyor.",
+   "alternative_explanation": "Farklı başlıklar hizmet haberinin farklı okur sorularına (ne zaman, kimler, ceza) yanıt verme tercihi olabilir.",
+   "missing_context": [
+    "Kurumların editoryal gerekçeleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "hummalı çalışmalar devam ederken",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sürücülere kritik uyarılar",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Zorunlu kış lastiği uygulaması yarın başlıyor — Ticari araçlarda zorunlu kış lastiği uygulaması yarın başlıyor.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "A Haber 'hummalı çalışmalar' ve 'kritik uyarılar' ifadelerini kullanıyor; TRT Haber aynı olguyu bu ifadeler olmadan veriyor. İfadeler kart listesindeki sert değerlendirme sözcüklerinden daha yumuşak ve deyimsel.",
+   "alternative_explanation": "'Hummalı' deyimsel bir tasvir, 'kritik' ise uyarının önemini bildiren yaygın bir kullanım olabilir.",
+   "missing_context": [
+    "İfadelerin olgusal bilgiyi aşıp aşmadığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun başlığı veya lede'i konuyu iki seçeneğe indirgemiyor; 'ya … ya …' türü bir yapı görülmüyor.",
+   "alternative_explanation": "Koşullu cümleler (takmayana ceza) tek bir kuralı anlatıyor.",
+   "missing_context": [
+    "İki seçenek sunan bir ifade"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Değiştirmeyen ceza yiyecek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Değiştirmeyen ceza yiyecek' yasal bir yaptırımı koşullu biçimde bildiriyor; iki olayın birlikte görülmesinden nedensellik çıkarımı yapılmıyor.",
+   "alternative_explanation": "Cümle nedensel iddia değil, kural özeti.",
+   "missing_context": [
+    "Açık nedensellik ifadesi"
+   ]
+  }
+ ]
+}

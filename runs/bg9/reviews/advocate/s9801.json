@@ -1,0 +1,209 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Manisa-Balıkesir kara yolu pist oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKINCI VE Bayraktar TB2'den acil durum senaryo testi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olay farklı kelime ve vurguyla sunuluyor; ancak metin, bu sunum farkının bir yargıyı değiştirdiğini ya da kararı etkilediğini açıkça bağlamıyor.",
+   "alternative_explanation": "Farklı başlıklar, yayın saatleri, editoryal üslup ve ele alınan ayrıntı farkından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Başlığın bir yargıyı ya da kararı etkilediğine dair açık ifade",
+    "Aynı olgunun nötr sunumuyla karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin yalnızca olayı bildiren başlık ve girişlerden oluşuyor; hale etkisi için gereken açık bir gerekçe, bağlantı veya karşılaştırmalı davranış kanıtı görünmüyor.",
+   "alternative_explanation": "Başlık ve girişler standart haber bildirimidir; gözlenen ifade biçimi önyargılı bir muhakemeden çok haber yazım kalıbından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Karar vericinin ya da yazarın açık gerekçesi",
+    "Karşılaştırılabilir ek bilgi veya ölçüt"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin yalnızca olayı bildiren başlık ve girişlerden oluşuyor; iç-grup yanlılığı için gereken açık bir gerekçe, bağlantı veya karşılaştırmalı davranış kanıtı görünmüyor.",
+   "alternative_explanation": "Başlık ve girişler standart haber bildirimidir; gözlenen ifade biçimi önyargılı bir muhakemeden çok haber yazım kalıbından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Karar vericinin ya da yazarın açık gerekçesi",
+    "Karşılaştırılabilir ek bilgi veya ölçüt"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakan Uraloğlu, AKINCI ve Bayraktar TB2'nin kara yoluna iniş-kalkış yapmasını değerlendirdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir otorite kaynağı anılıyor; ancak otoriteye karar verici ağırlık verildiği ya da karşı kanıtın geçildiği belirtilmiyor.",
+   "alternative_explanation": "Kaynağın anılması, haberin doğrulanabilirliği için olağan atıf olabilir.",
+   "missing_context": [
+    "Başlığın bir yargıyı ya da kararı etkilediğine dair açık ifade",
+    "Aynı olgunun nötr sunumuyla karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Her koşulda göreve hazır!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Milli SİHA'lardan kritik başarı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan/çarpıcı bir ayrıntı var; ancak bu ayrıntının bir yargıya haksız ağırlık verdiği metinde açıkça gösterilmiyor.",
+   "alternative_explanation": "Çarpıcı ifade, olağan başlık üslubu veya olayın gerçek önemi nedeniyle kullanılmış olabilir.",
+   "missing_context": [
+    "Başlığın bir yargıyı ya da kararı etkilediğine dair açık ifade",
+    "Aynı olgunun nötr sunumuyla karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "look-elsewhere-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin yalnızca olayı bildiren başlık ve girişlerden oluşuyor; başka yerde arama etkisi için gereken açık bir gerekçe, bağlantı veya karşılaştırmalı davranış kanıtı görünmüyor.",
+   "alternative_explanation": "Başlık ve girişler standart haber bildirimidir; gözlenen ifade biçimi önyargılı bir muhakemeden çok haber yazım kalıbından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Karar vericinin ya da yazarın açık gerekçesi",
+    "Karşılaştırılabilir ek bilgi veya ölçüt"
+   ]
+  }
+ ]
+}

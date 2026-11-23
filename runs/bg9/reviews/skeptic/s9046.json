@@ -1,0 +1,208 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başsavcılık Adli Tıp’ın ‘zehirlenmedi’ raporuna itiraz etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "mezardan alınan örneklerde tespit edilen antimonun kaynağının açıklanmasını ve cezaevinde tükettiği gıdaların incelenmesini istedi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Savcılığın açık bir ön hipotezi metinde yazılmıyor; itiraz somut bir tespite (antimon) dayandırılıyor. Kart, açıkça belirtilmiş bir ön kanaati ve buna yönelik asimetrik kanıt muamelesini istiyor; metinlerde açıkça yazılmış bir ön hipotez ve karşıt kanıtın gerekçesiz reddi yok.",
+   "alternative_explanation": "Bir bilirkişi raporuna itiraz, rapordaki tespitlerin açıklanması talebiyle yapılan olağan bir hukuki süreç olabilir; itirazın gerekçeleri aktarılıyor.",
+   "missing_context": [
+    "İtiraz dilekçesinin tam metni",
+    "Savcılığın önceden ifade ettiği bir hipotez",
+    "Karşıt kanıtın hangi gerekçeyle değerlendirildiği"
+   ]
+  },
+  {
+   "card_id": "belief-perseverance",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski MİT Mensubu Kaşif Kozinoğlu'nun şüpheli ölümüyle ilgili",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kozinoğlu'nun kalp hastalığı sonucu öldüğü, zehirlenme bulgusunun görülmediği",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Silivri Cumhuriyet Başsavcılığı, Kaşif Kozinoğlu'nun ölümüne ilişkin Adli Tıp raporuna itiraz ederek, mezardan alınan örneklerde tespit edilen antimonun kaynağının açıklanmasını",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Önceki pozisyon (şüpheli ölüm soruşturması) ve karşı kanıt (raporun zehirlenme bulgusu görmemesi) metinde var, itirazla pozisyonun korunduğu da görülüyor; ancak karşı kanıtın haksız biçimde indirgendiği gösterilmiyor, aksine itiraz somut tespitlere dayandırılıyor.",
+   "alternative_explanation": "Rapordaki antimon tespitinin kaynağının açıklanmasını istemek, çözülmemiş kanıt karşısında meşru bir itiraz olabilir.",
+   "missing_context": [
+    "İtirazın tüm gerekçeleri",
+    "Adli Tıp raporunun tam içeriği",
+    "Genel kurulun yeniden değerlendirme sonucu"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adli Tıp Kurumu 1. İhtisas Kurulu tarafından hazırlanan rapora itiraz etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Otorite (ATK) metinde var, fakat itiraz bu otoriteye belirleyici ağırlık verilmediğini gösteriyor. Metinde yetkili bir kaynak anılıyor; ancak bu statünün bir iddiayı değerlendirmede belirleyici ağırlık aldığı ya da karşıt kanıtın statü yüzünden göz ardı edildiği gösterilmiyor. Resmî kaynağa atıf haberciliğin olağan kaynak gösterme pratiğidir.",
+   "alternative_explanation": "Resmî kurum veya yetkiliye atıf, doğrulanabilir bilginin kaynağını belirtmek için yapılan standart bir gazetecilik pratiği olabilir; yetkinlik ile iddia arasında uyumsuzluk görülmüyor.",
+   "missing_context": [
+    "Kaynağın görüşüne karşı ileri sürülen ve gerekçesiz reddedilen bir kanıt",
+    "Statünün tek gerekçe olarak sunulduğunu gösteren açık ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kaşif Kozinoğlu dosyasında dikkat çeken hamle!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Savcılıktan Kozinoğlu'nun ölümüne ilişkin rapora itiraz",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı itiraz 'hamle' ya da yalın 'itiraz' olarak veriliyor; tercih bağı yok. Kart, eşdeğer seçeneklerin açıkça eşdeğer olduğunun metinde kurulmasını ve bir tercihin yalnızca sunuluş farkına bağlanmasını şart koşuyor; başlıklar arasında ifade farkı görülse de hiçbir metin bir karar ya da tercihi bu farka dayandırmıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatleri, farklı ajans kaynakları ve olayın farklı aşamalarının haberleştirilmesiyle açıklanabilir; kurumların editoryal tercihi bir akıl yürütme hatası değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin bu çerçevelere maruz kalıp farklı yargıya vardığını gösteren veri",
+    "Başlıkların bilgi açısından eşdeğer olduğunu açıkça belirten bir ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başsavcılık Kozinoğlu'nun cezaevinde yediği gıdaların da incelenmesini talep etti.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı ayrıntı bir yargıya bağlanmıyor. Göze çarpan ayrıntılar başlıklarda öne çıkarılıyor; fakat bu ayrıntının bir yargı ya da tercihe açıkça bağlandığı veya ilgili karşı kanıtın göz ardı edildiği metinde gösterilmiyor. Tek metindeki vurgu bu kart için yeterli değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması haber değeri ve habercilik konvansiyonlarıyla açıklanabilir; bu bir yargı hatası değil, sunum tercihidir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin farklı ağırlıklandırıldığını gösteren karşılaştırmalı karar verisi",
+    "Vurgunun bir sıklık ya da risk tahminine dönüştürüldüğünü gösteren ifade"
+   ]
+  }
+ ]
+}

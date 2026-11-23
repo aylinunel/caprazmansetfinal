@@ -1,0 +1,240 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 14:54] Gizli tanık 'para karşılığı yayın' dedi: Cem Küçük ve Tahir Sarıkaya hakkında iddianame",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar iddianameyi ve savcılık istemini bildiriyor; suçlama gizli tanığa atfedilmiş ('dedi') ve istem olarak ('istemi', 'talebi') verilmiş, atıf işaretleri mevcut.",
+   "alternative_explanation": "İddianame haberi hukuki süreç adımıdır.",
+   "missing_context": [
+    "Atıf işareti olmadan sorumluluk atayan bir başlık"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 14:54] Gizli tanık 'para karşılığı yayın' dedi: Cem Küçük ve Tahir Sarıkaya hakkında iddianame",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 17:59] Cem Küçük ve Tahir Sarıkaya hakkında 5 yıl 3 aya kadar hapis istemi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[t24 · 18:47] Cem Küçük ve Tahir Sarıkaya hakkında 5 yıl 3 aya kadar hapis istemi: Sarıkaya’ya yöneltilen suçlama değişti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 18:18] Cem Küçük ve Tahir Sarıkaya'ya 5 yıl 3 aya kadar hapis talebi! 28 milyonluk transfer: Gizli tanık ne dedi?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı iddianamede sondakika gizli tanık beyanını, hurriyet ceza miktarını, t24 suçlama değişikliğini, takvim ise para tutarını öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar iddianamenin farklı bölümlerini seçmiş olabilir.",
+   "missing_context": [
+    "İddianamenin tam metni"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[anka · 19:29] Tutuklu gazeteciler Cem Küçük ve Tahir Sarıkaya hakkında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Yorumcu Cem Küçük ve Beyaz TV sunucusu Tahir Sarıkaya",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "anka 'Tutuklu gazeteciler', diken 'Yorumcu' ve 'Beyaz TV sunucusu', takvim 'gazeteci' tanımını kullanıyor; kimi kurumlar etiket kullanmıyor. 'Tutuklu' hukuki duruma işaret ediyor; etiketlerin meşruiyet yargısı taşıyıp taşımadığı görünmüyor.",
+   "alternative_explanation": "Etiketler mesleki ya da hukuki durumun betimlemesi olabilir.",
+   "missing_context": [
+    "Etiketlerin meşruiyet açısından değerlendirici olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 17:44] İddianame hazırlandı: Cem Küçük ve Tahir Sarıkaya hakkında 5 yıl 3 aya kadar hapis istemi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ensonhaber · 18:17] Cem Küçük ve Tahir Sarıkaya için 5 yıl 3 aya kadar hapis talebi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'İstemi', 'talebi', 'hazırlandı', 'düzenlendi' gibi farklı sözcükler var; farklar kayıt düzeyinde görünüyor.",
+   "alternative_explanation": "Hukuk dilinin eşanlamlıları.",
+   "missing_context": [
+    "Çağrışım farkını gösteren örnek"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 18:21] Cem Küçük ve Tahir Sarıkaya hakkında iddianame hazır!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda belirgin değerlendirici sözcük yok; ünlem dışında olgusal ifadeler kullanılıyor.",
+   "alternative_explanation": "Hukuki bir süreç bildiriliyor.",
+   "missing_context": [
+    "Değerlendirici sözcük örneği"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı başlık ve girişte aynı yönü gösteren birden fazla ayrı sunum tercihi (etiket, yüklü sözcük, seçilmiş rakam) belirgin biçimde ayrıştırılamıyor.",
+   "alternative_explanation": "Başlıklar iddianame içeriğini özetliyor.",
+   "missing_context": [
+    "Aynı yönü gösteren birden fazla sunum tercihi"
+   ]
+  }
+ ]
+}

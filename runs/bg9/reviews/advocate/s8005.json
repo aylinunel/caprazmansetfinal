@@ -1,0 +1,231 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 13:48] Tekirdağ Büyükşehir Başkanı Yüceer, delege krizi nedeniyle Yeni Parti'den istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 16:57] Yeni Parti'de deprem! Belediye Başkanı Yüceer istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı istifa bir başlıkta kişisel bir delege anlaşmazlığı, diğerinde parti çapında bir sarsıntı olarak sunuluyor; sunum farkı gözleniyor ancak metinde bu farka dayanan açık bir tercih ya da yargı yok.",
+   "alternative_explanation": "Kuruluşlar istifanın gerekçesini ya da parti üzerindeki olası etkisini haber değeri açısından farklı tartmış olabilir.",
+   "missing_context": [
+    "Sunum farkının yol açtığı açık bir değerlendirme",
+    "Okur tepkisine dair karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 16:55] Yeni Parti’de \"iç hesaplaşma\" patladı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz bir sözcük seçimi var; ancak olumsuz bilgiye, karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık verildiğini belgeleyen bir karşılaştırma ya da tekrarlanan davranış gösterilmiyor.",
+   "alternative_explanation": "İstifa haberinin kendisi bir parti için olumsuz bir gelişmedir; olumsuz ton olayın niteliğinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Aynı kuruluşun partiye ilişkin olumlu gelişmeleri nasıl verdiği",
+    "Karşılaştırılabilir olumlu bilgi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hasta yatağında olduğu dönemde il kongresinde kurultay delegeliği üzerinden yaşanan tartışmalara",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 16:52] Yeni Parti'de istifa depremi!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 17:06] Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer, Yeni Parti'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı kuruluşlar duygusal olarak çarpıcı ayrıntıları (hasta yatağı, 'deprem') öne çıkarıyor; ancak bu ayrıntıların bir yargıyı haksız biçimde etkilediği açıkça gösterilmiyor.",
+   "alternative_explanation": "Hastalık bilgisi Yüceer'in kendi açıklamasında yer aldığı için aktarılmış olabilir.",
+   "missing_context": [
+    "Belirgin ayrıntıya dayanan açık bir sonuç",
+    "Daha az belirgin bilgilerin göz ardı edildiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 17:06] Eski zihniyetli Yeni Parti’de deprem: Tekirdağ Belediye Başkanı istifa etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "eski zihniyetin yeni çatıdaki ortaklığı ilk günden çatırdadı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kararına il kongresinde kurultay delegesi yazılmamasını gerekçe gösterdi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kuruluş istifayı partinin kalıcı bir niteliğine ('eski zihniyet') bağlıyor; başka bir kuruluş ise somut durumsal bir gerekçeyi (delege listesine yazılmama) aktarıyor. Bu durumsal etkenin ilgili kuruluşun sonucunu esaslı biçimde şekillendirdiği ise metinden kesin olarak çıkarılamıyor.",
+   "alternative_explanation": "'Eski zihniyet' ifadesi partinin kuruluş sürecine dair bir siyasi değerlendirme olarak, istifanın nedenini açıklama iddiası taşımadan kullanılmış olabilir.",
+   "missing_context": [
+    "Akit'in haberin devamında durumsal gerekçeye yer verip vermediği",
+    "Diğer istifalara ilişkin karşılaştırmalı bilgi"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Özgür Özel ile birlikte CHP’den koparak Yeni Parti’ye katılan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Parti aidiyetleri anılıyor; ancak grup üyeliğine bağlı olarak güvenilirlik, suçlama ya da fayda bakımından farklı muamele gösteren bir karar veya yargı açıkça kurulmuyor.",
+   "alternative_explanation": "Parti geçmişinin anılması, haberin arka planını açıklamak için olağandır.",
+   "missing_context": [
+    "Benzer istifaların farklı partiler için nasıl verildiğine dair karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler bir olayın haber başlıklarından oluşuyor; bir etkinliğe bağlanan dış ödül, ödülün kaldırılması ya da sonrasında gönüllü katılımın azalması gibi bir gözlem yer almıyor.",
+   "alternative_explanation": "Haber metinleri motivasyon değişimini ölçecek bir akış içermez; kartın konusu bu olayla ilişkili değildir.",
+   "missing_context": [
+    "Kişinin ödül öncesi gönüllü katılım düzeyi",
+    "Beklenen ve etkinliğe bağlı bir ödül",
+    "Ödül kaldırıldıktan sonraki davranış ölçümü"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "in-group-bias",
+  "authority-bias",
+  "optimism-bias"
+ ],
+ "selection_uncertainty": [
+  "Haberler resmi duyuru niteliğinde.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "Büyük ölçüde aynı resmi bilgi; çerçeve farkı sınırlı."
+}

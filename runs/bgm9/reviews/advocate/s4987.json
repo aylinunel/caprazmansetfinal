@@ -1,0 +1,267 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 17:17] Borsa İstanbul Genel Müdürü Ergun rüşvet ve örgüt üyeliği iddiasıyla gözaltına alındı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 20:19] Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor ve sorumluluk belirlenmiş değil; ancak başlıklar suçu adı verilen kişiye dilbilgisel olarak yüklemiyor, edilgen 'gözaltına alındı' yapısını ve 'iddiasıyla' atıf işaretini kullanıyor.",
+   "alternative_explanation": "Gözaltı haberleri genellikle edilgen yapı ve atıf işaretleriyle verilir.",
+   "missing_context": [
+    "Başlıkta failliği atayan bir yapı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[karar · 20:24] Fon soruşturması Borsa İstanbul'a uzandı: Genel Müdür Korkmaz Enes Ergun gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 17:17] Borsa İstanbul Genel Müdürü Ergun rüşvet ve örgüt üyeliği iddiasıyla gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 20:19] Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı gözaltıyı veren başlıklardan biri soruşturmanın genişlemesini, biri suçlamaların türünü öne çıkarıyor, biri yalnızca gözaltıyı veriyor.",
+   "alternative_explanation": "Farklılık, başlık uzunluğu ve eldeki bilgi düzeyinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Başsavcılık açıklamasının metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 20:23] Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 20:25] Fon soruşturmasında Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun’a gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 20:19] Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olay 'gözaltında', 'gözaltı' ve 'gözaltına alındı' biçimleriyle veriliyor; ancak farkın çağrışımda değil daha çok dilbilgisel biçim ve uzunlukta olduğu görülüyor.",
+   "alternative_explanation": "Biçim farkları başlık kısaltma alışkanlıklarıyla açıklanabilir.",
+   "missing_context": [
+    "Çağrışım bakımından farklı sözcükler"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'de sermaye piyasalarını sarsan fon soruşturmasında kritik bir gelişme yaşandı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 20:25] Fon soruşturmasında yeni gelişme... Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Gözaltı, bazı başlık ve ledlerde süregelen fon soruşturmasının yeni bir aşaması olarak veriliyor.",
+   "alternative_explanation": "Soruşturmanın adı gözaltının hukuki çerçevesini belirten olgusal bir bilgidir.",
+   "missing_context": [
+    "Fon soruşturmasının önceki aşamaları"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'de sermaye piyasalarını sarsan fon soruşturmasında kritik bir gelişme yaşandı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 20:24] Fon soruşturması Borsa İstanbul'a uzandı: Genel Müdür Korkmaz Enes Ergun gözaltında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kuruluşlar 'sarsan' ve 'uzandı' gibi mecazlar kullanıyor; ancak bunlar Türkçe haber dilinde kalıplaşmış deyimler olup rol atayan ya da bir eylem yolu ima eden bir mantık kurmuyor.",
+   "alternative_explanation": "Mecazlar soruşturmanın kapsamını betimleyen yerleşik ifadelerdir.",
+   "missing_context": [
+    "Rol ya da eylem yolu atayan bir mecaz"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturması kapsamında Borsa İstanbul A.Ş. Genel Müdürü Korkmaz Enes Ergun",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 20:19] Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 20:20] Son dakika... Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Diğer kuruluşların ledleri gözaltının daha geniş bir fon soruşturmasının parçası olduğunu gösteriyor; bazı başlıklar ise olayı yalnızca tek bir kişinin gözaltısı olarak veriyor ve başlıkta ya da görünür ledde bu süreçten söz etmiyor.",
+   "alternative_explanation": "Kısa son dakika başlıkları bağlamı haberin gövdesine bırakmış olabilir.",
+   "missing_context": [
+    "Bu kuruluşların haber gövdesinde soruşturmaya değinip değinmediği"
+   ]
+  }
+ ]
+}

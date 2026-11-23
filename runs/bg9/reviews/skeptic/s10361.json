@@ -1,0 +1,122 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyaz Saray Sözcü Yardımcısı Olivia Wales",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "ANKA satırı bilgiyi Beyaz Saray sözcüsüne atfediyor; bu, görüşme planını bildiren resmî kaynaktır. Kaynağın statüsüne bir iddiada karar verici ağırlık verildiği veya karşıt değerlendirmenin dışlandığı gösterilmiyor.",
+   "alternative_explanation": "Resmî kaynaktan alıntı, haber üretiminde olağan atıf pratiğidir.",
+   "missing_context": [
+    "Kaynağın iddiasının bağımsız doğrulanıp doğrulanmadığı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Trump-Şi-Putin görüşmesi haberinde karşılaştırılan ifadelerin karar açısından eşdeğer olduğu ve tercihin sunuma bağlandığı metinde belirtilmiyor.",
+   "alternative_explanation": "Başlık farkları farklı bilgi unsurlarını öne çıkarma tercihinden kaynaklanıyor olabilir; eşdeğerlik kanıtlı değil.",
+   "missing_context": [
+    "Eşdeğer seçeneklerin açıkça belirtilmesi",
+    "Tercihin sunuma bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Trump-Şi-Putin görüşmesi haberinde belirgin bir ayrıntı ile bir yargı arasında açık, haksız bir bağ kurulmuyor; belirgin olmak tek başına hata kanıtı değil.",
+   "alternative_explanation": "Haber değeri taşıyan ayrıntının öne çıkarılması olağan editoryal tercihtir.",
+   "missing_context": [
+    "Belirgin ve belirgin olmayan bilginin ağırlığını karşılaştıran davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Trump-Şi-Putin görüşmesi haberinde bir referans değerin sonraki bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "alternative_explanation": "Sayısal değerler yalnızca olgusal bilgi olarak aktarılıyor olabilir.",
+   "missing_context": [
+    "Referans değer ile sonraki karar arasındaki açık bağlantı"
+   ]
+  }
+ ]
+}

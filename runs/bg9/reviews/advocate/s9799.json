@@ -1,0 +1,181 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "base-rate-fallacy",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "survivorship-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "333 bini aşkın yatırımcı tamamını aldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sabah başlığı yalnızca net yatırım tutarının tamamını alan alt kümeyi öne çıkarıyor; diğer yatırımcılar başlıkta yer almıyor, ancak bu seçilmiş kümeden geniş bir çıkarım yapıldığı gösterilmiyor.",
+   "alternative_explanation": "Açıklamadaki rakamlardan biri olarak aktarılmış olabilir.",
+   "missing_context": [
+    "Tam ödeme almayan yatırımcıların sayısı",
+    "Başlıktan çıkarılan genel sonuç"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türk futbolunun önemli isimlerinden Fatih Terim, Milliyetçi Hareket Partisi (MHP) Genel Başkanı Devlet Bahçeli'yi ziyaret etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Terim'in futboldaki önemi anılıyor; ancak bu izlenim siyasi ya da başka bir alandaki yargıya bağlanmıyor. 'Yaşayan efsane' ifadesi MHP yöneticisine ait bir alıntı. Kart, bir alandaki olumlu izlenimin ayrı bir alandaki olumlu yargıya açıkça bağlanmasını istiyor; metinde böyle iki ayrı alan ve aralarında kurulmuş bir bağ yok.",
+   "alternative_explanation": "Olumlu nitelemeler kurumun alışılmış üslubu ya da kaynağın kendi açıklamasının aktarımı olabilir; bir alandan diğerine yargı aktarımı yapılmıyor.",
+   "missing_context": [
+    "İlk alandaki izlenimle ikinci alandaki yargı arasında açık gerekçe bağı",
+    "Alanların karar için ilgisiz olduğuna dair kanıt"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ziyareti sosyal medya hesabından duyuran MHP Genel Başkan Yardımcısı Özgür Bayraktar",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bilgi parti yöneticisine dayandırılıyor; statüye dayalı bir değerlendirme yok. Metinde yetkili bir kaynak anılıyor; ancak bu statünün bir iddiayı değerlendirmede belirleyici ağırlık aldığı ya da karşıt kanıtın statü yüzünden göz ardı edildiği gösterilmiyor. Resmî kaynağa atıf haberciliğin olağan kaynak gösterme pratiğidir.",
+   "alternative_explanation": "Resmî kurum veya yetkiliye atıf, doğrulanabilir bilginin kaynağını belirtmek için yapılan standart bir gazetecilik pratiği olabilir; yetkinlik ile iddia arasında uyumsuzluk görülmüyor.",
+   "missing_context": [
+    "Kaynağın görüşüne karşı ileri sürülen ve gerekçesiz reddedilen bir kanıt",
+    "Statünün tek gerekçe olarak sunulduğunu gösteren açık ifade"
+   ]
+  },
+  {
+   "card_id": "messenger-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Görüşmeye ilişkin paylaşımı MHP Genel Başkan Yardımcısı Özgür Bayraktar yaptı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duyuruyu yapan kişi belirtiliyor; iddianın kaynağına göre farklı değerlendirildiği görülmüyor. Kart, aynı iddianın yalnızca kaynağın kimliği nedeniyle farklı değerlendirildiğini gösteren açık kanıt istiyor; metinlerde bir iddianın kabul ya da reddi mesajı verenin kimliğine bağlanmıyor.",
+   "alternative_explanation": "Bilginin hangi kaynaktan geldiğinin ya da kişinin kimliğinin belirtilmesi tanıtım ve kaynak gösterme pratiğidir.",
+   "missing_context": [
+    "Aynı iddianın farklı kaynaklardan geldiğinde farklı karşılandığını gösteren karşılaştırma",
+    "Kaynak kimliğinin içeriği gölgelediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "MHP Genel Başkanı Bahçeli, Fatih Terim'i kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fatih Terim'den Devlet Bahçeli'ye sürpriz ziyaret",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı buluşma 'kabul' ya da 'ziyaret' olarak veriliyor; bu bir protokol dili farkı olabilir ve bir tercihe bağlanmıyor. Kart, eşdeğer seçeneklerin açıkça eşdeğer olduğunun metinde kurulmasını ve bir tercihin yalnızca sunuluş farkına bağlanmasını şart koşuyor; başlıklar arasında ifade farkı görülse de hiçbir metin bir karar ya da tercihi bu farka dayandırmıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatleri, farklı ajans kaynakları ve olayın farklı aşamalarının haberleştirilmesiyle açıklanabilir; kurumların editoryal tercihi bir akıl yürütme hatası değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin bu çerçevelere maruz kalıp farklı yargıya vardığını gösteren veri",
+    "Başlıkların bilgi açısından eşdeğer olduğunu açıkça belirten bir ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatih Terim'den Devlet Bahçeli'ye sürpriz ziyaret",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Sürpriz' vurgusu bir yargıya bağlanmıyor. Göze çarpan ayrıntılar başlıklarda öne çıkarılıyor; fakat bu ayrıntının bir yargı ya da tercihe açıkça bağlandığı veya ilgili karşı kanıtın göz ardı edildiği metinde gösterilmiyor. Tek metindeki vurgu bu kart için yeterli değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması haber değeri ve habercilik konvansiyonlarıyla açıklanabilir; bu bir yargı hatası değil, sunum tercihidir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin farklı ağırlıklandırıldığını gösteren karşılaştırmalı karar verisi",
+    "Vurgunun bir sıklık ya da risk tahminine dönüştürüldüğünü gösteren ifade"
+   ]
+  }
+ ]
+}

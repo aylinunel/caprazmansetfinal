@@ -1,0 +1,161 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Olumsuz hava BUDO’nun 10 seferini iptal ettirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "BUDO 10 seferini iptal etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bursa'da deniz ulaşımına fırtına engeli!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı 10 seferlik iptal için akit havayı fail yapıyor, star BUDO'yu fail yapıyor, aydinlik ise 'fırtına engeli' ve deniz ulaşımı vurgusunu başlığa taşıyor.",
+   "alternative_explanation": "Başlıklar aynı olgunun dilbilgisel varyasyonu olabilir.",
+   "missing_context": [
+    "Başlıkların kaynağı olan BUDO duyurusu"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "BUDO'nun 10 seferi iptal edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "BUDO 10 seferini iptal etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Olumsuz hava BUDO’nun 10 seferini iptal ettirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı iptal için 'iptal edildi' (edilgen), 'iptal etti' (BUDO fail) ve 'iptal ettirdi' (hava fail) kullanılıyor; fiil seçimi sorumluluğu farklı yere koyuyor.",
+   "alternative_explanation": "Fark dilbilgisi tercihi olabilir.",
+   "missing_context": [
+    "Kaynak duyurunun tam metni"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda tek olay sunuluyor; bağlamda yinelenen yapısal bir sorun gösterilmiyor.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İptalin nedeni olarak hava koşulları belirtiliyor; sorumluluğu belirsiz bir soruşturma konusu yok.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  }
+ ]
+}

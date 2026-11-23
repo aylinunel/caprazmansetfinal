@@ -1,0 +1,188 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "source-confusion",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rıdvan Dilmen sarı-lacivertli takımın başına Emre Belözoğlu’nun geçtiğini öne sürdü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bilginin kaynağı (Rıdvan Dilmen) ve iddia açıkça belirtiliyor; ancak kaynak ile bilgi arasında bir uyumsuzluk ya da düzeltme yok.",
+   "alternative_explanation": "Kurum iddiayı kaynağıyla birlikte aktararak kaynak karışıklığını önlemiş olabilir.",
+   "missing_context": [
+    "Kulübün resmi açıklamasının zamanı",
+    "Kaynak atfına ilişkin düzeltme"
+   ]
+  },
+  {
+   "card_id": "illusory-truth-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emre Belözoğlu ile anlaşma sağlandı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde yanılsamalı doğruluk etkisinin için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Anlaşma iddiası sonradan resmi açıklamayla doğrulanmış görünüyor; yanlış olduğu bağımsız olarak kanıtlanmış bir önerme yok.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rıdvan Dilmen açıkladı: Fenerbahçe’de Emre Belözoğlu iddiası",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık bilgiyi tanınmış bir yorumcunun 'açıklaması' olarak sunuyor ve kişiyi yetkili kaynak gibi konumluyor; ancak statünün başka bir kanıtı geçersiz kıldığı gösterilmiyor.",
+   "alternative_explanation": "Lede 'öne sürdü' diyerek iddiayı ihtiyatla aktarıyor; bu otoriteye körü körüne dayanma değildir.",
+   "missing_context": [
+    "Kulübün o andaki resmi tutumu",
+    "Dilmen'in bilgi kaynağı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de flaş gelişme: Emre Belözoğlu ile anlaşma sağlandı! Conceiçao olmadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Emre Belözoğlu sürprizi: Görüşmeler başladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe’de ibre Emre Belözoğlu'na döndü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı gelişme bir kurumda kesin anlaşma, bir kurumda başlayan görüşme, bir diğerinde eğilim olarak sunuluyor; ancak bu farkın bir yargıya bağlandığı yazılı değil.",
+   "alternative_explanation": "Haberler sürecin farklı anlarında ve farklı bilgi düzeyleriyle yazılmış olabilir.",
+   "missing_context": [
+    "Okurların farklı başlıklara göre farklı yargıya vardığını gösteren karşılaştırmalı veri",
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Haberlerin tam metinleri ve aynı olgu setine dayandıklarının teyidi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde belirginlik yanlılığının için gerekli açık akıl yürütme bağı gözlenmiyor; başlıklar yalnızca olayı aktarıyor.",
+   "alternative_explanation": "Başlıklarda çarpıcı bir ayrıntının bir yargıya dayanak yapıldığı görülmüyor.",
+   "missing_context": [
+    "Başlığı seçen editörün ya da muhabirin gerekçesine ilişkin bir beyan veya yazışma",
+    "Kararın ya da yargının nasıl oluştuğunu gösteren karşılaştırmalı veya uzunlamasına kanıt"
+   ]
+  }
+ ]
+}

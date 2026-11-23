@@ -1,0 +1,146 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kanser tedavisi görüyordu! İş adamı Ahmet Nazif Zorlu hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İş dünyasının acı kaybı: Ahmet Nazif Zorlu vefat etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Hastalık ya da kayıp vurgusu anma haberinde olağan.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kanser tedavisi görüyordu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı ayrıntı başlıkta; yargıya etkisi yok.",
+   "alternative_explanation": "Ölüm nedenine ilişkin kamu merakı.",
+   "missing_context": [
+    "Yargıya bağlantı"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İş dünyasının acı kaybı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duygu ifadesi var; bir risk veya fayda tahminine bağlanmıyor.",
+   "alternative_explanation": "Taziye dili.",
+   "missing_context": [
+    "Duygu ile tahmin arasında bağ"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türk iş dünyasının ve tekstil sektörünün duayen isimlerinden",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumlu bir izlenim var; ancak başka bir alana taşınan ayrı bir yargı yok.",
+   "alternative_explanation": "Biyografik nitelendirme.",
+   "missing_context": [
+    "İkinci alandaki yargı"
+   ]
+  }
+ ]
+}

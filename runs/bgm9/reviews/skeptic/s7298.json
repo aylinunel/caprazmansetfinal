@@ -1,0 +1,215 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam ya da diğer kurumların haberleri bu olayın tekrarlayan ya da yapısal bir sorunun parçası olduğunu göstermiyor; bu nedenle ilk koşul karşılanmıyor.",
+   "alternative_explanation": "Bir inşaat kazasını tekil olarak aktarmak olayın kendisinden kaynaklanıyor; bağlam tekrarlayan bir örüntü sunmuyor.",
+   "missing_context": [
+    "Benzer önceki olaylara ya da yapısal verilere ilişkin bağlam"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yenisafak · 14:30] Bahçelievler'de inşaat göçüğünün altında kalan bir işçi kurtarıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 16:25] Bahçelievler'de toprak altında kalan 2 işçiden 1'i hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olayda Yeni Şafak kurtarılan işçiyi, TRT Haber ölen işçiyi başlığa taşıyor.",
+   "alternative_explanation": "Yayın saatleri ve bilgi akışı farklı olabilir; Yeni Şafak haberi ilk bilgiye dayanıyor olabilir.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[posta · 16:38] Bahçelievler'de korkutan toprak kayması!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 16:34] Bahçelievler'de inşaatta toprak kayması. Bir işçi yaşamını yitirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Posta 'korkutan' sıfatını, birçok kurum 'acı haber' kalıbını kullanıyor; bunlar kartın örneklerindeki değerlendirici sözcüklerden çok yerleşik duygu ifadeleri, bu yüzden ilk koşul belirsiz.",
+   "alternative_explanation": "'Acı haber' ölüm haberleri için yerleşik bir kalıptır.",
+   "missing_context": [
+    "İfadenin değerlendirici mi betimleyici mi olduğuna dair ölçüt"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[diken · 16:16] Bahçelievler'de inşaatta göçük",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 16:34] Bahçelievler'de inşaatta toprak kayması",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Diken 'göçük', NTV 'toprak kayması' diyor; fark teknik betimleme düzeyinde ve çağrışım farkı belirgin değil.",
+   "alternative_explanation": "İki sözcük aynı olayın farklı yönlerini (toprağın kayması ve işçilerin altında kalması) anlatıyor.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gerekli soruşturma başlatıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma başlatıldığı aktarılıyor; ancak hiçbir başlık adı geçen bir aktöre kusur ya da faillik yüklemiyor.",
+   "alternative_explanation": "Kaza haberleri olgusal ve edilgen bir dille veriliyor.",
+   "missing_context": [
+    "Başlıkta adı geçen aktöre kusur yükleyen ifade"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 10:17] Bahçelievler'de inşaatta toprak kayması! 1 işçi kurtarıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberler tekil bir kazayı aktarıyor; hiçbir kurum başlık ya da spotta olayı iş kazası istatistikleri ya da önceki olaylarla ilişkilendirmiyor.",
+   "alternative_explanation": "Son dakika haberleri geniş bağlam vermeden aktarılıyor olabilir.",
+   "missing_context": [
+    "İnşaat kazalarına ilişkin veriler"
+   ]
+  }
+ ]
+}

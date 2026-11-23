@@ -1,0 +1,235 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "MHP lideri Bahçeli’den helikopter kazasında şehit olan askerler için taziye mesajı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özgür Özel'den Malatya'da şehit olan askerler için başsağlığı mesajı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Suriye'den Malatya'daki helikopter kazası için taziye mesajı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Helikopter kazasında şehit olan astsubay Kayseri'de son yolculuğuna uğurlandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı kazayı Sondakika Bahçeli mesajıyla, Cumhuriyet Özel mesajıyla, Akşam Suriye taziyesiyle, Habertürk ise cenaze törenleriyle öne çıkarıyor.",
+   "alternative_explanation": "Kazadan sonra farklı gelişmeler kronolojik olarak haber olmuş olabilir.",
+   "missing_context": [
+    "Gelişmelerin zamanlaması"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Malatya'daki helikopter kazasında şehit olan 4 kahramanımıza veda",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Malatya'daki helikopter kazasında hayatını kaybeden askerler için Ankara'da tören düzenlendi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "A Haber 'şehit olan 4 kahramanımıza veda' derken Birgün aynı olay için 'hayatını kaybeden askerler' diyor; iki ifadenin çağrışımı farklı.",
+   "alternative_explanation": "'Şehit' resmî statü adı olarak da kullanıldığı için fark üslup tercihi olabilir.",
+   "missing_context": [
+    "Şehit statüsünün resmen tanınıp tanınmadığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde konuyu iki seçeneğe indirgeyen ifade görülmüyor.",
+   "alternative_explanation": "Metinler taziye ve tören haberini aktarıyor.",
+   "missing_context": [
+    "İki seçenekli ifade"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kaza kırıma uğraması sonucu şehit olan 4 asker",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "kazanın nedeninin henüz belirlenemediğini açıkladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler askerlerin ölümünü helikopter kazasına bağlıyor; bu, olayın kendisini anlatan doğal bir bağ. NTV kazanın nedeninin belirlenmediğini belirterek olmayan bir nedensellik iddiası yapmıyor.",
+   "alternative_explanation": "Kaza ile ölüm arasındaki bağ yalnızca olayın tanımıdır.",
+   "missing_context": [
+    "Kazanın nedeni"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber tek bir kazayı anlatıyor; yapısal veya yinelenen bir sorun olarak sunulmuyor.",
+   "alternative_explanation": "Haber tek vaka bildirimidir.",
+   "missing_context": [
+    "Önceki helikopter kazalarına dair bağlam"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'yi yasa boğan elim kazada",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "şehadete eren 4 kahraman mehmetçiğimizin",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Malatya'daki helikopter kazasında 4 asker şehit oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Akit lede'i 'yasa boğan elim kaza', 'şehadete eren' ve 'kahraman mehmetçiğimiz' gibi birden fazla sunum tercihi içeriyor; NTV aynı olguyu bu birleşim olmadan veriyor. Ancak bu tercihlerin tek bir değerlendirme yönü oluşturduğu, yalnızca anma dilinden ayrı olarak gösterilemiyor.",
+   "alternative_explanation": "Şehit haberlerinde yas ve onur dili yerleşik bir üslup kalıbıdır.",
+   "missing_context": [
+    "Akit'in benzer haberlerdeki üslubu"
+   ]
+  }
+ ]
+}

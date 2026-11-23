@@ -1,0 +1,134 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "4 şehit verdiğimiz Malatya'daki helikopter kazası kamerada",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Takvim başlığı 'verdiğimiz' diyerek ortak bir 'biz' dili kullanıyor; ancak bu dilin bir karar veya yargıda grup farkına bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Grup adlarının anılması tanımlayıcı bilgi olabilir; farklı muamele kanıtı yok.",
+   "missing_context": [
+    "Karşılaştırılabilir vakalarda tutarsız standart kanıtı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Malatya helikopter kazası haberinde karşılaştırılan ifadelerin karar açısından eşdeğer olduğu ve tercihin sunuma bağlandığı metinde belirtilmiyor.",
+   "alternative_explanation": "Başlık farkları farklı bilgi unsurlarını öne çıkarma tercihinden kaynaklanıyor olabilir; eşdeğerlik kanıtlı değil.",
+   "missing_context": [
+    "Eşdeğer seçeneklerin açıkça belirtilmesi",
+    "Tercihin sunuma bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Malatya helikopter kazası haberinde belirgin bir ayrıntı ile bir yargı arasında açık, haksız bir bağ kurulmuyor; belirgin olmak tek başına hata kanıtı değil.",
+   "alternative_explanation": "Haber değeri taşıyan ayrıntının öne çıkarılması olağan editoryal tercihtir.",
+   "missing_context": [
+    "Belirgin ve belirgin olmayan bilginin ağırlığını karşılaştıran davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "MHP lideri Bahçeli’den helikopter kazasında şehit olan askerler için taziye mesajı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özgür Özel'den Malatya'da şehit olan askerler için başsağlığı mesajı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sondakika Bahçeli'nin, Cumhuriyet Özel'in mesajını öne çıkarıyor; eşzamanlı karşılaştırma farklı odakları gösterir, ancak bunun bir yargıya haksız etkisi gösterilmiyor.",
+   "alternative_explanation": "Kurumların farklı yayın önceliği ve okur kitlesi farklı vurguyu açıklayabilir.",
+   "missing_context": [
+    "Dikkat dağılımının bir sonuca bağlandığını gösteren kayıt",
+    "Göz ardı edilen karşı kanıtın erişilebilir olduğunun kanıtı"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "automation-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yapay zeka destekli AVCI projesiyle 39 ilde yasa dışı bahis operasyonu! 151 şüpheli yakalandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık operasyon sonucunu yapay zeka destekli sistemin çıktısıyla ilişkilendiriyor; ancak sistemin çıktısının gerekçe yerine geçtiği ya da karşıt kanıtın göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Başlık yalnızca kullanılan aracı bildiriyor olabilir.",
+   "missing_context": [
+    "Sistemin çıktısının karar sürecindeki ağırlığı"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "ai-literacy-gap",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "bandwagon-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  }
+ ]
+}

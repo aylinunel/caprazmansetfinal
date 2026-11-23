@@ -1,0 +1,263 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mesleği ev hanımı, aylık geliri 500 bin lira",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tutuklanan Fatma Betül Sayan Kaya, suçlamaları reddetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdin Özel’i bana siyasiler önerdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ifade tutanağı bir başlıkta gelir ve meslek, bir başlıkta suçlamaların reddi, bir başlıkta siyasilere yapılan atıf üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Uzun bir ifadeden farklı cümleler seçmek olağan editoryal özetlemedir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturmasında tutuklanan eski bakan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sermaye piyasası işlemlerine ilişkin yürütülen soruşturmada tutuklanan",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma bir kurumun kendi sesinde 'fon vurgunu soruşturması', bir başkasında 'sermaye piyasası işlemlerine ilişkin soruşturma' olarak adlandırılıyor; 'vurgun' sözcüğü suç çağrışımı taşıyor.",
+   "alternative_explanation": "'Fon vurgunu' kamuoyunda yaygınlaşmış bir kısa ad olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturmasında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İşte tutuklanma gerekçesi!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sermaye piyasası işlemlerine yönelik yürütülen fon soruşturması kapsamında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "'Vurgun' gibi değerlendirme yüklü bir sözcük ve ünlemli 'İşte' kalıbı kurumların kendi sesinde kullanılıyor; aynı olgu başka bir kurumda nötr ifadeyle veriliyor.",
+   "alternative_explanation": "'Fon vurgunu' bazı kurumlarda soruşturmanın yerleşik adı olarak kullanılıyor olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında tutuklanan eski Bakan Fatma Betül Sayan Kaya'nın",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturmasında tutuklanan eski bakan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor ve sorumluluk belirlenmiş değil; ancak başlık dilbilgisi suçu adı verilen bir aktöre doğrudan atfetmiyor, başlıklar çoğunlukla ifadeyi aktarıyor.",
+   "alternative_explanation": "Başlıklar Kaya'nın kendi beyanını aktardığından sorumluluk ataması yapmıyor olarak okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya'nın hakimlik ifadesi ortaya çıktı: Mesleği ev hanımı, aylık geliri 500 bin lira",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kaya ifadesinde, “Eşimle bir miktar birikimimiz vardı. Bu birikimi değerlendirmek istedik” dedi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı başlıkta 'ev hanımı' meslek tanımı ile seçilmiş '500 bin lira' gelir rakamı yan yana konuyor; ikisi birlikte bir çelişki izlenimi yönünde işliyor. Başka bir kurum aynı ifadeyi bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Meslek ve gelir ifade tutanağındaki iki olgusal beyan olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "sermaye piyasalarındaki işlemlere yönelik yürütülen soruşturma kapsamında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul Cumhuriyet Başsavcılığı Terörizmin Finansmanı ve Aklama Suçları Soruşturma Bürosu tarafından",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurum ifadeyi başsavcılığın ilgili bürosunca yürütülen daha geniş bir sermaye piyasası soruşturması içinde konumluyor.",
+   "alternative_explanation": "Soruşturma bilgisi olgusal kimlik bilgisi olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

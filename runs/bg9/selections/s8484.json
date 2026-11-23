@@ -1,0 +1,16 @@
+{
+ "candidate_ids": [
+  "salience-bias",
+  "negativity-bias",
+  "identifiable-victim-effect",
+  "authority-bias",
+  "availability-heuristic",
+  "framing-effect"
+ ],
+ "selection_uncertainty": [
+  "Can kaybı sayıları kurumlar arasında farklı (10, 16, 17).",
+  "Soruşturma sürüyor; sorumluluk belirsiz.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "Değişen ölü sayıları ve resmi açıklamalara dayanma öne çıkıyor."
+}

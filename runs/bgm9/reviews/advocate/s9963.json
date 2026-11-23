@@ -1,0 +1,245 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturması: Türkiye Sigorta'dan TMSF'ye fon kazancı iadesi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye Sigorta’dan tarihi adımı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "gönüllülük esasına göre iade edildiğini",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı iade olgusu BirGün'de soruşturma bağlamıyla, Akit'te 'tarihi adım' olarak, Habertürk'te ise şirketin gönüllülük/etik gerekçesiyle öne çıkarılıyor.",
+   "alternative_explanation": "Kaynak olan KAP açıklaması gönüllülük vurgusunu içerdiği için fark kaynaktan gelmiş olabilir.",
+   "missing_context": [
+    "KAP açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturması: Türkiye Sigorta'dan TMSF'ye fon kazancı iadesi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması kapsamında üst düzey isimleri tutuklanan Türkiye Sigorta AŞ",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "BirGün başlığı ve Evrensel lede'i iadeyi daha geniş fon soruşturması ve tutuklamalar bağlamına yerleştiriyor.",
+   "alternative_explanation": "Soruşturma, iade kararının doğrudan arka planı olduğu için eklenmiş olabilir.",
+   "missing_context": [
+    "Soruşturmanın iadeyle ilişkisi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturması:",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma Evrensel'de 'fon vurgunu', BirGün'de yalnızca 'fon soruşturması' diye adlandırılıyor; 'vurgun' ek bir olumsuz çağrışım taşıyor.",
+   "alternative_explanation": "'Fon vurgunu' kamuoyunda yerleşmiş bir ad olabilir.",
+   "missing_context": [
+    "Terimin yaygınlığı"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye Sigorta’dan tarihi adımı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "örnek bir karara imza atarak",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye Sigorta fon kazancını TMSF'ye iade etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Akit başlık ve lede'de 'tarihi adım', 'örnek bir karar' ve 'geniş yankı uyandıracak' gibi birbirini destekleyen olumlu sunum tercihlerini birleştiriyor; Hürriyet aynı olguyu yalın veriyor.",
+   "alternative_explanation": "Kurum açıklamasındaki dil aktarılmış olabilir.",
+   "missing_context": [
+    "Akit'in kaynak metni"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "tarihi adımı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye Sigorta fon kazancını TMSF'ye iade etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit kendi sesinde 'tarihi adım' ve 'örnek bir karar' gibi değerlendirici ifadeler kullanıyor; Hürriyet aynı olguyu bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "İfade şirketin kendi açıklamasından alınmış olabilir.",
+   "missing_context": [
+    "İfadenin atfedilip atfedilmediği"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,234 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SPK'dan flaş karar",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında sıcak gelişme!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SPK, Tera Portföy ve Pusula Portföy'ün sermaye piyasası faaliyetlerini geçici olarak durdurdu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "'Flaş karar' ve 'sıcak gelişme' ifadeleri kurumların kendi başlıklarında aciliyet ve heyecan yüklüyor; aynı karar başka kurumda nötr biçimde aktarılıyor.",
+   "alternative_explanation": "'Flaş' ve 'sıcak gelişme' Türk haber dilinde yerleşik son dakika kalıpları olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SPK, Tera Portföy ve Pusula Portföy'ün sermaye piyasası faaliyetlerini askıya aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SPK, Tera Portföy ve Pusula Portföy'ün sermaye piyasası faaliyetlerini geçici olarak durdurdu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SPK düğmeye bastı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı karar 'askıya aldı', 'geçici olarak durdurdu' ve 'düğmeye bastı' biçiminde farklı sözcüklerle anlatılıyor; ilk ikisi arasındaki fark büyük ölçüde kayıt farkı, çağrışım farkı belirgin değil.",
+   "alternative_explanation": "'Askıya almak' ile 'geçici olarak durdurmak' eşanlamlıdır; fark üslup tercihi olarak okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında Tera ve Pusula Portföy şirketlerinin faaliyetleri durduruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Faaliyetler durdu, bütün fonlar tasfiye kapsamına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tera ve Pusula Portföy'ün faaliyetleri geçici olarak durduruldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı SPK kararı bir başlıkta ceza soruşturmasıyla, bir başlıkta fonların tasfiyesiyle, bir başlıkta yalnızca geçici durdurma olarak öne çıkarılıyor.",
+   "alternative_explanation": "Farklı başlıklar kararın farklı ama eşit derecede ilgili sonuçlarını özetliyor olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SPK, fon soruşturmasının merkezindeki Tera Portföy Yönetimi AŞ ile Pusula Portföy Yönetimi AŞ'nin",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kurul, daha önce tasfiyesine karar verilen fonların dışında kalan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurum kararı süregelen fon soruşturmasına ve daha önce alınan tasfiye kararlarına bağlayarak kurumsal bir süreç içinde sunuyor.",
+   "alternative_explanation": "Önceki kararların anılması olgusal arka plan bilgisi olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SPK düğmeye bastı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Düğmeye bastı' ifadesi bir mecaz içeriyor; ancak bu, bir işe başlamayı anlatan yerleşik bir deyimdir ve rol ya da eylem yolu ataması yapmıyor.",
+   "alternative_explanation": "İfade gündelik dilde kalıplaşmış bir deyim olarak okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir başlık ya da lede yalnızca iki seçenek sunan bir ya/ya da kurgusu içermiyor.",
+   "alternative_explanation": "Haberler tek bir kurul kararını aktarıyor.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "automation-bias",
+  "authority-bias",
+  "framing-effect",
+  "salience-bias",
+  "ai-literacy-gap",
+  "bandwagon-effect"
+ ],
+ "selection_uncertainty": [
+  "Farklı illerdeki operasyonlar tek olayda birleşmiş olabilir.",
+  "Sistemin işleyişine dair bilgi yok."
+ ],
+ "selection_note": "'Yapay zeka destekli' vurgusu sisteme aşırı güven ve otorite etkisi yaratabilir."
+}

@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "word-choice",
+  "loaded-language",
+  "thematic-framing",
+  "emphasis-framing"
+ ],
+ "selection_uncertainty": [
+  "'Vurgun' ifadesinin kurumun kendi sesi olup olmadığı kontrol edilmeli."
+ ],
+ "selection_note": "cumhuriyet 'vurgun' tercihi; sol/dw tutuklu sayısı ve SPK kararı bağlamı veriyor."
+}

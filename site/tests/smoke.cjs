@@ -503,7 +503,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     for (const w of [1280, 390]) {
       [ctx, page] = await open(`kisaca ${w}`);
       await page.setViewportSize({ width: w, height: w === 390 ? 844 : 800 });
-      await page.goto(url("#/olay?e=s4374")); await settle(page);
+      await page.goto(url("#/olay?e=s4844")); await settle(page); /* a kept week-9 Anlatı narrative (NW w9) with a coded "Ayrışan nokta" */
       const tfProbe = async () => { await page.waitForFunction(() => !document.getElementById("app").classList.contains("intro"), null, { timeout: 6000 }).catch(() => {}); return page.evaluate(() => ["app", "view"].map((i) => document.getElementById(i)).concat([document.querySelector("main")]).filter(Boolean)
         .map((e) => { const s = getComputedStyle(e); return [s.transform, s.filter, s.willChange].join(" "); })
         .filter((s) => s !== "none none auto")); };

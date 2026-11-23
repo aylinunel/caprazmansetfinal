@@ -1,0 +1,240 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Düşme anı kamerada",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "kurtulan olmadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ilk belirlemelere göre uçağın teknik arıza nedeniyle düştüğünü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çok sayıda ölü var",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı uçak kazasında A Haber görüntüye ('Düşme anı kamerada'), Milli Gazete hayatta kalan olmamasına, Habertürk teknik arıza nedenine, Haber7 ve TGRT ölü sayısının belirsizliğine vurgu yapıyor.",
+   "alternative_explanation": "Kurumlar olayın farklı zamanlarındaki bilgiyi (17 ve 19 ölü) aktarıyor; vurgu farkı bilgi akışındaki zaman farkından kaynaklanabilir.",
+   "missing_context": [
+    "Hangi bilginin hangi saatte açıklandığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'da korkunç kaza",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "askeri kargo uçağı düştü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "17 can kaybı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olay için 'kaza', 'düştü', 'kargo/nakliye', 'can kaybı', 'öldü' gibi farklı sözcükler kullanıyor; çoğu fark üslup düzeyinde, yalnızca 'korkunç kaza' çağrışım farkı taşıyor.",
+   "alternative_explanation": "Sözcük farkları eş anlamlı çeşitlilik olabilir.",
+   "missing_context": [
+    "Çağrışım farkının varlığını gösteren daha net örnek"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kazanın teknik arızadan kaynaklandığı değerlendiriliyor.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Evrensel ve Türkiye Gazetesi 'teknik arızadan kaynaklandığı' diyerek nedensel ifade kuruyor; ancak ifade 'değerlendiriliyor' ile temkinli ve diğer kurumlarda Savunma Bakanlığı'na atfedilmiş.",
+   "alternative_explanation": "İfade Rusya Savunma Bakanlığı'nın ilk belirlemesine dayanıyor olabilir; bu durumda kurumun kendi nedensellik iddiası değildir.",
+   "missing_context": [
+    "Evrensel metninde kaynağın belirtilip belirtilmediği",
+    "Resmî soruşturma sonucu"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'da korkunç kaza",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milli Gazete başlığında 'korkunç' ile felaket tonu var; başlıkta ölçek ya da kaynak verilmiyor, ancak 'kurtulan olmadı' bir ölçek ipucu veriyor ve sözcük listedeki türden güçlü bir tehdit sözcüğü değil.",
+   "alternative_explanation": "'Korkunç' sıradan bir kaza haberi sıfatı olabilir; olayın ciddiyeti ölü sayısıyla orantılıdır.",
+   "missing_context": [
+    "Başlık dışındaki gövde metni",
+    "Risk ölçeği/olasılık bilgisi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'da korkunç kaza",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Rusya'da askeri nakliye uçağı düştü: 19 ölü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Milli Gazete kendi sesiyle 'korkunç' değerlendirmesini ekliyor; aynı gerçekler Habertürk/Sondakika'da bu sözcük olmadan veriliyor.",
+   "alternative_explanation": "'Korkunç' 19 kişinin ölümüne uygun bir tanımlayıcı olabilir.",
+   "missing_context": [
+    "Milli Gazete lede metni"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam veya diğer kurumların haberleri sorunun yinelenen/yapısal olduğunu göstermiyor; metin tek bir olayı aktarıyor, kişi hikâyesi yok.",
+   "alternative_explanation": "Tek seferlik kaza haberi.",
+   "missing_context": [
+    "Önceki benzer uçak kazaları",
+    "Rus askeri filosunun durumu"
+   ]
+  }
+ ]
+}

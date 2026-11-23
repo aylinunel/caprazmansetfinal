@@ -11934,6 +11934,8 @@ function pgHome7() {
     step(1, "Karşılaştır", "Aynı olayın bütün başlıklarını yan yana koyarız.") +
     step(2, "Fark et", "Kurumlar arasında ayrışan sözcükleri işaretleriz.") +
     step(3, "Ölç", "Bu farkların haftalar boyunca tekrar edip etmediğini sayarız.") + "</ol></div></section>";
+  if (D.W9) h += '<section class="v7-yn-band"><a class="v7-hc" href="#/yeni9"><b>9’da yeni</b><span>' + orN(m.articles) + " başlık, " + D.meta.sources.length +
+    " kurum, " + esc(D.meta.v2.target.end) + " tarihine kadar: eklenen hafta hangi bulguları değiştirdi?</span></a></section>";
   if (D.W82) h += '<section class="v7-yn-band"><a class="v7-hc" href="#/yeni82"><b>8.2’de yeni</b><span>' + esc(D.W82.band) + "</span></a></section>" +
     '<section class="v7-yn-band"><a class="v7-hc" href="#/oruntu?q=yz"><b>AI ne buldu</b><span>En çok kurumun verdiği olaylarda AI’nin fark ettiği medya teknikleri ve yanlılıklar, ne anlama geldikleriyle.</span></a></section>';
   if (D.W81) h += '<section class="v7-yn-band"><a class="v7-hc" href="#/yenilikler"><b>8.1’de yeni</b><span>' + orN(m.articles) + " başlık, " + D.meta.sources.length +
@@ -14147,6 +14149,16 @@ function pgYenilikler() {
 }
 SECTIONS.push({ p: "/yenilikler", label: "8.1’de yeni", fn: pgYenilikler });
 DETAIL["/yenilikler"] = { fn: pgYenilikler, of: "/yenilikler" };
+/* 9 "Yeni": the 8.2 build against the 9 build, from D.W9 (pipeline/capraz_pipeline/whatsnew9.py); same cards as 8.1. */
+function pgYeni9() {
+  var W = D.W9;
+  if (!W) return '<div class="wrap page"><div class="phead"><h1>9’da yeni</h1><p class="lede">Bu sürümde karşılaştırma verisi yok.</p></div></div>';
+  return '<div class="wrap page v7-yn"><div class="phead"><div class="eyebrow">Çapraz Manşet 9</div><h1>9’da yeni: eklenen hafta neyi değiştirdi?</h1>' +
+    '<p class="lede">Aşağıda bütün analizlerin 8.2 ve 9 sürümlerindeki sonucu yan yana; <b>Yeni</b> yalnızca 9’da olabilen bulgu, <b>Değişti</b> sonucu değişen, <b>Sürüyor</b> aynı kalan bulgudur. Her sayı iki veri paketinden hesaplanır.</p></div>' +
+    '<div class="yn-grid">' + W.findings.map(ynCard).join("") + "</div>" +
+    '<p class="xsmall">Önceki sürümler: <a href="#/yeni82">8.2’de yeni</a> · <a href="#/yenilikler">8.1’de yeni</a>. Yöntem ve sınırlar: <a href="#/yontem">Nasıl çalışır</a>.</p></div>';
+}
+SECTIONS.push({ p: "/yeni9", label: "9’da yeni", fn: pgYeni9 });
 
 /* 8.2 Örüntüler analysis: one outlet profile across every measure (Genel bakış), and the AI imzalı findings woven into
    the existing pages: concepts, wording vs loaded language and technique x bloc (Nasıl anlatıyor), AI responsibility vs

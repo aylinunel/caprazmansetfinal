@@ -1,0 +1,275 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'li Çukurova Belediyesi'ne rüşvet ve yolsuzluk operasyonu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesindeki ihale ve doğrudan teminlerde usulsüzlük yapıldığı iddialarına ilişkin yürütülen soruşturma kapsamında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürerken ve başka kurumlar 'iddialarına ilişkin' ifadesini kullanırken, bir başlık parti etiketli belediyeyi 'rüşvet ve yolsuzluk' suçlarıyla iddia işareti olmadan birleştiriyor.",
+   "alternative_explanation": "Operasyonun resmi adı suç türüyle anıldığı için başlık suç tipini olgusal bir tanım olarak da kullanıyor olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri",
+    "Savcılık açıklamasının tam metni",
+    "Şüphelilerin savunmaları"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'li Çukurova Belediyesi'ne rüşvet ve yolsuzluk operasyonu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "YENİ Partili Çukurova Belediyesi'ne operasyon",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP’den istifa ederek Yeni Parti’ye geçen Belediye Başkanı Emrah Kozay",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı belediye bir kurumun kendi sesinde 'CHP'li', başka kurumda 'YENİ Partili' olarak etiketleniyor; başka bir kurum başkanın CHP'den ayrıldığını belirtiyor. Parti etiketi yalnızca kimlik bildirmenin ötesinde bir konumlama işlevi görüyor.",
+   "alternative_explanation": "Eski başkan CHP yöneticisi olduğu için 'CHP'li' etiketi onun dönemine yapılan bir atıf olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesi'ne rüşvet operasyonu! Eski ve yeni başkanlar gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesi'ne yönelik operasyonda 44 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı operasyon bir kurumda 'rüşvet operasyonu', başka kurumda yalnızca 'operasyon' olarak adlandırılıyor; suç türü adı suçlamanın kesinleşmiş olduğu çağrışımı taşıyor.",
+   "alternative_explanation": "Suç türü operasyonun resmi kapsamını bildiren olgusal bir bilgi olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'li Çukurova Belediyesi'ne rüşvet ve yolsuzluk operasyonu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SON DAKİKA HABERİ: Çukurova Belediyesi'ne operasyon: 44 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Soruşturmada, başkanın teyzesinin örgüt yöneticisi konumunda olduğu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı operasyon bir başlıkta parti kimliği ve suç türü, bir başlıkta gözaltı sayısı, bir lede'de başkanın akrabasına ilişkin iddia üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar farklı bilgi kaynaklarına erişmiş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesi'ne yolsuzluk ve rüşvet operasyonu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesi'ne yönelik operasyonda 44 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık 'yolsuzluk ve rüşvet' sözcüklerini ünlemle kullanıyor, başka kurum aynı olguyu bunlar olmadan veriyor; ancak bu sözcükler kartta sayılan türden değerlendirme sözcükleri değil, hukuki suç adları.",
+   "alternative_explanation": "Suç adları soruşturmanın resmi kapsamını bildiren olgusal terimlerdir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'li Çukurova Belediyesi'ne rüşvet ve yolsuzluk operasyonu: Başkan Kozay ve eski başkan Çetin de...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çukurova Belediyesi'ne yönelik operasyonda 44 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı başlıkta 'CHP'li' parti etiketi ve iddia işaretsiz 'rüşvet ve yolsuzluk' suç adı birlikte kullanılıyor; ikisi de suçlamayı belirli bir partiyle ilişkilendiren aynı yönde işliyor. Başka bir kurum aynı olguyu bu birleşim olmadan veriyor.",
+   "alternative_explanation": "İki unsur eski başkanın parti görevi ve soruşturmanın resmi kapsamı olarak olgusal da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

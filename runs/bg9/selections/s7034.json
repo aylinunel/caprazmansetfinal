@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "authority-bias",
+  "belief-perseverance",
+  "confirmation-bias",
+  "framing-effect",
+  "salience-bias"
+ ],
+ "selection_uncertainty": [
+  "Başsavcılık itirazının sonucu belli değil.",
+  "Önceki iddiaların içeriği metinde yok."
+ ],
+ "selection_note": "Adli Tıp raporuna dayanma ve itiraz vurgusu otorite ve inanç sürdürme açısından incelenebilir."
+}

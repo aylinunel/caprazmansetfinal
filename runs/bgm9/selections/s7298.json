@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "episodic-framing",
+  "emphasis-framing",
+  "loaded-language",
+  "word-choice",
+  "responsibility-framing"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Valinin açıklaması alıntı."
+ ],
+ "selection_note": "Bireysel trajedi odaklı anlatım ve 'acı haber' gibi duygusal dil."
+}

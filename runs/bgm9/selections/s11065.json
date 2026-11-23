@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "emphasis-framing",
+  "word-choice",
+  "responsibility-framing",
+  "labeling"
+ ],
+ "selection_uncertainty": [
+  "Tutuklama talebi ile tutuklama karışabilir.",
+  "Farklı soruşturmalar birleşmiş olabilir."
+ ],
+ "selection_note": "Talep/tutuklama ve aile adı vurgusu kurumlara göre değişiyor."
+}

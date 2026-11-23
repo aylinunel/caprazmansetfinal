@@ -1,0 +1,281 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay Devlet Başkanı Pena bankacılık krizinin ardından istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay Devlet Başkanı Pena, partisi destekli azil sürecinin ardından istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "355 milyon dolarlık emeklilik fonu krizi Pena’yı koltuğundan etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifa olgusunu bloomberght bankacılık krizi, haberler partinin desteklediği azil süreci, cumhuriyet ise 355 milyon dolarlık emeklilik fonu üzerinden başlığa taşıyor; öne çıkan boyut (kriz, siyasi süreç, tutar) kurumdan kurama değişiyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "emeklilik fonunun bankada tutulmasına ilişkin iddiaların ardından",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sorumluluk soruşturma ve azil sürecine bağlı ve iddia aşamasında (cumhuriyet lede). Ancak incelenen başlıkların dilbilgisi Pena'ya kusur yüklemiyor; özne kriz ya da süreç, fiil ise istifa. İkinci ve üçüncü koşul için gözlem yok.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay'da bankacılık krizi hükümeti devirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "koltuğundan etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "fon skandalı devlet başkanını devirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay Devlet Başkanı Santiago Pena, görevinden istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifa için trthaber nötr 'görevinden istifa etti' derken ntv ve karar 'devirdi', cumhuriyet 'koltuğundan etti' sözcüklerini kendi sesiyle kullanıyor; bu sözcükler zorlama/yıkım çağrışımı taşıyor ve yalnızca üslup farkı değil.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay'da bankacılık krizi hükümeti devirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ueno Bank skandalı Paraguay'ı sarstı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay'da özel banka battı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "ntv 'devirdi', star 'sarstı' ve mynet 'battı' ile krizi bir yıkım/deprem/gemi batması imgesiyle anlatıyor. Ancak bunların kalıplaşmış ifadelerden ayrılıp bir düşman, çare veya eylem planı atadığı metinden açıkça görülmüyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ueno Bank skandalı Paraguay'ı sarstı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Banka skandalı: Paraguay devlet başkanı istifa etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Paraguay Devlet Başkanı Santiago Pena, görevinden istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "star ve diken kendi sesleriyle 'skandal', 'sarstı' gibi değerlendirici sözcükler kullanıyor; trthaber aynı olayı bu sözcükler olmadan aynı olgularla veriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Paraguay'da bankacılık krizi hükümeti devirdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "fon skandalı devlet başkanını devirdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "baskılar üzerine istifa etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "ntv ve karar başlıkta krizin hükümeti 'devirdiğini' kesin nedensel fiille söylüyor, star ise istifayı 'baskılar üzerine' bağlıyor. Aradaki azil süreci lede'lerde anıldığı için bağın yalnızca sıra/eşzamanlılığa dayanıp dayanmadığı net değil.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  }
+ ]
+}

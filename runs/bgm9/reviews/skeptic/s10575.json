@@ -1,0 +1,188 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gözümüzde canlandı koskoca mazi!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Futbolun yaşayan efsanesi Ronaldinho",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ronaldinho, 11 yıl sonra sahalara döndü — Brezilyalı efsane futbolcu Ronaldinho, aktif futbol kariyerini sonlandırmasının",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Mynet ve T24 kendi sesleriyle 'koskoca mazi' ve 'yaşayan efsane' gibi değerlendirici sözcükler kullanıyor; Evrensel aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "'Efsane' sporda kalıplaşmış bir unvan olarak kullanılıyor olabilir.",
+   "missing_context": [
+    "Bu unvanların kalıp olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ronaldinho, 11 yıl sonra sahalara galibiyetle geri döndü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Biletler tükendi, tribün yetmedi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Geleceği hakkında açıklama...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "eski günlerinden kesitler sundu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı dönüşü Sondakika galibiyetle, Türkiye Gazetesi bilet satışıyla, Cumhuriyet gelecek planıyla, NTV ise oyun performansıyla öne çıkarıyor.",
+   "alternative_explanation": "Spor haberinde farklı boyutlar farklı okur ilgilerine hitap edebilir.",
+   "missing_context": [
+    "Kurumların kaynak materyali"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "son resmi maçını 2015'te Fluminense formasıyla oynadıktan sonra 11 yıl aradan sonra",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "yatırımcısı olduğu İtalya 3’üncü Lig (Serie C) ekibi Ravenna",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Onedio ve DHA, dönüşü Ronaldinho'nun önceki kariyeri ve kulübe yatırımcı olması bağlamına yerleştiriyor.",
+   "alternative_explanation": "Bu bilgi haberin anlaşılması için gerekli arka plan olabilir.",
+   "missing_context": [
+    "Alternatif bağlamlar"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde bir şeyin başka bir şeye yol açtığını söyleyen açık nedensellik ifadesi yok; 'galibiyet iki golle geldi' sonucu bildiriyor.",
+   "alternative_explanation": "Metinler olguları sıralıyor.",
+   "missing_context": [
+    "Nedensellik ifadesi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber tekil bir spor olayını aktarıyor; yinelenen veya yapısal bir sorun olarak sunulmuyor.",
+   "alternative_explanation": "Konu tek seferlik bir dönüş haberi.",
+   "missing_context": [
+    "Yapısal bir sorun olduğunu gösteren bağlam"
+   ]
+  }
+ ]
+}

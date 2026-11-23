@@ -1,0 +1,259 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 22:11] Kaşif Kozinoğlu'nun ölüm nedeni belli oldu! Zehirlenme şüphesi aydınlatıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 22:03] Son Dakika... 'Kaşif Kozinoğlu'nun ATK raporu gönderildi: 'Ölüm nedeni' açıklandı! Başsavcılık itiraz edecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[milligazete · 23:31] Kaşif Kozinoğlu'nun ölüm nedeni belli oldu! Antimon tespit edilmişti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı rapor için TGRT şüphenin giderildiğini, Cumhuriyet başsavcılığın itirazını, Milli Gazete daha önce tespit edilen antimonu öne çıkarıyor.",
+   "alternative_explanation": "Kurumların vurguları raporun ve itirazın farklı bölümlerine dayanan olgusal seçimler olabilir.",
+   "missing_context": [
+    "Başsavcılığın itiraz gerekçesi."
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[onedio · 22:10] Kaşif Kozinoğlu'nun Kesin Ölüm Nedeni Belli Oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 22:08] Eski MİT görevlisi Kaşif Kozinoğlu’nun 'ölüm nedeni' açıklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eski MİT mensubu Kaşif Kozinoğlu’nun şüpheli ölümüne",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı rapor Onedio'da 'Kesin Ölüm Nedeni Belli Oldu', Karar'da tırnak içinde 'ölüm nedeni' açıklandı olarak veriliyor, Takvim ise ölümü 'şüpheli ölüm' diye niteliyor; 'kesin' kapanış, tırnak ve 'şüpheli' ise mesafe ve kuşku çağrışımı taşıyor.",
+   "alternative_explanation": "Tırnak kullanımı yalnızca rapordaki ifadeyi aktarmak için olabilir.",
+   "missing_context": [
+    "Raporun kesinlik derecesine ilişkin ifadeleri."
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski MİT görevlisi Kaşif Kozinoğlu'nun",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Eski MİT Dış Operasyonlar Daire Başkanı Kaşif Kozinoğlu'nun",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kozinoğlu kurumlarda 'Eski MİT görevlisi', 'MİT mensubu', 'Eski MİT Dış Operasyonlar Daire Başkanı' gibi farklı ama nötr unvanlarla anılıyor; etiketler meşruiyet yargısı taşımıyor.",
+   "alternative_explanation": "Farklı unvanlar ayrıntı düzeyi farkı.",
+   "missing_context": [
+    "Kozinoğlu'nun resmi son unvanı."
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başsavcılık itiraz edecek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Süreç itirazla sürdüğü için ölümün koşulları kesinleşmemiş; ancak başlıklar adı geçen bir aktöre fail ya da ihmal atfetmiyor.",
+   "alternative_explanation": "Haberler bir resmi raporu aktarıyor; sorumluluk atfı yapmıyor.",
+   "missing_context": [
+    "İtirazın konusu olan iki değerlendirmenin ne olduğu."
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski MİT mensubu Kaşif Kozinoğlu’nun şüpheli ölümüne ilişkin 15 yıl sonra hazırlanan Adli Tıp raporu tartışma yarattı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "2011 yılında Silivri Cezaevi'nde gerçekleşen vefatına",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim ve Akit raporu 2011'deki ölümden bu yana süren 15 yıllık soruşturma süreci içine yerleştiriyor.",
+   "alternative_explanation": "Tarih bilgisi olayın anlaşılması için gereken olgusal arka plan.",
+   "missing_context": [
+    "Soruşturmanın neden yeniden başlatıldığı."
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[diken · 23:55] Adli Tıp: Kaşif Kozinoğlu kalp hastalığı nedeniyle öldü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Diken başlığı açık bir nedensellik ifadesi içeriyor; ancak bu ifade adı verilen resmi rapora ('Adli Tıp:') atfediliyor.",
+   "alternative_explanation": "Nedensellik bir resmi bulguya dayanıyor; kurumun kendi çıkarımı değil.",
+   "missing_context": [
+    "Raporun tam metni."
+   ]
+  }
+ ]
+}

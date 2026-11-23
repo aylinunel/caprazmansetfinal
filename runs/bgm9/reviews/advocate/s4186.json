@@ -1,0 +1,268 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'ın eski başdanışmanı Ertan Aydın",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "eski AK Parti milletvekili, araştırma ve kampanya şirketi kurucusu Ertan Aydın",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKP'li eski vekil Ertan Aydın",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi Evrensel'de Erdoğan'ın eski başdanışmanı, Türkiye Gazetesi'nde şirket kurucusu, Sol'da \"AKP'li eski vekil\" olarak anılıyor; Erdoğan'a yakınlık vurgusu tanımlamanın ötesinde siyasi bir değerlendirme yükü taşıyor.",
+   "alternative_explanation": "Tüm etiketler olgusal olarak doğru olabilir; kurumlar okur için en tanıdık özelliği seçmiş olabilir.",
+   "missing_context": [
+    "Kişinin hangi sıfatla kamuoyunda en çok bilindiği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: Ertan Aydın ve Gürol Sami Özer tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soygunu: Eski AK Parti milletvekili Ertan Aydın",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sermaye piyasası işlemlerine ilişkin fon soruşturması kapsamında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma Evrensel'de \"fon vurgunu\", 10haber'de \"fon soygunu\", Türkiye Gazetesi'nde \"sermaye piyasası işlemlerine ilişkin fon soruşturması\" olarak adlandırılıyor; \"vurgun/soygun\" suç önyargısı çağrıştırıyor.",
+   "alternative_explanation": "\"Fon vurgunu\" kamuoyunda yerleşmiş bir dosya adı olarak kullanılıyor olabilir.",
+   "missing_context": [
+    "Savcılığın dosyayı resmi olarak nasıl adlandırdığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon skandalına yönelik soruşturma kapsamında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 14:59] Fon soruşturmasında Ertan Aydın tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Evrensel ve Sözcü \"vurgun\", \"skandal\" gibi değerlendirici sözcükler kullanırken Türkiye Gazetesi aynı tutuklamayı bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Soruşturmanın kapsamı kurumlarca bu sözcükleri betimleyici kılacak ölçüde görülmüş olabilir.",
+   "missing_context": [
+    "Soruşturmanın iddianame aşamasındaki suç nitelendirmesi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturması: AKP'li eski vekil Ertan Aydın tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "adli kontrol kararına yapılan itiraz üzerine yeniden gözaltına alınan eski AK Parti milletvekili, araştırma ve kampanya şirketi kurucusu Ertan Aydın tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklamayı Sol kişinin parti kimliği üzerinden, Türkiye Gazetesi ise usul (itiraz üzerine yeniden gözaltı) ve meslek üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgu kurumların haber kaynağı ve yer kısıtından kaynaklanabilir.",
+   "missing_context": [
+    "Tutuklama gerekçesinin içeriği"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kurumun kendi sesiyle yalnızca iki seçenek sunduğu bir ifade"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturması kapsamında Türkiye Sigorta Genel Müdür Yardımcısı Gürol Sami Özer de bugün gözaltına alındı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sermaye piyasalarında gerçekleştirilen işlemlere dair yürütülen fon soruşturmaları kapsamında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[yeniasya · 00:53] Ertan Aydın tutuklandı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Diğer kurumlar soruşturmanın birden çok şüpheliyi ve birden çok dosyayı kapsadığını gösterirken Yeni Asya olayı yalnızca tek bir kişinin tutuklanması olarak veriyor; başlıkta geniş örüntüye değinilmiyor ve giriş yok.",
+   "alternative_explanation": "Kısa başlık son dakika formatından kaynaklanabilir; tam metinde bağlam verilmiş olabilir.",
+   "missing_context": [
+    "Yeni Asya haberinin tam metni"
+   ]
+  }
+ ]
+}

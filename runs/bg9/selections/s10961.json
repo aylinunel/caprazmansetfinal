@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "salience-bias",
+  "availability-heuristic",
+  "negativity-bias",
+  "attentional-bias"
+ ],
+ "selection_uncertainty": [
+  "Küçük deprem haberleri; yorum içeriği çok az.",
+  "Farklı depremler tek olayda birleşmiş olabilir."
+ ],
+ "selection_note": "Rutin deprem bildirimleri; önyargı belirtisi zayıf."
+}

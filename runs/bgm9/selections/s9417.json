@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "loaded-language",
+  "emphasis-framing",
+  "word-choice",
+  "spin"
+ ],
+ "selection_uncertainty": [
+  "Anlaşma içerikleri sınırlı."
+ ],
+ "selection_note": "'Başkan' / 'Cumhurbaşkanı' unvan farkı ve 'kritik' nitelemesi."
+}

@@ -1,0 +1,251 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan istemişti: Erdoğan, başdanışmanı Oktay Saral'ı görevden aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başörtüsü yasağına karşı çıkıp Azerbaycan'ın tepkisini çekmişti!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Oktay Saral istifa ettiğini açıkladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Başdanışmanı Oktay Saral 10 yıllık görevinden istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı ayrılışı Sol Azerbaycan'ın talebiyle, Milli Gazete gerekçe olan başörtüsü eleştirisiyle, Sözcü istifa açıklamasıyla, Takvim ise 10 yıllık görev süresiyle öne çıkarıyor.",
+   "alternative_explanation": "Haber geliştikçe (iddia, doğrulama, istifa açıklaması) başlık odağı değişmiş olabilir.",
+   "missing_context": [
+    "Başlıkların yayın zamanına göre bilgi durumu"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan istemişti: Erdoğan, başdanışmanı Oktay Saral'ı görevden aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Başdanışmanı Oktay Saral görevinden istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sol başlığı 'görevden aldı', NTV başlığı 'istifa etti' diyor; iki sözcüğün çağrışımı farklı. Ancak metindeki sıraya göre ilk haberler iddiayı, sonrakiler Saral'ın kendi açıklamasını aktarıyor.",
+   "alternative_explanation": "Fark, kurumların tercihinden çok bilginin zamanla netleşmesinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Hangi başlığın hangi bilgi anında yazıldığı",
+    "Resmî bir görevden alma kararı olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan istemişti: Erdoğan, başdanışmanı Oktay Saral'ı görevden aldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Sol başlığı Erdoğan'ı özne yaparak görevden almayı ve Azerbaycan'ın isteğini atıf işareti olmadan bildiriyor; lede'de ise talep 'iddia edilmişti' diye geçiyor.",
+   "alternative_explanation": "Başlık, kısa yazım gereği iddia ifadesini dışarıda bırakmış olabilir; bu bir soruşturma veya yargı süreci değil, siyasi bir ayrılış.",
+   "missing_context": [
+    "Görevden almanın resmen doğrulanıp doğrulanmadığı"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Başdanışmanı Oktay Saral",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Görevden alınan Cumhurbaşkanı Danışmanı Oktay Saral",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar Saral'ı 'Başdanışman' veya 'Danışman' olarak anıyor; bu unvanlar kimlik bildiriyor, meşruiyete dair bir değerlendirme taşımıyor.",
+   "alternative_explanation": "Unvan farkı kısaltma veya yazım tercihi olabilir.",
+   "missing_context": [
+    "Değerlendirme taşıyan bir sıfat"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başörtüsü yasağına karşı çıkıp Azerbaycan'ın tepkisini çekmişti!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milli Gazete başlığı bir gerekçe seçimi ve ünlem içeriyor; aynı başlık ve lede'de aynı yöne işaret eden ikinci bağımsız bir sunum tercihi net seçilemiyor.",
+   "alternative_explanation": "Gerekçenin başlığa alınması tek bir editoryal seçim olabilir.",
+   "missing_context": [
+    "Aynı yöne işaret eden ikinci bir sunum tercihi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan hükümeti ile AKP arasında yaşanan “başörtüsü” geriliminin ardından",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Azerbaycan Cumhurbaşkanı İlham Aliyev’in liderliğindeki Yeni Azerbaycan Partisi’nin (YAP), ülkedeki okullarda başörtüsünü yasaklaması",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sol ve Yeni Yaşam, ayrılışı Azerbaycan'daki başörtüsü yasağı ve iki hükümet arasındaki gerilim bağlamına yerleştiriyor.",
+   "alternative_explanation": "Bağlam, haberin anlaşılması için gerekli arka plan olabilir; seçilen bağlam okumayı etkiler ama kendi başına kusur değildir.",
+   "missing_context": [
+    "Alternatif bağlam seçenekleri"
+   ]
+  }
+ ]
+}

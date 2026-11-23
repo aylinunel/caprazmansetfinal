@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "anchoring-bias",
+  "salience-bias",
+  "negativity-bias",
+  "availability-heuristic",
+  "authority-bias",
+  "recency-effect"
+ ],
+ "selection_uncertainty": [
+  "Ölü ve yaralı sayıları kurumlar ve saatler arasında değişiyor.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "İlk ve sonraki sayılar arasındaki tutarsızlık öne çıkıyor."
+}

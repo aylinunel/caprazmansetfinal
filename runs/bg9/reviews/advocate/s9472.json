@@ -1,0 +1,195 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 15:26] Manifest grubunun yapımcısı Tolga Akış'a tahliye: Yurt dışına çıkışı yasak... \"+18\" savunması",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 14:39] Manifest'in kurucusu Tolga Akış tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı tahliye bir başlıkta yurt dışı yasağı ve savunma ile, diğerinde yalnızca tahliye olarak sunuluyor; ancak bu farka dayanan bir tercih ya da yargı metinde kurulmuyor.",
+   "alternative_explanation": "Kuruluşlar karara eşlik eden adli kontrol ve savunma ayrıntılarını farklı ölçüde vermiş olabilir.",
+   "missing_context": [
+    "Sunum farkına dayanan açık bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[mynet · 14:47] Manifest'in kurucusu Tolga Akış tahliye edildi! \"Cinsel içerikli herhangi bir koreografi yapılmadı\"",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık savunmadan çarpıcı bir alıntıyı öne çıkarıyor; ancak bu belirgin ayrıntının bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "alternative_explanation": "Alıntı sanığın savunmasının özünü aktarıyor olabilir.",
+   "missing_context": [
+    "Belirgin ayrıntıya dayanan açık bir sonuç"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "“Manifest grubu genel anlamda birleştirici, pozitifliği …",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sanığın grubu olumlu nitelediği bir savunma aktarılıyor; ancak bu olumlu izlenimin başka bir alandaki yargıya (örneğin suçlamanın değerlendirilmesine) taşındığını gösteren bir bağlantı yok.",
+   "alternative_explanation": "Sanığın kendi grubunu olumlu anlatması olağan bir savunma ifadesidir.",
+   "missing_context": [
+    "Olumlu izlenimden türetilen ikinci bir yargı"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler bir olayın haber başlıklarından oluşuyor; bir etkinliğe bağlanan dış ödül, ödülün kaldırılması ya da sonrasında gönüllü katılımın azalması gibi bir gözlem yer almıyor.",
+   "alternative_explanation": "Haber metinleri motivasyon değişimini ölçecek bir akış içermez; kartın konusu bu olayla ilişkili değildir.",
+   "missing_context": [
+    "Kişinin ödül öncesi gönüllü katılım düzeyi",
+    "Beklenen ve etkinliğe bağlı bir ödül",
+    "Ödül kaldırıldıktan sonraki davranış ölçümü"
+   ]
+  },
+  {
+   "card_id": "serial-position-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde sıralı bir dizinin öğelerinin hatırlanmasına ya da seçilmesine ilişkin bir anlatım bulunmuyor.",
+   "alternative_explanation": "Haberler bir duruşma kararını aktarıyor.",
+   "missing_context": [
+    "Sıralı öğelerin hatırlanmasına dair bir bildirim"
+   ]
+  },
+  {
+   "card_id": "take-the-best-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde iki seçenek arasında tek bir ipucuna dayanılarak yapılmış ve gerekçesi açıklanmış bir seçim yer almıyor.",
+   "alternative_explanation": "Mahkemenin tahliye kararının gerekçesi metinlerde verilmiyor.",
+   "missing_context": [
+    "Kararın gerekçesi ve değerlendirilen ölçütler"
+   ]
+  }
+ ]
+}

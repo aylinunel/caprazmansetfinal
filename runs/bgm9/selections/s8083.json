@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "word-choice",
+  "responsibility-framing",
+  "labeling",
+  "emphasis-framing"
+ ],
+ "selection_uncertainty": [
+  "Soruşturma sürüyor; suçluluk belirlenmemiş."
+ ],
+ "selection_note": "'Vurgun' nitelemesi süreç tamamlanmadan sorumluluk ima edebilir."
+}

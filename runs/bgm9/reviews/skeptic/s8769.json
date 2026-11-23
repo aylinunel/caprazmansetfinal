@@ -1,0 +1,219 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dev Satın Alma Resmen Tamamlandı: Emlak Katılım, Katılımevim ve Birevim’i Satın Aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emlak Katılım; Katılımevim, Birevim ve İktisat Katılım'ın devri için gerekli izinleri aldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Onedio satın almanın tamamlandığını, AA izinlerin alındığını öne çıkarıyor; fark rakip boyutlardan çok işlemin aşamasına ilişkin.",
+   "alternative_explanation": "Boyut farkları yayın saatindeki bilgi düzeyine, hedef okur kitlesine ve başlık uzunluğuna bağlı olabilir.",
+   "missing_context": [
+    "Her kurumun tam metni",
+    "Başlıkların güncellenme geçmişi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SON DAKİKA! Emlak Katılım Katılımevim ve Birevim'i satın aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emlak Katılım; Katılımevim, Birevim ve İktisat Katılım'ın devri için gerekli izinleri aldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sabah 'satın aldı', AA 'devri için gerekli izinleri aldı' diyor; fark çağrışımdan çok olgusal aşama farkı olabilir.",
+   "alternative_explanation": "Sözcük farkları kaynak metnin farklı aktarılmasından ya da bilgi düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların kaynak aldığı resmi metin",
+    "Aynı kurumların benzer olaylardaki sözcük tercihi"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Katılımevim ve Birevim için yeni dönem! Devir için onay çıktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay başlığın ana cümlesinde yer alıyor; sonuç ya da beklenen etki ancak ek bir unsur olarak veriliyor.",
+   "alternative_explanation": "Okur açısından önemli bir etkiyi olayla birlikte vermek bilgilendirme amaçlı olabilir.",
+   "missing_context": [
+    "Olayın yalnızca girişte yer aldığı, başlığın yalnızca bir öngörüyü verdiği örnek"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Birevim ve Katılımevim eylülde Pusula Finans Holding’deydi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "10Haber girişi devri şirketlerin eylüldeki sahiplik geçmişine bağlayarak bir süreç içine yerleştiriyor.",
+   "alternative_explanation": "Arka plan bilgisi vermek olağan haber pratiğidir; bu bir bağlam etkisidir, hata değildir.",
+   "missing_context": [
+    "Kurumun tam metnindeki bağlam bilgisinin kapsamı"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve girişlerde iki olay zaman sırasıyla ('ardından', 'sonrası') yan yana veriliyor; açık bir nedensellik ifadesi kurulmuyor.",
+   "alternative_explanation": "Zaman bildiren bağlaçlar olayın kronolojisini aktarmak için kullanılmış olabilir.",
+   "missing_context": [
+    "Nedensel bağı ileri süren açık bir ifade",
+    "Bağın dayandığı kanıt"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Birevim ve Katılımevim eylülde Pusula Finans Holding’deydi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bağlam ya da diğer kurumların kapsamı konunun yapısal ya da tekrarlayan bir sorun olduğunu göstermiyor; tek olayın aktarımı bu nedenle epizodik çerçeve sayılamaz.",
+   "alternative_explanation": "Tekil bir gelişmenin haberleştirilmesi haber türünün olağan biçimidir.",
+   "missing_context": [
+    "Konunun tekrarlayan ya da yapısal olduğunu gösteren veri ya da önceki vakalar"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,189 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kahreden haber",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Kahreden haber', 'acı haber' gibi duygusal ifadeler var; bunların bir yargıya dayanak yapıldığı gösterilmiyor.",
+   "alternative_explanation": "Üç işçinin ölümü gerçekten üzücü bir olaydır; ifade üslup olabilir.",
+   "missing_context": [
+    "Vurgunun yargıya bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz kanıta orantısız ağırlık verildiği gösterilmiyor.",
+   "alternative_explanation": "Maden kazası olumsuz olgudur; aktarımı orantılıdır.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıt"
+   ]
+  },
+  {
+   "card_id": "normalcy-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Belirli bir uyarının normal koşulların süreceği varsayımıyla küçümsendiğine dair ifade yok.",
+   "alternative_explanation": "Metinde bir uyarı ve onu görmezden gelen bir konuşmacı yok.",
+   "missing_context": [
+    "Belirli bir uyarı ve bunun küçümsendiğine dair ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Zonguldak Valisi Osman Hacıbektaşoğlu, yaralılardan ikisinin entübe edildiği aktardı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Vali ve bakanlar kaynak olarak anılıyor; statünün gerekçeli değerlendirmenin yerine geçtiği gösterilmiyor.",
+   "alternative_explanation": "Kaza bilgisini valilikten almak olağan ve ilgili bir doğrulama yoludur.",
+   "missing_context": [
+    "Resmi beyanın karşıt kanıta rağmen belirleyici sayıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "identifiable-victim-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cengiz Bölükbaşı, Recep Çolakoğlu ve Murat Kaya’nın cansız bedenleri çıkarıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mağdurların adları veriliyor; ancak bir yardım veya kaynak tahsisi kararı ve kimliklenmenin öncelik değiştirdiği gösterilmiyor.",
+   "alternative_explanation": "İsimlerin yayımlanması haberin aileleri bilgilendirme ve doğrulama işlevidir.",
+   "missing_context": [
+    "Bir tahsis kararı ve karar vericisi",
+    "Kimliklenmiş ve kimliklenmemiş gruba tepki karşılaştırması"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 19:32] Zonguldak’ta maden ocağındaki patlamanın ardından firari işletme müdürü tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar farklı vurgular (can kaybı, tutuklama) içeriyor; ancak eşdeğer olgular ve bir yargıya bağlanma gösterilmiyor.",
+   "alternative_explanation": "Farklı saatlerde farklı gelişmeler (patlama, tutuklama) haber konusu olmuştur.",
+   "missing_context": [
+    "Sunum farkına bağlı bir yargı ifadesi"
+   ]
+  }
+ ]
+}

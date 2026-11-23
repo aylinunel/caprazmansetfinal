@@ -1,0 +1,252 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de bomba gelişme",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de flaş gelişme",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Resmen açıklandı: Fenerbahçe'de Emre Belözoğlu dönemi!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "'Bomba' ve 'flaş' sözcükleri kurumların kendi başlıklarında sansasyon değeri yüklüyor; aynı gelişme başka kurumda bu sözcükler olmadan veriliyor.",
+   "alternative_explanation": "'Flaş gelişme' spor haberlerinde yerleşik bir son dakika kalıbı olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Emre Belözoğlu dönemi! Yuvaya dönüyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe’de ibre Emre Belözoğlu'na döndü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Yuvaya dönüyor' mecazı Belözoğlu'nu kulübün evladı rolüne yerleştiriyor olabilir; ancak 'yuvaya dönmek' ve 'ibre dönmek' kalıplaşmış deyimlerdir.",
+   "alternative_explanation": "Her iki ifade de spor dilinde yaygın deyimler olarak okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emre Belözoğlu Fenerbahçe'ye imzayı attı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Emre Belözoğlu sürprizi: Görüşmeler başladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe’de Emre Belözoğlu iddiası",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı gelişme 'imzayı attı', 'görüşmeler başladı' ve 'iddiası' sözcükleriyle anlatılıyor; sözcükler kesinlik derecesi bakımından farklı çağrışımlar taşıyor.",
+   "alternative_explanation": "Farklı sözcükler haberlerin farklı saatlerdeki bilgi düzeylerini yansıtıyor olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emre Belözoğlu ile anlaşma sağlandı! Conceiçao olmadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kasımpaşa'da Emre Belözoğlu dönemi resmen sona erdi!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Emre Belözoğlu dönemi resmen başladı: Anlaşma KAP'a bildirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı atama bir başlıkta başarısız alternatif aday, bir başlıkta eski kulüpten ayrılık, bir başlıkta resmi bildirim üzerinden öne çıkarılıyor; kazanan ve kaybeden taraf farklı başlıklarda öne geçiyor.",
+   "alternative_explanation": "Kurumların okur kitlelerine göre farklı kulüp perspektiflerini seçmesi olağandır.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Kocaman ya da Conceiçao derken 2. Emre Belözoğlu dönemi başlıyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık iki seçeneği anıyor ama üçüncü bir seçeneğin gerçekleştiğini bildiriyor; iki seçeneği tek seçenekler olarak sunmuyor.",
+   "alternative_explanation": "İfade süreçteki aday tartışmasını özetleyen bir kalıp.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de ikinci Emre Belözoğlu dönemi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Kocaman ya da Conceiçao derken 2. Emre Belözoğlu dönemi başlıyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar atamayı Belözoğlu'nun kulüpteki önceki dönemine atıfla bir seri içine yerleştiriyor.",
+   "alternative_explanation": "'İkinci dönem' ifadesi olgusal bir sıra bilgisi olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

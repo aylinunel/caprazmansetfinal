@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "selective-statistics",
+  "emphasis-framing",
+  "cherry-picking",
+  "spin"
+ ],
+ "selection_uncertainty": [
+  "'%0,43' bakana atfedilmiş; kurum tekniği değil.",
+  "Payda tartışması bağlam gerektiriyor."
+ ],
+ "selection_note": "Başlıklar oranı kendi sözü gibi kullanırsa seçici istatistik adayı olabilir."
+}

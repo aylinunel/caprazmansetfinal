@@ -1,0 +1,220 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Erdoğan, 'Karabağ Zaferi' programı kapsamında Azerbaycan’a gitti.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Recep Tayyip Erdoğan, Azerbaycan Zafer Günü kutlamaları dolayısıyla Azerbaycan'a gitti.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı ziyaret 'Karabağ Zaferi' ve parti etiketiyle ya da yalın 'Zafer Günü' çerçevesiyle sunuluyor; çerçevenin yargıya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati, karakter sınırı veya bilgi güncellemesinden kaynaklanıyor olabilir; okurun kararına etkisi gösterilmemiştir.",
+   "missing_context": [
+    "Okurun yargı veya tercihinin değiştiğine dair gözlem",
+    "Karşılaştırılan ifadelerin karar açısından eşdeğer olduğunun açık gösterimi"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Azerbaycan'da! Aliyev ile ikili görüşme",
+     "kind": "statement"
+    },
+    {
+     "source": "context",
+     "quote": "ahaber: sağ (85)",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Tayyip Erdoğan, Azerbaycan Cumhurbaşkanı İlham Aliyev ile görüşmek üzere Azerbaycan'a gitti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sağ yerleşimli kurum 'Başkan Erdoğan', diğer bir kurum 'AKP'li Cumhurbaşkanı' diyor; niteleme farkı gözleniyor, tutarsız standart gösterilmiyor.",
+   "alternative_explanation": "Yayın çizgisi farkları editoryal tercih, hedef kitle veya kaynak erişimi farkından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Aynı olaya benzer durumlarda farklı standart uygulandığını gösteren ifade",
+    "Grup üyeliğinin yargıyı etkilediğine dair açık bağlantı"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir alandaki olumlu izlenimin başka alana taşındığı görülmüyor.",
+   "alternative_explanation": "Olumlu ifadeler konuşmacıların kendi görüşü olabilir ve ilgili alanlar gerçekten bağlantılı olabilir.",
+   "missing_context": [
+    "İki alanın karar açısından ilgisiz olduğunun gösterimi",
+    "Birinci izlenimin ikinci yargıyı belirlediğine dair açık ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Erdoğan ile Aliyev'in kol kola olduğu anlar dikkat çekti.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Cumhuriyet çarpıcı bir anı öne çıkarıyor; bunun bir yargıya bağlandığı açık değil.",
+   "alternative_explanation": "Çarpıcı ifade yayın kuralı (son dakika, dikkat çekme) olabilir; yargıyı etkilediği gösterilmemiştir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıya veya karara bağlandığı bir ifade",
+    "Daha az belirgin bilgilerle karşılaştırmalı ağırlıklandırma"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Başkan Erdoğan'ın programına ilişkin detayları paylaştı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Program bilgisi resmi kaynaktan aktarılıyor; statünün gerekçe yerine geçtiği gösterilmiyor.",
+   "alternative_explanation": "Resmi kurum açıklamasına dayanmak, haberin olağan kaynak göstermesidir; otoriteye gerekçesiz uyum gösterilmemiştir.",
+   "missing_context": [
+    "Otoritenin statüsünün gerekçe yerine geçtiğini gösteren ifade",
+    "Karşıt kanıtın göz ardı edildiğine dair ifade"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin ödül ve içsel motivasyon ilişkisi içermiyor.",
+   "alternative_explanation": "Metin bir etkinlik ve ödül ilişkisi içermiyor.",
+   "missing_context": [
+    "Ödül öncesi içsel motivasyon ve sonrası düşüşe dair veri"
+   ]
+  }
+ ]
+}

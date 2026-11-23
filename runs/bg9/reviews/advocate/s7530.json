@@ -1,0 +1,214 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteoroloji bölge bölge uyardı: Zirai don alarmı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 04:44] Meteorolojiden zirai don uyarısı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olgu farklı kurumlarca farklı sözcük ve vurguyla sunuluyor (\"uyarı\" yerine \"alarm\"); ancak metin bu sunum farkının bir tercihi ya da yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Farklı ifadeler kurumların üslup, uzunluk ve okur kitlesi tercihlerinden kaynaklanabilir; okur üzerinde etki gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okur yargısını ya da bir kararı değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Erzurum'da kar yağışı trafiği aksatırken Meteoroloji zirai don uyarısı yaptı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erzurum'da kar kent merkezini beyaza bürüdü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta çarpıcı bir ayrıntı öne çıkarılıyor (kar ve trafik görüntüsü); ancak metin bu ayrıntının bir yargıya ya da seçime gerekçe yapıldığını açıkça göstermiyor.",
+   "alternative_explanation": "Çarpıcı ayrıntı haber değeri ve tıklanma kaygısıyla seçilmiş olabilir; bu tek başına bir yargı hatası değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının okur ya da karar verici yargısını etkilediğini gösteren karşılaştırmalı kanıt"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Zirai don alarmı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "hafif ve yer yer orta şiddette zirai don riski",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık \"alarm\" ile tehlikeyi büyütürken başka bir haber riskin hafif ve yer yer orta şiddette olduğunu belirtiyor; ancak olumsuz kanıta orantısız ağırlık verildiği ve bunun bir kararı etkilediği gösterilmiyor.",
+   "alternative_explanation": "Zirai don üreticiler için gerçek bir risktir; uyarı dili orantılı bir dikkat çağrısı olabilir.",
+   "missing_context": [
+    "Olumsuz ve olumlu bilginin karşılaştırmalı ağırlığını gösteren kayıt",
+    "Okurların ya da üreticilerin kararına etkisi"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kolay hatırlanan örneklerin bir tahmine gerekçe yapıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberturk · 16:57] Aydın’a zirai don uyarısı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Meteoroloji altı bölgeyi zirai don için uyardı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ankaralılar dikkat! Valilikten başkent için zirai don uyarısı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı çok bölgeli uyarıyı bazı kurumlar tek bir ile (Aydın, Ankara) daraltırken diğerleri altı bölgeyi veriyor; dikkat eşit dağılmıyor, ancak bunun belirli bir sonuca yol açtığı gösterilmiyor.",
+   "alternative_explanation": "Yerel ya da bölgesel okur kitlesine hizmet, yerel valilik açıklamaları ayrı haber kaynağı olarak kullanılmış olabilir.",
+   "missing_context": [
+    "Eşitsiz dikkatin bir sonuca ya da karara bağlandığını gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Bir alandaki olumlu izlenimin başka bir alandaki yargıya bağlandığını gösteren ifade"
+   ]
+  }
+ ]
+}

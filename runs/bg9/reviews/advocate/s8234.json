@@ -1,0 +1,242 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "rosy-retrospection",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Attığı unutulmaz gollerle, yaşattığı tarifsiz sevinçlerle",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Galatasaray'ın paylaşımı geçmişi olumlu anıyor; ancak geçmişin şimdiden ya da o dönemki deneyimden daha iyi olduğuna dair karşılaştırmalı bir iddia yok.",
+   "alternative_explanation": "Ölüm sonrası anma metinlerinde olumlu hatırlama olağan bir türsel özellik.",
+   "missing_context": [
+    "Geçmiş ile şimdi arasında açık bir karşılaştırma."
+   ]
+  },
+  {
+   "card_id": "nostalgia-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "bir nesli Galatasaraylı yapan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kulübün mesajı geçmişe dönük nostaljik bir anıyı çağrıştırıyor; ancak metinde harcama, tasarruf ya da ödeme isteğiyle ilgili bir parasal tercih bulunmuyor.",
+   "alternative_explanation": "Nostaljik ifade bir anma metninin olağan parçası; parasal bir karar söz konusu değil.",
+   "missing_context": [
+    "Nostaljik içerikle bağlantılı bir parasal tercih."
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Prekazi futbolla ilgisi olsun olmasın, Türkiye’de çok sayıda insan tarafından uzun yıllar boyunca büyük bir ilgiyle izlendi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Prekazi bundan 7 yıl önce soL’a verdiği söyleşide “Devrimler yine olacak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "soL futboldaki olumlu izlenimi futbol dışındaki ilgiyle ve siyasi görüşlerle yan yana koyuyor; ancak bir alandaki olumlu yargının ayrı bir alandaki yargıyı belirlediği açıkça kurulmuyor.",
+   "alternative_explanation": "Kurum, kişinin kamusal kimliğinin farklı yönlerini aktarıyor olabilir.",
+   "missing_context": [
+    "Futbol başarısının siyasi görüşlerin değerlendirilmesine taşındığını gösteren ifade."
+   ]
+  },
+  {
+   "card_id": "peak-end-rule",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarı kırmızılı formayla iki lig şampiyonluğu yaşayan Prekazi, 1989 yılında Monaco'ya attığı unutulmaz frikik golüyle hafızalara kazınmıştı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sarı-kırmızılı formayla 229 maça çıkan Prekazi, 44 gol ve 65 asist kaydetti.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Türkiye Gazetesi altı yıllık kariyeri belirli bir doruk anına (Monaco frikiği) bağlayarak hatırlatıyor; Evrensel ise kariyerin bütününü sayılarla veriyor. Kariyerin geri kalanının gözardı edildiği ise gösterilmiyor; aynı cümle şampiyonlukları da anıyor.",
+   "alternative_explanation": "Unutulmaz bir golü anmak, kariyerin bütünü yerine geçen bir değerlendirme değil, öne çıkan bir anıyı hatırlatma olabilir.",
+   "missing_context": [
+    "Kariyerin bütününe dair değerlendirmeler."
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 23:37] Galatasaray'ın eski futbolcusu Cevad Prekazi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 20:38] Galatasaray efsanesi Cevad Prekazi, hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (Prekazi'nin ölümü) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 11:42] Cevad Prekazi hayatını kaybetti — Galatasaray'ın eski futbolcularından Cevad Prekazi, 69 yaşında hayatını kaybetti.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haber7 · 23:37] Galatasaray efsanesi Prekazi hayatını kaybetti — Galatasaray ve Yugoslav futbolunun efsane isimlerinden Cevad Prekazi, 70 yaşında hayatını kaybetti.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "AA 'eski futbolcu' ve 69 yaş derken Haber7 'efsane' nitelemesini keskinleştiriyor ve yaşı 70 olarak veriyor; aktarımlar arasındaki fark karşılaştırmayla görülüyor, ancak bunun bir sonucu gerekçesiz biçimde etkilediği gösterilmiyor.",
+   "alternative_explanation": "Yaş farkı doğum tarihinin farklı hesaplanmasından, nitelemeler ise anma geleneğinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Prekazi'nin doğum tarihi."
+   ]
+  }
+ ]
+}

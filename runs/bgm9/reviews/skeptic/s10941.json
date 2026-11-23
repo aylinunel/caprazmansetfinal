@@ -1,0 +1,246 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mucize gerçekleşmedi!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Tek ihtimal gerçekleşmedi!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "A Milli Futbol Takımı, UEFA Uluslar B Ligi'ne düştü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Mynet ve Haber7 'Mucize/Tek ihtimal gerçekleşmedi!' diyor; AA aynı sonucu bu ifadeler olmadan veriyor. Ancak bu ifadeler spor haberciliğinde yerleşik deyimlerdir.",
+   "alternative_explanation": "Spor dilinde 'mucize' beklenti anlatan olağan bir deyimdir.",
+   "missing_context": [
+    "İfadenin olguyu aşıp aşmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yunanistan Sırbistan'ı yendi: A Milli Takım B Ligi'ne düştü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "6’da sıfır çekmiştik",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye Uluslar Ligi'nden elendi mi, küme düştü mü?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan A Milli Futbol Takımı'ndan daha iyi performans gösterdiği için averaj farkıyla play-out oynama hakkı kazandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı sonucu Ensonhaber rakip sonucunu, Sözcü Türkiye'nin 6 maçta 0 puanını, Akşam soru biçimini, Evrensel ise averaj ve play-out ayrıntısını öne çıkarıyor.",
+   "alternative_explanation": "Spor haberinde skor, puan durumu ve soru biçimi olağan başlık seçenekleridir.",
+   "missing_context": [
+    "Kurumların başlık kararı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye Uluslar Ligi'nden elendi mi, küme düştü mü?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye, Uluslar Ligi’nde küme düştü!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akşam 'elendi mi' diye soruyor, Sözcü ve 10Haber 'küme düştü' diyor; 'elenmek' ile 'küme düşmek' çağrışımı farklı olabilir, ancak ilki soru biçiminde.",
+   "alternative_explanation": "Fark üslup veya soru formatından kaynaklanabilir; iki sözcük günlük dilde birbirinin yerine kullanılabilir.",
+   "missing_context": [
+    "Sözcük farkının çağrışım mı üslup mu olduğu"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye Uluslar Ligi'nde küme düşerse Dünya Kupası'na gidemez mi, B Ligi'ne düşerse ne olur, A Milli Takım elendi mi?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Milli Gazete başlığı olası bir sonucun getirisini (Dünya Kupası) soruyor; ancak olay ('küme düşmek') başlıkta koşul olarak yer aldığı için olayın başlıktan çıkarıldığı söylenemez.",
+   "alternative_explanation": "Soru, maç sonucu belli olmadan okurun merakına yanıt vermek için yazılmış olabilir.",
+   "missing_context": [
+    "Başlığın yayımlandığı andaki puan durumu"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye A Ligi'nde kalabilecek mi, yoksa doğrudan B Ligi'ne mi düşecek?",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "play-out umutları",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Onedio lede'i iki sonucu 'yoksa' ile karşı karşıya koyuyor; ancak 'doğrudan' sözcüğü başka bir yolu zaten ima ediyor ve Mynet metni play-out ihtimalini anıyor.",
+   "alternative_explanation": "Soru, tek bir maç sonucuna bağlı iki gerçek olasılığı özetliyor olabilir.",
+   "missing_context": [
+    "Onedio metninin tamamında alternatiflerin anılıp anılmadığı"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yunanistan'ın Sırbistan'ı 1-0 mağlup etmesiyle",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "-11 averajla son sırada",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar düşüşü Yunanistan'ın Sırbistan'ı yenmesine bağlıyor; ancak aynı metinler grup sonu puan ve averaj durumunu da vererek bağlantının yalnızca sıra değil, sıralama kuralı olduğunu gösteriyor.",
+   "alternative_explanation": "Nedensellik, puan tablosu mantığından kaynaklanan gerçek bir bağdır.",
+   "missing_context": [
+    "Sıralama kuralı"
+   ]
+  }
+ ]
+}

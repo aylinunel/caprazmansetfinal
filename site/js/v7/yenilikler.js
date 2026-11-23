@@ -26,3 +26,13 @@ function pgYenilikler() {
 }
 SECTIONS.push({ p: "/yenilikler", label: "8.1’de yeni", fn: pgYenilikler });
 DETAIL["/yenilikler"] = { fn: pgYenilikler, of: "/yenilikler" };
+/* 9 "Yeni": the 8.2 build against the 9 build, from D.W9 (pipeline/capraz_pipeline/whatsnew9.py); same cards as 8.1. */
+function pgYeni9() {
+  var W = D.W9;
+  if (!W) return '<div class="wrap page"><div class="phead"><h1>9’da yeni</h1><p class="lede">Bu sürümde karşılaştırma verisi yok.</p></div></div>';
+  return '<div class="wrap page v7-yn"><div class="phead"><div class="eyebrow">Çapraz Manşet 9</div><h1>9’da yeni: eklenen hafta neyi değiştirdi?</h1>' +
+    '<p class="lede">Aşağıda bütün analizlerin 8.2 ve 9 sürümlerindeki sonucu yan yana; <b>Yeni</b> yalnızca 9’da olabilen bulgu, <b>Değişti</b> sonucu değişen, <b>Sürüyor</b> aynı kalan bulgudur. Her sayı iki veri paketinden hesaplanır.</p></div>' +
+    '<div class="yn-grid">' + W.findings.map(ynCard).join("") + "</div>" +
+    '<p class="xsmall">Önceki sürümler: <a href="#/yeni82">8.2’de yeni</a> · <a href="#/yenilikler">8.1’de yeni</a>. Yöntem ve sınırlar: <a href="#/yontem">Nasıl çalışır</a>.</p></div>';
+}
+SECTIONS.push({ p: "/yeni9", label: "9’da yeni", fn: pgYeni9 });

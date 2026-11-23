@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "salience-bias",
+  "in-group-bias",
+  "affect-heuristic",
+  "negativity-bias",
+  "confirmation-bias"
+ ],
+ "selection_uncertainty": [
+  "Soruşturma sürüyor; iddiaların sonucu belli değil.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "Parti etiketi ve 'yolsuzluk operasyonu' nitelemesi grup algısını etkileyebilir."
+}

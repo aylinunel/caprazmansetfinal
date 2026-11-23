@@ -1,0 +1,128 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[karar · 20:24] Fon soruşturması Borsa İstanbul'a uzandı: Genel Müdür Korkmaz Enes Ergun gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 20:19] Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı gözaltı bir başlıkta soruşturmanın kurum içine 'uzanması', diğerinde tek bir kişinin gözaltına alınması olarak sunuluyor; ancak bu farka dayanan bir tercih ya da yargı metinde kurulmuyor.",
+   "alternative_explanation": "Kuruluşlar soruşturmanın kapsamı hakkında farklı ayrıntı düzeyleri seçmiş olabilir.",
+   "missing_context": [
+    "Sunum farkına dayanan açık bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz bilginin karşılaştırılabilir olumlu bilgiden orantısız ağırlık aldığını belgeleyen bir karşılaştırma ya da yinelenen davranış metinde yok.",
+   "alternative_explanation": "Gözaltı haberi olgusal bir adli gelişmeyi aktarıyor.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'de sermaye piyasalarını sarsan fon soruşturmasında kritik bir gelişme yaşandı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir led soruşturmanın piyasalar üzerindeki etkisini vurguluyor; ancak bu belirgin ayrıntının bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "alternative_explanation": "Etki vurgusu soruşturmanın kapsamını betimleyen bir bağlam bilgisi olabilir.",
+   "missing_context": [
+    "Belirgin ayrıntıya dayanan bir sonuç"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde bir kişinin davranışını kalıcı bir kişilik özelliğine bağlayan nedensel ya da değerlendirici bir ifade yok; suçlamalar savcılığa atfediliyor.",
+   "alternative_explanation": "Haberler bir adli işlemi aktarıyor.",
+   "missing_context": [
+    "Kişinin karakterine ilişkin bir değerlendirme"
+   ]
+  }
+ ]
+}

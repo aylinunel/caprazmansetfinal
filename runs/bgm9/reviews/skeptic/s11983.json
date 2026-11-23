@@ -1,0 +1,276 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 19:42] Büşra Özdemir CHP’den istifa etti! Gözler AK Parti toplantısında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 19:46] Antalya'da CHP'den iki istifa: Fahri Duran ve Büşra Özdemir partiden ayrıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 19:53] SON DAKİKA I Antalya'da istifa depremi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 19:38] Antalya Büyükşehir Belediye Başkanvekili Büşra Özdemir CHP'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifada ahaber olası AK Parti toplantısını, hurriyet ikinci bir istifayı, sabah istifanın etkisini, haberler yalnızca istifa olgusunu öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar kulis bilgisinin ve istifa listesinin farklı unsurlarını seçmiş olabilir.",
+   "missing_context": [
+    "Başlıkların dayandığı kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 22:29] Antalya Büyükşehir Belediye Başkanvekili Büşra Özdemir CHP’den istifa etti: Yarın AK Parti’ye geçmesi bekleniyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "tgrt başlığında istifa olayı ana yan tümcede veriliyor, beklenen geçiş sonrasında ek bilgi olarak yer alıyor; olayın kendisi başlıkta mevcut.",
+   "alternative_explanation": "Beklenen gelişmenin eklenmesi bilgilendirici bir ek.",
+   "missing_context": [
+    "Ana yan tümcede sonucun olduğu bir başlık"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 19:53] SON DAKİKA I Antalya'da istifa depremi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Siyaset gündemini sarsan son dakika gelişmesi Antalya'dan geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 19:38] Antalya Büyükşehir Belediye Başkanvekili Büşra Özdemir CHP'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "sabah 'istifa depremi', ahaber 'Siyaset gündemini sarsan' ifadelerini kendi sesinde kullanıyor; haberler aynı olguyu bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "Bu ifadeler başlık üslubu olabilir.",
+   "missing_context": [
+    "Başka kurumlarda benzer ifadeler"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[hurriyet · 19:46] Antalya'da CHP'den iki istifa: Fahri Duran ve Büşra Özdemir partiden ayrıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 19:38] Antalya Büyükşehir Belediye Başkanvekili Büşra Özdemir CHP'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'İstifa etti' ve 'ayrıldı' sözcükleri kullanılıyor; farklar kayıt düzeyinde.",
+   "alternative_explanation": "Eşanlamlı çeşitlilik.",
+   "missing_context": [
+    "Çağrışım farkını gösteren örnek"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 19:42] Büşra Özdemir CHP’den istifa etti! Gözler AK Parti toplantısında: Rozeti Başkan Erdoğan takacak iddiası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Siyaset gündemini sarsan son dakika gelişmesi Antalya'dan geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 19:38] Antalya Büyükşehir Belediye Başkanvekili Büşra Özdemir CHP'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "ahaber başlık ve girişinde yüklü ifade ('sarsan') ile AK Parti toplantısı vurgusu birlikte yer alıyor; haberler aynı olguyu yalın veriyor. Ancak yönün aynı olduğu ve rozet ifadesinin 'iddiası' olarak atıflı verildiği görülüyor.",
+   "alternative_explanation": "Kulis bilgisinin aktarımı olabilir.",
+   "missing_context": [
+    "İki tercihin aynı değerlendirme yönünü gösterdiğine dair ölçüt"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberler · 19:38] Antalya Büyükşehir Belediye Başkanvekili Büşra Özdemir CHP'den istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[mynet · 19:45] Antalya Büyükşehir Belediye Başkan Vekili Büşra Özdemir, CHP’den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı kişi için 'Başkanvekili' ve 'Başkan Vekili' yazımını kullanıyor; unvan aynı, değerlendirme taşıyan farklı etiket yok.",
+   "alternative_explanation": "Yazım biçimi farkı.",
+   "missing_context": [
+    "Farklı değerlendirici etiketler"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "emphasis-framing",
+  "word-choice",
+  "loaded-language",
+  "selective-statistics",
+  "fear-appeal",
+  "episodic-framing"
+ ],
+ "selection_uncertainty": [
+  "Sayı farkları güncelleme kaynaklı olabilir.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "'Korkunç' gibi değerlendirici sözcükler ve sayı seçimleri farklı."
+}

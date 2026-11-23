@@ -1,0 +1,195 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'ye geçeceği iddia edilen Antalya Büyükşehir Belediye Başkan Vekili Büşra Özdemir",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde grup üyeliğine bağlı farklı muamele gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Kurumlar arası farklar farklı kaynak ve zamanlamadan kaynaklanabilir.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar aynı olayı farklı vurgularla veriyor; fakat eşdeğer seçenekler arasında bir tercihin çerçeveye bağlandığı metinde açıkça kurulmuyor.",
+   "alternative_explanation": "Vurgu farkı, her kurumun farklı zamanda farklı güncel bilgiye sahip olmasından kaynaklanabilir.",
+   "missing_context": [
+    "Eşdeğerliğin açıkça belirlenmesi",
+    "Çerçeveye bağlanan bir tercih"
+   ]
+  },
+  {
+   "card_id": "bandwagon-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde görüşün popülerliğe dayandırılması gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Metinde çoğunluk desteğine dayalı gerekçe yok.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde önceden belirtilmiş bir inanç ve asimetrik kanıt kullanımı gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Metin ilk inanç belirtmeden olay aktarıyor.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Siyaset gündemini sarsan son dakika gelişmesi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "A Haber çarpıcı bir ifade ('gündemi sarsan') öne çıkarıyor; ancak bu vurgunun bir yargıya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Haber dilinin doğal vurgusu; olayın ciddiyeti nedeniyle öne çıkarma gerekçeli olabilir.",
+   "missing_context": [
+    "Okuyucu yargısına dair kanıt yok",
+    "Karşılaştırmalı ağırlıklandırma davranışı yok"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP İl Başkanı Hasan Şahin",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Yetkili kişilerin açıklamaları aktarılıyor; ancak otoriteye gerekçesiz üstünlük verildiği veya karşıt kanıtın otorite nedeniyle geçersiz sayıldığı görülmüyor.",
+   "alternative_explanation": "Resmî açıklamaların aktarılması haberciliğin olağan kaynak kullanımıdır.",
+   "missing_context": [
+    "Otoriteye karşı çıkan bir iddia",
+    "Otoritenin gerekçesiz izlendiğine dair ifade"
+   ]
+  }
+ ]
+}

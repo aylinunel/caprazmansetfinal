@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "in-group-bias",
+  "framing-effect",
+  "affect-heuristic",
+  "confirmation-bias",
+  "availability-heuristic",
+  "priming"
+ ],
+ "selection_uncertainty": [
+  "Karar metninin kendisi sunulmamış.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "Bazı başlıklar kararı İsrail'e bağlayarak grup ve duygu yüklü çerçeve kuruyor."
+}

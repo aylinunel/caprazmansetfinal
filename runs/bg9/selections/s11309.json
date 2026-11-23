@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "salience-bias",
+  "negativity-bias",
+  "framing-effect",
+  "affect-heuristic",
+  "availability-heuristic"
+ ],
+ "selection_uncertainty": [
+  "Cismin ne olduğu ve yaralanma durumu belirsiz.",
+  "Kasıt bilgisi yok."
+ ],
+ "selection_note": "'Saldırı' ile 'isabet' ifadeleri arasındaki fark algıyı etkileyebilir."
+}

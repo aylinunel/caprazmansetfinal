@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "selective-statistics",
+  "cherry-picking",
+  "emphasis-framing",
+  "spin",
+  "thematic-framing"
+ ],
+ "selection_uncertainty": [
+  "Rakamlar İletişim Başkanlığı'na ait; aktaran kurumun tekniği olmayabilir.",
+  "Kalan ödeme bilgisi eksik."
+ ],
+ "selection_note": "Toplam ödeme rakamının öne çıkarılması sınırlayıcı verileri gölgede bırakabilir."
+}

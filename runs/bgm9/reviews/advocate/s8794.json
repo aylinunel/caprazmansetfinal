@@ -1,0 +1,268 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haber7 · 09:10] Cafer Mahiroğlu soruşturmasında ikinci operasyon — İş insanı Cafer Mahiroğlu'na",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Halk TV'nin İngiltere'de bulunan sahibi Cafer Mahiroğlu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kayyım atanan Halk TV'nin sahibi Cafer Mahiroğlu'na",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "şüpheli Cafer Mahiroğlu hakkında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi Haber7'de 'İş insanı', Sabah'ta 'Halk TV'nin İngiltere'de bulunan sahibi', Evrensel'de 'Kayyım atanan Halk TV'nin sahibi', Milliyet'te 'şüpheli' olarak anılıyor; 'İngiltere'de bulunan' ve 'Kayyım atanan' nitelemeleri kimlik bilgisinin ötesinde farklı yönlerde değerlendirme taşıyor.",
+   "alternative_explanation": "Nitelemeler kişinin konumu, kanal üzerindeki tedbir ve soruşturmadaki hukuki statüsü hakkındaki doğru olgulardır; okura bağlam vermek için seçilmiş olabilir.",
+   "missing_context": [
+    "Mahiroğlu'nun yurt dışında bulunma nedenine ilişkin bilgi.",
+    "Kayyım kararının gerekçesi."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 10:00] Milyonlarca liralık rüşvet iddiası! Cafer Mahiroğlu soruşturmasında 7 gözaltı daha",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[t24 · 09:15] Halk TV dahil şirketlerine kayyım atanan Cafer Mahiroğlu'na yönelik soruşturmada 7 gözaltı daha",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[mynet · 09:01] Cafer Mahiroğlu soruşturmasında 8 gözaltı kararı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 08:58] Cafer Mahiroğlu soruşturmasında ikinci dalga operasyon! 4 ilde 7 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı gözaltılar için A Haber suçlama tutarını ('Milyonlarca liralık rüşvet iddiası'), T24 şirketlere atanan kayyımı, Mynet karar sayısını, Türkiye Gazetesi operasyonun yayılımını başlığa taşıyor.",
+   "alternative_explanation": "Kurumların farklı vurguları aynı resmi açıklamanın farklı paragraflarından seçilmiş olabilir.",
+   "missing_context": [
+    "Başsavcılık açıklamasının tam metni."
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[dirilis · 10:03] Cafer Mahiroğlu'na yönelik soruşturmada 7 şüpheli yakalandı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 09:04] Cafer Mahiroğlu soruşturmasında 2. dalga operasyon: 7 şüpheli gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dwturkce · 13:55] Halk TV'nin sahibi Cafer Mahiroğlu'na soruşturma: 7 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı işlem Diriliş'te 'yakalandı', Hürriyet'te 'gözaltına alındı' olarak adlandırılıyor; 'yakalandı' kaçan bir failin ele geçirilmesi çağrışımı taşırken 'gözaltına alındı' işlemsel ve nötr.",
+   "alternative_explanation": "'Yakalandı' günlük dilde gözaltıyla eş anlamlı kullanılabiliyor; fark üslup ve kısalıktan kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Şüphelilerin firari olup olmadığı."
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ikinci dalga operasyon",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Kurumların çoğu 'ikinci dalga operasyon' ifadesini kullanıyor; 'dalga' metafordur ancak operasyon haberlerinde tüm kurumlarda kullanılan sabit bir deyimdir ve yeni rol ya da eylem önermiyor.",
+   "alternative_explanation": "'Dalga' resmi açıklamalarda ve tüm kurumlarda ortak kullanılan teknik bir ifade.",
+   "missing_context": [
+    "Başsavcılık açıklamasında 'dalga' ifadesinin geçip geçmediği."
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "14 Ekim'de kayyum atanan Halk TV'nin sahibi Cafer Mahiroğlu'na yönelik soruşturmada",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Savcılık, İzmir Büyükşehir Belediyesi'nden alınan ihalelerde",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "ANKA gözaltıları 14 Ekim'deki kayyum kararı sürecine, Karar ise İzmir Büyükşehir Belediyesi ihalelerine ilişkin soruşturma bağlamına yerleştiriyor.",
+   "alternative_explanation": "Bu bağlam bilgisi soruşturmanın kapsamını açıklayan olgusal arka plan olabilir.",
+   "missing_context": [
+    "Kayyum kararı ile gözaltılar arasındaki hukuki ilişki."
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde kurumun kendi sesiyle iki seçenekli bir 'ya … ya …' ya da 'tek yol' kurgusu bulunmuyor; başlıklar tek bir olayı aktarıyor.",
+   "alternative_explanation": "Olay ikili bir tercih içermiyor; ikili seçenek sunulmaması haberin konusundan kaynaklanıyor.",
+   "missing_context": [
+    "Kurumların tam metinlerinde ikili seçenek kurgusu olup olmadığı."
+   ]
+  }
+ ]
+}

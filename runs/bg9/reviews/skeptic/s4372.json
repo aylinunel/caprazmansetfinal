@@ -1,0 +1,150 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında sıcak gelişme! Tera ve Pusula'nın faaliyetleri durduruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SPK, Tera Portföy ve Pusula Portföy'ün sermaye piyasası faaliyetlerini askıya aldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurguyla veriyor (Fon soruşturmasında sıcak gelişme! Tera ve Pusula'nın faaliyetleri durduruldu); ancak metinde bu sunum farkına açıkça bağlanan bir tercih, yargı ya da karar yer almıyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati ve ajans metninin kısaltılmasıyla açıklanabilir; bir okurun ya da karar vericinin çerçeveden etkilendiğine dair veri yok.",
+   "missing_context": [
+    "Çerçevelerin karar açısından eşdeğer olduğunu açıkça kuran bir ifade",
+    "Sunum farkına bağlı bir tercih ya da yargıyı gösteren okur/karar verici verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SPK'dan flaş karar: Tera ve Pusula'nın faaliyetleri geçici olarak durduruldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan çarpıcı bir ayrıntı var (SPK'dan flaş karar: Tera ve Pusula'nın faaliyetleri geçici olarak durduruldu); fakat metin bu ayrıntıyı bir sıklık, risk ya da seçim yargısına açıkça bağlamıyor.",
+   "alternative_explanation": "Ayrıntının öne çıkarılması haber değeri ve dikkat çekici başlık geleneğiyle açıklanabilir; çarpıtılmış bir yargı gösterilmiyor.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir tahmin ya da karar gerekçesi yapıldığını gösteren ifade",
+    "Belirgin ve az belirgin bilgiye verilen ağırlığı karşılaştıran veri"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sermaye Piyasası Kurulu (SPK), Tera Portföy ve Pusula Portföy'ün sermaye piyasası faaliyetlerini geçici olarak durdururken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir yetkili ya da kurumu kaynak olarak anıyor (Sermaye Piyasası Kurulu (SPK), Tera Portföy ve Pusula Portföy'ün sermaye piyasası faaliyetlerini geçici olarak durdururken); ancak bu statünün içerik yerine belirleyici ağırlık aldığı ya da karşı kanıtın bu yüzden göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi kurum ya da yetkilinin açıklamasını aktarmak olağan haber pratiğidir ve kaynağın konuyla ilgisi açıktır; haksız bir etki görünmüyor.",
+   "missing_context": [
+    "Kaynağın yetkinliğinin konuyla uyuşmadığını gösteren kanıt",
+    "Statünün tek gerekçe olduğunu ya da karşı kanıtın yok sayıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Faaliyetler durdu, bütün fonlar tasfiye kapsamına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz sözcük ya da olgular var (Faaliyetler durdu, bütün fonlar tasfiye kapsamına alındı); ancak olumlu ve olumsuz kanıtın orantısız tartıldığı ya da bunun bir değerlendirmeyi haksız biçimde etkilediği belgelenmiyor.",
+   "alternative_explanation": "Olumsuz yönün öne çıkması olayın doğasından ya da haber değerinden kaynaklanabilir; karşılaştırılabilir olumlu kanıtın dışlandığı gösterilmiyor.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıtın varlığı ve ona verilen ağırlık",
+    "Olumsuz ağırlığın bir karar ya da değerlendirmeyi değiştirdiğini gösteren veri"
+   ]
+  }
+ ]
+}

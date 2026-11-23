@@ -1,0 +1,227 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "333 bini aşkın yatırımcı tamamını aldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "444 bin 893 tekil yatırımcıya",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Pay (333.493) ve payda (444.893) metinden belirlenebiliyor; ancak bağlamda karşılaştırılabilir farklı bir popülasyon gösterilmiyor.",
+   "alternative_explanation": "Rakamlar resmi açıklamadan aktarılmış olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir popülasyon verisi"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "333 bini aşkın yatırımcı tamamını aldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "haksız kazanç elde ettiği belirlenen yatırımcıların ara ödeme kapsamı dışında bırakıldığı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sabah başlığı olumlu alt kümeyi öne çıkarırken Evrensel lede'inde kapsam dışı bırakılan yatırımcılar belirtiliyor; ancak genel bir sonuç iddiası ve bağlamdaki kısıtlayıcı rakamlar doğrulanamıyor.",
+   "alternative_explanation": "Başlık alanı sınırlı olduğu için seçici rakam kullanılmış olabilir.",
+   "missing_context": [
+    "Kapsam dışı yatırımcı sayıları",
+    "Başlık ve lede'in tam metni"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "333 bini aşkın yatırımcı tamamını aldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "iade ve geri kazanım hesaplarında ise 35,6 milyar lira birikti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon Koordinasyon Kurulu'ndan açıklama: 444 bin yatırımcıya 161 milyar TL ödeme yapıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı tasfiye verisi bazı kurumlarda tam ödeme alan yatırımcılar, bazılarında toplam ödeme, Sol'da ise iade hesabında biriken tutar üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Farklı kurumlar farklı açıklamalara (Kurul / Bakan Şimşek) dayanıyor olabilir.",
+   "missing_context": [
+    "Açıklamaların tam metni"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SON DAKİKA! Fon tasfiyesinde 161 milyar TL ödeme: 333 bini aşkın yatırımcı tamamını aldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sabah başlığı ünlemli etiket ve seçilmiş olumlu bir rakamı birleştiriyor; ancak iki tercihin değerlendirici yönü açıkça aynı değil.",
+   "alternative_explanation": "Son dakika etiketi rutin bir haber biçimidir.",
+   "missing_context": [
+    "Başlık dışı unsurlar"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon Koordinasyon Kurulu onuncu kez toplandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "bugüne kadar",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Anka başlığı gelişmeyi 'onuncu kez' toplanan kurul serisine yerleştiriyor; Karar lede'i 'bugüne kadar' toplam ödeme olarak veriyor.",
+   "alternative_explanation": "Sıra sayısı kurumun kendi adlandırması olabilir.",
+   "missing_context": [
+    "Önceki toplantıların verileri"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  }
+ ]
+}

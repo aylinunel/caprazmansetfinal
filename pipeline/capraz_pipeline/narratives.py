@@ -176,6 +176,9 @@ def merge(core: dict) -> None:
     w82 = OUT.parent / "whatsnew-82.json"  # 8.2: old AI review vs the rerun (python -m capraz_pipeline.whatsnew82)
     if w82.exists():
         core["W82"] = json.loads(w82.read_text())
+    w9 = OUT.parent / "whatsnew-9.json"  # 9: the 8.2 build against the 9 build (python -m capraz_pipeline.whatsnew9)
+    if w9.exists():
+        core["W9"] = json.loads(w9.read_text(encoding="utf-8"))
     blind = OUT.parent / "blind-packets.json"  # blind coding packets for the desk (python -m validation.answerkey packet)
     if blind.exists():
         core["BLIND"] = json.loads(blind.read_text(encoding="utf-8"))

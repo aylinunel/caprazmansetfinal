@@ -1,0 +1,116 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Minguzzi tehdit paylaşımı tutuklaması haberinde karşılaştırılan ifadelerin karar açısından eşdeğer olduğu ve tercihin sunuma bağlandığı metinde belirtilmiyor.",
+   "alternative_explanation": "Başlık farkları farklı bilgi unsurlarını öne çıkarma tercihinden kaynaklanıyor olabilir; eşdeğerlik kanıtlı değil.",
+   "missing_context": [
+    "Eşdeğer seçeneklerin açıkça belirtilmesi",
+    "Tercihin sunuma bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "just-world-hypothesis",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "tehdit paylaşımları cezasız kalmadı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Takvim lede'i tehdit paylaşımlarının cezasız kalmadığını söylüyor; bu bir hukuki sonuca vurgu olup bir kişinin sonucunu ahlaki hak edişle açıklayan bir inanç göstermiyor.",
+   "alternative_explanation": "Hukuki işlem, ahlaki hak ediş inancı değil, usule dayalı bir sonuçtur.",
+   "missing_context": [
+    "Hak ediş yargısını açıkça kuran ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Minguzzi tehdit paylaşımı tutuklaması haberinde belirgin bir ayrıntı ile bir yargı arasında açık, haksız bir bağ kurulmuyor; belirgin olmak tek başına hata kanıtı değil.",
+   "alternative_explanation": "Haber değeri taşıyan ayrıntının öne çıkarılması olağan editoryal tercihtir.",
+   "missing_context": [
+    "Belirgin ve belirgin olmayan bilginin ağırlığını karşılaştıran davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler tutuklama haberini veriyor; olumsuz içerik olayın doğasında ve olumlu bilgiyle orantısız karşılaştırıldığı gösterilmiyor.",
+   "alternative_explanation": "Olumsuz içerik, olayın doğası gereği haberin konusu olabilir; orantılı bir yansıtma olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgi",
+    "Değerlendirme veya kararın bu ağırlıktan etkilendiğine dair kanıt"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,232 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "TCMB kredi büyüme sınırlarını yükseltti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Merkez Bankası'ndan yeni karar: İhtiyaç, taşıt ve ticari kredilerde sınırlar yükseltildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İşte yeni oranlar",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı karar haberinde bir başlık kurumu ve aracı, biri kredi türlerini, biri yeni oranları öne çıkarıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, karakter sınırı veya o anki bilgi düzeyinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Kurumların tam başlık ve metinleri",
+    "Yayın sırası ve güncellemeler"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kredi Freninde Gevşemeye Gitti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "TCMB kredi büyüme sınırlarını yükseltti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "kredi hamlesi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı karar için 'yükseltti', 'gevşemeye gitti' ve 'kredi hamlesi' sözcükleri kullanılıyor; çağrışımları ayrışıyor.",
+   "alternative_explanation": "Sözcük farkları yalnızca üslup veya kurum yazım kuralı farkı olabilir.",
+   "missing_context": [
+    "Sözcüklerin okur algısına etkisi",
+    "Kurum üslup kılavuzları"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İhtiyaç, taşıt ve ticari kredilerde yeni dönem",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar kararın yanında 'yeni dönem' ifadesiyle bir sonuç beklentisi çağrıştırıyor; karar da başlıkta yer aldığından olayın yerini sonucun aldığı gösterilemiyor.",
+   "alternative_explanation": "Başlıklar olayı da ifade ediyor; sonuç vurgusu olay bilgisini dışlamıyor.",
+   "missing_context": [
+    "Başlığın tam ana cümlesi",
+    "Sonucun gerçekleşip gerçekleşmediği"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası Kredi Freninde Gevşemeye Gitti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Onedio başlığı kredi büyümesini 'fren' imgesiyle anlatıyor; rol veya eylem önerip önermediği belirsiz, yerleşik ekonomi deyimi olabilir.",
+   "alternative_explanation": "Deyim yerleşik ekonomi/gazete dili olabilir.",
+   "missing_context": [
+    "Metaforun rol veya eylem önerip önermediği"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "TCMB kredi büyüme sınırlarını yükseltti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "sekiz haftalık büyüme sınırını yüzde 3'ten yüzde 3,5'e yükseltirken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Karar öncesi ve sonrası sınır rakamları yan yana verilerek karar bir politika serisi içinde sunuluyor.",
+   "alternative_explanation": "Bağlam eklemek tek başına kusur değildir; haberin okunmasına yardımcı olabilir.",
+   "missing_context": [
+    "Alternatif bağlam seçenekleri",
+    "Kurumun başka haberlerindeki bağlam kullanımı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneğe indirgenmiş bir sunum bulunmuyor.",
+   "alternative_explanation": "Metinde iki seçenekli bir sunum yok.",
+   "missing_context": [
+    "Seçenek sunan ifade"
+   ]
+  }
+ ]
+}

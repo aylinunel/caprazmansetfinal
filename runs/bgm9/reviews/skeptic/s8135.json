@@ -1,0 +1,250 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 16:26] Mısır'da tren kazası! Vagonlar raydan çıktı: Onlarca kişi yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sol · 18:28] Mısır'da tren kazası: 7 kişi öldü, 112 kişi yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 08:28] Mısır'da feci tren kazası! Tren, yolcu treninin arka vagonuna çarptı: 7 ölü, 112 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kazada tgrt yaralı sayısını ve raydan çıkmayı, sol ölü ve yaralı sayısını, haberler ise çarpışmanın biçimini öne çıkarıyor.",
+   "alternative_explanation": "Farklılıklar yayım saatlerinde bilinen bilgi düzeyinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Yayım saatlerinde mevcut resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberler · 08:28] Mısır'da feci tren kazası!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 18:36] Mısır'da tren faciası: Yedi ölü 112 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 20:42] Mısır'da tren kazası: 7 ölü, 112 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay trthaber'de 'tren kazası', yenisafak'ta 'tren faciası', haberler'de 'feci tren kazası' sözcükleriyle veriliyor; 'facia' ve 'feci' kazadan farklı bir çağrışım taşıyor.",
+   "alternative_explanation": "'Facia' çok sayıda yaralı olan kazalar için yerleşik bir gazete kullanımı olabilir.",
+   "missing_context": [
+    "Her kurumun başlık dili kılavuzu"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milliyet · 16:49] Mısır'da korkunç tren kazası: 64 kişi yaralandı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 19:02] Mısır'da feci tren kazası: 7 kişi öldü, 112 kişi yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 20:42] Mısır'da tren kazası: 7 ölü, 112 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "milliyet 'korkunç', sozcu 'feci' sözcüklerini kendi sesinde kullanıyor; trthaber aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "'Korkunç' ve 'feci' kaza haberlerinde yaygın nitelemelerdir.",
+   "missing_context": [
+    "Başka kurumlarda benzer sözcükler"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Pay ve payda ile ifade edilen bir oran ve geniş karşılaştırma popülasyonu metinde belgelenmiyor; sayılar mutlak sayılardır.",
+   "alternative_explanation": "Haberde mutlak ölü ve yaralı sayısı veriliyor.",
+   "missing_context": [
+    "Oran ve karşılaştırılabilir popülasyon"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yenisafak · 18:36] Mısır'da tren faciası: Yedi ölü 112 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "'Facia' gibi felaket sözcüğü var; ölü ve yaralı sayısı verildiği için ölçek belli ve sözcük bu ölçekle orantısız görünmüyor.",
+   "alternative_explanation": "Çok sayıda ölü ve yaralı olan kaza için 'facia' yerleşik bir kullanımdır.",
+   "missing_context": [
+    "Sözcüğün ölçekten ayrıştığını gösteren örnek"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kazanın yaşandığı bölge geçmişteki ölümcül tren kazalarıyla biliniyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "bbcturkce girişi geçmişteki kazalara değinerek yinelenen bir bağlam gösteriyor; diğer başlıklarda ve girişlerde böyle bir değinme yok ve olay tek kaza olarak veriliyor.",
+   "alternative_explanation": "Haber anlık bir kazayı bildiriyor; bağlam bazı kurumlarda sonraki haberlere bırakılmış olabilir.",
+   "missing_context": [
+    "Diğer kurumların girişlerinin tam metni"
+   ]
+  }
+ ]
+}

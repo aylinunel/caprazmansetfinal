@@ -1,0 +1,273 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Vücutlarında ağır yanıklar oluşan işçiler",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İsimleri belli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "firari işletme müdürü tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başlatılan soruşturma kapsamında iki şüpheli hakkında gözaltı kararı verildi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı patlamada Sol yanık yaralılarını, Takvim kurbanların isimlerini, Evrensel firari işletme müdürünün tutuklanmasını, NTV gözaltı kararını öne çıkarıyor.",
+   "alternative_explanation": "Kurumlar olayın farklı zamanlarındaki gelişmeleri (patlama, kimlik, tutuklama) haberleştirmiş olabilir.",
+   "missing_context": [
+    "Yayın zamanı sırası"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "3 madenci can verdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "grizu faciası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "3 işçi vefat etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "3 kişi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölümler için Tele1 'can verdi', Milli Gazete 'vefat etti', Star 'hayatını kaybetti', Diriliş 'facia' diyor; 'can verdi' ve 'facia' diğerlerinden farklı çağrışım taşıyor.",
+   "alternative_explanation": "Sözcük farkları ağırlıkla üslup çeşitliliği olabilir.",
+   "missing_context": [
+    "Kurumların üslup rehberleri"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İsimleri belli oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde veya bağlamda sorunun yinelenen/yapısal olduğunu gösteren bir kanıt yok; Takvim isimleri öne çıkarsa da olayı tek kişi hikâyesine indirgemiyor.",
+   "alternative_explanation": "Haber, olayın kendisini aktarıyor.",
+   "missing_context": [
+    "Maden kazalarının geçmiş verileri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adalet Bakanı Akın Gürlek, patlamayla ilgili soruşturma başlatıldığını, 1 Cumhuriyet Başsavcı Vekili ve 2 Cumhuriyet Savcısının görevlendirildiğini",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "firari işletme müdürü tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Star ve Evrensel olayı soruşturma, görevlendirme ve tutuklama gibi kurumsal süreç içine yerleştiriyor.",
+   "alternative_explanation": "Bu, geniş bir eğilimden çok olayın doğrudan hukuki sonucudur.",
+   "missing_context": [
+    "Sektörel iş güvenliği bağlamı"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "firari işletme müdürü tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürerken Evrensel başlığı 'firari işletme müdürü' ifadesiyle bir rol sahibini öne çıkarıyor; ancak başlık sorumluluk atamıyor, bir hukuki işlem (tutuklama) bildiriyor.",
+   "alternative_explanation": "Tutuklama bir mahkeme işlemidir; sorumluluk yargı kararına bağlıdır.",
+   "missing_context": [
+    "Suçlamanın içeriği"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kahreden haber",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "maden ocağından acı haber!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Zonguldak'ta maden ocağında patlama",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Mynet 'Kahreden haber', Takvim 'acı haber!' ile kendi sesiyle duygusal değerlendirme ekliyor; TRT Haber aynı olguyu bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "Baş sağlığı tonu haber dilinde yaygın bir kullanımdır.",
+   "missing_context": [
+    "Başlıkların editoryal bağlamı"
+   ]
+  }
+ ]
+}

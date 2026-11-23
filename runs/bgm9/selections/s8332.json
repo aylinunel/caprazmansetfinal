@@ -1,0 +1,11 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "word-choice",
+  "emphasis-framing"
+ ],
+ "selection_uncertainty": [
+  "Unvan farkı bilgi hatası da olabilir."
+ ],
+ "selection_note": "Erdoğan ve Cook için farklı unvanlar kullanılıyor."
+}

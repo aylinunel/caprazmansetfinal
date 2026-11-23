@@ -1,0 +1,302 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ömer Sarıgül bugün ek ifade verecek! Gözler Çağlayan Adliyesi'nde",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tutuklu Ömer Sarıgül ek ifadesinin ardından cezaevine gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ömer Sarıgül ek ifade verdi... Soruşturma kapsamında 9 şüpheli daha tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ömer Sarıgül etkin pişmanlık ifadesi verdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ağabeyi tahliye edilmişti: Ömer Sarıgül ek ifade için adliyeye getirildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    }
+   ],
+   "mechanism": "Aynı ek ifade olayını ahaber beklentiyi, sozcu cezaevine dönüşü, hurriyet 9 tutuklamayı, sabah etkin pişmanlığı, karar ise ağabeyin tahliyesini başlığa taşıyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında kritik gelişme",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Gözler vereceği ifadede",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında Ömer Sarıgül ek ifade için adliyede",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "tgrt ve akit 'kritik gelişme', akit ayrıca 'gözler vereceği ifadede' ifadelerini kendi sesiyle kullanıyor; sondakika aynı olayı bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ömer Sarıgül, ek ifade vermek için adliyeye geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ek ifade vermek üzere Çağlayan'daki İstanbul Adalet Sarayı'na getirildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tutuklu Ömer Sarıgül ek ifadesinin ardından cezaevine sevk edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay posta'da 'adliyeye geldi', akit'te 'getirildi' olarak anlatılıyor; 'geldi' gönüllülük, 'getirildi' zorunluluk çağrışımı taşıyor, yani fark yalnızca kayıt farkı değil.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ömer Sarıgül bugün ek ifade verecek!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar ek ifadeyi (olayın kendisini) bildiriyor; 'verecek' gelecekteki bir sonuç değil, olayın kendisinin zamanı. Olayın ardından beklenen bir etki başlığın ana cümlesinde yer almıyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tutuklu Ömer Sarıgül ek ifadesinin ardından cezaevine gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül’ün oğlu Ömer Sarıgül",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül ailesine yönelik yürütülen kara para soruşturması",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi sozcu'da 'tutuklu', hurriyet'te 'Mustafa Sarıgül'ün oğlu' olarak anılıyor, takvim ise soruşturmayı 'Sarıgül ailesine yönelik' olarak çerçeveliyor. Etiket farkı var; meşruiyet yargısı taşıdığı kanıtlanamıyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kara para soruşturmasında Ömer Sarıgül’den ek ifade... 9 kişiye tutuklama",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül ailesine yönelik yürütülen kara para soruşturmasında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Tutuklu Ömer Sarıgül ek ifadesinin ardından cezaevine sevk edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "takvim başlık ve lede'de 'kara para' etiketini, 'Sarıgül ailesi' çerçevesini ve tutuklama sayısını birlikte kullanıyor; mynet aynı olguyu bunlar olmadan veriyor. Ortak yön (suçlayıcı) belirgin değil çünkü soruşturmanın resmi adı da aklama suçu.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  }
+ ]
+}

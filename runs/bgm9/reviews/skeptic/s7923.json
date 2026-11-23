@@ -1,0 +1,217 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soygunu: BDDK daire başkanı Bilal Soysal tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sermaye piyasası soruşturmasında BDDK 3. Daire Başkanı tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma bir kurumda \"fon soygunu\", diğerinde \"sermaye piyasası soruşturması\" diye adlandırılıyor; ilki suçu kesinleşmiş gibi çağrıştırıyor.",
+   "alternative_explanation": "\"Soygun\" kurumun yerleşik kısaltması olabilir.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soygunu:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturması kapsamında BDDK 3. Daire Başkanı Bilal Soysal tutuklandı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "10haber kendi sesiyle \"soygun\" değerlendirmesini kullanıyor; Haber7 aynı olguyu bu sözcük olmadan veriyor.",
+   "alternative_explanation": "—",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Böylece soruşturma kapsamında tutuklananların sayısı 118'e yükseldi.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Önceki gün de BDDK Uygulama 4. Daire Başkanı Mustafa Alper Taş hakkında tutuklama kararı verilmişti.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar tutuklamayı kümülatif tutuklu sayısı ve önceki tutuklamalar içine yerleştiriyor.",
+   "alternative_explanation": "Bağlam vermek bilgilendirici bir pratik.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturması: BDDK daire başkanı tutuklandı, tutuklu sayısı 118'e yükseldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında tutuklanan Bilal Soysal kim? BDDK Daire Başkanı'nın eğitimi, yaşı ve memleketi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklama bir kurumda soruşturmanın ölçeği (sayı), diğerinde kişinin kimliği (kişi) açısından öne çıkarılıyor.",
+   "alternative_explanation": "Biyografi haberleri arama trafiğine yönelik bir format olabilir.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hiçbir kurum kendi sesiyle yalnızca iki seçenek sunan bir \"ya … ya\" kalıbı kullanmıyor.",
+   "alternative_explanation": "Olay haberi bir seçenekler tartışması içermiyor.",
+   "missing_context": [
+    "İki seçenekli bir ifade"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında BDDK Daire Başkanı da tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi sesinde açık bir nedensellik iddiası yok.",
+   "alternative_explanation": "Usul haberi.",
+   "missing_context": [
+    "—"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,147 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İran Devrim Muhafızları Ordusu Deniz Kuvvetleri, Hürmüz Boğazı'nın güneyinde gece saatlerinde",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Yeni Şafak olayı İran Devrim Muhafızları'na atfediyor; kaynak olayla ilgili bir aktör, ancak ona karar verici ağırlık verildiği gösterilmiyor; Dirilis 'iddiası' diyerek atfı koruyor.",
+   "alternative_explanation": "Olay bir kaynağa atfedilerek bildiriliyor; bu doğrulama yapılmadığını da gösteriyor olabilir.",
+   "missing_context": [
+    "Bağımsız doğrulama",
+    "Gemilerin sahipleri ve sigortacıları"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hürmüz Boğazı tanker olayı haberinde karşılaştırılan ifadelerin karar açısından eşdeğer olduğu ve tercihin sunuma bağlandığı metinde belirtilmiyor.",
+   "alternative_explanation": "Başlık farkları farklı bilgi unsurlarını öne çıkarma tercihinden kaynaklanıyor olabilir; eşdeğerlik kanıtlı değil.",
+   "missing_context": [
+    "Eşdeğer seçeneklerin açıkça belirtilmesi",
+    "Tercihin sunuma bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler tanker kazalarını bildiriyor; olumsuz içerik olayın niteliği olup olumlu bilgiyle orantısız ağırlık verildiği gösterilmiyor.",
+   "alternative_explanation": "Olumsuz içerik, olayın doğası gereği haberin konusu olabilir; orantılı bir yansıtma olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgi",
+    "Değerlendirme veya kararın bu ağırlıktan etkilendiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hürmüz Boğazı tanker olayı haberinde belirgin bir ayrıntı ile bir yargı arasında açık, haksız bir bağ kurulmuyor; belirgin olmak tek başına hata kanıtı değil.",
+   "alternative_explanation": "Haber değeri taşıyan ayrıntının öne çıkarılması olağan editoryal tercihtir.",
+   "missing_context": [
+    "Belirgin ve belirgin olmayan bilginin ağırlığını karşılaştıran davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "iki günde 6 tanker yandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "DW Türkçe kısa sürede tanker sayısını bildiriyor; bu sayısal bilgi, kolay hatırlanan örneğin bir tahminin yerine kullanıldığını göstermiyor.",
+   "alternative_explanation": "Güncel olay haberi, tahmin değil olgu aktarımıdır.",
+   "missing_context": [
+    "Frekans bilgisi yerine örnek kullanıldığını gösteren ifade"
+   ]
+  }
+ ]
+}

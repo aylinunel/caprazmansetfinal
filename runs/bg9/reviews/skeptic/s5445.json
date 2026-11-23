@@ -1,0 +1,168 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Devlet Bahçeli'nin acı günü: Ablası hayatını kaybetti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin belirtilen bir duyguyu belirli bir karar ya da risk-fayda tahminine açıkça bağlamıyor; duygusal sözcükler tek başına yeterli değil.",
+   "alternative_explanation": "Duygusal ifadeler olayın ağırlığını aktaran habercilik dili olabilir.",
+   "missing_context": [
+    "Duygu ile karar arasındaki açık bağlantı",
+    "Olgular sabitken tercihin duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir alandaki olumlu izlenimin ayrı bir alandaki olumlu yargıya aktarıldığını gösteren açık bir bağlantı yok.",
+   "alternative_explanation": "Olumlu ya da saygılı ifadeler protokol dili veya olgusal betimleme olabilir; ikinci bir alana yargı aktarımı yapılmıyor.",
+   "missing_context": [
+    "İki ayrı alandaki yargıyı bağlayan açık ifade",
+    "İpucunun değişmesiyle yargının değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı ya da rakamı öne çıkarıyor; metin bu ayrıntıyı bir yargıya ya da seçime açıkça bağlamıyor ve karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı olayın haber değeri taşıyan olgusal bir parçası olabilir; çarpıcılık tek başına hatalı ağırlıklandırma kanıtı değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı belirlediğini gösteren açık ifade",
+    "Belirgin ve belirgin olmayan bilginin nasıl ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bahçeli'nin acı günü: Ablası Serpil Bahçeli hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Devlet Bahçeli'nin kız kardeşi yaşamını yitirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı vurgularla başlıklandırıyor; ancak metin, bu sunum farkına bağlanmış bir tercih, yargı ya da öneri göstermiyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinden, ajans metinlerinden, olayın gelişen aşamalarından ve yer sınırından kaynaklanabilir; açıklamaların karar açısından eşdeğer olduğu metinde kurulmuyor.",
+   "missing_context": [
+    "Başlıkların okur yargısını değiştirdiğini gösteren karşılaştırmalı veri",
+    "Serpil Bahçeli'nin abla mı kız kardeş mi olduğuna dair doğrulanmış bilgi"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Devlet Bahçeli'nin ablası Serpil Bahçeli kim, kiminle evli, mesleği ne?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar olayın farklı yönlerine yer veriyor; ancak eşit olmayan dikkatin belirli bir sonuca ya da eyleme gerekçesiz biçimde yol açtığı gösterilmiyor.",
+   "alternative_explanation": "Farklı konuların işlenmesi kurumların yayın önceliklerinden ve haberin kümelenme biçiminden kaynaklanabilir.",
+   "missing_context": [
+    "Dikkat dağılımını gösteren kayıt ya da karşılaştırma",
+    "Eşit olmayan dikkatin bir sonuca bağlandığı kanıt"
+   ]
+  }
+ ]
+}

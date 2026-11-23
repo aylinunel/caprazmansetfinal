@@ -1,0 +1,200 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Geçen sene kayyım atanmıştı… Merkez Bankası o kuruluşun faaliyet iznini iptal etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ozan Elektronik Para'nın sahibi Ozan Özerk kimdir? Faaliyet izni Merkez Bankası tarafından resmen iptal edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TCMB, iki ödeme kuruluşunun faaliyet iznini iptal etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Sözcü önceki kayyım atamasını, Karar şirket sahibini (kişi), AA yalnızca idari kararı öne çıkarıyor.",
+   "alternative_explanation": "Boyut farkları yayın saatindeki bilgi düzeyine, hedef okur kitlesine ve başlık uzunluğuna bağlı olabilir.",
+   "missing_context": [
+    "Her kurumun tam metni",
+    "Başlıkların güncellenme geçmişi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2025 yılının ekim ayında yasa dışı bahis ve kara para aklama iddialarına ilişkin yürütülen soruşturma kapsamında kayyım atanan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Cumhuriyet girişi izin iptalini 2025'teki kayyım atamasıyla başlayan soruşturma sürecine yerleştiriyor.",
+   "alternative_explanation": "Arka plan bilgisi vermek olağan haber pratiğidir; bu bir bağlam etkisidir, hata değildir.",
+   "missing_context": [
+    "Kurumun tam metnindeki bağlam bilgisinin kapsamı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "TCMB, iki ödeme kuruluşunun faaliyet iznini iptal etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TCMB, iki elektronik para şirketinin faaliyet iznini iptal etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "'Ödeme kuruluşu' ve 'elektronik para şirketi' teknik kategori farkı; çağrışım farkı taşımıyor.",
+   "alternative_explanation": "Sözcük farkları kaynak metnin farklı aktarılmasından ya da bilgi düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların kaynak aldığı resmi metin",
+    "Aynı kurumların benzer olaylardaki sözcük tercihi"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kayyım atanmıştı… Ozan Elektronik Para'nın faaliyet izni iptal edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Cumhuriyet kayyım atamasını ve izin iptalini yan yana veriyor, ancak açık bir nedensellik ifadesi kullanmıyor.",
+   "alternative_explanation": "Zaman bildiren bağlaçlar olayın kronolojisini aktarmak için kullanılmış olabilir.",
+   "missing_context": [
+    "Nedensel bağı ileri süren açık bir ifade",
+    "Bağın dayandığı kanıt"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2025 yılının ekim ayında yasa dışı bahis ve kara para aklama iddialarına ilişkin yürütülen soruşturma kapsamında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bağlam ya da diğer kurumların kapsamı konunun yapısal ya da tekrarlayan bir sorun olduğunu göstermiyor; tek olayın aktarımı bu nedenle epizodik çerçeve sayılamaz.",
+   "alternative_explanation": "Tekil bir gelişmenin haberleştirilmesi haber türünün olağan biçimidir.",
+   "missing_context": [
+    "Konunun tekrarlayan ya da yapısal olduğunu gösteren veri ya da önceki vakalar"
+   ]
+  }
+ ]
+}

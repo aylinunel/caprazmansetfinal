@@ -1,0 +1,174 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında yeni operasyon: 17 gözaltı kararı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında sıcak gelişme: 17 şüpheli hakkında gözaltı kararı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı operasyon yalın ya da 'sıcak gelişme' çerçevesiyle sunuluyor; çerçevenin yargıya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati, karakter sınırı veya bilgi güncellemesinden kaynaklanıyor olabilir; okurun kararına etkisi gösterilmemiştir.",
+   "missing_context": [
+    "Okurun yargı veya tercihinin değiştiğine dair gözlem",
+    "Karşılaştırılan ifadelerin karar açısından eşdeğer olduğunun açık gösterimi"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki bir değerin sonraki yargıya bağlandığı ifade yok; 15-19 arası sayı farkları farklı kaynak/aşamadan geliyor olabilir.",
+   "alternative_explanation": "Önceki rakam güncel bilgi eksikliğinden veya aktarım gecikmesinden dolayı tekrarlanmış olabilir.",
+   "missing_context": [
+    "Sonraki yargının ilk değere açıkça bağlandığı bir ifade",
+    "Düzeltmeye elverişli kanıtın göz ardı edildiğine dair gösterge"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "sabah saatlerinde dev bir operasyon için düğmeye basıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "A Haber operasyonun büyüklüğünü çarpıcı ifadelerle öne çıkarıyor; yargıya bağlandığı açık değil.",
+   "alternative_explanation": "Çarpıcı ifade yayın kuralı (son dakika, dikkat çekme) olabilir; yargıyı etkilediği gösterilmemiştir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıya veya karara bağlandığı bir ifade",
+    "Daha az belirgin bilgilerle karşılaştırmalı ağırlıklandırma"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski CHP'li milletvekili Mustafa Sarıgül'le ilgili yürütülen soruşturmada",
+     "kind": "statement"
+    },
+    {
+     "source": "context",
+     "quote": "akit: sağ (92)",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sağ yerleşimli Akit 'Eski CHP'li' kimliğini öne çıkarıyor; kimlik etiketi ile yargı arasındaki bağ açık değil.",
+   "alternative_explanation": "Yayın çizgisi farkları editoryal tercih, hedef kitle veya kaynak erişimi farkından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Aynı olaya benzer durumlarda farklı standart uygulandığını gösteren ifade",
+    "Grup üyeliğinin yargıyı etkilediğine dair açık bağlantı"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumlu kanıtın orantısız göz ardı edildiği bir ifade yok.",
+   "alternative_explanation": "Olayın kendisi olumsuz olduğu için olumsuz vurgu orantılı bir haber değeri olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıtın metinde yer alıp almadığı",
+    "Olumsuz bilginin değerlendirmeyi etkilediğine dair gözlem"
+   ]
+  }
+ ]
+}

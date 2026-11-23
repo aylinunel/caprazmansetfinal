@@ -1,0 +1,234 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "tehditler savuran şüpheliye tutuklama!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "cezasız kalmadı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Minguzzi cinayetiyle ilgili tehdit paylaşımları yapan şüpheli tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim 'tehditler savuran' ve 'cezasız kalmadı' gibi değerlendirici ifadeleri kendi sesiyle kullanıyor; Sabah ve Posta aynı olguyu bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "'Savurmak' tehdit eyleminin olağan Türkçe karşılığı olabilir.",
+   "missing_context": [
+    "İfadelerin olguyu aşıp aşmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mattia Ahmet Minguzzi'nin ölümüne ilişkin tehdit paylaşımları yapan şüpheli tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Minguzzi cinayetine ilişkin tehdit paylaşımları yapan şüpheli tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sözcü, Cumhuriyet, Sabah 'ölümüne ilişkin' derken Habertürk, Hürriyet dışındaki Mynet, Yeni Şafak ve Habertürk 'cinayet' diyor; aynı olay için çağrışımı farklı iki sözcük kullanılıyor.",
+   "alternative_explanation": "'Cinayet' hukuki nitelemeyi yansıtıyor olabilir; 'ölüm' ise yargı sürecini önceleyen nötr bir ifade olabilir.",
+   "missing_context": [
+    "Dava ve nitelemenin hukuki durumu"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "TikTok'ta Minguzzi cinayetine dair tehdit paylaşan kişi üç suçtan tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Üç ayrı suçtan cezaevine gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Minguzzi davasında beraat etmişti!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "15 yaşındaki Mattia Ahmet Minguzzi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Sondakika platformu (TikTok), Takvim suç sayısını, A Haber kişinin geçmişini, Haber7 ise kurbanın yaşını öne çıkarıyor.",
+   "alternative_explanation": "Farklı kurumlar başsavcılık açıklamasının farklı bölümlerini kullanmış olabilir.",
+   "missing_context": [
+    "Başsavcılık açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede'lerde konuyu iki seçeneğe indirgeyen ifade görülmüyor.",
+   "alternative_explanation": "Metinler bir tutuklamayı bildiriyor.",
+   "missing_context": [
+    "İki seçenekli ifade"
+   ]
+  },
+  {
+   "card_id": "ad-hominem",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Minguzzi davasında beraat etmişti! Tehdit paylaşımları nedeniyle tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "A Haber başlığı tutuklanan kişinin geçmişini ('beraat etmişti') ön plana alıyor; ancak başlık aynı zamanda tutuklama nedeni olarak tehdit paylaşımlarını da belirtiyor, bu yüzden karakterizasyonun eylemin yerine geçtiği net değil.",
+   "alternative_explanation": "Geçmiş dava bilgisi olgusal bağlam olabilir.",
+   "missing_context": [
+    "Beraat bilgisinin doğruluğu ve ilgisi",
+    "Paylaşımların içeriği"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber tek bir tutuklama olayını aktarıyor; yapısal bir sorunun tek vaka üzerinden anlatıldığına dair işaret yok.",
+   "alternative_explanation": "Haber tek vakayı bildiriyor.",
+   "missing_context": [
+    "Yinelenen bir sorun olduğunu gösteren bağlam"
+   ]
+  }
+ ]
+}

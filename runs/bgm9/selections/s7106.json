@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "word-choice",
+  "responsibility-framing",
+  "emphasis-framing",
+  "labeling",
+  "spin"
+ ],
+ "selection_uncertainty": [
+  "Soruşturma sürüyor; suçluluk belirlenmemiş.",
+  "Haber gövdeleri kırpılmış."
+ ],
+ "selection_note": "mynet 'Foncular için hesap vakti!' ve cumhuriyet 'vurgun' ifadeleri kurumların kendi sesi; başlıklar farklı boyutları öne çıkarıyor."
+}

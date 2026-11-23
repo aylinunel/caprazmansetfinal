@@ -1,0 +1,199 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'ye geçeceği iddia edilen",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Parti aidiyeti anılıyor; kararın grup üyeliğine bağlandığı ve tutarsız standart uygulandığı gösterilmiyor.",
+   "alternative_explanation": "Parti değiştirme haberinde partilerin anılması doğaldır.",
+   "missing_context": [
+    "Grup kimliğine bağlı farklı muamele kanıtı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 19:53] SON DAKİKA I Antalya'da istifa depremi: Başkan Vekili Özdemir CHP'den istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 19:38] Antalya Büyükşehir Belediye Başkanvekili Büşra Özdemir CHP'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı istifa bir kurumda 'istifa depremi', diğerinde yalın biçimde veriliyor; olgular aynı, vurgu farklı. Ancak bu farkın bir yargıya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Başlık üslubu ve yayım biçimi farkı olabilir.",
+   "missing_context": [
+    "Sunum farkının okur yargısına etkisi"
+   ]
+  },
+  {
+   "card_id": "bandwagon-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir eylemin popülerliğine veya başkalarının benimsemesine bağlandığı ifade yok.",
+   "alternative_explanation": "Metin bir kişinin istifasını bildiriyor.",
+   "missing_context": [
+    "Popülerliğin gerekçe sunulduğu ifade"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Belirtilmiş önceki inanç ve kanıtın seçici işlendiği gösterilmiyor.",
+   "alternative_explanation": "Metin gelişmeyi ve kulis iddialarını aktarıyor.",
+   "missing_context": [
+    "Önceki inanç ve asimetrik kanıt işleme"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Siyaset gündemini sarsan son dakika gelişmesi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Vurgulu ifade var; bu vurgunun bir yargıya dayanak yapıldığı gösterilmiyor.",
+   "alternative_explanation": "Haber başlığı üslubu; gelişmenin önemi kurumca vurgulanmış olabilir.",
+   "missing_context": [
+    "Vurgunun yargıya bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstifa bilgisi CHP kaynakları tarafından da doğrulandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kaynak doğrulaması belirtiliyor; statünün bir değerlendirmenin yerine geçtiği gösterilmiyor.",
+   "alternative_explanation": "Doğrulama için ilgili partiye başvurmak gerekçeli bir yöntemdir.",
+   "missing_context": [
+    "Yetkili beyanın karşıt kanıta rağmen belirleyici sayıldığını gösteren ifade"
+   ]
+  }
+ ]
+}

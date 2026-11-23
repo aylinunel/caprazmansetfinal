@@ -1,0 +1,148 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "fon vurgununun ardından boşta kalan SPK Başkanlığı koltuğuna Muhsin Atcı atandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SPK Başkanlığına Muhsin Atcı atandı! Karar Resmi Gazete'de",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Atama bir kurumda bağlam içinde, diğerinde yalın veriliyor; eşdeğerlik ve tercih bağı yok. Kart, eşdeğer seçeneklerin açıkça eşdeğer olduğunun metinde kurulmasını ve bir tercihin yalnızca sunuluş farkına bağlanmasını şart koşuyor; başlıklar arasında ifade farkı görülse de hiçbir metin bir karar ya da tercihi bu farka dayandırmıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatleri, farklı ajans kaynakları ve olayın farklı aşamalarının haberleştirilmesiyle açıklanabilir; kurumların editoryal tercihi bir akıl yürütme hatası değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin bu çerçevelere maruz kalıp farklı yargıya vardığını gösteren veri",
+    "Başlıkların bilgi açısından eşdeğer olduğunu açıkça belirten bir ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merakla bekleniyordu! SPK Başkanlığına Muhsin Atcı atandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Beklenti vurgusu bir yargıya bağlanmıyor. Göze çarpan ayrıntılar başlıklarda öne çıkarılıyor; fakat bu ayrıntının bir yargı ya da tercihe açıkça bağlandığı veya ilgili karşı kanıtın göz ardı edildiği metinde gösterilmiyor. Tek metindeki vurgu bu kart için yeterli değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması haber değeri ve habercilik konvansiyonlarıyla açıklanabilir; bu bir yargı hatası değil, sunum tercihidir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin farklı ağırlıklandırıldığını gösteren karşılaştırmalı karar verisi",
+    "Vurgunun bir sıklık ya da risk tahminine dönüştürüldüğünü gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Recep Tayyip Erdoğan imzalı atama kararı, Resmi Gazete'de yayımlandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Atamanın yetkili makamı ve hukuki dayanağı bildiriliyor; bu olgusal bilgi, statüye dayalı akıl yürütme değil. Metinde yetkili bir kaynak anılıyor; ancak bu statünün bir iddiayı değerlendirmede belirleyici ağırlık aldığı ya da karşıt kanıtın statü yüzünden göz ardı edildiği gösterilmiyor. Resmî kaynağa atıf haberciliğin olağan kaynak gösterme pratiğidir.",
+   "alternative_explanation": "Resmî kurum veya yetkiliye atıf, doğrulanabilir bilginin kaynağını belirtmek için yapılan standart bir gazetecilik pratiği olabilir; yetkinlik ile iddia arasında uyumsuzluk görülmüyor.",
+   "missing_context": [
+    "Kaynağın görüşüne karşı ileri sürülen ve gerekçesiz reddedilen bir kanıt",
+    "Statünün tek gerekçe olarak sunulduğunu gösteren açık ifade"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Geçtiğimiz günlerde görevinden ayrılan Mahmut Sütcü'nün yerine",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki başkan anılıyor ama bir tahmin ya da yargı ona bağlanmıyor. İlk açıklanan bilgiler sonraki haberlere referans olabilir; ancak metin sonraki bir tahminin bu ilk değere açıkça bağlandığını ve yeni kanıta rağmen ona yakın tutulduğunu göstermiyor.",
+   "alternative_explanation": "Sayılar arasındaki farklar resmî açıklamaların güncellenmesi ve farklı yayın saatleriyle açıklanabilir; eski rakamı kullanan kurum güncel bilgiye henüz ulaşmamış olabilir.",
+   "missing_context": [
+    "Her kurumun rakamı aldığı kaynak ve saat",
+    "Güncel rakam bilindiği hâlde eski değerde ısrar edildiğini gösteren kanıt"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 00:35] Türkiye'yi savaş riskine sokan Mekke Anlaşması, TBMM'den geçti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 01:40] Üçlü savunma paktında tarihi adım: Mekke Anlaşması TBMM'den geçti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Anlaşmaya Yeni Parti, İYİ Parti, DEM Parti ve Yeni Yol Grubu hayır oyu kullandı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhur İttifakı'na destek veren CHP'nin de oylarıyla",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı kabulü veren metinlerden biri savaş riskini, biri tarihi adımı, biri ret veren partileri, biri CHP'nin desteğini öne çıkarıyor.",
+   "alternative_explanation": "Farklı vurgular, kuruluşların oylamanın hangi yönünü haber değeri taşıyan bulduğuna bağlı olabilir.",
+   "missing_context": [
+    "Oylamanın tam dökümü"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 01:40] Üçlü savunma paktında tarihi adım: Mekke Anlaşması TBMM'den geçti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 23:59] Mekke İttifakı TBMM'de kabul edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 00:07] Mekke Anlaşması TBMM'de kabul edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı belge 'Mekke Anlaşması', 'Mekke İttifakı' ve 'Üçlü savunma paktı' diye adlandırılıyor; 'ittifak' ve 'pakt' bir sözleşmeden öte askeri bir blok çağrışımı taşıyor.",
+   "alternative_explanation": "Adlar kamuoyunda paralel olarak dolaşan kısaltmalar olabilir.",
+   "missing_context": [
+    "Belgenin resmi adı ve hükümetin kullandığı kısa ad"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 01:40] Üçlü savunma paktında tarihi adım:",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 01:40] Üçlü savunma paktında tarihi adım: Mekke Anlaşması TBMM'den geçti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 00:07] Mekke Anlaşması TBMM'de kabul edildi — Türkiye, Pakistan ve Suudi Arabistan arasında imzalanan Mekke Ortak Savunma Anlaşması'nın onaylanmasının uygun bulunmasına ilişkin kanun teklifi TBMM Genel Kurulu'nda kabul edildi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı başlıkta 'tarihi adım' değerlendirmesi ile 'üçlü savunma paktı' etiketi birlikte kullanılıyor; ikisi de kabulü güçlü ve olumlu bir gelişme olarak sunuyor. Başka bir kuruluş aynı olguyu bu bileşim olmadan veriyor.",
+   "alternative_explanation": "'Tarihi' sözcüğü ilk kez yapılan bir savunma anlaşmasını betimlemek için kullanılmış olabilir.",
+   "missing_context": [
+    "Kuruluşun haberin devamındaki içerik"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 00:35] Türkiye'yi savaş riskine sokan Mekke Anlaşması, TBMM'den geçti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık beklenen bir sonucu (savaş riski) öne taşıyor; ancak ana yüklem hâlâ olayın kendisi ('TBMM'den geçti'), sonuç yalnızca bir sıfat cümleciğinde yer alıyor.",
+   "alternative_explanation": "Sıfat cümleciği anlaşmayı tanımlamak için kullanılıyor; olay başlıkta veriliyor.",
+   "missing_context": [
+    "Savaş riskine ilişkin kaynak ya da değerlendirme"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye, Suudi Arabistan ve Pakistan arasındaki Mekke İttifakı'nda iç onay süreci tamamlandı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye, Suudi Arabistan ve Pakistan arasında 7 Ağustos'ta imzalanan Mekke Anlaşması",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kabul haberi bazı ledlerde imzadan iç onaya uzanan bir anlaşma süreci içine yerleştiriliyor.",
+   "alternative_explanation": "Süreç bilgisi kabulün hukuki anlamını açıklamak için gereklidir.",
+   "missing_context": [
+    "Diğer ülkelerdeki onay süreçleri"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde kuruluşların kendi sesinde konuyu iki karşıt seçeneğe indiren bir kurgu yok.",
+   "alternative_explanation": "Haberler bir oylama sonucunu aktarıyor.",
+   "missing_context": [
+    "İki seçenekli bir sunum"
+   ]
+  }
+ ]
+}

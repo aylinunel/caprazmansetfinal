@@ -1,0 +1,244 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "5 şüpheli gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "4 Cumhuriyet savcısı görevlendirildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "17 ölü, 12 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "neden patlama oldu?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı patlamayı veren kurumlar başlıklarında farklı boyutları öne çıkarıyor: gözaltı, savcı görevlendirme, can kaybı ve yaralı sayısı, nedensel soru.",
+   "alternative_explanation": "Her kurum farklı saatte farklı gelişmeyi (gözaltı, soruşturma) haberleştirmiş olabilir; farklı anlar farklı vurgu doğurur.",
+   "missing_context": [
+    "Başlıkların yayın saatine göre gelişme sırası",
+    "Kurumların editoryal tercihleri"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "5 şüpheli gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor (gözaltı, savcı görevlendirme); ancak başlık dilbilgisi adlandırılmış bir aktöre sorumluluk yüklemiyor, yalnızca 'şüpheli' diyor.",
+   "alternative_explanation": "Gözaltı bilgisi olgusal bir gelişmedir; sorumluluk atfı yapılmıyor.",
+   "missing_context": [
+    "Soruşturmanın sonucu",
+    "Gözaltılananların kimliği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yaşanan elim kazanın ardından",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir'de demir çelik fabrikasında patlama meydana geldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Posta olayı kendi sesiyle 'elim kaza' olarak adlandırırken AA ve diğerleri 'patlama' diyor; 'kaza' tesadüfi/kusursuz çağrışım taşır, 'patlama' nötr olgu adıdır.",
+   "alternative_explanation": "'Elim kaza' yas ve taziye dili olarak kullanılmış, register farkı olabilir.",
+   "missing_context": [
+    "Posta metninin tam bağlamı",
+    "Olayın nedeni henüz belirlenmemiş olması"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam ve diğer kurumların haberleri sorunun yinelenen/yapısal olduğunu göstermiyor; metin tek bir kişi hikâyesi de anlatmıyor.",
+   "alternative_explanation": "Metin olayın kendisini aktarıyor; yapısal çerçeve bu başlık/lede formatında beklenmez.",
+   "missing_context": [
+    "Daha önceki iş kazası verileri",
+    "Sektörel güvenlik bağlamı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "4 Cumhuriyet savcısı görevlendirildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay haberdir; ancak başlık veya lede olayı daha geniş bir eğilim, seri veya kurumsal bağlam içine yerleştirmiyor, yalnızca soruşturma adımını bildiriyor.",
+   "alternative_explanation": "Savcı görevlendirme tek bir olay sonrası usul bilgisidir.",
+   "missing_context": [
+    "Önceki benzer olaylar",
+    "İş sağlığı ve güvenliği politikası bağlamı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İzmir'de demir çelik fabrikasında şiddetli patlama! Can kaybı giderek artıyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Tablo ağırlaşıyor!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir'de demir çelik fabrikasında patlama meydana geldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Kurumların kendi sesindeki 'şiddetli patlama!', 'Tablo ağırlaşıyor!' ifadeleri olgunun ötesinde yoğunluk katıyor; AA aynı olayı bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "'Şiddetli' ve 'ağırlaşıyor' olayın gerçek boyutunu betimleyen tanımlayıcılar olabilir.",
+   "missing_context": [
+    "Patlamanın fiziksel şiddetine dair resmî veri",
+    "Yazım biçimi (ünlem) tercihi"
+   ]
+  }
+ ]
+}

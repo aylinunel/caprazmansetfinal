@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "emphasis-framing",
+  "consequence-framing",
+  "responsibility-framing",
+  "word-choice",
+  "spin"
+ ],
+ "selection_uncertainty": [
+  "İddialar doğrulanmamış; senatör sözleri alıntıdır.",
+  "Bazı başlıklar yabancı dilde."
+ ],
+ "selection_note": "'Bal tuzağı', servet kaybı ve borsa etkisi gibi farklı boyutlar öne çıkarılıyor."
+}

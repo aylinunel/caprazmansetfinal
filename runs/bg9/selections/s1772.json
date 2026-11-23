@@ -1,0 +1,16 @@
+{
+ "candidate_ids": [
+  "salience-bias",
+  "negativity-bias",
+  "normalcy-bias",
+  "authority-bias",
+  "identifiable-victim-effect",
+  "framing-effect"
+ ],
+ "selection_uncertainty": [
+  "Ölü/yaralı sayıları kurumlar arasında farklı.",
+  "Sorumluluk belirsiz.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "Bakan açıklamalarına yer verme ve sayı farklılıkları öne çıkıyor."
+}

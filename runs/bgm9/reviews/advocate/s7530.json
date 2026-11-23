@@ -1,0 +1,228 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteoroloji altı bölgeyi zirai don için uyardı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çiftçiler dikkat: Meteoroloji'den zirai don uyarısı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erzurum'da kar kent merkezini beyaza bürüdü, Meteoroloji zirai don uyarısı yaptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı MGM uyarısını bir başlık kapsam (altı bölge), biri etkilenen kesim (çiftçiler), biri ise yerel kar görüntüsü üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Kurumlar farklı yayın saatlerinde farklı bölgesel açıklamaları (valilik, bölge müdürlüğü) temel almış olabilir.",
+   "missing_context": [
+    "Tüm kurumların aynı açıklamayı mı yoksa farklı bölgesel açıklamaları mı kaynak aldığı"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteoroloji bölge bölge uyardı: Zirai don alarmı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "hafif ve yer yer orta şiddette zirai don riski",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Trakya ile Sakarya ve Kocaeli'nin iç ve yüksek kesimlerinde hafif",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Cumhuriyet kendi sesiyle \"alarm\" sözcüğünü kullanıyor; diğer haberler riskin hafif ve yer yer orta şiddette olduğunu belirtiyor, bu ölçekle \"alarm\" orantısız kalıyor.",
+   "alternative_explanation": "Zirai don ürün kaybı riski taşıdığından güçlü dil üreticileri harekete geçirmeye yönelik olabilir.",
+   "missing_context": [
+    "MGM uyarısının resmi düzeyi (sarı/turuncu) ve beklenen zarar ölçeği"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Zirai don alarmı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 04:44] Meteorolojiden zirai don uyarısı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "\"Alarm\" sözcüğü değerlendirici bir yük taşıyor olabilir; aynı olgu AA tarafından yüksüz biçimde veriliyor. Ancak \"alarm\" kartın örneklediği değerlendirici sözcüklerden çok tehdit sözcüğüne yakın.",
+   "alternative_explanation": "Uyarı haberlerinde \"alarm\" yerleşik bir gazetecilik kalıbı olarak kullanılabilir.",
+   "missing_context": [
+    "\"Alarm\" sözcüğünün değerlendirici mi yoksa betimleyici mi okunduğuna dair ölçüt"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteoroloji bölge bölge uyardı: Zirai don alarmı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 04:44] Meteorolojiden zirai don uyarısı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı MGM duyurusu için bir kurum \"uyarı\", diğeri \"alarm\" sözcüğünü kendi sesiyle seçiyor; \"alarm\" daha acil ve tehlikeli bir çağrışım taşıyor.",
+   "alternative_explanation": "Sözcük farkı başlık uzunluğu ve dikkat çekme alışkanlığından kaynaklanabilir.",
+   "missing_context": [
+    "MGM'nin kendi metninde kullandığı sözcük"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kurumun kendi sesiyle yalnızca iki seçenek sunduğu bir ifade"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kurumun kendi sesiyle kurduğu açık bir nedensellik ifadesi"
+   ]
+  }
+ ]
+}

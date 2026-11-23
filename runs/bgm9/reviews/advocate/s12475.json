@@ -1,0 +1,278 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurguncusuna yurt dışında kıskıvrak yakalama!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Altınbaş Holding Yönetim Kurulu Üyesi Serdar Altınbaş",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Altınbaş Holding patronu Serdar Altınbaş",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon firarisi Serdar Altınbaş",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi 'Yönetim Kurulu Üyesi', 'holding patronu', 'fon firarisi' ve 'fon vurguncusu' olarak adlandırılıyor; son ikisi kimlik belirtmenin ötesinde bir değerlendirme taşıyor.",
+   "alternative_explanation": "Farklı unvanlar kaynağın (bakanlık, savcılık) kullandığı ifadeyi izliyor olabilir.",
+   "missing_context": [
+    "Kurumların unvan seçimlerinin kaynağı",
+    "Kişinin resmi unvanları"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Serdar Altınbaş yakalandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Serdar Altınbaş Çekya'da enselendi!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı eylem için 'yakalandı' ve 'enselendi' sözcükleri kullanılıyor; ikincisi günlük dilde daha zafer vurgulu bir çağrışım taşıyor.",
+   "alternative_explanation": "Sözcük farkları yalnızca üslup veya kurum yazım kuralı farkı olabilir.",
+   "missing_context": [
+    "Sözcüklerin okur algısına etkisi",
+    "Kurum üslup kılavuzları"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Uluslararası aranan Serdar Altınbaş Çekya'da yakalandı, İçişleri Bakanlığı duyurdu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: Serdar Altınbaş Çekya'da yakalandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İade işlemleri başlatıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı yakalama haberinde bir başlık duyuran kurumu, biri soruşturmayı, biri iade sürecini öne çıkarıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, karakter sınırı veya o anki bilgi düzeyinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Kurumların tam başlık ve metinleri",
+    "Yayın sırası ve güncellemeler"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurguncusuna yurt dışında kıskıvrak yakalama! Serdar Altınbaş Çekya'da enselendi!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Serdar Altınbaş yakalandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit başlığı 'vurguncu', 'kıskıvrak', 'enselendi' gibi değerlendirici sözcükleri kendi sesinde kullanıyor; Habertürk aynı olguyu yalın veriyor.",
+   "alternative_explanation": "Değerlendirici sözcükler kurumun olağan başlık üslubu olabilir.",
+   "missing_context": [
+    "Aynı olguyu yalın aktaran kurumların oranı",
+    "Başlığın tam bağlamı"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurguncusuna yurt dışında kıskıvrak yakalama!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "kaçtığı yurt dışında Türk yargısının pençesinden kurtulamadı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Serdar Altınbaş yakalandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Akit'in başlığında olumsuz etiket ve zafer tonlu sözcükler, girişte 'pençesinden kurtulamadı' ifadesi aynı yönde birleşiyor; başka kurum olguyu bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Seçimler birbirinden bağımsız ve olağan başlık üslubu olabilir.",
+   "missing_context": [
+    "Kurumun diğer haberlerindeki genel eğilimi",
+    "Aynı olguyu yalın veren kurumların karşılaştırması"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "koordinesinde yürütülen çalışmalar sonucunda",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Çalışmalar sonucunda' ifadesi yakalamayı koordineli çalışmaya bağlıyor; ifade bakanlık açıklaması olarak aktarılıyor ve kurumun kendi nedensellik iddiası olduğu açık değil.",
+   "alternative_explanation": "İfade kronolojik bağlam veya kaynak aktarımı olabilir.",
+   "missing_context": [
+    "Nedensellik iddiasının dayanağı",
+    "İfadenin kime atfedildiği"
+   ]
+  }
+ ]
+}

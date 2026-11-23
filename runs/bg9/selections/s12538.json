@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "base-rate-fallacy",
+  "framing-effect",
+  "anchoring-bias",
+  "authority-bias",
+  "salience-bias"
+ ],
+ "selection_uncertainty": [
+  "'%0,43' oranı bakana ait; payda belirsiz.",
+  "Şikayetlerin kapsamı verilmemiş."
+ ],
+ "selection_note": "Toplam geçişe oranlanan küçük yüzde sorunun büyüklüğünü küçük gösterebilir."
+}

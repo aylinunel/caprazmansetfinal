@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "emphasis-framing",
+  "loaded-language",
+  "word-choice",
+  "cherry-picking",
+  "labeling"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Kadronun tamamı verilmemiş; dışarıda kalan isimlere seçici vurgu var."
+ ],
+ "selection_note": "'Flaş karar', 'Fenerbahçeli yıldızlar kadro dışı' gibi vurgu ve kelime seçimi adayları."
+}

@@ -1,0 +1,195 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Karaahmetoğlu'nun AKP'ye geçeceği iddia edildi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde grup üyeliğine bağlı farklı muamele gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Kurumlar arası farklar farklı kaynak ve zamanlamadan kaynaklanabilir.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyoğlu'nda gerekçe iç kavgalar",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKP'ye geçebilir",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı istifa haberi biri gerekçe, diğeri olası parti geçişi çerçevesiyle sunuluyor; eşdeğerlik ve çerçeveye bağlı bir yargı açıkça kurulmuyor.",
+   "alternative_explanation": "Vurgu farkı, her kurumun farklı zamanda farklı güncel bilgiye sahip olmasından kaynaklanabilir.",
+   "missing_context": [
+    "Eşdeğerliğin açıkça belirlenmesi",
+    "Çerçeveye bağlanan bir tercih"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde önceden belirtilmiş bir inanç ve asimetrik kanıt kullanımı gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Metin ilk inanç belirtmeden olay aktarıyor.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda 'şiddetli patlama!' gibi çarpıcı ifadeler öne çıkarılıyor; ancak metin, bu çarpıcılığı bir yargıya veya seçime açıkça bağlamıyor.",
+   "alternative_explanation": "Haber dilinin doğal vurgusu; olayın ciddiyeti nedeniyle öne çıkarma gerekçeli olabilir.",
+   "missing_context": [
+    "Okuyucu yargısına dair kanıt yok",
+    "Karşılaştırmalı ağırlıklandırma davranışı yok"
+   ]
+  },
+  {
+   "card_id": "bandwagon-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde görüşün popülerliğe dayandırılması gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Metinde çoğunluk desteğine dayalı gerekçe yok.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "reactive-devaluation",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir teklifin kaynağı nedeniyle değersizleştirilmesi gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Metinde karşı tarafça sunulmuş bir teklif yok.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  }
+ ]
+}

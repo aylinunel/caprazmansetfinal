@@ -1,0 +1,267 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 20:17] Hakan Bahçetepe’ye 6 yıl 3 ay hapis cezası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 19:44] Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe'ye ev hapsiyle tahliye",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "haksız mal edinme ve suçtan kaynaklanan malvarlığı değerlerini aklama suçlarından ayrı ayrı beraat etti.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kararı veren metinlerden biri hapis cezasını, biri tahliyeyi, biri beraati öne çıkarıyor.",
+   "alternative_explanation": "Karar birden çok unsur içerdiği için kuruluşlar farklı unsurları başlığa taşımış olabilir.",
+   "missing_context": [
+    "Kararın tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[mynet · 19:52] Hakan Bahçetepe hakkında ev hapsi kararı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aydinlik · 19:52] Hakan Bahçetepe hakkında tahliye kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı karar bir başlıkta 'ev hapsi kararı', diğerinde 'tahliye kararı' olarak adlandırılıyor; biri kısıtlamayı, diğeri serbest kalmayı çağrıştırıyor.",
+   "alternative_explanation": "Ev hapsi şeklinde adli kontrolle tahliye her iki unsuru da içerdiği için iki adlandırma da olgusal olarak doğru.",
+   "missing_context": [
+    "Kuruluşların benzer adli kontrol kararlarında kullandığı sözcükler"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 19:51] Eski Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[akit · 19:53] Görevden uzaklaştırılan Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 19:44] Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe'ye ev hapsiyle tahliye",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi kuruluşların kendi seslerinde 'Eski Belediye Başkanı', 'Görevden uzaklaştırılan Belediye Başkanı' ve 'Belediye Başkanı' olarak anılıyor; 'eski' etiketi makamın sürüp sürmediğine dair bir değerlendirme taşıyor.",
+   "alternative_explanation": "Görevden uzaklaştırma, etiket farkını olgusal olarak açıklayabilir.",
+   "missing_context": [
+    "Bahçetepe'nin hukuki olarak makamda olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 20:17] Hakan Bahçetepe’ye 6 yıl 3 ay hapis cezası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "haksız mal edinme ve suçtan kaynaklanan malvarlığı değerlerini aklama suçlarından ayrı ayrı beraat etti.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kararın yalnızca hapis cezası unsurunu veriyor; aynı karara ait beraat bilgisi başka metinlerde yer alıyor ve bu başlıkta yok. Ancak başlığın bir genel sonucu desteklemek için seçili bir göstergeye dayandığı açıkça görülmüyor.",
+   "alternative_explanation": "Hapis cezası kararın en ağır ve haber değeri en yüksek unsuru olarak seçilmiş olabilir.",
+   "missing_context": [
+    "Sabah haberinin tam metni"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 20:03] Görevden uzaklaştırılan eski Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe'ye ev hapsi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Mahkeme, Bahçetepe hakkındaki kararını açıklarken, sanığın ev hapsi şartıyla tahliyesine hükmetti.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 19:44] Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe'ye ev hapsiyle tahliye",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kuruluşun başlığı 'görevden uzaklaştırılan eski' etiketini ve kararı 'ev hapsi' olarak adlandırmayı birleştiriyor; ikisi de kısıtlamayı öne çıkaran aynı yöne işaret ediyor. Başka bir kuruluş aynı kararı 'Belediye Başkanı' etiketi ve 'tahliye' sözcüğüyle veriyor.",
+   "alternative_explanation": "Etiket ve sözcük, görevden uzaklaştırma ve adli kontrolün olgusal betimlemeleri olarak da görülebilir.",
+   "missing_context": [
+    "Kuruluşun haberin devamında beraat ve ceza bilgilerini verip vermediği"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde konuyu iki karşıt seçeneğe indiren bir kurgu bulunmuyor.",
+   "alternative_explanation": "Haberler bir mahkeme kararını aktarıyor.",
+   "missing_context": [
+    "İki seçenekli bir sunum"
+   ]
+  }
+ ]
+}

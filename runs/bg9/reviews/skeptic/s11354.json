@@ -1,0 +1,198 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya Savunma Bakanlığı, kazadan kurtulan olmadığını açıklarken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Rusya Savunma Bakanlığı ve vali kaynak olarak anılıyor; statünün gerekçeli değerlendirmenin yerine geçtiği gösterilmiyor.",
+   "alternative_explanation": "Kaza bilgisini ilgili resmi kurumdan aktarmak olağan haber pratiğidir.",
+   "missing_context": [
+    "Resmi beyanın karşıt kanıta rağmen belirleyici sayıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Düşme anı kamerada",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Düşme anı kamerada' gibi çarpıcı ayrıntı öne çıkarılıyor; bunun bir yargıya dayanak yapıldığı gösterilmiyor.",
+   "alternative_explanation": "Görüntü olması haberin gerçek bir unsurudur ve haber değeri taşır.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıya dayanak yapıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kurtulan olmadı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz bir olay aktarılıyor; karşılaştırılabilir olumlu kanıta orantısız ağırlık verildiği gösterilmiyor.",
+   "alternative_explanation": "Uçak kazası olumsuz bir olaydır; haberleştirilmesi orantılıdır.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıt ve ona verilen ağırlık"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hatırlama kolaylığına dayanan bir tahmin veya risk yargısı yok.",
+   "alternative_explanation": "Metin tekil bir kazayı bildiriyor; genelleme yapmıyor.",
+   "missing_context": [
+    "Hatırlama kolaylığına dayalı bir tahmin ifadesi"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[t24 · 19:02] Rusya'da askeri nakliye uçağı düştü: 17 ölü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 22:26] Rusya'da askeri nakliye uçağı düştü: 19 ölü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İlk bildirilen 17 sayısı sonraki 19 sayısından önce yer alıyor; ancak sonraki tahminin bu çıpaya bağlandığı ve düzeltmeye direnildiği metinde gösterilmiyor.",
+   "alternative_explanation": "Sayı farkı ilk belirlemelerin güncellenmesinden kaynaklanıyor olabilir; kurumlar yayım anındaki resmi veriyi aktarmıştır.",
+   "missing_context": [
+    "Her kurumun güncel sayıyı bilip bilmediği",
+    "Çıpaya bağlı bir yargı ifadesi"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kazanın teknik arızadan kaynaklandığı değerlendiriliyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kaza nedeni bazı başlıklarda yer alıyor, bazılarında yok; fakat bu farkın bir tercihe veya yargıya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Kısa başlıklarda ayrıntı eksiltilmesi alan kısıtından kaynaklanır.",
+   "missing_context": [
+    "Eşdeğerlik ve bir yargıya bağlanma kanıtı"
+   ]
+  }
+ ]
+}

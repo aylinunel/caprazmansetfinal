@@ -1,0 +1,231 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "11 kişi daha gözaltına alındı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "11 kişi hakkında gözaltı kararı verildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı gelişme için 'gözaltına alındı' ve 'gözaltı kararı verildi' gibi farklı ifadeler kullanılıyor; ancak bu iki ifade farklı aşamaları anlatıyor olabilir.",
+   "alternative_explanation": "Fark, olgunun farklı aşamalarından doğmuş olabilir.",
+   "missing_context": [
+    "Gözaltıların gerçek durumu"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgül ailesine yönelik kara para aklama soruşturmasında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; ancak başlıklar kimseye açık bir sorumluluk atfetmiyor, yalnızca soruşturmanın niteliğini adlandırıyor.",
+   "alternative_explanation": "'Kara para aklama soruşturması' iddianın adını anlatan olağan bir ifade olabilir.",
+   "missing_context": [
+    "Suç isnadının atıfsız kullanılıp kullanılmadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "büyük gözaltı dalgası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "flaş gelişme",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Şişli Meslek Yüksekokulu'na kayyım atandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Akit ve Yeni Şafak kendi başlıklarında 'büyük gözaltı dalgası' ve 'flaş gelişme' gibi değerlendirici ifadeler kullanıyor; Diken aynı olguyu yalın veriyor.",
+   "alternative_explanation": "'Flaş' haber sektöründe yerleşik bir son dakika etiketi olabilir.",
+   "missing_context": [
+    "İfadelerin atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgül soruşturmasında 11 yeni gözaltı! Şişli Meslek Yüksek Okulu’na kayyum atandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Şişli Meslek Yüksekokulu'na kayyım atandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar gözaltı sayısını, Diken ise yalnızca okula kayyum atanmasını öne çıkarıyor.",
+   "alternative_explanation": "Farklı başlık uzunluğu ve ilk cümle tercihi olabilir.",
+   "missing_context": [
+    "Başlıkların tam metni"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sarıgüller soruşturmasında yeni gelişme!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıgül ailesine yönelik kara para soruşturmasında",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı aktör kimi kurumlarda 'Sarıgül ailesi', kimilerinde 'Sarıgüller' diye adlandırılıyor; tanımlamanın ötesinde değerlendirme taşıyıp taşımadığı belirsiz.",
+   "alternative_explanation": "Fark çoğul biçim ile aile sözcüğü arasındaki üslup farkı olabilir.",
+   "missing_context": [
+    "Etiketlerin değerlendirme içerip içermediği"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  }
+ ]
+}

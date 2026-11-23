@@ -1,0 +1,202 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 14:36] İzmir'deki fabrika patlamasında son durum! 3 ölü, 14 yaralı, 10 kişi enkaz altında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 11:14] İzmir'deki fabrika patlamasında can kaybı 18'e yükseldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Can kaybı rakamları zaman içinde 3'ten 18'e güncelleniyor; ancak sonraki bir tahminin ilk rakama dayandırıldığı ya da ona yakın tutulduğu bir akıl yürütme yok, rakamlar yeni bilgilerle değişiyor.",
+   "alternative_explanation": "Rakam değişimi arama kurtarma sürecinde ortaya çıkan yeni bilgileri yansıtıyor.",
+   "missing_context": [
+    "Rakamların kaynağı ve güncellenme saatleri"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz bilgiye karşılaştırılabilir olumlu bilgiden orantısız ağırlık verildiğini belgeleyen bir karşılaştırma bulunmuyor.",
+   "alternative_explanation": "Ölümlü bir iş kazasının olumsuz dille verilmesi olayla orantılıdır.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgi"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde kolay hatırlanan örneklerin bir olasılık ya da risk tahminine gerekçe yapıldığı bir ifade yok.",
+   "alternative_explanation": "Haberler tek bir olayın bilançosunu aktarıyor.",
+   "missing_context": [
+    "Hatırlanabilirliğe dayalı bir çıkarım"
+   ]
+  },
+  {
+   "card_id": "fundamental-attribution-error",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "şirketin yönetim kurulu başkanı dahil 11 kişi için gözaltı kararı verildi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Gözaltı kararları aktarılıyor; ancak bir kişinin davranışını kalıcı bir karakter özelliğine bağlayan bir yargı metinde yok.",
+   "alternative_explanation": "Gözaltı bilgisi soruşturma sürecine ilişkin olgusal bir aktarımdır.",
+   "missing_context": [
+    "Kişilerin davranışına ilişkin değerlendirme"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[posta · 15:22] İzmir'deki faciada can kaybı 18'e yükseldi! İşçilerin hikayeleri yürek burktu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 11:14] İzmir'deki fabrika patlamasında can kaybı 18'e yükseldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık işçilerin duygusal hikayelerini öne çıkarıyor, başka bir kuruluş aynı bilançoyu yalnızca rakamla veriyor; duygusal ayrıntının bir yargıyı haksız biçimde etkilediği ise açıkça gösterilmiyor.",
+   "alternative_explanation": "Kişisel hikayeler kurbanları tanıtmaya yönelik yerleşik bir habercilik biçimidir.",
+   "missing_context": [
+    "Duygusal ayrıntıya dayanan açık bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 14:13] HABAŞ'taki işçi katliamında can kaybı 18'e yükseldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 11:14] İzmir'deki fabrika patlamasında can kaybı 18'e yükseldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı bilanço bir başlıkta 'işçi katliamı', diğerinde 'fabrika patlaması' olarak sunuluyor; ancak bu farka dayanan bir tercih ya da yargı metinde kurulmuyor.",
+   "alternative_explanation": "Kuruluşlar olayın niteliğine ilişkin farklı adlandırmalar seçmiş olabilir; okurun bir seçim yaptığı gösterilmemiştir.",
+   "missing_context": [
+    "Sunum farkına dayanan açık bir değerlendirme"
+   ]
+  }
+ ]
+}

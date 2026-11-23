@@ -1,0 +1,141 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "fon vurgununun ardından boşta kalan SPK Başkanlığı koltuğuna Muhsin Atcı atandı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 00:11] SPK Başkanlığına Vergi Denetim Kurulu Başkanı Muhsin Atcı atandı — Resmi Gazete'de yayımlanan atama kararlarına göre, Sermaye Piyasası Kurulu (SPK) Başkanlığına, Vergi Denetim Kurulu Başkanı Muhsin Atcı atandı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı atama bir ledde 'fon vurgunu' sonrasına yerleştirilirken diğerinde yalnızca Resmi Gazete kararı olarak veriliyor; sunum farkı gözleniyor, ancak bu farka dayanan bir tercih ya da yargı metinde kurulmuyor.",
+   "alternative_explanation": "Kuruluşlar atamanın arka planını farklı ölçüde vermeyi seçmiş olabilir; bu bir karar yanlılığı göstermez.",
+   "missing_context": [
+    "Sunum farkına dayanan açık bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 00:33] Merakla bekleniyordu! SPK Başkanlığına Muhsin Atcı atandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık beklentiyi öne çıkarıyor; ancak belirgin bir ayrıntının bir yargıyı ya da seçimi haksız biçimde etkilediğine dair bir ifade yok.",
+   "alternative_explanation": "Başkanlığın bir süredir boş olması, beklenti vurgusunu açıklayabilir.",
+   "missing_context": [
+    "Belirgin ayrıntıya dayanan bir sonuç"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Recep Tayyip Erdoğan imzalı atama kararı, Resmi Gazete'de yayımlandı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Atamanın kaynağı yetkili makam olarak gösteriliyor; ancak bu statünün bir iddiayı değerlendirmenin yerine geçtiği ya da karşı bir görüşü bastırdığı bir akıl yürütme yok.",
+   "alternative_explanation": "Atama kararlarını yetkili makama dayandırmak hukuki bir olgunun aktarımıdır.",
+   "missing_context": [
+    "Atamanın uygunluğuna ilişkin statüye dayalı bir savunma ya da itiraz"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde sonraki bir tahmini ya da kararı etkileyen bir başlangıç değeri veya önerisi yer almıyor.",
+   "alternative_explanation": "Atama haberleri sayısal tahmin ya da müzakere içermiyor.",
+   "missing_context": [
+    "Bir referans değer ve ona bağlanan sonraki bir yargı"
+   ]
+  }
+ ]
+}

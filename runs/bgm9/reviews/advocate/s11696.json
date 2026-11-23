@@ -1,0 +1,182 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor. Başlıklarda \"uzattı\", \"uzatıldı\", \"duyurdu\" gibi ifadeler yalnızca çatı ve üslup farkı taşıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mbappe'den olay yorum",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Real Madrid, Arda Güler'in sözleşmesini 2032'ye kadar uzattı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurumun kendi başlığında 'olay yorum' ve 'resmen duyurdu!' gibi değerlendirici/abartılı ifadeler var; aynı olgu aa başlığında bu ifadeler olmadan veriliyor.",
+   "alternative_explanation": "İfadeler okuyucu çekmeye yönelik konuşma dili vurgusu olabilir; metin bunun nedenini söylemiyor.",
+   "missing_context": [
+    "Mbappe'nin gerçek sözlerinin metni",
+    "Başlığın tırnak içi bir alıntıya dayanıp dayanmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mbappe, Arda Güler'in 2032'ye kadar uzattığı sözleşmeye destek verdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Real Madrid, Arda Güler'in sözleşmesini 2032'ye kadar uzattı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar kulübün duyurusunu, bazıları Mbappe'nin tepkisini öne çıkarıyor; ancak tepki ayrı bir olgu olduğundan aynı olgunun farklı boyutu sayılıp sayılmayacağı belirsiz.",
+   "alternative_explanation": "Mbappe'nin yorumu ayrı bir haber unsuru olduğu için fark, farklı olguların bildirilmesinden doğmuş olabilir.",
+   "missing_context": [
+    "Mbappe yorumunun ayrı haber olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe’den transfer edilen Güler, İspanyol ekibinde 126 maça çıktı ve beş kupa kazandı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Evrensel lede'i sözleşme haberini oyuncunun kulüpteki 126 maç ve beş kupalık geçmişiyle ilişkilendiriyor; bu geniş bir eğilim veya kurumsal süreç sayılabilir mi belirsiz.",
+   "alternative_explanation": "Maç ve kupa sayıları yalnızca arka plan bilgisi olarak verilmiş olabilir.",
+   "missing_context": [
+    "Bu verinin eğilim çerçevesi olarak mı arka plan olarak mı kullanıldığı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  }
+ ]
+}

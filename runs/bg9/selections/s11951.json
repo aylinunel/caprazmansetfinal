@@ -1,0 +1,16 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "in-group-bias",
+  "authority-bias",
+  "confirmation-bias",
+  "illusory-truth-effect",
+  "salience-bias"
+ ],
+ "selection_uncertainty": [
+  "İddianame aşamasında; mahkeme kararı yok.",
+  "Gizli tanık beyanı doğrulanmadı.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "Gizli tanık iddiasının başlıkta öne çıkarılması kurumlar arasında farklılaşıyor."
+}

@@ -1,0 +1,256 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sıra terör devleti İsrail'de",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Myanmar’ı ‘soykırımcı’ ilan etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Yeni Asya, İsrail için 'terör devleti' ifadesini, 10haber ise Myanmar için 'soykırımcı' nitelemesini kendi başlığında kullanıyor; aynı aktör için farklı kurumlarca farklı etiket kullanıldığı açıkça gösterilemiyor.",
+   "alternative_explanation": "'Soykırımcı' tırnak içinde kararın özeti olarak kullanılmış olabilir.",
+   "missing_context": [
+    "Aynı aktör için diğer kurumların etiketleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "UAD'den tarihi Myanmar kararı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Uluslararası Adalet Divanı: Myanmar Arakanlı Müslümanlara soykırım yaptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Birden çok kurum kendi sesinde 'tarihi', 'flaş' gibi değerlendirici sözcükler kullanıyor; BBC Türkçe aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "'Tarihi' sözcüğü kararın 'ilk kez bir devletin sorumlu tutulması' niteliğine dayanan bir olgusal vurgu da olabilir.",
+   "missing_context": [
+    "Sözcüğün gerekçesini veren bağımsız bir ölçüt"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sıra terör devleti İsrail'de - UAD, tarihinde ilk kez bir devleti soykırımdan sorumlu tuttu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Uluslararası Adalet Divanı: Myanmar Arakanlı Müslümanlara soykırım yaptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Yeni Asya aynı başlıkta değerlendirici bir etiket ('terör devleti') ile ileriye dönük bir iddiayı ('Sıra ... İsrail'de') birleştiriyor; ikisi aynı yönde; BBC Türkçe aynı olguyu bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Başlık editoryal bir yorum sayfasına ait olabilir.",
+   "missing_context": [
+    "Yayının türü (haber/yorum)",
+    "Başlığın alıntı olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İsrail davası için de emsal olacak",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Myanmar tazminat ödeyecek",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Uluslararası Adalet Divanı: Myanmar Arakanlı Müslümanlara soykırım yaptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı karar için TGRT emsal/İsrail boyutunu, Türkiye Gazetesi tazminat boyutunu, BBC Türkçe ise yalnızca hüküm cümlesini öne çıkarıyor.",
+   "alternative_explanation": "Farklı boyutlar kararın farklı bölümlerinin haber değeri taşımasından kaynaklanabilir.",
+   "missing_context": [
+    "Karar metninin tamamı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "soykırım suçundan mahkum edildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "soykırımdan sorumlu tuttu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "katliam tescillendi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı karar için 'mahkum edildi', 'sorumlu tuttu' ve 'katliam tescillendi' gibi, hukuki anlam ve çağrışımı farklı sözcükler kullanılıyor.",
+   "alternative_explanation": "Kurumların hukuki terminoloji konusundaki alışkanlık farkları olabilir.",
+   "missing_context": [
+    "Kararın resmi dili"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kararın, Güney Afrika'nın Gazze'deki saldırılar nedeniyle İsrail aleyhine",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Yeni Şafak lede'i haberi Güney Afrika'nın İsrail aleyhine açtığı dava çerçevesiyle ilişkilendirerek daha geniş kurumsal bağlama yerleştiriyor.",
+   "alternative_explanation": "Bağlantı kararın hukuki emsal niteliğine dayanan olgusal bir ek olabilir.",
+   "missing_context": [
+    "Cümlenin devamı (lede kesik)"
+   ]
+  }
+ ]
+}

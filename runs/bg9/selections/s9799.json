@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "anchoring-bias",
+  "framing-effect",
+  "base-rate-fallacy",
+  "authority-bias",
+  "salience-bias",
+  "survivorship-bias"
+ ],
+ "selection_uncertainty": [
+  "Ödenmemiş tutar ve kalan yatırımcı bilgisi eksik.",
+  "Veriler resmi açıklamaya dayanıyor."
+ ],
+ "selection_note": "Büyük toplam rakamlar başarı algısı yaratıp eksik ödemeleri gölgede bırakabilir."
+}

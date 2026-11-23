@@ -1,0 +1,187 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde grup üyeliğine bağlı farklı muamele gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Kurumlar arası farklar farklı kaynak ve zamanlamadan kaynaklanabilir.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde duygunun bir risk/fayda tahminine açıkça bağlanması gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Duygusal sözcükler olayın ciddiyetini yansıtıyor olabilir.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar aynı olayı farklı vurgularla veriyor; fakat eşdeğer seçenekler arasında bir tercihin çerçeveye bağlandığı metinde açıkça kurulmuyor.",
+   "alternative_explanation": "Vurgu farkı, her kurumun farklı zamanda farklı güncel bilgiye sahip olmasından kaynaklanabilir.",
+   "missing_context": [
+    "Eşdeğerliğin açıkça belirlenmesi",
+    "Çerçeveye bağlanan bir tercih"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakan Çiftçi: Devlet unutmaz",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Yetkili kişilerin açıklamaları aktarılıyor; ancak otoriteye gerekçesiz üstünlük verildiği veya karşıt kanıtın otorite nedeniyle geçersiz sayıldığı görülmüyor.",
+   "alternative_explanation": "Resmî açıklamaların aktarılması haberciliğin olağan kaynak kullanımıdır.",
+   "missing_context": [
+    "Otoriteye karşı çıkan bir iddia",
+    "Otoritenin gerekçesiz izlendiğine dair ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Şehidimizin kanı yerde kalmadı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karar başlığı duygusal/çarpıcı bir ifadeyi öne çıkarıyor; ancak bu vurgunun bir yargı veya seçime açıkça bağlandığı ya da karşı kanıtı yok saydığı gösterilmiyor.",
+   "alternative_explanation": "Haber dilinin doğal vurgusu; olayın ciddiyeti nedeniyle öne çıkarma gerekçeli olabilir.",
+   "missing_context": [
+    "Okuyucu yargısına dair kanıt yok",
+    "Karşılaştırmalı ağırlıklandırma davranışı yok"
+   ]
+  },
+  {
+   "card_id": "just-world-hypothesis",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir sonucun ahlaki hak ediş ile ilişkilendirilmesi gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Metin yalnızca can kaybı ve soruşturmayı aktarıyor.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  }
+ ]
+}

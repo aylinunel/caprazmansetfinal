@@ -1,0 +1,243 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eşik aşağı çekildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "cazibesini artıracak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "2 seçenek sunuldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan imzaladı, yürürlüğe girdi!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı kararı Birgün eşiğin düşürülmesiyle, Star yatırım cazibesiyle, TGRT seçenek sayısıyla, Milli Gazete ise Cumhurbaşkanı imzasıyla öne çıkarıyor.",
+   "alternative_explanation": "Kurumlar karar metninin farklı maddelerini öne çıkarmış olabilir.",
+   "missing_context": [
+    "Karar metninin tamamı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yabancıya yatırım karşılığı ikamet",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "yabancı yatırımcılara oturma izni",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Diken 'yatırım karşılığı ikamet', Kısadalga 'oturma izni', diğerleri 'ikamet izni' diyor; 'karşılığı' bir takas çağrışımı taşıyabilir ama fark çoğunlukla üslup düzeyinde.",
+   "alternative_explanation": "Terim farkı yazım alışkanlığı veya resmî karar adından kaynaklanabilir.",
+   "missing_context": [
+    "Sözcük farkının çağrışım mı üslup mu olduğu"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'nin uluslararası yatırımcılar açısından cazibesini artıracak ve uzun vadeli yatırımlara öngörülebilirlik sağlayacak yeni düzenleme",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yabancı yatırımcılara ikamet iznine düzenleme. 150 bin dolarla 3 yıl, 200 bin dolarla 5 yıl",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Star ve Yeni Şafak lede'i kararın cazibeyi artıracağını kendi sesiyle olumlu biçimde bildiriyor; NTV aynı olguları değerlendirme içermeden veriyor.",
+   "alternative_explanation": "Cümle, hükümetin gerekçesini aktaran bir ifade olabilir; ancak atıf işareti yok.",
+   "missing_context": [
+    "Cümlenin bir resmî açıklamadan alınıp alınmadığı"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Karar Resmi Gazete'de! Yabancı yatırımcılara ikamet iznine düzenleme",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Star başlığı olayı (kararın yayımlanması) ilk sırada veriyor; beklenen etki yalnızca lede'de yer alıyor, bu da kartın başlıkta sonuç öne çıkarma koşulunu karşılamıyor.",
+   "alternative_explanation": "Başlık olay odaklı yazılmış.",
+   "missing_context": [
+    "Başka bir kurumun sonuç odaklı başlığı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ikamet izni şartları yeniden düzenlendi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Eşik aşağı çekildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Takvim ve Birgün, kararı önceki düzenlemenin yeniden ele alınması ve eşiğin düşürülmesi olarak bir politika sürecine yerleştiriyor.",
+   "alternative_explanation": "Bağlam, haberin anlaşılması için gerekli arka plan olabilir.",
+   "missing_context": [
+    "Önceki düzenlemenin ayrıntıları"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2 seçenek sunuldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "TGRT başlığı '2 seçenek' diyor; bunlar kararın iki yatırım kademesi (3 yıl/5 yıl), metin konuyu başka seçenekleri dışlayarak iki seçeneğe indirgemiyor.",
+   "alternative_explanation": "İki kademe, kararın kendi yapısıdır.",
+   "missing_context": [
+    "Başka seçenekler önerilip önerilmediği"
+   ]
+  }
+ ]
+}

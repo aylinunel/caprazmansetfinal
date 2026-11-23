@@ -1,0 +1,252 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de derbi mağlubiyetinin ardından teknik direktör İsmail Kartal gönderildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ayrılık bir soruşturma ya da yargı süreci değil; Takvim'in edilgen 'gönderildi' ifadesi adı geçen bir aktöre suç yüklemiyor. Metin sorumluluğu soruşturma ya da yargılama ile belirsiz kalan bir olay içermiyor ya da başlık dilbilgisi adı geçen bir aktöre atıf işareti olmadan suç yüklemiyor.",
+   "alternative_explanation": "Başlıklar resmi açıklamaları ve kurum kararlarını aktarıyor.",
+   "missing_context": [
+    "Sorumluluğun belirsiz olduğu bir süreç ve bu süreçte aktöre suç yükleyen başlık"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Galatasaray mağlubiyeti sonrası deprem! İsmail Kartal istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de derbi mağlubiyetinin ardından teknik direktör İsmail Kartal gönderildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve girişlerde iki olay zaman sırasıyla ('ardından', 'sonrası') yan yana veriliyor; açık bir nedensellik ifadesi kurulmuyor.",
+   "alternative_explanation": "Zaman bildiren bağlaçlar olayın kronolojisini aktarmak için kullanılmış olabilir.",
+   "missing_context": [
+    "Nedensel bağı ileri süren açık bir ifade",
+    "Bağın dayandığı kanıt"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de Galatasaray mağlubiyeti sonrası deprem! İsmail Kartal istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de İsmail Kartal ile yollar ayrıldı: En güçlü aday açıklandı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de 4. İsmail Kartal dönemi sona erdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "A Haber ayrılığı derbi mağlubiyetine bağlı bir 'deprem' olarak, Yeni Şafak halef adayı üzerinden, Sözcü ise yalnızca dönemin bitişi olarak veriyor; aynı olgunun farklı boyutları öne çıkıyor.",
+   "alternative_explanation": "Boyut farkları yayın saatindeki bilgi düzeyine, hedef okur kitlesine ve başlık uzunluğuna bağlı olabilir.",
+   "missing_context": [
+    "Her kurumun tam metni",
+    "Başlıkların güncellenme geçmişi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de derbi mağlubiyetinin ardından teknik direktör İsmail Kartal gönderildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de İsmail Kartal istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe resmen açıkladı... İsmail Kartal ile yollar ayrıldı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı ayrılık Takvim'de 'gönderildi', TGRT'de 'istifa etti', Akşam'da 'yollar ayrıldı' diye veriliyor; 'gönderildi' görevden alma, 'istifa' gönüllü ayrılık çağrıştırıyor.",
+   "alternative_explanation": "Sözcük farkları kaynak metnin farklı aktarılmasından ya da bilgi düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların kaynak aldığı resmi metin",
+    "Aynı kurumların benzer olaylardaki sözcük tercihi"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de İsmail Kartal ile yollar ayrıldı: En güçlü aday açıklandı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay başlığın ana cümlesinde yer alıyor; sonuç ya da beklenen etki ancak ek bir unsur olarak veriliyor.",
+   "alternative_explanation": "Okur açısından önemli bir etkiyi olayla birlikte vermek bilgilendirme amaçlı olabilir.",
+   "missing_context": [
+    "Olayın yalnızca girişte yer aldığı, başlığın yalnızca bir öngörüyü verdiği örnek"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'de 4. İsmail Kartal dönemi sona erdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Sözcü başlığındaki '4.' ifadesi tekrarlanan dönemlere zaten gönderme yapıyor; geniş örüntü anılıyor. Bağlam ya da diğer kurumların kapsamı konunun yapısal ya da tekrarlayan bir sorun olduğunu göstermiyor; tek olayın aktarımı bu nedenle epizodik çerçeve sayılamaz.",
+   "alternative_explanation": "Tekil bir gelişmenin haberleştirilmesi haber türünün olağan biçimidir.",
+   "missing_context": [
+    "Konunun tekrarlayan ya da yapısal olduğunu gösteren veri ya da önceki vakalar"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,217 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Sonraki bir yargının önceki bir değere açıkça bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İran Ordusu: Hürmüz Boğazı'nın doğusunda 2 petrol tankeri deniz mayınlarına çarptı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 13:33] Hürmüz Boğazı'nda bir petrol tankeri mayına çarptı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda iki petrol tankeri için mayın iddiası!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberin tek kaynağı İran Ordusu; bazı başlıklar iddiayı kaynaksız olgu gibi verirken CNN Türk \"iddia\" diyor. Kaynağa belirleyici ağırlık verildiği düşünülebilir, ancak metin bunun karşı kanıtı göz ardı ettiğini göstermiyor.",
+   "alternative_explanation": "Bölgede bağımsız doğrulama olanağı sınırlı olduğundan resmi açıklama tek erişilebilir kaynak olabilir.",
+   "missing_context": [
+    "Bağımsız doğrulama ya da çelişen kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda iki petrol tankeri için mayın iddiası!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 09:19] İran: Hürmüz Boğazı'nda 2 petrol tankeri mayına çarptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olgu farklı kurumlarca farklı sözcük ve vurguyla sunuluyor (\"iddia\" ile olgu sunumu); ancak metin bu sunum farkının bir tercihi ya da yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Farklı ifadeler kurumların üslup, uzunluk ve okur kitlesi tercihlerinden kaynaklanabilir; okur üzerinde etki gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okur yargısını ya da bir kararı değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda patlama...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda alarm:",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta çarpıcı bir ayrıntı öne çıkarılıyor (patlama ve alarm); ancak metin bu ayrıntının bir yargıya ya da seçime gerekçe yapıldığını açıkça göstermiyor.",
+   "alternative_explanation": "Çarpıcı ayrıntı haber değeri ve tıklanma kaygısıyla seçilmiş olabilir; bu tek başına bir yargı hatası değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının okur ya da karar verici yargısını etkilediğini gösteren karşılaştırmalı kanıt"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Olumsuz ve olumlu kanıtların karşılaştırmalı ağırlıklandırılmasını gösteren kayıt"
+   ]
+  },
+  {
+   "card_id": "illusory-truth-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda iki petrol tankeri mayına mı çarptı?",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İran Devrim Muhafızları, Hürmüz Boğazı'nda 2 tankerin mayına çarptığını açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı İran iddiası çok sayıda kurumda tekrar ediliyor ve bir kurum iddiayı soru olarak sunuyor; ancak iddianın yanlış olduğu bağımsız olarak kurulmuyor ve tekrarın kabulü artırdığı gösterilmiyor.",
+   "alternative_explanation": "Tekrar, ajans haberlerinin yaygın dağıtımından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "İddianın doğruluğunu ya da yanlışlığını gösteren bağımsız kaynak",
+    "Okurların tekrar sonrası kabulüne dair veri"
+   ]
+  }
+ ]
+}

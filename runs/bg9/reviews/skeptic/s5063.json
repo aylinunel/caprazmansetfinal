@@ -1,0 +1,181 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 13:01] Galatasaray'da deprem: İkinci Başkan Metin Öztürk şok iddialarla istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 01:10] Galatasaray Kulübü İkinci Başkanı Metin Öztürk istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkına bağlanan bir tercih, yargı ya da öneri içermiyor.",
+   "alternative_explanation": "Sözcük farkı spor haberciliğinin üslubundan kaynaklanabilir; bir karar vericinin tercihi aktarılmıyor.",
+   "missing_context": [
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğine dair veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "\"Ölmüş Anneme Hakareti Kabul Edemem\"",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar belirli bir ayrıntıyı öne çıkarıyor; ancak bu ayrıntının bir yargının ya da tercihin yerine geçtiğini gösteren açık bir bağ yok.",
+   "alternative_explanation": "Öne çıkan ayrıntı haber değeri yüksek ve doğrulanmış bir bilgi olabilir.",
+   "missing_context": [
+    "Çarpıcı ayrıntı ile daha az çarpıcı bilgi arasında ağırlıklandırma karşılaştırması",
+    "Ayrıntının sıklık kanıtı gibi kullanıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin olumsuz bir gelişmeyi aktarıyor; ancak olumsuz bilgiye karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık verildiğini gösteren bir belge ya da tekrarlanan davranış yok.",
+   "alternative_explanation": "Olumsuz içerik olayın kendisinden kaynaklanıyor; haberin konusu olumsuz bir gelişme.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgiyle ağırlıklandırma kıyası",
+    "Orantısız ağırlığın bir değerlendirmeyi etkilediğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "'Fiili saldırıya dönüşmüş eylemi kabullenemem'",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Öztürk'ün aktarılan sözü istifa kararını bir olaya verdiği tepkiyle ilişkilendiriyor; ancak bu tepkinin bir risk ya da fayda tahminini çarpıttığını gösteren bir kanıt yok.",
+   "alternative_explanation": "İstifa, kişinin değer yargılarına ve yaşanan olaya dayalı gerekçeli bir karar olabilir; kartın kendisi değerlere dayalı kararı örnek dışı sayıyor.",
+   "missing_context": [
+    "Bir karar vericinin duyguya dayanarak risk ya da fayda tahmini yaptığını gösteren açık ifade",
+    "Olgular sabitken yargının duyguyla değiştiğini gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "şok iddialarla istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "27 Ekim’deki yönetim kurulu toplantısında yaşanan fiili saldırı ve annesine yönelik hakaretin ardından",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "A Haber gerekçeyi 'şok iddialar' olarak özetlerken Karar somut olayı aktarıyor; anlatılar arasında fark var, ancak bir sonuca etkisi gösterilmiyor.",
+   "alternative_explanation": "Başlık kısaltması olabilir; içerik aynı olayı kastediyor.",
+   "missing_context": [
+    "Özgün kaynak metni (resmî açıklama ya da kurum duyurusu)",
+    "Farkın bir sonuca ya da karara etki ettiğine dair kanıt"
+   ]
+  }
+ ]
+}

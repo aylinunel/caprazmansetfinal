@@ -1,0 +1,202 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Robert Pattinson yeni James Bond oldu: Alacakaranlık'ın vampiri smokini giydi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "James Bond rolünün yeni sahibi Robert Pattinson oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı oyuncu seçimi bir başlıkta 'vampiri smokini giydi' imgesiyle, diğerinde yalın verilmiş; yargıya bağlantı yok.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati, karakter sınırı veya bilgi güncellemesinden kaynaklanıyor olabilir; okurun kararına etkisi gösterilmemiştir.",
+   "missing_context": [
+    "Okurun yargı veya tercihinin değiştiğine dair gözlem",
+    "Karşılaştırılan ifadelerin karar açısından eşdeğer olduğunun açık gösterimi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Robert Pattinson: Alacakaranlık yıldızı nasıl 007 oldu?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Eski bir rolün çarpıcı hatırlatması başlıkta öne çıkıyor; bunun bir yargıya bağlandığı açık değil.",
+   "alternative_explanation": "Çarpıcı ifade yayın kuralı (son dakika, dikkat çekme) olabilir; yargıyı etkilediği gösterilmemiştir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıya veya karara bağlandığı bir ifade",
+    "Daha az belirgin bilgilerle karşılaştırmalı ağırlıklandırma"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir alandaki olumlu izlenimin başka alandaki yargıyı belirlediği ifade yok.",
+   "alternative_explanation": "Olumlu ifadeler konuşmacıların kendi görüşü olabilir ve ilgili alanlar gerçekten bağlantılı olabilir.",
+   "missing_context": [
+    "İki alanın karar açısından ilgisiz olduğunun gösterimi",
+    "Birinci izlenimin ikinci yargıyı belirlediğine dair açık ifade"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hatırlama kolaylığına dayalı olasılık tahmini yok.",
+   "alternative_explanation": "Haber değeri taşıyan örneklerin anılması olasılık yargısı yerine basit bağlam aktarımı olabilir.",
+   "missing_context": [
+    "Hatırlama kolaylığının bir olasılık tahminine gerekçe yapıldığı ifade",
+    "Sıklık verisiyle karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "mere-exposure-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2026 yılı boyunca birçok kez beyaz perdede karşımıza çıkan Robert Pattinson, bu kez de yeni James Bond olarak bizlerle olacak.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin sık görünürlük ile seçimi yan yana koyuyor; aşinalığın tercihi etkilediği açıkça belirtilmiyor.",
+   "alternative_explanation": "Sık anılma gerçek bir popülerlik veya yeterlilik göstergesi olabilir.",
+   "missing_context": [
+    "Aşinalığın tercihi etkilediğini gösteren açık ifade",
+    "Seçim ölçütleri ve alternatifler"
+   ]
+  },
+  {
+   "card_id": "take-the-best-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dua Lipa’nın eşi Callum Turner’la yarışıyordu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Alternatif aday anılıyor, ancak kararın tek ipucuyla verildiğine dair ifade yok.",
+   "alternative_explanation": "Metin bir kararın tek ipucuyla verildiğini söylemiyor.",
+   "missing_context": [
+    "Tek ipucunun kararı belirlediğine dair ifade",
+    "Seçilen ve elenen alternatiflerin ayrıntısı"
+   ]
+  }
+ ]
+}

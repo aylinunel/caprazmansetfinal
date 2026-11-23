@@ -1,0 +1,235 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "8 yıllık sır perdesi aralanıyor!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık davasında 12 sanığa tahliye",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "AHaber ve Star başlıklarında 'sır perdesi aralanıyor!' gibi duygusal/değerlendirici bir ifade var; Habertürk aynı gelişmeyi bu ifade olmadan veriyor.",
+   "alternative_explanation": "'Sır perdesi' kalıplaşmış bir başlık söylemi olabilir.",
+   "missing_context": [
+    "İfadenin atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tümgeneral oğlu Dorukhan Büyükışık davasında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık davasında 12 sanığa tahliye",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haberler başlığında aynı kişi 'Tümgeneral oğlu' diye anılırken Habertürk yalnızca adını kullanıyor; unvan tanımlayıcı olup değerlendirme taşıdığı gösterilemiyor.",
+   "alternative_explanation": "Bu bir kimlik bilgisi aktarımı olabilir.",
+   "missing_context": [
+    "Etiketin değerlendirici olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Maraton duruşmada 13 kişi tahliye edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Maraton duruşma' ve 'sır perdesi' ifadeleri mecaz içeriyor; ancak bunlar olay ya da aktörlere rol atayan bir mecaz değil, kalıplaşmış anlatım.",
+   "alternative_explanation": "Süreyi vurgulayan günlük bir benzetme olabilir.",
+   "missing_context": [
+    "Mecazın rol atayıp atamadığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "13 sanığın ise tutukluluk hallerinin devamına karar verildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık davasında 12 sanığa tahliye",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "22 saat süren duruşma",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Evrensel kimlerin tutukluluğunun sürdüğünü, Habertürk tahliyeleri, NTV ise duruşmanın süresini öne çıkarıyor.",
+   "alternative_explanation": "Tahliye sayıları (12/13) kurumlar arasında farklı bildirildiğinden fark kısmen olgu farkından kaynaklanabilir.",
+   "missing_context": [
+    "Mahkeme ara kararının resmi metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık cinayeti davası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dorukhan Büyükışık'ın ölümüne ilişkin davada",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı dava Milli Gazete'de 'cinayeti davası', diğer kurumlarda 'ölümüne ilişkin dava' diye adlandırılıyor; 'cinayet' sözcüğü bir sonuç iması taşıyor.",
+   "alternative_explanation": "Soruşturma 'intihar' kaydını yeniden açtığı için 'cinayet' dosya adı olarak kullanılmış olabilir.",
+   "missing_context": [
+    "Dava dosyasının resmi adı"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  }
+ ]
+}

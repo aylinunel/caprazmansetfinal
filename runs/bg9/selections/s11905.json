@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "authority-bias",
+  "framing-effect",
+  "salience-bias",
+  "affect-heuristic",
+  "availability-heuristic"
+ ],
+ "selection_uncertainty": [
+  "Gürcistan ve Bulgaristan iadeleri iki ayrı olay olarak birleşmiş olabilir.",
+  "Bilgi büyük ölçüde bakanlık açıklamalarına dayanıyor."
+ ],
+ "selection_note": "Bakan açıklamaları kaynak olarak öne çıkıyor; 'suç makinesi' gibi nitelemeler var."
+}

@@ -1,0 +1,204 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[karar · 15:57] BDDK'dan milyonlarca kredi kartı kullanıcısını ilgilendiren düzenleme: Asgari ödeme oranı düşürüldü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 12:45] BDDK kararıyla kredi kartlarının asgari ödeme oranı değişti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı karar bir kurumda 'düşürüldü', diğerinde yalnızca 'değişti' diye veriliyor; olgu aynı, vurgu farklı. Ancak bu farkın bir tercihe bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Karar belirli limit dilimleri için indirim, bazı dilimler için ise değişiklik içeriyor olabilir; farklı başlıklar karar ayrıntısının farklı yönlerini özetliyor.",
+   "missing_context": [
+    "Okur tercihi veya yargısına etkinin kanıtı",
+    "BDDK kararının tam metni"
+   ]
+  },
+  {
+   "card_id": "loss-aversion",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kayıp ve kazanç karşılaştırması ya da kayba ağırlık verildiğini gösteren ifade yok.",
+   "alternative_explanation": "Metin düzenleyici bir karar bildiriyor; kişisel tercih analizi yok.",
+   "missing_context": [
+    "Kayıp ve kazanç karşılaştırması"
+   ]
+  },
+  {
+   "card_id": "mental-accounting",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kaynak tahsisi kararında zihinsel kategorinin eşdeğer kaynakları farklı değerlendirdiğine dair ifade yok.",
+   "alternative_explanation": "Konu bir düzenleme duyurusudur.",
+   "missing_context": [
+    "Kaynak tahsisi kararı ve zihinsel kategori"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Daha önce uygulanan yüzde 20 ve yüzde 40 oranlarına ek olarak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki oranlar anılıyor; ancak sonraki bir yargı veya tahminin bu referansa bağlandığı ve gerekçesiz ağırlık taşıdığı gösterilmiyor.",
+   "alternative_explanation": "Önceki oranların anılması düzenlemenin karşılaştırmalı bağlamını vermek içindir.",
+   "missing_context": [
+    "Önceki orana bağlı bir yargı veya tahmin ifadesi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Milyonlarca kredi kartı sahibini ilgilendiren karar!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Karar kapsamı vurgulanıyor; bunun bir yargı veya seçimde kullanıldığı gösterilmiyor.",
+   "alternative_explanation": "Kapsamın belirtilmesi haberin gerçek etki alanını bildirir.",
+   "missing_context": [
+    "Vurgunun bir yargıya dayanak yapıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "status-quo-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yüzde 20 olarak uygulanmaya devam",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mevcut oranın bir dilimde sürdüğü belirtiliyor; ancak bir kişinin mevcut durumu varsayılan olduğu için tercih ettiği gösterilmiyor.",
+   "alternative_explanation": "Düzenleyici kurum o dilimde değişikliği gerekli görmemiş olabilir; bu gerekçeli bir karardır.",
+   "missing_context": [
+    "Karar vericinin mevcut durumu varsayılan olduğu için seçtiğini gösteren ifade"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,236 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası enflasyon tahminini yükseltti: İşte emekli ve memur maaşlarında yeni zam hesabı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İran savaşı hesapları bozdu: TCMB enflasyon tahminini yükseltti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TCMB enflasyon tahminlerini yükseltti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Karar emekli ve memur zammını (kim etkilenir), DW Türkçe gerekçeyi, Habertürk yalnızca tahmin artışını öne çıkarıyor.",
+   "alternative_explanation": "Boyut farkları yayın saatindeki bilgi düzeyine, hedef okur kitlesine ve başlık uzunluğuna bağlı olabilir.",
+   "missing_context": [
+    "Her kurumun tam metni",
+    "Başlıkların güncellenme geçmişi"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası enflasyon tahminini yükseltti: İşte emekli ve memur maaşlarında yeni zam hesabı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay başlığın ana cümlesinde yer alıyor; sonuç ya da beklenen etki ancak ek bir unsur olarak veriliyor.",
+   "alternative_explanation": "Okur açısından önemli bir etkiyi olayla birlikte vermek bilgilendirme amaçlı olabilir.",
+   "missing_context": [
+    "Olayın yalnızca girişte yer aldığı, başlığın yalnızca bir öngörüyü verdiği örnek"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde payı ve paydası belirlenebilen bir oran ve farklı bir karşılaştırma nüfusu bulunmuyor.",
+   "alternative_explanation": "Haberler mutlak sayılar ya da tahminler veriyor; oran seçimi söz konusu değil.",
+   "missing_context": [
+    "Oran, payda ve alternatif karşılaştırma nüfusu"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "TCMB enflasyon tahminlerini 18. kez yükseltti: 2026 sonu yüzde 29,5",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Cumhuriyet '18. kez' göstergesini veriyor; ancak bağlamda bu sonucu sınırlayan aynı kaynaktan rakam bulunmuyor.",
+   "alternative_explanation": "Haberler tek bir resmi gelişmeyi aktarıyor; seçici gösterge kullanımı gözlenmiyor.",
+   "missing_context": [
+    "Aynı kaynaktan ya da dönemden sonucu sınırlayan rakamlar"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası yıl sonu enflasyon tahminini yukarı yönlü güncelledi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "TCMB enflasyon tahminlerini yükseltti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "ANKA 'yukarı yönlü güncelledi', Habertürk 'yükseltti' diyor; ancak ANKA'nın ifadesi girişte aktarılan TCMB Başkanı'nın sözlerini yansıtıyor, kurumun kendi tercihi olup olmadığı belirsiz.",
+   "alternative_explanation": "Sözcük farkları kaynak metnin farklı aktarılmasından ya da bilgi düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların kaynak aldığı resmi metin",
+    "Aynı kurumların benzer olaylardaki sözcük tercihi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "TCMB enflasyon tahminlerini 18. kez yükseltti: 2026 sonu yüzde 29,5",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ağustosta MB’nin yıl sonu enflasyon tahmini yüzde 28’di.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Cumhuriyet revizyonu '18. kez' yapılan yukarı yönlü düzeltmeler serisine, 10Haber önceki tahmine bağlıyor.",
+   "alternative_explanation": "Arka plan bilgisi vermek olağan haber pratiğidir; bu bir bağlam etkisidir, hata değildir.",
+   "missing_context": [
+    "Kurumun tam metnindeki bağlam bilgisinin kapsamı"
+   ]
+  }
+ ]
+}

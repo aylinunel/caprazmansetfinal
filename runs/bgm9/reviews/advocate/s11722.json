@@ -1,0 +1,261 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bill Gates'ten dikkat çeken yorum",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Yapay zeka çağında şaşırtan seçim",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "'Human' kelimesi 2026'ya damga vurdu: Cambridge Sözlüğü yapay zekayı işaret etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "insan üretiminin değeri",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı seçim haberinde kurumlar farklı yönü öne çıkarıyor: Bill Gates yorumu, seçimin şaşırtıcılığı, yapay zekanın işaret edilmesi, insan üretiminin değeri.",
+   "alternative_explanation": "Farklı kurumlar aynı duyurunun farklı yan öğelerine dikkat çekmiş olabilir.",
+   "missing_context": [
+    "Gates yorumunun içeriği",
+    "Başlıkların tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cambridge Sözlüğü 2026 yılının kelimesini seçti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cambridge Sözlüğü 2026 yılının kelimesini açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı eylem için 'seçti', 'açıkladı', 'belirledi', 'ilan etti' fiillerini kullanıyor; fiiller bağımsız seçim ile duyuru çağrışımı arasında hafif ayrışıyor ancak çağrışım farkı değil çoğunlukla üslup farkı.",
+   "alternative_explanation": "Fiil farkları eş anlamlı üslup çeşitliliğidir.",
+   "missing_context": [
+    "Çağrışım farkını gösteren ek kanıt"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yapay zeka teknolojilerinin hızla yaygınlaşmasıyla birlikte insan olma kavramına yönelik artan toplumsal ilgiyi gerekçe göstererek",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "teknoloji bağımlılığına ilişkin endişelerin artması",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İngilizce dilinde her yılın son günleri, çeşitli büyük sözlüklerin ‘yılın kelimesi’ni seçme günleri",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Haber (sözlüğün seçimi) yapay zekanın yaygınlaşması, teknoloji bağımlılığı endişeleri ve yıllık sözlük geleneği gibi daha geniş bir eğilim/kurumsal bağlama yerleştiriliyor.",
+   "alternative_explanation": "Bağlam sözlüğün kendi açıklamasından aktarılmış olabilir.",
+   "missing_context": [
+    "Sözlüğün resmi gerekçesi"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cambridge Sözlüğü 2026 yılının kelimesini açıkladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar olayı (kelimenin seçilmesi) başta veriyor; beklenen etki öne çıkarılmıyor.",
+   "alternative_explanation": "Başlıklar olayın kendisini bildiriyor.",
+   "missing_context": [
+    "Seçimin olası etkileri"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "damga vurdu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Damga vurdu' yerleşik bir deyimdir; roller veya eylem yolu atamıyor, savaş/hastalık gibi bir mantık getirmiyor.",
+   "alternative_explanation": "Deyimsel üslup, çerçeveleme değil.",
+   "missing_context": [
+    "Başka metaforik ifadelerin varlığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yapay zeka çağında şaşırtan seçim",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "damga vurdu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cambridge Sözlüğü 2026 yılının kelimesini açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Mynet 'şaşırtan seçim', Sondakika 'damga vurdu' ile olgunun ötesinde değerlendirici bir ton ekliyor; DHA aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "'Şaşırtan' okuyucu ilgisini çekmek için kullanılan hafif bir tanımlayıcıdır.",
+   "missing_context": [
+    "Seçimin gerçekten beklenmedik olup olmadığı"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "salience-bias",
+  "identifiable-victim-effect",
+  "affect-heuristic",
+  "suggestibility",
+  "framing-effect",
+  "negativity-bias"
+ ],
+ "selection_uncertainty": [
+  "Ölüm nedeni ve soruşturma sonucu belli değil.",
+  "Yaş bilgisi kurumlar arasında farklı (27/28)."
+ ],
+ "selection_note": "'Şüpheli ölüm', 'sır ölüm' ifadeleri ve sevgili görüntüsü vurgusu yorumu yönlendirebilir."
+}

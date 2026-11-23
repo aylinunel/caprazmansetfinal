@@ -1,0 +1,136 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Son dakika: Adana'da korkutan deprem!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Korkutan' nitelemesi olumsuz bir duygu bildiriyor; orantısız ağırlıklandırma belgelenmiyor. Olumsuz sözcükler ve can kaybı vurgusu görülüyor; ancak kart karşılaştırılabilir olumlu kanıta göre orantısız ağırlığın açıkça belgelenmesini istiyor ve olumsuz ifade tek başına yeterli sayılmıyor.",
+   "alternative_explanation": "Olumsuz olaylarda olumsuz vurgu olayın kendisiyle orantılı olabilir; can kaybı ve hasar haberin temel bilgisidir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin metinde bulunup küçümsendiğini gösteren kanıt",
+    "Olumsuz ağırlıklandırmanın bir değerlendirmeyi haksız biçimde etkilediğini gösteren veri"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adana'da sabah saatlerinde de 3.5 büyüklüğünde bir deprem olmuştu.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milliyet önceki sarsıntıyı hatırlatıyor ama bundan bir risk tahmini türetmiyor; ayrıca bu öğe farklı (3,7) bir depreme ait. Kart, hatırlanabilirlik ya da canlılığın bir tahmin veya genellemenin gerekçesi olarak açıkça kullanılmasını istiyor; metinlerde bir olayın kolay hatırlanmasına dayanarak risk ya da sıklık tahmini yapılmıyor.",
+   "alternative_explanation": "Önceki olaylara atıf bağlam bilgisi olarak verilmiş olabilir; bu bir sıklık tahmini yerine geçmiyor.",
+   "missing_context": [
+    "Bir risk ya da sıklık tahmininin canlı örneğe dayandırıldığını gösteren ifade",
+    "Metinde bu tahmine karşıt daha güçlü sıklık verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "SON DAKİKA! Adana'da korkutan deprem! Çevre illerde de hissedildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hissedilme alanı ve korku öne çıkarılıyor; bu bir yargıya bağlanmıyor. Göze çarpan ayrıntılar başlıklarda öne çıkarılıyor; fakat bu ayrıntının bir yargı ya da tercihe açıkça bağlandığı veya ilgili karşı kanıtın göz ardı edildiği metinde gösterilmiyor. Tek metindeki vurgu bu kart için yeterli değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması haber değeri ve habercilik konvansiyonlarıyla açıklanabilir; bu bir yargı hatası değil, sunum tercihidir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin farklı ağırlıklandırıldığını gösteren karşılaştırmalı karar verisi",
+    "Vurgunun bir sıklık ya da risk tahminine dönüştürüldüğünü gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adana'da korkutan deprem",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Adana'da 4,6 büyüklüğünde deprem",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı deprem büyüklük ya da korku üzerinden veriliyor; eşdeğerlik ve tercih bağı kurulmuyor. Kart, eşdeğer seçeneklerin açıkça eşdeğer olduğunun metinde kurulmasını ve bir tercihin yalnızca sunuluş farkına bağlanmasını şart koşuyor; başlıklar arasında ifade farkı görülse de hiçbir metin bir karar ya da tercihi bu farka dayandırmıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatleri, farklı ajans kaynakları ve olayın farklı aşamalarının haberleştirilmesiyle açıklanabilir; kurumların editoryal tercihi bir akıl yürütme hatası değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin bu çerçevelere maruz kalıp farklı yargıya vardığını gösteren veri",
+    "Başlıkların bilgi açısından eşdeğer olduğunu açıkça belirten bir ifade"
+   ]
+  }
+ ]
+}

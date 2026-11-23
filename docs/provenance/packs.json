@@ -1,0 +1,20 @@
+{
+ "release": "9",
+ "built": "2026-11-23",
+ "window": [
+  "2026-09-01",
+  "2026-11-20"
+ ],
+ "note": "sha256 of each data pack's decompressed JSON; a full pipeline build changes these on purpose and updates this file",
+ "packs": {
+  "public/data/a-2026-09.bin": "88ddcf61dff653415c484514e1d6b4a65b36cc58daf6190f26f5c53f29b368de",
+  "public/data/a-2026-10.bin": "0cb4497844ee95c79504d40bed13542bf5afb302ea975817eca6880813f37a7f",
+  "public/data/a-2026-11.bin": "9fb7c02f0776b2790c309d0cacaf04a9794ab8516ab3a4fb63acdda37e4fd2ba",
+  "public/data/l-2026-09.bin": "d1f1be6f16d2675047fac9e435c1f09a62e44c87b09b3e0b2e831e3efc2656db",
+  "public/data/l-2026-10.bin": "bf397a128a3445a66717b8c5d04a921beb08bb0860156c51772a6e957db38dfa",
+  "public/data/l-2026-11.bin": "91591a3b406e37c203676fbc483cf2e7fd010b3da281dea4ae0fb79745908076",
+  "public/data/u-2026-09.bin": "36a7bb7b4f693318d2f0ade5f846db620b69033fddf5db357d31fc14128066b1",
+  "public/data/u-2026-10.bin": "a0ceaa5f5309d04adc646b79083295bf365ff44f2371e3417ab4102e0a9a0f58",
+  "public/data/u-2026-11.bin": "c9693708503420815e95f7c7f8a875d89829bf87dd291762046526be9939f36a"
+ }
+}

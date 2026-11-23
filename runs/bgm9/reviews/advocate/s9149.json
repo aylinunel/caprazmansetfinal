@@ -1,0 +1,224 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "fear-appeal",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul dahil 11 il için sarı kodlu alarm: Lodos fırtınası ve sağanak sert vuracak",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fırtınanın hızı 90 kilometreye çıkabilir",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Yenisafak başlığı sarı kodlu bir uyarıyı 'alarm' ve 'sert vuracak' sözcükleriyle veriyor; ahaber 90 km/s rüzgâr hızını belirtiyor. Sarı kod ile bu sözcükler arasında ölçek farkı var.",
+   "alternative_explanation": "Sert vuracak ifadesi tahmin edilen fırtınanın hızına dayanıyor olabilir.",
+   "missing_context": [
+    "Uyarının resmî seviyesi ve beklenen şiddet"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteoroloji'den İstanbul dahil 11 kente sarı kodlu yağış uyarısı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Marmara için sağanak alarmı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Meteoroloji'den 11 Kente Sarı Kodlu Uyarı: Fırtına ve Kuvvetli Yağış İlleri Vuracak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı 11 illik uyarı için bazı kurumlar 'uyarı', aksam 'alarm', onedio 'illeri vuracak' diyor; fiil ve isim seçimi çağrışım olarak farklı.",
+   "alternative_explanation": "Fark üslup tercihi olabilir.",
+   "missing_context": [
+    "Kurumların başlık politikası"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "sarı kodlu yağış uyarısı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fırtına: İstanbul dahil 11 ile sarı kodlu uyarı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hafta sonu hava nasıl olacak?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Sondakika kuvvetli yağışı, diken fırtınayı, takvim ise İstanbul'daki rüzgâr hızını ve hafta sonunu başlığa taşıyor.",
+   "alternative_explanation": "Uyarı hem yağış hem fırtına içeriyor olabilir; başlık yalnızca birini seçmiş olabilir.",
+   "missing_context": [
+    "Uyarının tam içeriği"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneği tek seçenek olarak sunan bir ifade yok.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Yeniasya 'beklenen kuvvetli yağış sebebiyle' diyerek uyarının nedenini Meteoroloji Genel Müdürlüğü'ne atfediyor; nedensellik adlandırılmış resmî kaynağa dayanıyor.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin tek bir uyarı olayını aktarıyor; bağlamda yinelenen yapısal bir sorun gösterilmiyor.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  }
+ ]
+}

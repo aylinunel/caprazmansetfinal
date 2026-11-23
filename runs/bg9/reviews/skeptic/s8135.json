@@ -1,0 +1,193 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 16:26] Mısır'da tren kazası! Vagonlar raydan çıktı: Onlarca kişi yaralandı — Mısır'ın Giza vilayetinde bulunan Ayat şehrinde tren kazası meydana geldi. Kazada ilk belirlemelere göre 64 kişi yaralandı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İlk belirlemedeki 64 yaralı sayısı bazı kurumlarda sonradan da kullanılıyor; bu bir güncelleme gecikmesi olarak görülebilir, bir yargının çıpaya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Sayı farkı yayım saatindeki resmi verinin farklı olmasından ve güncellemelerin gecikmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Güncel sayıya ulaşabildikleri halde eski sayıyı kullandıklarını gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mısır'da korkunç tren kazası",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Korkunç' gibi vurgulu ifade var; bunun bir yargıya dayanak yapıldığı gösterilmiyor.",
+   "alternative_explanation": "Çok sayıda yaralı olan bir kaza için vurgulu dil kullanılmış olabilir.",
+   "missing_context": [
+    "Vurgunun yargıya bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz kanıta orantısız ağırlık verildiği gösterilmiyor.",
+   "alternative_explanation": "Kaza haberi doğası gereği olumsuzdur.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıt"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kazanın yaşandığı bölge geçmişteki ölümcül tren kazalarıyla biliniyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Geçmiş kazalara değinen bir arka plan ifadesi var; ancak bu ifadenin bir tahmin ya da risk yargısına gerekçe yapıldığı ve daha güçlü kanıtı gölgelediği gösterilmiyor.",
+   "alternative_explanation": "Bölgenin geçmişteki kazalarının anılması bağlam bilgisidir, bir tahmin değildir.",
+   "missing_context": [
+    "Hatırlama kolaylığının bir tahmin için gerekçe yapıldığı ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mısır Sağlık ve Nüfus Bakanlığından yapılan açıklamada",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mısır Sağlık Bakanlığı kaynak olarak anılıyor; statünün gerekçeli değerlendirmenin yerine geçtiği gösterilmiyor.",
+   "alternative_explanation": "Yaralı ve ölü sayısı için ilgili bakanlığa başvurmak olağan ve uygun bir yoldur.",
+   "missing_context": [
+    "Resmi beyanın karşıt kanıta rağmen belirleyici sayıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "recency-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[birgun · 18:09] Mısır'daki tren kazasında ilk belirlemelere göre 4 kişi öldü, 88 kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Zaman içinde farklı sayılar (64, 88, 112 yaralı) bildirilmiş, yani bir sıra var; ancak sonraki bilginin daha çok hatırlandığı ya da karar ağırlığı aldığı ve bunun hataya yol açtığı gösterilmiyor.",
+   "alternative_explanation": "Son sayıların öne çıkması güncellemenin doğal sonucudur.",
+   "missing_context": [
+    "Önceki bilginin ilgili olduğu halde göz ardı edildiğini gösteren kanıt"
+   ]
+  }
+ ]
+}

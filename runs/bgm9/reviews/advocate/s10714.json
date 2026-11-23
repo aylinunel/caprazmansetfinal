@@ -1,0 +1,223 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Robert Pattinson yeni James Bond oldu: Alacakaranlık'ın vampiri smokini giydi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Robert Pattinson: Alacakaranlık yıldızı nasıl 007 oldu?",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dua Lipa’nın eşi Callum Turner’la yarışıyordu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı seçim haberinde başlıklar oyuncunun eski rolünü, yolculuğunu veya rakibini öne çıkarıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, karakter sınırı veya o anki bilgi düzeyinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Kurumların tam başlık ve metinleri",
+    "Yayın sırası ve güncellemeler"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Robert Pattinson yeni James Bond oldu: Alacakaranlık'ın vampiri smokini giydi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "James Bond rolünün yeni sahibi Robert Pattinson oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı seçim için 'vampiri smokini giydi' ve 'yeni sahibi oldu' ifadeleri kullanılıyor; çağrışım farkı olası ancak belirsiz.",
+   "alternative_explanation": "Sözcük farkları yalnızca üslup veya kurum yazım kuralı farkı olabilir.",
+   "missing_context": [
+    "Sözcüklerin okur algısına etkisi",
+    "Kurum üslup kılavuzları"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni James Bond’un Robert Pattinson olması büyük yankı uyandırdı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "James Bond rolünün yeni sahibi Robert Pattinson oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Posta kendi sesinde 'büyük yankı uyandırdı' ve 'ikiye böldü' diyor; bu ifade aktarılan olgunun ötesinde bir değerlendirme olabilir ancak belirsiz.",
+   "alternative_explanation": "Değerlendirici sözcükler kurumun olağan başlık üslubu olabilir.",
+   "missing_context": [
+    "Aynı olguyu yalın aktaran kurumların oranı",
+    "Başlığın tam bağlamı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pattinson bu rolü oynayan yedinci oyuncu olacak.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Robert Pattinson yeni James Bond",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Cumhuriyet seçimi Bond serisi içindeki oyuncu sırasına yerleştiriyor.",
+   "alternative_explanation": "Bağlam eklemek tek başına kusur değildir; haberin okunmasına yardımcı olabilir.",
+   "missing_context": [
+    "Alternatif bağlam seçenekleri",
+    "Kurumun başka haberlerindeki bağlam kullanımı"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde açık bir nedensellik iddiası bulunmuyor.",
+   "alternative_explanation": "İfade kronolojik bağlam veya kaynak aktarımı olabilir.",
+   "missing_context": [
+    "Nedensellik iddiasının dayanağı",
+    "İfadenin kime atfedildiği"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin yinelenen veya yapısal bir sorun anlatmıyor.",
+   "alternative_explanation": "Metinde yapısal bir sorun iddiası yok.",
+   "missing_context": [
+    "Daha geniş örüntüye dair bağlam"
+   ]
+  }
+ ]
+}

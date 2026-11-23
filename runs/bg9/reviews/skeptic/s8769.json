@@ -1,0 +1,210 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dev Satın Alma Resmen Tamamlandı: Emlak Katılım, Katılımevim ve Birevim’i Satın Aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emlak Katılım; Katılımevim, Birevim ve İktisat Katılım'ın devri için gerekli izinleri aldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı sözcük ve vurgularla veriyor; ancak metin betimlemelerin karar açısından eşdeğer olduğunu açıkça kurmuyor ve hiçbir tercih ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, editoryal üslup, karakter sınırı, kaynak erişimi ya da haber değeri tercihinden kaynaklanabilir; bunlar bilişsel bir hata kanıtı değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin yargısını gösteren veri",
+    "Farklı sunumların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "binlerce kişinin beklediği haber geldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı öne çıkarıyor; fakat metin bu ayrıntıyı açıkça bir yargı ya da seçime bağlamıyor, çarpıcılık tek başına hata kanıtı değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması olayın gerçekten önemli bir unsuru olması, haber değeri ya da okunma kaygısıyla açıklanabilir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin bir kararda nasıl tartıldığını gösteren karşılaştırmalı kanıt",
+    "Editör ya da okur yargısına dair doğrudan kayıt"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emlak Katılım; Katılımevim ve Birevim'i satın aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emlak Katılım; Katılımevim, Birevim ve İktisat Katılım'ın devri için gerekli izinleri aldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "AA devir için izinlerin alındığını, Türkiye Gazetesi ise satın almanın gerçekleştiğini bildiriyor; aşama bilgisi aktarımda keskinleşiyor. Kurumların aktarımları arasında bazı ayrıntılar farklılaşıyor ya da düşüyor; bu bir aktarım/özet etkisine işaret edebilir, ancak farkın önemli, gerekçesiz ve bir sonuca etkili olduğu gösterilmiyor.",
+   "alternative_explanation": "Farklar erken saatteki eksik bilgiye, ajans metninin kısaltılmasına, başlık uzunluğu sınırına ya da sonradan güncellenen resmi verilere bağlı olabilir.",
+   "missing_context": [
+    "Özgün kaynak metni (resmi açıklama ya da ajans bülteni)",
+    "Haberlerin güncellenme geçmişi",
+    "Farkın bir sonuca ya da karara etkisini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "extrinsic-incentive-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin başkalarına dışsal ödülü birincil güdü olarak atfeden ve bunu içsel güdüyle karşılaştıran bir ifade içermiyor.",
+   "alternative_explanation": "Satın alma haberi bir güdü atfı değil kurumsal bir işlem aktarımıdır.",
+   "missing_context": [
+    "Güdü atfını ve karşılaştırmayı içeren açık ifade"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir faaliyete önceden içsel katılım, beklenen bir ödül ve ödül sonrası ilgi düşüşü gibi davranışsal veri bulunmuyor.",
+   "alternative_explanation": "Haber bir ödül-güdü ilişkisini konu etmiyor; kart bu olaya uygulanamıyor.",
+   "missing_context": [
+    "Ödül öncesi ve sonrası katılım düzeyini gösteren davranışsal veri"
+   ]
+  },
+  {
+   "card_id": "nostalgia-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Faizsiz ev ve araba almak için tasarruf finansmanlarına yatırım yapan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde nostaljik bir anı ya da geçmişi çağrıştıran bir ipucunun parasal bir seçime bağlandığı görülmüyor.",
+   "alternative_explanation": "Tasarruf finansmanı müşterilerine yapılan gönderme olgusal bilgidir, nostalji ipucu değildir.",
+   "missing_context": [
+    "Nostalji ipucu ile harcama/tasarruf kararı arasındaki açık bağ"
+   ]
+  }
+ ]
+}

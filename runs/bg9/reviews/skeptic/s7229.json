@@ -1,0 +1,216 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda bir petrol tankeri mayına çarptı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İran: Hürmüz Boğazı'nda 2 petrol tankeri mayına çarptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde önceki bir değer veya bilgi bulunsa da sonraki yargının bu referans noktasına açıkça bağlandığı ve haksız biçimde ona yakın tutulduğu gösterilmiyor.",
+   "alternative_explanation": "Farklı sayılar veya güncellemeler bilgi akışının farklı aşamalarını yansıtıyor olabilir.",
+   "missing_context": [
+    "Sonraki yargının önceki değere dayandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İran Ordusu: Hürmüz Boğazı'nın doğusunda 2 petrol tankeri deniz mayınlarına çarptı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda bir petrol tankeri mayına çarptı — İran Ordusu Deniz Kuvvetleri Komutanlığı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir yetkili kaynak anılıyor; ancak bu statüye belirleyici ağırlık verilerek ilgili karşı kanıtın göz ardı edildiği açıkça gösterilmiyor.",
+   "alternative_explanation": "Resmi kaynaklara atıf habercilikte olağan bir kaynak gösterme uygulamasıdır.",
+   "missing_context": [
+    "Karşı kanıtın varlığı ve kurumların bunu nasıl ele aldığı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda iki petrol tankeri için mayın iddiası!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İran: Hürmüz Boğazı'nda 2 petrol tankeri mayına çarptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olguyu bildiren kurumlar farklı sözcük/vurgu kullanıyor (eşdeğerlik karşılaştırmalı başlıklarda gözleniyor); ancak bu sunum farkına bağlanan bir tercih veya yargı metinde yok.",
+   "alternative_explanation": "Başlık farkları üslup, yayın saati, hedef kitle ya da farklı kaynak açıklamalarından kaynaklanabilir; bir karar vericinin çerçeveye dayanarak yargı değiştirdiği gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okur veya karar verici yargısını değiştirdiğine dair karşılaştırmalı veri",
+    "Haber gövdelerinin tam metni"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı öne çıkarıyor; ancak metin bu ayrıntıyı bir yargı veya seçime açıkça bağlamıyor ve haksız etkiyi göstermiyor.",
+   "alternative_explanation": "Çarpıcı ayrıntıların öne çıkarılması haber değeri ve okur ilgisiyle açıklanabilir; tek bir metin ağırlıklandırma hatasını kanıtlamaz.",
+   "missing_context": [
+    "Kurumların daha az çarpıcı bilgileri nasıl ağırlıklandırdığına dair karşılaştırmalı kayıt",
+    "Editoryal karar süreçleri"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz bir olay haberleştiriliyor; ancak metinde olumsuz kanıta karşılaştırılabilir olumlu kanıttan orantısız ağırlık verildiğini gösteren bir belge yok.",
+   "alternative_explanation": "Olumsuz olayların haberleştirilmesi olayın doğasından kaynaklanır ve riskle orantılı bir tepki olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve nasıl ele alındığı",
+    "Tekrarlayan davranışa dair kayıt"
+   ]
+  },
+  {
+   "card_id": "illusory-truth-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda iki petrol tankeri mayına mı çarptı?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bağımsız olarak yanlış veya desteksiz olduğu kanıtlanmış bir önerme ve tekrarın kabulü artırdığına dair kayıt yok.",
+   "alternative_explanation": "Aynı bilginin birçok kurumda yer alması ortak ajans kaynağından kaynaklanabilir; tekrarın kabulü etkilediği gösterilmiyor.",
+   "missing_context": [
+    "İddianın doğruluğuna dair bağımsız doğrulama",
+    "Maruz kalma geçmişine ilişkin boylamsal veri"
+   ]
+  }
+ ]
+}

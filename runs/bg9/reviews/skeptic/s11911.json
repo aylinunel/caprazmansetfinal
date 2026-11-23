@@ -1,0 +1,164 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fatma Betül Sayan Kaya haberinde karşılaştırılan ifadelerin karar açısından eşdeğer olduğu ve tercihin sunuma bağlandığı metinde belirtilmiyor.",
+   "alternative_explanation": "Başlık farkları farklı bilgi unsurlarını öne çıkarma tercihinden kaynaklanıyor olabilir; eşdeğerlik kanıtlı değil.",
+   "missing_context": [
+    "Eşdeğer seçeneklerin açıkça belirtilmesi",
+    "Tercihin sunuma bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "identifiable-victim-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fatma Betül Sayan Kaya haberinde tanımlanabilir kişi ile daha geniş grup arasında kaynak veya öncelik farkı gösterilmiyor.",
+   "alternative_explanation": "Adı geçen kişi olayın doğrudan öznesidir; adın anılması yardım kararı kanıtı değildir.",
+   "missing_context": [
+    "Yardım veya kaynak tahsisi kararı",
+    "Daha az tanımlanabilir grupla karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'li eski Bakan Fatma Betül Sayan Kaya",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Birgün satırı Kaya'nın parti aidiyetini belirtiyor; ancak bu aidiyetin kredibilite, suçlama veya fayda farkına bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Grup adlarının anılması tanımlayıcı bilgi olabilir; farklı muamele kanıtı yok.",
+   "missing_context": [
+    "Karşılaştırılabilir vakalarda tutarsız standart kanıtı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Fatma Betül Sayan Kaya haberinde belirgin bir ayrıntı ile bir yargı arasında açık, haksız bir bağ kurulmuyor; belirgin olmak tek başına hata kanıtı değil.",
+   "alternative_explanation": "Haber değeri taşıyan ayrıntının öne çıkarılması olağan editoryal tercihtir.",
+   "missing_context": [
+    "Belirgin ve belirgin olmayan bilginin ağırlığını karşılaştıran davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fondan 2.2 milyar liralık kazanç etmesiyle gündeme geldikten sonra",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya cezaevinde rahatsızlandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Evrensel soruşturma arka planını (2.2 milyar liralık kazanç) öne çıkarırken Habertürk yalnızca sağlık olayını veriyor; eşzamanlı karşılaştırma eşit olmayan dikkati gösterir, ancak bunun bir yargıya haksız etkisi gösterilmiyor.",
+   "alternative_explanation": "Kurumların farklı yayın önceliği ve okur kitlesi farklı vurguyu açıklayabilir.",
+   "missing_context": [
+    "Dikkat dağılımının bir sonuca bağlandığını gösteren kayıt",
+    "Göz ardı edilen karşı kanıtın erişilebilir olduğunun kanıtı"
+   ]
+  }
+ ]
+}

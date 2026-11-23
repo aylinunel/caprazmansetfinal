@@ -1,0 +1,296 @@
+{
+ "version": "9",
+ "from": "2026-11-14",
+ "findings": [
+  {
+   "id": "veri",
+   "tag": "yeni",
+   "title": "Bir hafta daha veri",
+   "claim": "Pencere 2026-11-13 yerine 2026-11-20 tarihinde bitiyor. Başlık 388.760 → 468.836, olay 9.230 → 11.588, kurum 51 → 53.",
+   "rows": [
+    [
+     "Başlık",
+     "388.760",
+     "468.836"
+    ],
+    [
+     "Olay",
+     "9.230",
+     "11.588"
+    ],
+    [
+     "Kurum (veri alınan)",
+     "51",
+     "53"
+    ],
+    [
+     "Dönem",
+     "2026-09-01 – 2026-11-13",
+     "2026-09-01 – 2026-11-20"
+    ]
+   ],
+   "note": "2.239 olay 2026-11-14 ve sonrasında başladı. İlk kez dahil olan kurumlar: Haber Global, Nefes.",
+   "cols": [
+    "8.2",
+    "9"
+   ]
+  },
+  {
+   "id": "benzerlik",
+   "tag": "sürüyor",
+   "title": "Başlık dili benzerliği ve yerleşim",
+   "claim": "Mantel r 0,24 → 0,26: ilişki neredeyse aynı kaldı. 9’daki sonuç anlamlı (p 0,010).",
+   "rows": [
+    [
+     "Mantel r",
+     "0,244",
+     "0,257"
+    ],
+    [
+     "p",
+     "0,012",
+     "0,010"
+    ]
+   ],
+   "note": "Benzer yerleşimdeki kurumların benzer sözcükler seçtiğini ölçer; niyet göstermez.",
+   "cols": [
+    "8.2",
+    "9"
+   ]
+  },
+  {
+   "id": "gundem",
+   "tag": "sürüyor",
+   "title": "Gündem seçimi ve yerleşim",
+   "claim": "Mantel r 0,04 → 0,05: ilişki neredeyse aynı kaldı. 9’daki sonuç anlamlı değil (p 0,342).",
+   "rows": [
+    [
+     "Mantel r",
+     "0,036",
+     "0,053"
+    ],
+    [
+     "p",
+     "0,505",
+     "0,342"
+    ]
+   ],
+   "note": "Hangi olayların haberleştirildiğinin yerleşimle ilişkisini ölçer.",
+   "cols": [
+    "8.2",
+    "9"
+   ]
+  },
+  {
+   "id": "uslup",
+   "tag": "sürüyor",
+   "title": "Yazım üslubu ve yerleşim",
+   "claim": "Üslup eksenindeki Spearman ρ 0,49 → 0,47: bağ neredeyse aynı kaldı. 9’daki sonuç anlamlı (p 0,020).",
+   "rows": [
+    [
+     "ρ (1. eksen)",
+     "0,487",
+     "0,471"
+    ],
+    [
+     "p (1. eksen)",
+     "0,016",
+     "0,020"
+    ]
+   ],
+   "note": "",
+   "cols": [
+    "8.2",
+    "9"
+   ]
+  },
+  {
+   "id": "kornokta",
+   "tag": "sürüyor",
+   "title": "Kör nokta olayları",
+   "claim": "Bir tarafın belirgin biçimde az haberleştirdiği olay 79 → 104; bütün olayların içindeki payı %0,9 → %0,9 (neredeyse aynı kaldı).",
+   "rows": [
+    [
+     "Kör nokta olayı",
+     "79",
+     "104"
+    ],
+    [
+     "Pay",
+     "%0,9",
+     "%0,9"
+    ],
+    [
+     "2026-11-14 sonrası kör nokta",
+     "—",
+     "24"
+    ]
+   ],
+   "note": "",
+   "cols": [
+    "8.2",
+    "9"
+   ]
+  },
+  {
+   "id": "yuk",
+   "tag": "sürüyor",
+   "title": "Yüklü dil",
+   "claim": "İki sürümde de bulunan 51 kurumun yük ortalaması kurum başına ortalama 0,07 puan değişti.",
+   "rows": [
+    [
+     "Diriliş Postası",
+     "8,4",
+     "8,2"
+    ],
+    [
+     "Demirören Haber Ajansı",
+     "7,1",
+     "6,9"
+    ],
+    [
+     "Milliyet",
+     "10,1",
+     "10,3"
+    ],
+    [
+     "Onedio",
+     "6,2",
+     "6,5"
+    ],
+    [
+     "CNN Türk",
+     "8,8",
+     "9,2"
+    ]
+   ],
+   "note": "Tabloda en çok düşen iki ve en çok yükselen üç kurum.",
+   "cols": [
+    "8.2",
+    "9"
+   ]
+  },
+  {
+   "id": "yz",
+   "tag": "değişti",
+   "title": "AI incelemesi yeni olaylarla güncellendi",
+   "claim": "En çok kurumun haberleştirdiği 150 olay yeniden seçildi: 46 olay listeye yeni girdi, 34 olayın başlıkları ya da bağlamı değiştiği için yeniden incelendi, geri kalanların 8.2 incelemesi aynen korundu. Davranışsal bulgu 387 → 309.",
+   "rows": [
+    [
+     "Davranışsal bulgu",
+     "387",
+     "309"
+    ],
+    [
+     "Doğrulanmış alıntı",
+     "1.763",
+     "1.278"
+    ],
+    [
+     "Medya tekniği bulgusu (canlı)",
+     "18",
+     "14"
+    ]
+   ],
+   "note": "Her olay ayrı seçici, savunucu ve kuşkucu ajanlarca incelendi; bulgular aynı biçimde, AI imzalı gösterilir.",
+   "cols": [
+    "8.2",
+    "9"
+   ]
+  },
+  {
+   "id": "anlati",
+   "tag": "yeni",
+   "title": "Anlatı haritasına yeni hafta",
+   "claim": "Anlatı haritası 14–20 Kasım haftasıyla genişledi; 20 olay yapay zekâyla kodlandı (YZ).",
+   "rows": [],
+   "note": "Kodlama kuralları önceki haftalarla aynıdır; insan kodlayıcı denetiminden geçmedi.",
+   "cols": [
+    "8.2",
+    "9"
+   ]
+  },
+  {
+   "id": "olaylar",
+   "tag": "yeni",
+   "title": "Yeni haftanın en çok kurumca haberleştirilen olayları",
+   "claim": "Uzayan pencerede 2.239 olay başladı; en geniş yankı bulan: Fon soruşturması: AKP'li Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifadeye çağrıldı (36 kurum).",
+   "rows": [
+    [
+     "Fon soruşturması: AKP'li Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifadeye çağrıldı",
+     "36",
+     "s11612"
+    ],
+    [
+     "Van'da 4,3 büyüklüğünde deprem",
+     "36",
+     "s10961"
+    ],
+    [
+     "CHP kurultay davasında karar: Ekrem İmamoğlu'na siyasi yasak",
+     "36",
+     "s11789"
+    ],
+    [
+     "Eski BDDK Başkanı Şahap Kavcıoğlu hakkında soruşturma izni talebi",
+     "36",
+     "s11782"
+    ],
+    [
+     "Fon soruşturması: Şahap Kavcıoğlu'na yurt dışı çıkış yasağı",
+     "35",
+     "s11906"
+    ],
+    [
+     "2026 KPSS Ortaöğretim sonuçları açıklandı mı? KPSS Ortaöğretim sonuçları ne zaman açıklanacak?",
+     "34",
+     "s11040"
+    ],
+    [
+     "Fon soruşturmasında yeni gelişme: 7 şüpheli daha tutuklandı",
+     "33",
+     "s11065"
+    ],
+    [
+     "Fon soruşturmasında aranan Serdar Altınbaş Çekya’da yakalandı",
+     "33",
+     "s12475"
+    ]
+   ],
+   "events": true,
+   "note": "Her satır olay sayfasına bağlanır.",
+   "cols": [
+    "8.2",
+    "9"
+   ]
+  },
+  {
+   "id": "sinir",
+   "tag": "uyarı",
+   "title": "Sınırlar",
+   "claim": "9’un yeni bulguları şu sınırlarla okunmalı.",
+   "rows": [
+    [
+     "Son gün",
+     "2026-11-20 sonrası henüz eksik toplandığı için dışarıda",
+     ""
+    ],
+    [
+     "Anlatı haritası",
+     "yeni hafta yapay zekâyla kodlandı (YZ)",
+     ""
+    ],
+    [
+     "AI incelemesi",
+     "yalnızca en çok kurumun haberleştirdiği olaylar incelenir",
+     ""
+    ]
+   ],
+   "note": "",
+   "cols": [
+    "8.2",
+    "9"
+   ]
+  }
+ ]
+}

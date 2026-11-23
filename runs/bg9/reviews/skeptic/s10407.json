@@ -1,0 +1,216 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Devletimiz unutmaz!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda 'devletimiz', 'şehidimiz' gibi aidiyet dili var; ancak bir karar ya da yargının grup üyeliğine bağlandığı ve benzer vakalara farklı standart uygulandığı gösterilmiyor.",
+   "alternative_explanation": "Terör saldırısında ölen bir görevlinin yakalanan faili haberi, kurumsal açıklamanın aktarımıdır; aidiyet dili üslup olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir vakalarda tutarsız ölçüt uygulandığını gösteren kanıt",
+    "Yargının grup kimliğine bağlandığını belirten ifade"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Şehidimizin kanı yerde kalmadı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duygusal ifadeler var; ancak bir duygunun belirli bir risk/fayda tahminine ya da karara bağlandığı açıkça yazılmamış.",
+   "alternative_explanation": "Duygu yüklü ifade üslup tercihi veya aktarılan resmi söylemin yansıması olabilir; karar gerekçesi değildir.",
+   "missing_context": [
+    "Duygunun bir karar veya risk tahminine bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 18:31] Binbaşı Arslan Kulaksız'ı 2015 yılında ailesinin yanında şehit eden terörist yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 18:36] 2015 yılında Binbaşı Kulaksız'ı şehit eden firari şüpheli yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı yakalama olayı bir kurumda 'terörist', diğerinde 'firari şüpheli' sözcüğüyle veriliyor; olguların aynı olduğu görülüyor, ancak bu farkın bir tercihe ya da yargıya bağlandığı metinde yok.",
+   "alternative_explanation": "Sözcük farkı kurumun hukuki dil standardından (şüpheli/sanık) ya da bakanlık açıklamasının aktarımından kaynaklanabilir.",
+   "missing_context": [
+    "Başlık farkının okur yargısına etkisini gösteren veri",
+    "Bakanlık açıklamasının özgün ifadesi"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakan Çiftçi: Devlet unutmaz",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İçişleri Bakanlığı ve Bakan kaynak olarak anılıyor; bu statünün gerekçeli değerlendirmenin yerine geçtiği ya da karşıt kanıtın reddedildiği gösterilmiyor.",
+   "alternative_explanation": "Yakalama bilgisinin ilgili bakanlıktan aktarılması doğru ve ilgili kaynak seçimidir.",
+   "missing_context": [
+    "Yetkili beyanının karşıt kanıta rağmen belirleyici sayıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ailesinin yanında şehit etmişlerdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ailesinin yanında öldürülme ayrıntısı öne çıkarılıyor; ancak bu çarpıcı ayrıntının bir yargıya dayanak yapıldığı ya da karşıt bilgiyi dışladığı gösterilmiyor.",
+   "alternative_explanation": "Ayrıntı olayın bilinen gerçeği ve haberin bağlamıdır; tekrar edilmesi okuyucuyu bilgilendirme amaçlı olabilir.",
+   "missing_context": [
+    "Ayrıntının bir yargıya dayanak yapıldığını gösteren ifade",
+    "Çarpıcı olmayan bilgilerin karşılaştırmalı ağırlığı"
+   ]
+  },
+  {
+   "card_id": "just-world-hypothesis",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "11 yıl geçse de hesap sorulacak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir sonucu bir kişinin ahlaki hak edişiyle açıklamıyor; suçlunun yakalanması haberi mağdur değil fail hakkında.",
+   "alternative_explanation": "Hesap sorma söylemi hukuki süreçle ilgilidir; mağdurun akıbetini karakteriyle ilişkilendiren bir ifade yok.",
+   "missing_context": [
+    "Bir mağdurun sonucunun ahlaki hak edişe bağlandığı ifade"
+   ]
+  }
+ ]
+}

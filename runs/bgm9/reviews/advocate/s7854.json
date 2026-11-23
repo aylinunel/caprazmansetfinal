@@ -1,0 +1,273 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı: Çok sayıda ölü ve yaralı var",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Polonya'da yargı krizi sonrası silahlı saldırı: Çok sayıda ölü ve yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Polonya'da ağır silahlarla saldırı: En az altı ölü 15 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı saldırı için bir başlık sayı vermeden yalnızca 'çok sayıda ölü', biri 'yargı krizi' bağlamını, biri silahın ağırlığını ve rakamları öne çıkarıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, karakter sınırı veya o anki bilgi düzeyinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Kurumların tam başlık ve metinleri",
+    "Yayın sırası ve güncellemeler"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı: 6 kişi hayatını kaybetti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Polonya'daki silahlı saldırıda 5 kişi öldü, 10 kişi yaralandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Polonya'da kanlı saldırı: Çok sayıda ölü ve yaralılar var",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Ölüm için 'hayatını kaybetti' ve 'öldü', olay için 'silahlı saldırı' ve 'kanlı saldırı' kullanılıyor; son çift çağrışım bakımından ayrışıyor.",
+   "alternative_explanation": "Sözcük farkları yalnızca üslup veya kurum yazım kuralı farkı olabilir.",
+   "missing_context": [
+    "Sözcüklerin okur algısına etkisi",
+    "Kurum üslup kılavuzları"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı bir şahıs",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "ağır silahlar taşıyan bir kişinin",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kamuflajlı saldırgan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Saldırgan için 'silahlı şahıs', 'ağır silahlar taşıyan kişi', 'kamuflajlı saldırgan' ifadeleri kullanılıyor; hiçbirinde kimliğin meşruiyetine ilişkin açık bir değerlendirme yok.",
+   "alternative_explanation": "Farklı unvanlar kaynağın (bakanlık, savcılık) kullandığı ifadeyi izliyor olabilir.",
+   "missing_context": [
+    "Kurumların unvan seçimlerinin kaynağı",
+    "Kişinin resmi unvanları"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı dehşeti: Çok sayıda ölü ve yaralı var",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı şoku! 6 kişi öldü, 10'dan fazla kişi yaralandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Polonya'nın Krakov kentinde düzenlenen silahlı saldırıda 6 kişi öldü, 15 kişi yaralandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "'Dehşeti' ve 'şoku' ifadeleri kurumun kendi sesinde olgunun üzerine değerlendirici bir ton ekliyor; aynı olgu AA başlığında bu sözcükler olmadan veriliyor.",
+   "alternative_explanation": "Değerlendirici sözcükler kurumun olağan başlık üslubu olabilir.",
+   "missing_context": [
+    "Aynı olguyu yalın aktaran kurumların oranı",
+    "Başlığın tam bağlamı"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da yargı krizi sonrası silahlı saldırı: Çok sayıda ölü ve yaralı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Başlık 'yargı krizi sonrası' ifadesiyle saldırıyı bir öncül olayla zaman sırasına koyuyor; açık bir nedensellik fiili yok, yalnızca ardışıklık var.",
+   "alternative_explanation": "İfade kronolojik bağlam veya kaynak aktarımı olabilir.",
+   "missing_context": [
+    "Nedensellik iddiasının dayanağı",
+    "İfadenin kime atfedildiği"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı dehşeti: Çok sayıda ölü ve yaralı var",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Polonya'nın Krakow kentinde düzenlenen silahlı saldırıda ölenlerin sayısı 6'ya yükselirken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık 'dehşeti' sözcüğünü kullanıyor ve rakam vermiyor; ölçek başka kurumlarda 6 ölü olarak veriliyor, sözcüğün orantısız olup olmadığı bu metinden belirlenemiyor.",
+   "alternative_explanation": "Tehdit sözcükleri olayın gerçek ağırlığıyla orantılı olabilir.",
+   "missing_context": [
+    "Riskin ölçeği veya olasılığına dair kaynak",
+    "Diğer kurumların dili"
+   ]
+  }
+ ]
+}

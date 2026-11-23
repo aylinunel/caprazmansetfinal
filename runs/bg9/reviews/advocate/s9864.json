@@ -1,0 +1,212 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Halk TV'nin firari patronu Cafer Mahiroğlu soruşturmasında yeni gelişme: 6 şüpheli adliyeye sevk edildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İş insanı Cafer Mahiroğlu'na yönelik soruşturmada gözaltına alınan 5 şüpheli tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı soruşturma bir yerde 'firari patronu', başka yerde 'iş insanı' ifadesiyle sunuluyor; farkın bir yargıya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati, karakter sınırı veya bilgi güncellemesinden kaynaklanıyor olabilir; okurun kararına etkisi gösterilmemiştir.",
+   "missing_context": [
+    "Okurun yargı veya tercihinin değiştiğine dair gözlem",
+    "Karşılaştırılan ifadelerin karar açısından eşdeğer olduğunun açık gösterimi"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Halk TV'nin firari patronu Cafer Mahiroğlu soruşturmasında yeni gelişme",
+     "kind": "statement"
+    },
+    {
+     "source": "context",
+     "quote": "ahaber: sağ (85)",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İş insanı Cafer Mahiroğlu'na yönelik soruşturmada gözaltına alınan 5 şüpheli tutuklandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sağ yerleşimli A Haber 'firari patronu' derken AA/Cumhuriyet 'iş insanı' diyor; gruba göre farklı niteleme gözleniyor, ancak tutarsız standart kanıtlanmamış.",
+   "alternative_explanation": "Yayın çizgisi farkları editoryal tercih, hedef kitle veya kaynak erişimi farkından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Aynı olaya benzer durumlarda farklı standart uygulandığını gösteren ifade",
+    "Grup üyeliğinin yargıyı etkilediğine dair açık bağlantı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "belediye ihalelerinden milyonluk rüşvet pazarlıklarına uzanan para trafiği savcılık dosyasına girdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Takvim çarpıcı para ayrıntılarını öne çıkarıyor; yargıya bağlandığı açık değil.",
+   "alternative_explanation": "Çarpıcı ifade yayın kuralı (son dakika, dikkat çekme) olabilir; yargıyı etkilediği gösterilmemiştir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıya veya karara bağlandığı bir ifade",
+    "Daha az belirgin bilgilerle karşılaştırmalı ağırlıklandırma"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki bir değerin sonraki yargıya bağlandığı ifade yok; sayı farkları aşama farkından (talep/karar) kaynaklanıyor.",
+   "alternative_explanation": "Önceki rakam güncel bilgi eksikliğinden veya aktarım gecikmesinden dolayı tekrarlanmış olabilir.",
+   "missing_context": [
+    "Sonraki yargının ilk değere açıkça bağlandığı bir ifade",
+    "Düzeltmeye elverişli kanıtın göz ardı edildiğine dair gösterge"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir alandaki olumlu izlenimin başka alana taşındığı görülmüyor.",
+   "alternative_explanation": "Olumlu ifadeler konuşmacıların kendi görüşü olabilir ve ilgili alanlar gerçekten bağlantılı olabilir.",
+   "missing_context": [
+    "İki alanın karar açısından ilgisiz olduğunun gösterimi",
+    "Birinci izlenimin ikinci yargıyı belirlediğine dair açık ifade"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin ödül ve içsel motivasyon ilişkisi içermiyor.",
+   "alternative_explanation": "Metin bir etkinlik ve ödül ilişkisi içermiyor.",
+   "missing_context": [
+    "Ödül öncesi içsel motivasyon ve sonrası düşüşe dair veri"
+   ]
+  }
+ ]
+}

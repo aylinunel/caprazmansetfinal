@@ -1,0 +1,182 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "nostalgia-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gözümüzde canlandı koskoca mazi!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mynet başlığı geçmişi çağrıştıran nostaljik bir ifade kullanıyor; ancak bir para harcama kararıyla bağlantı ve bütçeyle çatışma gösterilmiyor.",
+   "alternative_explanation": "Nostaljik ifade, olayın duygusal tonunu yansıtan söz sanatı olabilir.",
+   "missing_context": [
+    "Nostaljiyle bağlantılı somut para kararı",
+    "Bütçe veya hedefle çelişki"
+   ]
+  },
+  {
+   "card_id": "rosy-retrospection",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ronaldinho haberinde geçmişin bugünden daha iyi anlatıldığı karşılaştırmalı bir iddia yok.",
+   "alternative_explanation": "Geçmişe atıf, kariyer özeti için kullanılan kronolojik bilgi olabilir.",
+   "missing_context": [
+    "Eşzamanlı kayıtlarla karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Brezilyalı efsane Ronaldinho",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler Ronaldinho'yu 'efsane' diye niteliyor; ancak bu olumlu izlenimin ilgisiz bir alandaki ayrı bir yargıya aktarıldığı gösterilmiyor.",
+   "alternative_explanation": "Övgü dolu sıfatlar tanımlayıcı olabilir; ayrı bir yargıya bağlantı yok.",
+   "missing_context": [
+    "Ayrı bir alandaki yargıyla açık bağlantı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ronaldinho haberinde belirgin bir ayrıntı ile bir yargı arasında açık, haksız bir bağ kurulmuyor; belirgin olmak tek başına hata kanıtı değil.",
+   "alternative_explanation": "Haber değeri taşıyan ayrıntının öne çıkarılması olağan editoryal tercihtir.",
+   "missing_context": [
+    "Belirgin ve belirgin olmayan bilginin ağırlığını karşılaştıran davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ronaldinho haberinde bir etkinliğin ödül öncesi içsel keyfine dair kanıt yok.",
+   "alternative_explanation": "Metin yalnızca olguyu bildiriyor; motivasyon değişimi anlatılmıyor.",
+   "missing_context": [
+    "Ödül öncesi ve sonrası gönüllü katılım karşılaştırması"
+   ]
+  },
+  {
+   "card_id": "serial-position-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ronaldinho haberinde sıralı bir listenin hatırlanması veya seçimi anlatılmıyor.",
+   "alternative_explanation": "Başlık sırası saatlere göre doğal akışı gösteriyor olabilir; hatırlama ölçümü yok.",
+   "missing_context": [
+    "Sıralı öğelerin hatırlanmasına dair ölçüm"
+   ]
+  }
+ ]
+}

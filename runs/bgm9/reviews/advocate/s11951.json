@@ -1,0 +1,254 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İddianamede gizli tanıktan 'para karşılığı yayın' iddiası",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Yargılama başlamadığı için sorumluluk belirsiz; ancak başlıklar savcılık talebi ve 'iddia' ifadeleriyle atıf yapıyor, kurumların kendi sesiyle suçluluk atfı görülmüyor.",
+   "alternative_explanation": "Başlıklar iddianame ve talep gibi hukuki aşamaları atıfla aktarıyor.",
+   "missing_context": [
+    "Yargılamanın seyri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gizli tanık 'para karşılığı yayın' dedi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "28 milyonluk transfer: Gizli tanık ne dedi?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sarıkaya’ya yöneltilen suçlama değişti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "5 yıl 3 aya kadar hapis istemi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı iddianame haberinde Sondakika gizli tanık beyanını, Takvim parasal tutarı, T24 suçlama değişikliğini, çoğu kurum ise hapis istemini başlığa taşıyor.",
+   "alternative_explanation": "Farklı ayrıntılar iddianamenin farklı bölümlerinden seçilmiş olabilir.",
+   "missing_context": [
+    "İddianamenin tam metni"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yorumcu Cem Küçük ve Beyaz TV sunucusu Tahir Sarıkaya",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "tutuklu gazeteciler Cem Küçük ve Tahir Sarıkaya",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişiler için Diken 'Yorumcu', 'Beyaz TV sunucusu', Anka 'tutuklu gazeteciler' diyor; unvan seçimi kişinin mesleki meşruiyeti konusunda farklı çağrışım taşıyabilir, ancak açık bir değerlendirme yok.",
+   "alternative_explanation": "Unvanlar kişilerin gerçek görevlerini yansıtıyor olabilir.",
+   "missing_context": [
+    "Kurumların kişileri tanımlama ölçütleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "hapis istemi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "hapsi istendi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Para karşılığı yayın ve dezenformasyon suçlaması",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar 'istem/talep/istendi' ve 'dezenformasyon suçlaması' gibi farklı sözcükler kullanıyor; çoğu fark register düzeyinde, yalnızca 'dezenformasyon' çağrışım farkı taşıyor olabilir.",
+   "alternative_explanation": "Sözcük farkları hukuki terimin eş anlamlı çeşitliliğidir.",
+   "missing_context": [
+    "Birgün'ün 'dezenformasyon' sözcüğünün kaynağı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi sesindeki başlıklar çoğunlukla 'iddianame', 'hapis istemi' gibi hukuki terimlerden oluşuyor; belirgin değerlendirici sözcük bulunmuyor.",
+   "alternative_explanation": "Hukuki terimler değerlendirici değil tanımlayıcıdır.",
+   "missing_context": [
+    "Lede metinlerinin tamamı"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "28 milyonluk transfer: Gizli tanık ne dedi?",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "gazeteci Cem Küçük ve Tahir Sarıkaya",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Takvim başlığında seçilmiş bir parasal rakam ve merak uyandıran soru birlikte kullanılıyor; ancak ikisinin aynı değerlendirici yönü gösterdiği ve başka kurumun aynı gerçekleri bu birleşim olmadan verdiği net biçimde ortaya konamıyor.",
+   "alternative_explanation": "Tanık beyanı iddianamenin kendi içeriğidir.",
+   "missing_context": [
+    "Takvim'in lede metninin tamamı"
+   ]
+  }
+ ]
+}

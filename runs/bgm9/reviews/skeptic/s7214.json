@@ -1,0 +1,223 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 14:21] Cristiano Ronaldo veda etti: O olay sonu getirdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "ayrılıkta önemli rol oynadığı ifade ediliyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milli Gazete başlığı ayrılığı belirsiz bir 'olay'a bağlayan nedensel bir ifade kullanıyor; metinde bu bağ için hiçbir dayanak verilmediğinden kanıtın yalnızca zaman sırası olduğu da gösterilemiyor.",
+   "alternative_explanation": "Haberin gövdesinde bir kaynak ya da açıklama bulunabilir; Mynet aynı iddiayı 'ifade ediliyor' diyerek atfediyor.",
+   "missing_context": [
+    "Milli Gazete haberinin gövdesi",
+    "'O olay'ın neyi kastettiği ve kaynağı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[onedio · 14:52] Cristiano Ronaldo Portekiz Milli Takımı'nı Resmen Bıraktı: 23 Yılda 234 Maç, 146 Gol",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[milligazete · 14:21] Cristiano Ronaldo veda etti: O olay sonu getirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı emeklilik haberinde Onedio başlıkta kariyer istatistiklerini, Milli Gazete ayrılığın nedeni olarak bir 'olay'ı öne çıkarıyor.",
+   "alternative_explanation": "Her iki boyut da olgunun meşru parçası; fark başlık uzunluğu ve sahip olunan ayrıntılardan kaynaklanabilir.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 13:36] Cristiano Ronaldo Portekiz Milli Takımı'nı bıraktı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 13:37] Cristiano Ronaldo Portekiz Milli Takımı'na veda etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Bıraktı' ve 'veda etti' aynı eylem için farklı sözcükler; fark daha çok üslup düzeyinde ve belirgin bir değer yükü taşıdığı açık değil.",
+   "alternative_explanation": "Spor haberciliğinde 'veda etti' emeklilik için yerleşik bir kalıp.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[diken · 14:14] Bir devrin sonu: Ronaldo milli takımı bıraktı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 13:57] Cristiano Ronaldo Portekiz Milli Takımı'nı bıraktı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Diken (ve Mynet) kendi sesiyle 'Bir devrin sonu' değerlendirmesini kullanıyor; BirGün aynı olguyu bu ifade olmadan veriyor.",
+   "alternative_explanation": "İfade, rekor sahibi bir oyuncunun 23 yıllık kariyerinin bitişi için olguya yakın ve yaygın bir değerlendirme olabilir.",
+   "missing_context": [
+    "Değerlendirici ifadenin haberin gövdesinde bir kaynağa atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bağlam ya da diğer kurumların haberleri bu olayın tekrarlayan ya da yapısal bir sorunun parçası olduğunu göstermiyor; bu nedenle ilk koşul karşılanmıyor.",
+   "alternative_explanation": "Bir oyuncunun emekliliği bireysel bir olaydır; tekil sunum konunun doğasından kaynaklanıyor.",
+   "missing_context": [
+    "Benzer önceki olaylara ya da yapısal verilere ilişkin bağlam"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aa · 02:47] Cristiano Ronaldo, Portekiz Milli Takımı'nı bıraktığını açıkladı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "bir milli takım formasını en çok giyen ve milli takımda en çok gol atan erkek oyuncu rekorlarını elinde tutuyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "TRT Haber olayı oyuncunun kendi kariyer rekorlarıyla bağlamlandırıyor; bu kişisel bir özet olup daha geniş bir eğilim, dizi ya da kurumsal süreç değil.",
+   "alternative_explanation": "Kariyer istatistikleri bir emeklilik haberinin olağan arka planıdır.",
+   "missing_context": [
+    "Olayı daha geniş bir eğilime yerleştiren bir ifade"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,291 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emine Erdoğan, COP31 Liderler Zirvesi'ne katılan liderler ve eşleriyle yakından ilgilendi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emine Erdoğan, COP31 Liderler Zirvesi'ne katılan liderler ve eşlerini tek tek karşıladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emine Erdoğan'dan COP31 paylaşımı: Küresel iş birliği vurgusu yaptı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "COP31 Liderler Zirvesi’nde akredite basına sınırlı erişim",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı zirveyi aa ve hurriyet Emine Erdoğan'ın ilgisi, tgrt tek tek karşılaması, sabah paylaşımındaki iş birliği vurgusu, bianet ise basına erişim sınırı boyutuyla başlığa taşıyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan COP31 Liderler Zirvesi Açılış Programı'na katılacak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, COP31 Liderler Zirvesi'nde 102 lideri ağırlayacak",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişiye ahaber 'Başkan Erdoğan', haberler 'Cumhurbaşkanı Erdoğan' diyor. Unvan farkı gözleniyor, ancak bunun meşruiyet değerlendirmesi taşıdığına dair metin kanıtı yok.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yakından ilgilendi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "tek tek karşıladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan liderleri karşıladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olgu aa/hurriyet'te 'yakından ilgilendi', tgrt'de 'tek tek karşıladı', akit'te 'liderleri karşıladı' olarak ifade ediliyor. Çağrışım farkı olabilir ancak çoğunlukla kayıt ve ayrıntı düzeyi farkı görünüyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "küresel diplomasinin kalbi Antalya'da atıyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dünyanın gözünün çevrildiği",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Antalya'da COP31 Liderler Zirvesi için trafik düzenlemesi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "posta aynı lede'de 'diplomasinin kalbi' metaforunu ve 'dünyanın gözü' vurgusunu birlikte kullanıyor; ikisi de olayı olumlu ve önemli gösteren yönde. ntv aynı zirveyi bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "küresel diplomasinin kalbi Antalya'da atıyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dünyanın gözü Antalya'da!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "COP31 Liderler Zirvesi başlıyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "posta ve aksam kendi sesleriyle 'diplomasinin kalbi', 'dünyanın gözü' gibi olumlu değerlendirici ifadeler kullanıyor; haberturk aynı olayı bu ifadeler olmadan bildiriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "BM İklim Değişikliği Çerçeve Sözleşmesi 31. Taraflar Konferansı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "COP31'in üçüncü gününde",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "haberturk ve posta lede'leri zirveyi BM iklim sürecinin 31. Taraflar Konferansı ve konferansın üçüncü günü içine yerleştiriyor, yani kurumsal bir süreç bağlamı veriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  }
+ ]
+}

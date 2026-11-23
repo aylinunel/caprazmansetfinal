@@ -1,0 +1,181 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar aynı olayı farklı vurgularla veriyor; fakat eşdeğer seçenekler arasında bir tercihin çerçeveye bağlandığı metinde açıkça kurulmuyor.",
+   "alternative_explanation": "Vurgu farkı, her kurumun farklı zamanda farklı güncel bilgiye sahip olmasından kaynaklanabilir.",
+   "missing_context": [
+    "Eşdeğerliğin açıkça belirlenmesi",
+    "Çerçeveye bağlanan bir tercih"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda 'şiddetli patlama!' gibi çarpıcı ifadeler öne çıkarılıyor; ancak metin, bu çarpıcılığı bir yargıya veya seçime açıkça bağlamıyor.",
+   "alternative_explanation": "Haber dilinin doğal vurgusu; olayın ciddiyeti nedeniyle öne çıkarma gerekçeli olabilir.",
+   "missing_context": [
+    "Okuyucu yargısına dair kanıt yok",
+    "Karşılaştırmalı ağırlıklandırma davranışı yok"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cambridge Sözlüğü sözlük bilimcisi Colin McIntosh",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Yetkili kişilerin açıklamaları aktarılıyor; ancak otoriteye gerekçesiz üstünlük verildiği veya karşıt kanıtın otorite nedeniyle geçersiz sayıldığı görülmüyor.",
+   "alternative_explanation": "Resmî açıklamaların aktarılması haberciliğin olağan kaynak kullanımıdır.",
+   "missing_context": [
+    "Otoriteye karşı çıkan bir iddia",
+    "Otoritenin gerekçesiz izlendiğine dair ifade"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde önceki bir uyaran ile sonraki tepki arasında sıralı ve açık bağ gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Başlıklar ardışık haber akışının doğal sonucu olabilir.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "mere-exposure-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde tekrar maruziyetin beğeni veya seçimi etkilediği ifadesi gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Tekrar eden başlıklar aynı haberin yayılmasından ibarettir.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "declinism",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde geçmişi şimdiye tercih eden açık bir karşılaştırma gözlenmiyor; bu kart için gereken koşullar karşılanmıyor.",
+   "alternative_explanation": "Metinde geçmiş-şimdi karşılaştırması yok.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  }
+ ]
+}

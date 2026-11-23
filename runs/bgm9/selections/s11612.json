@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "emphasis-framing",
+  "responsibility-framing",
+  "word-choice",
+  "loaded-language"
+ ],
+ "selection_uncertainty": [
+  "Soruşturma sürüyor.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "'AKP'li' etiketi ve baba vurgusu kurumlar arasında farklılaşıyor."
+}

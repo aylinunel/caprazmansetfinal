@@ -1,0 +1,216 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD'de ilk Müslüman senatör tarihi eşikte!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İsrail lobisine rağmen kazandı: ABD'nin ilk Müslüman senatörü oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Dini kimlik haberin konusunun kendisi; kurumların bu kimliğe göre tutarsız bir ölçüt uyguladığı karşılaştırmalı olarak gösterilmiyor. Kart, grup üyeliğinin açıkça kurulmasını ve güvenilirlik/suçlama/fayda farkının bu üyeliğe bağlanmasını istiyor; metinde grup aidiyetiyle gerekçelendirilmiş bir yargı farkı bulunmuyor.",
+   "alternative_explanation": "Siyasi ya da kimlik etiketleri kişileri tanıtmak için kullanılmış olabilir; kurumların yerleşim farkı tek başına grup kayırmacılığını kanıtlamaz.",
+   "missing_context": [
+    "Karşılaştırılabilir olaylarda farklı grup üyelerine uygulanan tutarsız ölçüt",
+    "Grup kimliği nedeniyle indirgenen bir kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Trump'ın tüm suçlamalarına rağmen kazandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ABD'nin ilk Müslüman senatörü seçildi: Demokratlar Kongrede üstünlüğü sağladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı sonuç engel aşma ya da parti başarısı üzerinden veriliyor; tercih bağı kurulmuyor. Kart, eşdeğer seçeneklerin açıkça eşdeğer olduğunun metinde kurulmasını ve bir tercihin yalnızca sunuluş farkına bağlanmasını şart koşuyor; başlıklar arasında ifade farkı görülse de hiçbir metin bir karar ya da tercihi bu farka dayandırmıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatleri, farklı ajans kaynakları ve olayın farklı aşamalarının haberleştirilmesiyle açıklanabilir; kurumların editoryal tercihi bir akıl yürütme hatası değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin bu çerçevelere maruz kalıp farklı yargıya vardığını gösteren veri",
+    "Başlıkların bilgi açısından eşdeğer olduğunu açıkça belirten bir ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İnşallah'ı Elhamdülillah'a dönüştürdü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı ifade bir yargıya gerekçe yapılmıyor. Göze çarpan ayrıntılar başlıklarda öne çıkarılıyor; fakat bu ayrıntının bir yargı ya da tercihe açıkça bağlandığı veya ilgili karşı kanıtın göz ardı edildiği metinde gösterilmiyor. Tek metindeki vurgu bu kart için yeterli değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması haber değeri ve habercilik konvansiyonlarıyla açıklanabilir; bu bir yargı hatası değil, sunum tercihidir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin farklı ağırlıklandırıldığını gösteren karşılaştırmalı karar verisi",
+    "Vurgunun bir sıklık ya da risk tahminine dönüştürüldüğünü gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "bandwagon-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Herkes ABD'nin ilk Müslüman senatörünü konuşuyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Herkes konuşuyor' bir popülerlik ifadesi; ancak bir inancın doğruluğu ya da bir tercih bu popülerliğe dayandırılmıyor. Kart, bir inanç ya da tercihin popülerlik veya çoğunluk desteğine dayandırılmasını ve bunun kanıt yerine konmasını istiyor; metinlerde böyle bir gerekçelendirme yok.",
+   "alternative_explanation": "Oy dağılımını ya da ilgiyi bildirmek olgusal habercilik olup çoğunluğa uyma çağrısı değildir.",
+   "missing_context": [
+    "Çoğunluk desteğinin doğruluk ya da uygunluk kanıtı olarak sunulduğu ifade",
+    "Bu sosyal sinyalin belirleyici gerekçe olduğunu gösteren veri"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Michigan anketlerine göre Abdul El-Sayed ABD'nin ilk Müslüman senatörü olabilir",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Seçim öncesi anket bir referans bilgi; sonraki haberler bu değere bağlanmıyor, gerçek sonuç bildiriliyor. İlk açıklanan bilgiler sonraki haberlere referans olabilir; ancak metin sonraki bir tahminin bu ilk değere açıkça bağlandığını ve yeni kanıta rağmen ona yakın tutulduğunu göstermiyor.",
+   "alternative_explanation": "Sayılar arasındaki farklar resmî açıklamaların güncellenmesi ve farklı yayın saatleriyle açıklanabilir; eski rakamı kullanan kurum güncel bilgiye henüz ulaşmamış olabilir.",
+   "missing_context": [
+    "Her kurumun rakamı aldığı kaynak ve saat",
+    "Güncel rakam bilindiği hâlde eski değerde ısrar edildiğini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde ödül-motivasyon ilişkisi yok. Bu etki kartı, ödül öncesi içsel ilgi, ödüle bağlı beklenti ve ödül sonrası ölçülebilir düşüş verisi istiyor; haber metinlerinde bu üç koşuldan hiçbiri gözlenemiyor.",
+   "alternative_explanation": "Konu bir ödül-motivasyon ilişkisi değil, bir haber olayıdır; kartın kavramsal alanı metne uymuyor.",
+   "missing_context": [
+    "Ödül öncesi gönüllü katılım düzeyi",
+    "Ödülün beklenip kaldırıldığına dair bilgi",
+    "Sonraki katılımdaki ölçülebilir değişim"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "affect-heuristic",
+  "negativity-bias",
+  "salience-bias",
+  "confirmation-bias"
+ ],
+ "selection_uncertainty": [
+  "Soruşturma sürüyor; suçlamalar kanıtlanmış değil.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "'Vurgun' nitelemesi ile 'soruşturma' ifadesi arasında çerçeve farkı var."
+}

@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "salience-bias",
+  "leveling-and-sharpening",
+  "omission-bias",
+  "priming"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "Önceki genel müdürün gözaltısı bazı kaynaklarda hiç anılmıyor; bağlam eksik."
+ ],
+ "selection_note": "Atama haberi bir kısım kaynakta gözaltı bağlamıyla, diğerlerinde nötr görev değişikliği olarak verilmiş."
+}

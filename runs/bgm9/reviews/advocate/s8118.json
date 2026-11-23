@@ -1,0 +1,224 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "eğitim uçağı iniş sırasında kaza kırıma uğradı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "eğitim uçağı pistten çıktı! Pilot yara almadan kurtuldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay için aa, star ve trthaber kendi sesleriyle 'kaza kırıma uğradı' derken sondakika, haberturk, hurriyet gibi kurumlar 'pistten çıktı' diyor; ilki hasarlı bir kazayı, ikincisi bir konum değişikliğini çağrıştırıyor.",
+   "alternative_explanation": "'Kaza kırım' havacılıkta teknik/resmî bir terim olabilir; farklı sözcükler kaynak ajans metninin yeniden kullanımından da gelebilir.",
+   "missing_context": [
+    "Olayın resmî havacılık sınıflandırması",
+    "Uçaktaki hasarın boyutu"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pilot yara almadan kurtuldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çok sayıda ekip sevk edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Pilot hastaneye kaldırıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kaza için sondakika pilotun yara almadığını, mynet sevk edilen ekip sayısını, haber7 ise pilotun hastaneye kaldırılmasını başlığa taşıyor; başlıklar olayın farklı yönlerini öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar yayın saatlerine göre gelişen bilgiyi yansıtıyor olabilir (önce ekip sevki, sonra pilotun durumu).",
+   "missing_context": [
+    "Her başlığın yayın anındaki bilgi durumu"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Pilottan hayati manevra",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İlk görüntüler geldi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "küçük çaplı kaza",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Takvim başlığında 'hayati manevra' ifadesi kendi sesiyle olayı olumlu biçimde değerlendiriyor; aynı olgu birçok kurumda değerlendirici sözcük olmadan veriliyor.",
+   "alternative_explanation": "'Hayati' sözcüğü pilotun gerçekten risk altında olduğu bilgisinden gelmiş olabilir; haber sitesi üslubunun parçası da olabilir.",
+   "missing_context": [
+    "Pilotun yaptığı manevranın teknik doğrulaması"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve girişler olayı bir eğilim, seri veya kurumsal bağlam içine yerleştirmiyor; tek bir olay olarak aktarılıyor.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneği tek seçenekmiş gibi sunan bir ifade yok.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "girmesi sonucu küçük çaplı kaza",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "henüz belirlenemeyen bir nedenle",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Takvim, uçağın 'piste tutunamayıp' toprak alana girmesini kendi sesiyle sonuç olarak bağlıyor; buna karşılık evrensel nedenin henüz belirlenemediğini yazıyor. Verilen malzemede bağın dayanağı belirtilmiyor.",
+   "alternative_explanation": "İfade, tanık/ilk müdahale anlatısını özetliyor olabilir; 'sonucu' sözcüğü yalnızca olayların sırasını anlatıyor olabilir.",
+   "missing_context": [
+    "Kaza nedeninin teknik incelemesi",
+    "Takvim girişinin kaynağı"
+   ]
+  }
+ ]
+}

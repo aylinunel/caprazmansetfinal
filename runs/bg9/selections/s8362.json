@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "negativity-bias",
+  "availability-heuristic",
+  "salience-bias",
+  "framing-effect"
+ ],
+ "selection_uncertainty": [
+  "Olay kümesi Kayseri ve Adana depremlerini karıştırıyor.",
+  "Hasar bildirilmemesine rağmen korku dili kullanılıyor; risk verisi sınırlı."
+ ],
+ "selection_note": "Küçük depremlerde 'korkutan' vurgusu olumsuzluk ve kullanılabilirlik eğilimiyle ilgili olabilir."
+}

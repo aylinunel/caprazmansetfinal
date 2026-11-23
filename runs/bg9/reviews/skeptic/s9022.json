@@ -1,0 +1,155 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31'de diplomasi trafiği! Kritik görüşmeler peş peşe",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31 kapsamında diplomasi trafiği",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurguyla veriyor (Cumhurbaşkanı Erdoğan'dan COP31'de diplomasi trafiği! Kritik görüşmeler peş peşe); ancak metinde bu sunum farkına açıkça bağlanan bir tercih, yargı ya da karar yer almıyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati ve ajans metninin kısaltılmasıyla açıklanabilir; bir okurun ya da karar vericinin çerçeveden etkilendiğine dair veri yok.",
+   "missing_context": [
+    "Çerçevelerin karar açısından eşdeğer olduğunu açıkça kuran bir ifade",
+    "Sunum farkına bağlı bir tercih ya da yargıyı gösteren okur/karar verici verisi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Peş peşe kritik görüşmeler gerçekleştirdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan çarpıcı bir ayrıntı var (Peş peşe kritik görüşmeler gerçekleştirdi); fakat metin bu ayrıntıyı bir sıklık, risk ya da seçim yargısına açıkça bağlamıyor.",
+   "alternative_explanation": "Ayrıntının öne çıkarılması haber değeri ve dikkat çekici başlık geleneğiyle açıklanabilir; çarpıtılmış bir yargı gösterilmiyor.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir tahmin ya da karar gerekçesi yapıldığını gösteren ifade",
+    "Belirgin ve az belirgin bilgiye verilen ağırlığı karşılaştıran veri"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye’nin ev sahipliğinde ilk kez düzenlenen COP31 etkinliğine çok sayıda devlet lideri katıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir alandaki olumlu izlenim ya da unvan var (Türkiye’nin ev sahipliğinde ilk kez düzenlenen COP31 etkinliğine çok sayıda devlet lideri katıldı); ancak bunun ayrı bir alandaki olumlu yargıya açıkça bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Unvan ve olumlu ifadeler kimlik tanımı ya da protokol dilidir; başka bir alana aktarılan bir yargı yok.",
+   "missing_context": [
+    "İki ayrı alandaki yargının birbirine bağlandığını gösteren ifade",
+    "Alanların karar açısından ilgisiz olduğunu gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanlığı İletişim Başkanlığı, Cumhurbaşkanı Recep Tayyip Erdoğan'ın Birleşmiş Milletler (BM) Genel Sekreteri Antonio Guterres ile görüşmesinde bölgesel ve küresel konuların ele alındığını bildirdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bir yetkili ya da kurumu kaynak olarak anıyor (Cumhurbaşkanlığı İletişim Başkanlığı, Cumhurbaşkanı Recep Tayyip Erdoğan'ın Birleşmiş Milletler (BM) Genel Sekreteri Antonio Guterres ile görüşmesinde bölgesel ve küresel konuların ele alındığını bildirdi); ancak bu statünün içerik yerine belirleyici ağırlık aldığı ya da karşı kanıtın bu yüzden göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi kurum ya da yetkilinin açıklamasını aktarmak olağan haber pratiğidir ve kaynağın konuyla ilgisi açıktır; haksız bir etki görünmüyor.",
+   "missing_context": [
+    "Kaynağın yetkinliğinin konuyla uyuşmadığını gösteren kanıt",
+    "Statünün tek gerekçe olduğunu ya da karşı kanıtın yok sayıldığını gösteren ifade"
+   ]
+  }
+ ]
+}

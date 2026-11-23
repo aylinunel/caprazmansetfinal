@@ -1,0 +1,276 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mısır'da tren kazası: Çok sayıda yaralı var",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mısır'da tren kazası: 64 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mısır'da tren kazası: 7 ölü, 112 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kazanın nedeni henüz bilinmiyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı kazada Akşam yalnızca yaralıların çokluğunu, Mynet yalnızca yaralı sayısını, AA/Sol ölü ve yaralı sayısını, BBC ise nedenin bilinmediğini öne çıkarıyor.",
+   "alternative_explanation": "Kurumlar farklı saatlerdeki farklı resmî sayıları (64, 88, 112 yaralı) aktarıyor; fark yayın zamanından kaynaklanabilir.",
+   "missing_context": [
+    "Hangi sayının hangi saatte açıklandığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mısır'da tren faciası: Yedi ölü 112 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mısır'da tren kazası: 7 ölü, 112 yaralı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Mısır'da iki tren çarpıştı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay için Yeni Şafak ve Cumhuriyet 'facia', Haber7 ve TRT 'kaza', Akit 'çarpıştı' diyor; 'facia' kaza sözcüğüne göre daha ağır bir çağrışım taşıyor.",
+   "alternative_explanation": "'Facia' Türkçe haber dilinde kaza için yaygın bir eş anlamlı üslup tercihi olabilir.",
+   "missing_context": [
+    "Kurumların üslup rehberleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mısır'da korkunç tren kazası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Mısır'da feci tren kazası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Mısır'da tren kazası: 7 ölü, 112 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Milliyet 'korkunç', Sözcü ve Haberler 'feci' sıfatını kendi sesiyle ekliyor; aynı gerçekler TRT Haber ve Haber7 başlığında bu sıfatlar olmadan veriliyor.",
+   "alternative_explanation": "'Feci' ve 'korkunç' ölü ve yaralı sayısına uygun betimleyici sıfatlar olabilir.",
+   "missing_context": [
+    "Sıfatların atıfsız kullanılıp kullanılmadığı"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mısır'da tren kazası: 64 yaralı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde oran veya pay yok; yalnızca ölü ve yaralı sayıları var. Mynet yalnızca yaralıyı verse de bu bir oran paydası değil, güncelleme farkıdır.",
+   "alternative_explanation": "Sayılar farklı saatlerdeki resmî güncellemelerdir.",
+   "missing_context": [
+    "Pay/payda kavramı"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mısır'da korkunç tren kazası: 64 kişi yaralandı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Kazanın nedeni henüz bilinmiyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milliyet başlığında 'korkunç' ile 64 yaralı bildirilmiş ve ölü yok; sözcüğün ölçekle orantısı tartışmalı. Ölçek (64 yaralı) ve kaynak (Sağlık Bakanlığı) verildiğinden tam orantısızlık kurulamıyor.",
+   "alternative_explanation": "'Korkunç' yaralı sayısının yüksekliğine uygun betimleme olabilir.",
+   "missing_context": [
+    "O saatte ölü sayısı bilgisi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kazanın yaşandığı bölge geçmişteki ölümcül tren kazalarıyla biliniyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Mısır'ın Giza vilayetindeki Ayat kentinde meydana gelen tren kazasında 7 kişi öldü, 112 kişi yaralandı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "BBC metni bölgenin geçmişte ölümcül kazalarla bilindiğini söyleyerek yinelenen/yapısal bir örüntüye işaret ediyor; çoğu kurum (ör. Haber7) ise olayı yalnızca tek bir kaza olarak aktarıyor, başlık ve lede örüntüye değinmiyor.",
+   "alternative_explanation": "Kısa haber formatında yapısal bağlam beklenmez; ilk dakika haberi olabilir.",
+   "missing_context": [
+    "Mısır demiryolu güvenlik verileri"
+   ]
+  }
+ ]
+}

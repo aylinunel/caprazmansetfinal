@@ -1,0 +1,203 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Manifest grubunun yapımcısı Tolga Akış'a tahliye: Yurt dışına çıkışı yasak",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Manifest'in kurucusu Tolga Akış tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Tahliye kısıtlamayla ya da yalın veriliyor; tercih bağı yok. Kart, eşdeğer seçeneklerin açıkça eşdeğer olduğunun metinde kurulmasını ve bir tercihin yalnızca sunuluş farkına bağlanmasını şart koşuyor; başlıklar arasında ifade farkı görülse de hiçbir metin bir karar ya da tercihi bu farka dayandırmıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatleri, farklı ajans kaynakları ve olayın farklı aşamalarının haberleştirilmesiyle açıklanabilir; kurumların editoryal tercihi bir akıl yürütme hatası değildir.",
+   "missing_context": [
+    "Okurun ya da bir karar vericinin bu çerçevelere maruz kalıp farklı yargıya vardığını gösteren veri",
+    "Başlıkların bilgi açısından eşdeğer olduğunu açıkça belirten bir ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "\"Cinsel içerikli herhangi bir koreografi yapılmadı\"",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Savunmadan çarpıcı bir cümle öne alınıyor; bu sanığa ait bir alıntı ve bir yargıya bağlanmıyor. Göze çarpan ayrıntılar başlıklarda öne çıkarılıyor; fakat bu ayrıntının bir yargı ya da tercihe açıkça bağlandığı veya ilgili karşı kanıtın göz ardı edildiği metinde gösterilmiyor. Tek metindeki vurgu bu kart için yeterli değil.",
+   "alternative_explanation": "Çarpıcı ayrıntının öne çıkarılması haber değeri ve habercilik konvansiyonlarıyla açıklanabilir; bu bir yargı hatası değil, sunum tercihidir.",
+   "missing_context": [
+    "Çarpıcı ve daha az çarpıcı bilginin farklı ağırlıklandırıldığını gösteren karşılaştırmalı karar verisi",
+    "Vurgunun bir sıklık ya da risk tahminine dönüştürüldüğünü gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "“Manifest grubu genel anlamda birleştirici, pozitifliği",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumlu ifade sanığın kendi savunması; bir alandan diğerine kurumca yargı aktarımı yok. Kart, bir alandaki olumlu izlenimin ayrı bir alandaki olumlu yargıya açıkça bağlanmasını istiyor; metinde böyle iki ayrı alan ve aralarında kurulmuş bir bağ yok.",
+   "alternative_explanation": "Olumlu nitelemeler kurumun alışılmış üslubu ya da kaynağın kendi açıklamasının aktarımı olabilir; bir alandan diğerine yargı aktarımı yapılmıyor.",
+   "missing_context": [
+    "İlk alandaki izlenimle ikinci alandaki yargı arasında açık gerekçe bağı",
+    "Alanların karar için ilgisiz olduğuna dair kanıt"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde ödül-motivasyon ilişkisi yok. Bu etki kartı, ödül öncesi içsel ilgi, ödüle bağlı beklenti ve ödül sonrası ölçülebilir düşüş verisi istiyor; haber metinlerinde bu üç koşuldan hiçbiri gözlenemiyor.",
+   "alternative_explanation": "Konu bir ödül-motivasyon ilişkisi değil, bir haber olayıdır; kartın kavramsal alanı metne uymuyor.",
+   "missing_context": [
+    "Ödül öncesi gönüllü katılım düzeyi",
+    "Ödülün beklenip kaldırıldığına dair bilgi",
+    "Sonraki katılımdaki ölçülebilir değişim"
+   ]
+  },
+  {
+   "card_id": "serial-position-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sıralı liste ve hatırlama verisi yok. Metinlerde sıralı bir liste ve bunun hatırlanması ya da seçilmesi anlatılmıyor; başlıkların zaman sırası kartın istediği konum-hatırlama bağlantısını kurmuyor.",
+   "alternative_explanation": "Başlık sırası yayın saatlerinden kaynaklanıyor; konum etkisi için gerekli hatırlama verisi yok.",
+   "missing_context": [
+    "Sıralı öğelerin hatırlanma ya da seçilme verisi",
+    "Başta/sonda olma ile seçim arasındaki bağlantı"
+   ]
+  },
+  {
+   "card_id": "take-the-best-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Akış'ın 'yurt dışına çıkış yasağı' şeklindeki adli kontrol tedbiriyle tahliyesine karar verildi.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mahkeme kararı aktarılıyor; kararın tek bir ipucuyla verildiğine ya da alternatiflerin karşılaştırılmasının durdurulduğuna dair bilgi yok. Kart, iki alternatif arasında gerçek bir seçim ve tek bir ipucunun seçimi belirlediğinin açıkça bildirilmesini istiyor; metinlerde böyle bir seçim süreci anlatılmıyor.",
+   "alternative_explanation": "Haberler bir kararı aktarıyor, karar sürecini değil; tek ipucuyla seçim yapıldığına dair bilgi yok.",
+   "missing_context": [
+    "Seçilen ve seçilmeyen alternatifler",
+    "Seçimin tek bir ipucuna dayandığını belirten ifade"
+   ]
+  }
+ ]
+}

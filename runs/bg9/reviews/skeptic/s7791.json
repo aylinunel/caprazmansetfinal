@@ -1,0 +1,151 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'ın imzasıyla 11 üniversiteye rektör atamaları yapıldı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Atama yetkisi olan makam belirtiliyor; bir iddianın yalnızca statü nedeniyle kabul edildiği yok.",
+   "alternative_explanation": "Atama yetkisinin belirtilmesi hukuki bir olgu.",
+   "missing_context": [
+    "Otoriteye gerekçesiz ağırlık verildiğini gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan imzaladı... 11 üniversiteye yeni rektör",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Recep Tayyip Erdoğan’ın imzasıyla 11 üniversiteye yeni rektör atandı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Unvan tercihleri kurumların yerleşik üslubu.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "11 üniversiteye rektör ataması",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Atananların bir alandaki izleniminin başka bir yargıya taşındığı yok.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "Atama gerekçesi"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Recep Tayyip Erdoğan’ın imzasıyla",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Parti üyeliği ve bir atama kararı anılıyor; atamanın gruba bağlı olduğu gösterilmiyor.",
+   "alternative_explanation": "Parti bağı tanımlayıcı bilgi olabilir.",
+   "missing_context": [
+    "Atananların seçim ölçütleri",
+    "Gruba bağlı farklı standart kanıtı"
+   ]
+  }
+ ]
+}

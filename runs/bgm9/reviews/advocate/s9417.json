@@ -1,0 +1,266 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Katar Emiri Al Sani'yi kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile görüştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi sabah ve ahaber başlığında 'Başkan Erdoğan', aa ve haberler başlığında 'Cumhurbaşkanı Erdoğan' olarak anılıyor; ancak iki unvan da kimlik bildiriyor, meşruiyet değerlendirmesi taşıdığı metinden görünmüyor.",
+   "alternative_explanation": "Unvan farkı kurumların yazım kurallarından ibaret olabilir.",
+   "missing_context": [
+    "Kurumların unvan kullanım politikası"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan ve Katar Emiri Şeyh Temim bin Hamed Al Sani'den kritik görüşme",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Dolmabahçe'de kritik zirve",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile görüştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Ahaber, yenisafak ve tgrt başlıklarında kendi seslerinden 'kritik' sözcüğü görüşmeyi önemli diye niteliyor; aa ve haberler aynı olguyu bu sözcük olmadan veriyor.",
+   "alternative_explanation": "'Kritik' sözcüğü haberin gerçek diplomatik önemini yansıtıyor olabilir.",
+   "missing_context": [
+    "Görüşmenin gündem maddelerine ilişkin bağımsız değerlendirme"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İki ülke arasında 5 kritik anlaşma",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile görüştü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Dolmabahçe'de Türkiye-Katar zirvesi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Sabah ve t24 başlıkta imzalanan anlaşma sayısını, aa görüşmenin kendisini, memurlar ise 'Türkiye-Katar zirvesi' çerçevesini öne çıkarıyor.",
+   "alternative_explanation": "Anlaşma sayısı yayın anında henüz açıklanmamış olabilir; farklar yayın saatinden kaynaklanabilir.",
+   "missing_context": [
+    "Başlıkların yayın anındaki bilgi durumu"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Erdoğan Katar Emiri Al Sani'yi kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Katar Emiri Şeyh Temim Al-Sani ile bir araya geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile görüştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı görüşme için sabah, akit ve ensonhaber 'kabul etti', mynet ve aydinlik 'bir araya geldi', aa ve haberler 'görüştü' diyor; 'kabul etti' ev sahibi-konuk hiyerarşisini çağrıştırıyor.",
+   "alternative_explanation": "'Kabul etti' protokolde olağan resmî terim olabilir; fark yazım alışkanlığı da olabilir.",
+   "missing_context": [
+    "Protokol dilindeki olağan kullanım"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Katar Emiri Al Sani'yi kabul etti: İki ülke arasında 5 kritik anlaşma",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile görüştü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sabah başlığı tek cümlede 'kabul etti' fiilini, 'kritik' sıfatını ve anlaşma sayısını birleştiriyor; üçü de görüşmeyi olumlu ve ağırlıklı gösterecek yönde. aa aynı olguyu bu bileşim olmadan veriyor.",
+   "alternative_explanation": "Bu unsurların her biri ayrı ayrı olağan haber diliyle açıklanabilir.",
+   "missing_context": [
+    "Anlaşmaların içeriği ve sayısının resmî doğrulaması"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "COP31 İklim Zirvesi'nin ardından diplomasi trafiğine hız kesmeden devam eden",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Yenisafak girişi görüşmeyi COP31 sonrasındaki bir diplomasi trafiği serisinin içine yerleştiriyor.",
+   "alternative_explanation": "Bu bağlam yalnızca sıralamayı bildiren bir ifade olabilir.",
+   "missing_context": [
+    "Görüşmenin diğer diplomatik temaslarla gerçek ilişkisi"
+   ]
+  }
+ ]
+}

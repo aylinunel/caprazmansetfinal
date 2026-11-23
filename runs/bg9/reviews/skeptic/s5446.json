@@ -1,0 +1,182 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: Borsa İstanbul A.Ş. Genel Müdürü Korkmaz Enes Ergun hakkında tutuklama talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sermaye piyasası işlemleri soruşturmasında Korkmaz Enes Ergun adliyede",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Soruşturmanın adı kurumlara göre değişiyor; bu üslup farkı.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adliyeye sevk edilen Ergun tutuklandı.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "tutuklama talebiyle Nöbetçi Sulh Ceza Hakimliğine sevk edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sol, diğer kurumlar henüz \"tutuklama talebi\" bildirirken tutuklamayı gerçekleşmiş olarak aktarıyor; anlatımlar arasında bir fark var.",
+   "alternative_explanation": "Sol erken bir bilgiye ulaşmış ya da zaman damgası farklı olabilir; farkın bir sonucu etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Tutuklama kararının saati"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye'yi sarsan fon skandalının ardından",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz nitelendirme var; orantısız ağırlıklandırma belgelenmiyor.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "Karşılaştırmalı kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "rüşvet iddiasıyla adliyeye sevk edildi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Suçlama başlığa taşınmış; yargıya etkisi gösterilmiyor.",
+   "alternative_explanation": "Suçlamanın adı habere esastır.",
+   "missing_context": [
+    "Yargıya bağlantı"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturması Borsa İstanbul'un yönetimine uzandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Referans değer ve buna bağlı bir tahmin yok.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "Önceki değere dayalı tahmin"
+   ]
+  }
+ ]
+}

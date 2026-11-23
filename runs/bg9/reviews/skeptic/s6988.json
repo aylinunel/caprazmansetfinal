@@ -1,0 +1,209 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "'İtirafçı oldu' denilmişti: Emir Sarıgül ev hapsiyle tahliye edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emir Sarıgül, etkin pişmanlıktan faydalanarak tahliye edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı vurgularla başlıklandırıyor; ancak metin, bu sunum farkına bağlanmış bir tercih, yargı ya da öneri göstermiyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinden, ajans metinlerinden, olayın gelişen aşamalarından ve yer sınırından kaynaklanabilir; açıklamaların karar açısından eşdeğer olduğu metinde kurulmuyor.",
+   "missing_context": [
+    "Başlıkların karar açısından eşdeğer olduğuna dair açık tespit",
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP bağlantılı karanlık finans çarkına yönelik yürütülen dev kara para aklama soruşturmasında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Soruşturma kapsamında cezaevine gönderilen CHP’li Mustafa",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum soruşturmayı spotunda bir partiyle ilişkilendiriyor ve kişiyi parti aidiyetiyle anıyor; grup aidiyeti açıkça kuruluyor, ancak bunun bir suçlama farkına gerekçesiz biçimde bağlandığı tek metinde kanıtlanmıyor.",
+   "alternative_explanation": "Kişinin parti aidiyeti olgusal bir kimlik bilgisi olabilir; aynı kurumun karşılaştırılabilir vakalarda farklı standart uyguladığına dair veri yok.",
+   "missing_context": [
+    "Aynı kurumun başka partilerle bağlantılı benzer soruşturmaları nasıl aktardığı",
+    "Soruşturmanın partiyle bağlantısına dair resmi açıklama"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin, önceki bir uyarana maruz kalan birinin sonraki bir yanıtını tanımlamıyor; olayların sıralanması tek başına hazırlama etkisi göstermez.",
+   "alternative_explanation": "Olayların art arda aktarılması kronolojik haberciliğin gereğidir; bir maruziyet-yanıt ilişkisi iddia edilmiyor.",
+   "missing_context": [
+    "Somut bir önceki maruziyet ve sonraki yanıt",
+    "Karşılaştırmalı ya da tekrarlanan gözlem"
+   ]
+  },
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "\"Babam, Özgür Özel’e 350 bin dolar verdi\" dediği",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum ifadede yer aldığı söylenen bir iddiayı aktarıyor; ilişki iddiası bir kaynağa atfedilmiş ve kurumun onayladığı bir bağlantı olarak sunulmuyor.",
+   "alternative_explanation": "Olguların birlikte anılması bağlam bilgisi olabilir; ilişkinin yanıltıcı olduğunu gösteren karşılaştırmalı kanıt yok.",
+   "missing_context": [
+    "İlişkiyi açıkça öne süren ifade",
+    "İlişkiyi çürüten karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde açıkça belirtilmiş bir ön inanç ve bu inanç lehine kanıtın asimetrik değerlendirildiğini gösteren bir akıl yürütme yok.",
+   "alternative_explanation": "Haber metinleri gelişmeleri aktarıyor; bir hipotezin seçici biçimde doğrulandığı gösterilmiyor.",
+   "missing_context": [
+    "Açıkça belirtilmiş ön inanç",
+    "Karşıt kanıtın gerekçesiz reddedildiğini gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "dev kara para aklama soruşturmasında bomba bir gelişme yaşandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı ya da rakamı öne çıkarıyor; metin bu ayrıntıyı bir yargıya ya da seçime açıkça bağlamıyor ve karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı olayın haber değeri taşıyan olgusal bir parçası olabilir; çarpıcılık tek başına hatalı ağırlıklandırma kanıtı değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı belirlediğini gösteren açık ifade",
+    "Belirgin ve belirgin olmayan bilginin nasıl ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  }
+ ]
+}

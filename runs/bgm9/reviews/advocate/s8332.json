@@ -1,0 +1,237 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Recep Tayyip Erdoğan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan, Tim Cook'u kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Apple'ın eski CEO'su Ankara'da",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Apple Yönetim Kurulu Başkanı Tim Cook'u kabul etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Erdoğan bir kurumda 'AKP'li Cumhurbaşkanı', başka kurumda 'Başkan'; Cook bir kurumda 'eski CEO', başka kurumda 'Yönetim Kurulu Başkanı' olarak anılıyor. 'AKP'li' etiketi kimlik tanımının ötesinde partizan bir konumlama taşıyor.",
+   "alternative_explanation": "Parti bilgisi siyasi aktörler için olgusal bir tanımlayıcı olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tim Cook'u Saray'da kabul etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tim Cook'u Cumhurbaşkanlığı Külliyesi'nde kabul etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı mekân bir kurumda 'Saray', başka kurumda 'Cumhurbaşkanlığı Külliyesi' olarak adlandırılıyor; 'Saray' sözcüğü siyasi tartışmada eleştirel bir çağrışım taşıyor.",
+   "alternative_explanation": "'Saray' bina için yaygın kullanılan kısa bir ad olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Apple Yönetim Kurulu Başkanı Tim Cook Bağdat Caddesi'nde",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Anıtkabir'i ziyaret eden Cook, Fenerbahçe Kadın Voleybol Takımı kaptanı Eda Erdem'le de bir araya geldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Basına kapalı gerçekleştirilen görüşmeden fotoğraf paylaşıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Cook'un Türkiye ziyareti bir kurumda mağaza ziyareti, bir kurumda Anıtkabir ve sporcu buluşması, bir kurumda görüşmenin basına kapalı olması üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar ziyaretin farklı günlerdeki farklı ayaklarını haberleştirmiş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Apple Yönetim Kurulu Başkanı Tim Cook'u kabul etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kabul tek bir olay olarak veriliyor; hiçbir kurum bunu bir yatırım politikası ya da önceki ziyaretler dizisi içine yerleştirmiyor.",
+   "alternative_explanation": "Protokol haberleri doğası gereği kısa olay haberleridir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede'lerde açık bir nedensellik ifadesi bulunmuyor.",
+   "alternative_explanation": "Haberler bir kabulü aktarıyor.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sağlanan bağlam konunun tekrarlayan ya da yapısal bir sorun olduğunu göstermiyor.",
+   "alternative_explanation": "Tek bir ziyaret haberi doğası gereği olay odaklıdır.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

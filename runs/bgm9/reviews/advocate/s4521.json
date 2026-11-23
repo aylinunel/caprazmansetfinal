@@ -1,0 +1,275 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 04:03] Antalya'da hortum faciası: 4 kişi hayatını kaybetti! 4 şüpheli gözaltına alındı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 01:33] Antalya'da sarı kodlu uyarı verilmişti! Şantiyeyi aniden hortum vurdu: 4 işçi hayatını kaybetti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Gözaltı bilgisi sorumluluğun henüz belirlenmediği bir soruşturma sürecini gösteriyor; ancak başlıklar sorumluluğu adı verilen bir aktöre dilbilgisel olarak yüklemiyor, eylemin öznesi hortum olarak kalıyor.",
+   "alternative_explanation": "Uyarının anılması sorumluluk atamadan önceki bir olguyu aktarıyor olabilir.",
+   "missing_context": [
+    "Soruşturmanın kapsamı ve şüphelilerin kim olduğu"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 01:33] Antalya'da sarı kodlu uyarı verilmişti! Şantiyeyi aniden hortum vurdu: 4 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 04:03] Antalya'da hortum faciası: 4 kişi hayatını kaybetti! 4 şüpheli gözaltına alındı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[10haber · 07:25] Antalya’da facia: Hortum konteynerleri parçaladı, 4 işçi öldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı can kaybını veren başlıklardan biri önceden verilen uyarıyı, biri gözaltıları, biri olayın fiziksel seyrini öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar farklı saatlerde ortaya çıkan yeni bilgileri yansıtıyor olabilir.",
+   "missing_context": [
+    "Gözaltıların ve uyarının yayımlanma zamanları"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aksam · 01:43] Antalya'da akılalmaz kaza: Hortumda parçalanan konteynerde bulunan 4 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[anka · 01:44] Antalya'da hortum felaketi: 4 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yeniasya · 19:00] Antalya'da hortum afeti:",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[diken · 10:28] Antalya'da hortum: Dört işçi öldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay 'kaza', 'felaket' ve 'afet' sözcükleriyle adlandırılıyor; 'kaza' önlenebilir bir olayı, 'afet' doğal bir olguyu çağrıştırıyor. Bir kuruluş ise adlandırma yapmadan veriyor.",
+   "alternative_explanation": "Sözcükler günlük dilde birbirinin yerine kullanılabilir.",
+   "missing_context": [
+    "Kuruluşların benzer doğa olaylarında kullandığı adlandırmalar"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aksam · 01:43] Antalya'da akılalmaz kaza: Hortumda parçalanan konteynerde bulunan 4 işçi hayatını kaybetti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 01:16] Antalya'da hortum faciası!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[diken · 10:28] Antalya'da hortum: Dört işçi öldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Başlıklarda kuruluşların kendi sesinde 'akılalmaz' ve 'facia' gibi değerlendirici sözcükler var; aynı olgu başka bir kuruluşta bu sözcükler olmadan veriliyor.",
+   "alternative_explanation": "'Facia' Türkçe haber dilinde çok ölümlü olaylar için yerleşik bir sözcük olabilir.",
+   "missing_context": [
+    "Değerlendirici sözcüklerin olgulara ne kattığına dair karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Türkiye’de bildiğimiz kadarıyla ilk kez bir hortum yüzünden can kaybı yaşandı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ahaber · 01:33] Antalya'da sarı kodlu uyarı verilmişti! Şantiyeyi aniden hortum vurdu: 4 işçi hayatını kaybetti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı metinler olayı Türkiye'deki hortum kayıtları ve önceden verilen meteorolojik uyarı bağlamına yerleştiriyor.",
+   "alternative_explanation": "Bağlam bilgisi olayın olağandışılığını açıklamak için verilmiş olabilir.",
+   "missing_context": [
+    "Türkiye'deki geçmiş hortum olaylarına ait kayıtlar"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "deprem, sel ve hortum gibi doğa olaylarının, gerekli önlemler alınmadığı için can …",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 01:33] Antalya'da hortum faciası: 2 konteyner savruldu, 4 işçi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Birçok başlık ve led olayı tek bir şantiyedeki can kaybı olarak veriyor ve daha geniş bir örüntüye değinmiyor; sorunun yapısal olduğu ise yalnızca bir siyasi partiye atfedilen ifadede geçiyor, bu nedenle ilk koşul metinden bağımsız olarak doğrulanamıyor.",
+   "alternative_explanation": "Bir metin olayın ilk kez yaşandığını belirtiyor; olay yinelenen bir örüntünün parçası olmayabilir.",
+   "missing_context": [
+    "İşçi konteynerlerinin güvenliğine ilişkin önceki vaka ve veriler"
+   ]
+  }
+ ]
+}

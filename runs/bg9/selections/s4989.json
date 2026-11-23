@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "anchoring-bias",
+  "salience-bias",
+  "negativity-bias",
+  "availability-heuristic",
+  "framing-effect"
+ ],
+ "selection_uncertainty": [
+  "İlk başlıklarda büyüklük (3.8/5.1) ve yer farklı; farklı depremler karışmış olabilir.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "Büyüklük ve konum farklı başlıklarda farklı veriliyor; 'korkutan deprem' gibi vurgular var."
+}

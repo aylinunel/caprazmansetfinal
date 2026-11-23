@@ -1,0 +1,207 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Malatya'da askeri helikopter düştü: 4 askerimiz şehit oldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "\"Askerimiz\" gibi ortak dil kullanılıyor; kart bunun tek başına yeterli olmadığını belirtiyor ve grup üyeliğine bağlı bir yargı farkı yok.",
+   "alternative_explanation": "Ulusal yayın dilinde yaygın kalıp.",
+   "missing_context": [
+    "Grup üyeliğine bağlı farklı muamele"
+   ]
+  },
+  {
+   "card_id": "affect-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Malatya'da kahreden haber!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Duygu ifadesi var, fakat bir risk veya fayda tahminine bağlanmıyor.",
+   "alternative_explanation": "Ölüm haberinde duygusal dil olağandır.",
+   "missing_context": [
+    "Duygunun bir tahmini yönlendirdiğini gösteren açık bağ"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Malatya'da askeri helikopter düştü: 4 askerimiz şehit oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Malatya'da askeri helikopter düştü: Dört asker yaşamını yitirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "\"Şehit\" ve \"yaşamını yitirdi\" kurumların yerleşik dil tercihleri; olgular aynı.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çok sayıda şehidimiz var...",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Belirsiz ve büyütülmüş bir ifade var; ancak olumsuz kanıtın orantısız ağırlıklandırıldığı belgelenmiyor.",
+   "alternative_explanation": "İlk dakikalarda kesin sayı bilinmiyor olabilir.",
+   "missing_context": [
+    "Yayın anında bilinen resmi sayı"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Uzman isim CNN Türk'te açıkladı: İşte 4 askerin şehit olduğu kazaya neden olan ihtimaller",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olası nedenler öne çıkarılıyor; ama bir yargının çarpıcı ayrıntıyla haksız belirlendiği gösterilmiyor.",
+   "alternative_explanation": "Kaza nedenine ilişkin kamu merakına yanıt.",
+   "missing_context": [
+    "Uzman yorumunun bir sonuca dönüştürüldüğünü gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "helikopterde bulunan 4 kahraman silah",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumlu nitelendirme MSB açıklamasından aktarılıyor; bir alandaki izlenimin başka bir yargıya taşındığı yok.",
+   "alternative_explanation": "Resmi taziye dili.",
+   "missing_context": [
+    "İki ayrı alandaki yargı arasında bağlantı"
+   ]
+  }
+ ]
+}

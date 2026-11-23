@@ -1,0 +1,203 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası Kredi Freninde Gevşemeye Gitti: İhtiyaç ve Taşıt Kredilerinde Sınır Yüzde 3,5'e Çıktı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "TCMB kredi büyüme sınırlarını yükseltti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı karar bir başlıkta 'fren/gevşeme' çerçevesiyle, diğerinde yalın verilmiş; çerçevenin yargıya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati, karakter sınırı veya bilgi güncellemesinden kaynaklanıyor olabilir; okurun kararına etkisi gösterilmemiştir.",
+   "missing_context": [
+    "Okurun yargı veya tercihinin değiştiğine dair gözlem",
+    "Karşılaştırılan ifadelerin karar açısından eşdeğer olduğunun açık gösterimi"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ihtiyaç ve taşıt kredilerinin sekiz haftalık büyüme sınırını yüzde 3'ten yüzde 3,5'e yükseltirken",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki sınır (%3) yeni sınırın referansı olarak veriliyor; ancak bu bir yanlılık değil olağan karşılaştırma ve etkisi gösterilmemiş.",
+   "alternative_explanation": "Önceki rakam güncel bilgi eksikliğinden veya aktarım gecikmesinden dolayı tekrarlanmış olabilir.",
+   "missing_context": [
+    "Sonraki yargının ilk değere açıkça bağlandığı bir ifade",
+    "Düzeltmeye elverişli kanıtın göz ardı edildiğine dair gösterge"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı ayrıntının yargıya bağlandığı ifade yok.",
+   "alternative_explanation": "Çarpıcı ifade yayın kuralı (son dakika, dikkat çekme) olabilir; yargıyı etkilediği gösterilmemiştir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıya veya karara bağlandığı bir ifade",
+    "Daha az belirgin bilgilerle karşılaştırmalı ağırlıklandırma"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Merkez Bankası, makrofinansal istikrarı ve parasal aktarım mekanizmasını desteklemek amacıyla makroihtiyati çerçevede değişikliğe gitti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "TCMB kararı kurumun kendi gerekçesiyle aktarılıyor; statünün gerekçe yerine geçtiği veya karşıt kanıtın göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Resmi kurum açıklamasına dayanmak, haberin olağan kaynak göstermesidir; otoriteye gerekçesiz uyum gösterilmemiştir.",
+   "missing_context": [
+    "Otoritenin statüsünün gerekçe yerine geçtiğini gösteren ifade",
+    "Karşıt kanıtın göz ardı edildiğine dair ifade"
+   ]
+  },
+  {
+   "card_id": "cashless-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin nakit dışı ödeme bağlamında bir harcama sonucunu anlatmıyor.",
+   "alternative_explanation": "Metin ödeme biçimi karşılaştırması içermiyor.",
+   "missing_context": [
+    "Nakit ile kartlı/kredili ödeme karşılaştırması",
+    "Bütçe sapmasına dair ifade"
+   ]
+  },
+  {
+   "card_id": "bounded-rationality",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin sınırlı kaynak nedeniyle yeterli eşikte durulan bir karar süreci anlatmıyor.",
+   "alternative_explanation": "Metin bir karar sürecini ve sınırlı kaynak gerekçesini anlatmıyor.",
+   "missing_context": [
+    "Karar süreci ve durma ölçütü",
+    "Zaman veya bilgi sınırına dair açık bağlantı"
+   ]
+  }
+ ]
+}

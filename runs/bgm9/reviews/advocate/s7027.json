@@ -1,0 +1,193 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakan Bak duyurdu: KYK burs ve öğrenim kredisi başvuru sonuçları açıklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Burs ve kredi kazanan öğrenciler için taahhütname süreci başladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Öğrenciler sonuçlarını nasıl öğrenecek?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı sonuç duyurusu bir başlıkta duyuran bakan, bir başlıkta taahhütname süreci, bir başlıkta öğrencilerin sonuca erişimi üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Farklı başlıklar okura farklı pratik bilgiler sunan eşit derecede olağan seçimler olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "KYK burs ve öğrenim kredisi başvuru sonuçları açıklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "GSB burs ve öğrenim kredisi sonuçları açıklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'KYK' ve 'GSB' kısaltmaları aynı kurumsal yapıyı anlatıyor; fark çağrışım değil yalnızca adlandırma düzeyinde.",
+   "alternative_explanation": "İki kısaltma da resmi kullanımda geçerlidir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda 'son dakika' dışında değerlendirme yüklü bir sözcük yok; bu da bir değerlendirme değil, yayın etiketi.",
+   "alternative_explanation": "Haberler bir idari duyuruyu aktarıyor.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede'lerde açık bir nedensellik ifadesi yok.",
+   "alternative_explanation": "Haberler bir sonuç duyurusunu aktarıyor.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sağlanan bağlam konunun yapısal bir sorun olarak tartışıldığını göstermiyor; haberler bir idari takvimi aktarıyor.",
+   "alternative_explanation": "Sonuç duyurusu doğası gereği tek seferlik bir olaydır.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun başlık ve lede'sinde aynı değerlendirme yönüne işleyen iki ayrı sunum tercihi gözlenmiyor.",
+   "alternative_explanation": "Haberler duyuruyu nötr biçimde aktarıyor.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

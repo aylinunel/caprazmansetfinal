@@ -1,0 +1,211 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 00:35] Türkiye'yi savaş riskine sokan Mekke Anlaşması, TBMM'den geçti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 01:40] Üçlü savunma paktında tarihi adım: Mekke Anlaşması TBMM'den geçti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kabul bir başlıkta 'savaş riski' kaybı ekseninde, diğerinde 'tarihi adım' kazanımı ekseninde sunuluyor; ancak bu sunum farkına dayanan bir tercih ya da yargı metinde açıkça kurulmuyor.",
+   "alternative_explanation": "Kuruluşlar anlaşmanın farklı sonuçlarına ilişkin kendi değerlendirmelerini öne çıkarıyor olabilir; bu, okurun bir seçim yaptığını göstermez.",
+   "missing_context": [
+    "Sunum farkının bir karara etkisini gösteren veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 00:35] Türkiye'yi savaş riskine sokan Mekke Anlaşması, TBMM'den geçti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 00:07] Mekke Anlaşması TBMM'de kabul edildi — Türkiye, Pakistan ve Suudi Arabistan arasında imzalanan Mekke Ortak Savunma Anlaşması'nın onaylanmasının uygun bulunmasına ilişkin kanun teklifi TBMM Genel Kurulu'nda kabul edildi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık savaş riskini belirgin biçimde öne çıkarıyor, başka bir kuruluş aynı kabulü bu vurgu olmadan veriyor; belirgin ayrıntının bir yargıyı haksız biçimde etkilediği ise açıkça gösterilmiyor.",
+   "alternative_explanation": "Savaş riski, anlaşmanın karşılıklı savunma maddesinden çıkarılan ilgili bir değerlendirme olabilir.",
+   "missing_context": [
+    "Riskin büyüklüğüne ilişkin açık bir değerlendirme ya da kaynak"
+   ]
+  },
+  {
+   "card_id": "bandwagon-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mekke Anlaşması, 279 kabul, 119 ret oyu ile TBMM'den geçti.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 23:01] Mekke İttifakı teklifinin ilk maddesi TBMM'de kabul edildi, CHP olumlu oy verecek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Oy sayıları ve partilerin tutumu aktarılıyor; ancak çoğunluk desteğinin anlaşmanın doğruluğunun ya da yararının kanıtı olarak sunulduğu bir ifade yok.",
+   "alternative_explanation": "Oylama sonucu bir yasama sürecinin olgusal aktarımıdır.",
+   "missing_context": [
+    "Destek sayısını anlaşmanın değerine gerekçe yapan bir ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde bir otoritenin statüsünün bir iddianın değerlendirilmesinin yerine geçtiğini gösteren bir akıl yürütme yer almıyor.",
+   "alternative_explanation": "Haberler bir meclis oylamasını aktarıyor.",
+   "missing_context": [
+    "Statüye dayanılarak kabul edilen bir iddia"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 01:40] Üçlü savunma paktında tarihi adım: Mekke Anlaşması TBMM'den geçti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık kabulü olumlu niteliyor; ancak bir alandaki olumlu izlenimin başka, ilgisiz bir alandaki yargıya taştığını gösteren bir bağlantı yok.",
+   "alternative_explanation": "Olumlu niteleme anlaşmanın kendisine yöneliktir; ikinci bir alanda yargı kurulmuyor.",
+   "missing_context": [
+    "İkinci bir alana ait olumlu yargı"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler bir olayın haber başlıklarından oluşuyor; bir etkinliğe bağlanan dış ödül, ödülün kaldırılması ya da sonrasında gönüllü katılımın azalması gibi bir gözlem yer almıyor.",
+   "alternative_explanation": "Haber metinleri motivasyon değişimini ölçecek bir akış içermez; kartın konusu bu olayla ilişkili değildir.",
+   "missing_context": [
+    "Kişinin ödül öncesi gönüllü katılım düzeyi",
+    "Beklenen ve etkinliğe bağlı bir ödül",
+    "Ödül kaldırıldıktan sonraki davranış ölçümü"
+   ]
+  }
+ ]
+}

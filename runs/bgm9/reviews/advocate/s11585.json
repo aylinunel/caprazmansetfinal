@@ -1,0 +1,233 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "fear-appeal",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Harita kırmızıya döndü: Meteoroloji'den İstanbul dahil 32 il için yağış ve fırtına uyarısı! Galeri",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "sarı kodlu alarm! 80 km hızla fırtına",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "T24 başlığı 'harita kırmızıya döndü' diyor; aynı başlık ve diğer kurumlar uyarıyı sarı kodlu olarak bildiriyor. Takvim 'alarm' sözcüğünü kullanıyor ve 80 km/s hız ölçeğini veriyor.",
+   "alternative_explanation": "Kırmızı harita ifadesi, uyarı haritasında illerin renklenmesini betimliyor olabilir.",
+   "missing_context": [
+    "Haritanın gerçek renk kodları",
+    "Uyarının MGM resmî seviyesi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2 bölgede fırtına, 4 bölgede sağanak var",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Meteoroloji'den 3 il için kritik uyarı: Sağanak ve kar geliyor!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Haberturk bölge/yağış türü dağılımını, vatan yalnızca üç ili ve kar riskini öne çıkarıyor; ancak il sayıları (12, 24, 32) farklı uyarı yayınlarına ait olabilir.",
+   "alternative_explanation": "Farklar farklı yayınlanma anlarına ve farklı uyarı paketlerine bağlı olabilir.",
+   "missing_context": [
+    "Hangi uyarı paketine ait olduklarını gösteren bilgi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteorolojiden 32 il için sarı kod alarmı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Meteorolojiden İstanbul'un da aralarında olduğu 32 il için sarı kodlu uyarı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı 32 illik uyarı için akit ve tgrt 'alarm', yenisafak ve anka 'uyarı' diyor; 'alarm' acil tehlike çağrışımı taşıyor.",
+   "alternative_explanation": "Fark üslup/kısalık tercihi olabilir.",
+   "missing_context": [
+    "Kurumların başlık yazım politikası"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Dikkat: Meteoroloji'den 32 il için sarı kodlu uyarı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Meteoroloji'den 32 ile sarı kodlu alarm",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Meteoroloji'den 32 il için sarı kodlu uyarı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Dirilis, tgrt, akit başlıklarında kendi sesleriyle 'Dikkat:', 'alarm' gibi sözcükler uyarıyı olumsuz biçimde değerlendiriyor; anka ve birgun aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Uyarı metni doğası gereği dikkat çekici bir dil gerektiriyor olabilir.",
+   "missing_context": [
+    "Uyarının önem derecesi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yurt genelinde yağışlı hava etkisini gösterirken Meteoroloji'den peş peşe uyarılar geldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Evrensel girişi uyarıyı yurt genelindeki yağışlı hava ve peş peşe gelen uyarılar dizisi içine yerleştiriyor.",
+   "alternative_explanation": "Bu ifade yalnızca güncel durumu özetliyor olabilir.",
+   "missing_context": [
+    "Önceki uyarıların listesi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneği tek seçenek olarak sunan bir ifade yok.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  }
+ ]
+}

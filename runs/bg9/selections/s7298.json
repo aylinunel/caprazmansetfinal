@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "identifiable-victim-effect",
+  "negativity-bias",
+  "framing-effect",
+  "salience-bias",
+  "leveling-and-sharpening"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "İlk başlık kurtarma bilgisine dayanıyor, sonraki ölüm bilgisini içermiyor."
+ ],
+ "selection_note": "İş kazası haberlerinde kurtarma ya da ölüm vurgusu ve kişiselleştirme farklı."
+}

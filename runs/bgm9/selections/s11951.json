@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "responsibility-framing",
+  "emphasis-framing",
+  "labeling",
+  "word-choice",
+  "loaded-language",
+  "spin"
+ ],
+ "selection_uncertainty": [
+  "'Para karşılığı yayın' gizli tanığa atfedilen ifade; kurum tekniği değildir.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "İddianame iddialarının başlıkta kesinlik gibi sunulup sunulmadığı değerlendirilmeli."
+}

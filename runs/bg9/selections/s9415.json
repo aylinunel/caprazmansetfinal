@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "salience-bias",
+  "negativity-bias",
+  "framing-effect",
+  "affect-heuristic"
+ ],
+ "selection_uncertainty": [
+  "Ölüm nedeni açıklanmamış."
+ ],
+ "selection_note": "'Ölü bulundu' ve 'aniden' gibi ifadeler belirsizliği öne çıkarıyor."
+}

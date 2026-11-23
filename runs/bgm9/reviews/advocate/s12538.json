@@ -1,0 +1,225 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İcra takiplerinin toplam geçişlerin yalnızca yüzde 0,43'ünü oluşturduğunu belirten Uraloğlu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Pay ve payda belirlenebiliyor ancak oran bakana atfediliyor ve farklı bir karşılaştırma popülasyonu gösterilmiyor; atfedilen söz kurumun tekniği sayılmaz.",
+   "alternative_explanation": "Rakam bakanın açıklamasıdır.",
+   "missing_context": [
+    "Karşılaştırma popülasyonu"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Milyonlarca Araç Sahibine Müjde: HGS İcra Takipleri Durduruldu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bakanlıktan HGS kararı: Özel otoyol şirketlerinin icra takipleri durduruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "yeni düzenleme yapılacak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Onedio kazananları (araç sahipleri), T24 icra yürüten özel otoyol şirketlerini, Evrensel ise yeni düzenleme sürecini öne çıkarıyor.",
+   "alternative_explanation": "Farklılık başlık uzunluğu ve haber kaynağı özetlerinden doğabilir.",
+   "missing_context": [
+    "Bakanlık açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Milyonlarca Araç Sahibine Müjde",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bakan Uraloğlu duyurdu: HGS'de icra takipleri durduruldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Onedio başlığı 'Müjde' etiketi ile 'Milyonlarca araç sahibi' rakamını aynı olumlu yönde birleştiriyor; Akşam aynı olguyu bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Rakam ve etiket başlık üslubu olabilir.",
+   "missing_context": [
+    "'Milyonlarca' rakamının dayanağı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Müjde: HGS İcra Takipleri Durduruldu",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bakan Uraloğlu duyurdu: HGS'de icra takipleri durduruldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Onedio kendi sesinde 'Müjde' sözcüğünü kullanıyor; Akşam aynı olguyu bu sözcük olmadan veriyor.",
+   "alternative_explanation": "'Müjde' kullanıcıya yönelik bir üslup tercihi olabilir.",
+   "missing_context": [
+    "Sözcüğün atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "vatandaşların yaşadığı sorunlar üzerine Ulaştırma ve Altyapı Bakanlığı harekete",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Posta lede'i bakanlığın harekete geçişini 'sorunlar üzerine' diyerek nedensel bağlıyor; kanıtın yalnızca zaman sırası olup olmadığı gösterilemiyor.",
+   "alternative_explanation": "Bakanlığın kendi açıklamasında şikayetlere atıf olabilir.",
+   "missing_context": [
+    "Bakanlık gerekçesi"
+   ]
+  }
+ ]
+}

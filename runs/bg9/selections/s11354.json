@@ -1,0 +1,16 @@
+{
+ "candidate_ids": [
+  "authority-bias",
+  "salience-bias",
+  "negativity-bias",
+  "availability-heuristic",
+  "anchoring-bias",
+  "framing-effect"
+ ],
+ "selection_uncertainty": [
+  "Ölü sayısı kurumlar arasında farklı (17/19).",
+  "Kaza nedeni kesinleşmedi.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "Resmi kaynaklara dayanma ve farklı ölü sayıları öne çıkıyor."
+}

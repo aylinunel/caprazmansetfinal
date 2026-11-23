@@ -1,0 +1,206 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[tgrt · 13:06] Galatasaray'da şok karar",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 01:10] Galatasaray Kulübü İkinci Başkanı Metin Öztürk istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "TGRT ve Akit kendi seslerinde 'şok', A Haber 'deprem' ifadelerini kullanıyor; AA aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Spor basınında 'şok' yerleşik bir dikkat çekme kalıbıdır.",
+   "missing_context": [
+    "Değerlendirici ifadenin haberin gövdesinde bir kaynağa atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 13:04] Galatasaray'da Metin Öztürk istifa etti: 'Fiili saldırıya dönüşmüş eylemi kabullenemem'",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 14:35] Metin Öztürk kimdir? Galatasaray'ın ikinci başkanı neden istifa etti?",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifada Cumhuriyet Öztürk'ün gerekçesini, Haberler kişinin kimliğini öne çıkarıyor.",
+   "alternative_explanation": "Biyografi başlıkları arama trafiğine yönelik standart bir biçim olabilir.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[birgun · 13:08] Galatasaray’da İkinci Başkan Metin Öztürk istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 13:12] Galatasaray'da Metin Öztürk istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı eylem için büyük ölçüde 'istifa etti' sözcüğünü kullanıyor; aynı eylem için çağrışımı farklı alternatif sözcükler tespit edilmiyor.",
+   "alternative_explanation": "Sözcük birliği olgunun açıklığından kaynaklanıyor.",
+   "missing_context": [
+    "Aynı eylem için farklı çağrışımlı sözcükler"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 13:01] Galatasaray'da deprem",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "A Haber istifayı 'deprem' mecazıyla veriyor; spor basınında yerleşik bir deyim olduğundan bir rol ya da eylem yolu atadığı açık değil.",
+   "alternative_explanation": "'Deprem' beklenmedik gelişmeler için yaygın bir haber kalıbıdır.",
+   "missing_context": [
+    "Mecazın bir rol ya da eylem önerisi taşıdığına dair kanıt"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ntv · 19:09] Galatasaray'da istifa krizi. Metin Öztürk'ün ardından Abdullah Kavukcu da istifa etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "NTV istifayı ardından gelen ikinci bir istifayla birlikte bir 'istifa krizi' dizisi içine yerleştiriyor.",
+   "alternative_explanation": "İkinci istifa ayrı bir olgu olarak aynı haberde verilmiş olabilir.",
+   "missing_context": [
+    "Yönetimdeki önceki gerginliklere dair bilgi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca iki seçeneği tek seçenek olarak sunan bir ya…ya da kalıbı yok.",
+   "alternative_explanation": "Haberler bir gelişmeyi aktarıyor; seçenekler arasında bir tercih dayatmıyor.",
+   "missing_context": [
+    "İki seçenekli bir kalıp kullanan başlık ya da spot"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya Savunma Bakanlığından yapılan açıklamada",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Yetkili kişilerin açıklamaları aktarılıyor; ancak otoriteye gerekçesiz üstünlük verildiği veya karşıt kanıtın otorite nedeniyle geçersiz sayıldığı görülmüyor.",
+   "alternative_explanation": "Resmî açıklamaların aktarılması haberciliğin olağan kaynak kullanımıdır.",
+   "missing_context": [
+    "Otoriteye karşı çıkan bir iddia",
+    "Otoritenin gerekçesiz izlendiğine dair ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'da korkunç kaza",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milli Gazete başlığı 'korkunç kaza' ile duygusal çarpıcılığı öne çıkarıyor; ancak bu çarpıcılığın bir yargıya bağlandığı ya da karşı kanıtın yok sayıldığı gösterilmiyor.",
+   "alternative_explanation": "Haber dilinin doğal vurgusu; olayın ciddiyeti nedeniyle öne çıkarma gerekçeli olabilir.",
+   "missing_context": [
+    "Okuyucu yargısına dair kanıt yok",
+    "Karşılaştırmalı ağırlıklandırma davranışı yok"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin olumsuz olay haberidir; olumsuz bilgiye orantısız ağırlık verildiğine dair açık bir karşılaştırma yok.",
+   "alternative_explanation": "Olayın kendisi olumsuz olduğu için olumsuz içerik orantılıdır.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgi",
+    "Karar veya değerlendirme üzerindeki etki"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde kolay hatırlanan örneğin bir tahmin veya risk yargısının gerekçesi yapıldığı açıkça belirtilmiyor.",
+   "alternative_explanation": "Haber akışı yalnızca olayı bildiriyor, olasılık yargısı yürütmüyor.",
+   "missing_context": [
+    "Frekans ya da karşılaştırma kanıtı",
+    "Hatırlanabilirliğe dayalı çıkarım"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "uçakta bulunan 17 kişinin tamamı hayatını kaybetti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "19 kişi hayatını kaybetti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önce 17, sonra 19 ölü sayısı veriliyor; ancak bir sayının diğerine çapa olarak bağlandığı ya da yargının ona yaslandığı belirtilmiyor, güncellenen resmî sayı söz konusu.",
+   "alternative_explanation": "Değişen sayılar güncellenen resmî verilerdir, çapa etkisi gerekmez.",
+   "missing_context": [
+    "Karar verici ve gerekçesine ilişkin metin",
+    "Karşılaştırmalı davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar aynı olayı farklı vurgularla veriyor; fakat eşdeğer seçenekler arasında bir tercihin çerçeveye bağlandığı metinde açıkça kurulmuyor.",
+   "alternative_explanation": "Vurgu farkı, her kurumun farklı zamanda farklı güncel bilgiye sahip olmasından kaynaklanabilir.",
+   "missing_context": [
+    "Eşdeğerliğin açıkça belirlenmesi",
+    "Çerçeveye bağlanan bir tercih"
+   ]
+  }
+ ]
+}

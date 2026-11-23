@@ -1,0 +1,213 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Malatya'da askeri helikopter düştü: 4 askerimiz şehit oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Malatya'da askeri helikopter düştü: 4 asker yaşamını yitirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölümler bir kurumda \"şehit oldu\", diğerinde \"yaşamını yitirdi\" diye anlatılıyor; ilki dini-ulusal bir onur çağrışımı taşıyor, ikincisi nötr.",
+   "alternative_explanation": "\"Şehit\" resmi MSB dilinde de kullanılan yerleşik bir terim; fark kurumların yayın politikasından kaynaklanıyor.",
+   "missing_context": [
+    "Kurumların ölüm haberlerinde terim politikası"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Malatya'da kahreden haber!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "MSB: Malatya'da düşen helikopterde dört asker şehit oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Akit kendi sesiyle duygusal bir değerlendirme sözcüğü (\"kahreden\") kullanıyor; BBC Türkçe aynı olguyu bu sözcük olmadan veriyor.",
+   "alternative_explanation": "Ölüm haberlerinde yas dili toplumsal bir gelenek; değerlendirme aktörlere değil olaya yönelik.",
+   "missing_context": [
+    "Kurumun benzer kazalardaki dili"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Uzman isim CNN Türk'te açıkladı: İşte 4 askerin şehit olduğu kazaya neden olan ihtimaller",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Malatya'da helikopter düştü: Bölgede yangın çıktı; 4 asker şehit oldu!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kazada bir kurum olası nedenleri, diğeri çıkan yangını başlığa taşıyor.",
+   "alternative_explanation": "Haberin farklı saatlerde güncellenmesi farklı vurguya yol açmış olabilir.",
+   "missing_context": [
+    "Kurumların yayın saatindeki bilgi durumu"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Çok sayıda şehidimiz var...",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi sesinde tehdit veya felaket sözcüğü (felaket, kâbus, alarm) bulunmuyor.",
+   "alternative_explanation": "Yas dili korku çağrısı değildir.",
+   "missing_context": [
+    "Tehdit sözcüğü içeren başlık"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hiçbir kurum kendi sesiyle yalnızca iki seçenek sunan bir \"ya … ya\" kalıbı kullanmıyor.",
+   "alternative_explanation": "Olay haberi bir seçenekler tartışması içermiyor.",
+   "missing_context": [
+    "İki seçenekli bir ifade"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Malatya'da askeri helikopter düştü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay haber; ancak hiçbir kurum kendi sesiyle önceki helikopter kazalarına veya bir eğilime yerleştirmiyor.",
+   "alternative_explanation": "Erken saatlerde bağlam bilgisi bulunmayabilir.",
+   "missing_context": [
+    "Önceki kazalara ilişkin veri"
+   ]
+  }
+ ]
+}

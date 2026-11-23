@@ -1,0 +1,214 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurguncusuna yurt dışında kıskıvrak yakalama! Serdar Altınbaş Çekya'da enselendi!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Serdar Altınbaş yakalandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı yakalama olgusu bir başlıkta yoğun deyimlerle, diğerinde yalın biçimde sunuluyor; farkın bir yargıya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati, karakter sınırı veya bilgi güncellemesinden kaynaklanıyor olabilir; okurun kararına etkisi gösterilmemiştir.",
+   "missing_context": [
+    "Okurun yargı veya tercihinin değiştiğine dair gözlem",
+    "Karşılaştırılan ifadelerin karar açısından eşdeğer olduğunun açık gösterimi"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Uluslararası aranan Serdar Altınbaş Çekya'da yakalandı, İçişleri Bakanlığı duyurdu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber İçişleri Bakanlığı açıklamasına dayanıyor; bazı başlıklar suç isnatlarını kesin gibi ('firari') aktarıyor, ancak statünün gerekçe yerine geçtiği açık değil.",
+   "alternative_explanation": "Resmi kurum açıklamasına dayanmak, haberin olağan kaynak göstermesidir; otoriteye gerekçesiz uyum gösterilmemiştir.",
+   "missing_context": [
+    "Otoritenin statüsünün gerekçe yerine geçtiğini gösteren ifade",
+    "Karşıt kanıtın göz ardı edildiğine dair ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı ayrıntının bir yargıya bağlandığı ifade yok.",
+   "alternative_explanation": "Çarpıcı ifade yayın kuralı (son dakika, dikkat çekme) olabilir; yargıyı etkilediği gösterilmemiştir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıya veya karara bağlandığı bir ifade",
+    "Daha az belirgin bilgilerle karşılaştırmalı ağırlıklandırma"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir alandaki olumlu izlenimin başka alandaki olumlu yargıya taşındığı görülmüyor.",
+   "alternative_explanation": "Olumlu ifadeler konuşmacıların kendi görüşü olabilir ve ilgili alanlar gerçekten bağlantılı olabilir.",
+   "missing_context": [
+    "İki alanın karar açısından ilgisiz olduğunun gösterimi",
+    "Birinci izlenimin ikinci yargıyı belirlediğine dair açık ifade"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurguncusuna yurt dışında kıskıvrak yakalama! Serdar Altınbaş Çekya'da enselendi!",
+     "kind": "statement"
+    },
+    {
+     "source": "context",
+     "quote": "akit: sağ (92)",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İçişleri Bakanlığı: Serdar Altınbaş Çekya'da yakalandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sağ yerleşimli Akit sert ve zafer tonlu bir dil kullanırken Birgün (sol) yalın bir başlık kullanıyor; kurum gruplarına göre sunum farkı gözleniyor, fakat tutarsız standart veya gerekçesiz etki gösterilmemiş.",
+   "alternative_explanation": "Yayın çizgisi farkları editoryal tercih, hedef kitle veya kaynak erişimi farkından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Aynı olaya benzer durumlarda farklı standart uygulandığını gösteren ifade",
+    "Grup üyeliğinin yargıyı etkilediğine dair açık bağlantı"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin ödül ve içsel motivasyon ilişkisi içermiyor.",
+   "alternative_explanation": "Metin bir etkinlik ve ödül ilişkisi içermiyor.",
+   "missing_context": [
+    "Ödül öncesi içsel motivasyon ve sonrası düşüşe dair veri"
+   ]
+  }
+ ]
+}

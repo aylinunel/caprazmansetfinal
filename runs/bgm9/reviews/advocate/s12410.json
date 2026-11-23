@@ -1,0 +1,311 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayğaralar suç örgütüne 13 ilde dev operasyon",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "13 ilde düğmeye basıldı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Adana merkezli 13 ilde suç örgütü operasyonu: 101 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "sondakika, tgrt, haberler 'dev operasyon', star 'düğmeye basıldı' gibi olguyu aşan niteleyici ifadeleri kendi sesiyle kullanıyor; dha aynı olguları (13 il, 101 gözaltı) bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayğaralar çetesine operasyon: 13 ilde 101 kişi gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bayğaralar suç örgütüne operasyon! 135 adrese eş zamanlı baskın",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "‘Bayğaralar’ örgütü operasyonu: 101 kişi yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı grup turkiyegz'de 'çete', mynet'te 'suç örgütü', 10haber'de 'örgüt' olarak adlandırılıyor. 'Çete' ile 'suç örgütü' arasındaki fark çoğunlukla kayıt farkı olabilir; etiketin meşruiyet yargısı taşıdığı ayrıca gösterilmiyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "135 adrese eş zamanlı baskın",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "13 ilde Bayğaralar suç örgütüne operasyon: 101 şüpheli yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bayğaralar suç örgütüne 13 ilde dev operasyon: 101 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı işlem mynet'te 'baskın', hurriyet'te 'yakalandı', sondakika'da 'operasyon/gözaltı' olarak adlandırılıyor; 'baskın' ve 'yakalandı' ile 'operasyon' ve 'gözaltı' arasında çağrışım farkı var.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Akın Gürlek duyurdu: Bayğaralar suç örgütüne operasyonda 101 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bayğaralar suç örgütüne 13 ilde dev operasyon: 101 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "“Bayğaralar” suç örgütüne yeni operasyon: 101 şüpheli yakalandı! İş insanlarından zorla haraç...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Gürlek: Bayğaralar suç örgütüne yönelik operasyonda 101 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı operasyonu ensonhaber bakanın duyurusu, sondakika operasyonun büyüklüğü ve il sayısı, sabah ise iş insanlarından haraç suçlaması boyutuyla başlığa taşıyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayğaralar isimli suç örgütüne düzenlenen operasyonda 101 şüpheli gözaltına alındı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Adana'da gerçekleştirdikleri cinayet, kasten yaralama ve haraç gibi eylemlerle bilinen",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İş insanlarından zorla haraç...",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma ve gözaltı aşamasında sorumluluk kesinleşmemiş. ntv lede'inde grup 'cinayet, kasten yaralama ve haraç' eylemleriyle özne olarak anılıyor; sabah başlığı 'zorla haraç...' diyor. Ancak 'bilinen' ifadesi ve bakanın başlıktaki varlığı bir atıf işareti sayılabilir; atıfsızlığı kesin değil.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bayğaralar çetesine operasyon: 101 şüpheli gözaltında",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "cinayet, kasten yaralama ve haraç gibi eylemlerle bilinen",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Adana merkezli 13 ilde suç örgütü operasyonu: 101 gözaltı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "ntv aynı başlık ve lede'de 'çete' etiketini ve seçilmiş suç listesini (cinayet, yaralama, haraç) birlikte kullanıyor; ikisi de gruba karşı olumsuz yöne işaret ediyor. dha aynı olguları bunlar olmadan veriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  }
+ ]
+}

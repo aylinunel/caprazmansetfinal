@@ -1,0 +1,243 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi soruşturmasında 39 kişiye tutuklama kararı, Ovalıoğlu'nu üzdü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'nde ihale vurgunu: 39 şüpheli tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 10:59] Bakırköy Belediyesine yönelik soruşturmada 39 şüpheli tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı tutuklama kararı başkanın duygusu, 'ihale vurgunu' ve nötr duyuru çerçeveleriyle veriliyor; çerçeveye bağlı bir yargı metinde yok.",
+   "alternative_explanation": "Farklı kelime seçimleri aynı olgunun meşru biçimde farklı yönlerini öne çıkarıyor olabilir; metinde bir tercih ya da yargının çerçeveye bağlandığı görülmüyor.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren kanıt",
+    "Açıklamaların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "39 kişi tutuklandı, başkanın babasına ev hapsi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 10:37] Bakırköy Belediyesi'ne yönelik soruşturmada 39 şüpheli tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar belediye başkanının yakınlarına ilişkin kişisel ayrıntıyı öne çıkarıyor, diğerleri yalnızca sayıyı veriyor; bunun bir yargıyı etkilediği gösterilmiyor.",
+   "alternative_explanation": "Başkanın yakınlarının soruşturmada yer alması doğrudan haber değeri taşıyabilir.",
+   "missing_context": [
+    "Öne çıkan ayrıntının bir sonuca gerekçe yapıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "61 kişiden 40'ı hakkında tutuklama talep edildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'ne rüşvet soruşturması: 40 şüpheli tutuklandı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi’nde büyük şok: 40 kişi tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önce 40 kişilik tutuklama talebi aktarılıyor; iki kurum sonucu 40 tutuklama olarak verirken çoğunluk 39 diyor. Talep rakamının sonraki habere bağlandığı ise açıkça gösterilmiyor.",
+   "alternative_explanation": "Fark, ilk bilgilere dayalı erken haberlerden veya kaynak farkından kaynaklanmış olabilir.",
+   "missing_context": [
+    "Mahkeme kararının resmî sayısı",
+    "Haberlerin hangi kaynağa dayandığı"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber başlıkları bir olayı aktarıyor; metinde bu kartın gerektirdiği karar, yargı veya akıl yürütme adımı açıkça yer almıyor.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "sulh ceza hakimliğine sevk edilen 57 kişiden 39 kişi hakkında tutuklama kararı verildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "gözaltına alınan 63 kişiden, 20'si belediye görevlisi olmak üzere toplam 39 kişi hakkında tutuklama kararı verildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'ne rüşvet soruşturması: 40 şüpheli tutuklandı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler payda (57 / 63) ve tutuklu sayısında (39 / 40) farklılaşıyor; farkın bir sonuca etkisi metinde gösterilmiyor.",
+   "alternative_explanation": "Ayrıntı farkları yayın saatindeki bilgi düzeyi, ajans kaynağı ve başlık uzunluğu sınırıyla açıklanabilir; bu bir hata kanıtı değildir.",
+   "missing_context": [
+    "Olayın birincil kaynağı (resmî açıklama veya ajans metni)",
+    "Farklılığın bir sonuca veya karara etki ettiğini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gözaltına alınanlar arasında Yeni Partili",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir metinde gözaltına alınanların parti üyeliğine değiniliyor; ancak bir karar veya yargının bu gruba bağlandığı görülmüyor.",
+   "alternative_explanation": "Başlıklar arasındaki farklar editoryal üslup, yayın saati ve erişilen kaynak farkıyla açıklanabilir.",
+   "missing_context": [
+    "Karar vericinin gerekçesini gösteren açık bir ifade veya karşılaştırmalı kayıt"
+   ]
+  }
+ ]
+}

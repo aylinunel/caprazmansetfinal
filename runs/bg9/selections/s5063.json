@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "salience-bias",
+  "negativity-bias",
+  "affect-heuristic",
+  "leveling-and-sharpening"
+ ],
+ "selection_uncertainty": [
+  "Tam metinler yok, yalnızca başlık ve kısa özetler var.",
+  "İstifa gerekçesi istifa eden kişinin beyanına dayanıyor."
+ ],
+ "selection_note": "İstifa haberleri 'deprem', 'şok' gibi dramatik ifadelerle ya da nötr biçimde verilmiş."
+}

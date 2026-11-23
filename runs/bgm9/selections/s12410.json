@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "labeling",
+  "word-choice",
+  "emphasis-framing",
+  "responsibility-framing",
+  "spin"
+ ],
+ "selection_uncertainty": [
+  "Bakanın sözleri alıntıdır.",
+  "Adres sayıları tutarsız."
+ ],
+ "selection_note": "'Dev operasyon', 'çete' / 'suç örgütü' ve 'Sayın' unvanı farklılaşıyor."
+}

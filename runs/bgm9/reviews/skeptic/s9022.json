@@ -1,0 +1,223 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'dan COP31'de diplomasi trafiği: Devlet liderleriyle peş peşe görüşmeler...",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31 kapsamında diplomasi trafiği",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı aktör bazı kurumlarda 'Başkan', diğerlerinde 'Cumhurbaşkanı' unvanıyla anılıyor.",
+   "alternative_explanation": "'Başkan' bir unvan kısaltmasıdır; kimlik tanımını aşan bir değerlendirme taşıdığı metinden kurulamıyor.",
+   "missing_context": [
+    "Unvan tercihlerinin kurumların genel pratiğindeki yeri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31'de diplomasi trafiği! Kritik görüşmeler peş peşe",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31 kapsamında diplomasi trafiği",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık görüşmeleri 'kritik' olarak nitelerken başka biri aynı olguyu bu sözcük olmadan veriyor.",
+   "alternative_explanation": "'Kritik' önem belirten yaygın bir haber sözcüğüdür; skandal, müjde gibi güçlü bir değerlendirme sayılması kesin değil.",
+   "missing_context": [
+    "Görüşmelerin içeriği ve sonuçları"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31'de yoğun diplomasi trafiği",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31'de diplomasi trafiği: Mekke İttifakı dayanışmayı güçlendirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Başlıkların neredeyse tamamı aynı boyutu, görüşme yoğunluğunu öne çıkarıyor.",
+   "alternative_explanation": "Kurumlar aynı resmi açıklamayı izliyor; karşıt boyutların öne çıkarılması görülmüyor.",
+   "missing_context": []
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31 diplomasisi! Antalya'da liderlerle görüşme trafiği",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31'de diplomasi trafiği",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı 'diplomasi trafiği', 'görüşme trafiği' gibi neredeyse aynı sözcüklerle veriyor.",
+   "alternative_explanation": "Sözcük farkı yok denecek kadar az ve çağrışım farkı taşımıyor.",
+   "missing_context": []
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31'de yoğun diplomasi trafiği",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar 'diplomasi trafiği' ifadesini kullanıyor.",
+   "alternative_explanation": "'Diplomasi trafiği' Türkçe haber dilinde kalıplaşmış bir deyimdir; rol ataması ya da eylem önerisi yapmıyor.",
+   "missing_context": []
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir başlık iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Haber bir gelişmeyi bildiriyor; iki seçenek arasında zorunlu tercih sunulmuyor.",
+   "missing_context": [
+    "Kurumun kendi sesiyle 'ya … ya …' kalıbında sunduğu seçenekler"
+   ]
+  }
+ ]
+}

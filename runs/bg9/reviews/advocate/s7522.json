@@ -1,0 +1,257 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Açıklanan kadroda en çok dikkat çeken değişim Fenerbahçeli Kerem Aktürkoğlu'nun kadroda olmaması",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "2 kritik eksik dikkat çekti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Açıklanan kadroda Süper Lig ekiplerinin ağırlığı dikkat çekerken",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı kurumlar kadro dışı kalan isimleri öne çıkarırken diğerleri kadronun genel bileşimine odaklanıyor; ancak bu öne çıkarmanın bir yargıyı haksız biçimde etkilediği gösterilmiyor.",
+   "alternative_explanation": "Tanınmış oyuncuların kadroda olmaması doğal olarak haber değeri taşır.",
+   "missing_context": [
+    "Öne çıkan ayrıntının bir sonuca gerekçe yapıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sürprizler var! Sergen Yalçın A Milli Takım aday kadrosunu açıkladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sergen Yalçın A Milli Takım kadrosunu açıkladı: Fenerbahçeli yıldızlar kadro dışı kaldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 02:39] Sergen Yalçın, A Milli Futbol Takımı'nın aday kadrosunu açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kadro açıklaması 'sürpriz', 'kadro dışı kaldı' ve nötr duyuru biçimlerinde sunuluyor; çerçeveye bağlanan bir tercih metinde yok.",
+   "alternative_explanation": "Farklı kelime seçimleri aynı olgunun meşru biçimde farklı yönlerini öne çıkarıyor olabilir; metinde bir tercih ya da yargının çerçeveye bağlandığı görülmüyor.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren kanıt",
+    "Açıklamaların karar açısından eşdeğer olduğunu belirten açık ifade"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sergen Yalçın milli takım aday kadrosunu duyurdu: Kerem Aktürkoğlu yok",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "A Milli Takım kadrosunda değişim rüzgarı: Sergen Yalçın o isimleri çağırmadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sergen Yalçın Milli Takım aday kadrosunu açıkladı! Berke Özer geri döndü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Birden çok başlık çağrılmayan isimleri öne çıkarıyor, bir kısmı ise geri dönen oyuncuya odaklanıyor; bunun bir değerlendirmeyi haksız biçimde etkilediği gösterilmiyor.",
+   "alternative_explanation": "Kadro dışı kalan tanınmış oyuncular, olumsuzluktan bağımsız olarak okur ilgisi çeker.",
+   "missing_context": [
+    "Olumlu ve olumsuz bilgilerin karşılaştırmalı ağırlığını gösteren kayıt"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçeli yıldızlar kadro dışı kaldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir başlık kadro dışı kalan oyuncuları kulüp üyeliğiyle tanımlıyor; ancak seçimdeki farkın bu gruba bağlandığına dair açık bir ifade yok.",
+   "alternative_explanation": "Kulüp adı, okurun oyuncuları tanıması için kullanılan bir tanımlayıcı olabilir.",
+   "missing_context": [
+    "Kadro tercihinin kulüp üyeliğine dayandığını gösteren açıklama",
+    "Farklı kulüplerden benzer oyunculara yaklaşımın karşılaştırması"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yapay zeka destekli oyuncu takip sisteminin detayları paylaşılırken",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Berke Özer ve Enes Ünal'ı kadroya davet eden Yalçın, son aday kadroda yer alan 4 ismi milli takıma çağırmadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sergen Yalçın milli takım aday kadrosunu duyurdu: Kerem Aktürkoğlu yok",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı basın toplantısından farklı kurumlar farklı ayrıntıları (takip sistemi, geri dönenler, çağrılmayan isimler) seçiyor; ayrıntıların bir sonuca etkisi gösterilmiyor.",
+   "alternative_explanation": "Ayrıntı farkları yayın saatindeki bilgi düzeyi, ajans kaynağı ve başlık uzunluğu sınırıyla açıklanabilir; bu bir hata kanıtı değildir.",
+   "missing_context": [
+    "Olayın birincil kaynağı (resmî açıklama veya ajans metni)",
+    "Farklılığın bir sonuca veya karara etki ettiğini gösteren kanıt"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sergen Yalçın Milli Takım kadrosunu açıkladı, çağırdıkları kadar çağırmadıkları da konuşuldu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir metin, kamuoyu ilgisinin çağrılmayan oyunculara da yöneldiğini aktarıyor; bu dikkat farkının belirli bir hatalı sonuca bağlandığı görülmüyor.",
+   "alternative_explanation": "Çağrılmayan oyuncuların tartışılması kadro haberlerinde olağandır.",
+   "missing_context": [
+    "Dikkat dağılımını gösteren girdi kayıtları",
+    "Bu dikkatin bir karar veya sonucu etkilediğine dair kanıt"
+   ]
+  }
+ ]
+}

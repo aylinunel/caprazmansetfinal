@@ -1,0 +1,301 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muhalefette yaprak dökümü!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Rozetlerini Başkan Erdoğan takacak",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "9 belediye başkanı AK Parti'ye katıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "akit başlığında 'yaprak dökümü' metaforu, 'Başkan Erdoğan' unvanı ve ünlem birlikte yer alıyor; ikisi de AK Parti lehine ivme anlatısına işaret ediyor. dirilis aynı olguyu bunlar olmadan veriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Muhalefette yaprak dökümü!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ankara kulisleri hareketli!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "9 belediye başkanı AK Parti'ye katıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "akit 'yaprak dökümü', tgrt 'kulisler hareketli' gibi olguyu aşan değerlendirici ifadeleri kendi sesiyle kullanıyor; dirilis aynı olayı bu ifadeler olmadan bildiriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2 büyükşehir ve 7 ilçe belediye başkanı AKP'ye katıldı: Aralarında Tekirdağ, Antalya ve Beyoğlu da var",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rozetlerini Başkan Erdoğan taktı: 9 belediye başkanı AK Parti'ye katıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tekirdağ ve Antalya dahil 9 belediye AK Parti'de. Candan Yüceer ve Büşra Özdemir rozetlerini taktı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Yerel seçimlerde muhalefet partilerinin listelerinden seçilen ya da seçilmiş başkanların tutuklanmasının ardından",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı katılımı cumhuriyet büyükşehir/ilçe dağılımını ve tutuklamalar sonrası meclis oylamasını, aksam Erdoğan'ın rozet takmasını, ntv adı geçen iki ismi başlığa taşıyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2 büyükşehir ve 7 ilçe belediye başkanı AKP'ye katıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "2 büyükşehir ve 7 ilçe belediye başkanı AK Parti'ye katıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tekirdağ ve Antalya Dahil 9 Belediye Başkanı AK Parti'ye Geçti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Aynı katılım cumhuriyet ve birgun'de 'AKP'ye katıldı', haberturk'te 'AK Parti'ye katıldı', onedio'da 'geçti' olarak anlatılıyor; 'AKP' ile 'AK Parti' ve 'katıldı' ile 'geçti' arasında kullanım ve çağrışım farkı var.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2 büyükşehir ve 7 ilçe belediye başkanı AKP'ye katıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "2 büyükşehir ve 7 ilçe belediye başkanı AK Parti'ye katıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rozetlerini Başkan Erdoğan taktı: 9 belediye başkanı AK Parti'ye katıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı parti cumhuriyet ve birgun'de 'AKP', diğerlerinde 'AK Parti'; Erdoğan ise bazı kurumlarda 'Başkan'. Etiket farkı gözleniyor, ancak bunun meşruiyet yargısı taşıdığı metinden doğrulanamıyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'den ve Yeni Parti'den istifa ederek AK Parti'ye geçen belediyelerin sayısı her geçen gün artıyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "tutuklanmasının ardından meclis oylamasıyla koltuğa oturan 9 belediye başkanı ve başkanvekili AKP'ye katıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "yenisafak ve cumhuriyet lede'leri katılımı bir eğilim (sayının her gün artması) ve kurumsal süreç (tutuklamalar, meclis oylaması) içine yerleştiriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  }
+ ]
+}

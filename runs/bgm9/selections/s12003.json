@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "word-choice",
+  "emphasis-framing",
+  "responsibility-framing",
+  "episodic-framing"
+ ],
+ "selection_uncertainty": [
+  "Ölüm nedeni belli değil; soruşturma sürüyor.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "'Sır ölüm', 'şüpheli ölüm', tırnaklı 'düşerek' ve sevgili vurgusu sorumluluğu ima edebilir."
+}

@@ -1,0 +1,223 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Papa 14. Leo'nun yüzüne cisim isabet etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Papa 14'üncü Leo'nun yüzüne tesbih fırlatıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Papa 14. Leo'ya şok saldırı! Yüzüne isabet etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay için çoğu kurum 'cisim isabet etti', diken ve mynet 'tespih/tesbih fırlatıldı', aksam ise 'şok saldırı' diyor; 'saldırı' ve 'isabet etti' farklı çağrışım taşıyor.",
+   "alternative_explanation": "Nesnenin adı sonradan netleşmiş olabilir; farklar bilgi aşamasından gelebilir.",
+   "missing_context": [
+    "Nesnenin kimliği ve atış amacına dair doğrulama"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Papa 14. Leo'nun yüzüne cisim isabet etti! Lima'da şaşkına çeviren anlar",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Papa 14. Leo'nun zor anları! Yüzüne tespih fırlattılar",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Papa 14. Leo'nun yüzüne cisim fırlatıldı! İşte o anlar",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Ahaber ve turkiyegz Papa'nın şaşkınlığını, tgrt zor anlarını, milligazete görüntüleri; haberler ise yalnızca nesnenin çarpmasını başlığa taşıyor.",
+   "alternative_explanation": "Başlık farkları aynı haberin üslup varyasyonu olabilir.",
+   "missing_context": [
+    "Olayın görüntü kayıtları"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Papa 14. Leo'ya şok saldırı! Yüzüne isabet etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Papa 14. Leo'nun zor anları!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Papa 14. Leo'ya Lima'da selamlama sırasında fırlatılan cisim yüzüne çarptı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aksam başlığında kendi sesiyle 'şok saldırı', tgrt başlığında 'zor anları' ifadesi olayı olumsuz nitelendiriyor; haberler aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "'Şok' ifadesi olayın gerçekten şaşırtıcı olmasından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Olayın niteliğine dair resmî açıklama"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneği tek seçenek olarak sunan bir ifade yok.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve girişler olayı bir eğilim, seri veya kurumsal bağlam içine yerleştirmiyor; Papa'nın Peru ziyareti dışında geniş çerçeve yok.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  },
+  {
+   "card_id": "ad-hominem",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda bir kişi veya grubun karakteri/kimliği üzerinden bir nitelendirme yok.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  }
+ ]
+}

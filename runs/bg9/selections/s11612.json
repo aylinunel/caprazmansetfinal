@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "in-group-bias",
+  "framing-effect",
+  "halo-effect",
+  "salience-bias",
+  "confirmation-bias",
+  "affect-heuristic"
+ ],
+ "selection_uncertainty": [
+  "Soruşturma sürüyor; suç sabit değil.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "Parti kimliği ve aile bağı vurgusu grup algısını etkileyebilir."
+}

@@ -1,0 +1,193 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kuvvetli fırtına kapıda",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz çağrışımlı ifade var; ancak olumlu bilgiyle orantısız ağırlıklandırma karşılaştırmalı olarak gösterilmiyor.",
+   "alternative_explanation": "Uyarı/olumsuz içerik haberin doğrudan konusu olduğu için olumsuz sözcükler kullanılmış olabilir.",
+   "missing_context": [
+    "Başlığın bir yargıyı ya da kararı etkilediğine dair açık ifade",
+    "Aynı olgunun nötr sunumuyla karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin yalnızca olayı bildiren başlık ve girişlerden oluşuyor; kolay hatırlanabilirlik sezgisi için gereken açık bir gerekçe, bağlantı veya karşılaştırmalı davranış kanıtı görünmüyor.",
+   "alternative_explanation": "Başlık ve girişler standart haber bildirimidir; gözlenen ifade biçimi önyargılı bir muhakemeden çok haber yazım kalıbından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Karar vericinin ya da yazarın açık gerekçesi",
+    "Karşılaştırılabilir ek bilgi veya ölçüt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Marmara için sağanak alarmı: İstanbul dahil 11 ile sarı kodlu uyarı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Meteoroloji'den İstanbul dahil 11 kente sarı kodlu yağış uyarısı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olay farklı kelime ve vurguyla sunuluyor; ancak metin, bu sunum farkının bir yargıyı değiştirdiğini ya da kararı etkilediğini açıkça bağlamıyor.",
+   "alternative_explanation": "Farklı başlıklar, yayın saatleri, editoryal üslup ve ele alınan ayrıntı farkından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Başlığın bir yargıyı ya da kararı etkilediğine dair açık ifade",
+    "Aynı olgunun nötr sunumuyla karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fırtınanın hızı 90 kilometreye çıkabilir",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan/çarpıcı bir ayrıntı var; ancak bu ayrıntının bir yargıya haksız ağırlık verdiği metinde açıkça gösterilmiyor.",
+   "alternative_explanation": "Çarpıcı ifade, olağan başlık üslubu veya olayın gerçek önemi nedeniyle kullanılmış olabilir.",
+   "missing_context": [
+    "Başlığın bir yargıyı ya da kararı etkilediğine dair açık ifade",
+    "Aynı olgunun nötr sunumuyla karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin yalnızca olayı bildiren başlık ve girişlerden oluşuyor; hale etkisi için gereken açık bir gerekçe, bağlantı veya karşılaştırmalı davranış kanıtı görünmüyor.",
+   "alternative_explanation": "Başlık ve girişler standart haber bildirimidir; gözlenen ifade biçimi önyargılı bir muhakemeden çok haber yazım kalıbından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Karar vericinin ya da yazarın açık gerekçesi",
+    "Karşılaştırılabilir ek bilgi veya ölçüt"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin yalnızca olayı bildiren başlık ve girişlerden oluşuyor; aşırı gerekçelendirme etkisi için gereken açık bir gerekçe, bağlantı veya karşılaştırmalı davranış kanıtı görünmüyor.",
+   "alternative_explanation": "Başlık ve girişler standart haber bildirimidir; gözlenen ifade biçimi önyargılı bir muhakemeden çok haber yazım kalıbından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Karar vericinin ya da yazarın açık gerekçesi",
+    "Karşılaştırılabilir ek bilgi veya ölçüt"
+   ]
+  }
+ ]
+}

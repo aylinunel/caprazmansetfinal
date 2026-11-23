@@ -1,0 +1,205 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı şoku! 6 kişi öldü, 10'dan fazla kişi yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı: 6 kişi hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kayıp sayısı (6 ölü) bir başlıkta 'şoku' ifadesiyle, diğerinde yalın biçimde verilmiş; sunum farkı gözleniyor, ancak bunun bir tercih veya yargıya bağlandığı metinde yok.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati, karakter sınırı veya bilgi güncellemesinden kaynaklanıyor olabilir; okurun kararına etkisi gösterilmemiştir.",
+   "missing_context": [
+    "Okurun yargı veya tercihinin değiştiğine dair gözlem",
+    "Karşılaştırılan ifadelerin karar açısından eşdeğer olduğunun açık gösterimi"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olay zaten bir saldırı haberidir; olumsuz ve olumlu kanıtın orantısız ağırlıklandırıldığına dair bir ifade yok.",
+   "alternative_explanation": "Olayın kendisi olumsuz olduğu için olumsuz vurgu orantılı bir haber değeri olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıtın metinde yer alıp almadığı",
+    "Olumsuz bilginin değerlendirmeyi etkilediğine dair gözlem"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da silahlı saldırı dehşeti: Çok sayıda ölü ve yaralı var",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar 'dehşeti' gibi çarpıcı sözcükler öne çıkarıyor; ancak bu çarpıcılığın bir yargı veya seçime bağlandığı açık değil.",
+   "alternative_explanation": "Çarpıcı ifade yayın kuralı (son dakika, dikkat çekme) olabilir; yargıyı etkilediği gösterilmemiştir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıya veya karara bağlandığı bir ifade",
+    "Daha az belirgin bilgilerle karşılaştırmalı ağırlıklandırma"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Olayda 5 kişi hayatını kaybederken, 10'dan fazla kişi yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ölenlerin sayısı 6'ya yükselirken",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İlk bildirilen '5 ölü' rakamı sonraki bazı başlıklarda sürerken başka kurumlar 6'ya yükseltmiş; ilk değerin referans olarak kaldığı gözleniyor, ancak açık bağlantı ve gerekçesiz etki gösterilmemiş.",
+   "alternative_explanation": "Önceki rakam güncel bilgi eksikliğinden veya aktarım gecikmesinden dolayı tekrarlanmış olabilir.",
+   "missing_context": [
+    "Sonraki yargının ilk değere açıkça bağlandığı bir ifade",
+    "Düzeltmeye elverişli kanıtın göz ardı edildiğine dair gösterge"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hatırlama kolaylığına dayalı bir olasılık veya sıklık yargısı metinde bulunmuyor.",
+   "alternative_explanation": "Haber değeri taşıyan örneklerin anılması olasılık yargısı yerine basit bağlam aktarımı olabilir.",
+   "missing_context": [
+    "Hatırlama kolaylığının bir olasılık tahminine gerekçe yapıldığı ifade",
+    "Sıklık verisiyle karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "illusory-correlation",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Polonya'da yargı krizi sonrası silahlı saldırı: Çok sayıda ölü ve yaralı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Takvim başlığı 'yargı krizi' ile saldırıyı ardışık olarak yan yana koyuyor; ilişkinin dayanağı veya yanlışlığı gösterilmemiş.",
+   "alternative_explanation": "Ardışıklık yalnızca kronolojik bağlam aktarımı olabilir; ilişki iddiası ayrıca desteklenmiş olabilir.",
+   "missing_context": [
+    "İlişkinin yanlış olduğunu gösteren karşılaştırmalı veri",
+    "Seçilmiş rastlantılardan sonuç çıkarıldığını gösteren ifade"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,230 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mısır asıllı Müslüman aday Abdul el-Sayed",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Trump'ın dini kimliği üzerinden hedef gösterdiği Abdul El-Sayed",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler adayın dini grup üyeliğini açıkça belirtiyor ve ona yönelik bir hedef göstermenin bu kimlikle bağlantılı olduğunu aktarıyor; ancak bu muamelenin haksız olduğunu gösteren karşılaştırmalı standart ya da gerekçe metinde ayrıca yer almıyor, ve aktarılan değerlendirme haber kuruluşuna değil bir siyasetçiye ait.",
+   "alternative_explanation": "Dini kimliğin öne çıkarılması, 'ilk Müslüman senatör' olgusunun haber değerinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Trump'ın açıklamalarının tam metni",
+    "Diğer adaylara yönelik benzer ifadelerle karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[aksam · 12:20] İsrail lobisine rağmen kazandı: ABD'nin ilk Müslüman senatörü oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[hurriyet · 10:45] Abdul el-Sayed, ABD'nin ilk Müslüman senatörü oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı seçim sonucu bir başlıkta engellere 'rağmen' kazanılan bir zafer, diğerinde bir ilk olarak sunuluyor; ancak bu farka dayanan bir tercih ya da yargı metinde kurulmuyor.",
+   "alternative_explanation": "Kuruluşlar kampanyanın farklı yönlerini haber değeri açısından öne çıkarmış olabilir.",
+   "missing_context": [
+    "Sunum farkına dayanan açık bir değerlendirme"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 11:20] 7 Müslüman isim kongreye seçildi! ABD tarihinde bir ilk: Abdul el-Sayed Senatör oldu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[anka · 11:42] ABD'nin ilk Müslüman senatörü seçildi: Demokratlar Kongrede üstünlüğü sağladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar seçim sonuçları içinden adayın dini kimliğini belirgin biçimde öne çıkarıyor; ancak bu belirginliğin bir yargıyı haksız biçimde etkilediği ya da daha az belirgin bilgilerin göz ardı edildiği açıkça gösterilmiyor.",
+   "alternative_explanation": "'İlk' olma niteliği uluslararası habercilikte yaygın bir haber değeri ölçütüdür.",
+   "missing_context": [
+    "Seçimin diğer sonuçlarının aynı kuruluşlarda nasıl verildiği"
+   ]
+  },
+  {
+   "card_id": "bandwagon-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 16:13] Herkes ABD'nin ilk Müslüman senatörünü konuşuyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Michigan anketlerinde Abdul El-Sayed zafere koşuyor!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler ilgi ve anket desteğini anıyor; ancak bir inancın ya da seçimin popülerliği nedeniyle benimsendiğini gösteren bir akıl yürütme yok.",
+   "alternative_explanation": "Anket ve ilgi bilgisi seçim haberlerinde olgusal bağlamdır.",
+   "missing_context": [
+    "Popülerliği bir yargının gerekçesi yapan bir ifade"
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 18:27] Michigan anketlerine göre Abdul El-Sayed ABD'nin ilk Müslüman senatörü olabilir",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Seçim öncesi anketler bir referans bilgi oluşturuyor; ancak sonraki bir tahminin ya da kararın bu değere haksız biçimde bağlandığını gösteren bir ifade yok.",
+   "alternative_explanation": "Anketlerin aktarılması seçim öncesi olağan bir bilgilendirmedir.",
+   "missing_context": [
+    "Anket değerine dayanan sonraki bir yargı"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinler bir olayın haber başlıklarından oluşuyor; bir etkinliğe bağlanan dış ödül, ödülün kaldırılması ya da sonrasında gönüllü katılımın azalması gibi bir gözlem yer almıyor.",
+   "alternative_explanation": "Haber metinleri motivasyon değişimini ölçecek bir akış içermez; kartın konusu bu olayla ilişkili değildir.",
+   "missing_context": [
+    "Kişinin ödül öncesi gönüllü katılım düzeyi",
+    "Beklenen ve etkinliğe bağlı bir ödül",
+    "Ödül kaldırıldıktan sonraki davranış ölçümü"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,227 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[ahaber · 18:31] Rusya'da askeri nakliye uçağı düştü: 17 ölü! Düşme anı kamerada",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sabah · 18:30] SON DAKİKA I Rusya'da askeri nakliye uçağı düştü: 19 kişi hayatını kaybetti!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 18:31] Rusya'nın Kemerovo bölgesinde düşen askeri nakliye uçağındaki 19 kişi öldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı kazada ahaber görüntüyü ('Düşme anı kamerada'), sabah ölü sayısını, haberturk ise bölgeyi ve nedeni (lede'de teknik arıza) öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar farklı bilgi kaynaklarından (yerel valilik, Savunma Bakanlığı) beslenmiş olabilir.",
+   "missing_context": [
+    "Başlık yayım saatindeki resmi bilgi durumu"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberler · 18:34] Rusya'da askeri nakliye uçağı düştü: 19 ölü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 22:26] Rusya'da askeri nakliye uçağı düştü: 19 ölü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Ölü', 'hayatını kaybetti', 'can kaybı' gibi ifadeler kullanılıyor; farklar çağrışım değil kayıt düzeyinde görünüyor.",
+   "alternative_explanation": "Eşanlamlı çeşitlilik.",
+   "missing_context": [
+    "Çağrışım farkını gösteren örnek"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "kazanın teknik arızadan kaynaklandığı değerlendiriliyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Metinde nedensel ifade var ('teknik arızadan kaynaklandığı'), ancak 'değerlendiriliyor' ve Savunma Bakanlığı'na atıfla verildiği için yalnızca eşzamanlılık değil bir kaynağa dayalı değerlendirme olarak sunuluyor.",
+   "alternative_explanation": "İfade resmi açıklamanın aktarımıdır.",
+   "missing_context": [
+    "Teknik arızaya dair bağımsız kanıt"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 21:01] Rusya'da korkunç kaza: Askeri nakliye uçağı düştü, kurtulan olmadı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "'Korkunç kaza' ifadesi var; ölü sayısı ve kaza ayrıntısı verildiği için ölçek belli ve ifade bu ölçekle orantısız görünmüyor.",
+   "alternative_explanation": "Ölümlü uçak kazasına karşı 'korkunç' sözcüğü orantılı bir niteleme olabilir.",
+   "missing_context": [
+    "Tehdit sözcüklerinin ölçekten ayrıştığını gösteren örnek"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 21:01] Rusya'da korkunç kaza: Askeri nakliye uçağı düştü, kurtulan olmadı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 06:34] Rusya'nın Kemerovo bölgesinde düşen askeri nakliye uçağında 19 kişi öldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "milligazete başlığında 'korkunç kaza' değerlendirici bir ifade kurumun kendi sesinde yer alıyor; aa aynı olguyu bu ifade olmadan veriyor.",
+   "alternative_explanation": "Tek bir kurumda tek ifade; üslup tercihi olabilir.",
+   "missing_context": [
+    "Başka kurumlarda benzer sözcükler"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin yinelenen veya yapısal bir sorunu tek vaka üzerinden anlatmıyor; bir kazanın haberi.",
+   "alternative_explanation": "Olay haberi tek vakadır; yapısal bağlam sonraki haberlerde olabilir.",
+   "missing_context": [
+    "Yinelenen ya da yapısal olduğunu gösteren bağlam"
+   ]
+  }
+ ]
+}

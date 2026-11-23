@@ -1,0 +1,261 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[evrensel · 17:12] Fon vurgunu soruşturması: Borsa İstanbul A.Ş. Genel Müdürü Korkmaz Enes Ergun hakkında tutuklama talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[bloomberght · 16:57] Sermaye piyasası işlemleri soruşturmasında Korkmaz Enes Ergun adliyede",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 17:46] Fon soruşturmasında Korkmaz Enes Ergun için tutuklama talebi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma Evrensel'de 'Fon vurgunu soruşturması', Bloomberg HT'de 'Sermaye piyasası işlemleri soruşturması', Türkiye Gazetesi'nde 'Fon soruşturması' olarak adlandırılıyor; 'vurgun' suç işlendiği çağrışımı taşıyor.",
+   "alternative_explanation": "Adlandırmalar kurumların soruşturmayı izlediği yerleşik etiketler olabilir.",
+   "missing_context": [
+    "Soruşturmanın resmi adı."
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: Eski Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun'a tutuklama talebi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye'yi sarsan fon skandalının ardından",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 00:16] Fon soruşturmasında Korkmaz Enes Ergun'a tutuklama talebi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Cumhuriyet 'Fon vurgunu', Karar 'Türkiye'yi sarsan fon skandalı' gibi kurumun kendi sesindeki değerlendirici ifadeler kullanıyor; Habertürk aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Bu ifadeler kamuoyunda yerleşmiş adlandırmalar olabilir.",
+   "missing_context": [
+    "Kurumların önceki haberlerdeki kullanımı."
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[karar · 23:57] Fon soruşturması Borsa İstanbul'un yönetimine uzandı: Korkmaz Enes Ergun'a tutuklama talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 00:34] Eski Borsa İstanbul Genel Müdürü Ergun'a tutuklama talebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sondakika · 13:55] Eski Borsa İstanbul Genel Müdürü Ergun, rüşvet iddiasıyla adliyeye sevk edildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı tutuklama talebi için Karar soruşturmanın Borsa İstanbul yönetimine ulaştığını, TRT Haber kişinin unvanını öne çıkarıyor; Sondakika ise suçlamanın içeriğini ('rüşvet iddiası') başlığa taşıyor.",
+   "alternative_explanation": "Sondakika'nın başlığı daha erken bir aşamaya (adliyeye sevk) ait; vurgu farkının bir kısmı gelişen olaydan kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Başlıkların hangi aşamada yazıldığı."
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 13:55] Eski Borsa İstanbul Genel Müdürü Ergun",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 16:51] Fon soruşturması... Borsa İstanbul Genel Müdürü Korkmaz Enes Ergun",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi bazı kurumlarda 'Eski Borsa İstanbul Genel Müdürü', bazılarında 'Borsa İstanbul Genel Müdürü' olarak anılıyor; fark görev durumuna ilişkin, bir meşruiyet yargısı taşımıyor.",
+   "alternative_explanation": "Fark, görevden alınma bilgisinin kurumlara farklı zamanlarda ulaşmasından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Ergun'un görevden alındığı tarih."
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "tutuklama talebiyle Nöbetçi Sulh Ceza Hakimliğine sevk edildi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 17:25] Fon vurgunu soruşturması:",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Ergun hakkında yalnızca tutuklama talebi aşamasındayken Cumhuriyet 'Fon vurgunu' çerçevesini atıf işareti olmadan kullanıyor; ancak başlık dilbilgisi Ergun'u vurgunun faili yapmıyor.",
+   "alternative_explanation": "'Fon vurgunu soruşturması' sorumluluk atfı değil, soruşturmanın kısa adı olarak kullanılıyor olabilir.",
+   "missing_context": [
+    "İfadenin kurumda yerleşik ad olup olmadığı."
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi sesinde açık bir nedensellik ifadesi bulunmuyor; başlıklar tutuklama sürecini aktarıyor.",
+   "alternative_explanation": "Haberler hukuki süreci olgusal biçimde veriyor.",
+   "missing_context": [
+    "Tam metinlerde nedensel iddia bulunup bulunmadığı."
+   ]
+  }
+ ]
+}

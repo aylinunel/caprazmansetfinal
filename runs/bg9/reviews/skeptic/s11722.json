@@ -1,0 +1,199 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[mynet · 08:45] 2026 yılının kelimesi belli oldu! Yapay zeka çağında şaşırtan seçim",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar aynı duyuruyu farklı vurgularla veriyor; ancak eşdeğerlik ve bir tercihe bağlanma koşulları metinde gösterilmiyor.",
+   "alternative_explanation": "Bir sözlük ödülü duyurusunda üslup farkı doğaldır; karar veya tercih söz konusu değil.",
+   "missing_context": [
+    "Bir tercih veya yargının sunum farkına bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "'Human' kelimesi 2026'ya damga vurdu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı bir ifade kullanılmış; bu vurgunun bir yargı veya seçimde kullanıldığı gösterilmiyor.",
+   "alternative_explanation": "Yılın kelimesi haberlerinde vurgulu başlık yaygındır.",
+   "missing_context": [
+    "Vurgunun bir karara dayanak yapıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "sözlük bilimcisi Colin McIntosh",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sözlük bilimcisi ve Cambridge Sözlüğü uzman kaynak olarak anılıyor; ancak statünün gerekçeli değerlendirmenin yerine geçtiği gösterilmiyor.",
+   "alternative_explanation": "Kelimeyi seçen kurumun açıklamasını aktarmak, konuyla ilgili uzmana başvurmaktır.",
+   "missing_context": [
+    "Uzman beyanının karşıt kanıta rağmen belirleyici sayıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yapay zeka çağında yılın kelimesi belli oldu!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki bir uyaranın sonraki bir tepkiyi etkilediğini gösteren karşılaştırmalı veya tekrarlı gözlem yok.",
+   "alternative_explanation": "Başlıkta yapay zeka çerçevesi sözlüğün açıklanan gerekçesidir; bir uyarılma etkisi gösterilmiyor.",
+   "missing_context": [
+    "Önceki uyaran ile sonraki tepki arasındaki sıra ve ilişkiyi gösteren veri"
+   ]
+  },
+  {
+   "card_id": "mere-exposure-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Tekrarlanan maruz kalma veya aşinalığın bir tercihi artırdığına dair ifade yok.",
+   "alternative_explanation": "Metin bir sözlüğün seçimini aktarıyor; seçimin gerekçesi tartışma düzeyinde açıklanıyor.",
+   "missing_context": [
+    "Aşinalık ile tercih arasında bağ kuran ifade"
+   ]
+  },
+  {
+   "card_id": "declinism",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "teknoloji bağımlılığına ilişkin endişelerin artması",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Geçmiş ile bugünün açıkça karşılaştırılıp geçmişin tercih edildiği bir ifade yok; endişe ifadesi tek başına yeterli değil.",
+   "alternative_explanation": "Endişe artışı sözlüğün seçim gerekçesi olarak aktarılıyor; bir geçmiş özlemi değil.",
+   "missing_context": [
+    "Geçmişle bugünün açık karşılaştırması ve geçmişi yüceltme"
+   ]
+  }
+ ]
+}

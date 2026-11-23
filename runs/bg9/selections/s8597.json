@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "anchoring-bias",
+  "negativity-bias",
+  "availability-heuristic",
+  "fundamental-attribution-error",
+  "salience-bias",
+  "framing-effect"
+ ],
+ "selection_uncertainty": [
+  "Can kaybı rakamları 3 ile 18 arasında farklı zamanlarda değişiyor.",
+  "Sorumluluk soruşturma aşamasında."
+ ],
+ "selection_note": "Değişen bilanço ve sorumluluk vurgusu çapa ve olumsuzluk eğilimiyle ilişkili olabilir."
+}

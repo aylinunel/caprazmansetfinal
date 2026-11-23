@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "word-choice",
+  "responsibility-framing",
+  "loaded-language",
+  "emphasis-framing",
+  "labeling"
+ ],
+ "selection_uncertainty": [
+  "Soruşturma sürüyor; sonuç belli değil.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "'Kayyum/kayyım' farkı ve 'kara para' nitelemesi sorumluluğu erkenden belirleyebilir."
+}

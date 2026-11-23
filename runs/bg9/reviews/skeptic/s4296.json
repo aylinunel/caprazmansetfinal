@@ -1,0 +1,189 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Oktay Saral haberinde karşılaştırılan ifadelerin karar açısından eşdeğer olduğu ve tercihin sunuma bağlandığı metinde belirtilmiyor.",
+   "alternative_explanation": "Başlık farkları farklı bilgi unsurlarını öne çıkarma tercihinden kaynaklanıyor olabilir; eşdeğerlik kanıtlı değil.",
+   "missing_context": [
+    "Eşdeğer seçeneklerin açıkça belirtilmesi",
+    "Tercihin sunuma bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Oktay Saral haberinde bir grup aidiyetinin kredibilite, suçlama veya fayda farkına bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Grup adlarının anılması tanımlayıcı bilgi olabilir; farklı muamele kanıtı yok.",
+   "missing_context": [
+    "Karşılaştırılabilir vakalarda tutarsız standart kanıtı"
+   ]
+  },
+  {
+   "card_id": "attentional-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Azerbaycan istemişti: Erdoğan, başdanışmanı Oktay Saral'ı görevden aldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Oktay Saral görevinden istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı gelişmenin farklı yönlerine (Azerbaycan talebi, istifa) odaklanmış; bu eşzamanlı karşılaştırma eşit olmayan dikkati gösterir, ancak bunun belirli bir yargıya haksız etkisi kanıtlanmıyor.",
+   "alternative_explanation": "Kurumların farklı yayın önceliği ve okur kitlesi farklı vurguyu açıklayabilir.",
+   "missing_context": [
+    "Dikkat dağılımının bir sonuca bağlandığını gösteren kayıt",
+    "Göz ardı edilen karşı kanıtın erişilebilir olduğunun kanıtı"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Başdanışmanı Oktay Saral'ın görevden alındığını öne sürdü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Evrensel satırı, bir gazetecinin iddiasını ve ikinci bir gazetecinin doğrulamasını aktarıyor; ancak bu kaynaklara karar verici ağırlık verildiği veya değerlendirmenin onlarla ikame edildiği gösterilmiyor.",
+   "alternative_explanation": "Resmî kaynaktan alıntı, haber üretiminde olağan atıf pratiğidir.",
+   "missing_context": [
+    "Kaynağın iddiasının bağımsız doğrulanıp doğrulanmadığı"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Oktay Saral haberinde önceden belirtilmiş bir inanç ve kanıta asimetrik muamele metinde yer almıyor.",
+   "alternative_explanation": "Haber derlemesi, olaya ilişkin açıklanmış bilgileri aktarıyor olabilir.",
+   "missing_context": [
+    "Yazarın açık önceki inancı",
+    "Karşıt kanıtın dışlandığını gösteren unsur"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Oktay Saral haberinde belirgin bir ayrıntı ile bir yargı arasında açık, haksız bir bağ kurulmuyor; belirgin olmak tek başına hata kanıtı değil.",
+   "alternative_explanation": "Haber değeri taşıyan ayrıntının öne çıkarılması olağan editoryal tercihtir.",
+   "missing_context": [
+    "Belirgin ve belirgin olmayan bilginin ağırlığını karşılaştıran davranış kanıtı"
+   ]
+  }
+ ]
+}

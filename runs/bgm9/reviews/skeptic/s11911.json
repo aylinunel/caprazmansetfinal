@@ -1,0 +1,256 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "eski Aile Bakanı ve eski AKP Genel Başkan Yardımcısı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "AKP'li eski Bakan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fondan 2.2 milyar liralık kazanç etmesiyle gündeme geldikten sonra tutuklanan AKP'li eski Bakan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sol, Birgün, Evrensel ve Akit aynı kişiyi farklı unvan ve nitelemelerle anıyor; Evrensel'in niteleme ifadesi tanımlamanın ötesine geçen bir bilgi taşıyor, ancak diğerleri kimlik bildiriyor.",
+   "alternative_explanation": "Unvanlar kişinin geçmiş görevini bildiren olgusal tanımlamalar olabilir.",
+   "missing_context": [
+    "Kullanılan etiketin kurumun kendi sesi olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya cezaevinde bayıldı, hastaneye kaldırıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya cezaevinde rahatsızlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya hastaneye götürüldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "NTV 'bayıldı, hastaneye kaldırıldı', Habertürk ve Mynet 'rahatsızlandı', Karar 'hastaneye götürüldü' diyor; ağırlık dereceleri farklı sözcüklerle aynı olay anlatılıyor.",
+   "alternative_explanation": "Kurumların elindeki bilgi düzeyi farklı olabilir; 'rahatsızlandı' genel bir sözcük.",
+   "missing_context": [
+    "Kurumların kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturmasında tutuklanan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fondan 2.2 milyar liralık kazanç etmesiyle gündeme geldikten sonra",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "tedavi sonrası taburcu edildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Koğuşta Bayıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Sol soruşturmayı, Evrensel kazanç tutarını, Sondakika tedavi ve taburcu sonucunu, Onedio ise olay yerini (koğuş) öne çıkarıyor.",
+   "alternative_explanation": "Farklı kurumların farklı bilgiye erişimi başlık farkına yol açmış olabilir.",
+   "missing_context": [
+    "Kurumların kaynakları"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Türkiye’yi sarsan fon soruşturması",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturması kapsamında Silivri Cezaevi'nde tutuklu bulunan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sol ve Birgün 'vurgun', Akit 'Türkiye'yi sarsan' diyerek soruşturmayı değerlendirici sözcüklerle anıyor; Habertürk aynı soruşturmayı 'fon soruşturması' olarak tarafsız adlandırıyor.",
+   "alternative_explanation": "'Vurgun' ve 'sarsan' soruşturmanın kamuoyundaki adı olarak kullanılıyor olabilir.",
+   "missing_context": [
+    "Ifadelerin resmî ad olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "geçirdiği rahatsızlık nedeniyle hastaneye kaldırıldı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Birgün 'rahatsızlık nedeniyle hastaneye kaldırıldı' diyor; bu bağlantı olayın doğal ve açıkça belirtilmiş açıklaması olup yalnızca birlikte görülme veya zaman sırası değil.",
+   "alternative_explanation": "Hastaneye sevkin nedeni olarak rahatsızlığın belirtilmesi olağandır.",
+   "missing_context": [
+    "Bağlantıyı zayıflatan bir bilgi"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber tek bir sağlık olayını anlatıyor; cezaevi sağlık koşulları gibi yapısal bir sorun olarak sunulduğuna dair işaret yok.",
+   "alternative_explanation": "Haber tek vaka bildirimidir.",
+   "missing_context": [
+    "Yinelenen veya yapısal bir sorun olduğunu gösteren bağlam"
+   ]
+  }
+ ]
+}

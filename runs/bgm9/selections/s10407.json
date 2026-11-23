@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "labeling",
+  "word-choice",
+  "emphasis-framing",
+  "spin",
+  "responsibility-framing"
+ ],
+ "selection_uncertainty": [
+  "'Devlet unutmaz' bakan alıntısı olabilir; kurum tekniği değildir.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "'Hain saldırı', 'Devletimiz unutmaz!' gibi kurumun kendi sözcükleri değerlendirilmeli."
+}

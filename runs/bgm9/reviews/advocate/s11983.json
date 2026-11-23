@@ -1,0 +1,305 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rozeti Başkan Erdoğan takacak iddiası",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rota AK Parti mi?",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Antalya'da CHP'den iki istifa",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İstifa bilgisi CHP kaynakları tarafından da doğrulandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifa haberinde A Haber Erdoğan'ın rozet takacağı iddiasını, Takvim olası AK Parti geçişini, Hürriyet iki istifayı, Habertürk doğrulamayı öne çıkarıyor.",
+   "alternative_explanation": "Farklı kurumlar olayın farklı yönlerini aktarıyor olabilir.",
+   "missing_context": [
+    "Kaynak ayrıntıları"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rota AK Parti mi?",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yarın AK Parti’ye geçmesi bekleniyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim başlığı beklenen sonucu ('Rota AK Parti mi?') başa koyuyor, TGRT 'Yarın AK Parti’ye geçmesi bekleniyor' ile projeksiyon ekliyor; ancak her iki başlıkta da istifa olayı başlığın içinde yer alıyor.",
+   "alternative_explanation": "İstifa olayı başlıkta açıkça bildiriliyor; beklenti ek bilgidir.",
+   "missing_context": [
+    "Başlıkların ana yan cümlesi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Antalya'da istifa depremi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Siyaset gündemini sarsan son dakika gelişmesi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Antalya Büyükşehir Belediye Başkan Vekili Büşra Özdemir, CHP’den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Sabah 'istifa depremi', A Haber 'gündemi sarsan' ifadelerini kendi sesiyle kullanıyor; Anka ve Posta aynı olguyu bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "'Deprem' siyasi haber dilinde yaygın deyimsel abartıdır.",
+   "missing_context": [
+    "Başlıkların alıntı olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'ye katılacağı iddia edilmişti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AK Parti'ye geçeceği konuşulan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Yarın AK Parti’ye geçmesi bekleniyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "partiden ayrıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olası parti geçişi için Evrensel 'iddia edilmişti', Karar 'konuşulan', TGRT 'bekleniyor' diyor; bu sözcükler olguya olasılık ve doğruluk derecesi açısından farklı çağrışım katıyor.",
+   "alternative_explanation": "Farklı kurumlar farklı kaynaklara (kulis, iddia) dayanıyor olabilir.",
+   "missing_context": [
+    "Kaynak atıfları"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Siyaset gündemini sarsan son dakika gelişmesi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Rozeti Başkan Erdoğan takacak iddiası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ankara kulislerini hareketlendiren",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Antalya Büyükşehir Belediye Başkanvekili Büşra Özdemir, CHP’den istifa etti.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      3
+     ]
+    }
+   ],
+   "mechanism": "A Haber başlık ve lede içinde abartılı bir etiket ('sarsan gelişme'), seçilmiş bir iddia (rozet) ve kulis vurgusunu birlikte kullanıyor; hepsi AK Parti geçişi dramasını öne çıkaran aynı yönde. NTV aynı gerçeği bu öğeler olmadan veriyor.",
+   "alternative_explanation": "Siyasi haber dilinde olağan abartılı üslup olabilir.",
+   "missing_context": [
+    "A Haber lede metninin tamamı"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AK Parti'ye geçeceği konuşulan Antalya Büyükşehir Belediye Başkanvekili Büşra Özdemir",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı kurumlar aktörü 'AK Parti'ye geçeceği konuşulan' ifadesiyle tanımlıyor; ancak bu meşruiyet değerlendirmesi taşıyan bir sıfat değil, atıflı bir bilgi.",
+   "alternative_explanation": "Unvan farkları imla düzeyindedir.",
+   "missing_context": [
+    "Başka etiket örnekleri"
+   ]
+  }
+ ]
+}

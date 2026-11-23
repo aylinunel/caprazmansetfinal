@@ -1,0 +1,229 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni Parti'ye katılım açıklamasına saatler kala Bakırköy Belediyesi'ne operasyon: 68 kişi hakkında gözaltı kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'ne ihale operasyonu: Başkan yardımcıları ve meclis üyelerinin de olduğu 68 kişi için gözaltı kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "SON DAKİKA | Bakırköy Belediyesi'ne 'ihale' operasyonu: 68 gözaltı kararı! 2024-2026 yıllarına ait 42 ihale mercek altında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı 68 kişilik gözaltı kararını bir kurum siyasi zamanlama, bir başkası gözaltındaki görevlilerin unvanları, bir diğeri incelenen ihale sayısı üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Seçilen ayrıntıların hepsi olgusal; kurumlar farklı kaynak açıklamalardan farklı bilgileri almış olabilir.",
+   "missing_context": [
+    "Başsavcılık açıklamasının tam metni",
+    "Yeni Parti katılım açıklamasının zamanlamasına dair doğrulama"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'ne yolsuzluk operasyonu: 58 kişi gözaltında",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'ne yönelik usulsüzlük soruşturması: 68 şüpheli hakkında gözaltı kararı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'ndeki soruşturmada 68 şüpheli için gözaltı kararı çıkarıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı operasyonu bazı kurumlar kendi seslerinde 'yolsuzluk operasyonu', biri 'usulsüzlük soruşturması', diğerleri yalnızca 'soruşturma' ya da 'operasyon' diye adlandırıyor; 'yolsuzluk' suçun varlığını çağrıştırırken 'soruşturma' nötr kalıyor.",
+   "alternative_explanation": "Suçlamalar ('ihaleye fesat karıştırma', 'irtikap') yolsuzluk kategorisine giriyor; 'yolsuzluk' nitelemesi suçlama türünün kısa adı olarak da okunabilir.",
+   "missing_context": [
+    "Soruşturmadaki suçlamaların resmi adları ve aşaması"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Son dakika! Bakırköy Belediyesi'ne dev operasyon!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'ne operasyon: 68 gözaltı kararı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum 'dev operasyon' ve ünlem kullanıyor, başkaları aynı olayı bu sözcük olmadan veriyor; ancak 'dev' burada 68 kişilik ölçeği anlatan bir büyüklük sıfatı olarak da okunabilir ve kartın örneklediği değerlendirici sözcüklerle aynı türde olup olmadığı belirsiz.",
+   "alternative_explanation": "'Dev' operasyonun boyutunu anlatan yaygın bir habercilik sıfatıdır; olaya ahlaki bir değer yüklemeyebilir.",
+   "missing_context": [
+    "Kurumun benzer ölçekteki başka operasyonlarda aynı sıfatı kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakırköy Cumhuriyet Başsavcılığından yapılan açıklamada, Bakırköy Belediye Başkanlığı tarafından yapılan mal ve hizmet alımına ilişkin ihale dosyalarında suç teşkil eden usulsüzlükler neticesinde kamu zararı oluştuğu",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metindeki tek nedensel ifade ('usulsüzlükler neticesinde kamu zararı') başsavcılık açıklamasına atfediliyor; kurumun kendi nedensellik iddiası değil.",
+   "alternative_explanation": "Kullanılan nedensel bağlaçlar olayın doğrudan fiziksel ya da usul sonucunu anlatıyor veya resmi bir kaynağa atfediliyor.",
+   "missing_context": [
+    "Nedensel bağın dayandığı kanıtın türü"
+   ]
+  },
+  {
+   "card_id": "selective-statistics",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakırköy Belediyesi'ne yönelik operasyonda 68 kişiden 57'si gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum 68 kişiden 57'sinin gözaltına alındığını veriyor; pay ve payda belli, ancak başka bir karşılaştırma nüfusu yok ve iddia paydanın kapsamıyla sınırlı.",
+   "alternative_explanation": "Oran gözaltı işlemlerinin ilerleyişini aktaran olgusal bir güncellemedir.",
+   "missing_context": [
+    "Farklı saatlerdeki gözaltı sayılarının resmi kaynağı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurumun kendi ifadesi yalnızca iki seçeneği tek seçenek olarak sunmuyor.",
+   "alternative_explanation": "Başlıklar olgusal gelişmeyi aktarıyor; ya-ya da yapısında bir seçenek daraltması yok.",
+   "missing_context": [
+    "İki seçenekli bir kurgu içeren başlık ya da spot"
+   ]
+  }
+ ]
+}

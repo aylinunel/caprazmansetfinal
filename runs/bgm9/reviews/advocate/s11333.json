@@ -1,0 +1,313 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sözcü TV'ye operasyon... Kanala kayyım atandı, Özgür Özel'den tepki",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sözcü TV'ye FETÖ operasyonu! Kayyım atandı, 2 gözaltı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sözcü TV'ye kayyum atandı: Program yarıda kesildi, belgesel başladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sözcü TV'ye operasyon, kayyım atandı, yayın durduruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sözcü TV'ye atanan kayyım belli oldu!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    }
+   ],
+   "mechanism": "Aynı kayyum atamasını anka siyasi tepkiyi, turkiyegz FETÖ soruşturmasını, sondakika yayın kesintisini, agos yayının durdurulmasını, cumhuriyet kayyımın kimliğini başlığa taşıyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sözcü Medya Grubu binasına sabah polis baskını düzenlendi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "polis baskını",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sözcü TV'ye kayyım atandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sözcü TV'ye operasyon: Yöneticiler dahil 4 kişi gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı işlem evrensel ve posta tarafından 'polis baskını', diğer kurumlar tarafından 'operasyon' ve 'arama' olarak adlandırılıyor; 'baskın' ile 'operasyon' arasında çağrışım farkı var.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Savcılık FETÖ soruşturmasını duyurdu: Şüpheli firari Burak Akbay",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sözcü'nün sahibi Burak Akbay",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "hakkında yakalama kararı bulunan Burak Akbay",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi takvim'de 'şüpheli firari', evrensel'de 'Sözcü'nün sahibi', hurriyet'te 'hakkında yakalama kararı bulunan' diye anılıyor. 'Firari' ifadesi başlıkta savcılık duyurusundan sonra geliyor; kurumun kendi sesi mi, aktarım mı olduğu net değil.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başsavcılık, Sözcü'nün sahibi Burak Akbay'ın şirketlere yurt dışı hesaplarından finansman sağladığı iddiasını gerekçe gösterdi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Savcılık FETÖ soruşturmasını duyurdu: Şüpheli firari Burak Akbay",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor ve sorumluluk belirsiz. Ancak ilgili başlıklarda 'iddia', 'savcılık duyurdu', 'soruşturma kapsamında' gibi atıf işaretleri bulunuyor; atfın yokluğu koşulu karşılanmıyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Sözcü TV'ye kayyum atandı: Gözaltılar var! Savcılık FETÖ soruşturmasını duyurdu: Şüpheli firari Burak Akbay",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Yargıtay'ın daha önce suç olmadığını onadığı bir dosyaya istinaden arama yapılıyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "takvim başlığında ünlem, yalnızca savcılık anlatısı (FETÖ soruşturması) ve 'şüpheli firari' etiketi birlikte yer alıyor; üçü de kanal yönetimine karşı olumsuz yöne işaret ediyor. sol aynı olguları avukatın karşı sözünü de içererek veriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "medya dünyasında adeta bomba etkisi yarattı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sözcü TV'ye FETÖ operasyonu!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sözcü Tv'ye kayyım atandı. Yöneticileri gözaltına alındı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "posta 'bomba etkisi' ve büyük harfli soru başlıklarıyla, turkiyegz 'FETÖ operasyonu!' ifadesiyle kendi sesinde değerlendirici/duygu yüklü anlatım kullanıyor; ntv aynı olguları bunlar olmadan bildiriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  }
+ ]
+}

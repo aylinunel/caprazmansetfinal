@@ -1,0 +1,215 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 14:23] Sergen Yalçın A Milli Takım kadrosunu açıkladı: Fenerbahçeli yıldızlar kadro dışı kaldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[takvim · 14:00] Sergen Yalçın Milli Takım aday kadrosunu açıkladı! Berke Özer geri döndü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kadro açıklamasında Milli Gazete kadro dışı kalanları, Takvim kadroya geri dönen oyuncuyu öne çıkarıyor.",
+   "alternative_explanation": "Her iki ayrıntı da haber değeri taşıyor; seçim okur ilgisine göre yapılmış olabilir.",
+   "missing_context": [
+    "Haber gövdelerinde diğer boyutların da yer alıp almadığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberturk · 14:04] Sergen Yalçın'dan flaş karar!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aa · 02:39] Sergen Yalçın, A Milli Futbol Takımı'nın aday kadrosunu açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Habertürk kendi sesiyle 'flaş karar' nitelemesini kullanıyor; AA aynı olguyu nitelemesiz veriyor.",
+   "alternative_explanation": "'Flaş' spor basınında sık kullanılan bir dikkat çekme kalıbıdır.",
+   "missing_context": [
+    "Değerlendirici ifadenin haberin gövdesinde bir kaynağa atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçeli yıldızlar kadro dışı kaldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[star · 14:43] A Milli Takım kadrosunda değişim rüzgarı: Sergen Yalçın o isimleri çağırmadı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Kadro dışı kaldı' ve 'çağırmadı' aynı durumu farklı özne ve sözcüklerle anlatıyor; anlam farkı belirgin bir çağrışım farkından çok dilbilgisel.",
+   "alternative_explanation": "İki ifade de futbol dilinde yaygın ve nötr kullanımlardır.",
+   "missing_context": [
+    "Sözcüklerin bu yayın türünde yerleşik kullanımına dair bilgi"
+   ]
+  },
+  {
+   "card_id": "cherry-picking",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar kadro dışı kalan ya da dönen oyuncuları aktarıyor; belirli örnekleri genel bir sonucun kanıtı olarak sunan ve bağlamdaki sınırlayıcı verileri dışarıda bırakan bir yapı görülmüyor.",
+   "alternative_explanation": "Bir kadro haberi doğası gereği isim seçimi içerir.",
+   "missing_context": [
+    "Genel sonucu sınırlayan aynı kaynaktan veriler"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[onedio · 14:23] A Milli Takım Teknik Direktörü Sergen Yalçın Aday Kadroyu Açıkladı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 14:31] Sergen Yalçın kadroyu açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar Sergen Yalçın için aynı görevsel unvanı kullanıyor; değerlendirici bir sıfat farkı yok. 'Fenerbahçeli' kulüp kimliğini belirtiyor.",
+   "alternative_explanation": "Unvan farkları yalnızca uzunluk düzeyinde.",
+   "missing_context": [
+    "Aynı aktör için değerlendirici bir etiket"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde yalnızca iki seçeneği tek seçenek olarak sunan bir ya…ya da kalıbı yok.",
+   "alternative_explanation": "Haberler bir gelişmeyi aktarıyor; seçenekler arasında bir tercih dayatmıyor.",
+   "missing_context": [
+    "İki seçenekli bir kalıp kullanan başlık ya da spot"
+   ]
+  }
+ ]
+}

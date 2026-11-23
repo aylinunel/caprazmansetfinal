@@ -1,0 +1,225 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İş insanı Cafer Mahiroğlu'na yönelik",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kayyım atanan Halk TV'nin sahibi Cafer Mahiroğlu'na",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi bir kurumda \"iş insanı\", diğerinde \"Kayyım atanan Halk TV'nin sahibi\" diye anılıyor.",
+   "alternative_explanation": "İki niteleme de olgusal kimlik bilgisi; değerlendirme taşıyıp taşımadığı tartışmalı.",
+   "missing_context": [
+    "Kurumların bu kişiyi önceki haberlerde nasıl andığı"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Milyonlarca liralık rüşvet iddiası! Cafer Mahiroğlu soruşturmasında 7 gözaltı daha",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Halk TV dahil şirketlerine kayyım atanan Cafer Mahiroğlu'na yönelik soruşturmada 7 gözaltı daha",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı 7 gözaltı bir kurumda rüşvet iddiasının büyüklüğü, diğerinde şirketlere kayyım atanması bağlamıyla öne çıkarılıyor.",
+   "alternative_explanation": "Kurumların okur kitlesine göre farklı bağlam seçmesi olağan.",
+   "missing_context": [
+    "Soruşturma dosyasının içeriği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cafer Mahiroğlu'na yönelik soruşturmada 7 şüpheli yakalandı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cafer Mahiroğlu'na yönelik soruşturmada 7 şüpheli gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı işlem bir kurumda \"yakalandı\", diğerinde \"gözaltına alındı\" diye veriliyor.",
+   "alternative_explanation": "Polis haberciliğinde iki ifade sık sık eş anlamlı kullanılır; çağrışım farkı belirsiz.",
+   "missing_context": [
+    "Kurumun bu ifadeleri kullanma alışkanlığı"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cafer Mahiroğlu soruşturmasında yeni dalga",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "\"Dalga\" bir metafor; ancak Türkçe operasyon haberciliğinde kalıplaşmış bir terim ve rol atamıyor.",
+   "alternative_explanation": "Yerleşik kurumsal terim.",
+   "missing_context": [
+    "—"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "14 Ekim'de kayyum atanan Halk TV'nin sahibi Cafer Mahiroğlu'na yönelik soruşturmada",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Savcılık, Mahiroğlu'na ait olduğu belirtilen bir şirket ile İzmir Büyükşehir Belediyesi ilişkisini soruşturuyor.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kurumlar yeni gözaltıları önceki kayyum kararı ve belediye ilişkisini kapsayan bir soruşturma süreci içine yerleştiriyor.",
+   "alternative_explanation": "Bağlamın verilmesi bilgilendirici bir haber pratiği.",
+   "missing_context": [
+    "Birinci dalganın ayrıntıları"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde hiçbir kurum kendi sesiyle yalnızca iki seçenek sunan bir \"ya … ya\" kalıbı kullanmıyor.",
+   "alternative_explanation": "Olay haberi bir seçenekler tartışması içermiyor.",
+   "missing_context": [
+    "İki seçenekli bir ifade"
+   ]
+  }
+ ]
+}

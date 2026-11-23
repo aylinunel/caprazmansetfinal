@@ -1,0 +1,187 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir alandaki olumlu izlenimin başka bir alandaki yargıya taşındığı açıkça gösterilmiyor.",
+   "alternative_explanation": "Metindeki sunum, olayı sıradan haber akışı, yayın saati veya editoryal üslup gereği aktarıyor olabilir; bilişsel yanlılık çıkarımı için dayanak yok.",
+   "missing_context": [
+    "Karar veya yargıyı açıkça gerekçelendiren metin",
+    "Başlık ve lede dışındaki tam haber metni"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde otorite sahibi kaynaklar anılıyor olabilir, ancak otoritenin statüsüne kararı belirleyici ağırlık veren ya da karşıt kanıtı görmezden gelen bir gerekçe gözlenmiyor.",
+   "alternative_explanation": "Metindeki sunum, olayı sıradan haber akışı, yayın saati veya editoryal üslup gereği aktarıyor olabilir; bilişsel yanlılık çıkarımı için dayanak yok.",
+   "missing_context": [
+    "Karar veya yargıyı açıkça gerekçelendiren metin",
+    "Başlık ve lede dışındaki tam haber metni"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Emine Erdoğan, COP31 Liderler Zirvesi'ne katılan liderler ve eşleriyle yakından ilgilendi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Emine Erdoğan, COP31 Liderler Zirvesi'ne katılan liderler ve eşlerini tek tek karşıladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olgu başlıklarda farklı boyutlardan sunuluyor, ancak metin bu sunum farkını bir yargıya, tercihe veya öneriye bağladığını açıkça göstermiyor; bu yüzden kesin değil.",
+   "alternative_explanation": "Metindeki sunum, olayı sıradan haber akışı, yayın saati veya editoryal üslup gereği aktarıyor olabilir; bilişsel yanlılık çıkarımı için dayanak yok.",
+   "missing_context": [
+    "Karar veya yargıyı açıkça gerekçelendiren metin",
+    "Başlık ve lede dışındaki tam haber metni"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkta öne çıkan bir ayrıntı var, ancak metin bu ayrıntının bir yargıyı veya kararı gerekçelendirmek için kullanıldığını göstermiyor.",
+   "alternative_explanation": "Metindeki sunum, olayı sıradan haber akışı, yayın saati veya editoryal üslup gereği aktarıyor olabilir; bilişsel yanlılık çıkarımı için dayanak yok.",
+   "missing_context": [
+    "Karar veya yargıyı açıkça gerekçelendiren metin",
+    "Başlık ve lede dışındaki tam haber metni"
+   ]
+  },
+  {
+   "card_id": "messenger-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir iddianın değerlendirilmesini habercinin itibarına bağlayan açık bir ifade yok.",
+   "alternative_explanation": "Metindeki sunum, olayı sıradan haber akışı, yayın saati veya editoryal üslup gereği aktarıyor olabilir; bilişsel yanlılık çıkarımı için dayanak yok.",
+   "missing_context": [
+    "Karar veya yargıyı açıkça gerekçelendiren metin",
+    "Başlık ve lede dışındaki tam haber metni"
+   ]
+  },
+  {
+   "card_id": "priming",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki bir uyaranla sonraki bir tepki arasında açık bağ veya karşılaştırmalı gözlem yok.",
+   "alternative_explanation": "Metindeki sunum, olayı sıradan haber akışı, yayın saati veya editoryal üslup gereği aktarıyor olabilir; bilişsel yanlılık çıkarımı için dayanak yok.",
+   "missing_context": [
+    "Karar veya yargıyı açıkça gerekçelendiren metin",
+    "Başlık ve lede dışındaki tam haber metni"
+   ]
+  }
+ ]
+}

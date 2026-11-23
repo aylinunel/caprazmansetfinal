@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "salience-bias",
+  "affect-heuristic",
+  "halo-effect"
+ ],
+ "selection_uncertainty": [
+  "Ölüm nedeni resmi olarak açıklanmamış olabilir.",
+  "Çoğu başlık nötr."
+ ],
+ "selection_note": "Hastalık vurgusu ve 'acı kayıp' gibi ifadeler belirginlik ve duygu çerçevesine aday."
+}

@@ -1,0 +1,218 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sozcu · 13:36] Cristiano Ronaldo Portekiz Milli Takımı'nı bıraktı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[mynet · 13:31] Bir devrin sonu! Cristiano Ronaldo milli takımı bıraktığını açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkına bağlanan bir tercih, yargı ya da öneri içermiyor.",
+   "alternative_explanation": "Başlık farkları yayın üslubundan kaynaklanabilir; olay bir karar vericinin seçenekler arasında tercih yaptığı bir durum değil.",
+   "missing_context": [
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğine dair veri"
+   ]
+  },
+  {
+   "card_id": "nostalgia-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Madeira'da sadece küçük bir çocukken futbol topunun peşinden koşarak başlayan hayali",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Türkiye Gazetesi'nin aktardığı veda sözlerinde geçmişe dönük bir anı var; ancak harcama, tasarruf ya da ödeme isteği gibi parasal bir tercih yok.",
+   "alternative_explanation": "Anı, bir veda mesajının doğal içeriğidir ve bir satın alma kararıyla ilişkili değildir.",
+   "missing_context": [
+    "Nostaljik bir uyaranla bağlantılı parasal karar"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[milligazete · 14:21] Cristiano Ronaldo veda etti: O olay sonu getirdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Milli Gazete başlığı belirsiz bir 'olay'ı öne çıkarıyor; ancak çarpıcı bir ayrıntının bir yargının yerine geçtiğini gösteren açık bir bağ ya da karşılaştırma yok.",
+   "alternative_explanation": "Başlık, başka bir kurumun da aktardığı teknik direktörle kriz iddiasını kısaltıyor olabilir.",
+   "missing_context": [
+    "Çarpıcı ayrıntı ile daha az çarpıcı bilgi arasında ağırlıklandırma karşılaştırması",
+    "Ayrıntının sıklık kanıtı gibi kullanıldığına dair ifade"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Futbol tarihine adını altın harflerle yazdıran Cristiano Ronaldo",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumlu değerlendirme tek bir alanda (futbol kariyeri) kalıyor; başka bir alanda türetilmiş olumlu bir yargı yok.",
+   "alternative_explanation": "Övgü, metinde verilen kayıtlı başarılarla (234 maç, 146 gol) uyumlu bir nitelendirme.",
+   "missing_context": [
+    "İki farklı alanda verilen yargı ve aralarındaki açık bağ",
+    "Ölçütlerin yerine izlenimin geçtiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "rosy-retrospection",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde geçmişin bugünden daha iyi olduğunu öne süren karşılaştırmalı bir geriye dönük iddia ve bunu düzelten çağdaş kayıt yok.",
+   "alternative_explanation": "Geçmişe göndermeler kariyer ya da olay özetidir; idealleştirilmiş bir karşılaştırma değildir.",
+   "missing_context": [
+    "Çağdaş kayıtlarla karşılaştırılabilecek geriye dönük bir iddia"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Ronaldo'nun son dönemde Portekiz Teknik Direktörü Jorge Jesus'la yaşadığı kriz, ayrılıkta önemli rol oynadığı ifade ediliyor.",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 14:41] Cristiano Ronaldo, milli takımı bıraktığını açıkladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mynet ayrılığa bir kriz ayrıntısı eklerken DHA yalnızca kararın duyurulduğunu aktarıyor; bu, anlatılar arasında bir keskinleştirme farkı olarak kaydedilebilir, ancak bunun bir sonucu etkilediği gösterilmiyor.",
+   "alternative_explanation": "Fark, Mynet'in ek bir kaynağa sahip olmasından kaynaklanabilir; iddia 'ifade ediliyor' diye atfedilmiş.",
+   "missing_context": [
+    "Özgün kaynak metni (resmî açıklama ya da kurum duyurusu)",
+    "Farkın bir sonuca ya da karara etki ettiğine dair kanıt"
+   ]
+  }
+ ]
+}

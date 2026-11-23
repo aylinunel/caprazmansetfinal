@@ -1,0 +1,220 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi hayatını kaybetti: Ölüm nedeni açıklanmadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi hayatını kaybetti: Moskova'dan komplo teorilerine cevap",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi Aleksandr Darçiyev hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölüm bir başlıkta nedenin açıklanmaması, bir başlıkta komplo teorilerine verilen yanıt, bir başlıkta yalnızca ölüm olgusu üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Başlıklar resmi açıklamanın farklı aşamalarına denk gelen bilgi düzeylerini yansıtıyor olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi ölü bulundu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi Aleksandr Darçiyev hayatını kaybetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Son dakika: Rusya'nın ABD Büyükelçisi öldü",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölüm 'ölü bulundu', 'hayatını kaybetti' ve 'öldü' sözcükleriyle anlatılıyor; 'ölü bulundu' şüpheli bir ölüm çağrışımı taşırken 'hayatını kaybetti' nötr.",
+   "alternative_explanation": "'Ölü bulundu' kaynak dildeki bir ifadenin çevirisi olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi aniden öldü: Rusya açıklamadı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Başlıkta 'aniden' ve 'Rusya açıklamadı' vurgusu var; ancak bunlar kartta sayılan türden açık değerlendirme sözcükleri değil.",
+   "alternative_explanation": "'Aniden' resmi açıklamada da geçen olgusal bir betimleme olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Darchiyev, Washington'daki görevine Mart 2025'te başlamıştı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Lede'ler yalnızca kişisel görev geçmişi veriyor; olayı bir eğilim ya da kurumsal süreç içine yerleştiren bir ifade yok.",
+   "alternative_explanation": "Görev başlangıç tarihi biyografik arka plan bilgisidir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "diplomatın Moskova'da kronik bir rahatsızlık nedeniyle öldüğünü açıkladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metindeki tek nedensellik ifadesi Rusya Dışişleri Sözcüsüne atfediliyor; kurumun kendi sesinde bir neden iddiası yok.",
+   "alternative_explanation": "Kurum resmi açıklamayı aktarıyor.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sağlanan bağlam konunun tekrarlayan ya da yapısal bir örüntü olduğunu göstermiyor.",
+   "alternative_explanation": "Tek bir ölüm haberi doğası gereği olay odaklıdır.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

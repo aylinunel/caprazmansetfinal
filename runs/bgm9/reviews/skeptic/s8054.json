@@ -1,0 +1,232 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "BDDK Başkan Yardımcısı gözaltına alındı! Fon soruşturmasında gözaltı sayısı 4'e çıktı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında BDDK Başkan Yardımcısı Muhammet Erişen gözaltına alındı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Mynet gözaltı sayısını da veriyor, Haberler yalnızca kişiyi; ancak iki başlık da kişiyi öne çıkardığı için boyut farkı zayıf.",
+   "alternative_explanation": "Boyut farkları yayın saatindeki bilgi düzeyine, hedef okur kitlesine ve başlık uzunluğuna bağlı olabilir.",
+   "missing_context": [
+    "Her kurumun tam metni",
+    "Başlıkların güncellenme geçmişi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında iki tutuklama daha! BDDK Başkan Yardımcısı ve banka genel müdürü cezaevinde",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında yeni gelişme: BDDK Başkan Yardımcısı ve banka genel müdürü tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Yönaç bazı kurumlarda 'Adil Katılım Bankası Genel Müdürü', bazılarında 'banka genel müdürü' olarak anılıyor; bu farklar değerlendirme değil kısaltma.",
+   "alternative_explanation": "Unvan farkları kurumların yerleşik üslup kılavuzlarından ya da başlık uzunluğundan kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların üslup kılavuzları",
+    "Aynı kurumların başka haberlerdeki unvan kullanımı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması: BDDK Başkan Yardımcısı Erişen ve Katılım Bankası Genel Müdürü Yönaç tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturması: BDDK Başkan Yardımcısı Erişen ve Adil Katılım Bankası Genel Müdürü Yönaç tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Evrensel soruşturmayı 'fon vurgunu soruşturması', Kısa Dalga 'fon soruşturması' diye adlandırıyor; 'vurgun' yağma çağrıştırıyor.",
+   "alternative_explanation": "Sözcük farkları kaynak metnin farklı aktarılmasından ya da bilgi düzeyinden kaynaklanabilir.",
+   "missing_context": [
+    "Kurumların kaynak aldığı resmi metin",
+    "Aynı kurumların benzer olaylardaki sözcük tercihi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturması",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturması: BDDK Başkan Yardımcısı Erişen ve Adil Katılım Bankası Genel Müdürü Yönaç tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Evrensel kendi sesinde 'vurgun' sözcüğünü kullanıyor; Kısa Dalga aynı olguları bu sözcük olmadan veriyor.",
+   "alternative_explanation": "Değerlendirme yüklü sözcükler bazı kurumların genel başlık üslubunun parçası olabilir.",
+   "missing_context": [
+    "Kurumun aynı türdeki başka haberlerde aynı sözcükleri kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında iki tutuklama daha! BDDK Başkan Yardımcısı ve banka genel müdürü cezaevinde",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Star 'iki tutuklama daha!' ifadesiyle tutuklamaları süren bir soruşturma serisinin parçası olarak veriyor.",
+   "alternative_explanation": "Arka plan bilgisi vermek olağan haber pratiğidir; bu bir bağlam etkisidir, hata değildir.",
+   "missing_context": [
+    "Kurumun tam metnindeki bağlam bilgisinin kapsamı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde iki seçeneği tek seçenek olarak sunan bir kalıp bulunmuyor.",
+   "alternative_explanation": "Soru biçimli başlıklar ikili bir seçenek dayatmıyor; bilgi talebi biçiminde kurulmuş.",
+   "missing_context": [
+    "Yalnızca iki seçenek sunan ifade ve göz ardı edilen başka seçenek"
+   ]
+  }
+ ]
+}

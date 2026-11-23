@@ -1,0 +1,247 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[akit · 19:57] Kaşif Kozinoğlu soruşturmasında yeni gelişme: Başsavcılık Adli Tıp’ın ‘zehirlenmedi’ raporuna itiraz etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ensonhaber · 19:48] Başsavcılık, Kozinoğlu'nun Adli Tıp Kurumu raporuna itiraz etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[tgrt · 20:03] Kaşif Kozinoğlu soruşturmasında yeni gelişme: Savcılık adli tıp raporuna itiraz etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "mezardan alınan örneklerde tespit edilen antimonun kaynağının açıklanmasını ve cezaevinde tükettiği gıdaların incelenmesini istedi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı itirazı veren başlıklardan biri raporun 'zehirlenmedi' sonucunu öne çıkarıyor, diğerleri itirazı soruşturmanın yeni bir gelişmesi olarak veriyor; bir led antimon ve gıda incelemesi taleplerini öne alıyor.",
+   "alternative_explanation": "Farklılıklar kuruluşların dilekçeden aktardığı ayrıntı düzeyine bağlı olabilir.",
+   "missing_context": [
+    "İtiraz dilekçesinin tam içeriği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 19:40] Kaşif Kozinoğlu dosyasında dikkat çeken hamle! Başsavcılıktan Adli Tıp raporuna itiraz",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 21:01] Savcılıktan Kozinoğlu'nun ölümüne ilişkin rapora itiraz",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dirilis · 23:23] Silivri Cumhuriyet Başsavcılığından Kaşif Kozinoğlu kararı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı işlem 'hamle', 'itiraz' ve 'karar' sözcükleriyle adlandırılıyor; 'hamle' stratejik bir hareket, 'itiraz' hukuki bir başvuru çağrıştırıyor.",
+   "alternative_explanation": "'Hamle' gündelik haber dilinde yeni bir adım anlamında kullanılabilir.",
+   "missing_context": [
+    "Kuruluşların benzer savcılık işlemlerinde kullandığı sözcükler"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[turkiyegz · 19:40] Kaşif Kozinoğlu dosyasında dikkat çeken hamle!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 21:01] Savcılıktan Kozinoğlu'nun ölümüne ilişkin rapora itiraz",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir başlık kuruluşun kendi sesinde 'dikkat çeken' değerlendirmesini kullanıyor; aynı itiraz başka bir kuruluşta bu nitelemesiz veriliyor.",
+   "alternative_explanation": "Niteleme gelişmenin önemini belirten hafif bir vurgu olarak görülebilir.",
+   "missing_context": [
+    "Değerlendirici ifadenin olgulara ne kattığına dair karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski MİT mensubu Kaşif Kozinoğlu'nun, 2011 yılında meydana gelen şüpheli ölümüne Silivri Cumhuriyet Başsavcılığınca başlatılan soruşturma sürüyor.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 19:10] Kaşif Kozinoğlu'nun ölümüne ilişkin Adli Tıp raporuna itiraz",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Ölümün sorumluluğu belirlenmemiş ve soruşturma sürüyor; ancak başlıklar ölüm için adı verilen bir aktöre faillik ya da kusur yüklemiyor, yalnızca savcılığın itirazını aktarıyor.",
+   "alternative_explanation": "Başlıkların öznesi bir usul işlemini yapan kurum; bu bir sorumluluk ataması değildir.",
+   "missing_context": [
+    "Ölümle ilgili bir aktörü suçlayan başlık yapısı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Silivri Cezaevi'nde 12 Kasım 2011'de hayatını kaybeden eski MİT görevlisi Kaşif Kozinoğlu'nun 14 yıl sonra yeniden açılan dosyasına",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Eski MİT mensubu Kaşif Kozinoğlu'nun 2011 yılındaki şüpheli ölümüne ilişkin soruşturmada yeni bir gelişme yaşandı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "İtiraz, bazı ledlerde 2011'deki ölümle başlayan ve yıllar sonra yeniden açılan soruşturma süreci içine yerleştiriliyor.",
+   "alternative_explanation": "Süreç bilgisi itirazın anlamını açıklayan gerekli bir bağlamdır.",
+   "missing_context": [
+    "Dosyanın yeniden açılma gerekçesi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde konuyu iki karşıt seçeneğe indiren bir kurgu bulunmuyor.",
+   "alternative_explanation": "Haberler bir usul işlemini aktarıyor.",
+   "missing_context": [
+    "İki seçenekli bir sunum"
+   ]
+  }
+ ]
+}

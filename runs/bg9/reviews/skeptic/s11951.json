@@ -1,0 +1,201 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 14:54] Gizli tanık 'para karşılığı yayın' dedi: Cem Küçük ve Tahir Sarıkaya hakkında iddianame",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar aynı iddianameyi farklı vurgularla (gizli tanık, ceza miktarı, suçlama) veriyor; eşdeğerlik ve bir yargıya bağlanma gösterilmiyor.",
+   "alternative_explanation": "Farklı başlıklar iddianamenin farklı ayrıntılarını özetliyor; bu üslup ve alan farkı olabilir.",
+   "missing_context": [
+    "Sunum farkına bağlı bir yargı ifadesi"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "aynı medya çevresi içerisinde yer aldığı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İddianamede iki kişinin aynı medya çevresinde olduğu belirtiliyor; bir kararın grup üyeliğine bağlandığı ve tutarsız standart uygulandığı gösterilmiyor.",
+   "alternative_explanation": "Medya çevresi ifadesi savcılığın iddiasının bir parçasıdır, kurumların yargısı değildir.",
+   "missing_context": [
+    "Grup kimliğine bağlı farklı muamele kanıtı"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul Cumhuriyet Başsavcılığı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başsavcılık kaynak olarak anılıyor; statünün gerekçeli değerlendirmenin yerine geçtiği gösterilmiyor; iddianame zaten iddia olarak aktarılıyor.",
+   "alternative_explanation": "İddianame içeriğinin savcılıktan aktarılması gerekli haber pratiğidir.",
+   "missing_context": [
+    "Savcılık statüsünün karşıt kanıt yerine geçtiğini gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceden belirtilmiş bir inanç ve kanıtın asimetrik işlendiğine dair ifade yok.",
+   "alternative_explanation": "Metin iddianame içeriğini aktarıyor; kurumun önceki bir inancı belirtilmiyor.",
+   "missing_context": [
+    "Kurumun önceki bir inancı",
+    "Karşıt kanıta tutumu gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "illusory-truth-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Gizli tanık 'para karşılığı yayın' dedi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İddia birçok kurumda tekrarlanıyor, fakat önermenin bağımsız olarak yanlış olduğu ve tekrarın kabulü artırdığı gösterilmiyor; iddia olarak sunuluyor.",
+   "alternative_explanation": "Aynı iddianameyi aktaran kurumların benzer metni kullanması doğal bir haber tekrarıdır.",
+   "missing_context": [
+    "Önermenin yanlış olduğuna dair bağımsız kanıt",
+    "Tekrarın kabulü artırdığına dair kanıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "28 milyonluk transfer: Gizli tanık ne dedi?",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı rakam ve gizli tanık öne çıkarılıyor; bunun bir yargıya dayanak yapıldığı gösterilmiyor.",
+   "alternative_explanation": "Rakam iddianameden alınmış bir ayrıntıdır; ilgi çekici başlık yazımı olabilir.",
+   "missing_context": [
+    "Vurgunun yargıya bağlandığını gösteren ifade"
+   ]
+  }
+ ]
+}

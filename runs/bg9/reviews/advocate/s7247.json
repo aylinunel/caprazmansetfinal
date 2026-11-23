@@ -1,0 +1,206 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Şüphe bulutları dağıldı, Adli Tıp son sözü söyledi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Başsavcılık, 'Süleymancılar'ın eski lideri Arif Ahmet Denizolgun'un ölümüne ilişkin ek rapor talep edecek",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Önceki şüphe ve bir sonuç açıkça belirtiliyor; kanıtın asimetrik ele alındığı gösterilmiyor.",
+   "alternative_explanation": "Rapor sonucu doğrudan aktarılıyor olabilir.",
+   "missing_context": [
+    "Ek raporun gerekçesi",
+    "Kanıt değerlendirme ölçütleri"
+   ]
+  },
+  {
+   "card_id": "belief-perseverance",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "zehirlenmeye işaret eden bulguya rastlanmadı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Başsavcılık ATK'den ek rapor istedi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Zehirlenme bulgusu olmadığı raporlandıktan sonra ek rapor istendiği görülüyor; karşı kanıtın haksız biçimde göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Ek rapor talebi olağan bir usul adımı olabilir.",
+   "missing_context": [
+    "Önceki pozisyonun açık ifadesi",
+    "Ek rapor talebinin gerekçesi"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Adli Tıp son sözü söyledi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Arif Ahmet Denizolgun soruşturmasında yeni gelişme: Adli Tıp Kurumu'ndan ek rapor istendi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Adli Tıp Kurumu sonuca belirleyici kaynak olarak sunuluyor; ek rapor talebi gibi karşı gelişmenin ele alınmadığı açıkça gösterilmiyor.",
+   "alternative_explanation": "Uzman kurum raporuna dayanmak meşru olabilir.",
+   "missing_context": [
+    "Ek raporun içeriği",
+    "Karşı görüş"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Şüphe bulutları dağıldı, Adli Tıp son sözü söyledi: Arif Ahmet Denizolgun'un ölüm sebebi kesinleşti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Arif Ahmet Denizolgun'un ölümü: Başsavcılık ATK'den ek rapor istedi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı rapor bir kurumda kesinlik, diğerinde sürecin devamı çerçevesiyle sunuluyor; yargıya bağlantı görünmüyor.",
+   "alternative_explanation": "Kurumlar olayın farklı ilgili yönlerini öne çıkarıyor olabilir; çerçeve farkı tek başına bir yargıyı kanıtlamaz.",
+   "missing_context": [
+    "Çerçeve farkının okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski Bakan Arif Ahmet Denizolgun'un mezarı açılmıştı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı bir ayrıntı başlıkta öne çıkıyor; bir yargıya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Ayrıntı olayın ilgili bir bilgisi ya da başlık üslubu olabilir.",
+   "missing_context": [
+    "Belirgin ayrıntının bir yargıya gerekçe yapıldığını gösteren açık ifade"
+   ]
+  }
+ ]
+}

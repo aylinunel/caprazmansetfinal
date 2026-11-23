@@ -1,0 +1,276 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyoğlu'nda gerekçe iç kavgalar",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Üç gündür ulaşılamıyordu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "'AKP’ye katılıyor'",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP'de istifa depremi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifa haberinde Sondakika gerekçeyi, Sözcü ulaşılamama ve olası AKP geçişini, Sol/Haberler AKP'ye katılımı, Star ise siyasi etkiyi ('deprem') öne çıkarıyor.",
+   "alternative_explanation": "Farklı kurumlar istifanın farklı yönlerini aktarmış olabilir; AKP geçişi iddiası ayrı bir bilgi.",
+   "missing_context": [
+    "İstifa metninin tamamı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Karaahmetoğlu CHP'den ayrıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "CHP'den istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "gerekçe iç kavgalar",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar 'ayrıldı', 'istifa etti', 'iç kavgalar' / 'tartışma ve ayrışmalar' gibi farklı sözcükler kullanıyor; 'iç kavgalar' daha olumsuz çağrışımlı ama konuşmacının sözlerinden türemiş olabilir.",
+   "alternative_explanation": "'İç kavgalar' ifadesi istifa metninden doğrudan aktarılmış olabilir.",
+   "missing_context": [
+    "İfadenin atfedilip edilmediği"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Beyoğlu Belediye Başkanvekili Sefer Karaahmetoğlu CHP'den istifa etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Başlıklar olayı (istifa) ana yan cümlede veriyor; 'AKP'ye geçebilir' bir öngörü eklese de olayın yerine geçmiyor.",
+   "alternative_explanation": "Başlık olayı ve bir olasılığı birlikte bildiriyor.",
+   "missing_context": [
+    "Geçişin gerçekleşip gerçekleşmediği"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "CHP'de istifa depremi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "zehir zemberek sözlerle",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Beyoğlu Belediye Başkanvekili Sefer Karaahmetoğlu, CHP'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Star 'istifa depremi', Takvim 'zehir zemberek sözlerle' ifadelerini kendi sesiyle kullanıyor; T24 aynı olguyu bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "'Deprem' ve 'zehir zemberek' siyasi haber dilinde yaygın deyimsel abartılardır.",
+   "missing_context": [
+    "İstifa açıklamasının gerçek sertliği"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AK Parti’ye geçeceği konuşulan Beyoğlu Belediye Başkanvekili",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aktörü 'Başkanvekili/Başkan Vekili' ile anıyor; yalnızca Haberler ve Akit 'AK Parti'ye geçeceği konuşulan' ifadesini tanımlayıcı olarak ekliyor, bu meşruiyet değerlendirmesi taşımıyor.",
+   "alternative_explanation": "Unvan yazım farkı imla düzeyindedir.",
+   "missing_context": [
+    "Başka etiket örnekleri"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "zehir zemberek sözlerle CHP'den istifa etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "\"Hizipleşme var\"",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Beyoğlu Belediye Başkan Vekili Karaahmetoğlu, CHP’den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Takvim başlık ve lede içinde hem değerlendirici ifade ('zehir zemberek sözlerle') hem seçilmiş alıntı ('Hizipleşme var') kullanıyor; ikisi de CHP'nin iç sorunlarını vurgulayan aynı yönde. Cumhuriyet/T24 aynı gerçekleri bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Alıntı istifa açıklamasından doğrudan alınmış, ton ise haber dilinin parçası olabilir.",
+   "missing_context": [
+    "İstifa açıklamasının tam metni"
+   ]
+  }
+ ]
+}

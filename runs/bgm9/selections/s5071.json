@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "labeling",
+  "emphasis-framing",
+  "loaded-language",
+  "word-choice"
+ ],
+ "selection_uncertainty": [
+  "Ziyaret öncesi haberler; aktarılan açıklamalar kurum tekniği değildir."
+ ],
+ "selection_note": "'Başkan', 'kritik ziyaret' ve '8 yıl sonra' vurguları."
+}

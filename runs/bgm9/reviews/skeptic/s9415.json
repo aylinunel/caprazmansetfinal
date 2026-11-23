@@ -1,0 +1,222 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi aniden öldü: Rusya açıklamadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi hayatını kaybetti: Moskova'dan komplo teorilerine cevap",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rusya'nın Washington Büyükelçisi Darçiyev hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ölüm bir başlıkta açıklanmayan neden, başka birinde komplo teorilerine yanıt, çoğunda ise yalnızca ölüm olgusu üzerinden veriliyor.",
+   "alternative_explanation": "Farklar büyük ölçüde zamanlamadan kaynaklanıyor: ilk açıklamada neden yoktu, sonra Zaharova kronik hastalık dedi; kurumlar o anki bilgi düzeyini yansıtıyor olabilir.",
+   "missing_context": [
+    "Her başlığın hangi açıklamadan sonra yayımlandığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi ölü bulundu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi Aleksandr Darçiyev hayatını kaybetti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum 'ölü bulundu', diğerleri 'hayatını kaybetti' diyor; 'ölü bulundu' şüpheli koşullar çağrışımı taşırken metindeki hiçbir açıklama bulunma koşullarından söz etmiyor.",
+   "alternative_explanation": "Kurum 'ani ölüm' bilgisini bu kalıpla vermiş olabilir; yine de çağrışım farkı açık.",
+   "missing_context": [
+    "Ölümün nasıl gerçekleştiğine dair resmi bilgi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Rusya'nın ABD Büyükelçisi aniden öldü: Rusya açıklamadı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda skandal, şok gibi değerlendirme sözcükleri yer almıyor.",
+   "alternative_explanation": "'Aniden' sözcüğü Rusya Dışişleri açıklamasından aktarılan bir bilgidir.",
+   "missing_context": []
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "2021 yılından beri Rusya'nın Washington Büyükelçiliği görevini yürüten Aleksandr Darçiyev",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Mart 2025'te Devlet Başkanı Vladimir Putin tarafından göreve",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Girişler büyükelçinin görev geçmişine dair biyografik bilgi veriyor; olay bir eğilim, seri ya da kurumsal süreç içine yerleştirilmiyor.",
+   "alternative_explanation": "Biyografik bilgi ölüm haberlerinde standarttır; geniş bir bağlam (diplomat ölümleri dizisi gibi) kurulmuyor. Ayrıca kurumlar göreve başlama tarihini farklı veriyor.",
+   "missing_context": [
+    "Benzer diplomat ölümlerine ilişkin bağlam"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "diplomatın Moskova'da kronik bir rahatsızlık nedeniyle öldüğünü açıkladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Tek nedensellik ifadesi ölüm nedenine ilişkin ve Bakanlık sözcüsüne atfediliyor.",
+   "alternative_explanation": "Neden, kurumun kendi çıkarımı değil resmi açıklama olarak aktarılıyor; dayanak yalnızca zaman sırası değil.",
+   "missing_context": []
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Haber tek bir ölümü bildiriyor; konunun yapısal ya da tekrarlayan bir sorun olduğu sağlanan malzemede gösterilmiyor.",
+   "alternative_explanation": "Tek olayın haberleştirilmesi bu tür gündelik haber için olağandır; konunun yapısal ya da tekrarlayan bir sorun olduğu sağlanan malzemede kurulmuyor.",
+   "missing_context": [
+    "Konunun tekrarlayan ya da yapısal olduğunu gösteren bağlam (önceki vakalar, istatistikler)"
+   ]
+  }
+ ]
+}

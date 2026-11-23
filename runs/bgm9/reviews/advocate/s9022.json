@@ -1,0 +1,234 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'dan COP31'de diplomasi trafiği",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31'de yoğun diplomasi trafiği",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Erdoğan bazı kurumların kendi sesinde 'Başkan', diğerlerinde 'Cumhurbaşkanı' olarak anılıyor; ancak 'Başkan' unvanının kimlik tanımının ötesinde bir değerlendirme taşıdığı metinden açıkça çıkarılamıyor.",
+   "alternative_explanation": "'Başkan' bazı kurumların cumhurbaşkanlığı hükümet sistemine atıfla kullandığı kısa unvan olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kritik görüşmeler peş peşe",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Peş peşe kritik görüşmeler gerçekleştirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31 kapsamında diplomasi trafiği",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "'Kritik' sözcüğü görüşmelere önem değeri yükleyen bir değerlendirme olarak kurumların kendi başlıklarında yer alıyor; aynı olgu başka kurumda bu nitelendirme olmadan veriliyor.",
+   "alternative_explanation": "'Kritik görüşme' diplomasi haberlerinde yerleşik bir kalıp olarak da okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mekke İttifakı dayanışmayı güçlendirdi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Guterres ve dünya liderleriyle görüştü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Liderlerle art arda görüşmeler gerçekleştirdi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı görüşme dizisi bir başlıkta bir ittifakın güçlenmesi sonucu, bir başlıkta görüşülen kişiler, bir başlıkta görüşmelerin sayısı ve sıklığı üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar farklı gün ve saatlerde farklı görüşmeleri haberleştirmiş olabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'dan COP31'de diplomasi trafiği",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31'de diplomasi trafiği",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı aktör için 'Başkan' ve 'Cumhurbaşkanı' sözcükleri kullanılıyor; farkın çağrışım farkı mı yoksa yalnızca kısaltma mı olduğu metinden belirlenemiyor.",
+   "alternative_explanation": "'Başkan' 'Cumhurbaşkanı' unvanının kısaltması olarak okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan'dan COP31'de yoğun diplomasi trafiği",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Diplomasi trafiği' mecazi bir ifade; ancak kalıplaşmış bir haber deyimidir ve rol ya da eylem yolu atamıyor.",
+   "alternative_explanation": "İfade yoğun görüşme takvimini anlatan yerleşik bir deyim olarak okunabilir.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir başlık ya da lede yalnızca iki seçenek sunan bir kurgu içermiyor.",
+   "alternative_explanation": "Haberler görüşmeleri aktarıyor.",
+   "missing_context": [
+    "Haberlerin tam metinleri"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,255 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 14:13] HABAŞ'taki işçi katliamında can kaybı 18'e yükseldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 11:14] İzmir'deki fabrika patlamasında can kaybı 18'e yükseldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[karar · 16:50] HABAŞ'taki faciada can kaybı 18'e yükseldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay 'işçi katliamı', 'patlama' ve 'facia' sözcükleriyle adlandırılıyor; 'katliam' kasıt ya da kusur çağrıştırırken 'patlama' yalnızca fiziksel olayı, 'facia' büyüklüğü anlatıyor.",
+   "alternative_explanation": "'Katliam' sözcüğü bazı çevrelerde önlenebilir iş kazaları için yerleşik bir kullanım olabilir.",
+   "missing_context": [
+    "Kuruluşların benzer iş kazalarında kullandığı sözcükler"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sol · 14:13] HABAŞ'taki işçi katliamında can kaybı 18'e yükseldi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 16:49] HABAŞ katliamında can kaybı 18'e yükseldi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[trthaber · 11:14] İzmir'deki fabrika patlamasında can kaybı 18'e yükseldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bazı başlıklar kuruluşun kendi sesinde 'katliam' değerlendirici sözcüğünü kullanıyor; aynı bilanço başka bir kuruluşta bu sözcük olmadan veriliyor.",
+   "alternative_explanation": "Sözcük, iş güvenliği eksikliğine ilişkin bir değerlendirmeyi aktarmak için seçilmiş olabilir.",
+   "missing_context": [
+    "Soruşturmanın kusur tespitine ilişkin bulguları"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Patlamanın ardından başlatılan adli soruşturma sürerken, olayla ilgili yayın yasağı kararı da alındı.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[evrensel · 16:49] HABAŞ katliamında can kaybı 18'e yükseldi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[sol · 14:13] HABAŞ'taki işçi katliamında can kaybı 18'e yükseldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor ve sorumluluk belirlenmemiş; bazı başlıklar olayı şirket adıyla birlikte 'katliam' olarak adlandırarak kusuru adı verilen şirkete bağlıyor ve bu adlandırmaya iddia ya da savcılığa göre gibi bir atıf işareti eşlik etmiyor.",
+   "alternative_explanation": "Şirket adı olayın gerçekleştiği yeri belirtmek için kullanılmış olabilir.",
+   "missing_context": [
+    "Soruşturmanın ön bulguları",
+    "Bilirkişi raporu"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[t24 · 16:59] İzmir'deki fabrika patlamasında ölen işçilerin sayısı 18'e yükseldi; HABAŞ Yönetim Kurulu Başkanı dahil 11 kişiye gözaltı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[posta · 15:22] İzmir'deki faciada can kaybı 18'e yükseldi! İşçilerin hikayeleri yürek burktu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 12:09] İzmir'deki fabrika patlamasında can kaybı 18'e yükseldi: Vefat eden işçilerin kimliği belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı bilançoyu veren başlıklardan biri yönetim kurulu başkanı dahil gözaltıları, biri işçilerin hikayelerini, biri kimlik tespitini öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar farklı saatlerde ortaya çıkan gelişmeleri yansıtıyor olabilir.",
+   "missing_context": [
+    "Gözaltı ve kimlik bilgilerinin açıklanma saatleri"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Patlamanın ardından başlatılan adli soruşturma sürerken, olayla ilgili yayın yasağı kararı da alındı.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Bir kuruluşun ledi can kaybı haberini başlatılan adli soruşturma ve yayın yasağı süreci içine yerleştiriyor.",
+   "alternative_explanation": "Soruşturma bilgisi olayın kurumsal sonuçlarını aktaran olgusal bir bağlamdır.",
+   "missing_context": [
+    "Benzer fabrika kazalarına ilişkin veriler"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinlerde konuyu iki karşıt seçeneğe indiren bir kurgu bulunmuyor.",
+   "alternative_explanation": "Haberler bir kazanın bilançosunu aktarıyor.",
+   "missing_context": [
+    "İki seçenekli bir sunum"
+   ]
+  }
+ ]
+}

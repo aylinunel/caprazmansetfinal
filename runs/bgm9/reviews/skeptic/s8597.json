@@ -1,0 +1,240 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "HABAŞ'taki işçi katliamında can kaybı 18'e yükseldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir'deki fabrika patlamasında can kaybı 18'e yükseldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay Sol'da 'işçi katliamı', TRT Haber'de 'fabrika patlaması' diye adlandırılıyor; 'katliam' kasıt ya da kusur çağrışımı taşıyor. Kart, aynı eylem ya da şey için kurumların kendi seslerinde çağrışımı farklı sözcükler kullanmasını arıyor; yalnızca üslup ya da uzunluk farkı yeterli değil.",
+   "alternative_explanation": "Sözcük farkları ajans metninin uyarlanması, başlık kısalığı ya da hukuki terminolojinin farklı aktarımıyla açıklanabilir.",
+   "missing_context": [
+    "Kurumların aynı sözcükleri diğer haberlerde nasıl kullandığı",
+    "Sözcüklerin resmî açıklamadaki karşılığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "HABAŞ katliamında can kaybı 18'e yükseldi",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[bianet · 17:30] HABAŞ patlamasında can kaybı 18’e yükseldi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Evrensel kendi sesinde 'katliam' diyor; bianet aynı olguyu 'patlama' diye veriyor. Kart, kurumun kendi sesinde değerlendirme yüklü sözcük kullanmasını ve aynı olgunun bu sözcükler olmadan da aktarılabildiğini arıyor; alıntılanan ya da bir kişiye atfedilen ifade kurumun tekniği sayılmaz.",
+   "alternative_explanation": "Duygusal sözcükler olayın büyüklüğünü aktarmak için yaygın kullanılan kalıplar olabilir.",
+   "missing_context": [
+    "Sözcüğün bir kaynaktan aktarılıp aktarılmadığı",
+    "Kurumun benzer olaylarda kullandığı dil"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Patlamanın ardından başlatılan adli soruşturma sürerken",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "HABAŞ katliamında can kaybı 18'e yükseldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor ve Evrensel başlığında şirket adı 'katliam' ile atıf işareti olmadan birleşiyor; ancak başlık dilbilgisel olarak bir aktörü özne yapmıyor, isim tamlaması olayın yerini mi kusurunu mu bildiriyor belirsiz. Kart, sorumluluğu belirsiz bir olayda kurumun kendi başlık dilbilgisinin adı geçen bir aktöre fail ya da kusur atamasını ve buna atıf işaretinin eşlik etmemesini arıyor.",
+   "alternative_explanation": "Edilgen ya da doğa olayını özne yapan başlıklar olayın olgusal aktarımı olabilir; sorumluluk ataması içermeyebilir.",
+   "missing_context": [
+    "Soruşturmanın aşaması",
+    "Başlığın tam metni ve atıf işaretleri"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İzmir'deki patlamada 11 gözaltı kararı: Can kaybı 18'e yükseldi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İşçilerin hikayeleri yürek burktu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir Aliağa'daki HABAŞ patlamasında can kaybı 18'e yükseldi!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı can kaybı Akşam'da gözaltılarla, Posta'da işçilerin öyküleriyle, Milli Gazete'de yalnızca sayıyla öne çıkarılıyor. Kart, aynı olguyu aktaran kurumların başlıklarda o olgunun farklı boyutlarını öne çıkarmasını arıyor; karşılaştırma başlıklar arasında yapılıyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinde elde bulunan bilgiden, ajans metninin farklı paragraflarının seçilmesinden ya da olayın farklı aşamalarının haberleştirilmesinden kaynaklanabilir.",
+   "missing_context": [
+    "Her kurumun haberinin tam metni",
+    "Başlıkların yayımlandığı andaki mevcut bilgi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Olayla ilgili şirketin Yönetim Kurulu Başkanı'nın da aralarında bulunduğu 11 kişi hakkında gözaltı kararı verilmişti.",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "olayla ilgili yayın yasağı kararı da alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sol ve Karar can kaybı haberini süren adli sürece (gözaltılar, yayın yasağı) bağlıyor. Bu bağlam kartı, kurumun kendi başlık ya da spotunda olayı daha geniş bir eğilim, dizi ya da kurumsal sürece yerleştirip yerleştirmediğine bakıyor.",
+   "alternative_explanation": "Bağlam bilgisi okura arka plan sunmak için eklenmiş olabilir; tek başına bir yanlılık göstergesi değildir.",
+   "missing_context": [
+    "Haberlerin tam metnindeki arka plan bilgisi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde kurumların kendi sesinde ikili seçenek kurgusu bulunmuyor. Kart, kurumun kendi sesinde yalnızca iki seçeneği tek seçenekler gibi sunan 'ya… ya…' türü bir ifade arıyor; metinde böyle bir yapı yok.",
+   "alternative_explanation": "Haberler olgusal gelişmeyi aktarıyor; seçenek kurgusu yapılmıyor.",
+   "missing_context": [
+    "Haberlerin tam metninde ikili seçenek kurgusu olup olmadığı"
+   ]
+  }
+ ]
+}

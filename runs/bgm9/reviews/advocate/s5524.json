@@ -1,0 +1,198 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Konya'da yolcu otobüsü kazasında can pazarı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 08:31] Konya'da yolcu otobüsü devrildi, 45 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Hürriyet kendi sesiyle \"can pazarı\" değerlendirmesini kullanırken NTV aynı kazayı aynı olgularla bu ifade olmadan veriyor.",
+   "alternative_explanation": "\"Can pazarı\" Türk basınında kaza haberlerinde yerleşik bir kalıptır.",
+   "missing_context": [
+    "Kaza yerindeki gerçek durum ve kurtarma sürecine dair ayrıntı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Konya'da yolcu otobüsü şarampole yuvarlandı: 45 kişi yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberturk · 08:21] Konya’da yolcu otobüsü devrildi: 45 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kaza için \"şarampole yuvarlandı\" ve \"devrildi\" sözcükleri kullanılıyor; fark çağrışımdan çok betimleme ayrıntısında olabilir.",
+   "alternative_explanation": "İki sözcük de olgusal betimleme olabilir; fark yalnızca ayrıntı düzeyinde.",
+   "missing_context": [
+    "Sözcükler arasında çağrışım farkı olduğunu gösteren ölçüt"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Konya'da yolcu otobüsü şarampole devrildi: 45 yaralı, 3'ünün durumu ağır",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Antalya-Iğdır seferini yapan yolcu otobüsü Konya'da şarampole devrildi! 45 yaralı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kazada bir başlık ağır yaralıları, diğeri seferin güzergâhını öne çıkarıyor; ancak bu farklar kartın örneklediği zıt boyutlar (maliyet/yarar, kazanan/kaybeden) kadar belirgin değil.",
+   "alternative_explanation": "Farklar yalnızca ayrıntı ekleme tercihinden kaynaklanabilir.",
+   "missing_context": [
+    "Başlıkların farklı bir değerlendirme boyutu kurduğunu gösteren ek ifade"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Kurumun kendi sesiyle yalnızca iki seçenek sunduğu bir ifade"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Olayın tekrarlayan ya da yapısal olduğunu gösteren bağlam"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bu kartın gerekli koşullarını karşılayan açık bir ifade ya da karşılaştırmalı davranış bulunamadı.",
+   "alternative_explanation": "Haberler olayı aktarıyor; başlıklardaki farklar editoryal tercih ve haber değeriyle açıklanabilir.",
+   "missing_context": [
+    "Sorumluluğun belirsiz olduğu bir olayda başlık dilbilgisiyle sorumluluk atanması"
+   ]
+  }
+ ]
+}

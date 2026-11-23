@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "loaded-language",
+  "labeling",
+  "metaphorical-framing",
+  "consequence-framing",
+  "spin",
+  "emphasis-framing"
+ ],
+ "selection_uncertainty": [
+  "Hükümetin kurulup kurulamayacağı belirsiz."
+ ],
+ "selection_note": "ahaber 'Soykırımcı', takvim 'Katil Netanyahu', 'soğuk duş', 'dönemi bitiyor' kurumların kendi ifadeleri."
+}

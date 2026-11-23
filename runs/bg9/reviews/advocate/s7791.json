@@ -1,0 +1,155 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 00:11] 11 üniversiteye yeni rektör atandı! Başkan Erdoğan'ın imzasıyla Resmi Gazete'de yayımlandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yükseköğretim Kanunu ve ilgili Cumhurbaşkanlığı Kararnamesi’ne dayanarak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar atamaları Erdoğan'ın imzasıyla, yani bir otorite figürüyle öne çıkarıyor; Evrensel ise yasal dayanağı veriyor. Otorite açıkça tanımlanıyor, ancak statünün atamaların değerlendirilmesinde gerekçelerin yerine geçtiği gösterilmiyor.",
+   "alternative_explanation": "Rektör atama yetkisi yasal olarak Cumhurbaşkanı'nda; imzanın anılması olgusal bir usul bilgisi.",
+   "missing_context": [
+    "Atamalarda gözetilen ölçütler."
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[birgun · 00:36] Resmi Gazete'de yayımlandı: Erdoğan 11 üniversiteye yeni rektör atadı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[ntv · 00:31] 11 üniversiteye rektör atandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (11 üniversiteye rektör atanması) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir alandaki olumlu izlenimin başka bir alandaki yargıya taşındığını gösteren bir ifade yok; rektörlerin niteliklerine dair değerlendirme yapılmıyor.",
+   "alternative_explanation": "Haberler bir atama kararını aktarıyor.",
+   "missing_context": [
+    "Atanan kişiler hakkında bir yargı ve gerekçesi."
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Recep Tayyip Erdoğan’ın imzasıyla",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "[aksam · 00:52] Başkan Erdoğan imzaladı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Cumhuriyet atamayı yapanın parti üyeliğini açıkça belirtiyor; ancak metin atanan kişilerin grup üyeliğini ve bu üyeliğe dayalı bir seçim farkını göstermiyor.",
+   "alternative_explanation": "Parti bilgisi kurumun yerleşik üslubu; atamalarda grup kayırması olduğu metinden çıkarılamaz.",
+   "missing_context": [
+    "Atanan rektörlerin seçim ölçütleri ve geçmişleri."
+   ]
+  }
+ ]
+}

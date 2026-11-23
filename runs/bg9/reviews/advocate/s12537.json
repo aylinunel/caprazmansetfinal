@@ -1,0 +1,182 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Mustafa Sarıgül hakkında fezleke",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Erzincan Milletvekili Mustafa Sarıgül hakkında kara para aklama, örgüt kurma, çocuğun cinsel istismarı ve nitelikli cinsel saldırı suçlamalarının da aralarında bulunduğu suçlardan fezleke",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı fezleke bir yerde yalın, bir yerde en ağır suçlamalar öne alınarak sunuluyor; farkın yargıya bağlandığı gösterilmiyor.",
+   "alternative_explanation": "Başlık farkları editoryal üslup, yayın saati, karakter sınırı veya bilgi güncellemesinden kaynaklanıyor olabilir; okurun kararına etkisi gösterilmemiştir.",
+   "missing_context": [
+    "Okurun yargı veya tercihinin değiştiğine dair gözlem",
+    "Karşılaştırılan ifadelerin karar açısından eşdeğer olduğunun açık gösterimi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Örgüt kurma, haksız mal varlığı, çocuk istismarı iddiası dahil 5 ayrı suçlama!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Cumhuriyet başlığı en çarpıcı suçlamaları öne çıkarıyor; bunun bir yargıya bağlandığı açık değil.",
+   "alternative_explanation": "Çarpıcı ifade yayın kuralı (son dakika, dikkat çekme) olabilir; yargıyı etkilediği gösterilmemiştir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıya veya karara bağlandığı bir ifade",
+    "Daha az belirgin bilgilerle karşılaştırmalı ağırlıklandırma"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumlu kanıtın orantısız göz ardı edildiği bir ifade yok.",
+   "alternative_explanation": "Olayın kendisi olumsuz olduğu için olumsuz vurgu orantılı bir haber değeri olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıtın metinde yer alıp almadığı",
+    "Olumsuz bilginin değerlendirmeyi etkilediğine dair gözlem"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde grup üyeliğine bağlanan bir yargı farkı gösterilmiyor.",
+   "alternative_explanation": "Yayın çizgisi farkları editoryal tercih, hedef kitle veya kaynak erişimi farkından kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Aynı olaya benzer durumlarda farklı standart uygulandığını gösteren ifade",
+    "Grup üyeliğinin yargıyı etkilediğine dair açık bağlantı"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hatırlama kolaylığına dayalı bir olasılık yargısı yok.",
+   "alternative_explanation": "Haber değeri taşıyan örneklerin anılması olasılık yargısı yerine basit bağlam aktarımı olabilir.",
+   "missing_context": [
+    "Hatırlama kolaylığının bir olasılık tahminine gerekçe yapıldığı ifade",
+    "Sıklık verisiyle karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin ödül ve içsel motivasyon ilişkisi içermiyor.",
+   "alternative_explanation": "Metin bir etkinlik ve ödül ilişkisi içermiyor.",
+   "missing_context": [
+    "Ödül öncesi içsel motivasyon ve sonrası düşüşe dair veri"
+   ]
+  }
+ ]
+}

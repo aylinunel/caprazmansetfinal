@@ -1,0 +1,195 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "confirmation-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "şüpheli ölümüne ilişkin yürütülen soruşturmada",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde açıkça belirtilmiş bir ön inanç ve bu inanç lehine kanıtın asimetrik değerlendirildiğini gösteren bir akıl yürütme yok.",
+   "alternative_explanation": "Haber metinleri gelişmeleri aktarıyor; bir hipotezin seçici biçimde doğrulandığı gösterilmiyor.",
+   "missing_context": [
+    "Açıkça belirtilmiş ön inanç",
+    "Karşıt kanıtın gerekçesiz reddedildiğini gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "belief-perseverance",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başsavcılık, 'Süleymancılar'ın eski lideri Arif Ahmet Denizolgun'un ölümüne ilişkin ek rapor talep edecek",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başsavcılığın ek rapor isteyeceği aktarılıyor; ancak metin bir kişinin önceki konumunu, karşı kanıtı tanıdığını ve gerekçesiz biçimde reddettiğini göstermiyor.",
+   "alternative_explanation": "Ek rapor talebi olağan bir soruşturma adımı olabilir ve bir inancın korunduğunu kanıtlamaz.",
+   "missing_context": [
+    "Kişinin önceki konumu",
+    "Karşı kanıtın tanınıp gerekçesiz reddedildiğini gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Şüphe bulutları dağıldı, Adli Tıp son sözü söyledi: Arif Ahmet Denizolgun'un ölüm sebebi kesinleşti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Başsavcılık, 'Süleymancılar'ın eski lideri Arif Ahmet Denizolgun'un ölümüne ilişkin ek rapor talep edecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Arif Ahmet Denizolgun soruşturmasında yeni gelişme: Adli Tıp Kurumu'ndan ek rapor istendi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bir kurum Adli Tıp raporunu 'son söz' ve 'kesinleşti' diye sunarken başka kurumlar aynı gün başsavcılığın ek rapor isteyeceğini aktarıyor; rapora belirleyici ağırlık verildiği görülüyor, ancak Adli Tıp ilgili uzmanlığa sahip ve ek rapor talebi raporla çelişen bir kanıt değil, bu yüzden gerekçesizlik kurulmuyor.",
+   "alternative_explanation": "Adli Tıp Kurumu ölüm nedenine dair yetkili uzman kurumdur; rapora dayanmak uzmanlığa uygun bir kanıt kullanımı olabilir ve ek rapor talebi usul gereği olabilir.",
+   "missing_context": [
+    "Ek rapor talebinin gerekçesi ve ilk raporla çelişip çelişmediği",
+    "Kurumun ek rapor haberinden haberdar olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Arif Ahmet Denizolgun'un fethi kabir raporu ortaya çıktı: İşte ölüm nedeni",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Süleymancılar soruşturması... Arif Ahmet Denizolgun'un Adli Tıp raporu çıktı: Ölüm nedeni belli oldu",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı olayı farklı vurgularla başlıklandırıyor; ancak metin, bu sunum farkına bağlanmış bir tercih, yargı ya da öneri göstermiyor.",
+   "alternative_explanation": "Başlık farkları farklı yayın saatlerinden, ajans metinlerinden, olayın gelişen aşamalarından ve yer sınırından kaynaklanabilir; açıklamaların karar açısından eşdeğer olduğu metinde kurulmuyor.",
+   "missing_context": [
+    "Başlıkların karar açısından eşdeğer olduğuna dair açık tespit",
+    "Sunum farkının bir okur ya da karar verici yargısını değiştirdiğini gösteren karşılaştırmalı veri"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Eski Bakan Arif Ahmet Denizolgun'un mezarı açılmıştı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı ya da rakamı öne çıkarıyor; metin bu ayrıntıyı bir yargıya ya da seçime açıkça bağlamıyor ve karşı kanıtın göz ardı edildiğini göstermiyor.",
+   "alternative_explanation": "Öne çıkan ayrıntı olayın haber değeri taşıyan olgusal bir parçası olabilir; çarpıcılık tek başına hatalı ağırlıklandırma kanıtı değildir.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargıyı belirlediğini gösteren açık ifade",
+    "Belirgin ve belirgin olmayan bilginin nasıl ağırlıklandırıldığını gösteren karşılaştırma"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,249 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "39 ilde 'Avcı' kıskacı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahis çetesini AVCI yakaladı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Türkiye Gazetesi 'kıskaç' mecazıyla, TGRT 'avcı yakaladı' kurgusuyla operasyonu avcı-av rolleriyle anlatıyor; bu kalıplaşmış bir deyim değil.",
+   "alternative_explanation": "'AVCI' projenin adı olduğu için sözcük oyunu olabilir.",
+   "missing_context": [
+    "Proje adının resmi yazımı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yasa dışı bahis ağına darbe",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "39 ilde yasa dışı bahis operasyonu: 151 şüpheli yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Yeni Şafak 'ağına darbe', TGRT 'çetesini' gibi değerlendirici sözcükler kullanıyor; Sözcü aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "'Çete' ve 'darbe' kalıplaşmış operasyon dili olabilir.",
+   "missing_context": [
+    "Sözcüklerin atfedilip atfedilmediği"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yasa dışı bahis çetesini AVCI yakaladı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İstanbul merkezli 39 ildeki yasa dışı bahis operasyonlarında 151 şüpheli yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı 39 illik operasyon TGRT'de AVCI sistemi, AA'da ise merkez ve şüpheli sayısı üzerinden öne çıkarılıyor; ancak etkinlikte farklı operasyonlar da yer aldığından yalnızca 39 il grubu için geçerli.",
+   "alternative_explanation": "Etkinlikte farklı operasyonlar bildirildiği için farklılık olgu farkı olabilir.",
+   "missing_context": [
+    "Operasyonların bağımsız olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yapay zeka destekli AVCI ile yasa dışı bahis ağına darbe: 151 gözaltı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "39 ilde yasa dışı bahis operasyonu: 151 şüpheli yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Yeni Şafak başlığı 'ağına darbe' değerlendirmesi ile 'yapay zeka destekli AVCI' başarı vurgusunu aynı yönde birleştiriyor; Sözcü aynı olguyu bu birleşim olmadan veriyor.",
+   "alternative_explanation": "Operasyon duyurusundaki içeriği yansıtmış olabilir.",
+   "missing_context": [
+    "Başlığın kaynak açıklaması"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "151 şüpheli yakalandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "151 kişi gözaltına alındı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı sayı kimi kurumlarda 'yakalandı', kimilerinde 'gözaltına alındı' diye veriliyor; çağrışım farkı üslup farkından ayrılamıyor.",
+   "alternative_explanation": "İkisi de aynı olgunun resmi/gazetecilik kayıtları olabilir.",
+   "missing_context": [
+    "Çağrışım farkını gösteren ölçüt"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İstanbul ve İzmir merkezli yasa dışı bahis operasyonlarında 176 şüpheli yakalandı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İzmir merkezli yasa dışı bahis operasyonunda 25 gözaltı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Etkinlikte birden çok operasyon bulunması yinelenen bir tablo olduğunu düşündürüyor; NTV tek bir operasyonu haberin tamamı yapıyor, ancak geniş desene değinilip değinilmediği belirsiz.",
+   "alternative_explanation": "Her başlık ayrı bir operasyon bülteni olabilir.",
+   "missing_context": [
+    "Operasyonların bağlantısı"
+   ]
+  }
+ ]
+}

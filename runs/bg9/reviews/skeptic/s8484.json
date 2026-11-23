@@ -1,0 +1,196 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "şiddetli patlama!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklarda 'şiddetli patlama' gibi vurgulu ifadeler var; ancak bu çarpıcı ayrıntının bir yargıya ya da seçime gerekçe yapıldığı metinde yazılı değil.",
+   "alternative_explanation": "Patlama gerçekten ağır bir olay olduğu için vurgulu anlatım olgusal bir betimleme olabilir; haber akışında rakamlar da saat içinde güncelleniyor.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir yargı veya karara dayanak yapıldığını gösteren açık ifade",
+    "Çarpıcı olan ve olmayan bilgilere verilen ağırlığın karşılaştırması"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Can kaybı giderek artıyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin ölüm ve yaralanma sayılarını aktarıyor; olumsuz kanıta orantısız ağırlık verildiğini gösteren, karşılaştırılabilir olumlu kanıt içeren bir değerlendirme yok.",
+   "alternative_explanation": "Konu doğası gereği olumsuz bir kazadır; olumsuz haberin aktarılması orantılı bir haber değeri kararı olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu kanıt (örneğin kurtarma başarıları) ve ona verilen ağırlık",
+    "Olumsuz ağırlığın bir değerlendirme ya da karar üzerindeki etkisi"
+   ]
+  },
+  {
+   "card_id": "identifiable-victim-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde adı verilen bir mağdur ya da yardım/kaynak dağıtımı kararı yok; yalnızca sayılar aktarılıyor.",
+   "alternative_explanation": "Haber olay bildirimidir, bir tahsis kararı içermez.",
+   "missing_context": [
+    "Bir yardım veya kaynak tahsisi kararı ve karar vericisi",
+    "Tanımlanabilir kişi ile istatistiksel grup arasındaki karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "authority-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Olaydan saatler sonra Erdoğan yaptığı açıklamada 16 işçinin yaşamını yitirdiğini açıkladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Cumhurbaşkanı ve vali gibi resmi kaynaklar sayıların kaynağı olarak anılıyor; ancak statünün bir iddiayı değerlendirmenin yerine geçtiği ya da karşıt kanıtın göz ardı edildiği gösterilmiyor.",
+   "alternative_explanation": "Can kaybı sayısı için resmi açıklamaya başvurmak olağan ve gerekçeli bir doğrulama yoludur.",
+   "missing_context": [
+    "Yetkili açıklamasının karşıt kanıta rağmen karar belirleyici sayıldığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir tahmin ya da risk yargısını hatırlama kolaylığına veya canlı örneklere dayandıran açık bir ifade yok.",
+   "alternative_explanation": "Haberler güncel bir olayı bildiriyor; bir olasılık tahmini yapılmıyor.",
+   "missing_context": [
+    "Bir tahmin veya risk yargısı",
+    "Hatırlama kolaylığının gerekçe olarak gösterildiği ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[yenisafak · 12:57] İzmir’de demir çelik fabrikasında patlama: İşçiler yaralandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[tgrt · 12:31] İzmir’de demir-çelik fabrikasında şiddetli patlama: Can kaybı 17'ye yükseldi!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar farklı gelişme anlarında farklı rakamlar (3, 6, 10, 16, 17 ölü) ve vurgular yayımlamış; bu başlıklar karar açısından eşdeğer olgular sunmuyor.",
+   "alternative_explanation": "Farklılıklar çerçeveleme yerine haber akışının farklı saatlerinde mevcut olan güncel verilerden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Eşdeğer içeriğin farklı çerçevelenmesi ve bunun bir yargıya bağlandığını gösteren ifade",
+    "Başlıkların yayım saatindeki resmi veri durumu"
+   ]
+  }
+ ]
+}

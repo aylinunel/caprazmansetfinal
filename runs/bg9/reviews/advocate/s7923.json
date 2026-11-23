@@ -1,0 +1,189 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[10haber · 15:42] Fon soygunu: BDDK daire başkanı Bilal Soysal tutuklandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[dha · 14:41] Sermaye piyasası soruşturmasında BDDK 3. Daire Başkanı tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İki kurum aynı olguyu (Soysal'ın tutuklanması) farklı sözcük ve vurguyla sunuyor; olgusal denklik başlıkların karşılaştırılmasından görülüyor, ancak metin bir tercihi ya da yargıyı bu sunum farkına bağlamıyor.",
+   "alternative_explanation": "Farklı sunumlar kurumların üslup ve başlık alışkanlıklarından kaynaklanıyor olabilir; metinde hiçbir okurun ya da karar vericinin sunuma göre farklı bir yargıya vardığı görülmüyor.",
+   "missing_context": [
+    "Sunum farkının okur değerlendirmesini değiştirdiğine dair karşılaştırmalı veri.",
+    "Metinde sunuma dayalı açık bir tercih ya da yargı."
+   ]
+  },
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "tutuklananların sayısı 118'e yükseldi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "DW Türkçe toplam tutuklu sayısını veriyor; ancak bir başlangıç değerinin sonraki bir tahmini ya da kararı yönlendirdiği görülmüyor.",
+   "alternative_explanation": "Toplam sayı olgusal bir bilgi.",
+   "missing_context": [
+    "Bir tahminin önceki bir değere bağlandığı ifade."
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz bilginin karşılaştırılabilir olumlu bilgiye göre orantısız ağırlık aldığına dair bir karşılaştırma yok.",
+   "alternative_explanation": "Olumsuz olayın öne çıkması haberin konusunun kendisinden kaynaklanıyor olabilir; olumsuz bilginin orantısız ağırlık aldığını gösteren karşılaştırılabilir olumlu bilgi metinde yok.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin varlığı ve nasıl işlendiği.",
+    "Olumsuz vurgunun bir değerlendirmeyi değiştirdiğine dair kanıt."
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akla kolay gelen örneklerin bir tahmin için gerekçe olarak kullanıldığı açık bir ifade bulunmuyor.",
+   "alternative_explanation": "Haberler tek bir tutuklamayı aktarıyor.",
+   "missing_context": [
+    "Bir genellemenin hatırlanabilir örneklere dayandırıldığı ifade."
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "soruşturmada çember daralıyor",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Akit çarpıcı bir imgeyle soruşturmanın daraldığını söylüyor; ancak bu çarpıcılığın bir yargıya kanıt yerine konduğu açıkça gösterilmiyor.",
+   "alternative_explanation": "İfade soruşturmanın ilerleyişini anlatan yaygın bir kalıp.",
+   "missing_context": [
+    "Çarpıcı ayrıntının bir değerlendirmeyi yönlendirdiğine dair ifade."
+   ]
+  },
+  {
+   "card_id": "overjustification-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir etkinliğe önceden içsel motivasyonla katılan, beklenen bir ödül alan ve ödül kalkınca katılımı azalan bir kişi bulunmuyor; kartın davranışsal koşulları gözlenemiyor.",
+   "alternative_explanation": "Haberler bir hukuki ya da siyasi gelişmeyi aktarıyor; ödül-motivasyon ilişkisi konunun dışında.",
+   "missing_context": [
+    "Ödül öncesi ve sonrası davranışa ilişkin karşılaştırmalı veri."
+   ]
+  }
+ ]
+}

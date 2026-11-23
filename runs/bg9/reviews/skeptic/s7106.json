@@ -1,0 +1,213 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Foncular için hesap vakti!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında yeni gelişme: Fatma Betül Sayan Kaya ve eşi dahil 3 kişi ifadeye çağrıldı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Farklı kurumlar aynı olguyu farklı sözcük ve vurgularla veriyor; ancak metin bu sunum farkının bir tercih veya yargıyı değiştirdiğini göstermiyor.",
+   "alternative_explanation": "Mynet'in lede'i editoryal bir vurgu; diğer kurumlar aynı çağrıyı nötr veriyor. Bu bir sunum farkı, okur yargısının değiştiğine dair kanıt yok.",
+   "missing_context": [
+    "Okurların ya da bir karar vericinin bu çerçevelere farklı tepki verdiğini gösteren karşılaştırmalı veri",
+    "Çerçeveye dayanan açık bir yargı veya öneri"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Foncular için hesap vakti!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Olumsuz bir ifade var, fakat olumsuz kanıtın karşılaştırılabilir olumlu kanıta göre orantısız ağırlıklandırıldığı belgelenmiyor.",
+   "alternative_explanation": "Bir ceza soruşturmasında olumsuz dil, olayın doğasından kaynaklanabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilginin göz ardı edildiğini gösteren kayıt"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "'Fon' vurgununda yeni gelişme",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Çarpıcı bir etiket kullanılıyor; ancak bu ayrıntının bir yargıyı haksız biçimde belirlediği metinde gösterilmiyor.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "Belirgin ayrıntının bir yargıya bağlandığını gösteren açık ifade"
+   ]
+  },
+  {
+   "card_id": "in-group-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Görevden alınan AKP'li Fatma Betül Sayan Kaya hakkında tutuklama talebi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Parti üyeliği ve bir yargı kararı aynı başlıkta geçiyor; ancak üyeliğin güvenilirlik veya suçlama farkı yarattığı gösterilmiyor.",
+   "alternative_explanation": "Parti bağı, kamuya açık kimliğin tanımlayıcı bir bilgisi olarak verilmiş olabilir; sağ ve sol kurumların hepsi tutuklamayı haberleştiriyor.",
+   "missing_context": [
+    "Benzer durumdaki farklı grup üyelerine farklı standart uygulandığını gösteren karşılaştırma"
+   ]
+  },
+  {
+   "card_id": "availability-heuristic",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "tüm Türkiye'nin yakından takip ettiği",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kamuoyu ilgisine gönderme yapılıyor; ama hatırlanabilirlik bir tahmin ya da genelleme gerekçesi olarak kullanılmıyor.",
+   "alternative_explanation": "Haber başlıkları bir karar vericinin akıl yürütmesini değil, kurumların kısa olay aktarımını içeriyor; farklılık editoryal üslup ve zamanlama ile açıklanabilir.",
+   "missing_context": [
+    "Kolay hatırlanan örneklere dayanan açık bir tahmin"
+   ]
+  },
+  {
+   "card_id": "leveling-and-sharpening",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Görevden alınan AKP'li Fatma Betül Sayan Kaya",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "AKP'deki görevlerinden istifa eden eski Bakan",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişinin ayrılışı bir kurumda \"görevden alınan\", diğerinde \"istifa eden\" olarak aktarılıyor; anlatımlar arasında bir fark var.",
+   "alternative_explanation": "Fark, farklı kaynaklara dayanma ya da haberin kısaltılmasıyla açıklanabilir; bu farkın bir sonucu etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Ayrılışın biçimine ilişkin resmî kayıt",
+    "Farkın okur yargısına etkisini gösteren veri"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,306 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Yeni Parti'de rüşvet ve istifaların gölgesinde ilk kurultay",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tek aday Özgür yeniden genel başkan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özgür Özel 1154 oyla yeniden genel başkan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Kurultaya CHP davet edilmedi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı seçim olgusunu sabah rüşvet iddiaları ve istifalar, akit tek adaylık, evrensel oy sayısı, sol ise CHP'nin davet edilmemesi boyutundan veriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tek aday Özgür yeniden genel başkan",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özgür Özel yeniden genel başkan seçildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Yeni Parti lideri Özgür Özel",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişiye akit 'Özgür' diye hitap ederken diğer kurumlar 'Özgür Özel' ve 'Yeni Parti lideri' diyor. Bu unvan/ad farkının meşruiyet değerlendirmesi taşıdığı metinden kanıtlanamıyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "yeniden genel başkanlık koltuğuna oturdu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Özgür Özel, Yeni Parti’nin ilk kurultayında yeniden genel başkan seçildi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tek aday Özgür yeniden genel başkan",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı seçim sonucu turkiyegz'de 'koltuğuna oturdu', diğerlerinde 'seçildi'; akit ise sonucu 'tek aday' sözcüğüyle öne çıkarıyor. 'Koltuğa oturmak' iktidar/makam çağrışımı taşıyor, yalnızca kısalık veya kayıt farkı değil.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Özgür Özel'in CHP'den ayrılmasının ardından kurduğu Yeni Parti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "kuruluş sürecinin ardından ilk olağan kurultayını",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yeni Parti ilk kurultayını gerçekleştirdi",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "mynet ve cumhuriyet lede'leri kurultayı CHP'den ayrılma ve kuruluş sürecinin devamı olarak, yani daha geniş bir parti siyaseti çerçevesinde sunuyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "rüşvet iddiaları ve partideki istifa depreminin gölgesinde",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yeni Parti'de rüşvet ve istifaların gölgesinde ilk kurultay",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yeni Parti'de ilk kurultay. Özgür Özel yeniden genel başkan seçildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "sabah aynı başlık ve lede içinde seçilmiş olumsuz bağlamı (rüşvet iddiaları, istifalar) ve 'deprem', 'gölgesinde' gibi değerlendirici sözcükleri birlikte kullanıyor; ikisi de olumsuz yöne işaret ediyor. ntv aynı olguları bunlar olmadan veriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "istifa depreminin gölgesinde",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Yeni Parti'de kurultay heyecanı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Özgür Özel yeniden genel başkan seçildi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "sabah 'istifa depremi' ve 'gölgesinde', mynet 'kurultay heyecanı' gibi olguyu aşan değerlendirici sözcükleri kendi sesiyle kullanıyor; tgrt aynı sonucu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  }
+ ]
+}

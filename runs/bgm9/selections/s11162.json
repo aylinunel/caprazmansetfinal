@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "emphasis-framing",
+  "word-choice",
+  "consequence-framing",
+  "loaded-language",
+  "labeling",
+  "spin"
+ ],
+ "selection_uncertainty": [
+  "'İç kavgalar' istifa açıklamasından alıntı olabilir.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "'Üç gündür ulaşılamıyordu', 'AKP'ye geçebilir' gibi vurgular farklı."
+}

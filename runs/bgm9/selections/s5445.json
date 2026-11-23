@@ -1,0 +1,12 @@
+{
+ "candidate_ids": [
+  "emphasis-framing",
+  "labeling",
+  "word-choice"
+ ],
+ "selection_uncertainty": [
+  "Yalnız başlık/özet var; tam metin ve kaynak alıntı ayrımı sınırlı.",
+  "Taziye haberi; teknik belirtisi sınırlı."
+ ],
+ "selection_note": "Unvan farkları ve özel hayat ayrıntılarına vurgu."
+}

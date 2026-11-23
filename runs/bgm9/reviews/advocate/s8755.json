@@ -1,0 +1,292 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD Temsilciler Meclisi, Hegseth azil girişimini 211 oyla engelledi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ABD Temsilciler Meclisi, Savunma Bakanı Hegseth'e yönelik azil girişimini engelledi: Görevine devam edecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ABD Savunma Bakanı Hegseth hakkındaki azil girişimini Cumhuriyetçiler engelledi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hegseth'e azil girişimi engellendi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı oylama sondakika'da oy sayısıyla, t24'te Hegseth'in görevde kalmasıyla, dwturkce'de engelleyen tarafın Cumhuriyetçiler olmasıyla başlığa taşınıyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hegseth’e yönelik azil girişimi Temsilciler Meclisinde durduruldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Temsilciler Meclisi, Savaş Bakanı Pete Hegseth'in görevden alınmasını amaçlayan azil girişiminin önünü kesti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "önergeyi Adalet Komisyonu’na sevk etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Temsilciler Meclisi’nden Savunma Bakanı Hegseth'e yönelik azil girişimine engel",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı oylama akit'te 'durduruldu', cnnturk'te 'önünü kesti', haber7'de 'komisyona sevk etti' olarak anlatılıyor; 'önünü kesmek' ve 'durdurmak' ile usule ilişkin 'sevk etmek' arasında çağrışım farkı var.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "metaphorical-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD'de Savunma Bakanı Hegseth'e azil kapısı aralanıyor",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "azil girişiminin önünü kesti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "diken 'azil kapısı aralanıyor', cnnturk 'önünü kesti' ifadeleriyle süreci kapı/yol imgesiyle anlatıyor. Bunların kalıplaşmış deyimlerden ayrılıp bir düşman veya çare atadığı metinden görülmüyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD Savunma Bakanı Hegseth'in azli için 8 madde Temsilciler Meclisi'ne sunuldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Savaş Bakanı Pete Hegseth'in görevden alınmasını amaçlayan azil girişiminin önünü kesti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi çoğu kurumda 'Savunma Bakanı', cnnturk'te 'Savaş Bakanı' olarak anılıyor. Unvan farkı gözleniyor; bunun meşruiyet yargısı taşıyıp taşımadığı metinden anlaşılmıyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD'de İran savaşının ardından Hegseth'e azil girişimi!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Ancak konu Ocak ayından sonra yeniden gündeme gelebilir.",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "ahaber başlığı girişimi İran savaşı bağlamına, dwturkce lede'i ise yasama takvimine (Ocak sonrası yeniden gündem) yerleştiriyor; yani olay daha geniş bir süreç içinde sunuluyor.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "ABD Savunma Bakanı Hegseth'e azil girişiminde kritik oylama sonuçlandı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "ABD ve dünya kamuoyunun gündemini meşgul eden",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "ABD Temsilciler Meclisi, Savunma Bakanı Hegseth'e yönelik azil girişimini engelledi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "milliyet başlığında 'kritik' ve ünlem ile lede'de 'dünya kamuoyunu meşgul eden' gibi değerlendirici ifadeler yan yana; aa aynı olguyu bunlarsız veriyor. Bu seçimlerin ortak bir yöne işaret ettiği net değil.",
+   "alternative_explanation": "Başlıklar arasındaki fark, yayın saatindeki bilgi düzeyinden, kurumsal üslup tercihinden veya sıradan editoryal rutinden kaynaklanıyor olabilir; metin bir amaç göstermiyor.",
+   "missing_context": [
+    "Başlıkların hazırlanma sürecine ve editoryal kararlara ilişkin bilgi",
+    "Haberlerin tam metni; yalnızca başlık ve lede değerlendirildi"
+   ]
+  }
+ ]
+}

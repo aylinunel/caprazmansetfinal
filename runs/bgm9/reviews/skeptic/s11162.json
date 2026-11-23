@@ -1,0 +1,270 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 14:07] Karaahmetoğlu CHP'den ayrıldı: Beyoğlu'nda gerekçe iç kavgalar",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[haberler · 17:07] AK Parti’ye geçeceği konuşulan Beyoğlu Belediye Başkanvekili, CHP’den istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[sozcu · 17:02] Üç gündür ulaşılamıyordu! Beyoğlu Belediye Başkanvekili CHP'den istifa etti, AKP'ye geçebilir",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı istifada sondakika gerekçeyi ('iç kavgalar'), haberler ve sozcu ise olası parti geçişini ve ulaşılamama durumunu öne çıkarıyor.",
+   "alternative_explanation": "Başlıklar istifa açıklamasındaki ve kulislerdeki farklı bilgileri özetlemiş olabilir.",
+   "missing_context": [
+    "İstifa açıklamasının tam metni"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sondakika · 14:07] Karaahmetoğlu CHP'den ayrıldı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 16:58] Beyoğlu Belediye Başkanvekili Sefer Karaahmetoğlu CHP'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Ayrıldı' ve 'istifa etti' sözcükleri kullanılıyor; çağrışım farkı belirgin değil.",
+   "alternative_explanation": "Eşanlamlı çeşitlilik.",
+   "missing_context": [
+    "Çağrışım farkını gösteren örnek"
+   ]
+  },
+  {
+   "card_id": "consequence-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[haberler · 17:07] AK Parti’ye geçeceği konuşulan Beyoğlu Belediye Başkanvekili, CHP’den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıkların ana yan tümcesinde istifa olayı yer alıyor; olası parti geçişi yan bilgi olarak veriliyor.",
+   "alternative_explanation": "Olay başlıkta var; beklenen gelişme ek bilgi.",
+   "missing_context": [
+    "Ana yan tümcenin sonuç olduğu bir başlık"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[star · 17:41] CHP'de istifa depremi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "zehir zemberek sözlerle CHP'den istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 16:58] Beyoğlu Belediye Başkanvekili Sefer Karaahmetoğlu CHP'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "star 'istifa depremi', takvim ise 'zehir zemberek sözlerle' ifadesini kurumun kendi sesinde kullanıyor; birgun aynı olguyu bu ifadeler olmadan veriyor.",
+   "alternative_explanation": "'Deprem' deyimi başlık üslubu olabilir.",
+   "missing_context": [
+    "Başka kurumlarda benzer ifadeler"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[cumhuriyet · 17:03] Beyoğlu Belediye Başkan Vekili Sefer Karaahmetoğlu CHP'den istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 16:58] Beyoğlu Belediye Başkanvekili Sefer Karaahmetoğlu CHP'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumlar aynı kişi için 'Başkan Vekili' ve 'Başkanvekili' yazımını kullanıyor; bunlar farklı ifadeler değil, aynı unvanın yazım biçimleridir.",
+   "alternative_explanation": "Yazım farkı.",
+   "missing_context": [
+    "Farklı etiketler kullanan bir kurum"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[takvim · 17:14] Beyoğlu Belediye Başkan Vekili Sefer Karaahmetoğlu CHP'den istifa etti: \"Hizipleşme var\"",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "zehir zemberek sözlerle CHP'den istifa etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 16:58] Beyoğlu Belediye Başkanvekili Sefer Karaahmetoğlu CHP'den istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "takvim başlığı tırnaklı bir ifadeyi ('Hizipleşme var') öne çıkarıyor ve lede'de 'zehir zemberek' sözünü kullanıyor; iki tercih aynı yönü gösteriyor, birgun aynı olguyu yalın veriyor. Ancak tırnaklı ifade konuşmacıya atfedildiği için yalnızca bir tercih kurumun kendi sesinde.",
+   "alternative_explanation": "Tırnaklı ifade istifa açıklamasından alınmıştır.",
+   "missing_context": [
+    "Aynı yönü gösteren ikinci bir kurum-sesi tercihi"
+   ]
+  }
+ ]
+}

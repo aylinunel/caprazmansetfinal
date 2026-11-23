@@ -1,0 +1,232 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteoroloji altı bölgeyi zirai don için uyardı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Çiftçiler dikkat: Meteoroloji'den zirai don uyarısı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Ankaralılar dikkat! Valilikten başkent için zirai don uyarısı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı MGM uyarısı bir kurumda bölge sayısıyla, diğerinde etkilenen çiftçiler üzerinden veriliyor; bu farklı boyutları öne çıkarma olabilir.",
+   "alternative_explanation": "Başlıklar arasındaki farkların çoğu farklı kaynaklardan (MGM, valilik, bölge müdürlüğü) gelen ayrı uyarılardan ve okur kitlesinin yerelliğinden kaynaklanıyor olabilir; bu aynı olgunun farklı boyutu değil, farklı olgudur.",
+   "missing_context": [
+    "Valilik ve bölge müdürlüğü uyarılarının MGM uyarısıyla aynı olgu olup olmadığı",
+    "Haber gövdelerinin tam metni"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteoroloji bölge bölge uyardı: Zirai don alarmı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "hafif ve yer yer orta şiddette zirai don riski bulunduğunu açıkladı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Cumhuriyet başlığında 'alarm' sözcüğü kullanılıyor; başka bir kurum riski hafif-orta şiddette olarak tanımlıyor.",
+   "alternative_explanation": "Resmi bir zirai don uyarısı üreticiler için gerçek bir risk bildirir; 'alarm' sözcüğü uyarının düzeyiyle orantılı bir vurgu olarak da okunabilir. Hafif-orta şiddet bilgisi yalnızca Ankara için verilmiş, Cumhuriyet'in andığı bölgelerin tamamı için değil.",
+   "missing_context": [
+    "MGM uyarısının resmi seviyesi (sarı/turuncu vb.)",
+    "Cumhuriyet'in andığı bölgeler için beklenen şiddet"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Zirai don alarmı!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Birçok bölge için zirai don uyarısı — MGM",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı MGM uyarısını Evrensel 'uyarı' sözcüğüyle, Cumhuriyet ise 'alarm' ve ünlemle veriyor.",
+   "alternative_explanation": "'Alarm' kartın örneklediği değerlendirici sözcüklerden (skandal, rezalet, müjde, tarihi, şok) çok bir tehdit sözcüğüdür; olayın kendisine değer yüklemekten çok aciliyet bildiriyor olabilir.",
+   "missing_context": [
+    "Kurumun bu tür uyarılarda 'alarm' sözcüğünü rutin kullanıp kullanmadığı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Meteoroloji bölge bölge uyardı: Zirai don alarmı!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Birçok bölge için zirai don uyarısı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Marmara'nın güneydoğusu, İç Anadolu, Karadeniz'in iç kesimleri ve birçok bölgede zirai don beklendiğini belirterek üreticileri uyardı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Neredeyse aynı lede'i paylaşan iki kurumdan biri olguyu 'uyarı', diğeri kendi başlığında 'alarm' olarak adlandırıyor; iki sözcüğün çağrışımı farklı.",
+   "alternative_explanation": "Fark bir başlık üslubu tercihi olabilir ve Cumhuriyet'in lede'i aynı olguyu 'uyardı' fiiliyle nötr biçimde aktarıyor.",
+   "missing_context": [
+    "Kurumun aynı türden diğer hava durumu haberlerindeki sözcük tercihi"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Kurumların kendi ifadelerinde iki seçeneği tek seçenek gibi sunan bir kalıp (ya... ya..., tek yol) görülmüyor.",
+   "alternative_explanation": "Başlıklar olayı bildiriyor; seçenek dayatan bir anlatım yok.",
+   "missing_context": [
+    "Haber gövdelerinde ikili seçenek kurgusu olup olmadığı"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Erzurum’da kar yağışı trafiği aksattı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Nedensel ifade yalnızca kar yağışının trafiği aksattığına ilişkin; bu doğrudan gözlemlenebilir bir olgu, salt eşzamanlılığa dayanan bir çıkarım değil.",
+   "alternative_explanation": "Kar yağışının trafiği aksatması olağan ve doğrudan bir ilişkidir; abartılı nedensellik yok.",
+   "missing_context": [
+    "Trafik aksamasına ilişkin yetkili açıklaması"
+   ]
+  }
+ ]
+}

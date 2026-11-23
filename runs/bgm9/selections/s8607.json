@@ -1,0 +1,13 @@
+{
+ "candidate_ids": [
+  "emphasis-framing",
+  "loaded-language",
+  "responsibility-framing",
+  "word-choice"
+ ],
+ "selection_uncertainty": [
+  "Yalnız başlık/özet var; tam metin ve kaynak alıntı ayrımı sınırlı.",
+  "Suçlama isimleri savcılık metnine dayanıyor olabilir."
+ ],
+ "selection_note": "'Suçlamalar vahim' gibi niteleme ve usul kararının sunuluş farkı."
+}

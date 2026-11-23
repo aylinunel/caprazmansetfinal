@@ -1,0 +1,15 @@
+{
+ "candidate_ids": [
+  "framing-effect",
+  "authority-bias",
+  "salience-bias",
+  "negativity-bias",
+  "in-group-bias",
+  "priming"
+ ],
+ "selection_uncertainty": [
+  "Soruşturma sürüyor; iddiaların sonucu belli değil.",
+  "Metin kısaltılmış."
+ ],
+ "selection_note": "Kayyum kararı; bazı kurumlar ilgisiz ayrıntıları (ölüm olayı) öne çıkarıyor."
+}

@@ -1,0 +1,235 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "AKP'li Cumhurbaşkanı Tayyip Erdoğan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Azerbaycan'da!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Recep Tayyip Erdoğan",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi 'AKP'li Cumhurbaşkanı', 'Başkan' ve 'Cumhurbaşkanı' olarak adlandırılıyor; parti etiketi ve 'Başkan' unvanı yalın tanımlamanın ötesinde değerlendirme taşıyor.",
+   "alternative_explanation": "Farklı unvanlar kaynağın (bakanlık, savcılık) kullandığı ifadeyi izliyor olabilir.",
+   "missing_context": [
+    "Kurumların unvan seçimlerinin kaynağı",
+    "Kişinin resmi unvanları"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan Azerbaycan'da! Aliyev ile ikili görüşme",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan gerilim sonrası Azerbaycan'da",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Pistte kol kola yürüdüler",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ziyaret haberinde bir başlık ikili görüşmeyi, biri öncesindeki gerilimi, biri liderlerin karşılaşma anını öne çıkarıyor.",
+   "alternative_explanation": "Başlık farkları yayın saati, karakter sınırı veya o anki bilgi düzeyinden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Kurumların tam başlık ve metinleri",
+    "Yayın sırası ve güncellemeler"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Aliyev davet etti!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Aliyev'in davetine icabetle",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı davet için 'davet etti' ve 'icabetle' sözcükleri kullanılıyor; farkın çağrışımsal mı üslupsal mı olduğu belirsiz.",
+   "alternative_explanation": "Sözcük farkları yalnızca üslup veya kurum yazım kuralı farkı olabilir.",
+   "missing_context": [
+    "Sözcüklerin okur algısına etkisi",
+    "Kurum üslup kılavuzları"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Bakü ile okullarda başörtüsü yasağı üzerinden başlayan gerilim sonrası",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan gerilim sonrası Azerbaycan'da",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "Evrensel ziyareti başörtüsü yasağı üzerinden başlayan önceki gerilim bağlamına yerleştiriyor.",
+   "alternative_explanation": "Bağlam eklemek tek başına kusur değildir; haberin okunmasına yardımcı olabilir.",
+   "missing_context": [
+    "Alternatif bağlam seçenekleri",
+    "Kurumun başka haberlerindeki bağlam kullanımı"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneğe indirgenmiş bir sunum bulunmuyor.",
+   "alternative_explanation": "Metinde iki seçenekli bir sunum yok.",
+   "missing_context": [
+    "Seçenek sunan ifade"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde açık bir nedensellik iddiası yok; 'gerilim sonrası' yalnızca zaman sırasını belirtiyor.",
+   "alternative_explanation": "İfade kronolojik bağlam veya kaynak aktarımı olabilir.",
+   "missing_context": [
+    "Nedensellik iddiasının dayanağı",
+    "İfadenin kime atfedildiği"
+   ]
+  }
+ ]
+}

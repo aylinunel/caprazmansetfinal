@@ -1,0 +1,260 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar'da 8 kişiyi öldüren caninin ifadesi kan dondurdu!",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "8 kişiyi öldüren Afyonkarahisar canisi Eskişehir'de kıskıvrak yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[birgun · 21:11] Afyonkarahisar'da silahla 8 kişiyi öldüren şahıs yakalandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Vatan ve Posta kendi seslerinde 'cani', 'kan dondurdu', 'kıskıvrak' gibi değerlendirici sözcükler kullanırken BirGün aynı olguyu bu sözcükler olmadan veriyor.",
+   "alternative_explanation": "Duygu yüklü dil olayın ağırlığını aktarmak için seçilmiş olabilir.",
+   "missing_context": [
+    "Mahkeme kararı öncesi şüpheliye ilişkin resmi nitelendirme"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "[sabah · 21:14] Afyonkarahisar'da 8 kişiyi öldüren katil Eskişehir'de yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[yenisafak · 20:57] Afyonkarahisar'da 8 kişiyi öldüren saldırgan yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar'da 8 kişiyi öldüren zanlı Eskişehir yolunda yakalandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "[mynet · 15:43] Afyonkarahisar'da 8 kişiyi öldüren cani tutuklandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı kişi 'katil', 'cani', 'saldırgan' ve 'zanlı' olarak adlandırılıyor; 'zanlı' hukuki belirsizliği korurken 'katil' ve 'cani' suçu kesinleşmiş ve ahlaki yargı içeren biçimde sunuyor.",
+   "alternative_explanation": "Kurumlar görüntü ve itiraf haberlerine dayanarak daha kesin sözcükleri tercih etmiş olabilir.",
+   "missing_context": [
+    "Mahkeme süreci ve kesinleşmiş hüküm"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Satın aldığı biçerdöverin parasını tahsil için gelen alacaklıları öldüren saldırganın",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "iki genci \"Sizi de öldürürüm\" diye tehdit ettiği anlar ortaya çıktı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar’da 8 kişiyi öldüren katil hakkında yeni detaylar: İşte geçmişi",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı olay Evrensel'de borç anlaşmazlığı, Takvim'de kaçış sırasındaki tehdit anı, A Haber'de şüphelinin geçmişi üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Kurumlar farklı zamanlarda ortaya çıkan yeni bilgileri habere dönüştürmüş olabilir.",
+   "missing_context": [
+    "İddianame"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar'da 8 kişiyi öldüren saldırgan yakalandı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sağlanan bağlam ya da diğer haberler konunun tekrarlayan veya yapısal olduğunu göstermiyor.",
+   "alternative_explanation": "Haberler tek bir suç olayını betimliyor.",
+   "missing_context": [
+    "Benzer olaylara veya silah ruhsatına dair veriler"
+   ]
+  },
+  {
+   "card_id": "causal-overclaim",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar'da 8 kişiyi öldüren caninin ifadesi kan dondurdu! İşte cinayetlerin sebebi",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Alacak-verecek kavgası yüzünden kurduğu pusuda 3 kişiyi katleden zanlının",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Saldırganın üç kişiyi borç anlaşmazlığı yüzünden, beş kişiyi ise kaçmak için araçlarını gasp etmeye çalışırken öldürdüğü iddia edildi.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Vatan kendi sesinde 'cinayetlerin sebebi' ve 'yüzünden' diyerek nedensellik kuruyor; BBC Türkçe aynı bağı 'iddia edildi' ile veriyor. Dayanak şüphelinin ifadesi olduğundan kanıtın yalnızca zaman sırası olup olmadığı belirsiz.",
+   "alternative_explanation": "Neden bilgisi şüphelinin ifadesinden aktarılmış olabilir.",
+   "missing_context": [
+    "Savcılık ifadesinin tam metni"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Afyonkarahisar'da 8 kişiyi öldüren zanlının ifadesi ortaya çıktı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Hiçbir kurum olayı bir eğilim, dizi ya da kurumsal süreç içine yerleştirmiyor.",
+   "alternative_explanation": "Haberler tekil olaya odaklanıyor.",
+   "missing_context": [
+    "Benzer olaylara ilişkin istatistikler"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,266 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya'nın hakimlik ifadesi ortaya çıktı: Mesleği ev hanımı, aylık geliri 500 bin lira",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Tutuklanan Fatma Betül Sayan Kaya, suçlamaları reddetti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "'Ev hanımıyım' dedi, siyasileri işaret etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "Aynı ifade metni bir başlıkta gelir ve meslek, başka birinde suçlamaların reddi, bir diğerinde başka siyasetçilere yapılan atıf üzerinden öne çıkarılıyor.",
+   "alternative_explanation": "Uzun bir ifadeden farklı alıntıların seçilmesi kaçınılmazdır; her başlık ifadenin gerçek bir bölümüne dayanıyor.",
+   "missing_context": [
+    "İfade metninin tamamı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturmasında tutuklanan eski bakan Fatma Betül Sayan Kaya",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Sermaye piyasası işlemlerine ilişkin yürütülen soruşturmada tutuklanan Fatma Betül Sayan Kaya",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı soruşturma bir kurumda 'fon vurgunu soruşturması', diğerinde 'sermaye piyasası işlemlerine ilişkin soruşturma' olarak adlandırılıyor; 'vurgun' suç ve yağma çağrışımı taşıyor.",
+   "alternative_explanation": "'Fon vurgunu' kamuoyunda dolaşan bir dosya adı olabilir; kurum bu adı kısa bir etiket olarak kullanmış olabilir.",
+   "missing_context": [
+    "Resmi açıklamalarda soruşturmanın nasıl adlandırıldığı"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon vurgunu soruşturmasında tutuklanan eski bakan",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında tutuklanan eski Bakan Fatma Betül Sayan Kaya'nın hakimlik ifadesi ortaya çıktı.",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Bir kurum kendi sesinde 'vurgun' sözcüğünü kullanıyor; başka bir kurum aynı olguyu bu sözcük olmadan veriyor.",
+   "alternative_explanation": "Sözcük, soruşturmanın konusu olan iddiaları özetlemek için kullanılmış olabilir; ancak yargı süreci sürerken suçun gerçekleştiğini ima eden bir değerlendirme taşıyor.",
+   "missing_context": [
+    "Soruşturmanın iddianame aşamasına gelip gelmediği"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "context",
+     "quote": "Fatma Betül Sayan Kaya'nın ifadesi ortaya çıktı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fon soruşturmasında tutuklanan eski Bakan Fatma Betül Sayan Kaya'nın hakimlik ifadesi ortaya çıktı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": [
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Soruşturma sürüyor; ancak başlıklar kişinin kendi ifadesini aktarıyor ve suç faili olarak bir aktörü kendi seslerinde belirlemiyor.",
+   "alternative_explanation": "Başlıkların öznesi kişinin beyanıdır; sorumluluk ataması değil, savunmanın aktarımı yapılıyor.",
+   "missing_context": [
+    "Kurumların haber metninde suçlamaları nasıl aktardığı"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya'nın ifadesi ortaya çıktı: Aylık geliri dikkat çekti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Aylık geliri oldukça dikkat çeken Kaya ifadesinde",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fatma Betül Sayan Kaya’nın ifadesi ortaya çıktı — Sermaye piyasalarındaki işlemlere yönelik soruşturma kapsamında",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Bir kurumun başlığı ve girişi gelir rakamını 'dikkat çekti' değerlendirmesiyle iki kez öne çıkarıyor; başka bir kurum aynı ifadeyi bu bileşim olmadan veriyor.",
+   "alternative_explanation": "Gelir rakamı ifadede yer alan olgusal bir bilgidir ve kamuoyu ilgisini çekmesi beklenebilir; iki seçimin belirli bir değerlendirme yönüne işaret ettiği kesin değil.",
+   "missing_context": [
+    "Gelir bilgisinin soruşturmayla ilgisini açıklayan bağlam"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fon soruşturması kapsamında tutuklanan eski Aile ve Sosyal Politikalar Bakanı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "TERA Holding yöneticileriyle yoğun görüşme trafiği olduğu iddialarını",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "İfade haberi süren fon soruşturması ve şirket yöneticileriyle ilgili iddialar çerçevesine yerleştiriliyor.",
+   "alternative_explanation": "Soruşturma bağlamı haberin olgusal zeminidir; bu bir etki bağlamıdır.",
+   "missing_context": [
+    "Soruşturmanın diğer şüphelileri ve aşamaları"
+   ]
+  }
+ ]
+}

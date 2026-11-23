@@ -1,0 +1,206 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "anchoring-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İspanya'da 74 kişinin hayatına mal olan hızlı tren kazasının",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "en az 69 kişinin hayatını kaybettiği",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde önceki bir değer veya bilgi bulunsa da sonraki yargının bu referans noktasına açıkça bağlandığı ve haksız biçimde ona yakın tutulduğu gösterilmiyor.",
+   "alternative_explanation": "Farklı sayılar veya güncellemeler bilgi akışının farklı aşamalarını yansıtıyor olabilir.",
+   "missing_context": [
+    "Sonraki yargının önceki değere dayandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Tren faciasının ardından: İspanya Ulaştırma Bakanı istifasını duyurdu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "İspanya'da hızlı tren kazasının ardından Ulaştırma Bakanı Puente istifa etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olguyu bildiren kurumlar farklı sözcük/vurgu kullanıyor (eşdeğerlik karşılaştırmalı başlıklarda gözleniyor); ancak bu sunum farkına bağlanan bir tercih veya yargı metinde yok.",
+   "alternative_explanation": "Başlık farkları üslup, yayın saati, hedef kitle ya da farklı kaynak açıklamalarından kaynaklanabilir; bir karar vericinin çerçeveye dayanarak yargı değiştirdiği gözlenmiyor.",
+   "missing_context": [
+    "Sunum farkının okur veya karar verici yargısını değiştirdiğine dair karşılaştırmalı veri",
+    "Haber gövdelerinin tam metni"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Bazı başlıklar çarpıcı bir ayrıntıyı öne çıkarıyor; ancak metin bu ayrıntıyı bir yargı veya seçime açıkça bağlamıyor ve haksız etkiyi göstermiyor.",
+   "alternative_explanation": "Çarpıcı ayrıntıların öne çıkarılması haber değeri ve okur ilgisiyle açıklanabilir; tek bir metin ağırlıklandırma hatasını kanıtlamaz.",
+   "missing_context": [
+    "Kurumların daha az çarpıcı bilgileri nasıl ağırlıklandırdığına dair karşılaştırmalı kayıt",
+    "Editoryal karar süreçleri"
+   ]
+  },
+  {
+   "card_id": "outcome-bias",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "istifa çağrılarının hedefi olan Ulaştırma ve Sürdürülebilir Hareketlilik Bakanı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde sonucu bilmeden verilmiş bir kararın, sonucu bilen bir değerlendiricinin yargısıyla haksız biçimde değerlendirildiği açıkça gösterilmiyor.",
+   "alternative_explanation": "İstifa bir sonuç sonrası siyasi sorumluluk üstlenme olabilir; karar sürecinin yeterli olduğunu belirten bir ifade yok.",
+   "missing_context": [
+    "Karar sürecine ve o anki bilgiye ilişkin kayıt"
+   ]
+  },
+  {
+   "card_id": "identifiable-victim-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir tahsis/yardım kararı ve karar verici, tanımlanabilir bir kişiyle karşılaştırılabilir bir grup arasındaki karşılaştırma yok.",
+   "alternative_explanation": "Mağdurların adlarının verilmesi habercilik pratiğidir; bir kaynak tahsisi kararını etkilediği gösterilmiyor.",
+   "missing_context": [
+    "Yardım veya kaynak tahsisi kararlarına ilişkin kayıt"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde bir alandaki olumlu izlenimi başka bir alandaki olumlu yargıya açıkça bağlayan bir ifade yok.",
+   "alternative_explanation": "Unvan veya geçmiş görevlerin anılması tanımlayıcı bilgi olabilir; ikinci bir yargıyı belirlediği gösterilmiyor.",
+   "missing_context": [
+    "Olumlu izlenimle ikinci yargı arasındaki bağı gösteren ifade",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  }
+ ]
+}

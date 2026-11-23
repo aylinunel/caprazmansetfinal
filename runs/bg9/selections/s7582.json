@@ -1,0 +1,14 @@
+{
+ "candidate_ids": [
+  "hindsight-bias",
+  "framing-effect",
+  "in-group-bias",
+  "salience-bias",
+  "affect-heuristic"
+ ],
+ "selection_uncertainty": [
+  "Yeni delillerin içeriği metinde yok.",
+  "İddianame aşaması; yargılama sonucu belli değil."
+ ],
+ "selection_note": "11 yıl sonra hazırlanan iddianame geçmiş olaya bakışı etkileyebilir."
+}

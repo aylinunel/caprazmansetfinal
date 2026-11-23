@@ -1,0 +1,229 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "5 şüpheli hakkında 11 yıl sonra iddianame hazırlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne saldırı soruşturmasında yeni iddianame: 5 şüpheli için istenen ceza belli oldu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe'nin otobüsüne saldırı planlı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "mechanism": "T24 geçen süreyi (11 yıl), sabah istenen cezayı, diken saldırının planlı olduğunu başlığa taşıyor; aynı iddianame farklı boyutlarla sunuluyor.",
+   "alternative_explanation": "Başlıklar iddianamenin farklı bölümlerinden alınmış olabilir.",
+   "missing_context": [
+    "İddianame metninin tamamı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Fenerbahçe otobüsüne kurşunlu saldırıda iddianame hazırlandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe takım otobüsüne silahlı saldırı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe takım otobüsüne saldırı davasında çember daraldı!",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı olay için milligazete 'kurşunlu saldırı', t24 ve haberturk 'silahlı saldırı', turkiyegz 'dava' ve 'çember daraldı' ifadelerini kullanıyor; çağrışım farkı belirsiz.",
+   "alternative_explanation": "Farklar anlatım biçimine ve hukuki aşama sözcüklerine bağlı olabilir.",
+   "missing_context": [
+    "Terimlerin çağrışım farkına dair ölçüt"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İddianame: Fenerbahçe'nin otobüsüne saldırı planlı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "çember daraldı!",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "İddianame aşamasında sorumluluk belirsizken diken başlığı 'planlı' diyor, turkiyegz 'çember daraldı' diyor; ancak bu başlıklar adlandırılmış bir faile suç yüklemiyor ve diken 'İddianame:' önekiyle kaynağı belirtiyor.",
+   "alternative_explanation": "'İddianame:' öneki ifadeyi savcılığa atfediyor.",
+   "missing_context": [
+    "İddianamenin kaynak gösterimi"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "5 şüpheli hakkında 11 yıl sonra iddianame hazırlandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Fenerbahçe takım otobüsüne saldırıya ilişkin 5 şüpheli hakkındaki iddianame tamamlandı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    }
+   ],
+   "mechanism": "T24 ve anka başlıkları iddianameyi 11 yıllık bir süreç içine yerleştiriyor.",
+   "alternative_explanation": "'11 yıl sonra' yalnızca zaman farkını belirtiyor olabilir.",
+   "missing_context": [
+    "Soruşturmanın tarihçesi"
+   ]
+  },
+  {
+   "card_id": "ad-hominem",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklarda şüphelilerin karakteri, kimliği veya geçmişi üzerinden bir nitelendirme yok.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metinde iki seçeneği tek seçenek olarak sunan bir ifade yok.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  }
+ ]
+}

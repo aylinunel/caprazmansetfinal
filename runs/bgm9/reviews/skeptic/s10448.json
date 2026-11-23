@@ -1,0 +1,267 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda tanker faciası!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "2 petrol tankeri alev topuna döndü",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İran: Hürmüz Boğazı'nda 2 petrol tankeri mayına çarptı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Sözcü 'tanker faciası', Star 'alev topuna döndü' diyerek kendi sesiyle değerlendirici ifadeler kullanıyor; Birgün aynı olguyu bu ifadeler olmadan ve İran'a atfen veriyor.",
+   "alternative_explanation": "'Facia' büyük çaplı bir kaza için olağan bir sözcük olabilir.",
+   "missing_context": [
+    "Olayın gerçek ölçeği"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda patlama: 2 petrol tankeri alev topuna döndü",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda 2 petrol tankeri mayına çarptı, 1'i battı",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Star 'patlama… alev topuna döndü', Haber7 ise 'mayına çarptı, 1'i battı' diyor; aynı olay için farklı çağrışımlı sözcükler kullanılıyor, ancak bunlar farklı ayrıntıları da yansıtabilir.",
+   "alternative_explanation": "Fark, kurumların aldığı farklı güncellemelerden kaynaklanıyor olabilir.",
+   "missing_context": [
+    "Kurumların kaynak bilgisi"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz'de 2 tanker mayına çarparak infilak etti",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda mayına çarpan petrol tankeri battı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "iki günde 6 tanker yandı",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "ABD ordusunun yönlendirmesi ve savaş uçaklarının desteğiyle",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Aynı olayı Akşam patlama, A Haber batma, DW Türkçe tanker sayısı, Hürriyet ise ABD'nin rolü üzerinden öne çıkarıyor.",
+   "alternative_explanation": "Haber gelişirken farklı bilgiler öne çıkmış olabilir.",
+   "missing_context": [
+    "Başlıkların yayın zamanları"
+   ]
+  },
+  {
+   "card_id": "fear-appeal",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda tanker faciası!",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "2 milyon varilden fazla ham petrol taşıyan süper tankerlerden birinin",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sözcü 'facia' sözcüğünü kullanıyor ve Mynet/CNN Türk ölçeği (2 milyondan fazla varil, 6 tanker) veriyor; bildirilen ölçek kullanılan dille orantılı görünüyor.",
+   "alternative_explanation": "Büyük bir tanker kaybı gerçek bir afet olabilir.",
+   "missing_context": [
+    "Olayın bağımsız doğrulaması"
+   ]
+  },
+  {
+   "card_id": "responsibility-framing",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İran: Hürmüz Boğazı'nda 2 petrol tankeri mayına çarptı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda tanker mayına çarpıp alev aldı iddiası",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "contradicted",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar olayı 'İran:' ile atfederek veriyor, Dirilis 'iddiası' ifadesini kullanıyor; sorumluluğu atıf işareti olmadan bir aktöre yükleyen bir dil görülmüyor.",
+   "alternative_explanation": "Atıf işaretleri, sorumluluğun kesinleşmediğini gösteriyor.",
+   "missing_context": [
+    "Mayınları kimin döşediği"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Hürmüz Boğazı'nda son iki günde mayına çarparak batan tanker sayısının altıya yükseldiğini",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "USS Theodore Roosevelt'in bölgeye ulaşmasıyla Ortadoğu'daki ABD uçak gemisi sayısı üçe çıktı",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "DW Türkçe olayı art arda gelen tanker kayıpları ve ABD askerî varlığının artışı bağlamına yerleştiriyor.",
+   "alternative_explanation": "Bağlam, haberin anlaşılması için gerekli arka plan olabilir.",
+   "missing_context": [
+    "Alternatif bağlam seçenekleri"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,252 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "labeling",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'dan Güney Kore'ye kritik ziyaret",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Güney Kore'ye gidiyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı kişi sabah ve ahaber başlığında 'Başkan Erdoğan', çoğu kurumda 'Cumhurbaşkanı Erdoğan' olarak anılıyor; iki unvan da kimlik bildiriyor, ek değerlendirme içerdiği görünmüyor.",
+   "alternative_explanation": "Unvan farkı yazım politikası olabilir.",
+   "missing_context": [
+    "Kurumların unvan politikası"
+   ]
+  },
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Nükleer santral inşası, savunma sanayii gündemde",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Erdoğan 8 yıl sonra Güney Kore'ye gidiyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Masada 3 kritik konu",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Seul'den davet",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    }
+   ],
+   "mechanism": "Haberturk gündem maddelerini, evrensel ve milligazete 8 yıllık aranın ardından gelen ziyareti, aksam ise davet çerçevesini öne çıkarıyor.",
+   "alternative_explanation": "Farklar yayın saatlerindeki bilgi farkından gelebilir.",
+   "missing_context": [
+    "Başlıkların yayın anındaki bilgi durumu"
+   ]
+  },
+  {
+   "card_id": "loaded-language",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'dan Güney Kore'ye kritik ziyaret",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Başkan Erdoğan'dan Güney Kore'ye önemli ziyaret",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Güney Kore'ye gidiyor",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      2
+     ]
+    }
+   ],
+   "mechanism": "Sabah ve ahaber başlıklarında kendi sesleriyle 'kritik' ve 'önemli' sıfatları ziyareti değerlendiriyor; tgrt, yenisafak, haberler aynı olguyu sıfatsız veriyor.",
+   "alternative_explanation": "Sıfatlar ziyaretin gündem yoğunluğuna dayanabilir.",
+   "missing_context": [
+    "Ziyaretin gündeminin bağımsız değerlendirmesi"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Güney Kore'ye gidiyor",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan, Güney Kore'yi ziyaret edecek",
+     "kind": "behavioral"
+    },
+    {
+     "source": "text",
+     "quote": "Cumhurbaşkanı Erdoğan Güney Kore’ye gitti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Aynı ziyaret için 'gidiyor', 'ziyaret edecek', 'gitti' fiilleri kullanılıyor; farkların çağrışımsal mı yoksa zaman/üslup farkı mı olduğu belirsiz.",
+   "alternative_explanation": "Fark fiil zamanı ve yayın saatinden ibaret olabilir.",
+   "missing_context": [
+    "Fiil farkının çağrışım etkisi"
+   ]
+  },
+  {
+   "card_id": "ad-hominem",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "contradicted",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve girişlerde kişinin karakteri, kimliği ya da geçmişi üzerinden bir nitelendirme yok.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  },
+  {
+   "card_id": "episodic-framing",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Metin bağlamı olarak yinelenen yapısal bir sorun sunmuyor; bu bir ziyaret haberi.",
+   "alternative_explanation": "Metin bu kalıbı göstermeden olguyu olduğu gibi aktarıyor olabilir; gözlenen ifade olağan haber dili kapsamındadır.",
+   "missing_context": [
+    "Konuyla ilgili daha geniş bağlam",
+    "Başlık ve giriş dışındaki içerik"
+   ]
+  }
+ ]
+}

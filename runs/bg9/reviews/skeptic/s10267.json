@@ -1,0 +1,175 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "incentivization",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Kurala uymayan sürücülere 6 bin TL idari para cezası uygulanacak",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Mynet satırı, kış lastiği takmamaya bağlı 6 bin TL idari para cezasını belirtiyor; ancak bu yaptırımın davranışı değiştirdiği yönünde karşılaştırmalı veya boylamsal bir kanıt sunulmuyor.",
+   "alternative_explanation": "Satır, yasal yaptırımı bildiren olgusal bir bilgilendirmedir; davranış değişikliği iddiası içermiyor.",
+   "missing_context": [
+    "Yaptırımın lastik değişimini artırdığına dair karşılaştırmalı veri",
+    "Önceki yıllara ait uyum oranları"
+   ]
+  },
+  {
+   "card_id": "loss-aversion",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Zorunlu kış lastiği haberinde eşdeğer bir kayıp ile kazanç arasında ağırlık farkı gösteren bir karşılaştırma yok.",
+   "alternative_explanation": "Olası bir kayıptan kaçınma, gerçek riske karşı orantılı bir tepki olabilir.",
+   "missing_context": [
+    "Eşdeğer kazanç ve kayıp karşılaştırması",
+    "Karar vericinin gerekçesi"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Zorunlu kış lastiği haberinde belirgin bir ayrıntı ile bir yargı arasında açık, haksız bir bağ kurulmuyor; belirgin olmak tek başına hata kanıtı değil.",
+   "alternative_explanation": "Haber değeri taşıyan ayrıntının öne çıkarılması olağan editoryal tercihtir.",
+   "missing_context": [
+    "Belirgin ve belirgin olmayan bilginin ağırlığını karşılaştıran davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Zorunlu kış lastiği haberinde olumsuz bilginin karşılaştırılabilir olumlu bilgiden orantısız ağırlık aldığına dair kanıt yok.",
+   "alternative_explanation": "Olumsuz içerik, olayın doğası gereği haberin konusu olabilir; orantılı bir yansıtma olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgi",
+    "Değerlendirme veya kararın bu ağırlıktan etkilendiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Zorunlu kış lastiği haberinde karşılaştırılan ifadelerin karar açısından eşdeğer olduğu ve tercihin sunuma bağlandığı metinde belirtilmiyor.",
+   "alternative_explanation": "Başlık farkları farklı bilgi unsurlarını öne çıkarma tercihinden kaynaklanıyor olabilir; eşdeğerlik kanıtlı değil.",
+   "missing_context": [
+    "Eşdeğer seçeneklerin açıkça belirtilmesi",
+    "Tercihin sunuma bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "action-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Zorunlu kış lastiği haberinde eylemin bekleme seçeneğine tercih edildiğini ve bunun gerekçesiz olduğunu gösteren bir ifade yok.",
+   "alternative_explanation": "Metindeki eylem, zorunlu veya haklı bir yanıt olabilir; eylemin varlığı önyargı kanıtı değildir.",
+   "missing_context": [
+    "Beklemeyi de içeren alternatif karşılaştırması",
+    "Eylemin varsayılan tercih olduğuna dair açıklama"
+   ]
+  }
+ ]
+}

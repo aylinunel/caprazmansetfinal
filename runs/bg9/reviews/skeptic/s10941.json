@@ -1,0 +1,170 @@
+{
+ "role": "skeptic",
+ "assessments": [
+  {
+   "card_id": "negativity-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlıklar Türkiye'nin B Ligi'ne düştüğünü bildiriyor; bu olumsuz sonuç haberin kendisidir ve olumlu bilgiyle orantısız karşılaştırıldığı gösterilmiyor.",
+   "alternative_explanation": "Olumsuz içerik, olayın doğası gereği haberin konusu olabilir; orantılı bir yansıtma olabilir.",
+   "missing_context": [
+    "Karşılaştırılabilir olumlu bilgi",
+    "Değerlendirme veya kararın bu ağırlıktan etkilendiğine dair kanıt"
+   ]
+  },
+  {
+   "card_id": "framing-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Uluslar Ligi haberinde karşılaştırılan ifadelerin karar açısından eşdeğer olduğu ve tercihin sunuma bağlandığı metinde belirtilmiyor.",
+   "alternative_explanation": "Başlık farkları farklı bilgi unsurlarını öne çıkarma tercihinden kaynaklanıyor olabilir; eşdeğerlik kanıtlı değil.",
+   "missing_context": [
+    "Eşdeğer seçeneklerin açıkça belirtilmesi",
+    "Tercihin sunuma bağlandığını gösteren ifade"
+   ]
+  },
+  {
+   "card_id": "declinism",
+   "verdict": "not_supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "6’da sıfır çekmiştik, artık B Ligi’ndeyiz",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Sözcü başlığı 'artık B Ligi'ndeyiz' diyerek mevcut durumu bildiriyor; geçmişin daha iyi olduğu yönünde açık bir kıyas yok.",
+   "alternative_explanation": "Mevcut durum bildirimi, geçmişle kıyas içermeyen olgusal haber olabilir.",
+   "missing_context": [
+    "Geçmiş ve bugünü kıyaslayan açık ifade"
+   ]
+  },
+  {
+   "card_id": "outcome-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Uluslar Ligi haberinde bir kararın kalitesinin yalnızca sonucuna göre değerlendirildiği gösterilmiyor.",
+   "alternative_explanation": "Sonucun bildirilmesi karar kalitesine ilişkin hüküm anlamına gelmez.",
+   "missing_context": [
+    "Kararın alındığı andaki bilgi ve standartlar"
+   ]
+  },
+  {
+   "card_id": "salience-bias",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Uluslar Ligi haberinde belirgin bir ayrıntı ile bir yargı arasında açık, haksız bir bağ kurulmuyor; belirgin olmak tek başına hata kanıtı değil.",
+   "alternative_explanation": "Haber değeri taşıyan ayrıntının öne çıkarılması olağan editoryal tercihtir.",
+   "missing_context": [
+    "Belirgin ve belirgin olmayan bilginin ağırlığını karşılaştıran davranış kanıtı"
+   ]
+  },
+  {
+   "card_id": "halo-effect",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Uluslar Ligi haberinde bir alandaki olumlu izlenimin ilgisiz bir alandaki yargıya aktarıldığı gösterilmiyor.",
+   "alternative_explanation": "Övgü dolu sıfatlar tanımlayıcı olabilir; ayrı bir yargıya bağlantı yok.",
+   "missing_context": [
+    "Ayrı bir alandaki yargıyla açık bağlantı"
+   ]
+  }
+ ]
+}

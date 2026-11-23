@@ -1,0 +1,245 @@
+{
+ "role": "advocate",
+ "assessments": [
+  {
+   "card_id": "emphasis-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Seçimi öğrenciler kazandı",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan erken genel seçim: Vucic yenilgiyi kabul etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Aynı seçim sonucu bazı başlıklarda kazanan öğrenciler, bazılarında yenilgiyi kabul eden Vucic öznesiyle verilerek farklı boyutlar öne çıkarılıyor.",
+   "alternative_explanation": "Başlık öznesinin değişmesi olağan başlık yazım tercihi olabilir.",
+   "missing_context": [
+    "Başlık seçim gerekçeleri"
+   ]
+  },
+  {
+   "card_id": "labeling",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "İsrail yanlısı Vucic",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "İsrail ile yakınlığı dikkat çeken Vucic",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "eski Cumhurbaşkanı Aleksandar Vucic",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      2
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim ve Akşam Vucic'i 'İsrail yanlısı'/'İsrail ile yakınlığı dikkat çeken' diye niteliyor; Sözcü aynı kişiyi 'eski Cumhurbaşkanı' unvanıyla tanımlıyor. İlk ikisi tanımlamanın ötesinde bir değerlendirme taşıyor.",
+   "alternative_explanation": "İsrail ilişkisi haber değeri olan bir olgu olarak seçilmiş olabilir.",
+   "missing_context": [
+    "İddianın dayanağı"
+   ]
+  },
+  {
+   "card_id": "thematic-framing",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "Novi Sad’daki tren garı faciasının ardından başlayan protestolar",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "iki yıldır devam eden halk protestolarının öncülüğünü",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "mechanism": "Kısa Dalga ve Evrensel lede'leri seçim sonucunu iki yıllık protesto hareketi ve Novi Sad faciası bağlamına yerleştiriyor.",
+   "alternative_explanation": "Bağlam okura arka plan vermek amacıyla eklenmiş olabilir.",
+   "missing_context": [
+    "Bağlamın seçime etkisine dair bağımsız kaynak"
+   ]
+  },
+  {
+   "card_id": "spin",
+   "verdict": "supported",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "12 yıllık iktidar bitti! İsrail yanlısı Vucic 'öğrenciler' karşısında yenilgiyi kabul etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Sırbistan erken genel seçim: Vucic yenilgiyi kabul etti",
+     "kind": "behavioral"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "satisfied",
+     "evidence_indices": [
+      1
+     ]
+    }
+   ],
+   "mechanism": "Takvim başlığı ünlemli vurgu, 'İsrail yanlısı' etiketi ve tırnak içine alınmış 'öğrenciler' sözcüğünü birlikte kullanıyor; NTV aynı olguyu bu unsurlar olmadan veriyor.",
+   "alternative_explanation": "Tırnaklar liste adına atıf olabilir.",
+   "missing_context": [
+    "Takvim lede'inin tamamı"
+   ]
+  },
+  {
+   "card_id": "word-choice",
+   "verdict": "uncertain",
+   "evidence": [
+    {
+     "source": "text",
+     "quote": "seçim mağlubiyetini kabul etti",
+     "kind": "statement"
+    },
+    {
+     "source": "text",
+     "quote": "Vucic yenilgiyi kabul etti",
+     "kind": "statement"
+    }
+   ],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "satisfied",
+     "evidence_indices": [
+      0
+     ]
+    },
+    {
+     "condition_index": 1,
+     "status": "satisfied",
+     "evidence_indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "condition_index": 2,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "'Mağlubiyet' ve 'yenilgi' ile 'iktidarı son buldu'/'dönemi sona erdi' gibi aynı olguyu anlatan farklı sözcükler var; çağrışım farkı üslup farkından ayrılamıyor.",
+   "alternative_explanation": "Farklar yalnızca üslup/kayıt farkı olabilir.",
+   "missing_context": [
+    "Çağrışım farkını gösteren ölçüt"
+   ]
+  },
+  {
+   "card_id": "false-dilemma",
+   "verdict": "not_supported",
+   "evidence": [],
+   "necessary_conditions": [
+    {
+     "condition_index": 0,
+     "status": "unknown",
+     "evidence_indices": []
+    },
+    {
+     "condition_index": 1,
+     "status": "unknown",
+     "evidence_indices": []
+    }
+   ],
+   "mechanism": "Başlık ve lede olayı olağan biçimde bildiriyor; kartın gerektirdiği gözlemlenebilir ölçüt metinde yer almıyor.",
+   "alternative_explanation": "Metindeki ifade, önyargıdan bağımsız olarak olağan haber bildirimi kalıbıyla açıklanabilir.",
+   "missing_context": [
+    "Gerekçe veya karar sürecini gösteren ek metin",
+    "Karşılaştırmalı davranış verisi"
+   ]
+  }
+ ]
+}
