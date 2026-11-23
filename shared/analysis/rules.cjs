@@ -7,7 +7,7 @@
    reports someone else's epithet has not adopted it. The boundary-aware pattern
    matters in Turkish, where an apostrophe marks a suffix (Suriye'nin) and a
    naive quote-pair regex swallows whole clauses. */
-var RULES_VERSION = "4.0";
+var RULES_VERSION = "4.1";
 var RULEDEF = [
   ["ad-hominem", "Kurumun kendi sesiyle bir aktöre yönelttiği sıfat", 1,
     ["haydut","katil","soykırımcı","fırıldak","hain","satılmış","sözde","densiz","zavallı","işgalci","diktatör","terörist"]],
@@ -20,7 +20,10 @@ var RULEDEF = [
   ["bandwagon-effect", "Ölçüsü verilmeyen bütünlük iddiası", 0,
     ["tüm dünya","dünyanın gözü","herkes","milyonlar","büyük çoğunluk","kimse itiraz","el pençe divan"]],
   ["halo-effect", "Karşılaştırma noktası olmayan üstünlük iddiası", 0,
-    ["geride bıraktı","dev atılım","zirvede","rekor","tarihi"]],
+    ["geride bıraktı","dev atılım","zirvede","rekor",
+     /* not bare "tarihi": "sonuç tarihi belli oldu" is a date and "tarihi eser" an artefact */
+     "tarihi zafer","tarihi karar","tarihi adım","tarihi zirve","tarihi başarı","tarihi gün","tarihi bir ",
+     "tarihe geçti","tarihine geçti","tarihinin en"]],
   ["responsibility-framing", "Süreç bitmeden niyet varsayan fiil", 0,
     ["kaçarken","kaçan","itiraf","çelişkili","pes dedirten","yakayı ele verdi"]],
   ["metaphorical-framing", "Olayı yeniden düzenleyen mecaz", 0,
@@ -72,7 +75,7 @@ var BANDS = [
 function bandOf(v) { for (var i = 0; i < BANDS.length; i++) if (v <= BANDS[i].max) return BANDS[i]; return BANDS[5]; }
 
 /* Evidence strength, derived the same way for a pasted headline and a corpus headline. */
-var AMB = ["savaş", "kriz", "tehlike", "rekor", "tarihi", "bomba", "gözü", "herkes",
+var AMB = ["savaş", "kriz", "tehlike", "rekor", "bomba", "gözü", "herkes",
   "milyonlar", "bildirildi", "öğrenildi"];
 function evidenceOf(text, hits) {
   var stripped = unquoted(String(text || "").toLocaleLowerCase("tr"));

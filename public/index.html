@@ -2818,6 +2818,7 @@ kbd{font-family:var(--ff-m);font-size:11px;padding:1px 5px;border:1px solid curr
   var ledes = null;
   window.cmLedes = function () {
     if (!ledes) ledes = Promise.all(window.DATA.meta.packs.months.map(function (m) { return load("l-" + m + ".bin"); }))
+      .catch(function (e) { ledes = null; throw e; })  /* a failed load can be retried */
       .then(function (ps) {
         var map = new Map();
         ps.forEach(function (p) { for (var j = 0; j < p.i.length; j++) map.set(p.i[j], p.l[j]); });
@@ -4453,7 +4454,7 @@ var LIVE = Object.keys(STAT).sort();
    reports someone else's epithet has not adopted it. The boundary-aware pattern
    matters in Turkish, where an apostrophe marks a suffix (Suriye'nin) and a
    naive quote-pair regex swallows whole clauses. */
-var RULES_VERSION = "4.0";
+var RULES_VERSION = "4.1";
 var RULEDEF = [
   ["ad-hominem", "Kurumun kendi sesiyle bir aktöre yönelttiği sıfat", 1,
     ["haydut","katil","soykırımcı","fırıldak","hain","satılmış","sözde","densiz","zavallı","işgalci","diktatör","terörist"]],
@@ -4466,7 +4467,10 @@ var RULEDEF = [
   ["bandwagon-effect", "Ölçüsü verilmeyen bütünlük iddiası", 0,
     ["tüm dünya","dünyanın gözü","herkes","milyonlar","büyük çoğunluk","kimse itiraz","el pençe divan"]],
   ["halo-effect", "Karşılaştırma noktası olmayan üstünlük iddiası", 0,
-    ["geride bıraktı","dev atılım","zirvede","rekor","tarihi"]],
+    ["geride bıraktı","dev atılım","zirvede","rekor",
+     /* not bare "tarihi": "sonuç tarihi belli oldu" is a date and "tarihi eser" an artefact */
+     "tarihi zafer","tarihi karar","tarihi adım","tarihi zirve","tarihi başarı","tarihi gün","tarihi bir ",
+     "tarihe geçti","tarihine geçti","tarihinin en"]],
   ["responsibility-framing", "Süreç bitmeden niyet varsayan fiil", 0,
     ["kaçarken","kaçan","itiraf","çelişkili","pes dedirten","yakayı ele verdi"]],
   ["metaphorical-framing", "Olayı yeniden düzenleyen mecaz", 0,
@@ -4518,7 +4522,7 @@ var BANDS = [
 function bandOf(v) { for (var i = 0; i < BANDS.length; i++) if (v <= BANDS[i].max) return BANDS[i]; return BANDS[5]; }
 
 /* Evidence strength, derived the same way for a pasted headline and a corpus headline. */
-var AMB = ["savaş", "kriz", "tehlike", "rekor", "tarihi", "bomba", "gözü", "herkes",
+var AMB = ["savaş", "kriz", "tehlike", "rekor", "bomba", "gözü", "herkes",
   "milyonlar", "bildirildi", "öğrenildi"];
 function evidenceOf(text, hits) {
   var stripped = unquoted(String(text || "").toLocaleLowerCase("tr"));
@@ -9467,12 +9471,14 @@ function route() {
   v3readShadow();
   v3scrub();
   var raw = location.hash.replace(/^#/, "") || "/";
-  var qi = raw.indexOf("?"), params = {}, path = raw;
+  var qi = raw.indexOf("?"), params = Object.create(null), path = raw;
+  var dec = function (x) { try { return decodeURIComponent(x); } catch (e) { return x; } };  /* "%" alone would throw */
   if (qi >= 0) {
     path = raw.slice(0, qi);
     raw.slice(qi + 1).split("&").forEach(function (pair) {
-      var kv = pair.split("=");
-      if (kv[0]) params[decodeURIComponent(kv[0])] = decodeURIComponent(kv[1] || "");
+      var kv = pair.split("="), v = dec(kv[1] || "");
+      /* ids index plain objects (EV, STAT, D.N…): "toString" must not find Object.prototype's */
+      if (kv[0]) params[dec(kv[0])] = v in Object.prototype ? "" : v;
     });
   }
   /* a placeholder opened directly (middle-click, new tab, copied link): wait for the URLs, then go to the story */

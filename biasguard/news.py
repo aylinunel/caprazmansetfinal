@@ -334,7 +334,8 @@ def write_results(out: Path, res: dict[str, Any]) -> None:
 
 
 BANNED = ("bağlam gerekli", "desteklendi", "uncertain")
-_QUOTE = re.compile(r"[“\"]([^”\"]+)[”\"]")
+# double quotes, or single quotes not touching a letter (so "Türkiye'nin" is an apostrophe, not a quote)
+_QUOTE = re.compile(r"[“\"]([^”\"]+)[”\"]|(?<!\w)[‘']([^‘’']+?(?:['’]\w[^‘’']*?)*)[’'](?!\w)")
 
 
 def validate_explain(x: dict, event_text: str | None = None) -> list[str]:
@@ -355,7 +356,7 @@ def validate_explain(x: dict, event_text: str | None = None) -> list[str]:
         low = v.lower()
         probs += [f"{k}: banned phrase '{b}'" for b in BANNED if b in low]
         if event_text is not None:
-            probs += [f"{k}: quote not in event text: {q[:40]}" for q in _QUOTE.findall(v)
+            probs += [f"{k}: quote not in event text: {q[:40]}" for q in (a or b for a, b in _QUOTE.findall(v))
                       if len(q) > 8 and q not in event_text]
     return probs
 

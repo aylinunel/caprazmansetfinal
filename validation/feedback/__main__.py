@@ -5,13 +5,12 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 from biasguard.catalog import load_cards
 
 from .labels import append, import_export, read
-from .stats import card_stats, card_status
+from .stats import card_stats, card_status, write_status
 
 REFERENCE = Path(__file__).resolve().parents[1] / "reference"
 
@@ -34,9 +33,7 @@ def main(argv: list[str] | None = None) -> int:
     gates = json.loads((REFERENCE / "gates.json").read_text(encoding="utf-8"))
     stats = card_stats(read(a.labels))
     status = card_status(stats, gates)
-    out = {"pack_version": a.pack, "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-           "agreed": gates["agreed"], "measure": "verify-pass precision (not accuracy)", "cards": status}
-    (REFERENCE / "card_status.json").write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    write_status(REFERENCE / "card_status.json", "verify-pass precision (not accuracy)", status, gates["agreed"], a.pack)
     if not status:
         print("No reviews yet: no card is judged.")
     for card, c in sorted(status.items()):

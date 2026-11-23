@@ -4967,12 +4967,14 @@ function route() {
   v3readShadow();
   v3scrub();
   var raw = location.hash.replace(/^#/, "") || "/";
-  var qi = raw.indexOf("?"), params = {}, path = raw;
+  var qi = raw.indexOf("?"), params = Object.create(null), path = raw;
+  var dec = function (x) { try { return decodeURIComponent(x); } catch (e) { return x; } };  /* "%" alone would throw */
   if (qi >= 0) {
     path = raw.slice(0, qi);
     raw.slice(qi + 1).split("&").forEach(function (pair) {
-      var kv = pair.split("=");
-      if (kv[0]) params[decodeURIComponent(kv[0])] = decodeURIComponent(kv[1] || "");
+      var kv = pair.split("="), v = dec(kv[1] || "");
+      /* ids index plain objects (EV, STAT, D.N…): "toString" must not find Object.prototype's */
+      if (kv[0]) params[dec(kv[0])] = v in Object.prototype ? "" : v;
     });
   }
   /* a placeholder opened directly (middle-click, new tab, copied link): wait for the URLs, then go to the story */

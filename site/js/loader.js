@@ -78,6 +78,7 @@
   var ledes = null;
   window.cmLedes = function () {
     if (!ledes) ledes = Promise.all(window.DATA.meta.packs.months.map(function (m) { return load("l-" + m + ".bin"); }))
+      .catch(function (e) { ledes = null; throw e; })  /* a failed load can be retried */
       .then(function (ps) {
         var map = new Map();
         ps.forEach(function (p) { for (var j = 0; j < p.i.length; j++) map.set(p.i[j], p.l[j]); });

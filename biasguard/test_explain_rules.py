@@ -28,6 +28,12 @@ class ComposeTest(unittest.TestCase):
         self.assertIn("“Fon vurgunu soruşturması başladı”", x["noticed"])
         self.assertEqual(validate_explain(x, TEXT), [])
 
+    def test_single_quoted_paraphrase_is_refused_but_apostrophes_are_not_quotes(self):
+        bad = "Kurum A 'fon soruşturması kapandı' diyor; bu ifade haberde başka kurumda yok."
+        ok = "Kurum A'nın başlığı 'Fon vurgunu soruşturması' diyor; Kurum B'nin başlığı nötr kalıyor."
+        self.assertTrue(any("quote not in event text" in p for p in validate_explain({"noticed": bad, "why": bad}, TEXT)))
+        self.assertEqual(validate_explain({"noticed": ok, "why": ok}, TEXT), [])
+
     def test_missing_alternatives_use_missing_context(self):
         x = compose({**F, "alternatives": []}, TEXT, NAMES, "Okur olayı duygu yüklü bir sözcükle öğreniyor.")
         self.assertTrue(x["why"].startswith("Eksik bilgi:"))

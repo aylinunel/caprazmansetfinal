@@ -9,9 +9,11 @@ import json
 from pathlib import Path
 from typing import Sequence
 
+from biasguard.catalog import card_hash
+
 from . import crosswalk
 from .cases import expected
-from .configs import PROPOSED_DIR
+from .configs import PROPOSED_DIR, catalog
 from .ledger import Ledger
 
 MEDIA_CATALOG = Path(__file__).resolve().parents[2] / "biasguard" / "data" / "media_cards.json"
@@ -19,15 +21,18 @@ _POSITIVE = {"supported", "contextual_effect"}
 _INCOMPLETE = {"error", "unassessed", "ineligible"}
 
 
-def card_outcomes(run: Path) -> dict[str, dict[str, list[str]]]:
-    """Per card, per case kind: the candidate detector's first-attempt statuses in a lab run."""
+def card_outcomes(run: Path, current: str | None = None) -> dict[str, dict[str, list[str]]]:
+    """Per card, per case kind: the candidate detector's first-attempt statuses in a lab run.
+    An attempt made on another catalogue version (a card edited since) counts as "stale"."""
+    current = current or card_hash(catalog("candidate"))
     private = [json.loads(l) for l in (Path(run) / "private" / "cases.jsonl").read_text(encoding="utf-8").splitlines() if l]
     first = Ledger(Path(run) / "ledger.jsonl").first_attempts("candidate")
     out: dict[str, dict[str, list[str]]] = {}
     for p in private:
         card = crosswalk.load()[p["concept"]].detector_id
         if card and p["case_id"] in first:
-            out.setdefault(card, {}).setdefault(p["kind"], []).append(first[p["case_id"]].status)
+            a = first[p["case_id"]]
+            out.setdefault(card, {}).setdefault(p["kind"], []).append(a.status if a.card_hash == current else "stale")
     return out
 
 
@@ -36,6 +41,9 @@ def promotable(outcomes: dict[str, list[str]], approved: bool) -> tuple[bool, li
     statuses = [s for ss in outcomes.values() for s in ss]
     if not statuses:
         return False, reasons + ["no lab cases were scored for this card"]
+    stale = sum(s == "stale" for s in statuses)
+    if stale:
+        reasons.append(f"{stale} of {len(statuses)} lab cases were scored on an older card version; rerun the lab")
     incomplete = sum(s in _INCOMPLETE for s in statuses)
     if incomplete:
         reasons.append(f"{incomplete} of {len(statuses)} lab cases did not complete")

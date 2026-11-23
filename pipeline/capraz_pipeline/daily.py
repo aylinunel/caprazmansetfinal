@@ -53,6 +53,14 @@ def fetch_collector(work: Path) -> Path:
     return data
 
 
+def check_no_loss(live: Path, build: Path) -> None:
+    """Stop if any month has fewer articles than the live site: a broken collector snapshot must not reach the repo."""
+    for f in sorted(live.glob("a-*.bin")):
+        old, new = len(_load(f)["i"]), len(_load(build / f.name)["i"]) if (build / f.name).exists() else 0
+        if new < old:
+            raise SystemExit(f"{f.name}: {new} articles, the live site has {old}; nothing was changed")
+
+
 def same_case(old: dict, new: dict) -> bool:
     """Same headlines and context, ignoring the active-outlet list, which moves as the season grows."""
     strip = lambda c: "\n".join(l for l in c.splitlines() if not l.startswith("Olayı vermeyen etkin kurumlar"))
@@ -97,6 +105,7 @@ def main(argv=None) -> None:
     core = _load(REPO / "public" / "data" / "core.bin")
     (build / "events-members.json").write_text(json.dumps({e["i"]: e["a"] for e in core["E"]}))
     sh(py, "-m", "capraz_pipeline", "build", "--root", str(work / "store"), "--out", str(build), "--since", a.since, "--until", a.until, cwd=pipe)
+    check_no_loss(REPO / "public" / "data", build)
     runs = refresh_runs(build)
     pack = datetime.now(TRT).date().isoformat()
     for run, cat in RUNS:

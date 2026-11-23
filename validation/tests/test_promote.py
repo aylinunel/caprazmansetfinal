@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from validation.biaslab.promote import promotable, promote
+from validation.biaslab.promote import card_outcomes, promotable, promote
 
 CLEAN = {"positive": ["supported", "supported"], "boundary_control": ["not_supported"], "quoted_control": ["uncertain"]}
 REPO = Path(__file__).resolve().parents[2]
@@ -36,6 +36,22 @@ class PromoteTest(unittest.TestCase):
 
     def test_unassessed_cases_block_promotion(self):
         self.assertFalse(promotable({**CLEAN, "positive": ["supported", "unassessed"]}, True)[0])
+
+    def test_cases_scored_on_an_older_card_version_are_stale_and_block_promotion(self):
+        with tempfile.TemporaryDirectory() as d:
+            run = Path(d)
+            (run / "private").mkdir()
+            (run / "private" / "cases.jsonl").write_text("".join(
+                json.dumps({"case_id": c, "concept": "action_bias", "kind": "positive"}) + "\n" for c in ("c1", "c2")))
+            row = lambda c, h: json.dumps({"case_id": c, "config": "candidate", "attempt": 1, "status": "supported",
+                                           "target": None, "native_status": "", "spans": [], "card_hash": h,
+                                           "prompts_version": "", "recorded_at": ""}) + "\n"
+            (run / "ledger.jsonl").write_text(row("c1", "now") + row("c2", "before"))
+            out = card_outcomes(run, current="now")
+        self.assertEqual(out, {"action-bias": {"positive": ["supported", "stale"]}})
+        ok, reasons = promotable(out["action-bias"], True)
+        self.assertFalse(ok)
+        self.assertIn("older card version", reasons[0])
 
     def test_no_cases_at_all_blocks_promotion(self):
         self.assertEqual(promotable({}, True), (False, ["no lab cases were scored for this card"]))

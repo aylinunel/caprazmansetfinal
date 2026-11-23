@@ -1,7 +1,10 @@
+import json
+import tempfile
 import unittest
+from pathlib import Path
 
 from validation.feedback.labels import Label
-from validation.feedback.stats import card_stats, card_status, wilson_lower
+from validation.feedback.stats import card_stats, card_status, wilson_lower, write_status
 
 GATES = {"agreed": True, "min_run_completion": 0.95, "min_reviews_to_judge": 15, "min_precision_lower_bound": 0.70,
          "hide_min_reviews": 10, "hide_below_precision": 0.50, "audit_rate": 0.05}
@@ -68,6 +71,17 @@ class StatsTest(unittest.TestCase):
     def test_every_status_has_a_reason(self):
         out = card_status(card_stats(labels("a", 14, 1) + labels("b", 4, 6) + labels("c", 1, 0)), GATES)
         self.assertTrue(all(c["reasons"] for c in out.values()))
+
+
+class WriteStatusTest(unittest.TestCase):
+    def test_each_measure_keeps_its_own_results_and_the_stricter_status_wins(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "s.json"
+            write_status(p, "blind", {"a": {"status": "hidden"}, "b": {"status": "eligible"}}, True)
+            write_status(p, "verify", {"a": {"status": "eligible"}}, True)
+            write_status(p, "verify", {"a": {"status": "eligible"}, "c": {"status": "demoted"}}, True)
+            cards = json.loads(p.read_text(encoding="utf-8"))["cards"]
+            self.assertEqual({k: v["status"] for k, v in cards.items()}, {"a": "hidden", "b": "eligible", "c": "demoted"})
 
 
 if __name__ == "__main__":

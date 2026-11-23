@@ -10,10 +10,16 @@ reports what failed.
 1. Attach the collector repository `aylinunel/turkish-news-scraper` (read access) so its `backfill-data` branch can
    be fetched. No clone is needed: `capraz_pipeline.daily` fetches that branch itself.
 2. Check out `claude/gallant-noether-sz2o7v` and pull it.
-3. Install dependencies:
+3. Install dependencies. Every command in this runbook starts from the repository root.
 
 ```bash
 python -m pip install -r pipeline/requirements.txt -r biasguard/requirements.txt -r validation/requirements.txt
+```
+
+   The browser tests need Playwright with Chromium. Install them only when the image lacks them:
+
+```bash
+NODE_PATH=$(npm root -g) node -e "require('playwright')" 2>/dev/null || (npm i -g playwright && npx playwright install --with-deps chromium)
 ```
 
 ## Daily (rule-based)
@@ -21,13 +27,14 @@ python -m pip install -r pipeline/requirements.txt -r biasguard/requirements.txt
 1. Run the release. It takes about 35 minutes and ends with a JSON summary.
 
 ```bash
-cd pipeline && python -m capraz_pipeline.daily
+(cd pipeline && python -m capraz_pipeline.daily)
 ```
 
 It ingests the collector through yesterday (Türkiye time), keeps every known event id, rebuilds every rule-based
-analysis, keeps AI reviews only for events whose headlines and context are unchanged, recomputes AIX, the lens and
-9'da yeni, and writes `public/` and `dist/artifact/`. Events without reviews show as not attempted until the weekly
-run.
+analysis, keeps AI reviews only for events whose headlines and context are unchanged (the list of active outlets
+that skipped an event may move), recomputes AIX, the lens and 9'da yeni, and writes `public/` and `dist/artifact/`.
+Events without reviews show as not attempted until the weekly run. The run stops before changing anything when a
+month has fewer articles than the live site (a broken collector snapshot): report it and do not commit.
 
 2. Test. Every line must pass:
 
@@ -36,7 +43,7 @@ python -m pytest -q validation/tests biasguard tests_repo
 ```
 
 ```bash
-cd pipeline && python -m pytest -q tests
+(cd pipeline && python -m pytest -q tests)
 ```
 
 ```bash
@@ -44,7 +51,7 @@ node site/tests/logic.test.cjs
 ```
 
 ```bash
-node site/tests/smoke.cjs public /tmp/smoke
+NODE_PATH=$(npm root -g) node site/tests/smoke.cjs public /tmp/smoke
 ```
 
 ```bash
@@ -58,8 +65,11 @@ NODE_PATH=$(npm root -g) node site/tests/blind.cjs public /tmp/blind
    (one publish takes at most 64 MB). First read the artifact with the Artifact tool (`action: "read"`). Send every
    file in `dist/artifact/data/`: a pack over 12 MB is written as a one-line index (`<pack>.bin.txt`) plus parts
    (`<pack>.bin.txt.0`, `.1`, …), and every part must be sent. Send the newest month's files first, then the older
-   months, and `data/core.bin.txt` in the last publish, so the page never pairs new totals with old packs. Do not
-   pass `capabilities` or `icon`; the stored ones carry over.
+   months, and `index.html` with `data/core.bin.txt` in the last publish, so a publish that fails part-way leaves the
+   old page and totals over packs that are only newer, never new totals over old packs. If a publish fails, retry
+   it; do not send the core before every month has gone. Do not pass `capabilities` or `icon`; the stored ones
+   carry over. Then read `data/core.bin.txt` back (`action: "read"` with `path`), decode it (base64, then gzip)
+   and check that `meta.built` is today's date.
 5. Report in a few lines: the day reached, headline and event counts, how many top events await review, and the
    test results.
 

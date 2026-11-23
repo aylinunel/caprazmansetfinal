@@ -5,7 +5,10 @@ to raise agreement. It is not accuracy, and it says nothing about findings the A
 """
 from __future__ import annotations
 
+import json
 import math
+from datetime import datetime, timezone
+from pathlib import Path
 from typing import Sequence
 
 from .labels import Label, latest
@@ -57,3 +60,21 @@ def card_status(stats: dict[str, dict], gates: dict) -> dict[str, dict]:
             status, why = "eligible", f"{shown}; lower bound {s['lower']:.2f}"
         out[card] = {"status": status, "applied": bool(gates["agreed"]), "reasons": [why]}
     return out
+
+
+STRICT = ("unjudged", "eligible", "demoted", "hidden")
+
+
+def write_status(path: Path, measure: str, cards: dict[str, dict], agreed: bool, pack: str = "") -> None:
+    """Replace only this measure's results in card_status.json; each card takes its strictest status across measures."""
+    old = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    by = old.get("by_measure") or ({old["measure"]: old.get("cards", {})} if old.get("measure") else {})
+    by[measure] = cards
+    merged = {}
+    for m in by.values():
+        for c, v in m.items():
+            if c not in merged or STRICT.index(v["status"]) > STRICT.index(merged[c]["status"]):
+                merged[c] = v
+    out = {"pack_version": pack, "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+           "agreed": agreed, "cards": merged, "by_measure": by}
+    path.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")

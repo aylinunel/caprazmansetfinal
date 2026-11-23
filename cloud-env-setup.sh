@@ -35,6 +35,9 @@ fetch affaan-m/ecc skills/prompt-optimizer && cp -r "$SRC/ecc/skills/prompt-opti
 # 6. OpenSpec CLI
 npm install -g @fission-ai/openspec@latest || true
 
+# 7. Playwright + Chromium for the site's browser tests (skipped when the image already has them)
+NODE_PATH=$(npm root -g) node -e "require('playwright')" 2>/dev/null || { npm install -g playwright && npx playwright install --with-deps chromium; } || true
+
 # Tell Claude Code when to use them
 grep -q "Skills to use on every task" ~/.claude/CLAUDE.md 2>/dev/null || cat >> ~/.claude/CLAUDE.md <<'EOF'
 

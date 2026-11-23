@@ -2,13 +2,13 @@
 import argparse
 import json
 import sys
-from datetime import date, datetime, timezone
+from datetime import date
 from pathlib import Path
 
 from biasguard.catalog import load_cards
 from biasguard.news import _inputs, _load
 
-from validation.feedback.stats import card_status
+from validation.feedback.stats import card_status, write_status
 
 from .behaviour_eval import as_card_stats, measure
 from .behaviour_eval import report as behaviour_report
@@ -180,10 +180,7 @@ def main(argv=None) -> None:
         BEHAVIOUR_REPORT.write_text(text, encoding="utf-8")
         if args.status:
             gates = json.loads(GATES.read_text(encoding="utf-8"))
-            out = {"pack_version": "", "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                   "agreed": gates["agreed"], "measure": "blind precision",
-                   "cards": card_status(as_card_stats(m), gates)}
-            _dump(CARD_STATUS, out)
+            write_status(CARD_STATUS, "blind precision", card_status(as_card_stats(m), gates), gates["agreed"])
         print(text)
 
 

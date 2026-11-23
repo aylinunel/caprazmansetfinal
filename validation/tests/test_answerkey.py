@@ -341,7 +341,7 @@ class BehaviourEvalTest(unittest.TestCase):
             self.assertIn("# ", (d / "r.md").read_text(encoding="utf-8"))
             self.assertIn("0.800", (d / "r.md").read_text(encoding="utf-8"))
             s = json.loads((d / "s.json").read_text(encoding="utf-8"))
-            self.assertEqual(s["measure"], "blind precision")
+            self.assertIn("blind precision", s["by_measure"])
             self.assertEqual(s["cards"]["c1"]["status"], "unjudged")
 
     def test_status_is_refused_while_present_is_not_usable_and_report_says_so(self):

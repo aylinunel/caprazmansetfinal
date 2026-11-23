@@ -466,7 +466,7 @@ Open <http://localhost:8000>. The first load unpacks the data packs and takes a 
 To regenerate `public/index.html` after editing anything in `site/` (no data rebuild needed):
 
 ```bash
-cd pipeline && python3 -c "from pathlib import Path; from capraz_pipeline import site; site.assemble(Path('../public/data'), Path('../public'))"
+(cd pipeline && python3 -c "from pathlib import Path; from capraz_pipeline import site; site.assemble(Path('../public/data'), Path('../public'))")
 ```
 
 ---
@@ -478,12 +478,12 @@ python -m pip install -r pipeline/requirements.txt jsonschema
 ```
 
 ```bash
-cd pipeline && python -m capraz_pipeline run --from <collector export> --since 2026-09-01 --until 2026-11-20
+(cd pipeline && python -m capraz_pipeline run --from <collector export> --since 2026-09-01 --until 2026-11-20)
 ```
 
 Event ids stay stable only when the build knows the previous build's events (`events-members.json` in the `--out`
 folder; without it the build falls back to the 8.0 list and renumbers later events). For a fresh build folder,
-write it from the current core first:
+write it from the current core first (from the repository root):
 
 ```bash
 python -c "import json,sys; sys.path.insert(0,'.'); from pathlib import Path; from biasguard.news import _load; c=_load(Path('public/data/core.bin')); json.dump({e['i']: e['a'] for e in c['E']}, open(sys.argv[1] + '/events-members.json', 'w'))" <build folder>
@@ -543,7 +543,7 @@ skeptic. A missing or invalid output is recorded as incomplete, never as "no bia
 | Logic | `node --test site/tests/logic.test.cjs` | 32 tests: redirects, weekly splits, "what differs", Turkish suffixes, glossary, number and split parsers on real narrative text, party distance, party name matching (including false positives), small-cell suppression |
 | Smoke | `node site/tests/smoke.cjs public <outDir> [routes…]` | every route at 1280 px and 390 px, light and dark: no console errors, no horizontal scroll, 44 px touch targets, a table for every chart, the hero states, pinned tickets with exact counters, no animation leaks between pages, one smooth-scroll instance, a readable page with the motion libraries blocked, the Partiler sections and the plain methodology layout |
 | Performance | `node site/tests/perf.cjs public [route]` | scrolls a route top to bottom with the CPU slowed 4×; reports long tasks over 50 ms |
-| Pipeline | `cd pipeline && python -m unittest discover -s tests` | offline pipeline tests (store, cluster, events, topics, analyse, build, site) |
+| Pipeline | `(cd pipeline && python -m unittest discover -s tests)` | offline pipeline tests (store, cluster, events, topics, analyse, build, site) |
 
 ---
 
