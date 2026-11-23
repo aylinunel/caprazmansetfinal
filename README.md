@@ -12,6 +12,31 @@ It does not judge who is right. It shows who wrote what, and how.
 
 ---
 
+## What is new in 9
+
+**Data through 20 November.** The collector ([`aylinunel/turkish-news-scraper`](https://github.com/aylinunel/turkish-news-scraper),
+`backfill-data` branch) now runs to 20 November: 468,836 headlines from 53 outlets, grouped into 11,588 events
+(8.2: 388,760 headlines, 51 outlets, 9,230 events). Haber Global and Nefes join for the first time. Every event
+that also existed in 8.2 keeps its id, so reviews, Anlatı haritası stories and blind packets still point to the
+same events. 21 November was only partly collected and is left out.
+
+**Every analysis rerun on the new data:**
+
+- **AI review (BiasGuard).** The 150 widest events were selected again. 70 of them are unchanged and keep their
+  8.2 reviews; the other 80 (46 new to the top 150, 34 whose headlines or context changed) were reviewed again in
+  both the behavioural and the media pass. Result: 309 behavioural findings (8.2: 387) and 14 media findings.
+- **Anlatı haritası** gains the week 14–20 Kasım: 35 stories AI-coded, 20 kept (marked YZ). Weeks 1–11 are unchanged.
+- **Örüntüler, AIX and the single-source lens** are recomputed on the 9 data.
+- **Machine learning.** The narrative-AI-vs-human scores and the trained baselines (`validation/mlbench`) do not
+  change: the human coding is the same, and the new week is AI-coded only.
+
+**9'da yeni** (`#/yeni9`) compares 8.2 with 9, one card per analysis, worded from the direction of each change.
+Most structural results held (language similarity and style vs placement, loaded language); blind-spot events
+rose from 79 to 104 while their share of all events stayed at 0.9%. `python -m capraz_pipeline.whatsnew9` regenerates it.
+
+**For the site owner.** Reviews saved in the 8.2 test artifact stay there: the 9 artifact starts with an empty
+review store. The Kör kodlama packets are unchanged; code and export them from one artifact.
+
 ## What is new in 8.2
 
 Every AI finding now carries a review status. **AI onaylı** means the AI reviewer (named AI: artificial
@@ -82,9 +107,9 @@ The collector ([`aylinunel/turkish-news-scraper`](https://github.com/aylinunel/t
 
 ## In one minute
 
-1. **We collect** every headline that about 37 Turkish news outlets publish (388,760 headlines from 51
-   outlets between 1 September and 13 November 2026; 8.0 had 245,935 from 33 outlets).
-2. **We group** headlines that report the same thing into **events** (9,230 of them).
+1. **We collect** every headline that about 37 Turkish news outlets publish (468,836 headlines from 53
+   outlets between 1 September and 20 November 2026; 8.0 had 245,935 from 33 outlets).
+2. **We group** headlines that report the same thing into **events** (11,588 of them).
 3. **We compare** how each outlet wrote its headline: which words differ, how loaded the language is,
    who is blamed, who reported first.
 4. **We publish** one website that shows this per event, per outlet, per party and as season-long patterns,
@@ -122,12 +147,12 @@ It is written for three kinds of readers at once:
 
 | | |
 |---|---|
-| **Window** | 1 September – 13 November 2026 (Türkiye time) |
-| **Headlines** | 388,760 from 51 outlets (240,683 with a lede), no sampling |
-| **Events** | 9,230 groups of headlines about the same thing (9,090 automatic, 140 hand-checked) |
+| **Window** | 1 September – 20 November 2026 (Türkiye time) |
+| **Headlines** | 468,836 from 53 outlets (266,462 with a lede), no sampling |
+| **Events** | 11,588 groups of headlines about the same thing (11,448 automatic, 140 hand-checked) |
 | **Parties** | 19 parties placed on the same six ideological axes as the outlets |
 | **Placement** | each outlet's 0–100 position in a supplied registry: below 45 is left, above 55 is right (not independently verified) |
-| **Validation** | event clustering pair-F1 0.847 against hand-made reference events; event-topic micro-F1 0.755 (`docs/build-report.json`) |
+| **Validation** | event clustering pair-F1 0.843 against hand-made reference events; event-topic micro-F1 0.755 (`docs/build-report.json`) |
 
 ---
 
@@ -453,7 +478,15 @@ python -m pip install -r pipeline/requirements.txt jsonschema
 ```
 
 ```bash
-cd pipeline && python -m capraz_pipeline run --from <collector export> --since 2026-09-01 --until 2026-11-03
+cd pipeline && python -m capraz_pipeline run --from <collector export> --since 2026-09-01 --until 2026-11-20
+```
+
+Event ids stay stable only when the build knows the previous build's events (`events-members.json` in the `--out`
+folder; without it the build falls back to the 8.0 list and renumbers later events). For a fresh build folder,
+write it from the current core first:
+
+```bash
+python -c "import json,sys; sys.path.insert(0,'.'); from pathlib import Path; from biasguard.news import _load; c=_load(Path('public/data/core.bin')); json.dump({e['i']: e['a'] for e in c['E']}, open(sys.argv[1] + '/events-members.json', 'w'))" <build folder>
 ```
 
 `run` is `ingest` plus `build` plus `site`. Each step also runs on its own:
@@ -486,6 +519,13 @@ Run the advocate and skeptic agents, then:
 ```bash
 python -m biasguard.news apply --run runs/bg --out dist/capraz-8/build/biasguard.json
 ```
+
+For a release that only adds data, review only what changed: copy the selections, reviews and explanations of
+events whose `text` and `context` in `inputs.jsonl` are unchanged from the previous run, and write tasks for the
+rest (9 did this in `runs/bg9` and `runs/bgm9`; the media pass builds its tasks from `runs/bgm9/catalog.json`).
+`python runs/check_out.py <run> <stage> <batch> [role]` checks each batch. Then `python -m biasguard.explain_rules`
+composes the explanations and `python -m biasguard.news pack --build <build> --run <run> --media-run <media run>`
+writes them into `core.bin`.
 
 Each of the most widely covered events is reviewed as one case: every outlet's first headline and lede
 side by side, checked against a 116-concept catalogue by separate reviewer agents, an advocate and a
@@ -604,8 +644,10 @@ all collected data, publish checks before every daily release, and a capped budg
 - **Machine output is labelled.** Automatic results say *otomatik*, AI-made content carries a **YZ** badge,
   and the editor can reject AI output. The AI review (BiasGuard) is experimental, and an unreviewed event is
   never shown as bias-free.
-- **There are coverage gaps.** 29–30 October are missing from the collector, and 4 November was a partial day
-  and is left out.
+- **There are coverage gaps.** 29–30 October are missing from the collector, 4 November was a partial day
+  and is left out, and the window ends on 20 November because 21 November was still being collected.
+- **The AI review covers the widest events only.** BiasGuard reviews the 150 events most outlets covered; other
+  events are not reviewed, which is never the same as bias-free.
 
 ---
 

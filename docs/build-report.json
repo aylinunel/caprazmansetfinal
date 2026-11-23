@@ -19,13 +19,11 @@
  },
  "window": [
   "2026-09-01",
-  "2026-11-03"
+  "2026-11-20"
  ],
  "score": {
-  "scored_days": 62,
-  "scored": 245935,
+  "scored_days": 0,
   "rules": "7ecc9ccfcba7ab16",
-  "rulesVersion": "4.0",
   "refHeadlines": 22213,
   "evidenceChanged": 833
  },
@@ -33,21 +31,21 @@
   "key": "af3e7d903bccf8b8da6b9ec9",
   "trainedOn": 22213,
   "section": {
-   "accuracy": 0.9913,
-   "macroF1": 0.7831,
+   "accuracy": 0.991,
+   "macroF1": 0.8058,
    "n": 22213
   },
   "political": {
-   "accuracy": 0.9946,
-   "macroF1": 0.9895,
+   "accuracy": 0.9942,
+   "macroF1": 0.9888,
    "n": 22213
   }
  },
  "cluster": {
-  "pair_precision": 0.853,
-  "pair_recall": 0.839,
-  "pair_f1": 0.845,
-  "pred_pairs": 57635,
+  "pair_precision": 0.852,
+  "pair_recall": 0.834,
+  "pair_f1": 0.843,
+  "pred_pairs": 57383,
   "gold_pairs": 58597
  },
  "eventTopics": {
@@ -56,13 +54,16 @@
   "n": 1851
  },
  "sizes": {
-  "a-2026-09.bin": 6372518,
-  "l-2026-09.bin": 8681165,
-  "a-2026-10.bin": 8614817,
-  "l-2026-10.bin": 8179266,
-  "a-2026-11.bin": 2167686,
-  "l-2026-11.bin": 578281,
-  "core.bin": 1042691
+  "a-2026-09.bin": 4028250,
+  "u-2026-09.bin": 3555033,
+  "l-2026-09.bin": 9615342,
+  "a-2026-10.bin": 5491168,
+  "u-2026-10.bin": 4948337,
+  "l-2026-10.bin": 9699355,
+  "a-2026-11.bin": 10236756,
+  "u-2026-11.bin": 8937016,
+  "l-2026-11.bin": 9510391,
+  "core.bin": 2477465
  },
- "seconds": 1144.9
+ "seconds": 1855.7
 }
