@@ -1,0 +1,1233 @@
+{
+ "dimensions": {
+  "frame": "Çerçeve",
+  "hero": "Merkezdeki aktör",
+  "blame": "Sorumlu tutulan",
+  "cause": "Sunulan neden",
+  "cons": "Öne çıkan sonuç",
+  "aff": "Etkilenen kesim",
+  "sol": "Meşrulaştırılan çözüm",
+  "moral": "Ahlaki çerçeve",
+  "start": "Hikâyenin başlangıcı"
+ },
+ "examples": [
+  {
+   "key": "w6-s325",
+   "q": {
+    "happened": "İstanbul Maltepe'de yedi katlı bir bina çöktü; can kaybı yayınlara göre 3 ile 5 arasında; binada kontrollü yıkım ve inceleme sürüyor.",
+    "agree": "Binanın çöktüğü ortak; can kaybı farklı aşamalarda farklı.",
+    "differ": "Soldaki kurumlar binanın yaşını ve neden çöktüğünü soruyor; ortadaki kurumlar kurtarma ve yıkım sürecini veriyor; sağdaki kurumlar can kaybını öne çıkarıyor; bir kurum 'kentsel dönüşüm detayı'nı başlığa taşıyor.",
+    "care": "Neden sorusu sorumluluk arayışını başlatır; 'kentsel dönüşüm' ayrıntısı ise sorumluluğu belirli bir sürece bağlar; can kaybı vurgusu olayı bir trajedi olarak kurar."
+   },
+   "rows": [
+    {
+     "s": "cumhuriyet",
+     "hl": "Maltepe'de çöken binada ölü veya yaralı var mı? Bina kaç yıllık, neden çöktü?",
+     "frame": "Sorumluluk arayışı",
+     "hero": "Bina sakinleri",
+     "blame": "Belirsiz (soru)",
+     "cause": "Binanın yaşı / yapısı (soru)",
+     "cons": "Çökme",
+     "aff": "Bina sakinleri",
+     "sol": "",
+     "moral": "Yapı güvenliği",
+     "start": ""
+    },
+    {
+     "s": "aydinlik",
+     "hl": "Maltepe'de çöken binada kurtarılanlar konuştu",
+     "frame": "İnsani",
+     "hero": "Kurtarılanlar",
+     "blame": "",
+     "cause": "",
+     "cons": "Kurtarma",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "sozcu",
+     "hl": "Maltepe'de çöken 7 katlı binada ölü ya da yaralı var mı?",
+     "frame": "Sorumluluk arayışı",
+     "hero": "Bina sakinleri",
+     "blame": "Belirsiz (soru)",
+     "cause": "Binanın yaşı / yapısı (soru)",
+     "cons": "Çökme",
+     "aff": "Bina sakinleri",
+     "sol": "",
+     "moral": "Yapı güvenliği",
+     "start": ""
+    },
+    {
+     "s": "ntv",
+     "hl": "Maltepe'de çöken binada kontrollü yıkım sürüyor",
+     "frame": "Olgu aktarımı",
+     "hero": "Yetkililer",
+     "blame": "",
+     "cause": "",
+     "cons": "Kontrollü yıkım / örnek alma",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "karar",
+     "hl": "Maltepe'de çöken binadan örnekler alındı",
+     "frame": "Olgu aktarımı",
+     "hero": "Yetkililer",
+     "blame": "",
+     "cause": "",
+     "cons": "Kontrollü yıkım / örnek alma",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "milligazete",
+     "hl": "Maltepe'de çöken binada acı bilanço: Can kaybı 3'e çıktı",
+     "frame": "Trajedi",
+     "hero": "Kurbanlar",
+     "blame": "",
+     "cause": "",
+     "cons": "Can kaybı",
+     "aff": "Kurbanların aileleri",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "star",
+     "hl": "Maltepe'de çöken binadan acı haber: Can kaybı 5'e yükseldi",
+     "frame": "Trajedi",
+     "hero": "Kurbanlar",
+     "blame": "",
+     "cause": "",
+     "cons": "Can kaybı",
+     "aff": "Kurbanların aileleri",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "takvim",
+     "hl": "Maltepe’de çöken binada kentsel dönüşüm detayı",
+     "frame": "Sorumluluk arayışı",
+     "hero": "Bina sakinleri",
+     "blame": "Kentsel dönüşüm süreci (ima)",
+     "cause": "Kentsel dönüşüm",
+     "cons": "Çökme",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": "Kentsel dönüşüm kararı"
+    }
+   ]
+  },
+  {
+   "key": "w1-s143",
+   "q": {
+    "happened": "Ağustos ayı enflasyon verileri açıklandı: TÜİK resmî rakamı, bağımsız ENAG kendi hesabını, İstanbul ve Euro Bölgesi de kendi verilerini duyurdu.",
+    "agree": "Ağustos enflasyonunun açıklandığı bütün kurumlarda ortak.",
+    "differ": "Hangi enflasyonun haber yapıldığı: solda ve ortada ENAG'ın bağımsız hesabı ya da İstanbul verisi, sağda TÜİK'in resmî rakamı öne çıkıyor; bir kurum Euro Bölgesi enflasyonunu başlığa taşıyor, bir başkası yalnızca açıklanma tarihini veriyor.",
+    "care": "Aynı ay için hangi kurumun rakamının 'enflasyon' sayıldığı, hayat pahalılığına dair bütün tartışmanın zeminini belirler."
+   },
+   "rows": [
+    {
+     "s": "cumhuriyet",
+     "hl": "Euro Bölgesi ağustos ayı enflasyonu belli oldu: Veriler yeniden yükselişte",
+     "frame": "Dış karşılaştırma",
+     "hero": "Euro Bölgesi",
+     "blame": "",
+     "cause": "",
+     "cons": "Avrupa'da yükselen enflasyon",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "aydinlik",
+     "hl": "İstanbul'un ağustos ayı enflasyonu belli oldu",
+     "frame": "Yerel veri",
+     "hero": "İTO",
+     "blame": "",
+     "cause": "",
+     "cons": "İstanbul enflasyonu",
+     "aff": "İstanbullular",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "sozcu",
+     "hl": "Son dakika... ENAG ağustos ayı enflasyonu açıklandı",
+     "frame": "Bağımsız ölçüm",
+     "hero": "ENAG",
+     "blame": "",
+     "cause": "Resmî rakama güvensizlik (ima)",
+     "cons": "ENAG rakamı",
+     "aff": "Tüketiciler",
+     "sol": "",
+     "moral": "Şeffaflık",
+     "start": ""
+    },
+    {
+     "s": "mynet",
+     "hl": "ENAG ağustos ayı enflasyonunu açıkladı - Finans haberlerinin doğru adresi - Mynet Finans Haber",
+     "frame": "Bağımsız ölçüm",
+     "hero": "ENAG",
+     "blame": "",
+     "cause": "Resmî rakama güvensizlik (ima)",
+     "cons": "ENAG rakamı",
+     "aff": "Tüketiciler",
+     "sol": "",
+     "moral": "Şeffaflık",
+     "start": ""
+    },
+    {
+     "s": "ntv",
+     "hl": "Enflasyon verileri ne oldu, yüzde kaç? 2026 TÜİK ağustos ayı TÜFE kararı açıklandı",
+     "frame": "Resmî veri",
+     "hero": "TÜİK",
+     "blame": "",
+     "cause": "",
+     "cons": "Resmî enflasyon rakamı",
+     "aff": "",
+     "sol": "",
+     "moral": "Kurumsal güven",
+     "start": ""
+    },
+    {
+     "s": "karar",
+     "hl": "ENAG, Ağustos ayı enflasyonunu açıkladı",
+     "frame": "Bağımsız ölçüm",
+     "hero": "ENAG",
+     "blame": "",
+     "cause": "Resmî rakama güvensizlik (ima)",
+     "cons": "ENAG rakamı",
+     "aff": "Tüketiciler",
+     "sol": "",
+     "moral": "Şeffaflık",
+     "start": ""
+    },
+    {
+     "s": "sabah",
+     "hl": "Ağustos Ayı Enflasyonu Açıklanış Tarihi 2026: TÜİK ile Ağustos ayı enflasyonu ne zaman açıklanacak?",
+     "frame": "Hizmet / bilgi",
+     "hero": "TÜİK",
+     "blame": "",
+     "cause": "",
+     "cons": "Açıklanma tarihi",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "star",
+     "hl": "TÜİK verileri paylaştı! Ağustos ayı enflasyon rakamları belli oldu",
+     "frame": "Resmî veri",
+     "hero": "TÜİK",
+     "blame": "",
+     "cause": "",
+     "cons": "Resmî enflasyon rakamı",
+     "aff": "",
+     "sol": "",
+     "moral": "Kurumsal güven",
+     "start": ""
+    },
+    {
+     "s": "takvim",
+     "hl": "TÜİK Ağustos ayı enflasyon verilerini açıkladı",
+     "frame": "Resmî veri",
+     "hero": "TÜİK",
+     "blame": "",
+     "cause": "",
+     "cons": "Resmî enflasyon rakamı",
+     "aff": "",
+     "sol": "",
+     "moral": "Kurumsal güven",
+     "start": ""
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "event": "s10712",
+   "week": "w12",
+   "title": "ASELSAN'dan dünyada bir ilk! EJDERHA 51 dronu tek tuşla etkisiz hale getirdi",
+   "headlines": [
+    {
+     "s": "sondakika",
+     "hl": "ASELSAN'ın Ejderha'sı gücünü gösterdi! 51 dronu saniyeler içinde etkisiz hale getirdi"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "ASELSAN'ın EJDERHA sistemi aynı anda havalanan 51 dronu etkisiz hale getirdi"
+    },
+    {
+     "s": "memurlar",
+     "hl": "ASELSAN EJDERHA tek tuşla 51 dronu etkisiz hale getirdi"
+    },
+    {
+     "s": "haberler",
+     "hl": "ASELSAN'ın Ejderha'sı gücünü gösterdi! 51 dronu saniyeler içinde etkisiz hale getirdi"
+    },
+    {
+     "s": "aksam",
+     "hl": "ASELSAN'dan dünyada bir ilk! EJDERHA 51 hedefi aynı anda etkisiz hale getirdi"
+    },
+    {
+     "s": "akit",
+     "hl": "ASELSAN’ın Ejderha’sından dünyada bir ilk! Tek tuşla 51 kuş"
+    },
+    {
+     "s": "tgrt",
+     "hl": "ASELSAN EJDERHA'dan dünya rekoru: Tek tuşla 51 dronu etkisiz hale getirdi"
+    },
+    {
+     "s": "anka",
+     "hl": "ASELSAN'ın EJDERHA sistemi, 51 dronu saniyeler içinde etkisiz hale getirdi"
+    },
+    {
+     "s": "star",
+     "hl": "Tek tuşla 51 dron avladı! ASELSAN'ın EJDERHA'sından dünyada bir ilk"
+    },
+    {
+     "s": "dirilis",
+     "hl": "ASELSAN EJDERHA 51 dronu nasıl etkisiz hale getirdi?"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "ASELSAN'ın EJDERHA'SI saniyeler içinde dronları indirdi!"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Tek tuşla 51 dronu düşürdü"
+    },
+    {
+     "s": "trthaber",
+     "hl": "ASELSAN'dan dünyada bir ilk: 51 dron tek tuşla etkisiz hale getirildi"
+    },
+    {
+     "s": "posta",
+     "hl": "ASELSAN EJDERHA SİSTEMİ NEDİR? ASELSAN'IN DÜNYADA BİR İLK OLAN 51 DRON DÜŞÜREN SİSTEMİ NASIL ÇALIŞIYOR? ÇELİKKUBBE ELEKTROMANYETİK İHA SAVUNMA SİLAHI ÖZELLİKLERİ"
+    },
+    {
+     "s": "10haber",
+     "hl": "Aselsan’ın Ejderha’sı 51 dronu bir seferde düşürdü"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "ASELSAN'dan dünyada bir ilk: 51 drone tek tuşla etkisiz hale getirildi"
+    },
+    {
+     "s": "ahaber",
+     "hl": "ASELSAN'dan dünyada bir ilk! EJDERHA 51 dronu tek tuşla etkisiz hale getirdi"
+    },
+    {
+     "s": "ntv",
+     "hl": "ASELSAN'dan dronlara karşı EJDERHA. 51 dronu tek tuşla düşürdü"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "ASELSAN'ın \"Ejderha\"sı tek müdahaleyle 51 dronu etkisiz hale getirdi"
+    }
+   ]
+  },
+  {
+   "event": "s10695",
+   "week": "w12",
+   "title": "Bahçeli'den 50 maddede Terörsüz Türkiye",
+   "headlines": [
+    {
+     "s": "tgrt",
+     "hl": "Devlet Bahçeli'den Terörsüz Türkiye mesajı! Hedefleri 50 maddede sıraladı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Devlet Bahçeli, 50 maddede Terörsüz Türkiye hedefini anlattı"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "MHP lideri Bahçeli'den 'terörsüz Türkiye' pusulası: 50 maddede hedef"
+    },
+    {
+     "s": "akit",
+     "hl": "Bahçeli 50 maddeyle açıkladı! Terörsüz Türkiye'de yeni aşama"
+    },
+    {
+     "s": "aksam",
+     "hl": "Bahçeli'den 50 maddede \"Terörsüz Türkiye\" hedefi: En büyük gücümüz kardeşliğimizdir"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Devlet Bahçeli'den tarihi yol haritası: 50 maddede \"Terörsüz Türkiye\" vizyonu"
+    },
+    {
+     "s": "posta",
+     "hl": "MHP Lideri Bahçeli açıkladı: ’50 maddede Terörsüz Türkiye’"
+    },
+    {
+     "s": "sabah",
+     "hl": "SON DAKİKA! MHP Lideri Devlet Bahçeli'den 50 maddede Terörsüz Türkiye..."
+    },
+    {
+     "s": "takvim",
+     "hl": "Bahçeli’den 50 maddede Terörsüz Türkiye manifestosu: \"Geçmişin acılarını unutmak yok\"... Sürecin tamamlanan ana hedefi"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Bahçeli'den Terörsüz Türkiye için 50 maddelik açıklama"
+    },
+    {
+     "s": "mynet",
+     "hl": "Bahçeli 50 maddede tek tek anlattı! “Terörsüz Türkiye”de pazarlığa kapıyı kapattı"
+    },
+    {
+     "s": "haberturk",
+     "hl": "MHP Genel Başkanı Bahçeli'den \"Terörsüz Türkiye\" açıklaması"
+    },
+    {
+     "s": "ahaber",
+     "hl": "MHP lideri Devlet Bahçeli'den Terörsüz Türkiye için 50 maddelik yol haritası"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Bahçeli'den 'Terörsüz Türkiye' açıklaması: 50 maddede süreç"
+    },
+    {
+     "s": "10haber",
+     "hl": "Devlet Bahçeli nedense hatırlatma ihtiyacı duydu: 50 maddede Terörsüz Türkiye"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Devlet Bahçeli, 50 maddede \"Terörsüz Türkiye\" hedefini değerlendirdi"
+    },
+    {
+     "s": "star",
+     "hl": "MHP Lideri Bahçeli'den 50 maddede Terörsüz Türkiye hedefi: Kategorik tanımlamaları geçersiz kılmanın vakti geldi"
+    },
+    {
+     "s": "ntv",
+     "hl": "Bahçeli'den 50 maddede Terörsüz Türkiye"
+    },
+    {
+     "s": "milliyet",
+     "hl": "Bahçeli’den 50 maddede Terörsüz Türkiye: Temel şart şiddetin araç olmaktan çıkması"
+    }
+   ]
+  },
+  {
+   "event": "s11930",
+   "week": "w12",
+   "title": "Gülistan Doku soruşturmasında tutuklu polisten ‘tuzak’ savunması",
+   "headlines": [
+    {
+     "s": "haberturk",
+     "hl": "Gülistan Doku soruşturmasında tutuklu polisten ‘tuzak’ savunması"
+    },
+    {
+     "s": "haberler",
+     "hl": "Gülistan Doku soruşturmasında tutuklu polisten 'tuzak' savunması! Ekran görüntülerini komiserin talimatıyla eklediğini öne sürdü"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Gülistan Doku cinayetinde kritik ifade: Tutuklu polisten 'tuzak' savunması"
+    },
+    {
+     "s": "sabah",
+     "hl": "SON DAKİKA… Gülistan Doku soruşturmasında kilit isimdi! Tutuklu polisten ‘tuzak’ savunması: ‘Görüntüleri bana hazır verdiler’"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Gülistan Doku soruşturmasında tutuklanan polis: Tuzağa düşürüldüm"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Doku soruşturmasında tutuklu polisten ‘tuzak’ savunması"
+    },
+    {
+     "s": "t24",
+     "hl": "Gülistan Doku'nun kaybolmasından 3 gün sonra hesabında hareketlilik; tutuklu polisten \"tuzak\" iddiası!"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Gülistan Doku soruşturmasında tutuklu polisten 'tuzak' savunması: Görüntüleri bana hazır verdiler"
+    },
+    {
+     "s": "takvim",
+     "hl": "Gülistan Doku soruşturmasında tutuklu polisten sosyal medya raporu itirafı: \"Bana resmen tuzak kurmuşlar\""
+    },
+    {
+     "s": "karar",
+     "hl": "Tutuklu polisten Gülistan Doku soruşturmasında itiraf gibi ifade: Raporu komiserimin talimatıyla hazırladım"
+    },
+    {
+     "s": "posta",
+     "hl": "Gülistan Doku soruşturmasında kilit isimdi! Tutuklu polisten ‘tuzak’ savunması"
+    },
+    {
+     "s": "akit",
+     "hl": "Gülistan soruşturmasında tutuklu polis anlattı: 'Bana tuzak kuruldu'"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Gülistan Doku soruşturmasında tutuklanan polisin savunması: Bana tuzak kurmuşlar"
+    },
+    {
+     "s": "dirilis",
+     "hl": "Tutuklu polisten Gülistan Doku savunması: Bana tuzak kurmuşlar!"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Tutuklu polisten ‘tuzak’ savunması"
+    },
+    {
+     "s": "sondakika",
+     "hl": "Gülistan Doku dosyasında tutuklu polis konuştu: Bana tuzak kurmuşlar"
+    },
+    {
+     "s": "aksam",
+     "hl": "Tutuklu polisten Gülistan Doku itirafı: Bana resmen tuzak kurmuşlar"
+    },
+    {
+     "s": "star",
+     "hl": "Gülistan Doku soruşturmasında yeni gelişme: Tutuklu polisten \"tuzak\" itirafı"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Gülistan Doku soruşturmasında tutuklu polisten çarpıcı ifade: Bana resmen tuzak kurmuşlar!"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Gülistan Doku soruşturmasında tutuklu polisin ifadesi çıktı: Bana resmen tuzak kurmuşlar"
+    }
+   ]
+  },
+  {
+   "event": "s12272",
+   "week": "w12",
+   "title": "Emine Erdoğan'dan Dünya Çocuk Hakları Günü mesajı",
+   "headlines": [
+    {
+     "s": "anka",
+     "hl": "Eskişehir Büyükşehir Belediye Başkanı Ünlüce'den Dünya Çocuk Hakları Günü mesajı"
+    },
+    {
+     "s": "haberler",
+     "hl": "Çocuk Hakları Günü ne zaman, en güzel Dünya Çocuk Hakları Günü sözleri ve mesajları"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Dünya Çocuk Hakları Gününde 5 çocuk işçi anlatıyor: Hakları yok, patronları var"
+    },
+    {
+     "s": "aa",
+     "hl": "Emine Erdoğan'dan Dünya Çocuk Hakları Günü mesajı"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Çocuk Hakları Günü: 'Hakları var, güvenceleri yok'"
+    },
+    {
+     "s": "dwturkce",
+     "hl": "Dünya Çocuk Hakları Günü: Türkiye'de tablo ne söylüyor?"
+    },
+    {
+     "s": "sondakika",
+     "hl": "Kayseri Barosu Dünya Çocuk Hakları Günü'nde çocuk işçiliğine dikkat çekti"
+    },
+    {
+     "s": "sabah",
+     "hl": "20 Kasım Dünya Çocuk Hakları Günü Kutlama Mesajları 2026: En Anlamlı, Kısa ve Resimli Çocuk Hakları Sözleri"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Bugün Dünya Çocuk Hakları Günü!"
+    },
+    {
+     "s": "kisadalga",
+     "hl": "Dünya Çocuk Hakları Günü: Türkiye'de tablo ne söylüyor?"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Dünya Çocuk Hakları Günü ne zaman? Çocuk Hakları Günü mesajları"
+    },
+    {
+     "s": "star",
+     "hl": "Emine Erdoğan'dan Dünya Çocuk Hakları Günü mesajı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Burhanettin Duran'dan 20 Kasım Dünya Çocuk Hakları Günü mesajı"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Emine Erdoğan'dan Dünya Çocuk Hakları Günü'nde Gazze vurgusu: Gücümüzü birleştirmeliyiz"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "İletişim Başkanı Duran'dan Dünya Çocuk Hakları Günü'nde Gazze vurgusu: Her çocuk güvenle büyümeli"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Emine Erdoğan'dan Dünya Çocuk Hakları Günü mesajı: Gazze'deki çocuklara dikkat çekti"
+    },
+    {
+     "s": "posta",
+     "hl": "İletişim Başkanı Duran'dan 20 Kasım Dünya Çocuk Hakları Günü paylaşımı"
+    },
+    {
+     "s": "yeniasya",
+     "hl": "Dünya Çocuk Hakları Günü’nde Gazze’de dram!"
+    },
+    {
+     "s": "ntv",
+     "hl": "Emine Erdoğan'dan Dünya Çocuk Hakları Günü mesajı"
+    },
+    {
+     "s": "aksam",
+     "hl": "Bakan Gürlek'ten Dünya Çocuk Hakları Günü mesajı"
+    },
+    {
+     "s": "haber7",
+     "hl": "Çocuklar Dünya Çocuk Hakları Günü'nde Rami Kütüphanesi'nden dünyaya seslendi"
+    }
+   ]
+  },
+  {
+   "event": "s10383",
+   "week": "w12",
+   "title": "İtalya'dan Meta'ya 805 milyon euro ceza",
+   "headlines": [
+    {
+     "s": "aa",
+     "hl": "İtalya Verileri Koruma Kurumu, Meta'ya 805 milyon avro ceza kesti"
+    },
+    {
+     "s": "sondakika",
+     "hl": "İtalya Verileri Koruma Kurumu Meta'ya galeri erişimi için 805 milyon avro ceza kesti"
+    },
+    {
+     "s": "haberler",
+     "hl": "İtalya, Meta'ya Android galerisine izinsiz erişimden 805 milyon avro ceza kesti"
+    },
+    {
+     "s": "milliyet",
+     "hl": "İtalya'dan Meta'ya 805 milyon Euro para cezası!"
+    },
+    {
+     "s": "aksam",
+     "hl": "İtalya, Meta'ya 805 milyon avro ceza kesti"
+    },
+    {
+     "s": "trthaber",
+     "hl": "İtalya Verileri Koruma Kurumu, Meta'ya 805 milyon avro ceza kesti"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Facebook kullanıcılarına kötü haber! Fotoğraflar nedeniyle Meta'ya 805 milyon euro ceza"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "İtalya'dan Meta'ya 805 milyon euro ceza"
+    },
+    {
+     "s": "akit",
+     "hl": "Facebook kullanıcılarına büyük şok! Telefonların galerisine izinsiz erişmiş: Meta'ya 805 milyon avro ceza!"
+    },
+    {
+     "s": "memurlar",
+     "hl": "�talya Verileri Koruma Kurumu, Meta'ya 805 Milyon Avro Ceza Kesti"
+    },
+    {
+     "s": "takvim",
+     "hl": "Dijital röntgen! Kullanıcıların telefonundaki fotoğraflara izinsiz erişim sağladılar: Meta'ya 805 milyon euroluk rekor ceza"
+    },
+    {
+     "s": "ahaber",
+     "hl": "İtalya'dan Meta'ya 805 milyon avroluk ceza! Facebook'a 60 gün süre: Kullanıcılarının fotoğraflarına izinsiz erişmiş"
+    },
+    {
+     "s": "haber7",
+     "hl": "İtalya'dan Meta'ya tarihi ceza"
+    },
+    {
+     "s": "sabah",
+     "hl": "İtalya'dan Meta'ya 805 milyon euro ceza! Fotoğraflara izinsiz erişim skandalı"
+    },
+    {
+     "s": "haberturk",
+     "hl": "İtalya'dan kullanıcı verilerine izinsiz erişen Meta'ya 805 milyon euro para cezası"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "İtalya'dan Meta'ya dev ceza: Facebook'a izinsiz galeri erişimi suçlamasından 805 milyon euro fatura"
+    },
+    {
+     "s": "bbcturkce",
+     "hl": "Meta'ya 805 milyon euro ceza: 'Facebook fotoğraflara izinsiz erişti'"
+    },
+    {
+     "s": "diken",
+     "hl": "Facebook fotoğraflarına izinsiz erişim: İtalya'dan Meta'ya 805 milyon avro ceza"
+    },
+    {
+     "s": "onedio",
+     "hl": "Meta'ya İtalya'dan 805 Milyon Euro Ceza: Facebook'un Android Uygulaması Galeriye Onaysız Girmiş"
+    },
+    {
+     "s": "karar",
+     "hl": "İtalya'dan Meta'ya 805 milyon avro ceza"
+    }
+   ]
+  },
+  {
+   "event": "s10646",
+   "week": "w12",
+   "title": "Elektrik direğine çarpan otomobil alev topuna döndü: 2 ölü, 5 yaralı",
+   "headlines": [
+    {
+     "s": "haberler",
+     "hl": "Fethiye'de elektrik direğine çarpan otomobil alev aldı! 2 kişi hayatını kaybetti, aralarında çocukların da olduğu 5 kişi yaralandı"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Fethiye'de elektrik direğine çarparak alev alan otomobildeki 2 kişi öldü, 5 kişi yaralandı"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Elektrik direğine çarpan otomobil alev topuna döndü: 2 ölü, 5 yaralı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Muğla'da elektrik direğine çarpan otomobilde 2 kişi can verdi"
+    },
+    {
+     "s": "haber7",
+     "hl": "Otomobil elektrik direğine çarpıp alev aldı: 2 ölü, 5 yaralı"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Muğla’da otomobil elektrik direğine çarpıp alev aldı: Ölü ve yaralılar var"
+    },
+    {
+     "s": "akit",
+     "hl": "Fethiye’de elektrik direğine çarpan otomobil yandı, 2 kişi hayatını kaybetti"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Fethiye'de elektrik direğine çarpan araç alev topuna döndü: 2 ölü, 5 yaralı"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Elektrik direğine çarpan otomobil yandı: 2 ölü"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Muğla'da feci kaza: Elektrik direğine çarpan otomobil alev aldı, 2 ölü, 5 yaralı!"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Muğla’da otomobil elektrik direğine çarptı: 2 kişi hayatını kaybetti, 5 yaralı"
+    },
+    {
+     "s": "dha",
+     "hl": "Muğla’da otomobil elektrik direğine çarpıp alev aldı: 2 ölü, 5 yaralı"
+    },
+    {
+     "s": "ntv",
+     "hl": "Elektrik direğine çarpan otomobil alev aldı: İki can kaybı var"
+    },
+    {
+     "s": "birgun",
+     "hl": "Fethiye’de direğe çarpan otomobil alev aldı: 2 kişi yaşamını yitirdi, 5 yaralı"
+    },
+    {
+     "s": "takvim",
+     "hl": "Fethiye'de feci kaza! Direğe çarpan otomobil alev aldı: 2 ölü, 5 yaralı"
+    },
+    {
+     "s": "karar",
+     "hl": "Muğla'da elektrik direğine çarpan otomobilde can pazarı: 2 ölü, 5 yaralı"
+    },
+    {
+     "s": "sabah",
+     "hl": "Fethiye'de elektrik direğine çarpan otomobil alev topuna döndü! 2 ölü, 5 yaralı | Video"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Fethiye'de feci kaza: Elektrik direğine çarpan otomobil alev topuna döndü"
+    }
+   ]
+  },
+  {
+   "event": "s10730",
+   "week": "w12",
+   "title": "A Milli Takım'da Fransa maçı öncesi şok! Uğurcan Çakır kadrodan çıkarıldı",
+   "headlines": [
+    {
+     "s": "sondakika",
+     "hl": "Fransa maçı öncesi kalede zorunlu değişiklik: Uğurcan Çakır kadroda yok"
+    },
+    {
+     "s": "karar",
+     "hl": "A Milli Takım'da Fransa maçı öncesi Uğurcan Çakır şoku"
+    },
+    {
+     "s": "mynet",
+     "hl": "Dev maç öncesi Uğurcan Çakır şoku! Kadrodan çıkarıldı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "A Milli Takım'da Uğurcan Çakır şoku"
+    },
+    {
+     "s": "aksam",
+     "hl": "Fransa maçı öncesi kötü haber! A Milli Takım'da Uğurcan Çakır şoku"
+    },
+    {
+     "s": "star",
+     "hl": "Fransa maçı öncesi Uğurcan Çakır'dan kötü haber! A Milli Takım'ın kalesi Berke Özer'e emanet"
+    },
+    {
+     "s": "posta",
+     "hl": "A Milli Takım'da Fransa maçı öncesi şok! Uğurcan Çakır kadrodan çıkarıldı"
+    },
+    {
+     "s": "akit",
+     "hl": "Maça saatleri kala kadrodan çıkarıldı! Milli Takım'da Uğurcan Çakır depremi"
+    },
+    {
+     "s": "haberler",
+     "hl": "Uğurcan Çakır neden Fransa maçında yok? Milli kaleci Uğurcan Çakır kimdir, nereli?"
+    },
+    {
+     "s": "t24",
+     "hl": "A Milli Takım'a Fransa maçı öncesi Uğurcan Çakır şoku"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Milli Takım'da Uğurcan Çakır Fransa maçında neden yok? Kadrodan çıkarılma nedeni açıklandı"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "A Milli Takım'da Uğurcan Çakır kadrodan çıkarıldı"
+    },
+    {
+     "s": "dha",
+     "hl": "Uğurcan Çakır, Fransa maçının kadrosundan çıkarıldı"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Milli takımda Uğurcan Çakır şoku! TFF'den sakatlık açıklaması geldi"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Fransa maçı öncesi şok karar: Uğurcan Çakır neden kadrodan çıkarıldı?"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "Galatasaray'dan Uğurcan Çakır kararı! Milli Takım'da sakatlanmıştı..."
+    },
+    {
+     "s": "haberturk",
+     "hl": "Galatasaray'da Uğurcan Çakır seferberliği!"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Galatasaray'ı yıkan sakatlık haberi! Kritik maç öncesi Uğurcan Çakır şoku"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Sakatlığı sebebiyle A Milli Takım kadrosundan çıkarılmıştı: Galatasaray'da Uğurcan Çakır gelişmesi"
+    },
+    {
+     "s": "haber7",
+     "hl": "Galatasaray'da A Milli Takım'da sakatlanan Uğurcan Çakır'ın son durumu belli oldu"
+    }
+   ]
+  },
+  {
+   "event": "s10361",
+   "week": "w12",
+   "title": "Kremlin: Putin, Şi ve Trump, 19 Kasım'da üçlü görüşme yapacak",
+   "headlines": [
+    {
+     "s": "sondakika",
+     "hl": "Beyaz Saray duyurdu: Trump, APEC zirvesinde Putin ve Şi Cinping'le üçlü görüşme yapacak"
+    },
+    {
+     "s": "aa",
+     "hl": "Trump, Çin'e yapacağı ziyarette Şi ve Putin'le üçlü görüşme gerçekleştirecek"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Trump, Şi ve Putin'le üçlü görüşme gerçekleştirecek"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Trump, Şi ve Putin'le üçlü görüşme gerçekleştirecek"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Trump'ın Çin programında Şi ve Putin'le üçlü görüşme var"
+    },
+    {
+     "s": "akit",
+     "hl": "Trump, Şi ve Putin üçlü görüşme gerçekleştirecek"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Trump, Çin ziyaretinde Şi ve Putin'le üçlü görüşme yapacak"
+    },
+    {
+     "s": "star",
+     "hl": "Trump, Çin'e yapacağı ziyarette Şi ve Putin'le üçlü görüşme gerçekleştirecek"
+    },
+    {
+     "s": "t24",
+     "hl": "Beyaz Saray duyurdu; Trump, Çin'de Şi ve Putin'le üçlü görüşme yapacak"
+    },
+    {
+     "s": "karar",
+     "hl": "Trump, Şi ve Putin'le üçlü görüşme gerçekleştirecek"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Trump Şi ve Putin'le üçlü görüşme gerçekleştirecek: Masada İran ve nükleer silahlar"
+    },
+    {
+     "s": "dha",
+     "hl": "Trump, gelecek hafta Çin'de Şi ve Putin ile üçlü görüşme yapacak"
+    },
+    {
+     "s": "anka",
+     "hl": "Beyaz Saray: Trump, önümüzdeki hafta Çin’de Şi ve Putin ile üçlü görüşme yapacak"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "Trump, Şi ve Putin'le üçlü görüşme gerçekleştirecek"
+    },
+    {
+     "s": "haber7",
+     "hl": "Üçlü zirve için nefesler tutuldu: Trump, Şi ve Putin'le bir araya geliyor!"
+    },
+    {
+     "s": "haberler",
+     "hl": "Kremlin, Putin, Şi ve Trump'ın 19 Kasım'da üçlü görüşme yapacağını duyurdu"
+    },
+    {
+     "s": "birgun",
+     "hl": "Kremlin duyurdu: Putin, Şi ve Trump, 19 Kasım'da üçlü görüşme yapacak"
+    },
+    {
+     "s": "ntv",
+     "hl": "Putin, Şi ve Trump'ın üçlü görüşmesi için tarih ve yer belli oldu"
+    },
+    {
+     "s": "mynet",
+     "hl": "Trump, Çin'e yapacağı ziyarette Şi ve Putin'le üçlü görüşme gerçekleştirecek"
+    },
+    {
+     "s": "dirilis",
+     "hl": "Kremlin: Putin, Şi ve Trump 19 Kasım'da görüşecek"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Kremlin: Putin, Şi ve Trump 19 Kasım’da üçlü zirve yapacak"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Kremlin: Putin, Şi ve Trump, 19 Kasım'da üçlü görüşme yapacak"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Trump'ın Çin ziyaretinde kritik gündem! Şi ve Putin'le üçlü zirve gerçekleşecek mi?"
+    }
+   ]
+  },
+  {
+   "event": "s12538",
+   "week": "w12",
+   "title": "Bakan Uraloğlu: HGS'de icra takipleri durduruldu",
+   "headlines": [
+    {
+     "s": "sondakika",
+     "hl": "HGS'de icra takipleri durduruldu"
+    },
+    {
+     "s": "mynet",
+     "hl": "Bakan Uraloğlu'ndan HGS açıklaması! \"İcra takipleri durduruldu\""
+    },
+    {
+     "s": "tgrt",
+     "hl": "HGS cezalarında icra takibi durduruldu! Bakan Uraloğlu'ndan sürücülere 5 maddelik yeni karar"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "HGS'de icra takipleri durduruldu: Bakan Uraloğlu yeni kararları açıkladı"
+    },
+    {
+     "s": "takvim",
+     "hl": "HGS'de icra takipleri durduruldu! Ulaştırma ve Altyapı Bakanı Abdulkadir Uraloğlu yeni kararları duyurdu"
+    },
+    {
+     "s": "haberler",
+     "hl": "HGS'de icra takipleri durduruldu"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "HGS'de icra takipleri durduruldu"
+    },
+    {
+     "s": "sabah",
+     "hl": "Bakan Uraloğlu'ndan HGS açıklaması: İcra takipleri durduruldu"
+    },
+    {
+     "s": "ahaber",
+     "hl": "HGS’de icra takipleri için durdurma kararı! Özel otoyol şirketlerinin uygulaması yeniden düzenleniyor"
+    },
+    {
+     "s": "sozcu",
+     "hl": "HGS icra takipleriyle ilgili karar: Bakan Uraloğlu açıkladı"
+    },
+    {
+     "s": "posta",
+     "hl": "Milyonlarca araç sahibini ilgilendiriyor! Bakan Uraloğlu'ndan HGS açıklaması: İcra takipleri durduruldu"
+    },
+    {
+     "s": "dirilis",
+     "hl": "Bakan Uraloğlu: HGS'de icra takipleri durduruldu"
+    },
+    {
+     "s": "onedio",
+     "hl": "Milyonlarca Araç Sahibine Müjde: HGS İcra Takipleri Durduruldu"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Uraloğlu açıkladı: HGS cezalarında icra takipleri durduruldu"
+    },
+    {
+     "s": "karar",
+     "hl": "Bakan Uraloğlu duyurdu: HGS kaynaklı icra takipleri durduruldu"
+    },
+    {
+     "s": "aksam",
+     "hl": "Bakan Uraloğlu duyurdu: HGS'de icra takipleri durduruldu"
+    },
+    {
+     "s": "t24",
+     "hl": "Bakanlıktan HGS kararı: Özel otoyol şirketlerinin icra takipleri durduruldu"
+    },
+    {
+     "s": "anka",
+     "hl": "Ulaştırma ve Altyapı Bakanı Uraloğlu'ndan HGS açıklaması: İcra takipleri durduruldu"
+    },
+    {
+     "s": "evrensel",
+     "hl": "HGS'de icra uygulaması durduruldu, yeni düzenleme yapılacak"
+    },
+    {
+     "s": "bloomberght",
+     "hl": "HGS'de icra uygulaması durduruldu"
+    },
+    {
+     "s": "ntv",
+     "hl": "HGS'de icra takipleri durduruldu"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "SON DAKİKA | Bakan Uraloğlu: HGS'de icra takipleri durduruldu"
+    },
+    {
+     "s": "haber7",
+     "hl": "Son Dakika: Bakan Uraloğlu'ndan HGS açıklaması: İcra uygulamaları durduruldu..."
+    },
+    {
+     "s": "star",
+     "hl": "HGS'de icra takipleri durduruldu! Bakan Uraloğlu: Uygulama yeniden düzenlenecek"
+    }
+   ]
+  },
+  {
+   "event": "s10686",
+   "week": "w12",
+   "title": "Meteoroloji'den İstanbul dahil 13 il için sarı kodlu uyarı: Kuvvetli sağanak geliyor",
+   "headlines": [
+    {
+     "s": "t24",
+     "hl": "Meteoroloji'den sağanak ve kuvvetli rüzgâr uyarısı: 5 il için sarı kodlu alarm! Galeri"
+    },
+    {
+     "s": "diken",
+     "hl": "Sağanak yağış geliyor: Beş ile sarı kodlu uyarı"
+    },
+    {
+     "s": "aksam",
+     "hl": "Meteoroloji tarih verdi! 3 il için kuvvetli yağış uyarısı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Meteorolojiden İstanbul dahil birçok ile sarı kodlu uyarı: Kuvvetli sağanak ve kar geliyor"
+    },
+    {
+     "s": "sondakika",
+     "hl": "Meteoroloji 13 il için sarı kodlu uyarı verdi, İstanbul ve İzmir de listede"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Meteorolojiden 13 il için kuvvetli yağış uyarısı"
+    },
+    {
+     "s": "posta",
+     "hl": "İstanbul dahil 13 il için sarı kodlu uyarı! Sağanak ve fırtına geliyor: Bu gece başlayacak"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Yarın dikkat! Meteoroloji'den 13 il için sarı kodlu uyarı"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Meteoroloji 13 il için sarı kodlu uyarı yayımladı: Kuvvetli yağış bekleniyor"
+    },
+    {
+     "s": "akit",
+     "hl": "13 il için sarı alarm! Meteoroloji’den kuvvetli yağış uyarısı"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Meteoroloji'den 13 il için sarı kodlu uyarı: Kuvvetli sağanak bekleniyor"
+    },
+    {
+     "s": "sabah",
+     "hl": "Meteoroloji'den İstanbul dahil 13 il için sarı kodlu uyarı: Kuvvetli sağanak geliyor"
+    },
+    {
+     "s": "vatan",
+     "hl": "Meteoroloji'den kuvvetli yağış uyarısı! İstanbul dahil 6 il listede"
+    },
+    {
+     "s": "haber7",
+     "hl": "İstanbul dahil 13 ilde alarm! Meteoroloji saat verdi: Çok kuvvetli sağanak geliyor!"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Meteoroloji'den 13 il için sarı kod! Kuvvetli sağanak yağmur etkili olacak"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Meteoroloji'den İstanbul dahil 13 il için sarı kodlu uyarı! Kuvvetli yağış etkili olacak"
+    },
+    {
+     "s": "takvim",
+     "hl": "Meteoroloji'den İstanbul dahil 13 ile sarı kodlu alarm! Kuvvetli sağanak ve kar geliyor: İşte 5 günlük hava durumu"
+    },
+    {
+     "s": "mynet",
+     "hl": "Meteoroloji’den İstanbul dahil 9 il için kuvvetli yağış alarmı! Gök gürültülü sağanak ve kar geliyor"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Meteoroloji'den 13 il için sarı kodlu uyarı! İstanbul dahil birçok kentte kuvvetli sağanak bekleniyor"
+    }
+   ]
+  },
+  {
+   "event": "s12274",
+   "week": "w12",
+   "title": "Güllü’nün ölümü davasında yeni gelişme: Sultan Nur Ulu yasağı havalimanında öğrendi",
+   "headlines": [
+    {
+     "s": "haberturk",
+     "hl": "Güllü'nün ölümüyle ilgili 'yalan tanıklık'tan yargılanan Sultan Nur Ulu için yeniden yurt dışı yasağı"
+    },
+    {
+     "s": "haberler",
+     "hl": "Güllü davasında Sultan Nur Ulu'ya havalimanında şok! Yurt dışı çıkış yasağı geri geldi"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Güllü'nün ölümünde 'yalan tanıklık'tan yargılanan Sultan Nur Ulu için yeniden yurt dışı yasağı! Kararı havalimanında öğrendi"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Güllü davasında yeni gelişme: Sultan Nur Ulu yeniden konulan yurt dışı çıkış yasağını havalimanında öğrendi"
+    },
+    {
+     "s": "t24",
+     "hl": "Güllü davasında adli kontrol kararı değişti: Sultan Nur Ulu yasağı havalimanında öğrendi"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Güllü'nün ölümüyle ilgili 'yalan tanıklık'tan yargılanan Sultan Nur Ulu için yeniden yurt dışı yasağı"
+    },
+    {
+     "s": "sabah",
+     "hl": "Güllü cinayetinde yeni ek karar: Yalan tanıklıktan yargılanan Sultan Nur Ulu için yeniden yurt dışı yasağı!"
+    },
+    {
+     "s": "dirilis",
+     "hl": "Güllü davasında Sultan Nur Ulu hakkında yeni karar!"
+    },
+    {
+     "s": "star",
+     "hl": "Güllü davasında yeni gelişme! Sultan Nur Ulu hakkında karar verildi"
+    },
+    {
+     "s": "akit",
+     "hl": "Güllü dosyasında yeni gelişme: Sultan Nur Ulu yurtdışına çıkarken durduruldu"
+    },
+    {
+     "s": "aksam",
+     "hl": "Güllü soruşturmasında yeni gelişme: Kararı havalimanında öğrendi"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Güllü'nün ölümüyle ilgili yargılanan Sultan Nur Ulu’ya yeniden yurt dışı yasağı"
+    },
+    {
+     "s": "takvim",
+     "hl": "KKTC'ye gitmek isterken öğrendi! Güllü'nün ölümü davasında Sultan Nur Ulu'ya yeniden yurt dışı yasağı"
+    },
+    {
+     "s": "10haber",
+     "hl": "Güllü’nün ölümü: Sultan Nur Ulu için yeniden yurt dışı yasağı"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Güllü davasında ara karar: Gerçeği havalimanında öğrendi"
+    },
+    {
+     "s": "ntv",
+     "hl": "Güllü davasında yeni gelişme: Kararı havalimanında öğrendi"
+    },
+    {
+     "s": "karar",
+     "hl": "Güllü dosyasında ek karar: Sultan Nur Ulu'ya yurt dışına çıkış yasağı"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Güllü’nün ölümü davasında yeni gelişme: Sultan Nur Ulu yasağı havalimanında öğrendi"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Güllü davasında dikkat çeken karar: Sultan Nur Ulu yurt dışı çıkış yasağını havalimanında öğrendi!"
+    },
+    {
+     "s": "ahaber",
+     "hl": "'Yalan tanıklık' suçlamasıyla yargılanıyordu! Güllü dosyasında yeni gelişme: Sultan Nur Ulu için yeniden yurt dışı yasağı"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Güllü davasında yargılanan Sultan Nur Ulu’ya havalimanında şok! Tam KKTC’ye gidecekken öğrendi"
+    }
+   ]
+  }
+ ]
+}

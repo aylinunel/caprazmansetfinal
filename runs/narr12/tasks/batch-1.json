@@ -1,0 +1,1904 @@
+{
+ "dimensions": {
+  "frame": "Çerçeve",
+  "hero": "Merkezdeki aktör",
+  "blame": "Sorumlu tutulan",
+  "cause": "Sunulan neden",
+  "cons": "Öne çıkan sonuç",
+  "aff": "Etkilenen kesim",
+  "sol": "Meşrulaştırılan çözüm",
+  "moral": "Ahlaki çerçeve",
+  "start": "Hikâyenin başlangıcı"
+ },
+ "examples": [
+  {
+   "key": "w6-s325",
+   "q": {
+    "happened": "İstanbul Maltepe'de yedi katlı bir bina çöktü; can kaybı yayınlara göre 3 ile 5 arasında; binada kontrollü yıkım ve inceleme sürüyor.",
+    "agree": "Binanın çöktüğü ortak; can kaybı farklı aşamalarda farklı.",
+    "differ": "Soldaki kurumlar binanın yaşını ve neden çöktüğünü soruyor; ortadaki kurumlar kurtarma ve yıkım sürecini veriyor; sağdaki kurumlar can kaybını öne çıkarıyor; bir kurum 'kentsel dönüşüm detayı'nı başlığa taşıyor.",
+    "care": "Neden sorusu sorumluluk arayışını başlatır; 'kentsel dönüşüm' ayrıntısı ise sorumluluğu belirli bir sürece bağlar; can kaybı vurgusu olayı bir trajedi olarak kurar."
+   },
+   "rows": [
+    {
+     "s": "cumhuriyet",
+     "hl": "Maltepe'de çöken binada ölü veya yaralı var mı? Bina kaç yıllık, neden çöktü?",
+     "frame": "Sorumluluk arayışı",
+     "hero": "Bina sakinleri",
+     "blame": "Belirsiz (soru)",
+     "cause": "Binanın yaşı / yapısı (soru)",
+     "cons": "Çökme",
+     "aff": "Bina sakinleri",
+     "sol": "",
+     "moral": "Yapı güvenliği",
+     "start": ""
+    },
+    {
+     "s": "aydinlik",
+     "hl": "Maltepe'de çöken binada kurtarılanlar konuştu",
+     "frame": "İnsani",
+     "hero": "Kurtarılanlar",
+     "blame": "",
+     "cause": "",
+     "cons": "Kurtarma",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "sozcu",
+     "hl": "Maltepe'de çöken 7 katlı binada ölü ya da yaralı var mı?",
+     "frame": "Sorumluluk arayışı",
+     "hero": "Bina sakinleri",
+     "blame": "Belirsiz (soru)",
+     "cause": "Binanın yaşı / yapısı (soru)",
+     "cons": "Çökme",
+     "aff": "Bina sakinleri",
+     "sol": "",
+     "moral": "Yapı güvenliği",
+     "start": ""
+    },
+    {
+     "s": "ntv",
+     "hl": "Maltepe'de çöken binada kontrollü yıkım sürüyor",
+     "frame": "Olgu aktarımı",
+     "hero": "Yetkililer",
+     "blame": "",
+     "cause": "",
+     "cons": "Kontrollü yıkım / örnek alma",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "karar",
+     "hl": "Maltepe'de çöken binadan örnekler alındı",
+     "frame": "Olgu aktarımı",
+     "hero": "Yetkililer",
+     "blame": "",
+     "cause": "",
+     "cons": "Kontrollü yıkım / örnek alma",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "milligazete",
+     "hl": "Maltepe'de çöken binada acı bilanço: Can kaybı 3'e çıktı",
+     "frame": "Trajedi",
+     "hero": "Kurbanlar",
+     "blame": "",
+     "cause": "",
+     "cons": "Can kaybı",
+     "aff": "Kurbanların aileleri",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "star",
+     "hl": "Maltepe'de çöken binadan acı haber: Can kaybı 5'e yükseldi",
+     "frame": "Trajedi",
+     "hero": "Kurbanlar",
+     "blame": "",
+     "cause": "",
+     "cons": "Can kaybı",
+     "aff": "Kurbanların aileleri",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "takvim",
+     "hl": "Maltepe’de çöken binada kentsel dönüşüm detayı",
+     "frame": "Sorumluluk arayışı",
+     "hero": "Bina sakinleri",
+     "blame": "Kentsel dönüşüm süreci (ima)",
+     "cause": "Kentsel dönüşüm",
+     "cons": "Çökme",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": "Kentsel dönüşüm kararı"
+    }
+   ]
+  },
+  {
+   "key": "w1-s143",
+   "q": {
+    "happened": "Ağustos ayı enflasyon verileri açıklandı: TÜİK resmî rakamı, bağımsız ENAG kendi hesabını, İstanbul ve Euro Bölgesi de kendi verilerini duyurdu.",
+    "agree": "Ağustos enflasyonunun açıklandığı bütün kurumlarda ortak.",
+    "differ": "Hangi enflasyonun haber yapıldığı: solda ve ortada ENAG'ın bağımsız hesabı ya da İstanbul verisi, sağda TÜİK'in resmî rakamı öne çıkıyor; bir kurum Euro Bölgesi enflasyonunu başlığa taşıyor, bir başkası yalnızca açıklanma tarihini veriyor.",
+    "care": "Aynı ay için hangi kurumun rakamının 'enflasyon' sayıldığı, hayat pahalılığına dair bütün tartışmanın zeminini belirler."
+   },
+   "rows": [
+    {
+     "s": "cumhuriyet",
+     "hl": "Euro Bölgesi ağustos ayı enflasyonu belli oldu: Veriler yeniden yükselişte",
+     "frame": "Dış karşılaştırma",
+     "hero": "Euro Bölgesi",
+     "blame": "",
+     "cause": "",
+     "cons": "Avrupa'da yükselen enflasyon",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "aydinlik",
+     "hl": "İstanbul'un ağustos ayı enflasyonu belli oldu",
+     "frame": "Yerel veri",
+     "hero": "İTO",
+     "blame": "",
+     "cause": "",
+     "cons": "İstanbul enflasyonu",
+     "aff": "İstanbullular",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "sozcu",
+     "hl": "Son dakika... ENAG ağustos ayı enflasyonu açıklandı",
+     "frame": "Bağımsız ölçüm",
+     "hero": "ENAG",
+     "blame": "",
+     "cause": "Resmî rakama güvensizlik (ima)",
+     "cons": "ENAG rakamı",
+     "aff": "Tüketiciler",
+     "sol": "",
+     "moral": "Şeffaflık",
+     "start": ""
+    },
+    {
+     "s": "mynet",
+     "hl": "ENAG ağustos ayı enflasyonunu açıkladı - Finans haberlerinin doğru adresi - Mynet Finans Haber",
+     "frame": "Bağımsız ölçüm",
+     "hero": "ENAG",
+     "blame": "",
+     "cause": "Resmî rakama güvensizlik (ima)",
+     "cons": "ENAG rakamı",
+     "aff": "Tüketiciler",
+     "sol": "",
+     "moral": "Şeffaflık",
+     "start": ""
+    },
+    {
+     "s": "ntv",
+     "hl": "Enflasyon verileri ne oldu, yüzde kaç? 2026 TÜİK ağustos ayı TÜFE kararı açıklandı",
+     "frame": "Resmî veri",
+     "hero": "TÜİK",
+     "blame": "",
+     "cause": "",
+     "cons": "Resmî enflasyon rakamı",
+     "aff": "",
+     "sol": "",
+     "moral": "Kurumsal güven",
+     "start": ""
+    },
+    {
+     "s": "karar",
+     "hl": "ENAG, Ağustos ayı enflasyonunu açıkladı",
+     "frame": "Bağımsız ölçüm",
+     "hero": "ENAG",
+     "blame": "",
+     "cause": "Resmî rakama güvensizlik (ima)",
+     "cons": "ENAG rakamı",
+     "aff": "Tüketiciler",
+     "sol": "",
+     "moral": "Şeffaflık",
+     "start": ""
+    },
+    {
+     "s": "sabah",
+     "hl": "Ağustos Ayı Enflasyonu Açıklanış Tarihi 2026: TÜİK ile Ağustos ayı enflasyonu ne zaman açıklanacak?",
+     "frame": "Hizmet / bilgi",
+     "hero": "TÜİK",
+     "blame": "",
+     "cause": "",
+     "cons": "Açıklanma tarihi",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "star",
+     "hl": "TÜİK verileri paylaştı! Ağustos ayı enflasyon rakamları belli oldu",
+     "frame": "Resmî veri",
+     "hero": "TÜİK",
+     "blame": "",
+     "cause": "",
+     "cons": "Resmî enflasyon rakamı",
+     "aff": "",
+     "sol": "",
+     "moral": "Kurumsal güven",
+     "start": ""
+    },
+    {
+     "s": "takvim",
+     "hl": "TÜİK Ağustos ayı enflasyon verilerini açıkladı",
+     "frame": "Resmî veri",
+     "hero": "TÜİK",
+     "blame": "",
+     "cause": "",
+     "cons": "Resmî enflasyon rakamı",
+     "aff": "",
+     "sol": "",
+     "moral": "Kurumsal güven",
+     "start": ""
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "event": "s11612",
+   "week": "w12",
+   "title": "Fon soruşturması: AKP'li Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifadeye çağrıldı",
+   "headlines": [
+    {
+     "s": "birgun",
+     "hl": "AKP'li Hayati Yazıcı'nın oğlu Mustafa Yazıcı'nın şirketine kayyum atandı"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Hayati Yazıcı'nın oğlu Mustafa Yazıcı'nın şirketi Adil Varlık Yönetim'e kayyım atandı"
+    },
+    {
+     "s": "kisadalga",
+     "hl": "AKP Genel Başkan Yardımcısı Hayati Yazıcı'nın oğlu Mustafa Yazıcı'nın şirketine kayyım atandı"
+    },
+    {
+     "s": "haberler",
+     "hl": "Hayati Yazıcı'nın oğlu kim, Mustafa Yazıcı kimdir?"
+    },
+    {
+     "s": "10haber",
+     "hl": "Ak Partili Hayati Yazıcı’nın oğlu Mustafa Yazıcı’nın şirketine kayyum atandı"
+    },
+    {
+     "s": "sondakika",
+     "hl": "Hayati Yazıcı'nın oğlu Mustafa Yazıcı, şüpheli sıfatıyla ifadeye çağrıldı"
+    },
+    {
+     "s": "sol",
+     "hl": "Fon soruşturması: AKP'li Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifadeye çağrıldı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifadeye çağrıldı"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Hayati Yazıcı’nın oğlu Mustafa Yazıcı ifade için adliyede"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Son dakika... Fon soruşturmasında dikkat çeken gelişme: AKP'li Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifade vermek için adliyede"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Fon soruşturmasında yeni gelişme: Mustafa Yazıcı ifadeye çağrıldı"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Fon soruşturmasında Mustafa Yazıcı ifadeye çağrıldı"
+    },
+    {
+     "s": "karar",
+     "hl": "Fon soruşturması AK Parti'nin üst yönetimine uzandı: Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifadeye çağrıldı"
+    },
+    {
+     "s": "sabah",
+     "hl": "Mustafa Yazıcı ifadeye çağırıldı!"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "AK Parti Genel Başkan Yardımcısı Hayati Yazıcı'nın oğlu ifadeye çağırıldı"
+    },
+    {
+     "s": "takvim",
+     "hl": "Fon soruşturmasında Mustafa Yazıcı'ya adli kontrol kararı... 6 saat ifade verdi"
+    },
+    {
+     "s": "dirilis",
+     "hl": "Hayati Yazıcı’nın oğlu Mustafa Yazıcı ifadeye çağrıldı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Mustafa Yazıcı'nın ifade işlemi başladı"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Fon soruşturmasında Mustafa Yazıcı ifadeye çağırıldı"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Son dakika: AKP'li Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifadeye çağrıldı"
+    },
+    {
+     "s": "mynet",
+     "hl": "Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifade için adliyeye geldi"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Fon soruşturması: Mustafa Yazıcı'nın ifade işlemi başladı"
+    },
+    {
+     "s": "t24",
+     "hl": "Fon soruşturması: AKP Genel Başkan Yardımcısı Hayati Yazıcı'nın oğlu Mustafa Yazıcı savcılıkta 6,5 saat ifade verdi, adli kontrolle serbest bırakıldı"
+    },
+    {
+     "s": "akit",
+     "hl": "AK Parti Grup toplantısına bu yüzden mi katılmadı? Hayati Yazıcı’nın oğlu Mustafa Yazıcı fon soruşturmasında ifadeye çağrıldı"
+    },
+    {
+     "s": "anka",
+     "hl": "AK Parti Genel Başkan Yardımcısı Hayati Yazıcı'nın oğlu Mustafa Yazıcı \"Fon Soruşturması\" kapsamında ifadeye çağrıldı"
+    },
+    {
+     "s": "bianet",
+     "hl": "Fon soruşturmasında Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifadeye çağrıldı"
+    },
+    {
+     "s": "bloomberght",
+     "hl": "Mustafa Yazıcı ifadeye çağrıldı"
+    },
+    {
+     "s": "star",
+     "hl": "Mustafa Yazıcı \"fon soruşturması\"nda ifadeye çağrıldı"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Fon soruşturmasında Mustafa Yazıcı ifadeye çağırıldı"
+    },
+    {
+     "s": "ntv",
+     "hl": "Fon soruşturmasında yeni gelişme. Mustafa Yazıcı ifadeye çağrıldı"
+    },
+    {
+     "s": "diken",
+     "hl": "AKP'li Hayati Yazıcı'nın oğlu Mustafa Yazıcı hakkında adli kontrol talebi"
+    },
+    {
+     "s": "aksam",
+     "hl": "Mustafa Yazıcı'nın ifadesi alındı"
+    },
+    {
+     "s": "posta",
+     "hl": "Mustafa Yazıcı'ya 'fon soruşturması'nda adli kontrol talebi"
+    },
+    {
+     "s": "dwturkce",
+     "hl": "Fon soruşturması: Mustafa Yazıcı adli kontrolle serbest"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Fon soruşturmasında yeni gelişme! Hayati Yazıcı'nın oğlu Mustafa Yazıcı serbest bırakıldı"
+    },
+    {
+     "s": "yeniasya",
+     "hl": "Mustafa Yazıcı adli kontrolle serbest!"
+    }
+   ]
+  },
+  {
+   "event": "s10961",
+   "week": "w12",
+   "title": "Van'da 4,3 büyüklüğünde deprem",
+   "headlines": [
+    {
+     "s": "hurriyet",
+     "hl": "Erzurum'da 3,6 büyüklüğünde deprem"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Erzurum'da deprem"
+    },
+    {
+     "s": "ntv",
+     "hl": "Erzurum'da 3.6 büyüklüğünde deprem"
+    },
+    {
+     "s": "star",
+     "hl": "Erzurum'da 3,6 büyüklüğünde deprem"
+    },
+    {
+     "s": "birgun",
+     "hl": "AFAD duyurdu: Erzurum'da 3.6 büyüklüğünde deprem"
+    },
+    {
+     "s": "posta",
+     "hl": "Erzurum'da 3,6 büyüklüğünde deprem"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Erzurum'da 3,6 büyüklüğünde deprem meydana geldi"
+    },
+    {
+     "s": "karar",
+     "hl": "Erzurum'da 3,6 büyüklüğünde deprem"
+    },
+    {
+     "s": "akit",
+     "hl": "Erzurum'da deprem meydana geldi!"
+    },
+    {
+     "s": "sondakika",
+     "hl": "Endonezya'da Maluku açıklarında 6,8 büyüklüğünde deprem oldu, tsunami riski yok"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Endonezya'da 6,6 büyüklüğünde deprem"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Endonezya'da 6,6 büyüklüğünde deprem"
+    },
+    {
+     "s": "aa",
+     "hl": "Endonezya'da 6,6 büyüklüğünde deprem"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Endonezya'da 6,8 büyüklüğünde deprem oldu"
+    },
+    {
+     "s": "milliyet",
+     "hl": "Endonezya'da 6,6 büyüklüğünde deprem"
+    },
+    {
+     "s": "haberler",
+     "hl": "BMKG duyurdu, Endonezya'nın Maluku eyaleti açıklarında 6.8 büyüklüğünde deprem oldu"
+    },
+    {
+     "s": "sabah",
+     "hl": "Endonezya’da 6.8 büyüklüğünde deprem"
+    },
+    {
+     "s": "tele1",
+     "hl": "Endonezya'da 6.6 büyüklüğünde deprem"
+    },
+    {
+     "s": "dha",
+     "hl": "Endonezya'da 6.6 büyüklüğünde deprem"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Van Gölü'nde 4,3 büyüklüğünde deprem!"
+    },
+    {
+     "s": "takvim",
+     "hl": "Van Gölü'nde 4,3 büyüklüğünde deprem! AFAD duyurdu: Gevaş açıklarında peş peşe sarsıntılar"
+    },
+    {
+     "s": "diken",
+     "hl": "Van Gölü'nde 4,3 büyüklüğünde deprem"
+    },
+    {
+     "s": "ahaber",
+     "hl": "AFAD büyüklüğünü duyurdu! Van'da 4,3 büyüklüğünde deprem meydana geldi"
+    },
+    {
+     "s": "haber7",
+     "hl": "Son dakika: Van'da deprem meydana geldi!"
+    },
+    {
+     "s": "t24",
+     "hl": "Van'da 4,3 büyüklüğünde deprem"
+    },
+    {
+     "s": "aksam",
+     "hl": "Van'da 4,3 büyüklüğünde deprem"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Van'da 4,3 büyüklüğünde deprem"
+    },
+    {
+     "s": "mynet",
+     "hl": "Van'da 4,3 büyüklüğünde deprem"
+    },
+    {
+     "s": "onedio",
+     "hl": "AFAD Açıkladı: Van Gölü'nde 4,3 Büyüklüğünde Deprem Oldu, Sarsıntı Çevre İllerden de Hissedildi"
+    },
+    {
+     "s": "anka",
+     "hl": "Van Gölü'nde 4,3 büyüklüğünde deprem meydana geldi"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "VAN'DA DEPREM SON DAKİKA: Van'da kaç büyüklüğünde deprem oldu?"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Romanya'da 5.3 büyüklüğünde deprem"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Romanya'da 5,3 büyüklüğünde deprem! İstanbul'da da hissedildi"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Romanya'da 5.3 büyüklüğünde deprem... İstanbul'da da hissedildi"
+    },
+    {
+     "s": "dirilis",
+     "hl": "5,7 büyüklüğünde deprem meydana geldi: 2 yaralı"
+    },
+    {
+     "s": "10haber",
+     "hl": "5.3 büyüklüğünde deprem: İstanbul da hissetti"
+    }
+   ]
+  },
+  {
+   "event": "s11789",
+   "week": "w12",
+   "title": "CHP kurultay davasında karar: Ekrem İmamoğlu'na siyasi yasak",
+   "headlines": [
+    {
+     "s": "ntv",
+     "hl": "CHP kurultay davasında karar bekleniyor"
+    },
+    {
+     "s": "birgun",
+     "hl": "CHP Kurultay davasında karar: Ekrem İmamoğlu'na hapis cezası verildi"
+    },
+    {
+     "s": "ahaber",
+     "hl": "CHP'nin şaibeli kurultay davasında karar günü"
+    },
+    {
+     "s": "takvim",
+     "hl": "CHP kurultay davasında karar! 9 sanığa 2 yıl 1’er ay hapis, İmamoğlu’na siyasi yasak"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "CHP kurultay davasında karar günü: İmamoğlu dahil 9 sanığa hapis cezası talebi var"
+    },
+    {
+     "s": "t24",
+     "hl": "CHP kurultay davasında Ekrem İmamoğlu, Rıza Akpolat ve Özgür Çelik dahil 9 kişiye hapis cezası ve siyasi yasak, Cemil Tugay'a beraat"
+    },
+    {
+     "s": "sondakika",
+     "hl": "CHP kurultay davasında karar açıklandı! Ekrem İmamoğlu'na siyasi yasak"
+    },
+    {
+     "s": "sol",
+     "hl": "CHP Kurultay davası: İmamoğlu'na 2 yıl 1 ay hapis cezası verildi, siyasi yasak getirildi"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "CHP kurultay davasında karar çıktı: Ekrem İmamoğlu'na siyasi yasak cezası verildi"
+    },
+    {
+     "s": "tgrt",
+     "hl": "CHP kurultay davasında karar açıklandı: Ekrem İmamoğlu'na hapis ve siyasi yasak"
+    },
+    {
+     "s": "haberturk",
+     "hl": "CHP kurultay davasında karar açıklandı! Ekrem İmamoğlu siyasi yasaklı hale geldi"
+    },
+    {
+     "s": "haberler",
+     "hl": "CHP kurultay davasında karar açıklandı! Ekrem İmamoğlu'na siyasi yasak"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Son dakika... CHP Kurultay davasında karar açıklandı! Ekrem İmamoğlu hakkında siyasi yasak kararı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "CHP kurultay davasında karar açıklandı"
+    },
+    {
+     "s": "haber7",
+     "hl": "CHP kurultay davasında karar: Ekrem İmamoğlu'na siyasi yasak"
+    },
+    {
+     "s": "mynet",
+     "hl": "CHP’nin kurultay davasında karar! Ekrem İmamoğlu dahil 9 kişiye hapis cezası ve siyasi yasak"
+    },
+    {
+     "s": "sozcu",
+     "hl": "CHP'de Kurultay davasında karar çıktı: Ekrem İmamoğlu'na siyasi yasak kararı"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "CHP kurultay davasında karar açıklandı: Ekrem İmamoğlu hakkında siyasi yasak"
+    },
+    {
+     "s": "onedio",
+     "hl": "Ekrem İmamoğlu Hakkında Siyasi Yasak Kararı"
+    },
+    {
+     "s": "memurlar",
+     "hl": "CHP kurultay davasında karar: İmamoğlu ve 8 kişiye hapis cezası"
+    },
+    {
+     "s": "karar",
+     "hl": "CHP kurultay davasında karar: Ekrem İmamoğlu'na hapis, Cemil Tugay'a beraat"
+    },
+    {
+     "s": "diken",
+     "hl": "Kurultay davasında karar: İmamoğlu için hapis cezası ve siyaset yasağı"
+    },
+    {
+     "s": "posta",
+     "hl": "CHP Kurultay davasında karar açıklandı! Ekrem İmamoğlu hakkında siyasi yasak kararı"
+    },
+    {
+     "s": "akit",
+     "hl": "Son dakika! CHP'nin şaibeli kurultay davasında karar çıktı: İmamoğlu'na siyasi yasak getirildi"
+    },
+    {
+     "s": "dirilis",
+     "hl": "CHP kurultay davasında Ekrem İmamoğlu'na hapis ve siyasi yasak cezası!"
+    },
+    {
+     "s": "evrensel",
+     "hl": "CHP'nin kurultay davasında karar: Ekrem İmamoğlu dahil 9 kişiye 2 yıl 1'er ay hapis cezası"
+    },
+    {
+     "s": "sabah",
+     "hl": "CHP kurultay davasında karar açıklandı! Ekrem İmamoğlu'na siyasi yasak"
+    },
+    {
+     "s": "milligazete",
+     "hl": "CHP kurultay davasında karar: İmamoğlu hapis ve siyasi yasak cezası aldı"
+    },
+    {
+     "s": "yeniyasam",
+     "hl": "CHP kurultay davasında karar: İmamoğlu’na ceza ve siyasi yasak"
+    },
+    {
+     "s": "trthaber",
+     "hl": "CHP'nin kurultay davasında karar çıktı"
+    },
+    {
+     "s": "dwturkce",
+     "hl": "Ekrem İmamoğlu'na yönelik siyasi yasak kararı ne anlama geliyor?"
+    },
+    {
+     "s": "bianet",
+     "hl": "CHP 38. Kurultay Davası: İmamoğlu dahil 9 kişiye hapis ve siyaset yasağı"
+    },
+    {
+     "s": "star",
+     "hl": "Şaibeli kurultay davasında karar çıktı... Ekrem İmamoğlu'na siyasi yasak"
+    },
+    {
+     "s": "aksam",
+     "hl": "CHP'ye çökme davasında İmamoğlu'na siyasi yasak"
+    },
+    {
+     "s": "10haber",
+     "hl": "İmamoğlu’na CHP kurultay davasından siyasi yasak geldi"
+    },
+    {
+     "s": "agos",
+     "hl": "CHP Kurultay davasında İmamoğlu dahil 9 kişiye siyaset yasağı"
+    }
+   ]
+  },
+  {
+   "event": "s11782",
+   "week": "w12",
+   "title": "Eski BDDK Başkanı Şahap Kavcıoğlu hakkında soruşturma izni talebi",
+   "headlines": [
+    {
+     "s": "sol",
+     "hl": "Başsavcılık Şahap Kavcıoğlu için soruşturma izni istedi, bakanlık ön inceleme başlattı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Şahap Kavcıoğlu için soruşturma izni istendi"
+    },
+    {
+     "s": "birgun",
+     "hl": "İstanbul Cumhuriyet Başsavcılığı, Şahap Kavcıoğlu hakkında soruşturma izni istedi"
+    },
+    {
+     "s": "onedio",
+     "hl": "İstanbul Cumhuriyet Başsavcılığı, Eski BDDK Başkanı Şahap Kavcıoğlu İçin Bakanlıktan Soruşturma İzni İstedi"
+    },
+    {
+     "s": "t24",
+     "hl": "Fon vurgunu: Başsavcılık, istifa eden BDDK Başkanı Şahap Kavcıoğlu dahil 5 isim hakkında soruşturma izni istedi"
+    },
+    {
+     "s": "dirilis",
+     "hl": "İstanbul Cumhuriyet Başsavcılığından Kavcıoğlu için soruşturma talebi"
+    },
+    {
+     "s": "haberler",
+     "hl": "Eski BDDK Başkanı Şahap Kavcıoğlu için soruşturma izni talebi"
+    },
+    {
+     "s": "mynet",
+     "hl": "Şahap Kavcıoğlu hakkında soruşturma izni istendi"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Fon soruşturmasında kritik gelişme! Şahap Kavcıoğlu için harekete geçildi"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Son dakika... Başsavcılık, BDDK Başkanlığından istifa eden Şahap Kavcıoğlu hakkında soruşturma izni istedi"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Şahap Kavcıoğlu'na soruşturma izni talebi"
+    },
+    {
+     "s": "karar",
+     "hl": "Fon vurgununda Şahap Kavcıoğlu için soruşturma izni talebi: 'Parayı çok seviyor' ifadesinin ardından savcılık hareketi geçti"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Şahap Kavcıoğlu'na soruşturma izni talebi"
+    },
+    {
+     "s": "sabah",
+     "hl": "SON DAKİKA... Fon soruşturmasında yeni gelişme! BDDK eski başkanı Şahap Kavcıoğlu hakkında soruşturma izni istendi"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Eski BDDK Başkanı Şahap Kavcıoğlu hakkında soruşturma izni talebi"
+    },
+    {
+     "s": "bloomberght",
+     "hl": "Şahap Kavcıoğlu için soruşturma izni talebi"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Fon soruşturmasında gelişme! Eski BDDK Başkanı Şahap Kavcıoğlu hakkında soruşturma izni talebi"
+    },
+    {
+     "s": "takvim",
+     "hl": "Eski BDDK Başkanı Şahap Kavcıoğlu için soruşturma izni talebi: Başsavcılık Hazine ve Maliye Bakanlığına yazı gönderdi"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Fon soruşturmasında Şahap Kavcıoğlu hakkında soruşturma izni istendi"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Şahap Kavcıoğlu hakkında yeni gelişme! Başsavcılık soruşturma izni istedi"
+    },
+    {
+     "s": "akit",
+     "hl": "Fon soruşturmasında yeni gelişme: Şahap Kavcıoğlu hakkında soruşturma izni talebi"
+    },
+    {
+     "s": "aa",
+     "hl": "\"Fon soruşturması\"nda Şahap Kavcıoğlu hakkında izin talebi"
+    },
+    {
+     "s": "star",
+     "hl": "\"Fon soruşturması\"nda Şahap Kavcıoğlu hakkında izin talebi"
+    },
+    {
+     "s": "dwturkce",
+     "hl": "Fon soruşturması: Eski BDDK Başkanı Şahap Kavcıoğlu hakkında \"ön inceleme\" başlatıldı"
+    },
+    {
+     "s": "bianet",
+     "hl": "Başsavcılık, eski BDDK Başkanı Şahap Kavcıoğlu için soruşturma izni istedi"
+    },
+    {
+     "s": "diken",
+     "hl": "Fon vurgunu: Şahap Kavcıoğlu hakkında soruşturma izni istendi"
+    },
+    {
+     "s": "posta",
+     "hl": "Eski BDDK Başkanı Kavcıoğlu hakkında soruşturma talebi"
+    },
+    {
+     "s": "anka",
+     "hl": "İstanbul Cumhuriyet Başsavcılığı eski BDDK Başkanı Şahap Kavcıoğlu hakkında soruşturma izni istedi"
+    },
+    {
+     "s": "bbcturkce",
+     "hl": "Şahap Kavcıoğlu: Eski BDDK Başkanı hakkında soruşturma izni talebi"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Şahap Kavcıoğlu hakkında soruşturma izni talebi"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Son dakika... Şahap Kavcıoğlu hakkında soruşturma talebi"
+    },
+    {
+     "s": "yeniasya",
+     "hl": "İstifa eden Kavcıoğlu için soruşturma talebi"
+    },
+    {
+     "s": "kisadalga",
+     "hl": "Fon soruşturmasında eski BDDK Başkanı Şahap Kavcıoğlu hakkında soruşturma izni talebi"
+    },
+    {
+     "s": "10haber",
+     "hl": "Fon vurgunu: Savcılık Şahap Kavcıoğlu için soruşturma izni istedi"
+    },
+    {
+     "s": "ntv",
+     "hl": "Son dakika... BDDK eski Başkanı Şahap Kavcıoğlu için soruşturma izni istendi. Teftiş Kurulu devrede"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "SON DAKİKA... Eski BDDK Başkanı Kavcıoğlu için soruşturma izni talebi"
+    }
+   ]
+  },
+  {
+   "event": "s11906",
+   "week": "w12",
+   "title": "Fon soruşturması: Şahap Kavcıoğlu'na yurt dışı çıkış yasağı",
+   "headlines": [
+    {
+     "s": "takvim",
+     "hl": "Soruşturma izni istenmişti: Eski BDDK Başkanı Şahap Kavcıoğlu'na yurt dışına çıkış yasağı"
+    },
+    {
+     "s": "haberler",
+     "hl": "Şahap Kavcıoğlu kimdir? BDDK eski başkanı Şahap Kavcıoğlu nereli, kaç yaşında, eşi kim?"
+    },
+    {
+     "s": "sol",
+     "hl": "Fon soruşturması: Eski BDDK ve Merkez Bankası Başkanı Şahap Kavcıoğlu hakkında yurtdışı çıkış yasağı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Şahap Kavcıoğlu'na yurt dışı çıkış yasağı getirildi"
+    },
+    {
+     "s": "birgun",
+     "hl": "Fon soruşturmaları: Şahap Kavcıoğlu'na yurt dışına çıkış yasağı getirildi"
+    },
+    {
+     "s": "karar",
+     "hl": "Fon soruşturmasında hakkında soruşturma izni istenmişti: Şahap Kavcıoğlu'na yurt dışına çıkış yasağı"
+    },
+    {
+     "s": "mynet",
+     "hl": "Şahap Kavcıoğlu'na yurt dışı çıkış yasağı!"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Eski BDDK Başkanı Şahap Kavcıoğlu hakkında yurt dışına çıkış yasağı"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Son Dakika... Şahap Kavcıoğlu'na yurtdışı çıkış yasağı getirildi"
+    },
+    {
+     "s": "t24",
+     "hl": "Fon soruşturması: Eski BDDK ve Merkez Bankası Başkanı Şahap Kavcıoğlu hakkında yurt dışına çıkış yasağı"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Eski BDDK Başkanı Şahap Kavcıoğlu hakkında yurt dışı çıkış yasağı"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Şahap Kavcıoğlu'na yurt dışı çıkış yasağı"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Şahap Kavcıoğlu'na yurt dışı çıkış yasağı!"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Eski BDDK Başkanı Kavcıoğlu'na yurt dışı çıkış yasağı"
+    },
+    {
+     "s": "memurlar",
+     "hl": "BDDK eski Başkanı Şahap Kavcıoğlu'na yurt dışı çıkış yasağı"
+    },
+    {
+     "s": "dirilis",
+     "hl": "Eski BDDK Başkanı Kavcıoğlu hakkında yurt dışı çıkış yasağı"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Eski BDDK Başkanı Şahap Kavcıoğlu'na yurt dışı çıkış yasağı"
+    },
+    {
+     "s": "diken",
+     "hl": "Fon vurgunu: Şahap Kavcıoğlu'na yurt dışına çıkış yasağı"
+    },
+    {
+     "s": "sabah",
+     "hl": "Şahap Kavcıoğlu'na yurt dışı çıkış yasağı getirildi"
+    },
+    {
+     "s": "kisadalga",
+     "hl": "Şahap Kavcıoğlu hakkında yurt dışı çıkış yasağı getirildi"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Eski BDDK Başkanı Şahap Kavcıoğlu hakkında yurt dışı çıkış yasağı"
+    },
+    {
+     "s": "akit",
+     "hl": "Şahap Kavcıoğlu'na yurt dışı çıkış yasağı!"
+    },
+    {
+     "s": "onedio",
+     "hl": "BDDK Eski Başkanı Şahap Kavcıoğlu Hakkında Yurt Dışına Çıkış Yasağı Getirildi"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Şahap Kavcıoğlu'na yurt dışına çıkış yasağı! Fon soruşturmasında yeni karar"
+    },
+    {
+     "s": "posta",
+     "hl": "Eski BDDK Başkanı Şahap Kavcıoğlu hakkında yurt dışı çıkış yasağı verildi"
+    },
+    {
+     "s": "bloomberght",
+     "hl": "Fon soruşturmasında Kavcıoğlu'na yurt dışına çıkış yasağı"
+    },
+    {
+     "s": "star",
+     "hl": "Fon soruşturması: Şahap Kavcıoğlu'na yurt dışı çıkış yasağı"
+    },
+    {
+     "s": "anka",
+     "hl": "Eski BDDK Başkanı Kavcıoğlu hakkında yurt dışı çıkış yasağı kararı verildi"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Eski BDDK Başkanı Kavcıoğlu hakkında yurt dışı çıkış yasağı"
+    },
+    {
+     "s": "aksam",
+     "hl": "Şahap Kavcıoğlu için yurt dışına çıkış yasağı"
+    },
+    {
+     "s": "10haber",
+     "hl": "Fon soruşturması: Şahap Kavcıoğlu’na yurt dışına çıkış yasağı"
+    },
+    {
+     "s": "yeniasya",
+     "hl": "Kavcıoğlu'na yurt dışı çıkış yasağı"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "SON DAKİKA | Şahap Kavcıoğlu'na yurt dışı çıkış yasağı getirildi"
+    },
+    {
+     "s": "ntv",
+     "hl": "Son dakika... BDDK eski Başkanı Şahap Kavcıoğlu'na yurt dışı çıkış yasağı"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Şahap Kavcıoğlu’na yurtdışına çıkış yasağı"
+    }
+   ]
+  },
+  {
+   "event": "s11040",
+   "week": "w12",
+   "title": "2026 KPSS Ortaöğretim sonuçları açıklandı mı? KPSS Ortaöğretim sonuçları ne zaman açıklanacak?",
+   "headlines": [
+    {
+     "s": "yenisafak",
+     "hl": "KPSS ortaöğretim sonuçları sorgulama ekranı 2026: KPSS ortaöğretim sonuçları ne zaman açıklanacak, erken açıklanır mı?"
+    },
+    {
+     "s": "haberturk",
+     "hl": "KPSS ORTAÖĞRETİM SONUÇLARI AÇIKLANDI MI? ÖSYM 2026 KPSS Ortaöğretim sonuçları ne zaman açıklanacak, bugün açıklanır mı? KPSS lise sonuç sorgulama ekranı"
+    },
+    {
+     "s": "sabah",
+     "hl": "KPSS Ortaöğretim sonuç sorgulama | KPSS Ortaöğretim sınav sonuçları açıklandı mı, ne zaman açıklanacak?"
+    },
+    {
+     "s": "ntv",
+     "hl": "KPSS ortaöğretim sonuçları açıklandı mı, ne zaman açıklanacak? Gözler ÖSYM sonuç sayfasında"
+    },
+    {
+     "s": "vatan",
+     "hl": "KPSS ORTAÖĞRETİM SONUÇLARI AÇIKLANDI MI? KPSS Ortaöğretim (Lise) sınav sonuçları ne zaman açıklanacak?"
+    },
+    {
+     "s": "aksam",
+     "hl": "KPSS ortaöğretim sonuçları ne zaman açıklanacak? ÖSYM tarihi duyurdu!"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "2026 KPSS Ortaöğretim sonuçları açıklandı mı? KPSS Ortaöğretim sonuçları ne zaman açıklanacak?"
+    },
+    {
+     "s": "haberler",
+     "hl": "KPSS Ortaöğretim erken açıklanır mı? 2026 KPSS Ortaöğretim sonuçları ne zaman açıklanacak?"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Saatler kaldı! KPSS 2026 ortaöğretim sonuçları ne zaman açıklanacak?"
+    },
+    {
+     "s": "takvim",
+     "hl": "2026 KPSS ortaöğretim sonuçları 19 Kasım 2026 Perşembe günü açıklanacak: ÖSYM sonuç sorgulama ekranı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "2026 KPSS Ortaöğretim sınav sonuçları açıklandı! ÖSYM KPSS lise sonuç sorgulama ekranı"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Ortaöğretim KPSS sonuçları 2026 sonuc.osym.gov.tr! KPSS ortaöğretim sınav sonuçları açıklandı mı?"
+    },
+    {
+     "s": "karar",
+     "hl": "2026 KPSS ortaöğretim sonuçları açıklandı mı, bugün mü yoksa yarın mı açıklanacak? ÖSYM saat kaçta duyuracak?"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "KPSS ORTAÖĞRETİM SONUÇLARI 2026 | KPSS Ortaöğretim sonuçları açıklandı mı, ne zaman açıklanacak? ÖSYM KPSS lise sonuç tarihi!"
+    },
+    {
+     "s": "milligazete",
+     "hl": "2026 KPSS ortaöğretim sonuçları açıklandı mı? KPSS lise puanı kaç yıl geçerli olacak?"
+    },
+    {
+     "s": "sondakika",
+     "hl": "KPSS ortaöğretim sonuçları erişime açıldı: Sorgulama kimlik numarası ve şifreyle yapılıyor"
+    },
+    {
+     "s": "memurlar",
+     "hl": "2026-KPSS ortaöğretim sonuçları açıklandı"
+    },
+    {
+     "s": "trthaber",
+     "hl": "KPSS ortaöğretim sonuçları açıklandı"
+    },
+    {
+     "s": "birgun",
+     "hl": "KPSS ortaöğretim sonuçları açıklandı"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Son Dakika... 2026 KPSS ortaöğretim sonuçları açıklandı"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "KPSS ortaöğretim sonuçları açıklandı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "2026-KPSS Ortaöğretim sonuçları açıklandı"
+    },
+    {
+     "s": "aa",
+     "hl": "KPSS ortaöğretim sonuçları açıklandı"
+    },
+    {
+     "s": "evrensel",
+     "hl": "2026-KPSS Ortaöğretim sonuçları açıklandı"
+    },
+    {
+     "s": "mynet",
+     "hl": "KPSS Ortaöğretim sonuçları açıklandı! Tıkla, öğren..."
+    },
+    {
+     "s": "akit",
+     "hl": "KPSS ortaöğretim sonuçları açıklandı!"
+    },
+    {
+     "s": "star",
+     "hl": "ÖSYM duyurdu! KPSS ortaöğretim sonuçları açıklandı"
+    },
+    {
+     "s": "haber7",
+     "hl": "KPSS Ortaöğretim Sınav sonuçları açıklandı! TIKLA SONUCU ÖĞREN"
+    },
+    {
+     "s": "t24",
+     "hl": "KPSS Ortaöğretim sınav sonuçları açıklandı!"
+    },
+    {
+     "s": "posta",
+     "hl": "KPSS ortaöğretim sınav sonuçları açıklandı"
+    },
+    {
+     "s": "onedio",
+     "hl": "KPSS Ortaöğretim Sonuçları Açıklandı: KPSS Sonucu Nasıl Öğrenilir?"
+    },
+    {
+     "s": "anka",
+     "hl": "2026-KPSS Ortaöğretim Sınavı sonuçları açıklandı"
+    },
+    {
+     "s": "kisadalga",
+     "hl": "KPSS Ortaöğretim Sınavı sonuçları açıklandı"
+    },
+    {
+     "s": "dirilis",
+     "hl": "KPSS ortaöğretim sonuçları açıklandı"
+    }
+   ]
+  },
+  {
+   "event": "s11065",
+   "week": "w12",
+   "title": "Fon soruşturmasında yeni gelişme: 7 şüpheli daha tutuklandı",
+   "headlines": [
+    {
+     "s": "t24",
+     "hl": "Sarıgül soruşturmasında yeni gelişme: 9 kişi tutuklandı"
+    },
+    {
+     "s": "sol",
+     "hl": "Sarıgül soruşturmasında 9 kişiye tutuklama talebi"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Sarıgül ailesi soruşturmasında yeni gelişme: 9 kişiye tutuklama talebi"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Sarıgül soruşturmasında yeni gelişme: 9 şüpheli tutuklandı"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Sarıgül soruşturmasında 9 şüpheli daha tutuklandı"
+    },
+    {
+     "s": "akit",
+     "hl": "Sarıgül soruşturmasında yeni gelişme! 9'u da tutuklandı"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Fon soruşturmasında 7 tutuklama"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Fon soruşturmasında 7 şüpheli tutuklandı: 19 kişi hakkında adli kontrol kararı"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Fon soruşturmasında yeni gelişme: 7 şüpheliye tutuklama talebi"
+    },
+    {
+     "s": "dha",
+     "hl": "Sermaye piyasası soruşturmasında 7 şüpheliye tutuklama talebi"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Fon vurgunu soruşturması: 7 kişi için tutuklama talebi"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "\"Fon\" soruşturmasında 7 şüpheliye tutuklama talebi"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Fon soruşturmasında 7 şüpheliye tutuklama talebi"
+    },
+    {
+     "s": "ntv",
+     "hl": "Fon soruşturmasında 7 kişiye daha tutuklama talebi"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Fon soruşturmasında 7 şüpheliye tutuklama talebi"
+    },
+    {
+     "s": "yeniyasam",
+     "hl": "Fon vurgunu soruşturması: 7 kişi için tutuklama talebi"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Fon soruşturmasında 7 tutuklama talebi"
+    },
+    {
+     "s": "milliyet",
+     "hl": "Sermaye piyasası işlemlerine ilişkin 'fon' soruşturmasında 7 şüpheliye tutuklama talebi"
+    },
+    {
+     "s": "posta",
+     "hl": "Sermaye piyasası işlemlerine ilişkin 'fon' soruşturmasında 7 şüpheliye tutuklama talebi"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "\"Fon\" soruşturmasında 7 şüpheliye tutuklama talebi"
+    },
+    {
+     "s": "sondakika",
+     "hl": "Fon soruşturmasında 7 kişi daha tutuklandı"
+    },
+    {
+     "s": "10haber",
+     "hl": "Sarıgül soruşturmasında 9 tutuklama daha"
+    },
+    {
+     "s": "sabah",
+     "hl": "Kara para soruşturmasında 9 tutuklama daha"
+    },
+    {
+     "s": "aksam",
+     "hl": "Fon soruşturmasında yeni gelişme! Tutuklu sayısı yükseldi"
+    },
+    {
+     "s": "haberler",
+     "hl": "Fon soruşturmasında 7 kişi daha tutuklandı"
+    },
+    {
+     "s": "karar",
+     "hl": "Fon soruşturmasında 7 kişi daha tutuklandı"
+    },
+    {
+     "s": "mynet",
+     "hl": "Fon soruşturmasında yeni gelişme! 7 şüpheli tutuklandı, 19 kişiye adli kontrol"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Fon soruşturmasında 7 şüpheli daha tutuklandı"
+    },
+    {
+     "s": "bloomberght",
+     "hl": "Fon soruşturmasında yedi tutuklama"
+    },
+    {
+     "s": "birgun",
+     "hl": "Fon soruşturması: 7 kişi tutuklandı"
+    },
+    {
+     "s": "anka",
+     "hl": "\"Fon Soruşturması\"nda 7 kişi daha tutuklandı"
+    },
+    {
+     "s": "dwturkce",
+     "hl": "Fon soruşturması: 7 kişi daha tutuklandı"
+    },
+    {
+     "s": "star",
+     "hl": "Fon soruşturmasında yeni gelişme... 7 şüpheli tutuklandı"
+    }
+   ]
+  },
+  {
+   "event": "s12475",
+   "week": "w12",
+   "title": "Fon soruşturmasında aranan Serdar Altınbaş Çekya’da yakalandı",
+   "headlines": [
+    {
+     "s": "aa",
+     "hl": "Uluslararası seviyede aranan Serdar Altınbaş, Çekya'da yakalandı"
+    },
+    {
+     "s": "sondakika",
+     "hl": "İçişleri Bakanlığı, aranan Serdar Altınbaş'ın Çekya'da yakalandığını bildirdi"
+    },
+    {
+     "s": "sol",
+     "hl": "Fon vurgunu soruşturması: Serdar Altınbaş Çekya'da yakalandı"
+    },
+    {
+     "s": "takvim",
+     "hl": "Nokta operasyon! Kara para aklama ve SPK muhalefetinden aranan Serdar Altınbaş Çekya'da yakalandı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Fon soruşturması kapsamında aranan isimdi! Serdar Altınbaş Çekya'da yakalandı"
+    },
+    {
+     "s": "haberler",
+     "hl": "Uluslararası aranan Serdar Altınbaş Çekya'da yakalandı, İçişleri Bakanlığı duyurdu"
+    },
+    {
+     "s": "dha",
+     "hl": "İçişleri Bakanlığı: Uluslararası seviyede aranan Serdar Altınbaş Çekya’da yakalandı"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Serdar Altınbaş yakalandı"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Fon soruşturmasında Altınbaş Holding Yönetim Kurulu Üyesi Serdar Altınbaş Çekya'da yakalandı"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Fon soruşturmasının kritik ismi Serdar Altınbaş Çekya'da yakalandı"
+    },
+    {
+     "s": "haber7",
+     "hl": "Son dakika: Firari Serdar Altınbaş Çekya'da yakalandı!"
+    },
+    {
+     "s": "mynet",
+     "hl": "Serdar Altınbaş Çekya'da yakalandı! Fon soruşturmasında aranıyordu"
+    },
+    {
+     "s": "posta",
+     "hl": "Fon soruşturması: Yakalama kararı bulunan Serdar Altınbaş, Çekya'da yakalandı"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Uluslararası aranan Serdar Altınbaş Çekya'da yakalandı! İade işlemleri başlatıldı"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Bakanlık duyurdu! Fon soruşturmasında önemli gelişme: Serdar Altınbaş Çekya’da yakalandı"
+    },
+    {
+     "s": "star",
+     "hl": "Fon soruşturmasında aranan Serdar Altınbaş, Çekya'da yakaladı"
+    },
+    {
+     "s": "sabah",
+     "hl": "SON DAKİKA | Serdar Altınbaş Çekya'da yakalandı"
+    },
+    {
+     "s": "birgun",
+     "hl": "İçişleri Bakanlığı: Serdar Altınbaş Çekya'da yakalandı"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Fon soruşturmasında aranan Serdar Altınbaş, Çekya'da yakalandı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Fon soruşturmasında aranan Serdar Altınbaş Çekya’da yakalandı"
+    },
+    {
+     "s": "akit",
+     "hl": "Fon vurguncusuna yurt dışında kıskıvrak yakalama! Serdar Altınbaş Çekya'da enselendi!"
+    },
+    {
+     "s": "t24",
+     "hl": "Fon vurgunu soruşturmasında aranan Altınbaş Holding Yönetim Kurulu Üyesi Serdar Altınbaş, Çekya’da yakalandı"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Fon soruşturmasında aranan Serdar Altınbaş yakalandı"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Fon soruşturmasında aranıyordu... Serdar Altınbaş Çekya’da yakalandı"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Fon vurgunu soruşturması: Çekya'da yakalanan Serdar Altınbaş kimdir?"
+    },
+    {
+     "s": "karar",
+     "hl": "Fon soruşturmasında aranan Serdar Altınbaş Çekya'da yakalandı: Türkiye'ye iade süreci başlatıldı"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Uluslararası seviyede aranan Serdar Altınbaş Çekya'da yakalandı"
+    },
+    {
+     "s": "aksam",
+     "hl": "Uluslararası seviyede aranıyordu! Fon firarisi Serdar Altınbaş Çekya'da yakalandı"
+    },
+    {
+     "s": "diken",
+     "hl": "Fon vurgunu: Serdar Altınbaş Çekya'da yakalandı"
+    },
+    {
+     "s": "milliyet",
+     "hl": "SON DAKİKA HABERLERİ: Serdar Altınbaş Çekya'da yakalandı"
+    },
+    {
+     "s": "bloomberght",
+     "hl": "Fon soruşturmasında aranan Serdar Altınbaş yakalandı"
+    },
+    {
+     "s": "ntv",
+     "hl": "Fon soruşturmasında yeni gelişme. Serdar Altınbaş Çekya'da yakalandı"
+    },
+    {
+     "s": "anka",
+     "hl": "Altınbaş Holding Yönetim Kurulu Üyesi Serdar Altınbaş Çekya'da yakalandı"
+    }
+   ]
+  },
+  {
+   "event": "s12104",
+   "week": "w12",
+   "title": "Dünya havacılık tarihinde bir ilk: Türkiye’nin ilk insansız savaş uçağı KIZILELMA envantere girdi",
+   "headlines": [
+    {
+     "s": "aa",
+     "hl": "Türkiye’nin ilk insansız savaş uçağı KIZILELMA envantere girdi"
+    },
+    {
+     "s": "sondakika",
+     "hl": "Türkiye'nin ilk insansız savaş uçağı KIZILELMA'dan 3'ü güvenlik güçlerinde"
+    },
+    {
+     "s": "karar",
+     "hl": "KIZILELMA'da ilk teslimat: 3 insansız savaş uçağı Türk Hava Kuvvetlerine verildi"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "3 adet KIZILELMA TSK envanterine girdi"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Dünya havacılık tarihinde bir ilk! KIZILELMA envantere girdi: Türkiye tarihe geçti"
+    },
+    {
+     "s": "haberler",
+     "hl": "KIZILELMA envantere girdi! Türkiye'nin ilk insansız savaş uçağından 3'ü teslim edildi"
+    },
+    {
+     "s": "haber7",
+     "hl": "Dünyada havacılık tarihinde bir ilk: KIZILELMA envantere girdi"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Dünya havacılık tarihinde bir ilk: Bayraktar KIZILELMA envantere girdi"
+    },
+    {
+     "s": "mynet",
+     "hl": "Türkiye’nin ilk insansız savaş uçağı KIZILELMA envantere girdi"
+    },
+    {
+     "s": "posta",
+     "hl": "Dünya havacılık tarihinde bir ilk! KIZILELMA envantere girdi"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Türkiye'den dünya havacılık tarihinde bir ilk: KIZILELMA TSK envanterine girdi"
+    },
+    {
+     "s": "dirilis",
+     "hl": "KIZILELMA envantere girdi: ilk 3 savaş uçağı teslim edildi"
+    },
+    {
+     "s": "sabah",
+     "hl": "Dünya havacılık tarihinde bir ilk: Türkiye’nin ilk insansız savaş uçağı KIZILELMA envantere girdi"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Savunma sanayiinde tarihi adım! 3 Bayraktar KIZILELMA TSK envanterinde"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Türkiye'den havacılık tarihinde bir ilk: KIZILELMA envantere girdi"
+    },
+    {
+     "s": "takvim",
+     "hl": "Türkiye'nin ilk insansız savaş uçağı KIZILELMA envantere girdi: Dünya havacılık tarihinde bir ilk"
+    },
+    {
+     "s": "star",
+     "hl": "Havacılıkta kritik eşik aşıldı... İlk İnsansız savaş uçağı KIZILELMA envantere girdi"
+    },
+    {
+     "s": "vatan",
+     "hl": "Dünya havacılık tarihinde bir ilk: KIZILELMA envantere girdi!"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Türkiye’nin ilk insansız savaş uçağı KIZILELMA envantere girdi"
+    },
+    {
+     "s": "akit",
+     "hl": "Türkiye dünya havacılık tarihinde bir ilke imza attı! KIZILELMA envantere girdi!"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Savunma sanayiinde yeni bir eşik: İlk insansız savaş uçağı KIZILELMA TSK'ya teslim edildi!"
+    },
+    {
+     "s": "anka",
+     "hl": "İnsansız savaş uçağı KIZILELMA envantere girdi"
+    },
+    {
+     "s": "ntv",
+     "hl": "Türkiye’nin ilk insansız savaş uçağı KIZILELMA envantere girdi"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Damat Bayraktar'ın insansız savaş uçağı \"KIZILELMA\" envantere girdi"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Bakan Kacır'dan KIZILELMA paylaşımı: Dünyada ilk kez bir insansız savaş uçağı envantere kazanılmış oldu"
+    },
+    {
+     "s": "t24",
+     "hl": "Türkiye’nin ilk insansız savaş uçağı KIZILELMA envantere girdi"
+    },
+    {
+     "s": "aksam",
+     "hl": "Savunma sanayiinde dev adım: Bayraktar KIZILELMA envantere girdi"
+    },
+    {
+     "s": "bloomberght",
+     "hl": "Türkiye'nin ilk insansız savaş uçağı KIZILELMA envantere girdi"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "Kızılelma envantere girdi! Peş peşe açıklamalar:\"20 yıllık hayal gerçek oldu\""
+    },
+    {
+     "s": "10haber",
+     "hl": "Türkiye’nin gurur günü: Dünyanın ilk insansız savaş uçağı Kızılelma hava kuvvetleri envanterine girdi"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Türkiye havacılık tarihinde bir ilk: Envantere resmen girdi"
+    },
+    {
+     "s": "yeniasya",
+     "hl": "KIZILELMA envantere girdi"
+    }
+   ]
+  },
+  {
+   "event": "s12537",
+   "week": "w12",
+   "title": "Mustafa Sarıgül hakkında dokunulmazlığının kaldırılması talebiyle hazırlanan fezleke, Adalet Bakanlığı'na gönderildi",
+   "headlines": [
+    {
+     "s": "sondakika",
+     "hl": "Mustafa Sarıgül hakkında dokunulmazlığının kaldırılması talebiyle fezleke hazırlandı"
+    },
+    {
+     "s": "sol",
+     "hl": "Mustafa Sarıgül hakkındaki dokunulmazlık fezlekesi Adalet Bakanlığı'na gönderildi"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Mustafa Sarıgül hakkında 5 ayrı suç kapsamında fezleke: Dokunulmazlığının kaldırılması talep edildi"
+    },
+    {
+     "s": "haberler",
+     "hl": "Mustafa Sarıgül'ün 5 suç kapsamında dokunulmazlık fezlekesi Adalet Bakanlığına gönderildi"
+    },
+    {
+     "s": "t24",
+     "hl": "Mustafa Sarıgül hakkında dokunulmazlığının kaldırılması talebiyle hazırlanan fezleke, Adalet Bakanlığı'na gönderildi"
+    },
+    {
+     "s": "mynet",
+     "hl": "Mustafa Sarıgül hakkında fezleke! Adalet Bakanlığı'na gönderildi"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Mustafa Sarıgül hakkında fezleke hazırlandı"
+    },
+    {
+     "s": "haber7",
+     "hl": "Mustafa Sarıgül hakkında fezleke hazırlandı"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Mustafa Sarıgül'ün dokunulmazlığının kaldırılması talepli fezleke bakanlığa sevk edildi!"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Mustafa Sarıgül'ün dokunulmazlığının kaldırılması için fezleke hazırlandı"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Son dakika... Mustafa Sarıgül hakkında dokunulmazlığının kaldırılması talebiyle fezleke hazırlandı"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Son dakika... Mustafa Sarıgül için dokunulmazlık fezlekesi düzenlendi"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Son dakika... Mustafa Sarıgül'ün dokunulmazlığının kaldırılması için fezleke hazırlandı: Örgüt kurma, haksız mal varlığı, çocuk istismarı iddiası dahil 5 ayrı suçlama!"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Mustafa Sarıgül için fezleke: Dokunulmazlık dosyası Adalet Bakanlığı'na gönderildi! Süreç nasıl işleyecek?"
+    },
+    {
+     "s": "birgun",
+     "hl": "Mustafa Sarıgül hakkında fezleke hazırlandı"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Erzincan Milletvekili Mustafa Sarıgül hakkında dokunulmazlığının kaldırılması talebiyle fezleke hazırlandı"
+    },
+    {
+     "s": "sabah",
+     "hl": "SON DAKİKA | Mustafa Sarıgül hakkında fezleke! Adalet Bakanlığı'na gönderildi"
+    },
+    {
+     "s": "takvim",
+     "hl": "Mustafa Sarıgül'e fezleke! Dokunulmazlığının kaldırılması istendi: Cinsel saldırı, örgüt kurma, kara para suçlamaları dosyada"
+    },
+    {
+     "s": "anka",
+     "hl": "Mustafa Sarıgül hakkında dokunulmazlığının kaldırılması talebiyle fezleke düzenlendi"
+    },
+    {
+     "s": "akit",
+     "hl": "Mustafa Sarıgül hakkında fezleke hazırlandı! Adalet Bakanlığı'na gönderildi"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Mustafa Sarıgül'ün dokunulmazlığının kaldırılması için fezleke hazırlandı: Bakanlığa gönderildi"
+    },
+    {
+     "s": "diken",
+     "hl": "Mustafa Sarıgül'ün dokunulmazlık fezlekesi bakanlığa gönderildi"
+    },
+    {
+     "s": "star",
+     "hl": "Mustafa Sarıgül'ün dokunulmazlığının kaldırılması için fezleke hazırlandı"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Mustafa Sarıgül'ün dokunulmazlığının kaldırılması için fezleke hazırlandı"
+    },
+    {
+     "s": "ntv",
+     "hl": "Mustafa Sarıgül hakkında fezleke"
+    },
+    {
+     "s": "aksam",
+     "hl": "Adalet Bakanlığı'na gönderildi! Sarıgül hakkında 5 ayrı suçtan fezleke"
+    },
+    {
+     "s": "karar",
+     "hl": "Mustafa Sarıgül için fezleke: Dokunulmazlığının kaldırılması istendi"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Mustafa Sarıgül'ün dokunulmazlığının kaldırılması için fezleke hazırlandı"
+    },
+    {
+     "s": "yeniyasam",
+     "hl": "Mustafa Sarıgül’ün dokunulmazlığının kaldırılması için fezleke"
+    },
+    {
+     "s": "posta",
+     "hl": "Mustafa Sarıgül'ün dokunulmazlığı için fezleke"
+    },
+    {
+     "s": "dwturkce",
+     "hl": "Mustafa Sarıgül için fezleke: Ankara Başsavcılığından dokunulmazlık hamlesi"
+    }
+   ]
+  },
+  {
+   "event": "s10407",
+   "week": "w12",
+   "title": "Şehit Binbaşı Kulaksız'ın faili yakalandı",
+   "headlines": [
+    {
+     "s": "aa",
+     "hl": "Şehit Jandarma Binbaşı Arslan Kulaksız'ın faillerinden biri yakalandı"
+    },
+    {
+     "s": "sondakika",
+     "hl": "Şehit Binbaşı Arslan Kulaksız’ın faillerinden biri yakalandı: 2 kişiye daha gözaltı"
+    },
+    {
+     "s": "takvim",
+     "hl": "Devletimiz unutmaz! Şehit Binbaşı Arslan Kulaksız’ın firari faili ile 2 şüpheli 11 yıl sonra Tatvan’da yakalandı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "2015'teki hain saldırıda gelişme! Şehit Jandarma Binbaşı Arslan Kulaksız'ın faili böyle yakalandı"
+    },
+    {
+     "s": "sabah",
+     "hl": "Şehit Binbaşı Arslan Kulaksız'ın faili yakalandı! Bakan Çiftçi: Devlet unutmaz"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Binbaşı Arslan Kulaksız'ı 2015 yılında ailesinin yanında şehit eden terörist yakalandı"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Devlet unutmadı! Şehit Binbaşı Arslan Kulaksız'ın firari faillerinden biri yakalandı"
+    },
+    {
+     "s": "mynet",
+     "hl": "Jandarma Binbaşı Arslan Kulaksız’ı şehit etmişlerdi! Faillerden biri yakalandı"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Şehit Binbaşı Kulaksız'ın faili yakalandı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Binbaşı Arslan Kulaksız'ın şehit edildiği saldırının faillerinden biri yakalandı"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "11 yıl geçse de hesap sorulacak: Şehit Binbaşı Arslan Kulaksız’ın faillerinden biri yakalandı"
+    },
+    {
+     "s": "aydinlik",
+     "hl": "Şehit Binbaşı Arslan Kulaksız'ın firari faili Tatvan'da yakalandı! Bakan Çiftçi: 'Devletimiz unutmaz!'"
+    },
+    {
+     "s": "posta",
+     "hl": "Jandarma Binbaşı Arslan Kulaksız'ı şehit eden fail ile 2 şüpheli ortak operasyonla yakalandı"
+    },
+    {
+     "s": "dha",
+     "hl": "2015 yılında Binbaşı Kulaksız'ı şehit eden firari şüpheli yakalandı"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Şehit Binbaşı Arslan Kulaksız'ın firari şüphelisi 11 yıl sonra yakalandı"
+    },
+    {
+     "s": "haberler",
+     "hl": "Şehit Binbaşı Arslan Kulaksız’ın faillerinden biri yakalandı: 2 kişiye daha gözaltı"
+    },
+    {
+     "s": "ntv",
+     "hl": "Binbaşı Arslan Kulaksız'ı şehit eden zanlı yakalandı"
+    },
+    {
+     "s": "haber7",
+     "hl": "Ailesinin yanında şehit etmişlerdi: Binbaşı Arslan Kulaksız'ın faili yakalandı"
+    },
+    {
+     "s": "birgun",
+     "hl": "2015'te öldürülen Binbaşı Arslan Kulaksız'ın firari şüphelisi yakalandı"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Şehit Binbaşı Kulaksız'ın faili Bitlis'te yakalandı"
+    },
+    {
+     "s": "star",
+     "hl": "İçişleri: 2015'te Binbaşı Arslan Kulaksız'ı ailesinin yanında şehit eden zanlı yakalandı"
+    },
+    {
+     "s": "karar",
+     "hl": "Şehidimizin kanı yerde kalmadı: Şehit Binbaşı Arslan Kulaksız'ın faili yakalandı!"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Şehit Binbaşı Arslan Kulaksız'ın firari şüphelisi yakalandı!"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Şehit Binbaşı Kulaksız'ın faili Bitlis'te yakalandı"
+    },
+    {
+     "s": "aksam",
+     "hl": "\"Devletimiz unutmaz!\"... Şehit Binbaşı Arslan Kulaksız'ın faili yakalandı"
+    },
+    {
+     "s": "dirilis",
+     "hl": "Şehit Jandarma Binbaşı Arslan Kulaksız'ın faillerinden biri yakalandı"
+    },
+    {
+     "s": "t24",
+     "hl": "2015 yılında Binbaşı Kulaksız'ı ailesinin yanında şehit eden firari şüpheli yakalandı"
+    },
+    {
+     "s": "anka",
+     "hl": "Binbaşı Arslan Kulaksız’ın şehit edilmesine ilişkin yürütülen çalışmada 3 kişi yakalandı"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "SON DAKİKA | Jandarma Binbaşı Arslan Kulaksız'ı şehit eden fail ile 2 şüpheli ortak operasyonla yakalandı"
+    }
+   ]
+  },
+  {
+   "event": "s11045",
+   "week": "w12",
+   "title": "Ayvalık'ta şoförü kalp krizi geçiren yolcu minibüsü denize uçtu",
+   "headlines": [
+    {
+     "s": "sondakika",
+     "hl": "Ayvalık'ta şoförü kalp krizi geçiren minibüs denize düştü, yaralılar hastaneye kaldırıldı"
+    },
+    {
+     "s": "haberler",
+     "hl": "Minibüs denize uçtu, 10 yaralı! Direksiyonda kalp krizi geçiren şoför kurtarılamadı"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Ayvalık'ta şoförü kalp krizi geçiren yolcu minibüsü denize uçtu"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Ayvalık'ta can pazarı: Şoför kalp krizi geçirdi, yolcu dolu minibüs denize uçtu"
+    },
+    {
+     "s": "takvim",
+     "hl": "Ayvalık'ta faciaya ramak kala! 1'i bebek 10 yolculu minibüs denize uçtu: Kalp krizi geçiren genç şoförden acı haber"
+    },
+    {
+     "s": "sabah",
+     "hl": "Balıkesir'de can pazarı: Yolcu minibüsü denize uçtu! Şoför hayatını kaybetti!"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Şoför kalp krizi geçirdi, minibüs denize uçtu: Can pazarının yaşandığı anlar kamerada"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Ayvalık'ta şoför kalp krizi geçirdi, minibüs yolcularla birlikte denize uçtu"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Balıkesir Ayvalık'ta yolcu minibüsü denize uçtu!"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Ayvalık'ta şoförü kalp krizi geçiren minibüs denize uçtu"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Ayvalık'ta şoförü kalp krizi geçiren yolcu minibüsü denize uçtu: 1 ölü 10 yaralı"
+    },
+    {
+     "s": "karar",
+     "hl": "Balıkesir Ayvalık'ta yolcu minibüsü denize düştü: Şoför hayatını kaybetti, 10 yolcu kurtarıldı"
+    },
+    {
+     "s": "birgun",
+     "hl": "Şoför kalp krizi geçirdi, 11 yolcunun bulunduğu minibüs denize düştü"
+    },
+    {
+     "s": "akit",
+     "hl": "Ayvalık’ta minibüs yolcularla denize uçtu! Kalp krizi geçiren şoför öldü, 10 kişi sağ kurtarıldı"
+    },
+    {
+     "s": "t24",
+     "hl": "Şoförü kalp krizi geçiren minibüs denize düştü; 1 ölü, 11 yaralı!"
+    },
+    {
+     "s": "dirilis",
+     "hl": "Balıkesir'de şoförü kalp krizi geçiren yolcu minibüsü denize düştü"
+    },
+    {
+     "s": "10haber",
+     "hl": "Şoför kalp krizi geçirdi, minibüs denize uçtu"
+    },
+    {
+     "s": "ntv",
+     "hl": "Balıkesir'de can pazarı. Şoförü kalp krizi geçiren yolcu minibüsü denize uçtu"
+    },
+    {
+     "s": "mynet",
+     "hl": "Ayvalık'ta can pazarı! Şoförü kalp krizi geçiren yolcu minibüsü denize uçtu"
+    }
+   ]
+  }
+ ]
+}

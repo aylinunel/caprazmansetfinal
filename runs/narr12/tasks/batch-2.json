@@ -1,0 +1,1432 @@
+{
+ "dimensions": {
+  "frame": "Çerçeve",
+  "hero": "Merkezdeki aktör",
+  "blame": "Sorumlu tutulan",
+  "cause": "Sunulan neden",
+  "cons": "Öne çıkan sonuç",
+  "aff": "Etkilenen kesim",
+  "sol": "Meşrulaştırılan çözüm",
+  "moral": "Ahlaki çerçeve",
+  "start": "Hikâyenin başlangıcı"
+ },
+ "examples": [
+  {
+   "key": "w6-s325",
+   "q": {
+    "happened": "İstanbul Maltepe'de yedi katlı bir bina çöktü; can kaybı yayınlara göre 3 ile 5 arasında; binada kontrollü yıkım ve inceleme sürüyor.",
+    "agree": "Binanın çöktüğü ortak; can kaybı farklı aşamalarda farklı.",
+    "differ": "Soldaki kurumlar binanın yaşını ve neden çöktüğünü soruyor; ortadaki kurumlar kurtarma ve yıkım sürecini veriyor; sağdaki kurumlar can kaybını öne çıkarıyor; bir kurum 'kentsel dönüşüm detayı'nı başlığa taşıyor.",
+    "care": "Neden sorusu sorumluluk arayışını başlatır; 'kentsel dönüşüm' ayrıntısı ise sorumluluğu belirli bir sürece bağlar; can kaybı vurgusu olayı bir trajedi olarak kurar."
+   },
+   "rows": [
+    {
+     "s": "cumhuriyet",
+     "hl": "Maltepe'de çöken binada ölü veya yaralı var mı? Bina kaç yıllık, neden çöktü?",
+     "frame": "Sorumluluk arayışı",
+     "hero": "Bina sakinleri",
+     "blame": "Belirsiz (soru)",
+     "cause": "Binanın yaşı / yapısı (soru)",
+     "cons": "Çökme",
+     "aff": "Bina sakinleri",
+     "sol": "",
+     "moral": "Yapı güvenliği",
+     "start": ""
+    },
+    {
+     "s": "aydinlik",
+     "hl": "Maltepe'de çöken binada kurtarılanlar konuştu",
+     "frame": "İnsani",
+     "hero": "Kurtarılanlar",
+     "blame": "",
+     "cause": "",
+     "cons": "Kurtarma",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "sozcu",
+     "hl": "Maltepe'de çöken 7 katlı binada ölü ya da yaralı var mı?",
+     "frame": "Sorumluluk arayışı",
+     "hero": "Bina sakinleri",
+     "blame": "Belirsiz (soru)",
+     "cause": "Binanın yaşı / yapısı (soru)",
+     "cons": "Çökme",
+     "aff": "Bina sakinleri",
+     "sol": "",
+     "moral": "Yapı güvenliği",
+     "start": ""
+    },
+    {
+     "s": "ntv",
+     "hl": "Maltepe'de çöken binada kontrollü yıkım sürüyor",
+     "frame": "Olgu aktarımı",
+     "hero": "Yetkililer",
+     "blame": "",
+     "cause": "",
+     "cons": "Kontrollü yıkım / örnek alma",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "karar",
+     "hl": "Maltepe'de çöken binadan örnekler alındı",
+     "frame": "Olgu aktarımı",
+     "hero": "Yetkililer",
+     "blame": "",
+     "cause": "",
+     "cons": "Kontrollü yıkım / örnek alma",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "milligazete",
+     "hl": "Maltepe'de çöken binada acı bilanço: Can kaybı 3'e çıktı",
+     "frame": "Trajedi",
+     "hero": "Kurbanlar",
+     "blame": "",
+     "cause": "",
+     "cons": "Can kaybı",
+     "aff": "Kurbanların aileleri",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "star",
+     "hl": "Maltepe'de çöken binadan acı haber: Can kaybı 5'e yükseldi",
+     "frame": "Trajedi",
+     "hero": "Kurbanlar",
+     "blame": "",
+     "cause": "",
+     "cons": "Can kaybı",
+     "aff": "Kurbanların aileleri",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "takvim",
+     "hl": "Maltepe’de çöken binada kentsel dönüşüm detayı",
+     "frame": "Sorumluluk arayışı",
+     "hero": "Bina sakinleri",
+     "blame": "Kentsel dönüşüm süreci (ima)",
+     "cause": "Kentsel dönüşüm",
+     "cons": "Çökme",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": "Kentsel dönüşüm kararı"
+    }
+   ]
+  },
+  {
+   "key": "w1-s143",
+   "q": {
+    "happened": "Ağustos ayı enflasyon verileri açıklandı: TÜİK resmî rakamı, bağımsız ENAG kendi hesabını, İstanbul ve Euro Bölgesi de kendi verilerini duyurdu.",
+    "agree": "Ağustos enflasyonunun açıklandığı bütün kurumlarda ortak.",
+    "differ": "Hangi enflasyonun haber yapıldığı: solda ve ortada ENAG'ın bağımsız hesabı ya da İstanbul verisi, sağda TÜİK'in resmî rakamı öne çıkıyor; bir kurum Euro Bölgesi enflasyonunu başlığa taşıyor, bir başkası yalnızca açıklanma tarihini veriyor.",
+    "care": "Aynı ay için hangi kurumun rakamının 'enflasyon' sayıldığı, hayat pahalılığına dair bütün tartışmanın zeminini belirler."
+   },
+   "rows": [
+    {
+     "s": "cumhuriyet",
+     "hl": "Euro Bölgesi ağustos ayı enflasyonu belli oldu: Veriler yeniden yükselişte",
+     "frame": "Dış karşılaştırma",
+     "hero": "Euro Bölgesi",
+     "blame": "",
+     "cause": "",
+     "cons": "Avrupa'da yükselen enflasyon",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "aydinlik",
+     "hl": "İstanbul'un ağustos ayı enflasyonu belli oldu",
+     "frame": "Yerel veri",
+     "hero": "İTO",
+     "blame": "",
+     "cause": "",
+     "cons": "İstanbul enflasyonu",
+     "aff": "İstanbullular",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "sozcu",
+     "hl": "Son dakika... ENAG ağustos ayı enflasyonu açıklandı",
+     "frame": "Bağımsız ölçüm",
+     "hero": "ENAG",
+     "blame": "",
+     "cause": "Resmî rakama güvensizlik (ima)",
+     "cons": "ENAG rakamı",
+     "aff": "Tüketiciler",
+     "sol": "",
+     "moral": "Şeffaflık",
+     "start": ""
+    },
+    {
+     "s": "mynet",
+     "hl": "ENAG ağustos ayı enflasyonunu açıkladı - Finans haberlerinin doğru adresi - Mynet Finans Haber",
+     "frame": "Bağımsız ölçüm",
+     "hero": "ENAG",
+     "blame": "",
+     "cause": "Resmî rakama güvensizlik (ima)",
+     "cons": "ENAG rakamı",
+     "aff": "Tüketiciler",
+     "sol": "",
+     "moral": "Şeffaflık",
+     "start": ""
+    },
+    {
+     "s": "ntv",
+     "hl": "Enflasyon verileri ne oldu, yüzde kaç? 2026 TÜİK ağustos ayı TÜFE kararı açıklandı",
+     "frame": "Resmî veri",
+     "hero": "TÜİK",
+     "blame": "",
+     "cause": "",
+     "cons": "Resmî enflasyon rakamı",
+     "aff": "",
+     "sol": "",
+     "moral": "Kurumsal güven",
+     "start": ""
+    },
+    {
+     "s": "karar",
+     "hl": "ENAG, Ağustos ayı enflasyonunu açıkladı",
+     "frame": "Bağımsız ölçüm",
+     "hero": "ENAG",
+     "blame": "",
+     "cause": "Resmî rakama güvensizlik (ima)",
+     "cons": "ENAG rakamı",
+     "aff": "Tüketiciler",
+     "sol": "",
+     "moral": "Şeffaflık",
+     "start": ""
+    },
+    {
+     "s": "sabah",
+     "hl": "Ağustos Ayı Enflasyonu Açıklanış Tarihi 2026: TÜİK ile Ağustos ayı enflasyonu ne zaman açıklanacak?",
+     "frame": "Hizmet / bilgi",
+     "hero": "TÜİK",
+     "blame": "",
+     "cause": "",
+     "cons": "Açıklanma tarihi",
+     "aff": "",
+     "sol": "",
+     "moral": "",
+     "start": ""
+    },
+    {
+     "s": "star",
+     "hl": "TÜİK verileri paylaştı! Ağustos ayı enflasyon rakamları belli oldu",
+     "frame": "Resmî veri",
+     "hero": "TÜİK",
+     "blame": "",
+     "cause": "",
+     "cons": "Resmî enflasyon rakamı",
+     "aff": "",
+     "sol": "",
+     "moral": "Kurumsal güven",
+     "start": ""
+    },
+    {
+     "s": "takvim",
+     "hl": "TÜİK Ağustos ayı enflasyon verilerini açıkladı",
+     "frame": "Resmî veri",
+     "hero": "TÜİK",
+     "blame": "",
+     "cause": "",
+     "cons": "Resmî enflasyon rakamı",
+     "aff": "",
+     "sol": "",
+     "moral": "Kurumsal güven",
+     "start": ""
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "event": "s11670",
+   "week": "w12",
+   "title": "RESMÎ GAZETE'DE YAYIMLANDI! Yabancı yatırımcılara 150 bin dolara 3 yıl, 200 bin dolara 5 yıl ikamet izni",
+   "headlines": [
+    {
+     "s": "sondakika",
+     "hl": "Yabancı yatırımcılara verilecek ikamet izinleri için yeni düzenleme"
+    },
+    {
+     "s": "bloomberght",
+     "hl": "Yabancı yatırımcılara verilecek ikamet izinlerinde yeni düzenleme"
+    },
+    {
+     "s": "haberler",
+     "hl": "Yabancı yatırımcılara verilecek ikamet izinleri için yeni düzenleme"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Yabancı yatırımcılara ikamet izninde yeni şartlar: Karar Resmi Gazete'de"
+    },
+    {
+     "s": "birgun",
+     "hl": "Eşik aşağı çekildi: Yabancılara ikamet izni için yeni yatırım düzenlemesi Resmi Gazete'de"
+    },
+    {
+     "s": "karar",
+     "hl": "Yabancı yatırımcılara yeni ikamet izni düzenlemesi: 150 bin dolara 3 yıl, 200 bin dolara 5 yıl"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Yabancı yatırımcılara ikamet iznine düzenleme Resmi Gazete'de"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Yabancı yatırımcılara ikamet iznine düzenleme! 2 seçenek sunuldu"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Cumhurbaşkanı Erdoğan imzaladı, yürürlüğe girdi! Yabancı yatırımcılara 150 bin dolar karşılığında 3 yıl, 200 bin dolar karşılığında 5 yıl ikamet izni getirildi"
+    },
+    {
+     "s": "onedio",
+     "hl": "Yabancı Yatırımcılara Türkiye'de İkamet Yolu: 150 Bin Dolara 3 Yıl, 200 Bin Dolara 5 Yıl İzin Verilecek"
+    },
+    {
+     "s": "mynet",
+     "hl": "Yabancı yatırımcıya ikamet iznine düzenleme: 150 bin dolar 3 yıl, 200 bin dolar 5 yıl"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Yabancı yatırımcıya 150 bin dolara 3 yıl ikamet izni"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Yabancı yatırımcıya 200 bin dolara 5 yıl ikamet izni"
+    },
+    {
+     "s": "ntv",
+     "hl": "Yabancı yatırımcılara ikamet iznine düzenleme. 150 bin dolarla 3 yıl, 200 bin dolarla 5 yıl"
+    },
+    {
+     "s": "diken",
+     "hl": "Yabancıya yatırım karşılığı ikamet: 150 bin dolara üç, 200 bin dolara dört yıl"
+    },
+    {
+     "s": "kisadalga",
+     "hl": "Türkiye'de yabancı yatırımcılara oturma izni: 150 bin dolara 3 yıl, 200 bin dolara 5 yıl"
+    },
+    {
+     "s": "takvim",
+     "hl": "Başkan Erdoğan imzaladı! Yabancı yatırımcılara ikamet izninde yeni dönem: 150 bin dolara 3 yıl, 200 bin dolara 5 yıl"
+    },
+    {
+     "s": "posta",
+     "hl": "Yabancılara ikamet izninde kurallar değişti! Resmî Gazete'de yayımlandı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Yabancı yatırımcılara ikamet izninde yeni kurallar: Resmi Gazete'de yayımlandı"
+    },
+    {
+     "s": "star",
+     "hl": "Karar Resmi Gazete'de! Yabancı yatırımcılara ikamet iznine düzenleme"
+    },
+    {
+     "s": "vatan",
+     "hl": "RESMÎ GAZETE'DE YAYIMLANDI! Yabancı yatırımcılara 150 bin dolara 3 yıl, 200 bin dolara 5 yıl ikamet izni"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "Kurallar değişti! Yabancılara ikamet izninde yeni dönem"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Resmi Gazete'de yayımlandı: Yabancı yatırımcılara yatırım tutarına göre 3 ve 5 yıl süreli ikamet izni"
+    }
+   ]
+  },
+  {
+   "event": "s12134",
+   "week": "w12",
+   "title": "Milli basketbolcu Alperen Şengün, iki gözüne aldığı darbeyle sakatlandı",
+   "headlines": [
+    {
+     "s": "haberler",
+     "hl": "Alperen Şengün sakatlandı mı, gözüne ne oldu? Alperen Şengün’ün sağlık durumu nasıl, sahalara ne zaman dönecek?"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Alperen Şengün sakatlandı mı? Alperen Şengün’ün sağlık durumu nasıl, sahalara ne zaman dönecek?"
+    },
+    {
+     "s": "tele1",
+     "hl": "Milli basketbolcu Alperen Şengün sakatlandı"
+    },
+    {
+     "s": "dha",
+     "hl": "Milli basketbolcu Alperen Şengün sakatlandı"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Houston Rockets'ta Alperen Şengün sakatlandı!"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Alperen Şengün'ün gözünde sakatlık"
+    },
+    {
+     "s": "karar",
+     "hl": "Alperen Şengün, Indiana Pacers maçında sakatlandı"
+    },
+    {
+     "s": "aa",
+     "hl": "Milli basketbolcu Alperen Şengün, iki gözüne aldığı darbeyle sakatlandı"
+    },
+    {
+     "s": "sabah",
+     "hl": "Milli basketbolcu Alperen Şengün sakatlandı! 'İki gözüne de darbe aldı'"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Alperen Şengün, Indiana Pacers maçında yüzüne aldığı darbe sonucu sakatlandı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Alperen Şengün, iki gözüne aldığı darbeyle sakatlandı"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "NBA'de Alperen Şengün korkuttu! İki gözünden birden sakatlandı"
+    },
+    {
+     "s": "star",
+     "hl": "Alperen Şengün sakatlandı! Maç sonu hemen açıklama geldi"
+    },
+    {
+     "s": "t24",
+     "hl": "Alperen Şengün, iki gözüne aldığı darbeyle sakatlandı: Sanırım korneasında çizik var"
+    },
+    {
+     "s": "akit",
+     "hl": "Milli basketbolcu nazara geldi! İki gözüne aldığı darbeyle sakatlandı"
+    },
+    {
+     "s": "diken",
+     "hl": "Alperen Şengün sakatlandı"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Alperen Şengün NBA maçında sakatlandı! Gözündeki son durum açıklandı"
+    },
+    {
+     "s": "onedio",
+     "hl": "“İki Gözünde de Sorun Var”: NBA’de Forma Giyen Alperen Şengün İki Gözüne Aldığı Darbeyle Sakatlandı"
+    },
+    {
+     "s": "aksam",
+     "hl": "Alperen Şengün, iki gözüne aldığı darbeyle sakatlandı"
+    }
+   ]
+  },
+  {
+   "event": "s11860",
+   "week": "w12",
+   "title": "Uluslararası Adalet Divanı, Myanmar'ın Arakanlı Müslümanlara karşı soykırım işlediğine hükmetti",
+   "headlines": [
+    {
+     "s": "aa",
+     "hl": "Arakanlı Müslümanlara yönelik soykırım davasında karar bugün açıklanacak"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Arakanlı Müslümanlara yönelik soykırım davasında karar bugün açıklanacak"
+    },
+    {
+     "s": "sondakika",
+     "hl": "UAD'den tarihi Myanmar kararı: Arakanlı müslümanlara soykırım yapıldı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Uluslararası Adalet Divanı'ndan tarihi karar: Myanmar'ın Arakanlı Müslümanlara soykırım işlediğine hükmedildi!"
+    },
+    {
+     "s": "akit",
+     "hl": "Uluslararası Adalet Divanı kararını açıkladı: Arakanlı Müslümanlara soykırım yapıldı!"
+    },
+    {
+     "s": "haberler",
+     "hl": "UAD'den tarihi Myanmar kararı: Arakanlı müslümanlara soykırım yapıldı"
+    },
+    {
+     "s": "star",
+     "hl": "Arakanlı Müslümanlara soykırım! UAD'den Myanmar kararı"
+    },
+    {
+     "s": "yeniasya",
+     "hl": "Sıra terör devleti İsrail'de - UAD, tarihinde ilk kez bir devleti soykırımdan sorumlu tuttu: Myanmar, Arakanlı Müslümanlara karşı soykırım işliyor!"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Uluslararası Adalet Divanı'ndan tarihi karar: Myanmar, Arakanlı Müslümanlara karşı soykırım suçu işlemekten mahkum edildi"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Uluslararası Adalet Divanı, Myanmar'ın müslümanlara soykırım işlediğine hükmetti"
+    },
+    {
+     "s": "10haber",
+     "hl": "Uluslararası Adalet Divanı, Myanmar’ı ‘soykırımcı’ ilan etti"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Uluslararası Adalet Divanından tarihi soykırım kararı! Myanmar tazminat ödeyecek"
+    },
+    {
+     "s": "milliyet",
+     "hl": "Uluslararası Adalet Divanı'ndan flaş karar! 'Myanmar, Arakanlı Müslümanlara karşı soykırım işledi'"
+    },
+    {
+     "s": "sabah",
+     "hl": "Uluslararası Adalet Divanı’ndan bir ilk: Arakanlı Müslümanlara yönelik katliam tescillendi!"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Uluslararası Adalet Divanı’ndan tarihi karar! Myanmar Arakanlı Müslümanlara soykırım suçundan mahkum edildi: İsrail davası için de emsal olacak"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Uluslararası Adalet Divanı: Myanmar Rohingyalara soykırım yaptı"
+    },
+    {
+     "s": "bbcturkce",
+     "hl": "Uluslararası Adalet Divanı: Myanmar Arakanlı Müslümanlara soykırım yaptı"
+    },
+    {
+     "s": "ntv",
+     "hl": "Uluslararası Adalet Divanı: Myanmar, Arakanlı Müslümanlara karşı soykırım yaptı"
+    },
+    {
+     "s": "aksam",
+     "hl": "Arakanlı Müslümanlara soykırım davasında karar"
+    },
+    {
+     "s": "bianet",
+     "hl": "UAD, Myanmar'ı Arakanlı Müslümanlara karşı soykırımdan sorumlu tuttu"
+    },
+    {
+     "s": "t24",
+     "hl": "Uluslararası Adalet Divanı'ndan tarihi karar: Myanmar, Arakanlı Müslümanlara yönelik soykırımdan sorumlu tutuldu"
+    },
+    {
+     "s": "dirilis",
+     "hl": "UAD Myanmar kararı: Arakanlı Müslümanlara soykırım hükmü"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Uluslararası Adalet Divanı'ndan tarihi karar: 'Myanmar Arakanlı Müslümanlara soykırım yaptı'"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "UAD: Myanmar, Arakanlı Müslümanlara karşı soykırım işledi"
+    }
+   ]
+  },
+  {
+   "event": "s11333",
+   "week": "w12",
+   "title": "Sözcü TV'ye kayyum atandı",
+   "headlines": [
+    {
+     "s": "sol",
+     "hl": "Sözcü TV'ye operasyon: Kanala kayyım atandı, gözaltılar var"
+    },
+    {
+     "s": "anka",
+     "hl": "Sözcü TV'ye operasyon... Kanala kayyım atandı, Özgür Özel'den tepki"
+    },
+    {
+     "s": "haberler",
+     "hl": "Sözcü TV'ye operasyon düzenlendi, kanala TMSF tarafından kayyım atandı"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Sözcü TV'ye operasyon: Yöneticiler dahil 4 kişi gözaltına alındı, kanala kayyım atandı"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Sözcü TV'ye kayyum atandı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "SON DAKİKA! Sözcü TV'ye kayyum atandı"
+    },
+    {
+     "s": "birgun",
+     "hl": "Sözcü'ye operasyon: Kanala ve internet sitesine kayyum atandı, yöneticiler gözaltına alındı!"
+    },
+    {
+     "s": "diken",
+     "hl": "Sözcü TV'ye kayyım atandı"
+    },
+    {
+     "s": "sabah",
+     "hl": "SON DAKİKA | Sözcü TV'ye kayyum atandı: Yönetim Kurulu Başkanı Funda Tuncer Sıdalı gözaltına alındı"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Sözcü TV'ye FETÖ operasyonu! Kayyım atandı, 2 gözaltı... Başsavcılıktan ilk açıklama geldi"
+    },
+    {
+     "s": "mynet",
+     "hl": "SON DAKİKA | Sözcü TV'ye kayyum atandı! Polis binada, gözaltılar var"
+    },
+    {
+     "s": "sondakika",
+     "hl": "Sözcü TV'ye kayyum atandı: Program yarıda kesildi, belgesel başladı"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Sözcü TV’ye kayyum atandı: Polis ekipleri kanal binasında arama yapıyor"
+    },
+    {
+     "s": "takvim",
+     "hl": "Sözcü TV'ye kayyum atandı: Gözaltılar var! Savcılık FETÖ soruşturmasını duyurdu: Şüpheli firari Burak Akbay"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Sözcü TV'ye sabah operasyonu! Kayyım ve gözaltı kararı"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Son dakika... Sözcü TV'ye kayyum atandı: Polis ekipleri kanal binasında arama yaptı... 4 gözaltı kararı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Sözcü TV'ye kayyum atandı!"
+    },
+    {
+     "s": "dwturkce",
+     "hl": "Sözcü TV'ye operasyon: Kayyum atandı"
+    },
+    {
+     "s": "yeniyasam",
+     "hl": "Sözcü TV’ye operasyon: Kanala kayyım atandı, yöneticiler gözaltında"
+    },
+    {
+     "s": "agos",
+     "hl": "Sözcü TV'ye operasyon, kayyım atandı, yayın durduruldu"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Sözcü TV'ye kayyum atandı, bazı yöneticiler gözaltına alındı"
+    },
+    {
+     "s": "ntv",
+     "hl": "Sözcü TV'ye kayyım atandı"
+    },
+    {
+     "s": "posta",
+     "hl": "SON DAKİKA SÖZCÜ TV'YE KAYYUM | SÖZCÜ TV'YE KAYYUM MU ATANDI? FUNDA TUNCER SIDALI NEDEN GÖZALTINA ALINDI? SÖZCÜ TV'YE NEDEN KAYYUM ATANDI?"
+    },
+    {
+     "s": "bbcturkce",
+     "hl": "Sözcü TV ve internet sitesine kayyum atandı"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Sözcü TV'ye atanan kayyım belli oldu!"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "SÖZCÜ TV KAYYUM ATAMASI SON DAKİKA | Sözcü TV'ye neden operasyon yapıldı, kayyum neden atandı? Sözcü TV sahibi Burak Akbay kimdir?"
+    }
+   ]
+  },
+  {
+   "event": "s10448",
+   "week": "w12",
+   "title": "İran: Hürmüz Boğazı'nda 2 petrol tankeri mayına çarparak alev aldı",
+   "headlines": [
+    {
+     "s": "aksam",
+     "hl": "İran: Hürmüz'de 2 tanker mayına çarparak infilak etti"
+    },
+    {
+     "s": "haberler",
+     "hl": "İran ordusu, Hürmüz Boğazı'nda petrol tankerinin mayına çarpıp alev aldığını açıkladı"
+    },
+    {
+     "s": "aa",
+     "hl": "İran: Hürmüz Boğazı'nda bir tanker daha mayına çarparak alev aldı"
+    },
+    {
+     "s": "trthaber",
+     "hl": "İran: Hürmüz Boğazı'nda bir tanker mayına çarparak alev aldı"
+    },
+    {
+     "s": "dirilis",
+     "hl": "Hürmüz Boğazı'nda tanker mayına çarpıp alev aldı iddiası"
+    },
+    {
+     "s": "sondakika",
+     "hl": "İran, Hürmüz Boğazı'nın doğusunda bir tankerin mayına çarparak alev aldığını bildirdi"
+    },
+    {
+     "s": "anka",
+     "hl": "İran Devrim Muhafızları: Hürmüz Boğazı'nda bir tanker mayına çarparak alev aldı"
+    },
+    {
+     "s": "memurlar",
+     "hl": "İran: Hürmüz Boğazı'nda bir tanker daha mayına çarparak alev aldı"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "İran Devrim Muhafızları duyurdu: Hürmüz Boğazı'nda 2 petrol tankeri mayına çarptı"
+    },
+    {
+     "s": "akit",
+     "hl": "İran duyurdu! Petrol tankerleri mayına çarparak alev aldı"
+    },
+    {
+     "s": "dha",
+     "hl": "İran: Hürmüz Boğazı'nda 2 petrol tankeri mayına çarparak alev aldı"
+    },
+    {
+     "s": "evrensel",
+     "hl": "İran duyurdu: Hürmüz Boğazı'nda 2 petrol tankeri mayına çarparak alev aldı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Hürmüz Boğazı'nda mayına çarpan petrol tankeri battı"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Hürmüz Boğazı'nda tanker faciası! İran'dan deniz mayını açıklaması"
+    },
+    {
+     "s": "haber7",
+     "hl": "Hürmüz Boğazı'nda 2 petrol tankeri mayına çarptı, 1'i battı"
+    },
+    {
+     "s": "mynet",
+     "hl": "İran: Hürmüz Boğazı'nda deniz mayınlarına çarpan 2 petrol tankerinden biri battı"
+    },
+    {
+     "s": "star",
+     "hl": "Hürmüz Boğazı'nda patlama: 2 petrol tankeri alev topuna döndü"
+    },
+    {
+     "s": "birgun",
+     "hl": "İran: Hürmüz Boğazı'nda 2 petrol tankeri mayına çarptı"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "Hürmüz Boğazı'nda petrol tankerleri alev aldı! İran'dan kritik açıklama"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Hürmüz Boğazı'nda 2 tanker infilak etti"
+    },
+    {
+     "s": "dwturkce",
+     "hl": "İran: Hürmüz Boğazı'nda iki günde 6 tanker yandı"
+    },
+    {
+     "s": "sabah",
+     "hl": "İran ordusundan Hürmüz Boğazı açıklaması: Bir petrol tankeri mayına çarparak alev aldı"
+    }
+   ]
+  },
+  {
+   "event": "s12435",
+   "week": "w12",
+   "title": "TAG Otoyolu'nda tur otobüsü ile tır çarpıştı: 3'ü ağır 20 yaralı",
+   "headlines": [
+    {
+     "s": "haberler",
+     "hl": "TAG Otoyolu Nurdağı'nda tur otobüsü ile 2 tırın karıştığı kazada yaralılar var"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Gaziantep'te feci kaza! Tur otobüsü iki tırla çarpıştı: Yaralılar var"
+    },
+    {
+     "s": "sabah",
+     "hl": "SON DAKİKA... TAG Otoyolu'nda feci kaza! Tur otobüsü ile 2 tır çarpıştı! 3'ü ağır 23 yaralı"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Tur otobüsü ile 2 TIR çarpıştı: 3'ü ağır 20 yaralı"
+    },
+    {
+     "s": "takvim",
+     "hl": "TAG Otoyolu'nda tur otobüsü ile 2 tır zincirleme kazaya karıştı: Yaralılar var sürücü gözaltında"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Gaziantep'te feci kaza! Tur otobüsü tırla çarpıştı: 20 yaralı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Gaziantep'te tur otobüsü ile 2 tır çarpıştı: TAG Otoyolu ulaşıma kapatıldı"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Gaziantep TAG Otoyolu'nda zincirleme kaza! Tur otobüsü ile 2 tır çarpıştı"
+    },
+    {
+     "s": "birgun",
+     "hl": "TAG Otoyolu'nda tur otobüsü ile 2 TIR çarpıştı: 23 kişi yaralandı"
+    },
+    {
+     "s": "akit",
+     "hl": "TAG Otoyolu'nda feci kaza! Makas atan tıra tur otobüsü çarptı: 3'ü ağır 20 yaralı!"
+    },
+    {
+     "s": "posta",
+     "hl": "Gaziantep'te tur otobüsü ile 2 TIR çarpıştı: 3'ü ağır 20 kişi yaralandı"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Son Dakika... Gaziantep'te feci kaza: Tur otobüsü ile TIR çarpıştı, 3'ü ağır 20 yaralı"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "TAG Otoyolu'nda feci kaza: Tur otobüsü tıra çarptı, 3'ü ağır 20 yaralı"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Son dakika... Gaziantep'te feci kaza: Tur otobüsü ile TIR çarpıştı, 3'ü ağır 20 yaralı"
+    },
+    {
+     "s": "ntv",
+     "hl": "Otoyolda otobüs ile TIR çarpıştı: Çok sayıda yaralı var"
+    },
+    {
+     "s": "karar",
+     "hl": "Tur otobüsü makas atan tıra çarptı: 3'ü ağır 20 yaralı"
+    },
+    {
+     "s": "haber7",
+     "hl": "Otoyolda otobüs ile TIR çarpıştı: Çok sayıda yaralı var"
+    },
+    {
+     "s": "aksam",
+     "hl": "Tur otobüsü ile 2 tır birbirine girdi! Çok sayıda yaralı var"
+    },
+    {
+     "s": "10haber",
+     "hl": "Tur otobüsü ile TIR çarpıştı: Üçü ağır 20 yaralı"
+    }
+   ]
+  },
+  {
+   "event": "s12206",
+   "week": "w12",
+   "title": "Sultanbeyli'de inşaatta toprak kayması: Göçük altındaki 1 işçi hayatını kaybetti",
+   "headlines": [
+    {
+     "s": "haberler",
+     "hl": "Bir ayda ikinci facia! İnşaatta toprak kaydı, göçük altında kalan işçiden acı haber"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Sultanbeyli'deki inşaatta toprak kayması! Bir işçi göçük altında"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Acı haber! İnşaatta toprak kaydı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "İstanbul'da inşaatta göçük! Acı haber geldi: Toprak altında kalan işçi hayatını kaybetti"
+    },
+    {
+     "s": "sabah",
+     "hl": "SON DAKİKA | Sultanbeyli'de inşaatta toprak kayması! 1 can kaybı"
+    },
+    {
+     "s": "tgrt",
+     "hl": "İstanbul Sultanbeyli'de toprak kayması: 1 kişi hayatını kaybetti"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Sultanbeyli'de inşaatta toprak kayması: Göçük altında kalan 1 işçi yaşamını yitirdi"
+    },
+    {
+     "s": "takvim",
+     "hl": "Sultanbeyli'de inşaatta toprak kayması: Göçük altındaki 1 işçi hayatını kaybetti"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Sultanbeyli'de bir inşaatta toprak kayması: 1 işçi göçük altında kaldı"
+    },
+    {
+     "s": "t24",
+     "hl": "Sultanbeyli'de inşaatta göçük: 1 işçi hayatını kaybetti!"
+    },
+    {
+     "s": "dirilis",
+     "hl": "İstanbul Sultanbeyli'de toprak kayması meydana geldi"
+    },
+    {
+     "s": "birgun",
+     "hl": "Sultanbeyli'de bir inşaatta göçük: 1 işçinin cesedine ulaşıldı!"
+    },
+    {
+     "s": "star",
+     "hl": "Sultanbeyli'de toprak kayması! 1 kişi hayatını kaybetti"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "İstanbul'da inşaatta toprak kayması! Göçük altında kalan işçi hayatını kaybetti"
+    },
+    {
+     "s": "ntv",
+     "hl": "Sultanbeyli'de inşaatta toprak kayması. Bir işçi yaşamını yitirdi"
+    },
+    {
+     "s": "karar",
+     "hl": "Sultanbeyli’de inşaatta toprak kayması: 1 işçi hayatını kaybetti"
+    },
+    {
+     "s": "trthaber",
+     "hl": "İstanbul'da toprak altında kalan işçi hayatını kaybetti"
+    },
+    {
+     "s": "akit",
+     "hl": "Sultanbeyli'de inşaatta toprak kaydı: 1 işçi hayatını kaybetti"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Sultanbeyli'de iş cinayeti: Toprak kayması sonucu göçük altında kalan işçi hayatını kaybetti"
+    },
+    {
+     "s": "10haber",
+     "hl": "İnşaatta toprak kaydı: Bir işçi göçük altında hayatını kaybetti"
+    },
+    {
+     "s": "mynet",
+     "hl": "İstanbul'da inşaatta toprak kayması: 1 işçi göçük altında hayatını kaybetti"
+    },
+    {
+     "s": "posta",
+     "hl": "İnşaatta toprak kayması! 1 işçi hayatını kaybetti"
+    }
+   ]
+  },
+  {
+   "event": "s12524",
+   "week": "w12",
+   "title": "Kredi kartlarında asgari ödeme tutarı değişti",
+   "headlines": [
+    {
+     "s": "sondakika",
+     "hl": "BDDK kararıyla kredi kartlarının asgari ödeme oranı değişti"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Kredi kartlarında asgari ödeme oranlarında değişiklik"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Kredi kartı asgari ödeme oranları güncellendi"
+    },
+    {
+     "s": "mynet",
+     "hl": "Kredi kartında asgari ödeme oranı değişti - Finans haberlerinin doğru adresi"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Son dakika... Kredi kartlarında asgari ödeme oranlarında değişiklik"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Kredi kartı asgari ödeme tutarları değişti"
+    },
+    {
+     "s": "birgun",
+     "hl": "Kredi kartlarının asgari ödeme tutarları yeniden belirlendi"
+    },
+    {
+     "s": "haberler",
+     "hl": "BDDK kararıyla kredi kartlarının asgari ödeme oranı değişti"
+    },
+    {
+     "s": "t24",
+     "hl": "BDDK'dan kredi kartlarına yeni düzenleme: Asgari ödeme oranları değişti"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Kredi kartlarında asgari ödeme oranları değişti: Konut kredilerinde de düzenleme yapıldı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Milyonlarca kredi kartı sahibini ilgilendiren karar! BDDK'dan yeni düzenleme: Asgari ödeme oranları değişti"
+    },
+    {
+     "s": "haber7",
+     "hl": "BDDK, kredi kartı asgari ödeme oranlarını yeniden belirledi"
+    },
+    {
+     "s": "sabah",
+     "hl": "SON DAKİKA! Kredi kartı ve konut kredilerinde yeni kural! Asgari ödeme oranı değişti, ilk evde sınır kalktı"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Kredi kartlarında asgari ödeme tutarı değişti"
+    },
+    {
+     "s": "karar",
+     "hl": "BDDK'dan milyonlarca kredi kartı kullanıcısını ilgilendiren düzenleme: Asgari ödeme oranı düşürüldü"
+    },
+    {
+     "s": "posta",
+     "hl": "BDDK'dan limit düzenlemesi! Kredi kartlarında asgari ödeme oranları değişti"
+    },
+    {
+     "s": "ntv",
+     "hl": "Kredi kartlarında asgari ödeme tutarı değişti"
+    },
+    {
+     "s": "onedio",
+     "hl": "BDDK Kredi Kartı Asgari Ödeme Oranlarını Değiştirdi: İşte Yeni Limitler"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Kredi kartlarının asgari ödeme tutarları değişti"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Kredi kartı asgari ödeme oranı 2026 kaç oldu? 100-200 bin TL kredi kartı asgari ödeme hesaplaması"
+    },
+    {
+     "s": "10haber",
+     "hl": "Kredi kartında asgari ödeme değişti: 200 bin lira limitte yüzde 30"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Kredi kartı asgari ödeme tutarı 2026, yüzde kaç oldu, asgari ödeme düşürüldü mü, hangi limitlere uygulanıyor?"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "BDDK'den kredi kartı kararı: Asgari ödeme oranları değişti"
+    },
+    {
+     "s": "takvim",
+     "hl": "Kredi kartlarında asgari ödeme oranları yeniden belirlendi: Yüzde 40'tan yüzde 30'a düşürüldü"
+    },
+    {
+     "s": "dirilis",
+     "hl": "BDDK kredi kartı asgari ödeme oranlarını değiştirdi"
+    },
+    {
+     "s": "aksam",
+     "hl": "BDDK duyurdu: Kredi kartlarında asgari ödeme tutarı değişti"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Kredi kartı asgari ödeme oranlarına ve konut kredilerine düzenleme"
+    },
+    {
+     "s": "diken",
+     "hl": "Kredi kartı düzenlemesi: 200 bin liranın asgari ödeme oranı yüzde 30'a indi"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "SON DAKİKA... Kredi kartlarında asgari ödeme oranlarında değişiklik"
+    }
+   ]
+  },
+  {
+   "event": "s10575",
+   "week": "w12",
+   "title": "Ronaldinho, 11 yıl sonra sahalara döndü",
+   "headlines": [
+    {
+     "s": "sozcu",
+     "hl": "Ronaldinho 11 yıl sonra sahalara dönüyor! Derbide ilk 11 başlayacak"
+    },
+    {
+     "s": "onedio",
+     "hl": "46 Yaşındaki Ronaldinho 11 Yıl Sonra Ravenna Formasıyla Forlì Derbisinde Sahaya Çıkıyor"
+    },
+    {
+     "s": "sondakika",
+     "hl": "Ronaldinho, 11 yıl sonra sahalara galibiyetle geri döndü"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Ronaldinho futbola geri döndü! 46 yaşında Ravenna formasıyla sahada"
+    },
+    {
+     "s": "sabah",
+     "hl": "Ronaldinho futbola geri döndü! 11 yıl sonra ilk maçına çıktı"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Ronaldinho 11 yıl sonra geri döndü: 46 yaşında resmi maça çıktı"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Ronaldinho, 11 yıl sonra maça çıktı"
+    },
+    {
+     "s": "mynet",
+     "hl": "Gözümüzde canlandı koskoca mazi! Ronaldinho 11 yıl sonra sahalarda"
+    },
+    {
+     "s": "haberler",
+     "hl": "Ronaldinho, 11 yıl sonra sahalara galibiyetle geri döndü"
+    },
+    {
+     "s": "aksam",
+     "hl": "11 yıl sonra yeniden sahada! Ronaldinho futbola döndü"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Ronaldinho 11 yıl sonra geri döndü! Geleceği hakkında açıklama..."
+    },
+    {
+     "s": "star",
+     "hl": "11 yıl sonra futbola geri döndü! Ronaldinho ilk maçına çıktı"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Ronaldinho, 46 yaşında sahalara döndü"
+    },
+    {
+     "s": "akit",
+     "hl": "11 yıl sonra yeniden sahaya çıktı! Ronaldinho 46 yaşında formayı giydi"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Ronaldinho, 46 yaşında Ravenna formasıyla sahalara döndü"
+    },
+    {
+     "s": "dha",
+     "hl": "Ronaldinho, 11 yıl sonra sahalara döndü"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "46'lık Ronaldinho, 11 yıl sonra sahalara döndü: Biletler tükendi, tribün yetmedi"
+    },
+    {
+     "s": "diken",
+     "hl": "Ronaldinho 46 yaşında sahalara döndü"
+    },
+    {
+     "s": "t24",
+     "hl": "Futbolun yaşayan efsanesi Ronaldinho, 11 yıl sonra sahalara döndü!"
+    },
+    {
+     "s": "ntv",
+     "hl": "46 yaşında sahalara dönen Ronaldinho, eski günlerinden kesitler sundu"
+    },
+    {
+     "s": "10haber",
+     "hl": "Ronaldinho 46 yaşında sahalara döndü"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Ronaldinho, 11 yıl sonra futbol sahalarına döndü"
+    },
+    {
+     "s": "karar",
+     "hl": "Ronaldinho 11 yıl sonra futbola geri döndü"
+    }
+   ]
+  },
+  {
+   "event": "s10970",
+   "week": "w12",
+   "title": "Gülistan Doku soruşturmasında şok ifadeler: \"Aileye bilgi vermeyin talimatı aldık\"",
+   "headlines": [
+    {
+     "s": "sondakika",
+     "hl": "Tunceli'de polis Erzen, Doku soruşturmasında aileye bilgi verilmemesini anlattı"
+    },
+    {
+     "s": "ntv",
+     "hl": "Gülistan Doku soruşturması. Tutuklanan polisin ifadesinden: \"Aileye bilgi vermeyin denildi\""
+    },
+    {
+     "s": "anka",
+     "hl": "Gülistan Doku soruşturmasında dikkat çeken ifade: “Aileye bilgi vermeyin”"
+    },
+    {
+     "s": "haberler",
+     "hl": "Gülistan Doku soruşturmasında polis, aileye bilgi verilmeme talimatını anlattı"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Gülistan Doku soruşturmasında polisten itiraf gibi ifade: 'Aileye bilgi vermeyin' talimatı verilmişti"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Gülistan Doku soruşturmasında dikkat çeken ifade: 'Aileye bilgi vermeyin'"
+    },
+    {
+     "s": "takvim",
+     "hl": "Gülistan Doku dosyasında delil karartma iddiası! Tutuklu polis ifade verdi: Aileye bilgi vermeyin dediler"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Gülistan Doku soruşturmasında yeni ifade: \"Aileye hiçbir şekilde bilgi vermeyin denildi\""
+    },
+    {
+     "s": "kisadalga",
+     "hl": "Gülistan Doku soruşturmasında polis memurunun ifadesi: \"Aileye bilgi vermeyin\" denildi"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Gülistan Doku soruşturmasında tutuklu polisten çarpıcı ifade: Aileye bilgi vermeyin talimatını kim verdi?"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "Gülistan Doku soruşturmasında yeni iddia! Tutuklu polis memurundan çarpıcı ifade: \"Aileye bilgi vermeyin, denildi\""
+    },
+    {
+     "s": "sabah",
+     "hl": "Gülistan Doku soruşturmasında tutuklanan polisin ifadesi ortaya çıktı: 'Aileye bilgi vermeyin denildi'"
+    },
+    {
+     "s": "10haber",
+     "hl": "Gülistan Doku soruşturması: ‘Aileye bilgi vermeyin’"
+    },
+    {
+     "s": "turkiyegz",
+     "hl": "Gülistan Doku soruşturmasında kritik ifade! \"Aileye sakın bilgi vermeyin\" denilmiş"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Gülistan Doku dosyasında tutuklu polisten şok ifade: \"Aileye bilgi vermeyin\""
+    },
+    {
+     "s": "aksam",
+     "hl": "Gülistan Doku dosyasında yeni itiraf! \"Aileye söylemeyin\" talimatı aldık"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Gülistan Doku soruşturmasında tutuklu polis memurunun ifadesi ortaya çıktı: 'Aileye bilgi vermeyin talimatı aldık'"
+    },
+    {
+     "s": "star",
+     "hl": "Tutuklanan polisten \"Gülistan Doku\" itirafı: Aileye bilgi vermeyin talimatı aldık"
+    },
+    {
+     "s": "mynet",
+     "hl": "Gülistan Doku soruşturmasında şaşırtan ifade: \"Aileye bilgi vermeyin talimatı aldık\""
+    },
+    {
+     "s": "vatan",
+     "hl": "Gülistan Doku soruşturmasında ortaya çıkan ifadeler şok etti: Aileye bilgi vermeyin talimatı aldık"
+    }
+   ]
+  },
+  {
+   "event": "s11711",
+   "week": "w12",
+   "title": "Finansal İstikrar Komitesi toplandı",
+   "headlines": [
+    {
+     "s": "aa",
+     "hl": "Finansal İstikrar Komitesinde sermaye piyasalarındaki gelişmeler ele alındı"
+    },
+    {
+     "s": "sondakika",
+     "hl": "Şimşek başkanlığındaki Finansal İstikrar Komitesi sermaye piyasalarını değerlendirdi"
+    },
+    {
+     "s": "bloomberght",
+     "hl": "Finansal İstikrar Komitesi'nde kredi ve kredi kartı gündemi"
+    },
+    {
+     "s": "sabah",
+     "hl": "Finansal İstikrar Komitesi toplandı: Bireysel krediler ve kredi kartları masada!"
+    },
+    {
+     "s": "trthaber",
+     "hl": "Finansal İstikrar Komitesi Bakan Şimşek başkanlığında toplandı"
+    },
+    {
+     "s": "ahaber",
+     "hl": "Finansal İstikrar Komitesi toplandı! İşte ele alınan konular..."
+    },
+    {
+     "s": "star",
+     "hl": "Finansal İstikrar Komitesi toplandı"
+    },
+    {
+     "s": "haberler",
+     "hl": "Finansal İstikrar Komitesi, sermaye piyasası ve kredi kartı adımlarını görüştü"
+    },
+    {
+     "s": "haber7",
+     "hl": "Finansal İstikrar Komitesi toplandı: Sermaye piyasalarında atılacak adımlar görüşüldü"
+    },
+    {
+     "s": "takvim",
+     "hl": "Finansal İstikrar Komitesi toplandı! Kredi kartı ve bireysel krediler görüşüldü"
+    },
+    {
+     "s": "memurlar",
+     "hl": "FİK toplandı: Sermaye piyasalarında atılacak adımlar görüşüldü"
+    },
+    {
+     "s": "karar",
+     "hl": "Finansal İstikrar Komitesi toplandı"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Finansal İstikrar Komitesi toplandı! Kredi kartları ve bireysel kredilerde yeni adım sinyali"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Finansal İstikrar Komitesinde fon gündemi"
+    },
+    {
+     "s": "t24",
+     "hl": "Finansal İstikrar Komitesi toplandı: Fon soruşturmasının ardından sermaye piyasalarına yönelik adımlar masada"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Finansal İstikrar Komitesi'nde sermaye piyasalarındaki gelişmeler ele alındı"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "Finansal İstikrar Komitesi toplandı! Sermaye piyasalarında atılacak adımlar görüşüldü"
+    },
+    {
+     "s": "anka",
+     "hl": "Finansal İstikrar Komitesi'nde sermaye piyasalarındaki gelişmeler ele alındı"
+    },
+    {
+     "s": "birgun",
+     "hl": "Finansal İstikrar Komitesi toplandı: Gündem fon krizi"
+    }
+   ]
+  },
+  {
+   "event": "s10985",
+   "week": "w12",
+   "title": "Sarıgül soruşturmasında Ömer Sarıgül ek ifade için adliyede",
+   "headlines": [
+    {
+     "s": "ahaber",
+     "hl": "Ömer Sarıgül bugün ek ifade verecek! Gözler Çağlayan Adliyesi'nde"
+    },
+    {
+     "s": "tgrt",
+     "hl": "Sarıgül soruşturmasında kritik gelişme: Ömer Sarıgül ek ifade verecek"
+    },
+    {
+     "s": "takvim",
+     "hl": "Kara para soruşturmasında Ömer Sarıgül’den ek ifade... 9 kişiye tutuklama"
+    },
+    {
+     "s": "sondakika",
+     "hl": "Sarıgül soruşturmasında Ömer Sarıgül ek ifade için adliyede"
+    },
+    {
+     "s": "haberler",
+     "hl": "Sarıgül soruşturmasında Ömer Sarıgül ek ifade için adliyede"
+    },
+    {
+     "s": "ensonhaber",
+     "hl": "Ömer Sarıgül, ek ifade verdi"
+    },
+    {
+     "s": "cumhuriyet",
+     "hl": "Son dakika... Sarıgül soruşturması: Ömer Sarıgül ek ifade vermek üzere yeniden adliyede"
+    },
+    {
+     "s": "haberturk",
+     "hl": "Ömer Sarıgül ek ifade vermek için adliyede"
+    },
+    {
+     "s": "hurriyet",
+     "hl": "Ömer Sarıgül ek ifade verdi... Soruşturma kapsamında 9 şüpheli daha tutuklandı"
+    },
+    {
+     "s": "sozcu",
+     "hl": "Tutuklu Ömer Sarıgül ek ifadesinin ardından cezaevine gönderildi"
+    },
+    {
+     "s": "karar",
+     "hl": "Ağabeyi tahliye edilmişti: Ömer Sarıgül ek ifade için adliyeye getirildi"
+    },
+    {
+     "s": "10haber",
+     "hl": "Tutuklu Ömer Sarıgül ek ifade için adliyede"
+    },
+    {
+     "s": "posta",
+     "hl": "Ömer Sarıgül, ek ifade vermek için adliyeye geldi"
+    },
+    {
+     "s": "milligazete",
+     "hl": "Sarıgül soruşturmasında yeni gelişme! Ömer Sarıgül etkin pişmanlık için adliyeye getirildi"
+    },
+    {
+     "s": "akit",
+     "hl": "Sarıgül soruşturmasında kritik gelişme: Ömer Sarıgül yeniden adliyede! Gözler vereceği ifadede"
+    },
+    {
+     "s": "sol",
+     "hl": "Sarıgül soruşturması: 9 kişi daha tutuklandı, Ömer Sarıgül ek ifade verdi"
+    },
+    {
+     "s": "sabah",
+     "hl": "Ömer Sarıgül etkin pişmanlık ifadesi verdi"
+    },
+    {
+     "s": "evrensel",
+     "hl": "Etkin pişmanlık başvurusu yapmıştı: Ömer Sarıgül ek ifade verdi"
+    },
+    {
+     "s": "haber7",
+     "hl": "Ömer Sarıgül ek ifade verdi!"
+    },
+    {
+     "s": "yenisafak",
+     "hl": "Tutuklu Ömer Sarıgül ek ifade verdi: Yeniden cezaevine gönderildi"
+    },
+    {
+     "s": "memurlar",
+     "hl": "Kara para aklama soruşturmasında Ömer Sarıgül ek ifade verdi"
+    },
+    {
+     "s": "t24",
+     "hl": "Ömer Sarıgül ek ifade verdi"
+    },
+    {
+     "s": "ntv",
+     "hl": "Sarıgül soruşturması. 9 şüpheli tutuklandı, Ömer Sarıgül ek ifade verdi"
+    },
+    {
+     "s": "mynet",
+     "hl": "Tutuklu Ömer Sarıgül ek ifadesinin ardından cezaevine sevk edildi"
+    },
+    {
+     "s": "diken",
+     "hl": "Kara para soruşturması: Dokuz kişi daha tutuklandı; Ömer Sarıgül ek ifade verdi"
+    },
+    {
+     "s": "cnnturk",
+     "hl": "Ömer Sarıgül ek ifade verdi... Soruşturma kapsamında 9 şüpheli daha tutuklandı"
+    }
+   ]
+  }
+ ]
+}
