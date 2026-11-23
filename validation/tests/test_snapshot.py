@@ -74,13 +74,14 @@ class SnapshotTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 write(changed, CORE_STUB, "behavioural", Path(d))
 
-    def test_real_pack_produces_309_finding_rows(self):
-        # 9: the 9 top-150 events (runs/bg9; 70 carried over from runs/bg82); 8.2 had 387 / 140, the 8.0-event pack 439 / 257
+    def test_real_pack_rows_match_its_summary(self):
+        # the packed BG (runs/bg9, rebuilt daily by capraz_pipeline.daily): one row per finding, tiers as summarised
         core = load_core(CORE)
+        s = core["BG"]["summary"]
         rs = rows(core["BG"], core, "behavioural")
-        self.assertEqual(sum(r["tier"] is not None for r in rs), 309)
-        self.assertEqual(sum(r["tier"] == "ai_confident" for r in rs), 101)
-        self.assertEqual(len({r["event"] for r in rs}), 150)
+        self.assertEqual(sum(r["tier"] is not None for r in rs), s["supported"] + s["uncertain"])
+        self.assertEqual(sum(r["tier"] == "ai_confident" for r in rs), s["aiConfident"])
+        self.assertEqual(len({r["event"] for r in rs}), s["completed"])
 
 
 if __name__ == "__main__":
