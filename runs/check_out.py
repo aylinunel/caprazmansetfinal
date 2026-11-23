@@ -10,6 +10,9 @@ role = sys.argv[4] if len(sys.argv) > 4 else None
 if run.parent.parent.name == "lab":  # validation lab run: runs/lab/<run>/<config>
     from validation.biaslab import configs
     bg = BiasGuard(cards=configs.catalog(run.name))
+elif (run / "catalog.json").exists():  # a media run reviews its own catalogue (live + pending cards), as apply() does
+    from biasguard.catalog import validate_cards
+    bg = BiasGuard(cards=validate_cards(json.loads((run / "catalog.json").read_text(encoding="utf-8"))))
 else:
     bg = BiasGuard(cards=catalog_cards("media" if "bgm" in run.name else "behavioural"))
 task = json.loads(batch.read_text())

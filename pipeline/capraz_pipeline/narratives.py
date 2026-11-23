@@ -24,7 +24,8 @@ from .config import REPO
 
 WEEKS = [("w7", "11–17 Ekim", "2026-10-11", "2026-10-17"), ("w8", "18–24 Ekim", "2026-10-18", "2026-10-24"),
          ("w9", "25–31 Ekim", "2026-10-25", "2026-10-31"), ("w10", "1–7 Kasım", "2026-11-01", "2026-11-07"),
-         ("w11", "8–13 Kasım", "2026-11-08", "2026-11-13")]
+         ("w11", "8–13 Kasım", "2026-11-08", "2026-11-13"),
+         ("w12", "14–20 Kasım", "2026-11-14", "2026-11-20")]
 KEEP = 20  # most differentiated events shown per agent-coded week (S, § 6.3)
 DIM_LABELS = {"frame": "Çerçeve", "hero": "Merkezdeki aktör", "blame": "Sorumlu tutulan", "cause": "Sunulan neden",
               "cons": "Öne çıkan sonuç", "aff": "Etkilenen kesim", "sol": "Meşrulaştırılan çözüm", "moral": "Ahlaki çerçeve",
