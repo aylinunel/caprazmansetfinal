@@ -81,7 +81,7 @@ class SnapshotTest(unittest.TestCase):
         rs = rows(core["BG"], core, "behavioural")
         self.assertEqual(sum(r["tier"] is not None for r in rs), s["supported"] + s["uncertain"])
         self.assertEqual(sum(r["tier"] == "ai_confident" for r in rs), s["aiConfident"])
-        self.assertEqual(len({r["event"] for r in rs}), s["completed"])
+        self.assertEqual(len({r["event"] for r in rs}), s["planned"])  # not-attempted events keep a row without a tier
 
 
 if __name__ == "__main__":

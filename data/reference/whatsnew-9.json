@@ -6,17 +6,17 @@
    "id": "veri",
    "tag": "yeni",
    "title": "Bir hafta daha veri",
-   "claim": "Pencere 2026-11-13 yerine 2026-11-20 tarihinde bitiyor. Başlık 388.760 → 468.836, olay 9.230 → 11.588, kurum 51 → 53.",
+   "claim": "Pencere 2026-11-13 yerine 2026-11-22 tarihinde bitiyor. Başlık 388.760 → 487.003, olay 9.230 → 12.185, kurum 51 → 53.",
    "rows": [
     [
      "Başlık",
      "388.760",
-     "468.836"
+     "487.003"
     ],
     [
      "Olay",
      "9.230",
-     "11.588"
+     "12.185"
     ],
     [
      "Kurum (veri alınan)",
@@ -26,10 +26,10 @@
     [
      "Dönem",
      "2026-09-01 – 2026-11-13",
-     "2026-09-01 – 2026-11-20"
+     "2026-09-01 – 2026-11-22"
     ]
    ],
-   "note": "2.239 olay 2026-11-14 ve sonrasında başladı. İlk kez dahil olan kurumlar: Haber Global, Nefes.",
+   "note": "2.832 olay 2026-11-14 ve sonrasında başladı. İlk kez dahil olan kurumlar: Haber Global, Nefes.",
    "cols": [
     "8.2",
     "9"
@@ -39,17 +39,17 @@
    "id": "benzerlik",
    "tag": "sürüyor",
    "title": "Başlık dili benzerliği ve yerleşim",
-   "claim": "Mantel r 0,24 → 0,26: ilişki neredeyse aynı kaldı. 9’daki sonuç anlamlı (p 0,010).",
+   "claim": "Mantel r 0,24 → 0,26: ilişki neredeyse aynı kaldı. 9’daki sonuç anlamlı (p 0,009).",
    "rows": [
     [
      "Mantel r",
      "0,244",
-     "0,257"
+     "0,260"
     ],
     [
      "p",
      "0,012",
-     "0,010"
+     "0,009"
     ]
    ],
    "note": "Benzer yerleşimdeki kurumların benzer sözcükler seçtiğini ölçer; niyet göstermez.",
@@ -62,17 +62,17 @@
    "id": "gundem",
    "tag": "sürüyor",
    "title": "Gündem seçimi ve yerleşim",
-   "claim": "Mantel r 0,04 → 0,05: ilişki neredeyse aynı kaldı. 9’daki sonuç anlamlı değil (p 0,342).",
+   "claim": "Mantel r 0,04 → 0,05: ilişki neredeyse aynı kaldı. 9’daki sonuç anlamlı değil (p 0,357).",
    "rows": [
     [
      "Mantel r",
      "0,036",
-     "0,053"
+     "0,052"
     ],
     [
      "p",
      "0,505",
-     "0,342"
+     "0,357"
     ]
    ],
    "note": "Hangi olayların haberleştirildiğinin yerleşimle ilişkisini ölçer.",
@@ -90,7 +90,7 @@
     [
      "ρ (1. eksen)",
      "0,487",
-     "0,471"
+     "0,470"
     ],
     [
      "p (1. eksen)",
@@ -108,12 +108,12 @@
    "id": "kornokta",
    "tag": "sürüyor",
    "title": "Kör nokta olayları",
-   "claim": "Bir tarafın belirgin biçimde az haberleştirdiği olay 79 → 104; bütün olayların içindeki payı %0,9 → %0,9 (neredeyse aynı kaldı).",
+   "claim": "Bir tarafın belirgin biçimde az haberleştirdiği olay 79 → 106; bütün olayların içindeki payı %0,9 → %0,9 (neredeyse aynı kaldı).",
    "rows": [
     [
      "Kör nokta olayı",
      "79",
-     "104"
+     "106"
     ],
     [
      "Pay",
@@ -123,7 +123,7 @@
     [
      "2026-11-14 sonrası kör nokta",
      "—",
-     "24"
+     "26"
     ]
    ],
    "note": "",
@@ -139,19 +139,19 @@
    "claim": "İki sürümde de bulunan 51 kurumun yük ortalaması kurum başına ortalama 0,07 puan değişti.",
    "rows": [
     [
+     "Demirören Haber Ajansı",
+     "7,1",
+     "6,8"
+    ],
+    [
      "Diriliş Postası",
      "8,4",
      "8,2"
     ],
     [
-     "Demirören Haber Ajansı",
-     "7,1",
-     "6,9"
-    ],
-    [
-     "Milliyet",
-     "10,1",
-     "10,3"
+     "Haber7",
+     "9,8",
+     "10,1"
     ],
     [
      "Onedio",
@@ -174,22 +174,22 @@
    "id": "yz",
    "tag": "değişti",
    "title": "AI incelemesi yeni olaylarla güncellendi",
-   "claim": "En çok kurumun haberleştirdiği 150 olay yeniden seçildi: 46 olay listeye yeni girdi, 34 olayın başlıkları ya da bağlamı değiştiği için yeniden incelendi, geri kalanların 8.2 incelemesi aynen korundu. Davranışsal bulgu 387 → 309.",
+   "claim": "En çok kurumun haberleştirdiği 150 olay yeniden seçildi: 56 olay listeye yeni girdi, 31 olayın başlıkları ya da bağlamı değiştiği için yeniden incelendi, geri kalanların 8.2 incelemesi aynen korundu. Davranışsal bulgu 387 → 248.",
    "rows": [
     [
      "Davranışsal bulgu",
      "387",
-     "309"
+     "248"
     ],
     [
      "Doğrulanmış alıntı",
      "1.763",
-     "1.278"
+     "1.056"
     ],
     [
      "Medya tekniği bulgusu (canlı)",
      "18",
-     "14"
+     "10"
     ]
    ],
    "note": "Her olay ayrı seçici, savunucu ve kuşkucu ajanlarca incelendi; bulgular aynı biçimde, AI imzalı gösterilir.",
@@ -214,7 +214,7 @@
    "id": "olaylar",
    "tag": "yeni",
    "title": "Yeni haftanın en çok kurumca haberleştirilen olayları",
-   "claim": "Uzayan pencerede 2.239 olay başladı; en geniş yankı bulan: Fon soruşturması: AKP'li Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifadeye çağrıldı (36 kurum).",
+   "claim": "Uzayan pencerede 2.832 olay başladı; en geniş yankı bulan: Fon soruşturması: AKP'li Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifadeye çağrıldı (36 kurum).",
    "rows": [
     [
      "Fon soruşturması: AKP'li Hayati Yazıcı'nın oğlu Mustafa Yazıcı ifadeye çağrıldı",
@@ -242,6 +242,11 @@
      "s11906"
     ],
     [
+     "Fon soruşturmasında aranan Serdar Altınbaş Çekya’da yakalandı",
+     "35",
+     "s12475"
+    ],
+    [
      "2026 KPSS Ortaöğretim sonuçları açıklandı mı? KPSS Ortaöğretim sonuçları ne zaman açıklanacak?",
      "34",
      "s11040"
@@ -250,11 +255,6 @@
      "Fon soruşturmasında yeni gelişme: 7 şüpheli daha tutuklandı",
      "33",
      "s11065"
-    ],
-    [
-     "Fon soruşturmasında aranan Serdar Altınbaş Çekya’da yakalandı",
-     "33",
-     "s12475"
     ]
    ],
    "events": true,
@@ -272,7 +272,7 @@
    "rows": [
     [
      "Son gün",
-     "2026-11-20 sonrası henüz eksik toplandığı için dışarıda",
+     "2026-11-22 sonrası henüz eksik toplandığı için dışarıda",
      ""
     ],
     [
