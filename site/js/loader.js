@@ -24,12 +24,15 @@
     for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
     return out;
   }
+  function get(file) {
+    return fetch(BASE + file).then(function (r) { if (!r.ok) throw new Error(file + " " + r.status); return r.arrayBuffer(); });
+  }
   function load(name) {
-    return fetch(BASE + name + SUFFIX).then(function (r) {
-      if (!r.ok) throw new Error(name + " " + r.status);
-      return r.arrayBuffer();
-    }).then(function (buf) {
-      var u = new Uint8Array(buf);
+    return get(name + SUFFIX).then(function (buf) {
+      var u = new Uint8Array(buf), head = new TextDecoder().decode(u.slice(0, 16));
+      if (head.indexOf("PARTS:") === 0) // artifact copy of a big pack: base64 text split into numbered parts
+        return Promise.all(Array.from({ length: +head.slice(6) }, function (_, i) { return get(name + SUFFIX + "." + i); }))
+          .then(function (ps) { return gunzip(unbase64(ps.map(function (p) { return new TextDecoder().decode(p); }).join(""))); });
       if (u[0] === 0x1f && u[1] === 0x8b) return gunzip(u);
       if (u[0] === 0x48 && u[1] === 0x34 && u[2] === 0x73 && u[3] === 0x49) // "H4sI": base64 of a gzip header
         return gunzip(unbase64(new TextDecoder().decode(u)));

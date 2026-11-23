@@ -2764,12 +2764,15 @@ kbd{font-family:var(--ff-m);font-size:11px;padding:1px 5px;border:1px solid curr
     for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
     return out;
   }
+  function get(file) {
+    return fetch(BASE + file).then(function (r) { if (!r.ok) throw new Error(file + " " + r.status); return r.arrayBuffer(); });
+  }
   function load(name) {
-    return fetch(BASE + name + SUFFIX).then(function (r) {
-      if (!r.ok) throw new Error(name + " " + r.status);
-      return r.arrayBuffer();
-    }).then(function (buf) {
-      var u = new Uint8Array(buf);
+    return get(name + SUFFIX).then(function (buf) {
+      var u = new Uint8Array(buf), head = new TextDecoder().decode(u.slice(0, 16));
+      if (head.indexOf("PARTS:") === 0) // artifact copy of a big pack: base64 text split into numbered parts
+        return Promise.all(Array.from({ length: +head.slice(6) }, function (_, i) { return get(name + SUFFIX + "." + i); }))
+          .then(function (ps) { return gunzip(unbase64(ps.map(function (p) { return new TextDecoder().decode(p); }).join(""))); });
       if (u[0] === 0x1f && u[1] === 0x8b) return gunzip(u);
       if (u[0] === 0x48 && u[1] === 0x34 && u[2] === 0x73 && u[3] === 0x49) // "H4sI": base64 of a gzip header
         return gunzip(unbase64(new TextDecoder().decode(u)));
@@ -10444,8 +10447,8 @@ var REVIEW_TIP = { ai_onayli: "AI bu örüntüyü olası buldu: sorgulayan incel
 var REVIEW_STATUS = { verified: "dogrulandi", corrected: "duzeltildi", rejected: "reddedildi" };
 function reviewValid(review, packVersion, textHash) {
   if (!review || !REVIEW_STATUS[review.status]) return false;
-  // Reviews saved before packs were recorded carry neither field and still apply.
-  return (review.pack == null || review.pack === packVersion) && (review.text == null || review.text === textHash);
+  // The event-text hash ties a review to what was reviewed; the pack is a build date that changes daily.
+  return review.text == null || review.text === textHash;
 }
 function reviewState(finding, review, packVersion, textHash) {
   var state = reviewValid(review, packVersion, textHash) ? REVIEW_STATUS[review.status]
@@ -14801,7 +14804,7 @@ function deskOutlets(f) {
   var seen = []; (f.evidence || []).forEach(function (e) { (e.o || []).forEach(function (o) { if (seen.indexOf(o) < 0) seen.push(o); }); });
   return seen;
 }
-/* Every reviewable item, by group. A review counts only on the pack and event text it was made on (reviewValid). */
+/* Every reviewable item, by group. A review counts only on the event text it was made on (reviewValid). */
 function deskItems(g) {
   var hide = blindHidden(D.BLIND, REV7);   /* items of an unfinished blind packet stay out of every queue (blindness) */
   return deskItemsAll(g).filter(function (i) { return !hide.has(i.key); });

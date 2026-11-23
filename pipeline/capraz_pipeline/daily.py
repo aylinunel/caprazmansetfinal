@@ -53,6 +53,12 @@ def fetch_collector(work: Path) -> Path:
     return data
 
 
+def same_case(old: dict, new: dict) -> bool:
+    """Same headlines and context, ignoring the active-outlet list, which moves as the season grows."""
+    strip = lambda c: "\n".join(l for l in c.splitlines() if not l.startswith("Olayı vermeyen etkin kurumlar"))
+    return old["text"] == new["text"] and strip(old["context"]) == strip(new["context"])
+
+
 def refresh_runs(build: Path) -> dict:
     """Write the new top 150 into each run; keep agent outputs only where the event's text and context are unchanged."""
     sys.path.insert(0, str(REPO))
@@ -62,7 +68,7 @@ def refresh_runs(build: Path) -> dict:
     for run, _ in RUNS:
         d = REPO / "runs" / run
         old = {x["event"]: x for x in _inputs(d)} if (d / "inputs.jsonl").exists() else {}
-        keep = {x["event"] for x in new if x["event"] in old and (old[x["event"]]["text"], old[x["event"]]["context"]) == (x["text"], x["context"])}
+        keep = {x["event"] for x in new if x["event"] in old and same_case(old[x["event"]], x)}
         removed = 0
         for sub in ("selections", "reviews/advocate", "reviews/skeptic", "explain"):
             for f in (d / sub).glob("*.json") if (d / sub).exists() else []:
@@ -95,7 +101,7 @@ def main(argv=None) -> None:
     pack = datetime.now(TRT).date().isoformat()
     for run, cat in RUNS:
         sh(py, "-m", "biasguard.news", "apply", "--run", f"runs/{run}", "--catalog", cat,
-           "--card-status", "validation/reference/card_status.json", "--pack", pack)
+           "--card-status", "validation/reference/card_status.json", "--pack", "9")  # stable: fixes the audit sample for the release
         sh(py, "-m", "biasguard.explain_rules", "--run", f"runs/{run}", "--core", str(build / "core.bin"), "--catalog", cat)
     shutil.copy(REPO / "runs/bg9/biasguard.json", build / "biasguard.json")
     shutil.copy(REPO / "runs/bgm9/biasguard.json", build / "biasguard-media.json")

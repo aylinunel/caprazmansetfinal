@@ -54,11 +54,12 @@ NODE_PATH=$(npm root -g) node site/tests/blind.cjs public /tmp/blind
 3. Commit `public runs/bg9 runs/bgm9 data/reference docs/provenance/packs.json docs/build-report.json` (use
    `git add -A` on those paths: the run deletes outputs of changed events) with the message
    `daily: data through <until>`, and push to `claude/gallant-noether-sz2o7v`. Nothing changed: stop here.
-4. Publish `dist/artifact/index.html` to the artifact URL in two publishes (the data is over the 64 MB limit
-   for one). First read the artifact with the Artifact tool (`action: "read"`). Then publish with
-   `root: dist/artifact` and `files` for `data/core.bin.txt` plus the `a-`, `u-` and `l-` September and October
-   `.bin.txt` files. Then publish again with the three November files (and any newer month's). Do not pass
-   `capabilities` or `icon`; the stored ones carry over.
+4. Publish `dist/artifact/index.html` to the artifact URL, with `root: dist/artifact`, in several publishes
+   (one publish takes at most 64 MB). First read the artifact with the Artifact tool (`action: "read"`). Send every
+   file in `dist/artifact/data/`: a pack over 12 MB is written as a one-line index (`<pack>.bin.txt`) plus parts
+   (`<pack>.bin.txt.0`, `.1`, …), and every part must be sent. Send the newest month's files first, then the older
+   months, and `data/core.bin.txt` in the last publish, so the page never pairs new totals with old packs. Do not
+   pass `capabilities` or `icon`; the stored ones carry over.
 5. Report in a few lines: the day reached, headline and event counts, how many top events await review, and the
    test results.
 
@@ -100,4 +101,6 @@ EOF
    `python -m capraz_pipeline.narratives finalize --out ../runs/narr`.
 
 3. Rerun the daily release (step 1). The reviewed events now keep their reviews and the new week is merged. Then
-   test, commit (`weekly: AI review and Anlatı <week>`), push and publish as in daily steps 2–4.
+   test, commit, push and publish as in daily steps 2–4, with message `weekly: AI review and Anlatı <week>`. The
+   commit also takes the narrative work, or the next fresh session loses the new week:
+   `git add -A pipeline/capraz_pipeline/narratives.py data/reference/narratives-7.json runs/narr runs/narr*`.

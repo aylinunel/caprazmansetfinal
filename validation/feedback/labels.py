@@ -38,8 +38,6 @@ class Label:
 
 def import_export(export: dict, results: dict, known_cards: set[str]) -> list[Label]:
     """Turn a site reviews export into labels. Any bad entry rejects the whole file."""
-    if export.get("pack") != results.get("pack"):
-        raise ValueError(f"export is for pack {export.get('pack')!r}, results are for {results.get('pack')!r}")
     findings = {(e["event"], f["id"]): (e, f) for e in results["events"]
                 for key in _FINDING_KEYS for f in e.get(key) or []}
     labels, seen = [], set()
@@ -54,7 +52,6 @@ def import_export(export: dict, results: dict, known_cards: set[str]) -> list[La
         problem = problem or ("no such finding in the results" if (event, card) not in findings else None)
         problem = problem or ("duplicate key" if key in seen else None)
         problem = problem or ("unknown correct concept" if r.get("card") and r["card"] not in known_cards else None)
-        problem = problem or ("made on another pack" if r.get("pack") != results.get("pack") else None)
         if not problem and r.get("text") != findings[(event, card)][0].get("text"):
             problem = "made on different event text"
         if problem:

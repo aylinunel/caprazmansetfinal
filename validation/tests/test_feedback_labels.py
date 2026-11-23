@@ -92,9 +92,10 @@ class LabelsTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             import_export(export(rev("ev1__framing-effect"), rev("ev1__framing-effect")), RESULTS, CARDS)
 
-    def test_pack_mismatch_rejects_whole_file(self):
-        with self.assertRaises(ValueError):
-            import_export(export(rev("ev1__framing-effect"), pack="p0"), RESULTS, CARDS)
+    def test_review_from_an_earlier_daily_pack_imports_on_the_same_text(self):
+        # the daily release changes the pack every day; the event text is what ties a review to its finding
+        ls = import_export(export(rev("ev1__framing-effect", pack="p0"), pack="p0"), RESULTS, CARDS)
+        self.assertEqual(len(ls), 1)
 
     def test_review_made_on_other_text_is_rejected(self):
         with self.assertRaises(ValueError):

@@ -15,6 +15,9 @@ SITE = REPO / "site"
 V7_ORDER = ["logic", "core", "graph", "viz", "dots", "fog", "press", "motion", "home", "anlati", "anlativ", "olay", "oruntu", "kurum", "parti", "yontem", "ilan", "yenilikler", "aiimza", "lens", "desk"]
 
 
+PART = 12_000_000  # base64 chars per artifact file (a multiple of 4, so parts join back exactly)
+
+
 def assemble(data_dir: Path, dest: Path, title: str = "Çapraz Manşet 9", fragment: bool = False) -> Path:
     """fragment=True: no doctype/html/head/body wrapper (claude.ai artifacts add their own)."""
     rules = SCORER.read_text(encoding="utf-8")
@@ -46,7 +49,12 @@ def assemble(data_dir: Path, dest: Path, title: str = "Çapraz Manşet 9", fragm
     for f in sorted(data_dir.glob("*.bin")):
         if fragment:
             # shortcut: claude.ai artifacts serve no binary files, so packs go as base64 text (+33 %).
-            (dest / "data" / (f.name + ".txt")).write_bytes(base64.b64encode(f.read_bytes()))
+            # The artifact takes text files up to 16 MB: a bigger pack goes in parts named by a one-line index.
+            b, name = base64.b64encode(f.read_bytes()), dest / "data" / (f.name + ".txt")
+            parts = [b[i:i + PART] for i in range(0, len(b), PART)]
+            for i, part in enumerate(parts if len(parts) > 1 else []):
+                (dest / "data" / f"{name.name}.{i}").write_bytes(part)
+            name.write_bytes(b if len(parts) == 1 else f"PARTS:{len(parts)}".encode())
         elif f.resolve() != (dest / "data" / f.name).resolve():
             shutil.copy2(f, dest / "data" / f.name)
     return dest / "index.html"

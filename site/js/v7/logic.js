@@ -503,8 +503,8 @@ var REVIEW_TIP = { ai_onayli: "AI bu örüntüyü olası buldu: sorgulayan incel
 var REVIEW_STATUS = { verified: "dogrulandi", corrected: "duzeltildi", rejected: "reddedildi" };
 function reviewValid(review, packVersion, textHash) {
   if (!review || !REVIEW_STATUS[review.status]) return false;
-  // Reviews saved before packs were recorded carry neither field and still apply.
-  return (review.pack == null || review.pack === packVersion) && (review.text == null || review.text === textHash);
+  // The event-text hash ties a review to what was reviewed; the pack is a build date that changes daily.
+  return review.text == null || review.text === textHash;
 }
 function reviewState(finding, review, packVersion, textHash) {
   var state = reviewValid(review, packVersion, textHash) ? REVIEW_STATUS[review.status]

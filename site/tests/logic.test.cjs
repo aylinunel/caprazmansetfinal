@@ -363,9 +363,9 @@ test("corrected review shows İnsan düzeltti", () => {
 test("rejected review marks the finding rejected", () => {
   assert.equal(L.reviewState(RV_F, rv("rejected"), "p1", "h1").state, "reddedildi");
 });
-test("review from another pack is ignored and the tier is shown", () => {
-  assert.equal(L.reviewState(RV_F, rv("rejected", { pack: "p0" }), "p1", "h1").state, "ai_onayli");
-  assert.equal(L.reviewValid(rv("rejected", { pack: "p0" }), "p1", "h1"), false);
+test("review from an earlier daily pack still applies when the event text is the same", () => {
+  assert.equal(L.reviewValid(rv("rejected", { pack: "p0" }), "p1", "h1"), true);
+  assert.equal(L.reviewValid(rv("rejected", { pack: "p0" }), "p1", "h2"), false);
 });
 test("review on changed event text is ignored", () => {
   assert.equal(L.reviewState(RV_N, rv("verified", { text: "h0" }), "p1", "h1").state, "insan_bekliyor");

@@ -17,7 +17,7 @@ function deskOutlets(f) {
   var seen = []; (f.evidence || []).forEach(function (e) { (e.o || []).forEach(function (o) { if (seen.indexOf(o) < 0) seen.push(o); }); });
   return seen;
 }
-/* Every reviewable item, by group. A review counts only on the pack and event text it was made on (reviewValid). */
+/* Every reviewable item, by group. A review counts only on the event text it was made on (reviewValid). */
 function deskItems(g) {
   var hide = blindHidden(D.BLIND, REV7);   /* items of an unfinished blind packet stay out of every queue (blindness) */
   return deskItemsAll(g).filter(function (i) { return !hide.has(i.key); });
